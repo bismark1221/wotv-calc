@@ -2449,12 +2449,32 @@
             "value": "Elektrolader"
         },
         {
+            "key": "SK_FF1_EC_WROL_C_02",
+            "value": "Elektrolader (verstärkt)"
+        },
+        {
+            "key": "SK_FF1_EC_WROL_C_02B",
+            "value": "Elektrolader II"
+        },
+        {
             "key": "SK_FF1_WROL_M_3",
             "value": "Unbesiegbarer Schild"
         },
         {
+            "key": "SK_FF1_EC_WROL_C_01",
+            "value": "Unbesiegbarer Schild (verstärkt)"
+        },
+        {
+            "key": "SK_FF1_EC_WROL_C_01B",
+            "value": "Unbesiegbarer Schild II"
+        },
+        {
             "key": "SK_FF1_WROL_S_1",
             "value": "Wechselangriff"
+        },
+        {
+            "key": "SK_FF1_EC_WROL_A_01",
+            "value": "Strahlklinge"
         },
         {
             "key": "SK_FF1_WROL_S_2",
@@ -6669,6 +6689,10 @@
             "value": "Schattenrose"
         },
         {
+            "key": "SK_LB_LW_THLA_01",
+            "value": "Liebesbombardement"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Inferno"
         },
@@ -7501,6 +7525,26 @@
             "value": "Unerschrockenes Herz"
         },
         {
+            "key": "SK_LW_EC_PSI_A_01",
+            "value": "Kreuzstrahl"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_01",
+            "value": "Doppel-Qi-Expansion (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_01B",
+            "value": "Doppel-Qi-Expansion +"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_02",
+            "value": "Qi-Schuss (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_02B",
+            "value": "Qi-Superschuss"
+        },
+        {
             "key": "SK_US_POTION",
             "value": "Trank"
         },
@@ -8069,6 +8113,10 @@
             "value": "Meisterfähigkeit"
         },
         {
+            "key": "SK_MA_LW_THLA_01",
+            "value": "Meisterfähigkeit"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Schlitzangriff +2"
         },
@@ -8179,6 +8227,26 @@
         {
             "key": "SK_LW_PIERCEDEF_5",
             "value": "ABW-Durchbohrrate +20"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_1",
+            "value": "PSY-Durchbohrrate +2"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_2",
+            "value": "PSY-Durchbohrrate +3"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_3",
+            "value": "PSY-Durchbohrrate +5"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_4",
+            "value": "PSY-Durchbohrrate +10"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_5",
+            "value": "PSY-Durchbohrrate +20"
         },
         {
             "key": "SK_LW_DF_SINGL_1",
@@ -8541,50 +8609,6 @@
             "value": "Emblem des Verschlingens"
         },
         {
-            "key": "SK_LW_ARM_028_1",
-            "value": "Brigandine"
-        },
-        {
-            "key": "SK_LW_ARM_028_2",
-            "value": "Brigandine"
-        },
-        {
-            "key": "SK_LW_ARM_028_3",
-            "value": "Brigandine"
-        },
-        {
-            "key": "SK_LW_ARM_028_4",
-            "value": "Brigandine"
-        },
-        {
-            "key": "SK_LW_ARM_028_5",
-            "value": "Brigandine"
-        },
-        {
-            "key": "SK_LW_ROD_006_1",
-            "value": "Zypressenstab (Konfus)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_1",
-            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_2",
-            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_3",
-            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_4",
-            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_5",
-            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
-        },
-        {
             "key": "SK_FF10_ROD_000_1",
             "value": "Magisterstab (Anrufungsleisten-Füllmenge erhöht)"
         },
@@ -8643,6 +8667,58 @@
         {
             "key": "SK_NIER_ACC_000_5",
             "value": "Pod 153"
+        },
+        {
+            "key": "SK_LW_ARM_028_1",
+            "value": "Brigandine"
+        },
+        {
+            "key": "SK_LW_ARM_028_2",
+            "value": "Brigandine"
+        },
+        {
+            "key": "SK_LW_ARM_028_3",
+            "value": "Brigandine"
+        },
+        {
+            "key": "SK_LW_ARM_028_4",
+            "value": "Brigandine"
+        },
+        {
+            "key": "SK_LW_ARM_028_5",
+            "value": "Brigandine"
+        },
+        {
+            "key": "SK_LW_ROD_006_1",
+            "value": "Zypressenstab (Konfus)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_1",
+            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_2",
+            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_3",
+            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_4",
+            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_5",
+            "value": "Zypressenstab (Magieresistenz-Durchbohren)"
+        },
+        {
+            "key": "SK_FF1_SWO_000_1",
+            "value": "Schwert des Lichts (Lichtangriff-Erhöhung)"
+        },
+        {
+            "key": "SK_FF1_SWO_000_5",
+            "value": "Schwert des Lichts (Lichtangriff-Erhöhung)"
         },
         {
             "key": "SK_ACC_LW_MONT_1_1",
@@ -8915,6 +8991,10 @@
         {
             "key": "SK_ACC_LW_HLNA_01_1",
             "value": "Protektion alter Gefährten"
+        },
+        {
+            "key": "SK_CLT_LW_THLA_01_1_1",
+            "value": "Wunder der Liebe"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -13695,6 +13775,14 @@
         {
             "key": "SK_BTL_DONAC_1-100_D",
             "value": "Chance auf Zustandsveränderung „Ausschalten“ reduziert (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_FROST_1-100_U",
+            "value": "Chance auf Zustandsveränderung „Erfrierung“ erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_FROST_1-100_D",
+            "value": "Chance auf Zustandsveränderung „Erfrierung“ reduziert (1 bis 100)"
         },
         {
             "key": "SK_BTL_DEFPIERCE_1-100_U",

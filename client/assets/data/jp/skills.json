@@ -57666,6 +57666,651 @@
     "maxLevel": 20,
     "based": "magic"
   },
+  "SK_LB_LW_VLUC": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_VLUC",
+    "type": "limit",
+    "names": {
+      "en": "必殺剣・焔風"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_MSM_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MSM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_MA_LW_VLUC": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "WIND_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "WIND_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "WIND_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "HP",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_VLUC",
+    "type": "masterSkill",
+    "names": {
+      "en": "マスターアビリティ"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_LW_MSM_S_1_INIT": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": -20,
+        "maxValue": -39,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": -20,
+        "maxValue": -39,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MSM_S_1_INIT",
+    "type": "skill",
+    "names": {
+      "en": "破魔刀"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 15
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_MSM_S_2_INIT": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 15,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MSM_S_2_INIT",
+    "type": "skill",
+    "names": {
+      "en": "斬轟陣"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_LW_MSM_P_1": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "HP",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MSM_P_1",
+    "type": "support",
+    "names": {
+      "en": "心身一如"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_MSM_P_2": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MSM_P_2",
+    "type": "support",
+    "names": {
+      "en": "魔刀の心得"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_MSM_R_1": {
+    "effects": [],
+    "dataId": "SK_LW_MSM_R_1",
+    "type": "counter",
+    "names": {
+      "en": "返仇先刃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "magic",
+    "increaseDamageOnDecreaseHp": 100,
+    "counter": {
+      "minValue": 15,
+      "maxValue": 30,
+      "reactDamage": "ALL",
+      "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 1,
+      "maxValue": 21,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_MSM_S_4": {
+    "effects": [
+      {
+        "type": "BRAVERY",
+        "minValue": -20,
+        "maxValue": -40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER",
+        "buffOnCondition": "ON_CRITICAL"
+      }
+    ],
+    "dataId": "SK_LW_MSM_S_4",
+    "type": "skill",
+    "names": {
+      "en": "破勇の太刀"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 18
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_MSM_S_3": {
+    "effects": [
+      {
+        "type": "MASS_DISPEL",
+        "calcType": "buffs",
+        "target": "all",
+        "timing": "SKILL_AFTER",
+        "buffOnCondition": "ON_CRITICAL"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "HASTE"
+        ],
+        "target": "all",
+        "timing": "ON_CRITICAL"
+      }
+    ],
+    "dataId": "SK_LW_MSM_S_3",
+    "type": "skill",
+    "names": {
+      "en": "解の太刀"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 20
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_MSM_M_1": {
+    "effects": [
+      {
+        "type": "REDUCE_COUNTER_CHANCE",
+        "minValue": 50,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_MSM_M_1",
+    "type": "skill",
+    "names": {
+      "en": "封反の一刀"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 25
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 0
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "hit": 30,
+    "damage": {
+      "minValue": 35,
+      "maxValue": 70,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_MSM_M_2": {
+    "effects": [
+      {
+        "type": "CT",
+        "minValue": 100,
+        "maxValue": 250,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER",
+        "buffOnCondition": "ON_CRITICAL"
+      }
+    ],
+    "dataId": "SK_LW_MSM_M_2",
+    "type": "skill",
+    "names": {
+      "en": "破竹勢の太刀"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_MSM_M_3": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_MAGIC",
+        "minValue": 1500,
+        "maxValue": 3500,
+        "calcType": "hp",
+        "turnType": "TURNS",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MSM_M_3",
+    "type": "skill",
+    "names": {
+      "en": "退魔結界"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 40
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "magic"
+  },
+  "SK_LW_EC_MSM_C_01": {
+    "effects": [],
+    "dataId": "SK_LW_EC_MSM_C_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "退魔結界強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_MSM_C_02": {
+    "effects": [],
+    "dataId": "SK_LW_EC_MSM_C_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "斬轟陣強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_MSM_EN_A_01": {
+    "effects": [],
+    "dataId": "SK_LW_MSM_EN_A_01",
+    "type": "skill",
+    "names": {
+      "en": "奪魂の太刀"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 28
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 3,
+      "l": 1,
+      "h": 1
+    },
+    "maths": [
+      {
+        "type": "MODIFY_ABSORB",
+        "formula": "PERCENT",
+        "value": -70,
+        "dst": "ABSORB"
+      }
+    ],
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "ABSORB",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_EC_MSM_C_01B": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_MAGIC",
+        "minValue": 1500,
+        "maxValue": 3500,
+        "calcType": "hp",
+        "turnType": "TURNS",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "REGEN_ATK",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "percent",
+        "rate": 100,
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_MSM_C_01B",
+    "type": "skill",
+    "names": {
+      "en": "退魔の息吹"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 40
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "magic"
+  },
+  "SK_LW_EC_MSM_C_02B": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 15,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_MSM_C_02B",
+    "type": "skill",
+    "names": {
+      "en": "神気斬轟陣"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
   "SK_LW_CLR_ATK_100": {
     "effects": [],
     "dataId": "SK_LW_CLR_ATK_100",
@@ -117727,6 +118372,50 @@
     "count": 1,
     "maxLevel": 20
   },
+  "SK_ARM_LW_VLUC_1": {
+    "effects": [
+      {
+        "type": "FAITH_FIGHT",
+        "minValue": 2,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEX",
+        "minValue": 15,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_VLUC_1",
+    "type": "skill",
+    "names": {
+      "en": "魔力の器"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
   "SK_LB_LW_TU_MONT": {
     "effects": [],
     "dataId": "SK_LB_LW_TU_MONT",
@@ -131153,151 +131842,6 @@
     },
     "elem": [
       "fire"
-    ]
-  },
-  "SK_LW_CAL_THUN_M_2": {
-    "effects": [],
-    "dataId": "SK_LW_CAL_THUN_M_2",
-    "type": "skill",
-    "names": {
-      "en": "レベル4サンダガ"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 26
-    },
-    "count": 3,
-    "maxLevel": 20,
-    "range": {
-      "h": 3,
-      "l": 4,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 1
-    },
-    "maths": [
-      {
-        "type": "TARGET_LEVEL",
-        "formula": "RATIO",
-        "condition": 4,
-        "value": 45,
-        "dst": "DAMAGE"
-      }
-    ],
-    "damage": {
-      "minValue": -5,
-      "maxValue": 21,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 15,
-        "2": 10,
-        "3": 5,
-        "type": 0
-      }
-    },
-    "elem": [
-      "lightning"
-    ]
-  },
-  "SK_LW_CAL_THUN_S_1_INIT": {
-    "effects": [],
-    "dataId": "SK_LW_CAL_THUN_S_1_INIT",
-    "type": "skill",
-    "names": {
-      "en": "ハイト高サンダー"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 8
-    },
-    "count": 6,
-    "maxLevel": 20,
-    "range": {
-      "h": 5,
-      "l": 4,
-      "s": 1
-    },
-    "based": "magic",
-    "maths": [
-      {
-        "type": "HEIGHT",
-        "formula": "CURVE",
-        "condition": 15,
-        "value": -80,
-        "dst": "DAMAGE"
-      }
-    ],
-    "damage": {
-      "minValue": 75,
-      "maxValue": 101,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 15,
-        "2": 10,
-        "3": 5,
-        "type": 0
-      }
-    },
-    "elem": [
-      "lightning"
-    ]
-  },
-  "SK_LW_CAL_THUN_S_4": {
-    "effects": [],
-    "dataId": "SK_LW_CAL_THUN_S_4",
-    "type": "skill",
-    "names": {
-      "en": "レベル4サンダラ"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 18
-    },
-    "count": 5,
-    "maxLevel": 20,
-    "range": {
-      "h": 5,
-      "l": 4,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 1
-    },
-    "maths": [
-      {
-        "type": "TARGET_LEVEL",
-        "formula": "RATIO",
-        "condition": 4,
-        "value": 30,
-        "dst": "DAMAGE"
-      }
-    ],
-    "damage": {
-      "minValue": -40,
-      "maxValue": -14,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 15,
-        "2": 10,
-        "3": 5,
-        "type": 0
-      }
-    },
-    "elem": [
-      "lightning"
     ]
   },
   "SK_BTL_INV_DOOM2": {

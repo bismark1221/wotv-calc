@@ -1524,7 +1524,7 @@
           "add_self_buff_lvmax": "SK_VC_LW_SCAL_PMAX"
         },
         {
-          "buff_cond": "VLC_STAFF",
+          "buff_cond": "VLC_S_STAFF",
           "self_buff": "SK_VC_LW_SCAL_PVA"
         }
       ],
@@ -1626,7 +1626,7 @@
           "add_self_buff_lvmax": "SK_VC_LW_LVAT_PMAX"
         },
         {
-          "buff_cond": "VLC_SWORD",
+          "buff_cond": "VLC_S_SWORD",
           "self_buff": "SK_VC_LW_LVAT_PVA"
         }
       ],
@@ -1679,7 +1679,7 @@
           "add_self_buff_lvmax": "SK_VC_LW_HLNA_PMAX"
         },
         {
-          "buff_cond": "VLC_STAFF",
+          "buff_cond": "VLC_S_STAFF",
           "self_buff": "SK_VC_LW_HLNA_PVA"
         }
       ],
@@ -1839,7 +1839,7 @@
           "add_self_buff_lvmax": "SK_VC_LW_RAMD_PMAX"
         },
         {
-          "buff_cond": "VLC_LANCE",
+          "buff_cond": "VLC_S_LANCE",
           "self_buff": "SK_VC_LW_RAMD_PVA"
         }
       ],

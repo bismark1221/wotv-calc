@@ -86,6 +86,31 @@
       ]
     },
     {
+      "iname": "VLC_S_SWORD",
+      "jobs": [
+        "JB_LW_WAR_FIRE",
+        "JB_LW_KNT_FIRE",
+        "JB_LW_PLD_FIRE",
+        "JB_LW_MGK_FIRE",
+        "JB_LW_RDM_FIRE",
+        "JB_LW_GLMS",
+        "JB_LW_WAR",
+        "JB_FFT_RAMZ",
+        "JB_FFT_ORND",
+        "JB_FFT_GFGR",
+        "JB_FF1_WROL",
+        "JB_FFT_AGRA",
+        "JB_FFT_DELT",
+        "JB_LW_MKN_FIRE",
+        "JB_FF4_CECL",
+        "JB_FF14_TNCR",
+        "JB_FF10_TIDU",
+        "JB_LW_MONT_01",
+        "JB_LW_DEAN",
+        "JB_LW_CRLT"
+      ]
+    },
+    {
       "iname": "VLC_LSWO",
       "mainjobs": [
         "JB_LW_SWN_FIRE",
@@ -104,18 +129,27 @@
         "JB_LW_STRN",
         "JB_LW_MSW_FIRE",
         "JB_FF10_ARON",
-        "JB_FF7_CLUD",
-        "JB_LW_SWN_EX_M",
-        "JB_LW_RAIN_M",
-        "JB_LW_STRN_01_M",
-        "JB_LW_MSW_EX_M",
-        "JB_FF10_ARON_M",
-        "JB_FF7_CLUD_M"
+        "JB_FF7_CLUD"
       ]
     },
     {
       "iname": "VLC_STAFF",
       "mainjobs": [
+        "JB_LW_WHM_FIRE",
+        "JB_LW_BLM_FIRE",
+        "JB_LW_GRM_FIRE",
+        "JB_LW_TIM_FIRE",
+        "JB_FF14_YSTL",
+        "JB_LW_MST_FIRE",
+        "JB_LW_SAKR",
+        "JB_FF10_YUNA",
+        "JB_LW_WIZ",
+        "JB_FF7_AERT"
+      ]
+    },
+    {
+      "iname": "VLC_S_STAFF",
+      "jobs": [
         "JB_LW_WHM_FIRE",
         "JB_LW_BLM_FIRE",
         "JB_LW_GRM_FIRE",
@@ -139,6 +173,16 @@
       ]
     },
     {
+      "iname": "VLC_S_LANCE",
+      "jobs": [
+        "JB_LW_LAN_FIRE",
+        "JB_LW_DRG_FIRE",
+        "JB_LW_GRSR",
+        "JB_FF4_KAIN",
+        "JB_NIER_N9TS"
+      ]
+    },
+    {
       "iname": "VLC_JSWORD",
       "mainjobs": [
         "JB_LW_SAM_FIRE",
@@ -152,9 +196,7 @@
         "JB_LW_SAM_FIRE",
         "JB_LW_LSWL",
         "JB_NIER_N2TB",
-        "JB_LW_SAM_EX_M",
-        "JB_LW_LSWL_M",
-        "JB_NIER_N2TB_M"
+        "JB_LW_MSM_FIRE"
       ]
     },
     {
@@ -172,10 +214,7 @@
         "JB_LW_CLR_FIRE",
         "JB_LW_CAL_FIRE",
         "JB_LW_MMC_FIRE",
-        "JB_LW_GRSR_01",
-        "JB_LW_CLR_EX_M",
-        "JB_LW_MMC_EX_M",
-        "JB_LW_GRSR_01_M"
+        "JB_LW_GRSR_01"
       ]
     },
     {

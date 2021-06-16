@@ -2839,7 +2839,7 @@
       "ko": "비룡 표식",
       "zh": "飛龍纏身"
     },
-    "target": "all",
+    "target": "self",
     "cost": {
       "type": "TP",
       "value": 17
@@ -2964,7 +2964,7 @@
       "en": "Calamity Hazard",
       "fr": "Fléau dangereux",
       "de": "Katastrophales Unheil",
-      "es": "Desastre peligro",
+      "es": "Calamidad peligro",
       "ko": "캘리미티 해저드",
       "zh": "災禍災厄"
     },
@@ -10407,7 +10407,7 @@
       "en": "Calamity Guard",
       "fr": "Anti-fléau",
       "de": "Kalamitätenschutz",
-      "es": "Antidesastres",
+      "es": "Guardia calamitosa",
       "ko": "재앙 방어",
       "zh": "反制災禍"
     },
@@ -15408,7 +15408,7 @@
         "minValue": -150,
         "maxValue": -350,
         "calcType": "fixe",
-        "turn": 3,
+        "turn": 4,
         "target": "selfSide",
         "timing": "SKILL_AFTER"
       }
@@ -18732,7 +18732,7 @@
         "minValue": -150,
         "maxValue": -350,
         "calcType": "fixe",
-        "turn": 3,
+        "turn": 4,
         "target": "selfSide",
         "timing": "SKILL_AFTER"
       }
@@ -21388,7 +21388,7 @@
         "minValue": -150,
         "maxValue": -350,
         "calcType": "fixe",
-        "turn": 3,
+        "turn": 4,
         "target": "self",
         "timing": "SKILL_AFTER"
       }
@@ -29889,6 +29889,154 @@
       "s": 1
     }
   },
+  "SK_FF1_EC_WROL_C_01": {
+    "effects": [],
+    "dataId": "SK_FF1_EC_WROL_C_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "Invincible Shield Enhancement",
+      "fr": "Améliorer Bouclier invincible",
+      "de": "Unbesiegbarer Schild (verstärkt)",
+      "es": "Mejorar Escudo invencible",
+      "ko": "무적의 방패 강화",
+      "zh": "無敵護盾強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_FF1_EC_WROL_C_02": {
+    "effects": [],
+    "dataId": "SK_FF1_EC_WROL_C_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "Breath of Life Enhancement",
+      "fr": "Améliorer Souffle de vie",
+      "de": "Elektrolader (verstärkt)",
+      "es": "Mejorar Soplo de vida",
+      "ko": "생명의 숨결 강화",
+      "zh": "生命之息強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_FF1_EC_WROL_A_01": {
+    "effects": [
+      {
+        "type": "REGEN_ATK",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "percent",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF1_EC_WROL_A_01",
+    "type": "skill",
+    "names": {
+      "en": "Shining Sword",
+      "fr": "Épée étincelante",
+      "de": "Strahlklinge",
+      "es": "Espada luminosa",
+      "ko": "빛나는 검",
+      "zh": "光輝之劍"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 29
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 10,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF1_EC_WROL_C_01B": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_GENERAL",
+        "minValue": 15,
+        "maxValue": 35,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF1_EC_WROL_C_01B",
+    "type": "skill",
+    "names": {
+      "en": "Invincible Shield II",
+      "fr": "Bouclier invincible II",
+      "de": "Unbesiegbarer Schild II",
+      "es": "Escudo invencible II",
+      "ko": "무적의 방패 II",
+      "zh": "無敵護盾II"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    }
+  },
+  "SK_FF1_EC_WROL_C_02B": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 30,
+        "maxValue": 60,
+        "calcType": "percent",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF1_EC_WROL_C_02B",
+    "type": "skill",
+    "names": {
+      "en": "Breath of Life II",
+      "fr": "Souffle de vie II",
+      "de": "Elektrolader II",
+      "es": "Soplo de vida II",
+      "ko": "생명의 숨결 II",
+      "zh": "生命之息II"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
   "SK_LB_LW_QILF": {
     "effects": [
       {
@@ -31744,7 +31892,7 @@
       "en": "Calamity Guard",
       "fr": "Anti-fléau",
       "de": "Kalamitätenschutz",
-      "es": "Antidesastres",
+      "es": "Guardia calamitosa",
       "ko": "재앙 방어",
       "zh": "反制災禍"
     },
@@ -33179,7 +33327,7 @@
       "en": "Level 4 to Level 3",
       "fr": "Niv. 4 à niv. 3",
       "de": "Stufe 4 zu Stufe 3",
-      "es": "4A→3A",
+      "es": "Nv. 4→Nv. 3",
       "ko": "4레벨을 3레벨로",
       "zh": "4級轉為3級"
     },
@@ -33422,7 +33570,7 @@
       "en": "Level 4 Waterga",
       "fr": "Eau X niv. 4",
       "de": "Stufe 4 Aquaga",
-      "es": "Aqua++ 4A",
+      "es": "Aqua++ Nv. 4",
       "ko": "4레벨 워터가",
       "zh": "4級大流水"
     },
@@ -33527,7 +33675,7 @@
       "en": "Level 4 Watera",
       "fr": "Eau + niv.4",
       "de": "Stufe 4 Aquara",
-      "es": "Aqua+ 4A",
+      "es": "Aqua+ Nv. 4",
       "ko": "4레벨 워터라",
       "zh": "4級中流水"
     },
@@ -33920,7 +34068,7 @@
       "en": "Level 3 Waterga",
       "fr": "Eau X niv. 3",
       "de": "Stufe 3 Aquaga",
-      "es": "Aqua++ 3A",
+      "es": "Aqua++ Nv. 3",
       "ko": "3레벨 워터가",
       "zh": "3級大流水"
     },
@@ -33975,7 +34123,7 @@
       "en": "Level 3 Watera",
       "fr": "Eau + niv.3",
       "de": "Stufe 3 Aquara",
-      "es": "Aqua+ 3A",
+      "es": "Aqua+ Nv. 3",
       "ko": "3레벨 워터라",
       "zh": "3級中流水"
     },
@@ -35075,7 +35223,7 @@
       "en": "Level 3 Waterga",
       "fr": "Eau X niv. 3",
       "de": "Stufe 3 Aquaga",
-      "es": "Aqua++ 3A",
+      "es": "Aqua++ Nv. 3",
       "ko": "3레벨 워터가",
       "zh": "3級大流水"
     },
@@ -50647,7 +50795,7 @@
         "minValue": -150,
         "maxValue": -350,
         "calcType": "fixe",
-        "turn": 3,
+        "turn": 4,
         "target": "self",
         "timing": "SKILL_AFTER"
       }
@@ -51568,7 +51716,7 @@
         "minValue": -150,
         "maxValue": -350,
         "calcType": "fixe",
-        "turn": 3,
+        "turn": 4,
         "target": "selfSide",
         "timing": "SKILL_AFTER"
       },
@@ -52305,7 +52453,7 @@
         "minValue": -150,
         "maxValue": -350,
         "calcType": "fixe",
-        "turn": 3,
+        "turn": 4,
         "target": "self",
         "timing": "SKILL_AFTER"
       }
@@ -52554,6 +52702,270 @@
     },
     "target": "self",
     "maxLevel": 20
+  },
+  "SK_LB_LW_THLA_01": {
+    "effects": [
+      {
+        "type": "MASS_DISPEL",
+        "calcType": "buffs",
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "HASTE"
+        ],
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "CT",
+        "minValue": 100,
+        "maxValue": 250,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_THLA_01",
+    "type": "limit",
+    "names": {
+      "en": "Bombardment of Love",
+      "fr": "Bombardamour",
+      "de": "Liebesbombardement",
+      "es": "Bombardeo de amor",
+      "ko": "내 사랑을 당신에게",
+      "zh": "我全部的愛獻於你"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 5,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_MA_LW_THLA_01": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "ICE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "ICE_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_THLA_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_PSI_C_01": {
+    "effects": [],
+    "dataId": "SK_LW_EC_PSI_C_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "Twin Chi Rupture Enhancement",
+      "fr": "Améliorer Rupture de Chi double",
+      "de": "Doppel-Qi-Expansion (verstärkt)",
+      "es": "Mejorar Ruptura de chi gemelo",
+      "ko": "쌍기팽격 강화",
+      "zh": "雙氣膨擊強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_PSI_C_02": {
+    "effects": [],
+    "dataId": "SK_LW_EC_PSI_C_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "Chi Shot Enhancement",
+      "fr": "Améliorer Tir de Chi",
+      "de": "Qi-Schuss (verstärkt)",
+      "es": "Mejorar Tiro de chi",
+      "ko": "기탄 강화",
+      "zh": "氣彈強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_PSI_A_01": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_EC_PSI_A_01",
+    "type": "skill",
+    "names": {
+      "en": "Cross Discharge",
+      "fr": "Décharge croisée",
+      "de": "Kreuzstrahl",
+      "es": "Descarga cruzada",
+      "ko": "상기십자충",
+      "zh": "想氣十字衝"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 30
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_EC_PSI_C_01B": {
+    "effects": [],
+    "dataId": "SK_LW_EC_PSI_C_01B",
+    "type": "skill",
+    "names": {
+      "en": "Twin Chi Rupture+",
+      "fr": "Rupture de Chi double +",
+      "de": "Doppel-Qi-Expansion +",
+      "es": "Ruptura de chi gemelo+",
+      "ko": "강화된 쌍기팽격",
+      "zh": "雙氣膨擊·改"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 40
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 10,
+      "w": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 105,
+      "maxValue": 145,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_EC_PSI_C_02B": {
+    "effects": [],
+    "dataId": "SK_LW_EC_PSI_C_02B",
+    "type": "skill",
+    "names": {
+      "en": "Chi Supershot",
+      "fr": "Tir précis de Chi",
+      "de": "Qi-Superschuss",
+      "es": "Supertiro de chi",
+      "ko": "초기탄",
+      "zh": "超氣彈"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 12
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1,
+      "line": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
   },
   "SK_LW_CLR_ATK_100": {
     "effects": [],
@@ -67068,6 +67480,25 @@
     "pierce": null,
     "ctbreak": null
   },
+  "BUFF_WRMC_35": {
+    "effects": [
+      {
+        "type": "CRITIC_EVADE",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_WRMC_35",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
   "BUFF_WRMC_20": {
     "effects": [
       {
@@ -67222,6 +67653,25 @@
     "pierce": null,
     "ctbreak": null
   },
+  "BUFF_WRMC_38": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_WRMC_38",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
   "BUFF_WRMC_28": {
     "effects": [
       {
@@ -67300,6 +67750,63 @@
     "pierce": null,
     "ctbreak": null
   },
+  "BUFF_WRMC_34": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_WRMC_34",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_WRMC_36": {
+    "effects": [
+      {
+        "type": "CRITIC_EVADE",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_WRMC_36",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_WRMC_37": {
+    "effects": [
+      {
+        "type": "CRITIC_EVADE",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_WRMC_37",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
   "BUFF_WRMC_32": {
     "effects": [
       {
@@ -67330,6 +67837,63 @@
       }
     ],
     "dataId": "BUFF_WRMC_33",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_WRMC_39": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_WRMC_39",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_WRMC_40": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_WRMC_40",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_WRMC_41": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_WRMC_41",
     "type": "buff",
     "count": null,
     "maxLevel": null,
@@ -105684,7 +106248,7 @@
         "minValue": -150,
         "maxValue": -350,
         "calcType": "fixe",
-        "turn": 3,
+        "turn": 4,
         "target": "self",
         "timing": "SKILL_AFTER"
       }
@@ -106317,6 +106881,41 @@
     },
     "count": 1,
     "maxLevel": 20
+  },
+  "SK_CLT_LW_THLA_01_1_1": {
+    "effects": [
+      {
+        "type": "HP_COST",
+        "value": 20,
+        "calcType": "percent",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "MAGIC_EVADE",
+        "calcType": "apply",
+        "rate": 200,
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_THLA_01_1_1",
+    "type": "skill",
+    "names": {
+      "en": "Miracle of Love",
+      "fr": "Miracle amoureux",
+      "de": "Wunder der Liebe",
+      "es": "Milagro del amor",
+      "ko": "사랑의 기적",
+      "zh": "愛的奇蹟"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 1
   },
   "SK_GUN_LW_LATH_2_1": {
     "effects": [
@@ -108183,6 +108782,52 @@
       "es": "Brigantina",
       "ko": "두정갑",
       "zh": "鎖子鎧"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF1_SWO_000_1": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF1_SWO_000_1",
+    "type": "support",
+    "names": {
+      "en": "Sword of Light (Light Attack Up)",
+      "fr": "Épée de la lumière (Attaque de lumière ↑)",
+      "de": "Schwert des Lichts (Lichtangriff-Erhöhung)",
+      "es": "Espada de la luz (ataque de luz↑)",
+      "ko": "빛의 검(빛속성 공격력 증가)",
+      "zh": "光明之劍（光屬性攻擊UP）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF1_SWO_000_5": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF1_SWO_000_5",
+    "type": "support",
+    "names": {
+      "en": "Sword of Light (Light Attack Up)",
+      "fr": "Épée de la lumière (Attaque de lumière ↑)",
+      "de": "Schwert des Lichts (Lichtangriff-Erhöhung)",
+      "es": "Espada de la luz (ataque de luz↑)",
+      "ko": "빛의 검(빛속성 공격력 증가)",
+      "zh": "光明之劍（光屬性攻擊UP）"
     },
     "target": "self",
     "maxLevel": 50
@@ -119763,6 +120408,52 @@
     "target": "self",
     "maxLevel": 80
   },
+  "SK_BTL_RES_MAGIC_1_80_U_KISO": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 1,
+        "maxValue": 80,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_RES_MAGIC_1_80_U_KISO",
+    "type": "support",
+    "names": {
+      "en": "Magic Res 1-80 Up (Base)",
+      "fr": "Rés magique ↑ 1 - 80 (base)",
+      "de": "Magieresistenz erhöht (1 bis 80, Basis)",
+      "es": "Res. mágica 1-80↑ (Base)",
+      "ko": "마법 저항력 1-80 증가(기초)",
+      "zh": "提升魔法耐性1-80（基礎）"
+    },
+    "target": "self",
+    "maxLevel": 80
+  },
+  "SK_BTL_RES_STOP_1_100_D2": {
+    "effects": [
+      {
+        "type": "STOP_RES",
+        "minValue": -1,
+        "maxValue": -100,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_RES_STOP_1_100_D2",
+    "type": "support",
+    "names": {
+      "en": "Status Ailment [Stop] Res Down (Base)",
+      "fr": "Rés à l'altération d'état [Stop] ↓ (Base)",
+      "de": "Zustandsresistenz gegen „Stopp“ reduziert (Basis)",
+      "es": "Res. paro↓ (base)",
+      "ko": "▼상태이상[스톱] 저항력 감소(기초)",
+      "zh": "▼降低異常狀態【停止】耐性（基礎）"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
   "SK_FF14BOSS_ATK": {
     "effects": [],
     "dataId": "SK_FF14BOSS_ATK",
@@ -120972,29 +121663,6 @@
       "value": 4,
       "dir": 1
     }
-  },
-  "SK_BTL_RES_MAGIC_1_80_U_KISO": {
-    "effects": [
-      {
-        "type": "MAGIC_RES",
-        "minValue": 1,
-        "maxValue": 80,
-        "calcType": "resistance",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_BTL_RES_MAGIC_1_80_U_KISO",
-    "type": "support",
-    "names": {
-      "en": "Magic Res 1-80 Up (Base)",
-      "fr": "Rés magique ↑ 1 - 80 (base)",
-      "de": "Magieresistenz erhöht (1 bis 80, Basis)",
-      "es": "Res. mágica 1-80↑ (Base)",
-      "ko": "마법 저항력 1-80 증가(기초)",
-      "zh": "提升魔法耐性1-80（基礎）"
-    },
-    "target": "self",
-    "maxLevel": 80
   },
   "SK_ADAM_M_6": {
     "effects": [],
@@ -131058,53 +131726,6 @@
     },
     "target": "target",
     "maxLevel": 1
-  },
-  "SK_BTL_RATK_1-100_D": {
-    "effects": [
-      {
-        "type": "AOE_RES",
-        "minValue": -1,
-        "maxValue": -100,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_BTL_RATK_1-100_D",
-    "type": "support",
-    "names": {
-      "en": "Area Attack Res 1-100 Down",
-      "fr": "Rés aux attaques de zone ↓ 1 - 100",
-      "de": "Bereichangriffsresistenz reduziert (1 bis 100)",
-      "es": "Res. ataque de zona 1-100↓",
-      "ko": "▼범위 공격 저항력 1-100 감소",
-      "zh": "▼降低範圍攻擊耐性1-100"
-    },
-    "target": "self",
-    "maxLevel": 100
-  },
-  "SK_BTL_SILENCE_1-100_U": {
-    "effects": [
-      {
-        "type": "SILENCE_ATK",
-        "minValue": 1,
-        "maxValue": 100,
-        "calcType": "fixe",
-        "rate": 200,
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_BTL_SILENCE_1-100_U",
-    "type": "support",
-    "names": {
-      "en": "Status Ailment [Silence] Chance 1-100 Up",
-      "fr": "Chance d'altération d'état [Silence] ↑ 1 - 100",
-      "de": "Chance auf Zustandsveränderung „Stille“ erhöht (1 bis 100)",
-      "es": "Probabilidad de estado alterado [silencio] 1-100↑",
-      "ko": "상태이상[침묵] 확률 1-100 증가",
-      "zh": "提升異常狀態【沉默】機率1-100"
-    },
-    "target": "self",
-    "maxLevel": 100
   },
   "SK_BTL_RES_OTTHUNDER_1_80_U": {
     "effects": [

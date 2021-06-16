@@ -2449,12 +2449,32 @@
             "value": "생명의 숨결"
         },
         {
+            "key": "SK_FF1_EC_WROL_C_02",
+            "value": "생명의 숨결 강화"
+        },
+        {
+            "key": "SK_FF1_EC_WROL_C_02B",
+            "value": "생명의 숨결 II"
+        },
+        {
             "key": "SK_FF1_WROL_M_3",
             "value": "무적의 방패"
         },
         {
+            "key": "SK_FF1_EC_WROL_C_01",
+            "value": "무적의 방패 강화"
+        },
+        {
+            "key": "SK_FF1_EC_WROL_C_01B",
+            "value": "무적의 방패 II"
+        },
+        {
             "key": "SK_FF1_WROL_S_1",
             "value": "이동 공격"
+        },
+        {
+            "key": "SK_FF1_EC_WROL_A_01",
+            "value": "빛나는 검"
         },
         {
             "key": "SK_FF1_WROL_S_2",
@@ -6669,6 +6689,10 @@
             "value": "그림자 장미"
         },
         {
+            "key": "SK_LB_LW_THLA_01",
+            "value": "내 사랑을 당신에게"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "지옥의 화염"
         },
@@ -7501,6 +7525,26 @@
             "value": "굳건한 마음"
         },
         {
+            "key": "SK_LW_EC_PSI_A_01",
+            "value": "상기십자충"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_01",
+            "value": "쌍기팽격 강화"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_01B",
+            "value": "강화된 쌍기팽격"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_02",
+            "value": "기탄 강화"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_02B",
+            "value": "초기탄"
+        },
+        {
             "key": "SK_US_POTION",
             "value": "포션"
         },
@@ -8069,6 +8113,10 @@
             "value": "마스터 어빌리티"
         },
         {
+            "key": "SK_MA_LW_THLA_01",
+            "value": "마스터 어빌리티"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "베기 공격력+2"
         },
@@ -8179,6 +8227,26 @@
         {
             "key": "SK_LW_PIERCEDEF_5",
             "value": "방어 관통률+20"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_1",
+            "value": "정신 관통률+2"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_2",
+            "value": "정신 관통률+3"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_3",
+            "value": "정신 관통률+5"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_4",
+            "value": "정신 관통률+10"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_5",
+            "value": "정신 관통률+20"
         },
         {
             "key": "SK_LW_DF_SINGL_1",
@@ -8541,50 +8609,6 @@
             "value": "침식의 문장"
         },
         {
-            "key": "SK_LW_ARM_028_1",
-            "value": "두정갑"
-        },
-        {
-            "key": "SK_LW_ARM_028_2",
-            "value": "두정갑"
-        },
-        {
-            "key": "SK_LW_ARM_028_3",
-            "value": "두정갑"
-        },
-        {
-            "key": "SK_LW_ARM_028_4",
-            "value": "두정갑"
-        },
-        {
-            "key": "SK_LW_ARM_028_5",
-            "value": "두정갑"
-        },
-        {
-            "key": "SK_LW_ROD_006_1",
-            "value": "사이프러스 파일(혼란 효과)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_1",
-            "value": "사이프러스 파일(마법 저항력 관통)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_2",
-            "value": "사이프러스 파일(마법 저항력 관통)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_3",
-            "value": "사이프러스 파일(마법 저항력 관통)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_4",
-            "value": "사이프러스 파일(마법 저항력 관통)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_5",
-            "value": "사이프러스 파일(마법 저항력 관통)"
-        },
-        {
             "key": "SK_FF10_ROD_000_1",
             "value": "마기스텔 로드(소환 게이지 획득량 증가)"
         },
@@ -8643,6 +8667,58 @@
         {
             "key": "SK_NIER_ACC_000_5",
             "value": "포드 153"
+        },
+        {
+            "key": "SK_LW_ARM_028_1",
+            "value": "두정갑"
+        },
+        {
+            "key": "SK_LW_ARM_028_2",
+            "value": "두정갑"
+        },
+        {
+            "key": "SK_LW_ARM_028_3",
+            "value": "두정갑"
+        },
+        {
+            "key": "SK_LW_ARM_028_4",
+            "value": "두정갑"
+        },
+        {
+            "key": "SK_LW_ARM_028_5",
+            "value": "두정갑"
+        },
+        {
+            "key": "SK_LW_ROD_006_1",
+            "value": "사이프러스 파일(혼란 효과)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_1",
+            "value": "사이프러스 파일(마법 저항력 관통)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_2",
+            "value": "사이프러스 파일(마법 저항력 관통)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_3",
+            "value": "사이프러스 파일(마법 저항력 관통)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_4",
+            "value": "사이프러스 파일(마법 저항력 관통)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_5",
+            "value": "사이프러스 파일(마법 저항력 관통)"
+        },
+        {
+            "key": "SK_FF1_SWO_000_1",
+            "value": "빛의 검(빛속성 공격력 증가)"
+        },
+        {
+            "key": "SK_FF1_SWO_000_5",
+            "value": "빛의 검(빛속성 공격력 증가)"
         },
         {
             "key": "SK_ACC_LW_MONT_1_1",
@@ -8915,6 +8991,10 @@
         {
             "key": "SK_ACC_LW_HLNA_01_1",
             "value": "사라지지 않는 친구의 가호"
+        },
+        {
+            "key": "SK_CLT_LW_THLA_01_1_1",
+            "value": "사랑의 기적"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -13695,6 +13775,14 @@
         {
             "key": "SK_BTL_DONAC_1-100_D",
             "value": "상태이상[돈액트] 확률 1-100 감소"
+        },
+        {
+            "key": "SK_BTL_FROST_1-100_U",
+            "value": "상태이상[동상] 확률 1-100 증가"
+        },
+        {
+            "key": "SK_BTL_FROST_1-100_D",
+            "value": "상태이상[동상] 확률 1-100 감소"
         },
         {
             "key": "SK_BTL_DEFPIERCE_1-100_U",

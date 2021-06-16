@@ -1941,6 +1941,11 @@
       "value": 1
     },
     {
+      "iname": "player_scout_list_max",
+      "type": 0,
+      "value": 30
+    },
+    {
       "iname": "first_payment_iname",
       "type": 2,
       "value": "FIRST_BONUS_00000"
@@ -1954,6 +1959,16 @@
       "iname": "visioncard_medal",
       "type": 2,
       "value": "IT_VC_EXCHANGE_01"
+    },
+    {
+      "iname": "questresultfaith",
+      "type": 0,
+      "value": 30
+    },
+    {
+      "iname": "guild_raid_open",
+      "type": 0,
+      "value": 0
     }
   ]
 }

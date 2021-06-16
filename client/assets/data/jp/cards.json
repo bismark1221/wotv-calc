@@ -3185,7 +3185,7 @@
         "classic": "SK_VC_LW_SCAL_PVA",
         "cond": [
           {
-            "type": "mainJob",
+            "type": "job",
             "items": [
               "JB_LW_WHM_FIRE",
               "JB_LW_BLM_FIRE",
@@ -3427,7 +3427,7 @@
         "classic": "SK_VC_LW_LVAT_PVA",
         "cond": [
           {
-            "type": "mainJob",
+            "type": "job",
             "items": [
               "JB_LW_WAR_FIRE",
               "JB_LW_KNT_FIRE",
@@ -3574,7 +3574,7 @@
         "classic": "SK_VC_LW_HLNA_PVA",
         "cond": [
           {
-            "type": "mainJob",
+            "type": "job",
             "items": [
               "JB_LW_WHM_FIRE",
               "JB_LW_BLM_FIRE",
@@ -3822,13 +3822,7 @@
               "JB_LW_STRN",
               "JB_LW_MSW_FIRE",
               "JB_FF10_ARON",
-              "JB_FF7_CLUD",
-              "JB_LW_SWN_EX_M",
-              "JB_LW_RAIN_M",
-              "JB_LW_STRN_01_M",
-              "JB_LW_MSW_EX_M",
-              "JB_FF10_ARON_M",
-              "JB_FF7_CLUD_M"
+              "JB_FF7_CLUD"
             ]
           }
         ]
@@ -3946,7 +3940,7 @@
         "classic": "SK_VC_LW_RAMD_PVA",
         "cond": [
           {
-            "type": "mainJob",
+            "type": "job",
             "items": [
               "JB_LW_LAN_FIRE",
               "JB_LW_DRG_FIRE",
@@ -4423,9 +4417,7 @@
               "JB_LW_SAM_FIRE",
               "JB_LW_LSWL",
               "JB_NIER_N2TB",
-              "JB_LW_SAM_EX_M",
-              "JB_LW_LSWL_M",
-              "JB_NIER_N2TB_M"
+              "JB_LW_MSM_FIRE"
             ]
           }
         ]
@@ -4548,10 +4540,7 @@
               "JB_LW_CLR_FIRE",
               "JB_LW_CAL_FIRE",
               "JB_LW_MMC_FIRE",
-              "JB_LW_GRSR_01",
-              "JB_LW_CLR_EX_M",
-              "JB_LW_MMC_EX_M",
-              "JB_LW_GRSR_01_M"
+              "JB_LW_GRSR_01"
             ]
           }
         ]

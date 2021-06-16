@@ -29647,7 +29647,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ"
+      "JB_LW_WIZ",
+      "JB_LW_PSI_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30318,7 +30319,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ"
+      "JB_LW_WIZ",
+      "JB_LW_PSI_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32088,7 +32090,8 @@
       "JB_LW_MACR_M",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_HLNA_01_M"
+      "JB_LW_HLNA_01_M",
+      "JB_LW_THLA_01_M"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33018,6 +33021,7 @@
       "JB_FFT_AGRA",
       "JB_FF4_CECL",
       "JB_LW_DEAN",
+      "JB_LW_MSW_FIRE",
       "JB_FF10_ARON",
       "JB_LW_MONT_01"
     ],
@@ -35125,6 +35129,96 @@
       "unitId": "UN_LW_P_HLNA_01"
     },
     "releaseDate": "26/05/2021"
+  },
+  "AF_CLT_LW_THLA_01_1": {
+    "names": {
+      "en": "Dreamy Dress",
+      "fr": "Robe adorée",
+      "de": "Lieblingskleid",
+      "es": "Vestido ideal",
+      "ko": "사랑스러운 드레스",
+      "zh": "本命禮裙"
+    },
+    "slug": "dreamy-dress",
+    "stats": {
+      "HP": {
+        "min": 410,
+        "max": 410
+      },
+      "DEF": {
+        "min": 10,
+        "max": 10
+      },
+      "SPR": {
+        "min": 6,
+        "max": 6
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_CLT_LW_THLA_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST",
+          "de": "ARTIFACT_TRUST",
+          "es": "ARTIFACT_TRUST",
+          "ko": "ARTIFACT_TRUST",
+          "zh": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_CLT_LW_THLA_01_1_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_017",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_FINA",
+      "JB_LW_MST_FIRE",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_YUNA",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_THLA_01"
+    },
+    "releaseDate": "16/06/2021"
   },
   "AF_SWO_LW_MONT_2": {
     "names": {
@@ -39775,6 +39869,73 @@
       "type": "Unknown"
     },
     "releaseDate": "01/01/1970"
+  },
+  "AF_GLO_LW_THLA_01_2": {
+    "names": {
+      "en": "Brownie Gloves",
+      "fr": "Gants marrons",
+      "de": "Braune Handschühchen",
+      "es": "Guantes chocolate",
+      "ko": "향기 나는 장갑",
+      "zh": "棕精靈手套"
+    },
+    "slug": "brownie-gloves",
+    "stats": {
+      "HP": {
+        "min": 15,
+        "max": 293
+      },
+      "ATK": {
+        "min": 2,
+        "max": 30
+      },
+      "MAG": {
+        "min": 14,
+        "max": 270
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "GLOVE",
+    "dataId": "AF_GLO_LW_THLA_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50",
+          "de": "ARTIFACT_50",
+          "es": "ARTIFACT_50",
+          "ko": "ARTIFACT_50",
+          "zh": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_glo_006",
+    "equippableJobs": [
+      "JB_LW_PSI_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "16/06/2021"
   },
   "AF_LOT_LW_RNG_005": {
     "names": {
@@ -50039,5 +50200,382 @@
       "type": "Unknown"
     },
     "releaseDate": "12/05/2021"
+  },
+  "AF_LOT_FF1_SWO_000": {
+    "names": {
+      "en": "Sword of Light",
+      "fr": "Épée de la lumière",
+      "de": "Schwert des Lichts",
+      "es": "Espada de la luz",
+      "ko": "빛의 검",
+      "zh": "光明之劍"
+    },
+    "slug": "sword-of-light-1",
+    "stats": {
+      "HP": {
+        "min": 3,
+        "max": 64
+      },
+      "ATK": {
+        "min": 8,
+        "max": 152
+      },
+      "MAG": {
+        "min": 6,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 15
+      },
+      "CRITIC_RATE": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_FF1_SWO_000",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "dataId": "AFGROW_ASS_50",
+        "names": {
+          "en": "Assault",
+          "fr": "Assaut",
+          "de": "Angriff",
+          "es": "Fuerte",
+          "ko": "어설트",
+          "zh": "突擊"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "dataId": "AFGROW_MAG_50",
+        "names": {
+          "en": "Magic",
+          "fr": "Magie",
+          "de": "Magie",
+          "es": "Mágico",
+          "ko": "매직",
+          "zh": "魔法"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée",
+          "de": "Zielen",
+          "es": "Certero",
+          "ko": "에임",
+          "zh": "瞄準"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_FF1_SWO_000_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF1_SWO_000_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF1_SWO_000_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_SLASH_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF1_SWO_000_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF1_SWO_000_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_SLASH_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF1_SWO_000_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF1_SWO_000_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_SLASH_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF1_SWO_000_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF1_SWO_000_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_SLASH_4_SSR",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF1_SWO_000_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF1_SWO_000_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_SLASH_5_SSR",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF1_SWO_000_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "ff01wpn_swo_000",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU",
+      "JB_LW_MONT_01"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF1_SWO_000": 1,
+        "IT_AF_MAT_SEED_01": 170,
+        "IT_AF_MAT_WOLF": 5,
+        "IT_AF_MAT_SHINE_01": 11,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_FF1_SWO_000": 3,
+        "IT_AF_MAT_SEED_01": 230,
+        "IT_AF_MAT_WOLF": 15,
+        "IT_AF_MAT_SHINE_01": 21,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_FF1_SWO_000": 7,
+        "IT_AF_MAT_SEED_01": 350,
+        "IT_AF_MAT_WOLF": 35,
+        "IT_AF_MAT_SHINE_01": 41,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_FF1_SWO_000": 15,
+        "IT_AF_MAT_SEED_01": 630,
+        "IT_AF_MAT_WOLF": 75,
+        "IT_AF_MAT_SHINE_01": 81,
+        "IT_AF_AW_SWORD": 315
+      },
+      {
+        "IT_AF_FF1_SWO_000": 31,
+        "IT_AF_MAT_SEED_01": 1250,
+        "IT_AF_MAT_WOLF": 155,
+        "IT_AF_MAT_SHINE_01": 161,
+        "IT_AF_AW_SWORD": 535
+      },
+      {
+        "IT_AF_FF1_SWO_000": 63,
+        "IT_AF_MAT_SEED_01": 2570,
+        "IT_AF_MAT_WOLF": 315,
+        "IT_AF_MAT_SHINE_01": 323,
+        "IT_AF_AW_SWORD": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "16/06/2021"
   }
 }

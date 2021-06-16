@@ -37,6 +37,10 @@
             "value": "금전의 방(상급)"
         },
         {
+            "key": "QE_EV_GIL_D4",
+            "value": "금전의 방(최상급)"
+        },
+        {
             "key": "QE_EV_GIL_01",
             "value": "금전의 방(초급)"
         },
@@ -47,6 +51,10 @@
         {
             "key": "QE_EV_GIL_03",
             "value": "금전의 방(상급)"
+        },
+        {
+            "key": "QE_EV_GIL_04",
+            "value": "금전의 방(최상급)"
         },
         {
             "key": "QE_EV_AFEXP_D1",
@@ -2373,6 +2381,10 @@
             "value": "조각 획득: 헬레나(검은 옷의 마녀)"
         },
         {
+            "key": "QE_HA_GL_LW_THLA_01",
+            "value": "조각 획득: 살리아(스윗하트)"
+        },
+        {
             "key": "QE_CH_LW_ZZAN",
             "value": "자잔"
         },
@@ -2829,6 +2841,10 @@
             "value": "헬레나(검은 옷의 마녀)"
         },
         {
+            "key": "QE_CH_LW_THLA_01",
+            "value": "살리아(스윗하트)"
+        },
+        {
             "key": "QE_EV_GL_CDOWN_01_9",
             "value": "카운트다운 퀘스트"
         },
@@ -3089,8 +3105,32 @@
             "value": "FINAL FANTASY I [EX]"
         },
         {
+            "key": "QE_EV_FF1_EX_02",
+            "value": "FINAL FANTASY I [EX 2]"
+        },
+        {
+            "key": "QE_EV_FF1_EX_03",
+            "value": "초고난도 FINAL FANTASY I [EX 1]"
+        },
+        {
+            "key": "QE_EV_FF1_EX_04",
+            "value": "초고난도 FINAL FANTASY I [EX 2]"
+        },
+        {
             "key": "QE_MU_EV_FF1_EX",
             "value": "FINAL FANTASY I [EX]"
+        },
+        {
+            "key": "QE_MU_FF1_EX_02",
+            "value": "FINAL FANTASY I [EX 2]"
+        },
+        {
+            "key": "QE_MU_FF1_EX_03",
+            "value": "초고난도 FINAL FANTASY I [EX 1]"
+        },
+        {
+            "key": "QE_MU_FF1_EX_04",
+            "value": "초고난도 FINAL FANTASY I [EX 2]"
         },
         {
             "key": "QE_EV_WROL_01",
@@ -5473,6 +5513,10 @@
             "value": "레오니스 성 서고"
         },
         {
+            "key": "QE_ARENA_00015",
+            "value": "묘지 III"
+        },
+        {
             "key": "QE_ARENA_GL_00001",
             "value": "밀림"
         },
@@ -5549,6 +5593,10 @@
             "value": "동굴"
         },
         {
+            "key": "QE_GVG_GL_00006",
+            "value": "묘지 III"
+        },
+        {
             "key": "QE_PVP_FRE_0001",
             "value": "평원"
         },
@@ -5617,6 +5665,10 @@
             "value": "유적 IV"
         },
         {
+            "key": "QE_PVP_FRI_0027",
+            "value": "묘지 III"
+        },
+        {
             "key": "QE_PVP_RANK_0001",
             "value": "투기장"
         },
@@ -5647,6 +5699,10 @@
         {
             "key": "QE_PVP_RANK_0008",
             "value": "유적 II"
+        },
+        {
+            "key": "QE_PVP_RANK_0009",
+            "value": "투기장 I"
         },
         {
             "key": "QE_TEST_FOR",
@@ -5743,6 +5799,166 @@
         {
             "key": "QE_GHUNT_004",
             "value": "길드 퀘스트 #4"
+        },
+        {
+            "key": "QE_GHUNT_FF1_1",
+            "value": "FINAL FANTASY I  콜라보 기념 길드 퀘스트"
+        },
+        {
+            "key": "QE_VC_LW_GLEM",
+            "value": "조각 획득: 암벽의 거인-골렘"
+        },
+        {
+            "key": "QE_VC_LW_IFRT",
+            "value": "조각 획득: 맹염의 외침-이프리트"
+        },
+        {
+            "key": "QE_VC_LW_SIRE",
+            "value": "조각 획득: 물에 울려퍼지는 노래-세이렌"
+        },
+        {
+            "key": "QE_VC_LW_RAMU",
+            "value": "조각 획득: 하늘에 울리는 뇌명-라무"
+        },
+        {
+            "key": "QE_VC_LW_SOKYU",
+            "value": "조각 획득: 레오니스 왕국 제2부대-창궁"
+        },
+        {
+            "key": "QE_VC_LW_TRNNG",
+            "value": "조각 획득: 누구보다도 강해지기 위해"
+        },
+        {
+            "key": "QE_VC_LW_MACR",
+            "value": "조각 획득: 혼수품"
+        },
+        {
+            "key": "QE_VC_LW_MURG",
+            "value": "조각 획득: 울려 퍼지는 비명"
+        },
+        {
+            "key": "QE_VC_LW_GRSR",
+            "value": "조각 획득: 설원을 달리다"
+        },
+        {
+            "key": "QE_VC_LW_SHIV",
+            "value": "조각 획득: 모든 것을 얼리는 자-시바"
+        },
+        {
+            "key": "QE_VC_LW_ODIN",
+            "value": "조각 획득: 차원 절단-오딘"
+        },
+        {
+            "key": "QE_VC_LW_TSLP",
+            "value": "조각 획득: 사천열풍-테트라 실피드"
+        },
+        {
+            "key": "QE_VC_LW_THDG",
+            "value": "조각 획득: 맹공의 쌍두룡-투헤드 드래곤"
+        },
+        {
+            "key": "QE_VC_LW_CBVP1",
+            "value": "조각 획득: 덧없는 꽃놀이"
+        },
+        {
+            "key": "QE_VC_LW_DABL",
+            "value": "조각 획득: 몽환마인-디아볼로스"
+        },
+        {
+            "key": "QE_VC_LW_ROBST",
+            "value": "조각 획득: 호른 왕국 제1부대-견뢰"
+        },
+        {
+            "key": "QE_VC_LW_FNRR",
+            "value": "조각 획득: 달그림자 늑대-펜리르"
+        },
+        {
+            "key": "QE_VC_LW_TITN",
+            "value": "조각 획득: 날뛰는 대지-타이탄"
+        },
+        {
+            "key": "QE_VC_LW_VKTR",
+            "value": "조각 획득: 거짓된 가면"
+        },
+        {
+            "key": "QE_VC_LW_AGON",
+            "value": "조각 획득: 파괴하는 강철 인간-아이가이온"
+        },
+        {
+            "key": "QE_VC_LW_GRSR2",
+            "value": "조각 획득: 평온한 시간"
+        },
+        {
+            "key": "QE_VC_LW_LUCA",
+            "value": "조각 획득: 새로운 연구 대상"
+        },
+        {
+            "key": "QE_VC_LW_SCAL",
+            "value": "조각 획득: 밤에 피는 꽃"
+        },
+        {
+            "key": "QE_VC_LW_LVAT",
+            "value": "조각 획득: 수신의 소용돌이-리바이어선"
+        },
+        {
+            "key": "QE_VC_LW_HLNA",
+            "value": "조각 획득: 전장의 검은 장미"
+        },
+        {
+            "key": "QE_VC_LW_TYPN",
+            "value": "조각 획득: 폭풍의 재앙-티폰"
+        },
+        {
+            "key": "QE_VC_LW_RAMD",
+            "value": "조각 획득: 환영을 보는 별읽기"
+        },
+        {
+            "key": "QE_VC_LW_BAHM",
+            "value": "조각 획득: 용왕현현-바하무트"
+        },
+        {
+            "key": "QE_VC_LW_OMEG",
+            "value": "조각 획득: 파멸의 철기사-오메가"
+        },
+        {
+            "key": "QE_VC_LW_ROBB",
+            "value": "조각 획득: 찰나의 섬광"
+        },
+        {
+            "key": "QE_VC_LW_MONT2",
+            "value": "조각 획득: 사자왕 몬트 레오니스"
+        },
+        {
+            "key": "QE_VC_LW_PNIX",
+            "value": "조각 획득: 불꽃의 신조-피닉스"
+        },
+        {
+            "key": "QE_VC_LW_CMLO",
+            "value": "조각 획득: 몽환영웅담"
+        },
+        {
+            "key": "QE_VC_LW_CBCL",
+            "value": "조각 획득: 요마홍옥-카벙클"
+        },
+        {
+            "key": "QE_VC_LW_RAIN",
+            "value": "조각 획득: 영웅들의 해후"
+        },
+        {
+            "key": "QE_VC_GL_LW_ROSEFES",
+            "value": "조각 획득: 장미꽃 아가씨들"
+        },
+        {
+            "key": "QE_VC_GL_LW_ZZAN",
+            "value": "조각 획득: 투표 감사합니다!"
+        },
+        {
+            "key": "QE_VC_GL_LW_HOLYNIGHT",
+            "value": "조각 획득: 프레데리카의 꿈"
+        },
+        {
+            "key": "QE_VC_GL_LW_VALE1",
+            "value": "조각 획득: 전할 수 없는 마음"
         },
         {
             "key": "TW_03_001",

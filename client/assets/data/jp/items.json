@@ -3446,6 +3446,46 @@
     "type": "job_awake_orb",
     "icon": "JB_LW_JEDN"
   },
+  "IT_JB_MM_MSM": {
+    "dataId": "IT_JB_MM_MSM",
+    "names": {
+      "en": "魔刀士の記憶・翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MSM_FIRE"
+  },
+  "IT_JB_MM_MSM_2": {
+    "dataId": "IT_JB_MM_MSM_2",
+    "names": {
+      "en": "魔刀士の記憶・碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MSM_FIRE"
+  },
+  "IT_JB_MM_MSM_3": {
+    "dataId": "IT_JB_MM_MSM_3",
+    "names": {
+      "en": "魔刀士の記憶・紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MSM_FIRE"
+  },
+  "IT_JB_MM_MSM_4": {
+    "dataId": "IT_JB_MM_MSM_4",
+    "names": {
+      "en": "魔刀士の記憶・橘"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MSM_FIRE"
+  },
+  "IT_JB_MM_MSM_5": {
+    "dataId": "IT_JB_MM_MSM_5",
+    "names": {
+      "en": "魔刀士の記憶・緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MSM_FIRE"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -4030,7 +4070,7 @@
   "IT_JBEX_GLOVE": {
     "dataId": "IT_JBEX_GLOVE",
     "names": {
-      "en": "グローブの焦印石"
+      "en": "グローブの焦印石 - Glove-Branded Tablet"
     },
     "type": "compo_job"
   },
@@ -5241,7 +5281,7 @@
   "IT_PI_LW_THLA_01": {
     "dataId": "IT_PI_LW_THLA_01",
     "names": {
-      "en": "サリア（バレンタイン）の欠片"
+      "en": "サリア（バレンタイン）の欠片 - Salire (Sweetheart) Unit Shard"
     },
     "type": "unit_shard"
   },
@@ -5354,6 +5394,13 @@
     "dataId": "IT_PI_LW_JEDN",
     "names": {
       "en": "ジェーダン・ランダルの欠片"
+    },
+    "type": "unit_shard"
+  },
+  "IT_PI_LW_VLUC": {
+    "dataId": "IT_PI_LW_VLUC",
+    "names": {
+      "en": "ヴァルーシュの欠片"
     },
     "type": "unit_shard"
   },
@@ -6166,6 +6213,13 @@
     "dataId": "IT_SP_LW_JEDN",
     "names": {
       "en": "ジェーダン・ランダルの思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_VLUC": {
+    "dataId": "IT_SP_LW_VLUC",
+    "names": {
+      "en": "ヴァルーシュの思珠"
     },
     "type": "exjob_orb"
   },
@@ -7514,7 +7568,7 @@
   "IT_AF_MAT_SEED_01": {
     "dataId": "IT_AF_MAT_SEED_01",
     "names": {
-      "en": "光る種"
+      "en": "光る種 - Glowseeds"
     },
     "type": "compo_equipment"
   },
@@ -7687,6 +7741,14 @@
     },
     "type": "recipe",
     "icon": "AF_LW_KAT_008"
+  },
+  "IT_AF_LW_KAT_011": {
+    "dataId": "IT_AF_LW_KAT_011",
+    "names": {
+      "en": "晴天刀のクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_KAT_011"
   },
   "IT_AF_LW_FIS_001": {
     "dataId": "IT_AF_LW_FIS_001",
@@ -8403,7 +8465,7 @@
   "IT_AF_FF1_SWO_000": {
     "dataId": "IT_AF_FF1_SWO_000",
     "names": {
-      "en": "ソードオブライトのクラフトレシピ"
+      "en": "ソードオブライトのクラフトレシピ - Sword of Light Crafting Recipe"
     },
     "type": "recipe",
     "icon": "AF_FF1_SWO_000"
@@ -9214,6 +9276,14 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_04"
   },
+  "IT_EC_SUMMON_06_02_D": {
+    "dataId": "IT_EC_SUMMON_06_02_D",
+    "names": {
+      "en": "【6月】ユニット召喚メダルB"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_03"
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -9507,7 +9577,7 @@
   "IT_EC_FF1_1_R": {
     "dataId": "IT_EC_FF1_1_R",
     "names": {
-      "en": "【復刻】FFⅠコラボイベントメダル"
+      "en": "【復刻】FFⅠコラボイベントメダル - FFI Reissue Event Medal"
     },
     "type": "medal",
     "icon": "IT_EC_FF1_1"
@@ -9515,7 +9585,7 @@
   "IT_EC_FF1_2_R": {
     "dataId": "IT_EC_FF1_2_R",
     "names": {
-      "en": "【復刻】FFⅠコラボ召喚メダル"
+      "en": "【復刻】FFⅠコラボ召喚メダル - FFI Reissue Summon Medal"
     },
     "type": "medal",
     "icon": "IT_EC_FF1_2"
@@ -10538,6 +10608,22 @@
     },
     "type": "tickets",
     "icon": "IT_US_G_PU_01"
+  },
+  "IT_US_G_PU_VLUC": {
+    "dataId": "IT_US_G_PU_VLUC",
+    "names": {
+      "en": "【ヴァルーシュ】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01"
+  },
+  "IT_US_G_PU_VLUC_10": {
+    "dataId": "IT_US_G_PU_VLUC_10",
+    "names": {
+      "en": "【ヴァルーシュ】ピックアップ10連召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_10"
   },
   "IT_US_SE_JB_MM_01": {
     "dataId": "IT_US_SE_JB_MM_01",
@@ -11571,6 +11657,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_AF_AW_21": {
+    "dataId": "IT_US_SE_AF_AW_21",
+    "names": {
+      "en": "【1500万DL記念】秘伝書×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
     "names": {
@@ -11598,7 +11692,7 @@
   "IT_US_SE_AF_PT_01": {
     "dataId": "IT_US_SE_AF_PT_01",
     "names": {
-      "en": "ドワーフ鎚×10選択召喚券"
+      "en": "ドワーフ鎚×10選択召喚券 - Select Dwarven Hammer x10 Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -12243,6 +12337,22 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_19": {
+    "dataId": "IT_US_SE_JB_05_19",
+    "names": {
+      "en": "【1500万DL記念】スピネル×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_20": {
+    "dataId": "IT_US_SE_JB_04_20",
+    "names": {
+      "en": "【1500万DL記念】シトリン×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -12415,6 +12525,14 @@
     "dataId": "IT_US_SE_JBEX_AF_18",
     "names": {
       "en": "【1.5周年記念】焦印石×300選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_AF_19": {
+    "dataId": "IT_US_SE_JBEX_AF_19",
+    "names": {
+      "en": "【1500万DL記念】焦印石×300選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"

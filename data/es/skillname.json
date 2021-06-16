@@ -1362,7 +1362,7 @@
         },
         {
             "key": "SK_LW_CLR_M_3",
-            "value": "Antidesastres"
+            "value": "Guardia calamitosa"
         },
         {
             "key": "SK_LW_CLR_M_4",
@@ -1402,7 +1402,7 @@
         },
         {
             "key": "SK_LW_CLR_M_3_SUB",
-            "value": "Antidesastres"
+            "value": "Guardia calamitosa"
         },
         {
             "key": "SK_LW_CLR_M_4_SUB",
@@ -2449,12 +2449,32 @@
             "value": "Soplo de vida"
         },
         {
+            "key": "SK_FF1_EC_WROL_C_02",
+            "value": "Mejorar Soplo de vida"
+        },
+        {
+            "key": "SK_FF1_EC_WROL_C_02B",
+            "value": "Soplo de vida II"
+        },
+        {
             "key": "SK_FF1_WROL_M_3",
             "value": "Escudo invencible"
         },
         {
+            "key": "SK_FF1_EC_WROL_C_01",
+            "value": "Mejorar Escudo invencible"
+        },
+        {
+            "key": "SK_FF1_EC_WROL_C_01B",
+            "value": "Escudo invencible II"
+        },
+        {
             "key": "SK_FF1_WROL_S_1",
             "value": "Ataque por turnos"
+        },
+        {
+            "key": "SK_FF1_EC_WROL_A_01",
+            "value": "Espada luminosa"
         },
         {
             "key": "SK_FF1_WROL_S_2",
@@ -2802,11 +2822,11 @@
         },
         {
             "key": "SK_LW_CAL_WATER_M_2",
-            "value": "Aqua++ 4A"
+            "value": "Aqua++ Nv. 4"
         },
         {
             "key": "SK_LW_CAL_WATER_M_2_B",
-            "value": "Aqua++ 3A"
+            "value": "Aqua++ Nv. 3"
         },
         {
             "key": "SK_LW_CAL_SHIN_M_2",
@@ -2918,11 +2938,11 @@
         },
         {
             "key": "SK_LW_CAL_WATER_S_4",
-            "value": "Aqua+ 4A"
+            "value": "Aqua+ Nv. 4"
         },
         {
             "key": "SK_LW_CAL_WATER_S_4_B",
-            "value": "Aqua+ 3A"
+            "value": "Aqua+ Nv. 3"
         },
         {
             "key": "SK_LW_CAL_SHIN_S_4",
@@ -2954,7 +2974,7 @@
         },
         {
             "key": "SK_LW_CAL_P_2",
-            "value": "4A→3A"
+            "value": "Nv. 4→Nv. 3"
         },
         {
             "key": "SK_LW_CAL_M_1_SUB",
@@ -3006,11 +3026,11 @@
         },
         {
             "key": "SK_LW_CAL_WATER_M_2_SUB",
-            "value": "Aqua++ 4A"
+            "value": "Aqua++ Nv. 4"
         },
         {
             "key": "SK_LW_CAL_WATER_M_2_B_SUB",
-            "value": "Aqua++ 3A"
+            "value": "Aqua++ Nv. 3"
         },
         {
             "key": "SK_LW_CAL_SHIN_M_2_SUB",
@@ -6669,6 +6689,10 @@
             "value": "Rosa sombría"
         },
         {
+            "key": "SK_LB_LW_THLA_01",
+            "value": "Bombardeo de amor"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Fuego infernal"
         },
@@ -6982,7 +7006,7 @@
         },
         {
             "key": "SK_LW_EC_SWN_A_01",
-            "value": "Desastre peligro"
+            "value": "Calamidad peligro"
         },
         {
             "key": "SK_LW_EC_SWN_C_01",
@@ -7499,6 +7523,26 @@
         {
             "key": "SK_LW_EC_CLR_C_02B",
             "value": "Corazón valeroso"
+        },
+        {
+            "key": "SK_LW_EC_PSI_A_01",
+            "value": "Descarga cruzada"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_01",
+            "value": "Mejorar Ruptura de chi gemelo"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_01B",
+            "value": "Ruptura de chi gemelo+"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_02",
+            "value": "Mejorar Tiro de chi"
+        },
+        {
+            "key": "SK_LW_EC_PSI_C_02B",
+            "value": "Supertiro de chi"
         },
         {
             "key": "SK_US_POTION",
@@ -8069,6 +8113,10 @@
             "value": "Habilidad maestra"
         },
         {
+            "key": "SK_MA_LW_THLA_01",
+            "value": "Habilidad maestra"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Ataque de corte +2"
         },
@@ -8179,6 +8227,26 @@
         {
             "key": "SK_LW_PIERCEDEF_5",
             "value": "Tasa de penetración de DEF +20"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_1",
+            "value": "Tasa de penetración de ESP +2"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_2",
+            "value": "Tasa de penetración de ESP +3"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_3",
+            "value": "Tasa de penetración de ESP +5"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_4",
+            "value": "Tasa de penetración de ESP +10"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_5",
+            "value": "Tasa de penetración de ESP +20"
         },
         {
             "key": "SK_LW_DF_SINGL_1",
@@ -8541,50 +8609,6 @@
             "value": "Emblema de la voracidad"
         },
         {
-            "key": "SK_LW_ARM_028_1",
-            "value": "Brigantina"
-        },
-        {
-            "key": "SK_LW_ARM_028_2",
-            "value": "Brigantina"
-        },
-        {
-            "key": "SK_LW_ARM_028_3",
-            "value": "Brigantina"
-        },
-        {
-            "key": "SK_LW_ARM_028_4",
-            "value": "Brigantina"
-        },
-        {
-            "key": "SK_LW_ARM_028_5",
-            "value": "Brigantina"
-        },
-        {
-            "key": "SK_LW_ROD_006_1",
-            "value": "Palo de ciprés (confusión)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_1",
-            "value": "Palo de ciprés (penetración de res. mágica)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_2",
-            "value": "Palo de ciprés (penetración de res. mágica)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_3",
-            "value": "Palo de ciprés (penetración de res. mágica)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_4",
-            "value": "Palo de ciprés (penetración de res. mágica)"
-        },
-        {
-            "key": "SK_LW_ROD_006_2_5",
-            "value": "Palo de ciprés (penetración de res. mágica)"
-        },
-        {
             "key": "SK_FF10_ROD_000_1",
             "value": "Vara maestra (velocidad de la barra de invocación↑)"
         },
@@ -8643,6 +8667,58 @@
         {
             "key": "SK_NIER_ACC_000_5",
             "value": "Pod 153"
+        },
+        {
+            "key": "SK_LW_ARM_028_1",
+            "value": "Brigantina"
+        },
+        {
+            "key": "SK_LW_ARM_028_2",
+            "value": "Brigantina"
+        },
+        {
+            "key": "SK_LW_ARM_028_3",
+            "value": "Brigantina"
+        },
+        {
+            "key": "SK_LW_ARM_028_4",
+            "value": "Brigantina"
+        },
+        {
+            "key": "SK_LW_ARM_028_5",
+            "value": "Brigantina"
+        },
+        {
+            "key": "SK_LW_ROD_006_1",
+            "value": "Palo de ciprés (confusión)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_1",
+            "value": "Palo de ciprés (penetración de res. mágica)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_2",
+            "value": "Palo de ciprés (penetración de res. mágica)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_3",
+            "value": "Palo de ciprés (penetración de res. mágica)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_4",
+            "value": "Palo de ciprés (penetración de res. mágica)"
+        },
+        {
+            "key": "SK_LW_ROD_006_2_5",
+            "value": "Palo de ciprés (penetración de res. mágica)"
+        },
+        {
+            "key": "SK_FF1_SWO_000_1",
+            "value": "Espada de la luz (ataque de luz↑)"
+        },
+        {
+            "key": "SK_FF1_SWO_000_5",
+            "value": "Espada de la luz (ataque de luz↑)"
         },
         {
             "key": "SK_ACC_LW_MONT_1_1",
@@ -8915,6 +8991,10 @@
         {
             "key": "SK_ACC_LW_HLNA_01_1",
             "value": "Protección de amistad eterna"
+        },
+        {
+            "key": "SK_CLT_LW_THLA_01_1_1",
+            "value": "Milagro del amor"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -13695,6 +13775,14 @@
         {
             "key": "SK_BTL_DONAC_1-100_D",
             "value": "Probabilidad de estado alterado [inútil] 1-100↓"
+        },
+        {
+            "key": "SK_BTL_FROST_1-100_U",
+            "value": "Probabilidad de estado alterado [congelación] 1-100↑"
+        },
+        {
+            "key": "SK_BTL_FROST_1-100_D",
+            "value": "Probabilidad de estado alterado [congelación] 1-100↓"
         },
         {
             "key": "SK_BTL_DEFPIERCE_1-100_U",

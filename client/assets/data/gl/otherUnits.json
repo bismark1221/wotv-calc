@@ -25813,6 +25813,416 @@
     "slug": "death-machine",
     "attack": "SK_WRMC_ATK"
   },
+  "UN_LW_E_MDFY_SIREN": {
+    "dataId": "UN_LW_E_MDFY_SIREN",
+    "names": {
+      "en": "Mindflayer",
+      "fr": "Ensorceleur",
+      "de": "Gedankenschinder",
+      "es": "Rompementes",
+      "ko": "정신지배자",
+      "zh": "奪心魔"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 150,
+        "max": 1706
+      },
+      "TP": {
+        "min": 35,
+        "max": 64
+      },
+      "AP": {
+        "min": 42,
+        "max": 66
+      },
+      "ATK": {
+        "min": 46,
+        "max": 131
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 21,
+        "max": 52
+      },
+      "DEX": {
+        "min": 92,
+        "max": 230
+      },
+      "AGI": {
+        "min": 27,
+        "max": 77
+      },
+      "LUCK": {
+        "min": 94,
+        "max": 230
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLEEP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SILENCE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "STOP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "IMMOBILIZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DISABLE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "water",
+    "image": "lapsmdfy",
+    "species": "demon",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "mindflayer",
+    "attack": "SK_MDFY_ATK"
+  },
+  "UN_LW_E_TH_00_PSI": {
+    "dataId": "UN_LW_E_TH_00_PSI",
+    "names": {
+      "en": "Bandit",
+      "fr": "Bandit",
+      "de": "Bandit",
+      "es": "Bandido",
+      "ko": "도적",
+      "zh": "盜賊"
+    },
+    "jobs": [
+      "JB_LW_PSI_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 128,
+        "max": 1365
+      },
+      "TP": {
+        "min": 32,
+        "max": 57
+      },
+      "AP": {
+        "min": 38,
+        "max": 59
+      },
+      "ATK": {
+        "min": 19,
+        "max": 48
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 43,
+        "max": 123
+      },
+      "DEX": {
+        "min": 80,
+        "max": 192
+      },
+      "AGI": {
+        "min": 27,
+        "max": 64
+      },
+      "LUCK": {
+        "min": 94,
+        "max": 230
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "STRIKE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsth00",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "bandit",
+    "attack": "SK_LW_PSI_ATK"
+  },
+  "UN_LW_E_TH_00_VIK": {
+    "dataId": "UN_LW_E_TH_00_VIK",
+    "names": {
+      "en": "Bandit",
+      "fr": "Bandit",
+      "de": "Bandit",
+      "es": "Bandido",
+      "ko": "도적",
+      "zh": "盜賊"
+    },
+    "jobs": [
+      "JB_LW_VIK_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 208,
+        "max": 1577
+      },
+      "TP": {
+        "min": 31,
+        "max": 64
+      },
+      "AP": {
+        "min": 37,
+        "max": 61
+      },
+      "ATK": {
+        "min": 56,
+        "max": 138
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 25,
+        "max": 61
+      },
+      "DEX": {
+        "min": 83,
+        "max": 184
+      },
+      "AGI": {
+        "min": 20,
+        "max": 42
+      },
+      "LUCK": {
+        "min": 81,
+        "max": 170
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsth00",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "bandit",
+    "attack": "SK_LW_VIK_ATK"
+  },
   "UN_FF14_E_YSTL": {
     "dataId": "UN_FF14_E_YSTL",
     "names": {
@@ -40951,170 +41361,6 @@
     "slug": "diabolos",
     "attack": "SK_DABL_ATK"
   },
-  "UN_LW_E_MDFY_SIREN": {
-    "dataId": "UN_LW_E_MDFY_SIREN",
-    "names": {
-      "en": "Mindflayer",
-      "fr": "Ensorceleur",
-      "de": "Gedankenschinder",
-      "es": "Rompementes",
-      "ko": "정신지배자",
-      "zh": "奪心魔"
-    },
-    "rarity": "N",
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 150,
-        "max": 1706
-      },
-      "TP": {
-        "min": 35,
-        "max": 64
-      },
-      "AP": {
-        "min": 42,
-        "max": 66
-      },
-      "ATK": {
-        "min": 46,
-        "max": 131
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 21,
-        "max": 52
-      },
-      "DEX": {
-        "min": 92,
-        "max": 230
-      },
-      "AGI": {
-        "min": 27,
-        "max": 77
-      },
-      "LUCK": {
-        "min": 94,
-        "max": 230
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {
-        "min": -20,
-        "max": -20
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {},
-      "MAGIC_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "POISON_RES": {
-        "min": 100,
-        "max": 100
-      },
-      "BLIND_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "SLEEP_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "SILENCE_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "PARALYZE_RES": {
-        "min": 100,
-        "max": 100
-      },
-      "CONFUSION_RES": {
-        "min": 100,
-        "max": 100
-      },
-      "PETRIFY_RES": {
-        "min": 100,
-        "max": 100
-      },
-      "TOAD_RES": {
-        "min": 100,
-        "max": 100
-      },
-      "CHARM_RES": {
-        "min": 100,
-        "max": 100
-      },
-      "SLOW_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "STOP_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "IMMOBILIZE_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "DISABLE_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "BERSERK_RES": {
-        "min": 100,
-        "max": 100
-      },
-      "DOOM_RES": {
-        "min": 100,
-        "max": 100
-      },
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1
-      },
-      "MAX_LV": {}
-    },
-    "element": "water",
-    "image": "lapsmdfy",
-    "species": "demon",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "mindflayer",
-    "attack": "SK_MDFY_ATK"
-  },
   "UN_LW_E_FNRR_SIREN": {
     "dataId": "UN_LW_E_FNRR_SIREN",
     "names": {
@@ -55464,6 +55710,727 @@
     "slug": "odin",
     "attack": "SK_ODIN_ATK"
   },
+  "UN_LW_E_TITU": {
+    "dataId": "UN_LW_E_TITU",
+    "names": {
+      "en": "Tyytas",
+      "fr": "Thytas",
+      "de": "Titus",
+      "es": "Taitas",
+      "ko": "타이타스",
+      "zh": "泰塔斯"
+    },
+    "rarity": "MR",
+    "jobs": [
+      "JB_LW_PLD_DARK",
+      "JB_LW_RDM_DARK",
+      "JB_LW_VIK_DARK"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 266,
+        "max": 1083
+      },
+      "TP": {
+        "min": 48,
+        "max": 75
+      },
+      "AP": {
+        "min": 57,
+        "max": 70
+      },
+      "ATK": {
+        "min": 56,
+        "max": 95
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 28,
+        "max": 48
+      },
+      "DEX": {
+        "min": 56,
+        "max": 84
+      },
+      "AGI": {
+        "min": 26,
+        "max": 31
+      },
+      "LUCK": {
+        "min": 59,
+        "max": 83
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "PIERCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "MAGIC_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "POISON_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "BLIND_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapstitu",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "tyytas-1",
+    "attack": "SK_LW_PLD_ATK"
+  },
+  "UN_LW_E_RYER": {
+    "dataId": "UN_LW_E_RYER",
+    "names": {
+      "en": "Little Leela",
+      "fr": "Lillyla",
+      "de": "Lilli",
+      "es": "Lili",
+      "ko": "리렐리라",
+      "zh": "莉蕾露莉拉"
+    },
+    "rarity": "SR",
+    "jobs": [
+      "JB_LW_MGK_DARK",
+      "JB_LW_KNT_DARK",
+      "JB_LW_WHM_DARK"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 189,
+        "max": 759
+      },
+      "TP": {
+        "min": 40,
+        "max": 63
+      },
+      "AP": {
+        "min": 46,
+        "max": 57
+      },
+      "ATK": {
+        "min": 25,
+        "max": 43
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 46,
+        "max": 79
+      },
+      "DEX": {
+        "min": 49,
+        "max": 89
+      },
+      "AGI": {
+        "min": 23,
+        "max": 27
+      },
+      "LUCK": {
+        "min": 51,
+        "max": 86
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "PIERCE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "STRIKE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "MISSILE_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "MAGIC_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "CHARM_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsryer",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "little-leela-1",
+    "attack": "SK_LW_MGK_ATK"
+  },
+  "UN_LW_E_CORL": {
+    "dataId": "UN_LW_E_CORL",
+    "names": {
+      "en": "Coeurl",
+      "fr": "Cœurl",
+      "de": "Coeurl",
+      "es": "Bengal",
+      "ko": "커얼",
+      "zh": "長鬚豹"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 169,
+        "max": 1931
+      },
+      "TP": {
+        "min": 40,
+        "max": 73
+      },
+      "AP": {
+        "min": 48,
+        "max": 75
+      },
+      "ATK": {
+        "min": 51,
+        "max": 147
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 28,
+        "max": 92
+      },
+      "DEX": {
+        "min": 95,
+        "max": 241
+      },
+      "AGI": {
+        "min": 25,
+        "max": 55
+      },
+      "LUCK": {
+        "min": 95,
+        "max": 222
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "lightning",
+    "image": "lapscorl",
+    "species": "beast",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "coeurl",
+    "attack": "SK_CORL_ATK"
+  },
+  "UN_LW_E_MRLT": {
+    "dataId": "UN_LW_E_MRLT",
+    "names": {
+      "en": "Marilith",
+      "fr": "Marilith",
+      "de": "Marilith",
+      "es": "Malilith",
+      "ko": "마릴리스",
+      "zh": "六臂蛇魔"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 241,
+        "max": 5218
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 56,
+        "max": 154
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 28,
+        "max": 92
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 19,
+        "max": 71
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "PIERCE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "STRIKE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "MISSILE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "MAGIC_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLEEP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "CONFUSION_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DISABLE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "BERSERK_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "fire",
+    "image": "lapsmrlt",
+    "species": "demon",
+    "size": 1,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "marilith",
+    "attack": "SK_MRLT_ATK"
+  },
+  "UN_LW_E_DRIO": {
+    "dataId": "UN_LW_E_DRIO",
+    "names": {
+      "en": "Dario Hourne",
+      "fr": "Dario Hourne",
+      "de": "Dario Hourne",
+      "es": "Darío Hourne",
+      "ko": "다리오 호른",
+      "zh": "達利歐·霍倫"
+    },
+    "rarity": "MR",
+    "jobs": [
+      "JB_LW_MGK_WIND",
+      "JB_LW_NIN_WIND",
+      "JB_LW_PLD_WIND"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 255,
+        "max": 1057
+      },
+      "TP": {
+        "min": 47,
+        "max": 72
+      },
+      "AP": {
+        "min": 63,
+        "max": 77
+      },
+      "ATK": {
+        "min": 44,
+        "max": 74
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 65,
+        "max": 109
+      },
+      "DEX": {
+        "min": 58,
+        "max": 87
+      },
+      "AGI": {
+        "min": 25,
+        "max": 30
+      },
+      "LUCK": {
+        "min": 60,
+        "max": 85
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "EARTH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "wind",
+    "image": "lapsdrio",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "dario-hourne-1",
+    "attack": "SK_LW_MGK_ATK"
+  },
   "UN_GM_MGSW_01": {
     "dataId": "UN_GM_MGSW_01",
     "names": {
@@ -56577,294 +57544,6 @@
     "type": "enemy",
     "slug": "lorenzo-1",
     "attack": "SK_LW_DRG_ATK"
-  },
-  "UN_LW_E_DRIO": {
-    "dataId": "UN_LW_E_DRIO",
-    "names": {
-      "en": "Dario Hourne",
-      "fr": "Dario Hourne",
-      "de": "Dario Hourne",
-      "es": "Darío Hourne",
-      "ko": "다리오 호른",
-      "zh": "達利歐·霍倫"
-    },
-    "rarity": "MR",
-    "jobs": [
-      "JB_LW_MGK_WIND",
-      "JB_LW_NIN_WIND",
-      "JB_LW_PLD_WIND"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 255,
-        "max": 1057
-      },
-      "TP": {
-        "min": 47,
-        "max": 72
-      },
-      "AP": {
-        "min": 63,
-        "max": 77
-      },
-      "ATK": {
-        "min": 44,
-        "max": 74
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 65,
-        "max": 109
-      },
-      "DEX": {
-        "min": 58,
-        "max": 87
-      },
-      "AGI": {
-        "min": 25,
-        "max": 30
-      },
-      "LUCK": {
-        "min": 60,
-        "max": 85
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {
-        "min": -15,
-        "max": -15
-      },
-      "EARTH_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "PIERCE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "STRIKE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MAGIC_RES": {
-        "min": 5,
-        "max": 5
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {
-        "min": -5,
-        "max": -5
-      },
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": "wind",
-    "image": "lapsdrio",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "dario-hourne-1",
-    "attack": "SK_LW_MGK_ATK"
-  },
-  "UN_LW_E_TITU": {
-    "dataId": "UN_LW_E_TITU",
-    "names": {
-      "en": "Tyytas",
-      "fr": "Thytas",
-      "de": "Titus",
-      "es": "Taitas",
-      "ko": "타이타스",
-      "zh": "泰塔斯"
-    },
-    "rarity": "MR",
-    "jobs": [
-      "JB_LW_PLD_DARK",
-      "JB_LW_RDM_DARK",
-      "JB_LW_VIK_DARK"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 266,
-        "max": 1083
-      },
-      "TP": {
-        "min": 48,
-        "max": 75
-      },
-      "AP": {
-        "min": 57,
-        "max": 70
-      },
-      "ATK": {
-        "min": 56,
-        "max": 95
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 28,
-        "max": 48
-      },
-      "DEX": {
-        "min": 56,
-        "max": 84
-      },
-      "AGI": {
-        "min": 26,
-        "max": 31
-      },
-      "LUCK": {
-        "min": 59,
-        "max": 83
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {
-        "min": -15,
-        "max": -15
-      },
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "PIERCE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 20,
-        "max": 20
-      },
-      "MAGIC_RES": {
-        "min": -20,
-        "max": -20
-      },
-      "POISON_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "BLIND_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": "dark",
-    "image": "lapstitu",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "tyytas-1",
-    "attack": "SK_LW_PLD_ATK"
   },
   "UN_LW_E_LVAT": {
     "dataId": "UN_LW_E_LVAT",
