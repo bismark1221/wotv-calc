@@ -208,7 +208,7 @@
               <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type === 'text'"
                    [ngClass]="{
                      'activated': esper.board.nodes[node].activated,
-                     'buff': esper.board.nodes[node].type === 'buff',
+                     'buff': esper.board.nodes[node].skill.type === 'buff',
                      'notActivable': !canActivateNode(node)
               }" >
                 <span class="text">{{ esper.grid.nodesForGrid[node].value }}</span>
