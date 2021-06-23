@@ -67,6 +67,14 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: '01/06',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_LMIG'},
+          {type: 'card', dataId: 'VC_LW_LUCA2'},
+          {type: 'equipment', dataId: 'AF_LW_ACC_048'}
+        ]
+      },
+      {
         date: '15/06',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_VLUC'},
@@ -87,13 +95,6 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_VKTR'},
           {type: 'unit', dataId: 'UN_LW_P_RIRY'},
           {type: 'unit', dataId: 'UN_LW_P_SDLX'}
-        ]
-      },
-      {
-        date: '01/06',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_JEDN'},
-          {type: 'equipment', dataId: 'AF_LW_GUN_011'}
         ]
       }
     ]

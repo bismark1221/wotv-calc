@@ -37388,6 +37388,7 @@
     {
       "iname": "JB_LW_WGN_DARK",
       "mdl": "WGN",
+      "mdl_dualwpn": 1,
       "origin": "JB_LW_WGN_FIRE",
       "equips": [
         14,
@@ -44471,6 +44472,139 @@
       ]
     },
     {
+      "iname": "JB_LW_GRSR_M",
+      "mdl": "LAPSgrsr",
+      "cc_icon": "LAPSgrsr_EC",
+      "equips": [
+        10,
+        18,
+        20,
+        22
+      ],
+      "type": 1,
+      "role": 1,
+      "move": 3,
+      "jump": 1,
+      "lvtbl_main": "JBLV_LW_GRSR_EXM",
+      "lvtbl_sub": "JBLV_LW_GRSR_EXM",
+      "sub_rate": 50,
+      "ranks": [
+        {
+          "hp": 6450,
+          "mp": 2311,
+          "ap": 2311,
+          "atk": 4263,
+          "mag": 1522,
+          "dex": 2334,
+          "spd": 3000,
+          "luk": 3468,
+          "iniap": -82
+        },
+        {
+          "hp": 6675,
+          "mp": 2317,
+          "ap": 2317,
+          "atk": 4294,
+          "mag": 1533,
+          "dex": 2351,
+          "spd": 3000,
+          "luk": 3502,
+          "iniap": -82
+        },
+        {
+          "hp": 6900,
+          "mp": 2323,
+          "ap": 2323,
+          "atk": 4326,
+          "mag": 1545,
+          "dex": 2369,
+          "spd": 3000,
+          "luk": 3536,
+          "iniap": -82
+        },
+        {
+          "hp": 7800,
+          "mp": 2346,
+          "ap": 2346,
+          "atk": 4452,
+          "mag": 1590,
+          "dex": 2438,
+          "spd": 3000,
+          "luk": 3672,
+          "iniap": -82,
+          "eqid1": "IT_JB_MM_LW_GRSR_5,5"
+        },
+        {
+          "hp": 8025,
+          "mp": 2351,
+          "ap": 2351,
+          "atk": 4483,
+          "mag": 1601,
+          "dex": 2455,
+          "spd": 3000,
+          "luk": 3706,
+          "iniap": -82
+        },
+        {
+          "hp": 8250,
+          "mp": 2357,
+          "ap": 2357,
+          "atk": 4515,
+          "mag": 1612,
+          "dex": 2472,
+          "spd": 3000,
+          "luk": 3740,
+          "iniap": -82
+        },
+        {
+          "hp": 9150,
+          "mp": 2380,
+          "ap": 2380,
+          "atk": 4641,
+          "mag": 1657,
+          "dex": 2541,
+          "spd": 3000,
+          "luk": 3876,
+          "iniap": -82,
+          "eqid1": "IT_JB_MM_LW_GRSR_5,7"
+        },
+        {
+          "hp": 9375,
+          "mp": 2386,
+          "ap": 2386,
+          "atk": 4672,
+          "mag": 1668,
+          "dex": 2558,
+          "spd": 3000,
+          "luk": 3910,
+          "iniap": -82
+        },
+        {
+          "hp": 9600,
+          "mp": 2392,
+          "ap": 2392,
+          "atk": 4704,
+          "mag": 1680,
+          "dex": 2576,
+          "spd": 3000,
+          "luk": 3944,
+          "iniap": -82
+        },
+        {
+          "hp": 10500,
+          "mp": 2415,
+          "ap": 2415,
+          "atk": 4830,
+          "mag": 1725,
+          "dex": 2645,
+          "spd": 3000,
+          "luk": 4080,
+          "iniap": -82,
+          "eqid1": "IT_JB_MM_LW_GRSR_5,10"
+        }
+      ]
+    },
+    {
       "iname": "JB_LW_LSWL",
       "mdl": "LAPSlswl",
       "equips": [
@@ -50021,6 +50155,37 @@
       "jump": 2,
       "lvtbl_main": "JBLV_LW_BEA_M_WIND",
       "lvtbl_sub": "JBLV_LW_BEA_S_WIND",
+      "sub_rate": 50,
+      "ranks": [
+        {
+          "hp": 0,
+          "mp": 0,
+          "ap": 0,
+          "atk": 0,
+          "mag": 0,
+          "dex": 0,
+          "spd": 0,
+          "luk": 0,
+          "iniap": -82
+        }
+      ]
+    },
+    {
+      "iname": "JB_LW_BEA_DARK",
+      "mdl": "BEA",
+      "origin": "JB_LW_BEA_FIRE",
+      "equips": [
+        16,
+        19,
+        21,
+        22
+      ],
+      "type": 1,
+      "role": 1,
+      "move": 3,
+      "jump": 2,
+      "lvtbl_main": "JBLV_LW_BEA_M_DARK",
+      "lvtbl_sub": "JBLV_LW_BEA_S_DARK",
       "sub_rate": 50,
       "ranks": [
         {
@@ -59974,6 +60139,38 @@
       ]
     },
     {
+      "iname": "JB_LW_LMIG_M",
+      "mdl": "BEA",
+      "cc_icon": "BEA_EC",
+      "origin": "JB_LW_BEA_EX_M",
+      "equips": [
+        16,
+        19,
+        21,
+        22
+      ],
+      "type": 1,
+      "role": 1,
+      "move": 3,
+      "jump": 2,
+      "lvtbl_main": "JBLV_LW_LMIG_EXM",
+      "lvtbl_sub": "JBLV_LW_LMIG_EXM",
+      "sub_rate": 50,
+      "ranks": [
+        {
+          "hp": 6450,
+          "mp": 1507,
+          "ap": 1507,
+          "atk": 4263,
+          "mag": 812,
+          "dex": 3451,
+          "spd": 2300,
+          "luk": 2346,
+          "iniap": -82
+        }
+      ]
+    },
+    {
       "iname": "JB_LW_DRG_EX_M",
       "mdl": "DRG",
       "cc_icon": "DRG_EC",
@@ -61255,6 +61452,39 @@
       ]
     },
     {
+      "iname": "JB_LW_LVES_M",
+      "mdl": "PLD",
+      "cc_icon": "PLD_EC",
+      "origin": "JB_LW_PLD_EX_M",
+      "equips": [
+        2,
+        17,
+        20,
+        18,
+        22
+      ],
+      "type": 1,
+      "role": 1,
+      "move": 3,
+      "jump": 1,
+      "lvtbl_main": "JBLV_LW_LVES_EXM",
+      "lvtbl_sub": "JBLV_LW_LVES_EXM",
+      "sub_rate": 50,
+      "ranks": [
+        {
+          "hp": 6450,
+          "mp": 1507,
+          "ap": 1507,
+          "atk": 3451,
+          "mag": 812,
+          "dex": 3045,
+          "spd": 2300,
+          "luk": 3468,
+          "iniap": -82
+        }
+      ]
+    },
+    {
       "iname": "JB_LW_LIB_EX_M",
       "mdl": "LIB",
       "cc_icon": "LIB_EC",
@@ -61963,6 +62193,38 @@
       "jump": 1,
       "lvtbl_main": "JBLV_LW_RIRY_EXM",
       "lvtbl_sub": "JBLV_LW_RIRY_EXM",
+      "sub_rate": 50,
+      "ranks": [
+        {
+          "hp": 6450,
+          "mp": 2311,
+          "ap": 2311,
+          "atk": 3045,
+          "mag": 1522,
+          "dex": 4263,
+          "spd": 4200,
+          "luk": 2346,
+          "iniap": -82
+        }
+      ]
+    },
+    {
+      "iname": "JB_LW_CRIS_M",
+      "mdl": "GUN",
+      "cc_icon": "GUN_EC",
+      "origin": "JB_LW_GUN_EX_M",
+      "equips": [
+        14,
+        19,
+        21,
+        22
+      ],
+      "type": 1,
+      "role": 3,
+      "move": 3,
+      "jump": 1,
+      "lvtbl_main": "JBLV_LW_CRIS_EXM",
+      "lvtbl_sub": "JBLV_LW_CRIS_EXM",
       "sub_rate": 50,
       "ranks": [
         {

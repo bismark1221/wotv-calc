@@ -1944,6 +1944,20 @@
       "end_at": "2021/03/10 14:59:59"
     },
     {
+      "iname": "MG_EV_GLEM_01",
+      "type": 2,
+      "category": 2,
+      "begin_at": "2021/06/23 15:00:00",
+      "end_at": "2021/07/08 14:59:59"
+    },
+    {
+      "iname": "MG_MU_GLEM_01",
+      "type": 2,
+      "category": 2,
+      "begin_at": "2021/06/23 15:00:00",
+      "end_at": "2021/07/08 14:59:59"
+    },
+    {
       "iname": "MG_EV10_1_01",
       "type": 2,
       "category": 2,
@@ -2143,22 +2157,22 @@
       "iname": "MG_CRIS01_01",
       "type": 2,
       "category": 2,
-      "begin_at": "2020/12/01",
-      "end_at": "2020/12/10 14:59:59"
+      "begin_at": "2021/06/23 15:00:00",
+      "end_at": "2021/07/08 14:59:59"
     },
     {
       "iname": "MG_CRIS01_02",
       "type": 2,
       "category": 2,
-      "begin_at": "2020/12/01",
-      "end_at": "2020/12/10 14:59:59"
+      "begin_at": "2021/06/23 15:00:00",
+      "end_at": "2021/07/08 14:59:59"
     },
     {
       "iname": "MG_MU_CRIS01_01",
       "type": 2,
       "category": 2,
-      "begin_at": "2020/12/01",
-      "end_at": "2020/12/10 14:59:59"
+      "begin_at": "2021/06/23 15:00:00",
+      "end_at": "2021/07/08 14:59:59"
     },
     {
       "iname": "MG_CWEL01_01",
@@ -2756,6 +2770,11 @@
       "end_at": "2120/01/09 14:59:59"
     },
     {
+      "iname": "MG_BR_DARK",
+      "type": 2,
+      "category": 4
+    },
+    {
       "iname": "MG_BR_THUNDER",
       "type": 2,
       "category": 4
@@ -3070,6 +3089,13 @@
       "category": 3,
       "packID": "MP_QEST_16",
       "begin_at": "2021/05/07 15:00:00"
+    },
+    {
+      "iname": "MG_MP_QEST_17",
+      "type": 2,
+      "category": 3,
+      "packID": "MP_QEST_17",
+      "begin_at": "2021/06/23 15:00:00"
     },
     {
       "iname": "MG_MONDAY_001",

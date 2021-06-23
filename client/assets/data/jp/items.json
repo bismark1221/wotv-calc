@@ -188,6 +188,27 @@
     },
     "type": "usable_item"
   },
+  "IT_US_D_FAITH_N": {
+    "dataId": "IT_US_D_FAITH_N",
+    "names": {
+      "en": "迷信の雫（小）"
+    },
+    "type": "usable_item"
+  },
+  "IT_US_D_FAITH_R": {
+    "dataId": "IT_US_D_FAITH_R",
+    "names": {
+      "en": "迷信の雫（中）"
+    },
+    "type": "usable_item"
+  },
+  "IT_US_D_FAITH_SR": {
+    "dataId": "IT_US_D_FAITH_SR",
+    "names": {
+      "en": "迷信の雫（大）"
+    },
+    "type": "usable_item"
+  },
   "IT_ACTP_01": {
     "dataId": "IT_ACTP_01",
     "names": {
@@ -5404,6 +5425,13 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_LMIG": {
+    "dataId": "IT_PI_LW_LMIG",
+    "names": {
+      "en": "ラメイガの欠片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -6220,6 +6248,13 @@
     "dataId": "IT_SP_LW_VLUC",
     "names": {
       "en": "ヴァルーシュの思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_LMIG": {
+    "dataId": "IT_SP_LW_LMIG",
+    "names": {
+      "en": "ラメイガの思珠"
     },
     "type": "exjob_orb"
   },
@@ -8550,6 +8585,14 @@
     "type": "recipe",
     "icon": "AF_LW_CLT_019"
   },
+  "IT_AF_LW_ACC_048": {
+    "dataId": "IT_AF_LW_ACC_048",
+    "names": {
+      "en": "トルマリンの指輪のクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_ACC_048"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -9283,6 +9326,14 @@
     },
     "type": "medal",
     "icon": "IT_EC_SUMMON_03"
+  },
+  "IT_EC_SUMMON_06_02_e": {
+    "dataId": "IT_EC_SUMMON_06_02_e",
+    "names": {
+      "en": "【6月】ビジョン召喚メダルC"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_04"
   },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
@@ -10625,6 +10676,14 @@
     "type": "tickets",
     "icon": "IT_US_G_PU_10"
   },
+  "IT_US_G_PU_VC_LUCA2": {
+    "dataId": "IT_US_G_PU_VC_LUCA2",
+    "names": {
+      "en": "【得物の手入れ】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01"
+  },
   "IT_US_SE_JB_MM_01": {
     "dataId": "IT_US_SE_JB_MM_01",
     "names": {
@@ -11081,6 +11140,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_VPI_22": {
+    "dataId": "IT_US_SE_VPI_22",
+    "names": {
+      "en": "【1500万DL記念】URVカード欠片×75選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_01": {
     "dataId": "IT_US_SE_PI_01",
     "names": {
@@ -11413,6 +11480,14 @@
     "dataId": "IT_US_SE_PI_42",
     "names": {
       "en": "【1.5周年記念】SSRユニット欠片×50選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_43": {
+    "dataId": "IT_US_SE_PI_43",
+    "names": {
+      "en": "【1500万DL記念】SSRユニット欠片×50選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -13025,6 +13100,13 @@
     "dataId": "IT_VPI_LW_JEDN",
     "names": {
       "en": "大いなる牡鹿の欠片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_LUCA2": {
+    "dataId": "IT_VPI_LW_LUCA2",
+    "names": {
+      "en": "得物の手入れの欠片"
     },
     "type": "vc_shard"
   },
