@@ -6389,6 +6389,34 @@
             "value": "같이 춤춰요!"
         },
         {
+            "key": "SK_ICDG_ATK",
+            "value": "일반 공격"
+        },
+        {
+            "key": "SK_ICDG_M_01",
+            "value": "꼬리 회전"
+        },
+        {
+            "key": "SK_ICDG_M_02",
+            "value": "얼음 두르기"
+        },
+        {
+            "key": "SK_ICDG_M_02_1",
+            "value": "얼음 휘감기"
+        },
+        {
+            "key": "SK_ICDG_M_03",
+            "value": "싸라기눈"
+        },
+        {
+            "key": "SK_ICDG_M_04",
+            "value": "고드름"
+        },
+        {
+            "key": "SK_ICDG_M_05",
+            "value": "용의 눈보라"
+        },
+        {
             "key": "SK_LB_LW_MONT",
             "value": "운명의 십자가"
         },
@@ -6851,6 +6879,10 @@
         {
             "key": "SK_SMN_CBCL",
             "value": "루비의 빛"
+        },
+        {
+            "key": "SK_SMN_ICDG",
+            "value": "용의 눈보라"
         },
         {
             "key": "SK_UN_BD_EC_HP_200",
@@ -7545,6 +7577,46 @@
             "value": "초기탄"
         },
         {
+            "key": "SK_LW_EC_VIK_A_02",
+            "value": "학살 도끼"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_03",
+            "value": "킬링 액스 강화"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_03B",
+            "value": "머더 액스"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_04",
+            "value": "반골 정신 강화"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_04B",
+            "value": "격멸 정신"
+        },
+        {
+            "key": "SK_LW_EC_DRG_A_02",
+            "value": "마법 장벽"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_03",
+            "value": "수직 점프 강화"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_03B",
+            "value": "혼란 강타"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_04",
+            "value": "HP 증가 Lv.1 강화"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_04B",
+            "value": "마창의 비법"
+        },
+        {
             "key": "SK_US_POTION",
             "value": "포션"
         },
@@ -8117,6 +8189,10 @@
             "value": "마스터 어빌리티"
         },
         {
+            "key": "SK_MA_LW_CMLO",
+            "value": "마스터 어빌리티"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "베기 공격력+2"
         },
@@ -8390,6 +8466,14 @@
         },
         {
             "key": "SK_LW_ACC_003_5_S",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_039_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_039_5",
             "value": ""
         },
         {
@@ -8997,6 +9081,10 @@
             "value": "사랑의 기적"
         },
         {
+            "key": "SK_ARM_LW_CMLO_1_1",
+            "value": "용 사냥꾼의 위광"
+        },
+        {
             "key": "SK_ACC_LW_MONT_ARENA",
             "value": "부르는 소리"
         },
@@ -9155,10 +9243,6 @@
         {
             "key": "SK_AXE_LW_DRND_1_1",
             "value": ""
-        },
-        {
-            "key": "SK_ARM_LW_CMLO_1_1",
-            "value": "용 사냥꾼의 위광"
         },
         {
             "key": "SK_ARM_LW_DRZA_1_1",
@@ -10182,6 +10266,18 @@
         },
         {
             "key": "SK_VC_LW_CBCL_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GSMAX",
             "value": ""
         },
         {
@@ -11354,6 +11450,18 @@
         },
         {
             "key": "SK_VC_LW_CBCL_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GSMAX_2",
             "value": ""
         },
         {
@@ -12827,6 +12935,30 @@
         {
             "key": "SK_VC_LW_CBCL_PVA",
             "value": "루비의 치유"
+        },
+        {
+            "key": "SK_VC_LW_ICDG_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_P_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_PAW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_PMAX_2",
+            "value": ""
         },
         {
             "key": "SK_BTL_HP_100-99900_U",

@@ -846,16 +846,16 @@
         "zh": "舒澤爾特"
       },
       "stats": {
-        "HP": 1509,
-        "TP": 108,
-        "AP": 100,
-        "ATK": 273,
+        "HP": 2626,
+        "TP": 113,
+        "AP": 125,
+        "ATK": 439,
         "DEF": 6,
         "SPR": 0,
-        "MAG": 60,
-        "DEX": 189,
-        "AGI": 50,
-        "LUCK": 220,
+        "MAG": 111,
+        "DEX": 246,
+        "AGI": 55,
+        "LUCK": 228,
         "EARTH_RES": -15,
         "WATER_RES": 15,
         "PIERCE_RES": -10,
@@ -867,8 +867,10 @@
         "DOOM_RES": -25,
         "MOVE": 4,
         "JUMP": 1,
-        "INITIAL_AP": 18,
-        "CRITIC_RATE": 47
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 50,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsszrt"
     },
@@ -1987,16 +1989,16 @@
         "zh": "多蘭多"
       },
       "stats": {
-        "HP": 2320,
-        "TP": 105,
-        "AP": 97,
-        "ATK": 285,
-        "DEF": 0,
+        "HP": 4516,
+        "TP": 110,
+        "AP": 103,
+        "ATK": 454,
+        "DEF": 4,
         "SPR": 0,
-        "MAG": 51,
-        "DEX": 203,
-        "AGI": 47,
-        "LUCK": 150,
+        "MAG": 92,
+        "DEX": 251,
+        "AGI": 51,
+        "LUCK": 175,
         "WIND_RES": -15,
         "LIGHTNING_RES": 10,
         "SLASH_RES": -10,
@@ -2010,8 +2012,10 @@
         "DOOM_RES": 10,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 17,
-        "CRITIC_RATE": 35
+        "INITIAL_AP": 18,
+        "CRITIC_RATE": 46,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsdrnd"
     },
@@ -4176,6 +4180,45 @@
         "SPIRIT_PENETRATION": 25
       },
       "image": "lapsthla_gl_01"
+    },
+    {
+      "names": {
+        "en": "Camillo",
+        "fr": "Camillo",
+        "de": "Camillo",
+        "es": "Camilo",
+        "ko": "카밀로",
+        "zh": "卡米洛"
+      },
+      "stats": {
+        "HP": 3378,
+        "TP": 137,
+        "AP": 141,
+        "ATK": 505,
+        "DEF": 2,
+        "SPR": 10,
+        "MAG": 84,
+        "DEX": 234,
+        "AGI": 62,
+        "LUCK": 219,
+        "DARK_RES": -10,
+        "SLASH_RES": 0,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 20,
+        "PARALYZE_RES": 50,
+        "SLOW_RES": 10,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 4,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 8,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHT_ATK": 15
+      },
+      "image": "lapscmlo"
     }
   ]
 }

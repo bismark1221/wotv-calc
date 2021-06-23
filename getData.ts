@@ -3513,7 +3513,9 @@ export class JsonService {
     job.ranks.forEach((rank, rankIndex) => {
       if (rank.eqid1) {
         const material = rank.eqid1.split(',');
-        if (!materials[rankIndex][material[0]]) {
+        if (!materials[rankIndex]) {
+          materials[rankIndex] = {};
+        } else if (!materials[rankIndex][material[0]]) {
           materials[rankIndex][material[0]] = parseInt(material[1], 10);
         } else {
           materials[rankIndex][material[0]] += parseInt(material[1], 10);

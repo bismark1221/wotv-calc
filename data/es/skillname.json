@@ -6389,6 +6389,34 @@
             "value": "¡A bailar!"
         },
         {
+            "key": "SK_ICDG_ATK",
+            "value": "Ataque normal"
+        },
+        {
+            "key": "SK_ICDG_M_01",
+            "value": "Picado"
+        },
+        {
+            "key": "SK_ICDG_M_02",
+            "value": "Velo helado"
+        },
+        {
+            "key": "SK_ICDG_M_02_1",
+            "value": "Velo helado"
+        },
+        {
+            "key": "SK_ICDG_M_03",
+            "value": "Hálito de granizo"
+        },
+        {
+            "key": "SK_ICDG_M_04",
+            "value": "Carámbano"
+        },
+        {
+            "key": "SK_ICDG_M_05",
+            "value": "Ventisca de guiverno"
+        },
+        {
             "key": "SK_LB_LW_MONT",
             "value": "Cruz del destino"
         },
@@ -6851,6 +6879,10 @@
         {
             "key": "SK_SMN_CBCL",
             "value": "Resplandor de rubí"
+        },
+        {
+            "key": "SK_SMN_ICDG",
+            "value": "Ventisca de guiverno"
         },
         {
             "key": "SK_UN_BD_EC_HP_200",
@@ -7545,6 +7577,46 @@
             "value": "Supertiro de chi"
         },
         {
+            "key": "SK_LW_EC_VIK_A_02",
+            "value": "Hachazo asesino"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_03",
+            "value": "Mejorar Hacha asesina"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_03B",
+            "value": "Hacha homicida"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_04",
+            "value": "Mejorar Espíritu rebelde"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_04B",
+            "value": "Espíritu saqueador"
+        },
+        {
+            "key": "SK_LW_EC_DRG_A_02",
+            "value": "Muro mágico"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_03",
+            "value": "Mejorar Salto vertical"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_03B",
+            "value": "Salto confu"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_04",
+            "value": "Mejorar VIT↑ nv. 1"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_04B",
+            "value": "Maestría de lanza infernal"
+        },
+        {
             "key": "SK_US_POTION",
             "value": "Poción"
         },
@@ -8117,6 +8189,10 @@
             "value": "Habilidad maestra"
         },
         {
+            "key": "SK_MA_LW_CMLO",
+            "value": "Habilidad maestra"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Ataque de corte +2"
         },
@@ -8390,6 +8466,14 @@
         },
         {
             "key": "SK_LW_ACC_003_5_S",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_039_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_039_5",
             "value": ""
         },
         {
@@ -8997,6 +9081,10 @@
             "value": "Milagro del amor"
         },
         {
+            "key": "SK_ARM_LW_CMLO_1_1",
+            "value": "Presencia de cazadragones"
+        },
+        {
             "key": "SK_ACC_LW_MONT_ARENA",
             "value": "Grito unificador"
         },
@@ -9155,10 +9243,6 @@
         {
             "key": "SK_AXE_LW_DRND_1_1",
             "value": ""
-        },
-        {
-            "key": "SK_ARM_LW_CMLO_1_1",
-            "value": "Presencia de cazadragones"
         },
         {
             "key": "SK_ARM_LW_DRZA_1_1",
@@ -10182,6 +10266,18 @@
         },
         {
             "key": "SK_VC_LW_CBCL_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GSMAX",
             "value": ""
         },
         {
@@ -11354,6 +11450,18 @@
         },
         {
             "key": "SK_VC_LW_CBCL_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_GSMAX_2",
             "value": ""
         },
         {
@@ -12827,6 +12935,30 @@
         {
             "key": "SK_VC_LW_CBCL_PVA",
             "value": "Sanación de rubí"
+        },
+        {
+            "key": "SK_VC_LW_ICDG_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_P_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_PAW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ICDG_PMAX_2",
+            "value": ""
         },
         {
             "key": "SK_BTL_HP_100-99900_U",

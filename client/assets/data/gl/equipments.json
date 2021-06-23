@@ -32091,7 +32091,10 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_HLNA_01_M",
-      "JB_LW_THLA_01_M"
+      "JB_LW_THLA_01_M",
+      "JB_LW_CMLO_M",
+      "JB_LW_SZRT_M",
+      "JB_LW_DRND_M"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35219,6 +35222,101 @@
       "unitId": "UN_LW_P_THLA_01"
     },
     "releaseDate": "16/06/2021"
+  },
+  "AF_ARM_LW_CMLO_1": {
+    "names": {
+      "en": "Custom-Made Armor",
+      "fr": "Armure sur mesure",
+      "de": "Personalisierte Rüstung",
+      "es": "Armadura a medida",
+      "ko": "커스텀 아머",
+      "zh": "定制鎧"
+    },
+    "slug": "custom-made-armor",
+    "stats": {
+      "HP": {
+        "min": 472,
+        "max": 472
+      },
+      "DEF": {
+        "min": 6,
+        "max": 6
+      },
+      "SPR": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_ARM_LW_CMLO_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST",
+          "de": "ARTIFACT_TRUST",
+          "es": "ARTIFACT_TRUST",
+          "ko": "ARTIFACT_TRUST",
+          "zh": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_ARM_LW_CMLO_1_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_arm_019",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN",
+      "JB_LW_DEAN",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_MONT_01"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_CMLO"
+    },
+    "releaseDate": "23/06/2021"
   },
   "AF_SWO_LW_MONT_2": {
     "names": {
@@ -40585,7 +40683,8 @@
       "UN_LW_P_SAKR",
       "UN_LW_P_ELSI",
       "UN_LW_P_ELSR",
-      "UN_FF10_P_YUNA"
+      "UN_FF10_P_YUNA",
+      "UN_LW_P_CMLO"
     ],
     "materials": [
       {
@@ -50577,5 +50676,427 @@
       "type": "Unknown"
     },
     "releaseDate": "16/06/2021"
+  },
+  "AF_LOT_LW_ACC_039": {
+    "names": {
+      "en": "Silver-Rimmed Spectacles",
+      "fr": "Lunettes rondes argentées",
+      "de": "Brille mit Silberfassung",
+      "es": "Gafas de plata",
+      "ko": "은테 안경",
+      "zh": "銀框眼鏡"
+    },
+    "slug": "silver-rimmed-spectacles",
+    "stats": {
+      "HP": {
+        "min": 17,
+        "max": 342
+      },
+      "TP": {
+        "min": 1,
+        "max": 20
+      },
+      "AP": {
+        "min": 1,
+        "max": 16
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 26
+      },
+      "EVADE": {
+        "min": 0,
+        "max": 4
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_ACC_039",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité",
+          "de": "Vital",
+          "es": "Vital",
+          "ko": "바이탈",
+          "zh": "活力"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée",
+          "de": "Zielen",
+          "es": "Certero",
+          "ko": "에임",
+          "zh": "瞄準"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "Critical",
+          "fr": "Critique",
+          "de": "Volltreffer",
+          "es": "Crítico",
+          "ko": "크리티컬",
+          "zh": "暴擊"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_4",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_5",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_acc_039",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ACC_039": 1,
+        "IT_AF_MAT_WING_01": 170,
+        "IT_AF_MAT_ARMN": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_039": 3,
+        "IT_AF_MAT_WING_01": 230,
+        "IT_AF_MAT_ARMN": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_039": 7,
+        "IT_AF_MAT_WING_01": 350,
+        "IT_AF_MAT_ARMN": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_039": 15,
+        "IT_AF_MAT_WING_01": 630,
+        "IT_AF_MAT_ARMN": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_ACCE": 315
+      },
+      {
+        "IT_AF_LW_ACC_039": 31,
+        "IT_AF_MAT_WING_01": 1250,
+        "IT_AF_MAT_ARMN": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_ACCE": 535
+      },
+      {
+        "IT_AF_LW_ACC_039": 63,
+        "IT_AF_MAT_WING_01": 2570,
+        "IT_AF_MAT_ARMN": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_ACCE": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "23/06/2021"
   }
 }

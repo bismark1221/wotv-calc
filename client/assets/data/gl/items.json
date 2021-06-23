@@ -8282,6 +8282,18 @@
     "type": "unit_shard",
     "icon": "IT_PI_GL_LW_THLA_01"
   },
+  "IT_PI_LW_CMLO": {
+    "dataId": "IT_PI_LW_CMLO",
+    "names": {
+      "en": "Camillo Unit Shard",
+      "fr": "Fragment d'unité de Camillo",
+      "de": "„Camillo“-Einheitenfragment",
+      "es": "Fragmento de Camilo",
+      "ko": "카밀로의 조각",
+      "zh": "卡米洛的碎片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -9542,6 +9554,18 @@
     },
     "type": "exjob_orb",
     "icon": "IT_SP_GL_LW_THLA_01"
+  },
+  "IT_SP_LW_CMLO": {
+    "dataId": "IT_SP_LW_CMLO",
+    "names": {
+      "en": "Camillo Mindsphere",
+      "fr": "Sphère spirituelle de Camillo",
+      "de": "„Camillo“-Geistesperle",
+      "es": "Esfera espiritual de Camilo",
+      "ko": "카밀로의 마음 구슬",
+      "zh": "卡米洛的思珠"
+    },
+    "type": "exjob_orb"
   },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
@@ -10805,6 +10829,30 @@
     },
     "type": "compo_esper_awake"
   },
+  "IT_SB_AW_ICDG_R2": {
+    "dataId": "IT_SB_AW_ICDG_R2",
+    "names": {
+      "en": "Freizess's Awakening Stone (2★)",
+      "fr": "Pierre d'éveil de Freezus (2★)",
+      "de": "Friesus’ Erweckungsstein (2★)",
+      "es": "Piedra del despertar de Freizess (2★)",
+      "ko": "프리제스의 각성석(★2)",
+      "zh": "弗利澤斯的獸醒石（★2）"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_ICDG_R3": {
+    "dataId": "IT_SB_AW_ICDG_R3",
+    "names": {
+      "en": "Freizess's Awakening Stone (3★)",
+      "fr": "Pierre d'éveil de Freezus (3★)",
+      "de": "Friesus’ Erweckungsstein (3★)",
+      "es": "Piedra del despertar de Freizess (3★)",
+      "ko": "프리제스의 각성석(★3)",
+      "zh": "弗利澤斯的獸醒石（★3）"
+    },
+    "type": "compo_esper_awake"
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -11643,6 +11691,18 @@
       "es": "Semilla brillante",
       "ko": "빛나는 씨앗",
       "zh": "發光種子"
+    },
+    "type": "compo_equipment"
+  },
+  "IT_AF_MAT_WING_01": {
+    "dataId": "IT_AF_MAT_WING_01",
+    "names": {
+      "en": "Abominable Wing",
+      "fr": "Aile abominable",
+      "de": "Widerlicher Flügel",
+      "es": "Ala monstruosa",
+      "ko": "괴생물의 날개",
+      "zh": "怪魔之翼"
     },
     "type": "compo_equipment"
   },
@@ -12997,6 +13057,19 @@
     },
     "type": "recipe",
     "icon": "AF_FF1_SWO_000"
+  },
+  "IT_AF_LW_ACC_039": {
+    "dataId": "IT_AF_LW_ACC_039",
+    "names": {
+      "en": "Silver-Rimmed Spectacles Crafting Recipe",
+      "fr": "Recette d'artisanat : Lunettes rondes argentées",
+      "de": "[Anleitung] Brille mit Silberfassung",
+      "es": "Receta: gafas de plata",
+      "ko": "은테 안경 제작법",
+      "zh": "銀框眼鏡的製作配方"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_ACC_039"
   },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
@@ -17831,6 +17904,19 @@
     "type": "tickets",
     "icon": "IT_US_G_U_SSR_UR_TICKET"
   },
+  "IT_US_G_U_SSR_UR_19": {
+    "dataId": "IT_US_G_U_SSR_UR_19",
+    "names": {
+      "en": "[Interlude: Part II, Scene 1 Release] MR+ Guaranteed Vision Card Summon Ticket",
+      "fr": "[Intermède : Chapitre II, Partie 1] Ticket d'invocation d'atout-vision MR+ garanti",
+      "de": "[Zwischenspiel Teil 2, Szene 1 erschienen] „[MR+] garantiert“-Visionskartenbeschwörungsticket",
+      "es": "[Interludio II 1] Tícket de invocación de carta de visión MR+ garantizada",
+      "ko": "[Interlude 후편 제1절 개방 기념] MR 이상 비전 카드 보장 소환 티켓",
+      "zh": "【幕間曲後篇第1節公開紀念】確保MR以上幻兵卡召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_U_SSR_UR_TICKET"
+  },
   "IT_US_SE_UR_V_01": {
     "dataId": "IT_US_SE_UR_V_01",
     "names": {
@@ -19522,6 +19608,18 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_ICDG": {
+    "dataId": "IT_VPI_LW_ICDG",
+    "names": {
+      "en": "\"Wyrm of Blizzard Winds, Freizess\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Freezus, le Dragon du blizzard",
+      "de": "„Friesus, der Blizzarddrache“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «Freizess, el Dragón de la Ventisca»",
+      "ko": " '얼음과 눈보라의 용-프리제스'의 조각",
+      "zh": "冰雪嵐龍　弗利澤斯的碎片"
+    },
+    "type": "vc_shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -20605,6 +20703,32 @@
       "es": "Tícket seleccionador de 50 fragmentos de unidad MR",
       "ko": "MR 유닛의 조각 × 50 선택 소환 티켓",
       "zh": "MR兵員碎片×50選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_SSR_U_TICKET"
+  },
+  "IT_US_SE_SSR_U_GL06": {
+    "dataId": "IT_US_SE_SSR_U_GL06",
+    "names": {
+      "en": "[Selection Quest Release Celebration] Select MR Unit Summon Ticket",
+      "fr": "[Arrivée des quêtes sélectives] Ticket sélectionneur d'unité MR",
+      "de": "[Auswahlaufträge sind da!] „Auswählbare [MR]-Einheit“-Beschwörungsticket",
+      "es": "[Nuevas misiones selectas] Tícket seleccionador de unidad MR",
+      "ko": "[선택 퀘스트 추가 기념] MR 유닛 1명 선택 소환 티켓",
+      "zh": "【特選任務實裝紀念】MR兵員1名選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_SSR_U_TICKET"
+  },
+  "IT_US_SE_SSR_U_GL07": {
+    "dataId": "IT_US_SE_SSR_U_GL07",
+    "names": {
+      "en": "[Selection Quest Release Celebration] Select MR Unit Shard x50 Summon Ticket",
+      "fr": "[Arrivée des quêtes sélectives] Ticket sélectionneur de 50 fragments d'unité MR",
+      "de": "[Auswahlaufträge sind da!] „Auswählbares [MR]-Einheitenfragment x50“-Beschwörungsticket",
+      "es": "[Nuevas misiones selectas] Tícket seleccionador de 50 fragmentos de unidad MR",
+      "ko": "[선택 퀘스트 추가 기념] MR 유닛의 조각×50 선택 소환 티켓",
+      "zh": "【特選任務實裝紀念】MR兵員碎片×50選擇召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_SSR_U_TICKET"

@@ -10395,7 +10395,8 @@
           "SLEEP",
           "SILENCE",
           "PARALYZE",
-          "CONFUSION"
+          "CONFUSION",
+          "FROSTBITE"
         ],
         "target": "all",
         "timing": "SKILL_AFTER"
@@ -10575,7 +10576,8 @@
           "PARALYZE",
           "CONFUSION",
           "SLOW",
-          "BERSERK"
+          "BERSERK",
+          "FROSTBITE"
         ],
         "target": "all",
         "timing": "SKILL_AFTER"
@@ -15861,6 +15863,225 @@
       }
     }
   },
+  "SK_LW_EC_SWN_C_05": {
+    "effects": [],
+    "dataId": "SK_LW_EC_SWN_C_05",
+    "type": "ex_buff",
+    "names": {
+      "en": "Grim Reaper Enhancement",
+      "fr": "Améliorer Faucheur sombre",
+      "de": "Schnitter (verstärkt)",
+      "es": "Mejorar Némesis oscuro",
+      "ko": "그림 리퍼 강화",
+      "zh": "冷血死神強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_SWN_C_06": {
+    "effects": [],
+    "dataId": "SK_LW_EC_SWN_C_06",
+    "type": "ex_buff",
+    "names": {
+      "en": "Hazard Form Enhancement",
+      "fr": "Améliorer Forme dangereuse",
+      "de": "Risikoform (verstärkt)",
+      "es": "Mejorar Forma peligro",
+      "ko": "해저드 폼 강화",
+      "zh": "瀕危姿態強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_UN_BD_EC_AP_20": {
+    "effects": [
+      {
+        "type": "AP",
+        "minValue": 1,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "QUEST_START"
+      }
+    ],
+    "dataId": "SK_UN_BD_EC_AP_20",
+    "type": "ex_buff",
+    "names": {
+      "en": "AP Up",
+      "fr": "PA ↑",
+      "de": "AP erhöht",
+      "es": "PA↑",
+      "ko": "AP 증가",
+      "zh": "提升AP"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_EC_SWN_A_03": {
+    "effects": [
+      {
+        "type": "HP_COST",
+        "value": 15,
+        "calcType": "percent",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "STOP_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 30,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_SWN_A_03",
+    "type": "skill",
+    "names": {
+      "en": "Pressure Hazard",
+      "fr": "Pression risquée",
+      "de": "Gefährlicher Druck",
+      "es": "Presión peligro",
+      "ko": "프레셔 해저드",
+      "zh": "威壓災厄"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 28
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 0
+    },
+    "damage": {
+      "minValue": 50,
+      "maxValue": 80,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_EC_SWN_C_05B": {
+    "effects": [
+      {
+        "type": "DOOM_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 5,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_SWN_C_05B",
+    "type": "skill",
+    "names": {
+      "en": "Doom Scythe",
+      "fr": "Faux de la ruine",
+      "de": "Vernichtungssichel",
+      "es": "Guadaña condena",
+      "ko": "죽음의 낫",
+      "zh": "死神鐮刀"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 23
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 75,
+      "maxValue": 110,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_EC_SWN_C_06B": {
+    "effects": [
+      {
+        "type": "HP_COST",
+        "value": 10,
+        "calcType": "percent",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "PARALYZE"
+        ],
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "STOP"
+        ],
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "DOOM"
+        ],
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_SWN_C_06B",
+    "type": "skill",
+    "names": {
+      "en": "Hazard Soul",
+      "fr": "Âme dangereuse",
+      "de": "Risikoseele",
+      "es": "Alma peligro",
+      "ko": "해저드 소울",
+      "zh": "災厄之魂"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 12
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "physic"
+  },
   "SK_LW_FINA_ATK": {
     "effects": [],
     "dataId": "SK_LW_FINA_ATK",
@@ -20784,30 +21005,6 @@
     },
     "target": "self",
     "maxLevel": 1
-  },
-  "SK_UN_BD_EC_AP_20": {
-    "effects": [
-      {
-        "type": "AP",
-        "minValue": 1,
-        "maxValue": 20,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_UN_BD_EC_AP_20",
-    "type": "ex_buff",
-    "names": {
-      "en": "AP Up",
-      "fr": "PA ↑",
-      "de": "AP erhöht",
-      "es": "PA↑",
-      "ko": "AP 증가",
-      "zh": "提升AP"
-    },
-    "target": "self",
-    "maxLevel": 20
   },
   "SK_LW_EC_GLMS_A_01": {
     "effects": [
@@ -26175,6 +26372,194 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_EC_VIK_C_03": {
+    "effects": [],
+    "dataId": "SK_LW_EC_VIK_C_03",
+    "type": "ex_buff",
+    "names": {
+      "en": "Killing Axe Enhancement",
+      "fr": "Améliorer Hache meurtrière",
+      "de": "Mörderaxt (verstärkt)",
+      "es": "Mejorar Hacha asesina",
+      "ko": "킬링 액스 강화",
+      "zh": "殺戮之斧強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_VIK_C_04": {
+    "effects": [],
+    "dataId": "SK_LW_EC_VIK_C_04",
+    "type": "ex_buff",
+    "names": {
+      "en": "Rebellious Spirit Enhancement",
+      "fr": "Améliorer Esprit rebelle",
+      "de": "Rebellischer Geist (verstärkt)",
+      "es": "Mejorar Espíritu rebelde",
+      "ko": "반골 정신 강화",
+      "zh": "反叛精神強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_VIK_A_02": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": -10,
+        "maxValue": -25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_EC_VIK_A_02",
+    "type": "skill",
+    "names": {
+      "en": "Massacring Cleave",
+      "fr": "Percée meurtrière",
+      "de": "Hackmassaker",
+      "es": "Hachazo asesino",
+      "ko": "학살 도끼",
+      "zh": "滅絕砍刀"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 30
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 2,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 35,
+      "maxValue": 70,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_EC_VIK_C_03B": {
+    "effects": [
+      {
+        "type": "HUMAN_KILLER",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "unknow",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "BERSERK_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_VIK_C_03B",
+    "type": "skill",
+    "names": {
+      "en": "Murderous Axe",
+      "fr": "Hache fatale",
+      "de": "Schlächteraxt",
+      "es": "Hacha homicida",
+      "ko": "머더 액스",
+      "zh": "殺人斧"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 34
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 10,
+      "w": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 70,
+      "maxValue": 105,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LW_EC_VIK_C_04B": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "EVADE",
+        "minValue": -30,
+        "maxValue": -15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_VIK_C_04B",
+    "type": "skill",
+    "names": {
+      "en": "Marauding Spirit",
+      "fr": "Esprit ravageur",
+      "de": "Zerstörerische Gesinnung",
+      "es": "Espíritu saqueador",
+      "ko": "격멸 정신",
+      "zh": "擊滅精神"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 15
+    },
+    "count": 2,
+    "maxLevel": 20
   },
   "SK_LB_LW_LUCA": {
     "effects": [
@@ -31880,7 +32265,8 @@
           "SLEEP",
           "SILENCE",
           "PARALYZE",
-          "CONFUSION"
+          "CONFUSION",
+          "FROSTBITE"
         ],
         "target": "all",
         "timing": "SKILL_AFTER"
@@ -39423,7 +39809,8 @@
           "SILENCE",
           "PARALYZE",
           "CONFUSION",
-          "STOP"
+          "STOP",
+          "FROSTBITE"
         ],
         "target": "selfSide",
         "timing": "SKILL_AFTER"
@@ -52967,6 +53354,189 @@
       }
     }
   },
+  "SK_MA_LW_CMLO": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "LIGHT_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "SPR",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_CMLO",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_DRG_C_03": {
+    "effects": [],
+    "dataId": "SK_LW_EC_DRG_C_03",
+    "type": "ex_buff",
+    "names": {
+      "en": "Vertical Jump Enhancement",
+      "fr": "Améliorer Saut vertical",
+      "de": "Vertikalsprung (verstärkt)",
+      "es": "Mejorar Salto vertical",
+      "ko": "수직 점프 강화",
+      "zh": "垂直跳躍強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_DRG_C_04": {
+    "effects": [],
+    "dataId": "SK_LW_EC_DRG_C_04",
+    "type": "ex_buff",
+    "names": {
+      "en": "HP Up Lv. 1 Enhancement",
+      "fr": "Améliorer PV ↑ Niv. 1",
+      "de": "LP-Erhöhung Stufe 1 (verstärkt)",
+      "es": "Mejorar VIT↑ nv. 1",
+      "ko": "HP 증가 Lv.1 강화",
+      "zh": "提升HP Lv1強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_DRG_A_02": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_MAGIC",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_DRG_A_02",
+    "type": "skill",
+    "names": {
+      "en": "Magic Wall",
+      "fr": "Mur magique",
+      "de": "Magiewall",
+      "es": "Muro mágico",
+      "ko": "마법 장벽",
+      "zh": "魔法墻"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 40
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_LW_EC_DRG_C_03B": {
+    "effects": [
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_DRG_C_03B",
+    "type": "skill",
+    "names": {
+      "en": "Bedeviling Dive",
+      "fr": "Sème-confusion",
+      "de": "Verwirrtaucher",
+      "es": "Salto confu",
+      "ko": "혼란 강타",
+      "zh": "混亂躍擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "time": {
+      "minValue": 120,
+      "maxValue": 280
+    },
+    "damage": {
+      "minValue": 125,
+      "maxValue": 165,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 5,
+        "3": 15,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_EC_DRG_C_04B": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 10,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_EC_DRG_C_04B",
+    "type": "support",
+    "names": {
+      "en": "Dreadlance Mastery",
+      "fr": "Maîtrise du déferlement céleste",
+      "de": "Meister der Satanslanze",
+      "es": "Maestría de lanza infernal",
+      "ko": "마창의 비법",
+      "zh": "魔槍奧義"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
   "SK_LW_CLR_ATK_100": {
     "effects": [],
     "dataId": "SK_LW_CLR_ATK_100",
@@ -57830,6 +58400,158 @@
       }
     ],
     "dataId": "BUFF_MABR_33",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_MABR_34": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_MABR_34",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_MABR_35": {
+    "effects": [
+      {
+        "type": "INITIAL_AP",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_MABR_35",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_MABR_36": {
+    "effects": [
+      {
+        "type": "INITIAL_AP",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_MABR_36",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_MABR_37": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_MABR_37",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_MABR_38": {
+    "effects": [
+      {
+        "type": "WIND_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_MABR_38",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_MABR_39": {
+    "effects": [
+      {
+        "type": "WIND_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_MABR_39",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_MABR_40": {
+    "effects": [
+      {
+        "type": "WIND_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_MABR_40",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_MABR_41": {
+    "effects": [
+      {
+        "type": "WIND_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_MABR_41",
     "type": "buff",
     "count": null,
     "maxLevel": null,
@@ -83061,6 +83783,915 @@
     "pierce": null,
     "ctbreak": null
   },
+  "SK_SMN_ICDG": {
+    "effects": [
+      {
+        "type": "HEAL_POWER",
+        "minValue": -40,
+        "maxValue": -60,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "side": "ENNEMIES",
+        "type": "ICE_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_ICE",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_ICE03_NOT_ICE",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "water",
+          "wind",
+          "earth",
+          "lightning",
+          "fire",
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_ICE03_NOT_ICE",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "water",
+          "wind",
+          "earth",
+          "lightning",
+          "fire",
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_ICE03_ICE",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "ice"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_ICE03_ICE",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "ice"
+        ]
+      }
+    ],
+    "dataId": "SK_SMN_ICDG",
+    "type": "esper",
+    "names": {
+      "en": "Wyrm's Snowstorm",
+      "fr": "Tempête de neige du dragon",
+      "de": "Draco-Blizzard",
+      "es": "Ventisca de guiverno",
+      "ko": "용의 눈보라",
+      "zh": "龍之雪嵐"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 13
+    },
+    "based": "magic",
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "BUFF_ICDG_01": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_01",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_02": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_02",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_03": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_03",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_04": {
+    "effects": [
+      {
+        "type": "WIND_KILLER",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_04",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_05": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_05",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_06": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_06",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_07": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_07",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_08": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_08",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_09": {
+    "effects": [
+      {
+        "type": "MACHINE_KILLER",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_09",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_10": {
+    "effects": [
+      {
+        "type": "MACHINE_KILLER",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_10",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_11": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_11",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_12": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_12",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_13": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_13",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_14": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_14",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_15": {
+    "effects": [
+      {
+        "type": "WIND_KILLER",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_15",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_16": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_16",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_17": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_17",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_18": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_18",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_19": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_19",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_20": {
+    "effects": [
+      {
+        "type": "MACHINE_KILLER",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_20",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_21": {
+    "effects": [
+      {
+        "type": "MACHINE_KILLER",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_21",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_22": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_22",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_23": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_23",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_24": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_24",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_25": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_25",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_26": {
+    "effects": [
+      {
+        "type": "WIND_KILLER",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_26",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_27": {
+    "effects": [
+      {
+        "type": "WIND_KILLER",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_27",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_28": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_28",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_29": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_29",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_30": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_30",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_31": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_31",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_32": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_32",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_33": {
+    "effects": [
+      {
+        "type": "WIND_KILLER",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_33",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_34": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_34",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_35": {
+    "effects": [
+      {
+        "type": "CRITIC_EVADE",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_35",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_36": {
+    "effects": [
+      {
+        "type": "CRITIC_EVADE",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_36",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_37": {
+    "effects": [
+      {
+        "type": "CRITIC_EVADE",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_37",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_38": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_38",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_39": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_39",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_40": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_40",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_ICDG_41": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_ICDG_41",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
   "SK_VC_LW_GLEM_GS": {
     "effects": [
       {
@@ -93735,6 +95366,267 @@
       "maxValue": 360
     }
   },
+  "SK_VC_LW_ICDG_GS": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 15,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "condition": "ICE_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 2,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "condition": "ICE_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_GS",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 99
+  },
+  "SK_VC_LW_ICDG_GS_AW": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 1,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "condition": "ICE_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 1,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "condition": "ICE_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_GS_AW",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 4
+  },
+  "SK_VC_LW_ICDG_GSMAX": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "condition": "ICE_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "condition": "ICE_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_GSMAX",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_VC_LW_ICDG_GS_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 0,
+        "maxValue": 0,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_GS_2",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 99
+  },
+  "SK_VC_LW_ICDG_GS_AW_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 0,
+        "maxValue": 0,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_GS_AW_2",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 4
+  },
+  "SK_VC_LW_ICDG_GSMAX_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_GSMAX_2",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_VC_LW_ICDG_P": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_P",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 99
+  },
+  "SK_VC_LW_ICDG_PAW": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 1,
+        "maxValue": 5,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_PAW",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 4
+  },
+  "SK_VC_LW_ICDG_PMAX": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_PMAX",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_VC_LW_ICDG_P_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 2,
+        "maxValue": 5,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 2,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "condition": "ICE_ELEMENT",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_P_2",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 99
+  },
+  "SK_VC_LW_ICDG_PAW_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 1,
+        "maxValue": 3,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 1,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "condition": "ICE_ELEMENT",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_PAW_2",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 4
+  },
+  "SK_VC_LW_ICDG_PMAX_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "resistance",
+        "condition": "ICE_ELEMENT",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_LW_ICDG_PMAX_2",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_VC_LW_IGNT_GS": {
     "effects": [
       {
@@ -104225,7 +106117,8 @@
           "PARALYZE",
           "CONFUSION",
           "PETRIFY",
-          "GRADUAL_PETRIFY"
+          "GRADUAL_PETRIFY",
+          "FROSTBITE"
         ],
         "target": "selfSide",
         "timing": "SKILL_AFTER"
@@ -106917,6 +108810,50 @@
     "count": 1,
     "maxLevel": 1
   },
+  "SK_ARM_LW_CMLO_1_1": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_CMLO_1_1",
+    "type": "skill",
+    "names": {
+      "en": "Dragon Hunter's Presence",
+      "fr": "Prestance du chasseur de dragons",
+      "de": "Prestige des Drachenjägers",
+      "es": "Presencia de cazadragones",
+      "ko": "용 사냥꾼의 위광",
+      "zh": "獵龍者的威光"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
   "SK_GUN_LW_LATH_2_1": {
     "effects": [
       {
@@ -108828,6 +110765,167 @@
       "es": "Espada de la luz (ataque de luz↑)",
       "ko": "빛의 검(빛속성 공격력 증가)",
       "zh": "光明之劍（光屬性攻擊UP）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_039_1": {
+    "effects": [
+      {
+        "type": "BLIND_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_039_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_039_1",
+      "fr": "SK_LW_ACC_039_1",
+      "de": "SK_LW_ACC_039_1",
+      "es": "SK_LW_ACC_039_1",
+      "ko": "SK_LW_ACC_039_1",
+      "zh": "SK_LW_ACC_039_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_039_5": {
+    "effects": [
+      {
+        "type": "BLIND_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_039_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_039_5",
+      "fr": "SK_LW_ACC_039_5",
+      "de": "SK_LW_ACC_039_5",
+      "es": "SK_LW_ACC_039_5",
+      "ko": "SK_LW_ACC_039_5",
+      "zh": "SK_LW_ACC_039_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_1": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_1",
+    "type": "support",
+    "names": {
+      "en": "SPR Piercing Rate +2",
+      "fr": "Taux de perforation de la PSY +2",
+      "de": "PSY-Durchbohrrate +2",
+      "es": "Tasa de penetración de ESP +2",
+      "ko": "정신 관통률+2",
+      "zh": "精神貫通率+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_2": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_2",
+    "type": "support",
+    "names": {
+      "en": "SPR Piercing Rate +3",
+      "fr": "Taux de perforation de la PSY +3",
+      "de": "PSY-Durchbohrrate +3",
+      "es": "Tasa de penetración de ESP +3",
+      "ko": "정신 관통률+3",
+      "zh": "精神貫通率+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_3": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_3",
+    "type": "support",
+    "names": {
+      "en": "SPR Piercing Rate +5",
+      "fr": "Taux de perforation de la PSY +5",
+      "de": "PSY-Durchbohrrate +5",
+      "es": "Tasa de penetración de ESP +5",
+      "ko": "정신 관통률+5",
+      "zh": "精神貫通率+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_4": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_4",
+    "type": "support",
+    "names": {
+      "en": "SPR Piercing Rate +10",
+      "fr": "Taux de perforation de la PSY +10",
+      "de": "PSY-Durchbohrrate +10",
+      "es": "Tasa de penetración de ESP +10",
+      "ko": "정신 관통률+10",
+      "zh": "精神貫通率+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_5": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_5",
+    "type": "support",
+    "names": {
+      "en": "SPR Piercing Rate +20",
+      "fr": "Taux de perforation de la PSY +20",
+      "de": "PSY-Durchbohrrate +20",
+      "es": "Tasa de penetración de ESP +20",
+      "ko": "정신 관통률+20",
+      "zh": "精神貫通率+20"
     },
     "target": "self",
     "maxLevel": 50
@@ -120202,6 +122300,250 @@
     "target": "self",
     "maxLevel": 80
   },
+  "SK_TYPN_ATK": {
+    "effects": [],
+    "dataId": "SK_TYPN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_TYPN_M_01": {
+    "effects": [],
+    "dataId": "SK_TYPN_M_01",
+    "type": "skill",
+    "names": {
+      "en": "Beat Up",
+      "fr": "Passage à tabac",
+      "de": "Geprügel",
+      "es": "Paliza",
+      "ko": "후려갈기기",
+      "zh": "暴打"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 100,
+      "maxValue": 150,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_TYPN_M_02": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": 10,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_TYPN_M_02",
+    "type": "skill",
+    "names": {
+      "en": "Fungahhh!!!",
+      "fr": "Fungaaaaah !",
+      "de": "Hmgaaarrh!!!",
+      "es": "¡¡¡Fiuuuuu!!!",
+      "ko": "흠하!",
+      "zh": "呼喝——！！"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 40
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_TYPN_M_03": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": -20,
+        "maxValue": -30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_TYPN_M_03",
+    "type": "skill",
+    "names": {
+      "en": "Toxic Rain",
+      "fr": "Pluie toxique",
+      "de": "Giftregen",
+      "es": "Lluvia tóxica",
+      "ko": "폭풍 산성비",
+      "zh": "暴風酸性雨"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 16
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    },
+    "damage": {
+      "minValue": 35,
+      "maxValue": 65,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "wind"
+    ]
+  },
+  "SK_TYPN_M_04": {
+    "effects": [
+      {
+        "type": "STUN_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 1,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_TYPN_M_04",
+    "type": "skill",
+    "names": {
+      "en": "Great Storm",
+      "fr": "Tempête",
+      "de": "Gewittersturm",
+      "es": "Gran tormenta",
+      "ko": "대폭풍",
+      "zh": "狂風暴雨"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 28
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 10,
+      "w": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "wind"
+    ]
+  },
+  "SK_TYPN_R_01": {
+    "effects": [],
+    "dataId": "SK_TYPN_R_01",
+    "type": "counter",
+    "names": {
+      "en": "Snort",
+      "fr": "Reniflement",
+      "de": "Schnaufer",
+      "es": "Bufido",
+      "ko": "콧바람",
+      "zh": "鼻息"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "knockback": {
+      "rate": 100,
+      "value": 4,
+      "dir": 0
+    },
+    "counter": {
+      "minValue": 20,
+      "maxValue": 60,
+      "reactDamage": "ALL",
+      "calcType": "percent"
+    }
+  },
   "SK_WRMC_ATK": {
     "effects": [],
     "dataId": "SK_WRMC_ATK",
@@ -120809,7 +123151,8 @@
           "STOP",
           "SILENCE",
           "PETRIFY",
-          "GRADUAL_PETRIFY"
+          "GRADUAL_PETRIFY",
+          "FROSTBITE"
         ],
         "target": "selfSide",
         "timing": "SKILL_AFTER"
@@ -124277,6 +126620,657 @@
       "ice"
     ]
   },
+  "SK_CORL_ATK": {
+    "effects": [],
+    "dataId": "SK_CORL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_CORL_M_03": {
+    "effects": [],
+    "dataId": "SK_CORL_M_03",
+    "type": "skill",
+    "names": {
+      "en": "Double Strike",
+      "fr": "Double attaque",
+      "de": "Doppelattacke",
+      "es": "Golpe doble",
+      "ko": "이중 공격",
+      "zh": "雙攻擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 18
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": 40,
+      "maxValue": 75,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_CORL_M_01": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CORL_M_01",
+    "type": "skill",
+    "names": {
+      "en": "Blaster",
+      "fr": "Rayons",
+      "de": "Blaster",
+      "es": "Electroplasma",
+      "ko": "블래스터",
+      "zh": "衝擊波"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 32
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    },
+    "damage": {
+      "minValue": 35,
+      "maxValue": 70,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "lightning"
+    ]
+  },
+  "SK_MRLT_ATK": {
+    "effects": [],
+    "dataId": "SK_MRLT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_MRLT_M_02": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_MRLT_M_02",
+    "type": "skill",
+    "names": {
+      "en": "Blade Dance",
+      "fr": "Danse du sabre",
+      "de": "Schwertertanz",
+      "es": "Baile de espadas",
+      "ko": "칼춤",
+      "zh": "劍舞"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 26
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "h": 3,
+      "l": 2,
+      "s": 2
+    },
+    "based": "physic",
+    "hit": 100,
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_MRLT_M_03": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": -30,
+        "maxValue": -50,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_MRLT_M_03",
+    "type": "skill",
+    "names": {
+      "en": "Tri-Blaze",
+      "fr": "Flamme triple",
+      "de": "Flammende Dreifaltigkeit",
+      "es": "Llamarada triple",
+      "ko": "화염 삼연격",
+      "zh": "火焰三連"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 20
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "combo": {
+      "num": 3,
+      "rate": 77
+    },
+    "damage": {
+      "minValue": 40,
+      "maxValue": 75,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "fire"
+    ]
+  },
+  "SK_GCAL_ATK": {
+    "effects": [],
+    "dataId": "SK_GCAL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_GCAL_M_01": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": -12,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_GCAL_M_01",
+    "type": "skill",
+    "names": {
+      "en": "Whiteout",
+      "fr": "Horreur blanche",
+      "de": "Schneeblindheit",
+      "es": "Nevada",
+      "ko": "화이트 아웃",
+      "zh": "蔽眼飛雪"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 14
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 5,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 10,
+      "maxValue": 40,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_GCAL_M_02": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": -10,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "rate": 50,
+        "turn": 3,
+        "target": "ennemySide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_GCAL_M_02",
+    "type": "skill",
+    "names": {
+      "en": "Wings of the Ice Bird",
+      "fr": "Envol de l'oiseau de glace",
+      "de": "Schwingen des Eisvogels",
+      "es": "Alas del pájaro de hielo",
+      "ko": "빙조의 날갯짓",
+      "zh": "冰鳥振翅"
+    },
+    "target": "ennemySide",
+    "cost": {
+      "type": "AP",
+      "value": 18
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 3,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 20,
+      "maxValue": 80,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_GCAL_M_04": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 50,
+        "maxValue": 80,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": 50,
+        "maxValue": 80,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_GCAL_M_04",
+    "type": "skill",
+    "names": {
+      "en": "Glacification",
+      "fr": "Glaciation",
+      "de": "Eisstatue",
+      "es": "Congelación",
+      "ko": "빙상화",
+      "zh": "冰像化"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_TNBR_ATK": {
+    "effects": [],
+    "dataId": "SK_TNBR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_TNBR_M_04_R": {
+    "effects": [],
+    "dataId": "SK_TNBR_M_04_R",
+    "type": "skill",
+    "names": {
+      "en": "Everyone's Grudge",
+      "fr": "Rancune commune",
+      "de": "Kollektivhass",
+      "es": "Rencor de la raza",
+      "ko": "모두의 원한",
+      "zh": "萬眾的怨恨"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 45
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "hit": 100,
+    "maths": [
+      {
+        "type": "DEAD_UNITS",
+        "formula": "FIX",
+        "condition": 4,
+        "value": 2000,
+        "dst": "DAMAGE"
+      }
+    ],
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_DABL_ATK": {
+    "effects": [],
+    "dataId": "SK_DABL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_DABL_M_01": {
+    "effects": [
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_DABL_M_01",
+    "type": "skill",
+    "names": {
+      "en": "Violet Terror",
+      "fr": "Terreur pourpre",
+      "de": "Purpurterror",
+      "es": "Terror violeta",
+      "ko": "보랏빛 공포",
+      "zh": "紫羅蘭恐怖"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 5
+    },
+    "count": 20,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 40,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "dark"
+    ]
+  },
+  "SK_DABL_M_02": {
+    "effects": [],
+    "dataId": "SK_DABL_M_02",
+    "type": "skill",
+    "names": {
+      "en": "Gravity",
+      "fr": "Gravité",
+      "de": "Gravitas",
+      "es": "Gravedad",
+      "ko": "그라비데",
+      "zh": "重力"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 5
+    },
+    "count": 10,
+    "maxLevel": 1,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -100,
+    "damage": {
+      "minValue": -75,
+      "maxValue": -75,
+      "type": "all",
+      "pool": "HP",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_DABL_M_04": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": -30,
+        "maxValue": -30,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_DABL_M_04",
+    "type": "skill",
+    "names": {
+      "en": "Dark Messenger",
+      "fr": "Messager des ténèbres",
+      "de": "Dunkler Bote",
+      "es": "Emisario de la noche",
+      "ko": "어둠의 사자",
+      "zh": "來自黑暗的使者"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 5
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 10,
+      "maxValue": 200,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "dark"
+    ]
+  },
   "SK_IFRT_M_03": {
     "effects": [
       {
@@ -125653,212 +128647,6 @@
       "wind"
     ]
   },
-  "SK_DABL_ATK": {
-    "effects": [],
-    "dataId": "SK_DABL_ATK",
-    "type": "skill",
-    "names": {
-      "en": "Normal Attack",
-      "fr": "Attaque normale",
-      "de": "Normaler Angriff",
-      "es": "Ataque normal",
-      "ko": "일반 공격",
-      "zh": "普通攻擊"
-    },
-    "target": "all",
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -30,
-      "maxValue": -30,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
-  },
-  "SK_DABL_M_01": {
-    "effects": [
-      {
-        "type": "CONFUSION_ATK",
-        "calcType": "apply",
-        "rate": 30,
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_DABL_M_01",
-    "type": "skill",
-    "names": {
-      "en": "Violet Terror",
-      "fr": "Terreur pourpre",
-      "de": "Purpurterror",
-      "es": "Terror violeta",
-      "ko": "보랏빛 공포",
-      "zh": "紫羅蘭恐怖"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 5
-    },
-    "count": 20,
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 4,
-      "s": 1
-    },
-    "based": "magic",
-    "damage": {
-      "minValue": 0,
-      "maxValue": 40,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "dark"
-    ]
-  },
-  "SK_DABL_M_02": {
-    "effects": [],
-    "dataId": "SK_DABL_M_02",
-    "type": "skill",
-    "names": {
-      "en": "Gravity",
-      "fr": "Gravité",
-      "de": "Gravitas",
-      "es": "Gravedad",
-      "ko": "그라비데",
-      "zh": "重力"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 5
-    },
-    "count": 10,
-    "maxLevel": 1,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "aoe": {
-      "s": 0,
-      "l": 1,
-      "h": 2
-    },
-    "hit": 100,
-    "crt_hit": -100,
-    "damage": {
-      "minValue": -75,
-      "maxValue": -75,
-      "type": "all",
-      "pool": "HP",
-      "effType": "DAMAGE",
-      "formula": {}
-    }
-  },
-  "SK_DABL_M_03": {
-    "effects": [
-      {
-        "type": "HP",
-        "minValue": 180,
-        "maxValue": 210,
-        "calcType": "unknow",
-        "target": "selfSide",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_DABL_M_03",
-    "type": "skill",
-    "names": {
-      "en": "Curaga",
-      "fr": "Soin Max",
-      "de": "Vitaga",
-      "es": "Cura+++",
-      "ko": "케알가",
-      "zh": "超療傷"
-    },
-    "target": "selfSide",
-    "cost": {
-      "type": "TP",
-      "value": 34
-    },
-    "count": 3,
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 4,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 0,
-      "l": 1,
-      "h": 2
-    }
-  },
-  "SK_DABL_M_04": {
-    "effects": [
-      {
-        "type": "MAGIC_RES",
-        "minValue": -30,
-        "maxValue": -30,
-        "calcType": "resistance",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_DABL_M_04",
-    "type": "skill",
-    "names": {
-      "en": "Dark Messenger",
-      "fr": "Messager des ténèbres",
-      "de": "Dunkler Bote",
-      "es": "Emisario de la noche",
-      "ko": "어둠의 사자",
-      "zh": "來自黑暗的使者"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 5
-    },
-    "count": 8,
-    "maxLevel": 20,
-    "range": {
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 1
-    },
-    "damage": {
-      "minValue": 10,
-      "maxValue": 200,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "dark"
-    ]
-  },
   "SK_FNRR_M_04": {
     "effects": [
       {
@@ -126858,37 +129646,6 @@
       "neutral"
     ]
   },
-  "SK_TNBR_ATK": {
-    "effects": [],
-    "dataId": "SK_TNBR_ATK",
-    "type": "skill",
-    "names": {
-      "en": "Normal Attack",
-      "fr": "Attaque normale",
-      "de": "Normaler Angriff",
-      "es": "Ataque normal",
-      "ko": "일반 공격",
-      "zh": "普通攻擊"
-    },
-    "target": "ennemySide",
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -30,
-      "maxValue": -30,
-      "type": "pierce",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
-  },
   "SK_TNBR_M_01": {
     "effects": [],
     "dataId": "SK_TNBR_M_01",
@@ -127007,49 +129764,6 @@
     "elem": [
       "fire"
     ]
-  },
-  "SK_TNBR_M_04_R": {
-    "effects": [],
-    "dataId": "SK_TNBR_M_04_R",
-    "type": "skill",
-    "names": {
-      "en": "Everyone's Grudge",
-      "fr": "Rancune commune",
-      "de": "Kollektivhass",
-      "es": "Rencor de la raza",
-      "ko": "모두의 원한",
-      "zh": "萬眾的怨恨"
-    },
-    "target": "target",
-    "cost": {
-      "type": "AP",
-      "value": 45
-    },
-    "count": 2,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "hit": 100,
-    "maths": [
-      {
-        "type": "DEAD_UNITS",
-        "formula": "FIX",
-        "condition": 4,
-        "value": 2000,
-        "dst": "DAMAGE"
-      }
-    ],
-    "damage": {
-      "minValue": 0,
-      "maxValue": 0,
-      "type": "all",
-      "effType": "DAMAGE",
-      "formula": {}
-    }
   },
   "SK_LVAT_ATK": {
     "effects": [],
@@ -127290,127 +130004,6 @@
     "count": 3,
     "maxLevel": 20
   },
-  "SK_GCAL_ATK": {
-    "effects": [],
-    "dataId": "SK_GCAL_ATK",
-    "type": "skill",
-    "names": {
-      "en": "Normal Attack",
-      "fr": "Attaque normale",
-      "de": "Normaler Angriff",
-      "es": "Ataque normal",
-      "ko": "일반 공격",
-      "zh": "普通攻擊"
-    },
-    "target": "all",
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -30,
-      "maxValue": -30,
-      "type": "pierce",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
-  },
-  "SK_GCAL_M_01": {
-    "effects": [
-      {
-        "type": "MAGIC_RES",
-        "minValue": -12,
-        "maxValue": -25,
-        "calcType": "resistance",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_GCAL_M_01",
-    "type": "skill",
-    "names": {
-      "en": "Whiteout",
-      "fr": "Horreur blanche",
-      "de": "Schneeblindheit",
-      "es": "Nevada",
-      "ko": "화이트 아웃",
-      "zh": "蔽眼飛雪"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 14
-    },
-    "count": 5,
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 5,
-      "s": 0
-    },
-    "based": "magic",
-    "damage": {
-      "minValue": 10,
-      "maxValue": 40,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "ice"
-    ]
-  },
-  "SK_GCAL_M_02": {
-    "effects": [
-      {
-        "type": "DEF",
-        "minValue": -10,
-        "maxValue": -20,
-        "calcType": "fixe",
-        "rate": 50,
-        "turn": 3,
-        "target": "ennemySide",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_GCAL_M_02",
-    "type": "skill",
-    "names": {
-      "en": "Wings of the Ice Bird",
-      "fr": "Envol de l'oiseau de glace",
-      "de": "Schwingen des Eisvogels",
-      "es": "Alas del pájaro de hielo",
-      "ko": "빙조의 날갯짓",
-      "zh": "冰鳥振翅"
-    },
-    "target": "ennemySide",
-    "cost": {
-      "type": "AP",
-      "value": 18
-    },
-    "count": 3,
-    "maxLevel": 20,
-    "based": "physic",
-    "aoe": {
-      "s": 1,
-      "l": 3,
-      "h": 1
-    },
-    "damage": {
-      "minValue": 20,
-      "maxValue": 80,
-      "type": "strike",
-      "effType": "DAMAGE",
-      "formula": {}
-    }
-  },
   "SK_GCAL_M_03": {
     "effects": [
       {
@@ -127461,45 +130054,6 @@
       "ice"
     ]
   },
-  "SK_GCAL_M_04": {
-    "effects": [
-      {
-        "type": "DEF",
-        "minValue": 50,
-        "maxValue": 80,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "SPR",
-        "minValue": 50,
-        "maxValue": 80,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_GCAL_M_04",
-    "type": "skill",
-    "names": {
-      "en": "Glacification",
-      "fr": "Glaciation",
-      "de": "Eisstatue",
-      "es": "Congelación",
-      "ko": "빙상화",
-      "zh": "冰像化"
-    },
-    "target": "self",
-    "cost": {
-      "type": "TP",
-      "value": 24
-    },
-    "count": 1,
-    "maxLevel": 20
-  },
   "SK_GCAL_R_01": {
     "effects": [],
     "dataId": "SK_GCAL_R_01",
@@ -127535,281 +130089,6 @@
     },
     "elem": [
       "ice"
-    ]
-  },
-  "SK_TYPN_ATK": {
-    "effects": [],
-    "dataId": "SK_TYPN_ATK",
-    "type": "skill",
-    "names": {
-      "en": "Normal Attack",
-      "fr": "Attaque normale",
-      "de": "Normaler Angriff",
-      "es": "Ataque normal",
-      "ko": "일반 공격",
-      "zh": "普通攻擊"
-    },
-    "target": "all",
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -30,
-      "maxValue": -30,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
-  },
-  "SK_TYPN_M_01": {
-    "effects": [],
-    "dataId": "SK_TYPN_M_01",
-    "type": "skill",
-    "names": {
-      "en": "Beat Up",
-      "fr": "Passage à tabac",
-      "de": "Geprügel",
-      "es": "Paliza",
-      "ko": "후려갈기기",
-      "zh": "暴打"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 24
-    },
-    "count": 3,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": 100,
-      "maxValue": 150,
-      "type": "strike",
-      "effType": "DAMAGE",
-      "formula": {}
-    }
-  },
-  "SK_TYPN_M_02": {
-    "effects": [
-      {
-        "type": "ATK",
-        "minValue": 10,
-        "maxValue": 50,
-        "calcType": "percent",
-        "turn": 3,
-        "increaseMax": true,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "DEF",
-        "minValue": 10,
-        "maxValue": 50,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "SPR",
-        "minValue": 10,
-        "maxValue": 50,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_TYPN_M_02",
-    "type": "skill",
-    "names": {
-      "en": "Fungahhh!!!",
-      "fr": "Fungaaaaah !",
-      "de": "Hmgaaarrh!!!",
-      "es": "¡¡¡Fiuuuuu!!!",
-      "ko": "흠하!",
-      "zh": "呼喝——！！"
-    },
-    "target": "self",
-    "cost": {
-      "type": "TP",
-      "value": 40
-    },
-    "count": 3,
-    "maxLevel": 20,
-    "based": "physic"
-  },
-  "SK_TYPN_M_03": {
-    "effects": [
-      {
-        "type": "DEF",
-        "minValue": -20,
-        "maxValue": -30,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_TYPN_M_03",
-    "type": "skill",
-    "names": {
-      "en": "Toxic Rain",
-      "fr": "Pluie toxique",
-      "de": "Giftregen",
-      "es": "Lluvia tóxica",
-      "ko": "폭풍 산성비",
-      "zh": "暴風酸性雨"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 16
-    },
-    "count": 8,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 2
-    },
-    "damage": {
-      "minValue": 35,
-      "maxValue": 65,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "wind"
-    ]
-  },
-  "SK_TYPN_M_04": {
-    "effects": [
-      {
-        "type": "STUN_ATK",
-        "calcType": "apply",
-        "rate": 67,
-        "turn": 1,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_TYPN_M_04",
-    "type": "skill",
-    "names": {
-      "en": "Great Storm",
-      "fr": "Tempête",
-      "de": "Gewittersturm",
-      "es": "Gran tormenta",
-      "ko": "대폭풍",
-      "zh": "狂風暴雨"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 28
-    },
-    "count": 4,
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 3,
-      "s": 10,
-      "w": 1
-    },
-    "based": "magic",
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "wind"
-    ]
-  },
-  "SK_TYPN_R_01": {
-    "effects": [],
-    "dataId": "SK_TYPN_R_01",
-    "type": "counter",
-    "names": {
-      "en": "Snort",
-      "fr": "Reniflement",
-      "de": "Schnaufer",
-      "es": "Bufido",
-      "ko": "콧바람",
-      "zh": "鼻息"
-    },
-    "target": "all",
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 2,
-      "s": 1,
-      "line": 1
-    },
-    "based": "physic",
-    "knockback": {
-      "rate": 100,
-      "value": 4,
-      "dir": 0
-    },
-    "counter": {
-      "minValue": 20,
-      "maxValue": 60,
-      "reactDamage": "ALL",
-      "calcType": "percent"
-    }
-  },
-  "SK_MRLT_ATK": {
-    "effects": [],
-    "dataId": "SK_MRLT_ATK",
-    "type": "skill",
-    "names": {
-      "en": "Normal Attack",
-      "fr": "Attaque normale",
-      "de": "Normaler Angriff",
-      "es": "Ataque normal",
-      "ko": "일반 공격",
-      "zh": "普通攻擊"
-    },
-    "target": "all",
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -30,
-      "maxValue": -30,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
     ]
   },
   "SK_MRLT_M_01": {
@@ -127853,111 +130132,6 @@
       "l": 1,
       "h": 1
     }
-  },
-  "SK_MRLT_M_02": {
-    "effects": [
-      {
-        "type": "ATK",
-        "minValue": 10,
-        "maxValue": 30,
-        "calcType": "percent",
-        "turn": 3,
-        "increaseMax": true,
-        "target": "self",
-        "timing": "SKILL_BEFORE"
-      },
-      {
-        "type": "MAG",
-        "minValue": 10,
-        "maxValue": 30,
-        "calcType": "percent",
-        "turn": 3,
-        "increaseMax": true,
-        "target": "self",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_MRLT_M_02",
-    "type": "skill",
-    "names": {
-      "en": "Blade Dance",
-      "fr": "Danse du sabre",
-      "de": "Schwertertanz",
-      "es": "Baile de espadas",
-      "ko": "칼춤",
-      "zh": "劍舞"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 26
-    },
-    "count": 8,
-    "maxLevel": 20,
-    "range": {
-      "h": 3,
-      "l": 2,
-      "s": 2
-    },
-    "based": "physic",
-    "hit": 100,
-    "damage": {
-      "minValue": 30,
-      "maxValue": 65,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {}
-    }
-  },
-  "SK_MRLT_M_03": {
-    "effects": [
-      {
-        "type": "SLASH_ATK",
-        "minValue": -30,
-        "maxValue": -50,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_MRLT_M_03",
-    "type": "skill",
-    "names": {
-      "en": "Tri-Blaze",
-      "fr": "Flamme triple",
-      "de": "Flammende Dreifaltigkeit",
-      "es": "Llamarada triple",
-      "ko": "화염 삼연격",
-      "zh": "火焰三連"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 20
-    },
-    "count": 5,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "combo": {
-      "num": 3,
-      "rate": 77
-    },
-    "damage": {
-      "minValue": 40,
-      "maxValue": 75,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "fire"
-    ]
   },
   "SK_MRLT_R_01": {
     "effects": [
@@ -128984,84 +131158,6 @@
     "maxLevel": 20,
     "based": "magic"
   },
-  "SK_CORL_ATK": {
-    "effects": [],
-    "dataId": "SK_CORL_ATK",
-    "type": "skill",
-    "names": {
-      "en": "Normal Attack",
-      "fr": "Attaque normale",
-      "de": "Normaler Angriff",
-      "es": "Ataque normal",
-      "ko": "일반 공격",
-      "zh": "普通攻擊"
-    },
-    "target": "all",
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -30,
-      "maxValue": -30,
-      "type": "strike",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
-  },
-  "SK_CORL_M_01": {
-    "effects": [
-      {
-        "type": "PARALYZE_ATK",
-        "minValue": 60,
-        "maxValue": 80,
-        "calcType": "apply",
-        "rate": 30,
-        "turn": 3,
-        "target": "target",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_CORL_M_01",
-    "type": "skill",
-    "names": {
-      "en": "Blaster",
-      "fr": "Rayons",
-      "de": "Blaster",
-      "es": "Electroplasma",
-      "ko": "블래스터",
-      "zh": "衝擊波"
-    },
-    "target": "target",
-    "cost": {
-      "type": "AP",
-      "value": 32
-    },
-    "count": 3,
-    "maxLevel": 20,
-    "based": "magic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 2
-    },
-    "damage": {
-      "minValue": 35,
-      "maxValue": 70,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "lightning"
-    ]
-  },
   "SK_CORL_M_02": {
     "effects": [
       {
@@ -129097,43 +131193,6 @@
       "line": 1
     },
     "based": "physic"
-  },
-  "SK_CORL_M_03": {
-    "effects": [],
-    "dataId": "SK_CORL_M_03",
-    "type": "skill",
-    "names": {
-      "en": "Double Strike",
-      "fr": "Double attaque",
-      "de": "Doppelattacke",
-      "es": "Golpe doble",
-      "ko": "이중 공격",
-      "zh": "雙攻擊"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 18
-    },
-    "count": 4,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "combo": {
-      "num": 2,
-      "rate": 59
-    },
-    "damage": {
-      "minValue": 40,
-      "maxValue": 75,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {}
-    }
   },
   "SK_CBCL_ATK": {
     "effects": [],
@@ -129451,6 +131510,268 @@
     },
     "target": "self",
     "maxLevel": 50
+  },
+  "SK_ICDG_ATK": {
+    "effects": [],
+    "dataId": "SK_ICDG_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_ICDG_M_01": {
+    "effects": [],
+    "dataId": "SK_ICDG_M_01",
+    "type": "skill",
+    "names": {
+      "en": "Tailspin",
+      "fr": "Chute libre",
+      "de": "Spiralsturz",
+      "es": "Picado",
+      "ko": "꼬리 회전",
+      "zh": "尾旋擊"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 26
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 2,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_ICDG_M_02": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 5,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ICDG_M_02",
+    "type": "skill",
+    "names": {
+      "en": "Icy Veil",
+      "fr": "Voile gelé",
+      "de": "Frostschleier",
+      "es": "Velo helado",
+      "ko": "얼음 두르기",
+      "zh": "纏冰"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "magic"
+  },
+  "SK_ICDG_M_03": {
+    "effects": [
+      {
+        "type": "FROSTBITE_ATK",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "unknow",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ICDG_M_03",
+    "type": "skill",
+    "names": {
+      "en": "Hailspit",
+      "fr": "Crachegrêle",
+      "de": "Hagelspieß",
+      "es": "Hálito de granizo",
+      "ko": "싸라기눈",
+      "zh": "噴雹"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 20
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_ICDG_M_04": {
+    "effects": [
+      {
+        "type": "ICE_RES",
+        "minValue": -20,
+        "maxValue": -40,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "ennemySide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ICDG_M_04",
+    "type": "skill",
+    "names": {
+      "en": "Icicle",
+      "fr": "Stalactite",
+      "de": "Eiszapfen",
+      "es": "Carámbano",
+      "ko": "고드름",
+      "zh": "冰柱"
+    },
+    "target": "ennemySide",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_ICDG_M_05": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ICDG_M_05",
+    "type": "skill",
+    "names": {
+      "en": "Wyrm's Snowstorm",
+      "fr": "Tempête de neige du dragon",
+      "de": "Draco-Blizzard",
+      "es": "Ventisca de guiverno",
+      "ko": "용의 눈보라",
+      "zh": "龍之雪嵐"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 36
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 2,
+      "s": 13
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
   },
   "SK_CSLI_01_ATK": {
     "effects": [],
