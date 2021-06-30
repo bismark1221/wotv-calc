@@ -280,6 +280,7 @@ export class UnitComponent implements OnInit {
         this.unit.formattedTmr.formattedSkills = [];
         for (const skillData of this.unit.formattedTmr.skills[0]) {
           const skill = await this.skillService.getSkill(skillData.dataId);
+
           skill.name = this.nameService.getName(skill);
           skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
           this.rangeService.formatRange(this.unit, skill);

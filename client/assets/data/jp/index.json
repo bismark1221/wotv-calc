@@ -3679,7 +3679,7 @@
     },
     {
       "names": {
-        "en": "カミッロ"
+        "en": "カミッロ - Camillo"
       },
       "stats": {
         "HP": 3378,
@@ -4313,16 +4313,16 @@
         "zh": "弗雷比亞"
       },
       "stats": {
-        "HP": 3320,
-        "TP": 175,
-        "AP": 142,
-        "ATK": 94,
+        "HP": 5152,
+        "TP": 184,
+        "AP": 149,
+        "ATK": 124,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 330,
-        "DEX": 155,
-        "AGI": 54,
-        "LUCK": 200,
+        "MAG": 526,
+        "DEX": 203,
+        "AGI": 60,
+        "LUCK": 233,
         "FIRE_RES": -10,
         "WIND_RES": 20,
         "SLASH_RES": -5,
@@ -4335,9 +4335,52 @@
         "BERSERK_RES": 10,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 31
+        "INITIAL_AP": 32,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsfrva"
+    },
+    {
+      "names": {
+        "en": "Zazan the Unkillable",
+        "fr": "Zazan l'immortel",
+        "de": "Zazan der Unverwüstliche",
+        "es": "Zazán, el Inmortal",
+        "ko": "불사신 자잔",
+        "zh": "不死身的扎贊"
+      },
+      "stats": {
+        "HP": 3577,
+        "TP": 128,
+        "AP": 130,
+        "ATK": 570,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 82,
+        "DEX": 223,
+        "AGI": 69,
+        "LUCK": 293,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": 15,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 10,
+        "PARALYZE_RES": 50,
+        "IMMOBILIZE_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 4,
+        "JUMP": 2,
+        "INITIAL_AP": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "EARTH_ATK": 15,
+        "RES_SLASH_ATK_PENETRATION": 20,
+        "EVADE": 5
+      },
+      "image": "lapszzan_01"
     }
   ]
 }

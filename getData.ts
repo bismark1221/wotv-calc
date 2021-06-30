@@ -5904,7 +5904,7 @@ export class JsonService {
 
   private glExcluJobs = [
     'JB_LW_ZZAN',
-    'JB_LW_ZZAN_M',
+    'JB_LW_ZZAN_01_M',
     'JB_LW_FRVA_M'
   ];
 
@@ -5942,6 +5942,14 @@ export class JsonService {
         this.jp.wotvUnits[unitId] = this.gl.wotvUnits[unitId];
         const tmrId = this.jp.wotvUnits[unitId].tmr;
         this.jp.wotvEquipments[tmrId] = this.gl.wotvEquipments[tmrId];
+
+        this.jp.wotvEquipments[tmrId].skills.forEach(upgrade => {
+          upgrade.forEach(skill => {
+            if (!this.jp.wotvSkills[skill.dataId]) {
+              this.jp.wotvSkills[skill.dataId] = this.gl.wotvSkills[skill.dataId];
+            }
+          });
+        });
 
         const skillToAdd = [];
         if (this.jp.wotvUnits[unitId].limit) {

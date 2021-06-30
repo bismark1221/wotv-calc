@@ -5925,7 +5925,7 @@
   "IT_SP_LW_LILS_01": {
     "dataId": "IT_SP_LW_LILS_01",
     "names": {
-      "en": "リリシュ（水着）の思珠 - Lilyth (Swimsuit) Mindsphere"
+      "en": "リリシュ（水着）の思珠 - Lilyth (Summer) Mindsphere"
     },
     "type": "exjob_orb"
   },
@@ -5960,7 +5960,7 @@
   "IT_SP_LW_KTON_01": {
     "dataId": "IT_SP_LW_KTON_01",
     "names": {
-      "en": "キトン（水着）の思珠 - Kitone (Swimsuit) Mindsphere"
+      "en": "キトン（水着）の思珠 - Kitone (Summer) Mindsphere"
     },
     "type": "exjob_orb"
   },
@@ -13064,7 +13064,7 @@
   "IT_VPI_LW_MONT": {
     "dataId": "IT_VPI_LW_MONT",
     "names": {
-      "en": "孤独な獅子の欠片"
+      "en": "孤独な獅子の欠片 - \"The Solitary Lion\" Vision Card Shard"
     },
     "type": "vc_shard"
   },
@@ -13857,7 +13857,7 @@
   "IT_STAMP_2103": {
     "dataId": "IT_STAMP_2103",
     "names": {
-      "en": "3月印章"
+      "en": "3月印章 - August Token"
     },
     "type": "stamp",
     "icon": "IT_STAMP_03"
@@ -13885,5 +13885,94 @@
     },
     "type": "stamp",
     "icon": "IT_STAMP_06"
+  },
+  "IT_JB_MM_LW_ZZAN": {
+    "dataId": "IT_JB_MM_LW_ZZAN",
+    "names": {
+      "en": "Undying Fighter's Memory (Green)",
+      "fr": "Souvenir de Combattant imbattable (Vert)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Grün)",
+      "es": "Recuerdo de luchador imbatible (verde)",
+      "ko": "되살아난 투사의 기억: 초록",
+      "zh": "復甦的鬥士的記憶·翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
+  "IT_JB_MM_LW_ZZAN_2": {
+    "dataId": "IT_JB_MM_LW_ZZAN_2",
+    "names": {
+      "en": "Undying Fighter's Memory (Blue)",
+      "fr": "Souvenir de Combattant imbattable (Bleu)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Blau)",
+      "es": "Recuerdo de luchador imbatible (azul)",
+      "ko": "되살아난 투사의 기억: 파랑",
+      "zh": "復甦的鬥士的記憶·碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
+  "IT_JB_MM_LW_ZZAN_3": {
+    "dataId": "IT_JB_MM_LW_ZZAN_3",
+    "names": {
+      "en": "Undying Fighter's Memory (Purple)",
+      "fr": "Souvenir de Combattant imbattable (Violet)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Violett)",
+      "es": "Recuerdo de luchador imbatible (morado)",
+      "ko": "되살아난 투사의 기억: 보라",
+      "zh": "復甦的鬥士的記憶·紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
+  "IT_JB_MM_LW_ZZAN_4": {
+    "dataId": "IT_JB_MM_LW_ZZAN_4",
+    "names": {
+      "en": "Undying Fighter's Memory (Yellow)",
+      "fr": "Souvenir de Combattant imbattable (Jaune)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Gelb)",
+      "es": "Recuerdo de luchador imbatible (amarillo)",
+      "ko": "되살아난 투사의 기억: 노랑",
+      "zh": "復甦的鬥士的記憶·黃"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
+  "IT_JB_MM_LW_ZZAN_5": {
+    "dataId": "IT_JB_MM_LW_ZZAN_5",
+    "names": {
+      "en": "Undying Fighter's Memory (Red)",
+      "fr": "Souvenir de Combattant imbattable (Rouge)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Rot)",
+      "es": "Recuerdo de luchador imbatible (rojo)",
+      "ko": "되살아난 투사의 기억: 빨강",
+      "zh": "復甦的鬥士的記憶·緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
+  "IT_SP_LW_ZZAN_01": {
+    "dataId": "IT_SP_LW_ZZAN_01",
+    "names": {
+      "en": "Zazan the Unkillable Mindsphere",
+      "fr": "Sphère spirituelle de Zazan l'immortel",
+      "de": "„Zazan der Unverwüstliche“-Geistesperle",
+      "es": "Esfera espiritual de Zazán, el Inmortal",
+      "ko": "불사신 자잔의 마음 구슬",
+      "zh": "不死身的扎贊的思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_GL_LW_FRVA": {
+    "dataId": "IT_SP_GL_LW_FRVA",
+    "names": {
+      "en": "Fryevia Mindsphere",
+      "fr": "Sphère spirituelle de Fryevia",
+      "de": "„Fryevia“-Geistesperle",
+      "es": "Esfera espiritual de Fryevia",
+      "ko": "프레이비아의 마음 구슬",
+      "zh": "弗雷比亞的思珠"
+    },
+    "type": "exjob_orb"
   }
 }

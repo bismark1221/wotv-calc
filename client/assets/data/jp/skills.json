@@ -142507,6 +142507,59 @@
       "dark"
     ]
   },
+  "SK_ACC_LW_FRVA_1_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 40,
+        "maxValue": 70,
+        "calcType": "percent",
+        "rate": 200,
+        "turn": 1,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": 40,
+        "maxValue": 70,
+        "calcType": "percent",
+        "rate": 200,
+        "turn": 1,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "WIND_KILLER",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "rate": 200,
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_FRVA_1_1",
+    "type": "skill",
+    "names": {
+      "en": "Glacial Mastery",
+      "fr": "Maîtrise glaciale",
+      "de": "Meister des Eises",
+      "es": "Maestro glacial",
+      "ko": "혹한의 비법",
+      "zh": "冰凍奧義"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
   "SK_LB_LW_FRVA": {
     "effects": [
       {
@@ -142590,6 +142643,83 @@
     },
     "target": "self",
     "maxLevel": 1
+  },
+  "SK_LW_EC_MGK_C_WW_01B": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_MAGIC",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PROVOKE",
+        "minValue": 8,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_MGK_C_WW_01B",
+    "type": "skill",
+    "names": {
+      "en": "Attract Barrier",
+      "fr": "Barrière magnétique",
+      "de": "Anziehungsbarriere",
+      "es": "Barrera atrayente",
+      "ko": "어트랙트 배리어",
+      "zh": "引力屏障"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 40
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_LW_EC_MGK_C_WW_02B": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "SLASH_RES",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "WIND_RES",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_EC_MGK_C_WW_02B",
+    "type": "support",
+    "names": {
+      "en": "Wind Spirit's Ward",
+      "fr": "Protection des esprits du vent",
+      "de": "Beschirmung des Windgeistes",
+      "es": "Guardia del espíritu de viento",
+      "ko": "바람 정령의 비호",
+      "zh": "風精的庇護"
+    },
+    "target": "self",
+    "maxLevel": 20
   },
   "SK_LW_MGK_ICE_S_1_INIT": {
     "effects": [
@@ -142683,6 +142813,869 @@
     "time": {
       "minValue": 120,
       "maxValue": 280
+    }
+  },
+  "SK_LW_EC_MGK_C_WW_01": {
+    "effects": [],
+    "dataId": "SK_LW_EC_MGK_C_WW_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "Magic Barrier Enhancement",
+      "fr": "Améliorer Barrière magique",
+      "de": "Magische Barriere (verstärkt)",
+      "es": "Mejorar Barrera mágica",
+      "ko": "매직 배리어 강화",
+      "zh": "魔法屏障強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_MGK_C_WW_02": {
+    "effects": [],
+    "dataId": "SK_LW_EC_MGK_C_WW_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "Providence of Wind Enhancement",
+      "fr": "Améliorer Providence de Vent",
+      "de": "Segen des Windes (verstärkt)",
+      "es": "Mejorar Providencia de viento",
+      "ko": "바람 정령의 가호 강화",
+      "zh": "風精加護強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_MGK_A_WW_01": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_MGK_A_WW_01",
+    "type": "skill",
+    "names": {
+      "en": "Spellveil Blade",
+      "fr": "Lame ensorcelée",
+      "de": "Klinge der Zauberschleier",
+      "es": "Hoja velo hechizado",
+      "ko": "스펠 베일 블레이드",
+      "zh": "咒術面紗之劍"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 22
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 40,
+      "maxValue": 75,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_CLT_LW_ZZAN_01_1": {
+    "effects": [
+      {
+        "type": "EARTH_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "RES_EARTH_ATK_PENETRATION",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_ZZAN_01_1",
+    "type": "skill",
+    "names": {
+      "en": "Kingpin's Cackle",
+      "fr": "Rire du parrain",
+      "de": "Schurkenlacher",
+      "es": "Carcajada del cabecilla",
+      "ko": "효웅의 파안대소",
+      "zh": "梟雄的大笑"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 26
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_LB_LW_ZZAN_01": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_ZZAN_01",
+    "type": "limit",
+    "names": {
+      "en": "Undying Rampage",
+      "fr": "Fureur éternelle",
+      "de": "Unaufhaltbare Raserei",
+      "es": "Arrebato eterno",
+      "ko": "불사신의 강격",
+      "zh": "不死之剛擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 38
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ZZAN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_ZZAN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_MA_LW_ZZAN_01": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "EARTH_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "EARTH_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "RES_SLASH_ATK_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ZZAN_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_ZZAN_C_01B": {
+    "effects": [
+      {
+        "type": "HEAL_POWER",
+        "minValue": -20,
+        "maxValue": -40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_EC_ZZAN_C_01B",
+    "type": "skill",
+    "names": {
+      "en": "Ruinous Lash",
+      "fr": "Fouet du désastre",
+      "de": "Vernichtungsschwung",
+      "es": "Azote devastador",
+      "ko": "멸기투참",
+      "zh": "滅氣投斬"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 10
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 26,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_EC_ZZAN_C_02B": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CRITIC_GUARENTED",
+        "calcType": "apply",
+        "rate": 200,
+        "condition": "BEHIND",
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_EC_ZZAN_C_02B",
+    "type": "skill",
+    "names": {
+      "en": "Triple Split: Spinal Blow",
+      "fr": "Triple fractionnement : Coup en traître",
+      "de": "Dreifachspalter: Wirbelbrecher",
+      "es": "Quiebro triple: golpe espinal",
+      "ko": "파개삼단: 괴리",
+      "zh": "破鎧三段·壞背"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 22
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "physic",
+    "combo": {
+      "num": 3,
+      "rate": 77
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ZZAN_S_1": {
+    "effects": [],
+    "dataId": "SK_LW_ZZAN_S_1",
+    "type": "skill",
+    "names": {
+      "en": "Blade Lash",
+      "fr": "Revers tranchant",
+      "de": "Klingenschwung",
+      "es": "Azote entumecedor",
+      "ko": "투기참",
+      "zh": "投氣斬"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 10
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 26,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ZZAN_S_2": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 8,
+        "maxValue": 12,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PROVOKE",
+        "minValue": -6,
+        "maxValue": -8,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ZZAN_S_2",
+    "type": "skill",
+    "names": {
+      "en": "Low Profile",
+      "fr": "Profil bas",
+      "de": "Bedeckthalten",
+      "es": "Pasar desapercibido",
+      "ko": "기척 죽이기",
+      "zh": "隱藏氣息"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 26
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_LW_ZZAN_P_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 10,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ZZAN_P_1",
+    "type": "support",
+    "names": {
+      "en": "Sharpen Blade",
+      "fr": "Lame acérée",
+      "de": "Klingenschärfer",
+      "es": "Hoja afilada",
+      "ko": "예인술",
+      "zh": "銳刃之術"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_ZZAN_P_2": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 3,
+        "maxValue": 12,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ZZAN_P_2",
+    "type": "support",
+    "names": {
+      "en": "Evasive Action",
+      "fr": "Esquive agile",
+      "de": "Ausweichfieber",
+      "es": "Acción evasiva",
+      "ko": "번신술",
+      "zh": "翻身之術"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_ZZAN_S_3": {
+    "effects": [
+      {
+        "type": "MOVE_UNIT",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_ZZAN_S_3",
+    "type": "skill",
+    "names": {
+      "en": "Leaping Slash",
+      "fr": "Bond tranchant",
+      "de": "Hervorschnellender Schlitzer",
+      "es": "Corte saltarín",
+      "ko": "약즉참",
+      "zh": "躍即斬"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 28
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "crt_hit": 35,
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ZZAN_R_1": {
+    "effects": [
+      {
+        "type": "HASTE_ATK",
+        "minValue": 20,
+        "maxValue": 42,
+        "calcType": "apply",
+        "rate": 100,
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ZZAN_R_1",
+    "type": "counter",
+    "names": {
+      "en": "Speed Reflex",
+      "fr": "Réflexe accéléré",
+      "de": "Adrenalinrausch",
+      "es": "Reflejos rápidos",
+      "ko": "반속술",
+      "zh": "反速之術"
+    },
+    "target": "self",
+    "maxLevel": 20,
+    "based": "physic",
+    "counter": {
+      "minValue": 15,
+      "maxValue": 30,
+      "reactDamage": "ALL",
+      "calcType": "percent"
+    }
+  },
+  "SK_LW_ZZAN_S_5": {
+    "effects": [],
+    "dataId": "SK_LW_ZZAN_S_5",
+    "type": "skill",
+    "names": {
+      "en": "Ripper",
+      "fr": "Éventrement",
+      "de": "Zerreißer",
+      "es": "Destripar",
+      "ko": "올려베기",
+      "zh": "上挑斬"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 10,
+      "w": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ZZAN_S_4": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": -5,
+        "maxValue": -25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ZZAN_S_4",
+    "type": "skill",
+    "names": {
+      "en": "Hamstringer",
+      "fr": "Paralysie musculaire",
+      "de": "Fersenschlitzer",
+      "es": "Incapacitar",
+      "ko": "발 후리기",
+      "zh": "削足"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 12
+    },
+    "count": 6,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 26,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ZZAN_M_1": {
+    "effects": [
+      {
+        "type": "DISABLE_ATK",
+        "calcType": "apply",
+        "rate": 50,
+        "turn": 3,
+        "condition": "BEHIND",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ZZAN_M_1",
+    "type": "skill",
+    "names": {
+      "en": "Back Breaker",
+      "fr": "Brise-colonne",
+      "de": "Rückenbrecher",
+      "es": "Rompeespaldas",
+      "ko": "뒷치기의 일격",
+      "zh": "封背一擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ZZAN_M_2": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ZZAN_M_2",
+    "type": "skill",
+    "names": {
+      "en": "Triple Split",
+      "fr": "Triple fractionnement",
+      "de": "Dreifachspalter",
+      "es": "Quiebro triple",
+      "ko": "파개삼단",
+      "zh": "破鎧三段"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 22
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "physic",
+    "combo": {
+      "num": 3,
+      "rate": 77
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ZZAN_M_3": {
+    "effects": [
+      {
+        "type": "RERAISE",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "percent",
+        "rate": 200,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ZZAN_M_3",
+    "type": "skill",
+    "names": {
+      "en": "Fake Death",
+      "fr": "Faux trépas",
+      "de": "Scheintod",
+      "es": "Hacerse el muerto",
+      "ko": "죽은 시늉",
+      "zh": "死亡模擬"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 32
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_LW_EC_ZZAN_C_01": {
+    "effects": [],
+    "dataId": "SK_LW_EC_ZZAN_C_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "Blade Lash Enhancement",
+      "fr": "Améliorer Revers tranchant",
+      "de": "Klingenschwung (verstärkt)",
+      "es": "Mejorar Azote entumecedor",
+      "ko": "투기참 강화",
+      "zh": "投氣斬強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_ZZAN_C_02": {
+    "effects": [],
+    "dataId": "SK_LW_EC_ZZAN_C_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "Triple Split Enhancement",
+      "fr": "Améliorer Triple fractionnement",
+      "de": "Dreifachspalter (verstärkt)",
+      "es": "Mejorar Quiebro triple",
+      "ko": "파개삼단 강화",
+      "zh": "破鎧三段強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_ZZAN_EN_A_01": {
+    "effects": [],
+    "dataId": "SK_LW_ZZAN_EN_A_01",
+    "type": "skill",
+    "names": {
+      "en": "Kingpin Smash",
+      "fr": "Frappe du parrain",
+      "de": "Schurkenschmetterer",
+      "es": "Golpe del cabecilla",
+      "ko": "강아효웅충",
+      "zh": "剛牙梟雄衝"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 26
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 110,
+      "maxValue": 150,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
     }
   }
 }
