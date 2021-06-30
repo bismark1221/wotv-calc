@@ -1,0 +1,4740 @@
+{
+    "infos": [
+        {
+            "key": "IT_US_POTION",
+            "value": "恢复药"
+        },
+        {
+            "key": "IT_US_HIPOTION",
+            "value": "高级恢复药"
+        },
+        {
+            "key": "IT_US_EXPOTION",
+            "value": "特级恢复药"
+        },
+        {
+            "key": "IT_US_ETHER",
+            "value": "以太"
+        },
+        {
+            "key": "IT_US_ETHERTURBO",
+            "value": "高级以太"
+        },
+        {
+            "key": "IT_US_ELIXIR",
+            "value": "圣灵药"
+        },
+        {
+            "key": "IT_US_PNXFEATHER",
+            "value": "不死鸟之尾"
+        },
+        {
+            "key": "IT_US_ANTIDOTE",
+            "value": "解毒药"
+        },
+        {
+            "key": "IT_US_EYEDROPS",
+            "value": "眼药"
+        },
+        {
+            "key": "IT_US_REMINDER",
+            "value": "清醒药"
+        },
+        {
+            "key": "IT_US_ECHODROP",
+            "value": "山彦草"
+        },
+        {
+            "key": "IT_US_UNICORNHORN",
+            "value": "独角兽之角"
+        },
+        {
+            "key": "IT_US_MAIDENKISS",
+            "value": "少女之吻"
+        },
+        {
+            "key": "IT_US_GOLDNEEDLE",
+            "value": "金针"
+        },
+        {
+            "key": "IT_US_REMEDY",
+            "value": "万能药"
+        },
+        {
+            "key": "IT_US_ENCHANTDRAG",
+            "value": "增强药"
+        },
+        {
+            "key": "IT_US_HOLYTORCH",
+            "value": "神圣火把"
+        },
+        {
+            "key": "IT_US_HERODRINK",
+            "value": "英雄药"
+        },
+        {
+            "key": "IT_US_BACCHUS",
+            "value": "酒神之酒"
+        },
+        {
+            "key": "IT_US_SHELL",
+            "value": "魔盾之饮"
+        },
+        {
+            "key": "IT_US_PROTECT",
+            "value": "护盾之饮"
+        },
+        {
+            "key": "IT_US_HEALWATER",
+            "value": "回复之泉"
+        },
+        {
+            "key": "IT_US_HPPOTION",
+            "value": "体力之药"
+        },
+        {
+            "key": "IT_US_ATKPOTION",
+            "value": "力量之药"
+        },
+        {
+            "key": "IT_US_MAGPOTION",
+            "value": "魔力之药"
+        },
+        {
+            "key": "IT_US_SPDPOTION",
+            "value": "迅捷之药"
+        },
+        {
+            "key": "IT_US_DEXPOTION",
+            "value": "熟练之药"
+        },
+        {
+            "key": "IT_ACTP_01",
+            "value": "体力恢复药（小）"
+        },
+        {
+            "key": "IT_ACTP_02",
+            "value": "体力恢复药（中）"
+        },
+        {
+            "key": "IT_ACTP_03",
+            "value": "体力恢复药（大）"
+        },
+        {
+            "key": "IT_ACTP_04",
+            "value": "体力恢复药（极）"
+        },
+        {
+            "key": "IT_ARENAP_02",
+            "value": "斗技场宝珠恢复药（全恢复）"
+        },
+        {
+            "key": "IT_RAIDAP_01",
+            "value": "协力共斗恢复药（全恢复）"
+        },
+        {
+            "key": "IT_RANKMP_02",
+            "value": "段位赛点数恢复药（全恢复）"
+        },
+        {
+            "key": "IT_CG_01",
+            "value": "金币龟（小）"
+        },
+        {
+            "key": "IT_CG_02",
+            "value": "金币龟（中）"
+        },
+        {
+            "key": "IT_CG_03",
+            "value": "金币龟（大）"
+        },
+        {
+            "key": "IT_CG_04",
+            "value": "金币龟（极）"
+        },
+        {
+            "key": "IT_US_EXP_01",
+            "value": "经验立方（小）"
+        },
+        {
+            "key": "IT_US_EXP_02",
+            "value": "经验立方（中）"
+        },
+        {
+            "key": "IT_US_EXP_03",
+            "value": "经验立方（大）"
+        },
+        {
+            "key": "IT_US_EXP_04",
+            "value": "经验立方（极）"
+        },
+        {
+            "key": "IT_LB_EXP_01",
+            "value": "迷你爆破罐"
+        },
+        {
+            "key": "IT_LB_EXP_02",
+            "value": "爆破罐"
+        },
+        {
+            "key": "IT_LB_EXP_03",
+            "value": "国王爆破罐"
+        },
+        {
+            "key": "IT_JB_MM_ALL",
+            "value": "些微的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_ALL_2",
+            "value": "些微的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_ALL_3",
+            "value": "些微的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_ALL_4",
+            "value": "些微的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_ALL_5",
+            "value": "些微的记忆·绯"
+        },
+        {
+            "key": "IT_JB_SWORD_01",
+            "value": "剑之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_SWORD_02",
+            "value": "剑之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_SWORD_03",
+            "value": "剑之紫龙晶"
+        },
+        {
+            "key": "IT_JB_SWORD_04",
+            "value": "剑之黄水晶"
+        },
+        {
+            "key": "IT_JB_SWORD_05",
+            "value": "剑之尖晶石"
+        },
+        {
+            "key": "IT_JB_LSWORD_01",
+            "value": "大剑之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_LSWORD_02",
+            "value": "大剑之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_LSWORD_03",
+            "value": "大剑之紫龙晶"
+        },
+        {
+            "key": "IT_JB_LSWORD_04",
+            "value": "大剑之黄水晶"
+        },
+        {
+            "key": "IT_JB_LSWORD_05",
+            "value": "大剑之尖晶石"
+        },
+        {
+            "key": "IT_JB_JSWORD_01",
+            "value": "刀之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_JSWORD_02",
+            "value": "刀之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_JSWORD_03",
+            "value": "刀之紫龙晶"
+        },
+        {
+            "key": "IT_JB_JSWORD_04",
+            "value": "刀之黄水晶"
+        },
+        {
+            "key": "IT_JB_JSWORD_05",
+            "value": "刀之尖晶石"
+        },
+        {
+            "key": "IT_JB_FIST_01",
+            "value": "拳之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_FIST_02",
+            "value": "拳之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_FIST_03",
+            "value": "拳之紫龙晶"
+        },
+        {
+            "key": "IT_JB_FIST_04",
+            "value": "拳之黄水晶"
+        },
+        {
+            "key": "IT_JB_FIST_05",
+            "value": "拳之尖晶石"
+        },
+        {
+            "key": "IT_JB_SPEAR_01",
+            "value": "枪之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_SPEAR_02",
+            "value": "枪之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_SPEAR_03",
+            "value": "枪之紫龙晶"
+        },
+        {
+            "key": "IT_JB_SPEAR_04",
+            "value": "枪之黄水晶"
+        },
+        {
+            "key": "IT_JB_SPEAR_05",
+            "value": "枪之尖晶石"
+        },
+        {
+            "key": "IT_JB_SSWORD_01",
+            "value": "短剑之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_SSWORD_02",
+            "value": "短剑之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_SSWORD_03",
+            "value": "短剑之紫龙晶"
+        },
+        {
+            "key": "IT_JB_SSWORD_04",
+            "value": "短剑之黄水晶"
+        },
+        {
+            "key": "IT_JB_SSWORD_05",
+            "value": "短剑之尖晶石"
+        },
+        {
+            "key": "IT_JB_KUNAI_01",
+            "value": "忍刀之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_KUNAI_02",
+            "value": "忍刀之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_KUNAI_03",
+            "value": "忍刀之紫龙晶"
+        },
+        {
+            "key": "IT_JB_KUNAI_04",
+            "value": "忍刀之黄水晶"
+        },
+        {
+            "key": "IT_JB_KUNAI_05",
+            "value": "忍刀之尖晶石"
+        },
+        {
+            "key": "IT_JB_BOW_01",
+            "value": "弓之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_BOW_02",
+            "value": "弓之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_BOW_03",
+            "value": "弓之紫龙晶"
+        },
+        {
+            "key": "IT_JB_BOW_04",
+            "value": "弓之黄水晶"
+        },
+        {
+            "key": "IT_JB_BOW_05",
+            "value": "弓之尖晶石"
+        },
+        {
+            "key": "IT_JB_GUN_01",
+            "value": "火枪之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_GUN_02",
+            "value": "火枪之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_GUN_03",
+            "value": "火枪之紫龙晶"
+        },
+        {
+            "key": "IT_JB_GUN_04",
+            "value": "火枪之黄水晶"
+        },
+        {
+            "key": "IT_JB_GUN_05",
+            "value": "火枪之尖晶石"
+        },
+        {
+            "key": "IT_JB_STAFF_01",
+            "value": "手杖之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_STAFF_02",
+            "value": "手杖之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_STAFF_03",
+            "value": "手杖之紫龙晶"
+        },
+        {
+            "key": "IT_JB_STAFF_04",
+            "value": "手杖之黄水晶"
+        },
+        {
+            "key": "IT_JB_STAFF_05",
+            "value": "手杖之尖晶石"
+        },
+        {
+            "key": "IT_JB_MACE_01",
+            "value": "权杖之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_MACE_02",
+            "value": "权杖之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_MACE_03",
+            "value": "权杖之紫龙晶"
+        },
+        {
+            "key": "IT_JB_MACE_04",
+            "value": "权杖之黄水晶"
+        },
+        {
+            "key": "IT_JB_MACE_05",
+            "value": "权杖之尖晶石"
+        },
+        {
+            "key": "IT_JB_AXE_01",
+            "value": "斧之翡翠硬玉"
+        },
+        {
+            "key": "IT_JB_AXE_02",
+            "value": "斧之蓝铜矿"
+        },
+        {
+            "key": "IT_JB_AXE_03",
+            "value": "斧之紫龙晶"
+        },
+        {
+            "key": "IT_JB_AXE_04",
+            "value": "斧之黄水晶"
+        },
+        {
+            "key": "IT_JB_AXE_05",
+            "value": "斧之尖晶石"
+        },
+        {
+            "key": "IT_JB_MM_COMMON",
+            "value": "无名英雄的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_2",
+            "value": "无名英雄的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_3",
+            "value": "无名英雄的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_4",
+            "value": "无名英雄的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_5",
+            "value": "无名英雄的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_WAR",
+            "value": "战士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_WAR_2",
+            "value": "战士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_WAR_3",
+            "value": "战士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_WAR_4",
+            "value": "战士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_WAR_5",
+            "value": "战士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_KNT",
+            "value": "骑士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_KNT_2",
+            "value": "骑士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_KNT_3",
+            "value": "骑士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_KNT_4",
+            "value": "骑士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_KNT_5",
+            "value": "骑士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_PLD",
+            "value": "圣骑士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_PLD_2",
+            "value": "圣骑士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_PLD_3",
+            "value": "圣骑士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_PLD_4",
+            "value": "圣骑士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_PLD_5",
+            "value": "圣骑士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_SWN",
+            "value": "士兵的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_SWN_2",
+            "value": "士兵的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_SWN_3",
+            "value": "士兵的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_SWN_4",
+            "value": "士兵的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_SWN_5",
+            "value": "士兵的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_MNK",
+            "value": "武道家的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_MNK_2",
+            "value": "武道家的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_MNK_3",
+            "value": "武道家的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_MNK_4",
+            "value": "武道家的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_MNK_5",
+            "value": "武道家的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_SAM",
+            "value": "武士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_SAM_2",
+            "value": "武士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_SAM_3",
+            "value": "武士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_SAM_4",
+            "value": "武士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_SAM_5",
+            "value": "武士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_LAN",
+            "value": "枪术师的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_LAN_2",
+            "value": "枪术师的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_LAN_3",
+            "value": "枪术师的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_LAN_4",
+            "value": "枪术师的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_LAN_5",
+            "value": "枪术师的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_DRG",
+            "value": "龙骑士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_DRG_2",
+            "value": "龙骑士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_DRG_3",
+            "value": "龙骑士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_DRG_4",
+            "value": "龙骑士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_DRG_5",
+            "value": "龙骑士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_THI",
+            "value": "盗贼的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_THI_2",
+            "value": "盗贼的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_THI_3",
+            "value": "盗贼的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_THI_4",
+            "value": "盗贼的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_THI_5",
+            "value": "盗贼的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_NIN",
+            "value": "忍者的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_NIN_2",
+            "value": "忍者的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_NIN_3",
+            "value": "忍者的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_NIN_4",
+            "value": "忍者的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_NIN_5",
+            "value": "忍者的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_HUN",
+            "value": "猎人的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_HUN_2",
+            "value": "猎人的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_HUN_3",
+            "value": "猎人的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_HUN_4",
+            "value": "猎人的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_HUN_5",
+            "value": "猎人的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_GUN",
+            "value": "火枪手的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_GUN_2",
+            "value": "火枪手的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_GUN_3",
+            "value": "火枪手的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_GUN_4",
+            "value": "火枪手的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_GUN_5",
+            "value": "火枪手的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_WHM",
+            "value": "白魔法师的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_WHM_2",
+            "value": "白魔法师的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_WHM_3",
+            "value": "白魔法师的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_WHM_4",
+            "value": "白魔法师的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_WHM_5",
+            "value": "白魔法师的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_BLM",
+            "value": "黑魔法师的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_BLM_2",
+            "value": "黑魔法师的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_BLM_3",
+            "value": "黑魔法师的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_BLM_4",
+            "value": "黑魔法师的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_BLM_5",
+            "value": "黑魔法师的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_RDM",
+            "value": "赤魔法师的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_RDM_2",
+            "value": "赤魔法师的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_RDM_3",
+            "value": "赤魔法师的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_RDM_4",
+            "value": "赤魔法师的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_RDM_5",
+            "value": "赤魔法师的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_GRM",
+            "value": "绿魔法师的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_GRM_2",
+            "value": "绿魔法师的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_GRM_3",
+            "value": "绿魔法师的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_GRM_4",
+            "value": "绿魔法师的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_GRM_5",
+            "value": "绿魔法师的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_TIM",
+            "value": "时魔法师的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_TIM_2",
+            "value": "时魔法师的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_TIM_3",
+            "value": "时魔法师的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_TIM_4",
+            "value": "时魔法师的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_TIM_5",
+            "value": "时魔法师的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_MGK",
+            "value": "魔法剑士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_MGK_2",
+            "value": "魔法剑士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_MGK_3",
+            "value": "魔法剑士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_MGK_4",
+            "value": "魔法剑士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_MGK_5",
+            "value": "魔法剑士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_CLR",
+            "value": "圣职者的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_CLR_2",
+            "value": "圣职者的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_CLR_3",
+            "value": "圣职者的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_CLR_4",
+            "value": "圣职者的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_CLR_5",
+            "value": "圣职者的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS",
+            "value": "有翼者的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_2",
+            "value": "有翼者的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_3",
+            "value": "有翼者的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_4",
+            "value": "有翼者的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_5",
+            "value": "有翼者的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL",
+            "value": "魔女的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_2",
+            "value": "魔女的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_3",
+            "value": "魔女的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_4",
+            "value": "魔女的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_5",
+            "value": "魔女的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR",
+            "value": "绝枪战士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_2",
+            "value": "绝枪战士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_3",
+            "value": "绝枪战士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_4",
+            "value": "绝枪战士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_5",
+            "value": "绝枪战士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_VIK",
+            "value": "维京战士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_VIK_2",
+            "value": "维京战士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_VIK_3",
+            "value": "维京战士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_VIK_4",
+            "value": "维京战士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_VIK_5",
+            "value": "维京战士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR",
+            "value": "黑暗骑士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_2",
+            "value": "黑暗骑士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_3",
+            "value": "黑暗骑士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_4",
+            "value": "黑暗骑士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_5",
+            "value": "黑暗骑士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ",
+            "value": "见习战士（拉姆萨）的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_2",
+            "value": "见习战士（拉姆萨）的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_3",
+            "value": "见习战士（拉姆萨）的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_4",
+            "value": "见习战士（拉姆萨）的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_5",
+            "value": "见习战士（拉姆萨）的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND",
+            "value": "剑圣的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_2",
+            "value": "剑圣的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_3",
+            "value": "剑圣的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_4",
+            "value": "剑圣的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_5",
+            "value": "剑圣的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_WGN",
+            "value": "双枪手的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_WGN_2",
+            "value": "双枪手的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_WGN_3",
+            "value": "双枪手的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_WGN_4",
+            "value": "双枪手的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_WGN_5",
+            "value": "双枪手的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN",
+            "value": "格兰谢尔特骑士（炎）的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_2",
+            "value": "格兰谢尔特骑士（炎）的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_3",
+            "value": "格兰谢尔特骑士（炎）的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_4",
+            "value": "格兰谢尔特骑士（炎）的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_5",
+            "value": "格兰谢尔特骑士（炎）的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_ASS",
+            "value": "暗杀者的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_ASS_2",
+            "value": "暗杀者的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_ASS_3",
+            "value": "暗杀者的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_ASS_4",
+            "value": "暗杀者的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_ASS_5",
+            "value": "暗杀者的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL",
+            "value": "光之战士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_2",
+            "value": "光之战士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_3",
+            "value": "光之战士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_4",
+            "value": "光之战士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_5",
+            "value": "光之战士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_MST",
+            "value": "魔杖术士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_MST_2",
+            "value": "魔杖术士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_MST_3",
+            "value": "魔杖术士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_MST_4",
+            "value": "魔杖术士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_MST_5",
+            "value": "魔杖术士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA",
+            "value": "神圣骑士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_2",
+            "value": "神圣骑士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_3",
+            "value": "神圣骑士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_4",
+            "value": "神圣骑士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_5",
+            "value": "神圣骑士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT",
+            "value": "见习战士（迪利塔）的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_2",
+            "value": "见习战士（迪利塔）的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_3",
+            "value": "见习战士（迪利塔）的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_4",
+            "value": "见习战士（迪利塔）的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_5",
+            "value": "见习战士（迪利塔）的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD",
+            "value": "机工士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_2",
+            "value": "机工士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_3",
+            "value": "机工士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_4",
+            "value": "机工士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_5",
+            "value": "机工士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_CAL",
+            "value": "算术士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_CAL_2",
+            "value": "算术士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_CAL_3",
+            "value": "算术士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_CAL_4",
+            "value": "算术士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_CAL_5",
+            "value": "算术士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN",
+            "value": "破灭骑士的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_2",
+            "value": "破灭骑士的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_3",
+            "value": "破灭骑士的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_4",
+            "value": "破灭骑士的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_5",
+            "value": "破灭骑士的记忆·绯"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_1",
+            "value": "火之辉石·翠"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_2",
+            "value": "火之辉石·碧"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_3",
+            "value": "火之辉石·紫"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_4",
+            "value": "火之辉石·黄"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_5",
+            "value": "火之辉石·绯"
+        },
+        {
+            "key": "IT_JB_EM_ICE_1",
+            "value": "冰之辉石·翠"
+        },
+        {
+            "key": "IT_JB_EM_ICE_2",
+            "value": "冰之辉石·碧"
+        },
+        {
+            "key": "IT_JB_EM_ICE_3",
+            "value": "冰之辉石·紫"
+        },
+        {
+            "key": "IT_JB_EM_ICE_4",
+            "value": "冰之辉石·黄"
+        },
+        {
+            "key": "IT_JB_EM_ICE_5",
+            "value": "冰之辉石·绯"
+        },
+        {
+            "key": "IT_JB_EM_WIND_1",
+            "value": "风之辉石·翠"
+        },
+        {
+            "key": "IT_JB_EM_WIND_2",
+            "value": "风之辉石·碧"
+        },
+        {
+            "key": "IT_JB_EM_WIND_3",
+            "value": "风之辉石·紫"
+        },
+        {
+            "key": "IT_JB_EM_WIND_4",
+            "value": "风之辉石·黄"
+        },
+        {
+            "key": "IT_JB_EM_WIND_5",
+            "value": "风之辉石·绯"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_1",
+            "value": "土之辉石·翠"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_2",
+            "value": "土之辉石·碧"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_3",
+            "value": "土之辉石·紫"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_4",
+            "value": "土之辉石·黄"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_5",
+            "value": "土之辉石·绯"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_1",
+            "value": "雷之辉石·翠"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_2",
+            "value": "雷之辉石·碧"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_3",
+            "value": "雷之辉石·紫"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_4",
+            "value": "雷之辉石·黄"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_5",
+            "value": "雷之辉石·绯"
+        },
+        {
+            "key": "IT_JB_EM_WATER_1",
+            "value": "水之辉石·翠"
+        },
+        {
+            "key": "IT_JB_EM_WATER_2",
+            "value": "水之辉石·碧"
+        },
+        {
+            "key": "IT_JB_EM_WATER_3",
+            "value": "水之辉石·紫"
+        },
+        {
+            "key": "IT_JB_EM_WATER_4",
+            "value": "水之辉石·黄"
+        },
+        {
+            "key": "IT_JB_EM_WATER_5",
+            "value": "水之辉石·绯"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_1",
+            "value": "光之辉石·翠"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_2",
+            "value": "光之辉石·碧"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_3",
+            "value": "光之辉石·紫"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_4",
+            "value": "光之辉石·黄"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_5",
+            "value": "光之辉石·绯"
+        },
+        {
+            "key": "IT_JB_EM_DARK_1",
+            "value": "暗之辉石·翠"
+        },
+        {
+            "key": "IT_JB_EM_DARK_2",
+            "value": "暗之辉石·碧"
+        },
+        {
+            "key": "IT_JB_EM_DARK_3",
+            "value": "暗之辉石·紫"
+        },
+        {
+            "key": "IT_JB_EM_DARK_4",
+            "value": "暗之辉石·黄"
+        },
+        {
+            "key": "IT_JB_EM_DARK_5",
+            "value": "暗之辉石·绯"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_1",
+            "value": "祈祷的天使像·翠"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_2",
+            "value": "祈祷的天使像·碧"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_3",
+            "value": "祈祷的天使像·紫"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_4",
+            "value": "祈祷的天使像·黄"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_5",
+            "value": "祈祷的天使像·绯"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_1",
+            "value": "伫立的地龙像·翠"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_2",
+            "value": "伫立的地龙像·碧"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_3",
+            "value": "伫立的地龙像·紫"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_4",
+            "value": "伫立的地龙像·黄"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_5",
+            "value": "伫立的地龙像·绯"
+        },
+        {
+            "key": "IT_UN_AW_FIRE",
+            "value": "火之觉醒辉源"
+        },
+        {
+            "key": "IT_UN_AW_ICE",
+            "value": "冰之觉醒辉源"
+        },
+        {
+            "key": "IT_UN_AW_WIND",
+            "value": "风之觉醒辉源"
+        },
+        {
+            "key": "IT_UN_AW_SOIL",
+            "value": "土之觉醒辉源"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER",
+            "value": "雷之觉醒辉源"
+        },
+        {
+            "key": "IT_UN_AW_WATER",
+            "value": "水之觉醒辉源"
+        },
+        {
+            "key": "IT_UN_AW_SHINE",
+            "value": "光之觉醒辉源"
+        },
+        {
+            "key": "IT_UN_AW_DARK",
+            "value": "暗之觉醒辉源"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R2",
+            "value": "火之觉醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R3",
+            "value": "火之觉醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R4",
+            "value": "火之觉醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R5",
+            "value": "火之觉醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R6",
+            "value": "火之觉醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R2",
+            "value": "冰之觉醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R3",
+            "value": "冰之觉醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R4",
+            "value": "冰之觉醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R5",
+            "value": "冰之觉醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R6",
+            "value": "冰之觉醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R2",
+            "value": "风之觉醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R3",
+            "value": "风之觉醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R4",
+            "value": "风之觉醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R5",
+            "value": "风之觉醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R6",
+            "value": "风之觉醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R2",
+            "value": "土之觉醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R3",
+            "value": "土之觉醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R4",
+            "value": "土之觉醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R5",
+            "value": "土之觉醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R6",
+            "value": "土之觉醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R2",
+            "value": "雷之觉醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R3",
+            "value": "雷之觉醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R4",
+            "value": "雷之觉醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R5",
+            "value": "雷之觉醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R6",
+            "value": "雷之觉醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R2",
+            "value": "水之觉醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R3",
+            "value": "水之觉醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R4",
+            "value": "水之觉醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R5",
+            "value": "水之觉醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R6",
+            "value": "水之觉醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R2",
+            "value": "光之觉醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R3",
+            "value": "光之觉醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R4",
+            "value": "光之觉醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R5",
+            "value": "光之觉醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R6",
+            "value": "光之觉醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R2",
+            "value": "暗之觉醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R3",
+            "value": "暗之觉醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R4",
+            "value": "暗之觉醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R5",
+            "value": "暗之觉醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R6",
+            "value": "暗之觉醒魂（★6）"
+        },
+        {
+            "key": "IT_AW_VBALL_N",
+            "value": "赤铜的幻球"
+        },
+        {
+            "key": "IT_AW_VBALL_R",
+            "value": "白银的幻球"
+        },
+        {
+            "key": "IT_AW_VBALL_SR",
+            "value": "黄金的幻球"
+        },
+        {
+            "key": "IT_AW_VBALL_SSR",
+            "value": "苍辉的幻球"
+        },
+        {
+            "key": "IT_AW_VBALL_UR",
+            "value": "星虹的幻球"
+        },
+        {
+            "key": "IT_PI_COM_FIRE",
+            "value": "火之思念的碎片"
+        },
+        {
+            "key": "IT_PI_COM_ICE",
+            "value": "冰之思念的碎片"
+        },
+        {
+            "key": "IT_PI_COM_WIND",
+            "value": "风之思念的碎片"
+        },
+        {
+            "key": "IT_PI_COM_SOIL",
+            "value": "土之思念的碎片"
+        },
+        {
+            "key": "IT_PI_COM_THUNDER",
+            "value": "雷之思念的碎片"
+        },
+        {
+            "key": "IT_PI_COM_WATER",
+            "value": "水之思念的碎片"
+        },
+        {
+            "key": "IT_PI_COM_SHINE",
+            "value": "光之思念的碎片"
+        },
+        {
+            "key": "IT_PI_COM_DARK",
+            "value": "暗之思念的碎片"
+        },
+        {
+            "key": "IT_PI_COM_ALL",
+            "value": "虹之思念的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MONT",
+            "value": "蒙特·雷欧尼斯的碎片"
+        },
+        {
+            "key": "IT_PI_LW_STRN",
+            "value": "斯特恩·雷欧尼斯的碎片"
+        },
+        {
+            "key": "IT_PI_LW_ELDE",
+            "value": "奥尔德·雷欧尼斯的碎片"
+        },
+        {
+            "key": "IT_PI_LW_ROBB",
+            "value": "罗布·霍伦的碎片"
+        },
+        {
+            "key": "IT_PI_LW_ENBT",
+            "value": "恩格尔伯特的碎片"
+        },
+        {
+            "key": "IT_PI_LW_ZIZA",
+            "value": "希扎的碎片"
+        },
+        {
+            "key": "IT_PI_LW_AILN",
+            "value": "艾琳的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MDNA",
+            "value": "美迪爱娜的碎片"
+        },
+        {
+            "key": "IT_PI_LW_AYKA",
+            "value": "彩花的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MACR",
+            "value": "玛雪莉·霍伦的碎片"
+        },
+        {
+            "key": "IT_PI_LW_HLNA",
+            "value": "海莲娜·雷欧尼斯的碎片"
+        },
+        {
+            "key": "IT_PI_LW_LILS",
+            "value": "莉莉丝的碎片"
+        },
+        {
+            "key": "IT_PI_LW_RAMD",
+            "value": "拉玛达的碎片"
+        },
+        {
+            "key": "IT_PI_LW_OOOO",
+            "value": "欧的碎片"
+        },
+        {
+            "key": "IT_PI_LW_LRNZ",
+            "value": "罗伦佐的碎片"
+        },
+        {
+            "key": "IT_PI_LW_RIRY",
+            "value": "雷尤的碎片"
+        },
+        {
+            "key": "IT_PI_LW_VSTR",
+            "value": "维斯特拉尔的碎片"
+        },
+        {
+            "key": "IT_PI_LW_CLEY",
+            "value": "库利·维泽特的碎片"
+        },
+        {
+            "key": "IT_PI_LW_KADI",
+            "value": "卡迪娅的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MRLK",
+            "value": "梅丽露可的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MGRT",
+            "value": "玛尔格丽特的碎片"
+        },
+        {
+            "key": "IT_PI_LW_PRAY",
+            "value": "《祈祷》的碎片"
+        },
+        {
+            "key": "IT_PI_LW_SZRT",
+            "value": "舒泽尔特的碎片"
+        },
+        {
+            "key": "IT_PI_LW_FINA",
+            "value": "菲娜的碎片"
+        },
+        {
+            "key": "IT_PI_LW_BYLO",
+            "value": "巴埃罗的碎片"
+        },
+        {
+            "key": "IT_PI_LW_RYER",
+            "value": "莉蕾露莉拉的碎片"
+        },
+        {
+            "key": "IT_PI_LW_SCIA",
+            "value": "索莎的碎片"
+        },
+        {
+            "key": "IT_PI_LW_VRID",
+            "value": "瓦尔莱德的碎片"
+        },
+        {
+            "key": "IT_PI_LW_NAIA",
+            "value": "奈雅的碎片"
+        },
+        {
+            "key": "IT_PI_LW_SRJS",
+            "value": "塞尔杰斯的碎片"
+        },
+        {
+            "key": "IT_PI_LW_UNII",
+            "value": "悠妮的碎片"
+        },
+        {
+            "key": "IT_PI_LW_SEVR",
+            "value": "塞维罗的碎片"
+        },
+        {
+            "key": "IT_PI_LW_VADM",
+            "value": "瓦迪姆的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MURM",
+            "value": "《低语》的碎片"
+        },
+        {
+            "key": "IT_PI_LW_PHBE",
+            "value": "菲比的碎片"
+        },
+        {
+            "key": "IT_PI_LW_RART",
+            "value": "莉雅特的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MICE",
+            "value": "米茄的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MIIA",
+            "value": "米娅的碎片"
+        },
+        {
+            "key": "IT_PI_LW_ZZAN",
+            "value": "扎赞的碎片"
+        },
+        {
+            "key": "IT_PI_LW_GLMS",
+            "value": "吉尔伽美什的碎片"
+        },
+        {
+            "key": "IT_PI_FF14_YSTL",
+            "value": "雅·修特拉的碎片"
+        },
+        {
+            "key": "IT_PI_FF14_TNCR",
+            "value": "桑克瑞德的碎片"
+        },
+        {
+            "key": "IT_PI_LW_SDLX",
+            "value": "影猞猁的碎片"
+        },
+        {
+            "key": "IT_PI_LW_FDRC",
+            "value": "弗蕾德丽卡的碎片"
+        },
+        {
+            "key": "IT_PI_LW_YERM",
+            "value": "耶尔玛的碎片"
+        },
+        {
+            "key": "IT_PI_LW_NASR",
+            "value": "纳莎的碎片"
+        },
+        {
+            "key": "IT_PI_LW_ETRE",
+            "value": "埃特蕾的碎片"
+        },
+        {
+            "key": "IT_PI_FFT_GFGR",
+            "value": "加夫加利安的碎片"
+        },
+        {
+            "key": "IT_PI_FFT_RAMZ",
+            "value": "拉姆萨的碎片"
+        },
+        {
+            "key": "IT_PI_FFT_ORND",
+            "value": "奥尔兰多的碎片"
+        },
+        {
+            "key": "IT_PI_LW_WHIS",
+            "value": "《耳语》的碎片"
+        },
+        {
+            "key": "IT_PI_LW_KTON",
+            "value": "基顿的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MRND",
+            "value": "米兰达的碎片"
+        },
+        {
+            "key": "IT_PI_LW_DRND",
+            "value": "多兰多的碎片"
+        },
+        {
+            "key": "IT_PI_LW_LUCA",
+            "value": "鲁·西雅的碎片"
+        },
+        {
+            "key": "IT_PI_LW_ADLD",
+            "value": "阿德拉德的碎片"
+        },
+        {
+            "key": "IT_PI_LW_VKTR",
+            "value": "维克托拉的碎片"
+        },
+        {
+            "key": "IT_PI_LW_THLA",
+            "value": "萨丽雅的碎片"
+        },
+        {
+            "key": "IT_PI_LW_RAIN",
+            "value": "雷因的碎片"
+        },
+        {
+            "key": "IT_PI_LW_FRVA",
+            "value": "弗雷比亚的碎片"
+        },
+        {
+            "key": "IT_PI_LW_VNLA",
+            "value": "维内拉·芬尼斯的碎片"
+        },
+        {
+            "key": "IT_PI_LW_DRIO",
+            "value": "达利欧·霍伦的碎片"
+        },
+        {
+            "key": "IT_PI_LW_TREL",
+            "value": "泰瑞尔的碎片"
+        },
+        {
+            "key": "IT_PI_FF1_WROL",
+            "value": "光之战士的碎片"
+        },
+        {
+            "key": "IT_PI_LW_QILF",
+            "value": "基尔菲的碎片"
+        },
+        {
+            "key": "IT_PI_LW_SIMR",
+            "value": "西姆尔的碎片"
+        },
+        {
+            "key": "IT_PI_LW_ORDR",
+            "value": "奥尔多的碎片"
+        },
+        {
+            "key": "IT_PI_LW_LVES",
+            "value": "菈薇丝的碎片"
+        },
+        {
+            "key": "IT_PI_FFT_AGRA",
+            "value": "阿格莉亚丝的碎片"
+        },
+        {
+            "key": "IT_PI_FFT_DELT",
+            "value": "迪利塔的碎片"
+        },
+        {
+            "key": "IT_PI_FFT_MSTD",
+            "value": "姆斯达迪奥的碎片"
+        },
+        {
+            "key": "IT_PI_LW_IRDL",
+            "value": "伊尔迪拉的碎片"
+        },
+        {
+            "key": "IT_PI_LW_RYER_01",
+            "value": ""
+        },
+        {
+            "key": "IT_PI_LW_RIRY_01",
+            "value": ""
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_01",
+            "value": "红色魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_02",
+            "value": "红色魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_03",
+            "value": "红色魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_04",
+            "value": "红色魔石（极）"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_01",
+            "value": "蓝色魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_02",
+            "value": "蓝色魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_03",
+            "value": "蓝色魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_04",
+            "value": "蓝色魔石（极）"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_01",
+            "value": "绿色魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_02",
+            "value": "绿色魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_03",
+            "value": "绿色魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_04",
+            "value": "绿色魔石（极）"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_01",
+            "value": "黄色魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_02",
+            "value": "黄色魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_03",
+            "value": "黄色魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_04",
+            "value": "黄色魔石（极）"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_01",
+            "value": "橙色魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_02",
+            "value": "橙色魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_03",
+            "value": "橙色魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_04",
+            "value": "橙色魔石（极）"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_01",
+            "value": "水色魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_02",
+            "value": "水色魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_03",
+            "value": "水色魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_04",
+            "value": "水色魔石（极）"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_01",
+            "value": "白色魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_02",
+            "value": "白色魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_03",
+            "value": "白色魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_04",
+            "value": "白色魔石（极）"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_01",
+            "value": "紫色魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_02",
+            "value": "紫色魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_03",
+            "value": "紫色魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_04",
+            "value": "紫色魔石（极）"
+        },
+        {
+            "key": "IT_SB_AW_FIRE",
+            "value": "火之兽醒石"
+        },
+        {
+            "key": "IT_SB_AW_ICE",
+            "value": "冰之兽醒石"
+        },
+        {
+            "key": "IT_SB_AW_THUNDER",
+            "value": "雷之兽醒石"
+        },
+        {
+            "key": "IT_SB_AW_WATER",
+            "value": "水之兽醒石"
+        },
+        {
+            "key": "IT_SB_AW_WIND",
+            "value": "风之兽醒石"
+        },
+        {
+            "key": "IT_SB_AW_SOIL",
+            "value": "土之兽醒石"
+        },
+        {
+            "key": "IT_SB_AW_SHINE",
+            "value": "光之兽醒石"
+        },
+        {
+            "key": "IT_SB_AW_DARK",
+            "value": "暗之兽醒石"
+        },
+        {
+            "key": "IT_SB_AW_IFRT_R2",
+            "value": "伊弗利特的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_IFRT_R3",
+            "value": "伊弗利特的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_GLEM_R2",
+            "value": "巨像兵的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_GLEM_R3",
+            "value": "巨像兵的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_SIRE_R2",
+            "value": "塞壬的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_SIRE_R3",
+            "value": "塞壬的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_IGNT_R2",
+            "value": "铁巨人的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_IGNT_R3",
+            "value": "铁巨人的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_BHMT_R2",
+            "value": "贝希摩斯的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_BHMT_R3",
+            "value": "贝希摩斯的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_MABR_R2",
+            "value": "毛尔波尔的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_MABR_R3",
+            "value": "毛尔波尔的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_SHIV_R2",
+            "value": "希瓦的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_SHIV_R3",
+            "value": "希瓦的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_RAMU_R2",
+            "value": "拉姆的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_RAMU_R3",
+            "value": "拉姆的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_ODIN_R2",
+            "value": "奥丁的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_ODIN_R3",
+            "value": "奥丁的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_LAMA_01_R2",
+            "value": "蛇身女王的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_LAMA_01_R3",
+            "value": "蛇身女王的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_TSLP_R2",
+            "value": "四方风精灵的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_TSLP_R3",
+            "value": "四方风精灵的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_OCHU_R2",
+            "value": "大口花的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_OCHU_R3",
+            "value": "大口花的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_THDG_R2",
+            "value": "双头巨龙的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_THDG_R3",
+            "value": "双头巨龙的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_DABL_R2",
+            "value": "迪亚波罗斯的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_DABL_R3",
+            "value": "迪亚波罗斯的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_MDFY_R2",
+            "value": "夺心魔的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_MDFY_R3",
+            "value": "夺心魔的兽醒石（★3）"
+        },
+        {
+            "key": "IT_TICKET_STORY",
+            "value": "剧情扫荡券"
+        },
+        {
+            "key": "IT_TICKET_EVENT",
+            "value": "活动跳过券"
+        },
+        {
+            "key": "IT_GL_TICKET_EVENT",
+            "value": "活动跳过券"
+        },
+        {
+            "key": "IT_AF_EXP_01",
+            "value": "坚钢石（小）"
+        },
+        {
+            "key": "IT_AF_EXP_02",
+            "value": "坚钢石（中）"
+        },
+        {
+            "key": "IT_AF_EXP_03",
+            "value": "坚钢石（大）"
+        },
+        {
+            "key": "IT_AF_EXP_04",
+            "value": "坚钢石（极）"
+        },
+        {
+            "key": "IT_AF_AW_SWORD",
+            "value": "精炼秘籍（剑）"
+        },
+        {
+            "key": "IT_AF_AW_LSWORD",
+            "value": "精炼秘籍（大剑）"
+        },
+        {
+            "key": "IT_AF_AW_FIST",
+            "value": "精炼秘籍（拳）"
+        },
+        {
+            "key": "IT_AF_AW_JSWORD",
+            "value": "精炼秘籍（刀）"
+        },
+        {
+            "key": "IT_AF_AW_SPEAR",
+            "value": "精炼秘籍（枪）"
+        },
+        {
+            "key": "IT_AF_AW_SSWORD",
+            "value": "精炼秘籍（短剑）"
+        },
+        {
+            "key": "IT_AF_AW_KUNAI",
+            "value": "精炼秘籍（忍刀）"
+        },
+        {
+            "key": "IT_AF_AW_BOW",
+            "value": "精炼秘籍（弓）"
+        },
+        {
+            "key": "IT_AF_AW_GUN",
+            "value": "精炼秘籍（火枪）"
+        },
+        {
+            "key": "IT_AF_AW_STAFF",
+            "value": "精炼秘籍（手杖）"
+        },
+        {
+            "key": "IT_AF_AW_MACE",
+            "value": "精炼秘籍（权杖）"
+        },
+        {
+            "key": "IT_AF_AW_AXE",
+            "value": "精炼秘籍（斧）"
+        },
+        {
+            "key": "IT_AF_AW_ARMOR",
+            "value": "精炼秘籍（防具）"
+        },
+        {
+            "key": "IT_AF_AW_ACCE",
+            "value": "精炼秘籍（饰品）"
+        },
+        {
+            "key": "IT_AF_MAT_FIRE_01",
+            "value": "火之结晶"
+        },
+        {
+            "key": "IT_AF_MAT_ICE_01",
+            "value": "冰之结晶"
+        },
+        {
+            "key": "IT_AF_MAT_THUNDER_01",
+            "value": "雷之结晶"
+        },
+        {
+            "key": "IT_AF_MAT_WATER_01",
+            "value": "水之结晶"
+        },
+        {
+            "key": "IT_AF_MAT_SOIL_01",
+            "value": "土之结晶"
+        },
+        {
+            "key": "IT_AF_MAT_WIND_01",
+            "value": "风之结晶"
+        },
+        {
+            "key": "IT_AF_MAT_SHINE_01",
+            "value": "光之结晶"
+        },
+        {
+            "key": "IT_AF_MAT_DARK_01",
+            "value": "暗之结晶"
+        },
+        {
+            "key": "IT_AF_MAT_LESS_01",
+            "value": "无之结晶"
+        },
+        {
+            "key": "IT_AF_MAT_FIRE_02",
+            "value": "火之大结晶"
+        },
+        {
+            "key": "IT_AF_MAT_ICE_02",
+            "value": "冰之大结晶"
+        },
+        {
+            "key": "IT_AF_MAT_THUNDER_02",
+            "value": "雷之大结晶"
+        },
+        {
+            "key": "IT_AF_MAT_WATER_02",
+            "value": "水之大结晶"
+        },
+        {
+            "key": "IT_AF_MAT_SOIL_02",
+            "value": "土之大结晶"
+        },
+        {
+            "key": "IT_AF_MAT_WIND_02",
+            "value": "风之大结晶"
+        },
+        {
+            "key": "IT_AF_MAT_SHINE_02",
+            "value": "光之大结晶"
+        },
+        {
+            "key": "IT_AF_MAT_DARK_02",
+            "value": "暗之大结晶"
+        },
+        {
+            "key": "IT_AF_MAT_LESS_02",
+            "value": "无之大结晶"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_01",
+            "value": "悲哀之心"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_02",
+            "value": "愤怒之心"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_03",
+            "value": "快乐之心"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_04",
+            "value": "欢喜之心"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_01",
+            "value": "浓稠的液体"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_02",
+            "value": "黏腻的液体"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_03",
+            "value": "清爽的液体"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_04",
+            "value": "水润的液体"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_01",
+            "value": "污浊的树液块"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_02",
+            "value": "透明的树液块"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_03",
+            "value": "神秘的树液块"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_04",
+            "value": "灵木的树液块"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_01",
+            "value": "灰色的灵砂"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_02",
+            "value": "青色的灵砂"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_03",
+            "value": "黑色的灵砂"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_04",
+            "value": "白色的灵砂"
+        },
+        {
+            "key": "IT_AF_MAT_OGRE",
+            "value": "食人魔的刚毛"
+        },
+        {
+            "key": "IT_AF_MAT_BOMB",
+            "value": "爆弹的灰"
+        },
+        {
+            "key": "IT_AF_MAT_MABR",
+            "value": "毛尔波尔触手"
+        },
+        {
+            "key": "IT_AF_MAT_WOLF",
+            "value": "狼牙"
+        },
+        {
+            "key": "IT_AF_MAT_ZUUU",
+            "value": "祖的喙"
+        },
+        {
+            "key": "IT_AF_MAT_BONE",
+            "value": "骨头渣"
+        },
+        {
+            "key": "IT_AF_MAT_ARMN",
+            "value": "恶精灵的泪"
+        },
+        {
+            "key": "IT_AF_MAT_MYTHRIL",
+            "value": "秘银矿"
+        },
+        {
+            "key": "IT_AF_LW_SWO_001",
+            "value": "长剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SWO_002",
+            "value": "秘银剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SWO_003",
+            "value": "睡眠剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SWO_004",
+            "value": "冰印剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SWO_005",
+            "value": "火舌的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SWO_006",
+            "value": "珊瑚剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_BSW_001",
+            "value": "双刃重剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_BSW_002",
+            "value": "秘银大剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_BSW_003",
+            "value": "符文之剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_BSW_004",
+            "value": "黄金剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_KAT_001",
+            "value": "虎铁的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_KAT_002",
+            "value": "菊一文字的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_KAT_003",
+            "value": "备前长船的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_FIS_001",
+            "value": "金属拳套的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_FIS_002",
+            "value": "秘银爪的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_FIS_003",
+            "value": "猫爪的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SPE_001",
+            "value": "游击枪的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SPE_002",
+            "value": "秘银长枪的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SPE_003",
+            "value": "疾风枪的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SPE_004",
+            "value": "玄冰枪的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_SPE_006",
+            "value": "龙角之枪的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_DAG_001",
+            "value": "短剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_DAG_002",
+            "value": "秘银短剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_DAG_004",
+            "value": "左手剑的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_DAG_006",
+            "value": "封魔之刃的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_NKN_001",
+            "value": "苦无的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_NKN_002",
+            "value": "小太刀的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_NKN_003",
+            "value": "佐助刀的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_BOW_001",
+            "value": "长弓的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_BOW_002",
+            "value": "强弓的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_BOW_003",
+            "value": "符文弓的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_GUN_001",
+            "value": "五车二的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_GUN_002",
+            "value": "织女一的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_GUN_003",
+            "value": "帝座的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ROD_002",
+            "value": "钢铁棒的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ROD_004",
+            "value": "治愈之杖的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ROD_005",
+            "value": "白金魔棒的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_MAC_001",
+            "value": "钢铁权杖的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_MAC_002",
+            "value": "秘银权杖的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_MAC_003",
+            "value": "白金权杖的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ARM_002",
+            "value": "黑铁甲的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ARM_003",
+            "value": "秘银铠的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ARM_004",
+            "value": "黄金铠的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_HAT_002",
+            "value": "三角帽子的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_HAT_003",
+            "value": "头冠的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_HAT_004",
+            "value": "贤者帽的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_CLT_001",
+            "value": "皮衣的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_CLT_002",
+            "value": "学者服的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_CLT_003",
+            "value": "幻影背心的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_CLT_004",
+            "value": "智慧外套的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_HLM_002",
+            "value": "铁盔的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_HLM_003",
+            "value": "秘银头盔的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_HLM_004",
+            "value": "黄金盔的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_RNG_002",
+            "value": "勇者指环的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_RNG_003",
+            "value": "仙女指环的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_RNG_004",
+            "value": "宝石指环的制作配方"
+        },
+        {
+            "key": "IT_AF_SWO_FF14_TNCT",
+            "value": "狮子心·复制品的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ROD_007",
+            "value": "贤者之杖的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ARM_005",
+            "value": "白金铠甲的制作配方"
+        },
+        {
+            "key": "IT_AF_FFT_SWO_001",
+            "value": "纳格拉洛克的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_FTW_001",
+            "value": "赫密士靴的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_AXE_001",
+            "value": "屠魔斧的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_AXE_002",
+            "value": "秘银斧的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_AXE_003",
+            "value": "黄金斧的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_RNG_005",
+            "value": "变石戒指的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_CLT_005",
+            "value": "白金法袍的制作配方"
+        },
+        {
+            "key": "IT_AF_FF1_ARM_002",
+            "value": "光明之铠的制作配方"
+        },
+        {
+            "key": "IT_AF_FFT_ACC_001",
+            "value": "魔咒魅香水的制作配方"
+        },
+        {
+            "key": "IT_AF_SUP_HP",
+            "value": "命之刻印"
+        },
+        {
+            "key": "IT_AF_SUP_ATK",
+            "value": "攻之刻印"
+        },
+        {
+            "key": "IT_AF_SUP_MAG",
+            "value": "魔之刻印"
+        },
+        {
+            "key": "IT_AF_SUP_MND",
+            "value": "精之刻印"
+        },
+        {
+            "key": "IT_AF_SUP_DEF",
+            "value": "防之刻印"
+        },
+        {
+            "key": "IT_AF_SUP_AVO",
+            "value": "避之刻印"
+        },
+        {
+            "key": "IT_AF_SUP_HIT",
+            "value": "巧之刻印"
+        },
+        {
+            "key": "IT_AF_SUP_CRI",
+            "value": "击之刻印"
+        },
+        {
+            "key": "IT_AF_PT_ATK",
+            "value": "攻击的矮人锤"
+        },
+        {
+            "key": "IT_AF_PT_MAG",
+            "value": "魔力的矮人锤"
+        },
+        {
+            "key": "IT_AF_PT_DEF",
+            "value": "防御的矮人锤"
+        },
+        {
+            "key": "IT_AF_PT_MND",
+            "value": "精神的矮人锤"
+        },
+        {
+            "key": "IT_AF_PT_HIT",
+            "value": "命中的矮人锤"
+        },
+        {
+            "key": "IT_AF_PT_CRI",
+            "value": "必杀的矮人锤"
+        },
+        {
+            "key": "IT_AF_PT_AVO",
+            "value": "回避的矮人锤"
+        },
+        {
+            "key": "IT_AF_PT_HP",
+            "value": "生命的矮人锤"
+        },
+        {
+            "key": "IT_AF_PT_SPD",
+            "value": "敏捷的矮人锤"
+        },
+        {
+            "key": "IT_WA_EXP_01",
+            "value": "迷你经验罐"
+        },
+        {
+            "key": "IT_WA_EXP_02",
+            "value": "经验罐"
+        },
+        {
+            "key": "IT_WA_EXP_03",
+            "value": "国王经验罐"
+        },
+        {
+            "key": "IT_AF_RESET",
+            "value": "重锻金槌"
+        },
+        {
+            "key": "IT_EC_STARQUARTZ",
+            "value": "石英星石"
+        },
+        {
+            "key": "IT_EC_ARENA",
+            "value": "斗技场奖牌"
+        },
+        {
+            "key": "IT_EC_MULTI",
+            "value": "协力奖牌"
+        },
+        {
+            "key": "IT_EC_RAID",
+            "value": "共斗奖牌"
+        },
+        {
+            "key": "IT_EC_MATCH",
+            "value": "匹配战斗奖牌"
+        },
+        {
+            "key": "IT_EC_GUILD",
+            "value": "公会奖牌"
+        },
+        {
+            "key": "IT_EC_SOUL",
+            "value": "灵魂奖牌"
+        },
+        {
+            "key": "IT_EC_SOUL_N",
+            "value": "灵魂奖牌（N）"
+        },
+        {
+            "key": "IT_EC_SOUL_R",
+            "value": "灵魂奖牌（R）"
+        },
+        {
+            "key": "IT_EC_SOUL_SR",
+            "value": "灵魂奖牌（SR）"
+        },
+        {
+            "key": "IT_EC_SOUL_SSR",
+            "value": "灵魂奖牌（SSR）"
+        },
+        {
+            "key": "IT_EC_SOUL_UR",
+            "value": "灵魂奖牌（UR）"
+        },
+        {
+            "key": "IT_EC_MOOGLE",
+            "value": "莫古奖牌"
+        },
+        {
+            "key": "IT_EC_TOWER",
+            "value": "塔奖牌"
+        },
+        {
+            "key": "IT_EC_SUMMON",
+            "value": "召唤奖牌"
+        },
+        {
+            "key": "IT_EC_SUMMON_11_A",
+            "value": "【11月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_12_A",
+            "value": "【12月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_12_B",
+            "value": "【12月】召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_VISION",
+            "value": "幻兵奖牌"
+        },
+        {
+            "key": "IT_EC_VISION_N",
+            "value": "幻兵奖牌（N）"
+        },
+        {
+            "key": "IT_EC_VISION_R",
+            "value": "幻兵奖牌（R）"
+        },
+        {
+            "key": "IT_EC_VISION_SR",
+            "value": "幻兵奖牌（SR）"
+        },
+        {
+            "key": "IT_EC_VISION_SSR",
+            "value": "幻兵奖牌（SSR）"
+        },
+        {
+            "key": "IT_EC_VISION_UR",
+            "value": "幻兵奖牌（UR）"
+        },
+        {
+            "key": "IT_EC_UNIT_UR",
+            "value": "UR兵员的拼图"
+        },
+        {
+            "key": "IT_EC_FRIEND",
+            "value": "好友奖牌"
+        },
+        {
+            "key": "IT_EC_FF14_1",
+            "value": "神典石魔典"
+        },
+        {
+            "key": "IT_EC_FF14_2",
+            "value": "联动召唤奖牌"
+        },
+        {
+            "key": "IT_US_G_FF14_01",
+            "value": "FFXIV联动活动召唤券"
+        },
+        {
+            "key": "IT_EC_SUMMON_03_A",
+            "value": "【3月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_04_A",
+            "value": "【4月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_04_B",
+            "value": "【4月】召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_SUMMON_05_A",
+            "value": "【5月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_05_B",
+            "value": "【5月】召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_SUMMON_06_A",
+            "value": "【6月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_06_B",
+            "value": "【6月】召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_SUMMON_07_A",
+            "value": "【7月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_07_B",
+            "value": "【7月】召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_SUMMON_08_A",
+            "value": "【8月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_08_B",
+            "value": "【8月】召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_SUMMON_09_A",
+            "value": "【9月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_09_B",
+            "value": "【9月】召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_SUMMON_10_A",
+            "value": ""
+        },
+        {
+            "key": "IT_EC_FFT_1",
+            "value": "FFT联动活动奖牌"
+        },
+        {
+            "key": "IT_EC_FFT_2_A",
+            "value": "FFT联动召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_FFT_2_B",
+            "value": "FFT联动召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_FFT_3",
+            "value": "【第2波】FFT联动活动奖牌"
+        },
+        {
+            "key": "IT_EC_FFT_2_2A",
+            "value": "【第2波】FFT联动召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_FFT_2_2B",
+            "value": "【第2波】FFT联动召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_FFT_2_A_R",
+            "value": "【复刻】FFT联动召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_FFT_2_B_R",
+            "value": "【复刻】FFT联动召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_TOWER_001",
+            "value": "塔奖牌"
+        },
+        {
+            "key": "IT_EC_EV02_1",
+            "value": "西方的威胁朗德尔奖牌"
+        },
+        {
+            "key": "IT_EC_EV03_1",
+            "value": "【7月】活动奖牌"
+        },
+        {
+            "key": "IT_EC_EV04_1",
+            "value": "【遥远的东方】活动奖牌"
+        },
+        {
+            "key": "IT_EC_FF1_1",
+            "value": "FFI联动活动奖牌"
+        },
+        {
+            "key": "IT_EC_FF1_2",
+            "value": "FFI联动召唤奖牌"
+        },
+        {
+            "key": "IT_US_G_FFT_01",
+            "value": "FFT联动活动召唤券"
+        },
+        {
+            "key": "IT_AD_TICKET_2",
+            "value": "探险券（2小时）"
+        },
+        {
+            "key": "IT_AD_TICKET_5",
+            "value": "探险券（5小时）"
+        },
+        {
+            "key": "IT_AD_TICKET_10",
+            "value": "探险券（10小时）"
+        },
+        {
+            "key": "IT_US_GACHA_01",
+            "value": "稀有召唤券"
+        },
+        {
+            "key": "IT_US_GACHA_10",
+            "value": "稀有10连召唤券"
+        },
+        {
+            "key": "IT_US_10_U_SSR_UR_01",
+            "value": "确保1名SSR以上10连召唤券1"
+        },
+        {
+            "key": "IT_US_G_V_SR_UR_01",
+            "value": "确保SR以上幻兵卡召唤券1"
+        },
+        {
+            "key": "IT_US_G_V_SSR_UR_01",
+            "value": "确保SSR以上幻兵卡召唤券1"
+        },
+        {
+            "key": "IT_US_GL_G_V_SSR_UR_01",
+            "value": "确保SSR以上幻兵卡召唤券"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_01",
+            "value": "确保SSR以上兵员召唤券1"
+        },
+        {
+            "key": "IT_US_GL_SE_PI_COM_1",
+            "value": "属性思念的碎片×10选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_PI_COM_2",
+            "value": "属性思念的碎片×200选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_02",
+            "value": "属性思念的碎片×100选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_02",
+            "value": "觉醒辉源×100选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_03",
+            "value": "觉醒辉源×50选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_AW-ITEM_01",
+            "value": "觉醒辉源×200选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_01",
+            "value": "属性思念的碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_01_01",
+            "value": "属性辉石·翠×30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_02_01",
+            "value": "属性辉石·碧×10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_02_02",
+            "value": "属性辉石·碧×70选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_03_01",
+            "value": "属性辉石·紫×70选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_04_01",
+            "value": "属性辉石·黄×70选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_05_01",
+            "value": "属性辉石·绯×70选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_SB_AW_01",
+            "value": "属性兽醒石×20选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_01",
+            "value": "属性魔石（大）×50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_02",
+            "value": "属性魔石（极）×10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_03",
+            "value": "属性魔石（中）×50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_05",
+            "value": "属性魔石（极）×30选择召唤券"
+        },
+        {
+            "key": "IT_US_G_U_UR_01",
+            "value": "确保UR兵员召唤券1"
+        },
+        {
+            "key": "IT_US_G_U_UR_02",
+            "value": "确保UR兵员召唤券"
+        },
+        {
+            "key": "IT_US_G_U_UR_03",
+            "value": "确保UR兵员召唤券"
+        },
+        {
+            "key": "IT_US_G_UR_01",
+            "value": "确保UR召唤券1"
+        },
+        {
+            "key": "IT_US_G_UR_02",
+            "value": "确保UR召唤券2"
+        },
+        {
+            "key": "IT_US_G_U_R_UR_01",
+            "value": "确保兵员召唤券1"
+        },
+        {
+            "key": "IT_US_G_V_R_UR_01",
+            "value": "确保幻兵卡召唤券1"
+        },
+        {
+            "key": "IT_US_G_V_UR_01",
+            "value": "确保UR幻兵卡召唤券1"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01",
+            "value": "职业的记忆·翠×1选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02",
+            "value": "职业的记忆·碧×2选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03",
+            "value": "职业的记忆·紫×3选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04",
+            "value": "职业的记忆·黄×4选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05",
+            "value": "职业的记忆·绯×5选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_2",
+            "value": "【半周年纪念】职业的记忆·黄×4选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_2",
+            "value": "【半周年纪念】职业的记忆·绯×5选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_UR_U_01",
+            "value": "UR兵员选择召唤券1"
+        },
+        {
+            "key": "IT_US_SE_R_UR_U_03",
+            "value": "【半周年纪念】兵员选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_01",
+            "value": "觉醒辉源×10选择召唤券"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_02",
+            "value": "确保SSR以上兵员召唤券2"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_03",
+            "value": "确保SSR以上兵员召唤券3"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_04",
+            "value": "确保SSR以上兵员召唤券4"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_05",
+            "value": "【半周年前夜祭第3阶段】确保SSR以上兵员召唤券"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_06",
+            "value": "【半周年前夜祭第4阶段】确保SSR以上兵员召唤券"
+        },
+        {
+            "key": "IT_US_SE_UR_V_01",
+            "value": "UR幻兵卡选择召唤券1"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_GL01",
+            "value": "【半周年纪念】幻兵卡选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_04",
+            "value": "觉醒辉源×30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_05",
+            "value": "觉醒辉源×NN选择召唤券"
+        },
+        {
+            "key": "IT_VPI_LW_GLEM",
+            "value": "岩壁巨人　石像兵的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_IFRT",
+            "value": "烈炎吟吼　伊弗利特的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_SIRE",
+            "value": "响彻水界的魔音　塞壬的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_SOKYU",
+            "value": "雷欧尼斯王国第二部队《苍穹》的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_TRAINING",
+            "value": "为了变得比任何人都要强大的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_MACR",
+            "value": "嫁妆的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_MURG",
+            "value": "震彻天地的悲鸣的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_GRSR",
+            "value": "奔驰于雪原的碎片"
+        },
+        {
+            "key": "IT_VPI_FF14_MV1",
+            "value": "漆黑的群像的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_HOLYNIGHT",
+            "value": "弗蕾德丽卡的梦想的碎片"
+        },
+        {
+            "key": "IT_VPI_FFT_MV1",
+            "value": "贝欧鲁布继承人的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_ODIN",
+            "value": "斩断次元　奥丁的碎片"
+        },
+        {
+            "key": "IT_VPI_FFCC_MV1",
+            "value": "继承水晶的人们的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_HALL",
+            "value": ""
+        },
+        {
+            "key": "IT_VPI_LW_IGNT",
+            "value": "钢之魔人　铁巨人的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_BHMT",
+            "value": "狂躁魔兽　贝希摩斯的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_MABR",
+            "value": "污秽诅咒　毛尔波尔的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_SHIV",
+            "value": "冻结一切者　希瓦的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_RAMU",
+            "value": "响震于空之雷鸣　拉姆的碎片"
+        },
+        {
+            "key": "IT_VPI_MBFF_MV1",
+            "value": "绝望与真实的莫比乌斯的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_FAMILY",
+            "value": "新生命的诞生的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_KTON",
+            "value": "密令的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_PROPOSE",
+            "value": "爱的誓言的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_SDLX",
+            "value": "心灵的洗涤的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_TEAPARTY",
+            "value": "片刻的安宁的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_HUNT",
+            "value": "绷紧的集中力的碎片"
+        },
+        {
+            "key": "IT_VPI_FF14_MV2",
+            "value": "漆黑的反叛者的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_NEWYEAR",
+            "value": "来自遥远的异国的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_LAMA_01",
+            "value": "蛊惑大蛇　蛇身女王的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_GUARD",
+            "value": "纯白亲卫队的碎片"
+        },
+        {
+            "key": "IT_VPI_MBFF_MV2",
+            "value": "希望与幻想的莫比乌斯的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_CACT",
+            "value": "瞬间千针　仙人掌的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_ARMN_01",
+            "value": "魔眼光线　浮游之眼的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_ZUUU",
+            "value": "巨大怪鸟　祖的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_OGRE",
+            "value": "刚力鬼人　食人魔的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_BOMB",
+            "value": "爆裂弹丸　爆弹的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_JOBCRYSTAL",
+            "value": "职业水晶的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_BYLO",
+            "value": "暴食王出现的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_RART",
+            "value": "久违的休假的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_RYER",
+            "value": "名侦探莉蕾露莉拉的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_VNLA",
+            "value": "妖艳魔女的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_RIRY",
+            "value": "享乐时间的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_LEONIS",
+            "value": "雷欧尼斯旗的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_HOURN",
+            "value": "霍伦旗的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_FENICE",
+            "value": "芬尼斯旗的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_WEZETT",
+            "value": "维泽特旗的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_CRYSTAL",
+            "value": "水晶教会旗的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_LEONIS2",
+            "value": "雷欧尼斯城的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_HOURN2",
+            "value": "霍伦城的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_FENICE2",
+            "value": "芬尼斯城的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_WEZETT2",
+            "value": "维泽特城的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_DYNVERK",
+            "value": "达因威尔克教会的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_TRSV_01",
+            "value": "远话设备·天的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_TRSV_02",
+            "value": "远话设备·地的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_MIRROR",
+            "value": "远见之镜的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_TSLP",
+            "value": "四天烈风　四方风精灵的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_LILS",
+            "value": "复仇之旅的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_OCHU",
+            "value": "豪快植物　大口花的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_VALE1",
+            "value": "无法传达的感情的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_VALE2",
+            "value": "帅哥争夺战！！的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_ADLD",
+            "value": "嫉心的魔术师的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_WHITEDAY1",
+            "value": "虚荣的代价的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_VNLA2",
+            "value": "虚伪的契约，真实的灵魂的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_THDG",
+            "value": "猛攻双龙　双头巨龙的碎片"
+        },
+        {
+            "key": "IT_VPI_FF01_DMAC",
+            "value": "死亡机器的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_DABL",
+            "value": "梦幻魔人　迪亚波罗斯的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_CBVPARTY1",
+            "value": "徒樱之宴的碎片"
+        },
+        {
+            "key": "IT_VPI_FFT_MV2",
+            "value": "红陆行鸟的碎片"
+        },
+        {
+            "key": "IT_VPI_FFT_MV3",
+            "value": "草笛的碎片"
+        },
+        {
+            "key": "IT_VPI_FFCC_MV2",
+            "value": "寻求没药之露的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_ROBUST",
+            "value": "霍伦王国第一部队《坚牢》的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_MDFY",
+            "value": "精神崩溃　夺心魔的碎片"
+        },
+        {
+            "key": "IT_VC_EXP_01",
+            "value": "成长蛋（N）"
+        },
+        {
+            "key": "IT_VC_EXP_02",
+            "value": "成长蛋（R）"
+        },
+        {
+            "key": "IT_VC_EXP_03",
+            "value": "成长蛋（SR）"
+        },
+        {
+            "key": "IT_VC_EXP_04",
+            "value": "成长蛋（SSR）"
+        },
+        {
+            "key": "IT_GU_FOOD_01",
+            "value": "玳瑁糖"
+        },
+        {
+            "key": "IT_GU_FOOD_02",
+            "value": "肉干"
+        },
+        {
+            "key": "IT_GU_FOOD_03",
+            "value": "陆行鸟馒头"
+        },
+        {
+            "key": "IT_GU_FOOD_04",
+            "value": "祖的鸟翅"
+        },
+        {
+            "key": "IT_GU_FOOD_05",
+            "value": "爆弹汤"
+        },
+        {
+            "key": "IT_GU_FOOD_06",
+            "value": "贝希摩斯肉排"
+        },
+        {
+            "key": "IT_GU_EXP_S2_01",
+            "value": "大蛇的毒牙（小）"
+        },
+        {
+            "key": "IT_GU_EXP_S2_02",
+            "value": "大蛇的毒牙（中）"
+        },
+        {
+            "key": "IT_GU_EXP_S2_03",
+            "value": "大蛇的毒牙（大）"
+        },
+        {
+            "key": "IT_GU_EXP_S3_01",
+            "value": "公牛的大角（小）"
+        },
+        {
+            "key": "IT_GU_EXP_S3_02",
+            "value": "公牛的大角（中）"
+        },
+        {
+            "key": "IT_GU_EXP_S3_03",
+            "value": "公牛的大角（大）"
+        },
+        {
+            "key": "IT_GU_EXP_S4_01",
+            "value": "麒麟的鬃毛（小）"
+        },
+        {
+            "key": "IT_GU_EXP_S4_02",
+            "value": "麒麟的鬃毛（中）"
+        },
+        {
+            "key": "IT_GU_EXP_S4_03",
+            "value": "麒麟的鬃毛（大）"
+        },
+        {
+            "key": "IT_GU_EXP_S1_01",
+            "value": "狮子的强颚（小）"
+        },
+        {
+            "key": "IT_GU_EXP_S1_02",
+            "value": "狮子的强颚（中）"
+        },
+        {
+            "key": "IT_GU_EXP_S1_03",
+            "value": "狮子的强颚（大）"
+        },
+        {
+            "key": "IT_EC_RAID_02",
+            "value": "巧克力布丁共斗奖牌"
+        },
+        {
+            "key": "IT_EC_RAID_03",
+            "value": "白色棉花糖共斗奖牌"
+        },
+        {
+            "key": "IT_EC_RAID_05",
+            "value": "【9月】共斗奖牌"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_1",
+            "value": "属性魔石（中）×500选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_2",
+            "value": "属性魔石（中）×10选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_3",
+            "value": "属性魔石（中）×25选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_4",
+            "value": "属性魔石（大）×100选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_5",
+            "value": "属性魔石（大）×20选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_6",
+            "value": "属性魔石（极）×50选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_01",
+            "value": "UR幻兵卡碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_02",
+            "value": "UR幻兵卡碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_03",
+            "value": "UR幻兵卡碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_04",
+            "value": "UR幻兵卡碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_05",
+            "value": "UR幻兵卡碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_06",
+            "value": "UR幻兵卡碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_07",
+            "value": "UR幻兵卡碎片×100选择召唤券"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_08",
+            "value": "UR幻兵卡碎片×100选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_UR_U_02",
+            "value": "推荐UR兵员选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_01",
+            "value": "推荐SSR兵员选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_GL01",
+            "value": "SSR兵员选择召唤券1"
+        },
+        {
+            "key": "IT_US_SE_PI_15",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_GL00",
+            "value": "UR兵员碎片×40选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_GL01",
+            "value": "UR兵员碎片×40选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_GL02",
+            "value": "UR兵员碎片×40选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_GL03",
+            "value": "UR兵员碎片×40选择召唤券"
+        },
+        {
+            "key": "IT_US_N_GACHA_10",
+            "value": "普通10连召唤券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_01",
+            "value": "【半周年纪念】秘籍×100选择召唤券"
+        },
+        {
+            "key": "IT_US_G_N_TW_10",
+            "value": "【白磁之塔】普通10连召唤券"
+        },
+        {
+            "key": "IT_PT_SKIP_001",
+            "value": "制裁的试炼任务跳过券"
+        },
+        {
+            "key": "IT_PT_BSSKIP_001",
+            "value": "制裁的试炼头目跳过券"
+        },
+        {
+            "key": "IT_PT_BOSS_001",
+            "value": "头目战斗券"
+        },
+        {
+            "key": "IT_EC_POINT_001",
+            "value": "制裁的试炼奖牌"
+        },
+        {
+            "key": "IT_AF_LW_HLM_005",
+            "value": "白金头盔的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ACC_001",
+            "value": "缎带的制作配方"
+        },
+        {
+            "key": "IT_EC_SUMMON_01_A",
+            "value": "【1月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_03_B",
+            "value": "【3月】召唤奖牌B"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR",
+            "value": "女武神的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_2",
+            "value": "女武神的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_3",
+            "value": "女武神的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_4",
+            "value": "女武神的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_5",
+            "value": "女武神的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL",
+            "value": "格兰谢尔特骑士（冰）的记忆·翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_2",
+            "value": "格兰谢尔特骑士（冰）的记忆·碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_3",
+            "value": "格兰谢尔特骑士（冰）的记忆·紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_4",
+            "value": "格兰谢尔特骑士（冰）的记忆·黄"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_5",
+            "value": "格兰谢尔特骑士（冰）的记忆·绯"
+        },
+        {
+            "key": "IT_JB_MM_MKN",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_MKN_2",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_MKN_3",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_MKN_4",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_MKN_5",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_2",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_3",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_4",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_5",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_2",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_3",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_4",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_5",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_2",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_3",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_4",
+            "value": ""
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_5",
+            "value": ""
+        },
+        {
+            "key": "IT_PI_LW_RAMD_01",
+            "value": "拉玛达（冬日）的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MACR_01",
+            "value": "玛雪莉（冬日）的碎片"
+        },
+        {
+            "key": "IT_PI_LW_STRN_01",
+            "value": "斯特恩（破灭骑士）的碎片"
+        },
+        {
+            "key": "IT_PI_LW_GRSR",
+            "value": "格拉西拉·维泽特的碎片"
+        },
+        {
+            "key": "IT_PI_LW_RRIR",
+            "value": "罗雷拉的碎片"
+        },
+        {
+            "key": "IT_PI_LW_LSWL",
+            "value": "拉斯韦尔的碎片"
+        },
+        {
+            "key": "IT_PI_LW_SCAL",
+            "value": "斯卡尔的碎片"
+        },
+        {
+            "key": "IT_PI_LW_MRAL",
+            "value": "玛利亚尔的碎片"
+        },
+        {
+            "key": "IT_PI_LW_LILS_01",
+            "value": "莉莉丝（泳装）的碎片"
+        },
+        {
+            "key": "IT_PI_LW_HWLT",
+            "value": "哈乌雷特的碎片"
+        },
+        {
+            "key": "IT_PI_LW_CHEL",
+            "value": "切尔的碎片"
+        },
+        {
+            "key": "IT_PI_LW_LATH",
+            "value": "璐亚瑟的碎片"
+        },
+        {
+            "key": "IT_PI_LW_TITU",
+            "value": "泰塔斯的碎片"
+        },
+        {
+            "key": "IT_PI_FF4_CECL",
+            "value": "塞西尔的碎片"
+        },
+        {
+            "key": "IT_PI_FF4_ROSA",
+            "value": "罗莎的碎片"
+        },
+        {
+            "key": "IT_PI_FF4_KAIN",
+            "value": "凯因的碎片"
+        },
+        {
+            "key": "IT_SB_AW_MOGL_R2",
+            "value": "莫古利（冬日）的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_MOGL_R3",
+            "value": "莫古利（冬日）的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_FNRR_R2",
+            "value": "芬里尔的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_FNRR_R3",
+            "value": "芬里尔的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_TITN_R2",
+            "value": "泰坦的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_TITN_R3",
+            "value": "泰坦的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_BLMN_R2",
+            "value": "血腥红月的兽醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_BLMN_R3",
+            "value": "血腥红月的兽醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_AGON_R2",
+            "value": ""
+        },
+        {
+            "key": "IT_SB_AW_AGON_R3",
+            "value": ""
+        },
+        {
+            "key": "IT_SB_AW_CHCB1_R2",
+            "value": ""
+        },
+        {
+            "key": "IT_SB_AW_CHCB1_R3",
+            "value": ""
+        },
+        {
+            "key": "IT_PT_SKIP_FF4_1",
+            "value": ""
+        },
+        {
+            "key": "IT_PT_BSSKIP_FF4_1",
+            "value": ""
+        },
+        {
+            "key": "IT_PT_BOSS_FF4_1",
+            "value": ""
+        },
+        {
+            "key": "IT_AF_MAT_WATER_03",
+            "value": "水纹脉矿"
+        },
+        {
+            "key": "IT_AF_LW_SWO_023",
+            "value": "罗恩格林的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_KAT_008",
+            "value": "紫电的制作配方"
+        },
+        {
+            "key": "IT_AF_FF14_ARW_001",
+            "value": "凶恶手铠的制作配方"
+        },
+        {
+            "key": "IT_AF_FF14_HLM_001",
+            "value": ""
+        },
+        {
+            "key": "IT_AF_LW_HAT_005",
+            "value": ""
+        },
+        {
+            "key": "IT_AF_FF4_ARM_001",
+            "value": "圣骑士护肩的制作配方"
+        },
+        {
+            "key": "IT_AF_FF4_SPE_000",
+            "value": "疾风枪的制作配方"
+        },
+        {
+            "key": "IT_AF_FF4_BOW_000",
+            "value": "精灵之弓的制作配方"
+        },
+        {
+            "key": "IT_AF_LW_ACC_002",
+            "value": "萨玛莎灵珠的制作配方"
+        },
+        {
+            "key": "IT_EC_RAID_06",
+            "value": "【6月】共斗奖牌"
+        },
+        {
+            "key": "IT_EC_RAID_08",
+            "value": ""
+        },
+        {
+            "key": "IT_EC_RAID_FF14",
+            "value": ""
+        },
+        {
+            "key": "IT_EC_TOWER_002",
+            "value": ""
+        },
+        {
+            "key": "IT_EC_SUMMON_01_B",
+            "value": "【1月】召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_SUMMON_02_A",
+            "value": "【2月】召唤奖牌A"
+        },
+        {
+            "key": "IT_EC_SUMMON_02_B",
+            "value": "【2月】召唤奖牌B"
+        },
+        {
+            "key": "IT_EC_EV05_1",
+            "value": "【前篇】轰牙与斋贺奖牌"
+        },
+        {
+            "key": "IT_EC_EV06_1",
+            "value": ""
+        },
+        {
+            "key": "IT_EC_FF14_1_R",
+            "value": "【复刻】神典石魔典"
+        },
+        {
+            "key": "IT_EC_FF14_2_R",
+            "value": ""
+        },
+        {
+            "key": "IT_US_G_FF14_01_R",
+            "value": "【复刻】FFXIV联动活动召唤券"
+        },
+        {
+            "key": "IT_US_G_FF1_01",
+            "value": "FFI联动活动召唤券"
+        },
+        {
+            "key": "IT_EC_FF4_1",
+            "value": ""
+        },
+        {
+            "key": "IT_EC_FF4_2_A",
+            "value": ""
+        },
+        {
+            "key": "IT_EC_FF4_2_B",
+            "value": ""
+        },
+        {
+            "key": "IT_US_G_FF4_01",
+            "value": ""
+        },
+        {
+            "key": "IT_EC_FF4_3",
+            "value": ""
+        },
+        {
+            "key": "IT_US_G_AF_N_10",
+            "value": ""
+        },
+        {
+            "key": "IT_US_G_SUMMER_01",
+            "value": ""
+        },
+        {
+            "key": "IT_US_G_10_UR_01",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_COM_03",
+            "value": "属性思念的碎片×10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_04",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_04",
+            "value": "属性魔石（中）×1,000选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_06",
+            "value": "属性魔石（中）×500选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_07",
+            "value": "属性魔石（大）×150选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_2",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_2",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_2",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_3",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_3",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_3",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_3",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_3",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_4",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_4",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_VPI_01",
+            "value": "【2月】UR幻兵卡碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_VPI_02",
+            "value": "【3月】UR幻兵卡碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_VPI_03",
+            "value": "【GW纪念】UR幻兵卡碎片×25选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_VPI_04",
+            "value": "【半周年纪念】UR幻兵卡碎片×25选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_VPI_05",
+            "value": "【半周年纪念】UR幻兵卡碎片×50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_VPI_06",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_VPI_07",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_VPI_08",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_01",
+            "value": "【GW纪念】UR兵员的碎片x40选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_02",
+            "value": "【半周年纪念】UR兵员的碎片x40选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_03",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_04",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_05",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_06",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_07",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_08",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_09",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_10",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_PI_11",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_02",
+            "value": "【半周年纪念】幻兵卡选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_03",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_AF_AW_02",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_AF_AW_03",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_AF_AW_04",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_AF_AW_05",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_AF_SUP_01",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_05_01",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_04_01",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_03_01",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_02_01",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_01_01",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_05_02",
+            "value": "【共斗支援】尖晶石×30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_04_02",
+            "value": "【共斗支援】黄水晶×30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_03_02",
+            "value": "【共斗支援】紫龙晶×30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_02",
+            "value": "【共斗支援】蓝铜矿×30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_01_02",
+            "value": "【共斗支援】翡翠硬玉×15选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_04_03",
+            "value": "【新手限定】黄水晶×30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_03_03",
+            "value": "【新手限定】紫龙晶×30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_03",
+            "value": "【新手限定】蓝铜矿×30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_01_03",
+            "value": "【新手限定】翡翠硬玉×15选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_05_03",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_04_04",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_03_04",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_02_04",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_JB_01_04",
+            "value": ""
+        },
+        {
+            "key": "IT_JP_UP_01",
+            "value": ""
+        },
+        {
+            "key": "IT_JP_UP_02",
+            "value": ""
+        },
+        {
+            "key": "IT_JP_UP_03",
+            "value": ""
+        },
+        {
+            "key": "IT_JP_UP_04",
+            "value": ""
+        },
+        {
+            "key": "IT_VPI_LW_FNRR",
+            "value": "月影狼牙　芬里尔的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_TITN",
+            "value": "鸷猛大地　泰坦的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_VKTR",
+            "value": "虚伪的假面的碎片"
+        },
+        {
+            "key": "IT_VPI_FF14_MV3",
+            "value": "漆黑的反叛者们的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_AGON",
+            "value": "破坏钢人　毁灭机械的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_GRSR2",
+            "value": ""
+        },
+        {
+            "key": "IT_VPI_FF4_DMNW",
+            "value": ""
+        },
+        {
+            "key": "IT_VPI_LW_LUCA",
+            "value": ""
+        },
+        {
+            "key": "IT_VPI_LW_MOGL",
+            "value": "圣夜莫古利的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_ORDR",
+            "value": "无法传达的心意的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_KING",
+            "value": "战乱四君的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_BLMN",
+            "value": "魔界红月　血腥红月的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_GUREN",
+            "value": "义贼《红莲》的碎片"
+        },
+        {
+            "key": "IT_VPI_LW_CHCB",
+            "value": ""
+        },
+        {
+            "key": "IT_VPI_LW_FIGHT",
+            "value": ""
+        },
+        {
+            "key": "IT_US_SE_AW_ITEM_901",
+            "value": "觉醒辉源*10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW_ITEM_902",
+            "value": "觉醒辉源*20选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW_ITEM_903",
+            "value": "觉醒辉源*30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW_ITEM_904",
+            "value": "觉醒辉源*50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW_ITEM_905",
+            "value": "觉醒辉源*100选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_901",
+            "value": "思念的碎片*10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_902",
+            "value": "思念的碎片*20选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_903",
+            "value": "思念的碎片*30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_904",
+            "value": "思念的碎片*50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_905",
+            "value": "思念的碎片*100选择召唤券"
+        },
+        {
+            "key": "IT_US_RA_UN_PI_1",
+            "value": "随机兵员碎片召唤券"
+        },
+        {
+            "key": "IT_US_RA_UN_RARE_1",
+            "value": "稀有召唤券"
+        },
+        {
+            "key": "IT_US_RA_UN_RARE_10",
+            "value": "稀有10连召唤券"
+        },
+        {
+            "key": "IT_US_SE_UN_RARE_1",
+            "value": "UR兵员自选召唤券"
+        },
+        {
+            "key": "IT_EC_SUMMON_CCB_A",
+            "value": "精选召唤奖牌"
+        },
+        {
+            "key": "IT_EC_EVENT_CCB_1",
+            "value": "【回响】测试交换奖牌"
+        },
+        {
+            "key": "IT_TICKET_DAILY_ZH",
+            "value": "日常扫荡券"
+        },
+        {
+            "key": "IT_TICKET_LIMITED_ZH",
+            "value": "活动扫荡券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_01_01_ZH",
+            "value": "精炼秘籍*50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_EXP_01_ZH",
+            "value": "经验组合包"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_03_02_ZH",
+            "value": "属性辉石·紫×5选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW_ITEM_906_ZH",
+            "value": "觉醒辉源*150选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_02_03_ZH",
+            "value": "属性辉石·碧×60选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_03_03_ZH",
+            "value": "属性辉石·紫×60选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_01_02_ZH",
+            "value": "精炼秘籍*10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_02_01_ZH",
+            "value": "矮人锤*3选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_02_02_ZH",
+            "value": "矮人锤*1选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_01_ZH",
+            "value": "蓝铜矿*20选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_UN_AW_02_01_ZH",
+            "value": "觉醒魂★2*25选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_UN_AW_03_01_ZH",
+            "value": "觉醒魂★3*20选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_UN_AW_04_01_ZH",
+            "value": "觉醒魂★4*50选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_UN_AW_04_02_ZH",
+            "value": "觉醒魂★4*20选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_UN_AW_05_01_ZH",
+            "value": "觉醒魂★5*30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_UN_AW_06_01_ZH",
+            "value": "觉醒魂★6*30选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_SWORD_03_01_ZH",
+            "value": "紫龙晶*15选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_11_1_ZH",
+            "value": "职业的记忆·绯×10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_11_2_ZH",
+            "value": "职业的记忆·黄×10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AF_SUP_01_ZH",
+            "value": "刻印*20选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_UN_UR_02_ZH",
+            "value": "UR兵员选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_VPI_02_ZH",
+            "value": "UR幻兵卡碎片*25选择召唤券"
+        },
+        {
+            "key": "IT_US_RA_UN_RARE_1_20200701",
+            "value": "稀有召唤券"
+        },
+        {
+            "key": "IT_US_RA_UN_RARE_10_20200701",
+            "value": "稀有10连召唤券"
+        },
+        {
+            "key": "IT_US_RA_MR_UR_UN_10_ZH",
+            "value": "10连兵员召唤券（确保1个SSR以上兵员）"
+        },
+        {
+            "key": "IT_US_RA_MR_UR_VC_10_ZH",
+            "value": "10连幻兵卡召唤券（确保1个SSR以上幻兵卡）"
+        },
+        {
+            "key": "IT_US_RA_UN_PI_2",
+            "value": "王者试炼UR兵员碎片召唤券"
+        },
+        {
+            "key": "IT_US_RA_UN_PI_3",
+            "value": "UR兵员碎片召唤券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_02_01_ZH",
+            "value": "魔石（大）*10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW_ITEM_907_ZH",
+            "value": "觉醒辉源*2选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW_ITEM_908_ZH",
+            "value": "觉醒辉源*10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_02_04_ZH",
+            "value": "属性辉石·碧*10选择召唤券"
+        },
+        {
+            "key": "IT_US_SE_AW_ITEM_909_ZH",
+            "value": "觉醒辉源*30选择召唤券"
+        },
+        {
+            "key": "IT_US_FAKEITEM_1_ZH",
+            "value": "阿多拉秘宝"
+        },
+        {
+            "key": "IT_EC_GUILD_ASTR",
+            "value": "特训币"
+        },
+        {
+            "key": "IT_US_UR_10_ZH",
+            "value": "UR确保十连召唤券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_02_02_ZH",
+            "value": "魔石（大）*5 自选召唤券"
+        },
+        {
+            "key": "IT_US_URUN_PIECE_F_01_ZH",
+            "value": "UR兵员碎片*40自选券"
+        },
+        {
+            "key": "IT_US_URUN_PIECE_01_ZH",
+            "value": "幻想·重逢 UR兵员碎片*40自选券"
+        },
+        {
+            "key": "IT_US_URVC_PIECE_01_ZH",
+            "value": "幻兵助力 UR幻兵卡碎片*50自选券"
+        },
+        {
+            "key": "IT_US_UN_10_TU_ZH",
+            "value": "兵员确保十连召唤券"
+        },
+        {
+            "key": "IT_US_UR_UNPI_10_A",
+            "value": "UR兵员碎片*10自选券"
+        },
+        {
+            "key": "IT_US_UR_UNPI_20_A",
+            "value": "UR兵员碎片*20自选券"
+        },
+        {
+            "key": "IT_US_UR_UNPI_40_A",
+            "value": "UR兵员碎片*40自选券"
+        },
+        {
+            "key": "IT_US_UR_UNPI_30_A",
+            "value": "UR兵员碎片*30自选券"
+        },
+        {
+            "key": "IT_US_UR_UNPI_15_A",
+            "value": "UR兵员碎片*15自选券"
+        },
+        {
+            "key": "IT_US_UR_VC_A",
+            "value": "UR幻兵卡自选券"
+        },
+        {
+            "key": "IT_US_UR_UN_A",
+            "value": "UR兵员自选券"
+        },
+        {
+            "key": "IT_US_UR_VCPI_25_A",
+            "value": "UR幻兵卡碎片*25自选券"
+        }
+    ]
+}

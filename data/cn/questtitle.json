@@ -1,0 +1,4128 @@
+{
+    "infos": [
+        {
+            "key": "QE_TU_01",
+            "value": "新手教学1"
+        },
+        {
+            "key": "QE_TU_02",
+            "value": "新手教学2"
+        },
+        {
+            "key": "QE_EV_UNITEXP_01",
+            "value": "经验之间（初级）"
+        },
+        {
+            "key": "QE_EV_UNITEXP_02",
+            "value": "经验之间（中级）"
+        },
+        {
+            "key": "QE_EV_UNITEXP_03",
+            "value": "经验之间（上级）"
+        },
+        {
+            "key": "QE_EV_UNITEXP_04",
+            "value": "经验之间（超级）"
+        },
+        {
+            "key": "QE_EV_GIL_D1",
+            "value": "金币之间（初级）"
+        },
+        {
+            "key": "QE_EV_GIL_D2",
+            "value": "金币之间（中级）"
+        },
+        {
+            "key": "QE_EV_GIL_D3",
+            "value": "金币之间（上级）"
+        },
+        {
+            "key": "QE_EV_GIL_01",
+            "value": "金币之间（初级）"
+        },
+        {
+            "key": "QE_EV_GIL_02",
+            "value": "金币之间（中级）"
+        },
+        {
+            "key": "QE_EV_GIL_03",
+            "value": "金币之间（上级）"
+        },
+        {
+            "key": "QE_EV_AFEXP_D1",
+            "value": "矿石之间（初级）"
+        },
+        {
+            "key": "QE_EV_AFEXP_D2",
+            "value": "矿石之间（中级）"
+        },
+        {
+            "key": "QE_EV_AFEXP_D3",
+            "value": "矿石之间（上级）"
+        },
+        {
+            "key": "QE_EV_AFEXP_01",
+            "value": "矿石之间（初级）"
+        },
+        {
+            "key": "QE_EV_AFEXP_02",
+            "value": "矿石之间（中级）"
+        },
+        {
+            "key": "QE_EV_AFEXP_03",
+            "value": "矿石之间（上级）"
+        },
+        {
+            "key": "QE_EV_VCEXP_01",
+            "value": "卵之间（初级）"
+        },
+        {
+            "key": "QE_EV_VCEXP_02",
+            "value": "卵之间（中级）"
+        },
+        {
+            "key": "QE_EV_VCEXP_03",
+            "value": "卵之间（上级）"
+        },
+        {
+            "key": "QE_EV_VCEXP_04",
+            "value": "卵之间（超级）"
+        },
+        {
+            "key": "QE_EV_WAEXP_01",
+            "value": "罐之间（初级）"
+        },
+        {
+            "key": "QE_EV_WAEXP_02",
+            "value": "罐之间（中级）"
+        },
+        {
+            "key": "QE_EV_WAEXP_03",
+            "value": "罐之间（上级）"
+        },
+        {
+            "key": "QE_EV_AW_HIGH_01",
+            "value": "【高难度】修炼之间等级.1"
+        },
+        {
+            "key": "QE_EV_AW_HIGH_03",
+            "value": "【高难度】修炼之间等级.2"
+        },
+        {
+            "key": "QE_EV_AW_H09_3",
+            "value": "【高难度】修炼之间（黄）C"
+        },
+        {
+            "key": "QE_EV_AW_H09_2",
+            "value": "【高难度】修炼之间（黄）B"
+        },
+        {
+            "key": "QE_EV_AW_H09_1",
+            "value": "【高难度】修炼之间（黄）A"
+        },
+        {
+            "key": "QE_EV_AW_H13_3",
+            "value": "【高难度】修炼之间（绯）C"
+        },
+        {
+            "key": "QE_EV_AW_H13_2",
+            "value": "【高难度】修炼之间（绯）B"
+        },
+        {
+            "key": "QE_EV_AW_H13_1",
+            "value": "【高难度】修炼之间（绯）A"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_01",
+            "value": "辉石之间（火）等级.1"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_02",
+            "value": "辉石之间（火）等级.2"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_03",
+            "value": "辉石之间（火）等级.3"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_04",
+            "value": "辉石之间（火）等级.4"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_05",
+            "value": "辉石之间（火）等级.5"
+        },
+        {
+            "key": "QE_EV_AW_WIND_01",
+            "value": "辉石之间（风）等级.1"
+        },
+        {
+            "key": "QE_EV_AW_WIND_02",
+            "value": "辉石之间（风）等级.2"
+        },
+        {
+            "key": "QE_EV_AW_WIND_03",
+            "value": "辉石之间（风）等级.3"
+        },
+        {
+            "key": "QE_EV_AW_WIND_04",
+            "value": "辉石之间（风）等级.4"
+        },
+        {
+            "key": "QE_EV_AW_WIND_05",
+            "value": "辉石之间（风）等级.5"
+        },
+        {
+            "key": "QE_EV_AW_WTR_01",
+            "value": "辉石之间（水）等级.1"
+        },
+        {
+            "key": "QE_EV_AW_WTR_02",
+            "value": "辉石之间（水）等级.2"
+        },
+        {
+            "key": "QE_EV_AW_WTR_03",
+            "value": "辉石之间（水）等级.3"
+        },
+        {
+            "key": "QE_EV_AW_WTR_04",
+            "value": "辉石之间（水）等级.4"
+        },
+        {
+            "key": "QE_EV_AW_WTR_05",
+            "value": "辉石之间（水）等级.5"
+        },
+        {
+            "key": "QE_EV_AW_ICE_01",
+            "value": "辉石之间（冰）等级.1"
+        },
+        {
+            "key": "QE_EV_AW_ICE_02",
+            "value": "辉石之间（冰）等级.2"
+        },
+        {
+            "key": "QE_EV_AW_ICE_03",
+            "value": "辉石之间（冰）等级.3"
+        },
+        {
+            "key": "QE_EV_AW_ICE_04",
+            "value": "辉石之间（冰）等级.4"
+        },
+        {
+            "key": "QE_EV_AW_ICE_05",
+            "value": "辉石之间（冰）等级.5"
+        },
+        {
+            "key": "QE_EV_AW_EAR_01",
+            "value": "辉石之间（土）等级.1"
+        },
+        {
+            "key": "QE_EV_AW_EAR_02",
+            "value": "辉石之间（土）等级.2"
+        },
+        {
+            "key": "QE_EV_AW_EAR_03",
+            "value": "辉石之间（土）等级.3"
+        },
+        {
+            "key": "QE_EV_AW_EAR_04",
+            "value": "辉石之间（土）等级.4"
+        },
+        {
+            "key": "QE_EV_AW_EAR_05",
+            "value": "辉石之间（土）等级.5"
+        },
+        {
+            "key": "QE_EV_AW_DARK_01",
+            "value": "辉石之间（暗）等级.1"
+        },
+        {
+            "key": "QE_EV_AW_DARK_02",
+            "value": "辉石之间（暗）等级.2"
+        },
+        {
+            "key": "QE_EV_AW_DARK_03",
+            "value": "辉石之间（暗）等级.3"
+        },
+        {
+            "key": "QE_EV_AW_DARK_04",
+            "value": "辉石之间（暗）等级.4"
+        },
+        {
+            "key": "QE_EV_AW_DARK_05",
+            "value": "辉石之间（暗）等级.5"
+        },
+        {
+            "key": "QE_EV_AW_THUN_01",
+            "value": "辉石之间（雷）等级.1"
+        },
+        {
+            "key": "QE_EV_AW_THUN_02",
+            "value": "辉石之间（雷）等级.2"
+        },
+        {
+            "key": "QE_EV_AW_THUN_03",
+            "value": "辉石之间（雷）等级.3"
+        },
+        {
+            "key": "QE_EV_AW_THUN_04",
+            "value": "辉石之间（雷）等级.4"
+        },
+        {
+            "key": "QE_EV_AW_THUN_05",
+            "value": "辉石之间（雷）等级.5"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_01",
+            "value": "辉石之间（光）等级.1"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_02",
+            "value": "辉石之间（光）等级.2"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_03",
+            "value": "辉石之间（光）等级.3"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_04",
+            "value": "辉石之间（光）等级.4"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_05",
+            "value": "辉石之间（光）等级.5"
+        },
+        {
+            "key": "QE_EV_SM_FIRE_01",
+            "value": "召唤兽觉醒之间（火）"
+        },
+        {
+            "key": "QE_EV_SM_WIND_01",
+            "value": "召唤兽觉醒之间（风）"
+        },
+        {
+            "key": "QE_EV_SM_WTR_01",
+            "value": "召唤兽觉醒之间（水）"
+        },
+        {
+            "key": "QE_EV_SM_ICE_01",
+            "value": "召唤兽觉醒之间（冰）"
+        },
+        {
+            "key": "QE_EV_SM_EAR_01",
+            "value": "召唤兽觉醒之间（土）"
+        },
+        {
+            "key": "QE_EV_SM_DARK_01",
+            "value": "召唤兽觉醒之间（暗）"
+        },
+        {
+            "key": "QE_EV_SM_THUN_01",
+            "value": "召唤兽觉醒之间（雷）"
+        },
+        {
+            "key": "QE_EV_SM_SHIN_01",
+            "value": "召唤兽觉醒之间（光）"
+        },
+        {
+            "key": "QE_ST_01010101",
+            "value": "孪生王子"
+        },
+        {
+            "key": "QE_ST_01010102",
+            "value": "血与破灭的预感"
+        },
+        {
+            "key": "QE_ST_01010103",
+            "value": "共同战斗"
+        },
+        {
+            "key": "QE_ST_01010104",
+            "value": "雷欧尼斯的作风"
+        },
+        {
+            "key": "QE_ST_01010105",
+            "value": "友好证明"
+        },
+        {
+            "key": "QE_ST_01010106",
+            "value": "于废墟中"
+        },
+        {
+            "key": "QE_ST_01010107",
+            "value": "展示强大吧"
+        },
+        {
+            "key": "QE_ST_01010108",
+            "value": "古代遗物"
+        },
+        {
+            "key": "QE_ST_01010109",
+            "value": "霍伦的作风"
+        },
+        {
+            "key": "QE_ST_01010110",
+            "value": "强夺"
+        },
+        {
+            "key": "QE_ST_01010201",
+            "value": "前往狮子城"
+        },
+        {
+            "key": "QE_ST_01010202",
+            "value": "蛮王之女"
+        },
+        {
+            "key": "QE_ST_01010203",
+            "value": "祝你幸福"
+        },
+        {
+            "key": "QE_ST_01010204",
+            "value": "即使与神为敌"
+        },
+        {
+            "key": "QE_ST_01010205",
+            "value": "志愿"
+        },
+        {
+            "key": "QE_ST_01010206",
+            "value": "真正恐惧之事"
+        },
+        {
+            "key": "QE_ST_01010207",
+            "value": "动摇之心"
+        },
+        {
+            "key": "QE_ST_01010208",
+            "value": "炫目之光"
+        },
+        {
+            "key": "QE_ST_01010209",
+            "value": "无尽的战斗"
+        },
+        {
+            "key": "QE_ST_01010210",
+            "value": "赎罪"
+        },
+        {
+            "key": "QE_ST_01010301",
+            "value": "不安"
+        },
+        {
+            "key": "QE_ST_01010302",
+            "value": "废墟之影"
+        },
+        {
+            "key": "QE_ST_01010303",
+            "value": "冤屈"
+        },
+        {
+            "key": "QE_ST_01010304",
+            "value": "破灭之道1"
+        },
+        {
+            "key": "QE_ST_01010305",
+            "value": "破灭之道2"
+        },
+        {
+            "key": "QE_ST_01010306",
+            "value": "喧嚣的群星"
+        },
+        {
+            "key": "QE_ST_01010307",
+            "value": "失去之物"
+        },
+        {
+            "key": "QE_ST_01010308",
+            "value": "仅为救一人"
+        },
+        {
+            "key": "QE_ST_01010309",
+            "value": "两人的话……"
+        },
+        {
+            "key": "QE_ST_01010310",
+            "value": "援军"
+        },
+        {
+            "key": "QE_ST_01020101",
+            "value": "《勇壮》出阵1"
+        },
+        {
+            "key": "QE_ST_01020102",
+            "value": "《勇壮》出阵2"
+        },
+        {
+            "key": "QE_ST_01020103",
+            "value": "不合格的王子"
+        },
+        {
+            "key": "QE_ST_01020104",
+            "value": "继承者"
+        },
+        {
+            "key": "QE_ST_01020105",
+            "value": "花开1"
+        },
+        {
+            "key": "QE_ST_01020106",
+            "value": "花开2"
+        },
+        {
+            "key": "QE_ST_01020107",
+            "value": "持续的袭击"
+        },
+        {
+            "key": "QE_ST_01020108",
+            "value": "同声相应"
+        },
+        {
+            "key": "QE_ST_01020109",
+            "value": "《勇壮》在此"
+        },
+        {
+            "key": "QE_ST_01020110",
+            "value": "星辰之语"
+        },
+        {
+            "key": "QE_ST_01020201",
+            "value": "撤退战1"
+        },
+        {
+            "key": "QE_ST_01020202",
+            "value": "传话"
+        },
+        {
+            "key": "QE_ST_01020203",
+            "value": "撤退战2"
+        },
+        {
+            "key": "QE_ST_01020204",
+            "value": "我会悲伤"
+        },
+        {
+            "key": "QE_ST_01020205",
+            "value": "守护者的使命"
+        },
+        {
+            "key": "QE_ST_01020206",
+            "value": "沉默的狮子城"
+        },
+        {
+            "key": "QE_ST_01020207",
+            "value": "两名忍者"
+        },
+        {
+            "key": "QE_ST_01020208",
+            "value": "王家血脉"
+        },
+        {
+            "key": "QE_ST_01020209",
+            "value": "王子归来"
+        },
+        {
+            "key": "QE_ST_01020210",
+            "value": "狮子的骄傲"
+        },
+        {
+            "key": "QE_ST_01020301",
+            "value": "女神的天启"
+        },
+        {
+            "key": "QE_ST_01020302",
+            "value": "忘却之前"
+        },
+        {
+            "key": "QE_ST_01020303",
+            "value": "血脉重于一切"
+        },
+        {
+            "key": "QE_ST_01020304",
+            "value": "师父的气魄"
+        },
+        {
+            "key": "QE_ST_01020305",
+            "value": "拼上这条命"
+        },
+        {
+            "key": "QE_ST_01020306",
+            "value": "败退"
+        },
+        {
+            "key": "QE_ST_01020307",
+            "value": "公牛与毒蛇"
+        },
+        {
+            "key": "QE_ST_01020308",
+            "value": "西方的威胁"
+        },
+        {
+            "key": "QE_ST_01020309",
+            "value": "阴谋诡计"
+        },
+        {
+            "key": "QE_ST_01020310",
+            "value": "第一剑"
+        },
+        {
+            "key": "QE_ST_01030101",
+            "value": "靠近的绝望"
+        },
+        {
+            "key": "QE_ST_01030102",
+            "value": "凋零的希望"
+        },
+        {
+            "key": "QE_ST_01030103",
+            "value": "教会的目的1"
+        },
+        {
+            "key": "QE_ST_01030104",
+            "value": "教会的目的2"
+        },
+        {
+            "key": "QE_ST_01030105",
+            "value": "维泽特的内情1"
+        },
+        {
+            "key": "QE_ST_01030106",
+            "value": "维泽特的内情2"
+        },
+        {
+            "key": "QE_ST_01030107",
+            "value": "边境之村"
+        },
+        {
+            "key": "QE_ST_01030108",
+            "value": "反抗"
+        },
+        {
+            "key": "QE_ST_01030109",
+            "value": "叛乱与镇压"
+        },
+        {
+            "key": "QE_ST_01030110",
+            "value": "复仇之心"
+        },
+        {
+            "key": "QE_ST_01030201",
+            "value": "黑幕"
+        },
+        {
+            "key": "QE_ST_01030202",
+            "value": "那好，让我来"
+        },
+        {
+            "key": "QE_ST_01030203",
+            "value": "无需怜悯1"
+        },
+        {
+            "key": "QE_ST_01030204",
+            "value": "无需怜悯2"
+        },
+        {
+            "key": "QE_ST_01030205",
+            "value": "村女敏舞"
+        },
+        {
+            "key": "QE_ST_01030206",
+            "value": "不是为了钱"
+        },
+        {
+            "key": "QE_ST_01030207",
+            "value": "离开村子"
+        },
+        {
+            "key": "QE_ST_01030208",
+            "value": "礼物"
+        },
+        {
+            "key": "QE_ST_01030209",
+            "value": "毁灭的光辉"
+        },
+        {
+            "key": "QE_ST_01030210",
+            "value": "忧虑"
+        },
+        {
+            "key": "QE_ST_01030301",
+            "value": "《壮丽》出阵"
+        },
+        {
+            "key": "QE_ST_01030302",
+            "value": "想好了吧？"
+        },
+        {
+            "key": "QE_ST_01030303",
+            "value": "怀疑渐深"
+        },
+        {
+            "key": "QE_ST_01030304",
+            "value": "前往维泽特的道路"
+        },
+        {
+            "key": "QE_ST_01030305",
+            "value": "穆拉加的目的"
+        },
+        {
+            "key": "QE_ST_01030306",
+            "value": "暴走兄弟1"
+        },
+        {
+            "key": "QE_ST_01030307",
+            "value": "暴走兄弟2"
+        },
+        {
+            "key": "QE_ST_01030308",
+            "value": "必不相忘"
+        },
+        {
+            "key": "QE_ST_01030309",
+            "value": "理由"
+        },
+        {
+            "key": "QE_ST_01030310",
+            "value": "王妃的计策"
+        },
+        {
+            "key": "QE_ST_01040101",
+            "value": "预感"
+        },
+        {
+            "key": "QE_ST_01040102",
+            "value": "膨胀的疑念"
+        },
+        {
+            "key": "QE_ST_01040103",
+            "value": "离开洞窟"
+        },
+        {
+            "key": "QE_ST_01040104",
+            "value": "前往安维尔城1"
+        },
+        {
+            "key": "QE_ST_01040105",
+            "value": "前往安维尔城2"
+        },
+        {
+            "key": "QE_ST_01040106",
+            "value": "危险的道路1"
+        },
+        {
+            "key": "QE_ST_01040107",
+            "value": "危险的道路2"
+        },
+        {
+            "key": "QE_ST_01040108",
+            "value": "为了雷欧尼斯"
+        },
+        {
+            "key": "QE_ST_01040109",
+            "value": "异样的气息"
+        },
+        {
+            "key": "QE_ST_01040110",
+            "value": "四个石棺"
+        },
+        {
+            "key": "QE_ST_01040201",
+            "value": "芬尼斯的忍者"
+        },
+        {
+            "key": "QE_ST_01040202",
+            "value": "冒牌货"
+        },
+        {
+            "key": "QE_ST_01040203",
+            "value": "强行突破1"
+        },
+        {
+            "key": "QE_ST_01040204",
+            "value": "强行突破2"
+        },
+        {
+            "key": "QE_ST_01040205",
+            "value": "骑士欧1"
+        },
+        {
+            "key": "QE_ST_01040206",
+            "value": "骑士欧2"
+        },
+        {
+            "key": "QE_ST_01040207",
+            "value": "鲜血之宴"
+        },
+        {
+            "key": "QE_ST_01040208",
+            "value": "蛆虫的敬意"
+        },
+        {
+            "key": "QE_ST_01040209",
+            "value": "想到个好主意"
+        },
+        {
+            "key": "QE_ST_01040210",
+            "value": "不共戴天"
+        },
+        {
+            "key": "QE_ST_01040301",
+            "value": "黎明时刻"
+        },
+        {
+            "key": "QE_ST_01040302",
+            "value": "极限"
+        },
+        {
+            "key": "QE_ST_01040303",
+            "value": "两个选择"
+        },
+        {
+            "key": "QE_ST_01040304",
+            "value": "三个石棺"
+        },
+        {
+            "key": "QE_ST_01040305",
+            "value": "活下去1"
+        },
+        {
+            "key": "QE_ST_01040306",
+            "value": "前往北方"
+        },
+        {
+            "key": "QE_ST_01040307",
+            "value": "活下去2"
+        },
+        {
+            "key": "QE_ST_01040308",
+            "value": "返回霍伦城"
+        },
+        {
+            "key": "QE_ST_01040309",
+            "value": "交错之影"
+        },
+        {
+            "key": "QE_ST_01040310",
+            "value": "活下去3"
+        },
+        {
+            "key": "QE_ST_01050101",
+            "value": "更强的力量"
+        },
+        {
+            "key": "QE_ST_01050102",
+            "value": "时机已至"
+        },
+        {
+            "key": "QE_ST_01050103",
+            "value": "暗杀部队"
+        },
+        {
+            "key": "QE_ST_01050104",
+            "value": "绝对……"
+        },
+        {
+            "key": "QE_ST_01050105",
+            "value": "前往北方"
+        },
+        {
+            "key": "QE_ST_01050106",
+            "value": "雷龙"
+        },
+        {
+            "key": "QE_ST_01050107",
+            "value": "在此之前"
+        },
+        {
+            "key": "QE_ST_01050108",
+            "value": "负伤的狮子1"
+        },
+        {
+            "key": "QE_ST_01050109",
+            "value": "报仇"
+        },
+        {
+            "key": "QE_ST_01050110",
+            "value": "负伤的狮子2"
+        },
+        {
+            "key": "QE_ST_01050201",
+            "value": "以力相抗"
+        },
+        {
+            "key": "QE_ST_01050202",
+            "value": "北方的刺客"
+        },
+        {
+            "key": "QE_ST_01050203",
+            "value": "间谍1"
+        },
+        {
+            "key": "QE_ST_01050204",
+            "value": "间谍2"
+        },
+        {
+            "key": "QE_ST_01050205",
+            "value": "间谍3"
+        },
+        {
+            "key": "QE_ST_01050206",
+            "value": "被授与的力量"
+        },
+        {
+            "key": "QE_ST_01050207",
+            "value": "奇袭"
+        },
+        {
+            "key": "QE_ST_01050208",
+            "value": "膨涨的憎恶1"
+        },
+        {
+            "key": "QE_ST_01050209",
+            "value": "膨涨的憎恶2"
+        },
+        {
+            "key": "QE_ST_01050210",
+            "value": "杀手锏"
+        },
+        {
+            "key": "QE_ST_01050301",
+            "value": "陷阱"
+        },
+        {
+            "key": "QE_ST_01050302",
+            "value": "舒泽尔特"
+        },
+        {
+            "key": "QE_ST_01050303",
+            "value": "觉悟"
+        },
+        {
+            "key": "QE_ST_01050304",
+            "value": "黄金甲胄"
+        },
+        {
+            "key": "QE_ST_01050305",
+            "value": "谎言与欺瞒1"
+        },
+        {
+            "key": "QE_ST_01050306",
+            "value": "谎言与欺瞒2"
+        },
+        {
+            "key": "QE_ST_01050307",
+            "value": "首次败北"
+        },
+        {
+            "key": "QE_ST_01050308",
+            "value": "谁是继承者"
+        },
+        {
+            "key": "QE_ST_01050309",
+            "value": "暴走的年轻狮子"
+        },
+        {
+            "key": "QE_ST_01050310",
+            "value": "《坚牢》"
+        },
+        {
+            "key": "QE_ST_01060101",
+            "value": "洞窟的那一头1"
+        },
+        {
+            "key": "QE_ST_01060102",
+            "value": "洞窟的那一头2"
+        },
+        {
+            "key": "QE_ST_01060103",
+            "value": "维泽特"
+        },
+        {
+            "key": "QE_ST_01060104",
+            "value": "我要战斗1"
+        },
+        {
+            "key": "QE_ST_01060105",
+            "value": "我要战斗2"
+        },
+        {
+            "key": "QE_ST_01060106",
+            "value": "失态的话"
+        },
+        {
+            "key": "QE_ST_01060107",
+            "value": "产生裂痕的羁绊"
+        },
+        {
+            "key": "QE_ST_01060108",
+            "value": "即使如此，我们也要1"
+        },
+        {
+            "key": "QE_ST_01060109",
+            "value": "即使如此，我们也要2"
+        },
+        {
+            "key": "QE_ST_01060110",
+            "value": "以剑代言"
+        },
+        {
+            "key": "QE_ST_01060201",
+            "value": "饿狼"
+        },
+        {
+            "key": "QE_ST_01060202",
+            "value": "格拉西拉1"
+        },
+        {
+            "key": "QE_ST_01060203",
+            "value": "格拉西拉2"
+        },
+        {
+            "key": "QE_ST_01060204",
+            "value": "降服"
+        },
+        {
+            "key": "QE_ST_01060205",
+            "value": "朗德尔的走狗"
+        },
+        {
+            "key": "QE_ST_01060206",
+            "value": "疑心"
+        },
+        {
+            "key": "QE_ST_01060207",
+            "value": "白狼城仍在远方1"
+        },
+        {
+            "key": "QE_ST_01060208",
+            "value": "白狼城仍在远方2"
+        },
+        {
+            "key": "QE_ST_01060209",
+            "value": "成为王的条件1"
+        },
+        {
+            "key": "QE_ST_01060210",
+            "value": "成为王的条件2"
+        },
+        {
+            "key": "QE_ST_01060301",
+            "value": "水晶的指引"
+        },
+        {
+            "key": "QE_ST_01060302",
+            "value": "前往雷欧尼斯城"
+        },
+        {
+            "key": "QE_ST_01060303",
+            "value": "消散的生命"
+        },
+        {
+            "key": "QE_ST_01060304",
+            "value": "恶运结束了吗"
+        },
+        {
+            "key": "QE_ST_01060305",
+            "value": "《坚牢》进击"
+        },
+        {
+            "key": "QE_ST_01060306",
+            "value": "墙壁"
+        },
+        {
+            "key": "QE_ST_01060307",
+            "value": "马车之谜1"
+        },
+        {
+            "key": "QE_ST_01060308",
+            "value": "马车之谜2"
+        },
+        {
+            "key": "QE_ST_01060309",
+            "value": "等待"
+        },
+        {
+            "key": "QE_ST_01060310",
+            "value": "喧嚣的群星"
+        },
+        {
+            "key": "QE_ST_01070101",
+            "value": "维泽特国王库利"
+        },
+        {
+            "key": "QE_ST_01070102",
+            "value": "被试探的力量1"
+        },
+        {
+            "key": "QE_ST_01070103",
+            "value": "被试探的力量2"
+        },
+        {
+            "key": "QE_ST_01070104",
+            "value": "为了同伴"
+        },
+        {
+            "key": "QE_ST_01070105",
+            "value": "雷欧尼斯领土的秘密"
+        },
+        {
+            "key": "QE_ST_01070106",
+            "value": "洞窟"
+        },
+        {
+            "key": "QE_ST_01070107",
+            "value": "《红莲》1"
+        },
+        {
+            "key": "QE_ST_01070108",
+            "value": "《红莲》2"
+        },
+        {
+            "key": "QE_ST_01070109",
+            "value": "白皑大地"
+        },
+        {
+            "key": "QE_ST_01070110",
+            "value": "要塞"
+        },
+        {
+            "key": "QE_ST_01070201",
+            "value": "短暂的休息"
+        },
+        {
+            "key": "QE_ST_01070202",
+            "value": "追踪者之影"
+        },
+        {
+            "key": "QE_ST_01070203",
+            "value": "那么你们就是敌人"
+        },
+        {
+            "key": "QE_ST_01070204",
+            "value": "前往维泽特"
+        },
+        {
+            "key": "QE_ST_01070205",
+            "value": "夺取要塞1"
+        },
+        {
+            "key": "QE_ST_01070206",
+            "value": "夺取要塞2"
+        },
+        {
+            "key": "QE_ST_01070207",
+            "value": "奥尔多登场"
+        },
+        {
+            "key": "QE_ST_01070208",
+            "value": "夺取要塞3"
+        },
+        {
+            "key": "QE_ST_01070209",
+            "value": "夺取要塞4"
+        },
+        {
+            "key": "QE_ST_01070210",
+            "value": "远话设备的陷阱"
+        },
+        {
+            "key": "QE_ST_01070301",
+            "value": "敌人从何而来1"
+        },
+        {
+            "key": "QE_ST_01070302",
+            "value": "敌人从何而来2"
+        },
+        {
+            "key": "QE_ST_01070303",
+            "value": "蛮族的陷阱"
+        },
+        {
+            "key": "QE_ST_01070304",
+            "value": "决断之时1"
+        },
+        {
+            "key": "QE_ST_01070305",
+            "value": "决断之时2"
+        },
+        {
+            "key": "QE_ST_01070306",
+            "value": "暴露了！"
+        },
+        {
+            "key": "QE_ST_01070307",
+            "value": "剑戟之音"
+        },
+        {
+            "key": "QE_ST_01070308",
+            "value": "《坚牢》撤退"
+        },
+        {
+            "key": "QE_ST_01070309",
+            "value": "信任同伴1"
+        },
+        {
+            "key": "QE_ST_01070310",
+            "value": "信任同伴2"
+        },
+        {
+            "key": "QE_ST_01080101",
+            "value": "要留下阴影1"
+        },
+        {
+            "key": "QE_ST_01080102",
+            "value": "要留下阴影2"
+        },
+        {
+            "key": "QE_ST_01080103",
+            "value": "霍伦国王赶往雷欧尼斯"
+        },
+        {
+            "key": "QE_ST_01080104",
+            "value": "萨达利撤退"
+        },
+        {
+            "key": "QE_ST_01080105",
+            "value": "要夺回要塞"
+        },
+        {
+            "key": "QE_ST_01080106",
+            "value": "芬尼斯的援军1"
+        },
+        {
+            "key": "QE_ST_01080107",
+            "value": "芬尼斯的援军2"
+        },
+        {
+            "key": "QE_ST_01080108",
+            "value": "《勇壮》与《苍穹》1"
+        },
+        {
+            "key": "QE_ST_01080109",
+            "value": "《勇壮》与《苍穹》2"
+        },
+        {
+            "key": "QE_ST_01080110",
+            "value": "芬尼斯国王穆拉加"
+        },
+        {
+            "key": "QE_ST_01080201",
+            "value": "凯旋"
+        },
+        {
+            "key": "QE_ST_01080202",
+            "value": "维克托拉的阴谋"
+        },
+        {
+            "key": "QE_ST_01080203",
+            "value": "雪原"
+        },
+        {
+            "key": "QE_ST_01080204",
+            "value": "天秤"
+        },
+        {
+            "key": "QE_ST_01080205",
+            "value": "库利暴怒1"
+        },
+        {
+            "key": "QE_ST_01080206",
+            "value": "库利暴怒2"
+        },
+        {
+            "key": "QE_ST_01080207",
+            "value": "为了朋友"
+        },
+        {
+            "key": "QE_ST_01080208",
+            "value": "你打算让他的心意白费吗？"
+        },
+        {
+            "key": "QE_ST_01080209",
+            "value": "前往雷欧尼斯"
+        },
+        {
+            "key": "QE_ST_01080210",
+            "value": "霍伦的矜持"
+        },
+        {
+            "key": "QE_ST_01080301",
+            "value": "莉莉丝的梦"
+        },
+        {
+            "key": "QE_ST_01080302",
+            "value": "雷欧尼斯军、南下"
+        },
+        {
+            "key": "QE_ST_01080303",
+            "value": "就目前而言1"
+        },
+        {
+            "key": "QE_ST_01080304",
+            "value": "就目前而言2"
+        },
+        {
+            "key": "QE_ST_01080305",
+            "value": "迫近的叛乱"
+        },
+        {
+            "key": "QE_ST_01080306",
+            "value": "红色恶魔"
+        },
+        {
+            "key": "QE_ST_01080307",
+            "value": "会合"
+        },
+        {
+            "key": "QE_ST_01080308",
+            "value": "可疑的家伙1"
+        },
+        {
+            "key": "QE_ST_01080309",
+            "value": "可疑的家伙2"
+        },
+        {
+            "key": "QE_ST_01080310",
+            "value": "放一百个心吧"
+        },
+        {
+            "key": "QE_HA_LW_ZZAN",
+            "value": "获得碎片 扎赞"
+        },
+        {
+            "key": "QE_HA_LW_RART",
+            "value": "获得碎片 莉雅特"
+        },
+        {
+            "key": "QE_HA_LW_MICE",
+            "value": "获得碎片 米茄"
+        },
+        {
+            "key": "QE_HA_LW_MIIA",
+            "value": "获得碎片 米娅"
+        },
+        {
+            "key": "QE_HA_LW_BYLO",
+            "value": "获得碎片 巴埃罗"
+        },
+        {
+            "key": "QE_HA_LW_RYER",
+            "value": "获得碎片 莉蕾露莉拉"
+        },
+        {
+            "key": "QE_HA_LW_SCIA",
+            "value": "获得碎片 索莎"
+        },
+        {
+            "key": "QE_HA_LW_VRID",
+            "value": "获得碎片 瓦尔莱德"
+        },
+        {
+            "key": "QE_HA_LW_NAIA",
+            "value": "获得碎片 奈雅"
+        },
+        {
+            "key": "QE_HA_LW_SRJS",
+            "value": "获得碎片 塞尔杰斯"
+        },
+        {
+            "key": "QE_HA_LW_UNII",
+            "value": "获得碎片 悠妮"
+        },
+        {
+            "key": "QE_HA_LW_SEVR",
+            "value": "获得碎片 塞维罗"
+        },
+        {
+            "key": "QE_HA_LW_VADM",
+            "value": "获得碎片 瓦迪姆"
+        },
+        {
+            "key": "QE_HA_LW_MURM",
+            "value": "获得碎片 《低语》"
+        },
+        {
+            "key": "QE_HA_LW_PHBE",
+            "value": "获得碎片 菲比"
+        },
+        {
+            "key": "QE_HA_LW_MONT",
+            "value": "获得碎片 蒙特·雷欧尼斯"
+        },
+        {
+            "key": "QE_HA_LW_HLNA",
+            "value": "获得碎片 海莲娜·雷欧尼斯"
+        },
+        {
+            "key": "QE_HA_LW_LILS",
+            "value": "获得碎片 莉莉丝"
+        },
+        {
+            "key": "QE_HA_LW_RAMD",
+            "value": "获得碎片 拉玛达"
+        },
+        {
+            "key": "QE_HA_LW_OOOO",
+            "value": "获得碎片 欧"
+        },
+        {
+            "key": "QE_HA_LW_LRNZ",
+            "value": "获得碎片 罗伦佐"
+        },
+        {
+            "key": "QE_HA_LW_RIRY",
+            "value": "获得碎片 雷尤"
+        },
+        {
+            "key": "QE_HA_LW_VSTR",
+            "value": "获得碎片 维斯特拉尔"
+        },
+        {
+            "key": "QE_HA_LW_CLEY",
+            "value": "获得碎片 库利·维泽特"
+        },
+        {
+            "key": "QE_HA_LW_KADI",
+            "value": "获得碎片 卡迪娅"
+        },
+        {
+            "key": "QE_HA_LW_MRLK",
+            "value": "获得碎片 梅丽露可"
+        },
+        {
+            "key": "QE_HA_LW_MGRT",
+            "value": "获得碎片 玛尔格丽特"
+        },
+        {
+            "key": "QE_HA_LW_PRAY",
+            "value": "获得碎片 《祈祷》"
+        },
+        {
+            "key": "QE_HA_LW_FINA",
+            "value": "获得碎片 菲娜"
+        },
+        {
+            "key": "QE_HA_LW_SZRT",
+            "value": "获得碎片 舒泽尔特"
+        },
+        {
+            "key": "QE_HA_LW_SDLX",
+            "value": "获得碎片 影猞猁"
+        },
+        {
+            "key": "QE_HA_LW_NASR",
+            "value": "获得碎片 纳莎"
+        },
+        {
+            "key": "QE_HA_LW_STRN",
+            "value": "获得碎片 斯特恩·雷欧尼斯"
+        },
+        {
+            "key": "QE_HA_LW_ELDE",
+            "value": "获得碎片 奥尔德·雷欧尼斯"
+        },
+        {
+            "key": "QE_HA_LW_ROBB",
+            "value": "获得碎片 罗布·霍伦"
+        },
+        {
+            "key": "QE_HA_LW_ENBT",
+            "value": "获得碎片 恩格尔伯特"
+        },
+        {
+            "key": "QE_HA_LW_ZIZA",
+            "value": "获得碎片 希扎"
+        },
+        {
+            "key": "QE_HA_LW_AILN",
+            "value": "获得碎片 艾琳"
+        },
+        {
+            "key": "QE_HA_LW_MDNA",
+            "value": "获得碎片 美迪爱娜"
+        },
+        {
+            "key": "QE_HA_LW_AYKA",
+            "value": "获得碎片 彩花"
+        },
+        {
+            "key": "QE_HA_LW_MACR",
+            "value": "获得碎片 玛雪莉·霍伦"
+        },
+        {
+            "key": "QE_HA_LW_GLMS",
+            "value": "获得碎片 吉尔伽美什"
+        },
+        {
+            "key": "QE_HA_LW_FDRC",
+            "value": "获得碎片 弗蕾德丽卡"
+        },
+        {
+            "key": "QE_HA_LW_YERM",
+            "value": "获得碎片 耶尔玛"
+        },
+        {
+            "key": "QE_HA_LW_KTON",
+            "value": "获得碎片 基顿"
+        },
+        {
+            "key": "QE_HA_LW_WHIS",
+            "value": "获得碎片 《耳语》"
+        },
+        {
+            "key": "QE_HA_LW_MRND",
+            "value": "获得碎片 米兰达"
+        },
+        {
+            "key": "QE_HA_LW_DRND",
+            "value": "获得碎片 多兰多"
+        },
+        {
+            "key": "QE_HA_LW_LUCA",
+            "value": "获得碎片 鲁·西雅"
+        },
+        {
+            "key": "QE_HA_LW_ADLD",
+            "value": "获得碎片 阿德拉德"
+        },
+        {
+            "key": "QE_HA_LW_THLA",
+            "value": "获得碎片 萨丽雅"
+        },
+        {
+            "key": "QE_HA_LW_VKTR",
+            "value": "获得碎片 维克托拉"
+        },
+        {
+            "key": "QE_HA_LW_RAIN",
+            "value": "获得碎片 雷因"
+        },
+        {
+            "key": "QE_HA_LW_DRIO",
+            "value": "获得碎片 达利欧·霍伦"
+        },
+        {
+            "key": "QE_HA_LW_VNLA",
+            "value": "获得碎片 维内拉·芬尼斯"
+        },
+        {
+            "key": "QE_HA_LW_SIMR",
+            "value": "获得碎片 西姆尔"
+        },
+        {
+            "key": "QE_HA_LW_QILF",
+            "value": "获得碎片 基尔菲"
+        },
+        {
+            "key": "QE_HA_LW_ORDR",
+            "value": "获得碎片 奥尔多"
+        },
+        {
+            "key": "QE_HA_LW_LVES",
+            "value": "获得碎片 菈薇丝"
+        },
+        {
+            "key": "QE_HA_LW_IRDL",
+            "value": "获得碎片 伊尔迪拉"
+        },
+        {
+            "key": "QE_CH_LW_ZZAN",
+            "value": "扎赞"
+        },
+        {
+            "key": "QE_CH_LW_RART",
+            "value": "莉雅特"
+        },
+        {
+            "key": "QE_CH_LW_MICE",
+            "value": "米茄"
+        },
+        {
+            "key": "QE_CH_LW_MIIA",
+            "value": "米娅"
+        },
+        {
+            "key": "QE_CH_LW_BYLO",
+            "value": "巴埃罗"
+        },
+        {
+            "key": "QE_CH_LW_RYER",
+            "value": "莉蕾露莉拉"
+        },
+        {
+            "key": "QE_CH_LW_SCIA",
+            "value": "索莎"
+        },
+        {
+            "key": "QE_CH_LW_VRID",
+            "value": "瓦尔莱德"
+        },
+        {
+            "key": "QE_CH_LW_NAIA",
+            "value": "奈雅"
+        },
+        {
+            "key": "QE_CH_LW_SRJS",
+            "value": "塞尔杰斯"
+        },
+        {
+            "key": "QE_CH_LW_UNII",
+            "value": "悠妮"
+        },
+        {
+            "key": "QE_CH_LW_SEVR",
+            "value": "塞维罗"
+        },
+        {
+            "key": "QE_CH_LW_VADM",
+            "value": "瓦迪姆"
+        },
+        {
+            "key": "QE_CH_LW_MURM",
+            "value": "《低语》"
+        },
+        {
+            "key": "QE_CH_LW_PHBE",
+            "value": "菲比"
+        },
+        {
+            "key": "QE_CH_LW_MONT",
+            "value": "蒙特·雷欧尼斯"
+        },
+        {
+            "key": "QE_CH_LW_HLNA",
+            "value": "海莲娜·雷欧尼斯"
+        },
+        {
+            "key": "QE_CH_LW_LILS",
+            "value": "莉莉丝"
+        },
+        {
+            "key": "QE_CH_LW_RAMD",
+            "value": "拉玛达"
+        },
+        {
+            "key": "QE_CH_LW_OOOO",
+            "value": "欧"
+        },
+        {
+            "key": "QE_CH_LW_LRNZ",
+            "value": "罗伦佐"
+        },
+        {
+            "key": "QE_CH_LW_RIRY",
+            "value": "雷尤"
+        },
+        {
+            "key": "QE_CH_LW_VSTR",
+            "value": "维斯特拉尔"
+        },
+        {
+            "key": "QE_CH_LW_CLEY",
+            "value": "库利·维泽特"
+        },
+        {
+            "key": "QE_CH_LW_KADI",
+            "value": "卡迪娅"
+        },
+        {
+            "key": "QE_CH_LW_MRLK",
+            "value": "梅丽露可"
+        },
+        {
+            "key": "QE_CH_LW_MGRT",
+            "value": "玛尔格丽特"
+        },
+        {
+            "key": "QE_CH_LW_PRAY",
+            "value": "《祈祷》"
+        },
+        {
+            "key": "QE_CH_LW_SZRT",
+            "value": "舒泽尔特"
+        },
+        {
+            "key": "QE_CH_LW_FINA",
+            "value": "菲娜"
+        },
+        {
+            "key": "QE_CH_LW_SDLX",
+            "value": "影猞猁"
+        },
+        {
+            "key": "QE_CH_LW_NASR",
+            "value": "纳莎"
+        },
+        {
+            "key": "QE_CH_LW_ETRE",
+            "value": "埃特蕾"
+        },
+        {
+            "key": "QE_CH_LW_DRND",
+            "value": "多兰多"
+        },
+        {
+            "key": "QE_CH_LW_STRN",
+            "value": "斯特恩·雷欧尼斯"
+        },
+        {
+            "key": "QE_CH_LW_ELDE",
+            "value": "奥尔德·雷欧尼斯"
+        },
+        {
+            "key": "QE_CH_LW_ROBB",
+            "value": "罗布·霍伦"
+        },
+        {
+            "key": "QE_CH_LW_ENBT",
+            "value": "恩格尔伯特"
+        },
+        {
+            "key": "QE_CH_LW_ZIZA",
+            "value": "希扎"
+        },
+        {
+            "key": "QE_CH_LW_AILN",
+            "value": "艾琳"
+        },
+        {
+            "key": "QE_CH_LW_MDNA",
+            "value": "美迪爱娜"
+        },
+        {
+            "key": "QE_CH_LW_AYKA",
+            "value": "彩花"
+        },
+        {
+            "key": "QE_CH_LW_MACR",
+            "value": "玛雪莉·霍伦"
+        },
+        {
+            "key": "QE_CH_LW_GLMS",
+            "value": "吉尔伽美什"
+        },
+        {
+            "key": "QE_CH_LW_GLMS2",
+            "value": "吉尔伽美什（2）"
+        },
+        {
+            "key": "QE_CH_LW_FDRC",
+            "value": "弗蕾德丽卡"
+        },
+        {
+            "key": "QE_CH_LW_YERM",
+            "value": "耶尔玛"
+        },
+        {
+            "key": "QE_CH_LW_WHIS",
+            "value": "《耳语》"
+        },
+        {
+            "key": "QE_CH_LW_KTON",
+            "value": "基顿"
+        },
+        {
+            "key": "QE_CH_LW_MRND",
+            "value": "米兰达"
+        },
+        {
+            "key": "QE_CH_LW_LUCA",
+            "value": "鲁·西雅"
+        },
+        {
+            "key": "QE_CH_LW_ADLD",
+            "value": "阿德拉德"
+        },
+        {
+            "key": "QE_CH_LW_THLA",
+            "value": "萨丽雅"
+        },
+        {
+            "key": "QE_CH_LW_VKTR",
+            "value": "维克托拉"
+        },
+        {
+            "key": "QE_CH_GL_LW_FRVA",
+            "value": "弗雷比亚"
+        },
+        {
+            "key": "QE_CH_LW_RAIN",
+            "value": "雷因"
+        },
+        {
+            "key": "QE_CH_LW_DRIO",
+            "value": "达利欧·霍伦"
+        },
+        {
+            "key": "QE_CH_LW_VNLA",
+            "value": "维内拉·芬尼斯"
+        },
+        {
+            "key": "QE_CH_LW_TREL",
+            "value": "泰瑞尔"
+        },
+        {
+            "key": "QE_CH_LW_SIMR",
+            "value": "西姆尔"
+        },
+        {
+            "key": "QE_CH_LW_QILF",
+            "value": "基尔菲"
+        },
+        {
+            "key": "QE_CH_LW_ORDR",
+            "value": "奥尔多"
+        },
+        {
+            "key": "QE_CH_LW_LVES",
+            "value": "菈薇丝"
+        },
+        {
+            "key": "QE_CH_FF14_YSTL",
+            "value": "雅·修特拉"
+        },
+        {
+            "key": "QE_CH_FF14_TNCR",
+            "value": "桑克瑞德"
+        },
+        {
+            "key": "QE_CH_FFT_RAMZ",
+            "value": "拉姆萨"
+        },
+        {
+            "key": "QE_CH_FFT_GFGR",
+            "value": "加夫加利安"
+        },
+        {
+            "key": "QE_CH_FFT_ORND",
+            "value": "奥尔兰多"
+        },
+        {
+            "key": "QE_CH_FF1_WROL",
+            "value": "光之战士"
+        },
+        {
+            "key": "QE_CH_FFT_MSTD",
+            "value": "姆斯达迪奥"
+        },
+        {
+            "key": "QE_CH_FFT_AGRA",
+            "value": "阿格莉亚丝"
+        },
+        {
+            "key": "QE_CH_FFT_DELT",
+            "value": "迪利塔"
+        },
+        {
+            "key": "QE_CH_LW_IRDL",
+            "value": "伊尔迪拉"
+        },
+        {
+            "key": "QE_EV_GL_CDOWN_01_9",
+            "value": "倒数计时任务"
+        },
+        {
+            "key": "QE_EV_GL_CDOWN_01_8",
+            "value": "倒数计时任务"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_1",
+            "value": "倒数计时任务"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_2",
+            "value": "倒数计时任务"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_3",
+            "value": "倒数计时任务"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_4",
+            "value": "倒数计时任务"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_5",
+            "value": "倒数计时任务"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_6",
+            "value": "倒数计时任务"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_7",
+            "value": "倒数计时任务"
+        },
+        {
+            "key": "QE_EV_FF1_01",
+            "value": "最终 幻想 I 战斗#1"
+        },
+        {
+            "key": "QE_EV_FF1_02",
+            "value": "最终 幻想 I 战斗#2"
+        },
+        {
+            "key": "QE_EV_FF1_03",
+            "value": "最终 幻想 I 战斗#3"
+        },
+        {
+            "key": "QE_EV_FF1_04",
+            "value": "最终 幻想 I 战斗#4"
+        },
+        {
+            "key": "QE_EV_FF1_05",
+            "value": "最终 幻想 I 战斗#5"
+        },
+        {
+            "key": "QE_EV_FF1_06",
+            "value": "最终 幻想 I 战斗#1【中级】"
+        },
+        {
+            "key": "QE_EV_FF1_07",
+            "value": "最终 幻想 I 战斗#2【中级】"
+        },
+        {
+            "key": "QE_EV_FF1_08",
+            "value": "最终 幻想 I 战斗#3【中级】"
+        },
+        {
+            "key": "QE_EV_FF1_09",
+            "value": "最终 幻想 I 战斗#4【中级】"
+        },
+        {
+            "key": "QE_EV_FF1_10",
+            "value": "最终 幻想 I 战斗#5【中级】"
+        },
+        {
+            "key": "QE_EV_FF1_EX",
+            "value": "最终 幻想 I【特殊】"
+        },
+        {
+            "key": "QE_MU_EV_FF1_EX",
+            "value": "最终 幻想 I【特殊】"
+        },
+        {
+            "key": "QE_EV_WROL_01",
+            "value": "限定困难任务（光之战士）"
+        },
+        {
+            "key": "QE_EV_FF14_01",
+            "value": "Final Fantasy XIV: 暗影之逆焰 战斗#1"
+        },
+        {
+            "key": "QE_EV_FF14_02",
+            "value": "Final Fantasy XIV: 暗影之逆焰 战斗#2"
+        },
+        {
+            "key": "QE_EV_FF14_03",
+            "value": "Final Fantasy XIV: 暗影之逆焰 战斗#3"
+        },
+        {
+            "key": "QE_EV_FF14_04",
+            "value": "Final Fantasy XIV: 暗影之逆焰 战斗#4"
+        },
+        {
+            "key": "QE_EV_FF14_05",
+            "value": "Final Fantasy XIV: 暗影之逆焰 战斗#5"
+        },
+        {
+            "key": "QE_EV_FF14_RD01",
+            "value": "Final Fantasy XIV: 暗影之逆焰 【讨伐】 等级.1"
+        },
+        {
+            "key": "QE_EV_FF14_EX1",
+            "value": "Final Fantasy XIV: 暗影之逆焰 【特殊1】"
+        },
+        {
+            "key": "QE_EV_FF14_Ex2",
+            "value": "Final Fantasy XIV: 暗影之逆焰 【特殊2】"
+        },
+        {
+            "key": "QE_EV_FF14_RD02",
+            "value": "Final Fantasy XIV: 暗影之逆焰 【讨伐】 等级.10"
+        },
+        {
+            "key": "QE_EV_FFT02_01",
+            "value": "【第2波】最终 幻想 战略版 战斗#1"
+        },
+        {
+            "key": "QE_EV_FFT02_02",
+            "value": "【第2波】最终 幻想 战略版 战斗#2"
+        },
+        {
+            "key": "QE_EV_FFT02_03",
+            "value": "【第2波】最终 幻想 战略版 战斗#3"
+        },
+        {
+            "key": "QE_EV_FFT02_04",
+            "value": "【第2波】最终 幻想 战略版 战斗#4"
+        },
+        {
+            "key": "QE_EV_FFT02_05",
+            "value": "【第2波】城塞都市扎兰达"
+        },
+        {
+            "key": "QE_EV_FFT_EX_02",
+            "value": "【第2波】最终 幻想 战略版 【特殊】"
+        },
+        {
+            "key": "QE_MU_FFT_EX_02",
+            "value": "【第2波】最终 幻想 战略版 【特殊】"
+        },
+        {
+            "key": "QE_EV_FFT_01",
+            "value": "最终 幻想 战略版 战斗#1"
+        },
+        {
+            "key": "QE_EV_FFT_02",
+            "value": "最终 幻想 战略版 战斗#2"
+        },
+        {
+            "key": "QE_EV_FFT_03",
+            "value": "最终 幻想 战略版 战斗#3"
+        },
+        {
+            "key": "QE_EV_FFT_04",
+            "value": "莱昂纳尔城‧城门前"
+        },
+        {
+            "key": "QE_EV_FFT_05",
+            "value": "莱昂纳尔城‧城内"
+        },
+        {
+            "key": "QE_EV_FFT_06",
+            "value": "最终 幻想 战略版 战斗#1【中级】"
+        },
+        {
+            "key": "QE_EV_FFT_07",
+            "value": "最终 幻想 战略版 战斗#2【中级】"
+        },
+        {
+            "key": "QE_EV_FFT_08",
+            "value": "最终 幻想 战略版 战斗#3【中级】"
+        },
+        {
+            "key": "QE_EV_FFT_09",
+            "value": "莱昂纳尔城‧城门前【中级】"
+        },
+        {
+            "key": "QE_EV_FFT_10",
+            "value": "莱昂纳尔城·城内【中级】"
+        },
+        {
+            "key": "QE_EV_FFT_EX_01",
+            "value": "最终 幻想 战略版 【特殊】"
+        },
+        {
+            "key": "QE_MU_FFT_EX_01",
+            "value": "最终 幻想 战略版 【特殊】"
+        },
+        {
+            "key": "QE_GL_EV_FFEXU_01",
+            "value": "FF EXVIUS Universe任务"
+        },
+        {
+            "key": "QE_EV_DELT_01",
+            "value": "限定困难任务（迪利塔）"
+        },
+        {
+            "key": "QE_EV_AGRA_01",
+            "value": "限定困难任务（阿格莉亚丝）"
+        },
+        {
+            "key": "QE_EV_VNLA_01",
+            "value": "限定困难任务（维内拉·芬尼斯）"
+        },
+        {
+            "key": "QE_EV_QILF_01",
+            "value": "限定困难任务（基尔菲）"
+        },
+        {
+            "key": "QE_EV_ORDR_01",
+            "value": "限定困难任务（奥尔多）"
+        },
+        {
+            "key": "QE_EV_GL_1M_FIR",
+            "value": "100万下载纪念任务（火）"
+        },
+        {
+            "key": "QE_EV_GL_1M_ICE",
+            "value": "100万下载纪念任务（冰）"
+        },
+        {
+            "key": "QE_EV_JP_001",
+            "value": "技能点获得任务"
+        },
+        {
+            "key": "QE_EV_IRDL_01",
+            "value": "限定困难任务（伊尔迪拉）"
+        },
+        {
+            "key": "QE_SB_OCHU_02",
+            "value": "高难度　大口花考验"
+        },
+        {
+            "key": "QE_SB_OCHU_03",
+            "value": "超高难度　大口花考验"
+        },
+        {
+            "key": "QE_EV_GL_1M_WIN",
+            "value": "100万下载纪念任务（风）"
+        },
+        {
+            "key": "QE_EV_GL_1M_EAR",
+            "value": "100万下载纪念任务（土）"
+        },
+        {
+            "key": "QE_EV_GL_1M_THU",
+            "value": "100万下载纪念任务（雷）"
+        },
+        {
+            "key": "QE_EV_GL_1M_WTR",
+            "value": "100万下载纪念任务（水）"
+        },
+        {
+            "key": "QE_EV_GL_1M_SHI",
+            "value": "100万下载纪念任务（光）"
+        },
+        {
+            "key": "QE_EV_GL_1M_DAR",
+            "value": "100万下载纪念任务（暗）"
+        },
+        {
+            "key": "QE_EV_GL_2M_JP",
+            "value": "200万下载纪念技能点任务"
+        },
+        {
+            "key": "QE_EV_GL_3M_DL",
+            "value": "300万下载纪念任务"
+        },
+        {
+            "key": "QE_EV_BEGN_2001",
+            "value": "兵员养成支援任务"
+        },
+        {
+            "key": "QE_EV_01_01",
+            "value": "第1话 香气"
+        },
+        {
+            "key": "QE_EV_01_02",
+            "value": "第2话 打倒爆弹"
+        },
+        {
+            "key": "QE_EV_01_03",
+            "value": "第3话 任务1"
+        },
+        {
+            "key": "QE_EV_01_04",
+            "value": "第4话 任务2"
+        },
+        {
+            "key": "QE_EV_01_05",
+            "value": "第5话 自称，最强圣骑士"
+        },
+        {
+            "key": "QE_EV_01_06",
+            "value": "第6话 归来"
+        },
+        {
+            "key": "QE_EV_01_07",
+            "value": "第7话 前往国境1"
+        },
+        {
+            "key": "QE_EV_01_08",
+            "value": "第8话 前往国境2"
+        },
+        {
+            "key": "QE_EV_01_09",
+            "value": "第9话 前往国境3"
+        },
+        {
+            "key": "QE_EV_01_10",
+            "value": "第10话 王子蒙特"
+        },
+        {
+            "key": "QE_EV_01_EX1",
+            "value": "憧憬的王子大人 【特殊1】"
+        },
+        {
+            "key": "QE_EV_01_EX2",
+            "value": "憧憬的王子大人 【特殊2】"
+        },
+        {
+            "key": "QE_MU_EV_01_EX1",
+            "value": "憧憬的王子大人 【特殊1】"
+        },
+        {
+            "key": "QE_MU_EV_01_EX2",
+            "value": "憧憬的王子大人 【特殊2】"
+        },
+        {
+            "key": "QE_EV_02_01",
+            "value": "第1话 萨丽雅的不安"
+        },
+        {
+            "key": "QE_EV_02_02",
+            "value": "第2话 前往西方"
+        },
+        {
+            "key": "QE_EV_02_03",
+            "value": "第3话 古拉兹的手下"
+        },
+        {
+            "key": "QE_EV_02_04",
+            "value": "第4话 森林之中"
+        },
+        {
+            "key": "QE_EV_02_05",
+            "value": "第5话 全军突击1"
+        },
+        {
+            "key": "QE_EV_02_06",
+            "value": "第6话 全军突击2"
+        },
+        {
+            "key": "QE_EV_02_07",
+            "value": "第7话 奖金"
+        },
+        {
+            "key": "QE_EV_02_08",
+            "value": "第8话 前往要塞1"
+        },
+        {
+            "key": "QE_EV_02_09",
+            "value": "第9话 前往要塞2"
+        },
+        {
+            "key": "QE_EV_02_10",
+            "value": "第10话 冷酷的凶弹"
+        },
+        {
+            "key": "QE_EV_02_EX1",
+            "value": "西方的威胁朗德尔【特殊】"
+        },
+        {
+            "key": "QE_EV_RAIN_01",
+            "value": "限定困难任务（雷因）"
+        },
+        {
+            "key": "QE_EV_03_01",
+            "value": "第1话 前往达利欧的房间1"
+        },
+        {
+            "key": "QE_EV_03_02",
+            "value": "第2话 前往达利欧的房间2"
+        },
+        {
+            "key": "QE_EV_03_03",
+            "value": "第3话 背叛者1"
+        },
+        {
+            "key": "QE_EV_03_04",
+            "value": "第4话 背叛者2"
+        },
+        {
+            "key": "QE_EV_03_05",
+            "value": "第5话 生命灯火1"
+        },
+        {
+            "key": "QE_EV_03_06",
+            "value": "第6话 生命灯火2"
+        },
+        {
+            "key": "QE_EV_03_07",
+            "value": "第7话 生命灯火3"
+        },
+        {
+            "key": "QE_EV_03_08",
+            "value": "第8话 就像是牢狱一样"
+        },
+        {
+            "key": "QE_EV_03_09",
+            "value": "第9话 前往城外"
+        },
+        {
+            "key": "QE_EV_03_10",
+            "value": "第10话 自由"
+        },
+        {
+            "key": "QE_EV_03_EX",
+            "value": "为了燃尽生命【特殊】"
+        },
+        {
+            "key": "QE_MU_EV_03_EX",
+            "value": "为了燃尽生命【特殊】"
+        },
+        {
+            "key": "QE_EV_04_01",
+            "value": "第1话 不请自来之人"
+        },
+        {
+            "key": "QE_EV_04_02",
+            "value": "第2话 师父1"
+        },
+        {
+            "key": "QE_EV_04_03",
+            "value": "第3话 师父2"
+        },
+        {
+            "key": "QE_EV_04_04",
+            "value": "第4话 憧憬"
+        },
+        {
+            "key": "QE_EV_04_05",
+            "value": "第5话 成为武士的道路"
+        },
+        {
+            "key": "QE_EV_04_06",
+            "value": "第6话 魔物巢窟1"
+        },
+        {
+            "key": "QE_EV_04_07",
+            "value": "第7话 魔物巢窟2"
+        },
+        {
+            "key": "QE_EV_04_08",
+            "value": "第8话 魔物巢窟3"
+        },
+        {
+            "key": "QE_EV_04_09",
+            "value": "第9话 试炼之山"
+        },
+        {
+            "key": "QE_EV_04_10",
+            "value": "第10话 为了活下去"
+        },
+        {
+            "key": "QE_EV_04_EX1",
+            "value": "遥远的东方【特殊1】"
+        },
+        {
+            "key": "QE_EV_04_EX2",
+            "value": "遥远的东方【特殊2】"
+        },
+        {
+            "key": "QE_MU_EV_04_EX1",
+            "value": "遥远的东方【特殊1】"
+        },
+        {
+            "key": "QE_MU_EV_04_EX2",
+            "value": "遥远的东方【特殊2】"
+        },
+        {
+            "key": "QE_SB_CSLI_02",
+            "value": "高难度　巧克力布丁考验"
+        },
+        {
+            "key": "QE_SB_CSLI_03",
+            "value": "超高难度　巧克力布丁考验"
+        },
+        {
+            "key": "QE_CHAL_01_01",
+            "value": "【高难度】挑战任务"
+        },
+        {
+            "key": "QE_CHAL_01_02",
+            "value": "【超高难度】挑战任务#1"
+        },
+        {
+            "key": "QE_CHAL_01_03",
+            "value": "【超高难度】挑战任务#2"
+        },
+        {
+            "key": "QE_EV_SB_EXP_FIR",
+            "value": "【火】红色魔石获得任务"
+        },
+        {
+            "key": "QE_EV_SB_EXP_ICE",
+            "value": "【冰】蓝色魔石获得任务"
+        },
+        {
+            "key": "QE_EV_SB_EXP_WIN",
+            "value": "【风】绿色魔石获得任务"
+        },
+        {
+            "key": "QE_EV_SB_EXP_EAR",
+            "value": "【土】橙色魔石获得任务"
+        },
+        {
+            "key": "QE_EV_SB_EXP_THU",
+            "value": "【雷】黄色魔石获得任务"
+        },
+        {
+            "key": "QE_EV_SB_EXP_WTR",
+            "value": "【水】水色魔石获得任务"
+        },
+        {
+            "key": "QE_EV_SB_EXP_SHI",
+            "value": "【光】白色魔石获得任务"
+        },
+        {
+            "key": "QE_EV_SB_EXP_DAR",
+            "value": "【暗】紫色魔石获得任务"
+        },
+        {
+            "key": "QE_EV_ARENA_01_1",
+            "value": "斗技场模拟战（初级）"
+        },
+        {
+            "key": "QE_EV_ARENA_01_2",
+            "value": "斗技场模拟战（中级）"
+        },
+        {
+            "key": "QE_EV_ARENA_01_3",
+            "value": "斗技场模拟战（上级）"
+        },
+        {
+            "key": "QE_EV_VKTR_01",
+            "value": "限定困难任务（维克托拉）"
+        },
+        {
+            "key": "QE_EV_THLA_01",
+            "value": "萨丽雅的碎片获得任务 任务1"
+        },
+        {
+            "key": "QE_EV_THLA_02",
+            "value": "萨丽雅的碎片获得任务 任务2"
+        },
+        {
+            "key": "QE_EV_THLA_03",
+            "value": "萨丽雅的碎片获得任务 任务3"
+        },
+        {
+            "key": "QE_EV_THLA_04",
+            "value": "萨丽雅的碎片获得任务 任务4"
+        },
+        {
+            "key": "QE_EV_THLA_05",
+            "value": "萨丽雅的碎片获得任务 任务5"
+        },
+        {
+            "key": "QE_EV_THLA_EX1",
+            "value": "高难度 萨丽雅的碎片获得 特殊任务1"
+        },
+        {
+            "key": "QE_EV_THLA_EX2",
+            "value": "高难度 萨丽雅的碎片获得 特殊任务2"
+        },
+        {
+            "key": "QE_SB_IGNT_02",
+            "value": "高难度　铁巨人考验"
+        },
+        {
+            "key": "QE_SB_IGNT_03",
+            "value": "超高难度　铁巨人考验"
+        },
+        {
+            "key": "QE_EV_ETRE_01",
+            "value": "埃特蕾养成任务　任务1"
+        },
+        {
+            "key": "QE_EV_ETRE_02",
+            "value": "埃特蕾养成任务　任务2"
+        },
+        {
+            "key": "QE_EV_ETRE_03",
+            "value": "埃特蕾养成任务　任务3"
+        },
+        {
+            "key": "QE_EV_ETRE_04",
+            "value": "埃特蕾养成任务　任务4"
+        },
+        {
+            "key": "QE_EV_ETRE_05",
+            "value": "埃特蕾养成任务　任务5"
+        },
+        {
+            "key": "QE_EV_ETRE_06",
+            "value": "埃特蕾养成任务　任务6"
+        },
+        {
+            "key": "QE_EV_ETRE_EX1",
+            "value": "高难度　埃特蕾养成　特殊任务1"
+        },
+        {
+            "key": "QE_EV_ETRE_EX2",
+            "value": "高难度　埃特蕾养成　特殊任务2"
+        },
+        {
+            "key": "QE_EV_ART_SCR_01",
+            "value": "高难度　秘籍获得任务(剑、大剑、斧)"
+        },
+        {
+            "key": "QE_EV_ART_SCR_02",
+            "value": "高难度　秘籍获得任务(枪、拳、火枪)"
+        },
+        {
+            "key": "QE_EV_ART_SCR_03",
+            "value": "高难度　秘籍获得任务(防具、饰品、忍刀)"
+        },
+        {
+            "key": "QE_EV_ART_SCR_04",
+            "value": "高难度　秘籍获得任务(手杖、刀、短剑)"
+        },
+        {
+            "key": "QE_EV_ART_SCR_05",
+            "value": "高难度　秘籍获得任务(权杖、弓、防具)"
+        },
+        {
+            "key": "QE_EV_ANV_19_10",
+            "value": "上市纪念任务"
+        },
+        {
+            "key": "QE_EV_ART_CRF_01",
+            "value": "武具养成任务（初级）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_02",
+            "value": "武具养成任务（中级）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_03",
+            "value": "武具养成任务（上级）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_04",
+            "value": "超高难度　武具养成任务"
+        },
+        {
+            "key": "QE_EV_ART_CRF_05",
+            "value": "武具养成任务（睡眠剑）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_06",
+            "value": "武具养成任务（黄金斧）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_07",
+            "value": "武具养成任务（白金权杖）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_08",
+            "value": "武具养成任务（珊瑚剑）"
+        },
+        {
+            "key": "QE_MU_OCHU_04",
+            "value": "超高难度　大口花考验"
+        },
+        {
+            "key": "QE_MU_CSLI_03",
+            "value": "超高难度　巧克力布丁考验"
+        },
+        {
+            "key": "QE_MU_IGNT_03",
+            "value": "超高难度　铁巨人考验"
+        },
+        {
+            "key": "QE_MU_EV_SCR_01",
+            "value": "高难度　秘籍获得任务(剑、大剑、斧)"
+        },
+        {
+            "key": "QE_MU_EV_SCR_02",
+            "value": "高难度　秘籍获得任务(枪、拳、火枪)"
+        },
+        {
+            "key": "QE_MU_EV_SCR_03",
+            "value": "高难度　秘籍获得任务(防具、饰品、忍刀)"
+        },
+        {
+            "key": "QE_MU_EV_SCR_04",
+            "value": "高难度　秘籍获得任务(手杖、刀、短剑)"
+        },
+        {
+            "key": "QE_MU_EV_SCR_05",
+            "value": "高难度　秘籍获得任务(权杖、弓、防具)"
+        },
+        {
+            "key": "QE_MU_EV_ET_EX1",
+            "value": "高难度　埃特蕾养成　特殊任务1"
+        },
+        {
+            "key": "QE_MU_EV_ET_EX2",
+            "value": "高难度　埃特蕾养成　特殊任务2"
+        },
+        {
+            "key": "QE_MU_EV_02_EX1",
+            "value": "西方的威胁朗德尔【特殊】"
+        },
+        {
+            "key": "QE_MU_EV_TH_EX1",
+            "value": "高难度 萨丽雅的碎片获得 特殊任务1"
+        },
+        {
+            "key": "QE_MU_EV_TH_EX2",
+            "value": "高难度 萨丽雅的碎片获得 特殊任务2"
+        },
+        {
+            "key": "QE_MU_ART_CRF_04",
+            "value": "超高难度　武具养成任务"
+        },
+        {
+            "key": "QE_MU_ART_CRF_05",
+            "value": "武具养成任务（睡眠剑）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_06",
+            "value": "武具养成任务（黄金斧）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_07",
+            "value": "武具养成任务（白金权杖）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_08",
+            "value": "武具养成任务（珊瑚剑）"
+        },
+        {
+            "key": "QE_SB_IFRT_01",
+            "value": "伊弗利特战"
+        },
+        {
+            "key": "QE_SB_GLEM_01",
+            "value": "石像兵战"
+        },
+        {
+            "key": "QE_SB_SIRE_01",
+            "value": "塞壬战"
+        },
+        {
+            "key": "QE_SB_MABR_01",
+            "value": "毛尔波尔战"
+        },
+        {
+            "key": "QE_SB_IGNT_01",
+            "value": "铁巨人战"
+        },
+        {
+            "key": "QE_SB_BHMT_01",
+            "value": "贝希摩斯战"
+        },
+        {
+            "key": "QE_SB_SHIV_01",
+            "value": "希瓦战"
+        },
+        {
+            "key": "QE_SB_RAMU_01",
+            "value": "拉姆战"
+        },
+        {
+            "key": "QE_SB_ODIN_01",
+            "value": "奥丁战"
+        },
+        {
+            "key": "QE_SB_LAMA_01",
+            "value": "蛇身女王战"
+        },
+        {
+            "key": "QE_SB_OCHU_01",
+            "value": "大口花战"
+        },
+        {
+            "key": "QE_SB_TSLP_01",
+            "value": "四方风精灵战"
+        },
+        {
+            "key": "QE_SB_THDG_01",
+            "value": "双头巨龙战"
+        },
+        {
+            "key": "QE_SB_DABL_01",
+            "value": "迪亚波罗斯战"
+        },
+        {
+            "key": "QE_SB_MDFY_01",
+            "value": "夺心魔战"
+        },
+        {
+            "key": "QE_RAID_EV_06_01",
+            "value": "巧克力布丁共斗"
+        },
+        {
+            "key": "QE_RAID_EV_06_02",
+            "value": "巧克力布丁共斗"
+        },
+        {
+            "key": "QE_RAID_EV_06_03",
+            "value": "巧克力布丁共斗"
+        },
+        {
+            "key": "QE_RAID_EV_06_04",
+            "value": "巧克力布丁共斗"
+        },
+        {
+            "key": "QE_RAID_EV_07_01",
+            "value": "白色棉花糖共斗"
+        },
+        {
+            "key": "QE_RAID_EV_07_02",
+            "value": "白色棉花糖共斗"
+        },
+        {
+            "key": "QE_RAID_EV_07_03",
+            "value": "白色棉花糖共斗"
+        },
+        {
+            "key": "QE_RAID_EV_07_04",
+            "value": "白色棉花糖共斗"
+        },
+        {
+            "key": "QE_RAID_EV_08_01",
+            "value": "FFI联动纪念共斗"
+        },
+        {
+            "key": "QE_RAID_EV_08_02",
+            "value": "FFI联动纪念共斗"
+        },
+        {
+            "key": "QE_RAID_EV_08_03",
+            "value": "FFI联动纪念共斗"
+        },
+        {
+            "key": "QE_RAID_EV_09_01",
+            "value": "伊弗利特讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_09_02",
+            "value": "伊弗利特讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_09_03",
+            "value": "伊弗利特讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_09_04",
+            "value": "黄金仙人掌讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_09_05",
+            "value": "黄金仙人掌讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_09_06",
+            "value": "黄金仙人掌讨伐共斗"
+        },
+        {
+            "key": "QE_PT_001_01",
+            "value": "制裁的试炼任务 N#1"
+        },
+        {
+            "key": "QE_PT_001_02",
+            "value": "制裁的试炼任务 N#2"
+        },
+        {
+            "key": "QE_PT_001_03",
+            "value": "制裁的试炼任务 N#3"
+        },
+        {
+            "key": "QE_PT_001_04",
+            "value": "制裁的试炼任务 N#4"
+        },
+        {
+            "key": "QE_PT_001_05",
+            "value": "制裁的试炼任务 N#5"
+        },
+        {
+            "key": "QE_PT_001_HA01",
+            "value": "制裁的试炼任务 困难#1"
+        },
+        {
+            "key": "QE_PT_001_HA02",
+            "value": "制裁的试炼任务 困难#2"
+        },
+        {
+            "key": "QE_PT_001_HA03",
+            "value": "制裁的试炼任务 困难#3"
+        },
+        {
+            "key": "QE_PT_001_HA04",
+            "value": "制裁的试炼任务 困难#4"
+        },
+        {
+            "key": "QE_PT_001_HA05",
+            "value": "制裁的试炼任务 困难#5"
+        },
+        {
+            "key": "QE_PT_001_BOSS_1",
+            "value": "制裁的试炼头目战斗 N"
+        },
+        {
+            "key": "QE_PT_001_BOSS_2",
+            "value": "制裁的试炼头目战斗 困难"
+        },
+        {
+            "key": "QE_MU_AW_FIRE_01",
+            "value": "辉石之间（火）等级.1"
+        },
+        {
+            "key": "QE_MU_AW_FIRE_03",
+            "value": "辉石之间（火）等级.3"
+        },
+        {
+            "key": "QE_MU_AW_FIRE_05",
+            "value": "辉石之间（火）等级.5"
+        },
+        {
+            "key": "QE_MU_AW_WIND_01",
+            "value": "辉石之间（风）等级.1"
+        },
+        {
+            "key": "QE_MU_AW_WIND_03",
+            "value": "辉石之间（风）等级.3"
+        },
+        {
+            "key": "QE_MU_AW_WIND_05",
+            "value": "辉石之间（风）等级.5"
+        },
+        {
+            "key": "QE_MU_AW_WTR_01",
+            "value": "辉石之间（水）等级.1"
+        },
+        {
+            "key": "QE_MU_AW_WTR_03",
+            "value": "辉石之间（水）等级.3"
+        },
+        {
+            "key": "QE_MU_AW_WTR_05",
+            "value": "辉石之间（水）等级.5"
+        },
+        {
+            "key": "QE_MU_AW_ICE_01",
+            "value": "辉石之间（冰）等级.1"
+        },
+        {
+            "key": "QE_MU_AW_ICE_03",
+            "value": "辉石之间（冰）等级.3"
+        },
+        {
+            "key": "QE_MU_AW_ICE_05",
+            "value": "辉石之间（冰）等级.5"
+        },
+        {
+            "key": "QE_MU_AW_EAR_01",
+            "value": "辉石之间（土）等级.1"
+        },
+        {
+            "key": "QE_MU_AW_EAR_03",
+            "value": "辉石之间（土）等级.3"
+        },
+        {
+            "key": "QE_MU_AW_EAR_05",
+            "value": "辉石之间（土）等级.5"
+        },
+        {
+            "key": "QE_MU_AW_DARK_01",
+            "value": "辉石之间（暗）等级.1"
+        },
+        {
+            "key": "QE_MU_AW_DARK_03",
+            "value": "辉石之间（暗）等级.3"
+        },
+        {
+            "key": "QE_MU_AW_DARK_05",
+            "value": "辉石之间（暗）等级.5"
+        },
+        {
+            "key": "QE_MU_AW_THUN_01",
+            "value": "辉石之间（雷）等级.1"
+        },
+        {
+            "key": "QE_MU_AW_THUN_03",
+            "value": "辉石之间（雷）等级.3"
+        },
+        {
+            "key": "QE_MU_AW_THUN_05",
+            "value": "辉石之间（雷）等级.5"
+        },
+        {
+            "key": "QE_MU_AW_SHIN_01",
+            "value": "辉石之间（光）等级.1"
+        },
+        {
+            "key": "QE_MU_AW_SHIN_03",
+            "value": "辉石之间（光）等级.3"
+        },
+        {
+            "key": "QE_MU_AW_SHIN_05",
+            "value": "辉石之间（光）等级.5"
+        },
+        {
+            "key": "QE_MU_SM_FIRE_01",
+            "value": "召唤兽觉醒之间（火）"
+        },
+        {
+            "key": "QE_MU_SM_WIND_01",
+            "value": "召唤兽觉醒之间（风）"
+        },
+        {
+            "key": "QE_MU_SM_WTR_01",
+            "value": "召唤兽觉醒之间（水）"
+        },
+        {
+            "key": "QE_MU_SM_ICE_01",
+            "value": "召唤兽觉醒之间（冰）"
+        },
+        {
+            "key": "QE_MU_SM_EAR_01",
+            "value": "召唤兽觉醒之间（土）"
+        },
+        {
+            "key": "QE_MU_SM_DARK_01",
+            "value": "召唤兽觉醒之间（暗）"
+        },
+        {
+            "key": "QE_MU_SM_THUN_01",
+            "value": "召唤兽觉醒之间（雷）"
+        },
+        {
+            "key": "QE_MU_SM_SHIN_01",
+            "value": "召唤兽觉醒之间（光）"
+        },
+        {
+            "key": "QE_MU_AW_HIGH_01",
+            "value": "【高难度】修炼之间等级.1"
+        },
+        {
+            "key": "QE_MU_AW_HIGH_03",
+            "value": "【高难度】修炼之间等级.2"
+        },
+        {
+            "key": "QE_MU_AW_H09_3",
+            "value": "【高难度】修炼之间（黄）C"
+        },
+        {
+            "key": "QE_MU_AW_H09_2",
+            "value": "【高难度】修炼之间（黄）B"
+        },
+        {
+            "key": "QE_MU_AW_H09_1",
+            "value": "【高难度】修炼之间（黄）A"
+        },
+        {
+            "key": "QE_MU_AW_H13_3",
+            "value": "【高难度】修炼之间（绯）C"
+        },
+        {
+            "key": "QE_MU_AW_H13_2",
+            "value": "【高难度】修炼之间（绯）B"
+        },
+        {
+            "key": "QE_MU_AW_H13_1",
+            "value": "【高难度】修炼之间（绯）A"
+        },
+        {
+            "key": "QE_BGN_01",
+            "value": "进阶任务01"
+        },
+        {
+            "key": "QE_BGN_02",
+            "value": "进阶任务02"
+        },
+        {
+            "key": "QE_BGN_03",
+            "value": "进阶任务03"
+        },
+        {
+            "key": "QE_BGN_04",
+            "value": "进阶任务04"
+        },
+        {
+            "key": "QE_BGN_05",
+            "value": "进阶任务05"
+        },
+        {
+            "key": "QE_BGN_06",
+            "value": "进阶任务06"
+        },
+        {
+            "key": "QE_BGN_07",
+            "value": "进阶任务07"
+        },
+        {
+            "key": "QE_BGN_08",
+            "value": "进阶任务08"
+        },
+        {
+            "key": "QE_BGN_09",
+            "value": "进阶任务09"
+        },
+        {
+            "key": "QE_BGN_10",
+            "value": "进阶任务10"
+        },
+        {
+            "key": "QE_BGN_11",
+            "value": "进阶任务11"
+        },
+        {
+            "key": "QE_BGN_12",
+            "value": "进阶任务12"
+        },
+        {
+            "key": "QE_BGN_13",
+            "value": "进阶任务13"
+        },
+        {
+            "key": "QE_BGN_14",
+            "value": "进阶任务14"
+        },
+        {
+            "key": "QE_EV_NEWMAP_001",
+            "value": "公会战斗模拟战"
+        },
+        {
+            "key": "QE_EV_NEWMAP_002",
+            "value": "公会战斗模拟战（初级）"
+        },
+        {
+            "key": "QE_EV_NEWMAP_003",
+            "value": "公会战斗模拟战（中级）"
+        },
+        {
+            "key": "QE_EV_NEWMAP_004",
+            "value": "公会战斗模拟战（上级）"
+        },
+        {
+            "key": "QE_EV_NMAP_003_1",
+            "value": "公会战斗模拟战（初级）"
+        },
+        {
+            "key": "QE_EV_NMAP_003_2",
+            "value": "公会战斗模拟战（中级）"
+        },
+        {
+            "key": "QE_EV_NMAP_003_3",
+            "value": "公会战斗模拟战（上级）"
+        },
+        {
+            "key": "QE_ARENA_00001",
+            "value": "斗技场"
+        },
+        {
+            "key": "QE_ARENA_00002",
+            "value": "森林"
+        },
+        {
+            "key": "QE_ARENA_00003",
+            "value": "荒地"
+        },
+        {
+            "key": "QE_ARENA_00004",
+            "value": "遗迹"
+        },
+        {
+            "key": "QE_ARENA_00005",
+            "value": "城外"
+        },
+        {
+            "key": "QE_GVG_00001",
+            "value": "斗技场"
+        },
+        {
+            "key": "QE_GVG_00002",
+            "value": "斗技场"
+        },
+        {
+            "key": "QE_GVG_00003",
+            "value": "遗迹"
+        },
+        {
+            "key": "QE_GVG_00004",
+            "value": "遗迹"
+        },
+        {
+            "key": "QE_GVG_00005",
+            "value": "遗迹"
+        },
+        {
+            "key": "QE_PVP_FRE_0001",
+            "value": "平原"
+        },
+        {
+            "key": "QE_PVP_FRE_0002",
+            "value": "斗技场"
+        },
+        {
+            "key": "QE_PVP_FRI_0001",
+            "value": "平原"
+        },
+        {
+            "key": "QE_PVP_FRI_0002",
+            "value": "森林"
+        },
+        {
+            "key": "QE_PVP_FRI_0003",
+            "value": "斗技场"
+        },
+        {
+            "key": "QE_PVP_FRI_0004",
+            "value": "斗技场"
+        },
+        {
+            "key": "QE_PVP_FRI_0005",
+            "value": "城外"
+        },
+        {
+            "key": "QE_PVP_RANK_0001",
+            "value": "斗技场"
+        },
+        {
+            "key": "QE_TEST_FOR",
+            "value": "调试"
+        },
+        {
+            "key": "QE_EV_NY2020",
+            "value": "红包任务"
+        },
+        {
+            "key": "QE_ST_01090101",
+            "value": "作为《勇壮》的代表"
+        },
+        {
+            "key": "QE_ST_01090102",
+            "value": "奔赴祖国1"
+        },
+        {
+            "key": "QE_ST_01090103",
+            "value": "奔赴祖国2"
+        },
+        {
+            "key": "QE_ST_01090104",
+            "value": "黎明前1"
+        },
+        {
+            "key": "QE_ST_01090105",
+            "value": "黎明前2"
+        },
+        {
+            "key": "QE_ST_01090106",
+            "value": "诱饵"
+        },
+        {
+            "key": "QE_ST_01090107",
+            "value": "贤王的不安"
+        },
+        {
+            "key": "QE_ST_01090108",
+            "value": "叛乱1"
+        },
+        {
+            "key": "QE_ST_01090109",
+            "value": "叛乱2"
+        },
+        {
+            "key": "QE_ST_01090110",
+            "value": "违和感"
+        },
+        {
+            "key": "QE_ST_01090201",
+            "value": "被囚禁的军师"
+        },
+        {
+            "key": "QE_ST_01090202",
+            "value": "前往维泽特城"
+        },
+        {
+            "key": "QE_ST_01090203",
+            "value": "陷阱、还是……"
+        },
+        {
+            "key": "QE_ST_01090204",
+            "value": "最凶之矢"
+        },
+        {
+            "key": "QE_ST_01090205",
+            "value": "家人"
+        },
+        {
+            "key": "QE_ST_01090206",
+            "value": "警告"
+        },
+        {
+            "key": "QE_ST_01090207",
+            "value": "向南1"
+        },
+        {
+            "key": "QE_ST_01090208",
+            "value": "化为废墟的村子"
+        },
+        {
+            "key": "QE_ST_01090209",
+            "value": "向南2"
+        },
+        {
+            "key": "QE_ST_01090210",
+            "value": "白马王子"
+        },
+        {
+            "key": "QE_ST_01090301",
+            "value": "牢固的决意"
+        },
+        {
+            "key": "QE_ST_01090302",
+            "value": "进军"
+        },
+        {
+            "key": "QE_ST_01090303",
+            "value": "维斯特拉尔"
+        },
+        {
+            "key": "QE_ST_01090304",
+            "value": "奸计"
+        },
+        {
+            "key": "QE_ST_01090305",
+            "value": "该我们出场了"
+        },
+        {
+            "key": "QE_ST_01090306",
+            "value": "《息吹》1"
+        },
+        {
+            "key": "QE_ST_01090307",
+            "value": "《息吹》2"
+        },
+        {
+            "key": "QE_ST_01090308",
+            "value": "紧急警告1"
+        },
+        {
+            "key": "QE_ST_01090309",
+            "value": "紧急警告2"
+        },
+        {
+            "key": "QE_ST_01090310",
+            "value": "不择手段"
+        },
+        {
+            "key": "QE_ST_01100101",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100102",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100103",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100104",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100105",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100106",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100107",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100108",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100109",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100110",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100201",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100202",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100203",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100204",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100205",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100206",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100207",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100208",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100209",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100210",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100301",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100302",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100303",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100304",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100305",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100306",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100307",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100308",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100309",
+            "value": ""
+        },
+        {
+            "key": "QE_ST_01100310",
+            "value": ""
+        },
+        {
+            "key": "QE_HA_LW_STRN_01",
+            "value": "获得碎片 斯特恩（破灭骑士）"
+        },
+        {
+            "key": "QE_HA_LW_LSWL",
+            "value": "获得碎片 拉斯韦尔"
+        },
+        {
+            "key": "QE_HA_LW_GRSR",
+            "value": "获得碎片 格拉西拉·维泽特"
+        },
+        {
+            "key": "QE_HA_LW_RRIR",
+            "value": "获得碎片 罗雷拉"
+        },
+        {
+            "key": "QE_HA_LW_SCAL",
+            "value": "获得碎片 斯卡尔"
+        },
+        {
+            "key": "QE_HA_LW_MRAL",
+            "value": "获得碎片 玛利亚尔"
+        },
+        {
+            "key": "QE_HA_LW_HWLT",
+            "value": "获得碎片 哈乌雷特"
+        },
+        {
+            "key": "QE_HA_LW_CHEL",
+            "value": "获得碎片 切尔"
+        },
+        {
+            "key": "QE_HA_LW_LATH",
+            "value": "获得碎片 璐亚瑟"
+        },
+        {
+            "key": "QE_HA_LW_TITU",
+            "value": "获得碎片 泰塔斯"
+        },
+        {
+            "key": "QE_CH_FF14_TNCR2",
+            "value": "桑克瑞德（2）"
+        },
+        {
+            "key": "QE_CH_LW_RAMD_01",
+            "value": "拉玛达（冬日）"
+        },
+        {
+            "key": "QE_CH_LW_MA_01",
+            "value": "玛雪莉（冬日）"
+        },
+        {
+            "key": "QE_CH_LW_STRN_01",
+            "value": "斯特恩（破灭骑士）"
+        },
+        {
+            "key": "QE_CH_LW_LSWL",
+            "value": "拉斯韦尔"
+        },
+        {
+            "key": "QE_CH_LW_GRSR",
+            "value": "格拉西拉·维泽特"
+        },
+        {
+            "key": "QE_CH_LW_RRIR",
+            "value": "罗雷拉"
+        },
+        {
+            "key": "QE_CH_LW_SCAL",
+            "value": "斯卡尔"
+        },
+        {
+            "key": "QE_CH_LW_MRAL",
+            "value": "玛利亚尔"
+        },
+        {
+            "key": "QE_CH_LW_LILS_01",
+            "value": "莉莉丝（泳装）"
+        },
+        {
+            "key": "QE_CH_LW_HWLT",
+            "value": "哈乌雷特"
+        },
+        {
+            "key": "QE_CH_LW_CHEL",
+            "value": "切尔"
+        },
+        {
+            "key": "QE_CH_LW_LATH",
+            "value": "璐亚瑟"
+        },
+        {
+            "key": "QE_CH_LW_TITU",
+            "value": "泰塔斯"
+        },
+        {
+            "key": "QE_CH_FF4_CECL",
+            "value": "塞西尔"
+        },
+        {
+            "key": "QE_CH_FF4_KAIN",
+            "value": "凯因"
+        },
+        {
+            "key": "QE_CH_FF4_ROSA",
+            "value": "罗莎"
+        },
+        {
+            "key": "QE_EV_1100DL_FIR",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_1100DL_ICE",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_1100DL_WIN",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_1100DL_EAR",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_1100DL_THU",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_1100DL_WTR",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_1100DL_SHI",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_1100DL_DAR",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_STRN_01",
+            "value": "限定困难任务（斯特恩（破灭骑士））"
+        },
+        {
+            "key": "QE_EV_LSWL_01",
+            "value": "限定困难任务（拉斯韦尔）"
+        },
+        {
+            "key": "QE_EV_GRSR_01",
+            "value": "限定困难任务（格拉西拉·维泽特）"
+        },
+        {
+            "key": "QE_EV_SCAL_01",
+            "value": "限定困难任务（斯卡尔）"
+        },
+        {
+            "key": "QE_EV_LILS_01",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_HWLT_01",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_LATH_01",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_CECL_01",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_KAIN_01",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_ROSA_01",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_01",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_02",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_03",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_04",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_05",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_HA01",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_HA02",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_HA03",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_HA04",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_HA05",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_BOSS_1",
+            "value": ""
+        },
+        {
+            "key": "QE_PT_002_BOSS_2",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF14_Ex3",
+            "value": "最终 幻想 XIV: 暗影之逆焰 【特殊3】"
+        },
+        {
+            "key": "QE_RAID_FF14_1",
+            "value": "最终 幻想 XIV: 暗影之逆焰 共斗#1"
+        },
+        {
+            "key": "QE_RAID_FF14_2",
+            "value": "最终 幻想 XIV: 暗影之逆焰 共斗#2"
+        },
+        {
+            "key": "QE_RAID_FF14_3",
+            "value": "最终 幻想 XIV: 暗影之逆焰 共斗#3"
+        },
+        {
+            "key": "QE_RAID_FF14_4",
+            "value": "最终 幻想 XIV: 暗影之逆焰 共斗#4"
+        },
+        {
+            "key": "QE_RAID_FF14_5",
+            "value": "最终 幻想 XIV: 暗影之逆焰 共斗#5"
+        },
+        {
+            "key": "QE_EV_FF4_01",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF4_02",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF4_03",
+            "value": "矮人城内"
+        },
+        {
+            "key": "QE_EV_FF4_04",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF4_05",
+            "value": "矮人城水晶房间"
+        },
+        {
+            "key": "QE_EV_FF4_06",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF4_07",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF4_08",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF4_09",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF4_10",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF4_EX_01",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FF4_EX_02",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_ART_CRF_09",
+            "value": "武具养成任务（白金魔棒）"
+        },
+        {
+            "key": "QE_EV_06_01",
+            "value": "第1话 骑士的职责1"
+        },
+        {
+            "key": "QE_EV_06_02",
+            "value": "第2话 骑士的职责2"
+        },
+        {
+            "key": "QE_EV_06_03",
+            "value": "第3话 漫无目的的旅行"
+        },
+        {
+            "key": "QE_EV_06_04",
+            "value": "第4话 等到天黑再说"
+        },
+        {
+            "key": "QE_EV_06_05",
+            "value": "第5话 潜入1"
+        },
+        {
+            "key": "QE_EV_06_06",
+            "value": "第6话 潜入2"
+        },
+        {
+            "key": "QE_EV_06_07",
+            "value": "第7话 地牢"
+        },
+        {
+            "key": "QE_EV_06_08",
+            "value": "第8话 逃出1"
+        },
+        {
+            "key": "QE_EV_06_09",
+            "value": "第9话 逃出2"
+        },
+        {
+            "key": "QE_EV_06_10",
+            "value": "第10话 世界第一的哥哥"
+        },
+        {
+            "key": "QE_EV_06_EX",
+            "value": "被囚禁的公主【特殊】"
+        },
+        {
+            "key": "QE_EV_05_01",
+            "value": "第1话 罗雷拉的心意1"
+        },
+        {
+            "key": "QE_EV_05_02",
+            "value": "第2话 罗雷拉的心意2"
+        },
+        {
+            "key": "QE_EV_05_03",
+            "value": "第3话 假如战争结束"
+        },
+        {
+            "key": "QE_EV_05_04",
+            "value": "第4话 前往轰牙村"
+        },
+        {
+            "key": "QE_EV_05_05",
+            "value": "第5话 玛利亚尔的视线"
+        },
+        {
+            "key": "QE_EV_05_06",
+            "value": "第6话 必须阻止……"
+        },
+        {
+            "key": "QE_EV_05_07",
+            "value": "第7话 决裂1"
+        },
+        {
+            "key": "QE_EV_05_08",
+            "value": "第8话 决裂2"
+        },
+        {
+            "key": "QE_EV_05_09",
+            "value": "第9话 决裂3"
+        },
+        {
+            "key": "QE_EV_05_10",
+            "value": "第10话 不死身的扎赞"
+        },
+        {
+            "key": "QE_EV_05_EX1",
+            "value": "轰牙与斋贺　前篇【特殊1】"
+        },
+        {
+            "key": "QE_EV_05_EX2",
+            "value": "轰牙与斋贺　前篇【特殊2】"
+        },
+        {
+            "key": "QE_SB_FNRR_02",
+            "value": "高难度　芬里尔考验"
+        },
+        {
+            "key": "QE_SB_FNRR_03",
+            "value": "超高难度　芬里尔考验"
+        },
+        {
+            "key": "QE_SB_IFRT_02",
+            "value": "高难度 伊弗利特考验"
+        },
+        {
+            "key": "QE_SB_IFRT_03",
+            "value": "超高难度 伊弗利特考验"
+        },
+        {
+            "key": "QE_CHAL_02_01",
+            "value": ""
+        },
+        {
+            "key": "QE_CHAL_02_02",
+            "value": ""
+        },
+        {
+            "key": "QE_CHAL_02_03",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_FFT_CM_01",
+            "value": "广告播放纪念任务"
+        },
+        {
+            "key": "QE_EV_CM_01",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_WAVE_001",
+            "value": ""
+        },
+        {
+            "key": "QE_RAID_EV_10_01",
+            "value": "贝希摩斯王讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_10_02",
+            "value": "贝希摩斯王讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_10_03",
+            "value": "贝希摩斯王讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_10_04",
+            "value": "冬贝利讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_10_05",
+            "value": "冬贝利讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_10_06",
+            "value": "冬贝利讨伐共斗"
+        },
+        {
+            "key": "QE_RAID_EV_11_01",
+            "value": ""
+        },
+        {
+            "key": "QE_RAID_EV_11_02",
+            "value": ""
+        },
+        {
+            "key": "QE_RAID_EV_11_03",
+            "value": ""
+        },
+        {
+            "key": "QE_RAID_EV_12_01",
+            "value": ""
+        },
+        {
+            "key": "QE_RAID_EV_12_02",
+            "value": ""
+        },
+        {
+            "key": "QE_RAID_EV_12_03",
+            "value": ""
+        },
+        {
+            "key": "QE_RAID_EV_12_04",
+            "value": ""
+        },
+        {
+            "key": "QE_RAID_EV_12_05",
+            "value": ""
+        },
+        {
+            "key": "QE_RAID_EV_12_06",
+            "value": ""
+        },
+        {
+            "key": "QE_EV_100MDL_FIR",
+            "value": "100万下载纪念任务（火）"
+        },
+        {
+            "key": "QE_EV_100MDL_ICE",
+            "value": "100万下载纪念任务（冰）"
+        },
+        {
+            "key": "QE_EV_100MDL_WIN",
+            "value": "100万下载纪念任务（风）"
+        },
+        {
+            "key": "QE_EV_100MDL_EAR",
+            "value": "100万下载纪念任务（土）"
+        },
+        {
+            "key": "QE_EV_100MDL_THU",
+            "value": "100万下载纪念任务（雷）"
+        },
+        {
+            "key": "QE_EV_100MDL_WTR",
+            "value": "100万下载纪念任务（水）"
+        },
+        {
+            "key": "QE_EV_100MDL_SHI",
+            "value": "100万下载纪念任务（光）"
+        },
+        {
+            "key": "QE_EV_100MDL_DAR",
+            "value": "100万下载纪念任务（暗）"
+        },
+        {
+            "key": "QE_EV_300MDL_FIR",
+            "value": "300万下载纪念任务（火）"
+        },
+        {
+            "key": "QE_EV_300MDL_ICE",
+            "value": "300万下载纪念任务（冰）"
+        },
+        {
+            "key": "QE_EV_300MDL_WIN",
+            "value": "300万下载纪念任务（风）"
+        },
+        {
+            "key": "QE_EV_300MDL_EAR",
+            "value": "300万下载纪念任务（土）"
+        },
+        {
+            "key": "QE_EV_300MDL_THU",
+            "value": "300万下载纪念任务（雷）"
+        },
+        {
+            "key": "QE_EV_300MDL_WTR",
+            "value": "300万下载纪念任务（水）"
+        },
+        {
+            "key": "QE_EV_300MDL_SHI",
+            "value": "300万下载纪念任务（光）"
+        },
+        {
+            "key": "QE_EV_300MDL_DAR",
+            "value": "300万下载纪念任务（暗）"
+        },
+        {
+            "key": "QE_EV_XMAS2019",
+            "value": "冬日庆典任务"
+        },
+        {
+            "key": "QE_RAID_IGNT_1",
+            "value": "铁巨人 初级"
+        },
+        {
+            "key": "QE_RAID_IGNT_2",
+            "value": "铁巨人 中级"
+        },
+        {
+            "key": "QE_RAID_IGNT_3",
+            "value": "铁巨人 上级"
+        },
+        {
+            "key": "QE_RAID_IGNT01_1",
+            "value": "稀有共斗：铁巨人 初级"
+        },
+        {
+            "key": "QE_RAID_IGNT01_2",
+            "value": "稀有共斗：铁巨人 中级"
+        },
+        {
+            "key": "QE_RAID_IGNT01_3",
+            "value": "稀有共斗：铁巨人 上级"
+        },
+        {
+            "key": "QE_SB_FNRR_01",
+            "value": "芬里尔战"
+        },
+        {
+            "key": "QE_SB_TITN_01",
+            "value": "泰坦战"
+        },
+        {
+            "key": "QE_SB_AGON_01",
+            "value": "毁灭机械战"
+        },
+        {
+            "key": "QE_SB_BLMN_01",
+            "value": "血腥红月战"
+        },
+        {
+            "key": "QE_SB_CHCB_01",
+            "value": ""
+        },
+        {
+            "key": "QE_MU_FF14_Ex3",
+            "value": "最终 幻想 XIV: 暗影之逆焰 【特殊3】"
+        },
+        {
+            "key": "QE_MU_FF4_EX_01",
+            "value": ""
+        },
+        {
+            "key": "QE_MU_FF4_EX_03",
+            "value": ""
+        },
+        {
+            "key": "QE_MU_FF4_EX_02",
+            "value": ""
+        },
+        {
+            "key": "QE_MU_ART_CRF_09",
+            "value": "武具养成任务（白金魔棒）"
+        },
+        {
+            "key": "QE_MU_EV_05_EX1",
+            "value": "轰牙与斋贺　前篇【特殊1】"
+        },
+        {
+            "key": "QE_MU_EV_05_EX2",
+            "value": "轰牙与斋贺　前篇【特殊2】"
+        },
+        {
+            "key": "QE_MU_EV_06_EX",
+            "value": ""
+        },
+        {
+            "key": "QE_MU_FNRR_04",
+            "value": "超高难度　芬里尔考验"
+        },
+        {
+            "key": "QE_MU_IFRT_04",
+            "value": "超高难度 伊弗利特考验"
+        },
+        {
+            "key": "QE_EV_NMAP_004_1",
+            "value": "公会战斗模拟战（初级）"
+        },
+        {
+            "key": "QE_EV_NMAP_004_2",
+            "value": "公会战斗模拟战（中级）"
+        },
+        {
+            "key": "QE_EV_NMAP_004_3",
+            "value": "公会战斗模拟战（上级）"
+        },
+        {
+            "key": "QE_EV_NMAP_005_1",
+            "value": "公会战斗模拟战（初级）"
+        },
+        {
+            "key": "QE_EV_NMAP_005_2",
+            "value": "公会战斗模拟战（中级）"
+        },
+        {
+            "key": "QE_EV_NMAP_005_3",
+            "value": "公会战斗模拟战（上级）"
+        },
+        {
+            "key": "QE_ARENA_00006",
+            "value": "洞窟"
+        },
+        {
+            "key": "QE_ARENA_00007",
+            "value": ""
+        },
+        {
+            "key": "QE_ARENA_00008",
+            "value": ""
+        },
+        {
+            "key": "QE_GVG_00006",
+            "value": "平原"
+        },
+        {
+            "key": "QE_GVG_00007",
+            "value": ""
+        },
+        {
+            "key": "QE_GVG_00008",
+            "value": "遗迹"
+        },
+        {
+            "key": "QE_PVP_FRE_0003",
+            "value": "遗迹"
+        },
+        {
+            "key": "QE_PVP_FRE_0004",
+            "value": "城内"
+        },
+        {
+            "key": "QE_PVP_FRI_0011",
+            "value": "遗迹"
+        },
+        {
+            "key": "QE_PVP_FRI_0009",
+            "value": ""
+        },
+        {
+            "key": "QE_PVP_FRI_0010",
+            "value": "城内"
+        },
+        {
+            "key": "QE_PVP_FRI_0006",
+            "value": "洞窟"
+        },
+        {
+            "key": "QE_PVP_FRI_0007",
+            "value": ""
+        },
+        {
+            "key": "QE_PVP_FRI_0008",
+            "value": "遗迹"
+        },
+        {
+            "key": "QE_PVP_RANK_0002",
+            "value": "遗迹"
+        },
+        {
+            "key": "QE_PVP_RANK_0003",
+            "value": "城内"
+        },
+        {
+            "key": "QE_EV_ART_CRF_01_ZH",
+            "value": "武具育成任务（佐助刀）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_02_ZH",
+            "value": "武具育成任务（帝座）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_03_ZH",
+            "value": "武具育成任务（白金权杖）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_04_ZH",
+            "value": "武具育成任务（黄金斧）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_05_ZH",
+            "value": "武具育成任务（智慧外套）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_06_ZH",
+            "value": "武具育成任务（贤者帽）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_01_ZH",
+            "value": "武具育成任务（佐助刀）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_02_ZH",
+            "value": "武具育成任务（帝座）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_03_ZH",
+            "value": "武具育成任务（白金权杖）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_04_ZH",
+            "value": "武具育成任务（黄金斧）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_05_ZH",
+            "value": "武具育成任务（智慧外套）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_06_ZH",
+            "value": "武具育成任务（贤者帽）"
+        },
+        {
+            "key": "QE_BOSSB_01_NOR_0",
+            "value": "历战之境 普通难度（模拟战）"
+        },
+        {
+            "key": "QE_BOSSB_01_NOR_1",
+            "value": "历战之境 普通难度"
+        },
+        {
+            "key": "QE_BOSSB_01_HARD_0",
+            "value": "历战之境 困难难度（模拟战）"
+        },
+        {
+            "key": "QE_BOSSB_01_HARD_1",
+            "value": "历战之境 困难难度"
+        },
+        {
+            "key": "QE_BGN_MV_01",
+            "value": "剧情动画01"
+        },
+        {
+            "key": "QE_BGN_MV_02",
+            "value": "剧情动画02"
+        },
+        {
+            "key": "QE_BGN_MV_03",
+            "value": "剧情动画03"
+        }
+    ]
+}

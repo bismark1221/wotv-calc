@@ -950,7 +950,7 @@
         },
         {
             "key": "SK_LW_HUN_S_2_INIT",
-            "value": "Carga"
+            "value": "Recarga"
         },
         {
             "key": "SK_LW_HUN_M_3_INIT",
@@ -994,7 +994,7 @@
         },
         {
             "key": "SK_LW_HUN_S_2",
-            "value": "Carga"
+            "value": "Recarga"
         },
         {
             "key": "SK_LW_HUN_M_3",
@@ -1890,7 +1890,7 @@
         },
         {
             "key": "SK_LW_FINA_S_2",
-            "value": "Carga"
+            "value": "Recarga"
         },
         {
             "key": "SK_LW_FINA_S_3",
@@ -3570,7 +3570,7 @@
         },
         {
             "key": "SK_FF4_ROSA_S_4",
-            "value": "Rezar"
+            "value": "Oración"
         },
         {
             "key": "SK_FF4_ROSA_S_5",
@@ -3631,6 +3631,26 @@
         {
             "key": "SK_LW_DEAN_P_2",
             "value": "Capucha nocturna"
+        },
+        {
+            "key": "SK_LW_EC_DEAN_A_01",
+            "value": "Aplastarmadura"
+        },
+        {
+            "key": "SK_LW_EC_DEAN_C_01",
+            "value": "Mejorar Oscuridad "
+        },
+        {
+            "key": "SK_LW_EC_DEAN_C_01B",
+            "value": "Oscuridad eterna"
+        },
+        {
+            "key": "SK_LW_EC_DEAN_C_02",
+            "value": "Mejorar Capucha nocturna"
+        },
+        {
+            "key": "SK_LW_EC_DEAN_C_02B",
+            "value": "Noche ejemplar"
         },
         {
             "key": "SK_LW_ARC_ATK",
@@ -4110,7 +4130,7 @@
         },
         {
             "key": "SK_FF10_YUNA_S_1",
-            "value": "Rezar"
+            "value": "Oración"
         },
         {
             "key": "SK_FF10_YUNA_S_2",
@@ -4527,6 +4547,74 @@
         {
             "key": "SK_LW_WIZ_P_1",
             "value": "Maestría de bruja"
+        },
+        {
+            "key": "SK_LW_ZZAN_ATK",
+            "value": "Ataque normal"
+        },
+        {
+            "key": "SK_LW_ZZAN_M_1",
+            "value": "Rompeespaldas"
+        },
+        {
+            "key": "SK_LW_ZZAN_M_2",
+            "value": "Quiebro triple"
+        },
+        {
+            "key": "SK_LW_ZZAN_M_3",
+            "value": "Hacerse el muerto"
+        },
+        {
+            "key": "SK_LW_ZZAN_S_1",
+            "value": "Azote entumecedor"
+        },
+        {
+            "key": "SK_LW_ZZAN_S_2",
+            "value": "Pasar desapercibido"
+        },
+        {
+            "key": "SK_LW_ZZAN_S_3",
+            "value": "Corte saltarín"
+        },
+        {
+            "key": "SK_LW_ZZAN_S_4",
+            "value": "Incapacitar"
+        },
+        {
+            "key": "SK_LW_ZZAN_S_5",
+            "value": "Destripar"
+        },
+        {
+            "key": "SK_LW_ZZAN_R_1",
+            "value": "Reflejos rápidos"
+        },
+        {
+            "key": "SK_LW_ZZAN_P_1",
+            "value": "Hoja afilada"
+        },
+        {
+            "key": "SK_LW_ZZAN_P_2",
+            "value": "Acción evasiva"
+        },
+        {
+            "key": "SK_LW_ZZAN_EN_A_01",
+            "value": "Golpe del cabecilla"
+        },
+        {
+            "key": "SK_LW_EC_ZZAN_C_01",
+            "value": "Mejorar Azote entumecedor"
+        },
+        {
+            "key": "SK_LW_EC_ZZAN_C_01B",
+            "value": "Azote devastador"
+        },
+        {
+            "key": "SK_LW_EC_ZZAN_C_02",
+            "value": "Mejorar Quiebro triple"
+        },
+        {
+            "key": "SK_LW_EC_ZZAN_C_02B",
+            "value": "Quiebro triple: golpe espinal"
         },
         {
             "key": "SK_LW_TU_BLM_ICE",
@@ -6162,7 +6250,7 @@
         },
         {
             "key": "SK_MCLF_M_2",
-            "value": "Carga"
+            "value": "Recarga"
         },
         {
             "key": "SK_MCLF_M_3",
@@ -6719,6 +6807,10 @@
         {
             "key": "SK_LB_LW_THLA_01",
             "value": "Bombardeo de amor"
+        },
+        {
+            "key": "SK_LB_LW_ZZAN_01",
+            "value": "Arrebato eterno"
         },
         {
             "key": "SK_SMN_IFRT",
@@ -7617,6 +7709,46 @@
             "value": "Maestría de lanza infernal"
         },
         {
+            "key": "SK_LW_EC_NIN_A_01_SOIL",
+            "value": "Técnica debilitadora"
+        },
+        {
+            "key": "SK_LW_EC_NIN_C_01",
+            "value": "Mejorar Utsusemi"
+        },
+        {
+            "key": "SK_LW_EC_NIN_C_01B",
+            "value": "Utsusemi sombría"
+        },
+        {
+            "key": "SK_LW_EC_NIN_C_02",
+            "value": "Mejorar Corredor sombrío"
+        },
+        {
+            "key": "SK_LW_EC_NIN_C_02B",
+            "value": "Sombras veloces"
+        },
+        {
+            "key": "SK_LW_EC_MGK_A_WW_01",
+            "value": "Hoja velo hechizado"
+        },
+        {
+            "key": "SK_LW_EC_MGK_C_WW_01",
+            "value": "Mejorar Barrera mágica"
+        },
+        {
+            "key": "SK_LW_EC_MGK_C_WW_01B",
+            "value": "Barrera atrayente"
+        },
+        {
+            "key": "SK_LW_EC_MGK_C_WW_02",
+            "value": "Mejorar Providencia de viento"
+        },
+        {
+            "key": "SK_LW_EC_MGK_C_WW_02B",
+            "value": "Guardia del espíritu de viento"
+        },
+        {
             "key": "SK_US_POTION",
             "value": "Poción"
         },
@@ -8190,6 +8322,10 @@
         },
         {
             "key": "SK_MA_LW_CMLO",
+            "value": "Habilidad maestra"
+        },
+        {
+            "key": "SK_MA_LW_ZZAN_01",
             "value": "Habilidad maestra"
         },
         {
@@ -9121,6 +9257,10 @@
             "value": ""
         },
         {
+            "key": "SK_CLT_LW_ZZAN_01_1",
+            "value": "Carcajada del cabecilla"
+        },
+        {
             "key": "SK_ROD_LW_HLNA_1_1",
             "value": ""
         },
@@ -9458,6 +9598,18 @@
         },
         {
             "key": "SK_VC_FFCC_MV1_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MONT_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MONT_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MONT_GSMAX",
             "value": ""
         },
         {
@@ -10749,6 +10901,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_MONT_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MONT_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MONT_GSMAX_2",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_IGNT_GS_2",
             "value": ""
         },
@@ -11866,6 +12030,42 @@
         },
         {
             "key": "SK_VC_LW_FNRR_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MONT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MONT_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MONT_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_MONT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_MONT_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_MONT_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_MONT_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_MONT_PAW2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_MONT_PMAX2",
             "value": ""
         },
         {

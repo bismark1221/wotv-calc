@@ -1,0 +1,952 @@
+{
+    "infos": [
+        {
+            "key": "JB_LW_WAR",
+            "value": "贵族"
+        },
+        {
+            "key": "JB_LW_WAR_FIRE",
+            "value": "战士"
+        },
+        {
+            "key": "JB_LW_WAR_ICE",
+            "value": "战士"
+        },
+        {
+            "key": "JB_LW_WAR_WIND",
+            "value": "战士"
+        },
+        {
+            "key": "JB_LW_WAR_SOIL",
+            "value": "战士"
+        },
+        {
+            "key": "JB_LW_WAR_THUN",
+            "value": "战士"
+        },
+        {
+            "key": "JB_LW_WAR_WATER",
+            "value": "战士"
+        },
+        {
+            "key": "JB_LW_WAR_SHINE",
+            "value": "战士"
+        },
+        {
+            "key": "JB_LW_WAR_DARK",
+            "value": "战士"
+        },
+        {
+            "key": "JB_LW_PLD",
+            "value": "圣骑士"
+        },
+        {
+            "key": "JB_LW_PLD_FIRE",
+            "value": "圣骑士"
+        },
+        {
+            "key": "JB_LW_PLD_ICE",
+            "value": "圣骑士"
+        },
+        {
+            "key": "JB_LW_PLD_WIND",
+            "value": "圣骑士"
+        },
+        {
+            "key": "JB_LW_PLD_SOIL",
+            "value": "圣骑士"
+        },
+        {
+            "key": "JB_LW_PLD_THUN",
+            "value": "圣骑士"
+        },
+        {
+            "key": "JB_LW_PLD_WATER",
+            "value": "圣骑士"
+        },
+        {
+            "key": "JB_LW_PLD_SHINE",
+            "value": "圣骑士"
+        },
+        {
+            "key": "JB_LW_PLD_DARK",
+            "value": "圣骑士"
+        },
+        {
+            "key": "JB_LW_KNT",
+            "value": "骑士"
+        },
+        {
+            "key": "JB_LW_KNT_FIRE",
+            "value": "骑士"
+        },
+        {
+            "key": "JB_LW_KNT_ICE",
+            "value": "骑士"
+        },
+        {
+            "key": "JB_LW_KNT_WIND",
+            "value": "骑士"
+        },
+        {
+            "key": "JB_LW_KNT_SOIL",
+            "value": "骑士"
+        },
+        {
+            "key": "JB_LW_KNT_THUN",
+            "value": "骑士"
+        },
+        {
+            "key": "JB_LW_KNT_WATER",
+            "value": "骑士"
+        },
+        {
+            "key": "JB_LW_KNT_SHINE",
+            "value": "骑士"
+        },
+        {
+            "key": "JB_LW_KNT_DARK",
+            "value": "骑士"
+        },
+        {
+            "key": "JB_LW_SWN",
+            "value": "士兵"
+        },
+        {
+            "key": "JB_LW_SWN_FIRE",
+            "value": "士兵"
+        },
+        {
+            "key": "JB_LW_SWN_ICE",
+            "value": "士兵"
+        },
+        {
+            "key": "JB_LW_SWN_WIND",
+            "value": "士兵"
+        },
+        {
+            "key": "JB_LW_SWN_SOIL",
+            "value": "士兵"
+        },
+        {
+            "key": "JB_LW_SWN_THUN",
+            "value": "士兵"
+        },
+        {
+            "key": "JB_LW_SWN_WATER",
+            "value": "士兵"
+        },
+        {
+            "key": "JB_LW_SWN_SHINE",
+            "value": "士兵"
+        },
+        {
+            "key": "JB_LW_SWN_DARK",
+            "value": "士兵"
+        },
+        {
+            "key": "JB_LW_HUN",
+            "value": "猎人"
+        },
+        {
+            "key": "JB_LW_HUN_FIRE",
+            "value": "猎人"
+        },
+        {
+            "key": "JB_LW_HUN_ICE",
+            "value": "猎人"
+        },
+        {
+            "key": "JB_LW_HUN_WIND",
+            "value": "猎人"
+        },
+        {
+            "key": "JB_LW_HUN_SOIL",
+            "value": "猎人"
+        },
+        {
+            "key": "JB_LW_HUN_THUN",
+            "value": "猎人"
+        },
+        {
+            "key": "JB_LW_HUN_WATER",
+            "value": "猎人"
+        },
+        {
+            "key": "JB_LW_HUN_SHINE",
+            "value": "猎人"
+        },
+        {
+            "key": "JB_LW_HUN_DARK",
+            "value": "猎人"
+        },
+        {
+            "key": "JB_LW_MNK",
+            "value": "武道家"
+        },
+        {
+            "key": "JB_LW_MNK_FIRE",
+            "value": "武道家"
+        },
+        {
+            "key": "JB_LW_MNK_ICE",
+            "value": "武道家"
+        },
+        {
+            "key": "JB_LW_MNK_WIND",
+            "value": "武道家"
+        },
+        {
+            "key": "JB_LW_MNK_SOIL",
+            "value": "武道家"
+        },
+        {
+            "key": "JB_LW_MNK_THUN",
+            "value": "武道家"
+        },
+        {
+            "key": "JB_LW_MNK_WATER",
+            "value": "武道家"
+        },
+        {
+            "key": "JB_LW_MNK_SHINE",
+            "value": "武道家"
+        },
+        {
+            "key": "JB_LW_MNK_DARK",
+            "value": "武道家"
+        },
+        {
+            "key": "JB_LW_LAN",
+            "value": "枪术师"
+        },
+        {
+            "key": "JB_LW_LAN_FIRE",
+            "value": "枪术师"
+        },
+        {
+            "key": "JB_LW_LAN_ICE",
+            "value": "枪术师"
+        },
+        {
+            "key": "JB_LW_LAN_WIND",
+            "value": "枪术师"
+        },
+        {
+            "key": "JB_LW_LAN_SOIL",
+            "value": "枪术师"
+        },
+        {
+            "key": "JB_LW_LAN_THUN",
+            "value": "枪术师"
+        },
+        {
+            "key": "JB_LW_LAN_WATER",
+            "value": "枪术师"
+        },
+        {
+            "key": "JB_LW_LAN_SHINE",
+            "value": "枪术师"
+        },
+        {
+            "key": "JB_LW_LAN_DARK",
+            "value": "枪术师"
+        },
+        {
+            "key": "JB_LW_CLR",
+            "value": "圣职者"
+        },
+        {
+            "key": "JB_LW_CLR_FIRE",
+            "value": "圣职者"
+        },
+        {
+            "key": "JB_LW_CLR_ICE",
+            "value": "圣职者"
+        },
+        {
+            "key": "JB_LW_CLR_WIND",
+            "value": "圣职者"
+        },
+        {
+            "key": "JB_LW_CLR_SOIL",
+            "value": "圣职者"
+        },
+        {
+            "key": "JB_LW_CLR_THUN",
+            "value": "圣职者"
+        },
+        {
+            "key": "JB_LW_CLR_WATER",
+            "value": "圣职者"
+        },
+        {
+            "key": "JB_LW_CLR_SHINE",
+            "value": "圣职者"
+        },
+        {
+            "key": "JB_LW_CLR_DARK",
+            "value": "圣职者"
+        },
+        {
+            "key": "JB_LW_SAM",
+            "value": "武士"
+        },
+        {
+            "key": "JB_LW_SAM_FIRE",
+            "value": "武士"
+        },
+        {
+            "key": "JB_LW_SAM_ICE",
+            "value": "武士"
+        },
+        {
+            "key": "JB_LW_SAM_WIND",
+            "value": "武士"
+        },
+        {
+            "key": "JB_LW_SAM_SOIL",
+            "value": "武士"
+        },
+        {
+            "key": "JB_LW_SAM_THUN",
+            "value": "武士"
+        },
+        {
+            "key": "JB_LW_SAM_WATER",
+            "value": "武士"
+        },
+        {
+            "key": "JB_LW_SAM_SHINE",
+            "value": "武士"
+        },
+        {
+            "key": "JB_LW_SAM_DARK",
+            "value": "武士"
+        },
+        {
+            "key": "JB_LW_DRG",
+            "value": "龙骑士"
+        },
+        {
+            "key": "JB_LW_DRG_FIRE",
+            "value": "龙骑士"
+        },
+        {
+            "key": "JB_LW_DRG_ICE",
+            "value": "龙骑士"
+        },
+        {
+            "key": "JB_LW_DRG_WIND",
+            "value": "龙骑士"
+        },
+        {
+            "key": "JB_LW_DRG_SOIL",
+            "value": "龙骑士"
+        },
+        {
+            "key": "JB_LW_DRG_THUN",
+            "value": "龙骑士"
+        },
+        {
+            "key": "JB_LW_DRG_WATER",
+            "value": "龙骑士"
+        },
+        {
+            "key": "JB_LW_DRG_SHINE",
+            "value": "龙骑士"
+        },
+        {
+            "key": "JB_LW_DRG_DARK",
+            "value": "龙骑士"
+        },
+        {
+            "key": "JB_LW_BLM_FIRE",
+            "value": "黑魔法师"
+        },
+        {
+            "key": "JB_LW_BLM_WATR",
+            "value": "黑魔法师"
+        },
+        {
+            "key": "JB_LW_BLM_ICE",
+            "value": "黑魔法师"
+        },
+        {
+            "key": "JB_LW_BLM_SOIL",
+            "value": "黑魔法师"
+        },
+        {
+            "key": "JB_LW_BLM_THUN",
+            "value": "黑魔法师"
+        },
+        {
+            "key": "JB_LW_BLM_WIND",
+            "value": "黑魔法师"
+        },
+        {
+            "key": "JB_LW_BLM_SHINE",
+            "value": "黑魔法师"
+        },
+        {
+            "key": "JB_LW_BLM_DARK",
+            "value": "黑魔法师"
+        },
+        {
+            "key": "JB_LW_THI",
+            "value": "盗贼"
+        },
+        {
+            "key": "JB_LW_THI_FIRE",
+            "value": "盗贼"
+        },
+        {
+            "key": "JB_LW_THI_ICE",
+            "value": "盗贼"
+        },
+        {
+            "key": "JB_LW_THI_WIND",
+            "value": "盗贼"
+        },
+        {
+            "key": "JB_LW_THI_SOIL",
+            "value": "盗贼"
+        },
+        {
+            "key": "JB_LW_THI_THUN",
+            "value": "盗贼"
+        },
+        {
+            "key": "JB_LW_THI_WATER",
+            "value": "盗贼"
+        },
+        {
+            "key": "JB_LW_THI_SHINE",
+            "value": "盗贼"
+        },
+        {
+            "key": "JB_LW_THI_DARK",
+            "value": "盗贼"
+        },
+        {
+            "key": "JB_LW_NIN",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_FIRE",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_ICE",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_WIND",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_SOIL",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_THUN",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_WATR",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_SHIN",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_NIN_DARK",
+            "value": "忍者"
+        },
+        {
+            "key": "JB_LW_GUN",
+            "value": "火枪手"
+        },
+        {
+            "key": "JB_LW_GUN_FIRE",
+            "value": "火枪手"
+        },
+        {
+            "key": "JB_LW_GUN_ICE",
+            "value": "火枪手"
+        },
+        {
+            "key": "JB_LW_GUN_WIND",
+            "value": "火枪手"
+        },
+        {
+            "key": "JB_LW_GUN_SOIL",
+            "value": "火枪手"
+        },
+        {
+            "key": "JB_LW_GUN_THUN",
+            "value": "火枪手"
+        },
+        {
+            "key": "JB_LW_GUN_WATER",
+            "value": "火枪手"
+        },
+        {
+            "key": "JB_LW_GUN_SHINE",
+            "value": "火枪手"
+        },
+        {
+            "key": "JB_LW_GUN_DARK",
+            "value": "火枪手"
+        },
+        {
+            "key": "JB_LW_GRM_FIRE",
+            "value": "绿魔法师"
+        },
+        {
+            "key": "JB_LW_GRM_ICE",
+            "value": "绿魔法师"
+        },
+        {
+            "key": "JB_LW_GRM_WIND",
+            "value": "绿魔法师"
+        },
+        {
+            "key": "JB_LW_GRM_SOIL",
+            "value": "绿魔法师"
+        },
+        {
+            "key": "JB_LW_GRM_THUN",
+            "value": "绿魔法师"
+        },
+        {
+            "key": "JB_LW_GRM_SHIN",
+            "value": "绿魔法师"
+        },
+        {
+            "key": "JB_LW_GRM_DARK",
+            "value": "绿魔法师"
+        },
+        {
+            "key": "JB_LW_GRM_WATR",
+            "value": "绿魔法师"
+        },
+        {
+            "key": "JB_LW_MGK_FIRE",
+            "value": "魔法剑士"
+        },
+        {
+            "key": "JB_LW_MGK_WATR",
+            "value": "魔法剑士"
+        },
+        {
+            "key": "JB_LW_MGK_ICE",
+            "value": "魔法剑士"
+        },
+        {
+            "key": "JB_LW_MGK_SOIL",
+            "value": "魔法剑士"
+        },
+        {
+            "key": "JB_LW_MGK_THUN",
+            "value": "魔法剑士"
+        },
+        {
+            "key": "JB_LW_MGK_SHINE",
+            "value": "魔法剑士"
+        },
+        {
+            "key": "JB_LW_MGK_DARK",
+            "value": "魔法剑士"
+        },
+        {
+            "key": "JB_LW_MGK_WIND",
+            "value": "魔法剑士"
+        },
+        {
+            "key": "JB_LW_RDM_FIRE",
+            "value": "赤魔法师"
+        },
+        {
+            "key": "JB_LW_RDM_ICE",
+            "value": "赤魔法师"
+        },
+        {
+            "key": "JB_LW_RDM_WIND",
+            "value": "赤魔法师"
+        },
+        {
+            "key": "JB_LW_RDM_SOIL",
+            "value": "赤魔法师"
+        },
+        {
+            "key": "JB_LW_RDM_THUN",
+            "value": "赤魔法师"
+        },
+        {
+            "key": "JB_LW_RDM_WATR",
+            "value": "赤魔法师"
+        },
+        {
+            "key": "JB_LW_RDM_SHIN",
+            "value": "赤魔法师"
+        },
+        {
+            "key": "JB_LW_RDM_DARK",
+            "value": "赤魔法师"
+        },
+        {
+            "key": "JB_LW_TIM",
+            "value": "时魔法师"
+        },
+        {
+            "key": "JB_LW_TIM_FIRE",
+            "value": "时魔法师"
+        },
+        {
+            "key": "JB_LW_TIM_ICE",
+            "value": "时魔法师"
+        },
+        {
+            "key": "JB_LW_TIM_WIND",
+            "value": "时魔法师"
+        },
+        {
+            "key": "JB_LW_TIM_SOIL",
+            "value": "时魔法师"
+        },
+        {
+            "key": "JB_LW_TIM_THUN",
+            "value": "时魔法师"
+        },
+        {
+            "key": "JB_LW_TIM_WATER",
+            "value": "时魔法师"
+        },
+        {
+            "key": "JB_LW_TIM_SHINE",
+            "value": "时魔法师"
+        },
+        {
+            "key": "JB_LW_TIM_DARK",
+            "value": "时魔法师"
+        },
+        {
+            "key": "JB_LW_WHM",
+            "value": "白魔法师"
+        },
+        {
+            "key": "JB_LW_WHM_FIRE",
+            "value": "白魔法师"
+        },
+        {
+            "key": "JB_LW_WHM_ICE",
+            "value": "白魔法师"
+        },
+        {
+            "key": "JB_LW_WHM_WIND",
+            "value": "白魔法师"
+        },
+        {
+            "key": "JB_LW_WHM_SOIL",
+            "value": "白魔法师"
+        },
+        {
+            "key": "JB_LW_WHM_THUN",
+            "value": "白魔法师"
+        },
+        {
+            "key": "JB_LW_WHM_WATER",
+            "value": "白魔法师"
+        },
+        {
+            "key": "JB_LW_WHM_SHINE",
+            "value": "白魔法师"
+        },
+        {
+            "key": "JB_LW_WHM_DARK",
+            "value": "白魔法师"
+        },
+        {
+            "key": "JB_LW_GLMS",
+            "value": "有翼者"
+        },
+        {
+            "key": "JB_FF14_YSTL",
+            "value": "魔女"
+        },
+        {
+            "key": "JB_FF14_TNCR",
+            "value": "绝枪战士"
+        },
+        {
+            "key": "JB_LW_WGN",
+            "value": "双枪手"
+        },
+        {
+            "key": "JB_LW_WGN_FIRE",
+            "value": "双枪手"
+        },
+        {
+            "key": "JB_LW_WGN_ICE",
+            "value": "双枪手"
+        },
+        {
+            "key": "JB_LW_WGN_WIND",
+            "value": "双枪手"
+        },
+        {
+            "key": "JB_LW_WGN_SOIL",
+            "value": "双枪手"
+        },
+        {
+            "key": "JB_LW_WGN_THUN",
+            "value": "双枪手"
+        },
+        {
+            "key": "JB_LW_WGN_WATER",
+            "value": "双枪手"
+        },
+        {
+            "key": "JB_LW_WGN_SHINE",
+            "value": "双枪手"
+        },
+        {
+            "key": "JB_LW_WGN_DARK",
+            "value": "双枪手"
+        },
+        {
+            "key": "JB_LW_VIK",
+            "value": "维京战士"
+        },
+        {
+            "key": "JB_LW_VIK_FIRE",
+            "value": "维京战士"
+        },
+        {
+            "key": "JB_LW_VIK_ICE",
+            "value": "维京战士"
+        },
+        {
+            "key": "JB_LW_VIK_WIND",
+            "value": "维京战士"
+        },
+        {
+            "key": "JB_LW_VIK_SOIL",
+            "value": "维京战士"
+        },
+        {
+            "key": "JB_LW_VIK_THUN",
+            "value": "维京战士"
+        },
+        {
+            "key": "JB_LW_VIK_WATER",
+            "value": "维京战士"
+        },
+        {
+            "key": "JB_LW_VIK_SHINE",
+            "value": "维京战士"
+        },
+        {
+            "key": "JB_LW_VIK_DARK",
+            "value": "维京战士"
+        },
+        {
+            "key": "JB_LW_FINA",
+            "value": "拉比斯的白魔法师"
+        },
+        {
+            "key": "JB_FFT_RAMZ",
+            "value": "见习战士"
+        },
+        {
+            "key": "JB_FFT_GFGR",
+            "value": "黑暗骑士"
+        },
+        {
+            "key": "JB_FFT_ORND",
+            "value": "剑圣"
+        },
+        {
+            "key": "JB_LW_RAIN",
+            "value": "格兰谢尔特骑士"
+        },
+        {
+            "key": "JB_LW_ASS",
+            "value": "暗杀者"
+        },
+        {
+            "key": "JB_LW_ASS_FIRE",
+            "value": "暗杀者"
+        },
+        {
+            "key": "JB_LW_ASS_ICE",
+            "value": "暗杀者"
+        },
+        {
+            "key": "JB_LW_ASS_WIND",
+            "value": "暗杀者"
+        },
+        {
+            "key": "JB_LW_ASS_SOIL",
+            "value": "暗杀者"
+        },
+        {
+            "key": "JB_LW_ASS_THUN",
+            "value": "暗杀者"
+        },
+        {
+            "key": "JB_LW_ASS_WATER",
+            "value": "暗杀者"
+        },
+        {
+            "key": "JB_LW_ASS_SHINE",
+            "value": "暗杀者"
+        },
+        {
+            "key": "JB_LW_ASS_DARK",
+            "value": "暗杀者"
+        },
+        {
+            "key": "JB_FF1_WROL",
+            "value": "光之战士"
+        },
+        {
+            "key": "JB_LW_MST_FIRE",
+            "value": "魔杖术士"
+        },
+        {
+            "key": "JB_LW_MST_WATER",
+            "value": "魔杖术士"
+        },
+        {
+            "key": "JB_LW_MST_ICE",
+            "value": "魔杖术士"
+        },
+        {
+            "key": "JB_LW_MST_SOIL",
+            "value": "魔杖术士"
+        },
+        {
+            "key": "JB_LW_MST_THUN",
+            "value": "魔杖术士"
+        },
+        {
+            "key": "JB_LW_MST_WIND",
+            "value": "魔杖术士"
+        },
+        {
+            "key": "JB_LW_MST_SHINE",
+            "value": "魔杖术士"
+        },
+        {
+            "key": "JB_LW_MST_DARK",
+            "value": "魔杖术士"
+        },
+        {
+            "key": "JB_FFT_AGRA",
+            "value": "神圣骑士"
+        },
+        {
+            "key": "JB_FFT_DELT",
+            "value": "见习战士"
+        },
+        {
+            "key": "JB_FFT_MSTD",
+            "value": "机工士"
+        },
+        {
+            "key": "JB_LW_CAL_FIRE",
+            "value": "算术士"
+        },
+        {
+            "key": "JB_LW_CAL_ICE",
+            "value": "算术士"
+        },
+        {
+            "key": "JB_LW_CAL_WIND",
+            "value": "算术士"
+        },
+        {
+            "key": "JB_LW_CAL_SOIL",
+            "value": "算术士"
+        },
+        {
+            "key": "JB_LW_CAL_THUN",
+            "value": "算术士"
+        },
+        {
+            "key": "JB_LW_CAL_WATER",
+            "value": "算术士"
+        },
+        {
+            "key": "JB_LW_CAL_SHINE",
+            "value": "算术士"
+        },
+        {
+            "key": "JB_LW_CAL_DARK",
+            "value": "算术士"
+        },
+        {
+            "key": "JB_LW_STRN",
+            "value": "破灭骑士"
+        },
+        {
+            "key": "JB_LW_GRSR",
+            "value": "女武神"
+        },
+        {
+            "key": "JB_LW_LSWL",
+            "value": "格兰谢尔特骑士"
+        },
+        {
+            "key": "JB_LW_MKN_SOIL",
+            "value": "符文骑士"
+        },
+        {
+            "key": "JB_LW_MKN",
+            "value": "符文骑士"
+        },
+        {
+            "key": "JB_LW_MKN_FIRE",
+            "value": "符文骑士"
+        },
+        {
+            "key": "JB_LW_MKN_ICE",
+            "value": "符文骑士"
+        },
+        {
+            "key": "JB_LW_MKN_WIND",
+            "value": "符文骑士"
+        },
+        {
+            "key": "JB_LW_MKN_THUN",
+            "value": "符文骑士"
+        },
+        {
+            "key": "JB_LW_MKN_WATER",
+            "value": "符文骑士"
+        },
+        {
+            "key": "JB_LW_MKN_SHINE",
+            "value": "符文骑士"
+        },
+        {
+            "key": "JB_LW_MKN_DARK",
+            "value": "符文骑士"
+        },
+        {
+            "key": "JB_FF4_CECL",
+            "value": "月之圣骑士"
+        },
+        {
+            "key": "JB_FF4_ROSA",
+            "value": "巴隆的白魔法师"
+        },
+        {
+            "key": "JB_FF4_KAIN",
+            "value": "巴隆的龙骑士"
+        }
+    ]
+}

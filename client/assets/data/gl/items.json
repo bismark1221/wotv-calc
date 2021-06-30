@@ -5209,6 +5209,71 @@
     "type": "job_awake_orb",
     "icon": "JB_LW_WIZ"
   },
+  "IT_JB_MM_LW_ZZAN": {
+    "dataId": "IT_JB_MM_LW_ZZAN",
+    "names": {
+      "en": "Undying Fighter's Memory (Green)",
+      "fr": "Souvenir de Combattant imbattable (Vert)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Grün)",
+      "es": "Recuerdo de luchador imbatible (verde)",
+      "ko": "되살아난 투사의 기억: 초록",
+      "zh": "復甦的鬥士的記憶·翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
+  "IT_JB_MM_LW_ZZAN_2": {
+    "dataId": "IT_JB_MM_LW_ZZAN_2",
+    "names": {
+      "en": "Undying Fighter's Memory (Blue)",
+      "fr": "Souvenir de Combattant imbattable (Bleu)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Blau)",
+      "es": "Recuerdo de luchador imbatible (azul)",
+      "ko": "되살아난 투사의 기억: 파랑",
+      "zh": "復甦的鬥士的記憶·碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
+  "IT_JB_MM_LW_ZZAN_3": {
+    "dataId": "IT_JB_MM_LW_ZZAN_3",
+    "names": {
+      "en": "Undying Fighter's Memory (Purple)",
+      "fr": "Souvenir de Combattant imbattable (Violet)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Violett)",
+      "es": "Recuerdo de luchador imbatible (morado)",
+      "ko": "되살아난 투사의 기억: 보라",
+      "zh": "復甦的鬥士的記憶·紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
+  "IT_JB_MM_LW_ZZAN_4": {
+    "dataId": "IT_JB_MM_LW_ZZAN_4",
+    "names": {
+      "en": "Undying Fighter's Memory (Yellow)",
+      "fr": "Souvenir de Combattant imbattable (Jaune)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Gelb)",
+      "es": "Recuerdo de luchador imbatible (amarillo)",
+      "ko": "되살아난 투사의 기억: 노랑",
+      "zh": "復甦的鬥士的記憶·黃"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
+  "IT_JB_MM_LW_ZZAN_5": {
+    "dataId": "IT_JB_MM_LW_ZZAN_5",
+    "names": {
+      "en": "Undying Fighter's Memory (Red)",
+      "fr": "Souvenir de Combattant imbattable (Rouge)",
+      "de": "Erinnerungen des Kriegers der Auferstehung (Rot)",
+      "es": "Recuerdo de luchador imbatible (rojo)",
+      "ko": "되살아난 투사의 기억: 빨강",
+      "zh": "復甦的鬥士的記憶·緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_ZZAN"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -8294,6 +8359,18 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_ZZAN_01": {
+    "dataId": "IT_PI_LW_ZZAN_01",
+    "names": {
+      "en": "Zazan the Unkillable Unit Shard",
+      "fr": "Fragment d'unité de Zazan l'immortel",
+      "de": "„Zazan der Unverwüstliche“-Einheitenfragment",
+      "es": "Fragmento de Zazán, el Inmortal",
+      "ko": "불사신 자잔의 조각",
+      "zh": "不死身的扎贊的碎片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -9137,12 +9214,12 @@
   "IT_SP_LW_LILS_01": {
     "dataId": "IT_SP_LW_LILS_01",
     "names": {
-      "en": "Lilyth (Swimsuit) Mindsphere",
-      "fr": "Sphère spirituelle de Lilyth (Maillot de bain)",
-      "de": "„Lilith (Strand)“-Geistesperle",
+      "en": "Lilyth (Summer) Mindsphere",
+      "fr": "Sphère spirituelle de Lilyth (Été)",
+      "de": "„Lilith (Sommer)“-Geistesperle",
       "es": "Esfera espiritual de Lilit veraniega",
-      "ko": "릴리스(수영복)의 마음 구슬",
-      "zh": "莉莉絲（泳裝）的思珠"
+      "ko": "릴리스(여름)의 마음 구슬",
+      "zh": "莉莉絲（夏日）的思珠"
     },
     "type": "exjob_orb"
   },
@@ -9197,12 +9274,12 @@
   "IT_SP_LW_KTON_01": {
     "dataId": "IT_SP_LW_KTON_01",
     "names": {
-      "en": "Kitone (Swimsuit) Mindsphere",
-      "fr": "Sphère spirituelle de Kitone (Maillot de bain)",
-      "de": "„Kiton (Strand)“-Geistesperle",
+      "en": "Kitone (Summer) Mindsphere",
+      "fr": "Sphère spirituelle de Kitone (Été)",
+      "de": "„Kiton (Sommer)“-Geistesperle",
       "es": "Esfera espiritual de Kiton veraniega",
-      "ko": "키튼(수영복)의 마음 구슬",
-      "zh": "基頓（泳裝）的思珠"
+      "ko": "키튼(여름)의 마음 구슬",
+      "zh": "基頓（夏日）的思珠"
     },
     "type": "exjob_orb"
   },
@@ -9564,6 +9641,18 @@
       "es": "Esfera espiritual de Camilo",
       "ko": "카밀로의 마음 구슬",
       "zh": "卡米洛的思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ZZAN_01": {
+    "dataId": "IT_SP_LW_ZZAN_01",
+    "names": {
+      "en": "Zazan the Unkillable Mindsphere",
+      "fr": "Sphère spirituelle de Zazan l'immortel",
+      "de": "„Zazan der Unverwüstliche“-Geistesperle",
+      "es": "Esfera espiritual de Zazán, el Inmortal",
+      "ko": "불사신 자잔의 마음 구슬",
+      "zh": "不死身的扎贊的思珠"
     },
     "type": "exjob_orb"
   },
@@ -13664,6 +13753,19 @@
     "type": "medal",
     "icon": "IT_EC_MEDAL_GF_A"
   },
+  "IT_EC_MEDAL_GF_C": {
+    "dataId": "IT_EC_MEDAL_GF_C",
+    "names": {
+      "en": "Global Festival Medal C",
+      "fr": "Médaille festive C",
+      "de": "Globalfest-Medaille C",
+      "es": "Medalla de celebración internacional (C)",
+      "ko": "글로벌 페스티벌 메달 C",
+      "zh": "國際慶典獎牌C"
+    },
+    "type": "medal",
+    "icon": "IT_EC_MEDAL_GF_A"
+  },
   "IT_EC_MEDAL_CNY21": {
     "dataId": "IT_EC_MEDAL_CNY21",
     "names": {
@@ -14201,6 +14303,19 @@
       "es": "Medalla de invocación de junio (B)",
       "ko": "[6월] 소환 메달 B",
       "zh": "【6月】召喚獎牌B"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_02"
+  },
+  "IT_EC_SUMMON_06_02_C": {
+    "dataId": "IT_EC_SUMMON_06_02_C",
+    "names": {
+      "en": "June Summon Medal C",
+      "fr": "Médaille d'invocation C [Juin]",
+      "de": "Juni-Beschwörungsmedaille C",
+      "es": "Medalla de invocación de junio (C)",
+      "ko": "[6월] 소환 메달 C",
+      "zh": "【6月】召喚獎牌C"
     },
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
@@ -14907,6 +15022,71 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_GL_18": {
+    "dataId": "IT_US_SE_JB_05_GL_18",
+    "names": {
+      "en": "[Global Festival] Select Spinel x70 Summon Ticket",
+      "fr": "[Festivités de la globale] Ticket sélectionneur de 70 spinelles",
+      "de": "[Globalfest] „Auswählbarer Spinell x70“-Beschwörungsticket",
+      "es": "[Celeb. int.] Tícket seleccionador de 70 espinelas",
+      "ko": "[글로벌 페스티벌] 스피넬×70 선택 소환 티켓",
+      "zh": "【國際慶典紀念】尖晶石×70選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_GL_13": {
+    "dataId": "IT_US_SE_JB_04_GL_13",
+    "names": {
+      "en": "[Global Festival] Select Citrine x30 Summon Ticket",
+      "fr": "[Festivités de la globale] Ticket sélectionneur de 30 citrines",
+      "de": "[Globalfest] „Auswählbarer Citrin x30“-Beschwörungsticket",
+      "es": "[Celeb. int.] Tícket seleccionador de 30 citrinos",
+      "ko": "[글로벌 페스티벌] 시트린×30 선택 소환 티켓",
+      "zh": "【國際慶典紀念】黃水晶×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_GL_13": {
+    "dataId": "IT_US_SE_JB_03_GL_13",
+    "names": {
+      "en": "[Global Festival] Select Charoite x30 Summon Ticket",
+      "fr": "[Festivités de la globale] Ticket sélectionneur de 30 charoïtes",
+      "de": "[Globalfest] „Auswählbarer Charoit x30“-Beschwörungsticket",
+      "es": "[Celeb. int.] Tícket seleccionador de 30 charoítas",
+      "ko": "[글로벌 페스티벌] 차로아이트×30 선택 소환 티켓",
+      "zh": "【國際慶典紀念】紫龍晶×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_GL_11": {
+    "dataId": "IT_US_SE_JB_02_GL_11",
+    "names": {
+      "en": "[Global Festival] Select Azurite x30 Summon Ticket",
+      "fr": "[Festivités de la globale] Ticket sélectionneur de 30 azurites",
+      "de": "Globalfest] „Auswählbarer Azurit x30“-Beschwörungsticket",
+      "es": "[Celeb. int.] Tícket seleccionador de 30 azuritas",
+      "ko": "[글로벌 페스티벌] 아즈라이트×30 선택 소환 티켓",
+      "zh": "【國際慶典紀念】藍銅礦×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_GL_11": {
+    "dataId": "IT_US_SE_JB_01_GL_11",
+    "names": {
+      "en": "[Global Festival] Select Jadeite x15 Summon Ticket",
+      "fr": "[Festivités de la globale] Ticket sélectionneur de 15 jades",
+      "de": "Globalfest] „Auswählbarer Jadeit x15“-Beschwörungsticket",
+      "es": "[Celeb. int.] Tícket seleccionador de 15 jadeítas",
+      "ko": "[글로벌 페스티벌] 제이다이트×15 선택 소환 티켓",
+      "zh": "【國際慶典紀念】翡翠硬玉×15選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JB_01_GL_18": {
     "dataId": "IT_US_SE_JB_01_GL_18",
     "names": {
@@ -15264,7 +15444,7 @@
       "en": "FFI Reissue Event Medal",
       "fr": "Médaille d'événement FFI [réédition]",
       "de": "FFI-Eventmedaille (Wiederholung)",
-      "es": "Tícket de evento de FFI de vuelta",
+      "es": "Medalla de evento de FFI de vuelta",
       "ko": "[재등장] FFI 콜라보 이벤트 메달",
       "zh": "【復刻】FFI聯動活動獎牌"
     },
@@ -18359,6 +18539,18 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_MONT": {
+    "dataId": "IT_VPI_LW_MONT",
+    "names": {
+      "en": "\"The Solitary Lion\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Le Lion solitaire",
+      "de": "„Der einsame Löwe“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «León solitario»",
+      "ko": " '고독한 사자'의 조각",
+      "zh": "孤獨的獅子的碎片"
+    },
+    "type": "vc_shard"
+  },
   "IT_VPI_LW_IGNT": {
     "dataId": "IT_VPI_LW_IGNT",
     "names": {
@@ -20577,6 +20769,19 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_PI_GL_25": {
+    "dataId": "IT_US_SE_PI_GL_25",
+    "names": {
+      "en": "Select Global Unit Shard x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments d'unité de la version internationale",
+      "de": "„Auswählbares globales Einheitenfragment x40“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 40 fragmentos de unidad internacional",
+      "ko": "글로벌 유닛의 조각×40 선택 소환 티켓",
+      "zh": "國際兵員碎片×40選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_VPI_GL_16": {
     "dataId": "IT_US_SE_VPI_GL_16",
     "names": {
@@ -21458,6 +21663,19 @@
     },
     "type": "stamp",
     "icon": "IT_STAMP_02"
+  },
+  "IT_STAMP_2103": {
+    "dataId": "IT_STAMP_2103",
+    "names": {
+      "en": "August Token",
+      "fr": "Insigne d'août",
+      "de": "August-Abzeichen",
+      "es": "Emblema de agosto",
+      "ko": "8월 인장",
+      "zh": "8月印章"
+    },
+    "type": "stamp",
+    "icon": "IT_STAMP_03"
   },
   "IT_KEY_JP": {
     "dataId": "IT_KEY_JP",

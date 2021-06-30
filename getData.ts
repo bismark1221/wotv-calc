@@ -124,6 +124,65 @@ export class JsonService {
     events: {}
   };
 
+  cn = {
+    units: {},
+    unitModels: {},
+    skills: {},
+    buffs: {},
+    equipments: {},
+    boards: {},
+    jobs: {},
+    visionCards: {},
+    weathers: {},
+    espersBoards: {},
+    espersTbl: {},
+    equipmentRecipes: {},
+    equipementLots: {},
+    grows: {},
+    EquipmentCond: {},
+    wotvUnits: {},
+    wotvVisionCards: {},
+    wotvEspers: {},
+    wotvEquipments: {},
+    wotvJobs: {},
+    wotvItems: {},
+    wotvMasterRanks: {},
+    wotvPlayerTitles: {},
+    wotvGuildTitles: {},
+    wotvQuests: {},
+    wotvOtherUnits: {},
+    wotvSkills: {},
+    raid: {},
+    raidBoss: {},
+    raidMaps: {},
+    wotvRaids: {},
+    equipmentAwakes: {},
+    items: {},
+    cardConditions: {},
+    masterRanks: {},
+    masterRanksEffects: {},
+    playerTitles : {},
+    guildTitles : {},
+    jobsTbl: {},
+    jobsMaterials: {},
+    unitsMaterials: {},
+    unitClassChangeCondition: {},
+    raidBonusUnit: {},
+    raidBonusCard: {},
+    quests: {},
+    questMissions: {},
+    grids: {},
+    maps: {},
+    towerRewards: {},
+    towerFloors: {},
+    skillExc: {},
+    oldUnits: {},
+    oldCards: {},
+    oldEspers: {},
+    oldEquipments: {},
+    events: {}
+  };
+
   jpRomaji = {};
   jpTitlesName = {};
   jpTitlesDesc = {};
@@ -238,6 +297,24 @@ export class JsonService {
       towerFloorTitle: {}
     },
     jp: {
+      skill: {},
+      unit: {},
+      buff: {},
+      job: {},
+      equipment: {},
+      visionCard: {},
+      equipmentGrow: {},
+      itemOther: {},
+      item: {},
+      playerTitleName: {},
+      playerTitleDesc: {},
+      guildTitleName: {},
+      guildTitleDesc: {},
+      questTitle: {},
+      towerTitle: {},
+      towerFloorTitle: {}
+    },
+    cn: {
       skill: {},
       unit: {},
       buff: {},
@@ -439,7 +516,6 @@ export class JsonService {
     503: 'UPGRADE_SKILL',
     509: 'GRANT_BUFF'
   };
-
 
   statusParam = {
     1: "HP",
@@ -1664,6 +1740,331 @@ export class JsonService {
       });
   }
 
+  /* CN */
+  private CNUnits() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Unit.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNUnitsBoards() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/UnitAbilityBoard.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNSkills() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Skill.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNBuffs() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Buff.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNJobs() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Job.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNEquipments() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Artifact.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNVisionCards() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/VisionCard.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNEspersBoards() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/NetherBeastAbilityBoard.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNWeathers() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Weather.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNEsperLvTbls() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/NBeastLvTbl.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNArtifactRecipes() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/ArtifactRecipe.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNArtifactLot() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/ArtifactRandLot.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNGrows() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Grow.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNUnitModels() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/UnitModel.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNArtifactEquipCond() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/ArtifactEquipCondition.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNRaid() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Raid.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNRaidBoss() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/RaidBoss.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNArtifactAwake() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/ArtifactAwake.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNItem() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Item.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNCardCond() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/VisionCardLimitedCondition.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNMasterRank() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/MasterRank.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNMasterRankEffect() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/MasterRankEffect.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNPlayersAward() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/PlayersAward.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNGuildsAward() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/GuildsAward.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNJobLvTbl() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/JobLvTbl.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNJobMaterialItem() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/JobMaterialItem.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNUnitMaterialItem() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/UnitMaterialItem.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNUnitClassChangeCondition() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/UnitClassChangeCondition.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNRaidBonusUnit() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/RaidBonusUnit.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNRaidBonusCard() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/RaidBonusVisioncard.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNQuests() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Quests.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNQuestMissions() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/QuestMission.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNTowerFloors() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/TowerFloor.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNTowerRewards() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/TowerReward.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNSkillExc() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/SkillExc.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private CNEvents() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cndata/Events.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
 
   /* Translation */
   private TranslateUnitNames() {
@@ -2125,6 +2526,72 @@ export class JsonService {
 
 
 
+  private CN_ArtifactGrow() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/artifactgrow.json'), 'utf8');
+  }
+
+  private CN_ArtifactName() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/artifactname.json'), 'utf8');
+  }
+
+  private CN_BuffName() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/buffname.json'), 'utf8');
+  }
+
+  private CN_ItemOther() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/itemother.json'), 'utf8');
+  }
+
+  private CN_JobName() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/jobname.json'), 'utf8');
+  }
+
+  private CN_SkillName() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/skillname.json'), 'utf8');
+  }
+
+  private CN_UnitName() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/unitname.json'), 'utf8');
+  }
+
+  private CN_VisionCardName() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/visioncardname.json'), 'utf8');
+  }
+
+  private CN_ItemName() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/itemname.json'), 'utf8');
+  }
+
+  private CN_PlayerTitleName() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/playerawardsname.json'), 'utf8');
+  }
+
+  private CN_PlayerTitleDesc() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/playerawardsdescription.json'), 'utf8');
+  }
+
+  private CN_GuildTitleName() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/guildawardsname.json'), 'utf8');
+  }
+
+  private CN_GuildTitleDesc() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/guildawardsdescription.json'), 'utf8');
+  }
+
+  private CN_TranslateQuestTitle() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/questtitle.json'), 'utf8');
+  }
+
+  private CN_TowerTitle() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/towertitle.json'), 'utf8');
+  }
+
+  private CN_TowerFloorTitle() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/cn/towerfloortitle.json'), 'utf8');
+  }
+
+
+
   private JP_Romaji() {
     return this.fs.readFile(this.path.resolve(__dirname, 'data/jp_romaji.json'), 'utf8');
   }
@@ -2147,6 +2614,10 @@ export class JsonService {
     return this.fs.readFile(this.path.resolve(__dirname, 'data/map/jp/maps.json'), 'utf8');
   }
 
+  private CN_Maps() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/map/cn/maps.json'), 'utf8');
+  }
+
 
 
   private GL_Grids() {
@@ -2155,6 +2626,10 @@ export class JsonService {
 
   private JP_Grids() {
     return this.fs.readFile(this.path.resolve(__dirname, 'data/map/jp/grids.json'), 'utf8');
+  }
+
+  private CN_Grids() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/map/cn/grids.json'), 'utf8');
   }
 
 
@@ -2191,6 +2666,42 @@ export class JsonService {
     return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/jp/equipments.json'), 'utf8');
   }
 
+  private CN_OldUnits() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/cn/units.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{}';
+      });
+  }
+
+  private CN_OldCards() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/cn/cards.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{}';
+      });
+  }
+
+  private CN_OldEspers() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/cn/espers.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{}';
+      });
+  }
+
+  private CN_OldEquipments() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/cn/equipments.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{}';
+      });
+  }
+
   ignoredAssets = [
     "Thumbs.db@SynoEAStream",
     "Thumbs.db",
@@ -2223,7 +2734,13 @@ export class JsonService {
       '../wotv-assets/global/itemicon/lapisww/m',
       '../wotv-assets/global/itemicon/lapisww/s',
       '../wotv-assets/global/itemicon/collabo/m',
-      '../wotv-assets/global/itemicon/collabo/s'
+      '../wotv-assets/global/itemicon/collabo/s',
+      '../wotv-assets/chinese/itemicon/lapis/m',
+      '../wotv-assets/chinese/itemicon/lapis/s',
+      '../wotv-assets/chinese/itemicon/lapisww/m',
+      /*'../wotv-assets/chinese/itemicon/lapisww/s',*/
+      '../wotv-assets/chinese/itemicon/collabo/m',
+      '../wotv-assets/chinese/itemicon/collabo/s'
     ];
 
     for (const folder of itemFolders) {
@@ -2243,7 +2760,10 @@ export class JsonService {
       '../wotv-assets/japan/vision/collabo',
       '../wotv-assets/global/vision/lapis',
       '../wotv-assets/global/vision/lapisww',
-      '../wotv-assets/global/vision/collabo'
+      '../wotv-assets/global/vision/collabo',
+      '../wotv-assets/chinese/vision/lapis',
+      /*'../wotv-assets/chinese/vision/lapisww',*/
+      '../wotv-assets/chinese/vision/collabo',
     ];
 
     for (const folder of cardFolders) {
@@ -2268,7 +2788,10 @@ export class JsonService {
       '../wotv-assets/japan/artifact/collabo',
       '../wotv-assets/global/artifact/lapis',
       '../wotv-assets/global/artifact/lapisww',
-      '../wotv-assets/global/artifact/collabo'
+      '../wotv-assets/global/artifact/collabo',
+      '../wotv-assets/chinese/artifact/lapis',
+      /*'../wotv-assets/chinese/artifact/lapisww',*/
+      '../wotv-assets/chinese/artifact/collabo',
     ];
 
     for (const folder of equipmentFolders) {
@@ -2293,7 +2816,10 @@ export class JsonService {
       '../wotv-assets/japan/unit/lapis/job',
       '../wotv-assets/global/unit/collabo/job',
       '../wotv-assets/global/unit/lapis/job',
-      '../wotv-assets/global/unit/lapisww/job'
+      '../wotv-assets/global/unit/lapisww/job',
+      '../wotv-assets/chinese/unit/collabo/job',
+      '../wotv-assets/chinese/unit/lapis/job',
+      /*'../wotv-assets/chinese/unit/lapisww/job'*/
     ];
 
     for (const folder of jobFolders) {
@@ -2333,7 +2859,10 @@ export class JsonService {
       '../wotv-assets/japan/unit/lapis/unit',
       '../wotv-assets/global/unit/collabo/unit',
       '../wotv-assets/global/unit/lapis/unit',
-      '../wotv-assets/global/unit/lapisww/unit'
+      '../wotv-assets/global/unit/lapisww/unit',
+      '../wotv-assets/chinese/unit/collabo/unit',
+      '../wotv-assets/chinese/unit/lapis/unit',
+      '../wotv-assets/chinese/unit/lapisww/unit'
     ];
 
     for (const folder of unitFolders) {
@@ -2373,7 +2902,11 @@ export class JsonService {
       '../wotv-assets/global/localize/en/texture/award/guild/collabo',
       '../wotv-assets/global/localize/en/texture/award/guild/lapis',
       '../wotv-assets/global/localize/en/texture/award/player/collabo',
-      '../wotv-assets/global/localize/en/texture/award/player/lapis'
+      '../wotv-assets/global/localize/en/texture/award/player/lapis',
+      /*'../wotv-assets/chinese/localize/zh/texture/award/guild/collabo',*/
+      /*'../wotv-assets/chinese/localize/zh/texture/award/guild/lapis',*/
+      /*'../wotv-assets/chinese/localize/zh/texture/award/player/collabo',*/
+      /*'../wotv-assets/chinese/localize/zh/texture/award/player/lapis'*/
     ];
 
     for (const folder of titleFolders) {
@@ -2398,6 +2931,8 @@ export class JsonService {
       '../wotv-assets/global/map/collabo/grid',
       '../wotv-assets/japan/map/lapis/grid',
       '../wotv-assets/japan/map/collabo/grid',
+      /*'../wotv-assets/chinese/map/lapis/grid',*/
+      /*'../wotv-assets/chinese/map/collabo/grid',*/
     ];
 
     for (const folder of gridFolders) {
@@ -2487,6 +3022,10 @@ export class JsonService {
       {
         'srcFolder': '../wotv-assets/japan/localize/ja/text/masterparam',
         'destFolder': 'data/jp'
+      },
+      {
+        'srcFolder': '../wotv-assets/chinese/localize/zh/text/masterparam',
+        'destFolder': 'data/cn'
       }
     ];
     const localeFiles = [
@@ -2539,11 +3078,13 @@ export class JsonService {
     console.log('### Import maps')
     const mapData = {
       map: {},
-      jp_map: {}
+      jp_map: {},
+      cn_map: {}
     };
     const mapFolders = [
       '../wotv-dump/map',
-      '../wotv-dump/jp_map'
+      '../wotv-dump/jp_map',
+      '../wotv-dump/cn_map'
     ];
 
     for (const folder of mapFolders) {
@@ -2705,6 +3246,7 @@ export class JsonService {
 
     this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/gl/maps.json'), JSON.stringify(mapData.map, null, 2));
     this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/jp/maps.json'), JSON.stringify(mapData.jp_map, null, 2));
+    this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/cn/maps.json'), JSON.stringify(mapData.cn_map, null, 2));
   }
 
   async importAndCropImage(src, dst) {
@@ -5356,10 +5898,14 @@ export class JsonService {
   }
 
   private glExcluUnits = [
-    'UN_LW_P_FRVA'
+    'UN_LW_P_FRVA',
+    'UN_LW_P_ZZAN_01'
   ];
 
   private glExcluJobs = [
+    'JB_LW_ZZAN',
+    'JB_LW_ZZAN_M',
+    'JB_LW_FRVA_M'
   ];
 
   getGLExclusiveUnitIds() {
