@@ -3507,6 +3507,46 @@
     "type": "job_awake_orb",
     "icon": "JB_LW_MSM_FIRE"
   },
+  "IT_JB_MM_OBRN": {
+    "dataId": "IT_JB_MM_OBRN",
+    "names": {
+      "en": "若き紫竜王の記憶・翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_OBRN"
+  },
+  "IT_JB_MM_OBRN_2": {
+    "dataId": "IT_JB_MM_OBRN_2",
+    "names": {
+      "en": "若き紫竜王の記憶・碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_OBRN"
+  },
+  "IT_JB_MM_OBRN_3": {
+    "dataId": "IT_JB_MM_OBRN_3",
+    "names": {
+      "en": "若き紫竜王の記憶・紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_OBRN"
+  },
+  "IT_JB_MM_OBRN_4": {
+    "dataId": "IT_JB_MM_OBRN_4",
+    "names": {
+      "en": "若き紫竜王の記憶・橘"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_OBRN"
+  },
+  "IT_JB_MM_OBRN_5": {
+    "dataId": "IT_JB_MM_OBRN_5",
+    "names": {
+      "en": "若き紫竜王の記憶・緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_OBRN"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -5432,6 +5472,13 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_OBRN": {
+    "dataId": "IT_PI_LW_OBRN",
+    "names": {
+      "en": "オベロン・ハインドラの欠片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -6255,6 +6302,13 @@
     "dataId": "IT_SP_LW_LMIG",
     "names": {
       "en": "ラメイガの思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_OBRN": {
+    "dataId": "IT_SP_LW_OBRN",
+    "names": {
+      "en": "オベロン・ハインドラの思珠"
     },
     "type": "exjob_orb"
   },
@@ -7828,7 +7882,7 @@
   "IT_AF_LW_SPE_003": {
     "dataId": "IT_AF_LW_SPE_003",
     "names": {
-      "en": "ウィンドスピアのクラフトレシピ - Gust Spear Crafting Recipe"
+      "en": "エレメントスピアのクラフトレシピ - Gust Spear Crafting Recipe"
     },
     "type": "recipe",
     "icon": "AF_LW_SPE_003"
@@ -9335,6 +9389,14 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_04"
   },
+  "IT_EC_SUMMON02_07U_A": {
+    "dataId": "IT_EC_SUMMON02_07U_A",
+    "names": {
+      "en": "【7月】ユニット召喚メダルA"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_03"
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -9502,6 +9564,14 @@
     "dataId": "IT_EC_EV13_1",
     "names": {
       "en": "秘刀・雷鳴丸の行方メダル"
+    },
+    "type": "medal",
+    "icon": "IT_EC_EV10_1"
+  },
+  "IT_EC_EV14_1": {
+    "dataId": "IT_EC_EV14_1",
+    "names": {
+      "en": "希望という名のメダル"
     },
     "type": "medal",
     "icon": "IT_EC_EV10_1"
@@ -10684,6 +10754,22 @@
     "type": "tickets",
     "icon": "IT_US_G_PU_01"
   },
+  "IT_US_G_PU_OBRN": {
+    "dataId": "IT_US_G_PU_OBRN",
+    "names": {
+      "en": "【オベロン・ハインドラ】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01"
+  },
+  "IT_US_G_PU_OBRN_10": {
+    "dataId": "IT_US_G_PU_OBRN_10",
+    "names": {
+      "en": "【オベロン・ハインドラ】ピックアップ10連召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_10"
+  },
   "IT_US_SE_JB_MM_01": {
     "dataId": "IT_US_SE_JB_MM_01",
     "names": {
@@ -11488,6 +11574,14 @@
     "dataId": "IT_US_SE_PI_43",
     "names": {
       "en": "【1500万DL記念】SSRユニット欠片×50選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_44": {
+    "dataId": "IT_US_SE_PI_44",
+    "names": {
+      "en": "【6月民営放送】ユニット欠片×40選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -13885,6 +13979,14 @@
     },
     "type": "stamp",
     "icon": "IT_STAMP_06"
+  },
+  "IT_STAMP_2107": {
+    "dataId": "IT_STAMP_2107",
+    "names": {
+      "en": "7月印章"
+    },
+    "type": "stamp",
+    "icon": "IT_STAMP_07"
   },
   "IT_JB_MM_LW_ZZAN": {
     "dataId": "IT_JB_MM_LW_ZZAN",

@@ -6832,6 +6832,27 @@
         "m4": "JM_EXEM_WATER_M",
         "m5": "JM_EX_GUN_DR_M"
       }
+    },
+    {
+      "iname": "JBLV_LW_OBRN_M",
+      "gil": "JBMAT_JB_GIL_M",
+      "items": {
+        "m1": "JBMAT_JB_MM_ALL",
+        "m2": "JBMAT_JB_IM_ANGEL",
+        "m3": "JBMAT_JB_EM_SOIL",
+        "m4": "JBMAT_JB_SPEAR"
+      }
+    },
+    {
+      "iname": "JBLV_LW_OBRN_EXM",
+      "gil": "JM_EX_GIL_M",
+      "items": {
+        "m1": "JM_EX_MM_ALL",
+        "m2": "JM_EX_OBRN_M",
+        "m3": "JM_EX_SPEAR_M",
+        "m4": "JM_EXEM_SOIL_M",
+        "m5": "JM_EX_SPEAR_AN_M"
+      }
     }
   ]
 }

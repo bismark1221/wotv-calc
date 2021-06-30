@@ -704,6 +704,11 @@
       "hurl": "ev_vluc_01"
     },
     {
+      "iname": "SE_EV_OBRN_01",
+      "limit": 1,
+      "hurl": "ev_obrn_01"
+    },
+    {
       "iname": "SE_EV_JDN_01",
       "hurl": "ev_jdn_01"
     },
@@ -764,6 +769,10 @@
     {
       "iname": "SE_EV_CRL_01",
       "hurl": "ev_crl_01"
+    },
+    {
+      "iname": "SE_EV_OBR_01",
+      "hurl": "ev_obr_01"
     },
     {
       "iname": "SE_EV_VC_DMCM_01",
@@ -1094,6 +1103,21 @@
       "iname": "SE_MU_FF10_02_EX",
       "hurl": "ev_ff10_ex_02",
       "won_dst_sheet_name": "bgm_ff10_Victory_Fanfare"
+    },
+    {
+      "iname": "SE_EV_14_01",
+      "hurl": "ev_14_01"
+    },
+    {
+      "iname": "SE_EV_14_EX_01",
+      "hurl": "ev_14_ex_01",
+      "o_cond_q": [
+        "QE_EV_14_10"
+      ]
+    },
+    {
+      "iname": "SE_MU_EV_14_EX",
+      "hurl": "ev_14_ex_01"
     },
     {
       "iname": "SE_EV_13_01",
