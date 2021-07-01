@@ -40,14 +40,10 @@ export class CardService {
     'VC_LW_ART',
     'VC_MBFF_MV1',
     'VC_MBFF_MV2',
-    'VC_LW_NEWYEAR',
-    'VC_LW_OOOO',
     'VC_LW_MOGL',
-    'VC_LW_KRKN',
     'VC_FF7_MV1',
     'VC_FF7_SCPN',
-    'AF_FF7_ROD_000',
-    'AF_FF7_ACC_003'
+    'VC_LW_GREEN'
   ];
 
   private JP_limitedCards = [
@@ -73,15 +69,11 @@ export class CardService {
     'VC_MBFF_MV1',
     'VC_MBFF_MV2',
     'VC_LW_NEWYEAR',
-    'VC_LW_OOOO',
     'VC_LW_WHITEDAY1',
     'VC_LW_APPLE',
     'VC_LW_MOGL',
-    'VC_LW_KRKN',
     'VC_FF7_MV1',
-    'VC_FF7_SCPN',
-    'AF_FF7_ROD_000',
-    'AF_FF7_ACC_003'
+    'VC_FF7_SCPN'
   ];
 
   constructor(
