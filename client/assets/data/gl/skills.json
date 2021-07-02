@@ -54545,7 +54545,7 @@
         "maxValue": 50,
         "calcType": "fixe",
         "target": "self",
-        "timing": "SKILL_AFTER"
+        "timing": "SKILL_BEFORE"
       }
     ],
     "dataId": "SK_LW_ZZAN_M_2",
@@ -54740,7 +54740,7 @@
         "maxValue": 50,
         "calcType": "fixe",
         "target": "self",
-        "timing": "SKILL_AFTER"
+        "timing": "SKILL_BEFORE"
       },
       {
         "type": "CRITIC_GUARENTED",
