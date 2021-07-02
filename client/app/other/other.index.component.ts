@@ -94,11 +94,13 @@ export class OtherIndexComponent implements OnInit {
   async getUnits() {
     this.units = await this.indexService.getUnits();
 
-    this.units.forEach(unit => {
-      unit.name = this.nameService.getName(unit);
-    });
+    if (this.units) {
+      this.units.forEach(unit => {
+        unit.name = this.nameService.getName(unit);
+      });
 
-    this.sortTable();
+      this.sortTable();
+    }
   }
 
   getRoute(route) {

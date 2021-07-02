@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { of } from 'rxjs';
 import 'rxjs/add/operator/map';
 import { ToastrService } from 'ngx-toastr';
@@ -13,7 +12,6 @@ export class DataService {
   private launchedRequests = {};
 
   constructor(
-    private localStorageService: LocalStorageService,
     private navService: NavService,
     private checkHashService: CheckHashService,
     private http: HttpClient,

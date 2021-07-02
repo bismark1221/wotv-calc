@@ -10,6 +10,7 @@ import { JobService } from '../services/job.service';
 import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
+import { IndexService } from '../services/index.service';
 
 @Component({
   selector: 'app-unit',
@@ -75,7 +76,8 @@ export class UnitComponent implements OnInit {
     private translateService: TranslateService,
     private gridService: GridService,
     private navService: NavService,
-    private nameService: NameService
+    private nameService: NameService,
+    private indexService: IndexService
   ) {}
 
   ngOnInit(): void {
@@ -516,54 +518,56 @@ export class UnitComponent implements OnInit {
   }
 
   async getIndexUnit() {
-    const buildedUnit = await this.unitService.selectUnitForBuilder(this.unit.dataId, null, true);
+    const indexUnit = await this.indexService.getOneUnit(this.unit.dataId);
 
-    const stats = {};
-    Object.keys(buildedUnit.stats).forEach(statType => {
-      stats[statType] = buildedUnit.stats[statType].total;
-    });
+    if (indexUnit) {
+      const stats = {};
+      Object.keys(indexUnit.stats).forEach(statType => {
+        stats[statType] = indexUnit.stats[statType];
+      });
 
-    const indexStatsType = [
-      'HP',
-      'TP',
-      'AP',
-      'ATK',
-      'DEF',
-      'MAG',
-      'SPR',
-      'AGI',
-      'DEX',
-      'LUCK',
-      'EVADE',
-      'ACCURACY',
-      'CRITIC_RATE'
-    ];
+      const indexStatsType = [
+        'HP',
+        'TP',
+        'AP',
+        'ATK',
+        'DEF',
+        'MAG',
+        'SPR',
+        'AGI',
+        'DEX',
+        'LUCK',
+        'EVADE',
+        'ACCURACY',
+        'CRITIC_RATE'
+      ];
 
-    this.indexUnit = [[]];
-    indexStatsType.forEach(stat => {
-      if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
-        this.indexUnit.push([]);
-      }
+      this.indexUnit = [[]];
+      indexStatsType.forEach(stat => {
+        if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
+          this.indexUnit.push([]);
+        }
 
-      if (stats[stat]) {
-        this.indexUnit[this.indexUnit.length - 1].push({
-          type: stat,
-          value: stats[stat]
-        });
-      }
-    });
+        if (stats[stat]) {
+          this.indexUnit[this.indexUnit.length - 1].push({
+            type: stat,
+            value: stats[stat]
+          });
+        }
+      });
 
-    this.indexImageStatsType.forEach(stat => {
-      if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
-        this.indexUnit.push([]);
-      }
+      this.indexImageStatsType.forEach(stat => {
+        if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
+          this.indexUnit.push([]);
+        }
 
-      if (stats[stat]) {
-        this.indexUnit[this.indexUnit.length - 1].push({
-          type: stat,
-          value: stats[stat]
-        });
-      }
-    });
+        if (stats[stat]) {
+          this.indexUnit[this.indexUnit.length - 1].push({
+            type: stat,
+            value: stats[stat]
+          });
+        }
+      });
+    }
   }
 }

@@ -1,22 +1,18 @@
 import { Injectable } from '@angular/core';
 
-import { NavService } from './nav.service';
-import { DataService } from './data.service';
+import { ApiService } from './api.service';
 
 @Injectable()
 export class IndexService {
   constructor(
-    private dataService: DataService,
-    private navService: NavService
+    private apiService: ApiService
   ) {}
 
-  private getRaw() {
-    return this.dataService.loadData('index');
+  async getUnits() {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('index')));
   }
 
-  async getUnits() {
-    const raw = JSON.parse(JSON.stringify(await this.getRaw()));
-
-    return raw.units;
+  async getOneUnit(dataId) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('index', dataId)));
   }
 }

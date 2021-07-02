@@ -107,6 +107,7 @@ import { QuestService } from './services/quest.service';
 import { DataService } from './services/data.service';
 import { SimulatorService } from './services/simulator.service';
 import { OtherUnitService } from './services/otherunit.service';
+import { ApiService } from './services/api.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -228,6 +229,7 @@ export function createTranslateLoader(http: HttpClient) {
     DataService,
     SimulatorService,
     OtherUnitService,
+    ApiService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler
