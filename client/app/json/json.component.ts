@@ -46,6 +46,7 @@ export class JsonComponent implements OnInit {
         'names': buildedUnit.names,
         'stats': stats,
         'image': buildedUnit.image,
+        'dataId': buildedUnit.dataId
       });
 
       this['loadingIndex' + version]--;
