@@ -4,7 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Raid } from '../entities/raid';
 
 import { NavService } from './nav.service';
-import { DataService } from './data.service';
+import { ApiService } from './api.service';
 import { ToolService } from './tool.service';
 
 @Injectable()
@@ -17,19 +17,19 @@ export class RaidService {
 
   constructor(
     private translateService: TranslateService,
-    private dataService: DataService,
+    private apiService: ApiService,
     private toolService: ToolService,
     private navService: NavService
   ) {}
 
-  private getRaw() {
-    return this.dataService.loadData('raids');
+  private async getRaw(param = null, extraQuery = []) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('raids', param, extraQuery)));
   }
 
   async getRaids() {
     if (this[this.navService.getVersion() + '_raids'] === null || this[this.navService.getVersion() + '_raids'] === undefined) {
       const raids: Raid[] = [];
-      const rawRaids = JSON.parse(JSON.stringify(await this.getRaw()));
+      const rawRaids = await this.getRaw();
 
       Object.keys(rawRaids).forEach(raidId => {
         const raid = new Raid();
@@ -43,16 +43,16 @@ export class RaidService {
     return this[this.navService.getVersion() + '_raids'];
   }
 
-  async getRaid(id: string) {
-    await this.getRaids();
-
-    return this[this.navService.getVersion() + '_raids'].find(raid => raid.dataId === id);
-  }
-
   async getRaidBySlug(slug: string) {
-    await this.getRaids();
+    let raid = null;
+    const rawRaid = await this.getRaw(slug, [{name: 'withSkills', value: 1}]);
 
-    return this[this.navService.getVersion() + '_raids'].find(raid => raid.slug === slug);
+    if (rawRaid) {
+      raid = new Raid();
+      raid.constructFromJson(rawRaid, this.translateService);
+    }
+
+    return raid;
   }
 
   async getRaidsForListing(filters, sort, order = 'asc') {

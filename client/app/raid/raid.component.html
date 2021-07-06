@@ -230,7 +230,7 @@
                 <th class="sub rangeTd">Range</th>
                 <th class="sub skillHitTd">Hits</th>
               </tr>
-              <tr>
+              <tr *ngIf="boss.formattedAttack">
                 <td class="skillNameTd">Basic Attack</td>
                 <td>
                   <span *ngIf="boss.formattedAttack.based"><img title="{{ boss.formattedAttack.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + boss.formattedAttack.based + '.png'}}" /></span>
@@ -303,9 +303,9 @@
                 <th class="sub skillHitTd">Hits</th>
                 <th class="sub skillCostTd">Cost</th>
               </tr>
-              <tr *ngFor="let skill of boss.formattedSkills">
-                <td>{{ boss.skills[skill.dataId].minLevel }}</td>
-                <td>{{ boss.skills[skill.dataId].maxLevel }}</td>
+              <tr *ngFor="let skill of boss.formattedSkills; let skillIndex = index">
+                <td>{{ boss.skills[skillIndex].minLevel }}</td>
+                <td>{{ boss.skills[skillIndex].maxLevel }}</td>
                 <td>
 
                   <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />

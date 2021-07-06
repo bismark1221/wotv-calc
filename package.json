@@ -7,7 +7,6 @@
     "start": "ng serve",
     "build": "ng build",
     "post-build": "node ./build/post-build.js",
-    "get-data": "npx ts-node -T ./getData.ts",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

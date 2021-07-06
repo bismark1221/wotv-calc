@@ -82,11 +82,10 @@ export class RaidComponent implements OnInit {
           CRITIC_RATE: 0,
         };
         boss.remainingBuffs = [];
-
         boss.formattedSkills = [];
 
-        for (const skillId of Object.keys(boss.skills)) {
-          const skill = await this.skillService.getSkill(skillId);
+        for (const skillData of boss.skills) {
+          const skill = skillData.skill;
 
           skill.name = this.nameService.getName(skill);
 
@@ -104,7 +103,7 @@ export class RaidComponent implements OnInit {
         }
 
         if (boss.attack) {
-          boss.formattedAttack = await this.skillService.getSkill(boss.attack);
+          boss.formattedAttack = boss.attackSkill;
           if (boss.formattedAttack) {
             boss.formattedAttack.basedHtml = boss.formattedAttack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + boss.formattedAttack.based.toLowerCase() + '.png\' />' : '';
 

@@ -14,10 +14,24 @@ export class ApiService {
     private http: HttpClient
   ) {}
 
-  public async loadData(type, id = null, forcedVersion = null) {
+  public async loadData(type, param = null, extraQuery = [], forcedVersion = null) {
     const version = forcedVersion === 'JP' || this.navService.getVersion() === 'JP' ? 'jp' : 'gl';
 
-    return this.http.get('/api/' + version + '/' + type + (id ? '/' + id : ''))
+    let uri = '/api/' + version + '/' + type + (param ? '/' + param : '');
+
+    if (extraQuery.length > 0) {
+      uri += '?';
+
+      extraQuery.forEach((query, queryIndex) => {
+        if (queryIndex > 0) {
+          uri += '&';
+        }
+
+        uri += query.name + '=' + query.value;
+      });
+    }
+
+    return this.http.get(uri)
       .map(response => {
         return response;
       })

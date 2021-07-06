@@ -172,38 +172,38 @@
         "species": "aquatic",
         "element": "earth",
         "image": "lapscsli",
-        "skills": {
-          "SK_CSLI_M_01": {
+        "skills": [
+          {
             "dataId": "SK_CSLI_M_01",
             "rate": 60,
             "minLevel": 1,
             "maxLevel": 150
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 150
           },
-          "SK_CSLI_M_02": {
+          {
             "dataId": "SK_CSLI_M_02",
             "rate": 10,
             "minLevel": 61,
             "maxLevel": 150
           },
-          "SK_CSLI_M_03": {
+          {
             "dataId": "SK_CSLI_M_03",
             "rate": 30,
             "minLevel": 61,
             "maxLevel": 150
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 61,
             "maxLevel": 150
           }
-        },
+        ],
         "slug": "chocolate-flan",
         "attack": "SK_CSLI_ATK"
       }
@@ -408,44 +408,44 @@
         "species": "aquatic",
         "element": "light",
         "image": "lapscsli_01",
-        "skills": {
-          "SK_CSLI_01_M_01": {
+        "skills": [
+          {
             "dataId": "SK_CSLI_01_M_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 150
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 150
           },
-          "SK_BTL_DF_1-80_U": {
+          {
             "dataId": "SK_BTL_DF_1-80_U",
             "rate": 100,
             "minLevel": 31,
             "maxLevel": 150
           },
-          "SK_BTL_MDF_1-80_U": {
+          {
             "dataId": "SK_BTL_MDF_1-80_U",
             "rate": 100,
             "minLevel": 31,
             "maxLevel": 150
           },
-          "SK_CSLI_01_M_02": {
+          {
             "dataId": "SK_CSLI_01_M_02",
             "rate": 100,
             "minLevel": 61,
             "maxLevel": 150
           },
-          "SK_CSLI_01_M_03": {
+          {
             "dataId": "SK_CSLI_01_M_03",
             "rate": 100,
             "minLevel": 61,
             "maxLevel": 150
           }
-        },
+        ],
         "slug": "white-marshmallow",
         "attack": "SK_CSLI_01_ATK"
       }
@@ -623,50 +623,50 @@
         "species": "machine",
         "element": "dark",
         "image": "ff01wrmc",
-        "skills": {
-          "SK_BTL_INV_HPDOWN": {
+        "skills": [
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_WRMC_M_01": {
+          {
             "dataId": "SK_WRMC_M_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_WRMC_M_02": {
+          {
             "dataId": "SK_WRMC_M_02",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_WRMC_M_03": {
+          {
             "dataId": "SK_WRMC_M_03",
             "rate": 20,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_BTL_DONMV_1-100_D": {
+          {
             "dataId": "SK_BTL_DONMV_1-100_D",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           }
-        },
+        ],
         "slug": "death-machine",
         "attack": "SK_WRMC_ATK"
       }
@@ -850,56 +850,56 @@
         "species": "netherBeast",
         "element": "fire",
         "image": "lapsifrt",
-        "skills": {
-          "SK_IFRT_M_01": {
+        "skills": [
+          {
             "dataId": "SK_IFRT_M_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_IFRT_M_02": {
+          {
             "dataId": "SK_IFRT_M_02",
             "rate": 50,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_IFRT_M_03": {
+          {
             "dataId": "SK_IFRT_M_03",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_IFRT_M_04": {
+          {
             "dataId": "SK_IFRT_M_04",
             "rate": 0,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_RES_ICE_1_80_U": {
+          {
             "dataId": "SK_BTL_RES_ICE_1_80_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_MOVE_1-20_U": {
+          {
             "dataId": "SK_BTL_MOVE_1-20_U",
             "rate": 100,
             "minLevel": 31,
             "maxLevel": 100
           }
-        },
+        ],
         "slug": "ifrit",
         "attack": "SK_IFRT_ATK"
       },
@@ -1065,56 +1065,56 @@
         "species": "plant",
         "element": "earth",
         "image": "lapscact_02",
-        "skills": {
-          "SK_CACT_M_01": {
+        "skills": [
+          {
             "dataId": "SK_CACT_M_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_CACT_M_02": {
+          {
             "dataId": "SK_CACT_M_02",
             "rate": 5,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_CACT_M_03": {
+          {
             "dataId": "SK_CACT_M_03",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_LW_HIT_5_N_R": {
+          {
             "dataId": "SK_LW_HIT_5_N_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 3
           },
-          "SK_LW_HIT_5_SSR": {
+          {
             "dataId": "SK_LW_HIT_5_SSR",
             "rate": 100,
             "minLevel": 4,
             "maxLevel": 6
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 7,
             "maxLevel": 10
           }
-        },
+        ],
         "slug": "gold-cactuar",
         "attack": "SK_CACT_ATK"
       }
@@ -1298,50 +1298,50 @@
         "species": "beast",
         "element": "dark",
         "image": "lapsbhmt",
-        "skills": {
-          "SK_BHMT_M_01_02": {
+        "skills": [
+          {
             "dataId": "SK_BHMT_M_01_02",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BHMT_M_02_02": {
+          {
             "dataId": "SK_BHMT_M_02_02",
             "rate": 50,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BHMT_M_03_02": {
+          {
             "dataId": "SK_BHMT_M_03_02",
             "rate": 10,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_MOVE_1-20_U": {
+          {
             "dataId": "SK_BTL_MOVE_1-20_U",
             "rate": 100,
             "minLevel": 31,
             "maxLevel": 100
           }
-        },
+        ],
         "slug": "behemoth-king",
         "attack": "SK_BHMT_ATK"
       },
@@ -1507,68 +1507,68 @@
         "species": "human",
         "element": "wind",
         "image": "lapstnbr",
-        "skills": {
-          "SK_TNBR_M_01": {
+        "skills": [
+          {
             "dataId": "SK_TNBR_M_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_TNBR_M_02": {
+          {
             "dataId": "SK_TNBR_M_02",
             "rate": 50,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_TNBR_M_03": {
+          {
             "dataId": "SK_TNBR_M_03",
             "rate": 10,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_TNBR_M_04_R": {
+          {
             "dataId": "SK_TNBR_M_04_R",
             "rate": 10,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_LW_HIT_5_N_R": {
+          {
             "dataId": "SK_LW_HIT_5_N_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 3
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_LW_HIT_5_SSR": {
+          {
             "dataId": "SK_LW_HIT_5_SSR",
             "rate": 100,
             "minLevel": 4,
             "maxLevel": 6
           },
-          "SK_LW_HIT_5_UR": {
+          {
             "dataId": "SK_LW_HIT_5_UR",
             "rate": 100,
             "minLevel": 7,
             "maxLevel": 10
           }
-        },
+        ],
         "slug": "tonberry",
         "attack": "SK_TNBR_ATK"
       }
@@ -1770,62 +1770,62 @@
         "species": "dragon",
         "element": "light",
         "image": "lapsthdg",
-        "skills": {
-          "SK_THDG_R_01_RA": {
+        "skills": [
+          {
             "dataId": "SK_THDG_R_01_RA",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_THDG_M_01_RA": {
+          {
             "dataId": "SK_THDG_M_01_RA",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_THDG_M_03": {
+          {
             "dataId": "SK_THDG_M_03",
             "rate": 50,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_THDG_M_04": {
+          {
             "dataId": "SK_THDG_M_04",
             "rate": 50,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_THDG_M_05": {
+          {
             "dataId": "SK_THDG_M_05",
             "rate": 20,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           }
-        },
+        ],
         "slug": "two-headed-dragon",
         "attack": "SK_THDG_ATK"
       },
@@ -2015,62 +2015,62 @@
         "species": "aquatic",
         "element": "wind",
         "image": "lapscsli_02",
-        "skills": {
-          "SK_CSLI_02_M_01_RA": {
+        "skills": [
+          {
             "dataId": "SK_CSLI_02_M_01_RA",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_CSLI_02_M_02": {
+          {
             "dataId": "SK_CSLI_02_M_02",
             "rate": 60,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_CSLI_02_M_03": {
+          {
             "dataId": "SK_CSLI_02_M_03",
             "rate": 5,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_RES_OTICE_1_80_U": {
+          {
             "dataId": "SK_BTL_RES_OTICE_1_80_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_RES_MAGIC_1_80_U_KISO": {
+          {
             "dataId": "SK_BTL_RES_MAGIC_1_80_U_KISO",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           }
-        },
+        ],
         "slug": "flan-princess",
         "attack": "SK_CSLI_02_ATK"
       }
@@ -2275,56 +2275,56 @@
         "species": "",
         "element": "light",
         "image": "ff14boss",
-        "skills": {
-          "SK_FF14BOSS_M_01": {
+        "skills": [
+          {
             "dataId": "SK_FF14BOSS_M_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_FF14BOSS_M_02": {
+          {
             "dataId": "SK_FF14BOSS_M_02",
             "rate": 40,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_FF14BOSS_M_03": {
+          {
             "dataId": "SK_FF14BOSS_M_03",
             "rate": 0,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_BTL_KILLER_DARK_1-100_U": {
+          {
             "dataId": "SK_BTL_KILLER_DARK_1-100_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           },
-          "SK_BTL_DEFPIERCE_1-100_U_KISO": {
+          {
             "dataId": "SK_BTL_DEFPIERCE_1-100_U_KISO",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 80
           }
-        },
+        ],
         "slug": "forgiven-dissonance",
         "attack": "SK_FF14BOSS_ATK"
       }
@@ -2505,56 +2505,56 @@
         "species": "netherBeast",
         "element": "water",
         "image": "lapssire",
-        "skills": {
-          "SK_SIRE_M_01_RA": {
+        "skills": [
+          {
             "dataId": "SK_SIRE_M_01_RA",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_SIRE_M_02_RA": {
+          {
             "dataId": "SK_SIRE_M_02_RA",
             "rate": 50,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_SIRE_M_04_RA": {
+          {
             "dataId": "SK_SIRE_M_04_RA",
             "rate": 0,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_RESDB_SLASH_1_100_U": {
+          {
             "dataId": "SK_BTL_RESDB_SLASH_1_100_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_RESDB_ELEMALL1_1_100_U": {
+          {
             "dataId": "SK_BTL_RESDB_ELEMALL1_1_100_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           }
-        },
+        ],
         "slug": "siren",
         "attack": "SK_SIRE_ATK"
       },
@@ -2738,44 +2738,44 @@
         "species": "plant",
         "element": "ice",
         "image": "lapscact_02",
-        "skills": {
-          "SK_CACT_M_01": {
+        "skills": [
+          {
             "dataId": "SK_CACT_M_01",
             "rate": 50,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_CACT_M_02": {
+          {
             "dataId": "SK_CACT_M_02",
             "rate": 0,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_CACT_M_03": {
+          {
             "dataId": "SK_CACT_M_03",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           }
-        },
+        ],
         "slug": "gold-cactuar",
         "attack": "SK_CACT_ATK"
       }
@@ -2992,50 +2992,50 @@
         "species": "netherBeast",
         "element": "earth",
         "image": "lapsglem",
-        "skills": {
-          "SK_GLEM_M_01_R": {
+        "skills": [
+          {
             "dataId": "SK_GLEM_M_01_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 99
           },
-          "SK_GLEM_M_02_R": {
+          {
             "dataId": "SK_GLEM_M_02_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 99
           },
-          "SK_GLEM_M_03_R": {
+          {
             "dataId": "SK_GLEM_M_03_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 99
           },
-          "SK_GLEM_M_04_R": {
+          {
             "dataId": "SK_GLEM_M_04_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 99
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 99
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 99
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 99
           }
-        },
+        ],
         "slug": "golem",
         "attack": "SK_GLEM_ATK_R"
       },
@@ -3201,50 +3201,50 @@
         "species": "human",
         "element": "ice",
         "image": "lapstnbr",
-        "skills": {
-          "SK_TNBR_M_01": {
+        "skills": [
+          {
             "dataId": "SK_TNBR_M_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_TNBR_M_02": {
+          {
             "dataId": "SK_TNBR_M_02",
             "rate": 50,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_TNBR_M_03": {
+          {
             "dataId": "SK_TNBR_M_03",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_TNBR_M_04_R": {
+          {
             "dataId": "SK_TNBR_M_04_R",
             "rate": 30,
             "minLevel": 4,
             "maxLevel": 10
           }
-        },
+        ],
         "slug": "tonberry",
         "attack": "SK_TNBR_ATK"
       }
@@ -3465,56 +3465,56 @@
         "species": "netherBeast",
         "element": "dark",
         "image": "lapsdabl",
-        "skills": {
-          "SK_DABL_M_02_R": {
+        "skills": [
+          {
             "dataId": "SK_DABL_M_02_R",
             "rate": 0,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_DABL_M_01_R": {
+          {
             "dataId": "SK_DABL_M_01_R",
             "rate": 0,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_DABL_M_04_R": {
+          {
             "dataId": "SK_DABL_M_04_R",
             "rate": 0,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_HATE_1-100_U_PA": {
+          {
             "dataId": "SK_BTL_HATE_1-100_U_PA",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_RESDB_MDF_1_100_U": {
+          {
             "dataId": "SK_BTL_RESDB_MDF_1_100_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           }
-        },
+        ],
         "slug": "diabolos",
         "attack": "SK_DABL_ATK"
       },
@@ -3683,50 +3683,50 @@
         "species": "aquatic",
         "element": "light",
         "image": "lapscsli_02",
-        "skills": {
-          "SK_CSLI_02_M_01_RA": {
+        "skills": [
+          {
             "dataId": "SK_CSLI_02_M_01_RA",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_CSLI_02_M_02": {
+          {
             "dataId": "SK_CSLI_02_M_02",
             "rate": 60,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_CSLI_02_M_03_RA": {
+          {
             "dataId": "SK_CSLI_02_M_03_RA",
             "rate": 5,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_RESDB_DF_1_100_U": {
+          {
             "dataId": "SK_BTL_RESDB_DF_1_100_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           }
-        },
+        ],
         "slug": "flan-princess",
         "attack": "SK_CSLI_02_ATK"
       }
@@ -3962,62 +3962,62 @@
         "species": "bird",
         "element": "ice",
         "image": "lapsgcal",
-        "skills": {
-          "SK_GCAL_M_01_R": {
+        "skills": [
+          {
             "dataId": "SK_GCAL_M_01_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_GCAL_M_02_R": {
+          {
             "dataId": "SK_GCAL_M_02_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_GCAL_M_03_R": {
+          {
             "dataId": "SK_GCAL_M_03_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_GCAL_R_01": {
+          {
             "dataId": "SK_GCAL_R_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_LW_TIM_P_2": {
+          {
             "dataId": "SK_LW_TIM_P_2",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_RES_SHOT_1_80_U_KISO": {
+          {
             "dataId": "SK_BTL_RES_SHOT_1_80_U_KISO",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           }
-        },
+        ],
         "slug": "glacial",
         "attack": "SK_GCAL_ATK"
       },
@@ -4183,44 +4183,44 @@
         "species": "dragon",
         "element": "water",
         "image": "lapsdrgn",
-        "skills": {
-          "SK_DRGN_M_01": {
+        "skills": [
+          {
             "dataId": "SK_DRGN_M_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_DRGN_M_02": {
+          {
             "dataId": "SK_DRGN_M_02",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           }
-        },
+        ],
         "slug": "mini-dragon",
         "attack": "SK_DRGN_ATK"
       }
@@ -4442,74 +4442,74 @@
         "species": "demon",
         "element": "light",
         "image": "lapsignt",
-        "skills": {
-          "SK_IGNT_M_01_R": {
+        "skills": [
+          {
             "dataId": "SK_IGNT_M_01_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 60
           },
-          "SK_IGNT_M_02_R": {
+          {
             "dataId": "SK_IGNT_M_02_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_IGNT_M_03_R": {
+          {
             "dataId": "SK_IGNT_M_03_R",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 100
           },
-          "SK_BTL_DF_1-80_U": {
+          {
             "dataId": "SK_BTL_DF_1-80_U",
             "rate": 100,
             "minLevel": 31,
             "maxLevel": 100
           },
-          "SK_BTL_MDF_1-80_U": {
+          {
             "dataId": "SK_BTL_MDF_1-80_U",
             "rate": 100,
             "minLevel": 31,
             "maxLevel": 100
           },
-          "SK_IGNT_M_01_B_R": {
+          {
             "dataId": "SK_IGNT_M_01_B_R",
             "rate": 100,
             "minLevel": 61,
             "maxLevel": 100
           },
-          "SK_BTL_STR_SLASH_1_100_U": {
+          {
             "dataId": "SK_BTL_STR_SLASH_1_100_U",
             "rate": 100,
             "minLevel": 61,
             "maxLevel": 100
           }
-        },
+        ],
         "slug": "red-giant",
         "attack": "SK_IGNT_ATK"
       },
@@ -4678,50 +4678,50 @@
         "species": "aquatic",
         "element": "water",
         "image": "lapscsli",
-        "skills": {
-          "SK_CSLI_M_01": {
+        "skills": [
+          {
             "dataId": "SK_CSLI_M_01",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_HIT_1_999_U": {
+          {
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_HPDOWN": {
+          {
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_SPDDOWN": {
+          {
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_BTL_INV_CTDOWN": {
+          {
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
             "minLevel": 1,
             "maxLevel": 10
           },
-          "SK_CSLI_M_02": {
+          {
             "dataId": "SK_CSLI_M_02",
             "rate": 100,
             "minLevel": 4,
             "maxLevel": 10
           },
-          "SK_CSLI_M_03": {
+          {
             "dataId": "SK_CSLI_M_03",
             "rate": 20,
             "minLevel": 7,
             "maxLevel": 10
           }
-        },
+        ],
         "slug": "chocolate-flan",
         "attack": "SK_CSLI_ATK"
       }
