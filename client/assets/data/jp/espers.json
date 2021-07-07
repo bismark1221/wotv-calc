@@ -17892,6 +17892,856 @@
     "slug": "gdo-sukopion",
     "releaseDate": "01/05/2021"
   },
+  "UN_LW_S_EFKS": {
+    "dataId": "UN_LW_S_EFKS",
+    "names": {
+      "en": "エラフィケラス"
+    },
+    "rarity": "UR",
+    "cost": 40,
+    "skill": "SK_SMN_EFKS",
+    "stats": {
+      "HP": [
+        {
+          "min": 92,
+          "max": 421
+        },
+        {
+          "min": 441,
+          "max": 841
+        },
+        {
+          "min": 861,
+          "max": 1261
+        }
+      ],
+      "TP": [
+        {
+          "min": 22,
+          "max": 30
+        },
+        {
+          "min": 32,
+          "max": 40
+        },
+        {
+          "min": 41,
+          "max": 45
+        }
+      ],
+      "AP": [
+        {
+          "min": 26,
+          "max": 33
+        },
+        {
+          "min": 34,
+          "max": 41
+        },
+        {
+          "min": 42,
+          "max": 45
+        }
+      ],
+      "ATK": [
+        {
+          "min": 32,
+          "max": 51
+        },
+        {
+          "min": 53,
+          "max": 77
+        },
+        {
+          "min": 79,
+          "max": 103
+        }
+      ],
+      "DEF": [
+        {},
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 13,
+          "max": 21
+        },
+        {
+          "min": 22,
+          "max": 31
+        },
+        {
+          "min": 32,
+          "max": 41
+        }
+      ],
+      "DEX": [
+        {
+          "min": 25,
+          "max": 38
+        },
+        {
+          "min": 40,
+          "max": 54
+        },
+        {
+          "min": 56,
+          "max": 71
+        }
+      ],
+      "AGI": [
+        {
+          "min": 12,
+          "max": 14
+        },
+        {
+          "min": 15,
+          "max": 18
+        },
+        {
+          "min": 18,
+          "max": 19
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 29,
+          "max": 42
+        },
+        {
+          "min": 44,
+          "max": 59
+        },
+        {
+          "min": 61,
+          "max": 76
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {},
+        {}
+      ],
+      "FIRE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "ICE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "EARTH_RES": [
+        {},
+        {},
+        {}
+      ],
+      "WIND_RES": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "LIGHTNING_RES": [
+        {
+          "min": 10,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "WATER_RES": [
+        {},
+        {},
+        {}
+      ],
+      "LIGHT_RES": [
+        {},
+        {},
+        {}
+      ],
+      "DARK_RES": [
+        {},
+        {},
+        {}
+      ],
+      "SLASH_RES": [
+        {},
+        {},
+        {}
+      ],
+      "PIERCE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "STRIKE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "MISSILE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "MAGIC_RES": [
+        {},
+        {},
+        {}
+      ],
+      "POISON_RES": [
+        {},
+        {},
+        {}
+      ],
+      "BLIND_RES": [
+        {},
+        {},
+        {}
+      ],
+      "SLEEP_RES": [
+        {},
+        {},
+        {}
+      ],
+      "SILENCE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "PARALYZE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "CONFUSION_RES": [
+        {},
+        {},
+        {}
+      ],
+      "PETRIFY_RES": [
+        {},
+        {},
+        {}
+      ],
+      "TOAD_RES": [
+        {},
+        {},
+        {}
+      ],
+      "CHARM_RES": [
+        {},
+        {},
+        {}
+      ],
+      "SLOW_RES": [
+        {},
+        {},
+        {}
+      ],
+      "STOP_RES": [
+        {},
+        {},
+        {}
+      ],
+      "IMMOBILIZE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "DISABLE_RES": [
+        {},
+        {},
+        {
+          "min": 5,
+          "max": 25
+        }
+      ],
+      "BERSERK_RES": [
+        {},
+        {},
+        {}
+      ],
+      "DOOM_RES": [
+        {},
+        {},
+        {}
+      ],
+      "FROSTBITE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "STUN_RES": [
+        {},
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
+    },
+    "SPs": [
+      [
+        0,
+        10,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "element": "earth",
+    "image": "lapsefks",
+    "board": {
+      "nodes": {
+        "1": {
+          "dataId": "BUFF_EFKS_01",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "2": {
+          "dataId": "BUFF_EFKS_02",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "3": {
+          "dataId": "BUFF_EFKS_03",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "4": {
+          "dataId": "BUFF_EFKS_04",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "5": {
+          "dataId": "BUFF_EFKS_05",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "6": {
+          "dataId": "BUFF_EFKS_06",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "7": {
+          "dataId": "BUFF_EFKS_07",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "8": {
+          "dataId": "BUFF_EFKS_08",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "9": {
+          "dataId": "BUFF_EFKS_09",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "10": {
+          "dataId": "BUFF_EFKS_10",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "11": {
+          "dataId": "BUFF_EFKS_11",
+          "sp": 35,
+          "unlockStar": 2
+        },
+        "12": {
+          "dataId": "BUFF_EFKS_12",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "13": {
+          "dataId": "BUFF_EFKS_13",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "14": {
+          "dataId": "BUFF_EFKS_14",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "15": {
+          "dataId": "BUFF_EFKS_15",
+          "sp": 35,
+          "unlockStar": 2
+        },
+        "16": {
+          "dataId": "BUFF_EFKS_16",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "17": {
+          "dataId": "BUFF_EFKS_17",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "18": {
+          "dataId": "BUFF_EFKS_18",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "19": {
+          "dataId": "BUFF_EFKS_19",
+          "sp": 55,
+          "unlockStar": 2
+        },
+        "20": {
+          "dataId": "BUFF_EFKS_35",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "21": {
+          "dataId": "BUFF_EFKS_20",
+          "sp": 70,
+          "unlockStar": 2
+        },
+        "22": {
+          "dataId": "BUFF_EFKS_21",
+          "sp": 60,
+          "unlockStar": 2
+        },
+        "24": {
+          "dataId": "BUFF_EFKS_22",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "25": {
+          "dataId": "BUFF_EFKS_23",
+          "sp": 70,
+          "unlockStar": 2
+        },
+        "27": {
+          "dataId": "BUFF_EFKS_24",
+          "sp": 55,
+          "unlockStar": 2
+        },
+        "28": {
+          "dataId": "BUFF_EFKS_25",
+          "sp": 60,
+          "unlockStar": 2
+        },
+        "30": {
+          "dataId": "BUFF_EFKS_26",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "31": {
+          "dataId": "BUFF_EFKS_27",
+          "sp": 50,
+          "unlockStar": 2
+        },
+        "32": {
+          "dataId": "BUFF_EFKS_38",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "33": {
+          "dataId": "BUFF_EFKS_28",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "34": {
+          "dataId": "BUFF_EFKS_29",
+          "sp": 60,
+          "unlockStar": 2
+        },
+        "36": {
+          "dataId": "BUFF_EFKS_30",
+          "sp": 50,
+          "unlockStar": 2
+        },
+        "37": {
+          "dataId": "BUFF_EFKS_31",
+          "sp": 90,
+          "unlockStar": 2
+        },
+        "38": {
+          "dataId": "BUFF_EFKS_34",
+          "sp": 90,
+          "unlockStar": 2
+        },
+        "40": {
+          "dataId": "BUFF_EFKS_36",
+          "sp": 50,
+          "unlockStar": 2
+        },
+        "41": {
+          "dataId": "BUFF_EFKS_37",
+          "sp": 60,
+          "unlockStar": 2
+        },
+        "45": {
+          "dataId": "BUFF_EFKS_32",
+          "sp": 90,
+          "unlockStar": 2
+        },
+        "53": {
+          "dataId": "BUFF_EFKS_33",
+          "sp": 80,
+          "unlockStar": 2
+        },
+        "54": {
+          "dataId": "BUFF_EFKS_39",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "55": {
+          "dataId": "BUFF_EFKS_40",
+          "sp": 50,
+          "unlockStar": 2
+        },
+        "56": {
+          "dataId": "BUFF_EFKS_41",
+          "sp": 60,
+          "unlockStar": 2
+        }
+      },
+      "lines": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        29,
+        13,
+        14,
+        32,
+        17,
+        19,
+        20,
+        36,
+        23,
+        25,
+        26,
+        40,
+        42,
+        75,
+        48,
+        51,
+        78,
+        81,
+        58,
+        84,
+        62,
+        87,
+        68,
+        72,
+        131,
+        104,
+        117,
+        132,
+        44,
+        94,
+        96,
+        64,
+        120,
+        149,
+        150
+      ]
+    },
+    "slug": "era-fike-rasu",
+    "releaseDate": "07/07/2021"
+  },
   "UN_LW_S_IGNT": {
     "dataId": "UN_LW_S_IGNT",
     "names": {
@@ -30042,6 +30892,847 @@
     },
     "slug": "debiru-kimaira",
     "releaseDate": "07/04/2021"
+  },
+  "UN_LW_S_WHDG": {
+    "dataId": "UN_LW_S_WHDG",
+    "names": {
+      "en": "白竜"
+    },
+    "rarity": "MR",
+    "cost": 30,
+    "skill": "SK_SMN_WHDG",
+    "stats": {
+      "HP": [
+        {
+          "min": 80,
+          "max": 368
+        },
+        {
+          "min": 386,
+          "max": 742
+        },
+        {
+          "min": 760,
+          "max": 1116
+        }
+      ],
+      "TP": [
+        {
+          "min": 18,
+          "max": 25
+        },
+        {
+          "min": 27,
+          "max": 34
+        },
+        {
+          "min": 35,
+          "max": 38
+        }
+      ],
+      "AP": [
+        {
+          "min": 23,
+          "max": 29
+        },
+        {
+          "min": 30,
+          "max": 35
+        },
+        {
+          "min": 36,
+          "max": 38
+        }
+      ],
+      "ATK": [
+        {
+          "min": 15,
+          "max": 24
+        },
+        {
+          "min": 25,
+          "max": 35
+        },
+        {
+          "min": 36,
+          "max": 46
+        }
+      ],
+      "DEF": [
+        {},
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 31,
+          "max": 54
+        },
+        {
+          "min": 57,
+          "max": 83
+        },
+        {
+          "min": 86,
+          "max": 112
+        }
+      ],
+      "DEX": [
+        {
+          "min": 26,
+          "max": 39
+        },
+        {
+          "min": 41,
+          "max": 55
+        },
+        {
+          "min": 57,
+          "max": 72
+        }
+      ],
+      "AGI": [
+        {
+          "min": 10,
+          "max": 12
+        },
+        {
+          "min": 12,
+          "max": 14
+        },
+        {
+          "min": 14,
+          "max": 15
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 27,
+          "max": 40
+        },
+        {
+          "min": 42,
+          "max": 58
+        },
+        {
+          "min": 60,
+          "max": 75
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {},
+        {}
+      ],
+      "FIRE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "ICE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "EARTH_RES": [
+        {},
+        {},
+        {}
+      ],
+      "WIND_RES": [
+        {},
+        {},
+        {}
+      ],
+      "LIGHTNING_RES": [
+        {},
+        {},
+        {}
+      ],
+      "WATER_RES": [
+        {},
+        {},
+        {}
+      ],
+      "LIGHT_RES": [
+        {},
+        {},
+        {}
+      ],
+      "DARK_RES": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "SLASH_RES": [
+        {},
+        {},
+        {}
+      ],
+      "PIERCE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "STRIKE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "MISSILE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "MAGIC_RES": [
+        {},
+        {},
+        {}
+      ],
+      "POISON_RES": [
+        {},
+        {},
+        {}
+      ],
+      "BLIND_RES": [
+        {},
+        {},
+        {}
+      ],
+      "SLEEP_RES": [
+        {},
+        {},
+        {}
+      ],
+      "SILENCE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "PARALYZE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "CONFUSION_RES": [
+        {},
+        {},
+        {}
+      ],
+      "PETRIFY_RES": [
+        {},
+        {},
+        {}
+      ],
+      "TOAD_RES": [
+        {},
+        {},
+        {}
+      ],
+      "CHARM_RES": [
+        {},
+        {},
+        {}
+      ],
+      "SLOW_RES": [
+        {},
+        {},
+        {}
+      ],
+      "STOP_RES": [
+        {},
+        {},
+        {}
+      ],
+      "IMMOBILIZE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "DISABLE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "BERSERK_RES": [
+        {},
+        {},
+        {}
+      ],
+      "DOOM_RES": [
+        {},
+        {},
+        {}
+      ],
+      "FROSTBITE_RES": [
+        {},
+        {},
+        {}
+      ],
+      "STUN_RES": [
+        {},
+        {},
+        {
+          "min": 5,
+          "max": 20
+        }
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
+    },
+    "SPs": [
+      [
+        0,
+        10,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "element": "light",
+    "image": "lapswhdg",
+    "board": {
+      "nodes": {
+        "1": {
+          "dataId": "BUFF_WHDG_01",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "2": {
+          "dataId": "BUFF_WHDG_02",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "3": {
+          "dataId": "BUFF_WHDG_03",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "4": {
+          "dataId": "BUFF_WHDG_04",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "5": {
+          "dataId": "BUFF_WHDG_05",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "6": {
+          "dataId": "BUFF_WHDG_06",
+          "sp": 10,
+          "unlockStar": 2
+        },
+        "7": {
+          "dataId": "BUFF_WHDG_07",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "8": {
+          "dataId": "BUFF_WHDG_08",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "9": {
+          "dataId": "BUFF_WHDG_09",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "10": {
+          "dataId": "BUFF_WHDG_10",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "11": {
+          "dataId": "BUFF_WHDG_11",
+          "sp": 35,
+          "unlockStar": 2
+        },
+        "12": {
+          "dataId": "BUFF_WHDG_12",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "13": {
+          "dataId": "BUFF_WHDG_13",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "14": {
+          "dataId": "BUFF_WHDG_14",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "15": {
+          "dataId": "BUFF_WHDG_15",
+          "sp": 35,
+          "unlockStar": 2
+        },
+        "16": {
+          "dataId": "BUFF_WHDG_16",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "17": {
+          "dataId": "BUFF_WHDG_17",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "18": {
+          "dataId": "BUFF_WHDG_18",
+          "sp": 30,
+          "unlockStar": 2
+        },
+        "19": {
+          "dataId": "BUFF_WHDG_19",
+          "sp": 55,
+          "unlockStar": 2
+        },
+        "20": {
+          "dataId": "BUFF_WHDG_35",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "21": {
+          "dataId": "BUFF_WHDG_20",
+          "sp": 70,
+          "unlockStar": 2
+        },
+        "22": {
+          "dataId": "BUFF_WHDG_21",
+          "sp": 60,
+          "unlockStar": 2
+        },
+        "24": {
+          "dataId": "BUFF_WHDG_22",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "25": {
+          "dataId": "BUFF_WHDG_23",
+          "sp": 70,
+          "unlockStar": 2
+        },
+        "27": {
+          "dataId": "BUFF_WHDG_24",
+          "sp": 55,
+          "unlockStar": 2
+        },
+        "28": {
+          "dataId": "BUFF_WHDG_25",
+          "sp": 60,
+          "unlockStar": 2
+        },
+        "30": {
+          "dataId": "BUFF_WHDG_26",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "31": {
+          "dataId": "BUFF_WHDG_27",
+          "sp": 50,
+          "unlockStar": 2
+        },
+        "32": {
+          "dataId": "BUFF_WHDG_38",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "33": {
+          "dataId": "BUFF_WHDG_28",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "34": {
+          "dataId": "BUFF_WHDG_29",
+          "sp": 60,
+          "unlockStar": 2
+        },
+        "36": {
+          "dataId": "BUFF_WHDG_30",
+          "sp": 50,
+          "unlockStar": 2
+        },
+        "37": {
+          "dataId": "BUFF_WHDG_31",
+          "sp": 90,
+          "unlockStar": 2
+        },
+        "38": {
+          "dataId": "BUFF_WHDG_34",
+          "sp": 90,
+          "unlockStar": 2
+        },
+        "40": {
+          "dataId": "BUFF_WHDG_36",
+          "sp": 50,
+          "unlockStar": 2
+        },
+        "41": {
+          "dataId": "BUFF_WHDG_37",
+          "sp": 60,
+          "unlockStar": 2
+        },
+        "45": {
+          "dataId": "BUFF_WHDG_32",
+          "sp": 90,
+          "unlockStar": 2
+        },
+        "53": {
+          "dataId": "BUFF_WHDG_33",
+          "sp": 80,
+          "unlockStar": 2
+        },
+        "54": {
+          "dataId": "BUFF_WHDG_39",
+          "sp": 40,
+          "unlockStar": 2
+        },
+        "55": {
+          "dataId": "BUFF_WHDG_40",
+          "sp": 50,
+          "unlockStar": 2
+        },
+        "56": {
+          "dataId": "BUFF_WHDG_41",
+          "sp": 60,
+          "unlockStar": 2
+        }
+      },
+      "lines": [
+        0,
+        1,
+        2,
+        10,
+        4,
+        5,
+        29,
+        13,
+        14,
+        32,
+        17,
+        19,
+        20,
+        36,
+        24,
+        25,
+        26,
+        40,
+        42,
+        75,
+        48,
+        51,
+        78,
+        81,
+        58,
+        84,
+        62,
+        87,
+        68,
+        72,
+        131,
+        104,
+        117,
+        132,
+        44,
+        94,
+        135,
+        64,
+        120,
+        149,
+        150
+      ]
+    },
+    "slug": "hakuryuu",
+    "releaseDate": "07/07/2021"
   },
   "UN_LW_S_CACT": {
     "dataId": "UN_LW_S_CACT",

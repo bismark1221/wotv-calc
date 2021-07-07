@@ -6494,5 +6494,485 @@
       ]
     },
     "slug": "omega"
+  },
+  "RAID_ID_22": {
+    "dataId": "RAID_ID_22",
+    "names": {
+      "en": "アイガイオン"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_AGON_RAID",
+        "names": {
+          "en": "アイガイオン"
+        },
+        "stats": {
+          "HP": {
+            "min": 1300,
+            "max": 115000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 120,
+            "max": 580
+          },
+          "DEF": {
+            "min": 10,
+            "max": 20
+          },
+          "SPR": {
+            "min": 10,
+            "max": 30
+          },
+          "MAG": {
+            "min": 120,
+            "max": 600
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 28,
+            "max": 86
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "PIERCE_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MAGIC_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "FROSTBITE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STUN_RES": {},
+          "MOVE": {
+            "min": 5,
+            "max": 5
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "machine",
+        "element": "lightning",
+        "image": "lapsagon",
+        "skills": [
+          {
+            "dataId": "SK_AGON_M_01_R",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          {
+            "dataId": "SK_AGON_M_02_R",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          {
+            "dataId": "SK_AGON_M_03_R",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          {
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          {
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          {
+            "dataId": "SK_AGON_M_04_R",
+            "rate": 100,
+            "minLevel": 61,
+            "maxLevel": 100
+          }
+        ],
+        "slug": "aiga-ion",
+        "attack": "SK_AGON_ATK"
+      },
+      {
+        "dataId": "UN_LW_E_WHDG_RAID",
+        "names": {
+          "en": "白竜"
+        },
+        "stats": {
+          "HP": {
+            "min": 7000,
+            "max": 75000
+          },
+          "TP": {
+            "min": 100,
+            "max": 342
+          },
+          "AP": {
+            "min": 59,
+            "max": 264
+          },
+          "ATK": {
+            "min": 80,
+            "max": 455
+          },
+          "DEF": {
+            "min": 0,
+            "max": 10
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 100,
+            "max": 480
+          },
+          "DEX": {
+            "min": 93,
+            "max": 295
+          },
+          "AGI": {
+            "min": 33,
+            "max": 75
+          },
+          "LUCK": {
+            "min": 92,
+            "max": 235
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "SLASH_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "PIERCE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "STRIKE_RES": {
+            "min": 0,
+            "max": 0
+          },
+          "MISSILE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MAGIC_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "FROSTBITE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STUN_RES": {},
+          "MOVE": {
+            "min": 5,
+            "max": 5
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "dragon",
+        "element": "light",
+        "image": "lapswhdg",
+        "skills": [
+          {
+            "dataId": "SK_WHDG_M_01",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          {
+            "dataId": "SK_WHDG_M_02",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          {
+            "dataId": "SK_WHDG_M_03",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          {
+            "dataId": "SK_WHDG_M_04",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          {
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          {
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          }
+        ],
+        "slug": "hakuryuu",
+        "attack": "SK_WHDG_ATK"
+      }
+    ],
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_OBRN",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_GRSR",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_AILN",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_LMIG",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_ADLD",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_THLA",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_NAIA",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_CRIS",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_LVES",
+          "value": 20
+        }
+      ],
+      "cards": [
+        {
+          "cardId": "VC_LW_EFKS",
+          "value": 50
+        },
+        {
+          "cardId": "VC_LW_CMLO",
+          "value": 30
+        },
+        {
+          "cardId": "VC_LW_RAMD",
+          "value": 30
+        },
+        {
+          "cardId": "VC_LW_OCHU",
+          "value": 20
+        },
+        {
+          "cardId": "VC_LW_BHMT",
+          "value": 20
+        },
+        {
+          "cardId": "VC_LW_WHDG",
+          "value": 20
+        }
+      ]
+    },
+    "slug": "aiga-ion"
   }
 }

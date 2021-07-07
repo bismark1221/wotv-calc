@@ -7070,6 +7070,34 @@
     },
     "type": "compo_esper_awake"
   },
+  "IT_SB_AW_EFKS_R2": {
+    "dataId": "IT_SB_AW_EFKS_R2",
+    "names": {
+      "en": "エラフィケラスの獣醒石（★2）"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_EFKS_R3": {
+    "dataId": "IT_SB_AW_EFKS_R3",
+    "names": {
+      "en": "エラフィケラスの獣醒石（★3）"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_WHDG_R2": {
+    "dataId": "IT_SB_AW_WHDG_R2",
+    "names": {
+      "en": "白竜の獣醒石（★2）"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_WHDG_R3": {
+    "dataId": "IT_SB_AW_WHDG_R3",
+    "names": {
+      "en": "白竜の獣醒石（★3）"
+    },
+    "type": "compo_esper_awake"
+  },
   "IT_SB_AW_SR": {
     "dataId": "IT_SB_AW_SR",
     "names": {
@@ -8647,6 +8675,14 @@
     "type": "recipe",
     "icon": "AF_LW_ACC_048"
   },
+  "IT_AF_LW_ARM_031": {
+    "dataId": "IT_AF_LW_ARM_031",
+    "names": {
+      "en": "蒼竜の鎧のクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_ARM_031"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -8927,6 +8963,14 @@
     "dataId": "IT_EC_RAID_18",
     "names": {
       "en": "【6月】レイドメダル"
+    },
+    "type": "medal",
+    "icon": "IT_EC_RAID_13"
+  },
+  "IT_EC_RAID_19": {
+    "dataId": "IT_EC_RAID_19",
+    "names": {
+      "en": "【7月】レイドメダル"
     },
     "type": "medal",
     "icon": "IT_EC_RAID_13"
@@ -9396,6 +9440,14 @@
     },
     "type": "medal",
     "icon": "IT_EC_SUMMON_03"
+  },
+  "IT_EC_SUMMON02_07V_A": {
+    "dataId": "IT_EC_SUMMON02_07V_A",
+    "names": {
+      "en": "【7月】ビジョン召喚メダルA"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_04"
   },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
@@ -10642,6 +10694,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_SB_EXP_12": {
+    "dataId": "IT_US_SE_SB_EXP_12",
+    "names": {
+      "en": "属性の魔石（大）×500選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_G_U_UR_01": {
     "dataId": "IT_US_G_U_UR_01",
     "names": {
@@ -10769,6 +10829,14 @@
     },
     "type": "tickets",
     "icon": "IT_US_G_PU_10"
+  },
+  "IT_US_G_PU_VC_EFKS": {
+    "dataId": "IT_US_G_PU_VC_EFKS",
+    "names": {
+      "en": "【爆進鉱獣　エラフィケラス】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01"
   },
   "IT_US_SE_JB_MM_01": {
     "dataId": "IT_US_SE_JB_MM_01",
@@ -11834,6 +11902,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_AF_AW_22": {
+    "dataId": "IT_US_SE_AF_AW_22",
+    "names": {
+      "en": "【2021七夕CP】秘伝書×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
     "names": {
@@ -12706,6 +12782,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JBEX_AF_20": {
+    "dataId": "IT_US_SE_JBEX_AF_20",
+    "names": {
+      "en": "【2021七夕CP】焦印石×300選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_SP_LW_01": {
     "dataId": "IT_US_SE_SP_LW_01",
     "names": {
@@ -13204,6 +13288,13 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_EFKS": {
+    "dataId": "IT_VPI_LW_EFKS",
+    "names": {
+      "en": "爆進鉱獣　エラフィケラスの欠片"
+    },
+    "type": "vc_shard"
+  },
   "IT_VPI_LW_IGNT": {
     "dataId": "IT_VPI_LW_IGNT",
     "names": {
@@ -13502,6 +13593,13 @@
     "dataId": "IT_VPI_LW_IGEN",
     "names": {
       "en": "森閑のぬくもりの欠片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_WHDG": {
+    "dataId": "IT_VPI_LW_WHDG",
+    "names": {
+      "en": "輝光竜蛇　白竜の欠片"
     },
     "type": "vc_shard"
   },

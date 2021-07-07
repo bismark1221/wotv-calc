@@ -6244,6 +6244,118 @@
       }
     ]
   },
+  "VC_LW_EFKS": {
+    "dataId": "VC_LW_EFKS",
+    "names": {
+      "en": "爆進鉱獣　エラフィケラス"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 322
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 38,
+        "max": 147
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {
+        "min": 1,
+        "max": 3
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsefks",
+    "releaseDate": "07/07/2021",
+    "slug": "bakushin-aragane-kemono-era-fike-rasu",
+    "partyBuffs": [
+      {
+        "classic": "SK_VC_LW_EFKS_GS",
+        "awake": "SK_VC_LW_EFKS_GS_AW",
+        "lvmax": "SK_VC_LW_EFKS_GSMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_VC_LW_EFKS_GS_2",
+        "awake": "SK_VC_LW_EFKS_GS_AW_2",
+        "lvmax": "SK_VC_LW_EFKS_GSMAX_2",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": "SK_VC_LW_EFKS_P",
+        "awake": "SK_VC_LW_EFKS_PAW",
+        "lvmax": "SK_VC_LW_EFKS_PMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -10514,6 +10626,119 @@
             "type": "elem",
             "items": [
               "ice"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_WHDG": {
+    "dataId": "VC_LW_WHDG",
+    "names": {
+      "en": "輝光竜蛇　白竜"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 27,
+        "max": 220
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 18,
+        "max": 74
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 20,
+        "max": 82
+      },
+      "DEX": {
+        "min": 12,
+        "max": 45
+      },
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapswhdg",
+    "releaseDate": "07/07/2021",
+    "slug": "terumitsu-tatsuda-hakuryuu",
+    "partyBuffs": [
+      {
+        "classic": "SK_VC_LW_WHDG_GS",
+        "awake": "SK_VC_LW_WHDG_GSAW",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_VC_LW_WHDG_GS_2",
+        "awake": "SK_VC_LW_WHDG_GSAW_2",
+        "lvmax": "SK_VC_LW_WHDG_GSMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": "SK_VC_LW_WHDG_P",
+        "awake": "SK_VC_LW_WHDG_PAW",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
             ]
           }
         ]
