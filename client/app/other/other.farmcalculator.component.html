@@ -73,13 +73,13 @@
             <td class="dropRateTd">
               <div *ngFor="let item of quest.findedItems" class="dropRateItemBlock">
                 <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
-                <div *ngIf="quest.items[item.dataId].drop">
-                  ({{ quest.items[item.dataId].drop.minNum }}<span *ngIf="quest.items[item.dataId].drop.maxNum !== quest.items[item.dataId].drop.minNum">- {{ quest.items[item.dataId].drop.maxNum }}</span>)<br />
-                  {{ quest.items[item.dataId].drop.value | number : '1.2-2'}}%
+                <div *ngIf="quest.dropRateItems[item.dataId].drop">
+                  ({{ quest.dropRateItems[item.dataId].drop.minNum }}<span *ngIf="quest.dropRateItems[item.dataId].drop.maxNum !== quest.dropRateItems[item.dataId].drop.minNum">- {{ quest.dropRateItems[item.dataId].drop.maxNum }}</span>)<br />
+                  {{ quest.dropRateItems[item.dataId].drop.value | number : '1.2-2'}}%
                 </div>
-                <div *ngIf="quest.items[item.dataId].host">
-                  Host : ({{ quest.items[item.dataId].host.minNum }}<span *ngIf="quest.items[item.dataId].host.maxNum !== quest.items[item.dataId].host.minNum">- {{ quest.items[item.dataId].host.maxNum }}</span>)<br />
-                  {{ quest.items[item.dataId].host.value | number : '1.2-2'}}%
+                <div *ngIf="quest.dropRateItems[item.dataId].host">
+                  Host : ({{ quest.dropRateItems[item.dataId].host.minNum }}<span *ngIf="quest.dropRateItems[item.dataId].host.maxNum !== quest.dropRateItems[item.dataId].host.minNum">- {{ quest.dropRateItems[item.dataId].host.maxNum }}</span>)<br />
+                  {{ quest.dropRateItems[item.dataId].host.value | number : '1.2-2'}}%
                 </div>
               </div>
             </td>
@@ -91,9 +91,9 @@
                 <div class="dropContent">
                   <div *ngFor="let item of quest.formattedItems" class="dropRateItemBlock">
                     <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
-                    <div *ngIf="quest.items[item.dataId].drop">
-                      ({{ quest.items[item.dataId].drop.minNum }}<span *ngIf="quest.items[item.dataId].drop.maxNum !== quest.items[item.dataId].drop.minNum">- {{ quest.items[item.dataId].drop.maxNum }}</span>)<br />
-                      {{ quest.items[item.dataId].drop.value | number : '1.2-2'}}%
+                    <div *ngIf="quest.dropRateItems[item.dataId].drop">
+                      ({{ quest.dropRateItems[item.dataId].drop.minNum }}<span *ngIf="quest.dropRateItems[item.dataId].drop.maxNum !== quest.dropRateItems[item.dataId].drop.minNum">- {{ quest.dropRateItems[item.dataId].drop.maxNum }}</span>)<br />
+                      {{ quest.dropRateItems[item.dataId].drop.value | number : '1.2-2'}}%
                     </div>
                   </div>
                 </div>

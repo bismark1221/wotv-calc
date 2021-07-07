@@ -9,6 +9,7 @@ import { ItemService } from './item.service';
 import { UnitService } from './unit.service';
 import { OtherUnitService } from './otherunit.service';
 import { SkillService } from './skill.service';
+import { ApiService } from './api.service';
 
 import { Quest } from '../entities/quest';
 
@@ -28,8 +29,13 @@ export class QuestService {
     private itemService: ItemService,
     private unitService: UnitService,
     private otherUnitService: OtherUnitService,
-    private skillService: SkillService
+    private skillService: SkillService,
+    private apiService: ApiService
   ) {}
+
+  private async getApi(param = null, extraQuery = []) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('quests', param, extraQuery)));
+  }
 
   private getRaw() {
     return this.dataService.loadData('quests');
@@ -52,6 +58,19 @@ export class QuestService {
     return this[this.navService.getVersion() + '_quests'];
   }
 
+  async getApiQuests(extraQuery = []) {
+    const quests: Quest[] = [];
+    const rawQuests = await this.getApi(null, extraQuery);
+
+    Object.keys(rawQuests).forEach(questId => {
+      const quest = new Quest();
+      quest.constructFromJson(rawQuests[questId], this.translateService);
+      quests.push(quest);
+    });
+
+    return quests;
+  }
+
   async getQuest(id) {
     await this.getQuests();
 
@@ -70,40 +89,56 @@ export class QuestService {
       return [];
     }
 
-    await this.getQuests();
-    const filteredQuests = [];
-
     const itemIds = [];
     searchedItems.forEach(item => {
       itemIds.push(item.dataId);
     });
 
-    for (const quest of this[this.navService.getVersion() + '_quests']) {
-      if (itemIds.some(itemId => Object.keys(quest.items).includes(itemId))) {
-        quest.getName(this.translateService);
+    const quests = await this.getApiQuests([{name: 'forFarmCalc', value: 1}, {name: 'itemIds', value: itemIds.join(',')}]);
 
-        await this.formatItems(quest, itemIds);
-
-        filteredQuests.push(quest);
-      }
+    for (const quest of quests) {
+      quest.getName(this.translateService);
+      await this.formatItems(quest, itemIds);
     }
 
-    return filteredQuests;
+    return quests;
+  }
+
+  async getQuestsForListing(filters = null, sort = 'name', order = 'asc') {
+    let quests = await this.getApiQuests([{name: 'forListing', value: 1}]);
+    quests = this.filterQuests(quests, filters);
+
+    switch (sort) {
+      case 'name' :
+        this.sortByName(quests, order);
+      break;
+      case 'lastRelease' :
+        this.toolService.sortByLastRelease(quests, order);
+      break;
+      default :
+        console.log('not managed sort');
+      break;
+    }
+
+    return quests;
   }
 
   private async formatItems(quest, searchedItemIds) {
     quest.formattedItems = [];
     quest.findedItems = [];
+    quest.dropRateItems = {};
 
-    for (const itemId of Object.keys(quest.items)) {
-      if (itemId !== '') {
-        const formattedItem = await this.itemService.formatItemToShow(await this.itemService.getItem(itemId));
+    for (const rawItem of quest.items) {
+      if (rawItem.dataId !== '') {
+        const formattedItem = await this.itemService.formatItemToShow(await this.itemService.getItem(rawItem.dataId));
         quest.formattedItems.push(formattedItem);
 
-        if (searchedItemIds.indexOf(itemId) !== -1) {
+        if (searchedItemIds.indexOf(rawItem.dataId) !== -1) {
           quest.findedItems.push(formattedItem);
         }
       }
+
+      quest.dropRateItems[rawItem.dataId] = rawItem;
     }
   }
 
@@ -163,25 +198,6 @@ export class QuestService {
         }
       }
     });
-
-    return quests;
-  }
-
-  async getQuestsForListing(filters = null, sort = 'name', order = 'asc') {
-    await this.getQuests();
-    const quests = this.filterQuests(this[this.navService.getVersion() + '_quests'], filters);
-
-    switch (sort) {
-      case 'name' :
-        this.sortByName(quests, order);
-      break;
-      case 'lastRelease' :
-        this.toolService.sortByLastRelease(quests, order);
-      break;
-      default :
-        console.log('not managed sort');
-      break;
-    }
 
     return quests;
   }
