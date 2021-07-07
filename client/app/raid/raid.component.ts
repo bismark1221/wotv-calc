@@ -87,19 +87,21 @@ export class RaidComponent implements OnInit {
         for (const skillData of boss.skills) {
           const skill = skillData.skill;
 
-          skill.name = this.nameService.getName(skill);
+          if (skill) {
+            skill.name = this.nameService.getName(skill);
 
-          skill.effectsHtml = this.skillService.formatEffects(boss, skill);
+            skill.effectsHtml = this.skillService.formatEffects(boss, skill);
 
-          skill.damageHtml = this.skillService.formatDamage(boss, skill, skill.damage);
+            skill.damageHtml = this.skillService.formatDamage(boss, skill, skill.damage);
 
-          if (skill.counter) {
-            skill.counterHtml = this.skillService.formatCounter(boss, skill, skill.counter);
+            if (skill.counter) {
+              skill.counterHtml = this.skillService.formatCounter(boss, skill, skill.counter);
+            }
+
+            this.rangeService.formatRange(boss, skill);
+
+            boss.formattedSkills.push(skill);
           }
-
-          this.rangeService.formatRange(boss, skill);
-
-          boss.formattedSkills.push(skill);
         }
 
         if (boss.attack) {
@@ -114,14 +116,6 @@ export class RaidComponent implements OnInit {
             this.rangeService.formatRange(boss, boss.formattedAttack);
           }
         }
-      }
-
-      for (const unit of this.raid.bonus.units) {
-        unit.unit = await this.unitService.getUnit(unit.unitId);
-      }
-
-      for (const card of this.raid.bonus.cards) {
-        card.card = await this.cardService.getCard(card.cardId);
       }
     }
   }
