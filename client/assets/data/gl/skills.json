@@ -11387,7 +11387,7 @@
     "names": {
       "en": "Charge",
       "fr": "Charge",
-      "de": "Vormarsch",
+      "de": "Nachladen",
       "es": "Recarga",
       "ko": "차지",
       "zh": "蓄力"
@@ -14307,7 +14307,7 @@
     "names": {
       "en": "Charge",
       "fr": "Charge",
-      "de": "Vormarsch",
+      "de": "Nachladen",
       "es": "Recarga",
       "ko": "차지",
       "zh": "蓄力"
@@ -16193,7 +16193,7 @@
     "names": {
       "en": "Charge",
       "fr": "Charge",
-      "de": "Vormarsch",
+      "de": "Nachladen",
       "es": "Recarga",
       "ko": "차지",
       "zh": "蓄力"
@@ -40129,7 +40129,7 @@
     "names": {
       "en": "Pray",
       "fr": "Prière",
-      "de": "Beten",
+      "de": "Gebet",
       "es": "Oración",
       "ko": "기도",
       "zh": "祈禱"
@@ -46519,7 +46519,7 @@
     "names": {
       "en": "Concentration",
       "fr": "Concentration",
-      "de": "Konzentration",
+      "de": "Zangans Lehre",
       "es": "Concentración",
       "ko": "정신 집중",
       "zh": "完全集中"
@@ -47427,7 +47427,7 @@
     "names": {
       "en": "Pray",
       "fr": "Prière",
-      "de": "Beten",
+      "de": "Gebet",
       "es": "Oración",
       "ko": "기도",
       "zh": "祈禱"
@@ -54499,7 +54499,7 @@
         "turn": 3,
         "condition": "BEHIND",
         "target": "all",
-        "timing": "SKILL_AFTER"
+        "timing": "SKILL_BEFORE"
       }
     ],
     "dataId": "SK_LW_ZZAN_M_1",
@@ -54786,6 +54786,792 @@
       "formula": {
         "1": 20,
         "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_MORE": {
+    "effects": [
+      {
+        "type": "WATER_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_MORE",
+    "type": "limit",
+    "names": {
+      "en": "Astral Guidance",
+      "fr": "Voie astrale",
+      "de": "Führung der Gestirne",
+      "es": "Guía astral",
+      "ko": "유성의 인도",
+      "zh": "流星指引"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 69
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_MMC_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MMC_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_MA_LW_MORE": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "WATER_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "WATER_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "WATER_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MORE",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_LW_MMC_S_1_INIT": {
+    "effects": [],
+    "dataId": "SK_LW_MMC_S_1_INIT",
+    "type": "skill",
+    "names": {
+      "en": "Unevadable Pain",
+      "fr": "Affres inévitables",
+      "de": "Unentrinnbare Schmerzen",
+      "es": "Dolor inevitable",
+      "ko": "감출 수 없는 아픔을",
+      "zh": "給予無可躲避的痛苦"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 16
+    },
+    "count": 6,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    },
+    "hit": 100,
+    "damage": {
+      "minValue": 15,
+      "maxValue": 41,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_MMC_S_2_INIT": {
+    "effects": [
+      {
+        "type": "JUMP",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MOVE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MMC_S_2_INIT",
+    "type": "skill",
+    "names": {
+      "en": "Nimble Movement",
+      "fr": "Agilité",
+      "de": "Beschwingt sei mein Schritt",
+      "es": "Movimiento ágil",
+      "ko": "가볍게 날라라",
+      "zh": "輕便搬運"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 15
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    }
+  },
+  "SK_LW_MMC_FIRE_P_2": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "FIRE_RES",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MMC_FIRE_P_2",
+    "type": "support",
+    "names": {
+      "en": "Fire Spirit's Blessing",
+      "fr": "Bénédiction des esprits du feu",
+      "de": "Segen des Feuergeistes",
+      "es": "Bendición del espíritu de fuego",
+      "ko": "불 정령의 축복",
+      "zh": "火精的祝福"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_MMC_M_3": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MMC_M_3",
+    "type": "skill",
+    "names": {
+      "en": "A Heart Like Needles",
+      "fr": "Cœur épineux",
+      "de": "Nadeln gleiches Herz",
+      "es": "Corazón espinado",
+      "ko": "그 마음은 바늘과 같고",
+      "zh": "其心如針"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    }
+  },
+  "SK_LW_MMC_M_2": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_MAGIC",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MMC_M_2",
+    "type": "skill",
+    "names": {
+      "en": "Anti-magic Wall",
+      "fr": "Mur anti-magie",
+      "de": "Wand wider die Magie",
+      "es": "Barrera antimagia",
+      "ko": "마를 막는 벽이여, 나타나라",
+      "zh": "御魔之壁啊，顯形吧"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 40
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "magic",
+    "time": {
+      "minValue": 120,
+      "maxValue": 320
+    }
+  },
+  "SK_LW_MMC_M_1": {
+    "effects": [],
+    "dataId": "SK_LW_MMC_M_1",
+    "type": "skill",
+    "names": {
+      "en": "Bursting Light",
+      "fr": "Lumière ardente",
+      "de": "Gleiße, o Licht!",
+      "es": "Luz explosiva",
+      "ko": "빛이여, 폭발하라",
+      "zh": "爆發吧，光芒"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 38
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 13
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 120,
+      "maxValue": 200
+    },
+    "damage": {
+      "minValue": 85,
+      "maxValue": 120,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_EC_MMC_C_01": {
+    "effects": [],
+    "dataId": "SK_LW_EC_MMC_C_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "Anti-magic Wall Enhancement",
+      "fr": "Améliorer Mur anti-magie",
+      "de": "Wand wider die Magie (verstärkt)",
+      "es": "Mejorar Barrera antimagia",
+      "ko": "마를 막는 벽이여, 나타나라 강화",
+      "zh": "御魔之壁啊，顯形吧強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_MMC_C_02": {
+    "effects": [],
+    "dataId": "SK_LW_EC_MMC_C_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "Fire Spirit's Blessing Enhancement",
+      "fr": "Améliorer Bénédiction des esprits du feu",
+      "de": "Segen des Feuergeistes (verstärkt)",
+      "es": "Mejorar Bendición del espíritu de fuego",
+      "ko": "불 정령의 축복 강화",
+      "zh": "火精的祝福強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_MMC_A_01": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": -20,
+        "maxValue": -39,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SILENCE_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_MMC_A_01",
+    "type": "skill",
+    "names": {
+      "en": "Light of Spellsealing",
+      "fr": "Sortilège éblouissant",
+      "de": "Licht, versiegle die Magie",
+      "es": "Luz sellamagia",
+      "ko": "마법을 봉인하는 빛이여, 빛나라",
+      "zh": "封魔之光啊，綻放吧"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 44
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 0
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 3,
+      "l": 1,
+      "h": 1,
+      "w": 2
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_EC_MMC_C_01B": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_MAGIC",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SHELL_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "apply",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "REGEN_ATK",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "percent",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_MMC_C_01B",
+    "type": "skill",
+    "names": {
+      "en": "Anti-magic Lifewall",
+      "fr": "Muraille anti-magie",
+      "de": "Lebensspendende Wand wider die Magie",
+      "es": "Barrera vital antimagia",
+      "ko": "마를 막고 치유하는 벽이여, 나타나라",
+      "zh": "魔防治癒壁啊，顯形吧"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 40
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "magic",
+    "time": {
+      "minValue": 120,
+      "maxValue": 320
+    }
+  },
+  "SK_LW_EC_MMC_C_02B": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "SPR",
+        "minValue": 8,
+        "maxValue": 18,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "FIRE_RES",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_EC_MMC_C_02B",
+    "type": "support",
+    "names": {
+      "en": "Fire Spirit's Grace",
+      "fr": "Grâce des esprits du feu",
+      "de": "Gabe des Feuergeistes",
+      "es": "Gracia del espíritu de fuego",
+      "ko": "불 정령의 축사",
+      "zh": "火精祝言"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_MA_LW_CWEL": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "WIND_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "WIND_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "WIND_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_CWEL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_ARC_C_03": {
+    "effects": [],
+    "dataId": "SK_LW_EC_ARC_C_03",
+    "type": "ex_buff",
+    "names": {
+      "en": "Target Enhancement",
+      "fr": "Améliorer Cible",
+      "de": "Anvisieren (verstärkt)",
+      "es": "Mejorar Objetivo",
+      "ko": "겨냥 강화",
+      "zh": "瞄準強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_ARC_C_04": {
+    "effects": [],
+    "dataId": "SK_LW_EC_ARC_C_04",
+    "type": "ex_buff",
+    "names": {
+      "en": "Dispel Spread Enhancement",
+      "fr": "Améliorer Contre-propagation",
+      "de": "Bann-Streuschuss (verstärkt)",
+      "es": "Mejorar Antimagia zonal",
+      "ko": "해제 확산 강화",
+      "zh": "驅魔擴散強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_ARC_A_02": {
+    "effects": [],
+    "dataId": "SK_LW_EC_ARC_A_02",
+    "type": "skill",
+    "names": {
+      "en": "Truestriking Arrow",
+      "fr": "En plein cœur",
+      "de": "Unfehlbarer Pfeil",
+      "es": "Flecha certera",
+      "ko": "필중의 정령 활",
+      "zh": "必中精弓"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 28
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "hit": 100,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_EC_ARC_C_03B": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "RANGE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 10,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_ARC_C_03B",
+    "type": "skill",
+    "names": {
+      "en": "Focused Targeting",
+      "fr": "Cible verrouillée",
+      "de": "Kollektivfokus",
+      "es": "Objetivo fijado",
+      "ko": "겨냥 돌보기",
+      "zh": "瞄準輔助"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 20
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_LW_EC_ARC_C_04B": {
+    "effects": [
+      {
+        "type": "MASS_DISPEL",
+        "calcType": "buffs",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "HASTE"
+        ],
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_ARC_C_04B",
+    "type": "skill",
+    "names": {
+      "en": "Dispel Barrage",
+      "fr": "Anti-barrage",
+      "de": "Bann-Pfeilregen",
+      "es": "Ráfaga antimagia",
+      "ko": "디스펠 엄호 사격",
+      "zh": "驅魔狙擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 32
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "hit": 30,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
         "type": 0
       }
     }
@@ -103698,6 +104484,167 @@
     "target": "self",
     "maxLevel": 50
   },
+  "SK_FF1_SWO_000_1": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF1_SWO_000_1",
+    "type": "support",
+    "names": {
+      "en": "Sword of Light (Light Attack Up)",
+      "fr": "Épée de la lumière (Attaque de lumière ↑)",
+      "de": "Schwert des Lichts (Lichtangriff-Erhöhung)",
+      "es": "Espada de la luz (ataque de luz↑)",
+      "ko": "빛의 검(빛속성 공격력 증가)",
+      "zh": "光明之劍（光屬性攻擊UP）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF1_SWO_000_5": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF1_SWO_000_5",
+    "type": "support",
+    "names": {
+      "en": "Sword of Light (Light Attack Up)",
+      "fr": "Épée de la lumière (Attaque de lumière ↑)",
+      "de": "Schwert des Lichts (Lichtangriff-Erhöhung)",
+      "es": "Espada de la luz (ataque de luz↑)",
+      "ko": "빛의 검(빛속성 공격력 증가)",
+      "zh": "光明之劍（光屬性攻擊UP）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_1": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_1",
+    "type": "support",
+    "names": {
+      "en": "DEF Piercing Rate +2",
+      "fr": "Taux de perforation de la DEF +2",
+      "de": "ABW-Durchbohrrate +2",
+      "es": "Tasa de penetración de DEF +2",
+      "ko": "방어 관통률+2",
+      "zh": "防禦貫通率+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_2": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_2",
+    "type": "support",
+    "names": {
+      "en": "DEF Piercing Rate +3",
+      "fr": "Taux de perforation de la DEF +3",
+      "de": "ABW-Durchbohrrate +3",
+      "es": "Tasa de penetración de DEF +3",
+      "ko": "방어 관통률+3",
+      "zh": "防禦貫通率+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_3": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_3",
+    "type": "support",
+    "names": {
+      "en": "DEF Piercing Rate +5",
+      "fr": "Taux de perforation de la DEF +5",
+      "de": "ABW-Durchbohrrate +5",
+      "es": "Tasa de penetración de DEF +5",
+      "ko": "방어 관통률+5",
+      "zh": "防禦貫通率+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_4": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_4",
+    "type": "support",
+    "names": {
+      "en": "DEF Piercing Rate +10",
+      "fr": "Taux de perforation de la DEF +10",
+      "de": "ABW-Durchbohrrate +10",
+      "es": "Tasa de penetración de DEF +10",
+      "ko": "방어 관통률+10",
+      "zh": "防禦貫通率+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_5": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_5",
+    "type": "support",
+    "names": {
+      "en": "DEF Piercing Rate +20",
+      "fr": "Taux de perforation de la DEF +20",
+      "de": "ABW-Durchbohrrate +20",
+      "es": "Tasa de penetración de DEF +20",
+      "ko": "방어 관통률+20",
+      "zh": "防禦貫通率+20"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
   "SK_LW_DF_SLASH_1": {
     "effects": [
       {
@@ -104766,121 +105713,6 @@
       "es": "SK_LW_SHOOT_5_SSR",
       "ko": "SK_LW_SHOOT_5_SSR",
       "zh": "SK_LW_SHOOT_5_SSR"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
-  "SK_LW_PIERCEDEF_1": {
-    "effects": [
-      {
-        "type": "DEFENSE_PENETRATION",
-        "minValue": 2,
-        "maxValue": 2,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_PIERCEDEF_1",
-    "type": "support",
-    "names": {
-      "en": "DEF Piercing Rate +2",
-      "fr": "Taux de perforation de la DEF +2",
-      "de": "ABW-Durchbohrrate +2",
-      "es": "Tasa de penetración de DEF +2",
-      "ko": "방어 관통률+2",
-      "zh": "防禦貫通率+2"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
-  "SK_LW_PIERCEDEF_2": {
-    "effects": [
-      {
-        "type": "DEFENSE_PENETRATION",
-        "minValue": 3,
-        "maxValue": 3,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_PIERCEDEF_2",
-    "type": "support",
-    "names": {
-      "en": "DEF Piercing Rate +3",
-      "fr": "Taux de perforation de la DEF +3",
-      "de": "ABW-Durchbohrrate +3",
-      "es": "Tasa de penetración de DEF +3",
-      "ko": "방어 관통률+3",
-      "zh": "防禦貫通率+3"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
-  "SK_LW_PIERCEDEF_3": {
-    "effects": [
-      {
-        "type": "DEFENSE_PENETRATION",
-        "minValue": 5,
-        "maxValue": 5,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_PIERCEDEF_3",
-    "type": "support",
-    "names": {
-      "en": "DEF Piercing Rate +5",
-      "fr": "Taux de perforation de la DEF +5",
-      "de": "ABW-Durchbohrrate +5",
-      "es": "Tasa de penetración de DEF +5",
-      "ko": "방어 관통률+5",
-      "zh": "防禦貫通率+5"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
-  "SK_LW_PIERCEDEF_4": {
-    "effects": [
-      {
-        "type": "DEFENSE_PENETRATION",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_PIERCEDEF_4",
-    "type": "support",
-    "names": {
-      "en": "DEF Piercing Rate +10",
-      "fr": "Taux de perforation de la DEF +10",
-      "de": "ABW-Durchbohrrate +10",
-      "es": "Tasa de penetración de DEF +10",
-      "ko": "방어 관통률+10",
-      "zh": "防禦貫通率+10"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
-  "SK_LW_PIERCEDEF_5": {
-    "effects": [
-      {
-        "type": "DEFENSE_PENETRATION",
-        "minValue": 20,
-        "maxValue": 20,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_PIERCEDEF_5",
-    "type": "support",
-    "names": {
-      "en": "DEF Piercing Rate +20",
-      "fr": "Taux de perforation de la DEF +20",
-      "de": "ABW-Durchbohrrate +20",
-      "es": "Tasa de penetración de DEF +20",
-      "ko": "방어 관통률+20",
-      "zh": "防禦貫通率+20"
     },
     "target": "self",
     "maxLevel": 50
@@ -110478,6 +111310,90 @@
     "count": 1,
     "maxLevel": 20
   },
+  "SK_ACC_LW_MORE_1_1": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "SLEEP",
+          "SLOW",
+          "BERSERK"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "FAITH_FIGHT",
+        "minValue": 2,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_MORE_1_1",
+    "type": "skill",
+    "names": {
+      "en": "Starry Veil",
+      "fr": "Aura étoilée",
+      "de": "Himmelszelt",
+      "es": "Velo estrellado",
+      "ko": "반짝이는 베일",
+      "zh": "星光面紗"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 34
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_BOW_LW_CWEL_1_1": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": -40,
+        "maxValue": -40,
+        "calcType": "fixe",
+        "rate": 20,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BOW_LW_CWEL_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_BOW_LW_CWEL_1_1",
+      "fr": "SK_BOW_LW_CWEL_1_1",
+      "de": "SK_BOW_LW_CWEL_1_1",
+      "es": "SK_BOW_LW_CWEL_1_1",
+      "ko": "SK_BOW_LW_CWEL_1_1",
+      "zh": "SK_BOW_LW_CWEL_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_GUN_LW_LATH_2_1": {
     "effects": [
       {
@@ -112343,52 +113259,6 @@
       "es": "Brigantina",
       "ko": "두정갑",
       "zh": "鎖子鎧"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
-  "SK_FF1_SWO_000_1": {
-    "effects": [
-      {
-        "type": "LIGHT_ATK",
-        "minValue": 10,
-        "maxValue": 15,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_FF1_SWO_000_1",
-    "type": "support",
-    "names": {
-      "en": "Sword of Light (Light Attack Up)",
-      "fr": "Épée de la lumière (Attaque de lumière ↑)",
-      "de": "Schwert des Lichts (Lichtangriff-Erhöhung)",
-      "es": "Espada de la luz (ataque de luz↑)",
-      "ko": "빛의 검(빛속성 공격력 증가)",
-      "zh": "光明之劍（光屬性攻擊UP）"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
-  "SK_FF1_SWO_000_5": {
-    "effects": [
-      {
-        "type": "LIGHT_ATK",
-        "minValue": 20,
-        "maxValue": 30,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_FF1_SWO_000_5",
-    "type": "support",
-    "names": {
-      "en": "Sword of Light (Light Attack Up)",
-      "fr": "Épée de la lumière (Attaque de lumière ↑)",
-      "de": "Schwert des Lichts (Lichtangriff-Erhöhung)",
-      "es": "Espada de la luz (ataque de luz↑)",
-      "ko": "빛의 검(빛속성 공격력 증가)",
-      "zh": "光明之劍（光屬性攻擊UP）"
     },
     "target": "self",
     "maxLevel": 50
@@ -125244,7 +126114,7 @@
     "names": {
       "en": "Charge",
       "fr": "Précipitation",
-      "de": "Vormarsch",
+      "de": "Nachladen",
       "es": "Recarga",
       "ko": "돌진",
       "zh": "突進"
@@ -126013,6 +126883,134 @@
     },
     "target": "self",
     "maxLevel": 80
+  },
+  "SK_LW_MKN_FIRE_P_1": {
+    "effects": [
+      {
+        "type": "FIRE_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "WATER_RES",
+        "minValue": -10,
+        "maxValue": -5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MKN_FIRE_P_1",
+    "type": "support",
+    "names": {
+      "en": "Fire‑Enhancing Rune",
+      "fr": "Rune de renforcement : feu",
+      "de": "Feuermachtrune",
+      "es": "Runa mejorafuego",
+      "ko": "격성화의 룬",
+      "zh": "激成火符文"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_MKN_FIRE_M_1": {
+    "effects": [
+      {
+        "type": "ICE_KILLER",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "unknow",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_MKN_FIRE_M_1",
+    "type": "skill",
+    "names": {
+      "en": "Firaga Blade",
+      "fr": "Lame Feu X",
+      "de": "Feuga-Klinge",
+      "es": "Hoja Piro++",
+      "ko": "파이가 검",
+      "zh": "大火焰劍"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 22
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 10,
+      "w": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    },
+    "elem": [
+      "fire"
+    ]
+  },
+  "SK_BTL_DONMV_1-100_U": {
+    "effects": [
+      {
+        "type": "IMMOBILIZE_ATK",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_DONMV_1-100_U",
+    "type": "support",
+    "names": {
+      "en": "Status Ailment [Immobilize] Chance 1-100 Up",
+      "fr": "Chance d'altération d'état [Immobilisation] ↑ 1 - 100",
+      "de": "Chance auf Zustandsveränderung „Immobilisierung“ erhöht (1 bis 100)",
+      "es": "Probabilidad de estado alterado [inmóvil] 1-100↑",
+      "ko": "상태이상[돈무브] 확률 1-100 증가",
+      "zh": "提升異常狀態【止移】機率1-100"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_BTL_CONFU_1-100_U": {
+    "effects": [
+      {
+        "type": "CONFUSION_ATK",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_CONFU_1-100_U",
+    "type": "support",
+    "names": {
+      "en": "Status Ailment [Confusion] Chance 1-100 Up",
+      "fr": "Chance d'altération d'état [Confusion] ↑ 1 - 100",
+      "de": "Chance auf Zustandsveränderung „Konfus“ erhöht (1 bis 100)",
+      "es": "Probabilidad de estado alterado [confusión] 1-100↑",
+      "ko": "상태이상[혼란] 확률 1-100 증가",
+      "zh": "提升異常狀態【混亂】機率1-100"
+    },
+    "target": "self",
+    "maxLevel": 100
   },
   "SK_FNRR_ATK": {
     "effects": [],

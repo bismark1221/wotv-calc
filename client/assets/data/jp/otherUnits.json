@@ -34262,7 +34262,7 @@
   "UN_LW_E_RU_01_MKN": {
     "dataId": "UN_LW_E_RU_01_MKN",
     "names": {
-      "en": "ランダル兵"
+      "en": "ランダル兵 - Rundall Soldier"
     },
     "jobs": [
       "JB_LW_MKN_FIRE"
@@ -34374,7 +34374,7 @@
     "size": 0,
     "realMaxLevel": 99,
     "type": "enemy",
-    "slug": "randaru-hei",
+    "slug": "rundall-soldier",
     "attack": "SK_LW_MKN_ATK"
   },
   "UN_LW_E_PNIX_PT_HA": {
@@ -42671,7 +42671,7 @@
   "UN_LW_E_BRAL": {
     "dataId": "UN_LW_E_BRAL",
     "names": {
-      "en": "バラル"
+      "en": "バラル - Barale"
     },
     "rarity": "MR",
     "jobs": [
@@ -42795,7 +42795,7 @@
     "size": 0,
     "realMaxLevel": 99,
     "type": "enemy",
-    "slug": "bararu",
+    "slug": "barale",
     "attack": "SK_LW_SAM_ATK"
   },
   "UN_LW_E_SO_03_ARC": {
@@ -59996,7 +59996,7 @@
   "UN_LW_E_CWEL": {
     "dataId": "UN_LW_E_CWEL",
     "names": {
-      "en": "コーウェル"
+      "en": "コーウェル - Corwell"
     },
     "rarity": "UR",
     "jobs": [
@@ -60123,13 +60123,13 @@
     "size": 0,
     "realMaxLevel": 99,
     "type": "ally",
-    "slug": "cowell-1",
+    "slug": "corwell-1",
     "attack": "SK_LW_ARC_ATK"
   },
   "UN_LW_E_RU_01_ARC": {
     "dataId": "UN_LW_E_RU_01_ARC",
     "names": {
-      "en": "ランダル兵"
+      "en": "ランダル兵 - Rundall Soldier"
     },
     "jobs": [
       "JB_LW_ARC_FIRE"
@@ -60241,13 +60241,13 @@
     "size": 0,
     "realMaxLevel": 99,
     "type": "enemy",
-    "slug": "randaru-hei",
+    "slug": "rundall-soldier",
     "attack": "SK_LW_ARC_ATK"
   },
   "UN_LW_E_RU_01_PSI": {
     "dataId": "UN_LW_E_RU_01_PSI",
     "names": {
-      "en": "ランダル兵"
+      "en": "ランダル兵 - Rundall Soldier"
     },
     "jobs": [
       "JB_LW_PSI_FIRE"
@@ -60362,13 +60362,13 @@
     "size": 0,
     "realMaxLevel": 99,
     "type": "enemy",
-    "slug": "randaru-hei",
+    "slug": "rundall-soldier",
     "attack": "SK_LW_PSI_ATK"
   },
   "UN_LW_E_RU_01_VIK": {
     "dataId": "UN_LW_E_RU_01_VIK",
     "names": {
-      "en": "ランダル兵"
+      "en": "ランダル兵 - Rundall Soldier"
     },
     "jobs": [
       "JB_LW_VIK_FIRE"
@@ -60477,13 +60477,13 @@
     "size": 0,
     "realMaxLevel": 99,
     "type": "enemy",
-    "slug": "randaru-hei",
+    "slug": "rundall-soldier",
     "attack": "SK_LW_VIK_ATK"
   },
   "UN_LW_E_ELSI": {
     "dataId": "UN_LW_E_ELSI",
     "names": {
-      "en": "エルシュラ"
+      "en": "エルシュラ - Ellshra"
     },
     "rarity": "MR",
     "jobs": [
@@ -60616,7 +60616,7 @@
     "size": 0,
     "realMaxLevel": 99,
     "type": "enemy",
-    "slug": "eru-shura",
+    "slug": "ellshra-1",
     "attack": "SK_LW_TIM_ATK"
   },
   "UN_LW_E_ELEM_03_RA": {

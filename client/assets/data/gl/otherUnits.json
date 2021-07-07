@@ -23377,6 +23377,617 @@
     "slug": "gouga-shinobi",
     "attack": "SK_LW_NIN_ATK"
   },
+  "UN_LW_E_RU_02_MNK": {
+    "dataId": "UN_LW_E_RU_02_MNK",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "rarity": "N",
+    "jobs": [
+      "JB_LW_MNK_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 206,
+        "max": 1605
+      },
+      "TP": {
+        "min": 31,
+        "max": 77
+      },
+      "AP": {
+        "min": 36,
+        "max": 73
+      },
+      "ATK": {
+        "min": 55,
+        "max": 178
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 25,
+        "max": 70
+      },
+      "DEX": {
+        "min": 81,
+        "max": 211
+      },
+      "AGI": {
+        "min": 26,
+        "max": 50
+      },
+      "LUCK": {
+        "min": 83,
+        "max": 216
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "STRIKE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_MNK_ATK"
+  },
+  "UN_LW_E_RU_01_GUN": {
+    "dataId": "UN_LW_E_RU_01_GUN",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "rarity": "N",
+    "jobs": [
+      "JB_LW_GUN_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 206,
+        "max": 1605
+      },
+      "TP": {
+        "min": 31,
+        "max": 77
+      },
+      "AP": {
+        "min": 36,
+        "max": 73
+      },
+      "ATK": {
+        "min": 55,
+        "max": 178
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 25,
+        "max": 70
+      },
+      "DEX": {
+        "min": 70,
+        "max": 185
+      },
+      "AGI": {
+        "min": 26,
+        "max": 50
+      },
+      "LUCK": {
+        "min": 83,
+        "max": 216
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "PIERCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_GUN_ATK"
+  },
+  "UN_LW_E_RU_01_PLD": {
+    "dataId": "UN_LW_E_RU_01_PLD",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "rarity": "N",
+    "jobs": [
+      "JB_LW_PLD_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 206,
+        "max": 1705
+      },
+      "TP": {
+        "min": 31,
+        "max": 77
+      },
+      "AP": {
+        "min": 36,
+        "max": 73
+      },
+      "ATK": {
+        "min": 55,
+        "max": 178
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 25,
+        "max": 70
+      },
+      "DEX": {
+        "min": 81,
+        "max": 211
+      },
+      "AGI": {
+        "min": 26,
+        "max": 45
+      },
+      "LUCK": {
+        "min": 75,
+        "max": 185
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_PLD_ATK"
+  },
+  "UN_LW_E_RU_01_SAM": {
+    "dataId": "UN_LW_E_RU_01_SAM",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "rarity": "N",
+    "jobs": [
+      "JB_LW_SAM_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 206,
+        "max": 1605
+      },
+      "TP": {
+        "min": 31,
+        "max": 77
+      },
+      "AP": {
+        "min": 36,
+        "max": 73
+      },
+      "ATK": {
+        "min": 55,
+        "max": 178
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 25,
+        "max": 70
+      },
+      "DEX": {
+        "min": 81,
+        "max": 211
+      },
+      "AGI": {
+        "min": 26,
+        "max": 50
+      },
+      "LUCK": {
+        "min": 83,
+        "max": 216
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_SAM_ATK"
+  },
+  "UN_LW_E_RU_01_DRG": {
+    "dataId": "UN_LW_E_RU_01_DRG",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "rarity": "N",
+    "jobs": [
+      "JB_LW_DRG_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 206,
+        "max": 1605
+      },
+      "TP": {
+        "min": 31,
+        "max": 77
+      },
+      "AP": {
+        "min": 36,
+        "max": 73
+      },
+      "ATK": {
+        "min": 55,
+        "max": 178
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 25,
+        "max": 70
+      },
+      "DEX": {
+        "min": 81,
+        "max": 211
+      },
+      "AGI": {
+        "min": 26,
+        "max": 50
+      },
+      "LUCK": {
+        "min": 75,
+        "max": 185
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_DRG_ATK"
+  },
   "UN_LW_E_STRN": {
     "dataId": "UN_LW_E_STRN",
     "names": {
@@ -29639,127 +30250,6 @@
     "slug": "skahal-1",
     "attack": "SK_LW_BLM_ATK"
   },
-  "UN_LW_E_RU_01_GUN": {
-    "dataId": "UN_LW_E_RU_01_GUN",
-    "names": {
-      "en": "Rundall Soldier",
-      "fr": "Soldat de Rundall",
-      "de": "Rundallscher Soldat",
-      "es": "Soldado de Rundal",
-      "ko": "런달 병사",
-      "zh": "朗德爾士兵"
-    },
-    "rarity": "N",
-    "jobs": [
-      "JB_LW_GUN_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 206,
-        "max": 1605
-      },
-      "TP": {
-        "min": 31,
-        "max": 77
-      },
-      "AP": {
-        "min": 36,
-        "max": 73
-      },
-      "ATK": {
-        "min": 55,
-        "max": 178
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 25,
-        "max": 70
-      },
-      "DEX": {
-        "min": 70,
-        "max": 185
-      },
-      "AGI": {
-        "min": 26,
-        "max": 50
-      },
-      "LUCK": {
-        "min": 83,
-        "max": 216
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "PIERCE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {},
-      "MAGIC_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso04",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "rundall-soldier",
-    "attack": "SK_LW_GUN_ATK"
-  },
   "UN_LW_E_RU_01_WAR": {
     "dataId": "UN_LW_E_RU_01_WAR",
     "names": {
@@ -30682,34 +31172,39 @@
     "slug": "raviesse-1",
     "attack": "SK_LW_PLD_ATK"
   },
-  "UN_LW_E_MABR_03": {
-    "dataId": "UN_LW_E_MABR_03",
+  "UN_LW_E_CWEL": {
+    "dataId": "UN_LW_E_CWEL",
     "names": {
-      "en": "Magenta Malboro",
-      "fr": "Morbol magenta",
-      "de": "Pinker Morbol",
-      "es": "Molbol magenta",
-      "ko": "몰볼 마젠타",
-      "zh": "紫紅毛爾波爾"
+      "en": "Corwell",
+      "fr": "Corwell",
+      "de": "Corwell",
+      "es": "Corwell",
+      "ko": "코웰",
+      "zh": "柯維爾"
     },
-    "rarity": "N",
+    "rarity": "UR",
+    "jobs": [
+      "JB_LW_ARC_WIND",
+      "JB_LW_GUN_WIND",
+      "JB_LW_MSW_WIND"
+    ],
     "exJobs": [],
     "stats": {
       "HP": {
-        "min": 208,
-        "max": 2380
+        "min": 266,
+        "max": 939
       },
       "TP": {
-        "min": 50,
-        "max": 91
-      },
-      "AP": {
         "min": 59,
         "max": 93
       },
+      "AP": {
+        "min": 74,
+        "max": 91
+      },
       "ATK": {
-        "min": 63,
-        "max": 180
+        "min": 77,
+        "max": 130
       },
       "DEF": {
         "min": 0,
@@ -30720,20 +31215,771 @@
         "max": 0
       },
       "MAG": {
-        "min": 29,
-        "max": 73
+        "min": 33,
+        "max": 55
       },
       "DEX": {
-        "min": 96,
-        "max": 242
+        "min": 69,
+        "max": 103
       },
       "AGI": {
-        "min": 19,
-        "max": 54
+        "min": 30,
+        "max": 35
       },
       "LUCK": {
-        "min": 90,
-        "max": 241
+        "min": 66,
+        "max": 94
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "EARTH_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "wind",
+    "image": "lapscwel",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "ally",
+    "slug": "corwell-1",
+    "attack": "SK_LW_ARC_ATK"
+  },
+  "UN_LW_E_RU_01_ARC": {
+    "dataId": "UN_LW_E_RU_01_ARC",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "jobs": [
+      "JB_LW_ARC_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 247,
+        "max": 826
+      },
+      "TP": {
+        "min": 61,
+        "max": 95
+      },
+      "AP": {
+        "min": 73,
+        "max": 90
+      },
+      "ATK": {
+        "min": 79,
+        "max": 133
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 32,
+        "max": 54
+      },
+      "DEX": {
+        "min": 75,
+        "max": 112
+      },
+      "AGI": {
+        "min": 30,
+        "max": 36
+      },
+      "LUCK": {
+        "min": 73,
+        "max": 103
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_ARC_ATK"
+  },
+  "UN_LW_E_RU_01_PSI": {
+    "dataId": "UN_LW_E_RU_01_PSI",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "jobs": [
+      "JB_LW_PSI_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 128,
+        "max": 1365
+      },
+      "TP": {
+        "min": 32,
+        "max": 57
+      },
+      "AP": {
+        "min": 38,
+        "max": 59
+      },
+      "ATK": {
+        "min": 19,
+        "max": 48
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 43,
+        "max": 123
+      },
+      "DEX": {
+        "min": 80,
+        "max": 192
+      },
+      "AGI": {
+        "min": 27,
+        "max": 64
+      },
+      "LUCK": {
+        "min": 94,
+        "max": 230
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "STRIKE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_PSI_ATK"
+  },
+  "UN_LW_E_RU_01_SWN": {
+    "dataId": "UN_LW_E_RU_01_SWN",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "rarity": "N",
+    "jobs": [
+      "JB_LW_SWN_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 206,
+        "max": 1605
+      },
+      "TP": {
+        "min": 31,
+        "max": 77
+      },
+      "AP": {
+        "min": 36,
+        "max": 73
+      },
+      "ATK": {
+        "min": 55,
+        "max": 178
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 25,
+        "max": 70
+      },
+      "DEX": {
+        "min": 81,
+        "max": 211
+      },
+      "AGI": {
+        "min": 26,
+        "max": 50
+      },
+      "LUCK": {
+        "min": 83,
+        "max": 216
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_SWN_ATK"
+  },
+  "UN_LW_E_RU_01_MKN": {
+    "dataId": "UN_LW_E_RU_01_MKN",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "jobs": [
+      "JB_LW_MKN_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 310,
+        "max": 1038
+      },
+      "TP": {
+        "min": 63,
+        "max": 99
+      },
+      "AP": {
+        "min": 74,
+        "max": 91
+      },
+      "ATK": {
+        "min": 34,
+        "max": 57
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 100,
+        "max": 168
+      },
+      "DEX": {
+        "min": 72,
+        "max": 107
+      },
+      "AGI": {
+        "min": 30,
+        "max": 35
+      },
+      "LUCK": {
+        "min": 77,
+        "max": 109
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "MISSILE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "MAGIC_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_MKN_ATK"
+  },
+  "UN_LW_E_RU_01_VIK": {
+    "dataId": "UN_LW_E_RU_01_VIK",
+    "names": {
+      "en": "Rundall Soldier",
+      "fr": "Soldat de Rundall",
+      "de": "Rundallscher Soldat",
+      "es": "Soldado de Rundal",
+      "ko": "런달 병사",
+      "zh": "朗德爾士兵"
+    },
+    "jobs": [
+      "JB_LW_VIK_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 208,
+        "max": 1577
+      },
+      "TP": {
+        "min": 31,
+        "max": 64
+      },
+      "AP": {
+        "min": 37,
+        "max": 61
+      },
+      "ATK": {
+        "min": 56,
+        "max": 138
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 25,
+        "max": 61
+      },
+      "DEX": {
+        "min": 83,
+        "max": 184
+      },
+      "AGI": {
+        "min": 20,
+        "max": 42
+      },
+      "LUCK": {
+        "min": 81,
+        "max": 170
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso04",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rundall-soldier",
+    "attack": "SK_LW_VIK_ATK"
+  },
+  "UN_LW_E_BRAL": {
+    "dataId": "UN_LW_E_BRAL",
+    "names": {
+      "en": "Barale",
+      "fr": "Baral",
+      "de": "Barahl",
+      "es": "Barale",
+      "ko": "바랄",
+      "zh": "巴拉爾"
+    },
+    "rarity": "MR",
+    "jobs": [
+      "JB_LW_SAM_WIND",
+      "JB_LW_WAR_WIND",
+      "JB_LW_PLD_WIND"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 278,
+        "max": 2103
+      },
+      "TP": {
+        "min": 49,
+        "max": 86
+      },
+      "AP": {
+        "min": 58,
+        "max": 88
+      },
+      "ATK": {
+        "min": 95,
+        "max": 230
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 40,
+        "max": 100
+      },
+      "DEX": {
+        "min": 91,
+        "max": 203
+      },
+      "AGI": {
+        "min": 45,
+        "max": 52
+      },
+      "LUCK": {
+        "min": 94,
+        "max": 198
       },
       "INITIAL_AP": {},
       "ACCURACY": {},
@@ -30752,75 +31998,209 @@
       },
       "DARK_RES": {},
       "SLASH_RES": {},
-      "PIERCE_RES": {},
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
+      "PIERCE_RES": {
+        "min": -15,
+        "max": -15
       },
+      "STRIKE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "MISSILE_RES": {},
       "MAGIC_RES": {
-        "min": -20,
-        "max": -20
+        "min": -15,
+        "max": -15
       },
-      "POISON_RES": {
-        "min": 100,
-        "max": 100
-      },
+      "POISON_RES": {},
       "BLIND_RES": {},
-      "SLEEP_RES": {
-        "min": 70,
-        "max": 70
-      },
-      "SILENCE_RES": {
-        "min": 70,
-        "max": 70
-      },
-      "PARALYZE_RES": {
-        "min": 70,
-        "max": 70
-      },
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
       "CONFUSION_RES": {},
-      "PETRIFY_RES": {
-        "min": 100,
-        "max": 100
-      },
+      "PETRIFY_RES": {},
       "TOAD_RES": {},
       "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {
-        "min": 100,
-        "max": 100
+      "SLOW_RES": {
+        "min": -25,
+        "max": -25
       },
+      "STOP_RES": {},
       "IMMOBILIZE_RES": {},
       "DISABLE_RES": {
-        "min": 70,
-        "max": 70
+        "min": 50,
+        "max": 50
       },
-      "BERSERK_RES": {},
-      "DOOM_RES": {
-        "min": 100,
-        "max": 100
+      "BERSERK_RES": {
+        "min": 50,
+        "max": 50
       },
+      "DOOM_RES": {},
       "FROSTBITE_RES": {},
       "STUN_RES": {},
       "MOVE": {
         "min": 3,
-        "max": 3
+        "max": 3,
+        "ex": null
       },
       "JUMP": {
         "min": 1,
-        "max": 1
+        "max": 1,
+        "ex": null
       },
       "MAX_LV": {}
     },
-    "element": "dark",
-    "image": "lapsmabr_03",
-    "species": "plant",
-    "size": 1,
+    "element": "wind",
+    "image": "lapsbral",
+    "species": "human",
+    "size": 0,
     "realMaxLevel": 99,
     "type": "enemy",
-    "slug": "magenta-malboro",
-    "attack": "SK_MABR_ATK"
+    "slug": "barale",
+    "attack": "SK_LW_SAM_ATK"
+  },
+  "UN_LW_E_ELSI": {
+    "dataId": "UN_LW_E_ELSI",
+    "names": {
+      "en": "Ellshra",
+      "fr": "Elzandra",
+      "de": "Elshura",
+      "es": "Elshura",
+      "ko": "에르슐라",
+      "zh": "艾爾修拉"
+    },
+    "rarity": "MR",
+    "jobs": [
+      "JB_LW_TIM_SHINE",
+      "JB_LW_MKN_SHINE",
+      "JB_LW_WHM_SHINE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 205,
+        "max": 667
+      },
+      "TP": {
+        "min": 53,
+        "max": 82
+      },
+      "AP": {
+        "min": 61,
+        "max": 75
+      },
+      "ATK": {
+        "min": 27,
+        "max": 45
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 65,
+        "max": 109
+      },
+      "DEX": {
+        "min": 59,
+        "max": 88
+      },
+      "AGI": {
+        "min": 29,
+        "max": 35
+      },
+      "LUCK": {
+        "min": 58,
+        "max": 82
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "SLASH_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "MAGIC_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "STOP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "light",
+    "image": "lapselsi",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "ellshra-1",
+    "attack": "SK_LW_TIM_ATK"
   },
   "UN_LW_E_MABR_02": {
     "dataId": "UN_LW_E_MABR_02",
@@ -30963,6 +32343,146 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "great-malboro",
+    "attack": "SK_MABR_ATK"
+  },
+  "UN_LW_E_MABR_03": {
+    "dataId": "UN_LW_E_MABR_03",
+    "names": {
+      "en": "Magenta Malboro",
+      "fr": "Morbol magenta",
+      "de": "Pinker Morbol",
+      "es": "Molbol magenta",
+      "ko": "몰볼 마젠타",
+      "zh": "紫紅毛爾波爾"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 208,
+        "max": 2380
+      },
+      "TP": {
+        "min": 50,
+        "max": 91
+      },
+      "AP": {
+        "min": 59,
+        "max": 93
+      },
+      "ATK": {
+        "min": 63,
+        "max": 180
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 29,
+        "max": 73
+      },
+      "DEX": {
+        "min": 96,
+        "max": 242
+      },
+      "AGI": {
+        "min": 19,
+        "max": 54
+      },
+      "LUCK": {
+        "min": 90,
+        "max": 241
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {},
+      "SLEEP_RES": {
+        "min": 70,
+        "max": 70
+      },
+      "SILENCE_RES": {
+        "min": 70,
+        "max": 70
+      },
+      "PARALYZE_RES": {
+        "min": 70,
+        "max": 70
+      },
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 70,
+        "max": 70
+      },
+      "BERSERK_RES": {},
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsmabr_03",
+    "species": "plant",
+    "size": 1,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "magenta-malboro",
     "attack": "SK_MABR_ATK"
   },
   "UN_LW_E_MABR_04": {
@@ -32333,127 +33853,6 @@
     "slug": "etre-1",
     "attack": "SK_LW_MNK_ATK"
   },
-  "UN_LW_E_RU_01_PLD": {
-    "dataId": "UN_LW_E_RU_01_PLD",
-    "names": {
-      "en": "Rundall Soldier",
-      "fr": "Soldat de Rundall",
-      "de": "Rundallscher Soldat",
-      "es": "Soldado de Rundal",
-      "ko": "런달 병사",
-      "zh": "朗德爾士兵"
-    },
-    "rarity": "N",
-    "jobs": [
-      "JB_LW_PLD_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 206,
-        "max": 1705
-      },
-      "TP": {
-        "min": 31,
-        "max": 77
-      },
-      "AP": {
-        "min": 36,
-        "max": 73
-      },
-      "ATK": {
-        "min": 55,
-        "max": 178
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 25,
-        "max": 70
-      },
-      "DEX": {
-        "min": 81,
-        "max": 211
-      },
-      "AGI": {
-        "min": 26,
-        "max": 45
-      },
-      "LUCK": {
-        "min": 75,
-        "max": 185
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MAGIC_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso04",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "rundall-soldier",
-    "attack": "SK_LW_PLD_ATK"
-  },
   "UN_LW_E_RU_01_MNK": {
     "dataId": "UN_LW_E_RU_01_MNK",
     "names": {
@@ -32577,372 +33976,6 @@
     "type": "enemy",
     "slug": "rundall-soldier",
     "attack": "SK_LW_MNK_ATK"
-  },
-  "UN_LW_E_RU_01_SAM": {
-    "dataId": "UN_LW_E_RU_01_SAM",
-    "names": {
-      "en": "Rundall Soldier",
-      "fr": "Soldat de Rundall",
-      "de": "Rundallscher Soldat",
-      "es": "Soldado de Rundal",
-      "ko": "런달 병사",
-      "zh": "朗德爾士兵"
-    },
-    "rarity": "N",
-    "jobs": [
-      "JB_LW_SAM_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 206,
-        "max": 1605
-      },
-      "TP": {
-        "min": 31,
-        "max": 77
-      },
-      "AP": {
-        "min": 36,
-        "max": 73
-      },
-      "ATK": {
-        "min": 55,
-        "max": 178
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 25,
-        "max": 70
-      },
-      "DEX": {
-        "min": 81,
-        "max": 211
-      },
-      "AGI": {
-        "min": 26,
-        "max": 50
-      },
-      "LUCK": {
-        "min": 83,
-        "max": 216
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "PIERCE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MAGIC_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso04",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "rundall-soldier",
-    "attack": "SK_LW_SAM_ATK"
-  },
-  "UN_LW_E_RU_01_SWN": {
-    "dataId": "UN_LW_E_RU_01_SWN",
-    "names": {
-      "en": "Rundall Soldier",
-      "fr": "Soldat de Rundall",
-      "de": "Rundallscher Soldat",
-      "es": "Soldado de Rundal",
-      "ko": "런달 병사",
-      "zh": "朗德爾士兵"
-    },
-    "rarity": "N",
-    "jobs": [
-      "JB_LW_SWN_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 206,
-        "max": 1605
-      },
-      "TP": {
-        "min": 31,
-        "max": 77
-      },
-      "AP": {
-        "min": 36,
-        "max": 73
-      },
-      "ATK": {
-        "min": 55,
-        "max": 178
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 25,
-        "max": 70
-      },
-      "DEX": {
-        "min": 81,
-        "max": 211
-      },
-      "AGI": {
-        "min": 26,
-        "max": 50
-      },
-      "LUCK": {
-        "min": 83,
-        "max": 216
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MAGIC_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso04",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "rundall-soldier",
-    "attack": "SK_LW_SWN_ATK"
-  },
-  "UN_LW_E_RU_01_DRG": {
-    "dataId": "UN_LW_E_RU_01_DRG",
-    "names": {
-      "en": "Rundall Soldier",
-      "fr": "Soldat de Rundall",
-      "de": "Rundallscher Soldat",
-      "es": "Soldado de Rundal",
-      "ko": "런달 병사",
-      "zh": "朗德爾士兵"
-    },
-    "rarity": "N",
-    "jobs": [
-      "JB_LW_DRG_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 206,
-        "max": 1605
-      },
-      "TP": {
-        "min": 31,
-        "max": 77
-      },
-      "AP": {
-        "min": 36,
-        "max": 73
-      },
-      "ATK": {
-        "min": 55,
-        "max": 178
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 25,
-        "max": 70
-      },
-      "DEX": {
-        "min": 81,
-        "max": 211
-      },
-      "AGI": {
-        "min": 26,
-        "max": 50
-      },
-      "LUCK": {
-        "min": 75,
-        "max": 185
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "PIERCE_RES": {},
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "MAGIC_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 4,
-        "max": 4,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso04",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "rundall-soldier",
-    "attack": "SK_LW_DRG_ATK"
   },
   "UN_LW_E_LUCA": {
     "dataId": "UN_LW_E_LUCA",
@@ -56183,130 +57216,6 @@
     "realMaxLevel": 99,
     "type": "object",
     "slug": "crystal"
-  },
-  "UN_LW_E_RU_02_MNK": {
-    "dataId": "UN_LW_E_RU_02_MNK",
-    "names": {
-      "en": "Rundall Soldier",
-      "fr": "Soldat de Rundall",
-      "de": "Rundallscher Soldat",
-      "es": "Soldado de Rundal",
-      "ko": "런달 병사",
-      "zh": "朗德爾士兵"
-    },
-    "rarity": "N",
-    "jobs": [
-      "JB_LW_MNK_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 206,
-        "max": 1605
-      },
-      "TP": {
-        "min": 31,
-        "max": 77
-      },
-      "AP": {
-        "min": 36,
-        "max": 73
-      },
-      "ATK": {
-        "min": 55,
-        "max": 178
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 25,
-        "max": 70
-      },
-      "DEX": {
-        "min": 81,
-        "max": 211
-      },
-      "AGI": {
-        "min": 26,
-        "max": 50
-      },
-      "LUCK": {
-        "min": 83,
-        "max": 216
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "PIERCE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "STRIKE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MISSILE_RES": {},
-      "MAGIC_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 2,
-        "max": 2,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso04",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "rundall-soldier",
-    "attack": "SK_LW_MNK_ATK"
   },
   "UN_LW_E_CACT_03_GH": {
     "dataId": "UN_LW_E_CACT_03_GH",
