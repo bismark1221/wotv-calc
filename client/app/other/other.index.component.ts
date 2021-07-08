@@ -53,6 +53,15 @@ export class OtherIndexComponent implements OnInit {
     {type: 'LIGHT_RES', width: 70},
     {type: 'DARK_RES', width: 70},
 
+    {type: 'FIRE_ATK', width: 70},
+    {type: 'ICE_ATK', width: 70},
+    {type: 'EARTH_ATK', width: 70},
+    {type: 'WIND_ATK', width: 70},
+    {type: 'LIGHTNING_ATK', width: 70},
+    {type: 'WATER_ATK', width: 70},
+    {type: 'LIGHT_ATK', width: 70},
+    {type: 'DARK_ATK', width: 70},
+
     {type: 'POISON_RES', width: 70},
     {type: 'FROSTBITE_RES', width: 70},
     {type: 'BLIND_RES', width: 70},

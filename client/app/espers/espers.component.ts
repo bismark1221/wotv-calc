@@ -51,7 +51,8 @@ export class EspersComponent implements OnInit {
     'lightning',
     'water',
     'light',
-    'dark'
+    'dark',
+    'neutral'
   ];
 
   costs = [];

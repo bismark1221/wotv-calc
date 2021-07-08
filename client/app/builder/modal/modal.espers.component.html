@@ -21,7 +21,7 @@
         <button *ngFor="let rarity of ['UR', 'MR', 'SR']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}" (click)="filterList('rarity', rarity)">
           <img class="filterRarity" src="assets/rarity/{{rarity}}.png" />
         </button>
-        <button *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('element', element)}" (click)="filterList('element', element)">
+        <button *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark', 'neutral']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('element', element)}" (click)="filterList('element', element)">
           <img src="assets/elements/{{element}}.png" />
         </button>
       </div>
