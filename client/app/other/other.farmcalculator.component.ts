@@ -47,12 +47,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       const data = params.get('data');
       if (data) {
-        for (const itemId of data.split(',')) {
-          const item = await this.itemService.getItem(itemId, true);
-          if (item) {
-            this.selectedItems.push(item);
-          }
-        }
+        this.selectedItems = await this.itemService.getItemsByIds(data.split(','));
 
         await this.getQuests();
       }

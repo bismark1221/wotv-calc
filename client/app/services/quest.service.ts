@@ -73,15 +73,14 @@ export class QuestService {
     return quests;
   }
 
-  async getQuest(id) {
-    await this.getQuests();
-
-    return this[this.navService.getVersion() + '_quests'].find(quest => quest.dataId === id);
-  }
-
   async getQuestBySlug(slug) {
-    await this.getQuests();
-    this.quest = this[this.navService.getVersion() + '_quests'].find(quest => quest.slug === slug);
+    this.quest = null;
+    const rawQuest = await this.getApi(slug);
+
+    if (rawQuest) {
+      this.quest = new Quest();
+      this.quest.constructFromJson(rawQuest, this.translateService);
+    }
 
     return this.quest;
   }

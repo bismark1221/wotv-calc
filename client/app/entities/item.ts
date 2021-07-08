@@ -8,12 +8,15 @@ export class Item {
   image;
   count;
   icon;
+  class;
 
   constructFromJson(item: Item): void {
     this.dataId = item.dataId;
     this.names = item.names;
     this.type = item.type;
     this.icon = item.icon;
+    this.image = item.image;
+    this.class = item.class;
   }
 
   getName(translateService): string {

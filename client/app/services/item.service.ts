@@ -6,6 +6,7 @@ import { NavService } from './nav.service';
 import { DataService } from './data.service';
 import { JobService } from './job.service';
 import { EquipmentService } from './equipment.service';
+import { ApiService } from './api.service';
 
 import { Item } from '../entities/item';
 
@@ -22,11 +23,16 @@ export class ItemService {
     private navService: NavService,
     private dataService: DataService,
     private jobService: JobService,
-    private equipmentService: EquipmentService
+    private equipmentService: EquipmentService,
+    private apiService: ApiService
   ) {}
 
   private getRaw() {
     return this.dataService.loadData('items');
+  }
+
+  private async getApi(param = null, extraQuery = []) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('items', param, extraQuery)));
   }
 
   async getItems() {
@@ -62,21 +68,31 @@ export class ItemService {
     return item;
   }
 
-  async getItemForFarm(searchTerm) {
-    await this.getItems();
+  async getItemsByIds(itemIds) {
+    const rawItems = await this.getApi(null, [{name: 'itemIds', value: itemIds.join(',')}]);
 
-    let items = [];
-
-    this[this.navService.getVersion() + '_items'].forEach(item => {
+    const items = [];
+    for (const rawItem of rawItems) {
+      const item = new Item();
+      item.constructFromJson(rawItem);
       item.getName(this.translateService);
-    });
 
-    if (searchTerm) {
-      items = this[this.navService.getVersion() + '_items'].filter(x => x.name.toLocaleLowerCase().indexOf(searchTerm.toLocaleLowerCase()) > -1);
+      items.push(item);
     }
 
-    for (const item of items) {
-      await this.formatItemToShow(item);
+    return items;
+  }
+
+  async getItemForFarm(searchTerm) {
+    const rawItems = await this.getApi(null, [{name: 'search', value: searchTerm}, {name: 'lang', value: this.translateService.currentLang}]);
+
+    const items = [];
+    for (const rawItem of rawItems) {
+      const item = new Item();
+      item.constructFromJson(rawItem);
+      item.getName(this.translateService);
+
+      items.push(item);
     }
 
     return items;
