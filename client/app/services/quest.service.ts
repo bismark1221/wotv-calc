@@ -10,6 +10,7 @@ import { UnitService } from './unit.service';
 import { OtherUnitService } from './otherunit.service';
 import { SkillService } from './skill.service';
 import { ApiService } from './api.service';
+import { NameService } from './name.service';
 
 import { Quest } from '../entities/quest';
 
@@ -30,7 +31,8 @@ export class QuestService {
     private unitService: UnitService,
     private otherUnitService: OtherUnitService,
     private skillService: SkillService,
-    private apiService: ApiService
+    private apiService: ApiService,
+    private nameService: NameService
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
@@ -94,14 +96,24 @@ export class QuestService {
       itemIds.push(item.dataId);
     });
 
-    const quests = await this.getApiQuests([{name: 'forFarmCalc', value: 1}, {name: 'itemIds', value: itemIds.join(',')}]);
+    const result = await this.getApi(null, [{name: 'forFarmCalc', value: 1}, {name: 'itemIds', value: itemIds.join(',')}]);
 
-    for (const quest of quests) {
-      quest.getName(this.translateService);
-      await this.formatItems(quest, itemIds);
+    const quests = [];
+    for (const rawQuest of result.quests) {
+      const quest = new Quest();
+      quest.constructFromJson(rawQuest, this.translateService);
+      await this.formatItems(quest, itemIds, result.items);
+
+      quests.push(quest);
     }
 
-    return quests;
+    for (const rawEnemy of result.bestiary) {
+      rawEnemy.name = this.nameService.getName(rawEnemy);
+    }
+
+    result.quests = quests;
+
+    return result;
   }
 
   async getQuestsForListing(filters = null, sort = 'name', order = 'asc') {
@@ -123,14 +135,14 @@ export class QuestService {
     return quests;
   }
 
-  private async formatItems(quest, searchedItemIds) {
+  private async formatItems(quest, searchedItemIds, items) {
     quest.formattedItems = [];
     quest.findedItems = [];
     quest.dropRateItems = {};
 
     for (const rawItem of quest.items) {
       if (rawItem.dataId !== '') {
-        const formattedItem = await this.itemService.formatItemToShow(await this.itemService.getItem(rawItem.dataId));
+        const formattedItem = items.find(item => item.dataId === rawItem.dataId);
         quest.formattedItems.push(formattedItem);
 
         if (searchedItemIds.indexOf(rawItem.dataId) !== -1) {

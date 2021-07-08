@@ -61,6 +61,8 @@ export class Quest {
     this.looseCond = quest.looseCond;
 
     this.lastRelease = quest.lastRelease;
+
+    this.getName(translateService);
   }
 
   getName(translateService): string {

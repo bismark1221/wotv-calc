@@ -8,7 +8,6 @@ import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { QuestService } from '../services/quest.service';
 import { ItemService } from '../services/item.service';
-import { OtherUnitService } from '../services/otherunit.service';
 
 import { Item } from '../entities/item';
 
@@ -37,8 +36,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
     private navService: NavService,
     private nameService: NameService,
     private itemService: ItemService,
-    private questService: QuestService,
-    private otherUnitService: OtherUnitService
+    private questService: QuestService
   ) {
   }
 
@@ -98,7 +96,8 @@ export class OtherFarmCalculatorComponent implements OnInit {
 
   async getQuests() {
     this.questLoading = true;
-    this.quests = await this.questService.getQuestsForFarmCalc(this.selectedItems);
+    const apiResult = await this.questService.getQuestsForFarmCalc(this.selectedItems);
+    this.quests = apiResult.quests;
 
     this.isCollapsed = {};
     for (const quest of this.quests) {
@@ -115,9 +114,10 @@ export class OtherFarmCalculatorComponent implements OnInit {
         let enemyFinded = false;
         for (const rawEnemy of quest.enemies) {
           if (rawEnemy.drop === rawDrop.dataId) {
-            const EnemyData = await this.otherUnitService.getUnit(rawEnemy.dataId);
-            EnemyData.name = this.nameService.getName(EnemyData);
-            formattedDropList.enemies.push(EnemyData);
+            const EnemyData = apiResult.bestiary.find(enemy => enemy.dataId === rawEnemy.dataId);
+            if (EnemyData) {
+              formattedDropList.enemies.push(EnemyData);
+            }
             enemyFinded = true;
           }
         }
@@ -125,9 +125,10 @@ export class OtherFarmCalculatorComponent implements OnInit {
         let chestFinded = false;
         for (const rawChest of quest.chests) {
           if (rawChest.drop === rawDrop.dataId) {
-            const ChestData = await this.otherUnitService.getUnit(rawChest.dataId);
-            ChestData.name = this.nameService.getName(ChestData);
-            formattedDropList.enemies.push(ChestData);
+            const ChestData = apiResult.bestiary.find(chest => chest.dataId === rawChest.dataId);
+            if (ChestData) {
+              formattedDropList.enemies.push(ChestData);
+            }
             chestFinded = true;
           }
         }
@@ -135,7 +136,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
         if (enemyFinded || chestFinded || rawDrop.dataId === 'HOST') {
           for (const itemId of Object.keys(rawDrop.items)) {
             if (itemId !== '') {
-              const formattedItem = await this.itemService.formatItemToShow(await this.itemService.getItem(itemId));
+              const formattedItem = apiResult.items.find(item => item.dataId === itemId);
               for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
                 formattedItem.drop = {
                   num: itemDropNum,
