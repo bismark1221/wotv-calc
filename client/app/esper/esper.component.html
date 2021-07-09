@@ -50,8 +50,8 @@
               <th class="sub">AP</th>
               <th class="sub">ATK</th>
               <th class="sub">MAG</th>
-              <th class="sub">DEX</th>
               <th class="sub">AGI</th>
+              <th class="sub">DEX</th>
               <th class="sub">LUCK</th>
               <th class="sub" *ngIf="esper.stats.POISON_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="poison resistance" src="{{'assets/status-ailments/POISON.png'}}" /></th>
               <th class="sub" *ngIf="esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.png'}}" /></th>
@@ -79,8 +79,8 @@
               <td>{{ esper.stats.AP[0].min }}</td>
               <td>{{ esper.stats.ATK[0].min }}</td>
               <td>{{ esper.stats.MAG[0].min }}</td>
-              <td>{{ esper.stats.DEX[0].min }}</td>
               <td>{{ esper.stats.AGI[0].min }}</td>
+              <td>{{ esper.stats.DEX[0].min }}</td>
               <td>{{ esper.stats.LUCK[0].min }}</td>
               <td *ngIf="esper.stats.POISON_RES[esper.SPs.length -1].max > 0">0 %</td>
               <td *ngIf="esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">0 %</td>
@@ -108,8 +108,8 @@
               <td>{{ esper.stats.AP[esper.SPs.length - 1].max }}</td>
               <td>{{ esper.stats.ATK[esper.SPs.length - 1].max }}</td>
               <td>{{ esper.stats.MAG[esper.SPs.length - 1].max }}</td>
-              <td>{{ esper.stats.DEX[esper.SPs.length - 1].max }}</td>
               <td>{{ esper.stats.AGI[esper.SPs.length - 1].max }}</td>
+              <td>{{ esper.stats.DEX[esper.SPs.length - 1].max }}</td>
               <td>{{ esper.stats.LUCK[esper.SPs.length - 1].max }}</td>
               <td *ngIf="esper.stats.POISON_RES[esper.SPs.length -1].max > 0">{{ esper.stats.POISON_RES[esper.SPs.length -1].max }} %</td>
               <td *ngIf="esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.FROSTBITE_RES[esper.SPs.length -1].max }} %</td>
