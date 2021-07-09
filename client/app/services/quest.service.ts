@@ -5,7 +5,6 @@ import { TranslateService } from '@ngx-translate/core';
 import { DataService } from './data.service';
 import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
-import { ItemService } from './item.service';
 import { UnitService } from './unit.service';
 import { OtherUnitService } from './otherunit.service';
 import { SkillService } from './skill.service';
@@ -27,7 +26,6 @@ export class QuestService {
     private dataService: DataService,
     private navService: NavService,
     private toolService: ToolService,
-    private itemService: ItemService,
     private unitService: UnitService,
     private otherUnitService: OtherUnitService,
     private skillService: SkillService,
