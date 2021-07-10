@@ -170,6 +170,8 @@ export class Unit {
     this.realMaxLevel = unit.realMaxLevel;
     this.type = unit.type;
     this.releaseDate = unit.releaseDate;
+
+    this.getName(translateService);
   }
 
   getName(translateService): string {

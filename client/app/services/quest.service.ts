@@ -12,6 +12,11 @@ import { ApiService } from './api.service';
 import { NameService } from './name.service';
 
 import { Quest } from '../entities/quest';
+import { Unit } from '../entities/unit';
+import { Skill } from '../entities/skill';
+import { Equipment } from '../entities/equipment';
+import { Job } from '../entities/job';
+import { Item } from '../entities/item';
 
 @Injectable()
 export class QuestService {
@@ -73,11 +78,46 @@ export class QuestService {
 
   async getQuestBySlug(slug) {
     this.quest = null;
-    const rawQuest = await this.getApi(slug);
+    const result = await this.getApi(slug, [{name: 'forDetail', value: 1}]);
 
-    if (rawQuest) {
+    if (result.quest) {
       this.quest = new Quest();
-      this.quest.constructFromJson(rawQuest, this.translateService);
+      this.quest.constructFromJson(result.quest, this.translateService);
+
+      this.quest.rawBestiary = [];
+      for (const rawBeast of result.bestiary) {
+        const beast = new Unit();
+        beast.constructFromJson(rawBeast, this.translateService);
+        this.quest.rawBestiary.push(beast);
+      }
+
+      this.quest.rawItems = [];
+      for (const rawItem of result.items) {
+        const item = new Item();
+        item.constructFromJson(rawItem);
+        this.quest.rawItems.push(item);
+      }
+
+      this.quest.rawSkills = [];
+      for (const rawSkill of result.skills) {
+        const skill = new Skill();
+        skill.constructFromJson(rawSkill, this.translateService);
+        this.quest.rawSkills.push(skill);
+      }
+
+      this.quest.rawEquipments = [];
+      for (const rawEquipment of result.equipments) {
+        const equipment = new Equipment();
+        equipment.constructFromJson(rawEquipment, this.translateService);
+        this.quest.rawEquipments.push(equipment);
+      }
+
+      this.quest.rawJobs = [];
+      for (const rawJob of result.jobs) {
+        const job = new Job();
+        job.constructFromJson(rawJob);
+        this.quest.rawJobs.push(job);
+      }
     }
 
     return this.quest;
@@ -344,10 +384,7 @@ export class QuestService {
         html = 'No more than ' + mission.value + ' KO\'d unit' + (mission.value > 1 ? 's' : '');
       break;
       case 'SPECIFIC_UNIT_NOT_DEAD' :
-        unit = await this.unitService.getUnit(mission.value);
-        if (!unit) {
-          unit = await this.otherUnitService.getUnit(mission.value);
-        }
+        unit = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === mission.value);
         html = (unit ? unit.getName(this.translateService) : '???') + ' must survive the mission';
       break;
       case 'ELEMENT' :
@@ -358,10 +395,7 @@ export class QuestService {
         html += 'unit(s)';
       break;
       case 'SPECIFIC_UNIT_IN_PARTY' :
-        unit = await this.unitService.getUnit(mission.value);
-        if (!unit) {
-          unit = await this.otherUnitService.getUnit(mission.value);
-        }
+        unit = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === mission.value);
         html = 'Party includes ' + (unit ? unit.getName(this.translateService) : '???');
       break;
       case 'MAX_PARTY_UNIT' :
@@ -369,7 +403,7 @@ export class QuestService {
       break;
       case 'MIN_SIM_DEAD_SPECIFIC_ENEMIES' :
         const valueSplit = mission.value.split(',');
-        unit = await this.otherUnitService.getUnit(valueSplit[0]);
+        unit = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === valueSplit[0]);
         html = 'Defeat ' + valueSplit[1] + ' ' + (unit ? unit.getName(this.translateService) : '???') + ' or more simultaneously';
       break;
       case 'MIN_BREAK_OBJECT' :
@@ -383,7 +417,7 @@ export class QuestService {
         html = 'Use no more than ' + mission.value + ' skills';
       break;
       case 'ACTIVATE' :
-        unit = await this.otherUnitService.getUnit(mission.value);
+        unit = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === mission.value);
         html = 'Activate ' + (unit ? unit.getName(this.translateService) : '???'); // @TODO
       break;
       case 'ITEMS' :
@@ -482,28 +516,28 @@ export class QuestService {
               html += 'All allies annihilated';
             }
           } else {
-            html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' defeated';
+            html += this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest) + ' defeated';
           }
         break;
 
         case 'ALLDEADEXPECTTAG' :
           if (cond.condition.side === 1) {
-            html += 'All enemies annihilated expect ' + await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest));
+            html += 'All enemies annihilated expect ' + this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest);
           } else {
-            html += 'All allies annihilated expect ' + await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest));
+            html += 'All allies annihilated expect ' + this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest);
           }
         break;
 
         case 'ALLDEAD' :
-          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' defeated';
+          html += this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest) + ' defeated';
         break;
 
         case 'STATCOND' :
-          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' HP under ' + cond.condition.hp + '%';
+          html += this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest) + ' HP under ' + cond.condition.hp + '%';
         break;
 
         case 'TURNCOUNT' :
-          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' played more than ' + cond.condition.turn + ' turns';
+          html += this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest) + ' played more than ' + cond.condition.turn + ' turns';
         break;
 
         case 'POSITION' :
@@ -582,7 +616,11 @@ export class QuestService {
         break;
 
         case 'CAST' :
-          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' cast ' + await this.skillService.getSkillName(cond.condition.skill);
+          html += this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest) + ' cast ';
+          const skill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === cond.condition.skill);
+          if (skill) {
+            html += skill.getName(this.translateService);
+          }
         break;
 
         case 'COUNTDEAD' :
@@ -604,11 +642,8 @@ export class QuestService {
     return html;
   }
 
-  async getNameOfEnemy(unitId) {
-    let unit = await this.unitService.getUnit(unitId);
-    if (!unit) {
-      unit = await this.otherUnitService.getUnit(unitId);
-    }
+  getNameOfEnemy(unitId, quest) {
+    let unit = quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === unitId);
 
     return unit ? unit.getName(this.translateService) : '???';
   }

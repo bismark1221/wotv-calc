@@ -91,7 +91,7 @@ export class QuestComponent implements OnInit {
       } else {
         await this.formatQuest();
 
-        // console.log(this.quest)
+        console.log(this.quest)
 
         this.navService.setTitle(this.quest.name);
       }
@@ -192,7 +192,7 @@ export class QuestComponent implements OnInit {
 
         for (const itemId of Object.keys(rawDrop.items)) {
           if (itemId !== '') {
-            const formattedItem = await this.itemService.formatItemToShow(await this.itemService.getItem(itemId));
+            const formattedItem = this.quest.rawItems.find(searchedItem => searchedItem.dataId === itemId);
             if (formattedItem) {
               for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
                 formattedItem.drop = {
@@ -228,11 +228,11 @@ export class QuestComponent implements OnInit {
       };
 
       if (reward.type === 'item') {
-        formattedReward.reward = await this.itemService.getItem(reward.rewardId, true);
+        formattedReward.reward = this.quest.rawItems.find(searchedItem => searchedItem.dataId === reward.rewardId);
       } else if (reward.type === 'equipment') {
-        formattedReward.reward = await this.equipmentService.getEquipment(reward.rewardId);
+        formattedReward.reward = this.quest.rawEquipments.find(searchedItem => searchedItem.dataId === reward.rewardId);
         if (formattedReward.reward === undefined) {
-          formattedReward.reward = await this.equipmentService.getEquipment(reward.rewardId.slice(0, -2));
+          formattedReward.reward = this.quest.rawEquipments.find(searchedItem => searchedItem.dataId === reward.rewardId.slice(0, -2));
           formattedReward.reward.name = this.nameService.getName(formattedReward.reward) + ' +' + reward.rewardId[reward.rewardId.length - 1];
         } else {
           formattedReward.reward.name = this.nameService.getName(formattedReward.reward);
@@ -251,7 +251,7 @@ export class QuestComponent implements OnInit {
   }
 
   async formatEnemyOrAlly(enemy, index, type) {
-    let formattedEnemy = await this.otherUnitService.getUnit(enemy.dataId);
+    let formattedEnemy = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === enemy.dataId);
     formattedEnemy.name = this.nameService.getName(formattedEnemy);
     formattedEnemy.statsForJob = {};
 
@@ -270,7 +270,7 @@ export class QuestComponent implements OnInit {
 
     formattedEnemy.job = null;
     if (formattedEnemy.jobs && formattedEnemy.jobs[0]) {
-      formattedEnemy.job = await this.jobService.getJob(formattedEnemy.jobs[0]);
+      formattedEnemy.job = this.quest.rawJobs.find(searchedJob => searchedJob.dataId === formattedEnemy.jobs[0]);
       formattedEnemy.job.name = this.nameService.getName(formattedEnemy.job);
     }
 
@@ -317,7 +317,7 @@ export class QuestComponent implements OnInit {
     formattedEnemy.skills = [];
 
     if (formattedEnemy.attack) {
-      const formattedSkill = await this.skillService.getSkill(formattedEnemy.attack);
+      const formattedSkill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.attack);
       if (formattedSkill) {
         formattedSkill.name = this.nameService.getName(formattedSkill);
 
@@ -332,7 +332,7 @@ export class QuestComponent implements OnInit {
     }
 
     for (const rawSkill of this.quest[type][index].skills) {
-      let formattedSkill = await this.skillService.getSkill(rawSkill.iname);
+      let formattedSkill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === rawSkill.iname);
       if (formattedSkill) {
         formattedSkill = JSON.parse(JSON.stringify(formattedSkill));
         formattedSkill.level = rawSkill.rank;
@@ -365,7 +365,7 @@ export class QuestComponent implements OnInit {
     }
 
     if (formattedEnemy.limit) {
-      const formattedSkill = await this.skillService.getSkill(formattedEnemy.limit);
+      const formattedSkill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.limit);
       if (formattedSkill) {
         formattedSkill.name = this.nameService.getName(formattedSkill);
 
@@ -572,7 +572,7 @@ export class QuestComponent implements OnInit {
   }
 
   async formatOtherItem(item) {
-    const formattedItem = await this.otherUnitService.getUnit(item.dataId);
+    const formattedItem = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === item.dataId);
     formattedItem.name = this.nameService.getName(formattedItem);
 
     return formattedItem;
