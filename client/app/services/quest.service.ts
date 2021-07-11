@@ -42,40 +42,6 @@ export class QuestService {
     return JSON.parse(JSON.stringify(await this.apiService.loadData('quests', param, extraQuery)));
   }
 
-  private getRaw() {
-    return this.dataService.loadData('quests');
-  }
-
-  async getQuests() {
-    if (this[this.navService.getVersion() + '_quests'] === null || this[this.navService.getVersion() + '_quests'] === undefined) {
-      const quests: Quest[] = [];
-      const rawQuests = JSON.parse(JSON.stringify(await this.getRaw()));
-
-      Object.keys(rawQuests).forEach(questId => {
-        const quest = new Quest();
-        quest.constructFromJson(rawQuests[questId], this.translateService);
-        quests.push(quest);
-      });
-
-      this[this.navService.getVersion() + '_quests'] = quests;
-    }
-
-    return this[this.navService.getVersion() + '_quests'];
-  }
-
-  async getApiQuests(extraQuery = []) {
-    const quests: Quest[] = [];
-    const rawQuests = await this.getApi(null, extraQuery);
-
-    Object.keys(rawQuests).forEach(questId => {
-      const quest = new Quest();
-      quest.constructFromJson(rawQuests[questId], this.translateService);
-      quests.push(quest);
-    });
-
-    return quests;
-  }
-
   async getQuestBySlug(slug) {
     this.quest = null;
     const result = await this.getApi(slug, [{name: 'forDetail', value: 1}]);
@@ -154,7 +120,15 @@ export class QuestService {
   }
 
   async getQuestsForListing(filters = null, sort = 'name', order = 'asc') {
-    let quests = await this.getApiQuests([{name: 'forListing', value: 1}]);
+    const quests: Quest[] = [];
+    const rawQuests = await this.getApi(null, [{name: 'forListing', value: 1}]);
+
+    Object.keys(rawQuests).forEach(questId => {
+      const quest = new Quest();
+      quest.constructFromJson(rawQuests[questId], this.translateService);
+      quests.push(quest);
+    });
+
     quests = this.filterQuests(quests, filters);
 
     switch (sort) {
@@ -267,35 +241,8 @@ export class QuestService {
     }
   }
 
-  async getQuestForOtherUnits(unitId) {
-    await this.getQuests();
-    const filteredQuests = [];
-
-    this[this.navService.getVersion() + '_quests'].forEach(quest => {
-      let unitFinded = -1;
-
-      let enemyIndex = 0;
-      for (const enemy of quest.enemies) {
-        if (enemy.dataId === unitId) {
-          unitFinded = enemyIndex;
-          break;
-        }
-        enemyIndex++;
-      }
-
-      if (unitFinded !== -1) {
-        filteredQuests.push({
-          enemyData: quest.enemies[enemyIndex],
-          questData: {
-            names: quest.names,
-            slug: quest.slug,
-            type: quest.type
-          }
-        });
-      }
-    });
-
-    return filteredQuests;
+  async getQuestForOtherUnits(unitIds) {
+    return await this.getApi(null, [{name: 'forBestiary', value: 1}, {name: 'beastIds', value: unitIds.join(',')}]);
   }
 
   formatType(type) {

@@ -101,21 +101,28 @@ export class OtherUnitComponent implements OnInit {
   }
 
   async getQuestInfos() {
-    const quests = [];
+    const otherUnitIds = [];
     for (const unitData of this.otherUnits) {
-      for (const quest of await this.questService.getQuestForOtherUnits(unitData.dataId)) {
-        quests.push(quest);
-      }
+      otherUnitIds.push(unitData.dataId);
     }
+
+    const result = await this.questService.getQuestForOtherUnits(otherUnitIds);
+    const quests = result.quests;
 
     let i = 0;
     for (const quest of quests) {
-      const formattedEnemy = await this.formatEnemyOrAlly(quest.enemyData);
-      formattedEnemy.questData = quest.questData;
-      formattedEnemy.questData.name = this.nameService.getName(formattedEnemy.questData);
-      this.formattedEnemies.push(formattedEnemy);
-      this.isCollapsedEnemy[i] = true;
-      i++;
+      let addedEnemies = [];
+      for (const rawEnemy of quest.enemies) {
+        if (otherUnitIds.indexOf(rawEnemy.dataId) !== -1 && addedEnemies.indexOf(rawEnemy.dataId) === -1) {
+          const formattedEnemy = await this.formatEnemyOrAlly(rawEnemy);
+          formattedEnemy.questData = quest;
+          formattedEnemy.questData.name = this.nameService.getName(formattedEnemy.questData);
+          this.formattedEnemies.push(formattedEnemy);
+          this.isCollapsedEnemy[i] = true;
+          i++;
+          addedEnemies.push(rawEnemy.dataId);
+        }
+      }
     }
 
     this.sortByQuestName(this.formattedEnemies);
