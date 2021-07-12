@@ -409,7 +409,59 @@ export class Unit {
         }
       });
     } else {
-      this.stats = {};
+      this.stats = {
+        'HP': {},
+        'TP': {},
+        'AP': {
+          total: 0
+        },
+        'ATK': {},
+        'DEF': {},
+        'SPR': {},
+        'MAG': {},
+        'DEX': {},
+        'AGI': {},
+        'LUCK': {},
+        'INITIAL_AP': {
+          base: 0,
+          baseTotal: 0
+        },
+        'ACCURACY': {},
+        'CRITIC_RATE': {},
+        'CRITIC_AVOID': {},
+        'EVADE': {},
+        'FIRE': {},
+        'ICE': {},
+        'EARTH': {},
+        'WIND': {},
+        'LIGHTNING': {},
+        'WATER': {},
+        'LIGHT': {},
+        'DARK': {},
+        'SLASH': {},
+        'PIERCE': {},
+        'STRIKE': {},
+        'MISSILE': {},
+        'MAGIC': {},
+        'POISION': {},
+        'BLIND': {},
+        'SLEEP': {},
+        'SILENCE': {},
+        'PARALYZE': {},
+        'CONFUSION': {},
+        'PETRIFY': {},
+        'TOAD': {},
+        'CHARM': {},
+        'SLOW': {},
+        'STOP': {},
+        'IMMOBILIZE': {},
+        'DISABLE': {},
+        'BERSERK': {},
+        'DOOM': {},
+        'MOVE': {},
+        'JUMP': {},
+        'COST': {}
+      };
     }
   }
 

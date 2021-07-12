@@ -120,7 +120,7 @@ export class QuestService {
   }
 
   async getQuestsForListing(filters = null, sort = 'name', order = 'asc') {
-    const quests: Quest[] = [];
+    let quests: Quest[] = [];
     const rawQuests = await this.getApi(null, [{name: 'forListing', value: 1}]);
 
     Object.keys(rawQuests).forEach(questId => {
