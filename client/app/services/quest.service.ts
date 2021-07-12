@@ -357,8 +357,8 @@ export class QuestService {
         html = 'Break ' + mission.value + ' or more objets';
       break;
       case 'SPECIFIC_SKILL' :
-        // @TODO get skill name ^^
-        html = 'Use some skill (but sorry I did not link that part yet...)'; // + mission.value;
+        const skill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === mission.value);
+        html = 'Use skill "' + (skill ? skill.getName(this.translateService) : '???') + '"';
       break;
       case 'MAX_SKILL' :
         html = 'Use no more than ' + mission.value + ' skills';
@@ -590,7 +590,7 @@ export class QuestService {
   }
 
   getNameOfEnemy(unitId, quest) {
-    let unit = quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === unitId);
+    const unit = quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === unitId);
 
     return unit ? unit.getName(this.translateService) : '???';
   }

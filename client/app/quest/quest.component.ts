@@ -91,8 +91,6 @@ export class QuestComponent implements OnInit {
       } else {
         await this.formatQuest();
 
-        console.log(this.quest)
-
         this.navService.setTitle(this.quest.name);
       }
     });

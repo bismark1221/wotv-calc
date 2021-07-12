@@ -333,80 +333,84 @@ export class Unit {
   }
 
   private calculateBaseStats(ignoreJob = false) {
-    Object.keys(this.stats).forEach(stat => {
-      if (typeof(this.stats[stat].min) === 'number') {
-        let exStat = 0;
-        if (this.stats[stat].ex) {
-          exStat = this.stats[stat].ex;
-        }
+    if (this.stats) {
+      Object.keys(this.stats).forEach(stat => {
+        if (typeof(this.stats[stat].min) === 'number') {
+          let exStat = 0;
+          if (this.stats[stat].ex) {
+            exStat = this.stats[stat].ex;
+          }
 
-        this.stats[stat] = {
-          min: this.stats[stat].min,
-          max: this.stats[stat].max,
-          ex: exStat
-        };
-      } else {
-        delete this.stats[stat];
-      }
-    });
-
-    Object.keys(this.stats).forEach(stat => {
-      const min = this.stats[stat].min;
-      const max = this.stats[stat].max;
-      const ex = this.stats[stat].ex;
-
-      this.stats[stat].base = Math.floor(min + ((max - min) / ((this.realMaxLevel ? this.realMaxLevel : 99) - 1) * (this.level - 1)));
-
-      if (this.exJobs.length > 0 && this.jobsData && this.jobsData[0].level > 15 && this.level > 99) {
-        this.stats[stat].base = Math.floor(max + (((ex - max) / 21) * (this.level - 99)));
-      }
-
-      this.stats[stat].baseTotal = this.stats[stat].base;
-    });
-
-    if (!ignoreJob) {
-      this.jobsData.forEach((job, jobIndex) => {
-        const subJob = jobIndex !== 0;
-
-        if (subJob || job.level <= 15) {
-          Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
-            if (!this.stats[statType]) {
-              this.stats[statType] = {
-                base: 0
-              };
-            }
-            const stat = this.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1);
-
-            this.stats[statType].baseTotal += stat;
-          });
+          this.stats[stat] = {
+            min: this.stats[stat].min,
+            max: this.stats[stat].max,
+            ex: exStat
+          };
+        } else {
+          delete this.stats[stat];
         }
       });
 
-      this.exJobsData.forEach(job => {
-        if (this.jobsData[0].level > 15) {
-          const level = this.jobsData[0].level - 16;
-          Object.keys(job.statsModifiers[level]).forEach(statType => {
-            if (!this.stats[statType]) {
-              this.stats[statType] = {
-                base: 0
-              };
-            }
-            const stat = this.stats[statType].base * (job.statsModifiers[level][statType] / 10000);
+      Object.keys(this.stats).forEach(stat => {
+        const min = this.stats[stat].min;
+        const max = this.stats[stat].max;
+        const ex = this.stats[stat].ex;
 
-            this.stats[statType].baseTotal += stat;
-          });
+        this.stats[stat].base = Math.floor(min + ((max - min) / ((this.realMaxLevel ? this.realMaxLevel : 99) - 1) * (this.level - 1)));
+
+        if (this.exJobs.length > 0 && this.jobsData && this.jobsData[0].level > 15 && this.level > 99) {
+          this.stats[stat].base = Math.floor(max + (((ex - max) / 21) * (this.level - 99)));
+        }
+
+        this.stats[stat].baseTotal = this.stats[stat].base;
+      });
+
+      if (!ignoreJob) {
+        this.jobsData.forEach((job, jobIndex) => {
+          const subJob = jobIndex !== 0;
+
+          if (subJob || job.level <= 15) {
+            Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
+              if (!this.stats[statType]) {
+                this.stats[statType] = {
+                  base: 0
+                };
+              }
+              const stat = this.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1);
+
+              this.stats[statType].baseTotal += stat;
+            });
+          }
+        });
+
+        this.exJobsData.forEach(job => {
+          if (this.jobsData[0].level > 15) {
+            const level = this.jobsData[0].level - 16;
+            Object.keys(job.statsModifiers[level]).forEach(statType => {
+              if (!this.stats[statType]) {
+                this.stats[statType] = {
+                  base: 0
+                };
+              }
+              const stat = this.stats[statType].base * (job.statsModifiers[level][statType] / 10000);
+
+              this.stats[statType].baseTotal += stat;
+            });
+          }
+        });
+      }
+
+      Object.keys(this.stats).forEach(stat => {
+        if (!this.stats[stat].baseTotal) {
+          this.stats[stat].base = this.stats[stat].min;
+          this.stats[stat].baseTotal = this.stats[stat].min;
+        } else {
+          this.stats[stat].baseTotal = Math.floor(this.stats[stat].baseTotal);
         }
       });
+    } else {
+      this.stats = {};
     }
-
-    Object.keys(this.stats).forEach(stat => {
-      if (!this.stats[stat].baseTotal) {
-        this.stats[stat].base = this.stats[stat].min;
-        this.stats[stat].baseTotal = this.stats[stat].min;
-      } else {
-        this.stats[stat].baseTotal = Math.floor(this.stats[stat].baseTotal);
-      }
-    });
   }
 
   private updatePercentStats(stat, type, value) {

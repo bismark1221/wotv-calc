@@ -111,7 +111,7 @@ export class OtherUnitComponent implements OnInit {
 
     let i = 0;
     for (const quest of quests) {
-      let addedEnemies = [];
+      const addedEnemies = [];
       for (const rawEnemy of quest.enemies) {
         if (otherUnitIds.indexOf(rawEnemy.dataId) !== -1 && addedEnemies.indexOf(rawEnemy.dataId) === -1) {
           const formattedEnemy = await this.formatEnemyOrAlly(rawEnemy);
