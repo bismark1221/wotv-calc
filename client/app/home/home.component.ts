@@ -8,6 +8,7 @@ import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { JobService } from '../services/job.service';
 import { EquipmentService } from '../services/equipment.service';
+import { HomeService } from '../services/home.service';
 
 @Component({
   selector: 'app-home',
@@ -122,7 +123,8 @@ export class HomeComponent {
     private navService: NavService,
     private nameService: NameService,
     private jobService: JobService,
-    private equipmentService: EquipmentService
+    private equipmentService: EquipmentService,
+    private homeService: HomeService,
   ) {
     this.navService.setTitle(null);
 
@@ -152,40 +154,7 @@ export class HomeComponent {
     this.lang = this.translateService.currentLang;
     this.version = this.navService.getVersion();
 
-    for (let updateIndex = 0; updateIndex <= this.updated[this.version].length - 1; updateIndex++) {
-      const update = this.updated[this.version][updateIndex];
-
-      this.updatedFormatted[updateIndex] = {
-        date: update.date,
-        items: []
-      };
-      const tableIndex = -1;
-
-      for (const item of update.items) {
-        const dataItem = await this[item.type + 'Service']['get' + item.type[0].toUpperCase() + item.type.slice(1)](item.dataId);
-
-        if (dataItem) {
-          const formattedItem = {
-            type: item.type,
-            slug: dataItem.slug,
-            name: this.nameService.getName(dataItem),
-            image: dataItem.image,
-            element: dataItem.element,
-            rarity: dataItem.rarity,
-            jobs: []
-          };
-
-          if (item.type === 'unit') {
-            for (const jobId of dataItem.jobs) {
-              const job = await this.jobService.getJob(jobId);
-              formattedItem.jobs.push(job);
-            }
-          }
-
-          this.updatedFormatted[updateIndex].items.push(formattedItem);
-        }
-      }
-    }
+    this.updatedFormatted = await this.homeService.getHomeData();
   }
 
   getRoute(route) {

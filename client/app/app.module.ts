@@ -108,6 +108,7 @@ import { DataService } from './services/data.service';
 import { SimulatorService } from './services/simulator.service';
 import { OtherUnitService } from './services/otherunit.service';
 import { ApiService } from './services/api.service';
+import { HomeService } from './services/home.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -230,6 +231,7 @@ export function createTranslateLoader(http: HttpClient) {
     SimulatorService,
     OtherUnitService,
     ApiService,
+    HomeService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler
