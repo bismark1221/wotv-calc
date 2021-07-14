@@ -304,6 +304,9 @@ export class QuestService {
       case 'tower' :
         return 'Tower';
       break;
+      case 'guild_raid' :
+        return 'Guild raid';
+      break;
       default :
         return 'Untranslated type...';
       break;

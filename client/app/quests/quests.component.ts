@@ -43,7 +43,8 @@ export class QuestsComponent implements OnInit {
     'selection',
     'draft_pvp',
     'hard_quest_vc',
-    'tower'
+    'tower',
+    'guild_raid'
   ];
 
   constructor(

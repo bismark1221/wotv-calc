@@ -4336,6 +4336,56 @@
     "image": "lapsobrn",
     "class": "imgOrbPink"
   },
+  "IT_JB_MM_AXD": {
+    "dataId": "IT_JB_MM_AXD",
+    "names": {
+      "en": "戦斧士の記憶・翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_AXD_FIRE",
+    "image": "axd",
+    "class": "imgOrbGreen"
+  },
+  "IT_JB_MM_AXD_2": {
+    "dataId": "IT_JB_MM_AXD_2",
+    "names": {
+      "en": "戦斧士の記憶・碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_AXD_FIRE",
+    "image": "axd",
+    "class": "imgOrbBlue"
+  },
+  "IT_JB_MM_AXD_3": {
+    "dataId": "IT_JB_MM_AXD_3",
+    "names": {
+      "en": "戦斧士の記憶・紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_AXD_FIRE",
+    "image": "axd",
+    "class": "imgOrbViolet"
+  },
+  "IT_JB_MM_AXD_4": {
+    "dataId": "IT_JB_MM_AXD_4",
+    "names": {
+      "en": "戦斧士の記憶・橘"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_AXD_FIRE",
+    "image": "axd",
+    "class": "imgOrbYellow"
+  },
+  "IT_JB_MM_AXD_5": {
+    "dataId": "IT_JB_MM_AXD_5",
+    "names": {
+      "en": "戦斧士の記憶・緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_AXD_FIRE",
+    "image": "axd",
+    "class": "imgOrbPink"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -6544,6 +6594,22 @@
     "type": "unit_shard",
     "image": "it_pi_lw_obrn"
   },
+  "IT_PI_LW_QILF_01": {
+    "dataId": "IT_PI_LW_QILF_01",
+    "names": {
+      "en": "キルフェ（水着）の欠片"
+    },
+    "type": "unit_shard",
+    "image": "it_pi_lw_qilf_01"
+  },
+  "IT_PI_LW_FALM": {
+    "dataId": "IT_PI_LW_FALM",
+    "names": {
+      "en": "ファルムの欠片"
+    },
+    "type": "unit_shard",
+    "image": "it_pi_lw_falm"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -7496,6 +7562,22 @@
     "type": "exjob_orb",
     "image": "it_sp_lw_obrn"
   },
+  "IT_SP_LW_SUMM_UR": {
+    "dataId": "IT_SP_LW_SUMM_UR",
+    "names": {
+      "en": "【水着】ユニットの思珠（UR）"
+    },
+    "type": "exjob_orb",
+    "image": "it_sp_lw_summ_ur"
+  },
+  "IT_SP_LW_FALM": {
+    "dataId": "IT_SP_LW_FALM",
+    "names": {
+      "en": "ファルムの思珠"
+    },
+    "type": "exjob_orb",
+    "image": "it_sp_lw_falm"
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -8333,7 +8415,7 @@
   "IT_SB_AW_KRKN_R2": {
     "dataId": "IT_SB_AW_KRKN_R2",
     "names": {
-      "en": "クラーケンの獣醒石（★2）"
+      "en": "クラーケンの獣醒石（★2） - Kraken's Awakening Stone (2★)"
     },
     "type": "compo_esper_awake",
     "image": "it_sb_aw_krkn_r2"
@@ -8341,7 +8423,7 @@
   "IT_SB_AW_KRKN_R3": {
     "dataId": "IT_SB_AW_KRKN_R3",
     "names": {
-      "en": "クラーケンの獣醒石（★3）"
+      "en": "クラーケンの獣醒石（★3） - Kraken's Awakening Stone (3★)"
     },
     "type": "compo_esper_awake",
     "image": "it_sb_aw_krkn_r3"
@@ -9765,6 +9847,15 @@
     "icon": "AF_LW_AXE_003",
     "image": "lapswpn_axe_003"
   },
+  "IT_AF_LW_AXE_004": {
+    "dataId": "IT_AF_LW_AXE_004",
+    "names": {
+      "en": "ギガントアクスのクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_AXE_004",
+    "image": "lapswpn_axe_004"
+  },
   "IT_AF_LW_GLO_001": {
     "dataId": "IT_AF_LW_GLO_001",
     "names": {
@@ -10092,7 +10183,7 @@
   "IT_AF_LW_HAT_017": {
     "dataId": "IT_AF_LW_HAT_017",
     "names": {
-      "en": "手乗りホワイトマシュマロのクラフトレシピ"
+      "en": "手乗りホワイトマシュマロのクラフトレシピ - White Marshmallow Miniature Crafting Recipe"
     },
     "type": "recipe",
     "icon": "AF_LW_HAT_017",
@@ -10479,7 +10570,7 @@
   "IT_EC_RAID_15": {
     "dataId": "IT_EC_RAID_15",
     "names": {
-      "en": "ホワイトデーレイドメダル"
+      "en": "ホワイトデーレイドメダル - July Raid Medal"
     },
     "type": "medal",
     "icon": "IT_EC_RAID_03",
@@ -10532,7 +10623,7 @@
   "IT_UN_EXCHANGE_01": {
     "dataId": "IT_UN_EXCHANGE_01",
     "names": {
-      "en": "ソウルスター"
+      "en": "ソウルスター - Soul Star"
     },
     "type": "soul_medal",
     "image": "it_un_exchange_01"
@@ -10540,7 +10631,7 @@
   "IT_VC_EXCHANGE_01": {
     "dataId": "IT_VC_EXCHANGE_01",
     "names": {
-      "en": "ビジョンスター"
+      "en": "ビジョンスター - Vision Star"
     },
     "type": "vision_medal",
     "image": "it_vc_exchange_01"
@@ -11056,6 +11147,24 @@
     "icon": "IT_EC_SUMMON_04",
     "image": "it_ec_summon_04"
   },
+  "IT_EC_SUMMON02_07U_B": {
+    "dataId": "IT_EC_SUMMON02_07U_B",
+    "names": {
+      "en": "【7月】ユニット召喚メダルB"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_03",
+    "image": "it_ec_summon_03"
+  },
+  "IT_EC_SUMMON02_07U_C": {
+    "dataId": "IT_EC_SUMMON02_07U_C",
+    "names": {
+      "en": "【7月】ユニット召喚メダルC"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_03",
+    "image": "it_ec_summon_03"
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -11087,6 +11196,14 @@
     },
     "type": "medal",
     "image": "it_ec_summon_hall_02"
+  },
+  "IT_EC_SUMMON_SUMM_01": {
+    "dataId": "IT_EC_SUMMON_SUMM_01",
+    "names": {
+      "en": "【復刻】水着召喚メダル"
+    },
+    "type": "medal",
+    "image": "it_ec_summon_summ_01"
   },
   "IT_EC_SUMMON_1st_01": {
     "dataId": "IT_EC_SUMMON_1st_01",
@@ -12077,6 +12194,69 @@
     "icon": "IT_US_G_PI_UR_U_01",
     "image": "it_us_g_pi_ur_u_01"
   },
+  "IT_US_G_AF_SUP_01": {
+    "dataId": "IT_US_G_AF_SUP_01",
+    "names": {
+      "en": "【ギルドレイド】武具の刻印×1召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_GR_ITEM_TICKET",
+    "image": "it_us_g_gr_item_ticket"
+  },
+  "IT_US_G_AF_AW_01": {
+    "dataId": "IT_US_G_AF_AW_01",
+    "names": {
+      "en": "【ギルドレイド】秘伝書×5召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_GR_ITEM_TICKET",
+    "image": "it_us_g_gr_item_ticket"
+  },
+  "IT_US_G_JB_01": {
+    "dataId": "IT_US_G_JB_01",
+    "names": {
+      "en": "【ギルドレイド】武器の宝石（JobLv.2～9）×2召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_GR_ITEM_TICKET",
+    "image": "it_us_g_gr_item_ticket"
+  },
+  "IT_US_G_JB_02": {
+    "dataId": "IT_US_G_JB_02",
+    "names": {
+      "en": "【ギルドレイド】武器の宝石（JobLv.10～15）×2召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_GR_ITEM_TICKET",
+    "image": "it_us_g_gr_item_ticket"
+  },
+  "IT_US_G_JB_EM_01": {
+    "dataId": "IT_US_G_JB_EM_01",
+    "names": {
+      "en": "【ギルドレイド】属性の輝石・翠/碧/紫×2召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_GR_ITEM_TICKET",
+    "image": "it_us_g_gr_item_ticket"
+  },
+  "IT_US_G_JB_EM_02": {
+    "dataId": "IT_US_G_JB_EM_02",
+    "names": {
+      "en": "【ギルドレイド】属性の輝石・橘/緋×2召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_GR_ITEM_TICKET",
+    "image": "it_us_g_gr_item_ticket"
+  },
+  "IT_US_G_SB_EXP_01": {
+    "dataId": "IT_US_G_SB_EXP_01",
+    "names": {
+      "en": "【ギルドレイド】属性の魔石（大）×50召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_GR_ITEM_TICKET",
+    "image": "it_us_g_gr_item_ticket"
+  },
   "IT_US_SE_AW-ITEM_01": {
     "dataId": "IT_US_SE_AW-ITEM_01",
     "names": {
@@ -12342,6 +12522,15 @@
     "dataId": "IT_US_SE_JB_EM_04_01",
     "names": {
       "en": "属性の輝石・橘×70選択召喚券 - Select Element Alcryst (Yellow) x70 Summon Ticket"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_JB_EM_05_04": {
+    "dataId": "IT_US_SE_JB_EM_05_04",
+    "names": {
+      "en": "属性の輝石・緋×10選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET",
@@ -12621,6 +12810,42 @@
     "dataId": "IT_US_G_PU_VC_EFKS",
     "names": {
       "en": "【爆進鉱獣　エラフィケラス】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01",
+    "image": "it_us_g_pu_01"
+  },
+  "IT_US_G_PU_FALM": {
+    "dataId": "IT_US_G_PU_FALM",
+    "names": {
+      "en": "【ファルム】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01",
+    "image": "it_us_g_pu_01"
+  },
+  "IT_US_G_PU_QILF01": {
+    "dataId": "IT_US_G_PU_QILF01",
+    "names": {
+      "en": "【キルフェ（水着）】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01",
+    "image": "it_us_g_pu_01"
+  },
+  "IT_US_G_PU_QILF01_10": {
+    "dataId": "IT_US_G_PU_QILF01_10",
+    "names": {
+      "en": "【キルフェ（水着）】ピックアップ10連召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_10",
+    "image": "it_us_g_pu_10"
+  },
+  "IT_US_G_PU_SUMM01": {
+    "dataId": "IT_US_G_PU_SUMM01",
+    "names": {
+      "en": "【復刻】水着ユニットピックアップ召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_G_PU_01",
@@ -13148,6 +13373,15 @@
     "icon": "IT_US_SE_ITEM_TICKET",
     "image": "it_us_se_item_ticket"
   },
+  "IT_US_SE_VPI_23": {
+    "dataId": "IT_US_SE_VPI_23",
+    "names": {
+      "en": "【7月民営放送】Vカード欠片×25選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
   "IT_US_SE_PI_01": {
     "dataId": "IT_US_SE_PI_01",
     "names": {
@@ -13544,6 +13778,24 @@
     "icon": "IT_US_SE_ITEM_TICKET",
     "image": "it_us_se_item_ticket"
   },
+  "IT_US_SE_PI_45": {
+    "dataId": "IT_US_SE_PI_45",
+    "names": {
+      "en": "水着ユニット欠片×120選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_PI_46": {
+    "dataId": "IT_US_SE_PI_46",
+    "names": {
+      "en": "【7月民営放送】ユニット欠片×40選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -13827,6 +14079,15 @@
     "dataId": "IT_US_SE_AF_AW_22",
     "names": {
       "en": "【2021七夕CP】秘伝書×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_AF_AW_23": {
+    "dataId": "IT_US_SE_AF_AW_23",
+    "names": {
+      "en": "【2021夏CP】秘伝書×100選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET",
@@ -14606,6 +14867,15 @@
     "icon": "IT_US_SE_ITEM_TICKET",
     "image": "it_us_se_item_ticket"
   },
+  "IT_US_SE_JB_05_20": {
+    "dataId": "IT_US_SE_JB_05_20",
+    "names": {
+      "en": "【ギルドレイド】スピネル×10選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -14817,6 +15087,15 @@
     "dataId": "IT_US_SE_JBEX_AF_20",
     "names": {
       "en": "【2021七夕CP】焦印石×300選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_JBEX_AF_21": {
+    "dataId": "IT_US_SE_JBEX_AF_21",
+    "names": {
+      "en": "【2021夏CP】焦印石×300選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET",
@@ -15329,7 +15608,7 @@
   "IT_VPI_LW_MORE": {
     "dataId": "IT_VPI_LW_MORE",
     "names": {
-      "en": "星の導きの欠片"
+      "en": "星の導きの欠片 - \"Guidance from the Stars\" Vision Card Shard"
     },
     "type": "vc_shard",
     "image": "it_vpi_lw_more"
@@ -15721,7 +16000,7 @@
   "IT_VPI_LW_KRKN": {
     "dataId": "IT_VPI_LW_KRKN",
     "names": {
-      "en": "深淵海魔　クラーケンの欠片"
+      "en": "深淵海魔　クラーケンの欠片 - \"Terror from the Deep, Kraken\" Vision Card Shard"
     },
     "type": "vc_shard",
     "image": "it_vpi_lw_krkn"
@@ -16022,6 +16301,38 @@
     },
     "type": "guild_stuff",
     "image": "it_gu_food_06"
+  },
+  "IT_GU_FOOD_07": {
+    "dataId": "IT_GU_FOOD_07",
+    "names": {
+      "en": "フラグメントグリーン"
+    },
+    "type": "guild_stuff",
+    "image": "it_gu_food_07"
+  },
+  "IT_GU_FOOD_08": {
+    "dataId": "IT_GU_FOOD_08",
+    "names": {
+      "en": "フラグメントブルー"
+    },
+    "type": "guild_stuff",
+    "image": "it_gu_food_08"
+  },
+  "IT_GU_FOOD_09": {
+    "dataId": "IT_GU_FOOD_09",
+    "names": {
+      "en": "フラグメントパープル"
+    },
+    "type": "guild_stuff",
+    "image": "it_gu_food_09"
+  },
+  "IT_GU_FOOD_10": {
+    "dataId": "IT_GU_FOOD_10",
+    "names": {
+      "en": "フラグメントイエロー"
+    },
+    "type": "guild_stuff",
+    "image": "it_gu_food_10"
   },
   "IT_GU_FOOD_13": {
     "dataId": "IT_GU_FOOD_13",

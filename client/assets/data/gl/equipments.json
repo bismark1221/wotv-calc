@@ -4058,7 +4058,14 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire",
+        "es": "Tienda normal",
+        "de": "Hauptladen",
+        "ko": "일반 상점",
+        "zh": "普通商店"
+      }
     },
     "releaseDate": "07/07/2021"
   },
@@ -32769,12 +32776,15 @@
       "JB_LW_ELDE_M",
       "JB_LW_AILN_M",
       "JB_LW_RAMD_M",
+      "JB_LW_WHIS_M",
       "JB_LW_BYLO_M",
       "JB_LW_RART_M",
+      "JB_LW_CLEY_M",
       "JB_LW_ZIZA_M",
       "JB_LW_ETRE_M",
       "JB_LW_MDNA_M",
       "JB_LW_MICE_M",
+      "JB_LW_SEVR_M",
       "JB_LW_PHBE_M",
       "JB_LW_YERM_M",
       "JB_LW_NASR_M",
@@ -32797,6 +32807,7 @@
       "JB_LW_SDLX_M",
       "JB_LW_FRVA_M",
       "JB_LW_MORE_M",
+      "JB_LW_VSTR_M",
       "JB_LW_CWEL_M"
     ],
     "equippableUnits": [],
@@ -43483,7 +43494,14 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire",
+        "es": "Tienda normal",
+        "de": "Hauptladen",
+        "ko": "일반 상점",
+        "zh": "普通商店"
+      }
     },
     "releaseDate": "28/10/2020"
   },
@@ -47806,6 +47824,2278 @@
     },
     "releaseDate": "10/03/2021"
   },
+  "AF_LOT_FF10_ACCE_001": {
+    "names": {
+      "en": "Tidus's Necklace",
+      "fr": "Pendentif de Tidus",
+      "de": "Tidus' Halskette",
+      "es": "Collar de Tidus",
+      "ko": "티다의 목걸이",
+      "zh": "提達的項鏈"
+    },
+    "slug": "tiduss-necklace",
+    "stats": {
+      "HP": {
+        "min": 23,
+        "max": 464
+      },
+      "DEF": {
+        "min": -3,
+        "max": 0
+      },
+      "SPR": {
+        "min": 3,
+        "max": 16
+      },
+      "DEX": {
+        "min": 3,
+        "max": 20
+      },
+      "ACCURACY": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_FF10_ACCE_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité",
+          "de": "Vital",
+          "es": "Vital",
+          "ko": "바이탈",
+          "zh": "活力"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée",
+          "de": "Zielen",
+          "es": "Certero",
+          "ko": "에임",
+          "zh": "瞄準"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "Barrier",
+          "fr": "Barrière",
+          "de": "Barriere",
+          "es": "Mental",
+          "ko": "배리어",
+          "zh": "屏障"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_FF10_ACCE_001_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF10_ACCE_001_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF10_ACCE_001_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_DF_MAGIC_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF10_ACCE_001_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF10_ACCE_001_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_DF_MAGIC_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF10_ACCE_001_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF10_ACCE_001_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_DF_MAGIC_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF10_ACCE_001_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF10_ACCE_001_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_DF_MAGIC_4_UR",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF10_ACCE_001_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_FF10_ACCE_001_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_DF_MAGIC_5_UR",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_FF10_ACCE_001_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "ff10wpn_acc_002",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ",
+      "JB_LW_ZZAN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF10_ACCE_001": 1,
+        "IT_AF_MAT_SAND_03": 30,
+        "IT_AF_MAT_SAND_04": 235,
+        "IT_AF_MAT_MYTHRIL": 10,
+        "IT_AF_MAT_WATER_02": 16,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 3,
+        "IT_AF_MAT_SAND_03": 90,
+        "IT_AF_MAT_SAND_04": 335,
+        "IT_AF_MAT_MYTHRIL": 30,
+        "IT_AF_MAT_WATER_02": 36,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 7,
+        "IT_AF_MAT_SAND_03": 210,
+        "IT_AF_MAT_SAND_04": 535,
+        "IT_AF_MAT_MYTHRIL": 70,
+        "IT_AF_MAT_WATER_02": 76,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 15,
+        "IT_AF_MAT_SAND_03": 450,
+        "IT_AF_MAT_SAND_04": 985,
+        "IT_AF_MAT_MYTHRIL": 150,
+        "IT_AF_MAT_WATER_02": 156,
+        "IT_AF_AW_ACCE": 475
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 31,
+        "IT_AF_MAT_SAND_03": 930,
+        "IT_AF_MAT_SAND_04": 1955,
+        "IT_AF_MAT_MYTHRIL": 310,
+        "IT_AF_MAT_WATER_02": 316,
+        "IT_AF_AW_ACCE": 825
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 63,
+        "IT_AF_MAT_SAND_03": 1890,
+        "IT_AF_MAT_SAND_04": 3995,
+        "IT_AF_MAT_MYTHRIL": 630,
+        "IT_AF_MAT_WATER_02": 638,
+        "IT_AF_AW_ACCE": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "31/03/2021"
+  },
+  "AF_LOT_NIER_ACC_000": {
+    "names": {
+      "en": "Pod 153",
+      "fr": "Pod 153",
+      "de": "Pod 153",
+      "es": "Pod 153",
+      "ko": "포드 153",
+      "zh": "輔助機153"
+    },
+    "slug": "pod-153",
+    "stats": {
+      "HP": {
+        "min": 22,
+        "max": 437
+      },
+      "DEF": {
+        "min": 1,
+        "max": 43
+      },
+      "AGI": {
+        "min": 0,
+        "max": 6
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_NIER_ACCE_000",
+    "grows": {
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée",
+          "de": "Zielen",
+          "es": "Certero",
+          "ko": "에임",
+          "zh": "瞄準"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_NIER_ACC_000_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_NIER_ACC_000_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "nierwpn_acc_002",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ",
+      "JB_LW_ZZAN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_AW_ACCE": 255,
+        "IT_AF_MAT_SAP_03": 140,
+        "IT_AF_MAT_LESS_01": 6
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "21/04/2021"
+  },
+  "AF_LOT_LW_ACC_036": {
+    "names": {
+      "en": "Chocolate Flan Earrings",
+      "fr": "Boucles d'oreilles de Chocoflan",
+      "de": "Schokopudding-Ohrringe",
+      "es": "Pendientes de flan de chocolate",
+      "ko": "초코 푸딩 귀걸이",
+      "zh": "巧克力布丁耳環"
+    },
+    "slug": "chocolate-flan-earrings",
+    "stats": {
+      "HP": {
+        "min": 30,
+        "max": 686
+      },
+      "DEF": {
+        "min": 1,
+        "max": 14
+      },
+      "SPR": {
+        "min": 0,
+        "max": 8
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 10
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 10
+      },
+      "CRITIC_AVOID": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_ACC_036",
+    "grows": {
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée",
+          "de": "Zielen",
+          "es": "Certero",
+          "ko": "에임",
+          "zh": "瞄準"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "Critical",
+          "fr": "Critique",
+          "de": "Volltreffer",
+          "es": "Crítico",
+          "ko": "크리티컬",
+          "zh": "暴擊"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "Shield",
+          "fr": "Bouclier",
+          "de": "Schild",
+          "es": "Defensor",
+          "ko": "실드",
+          "zh": "護盾"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_LW_ACC_003_1_S",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_5_S",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_003_1_S",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_5_S",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_003_1_S",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_5_S",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_003_1_S",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_5_S",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_003_1_S",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_4",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_5_S",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_003_1_S",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_5",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_003_5_S",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_036",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ",
+      "JB_LW_ZZAN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ACC_036": 1,
+        "IT_AF_MAT_HEART_03": 30,
+        "IT_AF_MAT_HEART_04": 235,
+        "IT_AF_MAT_JELLY": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_ACC_036": 3,
+        "IT_AF_MAT_HEART_03": 90,
+        "IT_AF_MAT_HEART_04": 335,
+        "IT_AF_MAT_JELLY": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_ACC_036": 7,
+        "IT_AF_MAT_HEART_03": 210,
+        "IT_AF_MAT_HEART_04": 535,
+        "IT_AF_MAT_JELLY": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_ACC_036": 15,
+        "IT_AF_MAT_HEART_03": 450,
+        "IT_AF_MAT_HEART_04": 985,
+        "IT_AF_MAT_JELLY": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_ACCE": 475
+      },
+      {
+        "IT_AF_LW_ACC_036": 31,
+        "IT_AF_MAT_HEART_03": 930,
+        "IT_AF_MAT_HEART_04": 1955,
+        "IT_AF_MAT_JELLY": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_ACCE": 825
+      },
+      {
+        "IT_AF_LW_ACC_036": 63,
+        "IT_AF_MAT_HEART_03": 1890,
+        "IT_AF_MAT_HEART_04": 3995,
+        "IT_AF_MAT_JELLY": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_ACCE": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "09/06/2021"
+  },
+  "AF_LOT_LW_ACC_039": {
+    "names": {
+      "en": "Silver-Rimmed Spectacles",
+      "fr": "Lunettes rondes argentées",
+      "de": "Brille mit Silberfassung",
+      "es": "Gafas de plata",
+      "ko": "은테 안경",
+      "zh": "銀框眼鏡"
+    },
+    "slug": "silver-rimmed-spectacles",
+    "stats": {
+      "HP": {
+        "min": 17,
+        "max": 342
+      },
+      "TP": {
+        "min": 1,
+        "max": 20
+      },
+      "AP": {
+        "min": 1,
+        "max": 16
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 26
+      },
+      "EVADE": {
+        "min": 0,
+        "max": 4
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_ACC_039",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité",
+          "de": "Vital",
+          "es": "Vital",
+          "ko": "바이탈",
+          "zh": "活力"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée",
+          "de": "Zielen",
+          "es": "Certero",
+          "ko": "에임",
+          "zh": "瞄準"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "Critical",
+          "fr": "Critique",
+          "de": "Volltreffer",
+          "es": "Crítico",
+          "ko": "크리티컬",
+          "zh": "暴擊"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_4",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_039_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_PIERCEMDEF_5",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_039_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_acc_039",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ",
+      "JB_LW_ZZAN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ACC_039": 1,
+        "IT_AF_MAT_WING_01": 170,
+        "IT_AF_MAT_ARMN": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_039": 3,
+        "IT_AF_MAT_WING_01": 230,
+        "IT_AF_MAT_ARMN": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_039": 7,
+        "IT_AF_MAT_WING_01": 350,
+        "IT_AF_MAT_ARMN": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_039": 15,
+        "IT_AF_MAT_WING_01": 630,
+        "IT_AF_MAT_ARMN": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_ACCE": 315
+      },
+      {
+        "IT_AF_LW_ACC_039": 31,
+        "IT_AF_MAT_WING_01": 1250,
+        "IT_AF_MAT_ARMN": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_ACCE": 535
+      },
+      {
+        "IT_AF_LW_ACC_039": 63,
+        "IT_AF_MAT_WING_01": 2570,
+        "IT_AF_MAT_ARMN": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_ACCE": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "23/06/2021"
+  },
+  "AF_LOT_LW_HAT_017": {
+    "names": {
+      "en": "White Marshmallow Miniature",
+      "fr": "Mini Guimauve blanche",
+      "de": "„Weißes Marshmallow“-Figur",
+      "es": "Minimalvavisco blanco",
+      "ko": "하얀 마시멜로 장식",
+      "zh": "掌中白色棉花糖"
+    },
+    "slug": "white-marshmallow-miniature",
+    "stats": {
+      "HP": {
+        "min": 18,
+        "max": 435
+      },
+      "DEF": {
+        "min": 1,
+        "max": 10
+      },
+      "SPR": {
+        "min": 1,
+        "max": 10
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 15
+      },
+      "CRITIC_RATE": {
+        "min": 3,
+        "max": 60
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_HAT_017",
+    "grows": {
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée",
+          "de": "Zielen",
+          "es": "Certero",
+          "ko": "에임",
+          "zh": "瞄準"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "Shield",
+          "fr": "Bouclier",
+          "de": "Schild",
+          "es": "Defensor",
+          "ko": "실드",
+          "zh": "護盾"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "Barrier",
+          "fr": "Barrière",
+          "de": "Barriere",
+          "es": "Mental",
+          "ko": "배리어",
+          "zh": "屏障"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_LW_HAT_017_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HAT_017_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_HAT_017_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HAT_017_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_HAT_017_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HAT_017_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_HAT_017_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HAT_017_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_HAT_017_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_4_UR",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HAT_017_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_HAT_017_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_5_UR",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HAT_017_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_hat_017",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ",
+      "JB_LW_ZZAN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_HAT_017": 1,
+        "IT_AF_MAT_SAND_03": 30,
+        "IT_AF_MAT_SAND_04": 235,
+        "IT_AF_MAT_OGRE": 10,
+        "IT_AF_MAT_SHINE_02": 16,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_HAT_017": 3,
+        "IT_AF_MAT_SAND_03": 90,
+        "IT_AF_MAT_SAND_04": 335,
+        "IT_AF_MAT_OGRE": 30,
+        "IT_AF_MAT_SHINE_02": 36,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_HAT_017": 7,
+        "IT_AF_MAT_SAND_03": 210,
+        "IT_AF_MAT_SAND_04": 535,
+        "IT_AF_MAT_OGRE": 70,
+        "IT_AF_MAT_SHINE_02": 76,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_HAT_017": 15,
+        "IT_AF_MAT_SAND_03": 450,
+        "IT_AF_MAT_SAND_04": 985,
+        "IT_AF_MAT_OGRE": 150,
+        "IT_AF_MAT_SHINE_02": 156,
+        "IT_AF_AW_ACCE": 475
+      },
+      {
+        "IT_AF_LW_HAT_017": 31,
+        "IT_AF_MAT_SAND_03": 930,
+        "IT_AF_MAT_SAND_04": 1955,
+        "IT_AF_MAT_OGRE": 310,
+        "IT_AF_MAT_SHINE_02": 316,
+        "IT_AF_AW_ACCE": 825
+      },
+      {
+        "IT_AF_LW_HAT_017": 63,
+        "IT_AF_MAT_SAND_03": 1890,
+        "IT_AF_MAT_SAND_04": 3995,
+        "IT_AF_MAT_OGRE": 630,
+        "IT_AF_MAT_SHINE_02": 638,
+        "IT_AF_AW_ACCE": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "14/07/2021"
+  },
+  "AF_LOT_LW_ACC_040": {
+    "names": {
+      "en": "Emblem of Devouring",
+      "fr": "Emblème de l'érosion",
+      "de": "Emblem des Verschlingens",
+      "es": "Emblema de la voracidad",
+      "ko": "침식의 문장",
+      "zh": "侵蝕徽章"
+    },
+    "slug": "emblem-of-devouring",
+    "stats": {
+      "HP": {
+        "min": 23,
+        "max": 453
+      },
+      "DEF": {
+        "min": 1,
+        "max": 15
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_ACC_040",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité",
+          "de": "Vital",
+          "es": "Vital",
+          "ko": "바이탈",
+          "zh": "活力"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée",
+          "de": "Zielen",
+          "es": "Certero",
+          "ko": "에임",
+          "zh": "瞄準"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "Shield",
+          "fr": "Bouclier",
+          "de": "Schild",
+          "es": "Defensor",
+          "ko": "실드",
+          "zh": "護盾"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_LW_ACC_040_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_040_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_040_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_040_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_040_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_040_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_040_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_040_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_040_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_4_N_SSR",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_040_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_ACC_040_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_HIT_5_N_R",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_ACC_040_5",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_acc_040",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ",
+      "JB_LW_ZZAN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ACC_040": 1,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_MABR": 5,
+        "IT_AF_MAT_DARK_01": 11,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_040": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_MABR": 15,
+        "IT_AF_MAT_DARK_01": 21,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_040": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_MABR": 35,
+        "IT_AF_MAT_DARK_01": 41,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_040": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_MABR": 75,
+        "IT_AF_MAT_DARK_01": 81,
+        "IT_AF_AW_ACCE": 315
+      },
+      {
+        "IT_AF_LW_ACC_040": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_MABR": 155,
+        "IT_AF_MAT_DARK_01": 161,
+        "IT_AF_AW_ACCE": 535
+      },
+      {
+        "IT_AF_LW_ACC_040": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_MABR": 315,
+        "IT_AF_MAT_DARK_01": 323,
+        "IT_AF_AW_ACCE": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "10/03/2021"
+  },
   "AF_LW_GLO_000": {
     "names": {
       "en": "Leather Gloves",
@@ -49428,1430 +51718,6 @@
     },
     "releaseDate": "19/05/2021"
   },
-  "AF_LOT_LW_ACC_040": {
-    "names": {
-      "en": "Emblem of Devouring",
-      "fr": "Emblème de l'érosion",
-      "de": "Emblem des Verschlingens",
-      "es": "Emblema de la voracidad",
-      "ko": "침식의 문장",
-      "zh": "侵蝕徽章"
-    },
-    "slug": "emblem-of-devouring",
-    "stats": {
-      "HP": {
-        "min": 23,
-        "max": 453
-      },
-      "DEF": {
-        "min": 1,
-        "max": 15
-      },
-      "ACCURACY": {
-        "min": 1,
-        "max": 14
-      }
-    },
-    "type": "ACC",
-    "dataId": "AF_LW_ACC_040",
-    "grows": {
-      "AFGROW_VIT_50": {
-        "dataId": "AFGROW_VIT_50",
-        "names": {
-          "en": "Vital",
-          "fr": "Vitalité",
-          "de": "Vital",
-          "es": "Vital",
-          "ko": "바이탈",
-          "zh": "活力"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": 0,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -20,
-          "DEF": -75,
-          "MAG": -20,
-          "SPR": -75,
-          "ACCURACY": -75,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_AIM_50": {
-        "dataId": "AFGROW_AIM_50",
-        "names": {
-          "en": "Aim",
-          "fr": "Visée",
-          "de": "Zielen",
-          "es": "Certero",
-          "ko": "에임",
-          "zh": "瞄準"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -30,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -30,
-          "DEF": -75,
-          "MAG": -30,
-          "SPR": -75,
-          "ACCURACY": 0,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_SLD_50": {
-        "dataId": "AFGROW_SLD_50",
-        "names": {
-          "en": "Shield",
-          "fr": "Bouclier",
-          "de": "Schild",
-          "es": "Defensor",
-          "ko": "실드",
-          "zh": "護盾"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -30,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -50,
-          "DEF": 0,
-          "MAG": -50,
-          "SPR": -50,
-          "ACCURACY": -75,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      }
-    },
-    "skills": [
-      [
-        {
-          "dataId": "SK_LW_ACC_040_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_040_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_040_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_HIT_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_040_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_040_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_HIT_2",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_040_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_040_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_HIT_3",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_040_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_040_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_HIT_4_N_SSR",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_040_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_040_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_HIT_5_N_R",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_040_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ]
-    ],
-    "rarity": "MR",
-    "image": "lapswpn_acc_040",
-    "equippableJobs": [
-      "JB_LW_WAR_FIRE",
-      "JB_LW_KNT_FIRE",
-      "JB_LW_PLD_FIRE",
-      "JB_LW_SWN_FIRE",
-      "JB_LW_MNK_FIRE",
-      "JB_LW_SAM_FIRE",
-      "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE",
-      "JB_LW_MGK_FIRE",
-      "JB_LW_THI_FIRE",
-      "JB_LW_NIN_FIRE",
-      "JB_LW_HUN_FIRE",
-      "JB_LW_GUN_FIRE",
-      "JB_LW_WHM_FIRE",
-      "JB_LW_BLM_FIRE",
-      "JB_LW_GRM_FIRE",
-      "JB_LW_RDM_FIRE",
-      "JB_LW_TIM_FIRE",
-      "JB_LW_CLR_FIRE",
-      "JB_FF14_YSTL",
-      "JB_FF14_TNCR",
-      "JB_LW_GLMS",
-      "JB_LW_WAR",
-      "JB_LW_FINA",
-      "JB_LW_VIK_FIRE",
-      "JB_FFT_ORND",
-      "JB_FFT_RAMZ",
-      "JB_FFT_GFGR",
-      "JB_LW_WGN_FIRE",
-      "JB_LW_ASS_FIRE",
-      "JB_LW_RAIN",
-      "JB_FF1_WROL",
-      "JB_LW_MST_FIRE",
-      "JB_FFT_AGRA",
-      "JB_FFT_DELT",
-      "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE",
-      "JB_LW_STRN",
-      "JB_LW_GRSR",
-      "JB_LW_LSWL",
-      "JB_LW_MKN_FIRE",
-      "JB_FF4_CECL",
-      "JB_FF4_ROSA",
-      "JB_FF4_KAIN",
-      "JB_LW_MMC_FIRE",
-      "JB_LW_DEAN",
-      "JB_LW_ARC_FIRE",
-      "JB_LW_SAKR",
-      "JB_LW_BEA_FIRE",
-      "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE",
-      "JB_FF10_TIDU",
-      "JB_FF10_YUNA",
-      "JB_FF10_ARON",
-      "JB_NIER_N2TB",
-      "JB_NIER_N9TS",
-      "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ",
-      "JB_LW_ZZAN"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {
-        "IT_AF_LW_ACC_040": 1,
-        "IT_AF_MAT_HEART_03": 170,
-        "IT_AF_MAT_MABR": 5,
-        "IT_AF_MAT_DARK_01": 11,
-        "IT_AF_AW_ACCE": 255
-      },
-      {
-        "IT_AF_LW_ACC_040": 3,
-        "IT_AF_MAT_HEART_03": 230,
-        "IT_AF_MAT_MABR": 15,
-        "IT_AF_MAT_DARK_01": 21,
-        "IT_AF_AW_ACCE": 255
-      },
-      {
-        "IT_AF_LW_ACC_040": 7,
-        "IT_AF_MAT_HEART_03": 350,
-        "IT_AF_MAT_MABR": 35,
-        "IT_AF_MAT_DARK_01": 41,
-        "IT_AF_AW_ACCE": 255
-      },
-      {
-        "IT_AF_LW_ACC_040": 15,
-        "IT_AF_MAT_HEART_03": 630,
-        "IT_AF_MAT_MABR": 75,
-        "IT_AF_MAT_DARK_01": 81,
-        "IT_AF_AW_ACCE": 315
-      },
-      {
-        "IT_AF_LW_ACC_040": 31,
-        "IT_AF_MAT_HEART_03": 1250,
-        "IT_AF_MAT_MABR": 155,
-        "IT_AF_MAT_DARK_01": 161,
-        "IT_AF_AW_ACCE": 535
-      },
-      {
-        "IT_AF_LW_ACC_040": 63,
-        "IT_AF_MAT_HEART_03": 2570,
-        "IT_AF_MAT_MABR": 315,
-        "IT_AF_MAT_DARK_01": 323,
-        "IT_AF_AW_ACCE": 1125
-      }
-    ],
-    "acquisition": {
-      "type": "Unknown"
-    },
-    "releaseDate": "10/03/2021"
-  },
-  "AF_LOT_FF10_ACCE_001": {
-    "names": {
-      "en": "Tidus's Necklace",
-      "fr": "Pendentif de Tidus",
-      "de": "Tidus' Halskette",
-      "es": "Collar de Tidus",
-      "ko": "티다의 목걸이",
-      "zh": "提達的項鏈"
-    },
-    "slug": "tiduss-necklace",
-    "stats": {
-      "HP": {
-        "min": 23,
-        "max": 464
-      },
-      "DEF": {
-        "min": -3,
-        "max": 0
-      },
-      "SPR": {
-        "min": 3,
-        "max": 16
-      },
-      "DEX": {
-        "min": 3,
-        "max": 20
-      },
-      "ACCURACY": {
-        "min": 0,
-        "max": 10
-      }
-    },
-    "type": "ACC",
-    "dataId": "AF_FF10_ACCE_001",
-    "grows": {
-      "AFGROW_VIT_50": {
-        "dataId": "AFGROW_VIT_50",
-        "names": {
-          "en": "Vital",
-          "fr": "Vitalité",
-          "de": "Vital",
-          "es": "Vital",
-          "ko": "바이탈",
-          "zh": "活力"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": 0,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -20,
-          "DEF": -75,
-          "MAG": -20,
-          "SPR": -75,
-          "ACCURACY": -75,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_AIM_50": {
-        "dataId": "AFGROW_AIM_50",
-        "names": {
-          "en": "Aim",
-          "fr": "Visée",
-          "de": "Zielen",
-          "es": "Certero",
-          "ko": "에임",
-          "zh": "瞄準"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -30,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -30,
-          "DEF": -75,
-          "MAG": -30,
-          "SPR": -75,
-          "ACCURACY": 0,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_BAR_50": {
-        "dataId": "AFGROW_BAR_50",
-        "names": {
-          "en": "Barrier",
-          "fr": "Barrière",
-          "de": "Barriere",
-          "es": "Mental",
-          "ko": "배리어",
-          "zh": "屏障"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -30,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -50,
-          "DEF": -50,
-          "MAG": -50,
-          "SPR": 0,
-          "ACCURACY": -75,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      }
-    },
-    "skills": [
-      [
-        {
-          "dataId": "SK_FF10_ACCE_001_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_FF10_ACCE_001_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_FF10_ACCE_001_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_DF_MAGIC_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_FF10_ACCE_001_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_FF10_ACCE_001_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_DF_MAGIC_2",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_FF10_ACCE_001_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_FF10_ACCE_001_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_DF_MAGIC_3",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_FF10_ACCE_001_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_FF10_ACCE_001_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_DF_MAGIC_4_UR",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_FF10_ACCE_001_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_FF10_ACCE_001_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_DF_MAGIC_5_UR",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_FF10_ACCE_001_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ]
-    ],
-    "rarity": "UR",
-    "image": "ff10wpn_acc_002",
-    "equippableJobs": [
-      "JB_LW_WAR_FIRE",
-      "JB_LW_KNT_FIRE",
-      "JB_LW_PLD_FIRE",
-      "JB_LW_SWN_FIRE",
-      "JB_LW_MNK_FIRE",
-      "JB_LW_SAM_FIRE",
-      "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE",
-      "JB_LW_MGK_FIRE",
-      "JB_LW_THI_FIRE",
-      "JB_LW_NIN_FIRE",
-      "JB_LW_HUN_FIRE",
-      "JB_LW_GUN_FIRE",
-      "JB_LW_WHM_FIRE",
-      "JB_LW_BLM_FIRE",
-      "JB_LW_GRM_FIRE",
-      "JB_LW_RDM_FIRE",
-      "JB_LW_TIM_FIRE",
-      "JB_LW_CLR_FIRE",
-      "JB_FF14_YSTL",
-      "JB_FF14_TNCR",
-      "JB_LW_GLMS",
-      "JB_LW_WAR",
-      "JB_LW_FINA",
-      "JB_LW_VIK_FIRE",
-      "JB_FFT_ORND",
-      "JB_FFT_RAMZ",
-      "JB_FFT_GFGR",
-      "JB_LW_WGN_FIRE",
-      "JB_LW_ASS_FIRE",
-      "JB_LW_RAIN",
-      "JB_FF1_WROL",
-      "JB_LW_MST_FIRE",
-      "JB_FFT_AGRA",
-      "JB_FFT_DELT",
-      "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE",
-      "JB_LW_STRN",
-      "JB_LW_GRSR",
-      "JB_LW_LSWL",
-      "JB_LW_MKN_FIRE",
-      "JB_FF4_CECL",
-      "JB_FF4_ROSA",
-      "JB_FF4_KAIN",
-      "JB_LW_MMC_FIRE",
-      "JB_LW_DEAN",
-      "JB_LW_ARC_FIRE",
-      "JB_LW_SAKR",
-      "JB_LW_BEA_FIRE",
-      "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE",
-      "JB_FF10_TIDU",
-      "JB_FF10_YUNA",
-      "JB_FF10_ARON",
-      "JB_NIER_N2TB",
-      "JB_NIER_N9TS",
-      "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ",
-      "JB_LW_ZZAN"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {
-        "IT_AF_FF10_ACCE_001": 1,
-        "IT_AF_MAT_SAND_03": 30,
-        "IT_AF_MAT_SAND_04": 235,
-        "IT_AF_MAT_MYTHRIL": 10,
-        "IT_AF_MAT_WATER_02": 16,
-        "IT_AF_AW_ACCE": 375
-      },
-      {
-        "IT_AF_FF10_ACCE_001": 3,
-        "IT_AF_MAT_SAND_03": 90,
-        "IT_AF_MAT_SAND_04": 335,
-        "IT_AF_MAT_MYTHRIL": 30,
-        "IT_AF_MAT_WATER_02": 36,
-        "IT_AF_AW_ACCE": 375
-      },
-      {
-        "IT_AF_FF10_ACCE_001": 7,
-        "IT_AF_MAT_SAND_03": 210,
-        "IT_AF_MAT_SAND_04": 535,
-        "IT_AF_MAT_MYTHRIL": 70,
-        "IT_AF_MAT_WATER_02": 76,
-        "IT_AF_AW_ACCE": 375
-      },
-      {
-        "IT_AF_FF10_ACCE_001": 15,
-        "IT_AF_MAT_SAND_03": 450,
-        "IT_AF_MAT_SAND_04": 985,
-        "IT_AF_MAT_MYTHRIL": 150,
-        "IT_AF_MAT_WATER_02": 156,
-        "IT_AF_AW_ACCE": 475
-      },
-      {
-        "IT_AF_FF10_ACCE_001": 31,
-        "IT_AF_MAT_SAND_03": 930,
-        "IT_AF_MAT_SAND_04": 1955,
-        "IT_AF_MAT_MYTHRIL": 310,
-        "IT_AF_MAT_WATER_02": 316,
-        "IT_AF_AW_ACCE": 825
-      },
-      {
-        "IT_AF_FF10_ACCE_001": 63,
-        "IT_AF_MAT_SAND_03": 1890,
-        "IT_AF_MAT_SAND_04": 3995,
-        "IT_AF_MAT_MYTHRIL": 630,
-        "IT_AF_MAT_WATER_02": 638,
-        "IT_AF_AW_ACCE": 1725
-      }
-    ],
-    "acquisition": {
-      "type": "Unknown"
-    },
-    "releaseDate": "31/03/2021"
-  },
-  "AF_LOT_NIER_ACC_000": {
-    "names": {
-      "en": "Pod 153",
-      "fr": "Pod 153",
-      "de": "Pod 153",
-      "es": "Pod 153",
-      "ko": "포드 153",
-      "zh": "輔助機153"
-    },
-    "slug": "pod-153",
-    "stats": {
-      "HP": {
-        "min": 22,
-        "max": 437
-      },
-      "DEF": {
-        "min": 1,
-        "max": 43
-      },
-      "AGI": {
-        "min": 0,
-        "max": 6
-      },
-      "ACCURACY": {
-        "min": 1,
-        "max": 14
-      }
-    },
-    "type": "ACC",
-    "dataId": "AF_NIER_ACCE_000",
-    "grows": {
-      "AFGROW_AIM_50": {
-        "dataId": "AFGROW_AIM_50",
-        "names": {
-          "en": "Aim",
-          "fr": "Visée",
-          "de": "Zielen",
-          "es": "Certero",
-          "ko": "에임",
-          "zh": "瞄準"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -30,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -30,
-          "DEF": -75,
-          "MAG": -30,
-          "SPR": -75,
-          "ACCURACY": 0,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      }
-    },
-    "skills": [
-      [
-        {
-          "dataId": "SK_NIER_ACC_000_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_NIER_ACC_000_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ]
-    ],
-    "rarity": "MR",
-    "image": "nierwpn_acc_002",
-    "equippableJobs": [
-      "JB_LW_WAR_FIRE",
-      "JB_LW_KNT_FIRE",
-      "JB_LW_PLD_FIRE",
-      "JB_LW_SWN_FIRE",
-      "JB_LW_MNK_FIRE",
-      "JB_LW_SAM_FIRE",
-      "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE",
-      "JB_LW_MGK_FIRE",
-      "JB_LW_THI_FIRE",
-      "JB_LW_NIN_FIRE",
-      "JB_LW_HUN_FIRE",
-      "JB_LW_GUN_FIRE",
-      "JB_LW_WHM_FIRE",
-      "JB_LW_BLM_FIRE",
-      "JB_LW_GRM_FIRE",
-      "JB_LW_RDM_FIRE",
-      "JB_LW_TIM_FIRE",
-      "JB_LW_CLR_FIRE",
-      "JB_FF14_YSTL",
-      "JB_FF14_TNCR",
-      "JB_LW_GLMS",
-      "JB_LW_WAR",
-      "JB_LW_FINA",
-      "JB_LW_VIK_FIRE",
-      "JB_FFT_ORND",
-      "JB_FFT_RAMZ",
-      "JB_FFT_GFGR",
-      "JB_LW_WGN_FIRE",
-      "JB_LW_ASS_FIRE",
-      "JB_LW_RAIN",
-      "JB_FF1_WROL",
-      "JB_LW_MST_FIRE",
-      "JB_FFT_AGRA",
-      "JB_FFT_DELT",
-      "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE",
-      "JB_LW_STRN",
-      "JB_LW_GRSR",
-      "JB_LW_LSWL",
-      "JB_LW_MKN_FIRE",
-      "JB_FF4_CECL",
-      "JB_FF4_ROSA",
-      "JB_FF4_KAIN",
-      "JB_LW_MMC_FIRE",
-      "JB_LW_DEAN",
-      "JB_LW_ARC_FIRE",
-      "JB_LW_SAKR",
-      "JB_LW_BEA_FIRE",
-      "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE",
-      "JB_FF10_TIDU",
-      "JB_FF10_YUNA",
-      "JB_FF10_ARON",
-      "JB_NIER_N2TB",
-      "JB_NIER_N9TS",
-      "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ",
-      "JB_LW_ZZAN"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {
-        "IT_AF_AW_ACCE": 255,
-        "IT_AF_MAT_SAP_03": 140,
-        "IT_AF_MAT_LESS_01": 6
-      }
-    ],
-    "acquisition": {
-      "type": "Unknown"
-    },
-    "releaseDate": "21/04/2021"
-  },
-  "AF_LOT_LW_ACC_036": {
-    "names": {
-      "en": "Chocolate Flan Earrings",
-      "fr": "Boucles d'oreilles de Chocoflan",
-      "de": "Schokopudding-Ohrringe",
-      "es": "Pendientes de flan de chocolate",
-      "ko": "초코 푸딩 귀걸이",
-      "zh": "巧克力布丁耳環"
-    },
-    "slug": "chocolate-flan-earrings",
-    "stats": {
-      "HP": {
-        "min": 30,
-        "max": 686
-      },
-      "DEF": {
-        "min": 1,
-        "max": 14
-      },
-      "SPR": {
-        "min": 0,
-        "max": 8
-      },
-      "ACCURACY": {
-        "min": 1,
-        "max": 10
-      },
-      "CRITIC_RATE": {
-        "min": 1,
-        "max": 10
-      },
-      "CRITIC_AVOID": {
-        "min": 1,
-        "max": 16
-      }
-    },
-    "type": "ACC",
-    "dataId": "AF_LW_ACC_036",
-    "grows": {
-      "AFGROW_AIM_50": {
-        "dataId": "AFGROW_AIM_50",
-        "names": {
-          "en": "Aim",
-          "fr": "Visée",
-          "de": "Zielen",
-          "es": "Certero",
-          "ko": "에임",
-          "zh": "瞄準"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -30,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -30,
-          "DEF": -75,
-          "MAG": -30,
-          "SPR": -75,
-          "ACCURACY": 0,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_CRI_50": {
-        "dataId": "AFGROW_CRI_50",
-        "names": {
-          "en": "Critical",
-          "fr": "Critique",
-          "de": "Volltreffer",
-          "es": "Crítico",
-          "ko": "크리티컬",
-          "zh": "暴擊"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -20,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -20,
-          "DEF": -75,
-          "MAG": -20,
-          "SPR": -75,
-          "ACCURACY": -50,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": 0,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_SLD_50": {
-        "dataId": "AFGROW_SLD_50",
-        "names": {
-          "en": "Shield",
-          "fr": "Bouclier",
-          "de": "Schild",
-          "es": "Defensor",
-          "ko": "실드",
-          "zh": "護盾"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -30,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -50,
-          "DEF": 0,
-          "MAG": -50,
-          "SPR": -50,
-          "ACCURACY": -75,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      }
-    },
-    "skills": [
-      [
-        {
-          "dataId": "SK_LW_ACC_003_1_S",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_5_S",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_003_1_S",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_5_S",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_003_1_S",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_2",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_5_S",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_003_1_S",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_3",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_5_S",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_003_1_S",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_4",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_5_S",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_003_1_S",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_5",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_003_5_S",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ]
-    ],
-    "rarity": "UR",
-    "image": "lapswpn_acc_036",
-    "equippableJobs": [
-      "JB_LW_WAR_FIRE",
-      "JB_LW_KNT_FIRE",
-      "JB_LW_PLD_FIRE",
-      "JB_LW_SWN_FIRE",
-      "JB_LW_MNK_FIRE",
-      "JB_LW_SAM_FIRE",
-      "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE",
-      "JB_LW_MGK_FIRE",
-      "JB_LW_THI_FIRE",
-      "JB_LW_NIN_FIRE",
-      "JB_LW_HUN_FIRE",
-      "JB_LW_GUN_FIRE",
-      "JB_LW_WHM_FIRE",
-      "JB_LW_BLM_FIRE",
-      "JB_LW_GRM_FIRE",
-      "JB_LW_RDM_FIRE",
-      "JB_LW_TIM_FIRE",
-      "JB_LW_CLR_FIRE",
-      "JB_FF14_YSTL",
-      "JB_FF14_TNCR",
-      "JB_LW_GLMS",
-      "JB_LW_WAR",
-      "JB_LW_FINA",
-      "JB_LW_VIK_FIRE",
-      "JB_FFT_ORND",
-      "JB_FFT_RAMZ",
-      "JB_FFT_GFGR",
-      "JB_LW_WGN_FIRE",
-      "JB_LW_ASS_FIRE",
-      "JB_LW_RAIN",
-      "JB_FF1_WROL",
-      "JB_LW_MST_FIRE",
-      "JB_FFT_AGRA",
-      "JB_FFT_DELT",
-      "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE",
-      "JB_LW_STRN",
-      "JB_LW_GRSR",
-      "JB_LW_LSWL",
-      "JB_LW_MKN_FIRE",
-      "JB_FF4_CECL",
-      "JB_FF4_ROSA",
-      "JB_FF4_KAIN",
-      "JB_LW_MMC_FIRE",
-      "JB_LW_DEAN",
-      "JB_LW_ARC_FIRE",
-      "JB_LW_SAKR",
-      "JB_LW_BEA_FIRE",
-      "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE",
-      "JB_FF10_TIDU",
-      "JB_FF10_YUNA",
-      "JB_FF10_ARON",
-      "JB_NIER_N2TB",
-      "JB_NIER_N9TS",
-      "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ",
-      "JB_LW_ZZAN"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {
-        "IT_AF_LW_ACC_036": 1,
-        "IT_AF_MAT_HEART_03": 30,
-        "IT_AF_MAT_HEART_04": 235,
-        "IT_AF_MAT_JELLY": 10,
-        "IT_AF_MAT_LESS_02": 16,
-        "IT_AF_AW_ACCE": 375
-      },
-      {
-        "IT_AF_LW_ACC_036": 3,
-        "IT_AF_MAT_HEART_03": 90,
-        "IT_AF_MAT_HEART_04": 335,
-        "IT_AF_MAT_JELLY": 30,
-        "IT_AF_MAT_LESS_02": 36,
-        "IT_AF_AW_ACCE": 375
-      },
-      {
-        "IT_AF_LW_ACC_036": 7,
-        "IT_AF_MAT_HEART_03": 210,
-        "IT_AF_MAT_HEART_04": 535,
-        "IT_AF_MAT_JELLY": 70,
-        "IT_AF_MAT_LESS_02": 76,
-        "IT_AF_AW_ACCE": 375
-      },
-      {
-        "IT_AF_LW_ACC_036": 15,
-        "IT_AF_MAT_HEART_03": 450,
-        "IT_AF_MAT_HEART_04": 985,
-        "IT_AF_MAT_JELLY": 150,
-        "IT_AF_MAT_LESS_02": 156,
-        "IT_AF_AW_ACCE": 475
-      },
-      {
-        "IT_AF_LW_ACC_036": 31,
-        "IT_AF_MAT_HEART_03": 930,
-        "IT_AF_MAT_HEART_04": 1955,
-        "IT_AF_MAT_JELLY": 310,
-        "IT_AF_MAT_LESS_02": 316,
-        "IT_AF_AW_ACCE": 825
-      },
-      {
-        "IT_AF_LW_ACC_036": 63,
-        "IT_AF_MAT_HEART_03": 1890,
-        "IT_AF_MAT_HEART_04": 3995,
-        "IT_AF_MAT_JELLY": 630,
-        "IT_AF_MAT_LESS_02": 638,
-        "IT_AF_AW_ACCE": 1725
-      }
-    ],
-    "acquisition": {
-      "type": "Unknown"
-    },
-    "releaseDate": "09/06/2021"
-  },
   "AF_LOT_LW_SWO_005": {
     "names": {
       "en": "Flametongue",
@@ -51500,428 +52366,5 @@
       "type": "Unknown"
     },
     "releaseDate": "12/05/2021"
-  },
-  "AF_LOT_LW_ACC_039": {
-    "names": {
-      "en": "Silver-Rimmed Spectacles",
-      "fr": "Lunettes rondes argentées",
-      "de": "Brille mit Silberfassung",
-      "es": "Gafas de plata",
-      "ko": "은테 안경",
-      "zh": "銀框眼鏡"
-    },
-    "slug": "silver-rimmed-spectacles",
-    "stats": {
-      "HP": {
-        "min": 17,
-        "max": 342
-      },
-      "TP": {
-        "min": 1,
-        "max": 20
-      },
-      "AP": {
-        "min": 1,
-        "max": 16
-      },
-      "ACCURACY": {
-        "min": 1,
-        "max": 26
-      },
-      "EVADE": {
-        "min": 0,
-        "max": 4
-      },
-      "CRITIC_RATE": {
-        "min": 1,
-        "max": 12
-      }
-    },
-    "type": "ACC",
-    "dataId": "AF_LW_ACC_039",
-    "grows": {
-      "AFGROW_VIT_50": {
-        "dataId": "AFGROW_VIT_50",
-        "names": {
-          "en": "Vital",
-          "fr": "Vitalité",
-          "de": "Vital",
-          "es": "Vital",
-          "ko": "바이탈",
-          "zh": "活力"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": 0,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -20,
-          "DEF": -75,
-          "MAG": -20,
-          "SPR": -75,
-          "ACCURACY": -75,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_AIM_50": {
-        "dataId": "AFGROW_AIM_50",
-        "names": {
-          "en": "Aim",
-          "fr": "Visée",
-          "de": "Zielen",
-          "es": "Certero",
-          "ko": "에임",
-          "zh": "瞄準"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -30,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -30,
-          "DEF": -75,
-          "MAG": -30,
-          "SPR": -75,
-          "ACCURACY": 0,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_CRI_50": {
-        "dataId": "AFGROW_CRI_50",
-        "names": {
-          "en": "Critical",
-          "fr": "Critique",
-          "de": "Volltreffer",
-          "es": "Crítico",
-          "ko": "크리티컬",
-          "zh": "暴擊"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -20,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -20,
-          "DEF": -75,
-          "MAG": -20,
-          "SPR": -75,
-          "ACCURACY": -50,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": 0,
-          "CRITIC_AVOID": 0
-        }
-      }
-    },
-    "skills": [
-      [
-        {
-          "dataId": "SK_LW_ACC_039_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_039_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_039_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_PIERCEMDEF_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_039_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_039_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_PIERCEMDEF_2",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_039_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_039_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_PIERCEMDEF_3",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_039_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_039_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_PIERCEMDEF_4",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_039_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "dataId": "SK_LW_ACC_039_1",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_PIERCEMDEF_5",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        },
-        {
-          "dataId": "SK_LW_ACC_039_5",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "maxLevel": 30
-        }
-      ]
-    ],
-    "rarity": "MR",
-    "image": "lapswpn_acc_039",
-    "equippableJobs": [
-      "JB_LW_WAR_FIRE",
-      "JB_LW_KNT_FIRE",
-      "JB_LW_PLD_FIRE",
-      "JB_LW_SWN_FIRE",
-      "JB_LW_MNK_FIRE",
-      "JB_LW_SAM_FIRE",
-      "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE",
-      "JB_LW_MGK_FIRE",
-      "JB_LW_THI_FIRE",
-      "JB_LW_NIN_FIRE",
-      "JB_LW_HUN_FIRE",
-      "JB_LW_GUN_FIRE",
-      "JB_LW_WHM_FIRE",
-      "JB_LW_BLM_FIRE",
-      "JB_LW_GRM_FIRE",
-      "JB_LW_RDM_FIRE",
-      "JB_LW_TIM_FIRE",
-      "JB_LW_CLR_FIRE",
-      "JB_FF14_YSTL",
-      "JB_FF14_TNCR",
-      "JB_LW_GLMS",
-      "JB_LW_WAR",
-      "JB_LW_FINA",
-      "JB_LW_VIK_FIRE",
-      "JB_FFT_ORND",
-      "JB_FFT_RAMZ",
-      "JB_FFT_GFGR",
-      "JB_LW_WGN_FIRE",
-      "JB_LW_ASS_FIRE",
-      "JB_LW_RAIN",
-      "JB_FF1_WROL",
-      "JB_LW_MST_FIRE",
-      "JB_FFT_AGRA",
-      "JB_FFT_DELT",
-      "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE",
-      "JB_LW_STRN",
-      "JB_LW_GRSR",
-      "JB_LW_LSWL",
-      "JB_LW_MKN_FIRE",
-      "JB_FF4_CECL",
-      "JB_FF4_ROSA",
-      "JB_FF4_KAIN",
-      "JB_LW_MMC_FIRE",
-      "JB_LW_DEAN",
-      "JB_LW_ARC_FIRE",
-      "JB_LW_SAKR",
-      "JB_LW_BEA_FIRE",
-      "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE",
-      "JB_FF10_TIDU",
-      "JB_FF10_YUNA",
-      "JB_FF10_ARON",
-      "JB_NIER_N2TB",
-      "JB_NIER_N9TS",
-      "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ",
-      "JB_LW_ZZAN"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {
-        "IT_AF_LW_ACC_039": 1,
-        "IT_AF_MAT_WING_01": 170,
-        "IT_AF_MAT_ARMN": 5,
-        "IT_AF_MAT_LESS_01": 11,
-        "IT_AF_AW_ACCE": 255
-      },
-      {
-        "IT_AF_LW_ACC_039": 3,
-        "IT_AF_MAT_WING_01": 230,
-        "IT_AF_MAT_ARMN": 15,
-        "IT_AF_MAT_LESS_01": 21,
-        "IT_AF_AW_ACCE": 255
-      },
-      {
-        "IT_AF_LW_ACC_039": 7,
-        "IT_AF_MAT_WING_01": 350,
-        "IT_AF_MAT_ARMN": 35,
-        "IT_AF_MAT_LESS_01": 41,
-        "IT_AF_AW_ACCE": 255
-      },
-      {
-        "IT_AF_LW_ACC_039": 15,
-        "IT_AF_MAT_WING_01": 630,
-        "IT_AF_MAT_ARMN": 75,
-        "IT_AF_MAT_LESS_01": 81,
-        "IT_AF_AW_ACCE": 315
-      },
-      {
-        "IT_AF_LW_ACC_039": 31,
-        "IT_AF_MAT_WING_01": 1250,
-        "IT_AF_MAT_ARMN": 155,
-        "IT_AF_MAT_LESS_01": 161,
-        "IT_AF_AW_ACCE": 535
-      },
-      {
-        "IT_AF_LW_ACC_039": 63,
-        "IT_AF_MAT_WING_01": 2570,
-        "IT_AF_MAT_ARMN": 315,
-        "IT_AF_MAT_LESS_01": 323,
-        "IT_AF_AW_ACCE": 1125
-      }
-    ],
-    "acquisition": {
-      "type": "Unknown"
-    },
-    "releaseDate": "23/06/2021"
   }
 }

@@ -12171,6 +12171,32 @@
     "type": "compo_esper_awake",
     "image": "it_sb_aw_icdg_r3"
   },
+  "IT_SB_AW_KRKN_R2": {
+    "dataId": "IT_SB_AW_KRKN_R2",
+    "names": {
+      "en": "Kraken's Awakening Stone (2★)",
+      "fr": "Pierre d'éveil de Kraken (2★)",
+      "de": "Aquadons Erweckungsstein (2★)",
+      "es": "Piedra del despertar de Kraken (2★)",
+      "ko": "크라켄의 각성석(★2)",
+      "zh": "克拉肯的獸醒石（★2）"
+    },
+    "type": "compo_esper_awake",
+    "image": "it_sb_aw_krkn_r2"
+  },
+  "IT_SB_AW_KRKN_R3": {
+    "dataId": "IT_SB_AW_KRKN_R3",
+    "names": {
+      "en": "Kraken's Awakening Stone (3★)",
+      "fr": "Pierre d'éveil de Kraken (3★)",
+      "de": "Aquadons Erweckungsstein (3★)",
+      "es": "Piedra del despertar de Kraken (3★)",
+      "ko": "크라켄의 각성석(★3)",
+      "zh": "克拉肯的獸醒石（★3）"
+    },
+    "type": "compo_esper_awake",
+    "image": "it_sb_aw_krkn_r3"
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -14579,6 +14605,20 @@
     "icon": "AF_LW_ACC_039",
     "image": "lapswpn_acc_039"
   },
+  "IT_AF_LW_HAT_017": {
+    "dataId": "IT_AF_LW_HAT_017",
+    "names": {
+      "en": "White Marshmallow Miniature Crafting Recipe",
+      "fr": "Recette d'artisanat : Mini Guimauve blanche",
+      "de": "[Anleitung] „Weißes Marshmallow“-Figur",
+      "es": "Receta: minimalvavisco blanco",
+      "ko": "하얀 마시멜로 장식 제작법",
+      "zh": "掌中白色棉花糖的製作配方"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_HAT_017",
+    "image": "lapswpn_hat_017"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -14864,6 +14904,32 @@
     },
     "type": "medal",
     "image": "it_ec_starquartz"
+  },
+  "IT_UN_EXCHANGE_01": {
+    "dataId": "IT_UN_EXCHANGE_01",
+    "names": {
+      "en": "Soul Star",
+      "fr": "Étoile d'âme",
+      "de": "Seelenstern",
+      "es": "Estrellas de alma",
+      "ko": "영혼의 별",
+      "zh": "魂星"
+    },
+    "type": "soul_medal",
+    "image": "it_un_exchange_01"
+  },
+  "IT_VC_EXCHANGE_01": {
+    "dataId": "IT_VC_EXCHANGE_01",
+    "names": {
+      "en": "Vision Star",
+      "fr": "Étoile de vision",
+      "de": "Visionsstern",
+      "es": "Estrellas de visión",
+      "ko": "비전의 별",
+      "zh": "幻星"
+    },
+    "type": "vision_medal",
+    "image": "it_vc_exchange_01"
   },
   "IT_EC_ARENA": {
     "dataId": "IT_EC_ARENA",
@@ -21855,6 +21921,32 @@
     "type": "vc_shard",
     "image": "it_vpi_lw_icdg"
   },
+  "IT_VPI_LW_KRKN": {
+    "dataId": "IT_VPI_LW_KRKN",
+    "names": {
+      "en": "\"Terror from the Deep, Kraken\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Kraken, Terreur des profondeurs",
+      "de": "„Aquadon, Schrecken der Tiefe“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «Kraken, el Terror de los Mares»",
+      "ko": " '심해의 마물-크라켄'의 조각",
+      "zh": "深淵海魔　克拉肯的碎片"
+    },
+    "type": "vc_shard",
+    "image": "it_vpi_lw_krkn"
+  },
+  "IT_VPI_LW_MORE": {
+    "dataId": "IT_VPI_LW_MORE",
+    "names": {
+      "en": "\"Guidance from the Stars\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Orientation astrale",
+      "de": "„Astrale Weisung“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «Guía de las estrellas»",
+      "ko": " '별의 인도'의 조각",
+      "zh": "星辰指引的碎片"
+    },
+    "type": "vc_shard",
+    "image": "it_vpi_lw_more"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -22281,6 +22373,20 @@
       "es": "Medalla de asalto de junio",
       "ko": "[6월] 레이드 메달",
       "zh": "【6月】共鬥獎牌"
+    },
+    "type": "medal",
+    "icon": "IT_EC_RAID_02",
+    "image": "it_ec_raid_02"
+  },
+  "IT_EC_RAID_15": {
+    "dataId": "IT_EC_RAID_15",
+    "names": {
+      "en": "July Raid Medal",
+      "fr": "Médaille du raid de juillet",
+      "de": "Juli-Kraftprobenmedaille",
+      "es": "Medalla de asalto de julio",
+      "ko": "[7월] 레이드 메달",
+      "zh": "【7月】共鬥獎牌"
     },
     "type": "medal",
     "icon": "IT_EC_RAID_02",

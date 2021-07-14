@@ -6626,6 +6626,137 @@
       }
     ]
   },
+  "VC_LW_MORE": {
+    "dataId": "VC_LW_MORE",
+    "names": {
+      "en": "Guidance from the Stars",
+      "fr": "Orientation astrale",
+      "de": "Astrale Weisung",
+      "es": "Guía de las estrellas",
+      "ko": "별의 인도",
+      "zh": "星辰指引"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 39,
+        "max": 302
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 43,
+        "max": 168
+      },
+      "DEX": {},
+      "AGI": {
+        "min": 1,
+        "max": 3
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsmore",
+    "releaseDate": "14/07/2021",
+    "slug": "guidance-from-the-stars",
+    "partyBuffs": [
+      {
+        "classic": "SK_VC_LW_MORE_GS",
+        "awake": "SK_VC_LW_MORE_GS_AW",
+        "lvmax": "SK_VC_LW_MORE_GSMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_VC_LW_MORE_GS_2",
+        "awake": "SK_VC_LW_MORE_GS_AW_2",
+        "lvmax": "SK_VC_LW_MORE_GSMAX_2",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": "SK_VC_LW_MORE_P",
+        "awake": "SK_VC_LW_MORE_PAW",
+        "lvmax": "SK_VC_LW_MORE_PMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_GL_VC_LW_MORE_P2",
+        "awake": "SK_GL_VC_LW_MORE_PAW2",
+        "lvmax": "SK_GL_VC_LW_MORE_PMAX2",
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_LW_P_MORE",
+              "UN_LW_P_RAMD"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -10764,6 +10895,124 @@
             "type": "elem",
             "items": [
               "lightning"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_KRKN": {
+    "dataId": "VC_LW_KRKN",
+    "names": {
+      "en": "Terror from the Deep, Kraken",
+      "fr": "Kraken, Terreur des profondeurs",
+      "de": "Aquadon, Schrecken der Tiefe",
+      "es": "Kraken, el Terror de los Mares",
+      "ko": "심해의 마물-크라켄",
+      "zh": "深淵海魔　克拉肯"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 30,
+        "max": 242
+      },
+      "TP": {
+        "min": 5,
+        "max": 20
+      },
+      "AP": {},
+      "ATK": {
+        "min": 22,
+        "max": 88
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 10,
+        "max": 42
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapskrkn",
+    "releaseDate": "14/07/2021",
+    "slug": "terror-from-the-deep-kraken",
+    "partyBuffs": [
+      {
+        "classic": "SK_VC_LW_KRKN_GS",
+        "awake": "SK_VC_LW_KRKN_GSAW",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_VC_LW_KRKN_GS_2",
+        "awake": "SK_VC_LW_KRKN_GSAW_2",
+        "lvmax": "SK_VC_LW_KRKN_GSMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": "SK_VC_LW_KRKN_P",
+        "awake": "SK_VC_LW_KRKN_PAW",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
             ]
           }
         ]

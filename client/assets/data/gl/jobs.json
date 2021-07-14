@@ -80265,6 +80265,208 @@
       }
     ]
   },
+  "JB_LW_WHIS_M": {
+    "dataId": "JB_LW_WHIS_M",
+    "names": {
+      "en": "Knight [Dominator]",
+      "fr": "Chevalier [Subjugateur]",
+      "de": "Ritter [Destruktion]",
+      "es": "Caballero [arrollador]",
+      "ko": "나이트[파격]",
+      "zh": "騎士【破擊】"
+    },
+    "statsModifiers": [
+      {
+        "HP": 6450,
+        "TP": 2311,
+        "AP": 2311,
+        "ATK": 4263,
+        "MAG": 812,
+        "DEX": 2334,
+        "AGI": 3000,
+        "LUCK": 3060,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6675,
+        "TP": 2317,
+        "AP": 2317,
+        "ATK": 4294,
+        "MAG": 818,
+        "DEX": 2351,
+        "AGI": 3000,
+        "LUCK": 3090,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6900,
+        "TP": 2323,
+        "AP": 2323,
+        "ATK": 4326,
+        "MAG": 824,
+        "DEX": 2369,
+        "AGI": 3000,
+        "LUCK": 3120,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 7800,
+        "TP": 2346,
+        "AP": 2346,
+        "ATK": 4452,
+        "MAG": 848,
+        "DEX": 2438,
+        "AGI": 3000,
+        "LUCK": 3240,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8025,
+        "TP": 2351,
+        "AP": 2351,
+        "ATK": 4483,
+        "MAG": 854,
+        "DEX": 2455,
+        "AGI": 3000,
+        "LUCK": 3270,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8250,
+        "TP": 2357,
+        "AP": 2357,
+        "ATK": 4515,
+        "MAG": 860,
+        "DEX": 2472,
+        "AGI": 3000,
+        "LUCK": 3300,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9150,
+        "TP": 2380,
+        "AP": 2380,
+        "ATK": 4641,
+        "MAG": 884,
+        "DEX": 2541,
+        "AGI": 3000,
+        "LUCK": 3420,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9375,
+        "TP": 2386,
+        "AP": 2386,
+        "ATK": 4672,
+        "MAG": 890,
+        "DEX": 2558,
+        "AGI": 3000,
+        "LUCK": 3450,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9600,
+        "TP": 2392,
+        "AP": 2392,
+        "ATK": 4704,
+        "MAG": 896,
+        "DEX": 2576,
+        "AGI": 3000,
+        "LUCK": 3480,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 10500,
+        "TP": 2415,
+        "AP": 2415,
+        "ATK": 4830,
+        "MAG": 920,
+        "DEX": 2645,
+        "AGI": 3000,
+        "LUCK": 3600,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "knt_ec",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "ARMOR",
+        "HELM",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {
+        "IT_JBEX_UR": 1,
+        "IT_UN_AW_DARK": 120,
+        "IT_PI_COM_DARK": 120
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_WHIS": 20,
+        "IT_JBEX_SWORD": 10,
+        "IT_JB_EM_DARK_5": 25,
+        "IT_JB_SWORD_05": 25
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_WHIS": 20,
+        "IT_JBEX_SWORD": 10,
+        "IT_JB_EM_DARK_5": 25,
+        "IT_JB_SWORD_05": 25
+      },
+      {
+        "IT_SP_LW_WHIS": 40,
+        "IT_JBEX_SWORD": 20,
+        "IT_JBEX_MM": 1,
+        "IT_JB_IM_DRAGON_5": 3
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_WHIS": 20,
+        "IT_JBEX_SWORD": 25,
+        "IT_JB_EM_DARK_5": 35,
+        "IT_JB_SWORD_05": 35
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_WHIS": 20,
+        "IT_JBEX_SWORD": 25,
+        "IT_JB_EM_DARK_5": 35,
+        "IT_JB_SWORD_05": 35
+      },
+      {
+        "IT_SP_LW_WHIS": 80,
+        "IT_JBEX_SWORD": 35,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_DRAGON_5": 4
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_WHIS": 40,
+        "IT_JBEX_SWORD": 50,
+        "IT_JB_EM_DARK_5": 50,
+        "IT_JB_SWORD_05": 50
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_WHIS": 40,
+        "IT_JBEX_SWORD": 50,
+        "IT_JB_EM_DARK_5": 50,
+        "IT_JB_SWORD_05": 50
+      },
+      {
+        "IT_SP_LW_WHIS": 120,
+        "IT_JBEX_SWORD": 75,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_DRAGON_5": 5
+      }
+    ]
+  },
   "JB_LW_BYLO_M": {
     "dataId": "JB_LW_BYLO_M",
     "names": {
@@ -80867,6 +81069,208 @@
       },
       {
         "IT_SP_LW_RART": 120,
+        "IT_JBEX_BOW": 75,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_ANGEL_5": 5
+      }
+    ]
+  },
+  "JB_LW_CLEY_M": {
+    "dataId": "JB_LW_CLEY_M",
+    "names": {
+      "en": "Ranger [Balehunt]",
+      "fr": "Chasseur [Flèche sournoise]",
+      "de": "Jäger [Erleger]",
+      "es": "Montaraz [aciago]",
+      "ko": "사냥꾼[흉궁]",
+      "zh": "獵人【兇弓】"
+    },
+    "statsModifiers": [
+      {
+        "HP": 6450,
+        "TP": 2311,
+        "AP": 2311,
+        "ATK": 3451,
+        "MAG": 1522,
+        "DEX": 4263,
+        "AGI": 3400,
+        "LUCK": 2346,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6675,
+        "TP": 2317,
+        "AP": 2317,
+        "ATK": 3476,
+        "MAG": 1533,
+        "DEX": 4294,
+        "AGI": 3400,
+        "LUCK": 2369,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6900,
+        "TP": 2323,
+        "AP": 2323,
+        "ATK": 3502,
+        "MAG": 1545,
+        "DEX": 4326,
+        "AGI": 3400,
+        "LUCK": 2392,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 7800,
+        "TP": 2346,
+        "AP": 2346,
+        "ATK": 3604,
+        "MAG": 1590,
+        "DEX": 4452,
+        "AGI": 3400,
+        "LUCK": 2484,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8025,
+        "TP": 2351,
+        "AP": 2351,
+        "ATK": 3629,
+        "MAG": 1601,
+        "DEX": 4483,
+        "AGI": 3400,
+        "LUCK": 2507,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8250,
+        "TP": 2357,
+        "AP": 2357,
+        "ATK": 3655,
+        "MAG": 1612,
+        "DEX": 4515,
+        "AGI": 3400,
+        "LUCK": 2530,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9150,
+        "TP": 2380,
+        "AP": 2380,
+        "ATK": 3757,
+        "MAG": 1657,
+        "DEX": 4641,
+        "AGI": 3400,
+        "LUCK": 2622,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9375,
+        "TP": 2386,
+        "AP": 2386,
+        "ATK": 3782,
+        "MAG": 1668,
+        "DEX": 4672,
+        "AGI": 3400,
+        "LUCK": 2645,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9600,
+        "TP": 2392,
+        "AP": 2392,
+        "ATK": 3808,
+        "MAG": 1680,
+        "DEX": 4704,
+        "AGI": 3400,
+        "LUCK": 2668,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 10500,
+        "TP": 2415,
+        "AP": 2415,
+        "ATK": 3910,
+        "MAG": 1725,
+        "DEX": 4830,
+        "AGI": 3400,
+        "LUCK": 2760,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "hun_ec",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "BOW"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {
+        "IT_JBEX_SSR": 1,
+        "IT_UN_AW_ICE": 120,
+        "IT_PI_COM_ICE": 120
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_CLEY": 20,
+        "IT_JBEX_BOW": 10,
+        "IT_JB_EM_ICE_5": 25,
+        "IT_JB_BOW_05": 25
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_CLEY": 20,
+        "IT_JBEX_BOW": 10,
+        "IT_JB_EM_ICE_5": 25,
+        "IT_JB_BOW_05": 25
+      },
+      {
+        "IT_SP_LW_CLEY": 40,
+        "IT_JBEX_BOW": 20,
+        "IT_JBEX_MM": 1,
+        "IT_JB_IM_ANGEL_5": 3
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_CLEY": 20,
+        "IT_JBEX_BOW": 25,
+        "IT_JB_EM_ICE_5": 35,
+        "IT_JB_BOW_05": 35
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_CLEY": 20,
+        "IT_JBEX_BOW": 25,
+        "IT_JB_EM_ICE_5": 35,
+        "IT_JB_BOW_05": 35
+      },
+      {
+        "IT_SP_LW_CLEY": 80,
+        "IT_JBEX_BOW": 35,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_ANGEL_5": 4
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_CLEY": 40,
+        "IT_JBEX_BOW": 50,
+        "IT_JB_EM_ICE_5": 50,
+        "IT_JB_BOW_05": 50
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_CLEY": 40,
+        "IT_JBEX_BOW": 50,
+        "IT_JB_EM_ICE_5": 50,
+        "IT_JB_BOW_05": 50
+      },
+      {
+        "IT_SP_LW_CLEY": 120,
         "IT_JBEX_BOW": 75,
         "IT_JBEX_MM": 2,
         "IT_JB_IM_ANGEL_5": 5
@@ -82484,6 +82888,208 @@
       },
       {
         "IT_SP_LW_MICE": 120,
+        "IT_JBEX_STAFF": 75,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_DRAGON_5": 5
+      }
+    ]
+  },
+  "JB_LW_SEVR_M": {
+    "dataId": "JB_LW_SEVR_M",
+    "names": {
+      "en": "Black Mage [Perpetuator]",
+      "fr": "Mage noir [Amplification]",
+      "de": "Schwarzmagier [Heimsuchung]",
+      "es": "Mago negro [perpetuador]",
+      "ko": "흑마도사[연주]",
+      "zh": "黑魔道士【延咒】"
+    },
+    "statsModifiers": [
+      {
+        "HP": 6450,
+        "TP": 4221,
+        "AP": 4221,
+        "ATK": 1522,
+        "MAG": 4770,
+        "DEX": 3451,
+        "AGI": 1500,
+        "LUCK": 2346,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6675,
+        "TP": 4231,
+        "AP": 4231,
+        "ATK": 1533,
+        "MAG": 4805,
+        "DEX": 3476,
+        "AGI": 1500,
+        "LUCK": 2369,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6900,
+        "TP": 4242,
+        "AP": 4242,
+        "ATK": 1545,
+        "MAG": 4841,
+        "DEX": 3502,
+        "AGI": 1500,
+        "LUCK": 2392,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 7800,
+        "TP": 4284,
+        "AP": 4284,
+        "ATK": 1590,
+        "MAG": 4982,
+        "DEX": 3604,
+        "AGI": 1500,
+        "LUCK": 2484,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 8025,
+        "TP": 4294,
+        "AP": 4294,
+        "ATK": 1601,
+        "MAG": 5017,
+        "DEX": 3629,
+        "AGI": 1500,
+        "LUCK": 2507,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 8250,
+        "TP": 4305,
+        "AP": 4305,
+        "ATK": 1612,
+        "MAG": 5052,
+        "DEX": 3655,
+        "AGI": 1500,
+        "LUCK": 2530,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 9150,
+        "TP": 4347,
+        "AP": 4347,
+        "ATK": 1657,
+        "MAG": 5193,
+        "DEX": 3757,
+        "AGI": 1500,
+        "LUCK": 2622,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 9375,
+        "TP": 4357,
+        "AP": 4357,
+        "ATK": 1668,
+        "MAG": 5228,
+        "DEX": 3782,
+        "AGI": 1500,
+        "LUCK": 2645,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 9600,
+        "TP": 4368,
+        "AP": 4368,
+        "ATK": 1680,
+        "MAG": 5264,
+        "DEX": 3808,
+        "AGI": 1500,
+        "LUCK": 2668,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 10500,
+        "TP": 4410,
+        "AP": 4410,
+        "ATK": 1725,
+        "MAG": 5405,
+        "DEX": 3910,
+        "AGI": 1500,
+        "LUCK": 2760,
+        "INITIAL_AP": -25
+      }
+    ],
+    "image": "blm_ec",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {
+        "IT_JBEX_SR": 1,
+        "IT_UN_AW_WATER": 120,
+        "IT_PI_COM_WATER": 120
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_SEVR": 20,
+        "IT_JBEX_STAFF": 10,
+        "IT_JB_EM_WATER_5": 25,
+        "IT_JB_STAFF_05": 25
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_SEVR": 20,
+        "IT_JBEX_STAFF": 10,
+        "IT_JB_EM_WATER_5": 25,
+        "IT_JB_STAFF_05": 25
+      },
+      {
+        "IT_SP_LW_SEVR": 40,
+        "IT_JBEX_STAFF": 20,
+        "IT_JBEX_MM": 1,
+        "IT_JB_IM_DRAGON_5": 3
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_SEVR": 20,
+        "IT_JBEX_STAFF": 25,
+        "IT_JB_EM_WATER_5": 35,
+        "IT_JB_STAFF_05": 35
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_SEVR": 20,
+        "IT_JBEX_STAFF": 25,
+        "IT_JB_EM_WATER_5": 35,
+        "IT_JB_STAFF_05": 35
+      },
+      {
+        "IT_SP_LW_SEVR": 80,
+        "IT_JBEX_STAFF": 35,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_DRAGON_5": 4
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_SEVR": 40,
+        "IT_JBEX_STAFF": 50,
+        "IT_JB_EM_WATER_5": 50,
+        "IT_JB_STAFF_05": 50
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_SEVR": 40,
+        "IT_JBEX_STAFF": 50,
+        "IT_JB_EM_WATER_5": 50,
+        "IT_JB_STAFF_05": 50
+      },
+      {
+        "IT_SP_LW_SEVR": 120,
         "IT_JBEX_STAFF": 75,
         "IT_JBEX_MM": 2,
         "IT_JB_IM_DRAGON_5": 5
@@ -89266,6 +89872,283 @@
       }
     ]
   },
+  "JB_LW_MST": {
+    "dataId": "JB_LW_MST",
+    "names": {
+      "en": "Staff Mage",
+      "fr": "Mage au bâton",
+      "de": "Stabmagier",
+      "es": "Mago de bastones",
+      "ko": "마장술사",
+      "zh": "魔杖術士"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mst",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {},
+      {
+        "IT_JB_MM_ALL": 10,
+        "IT_JB_IM_DRAGON_1": 1,
+        "IT_JB_EM_FIRE_1": 10,
+        "IT_JB_STAFF_01": 5
+      },
+      {
+        "IT_JB_IM_DRAGON_1": 2,
+        "IT_JB_EM_FIRE_1": 20,
+        "IT_JB_STAFF_01": 10,
+        "IT_JB_MM_MST": 1
+      },
+      {
+        "IT_JB_MM_ALL_2": 25,
+        "IT_JB_IM_DRAGON_2": 1,
+        "IT_JB_EM_FIRE_2": 10,
+        "IT_JB_STAFF_02": 5
+      },
+      {
+        "IT_JB_MM_ALL_2": 50,
+        "IT_JB_IM_DRAGON_2": 2,
+        "IT_JB_EM_FIRE_2": 20,
+        "IT_JB_STAFF_02": 10
+      },
+      {
+        "IT_JB_IM_DRAGON_2": 3,
+        "IT_JB_EM_FIRE_2": 40,
+        "IT_JB_STAFF_02": 15,
+        "IT_JB_MM_MST_2": 2
+      },
+      {
+        "IT_JB_MM_ALL_3": 25,
+        "IT_JB_IM_DRAGON_3": 1,
+        "IT_JB_EM_FIRE_3": 10,
+        "IT_JB_STAFF_03": 5
+      },
+      {
+        "IT_JB_MM_ALL_3": 50,
+        "IT_JB_IM_DRAGON_3": 2,
+        "IT_JB_EM_FIRE_3": 20,
+        "IT_JB_STAFF_03": 10
+      },
+      {
+        "IT_JB_IM_DRAGON_3": 3,
+        "IT_JB_EM_FIRE_3": 40,
+        "IT_JB_STAFF_03": 15,
+        "IT_JB_MM_MST_3": 3
+      },
+      {
+        "IT_JB_MM_ALL_4": 25,
+        "IT_JB_IM_DRAGON_4": 1,
+        "IT_JB_EM_FIRE_4": 10,
+        "IT_JB_STAFF_04": 5
+      },
+      {
+        "IT_JB_MM_ALL_4": 50,
+        "IT_JB_IM_DRAGON_4": 2,
+        "IT_JB_EM_FIRE_4": 20,
+        "IT_JB_STAFF_04": 10
+      },
+      {
+        "IT_JB_IM_DRAGON_4": 3,
+        "IT_JB_EM_FIRE_4": 40,
+        "IT_JB_STAFF_04": 15,
+        "IT_JB_MM_MST_4": 4
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_JB_IM_DRAGON_5": 1,
+        "IT_JB_EM_FIRE_5": 10,
+        "IT_JB_STAFF_05": 5
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_JB_IM_DRAGON_5": 2,
+        "IT_JB_EM_FIRE_5": 20,
+        "IT_JB_STAFF_05": 10
+      },
+      {
+        "IT_JB_IM_DRAGON_5": 3,
+        "IT_JB_EM_FIRE_5": 40,
+        "IT_JB_STAFF_05": 15,
+        "IT_JB_MM_MST_5": 5
+      }
+    ]
+  },
   "JB_LW_DRG_EX_M": {
     "dataId": "JB_LW_DRG_EX_M",
     "names": {
@@ -91837,6 +92720,409 @@
         "IT_JBEX_MACE": 75,
         "IT_JBEX_MM": 2,
         "IT_JB_IM_DRAGON_5": 5
+      }
+    ]
+  },
+  "JB_LW_THI_EX_M": {
+    "dataId": "JB_LW_THI_EX_M",
+    "names": {
+      "en": "Thief EX",
+      "fr": "Voleur EX",
+      "de": "Dieb [EX]",
+      "es": "Ladrón EX",
+      "ko": "도적 EX",
+      "zh": "竊賊EX"
+    },
+    "statsModifiers": [
+      {
+        "HP": 6450,
+        "TP": 804,
+        "AP": 804,
+        "ATK": 3451,
+        "MAG": 1522,
+        "DEX": 3045,
+        "AGI": 4200,
+        "LUCK": 4284,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6675,
+        "TP": 806,
+        "AP": 806,
+        "ATK": 3476,
+        "MAG": 1533,
+        "DEX": 3067,
+        "AGI": 4200,
+        "LUCK": 4326,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6900,
+        "TP": 808,
+        "AP": 808,
+        "ATK": 3502,
+        "MAG": 1545,
+        "DEX": 3090,
+        "AGI": 4200,
+        "LUCK": 4368,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 7800,
+        "TP": 816,
+        "AP": 816,
+        "ATK": 3604,
+        "MAG": 1590,
+        "DEX": 3180,
+        "AGI": 4200,
+        "LUCK": 4536,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8025,
+        "TP": 818,
+        "AP": 818,
+        "ATK": 3629,
+        "MAG": 1601,
+        "DEX": 3202,
+        "AGI": 4200,
+        "LUCK": 4578,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8250,
+        "TP": 820,
+        "AP": 820,
+        "ATK": 3655,
+        "MAG": 1612,
+        "DEX": 3225,
+        "AGI": 4200,
+        "LUCK": 4620,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9150,
+        "TP": 828,
+        "AP": 828,
+        "ATK": 3757,
+        "MAG": 1657,
+        "DEX": 3315,
+        "AGI": 4200,
+        "LUCK": 4788,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9375,
+        "TP": 830,
+        "AP": 830,
+        "ATK": 3782,
+        "MAG": 1668,
+        "DEX": 3337,
+        "AGI": 4200,
+        "LUCK": 4830,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9600,
+        "TP": 832,
+        "AP": 832,
+        "ATK": 3808,
+        "MAG": 1680,
+        "DEX": 3360,
+        "AGI": 4200,
+        "LUCK": 4872,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 10500,
+        "TP": 840,
+        "AP": 840,
+        "ATK": 3910,
+        "MAG": 1725,
+        "DEX": 3450,
+        "AGI": 4200,
+        "LUCK": 5040,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "thi_ec",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {},
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_VSTR": 20,
+        "IT_JBEX_SSWORD": 10,
+        "IT_JB_EM_SHINE_5": 25,
+        "IT_JB_SSWORD_05": 25
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_VSTR": 20,
+        "IT_JBEX_SSWORD": 10,
+        "IT_JB_EM_SHINE_5": 25,
+        "IT_JB_SSWORD_05": 25
+      },
+      {
+        "IT_SP_LW_VSTR": 40,
+        "IT_JBEX_SSWORD": 20,
+        "IT_JBEX_MM": 1,
+        "IT_JB_IM_ANGEL_5": 3,
+        "IT_JB_MM_THI_5": 5
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_VSTR": 20,
+        "IT_JBEX_SSWORD": 25,
+        "IT_JB_EM_SHINE_5": 35,
+        "IT_JB_SSWORD_05": 35
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_VSTR": 20,
+        "IT_JBEX_SSWORD": 25,
+        "IT_JB_EM_SHINE_5": 35,
+        "IT_JB_SSWORD_05": 35
+      },
+      {
+        "IT_SP_LW_VSTR": 80,
+        "IT_JBEX_SSWORD": 35,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_ANGEL_5": 4,
+        "IT_JB_MM_THI_5": 7
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_VSTR": 40,
+        "IT_JBEX_SSWORD": 50,
+        "IT_JB_EM_SHINE_5": 50,
+        "IT_JB_SSWORD_05": 50
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_VSTR": 40,
+        "IT_JBEX_SSWORD": 50,
+        "IT_JB_EM_SHINE_5": 50,
+        "IT_JB_SSWORD_05": 50
+      },
+      {
+        "IT_SP_LW_VSTR": 120,
+        "IT_JBEX_SSWORD": 75,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_ANGEL_5": 5,
+        "IT_JB_MM_THI_5": 10
+      }
+    ]
+  },
+  "JB_LW_VSTR_M": {
+    "dataId": "JB_LW_VSTR_M",
+    "names": {
+      "en": "Thief [Quickhand]",
+      "fr": "Voleur [Main invisible]",
+      "de": "Dieb [Flinkgriff]",
+      "es": "Ladrón [fugaz]",
+      "ko": "도적[날렵]",
+      "zh": "竊賊【瞬動】"
+    },
+    "statsModifiers": [
+      {
+        "HP": 6450,
+        "TP": 804,
+        "AP": 804,
+        "ATK": 3451,
+        "MAG": 1522,
+        "DEX": 3045,
+        "AGI": 4200,
+        "LUCK": 4284,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6675,
+        "TP": 806,
+        "AP": 806,
+        "ATK": 3476,
+        "MAG": 1533,
+        "DEX": 3067,
+        "AGI": 4200,
+        "LUCK": 4326,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6900,
+        "TP": 808,
+        "AP": 808,
+        "ATK": 3502,
+        "MAG": 1545,
+        "DEX": 3090,
+        "AGI": 4200,
+        "LUCK": 4368,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 7800,
+        "TP": 816,
+        "AP": 816,
+        "ATK": 3604,
+        "MAG": 1590,
+        "DEX": 3180,
+        "AGI": 4200,
+        "LUCK": 4536,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8025,
+        "TP": 818,
+        "AP": 818,
+        "ATK": 3629,
+        "MAG": 1601,
+        "DEX": 3202,
+        "AGI": 4200,
+        "LUCK": 4578,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8250,
+        "TP": 820,
+        "AP": 820,
+        "ATK": 3655,
+        "MAG": 1612,
+        "DEX": 3225,
+        "AGI": 4200,
+        "LUCK": 4620,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9150,
+        "TP": 828,
+        "AP": 828,
+        "ATK": 3757,
+        "MAG": 1657,
+        "DEX": 3315,
+        "AGI": 4200,
+        "LUCK": 4788,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9375,
+        "TP": 830,
+        "AP": 830,
+        "ATK": 3782,
+        "MAG": 1668,
+        "DEX": 3337,
+        "AGI": 4200,
+        "LUCK": 4830,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9600,
+        "TP": 832,
+        "AP": 832,
+        "ATK": 3808,
+        "MAG": 1680,
+        "DEX": 3360,
+        "AGI": 4200,
+        "LUCK": 4872,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 10500,
+        "TP": 840,
+        "AP": 840,
+        "ATK": 3910,
+        "MAG": 1725,
+        "DEX": 3450,
+        "AGI": 4200,
+        "LUCK": 5040,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "thi_ec",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "DAGGER"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {
+        "IT_JBEX_SSR": 1,
+        "IT_UN_AW_SHINE": 120,
+        "IT_PI_COM_SHINE": 120
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_VSTR": 20,
+        "IT_JBEX_SSWORD": 10,
+        "IT_JB_EM_SHINE_5": 25,
+        "IT_JB_SSWORD_05": 25
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_VSTR": 20,
+        "IT_JBEX_SSWORD": 10,
+        "IT_JB_EM_SHINE_5": 25,
+        "IT_JB_SSWORD_05": 25
+      },
+      {
+        "IT_SP_LW_VSTR": 40,
+        "IT_JBEX_SSWORD": 20,
+        "IT_JBEX_MM": 1,
+        "IT_JB_IM_ANGEL_5": 3
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_VSTR": 20,
+        "IT_JBEX_SSWORD": 25,
+        "IT_JB_EM_SHINE_5": 35,
+        "IT_JB_SSWORD_05": 35
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_VSTR": 20,
+        "IT_JBEX_SSWORD": 25,
+        "IT_JB_EM_SHINE_5": 35,
+        "IT_JB_SSWORD_05": 35
+      },
+      {
+        "IT_SP_LW_VSTR": 80,
+        "IT_JBEX_SSWORD": 35,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_ANGEL_5": 4
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_VSTR": 40,
+        "IT_JBEX_SSWORD": 50,
+        "IT_JB_EM_SHINE_5": 50,
+        "IT_JB_SSWORD_05": 50
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_VSTR": 40,
+        "IT_JBEX_SSWORD": 50,
+        "IT_JB_EM_SHINE_5": 50,
+        "IT_JB_SSWORD_05": 50
+      },
+      {
+        "IT_SP_LW_VSTR": 120,
+        "IT_JBEX_SSWORD": 75,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_ANGEL_5": 5
       }
     ]
   },
