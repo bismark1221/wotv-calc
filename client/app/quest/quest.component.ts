@@ -6,11 +6,7 @@ import { QuestService } from '../services/quest.service';
 import { RangeService } from '../services/range.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
-import { ItemService } from '../services/item.service';
-import { EquipmentService } from '../services/equipment.service';
 import { AuthService } from '../services/auth.service';
-import { OtherUnitService } from '../services/otherunit.service';
-import { JobService } from '../services/job.service';
 import { SkillService } from '../services/skill.service';
 
 
@@ -70,10 +66,6 @@ export class QuestComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private nameService: NameService,
-    private itemService: ItemService,
-    private equipmentService: EquipmentService,
-    private jobService: JobService,
-    private otherUnitService: OtherUnitService,
     private skillService: SkillService
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {

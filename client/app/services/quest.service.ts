@@ -2,12 +2,8 @@ import { Injectable } from '@angular/core';
 
 import { TranslateService } from '@ngx-translate/core';
 
-import { DataService } from './data.service';
 import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
-import { UnitService } from './unit.service';
-import { OtherUnitService } from './otherunit.service';
-import { SkillService } from './skill.service';
 import { ApiService } from './api.service';
 import { NameService } from './name.service';
 
@@ -28,12 +24,8 @@ export class QuestService {
 
   constructor(
     private translateService: TranslateService,
-    private dataService: DataService,
     private navService: NavService,
     private toolService: ToolService,
-    private unitService: UnitService,
-    private otherUnitService: OtherUnitService,
-    private skillService: SkillService,
     private apiService: ApiService,
     private nameService: NameService
   ) {}

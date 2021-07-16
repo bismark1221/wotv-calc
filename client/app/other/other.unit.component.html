@@ -22,7 +22,7 @@
     <table class="statsTable">
       <tbody>
         <tr>
-          <th colspan="13">Boss Stats</th>
+          <th colspan="13">Quest list</th>
         </tr>
         <tr>
           <th class="sub">Quest</th>
@@ -33,7 +33,7 @@
           <th class="sub">MAG</th>
         </tr>
       </tbody>
-      <tbody *ngFor="let enemy of formattedEnemies; let j = index">
+      <tbody *ngFor="let enemy of otherUnits; let j = index">
         <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" [attr.aria-expanded]="!isCollapsedEnemy[j]" class="enemyLine">
           <td class="questName">
             <div class="collapseBlock">
