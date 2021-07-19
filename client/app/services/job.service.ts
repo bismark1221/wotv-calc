@@ -5,6 +5,7 @@ import { Job } from '../entities/job';
 
 import { NavService } from './nav.service';
 import { DataService } from './data.service';
+import { ApiService } from './api.service';
 import { ToolService } from './tool.service';
 
 @Injectable()
@@ -17,13 +18,34 @@ export class JobService {
 
   constructor(
     private dataService: DataService,
+    private apiService: ApiService,
     private navService: NavService,
     private translateService: TranslateService,
     private toolService: ToolService
   ) {}
 
+  private async getApi(param = null, extraQuery = []) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('jobs', param, extraQuery)));
+  }
+
   private getRaw(forcedVersion = null) {
     return this.dataService.loadData('jobs', forcedVersion);
+  }
+
+  async getJobsForJobPlanner(jobsIds) {
+    const result = await this.getApi(null, [{name: 'forJobPlanner', value: 1}, {name: 'jobIds', value: jobsIds.join(',')}]);
+    const jobs = [];
+
+    result.jobs.forEach(rawJob => {
+      const job = new Job();
+      job.constructFromJson(rawJob);
+      jobs.push(job);
+    });
+
+    return {
+      jobs: jobs,
+      items: result.items
+    };
   }
 
   async getJobs(forcedVersion = null) {

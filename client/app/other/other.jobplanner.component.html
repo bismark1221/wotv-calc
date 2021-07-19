@@ -33,9 +33,9 @@
       <table class="jobTable" *ngIf="jobbedUnits[unitPos]; let unit">
         <tr>
           <td><img class="unitImg" src="assets/units/{{ unit.image }}_m.png" /></td>
-          <td><div class="mainJob"><img src="{{'assets/jobs/' + unit.jobsData[0].image + '.png'}}" title="unit.jobsData[0].name" /></div></td>
-          <td><div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[1].image + '.png'}}" title="unit.jobsData[1].name" /></div></td>
-          <td><div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[2].image + '.png'}}" title="unit.jobsData[2].name" /></div></td>
+          <td><div class="mainJob"><img src="{{'assets/jobs/' + unit.jobsData[0].image + '.png'}}" title="{{unit.jobsData[0].name}}" /></div></td>
+          <td><div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[1].image + '.png'}}" title="{{unit.jobsData[1].name}}" /></div></td>
+          <td><div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[2].image + '.png'}}" title="{{unit.jobsData[2].name}}" /></div></td>
         </tr>
         <tr>
           <td>Start</td>
@@ -99,7 +99,7 @@
           *ngIf="materials[itemId].type !== 'classic'"
           (click)="toogleMaterial(itemId)"
         >
-          <img src="{{ 'assets/jobs/' + materials[itemId].image + '.png'}}" />
+          <img src="{{ 'assets/jobs/' + materials[itemId].image + '.png'}}" title="{{ materials[itemId].name }}" />
         </div>
 
         <span class="materialCount">{{ materials[itemId].count }}</span>

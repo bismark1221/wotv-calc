@@ -21,6 +21,7 @@ import { EsperService } from './esper.service';
 import { AuthService } from './auth.service';
 import { ToolService } from './tool.service';
 import { DataService } from './data.service';
+import { ApiService } from './api.service';
 
 @Injectable()
 export class UnitService {
@@ -117,8 +118,13 @@ export class UnitService {
     private firestore: AngularFirestore,
     private authService: AuthService,
     private toolService: ToolService,
-    private dataService: DataService
+    private dataService: DataService,
+    private apiService: ApiService
   ) {}
+
+  private async getApi(param = null, extraQuery = []) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('units', param, extraQuery)));
+  }
 
   private getRaw(forcedVersion = null) {
     return this.dataService.loadData('units', forcedVersion);
@@ -170,6 +176,12 @@ export class UnitService {
         console.log('not managed sort');
       break;
     }
+
+    return units;
+  }
+
+  async getUnitsForJobPlanner() {
+    const units = this.getApi(null, [{name: 'forJobPlanner', value: 1}]);
 
     return units;
   }

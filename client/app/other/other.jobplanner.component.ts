@@ -22,6 +22,8 @@ export class OtherJobPlannerComponent implements OnInit {
   materials = [];
   materialsIds = [];
 
+  items = [];
+
   rarityTranslate = {
     UR: 'Ultra Rare',
     MR: 'Mega Rare',
@@ -49,7 +51,7 @@ export class OtherJobPlannerComponent implements OnInit {
   }
 
   async getUnits() {
-    this.units = await this.unitService.getUnitsForListing();
+    this.units = await this.unitService.getUnitsForJobPlanner();
     this.translateUnits();
   }
 
@@ -65,11 +67,22 @@ export class OtherJobPlannerComponent implements OnInit {
     }
 
     if (this.selectedUnits[pos]) {
-      const unit = await this.unitService.getUnit(this.selectedUnits[pos]);
+      const unit = this.units.find(searchedUnit => searchedUnit.dataId === this.selectedUnits[pos]);
       unit.jobsData = [];
 
+      const jobsIds = [];
       for (const jobId of unit.jobs) {
-        const job = await this.jobService.getJob(jobId);
+        jobsIds.push(jobId);
+      }
+
+      for (const jobId of unit.exJobs) {
+        jobsIds.push(jobId);
+      }
+
+      const result = await this.jobService.getJobsForJobPlanner(jobsIds);
+
+      for (const jobId of unit.jobs) {
+        const job = result.jobs.find(searchedJob => searchedJob.dataId === jobId);
         job.name = job.getName(this.translateService);
         job.start = 1;
         job.goal = 1;
@@ -79,16 +92,20 @@ export class OtherJobPlannerComponent implements OnInit {
         unit.jobsData.push(job);
       }
 
-      if (unit.exJobs.length > 0) {
-        for (let jobIndex = 0; jobIndex <= unit.exJobs.length - 1; jobIndex++) {
-          const exJobId = unit.exJobs[jobIndex];
-          const exJob = await this.jobService.getJob(unit.exJobs[0]);
-          unit.jobsData[jobIndex].maxLevel = 25;
-          exJob.materials.forEach((materials, matIndex) => {
-            unit.jobsData[jobIndex].materials.push(materials);
-            unit.jobsData[jobIndex].startTableLevel.push(16 + matIndex);
-            unit.jobsData[jobIndex].goalTableLevel.push(16 + matIndex);
-          });
+      for (let jobIndex = 0; jobIndex <= unit.exJobs.length - 1; jobIndex++) {
+        const exJobId = unit.exJobs[jobIndex];
+        const exJob = result.jobs.find(searchedJob => searchedJob.dataId === unit.exJobs[0]);
+        unit.jobsData[jobIndex].maxLevel = 25;
+        exJob.materials.forEach((materials, matIndex) => {
+          unit.jobsData[jobIndex].materials.push(materials);
+          unit.jobsData[jobIndex].startTableLevel.push(16 + matIndex);
+          unit.jobsData[jobIndex].goalTableLevel.push(16 + matIndex);
+        });
+      }
+
+      for (const item of result.items) {
+        if (!this.items.find(searchedItem => searchedItem.dataId === item.dataId)) {
+          this.items.push(item);
         }
       }
 
@@ -130,40 +147,43 @@ export class OtherJobPlannerComponent implements OnInit {
     });
 
     for (const unit of this.jobbedUnits) {
-      for (const job of unit.jobsData) {
-        if (job.goal > job.start) {
-          for (let i = job.start; i < job.goal; i ++) {
-            for (const itemId of Object.keys(job.materials[i])) {
-              if (!this.materials[itemId]) {
-                this.materials[itemId] = await this.itemService.getItem(itemId);
-                this.materials[itemId].count = job.materials[i][itemId];
-                this.materials[itemId].image = itemId.toLowerCase();
-                this.materials[itemId].activated = true;
+      if (unit) {
+        for (const job of unit.jobsData) {
+          if (job.goal > job.start) {
+            for (let i = job.start; i < job.goal; i ++) {
+              for (const itemId of Object.keys(job.materials[i])) {
+                if (!this.materials[itemId]) {
+                  this.materials[itemId] = this.items.find(searchedItem => searchedItem.dataId === itemId);
+                  this.materials[itemId].name = this.nameService.getName(this.materials[itemId]);
+                  this.materials[itemId].count = job.materials[i][itemId];
+                  this.materials[itemId].image = itemId.toLowerCase();
+                  this.materials[itemId].activated = true;
 
-                if (this.materials[itemId].image.substring(0, 8) === 'it_jb_mm' && this.materials[itemId].image.substring(0, 12) !== 'it_jb_mm_all') {
-                  switch (this.materials[itemId].image.substring(this.materials[itemId].image.length - 2, this.materials[itemId].image.length)) {
-                    case '_2':
-                      this.materials[itemId].type = 'imgOrbBlue';
-                      break;
-                    case '_3':
-                      this.materials[itemId].type = 'imgOrbViolet';
-                      break;
-                    case '_4':
-                      this.materials[itemId].type = 'imgOrbYellow';
-                      break;
-                    case '_5':
-                      this.materials[itemId].type = 'imgOrbPink';
-                      break;
-                    default:
-                      this.materials[itemId].type = 'imgOrbGreen';
-                      break;
+                  if (this.materials[itemId].image.substring(0, 8) === 'it_jb_mm' && this.materials[itemId].image.substring(0, 12) !== 'it_jb_mm_all') {
+                    switch (this.materials[itemId].image.substring(this.materials[itemId].image.length - 2, this.materials[itemId].image.length)) {
+                      case '_2':
+                        this.materials[itemId].type = 'imgOrbBlue';
+                        break;
+                      case '_3':
+                        this.materials[itemId].type = 'imgOrbViolet';
+                        break;
+                      case '_4':
+                        this.materials[itemId].type = 'imgOrbYellow';
+                        break;
+                      case '_5':
+                        this.materials[itemId].type = 'imgOrbPink';
+                        break;
+                      default:
+                        this.materials[itemId].type = 'imgOrbGreen';
+                        break;
+                    }
+                    this.materials[itemId].image = job.image;
+                  } else {
+                    this.materials[itemId].type = 'classic';
                   }
-                  this.materials[itemId].image = job.image;
                 } else {
-                  this.materials[itemId].type = 'classic';
+                  this.materials[itemId].count += job.materials[i][itemId];
                 }
-              } else {
-                this.materials[itemId].count += job.materials[i][itemId];
               }
             }
           }
