@@ -184,6 +184,7 @@ export class QuestComponent implements OnInit {
           if (itemId !== '') {
             const formattedItem = this.quest.rawItems.find(searchedItem => searchedItem.dataId === itemId);
             if (formattedItem) {
+              formattedItem.name = this.nameService.getName(formattedItem);
               for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
                 formattedItem.drop = {
                   num: itemDropNum,
@@ -219,6 +220,7 @@ export class QuestComponent implements OnInit {
 
       if (reward.type === 'item') {
         formattedReward.reward = this.quest.rawItems.find(searchedItem => searchedItem.dataId === reward.rewardId);
+        formattedReward.reward.name = this.nameService.getName(formattedReward.reward);
       } else if (reward.type === 'equipment') {
         formattedReward.reward = this.quest.rawEquipments.find(searchedItem => searchedItem.dataId === reward.rewardId);
         if (formattedReward.reward === undefined) {

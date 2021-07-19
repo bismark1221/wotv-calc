@@ -1,23 +1,19 @@
 import { Injectable } from '@angular/core';
 
-import { Item } from '../entities/item';
-
-import { NavService } from './nav.service';
-import { DataService } from './data.service';
+import { ApiService } from './api.service';
 
 @Injectable()
 export class TitleService {
   savedVersion;
 
   constructor(
-    private dataService: DataService,
-    private navService: NavService
+    private apiService: ApiService
   ) {}
 
-  private async getRaw() {
+  private async getApi() {
     return {
-      player: await this.dataService.loadData('playerTitles'),
-      guild: await this.dataService.loadData('guildTitles')
+      player: JSON.parse(JSON.stringify(await this.apiService.loadData('playerTitles'))),
+      guild: JSON.parse(JSON.stringify(await this.apiService.loadData('guildTitles')))
     };
   }
 
@@ -26,7 +22,7 @@ export class TitleService {
       player: [],
       guild: []
     };
-    const rawTitles = JSON.parse(JSON.stringify(await this.getRaw()));
+    const rawTitles = await this.getApi();
 
     const types = ['player', 'guild'];
     types.forEach(type => {

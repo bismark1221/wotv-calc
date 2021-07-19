@@ -305,7 +305,7 @@ export class QuestService {
     }
   }
 
-  async formatMission(mission) {
+  formatMission(mission) {
     let html = '';
     let unit = null;
 
@@ -440,7 +440,7 @@ export class QuestService {
     return html;
   }
 
-  async formatWinLooseCondition(condition, quest) {
+  formatWinLooseCondition(condition, quest) {
     let html = '';
     let countCond = 0;
 
@@ -507,7 +507,7 @@ export class QuestService {
     return html;
   }
 
-  async formatEntryCondition(condition, quest) {
+  formatEntryCondition(condition, quest) {
     let html = '';
     let countCond = 0;
     let IDs = [];

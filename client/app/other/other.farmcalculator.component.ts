@@ -132,6 +132,10 @@ export class OtherFarmCalculatorComponent implements OnInit {
           for (const itemId of Object.keys(rawDrop.items)) {
             if (itemId !== '') {
               const formattedItem = apiResult.items.find(item => item.dataId === itemId);
+              if (formattedItem) {
+                formattedItem.name = this.nameService.getName(formattedItem);
+              }
+
               for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
                 formattedItem.drop = {
                   num: itemDropNum,
