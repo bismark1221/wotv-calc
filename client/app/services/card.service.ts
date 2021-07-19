@@ -11,6 +11,7 @@ import { NameService } from './name.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
 import { DataService } from './data.service';
+import { ApiService } from './api.service';
 
 import { Card } from '../entities/card';
 
@@ -18,6 +19,9 @@ import { Card } from '../entities/card';
 export class CardService {
   private JP_cards: Card[];
   private GL_cards: Card[];
+
+  private listingSkills = [];
+
   card;
 
   private GL_limitedCards = [
@@ -80,6 +84,7 @@ export class CardService {
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private dataService: DataService,
+    private apiService: ApiService,
     private skillService: SkillService,
     private rangeService: RangeService,
     private navService: NavService,
@@ -88,6 +93,10 @@ export class CardService {
     private authService: AuthService,
     private firestore: AngularFirestore
   ) {}
+
+  private async getApi(param = null, extraQuery = []) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('cards', param, extraQuery)));
+  }
 
   private getRaw() {
     return this.dataService.loadData('cards');
@@ -132,20 +141,33 @@ export class CardService {
     return cards;
   }
 
-  async getCosts() {
-    const cards = await this.getCards();
+  async getCardsForListingWithCosts(filters = null, sort = 'rarity', order = 'asc') {
+    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+    this.listingSkills = apiResult.skills;
 
+    const rawCards = [];
     const costs = [];
-    cards.forEach(card => {
-      if (costs.indexOf(card.cost) === -1) {
-        costs.push(card.cost);
-      }
-    });
 
-    return costs.sort((a, b) => b - a);
+    for (const apiCard of apiResult.cards) {
+      const rawCard = new Card();
+      rawCard.constructFromJson(apiCard, this.translateService);
+      rawCards.push(rawCard);
+
+      if (costs.indexOf(rawCard.cost) === -1) {
+        costs.push(rawCard.cost);
+      }
+    }
+
+    const cards = this.filterCards(rawCards, filters, sort, order);
+
+    return {
+      rawCards: rawCards,
+      cards: cards,
+      costs: costs.sort((a, b) => b - a)
+    };
   }
 
-  async filterCards(cards, filters) {
+  filterCards(cards, filters, sort = 'rarity', order = 'asc') {
     if (filters) {
       const filteredCards = [];
 
@@ -173,7 +195,7 @@ export class CardService {
             if (filters.onlyActiveSkill && (!filters.element || filters.element.length === 0 || needToAddCard)) {
               needToAddCard = false;
               for (const buffId of card.unitBuffs) {
-                const buff = await this.skillService.getSkill(buffId.classic);
+                const buff = this.listingSkills.find(searchedSkill => searchedSkill.dataId === buffId.classic);
                 if (buff && buff.type === 'skill') {
                   needToAddCard = true;
                 }
@@ -187,9 +209,27 @@ export class CardService {
         }
       }
 
-      return filteredCards;
+      return this.sortCards(filteredCards, sort, order);
     } else {
-      return cards;
+      return this.sortCards(cards, sort, order);
+    }
+  }
+
+  private sortCards(cards, sort = 'rarity', order = 'asc') {
+    switch (sort) {
+      case 'rarity' :
+        return this.toolService.sortByRarity(cards, order);
+      break;
+      case 'name' :
+        return this.toolService.sortByName(cards, order);
+      break;
+      case 'releaseDate' :
+        return this.toolService.sortByReleaseDate(cards, order);
+      break;
+      default :
+        console.log('not managed sort');
+        return cards;
+      break;
     }
   }
 

@@ -11,6 +11,7 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
+  rawCards = [];
   cards = [];
   searchText = '';
   sort = 'rarity';
@@ -74,7 +75,6 @@ export class CardsComponent implements OnInit {
 
   async ngOnInit() {
     this.navService.setTitle('Cards');
-    this.costs = await this.cardService.getCosts();
 
     if (sessionStorage.getItem('cardsFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('cardsFilters'));
@@ -97,8 +97,14 @@ export class CardsComponent implements OnInit {
   }
 
   async getCards() {
-    this.cards = await this.cardService.getCardsForListing(this.filters, this.sort, this.order);
-    this.translateCards();
+    const result = await this.cardService.getCardsForListingWithCosts(this.filters, this.sort, this.order);
+    this.cards = result.cards;
+    this.rawCards = result.rawCards;
+    this.costs = result.costs;
+  }
+
+  filterCards() {
+    this.cards = this.cardService.filterCards(this.rawCards, this.filters, this.sort, this.order);
   }
 
   private translateCards() {
@@ -131,7 +137,7 @@ export class CardsComponent implements OnInit {
 
     sessionStorage.setItem('cardsFilters', JSON.stringify(this.filters));
 
-    this.getCards();
+    this.filterCards();
   }
 
   filterChecked() {
@@ -176,7 +182,7 @@ export class CardsComponent implements OnInit {
   async toggleOnlyActiveSkill() {
     this.filters.onlyActiveSkill = !this.filters.onlyActiveSkill;
 
-    await this.getCards();
+    this.filterCards();
     sessionStorage.setItem('cardsFilters', JSON.stringify(this.filters));
   }
 }
