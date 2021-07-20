@@ -101,8 +101,8 @@ export const themes = {
       '--nav-background-main': '#1D1B1B',
       '--footer-link': 'var(--white)',
 
-      '--card-background': 'var(--white)',
-      '--card-background-hover': '#3D3D3D',
+      '--card-background': '#3D3D3D',
+      '--card-background-hover': 'var(--white)',
       '--card-title-background': '#E9E9E9',
       '--card-title-color': '#1D1B1B',
       '--home-title': 'rgba(29, 27, 27, 0.95)',
