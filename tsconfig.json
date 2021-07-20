@@ -6,9 +6,8 @@
     "declaration": false,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "es2018",
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types"

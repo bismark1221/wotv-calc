@@ -14,7 +14,7 @@ import { NavService } from './nav.service';
 })
 
 export class AuthService {
-  user;
+  user = null;
   load = 0;
 
   private userDataSubject = new BehaviorSubject(this.user);

@@ -147,7 +147,7 @@ const ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(ROUTES, { enableTracing: false })],
+  imports: [RouterModule.forRoot(ROUTES, { enableTracing: false, relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 

@@ -1,19 +1,19 @@
-:host /deep/ pre span{
+:host ::ng-deep pre span{
   white-space: normal;
 }
 
-:host /deep/ .string {
+:host ::ng-deep .string {
   color: green;
 }
 
-:host /deep/ .number {
+:host ::ng-deep .number {
   color: darkorange;
 }
 
-:host /deep/ .boolean {
+:host ::ng-deep .boolean {
   color: blue;
 }
 
-:host /deep/ .null {
+:host ::ng-deep .null {
   color: magenta;
 }
