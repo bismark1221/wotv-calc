@@ -261,9 +261,6 @@ export class QuestComponent implements OnInit {
       formattedEnemy.level = 1;
     }
 
-
-    console.log(enemy)
-
     formattedEnemy.job = null;
     if (formattedEnemy.jobs && formattedEnemy.jobs[0]) {
       formattedEnemy.job = this.quest.rawJobs.find(searchedJob => searchedJob.dataId === formattedEnemy.jobs[0]);
