@@ -72,7 +72,7 @@ export class EsperService {
     return this[this.navService.getVersion() + '_espers'];
   }
 
-  async getEspersForListing(filters = null, sort = 'rarity', order = 'asc') {
+  async getEspersForListing(filters = null, sort = 'rarity', order = 'desc') {
     await this.getEspers();
     const espers = this.filterEspers(this[this.navService.getVersion() + '_espers'], filters);
 
@@ -129,7 +129,7 @@ export class EsperService {
   }
 
   async getEspersForBuilder() {
-    const espers = await this.getEspersForListing(null, 'rarity', 'asc');
+    const espers = await this.getEspersForListing(null, 'rarity', 'desc');
 
     const formattedEspersForBuilder = [];
     espers.forEach(esper => {

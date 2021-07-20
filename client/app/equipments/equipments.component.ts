@@ -18,7 +18,7 @@ export class EquipmentsComponent implements OnInit {
   equipmentTypes = [];
   searchText = '';
   sort = 'rarity';
-  order = 'asc';
+  order = 'desc';
   jobs = [];
   filters = {
     rarity: [],

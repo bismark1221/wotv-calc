@@ -119,7 +119,7 @@ export class CardService {
     return this[this.navService.getVersion() + '_cards'];
   }
 
-  async getCardsForListing(filters = null, sort = 'rarity', order = 'asc') {
+  async getCardsForListing(filters = null, sort = 'rarity', order = 'desc') {
     await this.getCards();
     const cards = await this.filterCards(this[this.navService.getVersion() + '_cards'], filters);
 
@@ -141,7 +141,7 @@ export class CardService {
     return cards;
   }
 
-  async getCardsForListingWithCosts(filters = null, sort = 'rarity', order = 'asc') {
+  async getCardsForListingWithCosts(filters = null, sort = 'rarity', order = 'desc') {
     const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
     this.listingSkills = apiResult.skills;
 
@@ -167,7 +167,7 @@ export class CardService {
     };
   }
 
-  filterCards(cards, filters, sort = 'rarity', order = 'asc') {
+  filterCards(cards, filters, sort = 'rarity', order = 'desc') {
     if (filters) {
       const filteredCards = [];
 
@@ -215,7 +215,7 @@ export class CardService {
     }
   }
 
-  private sortCards(cards, sort = 'rarity', order = 'asc') {
+  private sortCards(cards, sort = 'rarity', order = 'desc') {
     switch (sort) {
       case 'rarity' :
         return this.toolService.sortByRarity(cards, order);
@@ -234,7 +234,7 @@ export class CardService {
   }
 
   async getCardsForBuilder() {
-    const cards = await this.getCardsForListing(null, 'rarity', 'asc');
+    const cards = await this.getCardsForListing(null, 'rarity', 'desc');
 
     const formattedCardsForBuilder = [];
     cards.forEach(card => {

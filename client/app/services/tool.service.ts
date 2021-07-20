@@ -31,9 +31,9 @@ export class ToolService {
   }
 
   sortByRarity(items, order = 'asc') {
-    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+    let rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
     if (order === 'desc') {
-      rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
+      rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
     }
 
     items.sort((a: any, b: any) => {

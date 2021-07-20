@@ -16,7 +16,7 @@ export class UnitsComponent implements OnInit {
   units = [];
   searchText = '';
   sort = 'rarity';
-  order = 'asc';
+  order = 'desc';
   jobs = [];
   filters = {
     rarity: [],

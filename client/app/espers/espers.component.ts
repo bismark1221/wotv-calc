@@ -14,7 +14,7 @@ export class EspersComponent implements OnInit {
   espers = [];
   searchText = '';
   sort = 'rarity';
-  order = 'asc';
+  order = 'desc';
   filters = {
     rarity: [],
     limited: [],

@@ -275,7 +275,7 @@ export class EquipmentService {
     return this[this.navService.getVersion() + '_equipments'];
   }
 
-  async getEquipmentsForListing(filters = null, sort = 'rarity', order = 'asc') {
+  async getEquipmentsForListing(filters = null, sort = 'rarity', order = 'desc') {
     await this.getEquipments();
     const equipments = this.filterEquipments(this[this.navService.getVersion() + '_equipments'], filters);
 
@@ -402,7 +402,7 @@ export class EquipmentService {
   }
 
   async getEquipmentsForUnitBuilder() {
-    const equipments = await this.getEquipmentsForListing(null, 'rarity', 'asc');
+    const equipments = await this.getEquipmentsForListing(null, 'rarity', 'desc');
 
     const formattedEquipmentsForBuilder = [];
     equipments.forEach(equipment => {

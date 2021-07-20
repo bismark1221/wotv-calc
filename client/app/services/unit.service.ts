@@ -153,12 +153,12 @@ export class UnitService {
     await this.getUnits();
 
     const units = await this.filterUnits(this[this.navService.getVersion() + '_units'], null);
-    this.toolService.sortByRarity(units, 'asc');
+    this.toolService.sortByRarity(units, 'desc');
 
     return units;
   }
 
-  async getUnitsForListing(filters = null, sort = 'rarity', order = 'asc') {
+  async getUnitsForListing(filters = null, sort = 'rarity', order = 'desc') {
     await this.getUnits();
     const units = await this.filterUnits(this[this.navService.getVersion() + '_units'], filters);
 
