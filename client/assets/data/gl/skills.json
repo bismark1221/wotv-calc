@@ -129888,6 +129888,97 @@
     "target": "self",
     "maxLevel": 100
   },
+  "SK_MABR_M_03_1": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "unknow",
+        "rate": 25,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "BLIND_ATK",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SLEEP_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SILENCE_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "TOAD_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PETRIFY_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_MABR_M_03_1",
+    "type": "skill",
+    "names": {
+      "en": "Bad Breath",
+      "fr": "Puanteur",
+      "de": "Mundgeruch",
+      "es": "Aliento fétido",
+      "ko": "역한 입냄새",
+      "zh": "臭氣"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP",
+      "value": 51
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 0
+    }
+  },
   "SK_FNRR_ATK": {
     "effects": [],
     "dataId": "SK_FNRR_ATK",

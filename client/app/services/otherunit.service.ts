@@ -191,8 +191,8 @@ export class OtherUnitService {
       formattedEnemy.element = enemy.element;
     }
 
-    if (enemy.minLevel) {
-      formattedEnemy.level = enemy.minLevel;
+    if (typeof(enemy.minLevel) === 'number') {
+      formattedEnemy.level = enemy.minLevel > 0 ? enemy.minLevel : 1;
       formattedEnemy.hasMaxLevel = true;
     } else if (enemy.lv) {
       formattedEnemy.level = enemy.lv;
@@ -209,7 +209,7 @@ export class OtherUnitService {
     formattedEnemy.calculateBaseStats(true);
     formattedEnemy.calculateTotalStats();
 
-    if (enemy.minLevel) {
+    if (typeof(enemy.minLevel) === 'number') {
       const statsToRange = [
         'HP',
         'TP',

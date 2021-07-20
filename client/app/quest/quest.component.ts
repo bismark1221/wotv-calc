@@ -251,14 +251,18 @@ export class QuestComponent implements OnInit {
       formattedEnemy.element = enemy.element;
     }
 
-    if (enemy.minLevel) {
-      formattedEnemy.level = enemy.minLevel;
+
+    if (typeof(enemy.minLevel) === 'number') {
+      formattedEnemy.level = enemy.minLevel > 0 ? enemy.minLevel : 1;
       formattedEnemy.hasMaxLevel = true;
     } else if (enemy.lv) {
       formattedEnemy.level = enemy.lv;
     } else {
       formattedEnemy.level = 1;
     }
+
+
+    console.log(enemy)
 
     formattedEnemy.job = null;
     if (formattedEnemy.jobs && formattedEnemy.jobs[0]) {
@@ -269,7 +273,7 @@ export class QuestComponent implements OnInit {
     formattedEnemy.calculateBaseStats(true);
     formattedEnemy.calculateTotalStats();
 
-    if (enemy.minLevel) {
+    if (typeof(enemy.minLevel) === 'number') {
       const statsToRange = [
         'HP',
         'TP',
