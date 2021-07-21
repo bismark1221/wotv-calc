@@ -102,6 +102,7 @@ export class Unit {
   board;
   attack;
   releaseDate = 'XX/XX/XXXX';
+  unlockedSkills = [];
 
   // Only for builder
   star;
@@ -170,6 +171,7 @@ export class Unit {
     this.realMaxLevel = unit.realMaxLevel;
     this.type = unit.type;
     this.releaseDate = unit.releaseDate;
+    this.unlockedSkills = unit.unlockedSkills;
 
     this.getName(translateService);
   }

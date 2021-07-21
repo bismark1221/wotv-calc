@@ -164,6 +164,24 @@ export class UnitComponent implements OnInit {
       let maxExLevel = 0;
       let exempleSkillMaxExLevel = null;
 
+      for (let skill of this.unit.formattedUnlockedSkills) {
+        skill.name = this.nameService.getName(skill);
+        skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
+
+        skill.effectsHtml = this.skillService.formatEffects(this.unit, skill);
+
+        skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
+
+        if (skill.counter) {
+          skill.counterHtml = this.skillService.formatCounter(this.unit, skill, skill.counter);
+        }
+
+        this.rangeService.formatRange(this.unit, skill);
+
+        skill.upgrades = [];
+        skill = this.addUpgrade(skill);
+      }
+
       Object.keys(this.unit.board.nodes).forEach(nodeId => {
         let skill = this.unit.board.nodes[nodeId].skill;
         if (skill.type !== 'buff' && !(this.unit.board.nodes[nodeId].type === 'buff' && skill.type === 'ex_buff')) {

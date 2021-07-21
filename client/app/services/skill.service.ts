@@ -1294,6 +1294,14 @@ export class SkillService {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
+      case 'GRANT_SKILL' :
+        // const newSkill = await this.getSkill(effect.unlockSkill);
+        const newSkill = null;
+        html = 'Do something for basic attack based on unlock skill show below... I will do some test soon to understand...' + this.getTurns(effect);
+        if (effect.calcType !== 'apply') {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
       default:
         html = '??? Effect Not Translated - If you have details don\'t hesitate to contact me ???';
         console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- NOT TRANSLATED : ' + effect.type);

@@ -1094,6 +1094,86 @@
           </tbody>
         </table>
 
+        <table class="skillsTable" *ngIf="unit.formattedUnlockedSkills.length > 0">
+          <tbody>
+            <tr>
+              <th colspan="6">Unlocked Skills</th>
+            </tr>
+            <tr>
+              <th class="sub limitNameTd">Name</th>
+              <th class="sub skillTypeTd">Type</th>
+              <th class="sub">Effects</th>
+              <th class="sub rangeTd">Range</th>
+              <th class="sub skillHitTd">Hits</th>
+              <th class="sub skillCostTd">Cost</th>
+            </tr>
+          </tbody>
+          <tbody *ngFor="let skill of unit.formattedUnlockedSkills">
+            <tr>
+              <td>{{ skill.name }}</td>
+              <td class="limitBased">
+                <img class='atkBasedImg' src="{{ 'assets/atkBased/' + skill.based + '.png' }}" />
+                <div *ngIf="skill.time && skill.time.minValue">
+                  <ng-template #tip_time>
+                    <div>
+                      Min time: {{ skill.time.minValue }}<br />
+                      Max time: {{ skill.time.maxValue }}
+                    </div>
+                  </ng-template>
+                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                </div>
+              </td>
+              <td [className]="skill.based ? 'skillEffectTdAndNoBorderLeft' : 'skillEffectTd'">
+                <div *ngIf="skill.upgradeHtml !== ''">
+                  {{ skill.upgradeHtml }}
+                </div>
+
+                <div *ngFor="let effect of skill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div *ngIf="skill.based === 'physic'">
+                      {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    </div>
+                    <div *ngIf="skill.based === 'magic'">
+                      {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                    </div>
+                    <div *ngIf="skill.based === 'hybrid'">
+                      {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    </div>
+
+                    <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                      {{ skill.damage.formula[1] }}% DEX
+                    </div>
+                    <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                      {{ skill.damage.formula[2] }}% AGI
+                    </div>
+                    <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                      {{ skill.damage.formula[3] }}% LUCK
+                    </div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
+                <div *ngFor="let effect of skill.effectsHtml.after">
+                  {{ effect }}
+                </div>
+              </td>
+              <td>
+                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+                </div>
+              </td>
+              <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+              <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+            </tr>
+          </tbody>
+        </table>
+
         <table class="skillsTable" *ngIf="unit.formattedLimit">
           <tbody>
             <tr>
