@@ -294,8 +294,10 @@ export class UnitService {
 
   async formatSkills(unit, forcedVersion = null) {
     unit.formattedUnlockedSkills = [];
-    for (const skillId of unit.unlockedSkills) {
-      unit.formattedUnlockedSkills.push(await this.skillService.getSkill(skillId, forcedVersion));
+    if (unit.unlockedSkills) {
+      for (const skillId of unit.unlockedSkills) {
+        unit.formattedUnlockedSkills.push(await this.skillService.getSkill(skillId, forcedVersion));
+      }
     }
 
     for (const nodeId of Object.keys(unit.board.nodes)) {
