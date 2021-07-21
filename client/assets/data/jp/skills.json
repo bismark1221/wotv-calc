@@ -61581,6 +61581,41 @@
       }
     }
   },
+  "SK_FF15_NCTS_S_2_AD": {
+    "effects": [],
+    "dataId": "SK_FF15_NCTS_S_2_AD",
+    "type": "skill",
+    "names": {
+      "en": "武器召喚"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 0
+    },
+    "maxLevel": 20,
+    "range": {
+      "h": 9,
+      "l": 9,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_FF15_NCTS_S_2": {
     "effects": [
       {
@@ -61593,11 +61628,13 @@
         "timing": "SKILL_AFTER"
       },
       {
+        "type": "GRANT_SKILL",
         "calcType": "apply",
         "rate": 200,
         "turn": 3,
         "target": "self",
-        "timing": "SKILL_AFTER"
+        "timing": "SKILL_AFTER",
+        "unlockSkill": "SK_FF15_NCTS_S_2_AD"
       }
     ],
     "dataId": "SK_FF15_NCTS_S_2",
@@ -62049,11 +62086,13 @@
         "timing": "SKILL_AFTER"
       },
       {
+        "type": "GRANT_SKILL",
         "calcType": "apply",
         "rate": 200,
         "turn": 3,
         "target": "self",
-        "timing": "SKILL_AFTER"
+        "timing": "SKILL_AFTER",
+        "unlockSkill": "SK_FF15_NCTS_S_2_AD"
       },
       {
         "type": "ATK",
