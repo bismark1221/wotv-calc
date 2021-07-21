@@ -31,7 +31,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SWO_INIT"
   },
   "AF_LW_BSW_INIT": {
     "names": {
@@ -65,7 +66,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_BSW_INIT"
   },
   "AF_LW_KAT_INIT": {
     "names": {
@@ -99,7 +101,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_KAT_INIT"
   },
   "AF_LW_FIS_INIT": {
     "names": {
@@ -133,7 +136,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_FIS_INIT"
   },
   "AF_LW_SPE_INIT": {
     "names": {
@@ -167,7 +171,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SPE_INIT"
   },
   "AF_LW_DAG_INIT": {
     "names": {
@@ -201,7 +206,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_DAG_INIT"
   },
   "AF_LW_NKN_INIT": {
     "names": {
@@ -235,7 +241,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_NKN_INIT"
   },
   "AF_LW_BOW_INIT": {
     "names": {
@@ -269,7 +276,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_BOW_INIT"
   },
   "AF_LW_GUN_INIT": {
     "names": {
@@ -303,7 +311,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_GUN_INIT"
   },
   "AF_LW_ROD_INIT": {
     "names": {
@@ -337,7 +346,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_ROD_INIT"
   },
   "AF_LW_MAC_INIT": {
     "names": {
@@ -371,7 +381,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_MAC_INIT"
   },
   "AF_LW_AXE_INIT": {
     "names": {
@@ -405,7 +416,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_AXE_INIT"
   },
   "AF_LW_SHI_INIT": {
     "names": {
@@ -439,7 +451,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SHI_INIT"
   },
   "AF_LW_GBL_INIT": {
     "names": {
@@ -473,7 +486,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_GBL_INIT"
   },
   "AF_LW_GLO_INIT": {
     "names": {
@@ -507,7 +521,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_GLO_INIT"
   },
   "AF_LW_BOK_INIT": {
     "names": {
@@ -541,7 +556,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_BOK_INIT"
   },
   "AF_LW_SWO_000": {
     "names": {
@@ -607,7 +623,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -616,7 +633,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_SWO_000"
   },
   "AF_LW_SWO_007": {
     "names": {
@@ -691,7 +709,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -700,7 +719,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SWO_007"
   },
   "AF_LOT_LW_SWO_001": {
     "names": {
@@ -893,7 +913,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -938,7 +959,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SWO_001"
   },
   "AF_LOT_LW_SWO_002": {
     "names": {
@@ -1131,7 +1153,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -1188,7 +1211,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SWO_002"
   },
   "AF_LOT_LW_SWO_003": {
     "names": {
@@ -1496,7 +1520,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -1553,7 +1578,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SWO_003"
   },
   "AF_LOT_LW_SWO_004": {
     "names": {
@@ -1861,7 +1887,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -1918,7 +1945,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SWO_004"
   },
   "AF_LOT_LW_SWO_005": {
     "names": {
@@ -2226,7 +2254,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -2283,7 +2312,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "23/12/2020"
+    "releaseDate": "23/12/2020",
+    "rType": "AF_LOT_LW_SWO_005"
   },
   "AF_LOT_LW_SWO_006": {
     "names": {
@@ -2591,7 +2621,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -2648,7 +2679,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SWO_006"
   },
   "AF_LW_SWO_016": {
     "names": {
@@ -2714,7 +2746,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -2723,7 +2756,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SWO_016"
   },
   "AF_LOT_LW_SWO_023": {
     "names": {
@@ -2916,7 +2950,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -2973,7 +3008,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SWO_023"
   },
   "AF_SWO_FF14_TNCT": {
     "names": {
@@ -3167,7 +3203,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -3211,7 +3248,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_FF14_TNCT"
   },
   "AF_FFT_SWO_001": {
     "names": {
@@ -3404,7 +3442,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -3448,7 +3487,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_FFT_SWO_001"
   },
   "AF_FFT_SWO_002": {
     "names": {
@@ -3560,7 +3600,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -3573,7 +3614,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_FFT_SWO_002"
   },
   "AF_FF10_SWO_001": {
     "names": {
@@ -3685,7 +3727,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -3698,7 +3741,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "13/11/2020"
+    "releaseDate": "13/11/2020",
+    "rType": "AF_FF10_SWO_001"
   },
   "AF_LOT_FF1_SWO_000": {
     "names": {
@@ -4006,7 +4050,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -4056,7 +4101,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "15/02/2021"
+    "releaseDate": "15/02/2021",
+    "rType": "AF_LOT_FF1_SWO_000"
   },
   "AF_LOT_LW_SWO_029": {
     "names": {
@@ -4249,7 +4295,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -4306,7 +4353,253 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/03/2021"
+    "releaseDate": "01/03/2021",
+    "rType": "AF_LOT_LW_SWO_029"
+  },
+  "AF_LOT_FF15_SWO_000": {
+    "names": {
+      "en": "エンジンブレード"
+    },
+    "slug": "enjin-burdo",
+    "stats": {
+      "HP": {
+        "min": 3,
+        "max": 61
+      },
+      "ATK": {
+        "min": 8,
+        "max": 151
+      },
+      "MAG": {
+        "min": 8,
+        "max": 156
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 15
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 10
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_FF15_SWO_000",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "dataId": "AFGROW_ASS_50",
+        "names": {
+          "en": "アサルト"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "クリティカル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "dataId": "SK_LW_PIERCESLA_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_PIERCESLA_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_PIERCESLA_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_PIERCESLA_4",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_PIERCESLA_5",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "ff15wpn_swo_000",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF10_TIDU",
+      "JB_LW_MONT_01",
+      "JB_LW_DEAN",
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF15_SWO_000": 1,
+        "IT_AF_MAT_SAND_03": 170,
+        "IT_AF_MAT_OGRE": 5,
+        "IT_AF_MAT_SOIL_01": 11,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_FF15_SWO_000": 3,
+        "IT_AF_MAT_SAND_03": 230,
+        "IT_AF_MAT_OGRE": 15,
+        "IT_AF_MAT_SOIL_01": 21,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_FF15_SWO_000": 7,
+        "IT_AF_MAT_SAND_03": 350,
+        "IT_AF_MAT_OGRE": 35,
+        "IT_AF_MAT_SOIL_01": 41,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_FF15_SWO_000": 15,
+        "IT_AF_MAT_SAND_03": 630,
+        "IT_AF_MAT_OGRE": 75,
+        "IT_AF_MAT_SOIL_01": 81,
+        "IT_AF_AW_SWORD": 315
+      },
+      {
+        "IT_AF_FF15_SWO_000": 31,
+        "IT_AF_MAT_SAND_03": 1250,
+        "IT_AF_MAT_OGRE": 155,
+        "IT_AF_MAT_SOIL_01": 161,
+        "IT_AF_AW_SWORD": 535
+      },
+      {
+        "IT_AF_FF15_SWO_000": 63,
+        "IT_AF_MAT_SAND_03": 2570,
+        "IT_AF_MAT_OGRE": 315,
+        "IT_AF_MAT_SOIL_01": 323,
+        "IT_AF_AW_SWORD": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "21/07/2021",
+    "rType": "AF_LOT_FF15_SWO_000"
   },
   "AF_LW_BSW_000": {
     "names": {
@@ -4368,7 +4661,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_BSW_000"
   },
   "AF_LOT_LW_BSW_001": {
     "names": {
@@ -4593,7 +4887,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_BSW_001"
   },
   "AF_LOT_LW_BSW_002": {
     "names": {
@@ -4830,7 +5125,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_BSW_002"
   },
   "AF_LOT_LW_BSW_003": {
     "names": {
@@ -5067,7 +5363,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_BSW_003"
   },
   "AF_LOT_LW_BSW_004": {
     "names": {
@@ -5286,7 +5583,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_BSW_004"
   },
   "AF_LOT_LW_BSW_011": {
     "names": {
@@ -5432,7 +5730,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_BSW_011"
   },
   "AF_LOT_FF10_BSW_000": {
     "names": {
@@ -5739,7 +6038,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "24/11/2020"
+    "releaseDate": "24/11/2020",
+    "rType": "AF_LOT_FF10_BSW_000"
   },
   "AF_LOT_FF7_BSW_000": {
     "names": {
@@ -6046,7 +6346,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "21/04/2021"
+    "releaseDate": "21/04/2021",
+    "rType": "AF_LOT_FF7_BSW_000"
   },
   "AF_LW_KAT_000": {
     "names": {
@@ -6110,7 +6411,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_KAT_000"
   },
   "AF_LOT_LW_KAT_001": {
     "names": {
@@ -6337,7 +6639,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_KAT_001"
   },
   "AF_LOT_LW_KAT_002": {
     "names": {
@@ -6580,7 +6883,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_KAT_002"
   },
   "AF_LOT_LW_KAT_003": {
     "names": {
@@ -6819,7 +7123,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_KAT_003"
   },
   "AF_LOT_LW_KAT_008": {
     "names": {
@@ -7168,7 +7473,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_KAT_008"
   },
   "AF_LOT_LW_KAT_011": {
     "names": {
@@ -7396,7 +7702,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "16/06/2021"
+    "releaseDate": "16/06/2021",
+    "rType": "AF_LOT_LW_KAT_011"
   },
   "AF_LOT_NIER_KAT_000": {
     "names": {
@@ -7624,7 +7931,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "23/12/2020"
+    "releaseDate": "23/12/2020",
+    "rType": "AF_LOT_NIER_KAT_000"
   },
   "AF_LW_FIS_000": {
     "names": {
@@ -7683,7 +7991,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_FIS_000"
   },
   "AF_LOT_LW_FIS_001": {
     "names": {
@@ -7905,7 +8214,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_FIS_001"
   },
   "AF_LOT_LW_FIS_002": {
     "names": {
@@ -8143,7 +8453,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_FIS_002"
   },
   "AF_LOT_LW_FIS_003": {
     "names": {
@@ -8385,7 +8696,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_FIS_003"
   },
   "AF_LOT_LW_FIS_004": {
     "names": {
@@ -8619,7 +8931,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "31/09/2020"
+    "releaseDate": "31/09/2020",
+    "rType": "AF_LOT_LW_FIS_004"
   },
   "AF_LW_SPE_000": {
     "names": {
@@ -8681,7 +8994,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_SPE_000"
   },
   "AF_LOT_LW_SPE_001": {
     "names": {
@@ -8906,7 +9220,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SPE_001"
   },
   "AF_LOT_LW_SPE_002": {
     "names": {
@@ -9143,7 +9458,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SPE_002"
   },
   "AF_LOT_LW_SPE_003": {
     "names": {
@@ -9488,7 +9804,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/07/2021"
+    "releaseDate": "01/07/2021",
+    "rType": "AF_LOT_LW_SPE_003"
   },
   "AF_LOT_LW_SPE_004": {
     "names": {
@@ -9840,7 +10157,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SPE_004"
   },
   "AF_LOT_LW_SPE_006": {
     "names": {
@@ -10192,7 +10510,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_SPE_006"
   },
   "AF_LOT_FF4_SPE_000": {
     "names": {
@@ -10432,7 +10751,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/08/2020"
+    "releaseDate": "01/08/2020",
+    "rType": "AF_LOT_FF4_SPE_000"
   },
   "AF_LOT_NIER_SPE_000": {
     "names": {
@@ -10777,7 +11097,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "23/12/2020"
+    "releaseDate": "23/12/2020",
+    "rType": "AF_LOT_NIER_SPE_000"
   },
   "AF_LW_DAG_000": {
     "names": {
@@ -10835,7 +11156,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_DAG_000"
   },
   "AF_LOT_LW_DAG_001": {
     "names": {
@@ -11056,7 +11378,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_DAG_001"
   },
   "AF_LOT_LW_DAG_002": {
     "names": {
@@ -11289,7 +11612,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_DAG_002"
   },
   "AF_LOT_LW_DAG_004": {
     "names": {
@@ -11526,7 +11850,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_DAG_004"
   },
   "AF_LOT_LW_DAG_006": {
     "names": {
@@ -11759,7 +12084,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_DAG_006"
   },
   "AF_LW_NKN_000": {
     "names": {
@@ -11817,7 +12143,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_NKN_000"
   },
   "AF_LOT_LW_NKN_001": {
     "names": {
@@ -12038,7 +12365,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_NKN_001"
   },
   "AF_LOT_LW_NKN_002": {
     "names": {
@@ -12271,7 +12599,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_NKN_002"
   },
   "AF_LOT_LW_NKN_003": {
     "names": {
@@ -12504,7 +12833,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_NKN_003"
   },
   "AF_LW_BOW_000": {
     "names": {
@@ -12568,7 +12898,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_BOW_000"
   },
   "AF_LOT_LW_BOW_001": {
     "names": {
@@ -12795,7 +13126,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_BOW_001"
   },
   "AF_LOT_LW_BOW_002": {
     "names": {
@@ -13034,7 +13366,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_BOW_002"
   },
   "AF_LOT_LW_BOW_003": {
     "names": {
@@ -13273,7 +13606,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_BOW_003"
   },
   "AF_LOT_LW_BOW_004": {
     "names": {
@@ -13505,7 +13839,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "31/08/2020"
+    "releaseDate": "31/08/2020",
+    "rType": "AF_LOT_LW_BOW_004"
   },
   "AF_LOT_FF4_BOW_000": {
     "names": {
@@ -13739,7 +14074,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/08/2020"
+    "releaseDate": "01/08/2020",
+    "rType": "AF_LOT_FF4_BOW_000"
   },
   "AF_LOT_LW_BOW_012": {
     "names": {
@@ -13974,7 +14310,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "16/12/2020"
+    "releaseDate": "16/12/2020",
+    "rType": "AF_LOT_LW_BOW_012"
   },
   "AF_LW_GUN_000": {
     "names": {
@@ -14030,7 +14367,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14039,7 +14377,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_GUN_000"
   },
   "AF_LOT_LW_GUN_001": {
     "names": {
@@ -14218,7 +14557,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14263,7 +14603,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_GUN_001"
   },
   "AF_LOT_LW_GUN_002": {
     "names": {
@@ -14442,7 +14783,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14499,7 +14841,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_GUN_002"
   },
   "AF_LOT_LW_GUN_003": {
     "names": {
@@ -14682,7 +15025,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14739,7 +15083,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_GUN_003"
   },
   "AF_LOT_LW_GUN_011": {
     "names": {
@@ -14918,7 +15263,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14968,7 +15314,243 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/06/2021"
+    "releaseDate": "01/06/2021",
+    "rType": "AF_LOT_LW_GUN_011"
+  },
+  "AF_LOT_FF15_GUN_000": {
+    "names": {
+      "en": "バリアント"
+    },
+    "slug": "barianto",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 81
+      },
+      "ATK": {
+        "min": 8,
+        "max": 152
+      },
+      "MAG": {
+        "min": 1,
+        "max": 24
+      },
+      "AGI": {
+        "min": -5,
+        "max": -3
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 14
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_FF15_GUN_000",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "dataId": "AFGROW_ASS_50",
+        "names": {
+          "en": "アサルト"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "クリティカル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "dataId": "SK_LW_PIERCEDEF_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_PIERCEDEF_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_PIERCEDEF_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_PIERCEDEF_4",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_PIERCEDEF_5",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "ff15wpn_gun_000",
+    "equippableJobs": [
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WGN_FIRE",
+      "JB_FFT_MSTD",
+      "JB_FF7_BART",
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF15_GUN_000": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_ARMN": 5,
+        "IT_AF_MAT_DARK_01": 11,
+        "IT_AF_AW_GUN": 255
+      },
+      {
+        "IT_AF_FF15_GUN_000": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_ARMN": 15,
+        "IT_AF_MAT_DARK_01": 21,
+        "IT_AF_AW_GUN": 255
+      },
+      {
+        "IT_AF_FF15_GUN_000": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_ARMN": 35,
+        "IT_AF_MAT_DARK_01": 41,
+        "IT_AF_AW_GUN": 255
+      },
+      {
+        "IT_AF_FF15_GUN_000": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_ARMN": 75,
+        "IT_AF_MAT_DARK_01": 81,
+        "IT_AF_AW_GUN": 315
+      },
+      {
+        "IT_AF_FF15_GUN_000": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_ARMN": 155,
+        "IT_AF_MAT_DARK_01": 161,
+        "IT_AF_AW_GUN": 535
+      },
+      {
+        "IT_AF_FF15_GUN_000": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_ARMN": 315,
+        "IT_AF_MAT_DARK_01": 323,
+        "IT_AF_AW_GUN": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "21/07/2021",
+    "rType": "AF_LOT_FF15_GUN_000"
   },
   "AF_LW_ROD_000": {
     "names": {
@@ -15025,7 +15607,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -15034,7 +15617,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_ROD_000"
   },
   "AF_LW_ROD_001": {
     "names": {
@@ -15091,7 +15675,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -15100,7 +15685,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_ROD_001"
   },
   "AF_LOT_LW_ROD_002": {
     "names": {
@@ -15284,7 +15870,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -15329,7 +15916,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_ROD_002"
   },
   "AF_LOT_LW_ROD_004": {
     "names": {
@@ -15574,7 +16162,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -15631,7 +16220,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_ROD_004"
   },
   "AF_LOT_LW_ROD_005": {
     "names": {
@@ -15819,7 +16409,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -15876,7 +16467,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_ROD_005"
   },
   "AF_LOT_LW_ROD_019": {
     "names": {
@@ -16175,7 +16767,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -16238,7 +16831,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "23/09/2020"
+    "releaseDate": "23/09/2020",
+    "rType": "AF_LOT_LW_ROD_019"
   },
   "AF_LOT_FF10_ROD_000": {
     "names": {
@@ -16495,7 +17089,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -16545,7 +17140,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "13/11/2020"
+    "releaseDate": "13/11/2020",
+    "rType": "AF_LOT_FF10_ROD_000"
   },
   "AF_LOT_LW_ROD_006": {
     "names": {
@@ -16802,7 +17398,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -16859,7 +17456,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/02/2021"
+    "releaseDate": "01/02/2021",
+    "rType": "AF_LOT_LW_ROD_006"
   },
   "AF_LOT_FF7_ROD_000": {
     "names": {
@@ -17103,7 +17701,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -17153,7 +17752,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/05/2021"
+    "releaseDate": "01/05/2021",
+    "rType": "AF_LOT_FF7_ROD_000"
   },
   "AF_LOT_LW_ROD_007": {
     "names": {
@@ -17397,7 +17997,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -17460,7 +18061,8 @@
         "zh": "鬥技場獎牌交換所"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_ROD_007"
   },
   "AF_LW_MAC_000": {
     "names": {
@@ -17520,7 +18122,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_MAC_000"
   },
   "AF_LOT_LW_MAC_001": {
     "names": {
@@ -17743,7 +18346,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_MAC_001"
   },
   "AF_LOT_LW_MAC_002": {
     "names": {
@@ -17982,7 +18586,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_MAC_002"
   },
   "AF_LOT_LW_MAC_003": {
     "names": {
@@ -18221,7 +18826,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_MAC_003"
   },
   "AF_LOT_LW_MAC_009": {
     "names": {
@@ -18506,7 +19112,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "20/08/2020"
+    "releaseDate": "20/08/2020",
+    "rType": "AF_LOT_LW_MAC_009"
   },
   "AF_LW_AXE_000": {
     "names": {
@@ -18569,7 +19176,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_AXE_000"
   },
   "AF_LOT_LW_AXE_001": {
     "names": {
@@ -18795,7 +19403,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_AXE_001"
   },
   "AF_LOT_LW_AXE_002": {
     "names": {
@@ -19033,7 +19642,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_AXE_002"
   },
   "AF_LOT_LW_AXE_003": {
     "names": {
@@ -19277,7 +19887,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_AXE_003"
   },
   "AF_LOT_LW_AXE_004": {
     "names": {
@@ -19504,7 +20115,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/07/2021"
+    "releaseDate": "14/07/2021",
+    "rType": "AF_LOT_LW_AXE_004"
   },
   "AF_LW_GLO_000": {
     "names": {
@@ -19561,7 +20173,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "31/10/2020"
+    "releaseDate": "31/10/2020",
+    "rType": "AF_LW_GLO_000"
   },
   "AF_LOT_LW_GLO_001": {
     "names": {
@@ -19781,7 +20394,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "31/10/2020"
+    "releaseDate": "31/10/2020",
+    "rType": "AF_LOT_LW_GLO_001"
   },
   "AF_LOT_LW_GLO_002": {
     "names": {
@@ -20013,7 +20627,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "31/10/2020"
+    "releaseDate": "31/10/2020",
+    "rType": "AF_LOT_LW_GLO_002"
   },
   "AF_LOT_LW_GLO_003": {
     "names": {
@@ -20245,7 +20860,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "31/10/2020"
+    "releaseDate": "31/10/2020",
+    "rType": "AF_LOT_LW_GLO_003"
   },
   "AF_LW_BOK_000": {
     "names": {
@@ -20302,7 +20918,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "15/01/2021"
+    "releaseDate": "15/01/2021",
+    "rType": "AF_LW_BOK_000"
   },
   "AF_LOT_LW_BOK_001": {
     "names": {
@@ -20522,7 +21139,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "15/01/2021"
+    "releaseDate": "15/01/2021",
+    "rType": "AF_LOT_LW_BOK_001"
   },
   "AF_LOT_LW_BOK_002": {
     "names": {
@@ -20754,7 +21372,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "15/01/2021"
+    "releaseDate": "15/01/2021",
+    "rType": "AF_LOT_LW_BOK_002"
   },
   "AF_LOT_LW_BOK_003": {
     "names": {
@@ -20986,7 +21605,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "15/01/2021"
+    "releaseDate": "15/01/2021",
+    "rType": "AF_LOT_LW_BOK_003"
   },
   "AF_LW_SHI_000": {
     "names": {
@@ -21023,7 +21643,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_SHI_000"
   },
   "AF_LW_ARM_001": {
     "names": {
@@ -21103,7 +21724,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_ARM_001"
   },
   "AF_LOT_LW_ARM_002": {
     "names": {
@@ -21320,7 +21942,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_ARM_002"
   },
   "AF_LOT_LW_ARM_003": {
     "names": {
@@ -21571,7 +22194,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_ARM_003"
   },
   "AF_LOT_LW_ARM_004": {
     "names": {
@@ -21834,7 +22458,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_ARM_004"
   },
   "AF_LOT_LW_ARM_005": {
     "names": {
@@ -22159,7 +22784,8 @@
         "zh": "PVP獎牌交換所"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_ARM_005"
   },
   "AF_LOT_LW_ARM_028": {
     "names": {
@@ -22408,7 +23034,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "09/01/2021"
+    "releaseDate": "09/01/2021",
+    "rType": "AF_LOT_LW_ARM_028"
   },
   "AF_LOT_LW_ARM_032": {
     "names": {
@@ -22662,7 +23289,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "07/04/2021"
+    "releaseDate": "07/04/2021",
+    "rType": "AF_LOT_LW_ARM_032"
   },
   "AF_LOT_LW_ARM_031": {
     "names": {
@@ -23008,7 +23636,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "07/07/2021"
+    "releaseDate": "07/07/2021",
+    "rType": "AF_LOT_LW_ARM_031"
   },
   "AF_LOT_FF1_ARM_002": {
     "names": {
@@ -23260,7 +23889,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_FF1_ARM_002"
   },
   "AF_LOT_FF4_ARM_001": {
     "names": {
@@ -23512,7 +24142,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_FF4_ARM_001"
   },
   "AF_LW_HLM_001": {
     "names": {
@@ -23594,7 +24225,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_HLM_001"
   },
   "AF_LOT_LW_HLM_002": {
     "names": {
@@ -23813,7 +24445,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_HLM_002"
   },
   "AF_LOT_LW_HLM_003": {
     "names": {
@@ -24066,7 +24699,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_HLM_003"
   },
   "AF_LOT_LW_HLM_004": {
     "names": {
@@ -24323,7 +24957,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_HLM_004"
   },
   "AF_LW_HLM_005": {
     "names": {
@@ -24583,7 +25218,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_HLM_005"
   },
   "AF_LW_HAT_001": {
     "names": {
@@ -24672,6 +25308,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -24681,7 +25320,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_HAT_001"
   },
   "AF_LOT_LW_HAT_002": {
     "names": {
@@ -24879,6 +25519,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -24924,7 +25567,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_HAT_002"
   },
   "AF_LOT_LW_HAT_003": {
     "names": {
@@ -25144,6 +25788,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -25201,7 +25848,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_HAT_003"
   },
   "AF_LOT_LW_HAT_004": {
     "names": {
@@ -25421,6 +26069,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -25478,7 +26129,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_HAT_004"
   },
   "AF_LOT_LW_HAT_005": {
     "names": {
@@ -25698,6 +26350,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -25755,7 +26410,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_HAT_005"
   },
   "AF_LW_CLT_001": {
     "names": {
@@ -25847,6 +26503,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -25856,7 +26515,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_CLT_001"
   },
   "AF_LOT_LW_CLT_002": {
     "names": {
@@ -26075,6 +26735,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -26120,7 +26783,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_CLT_002"
   },
   "AF_LOT_LW_CLT_003": {
     "names": {
@@ -26339,6 +27003,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -26396,7 +27063,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_CLT_003"
   },
   "AF_LOT_LW_CLT_004": {
     "names": {
@@ -26615,6 +27283,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -26672,7 +27343,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_CLT_004"
   },
   "AF_LOT_LW_CLT_005": {
     "names": {
@@ -26895,6 +27567,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -26951,7 +27626,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_CLT_005"
   },
   "AF_LOT_LW_CLT_006": {
     "names": {
@@ -27170,6 +27846,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -27227,7 +27906,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "25/08/2020"
+    "releaseDate": "25/08/2020",
+    "rType": "AF_LOT_LW_CLT_006"
   },
   "AF_LOT_LW_CLT_015": {
     "names": {
@@ -27420,7 +28100,8 @@
       "JB_LW_LIB_FIRE",
       "JB_LW_WIZ",
       "JB_FF7_AERT",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27476,7 +28157,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "31/10/2020"
+    "releaseDate": "31/10/2020",
+    "rType": "AF_LOT_LW_CLT_015"
   },
   "AF_LOT_LW_CLT_016": {
     "names": {
@@ -27809,7 +28491,10 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27865,7 +28550,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "09/12/2020"
+    "releaseDate": "09/12/2020",
+    "rType": "AF_LOT_LW_CLT_016"
   },
   "AF_LOT_LW_CLT_018": {
     "names": {
@@ -28091,7 +28777,10 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28141,7 +28830,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/04/2021"
+    "releaseDate": "14/04/2021",
+    "rType": "AF_LOT_LW_CLT_018"
   },
   "AF_LOT_LW_CLT_019": {
     "names": {
@@ -28380,7 +29070,8 @@
       "JB_FF4_ROSA",
       "JB_LW_ARC_FIRE",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28436,7 +29127,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "09/06/2021"
+    "releaseDate": "09/06/2021",
+    "rType": "AF_LOT_LW_CLT_019"
   },
   "AF_LW_RNG_001": {
     "names": {
@@ -28578,6 +29270,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -28587,7 +29282,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_LW_RNG_001"
   },
   "AF_LOT_LW_RNG_002": {
     "names": {
@@ -28951,6 +29647,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -28996,7 +29695,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_RNG_002"
   },
   "AF_LOT_LW_RNG_003": {
     "names": {
@@ -29360,6 +30060,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -29417,7 +30120,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_RNG_003"
   },
   "AF_LOT_LW_RNG_004": {
     "names": {
@@ -29781,6 +30485,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -29838,7 +30545,8 @@
         "zh": "普通商店"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_RNG_004"
   },
   "AF_LOT_LW_FTW_001": {
     "names": {
@@ -30262,6 +30970,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -30325,7 +31036,8 @@
         "zh": "PVP獎牌交換所"
       }
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_FTW_001"
   },
   "AF_LOT_LW_RNG_005": {
     "names": {
@@ -30689,6 +31401,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -30745,7 +31460,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_RNG_005"
   },
   "AF_LOT_FFT_ACC_001": {
     "names": {
@@ -31109,6 +31825,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -31159,7 +31878,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_FFT_ACC_001"
   },
   "AF_LOT_LW_RNG_006": {
     "names": {
@@ -31389,7 +32109,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "24/03/2021"
+    "releaseDate": "24/03/2021",
+    "rType": "AF_LOT_LW_RNG_006"
   },
   "AF_LW_ARW_003": {
     "names": {
@@ -31519,6 +32240,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -31528,7 +32252,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_ARW_003"
   },
   "AF_LOT_LW_ACC_001": {
     "names": {
@@ -31888,6 +32613,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -31944,7 +32672,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_LW_ACC_001"
   },
   "AF_LW_RNG_007": {
     "names": {
@@ -32052,7 +32781,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_RNG_007"
   },
   "AF_LW_ARW_005": {
     "names": {
@@ -32164,7 +32894,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "23/09/2020"
+    "releaseDate": "23/09/2020",
+    "rType": "AF_LW_ARW_005"
   },
   "AF_LW_RNG_009": {
     "names": {
@@ -32261,7 +32992,8 @@
       "UN_LW_P_KTON_01",
       "UN_LW_P_RARD",
       "UN_LW_P_MONT_01",
-      "UN_LW_P_GRSR_01"
+      "UN_LW_P_GRSR_01",
+      "UN_LW_P_MINU"
     ],
     "materials": [
       {
@@ -32273,7 +33005,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "22/01/2021"
+    "releaseDate": "22/01/2021",
+    "rType": "AF_LW_RNG_009"
   },
   "AF_LOT_FF14_ARW_001": {
     "names": {
@@ -32514,6 +33247,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -32564,7 +33300,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LOT_FF14_ARW_001"
   },
   "AF_FF14_HLM_001": {
     "names": {
@@ -32939,7 +33676,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_FF14_HLM_001"
   },
   "AF_LOT_LW_ACC_002": {
     "names": {
@@ -33355,6 +34093,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -33411,7 +34152,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "08/08/2020"
+    "releaseDate": "08/08/2020",
+    "rType": "AF_LOT_LW_ACC_002"
   },
   "AF_LOT_LW_CLK_001": {
     "names": {
@@ -33771,6 +34513,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -33827,7 +34572,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "09/09/2020"
+    "releaseDate": "09/09/2020",
+    "rType": "AF_LOT_LW_CLK_001"
   },
   "AF_LOT_LW_ARW_001": {
     "names": {
@@ -34187,6 +34933,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -34243,7 +34992,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "09/10/2020"
+    "releaseDate": "09/10/2020",
+    "rType": "AF_LOT_LW_ARW_001"
   },
   "AF_LOT_FF10_ACCE_001": {
     "names": {
@@ -34603,6 +35353,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -34659,7 +35412,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "30/11/2020"
+    "releaseDate": "30/11/2020",
+    "rType": "AF_LOT_FF10_ACCE_001"
   },
   "AF_LOT_NIER_ACC_000": {
     "names": {
@@ -34806,6 +35560,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -34819,7 +35576,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "23/12/2020"
+    "releaseDate": "23/12/2020",
+    "rType": "AF_LOT_NIER_ACC_000"
   },
   "AF_LOT_LW_ACC_036": {
     "names": {
@@ -35183,6 +35941,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -35239,7 +36000,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "08/02/2021"
+    "releaseDate": "08/02/2021",
+    "rType": "AF_LOT_LW_ACC_036"
   },
   "AF_LOT_LW_ACC_039": {
     "names": {
@@ -35603,6 +36365,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -35653,7 +36418,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "22/02/2021"
+    "releaseDate": "22/02/2021",
+    "rType": "AF_LOT_LW_ACC_039"
   },
   "AF_LOT_LW_HAT_017": {
     "names": {
@@ -36013,6 +36779,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -36069,7 +36838,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "08/03/2021"
+    "releaseDate": "08/03/2021",
+    "rType": "AF_LOT_LW_HAT_017"
   },
   "AF_LOT_LW_ACC_038": {
     "names": {
@@ -36309,7 +37079,10 @@
       "JB_LW_JEDN",
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36359,7 +37132,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "31/03/2021"
+    "releaseDate": "31/03/2021",
+    "rType": "AF_LOT_LW_ACC_038"
   },
   "AF_LOT_FF7_ACC_003": {
     "names": {
@@ -36718,7 +37492,10 @@
       "JB_LW_JEDN",
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36774,7 +37551,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "07/05/2021"
+    "releaseDate": "07/05/2021",
+    "rType": "AF_LOT_FF7_ACC_003"
   },
   "AF_LW_ACC_042": {
     "names": {
@@ -36908,7 +37686,10 @@
       "JB_LW_JEDN",
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36917,7 +37698,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "31/03/2021"
+    "releaseDate": "31/03/2021",
+    "rType": "AF_LW_ACC_042"
   },
   "AF_LOT_LW_ACC_048": {
     "names": {
@@ -37230,7 +38012,10 @@
       "JB_LW_JEDN",
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37280,7 +38065,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "23/06/2021"
+    "releaseDate": "23/06/2021",
+    "rType": "AF_LOT_LW_ACC_048"
   },
   "AF_SWO_LW_LILS_1": {
     "names": {
@@ -37351,7 +38137,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37361,7 +38148,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_LILS"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_SWO_LW_LILS_1"
   },
   "AF_BSW_LW_SZRT_1": {
     "names": {
@@ -37429,7 +38217,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_SZRT"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_BSW_LW_SZRT_1"
   },
   "AF_KAT_LW_OOOO_1": {
     "names": {
@@ -37499,7 +38288,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_OOOO"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_KAT_LW_OOOO_1"
   },
   "AF_FIS_LW_MRLK_1": {
     "names": {
@@ -37564,7 +38354,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MRLK"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_FIS_LW_MRLK_1"
   },
   "AF_SPE_LW_RAMD_1": {
     "names": {
@@ -37632,7 +38423,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RAMD"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_SPE_LW_RAMD_1"
   },
   "AF_SPE_LW_LRNZ_1": {
     "names": {
@@ -37700,7 +38492,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_LRNZ"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_SPE_LW_LRNZ_1"
   },
   "AF_DAG_LW_VSTR_1": {
     "names": {
@@ -37764,7 +38557,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VSTR"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_DAG_LW_VSTR_1"
   },
   "AF_BOW_LW_CLEY_1": {
     "names": {
@@ -37830,7 +38624,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_CLEY"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_BOW_LW_CLEY_1"
   },
   "AF_GUN_LW_RIRY_1": {
     "names": {
@@ -37887,7 +38682,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37897,7 +38693,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RIRY"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_GUN_LW_RIRY_1"
   },
   "AF_ROD_LW_HLNA_1": {
     "names": {
@@ -37959,7 +38756,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37969,7 +38767,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_HLNA"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ROD_LW_HLNA_1"
   },
   "AF_ROD_LW_MGRT_1": {
     "names": {
@@ -38031,7 +38830,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38041,7 +38841,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MGRT"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ROD_LW_MGRT_1"
   },
   "AF_ROD_LW_PRAY_1": {
     "names": {
@@ -38103,7 +38904,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38113,7 +38915,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_PRAY"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ROD_LW_PRAY_1"
   },
   "AF_MAC_LW_KADI_1": {
     "names": {
@@ -38179,7 +38982,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_KADI"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_MAC_LW_KADI_1"
   },
   "AF_BOW_LW_FINA_1": {
     "names": {
@@ -38249,7 +39053,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_FINA"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_BOW_LW_FINA_1"
   },
   "AF_NKN_LW_SDLX_1": {
     "names": {
@@ -38317,7 +39122,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_SDLX"
     },
-    "releaseDate": "22/11/2019"
+    "releaseDate": "22/11/2019",
+    "rType": "AF_NKN_LW_SDLX_1"
   },
   "AF_SHI_LW_ENBT_1": {
     "names": {
@@ -38377,7 +39183,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ENBT"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_SHI_LW_ENBT_1"
   },
   "AF_ARM_LW_STRN_1": {
     "names": {
@@ -38467,7 +39274,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_STRN"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ARM_LW_STRN_1"
   },
   "AF_ARM_LW_ROBB_1": {
     "names": {
@@ -38553,7 +39361,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ROBB"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ARM_LW_ROBB_1"
   },
   "AF_ARM_LW_BYLO_1": {
     "names": {
@@ -38639,7 +39448,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_BYLO"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ARM_LW_BYLO_1"
   },
   "AF_ARM_LW_VRID_1": {
     "names": {
@@ -38740,6 +39550,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -38750,7 +39563,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VRID"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ARM_LW_VRID_1"
   },
   "AF_ARM_LW_NAIA_1": {
     "names": {
@@ -38847,6 +39661,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -38857,7 +39674,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_NAIA"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ARM_LW_NAIA_1"
   },
   "AF_CLT_LW_SEVR_1": {
     "names": {
@@ -38954,6 +39772,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -38964,7 +39785,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_SEVR"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_CLT_LW_SEVR_1"
   },
   "AF_CLT_LW_SRJS_1": {
     "names": {
@@ -39061,6 +39883,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -39071,7 +39896,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_SRJS"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_CLT_LW_SRJS_1"
   },
   "AF_HAT_LW_AILN_1": {
     "names": {
@@ -39169,6 +39995,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -39179,7 +40008,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_AILN"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_HAT_LW_AILN_1"
   },
   "AF_HAT_LW_MDNA_1": {
     "names": {
@@ -39277,6 +40107,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -39287,7 +40120,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MDNA"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_HAT_LW_MDNA_1"
   },
   "AF_HAT_LW_UNII_1": {
     "names": {
@@ -39385,6 +40219,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -39395,7 +40232,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_UNII"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_HAT_LW_UNII_1"
   },
   "AF_HAT_LW_VADM_1": {
     "names": {
@@ -39493,6 +40331,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -39503,7 +40344,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VADM"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_HAT_LW_VADM_1"
   },
   "AF_HAT_LW_PHBE_1": {
     "names": {
@@ -39601,6 +40443,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -39611,7 +40456,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_PHBE"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_HAT_LW_PHBE_1"
   },
   "AF_HAT_LW_MICE_1": {
     "names": {
@@ -39696,6 +40542,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -39706,7 +40555,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MICE"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_HAT_LW_MICE_1"
   },
   "AF_HAT_LW_MIIA_1": {
     "names": {
@@ -39791,6 +40641,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -39801,7 +40654,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MIIA"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_HAT_LW_MIIA_1"
   },
   "AF_FTW_LW_AYKA_1": {
     "names": {
@@ -39928,6 +40782,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -39938,7 +40795,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_AYKA"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_FTW_LW_AYKA_1"
   },
   "AF_ACC_LW_MACR_1": {
     "names": {
@@ -40065,6 +40923,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -40075,7 +40936,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MACR"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ACC_LW_MACR_1"
   },
   "AF_CLK_LW_ELDE_1": {
     "names": {
@@ -40194,6 +41056,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -40204,7 +41069,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ELDE"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_CLK_LW_ELDE_1"
   },
   "AF_ACC_LW_ZIZA_1": {
     "names": {
@@ -40331,6 +41197,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -40341,7 +41210,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ZIZA"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ACC_LW_ZIZA_1"
   },
   "AF_ACC_LW_FDRC_1": {
     "names": {
@@ -40464,6 +41334,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -40474,7 +41347,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_FDRC"
     },
-    "releaseDate": "22/11/2019"
+    "releaseDate": "22/11/2019",
+    "rType": "AF_ACC_LW_FDRC_1"
   },
   "AF_ARM_LW_SCIA_1": {
     "names": {
@@ -40597,6 +41471,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -40607,7 +41484,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_SCIA"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ARM_LW_SCIA_1"
   },
   "AF_ARM_LW_MURM_1": {
     "names": {
@@ -40730,6 +41608,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -40740,7 +41621,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MURM"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ARM_LW_MURM_1"
   },
   "AF_HAT_LW_RYER_1": {
     "names": {
@@ -40863,6 +41745,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -40873,7 +41758,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RYER"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_HAT_LW_RYER_1"
   },
   "AF_ACC_LW_RART_1": {
     "names": {
@@ -40983,6 +41869,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -40993,7 +41882,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RART"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ACC_LW_RART_1"
   },
   "AF_ACC_LW_MONT_1": {
     "names": {
@@ -41116,6 +42006,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -41126,7 +42019,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MONT"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ACC_LW_MONT_1"
   },
   "AF_ACC_LW_ZZAN_1": {
     "names": {
@@ -41236,6 +42130,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -41246,7 +42143,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ZZAN"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ACC_LW_ZZAN_1"
   },
   "AF_HLM_LW_GLMS_1": {
     "names": {
@@ -41338,7 +42236,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_GLMS"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_HLM_LW_GLMS_1"
   },
   "AF_CLT_FF14_TNCR_1": {
     "names": {
@@ -41439,6 +42338,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -41449,7 +42351,8 @@
       "type": "tmr",
       "unitId": "UN_FF14_P_TNCR"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_CLT_FF14_TNCR_1"
   },
   "AF_ROD_FF14_YSTL_1": {
     "names": {
@@ -41507,7 +42410,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41517,7 +42421,8 @@
       "type": "tmr",
       "unitId": "UN_FF14_P_YSTL"
     },
-    "releaseDate": "14/11/2019"
+    "releaseDate": "14/11/2019",
+    "rType": "AF_ROD_FF14_YSTL_1"
   },
   "AF_BLT_LW_YERM_1": {
     "names": {
@@ -41618,6 +42523,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -41628,7 +42536,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_YERM"
     },
-    "releaseDate": "01/12/2019"
+    "releaseDate": "01/12/2019",
+    "rType": "AF_BLT_LW_YERM_1"
   },
   "AF_SWO_LW_NASR_1": {
     "names": {
@@ -41699,7 +42608,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41709,7 +42619,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_NASR"
     },
-    "releaseDate": "01/12/2019"
+    "releaseDate": "01/12/2019",
+    "rType": "AF_SWO_LW_NASR_1"
   },
   "AF_CLT_LW_RAMD_01_1": {
     "names": {
@@ -41801,7 +42712,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RAMD_01"
     },
-    "releaseDate": "01/12/2019"
+    "releaseDate": "01/12/2019",
+    "rType": "AF_CLT_LW_RAMD_01_1"
   },
   "AF_ACC_LW_ETRE_1": {
     "names": {
@@ -41911,6 +42823,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -41921,7 +42836,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ETRE"
     },
-    "releaseDate": "01/12/2019"
+    "releaseDate": "01/12/2019",
+    "rType": "AF_ACC_LW_ETRE_1"
   },
   "AF_ACC_LW_MACR_01_1": {
     "names": {
@@ -42048,6 +42964,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -42058,7 +42977,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MACR_01"
     },
-    "releaseDate": "18/12/2019"
+    "releaseDate": "18/12/2019",
+    "rType": "AF_ACC_LW_MACR_01_1"
   },
   "AF_HAT_LW_WHIS_1": {
     "names": {
@@ -42189,6 +43109,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -42199,7 +43122,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_WHIS"
     },
-    "releaseDate": "01/01/2020"
+    "releaseDate": "01/01/2020",
+    "rType": "AF_HAT_LW_WHIS_1"
   },
   "AF_ARW_LW_KTON_1": {
     "names": {
@@ -42326,6 +43250,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -42336,7 +43263,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_KTON"
     },
-    "releaseDate": "01/01/2020"
+    "releaseDate": "01/01/2020",
+    "rType": "AF_ARW_LW_KTON_1"
   },
   "AF_ARM_FFT_RAMZ_1": {
     "names": {
@@ -42437,6 +43365,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -42447,7 +43378,8 @@
       "type": "tmr",
       "unitId": "UN_FFT_P_RAMZ"
     },
-    "releaseDate": "27/12/2019"
+    "releaseDate": "27/12/2019",
+    "rType": "AF_ARM_FFT_RAMZ_1"
   },
   "AF_SWO_FFT_GFGR_1": {
     "names": {
@@ -42518,7 +43450,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42528,7 +43461,8 @@
       "type": "tmr",
       "unitId": "UN_FFT_P_GFGR"
     },
-    "releaseDate": "27/12/2019"
+    "releaseDate": "27/12/2019",
+    "rType": "AF_SWO_FFT_GFGR_1"
   },
   "AF_ACC_FFT_ORND_1": {
     "names": {
@@ -42603,7 +43537,8 @@
       "type": "tmr",
       "unitId": "UN_FFT_P_ORND"
     },
-    "releaseDate": "27/12/2019"
+    "releaseDate": "27/12/2019",
+    "rType": "AF_ACC_FFT_ORND_1"
   },
   "AF_CLT_LW_MRND_1": {
     "names": {
@@ -42704,6 +43639,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -42714,7 +43652,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MRND"
     },
-    "releaseDate": "15/01/2020"
+    "releaseDate": "15/01/2020",
+    "rType": "AF_CLT_LW_MRND_1"
   },
   "AF_AXE_LW_DRND_1": {
     "names": {
@@ -42779,7 +43718,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_DRND"
     },
-    "releaseDate": "15/01/2020"
+    "releaseDate": "15/01/2020",
+    "rType": "AF_AXE_LW_DRND_1"
   },
   "AF_ARM_LW_LUCA_1": {
     "names": {
@@ -42879,7 +43819,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_LW_GRSR_01",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42889,7 +43830,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_LUCA"
     },
-    "releaseDate": "01/02/2020"
+    "releaseDate": "01/02/2020",
+    "rType": "AF_ARM_LW_LUCA_1"
   },
   "AF_SWO_LW_ADLD_1": {
     "names": {
@@ -42960,7 +43902,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42970,7 +43913,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ADLD"
     },
-    "releaseDate": "01/02/2020"
+    "releaseDate": "01/02/2020",
+    "rType": "AF_SWO_LW_ADLD_1"
   },
   "AF_ARM_LW_VKTR_1": {
     "names": {
@@ -43060,7 +44004,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VKTR"
     },
-    "releaseDate": "14/02/2020"
+    "releaseDate": "14/02/2020",
+    "rType": "AF_ARM_LW_VKTR_1"
   },
   "AF_ACC_LW_THLA_1": {
     "names": {
@@ -43179,6 +44124,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -43189,7 +44137,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_THLA"
     },
-    "releaseDate": "14/02/2020"
+    "releaseDate": "14/02/2020",
+    "rType": "AF_ACC_LW_THLA_1"
   },
   "AF_ACC_LW_VNLA_1": {
     "names": {
@@ -43289,7 +44238,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_LW_GRSR_01",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -43299,7 +44249,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VNLA"
     },
-    "releaseDate": "01/03/2020"
+    "releaseDate": "01/03/2020",
+    "rType": "AF_ACC_LW_VNLA_1"
   },
   "AF_SWO_LW_DRIO_1": {
     "names": {
@@ -43370,7 +44321,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -43380,7 +44332,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_DRIO"
     },
-    "releaseDate": "01/03/2020"
+    "releaseDate": "01/03/2020",
+    "rType": "AF_SWO_LW_DRIO_1"
   },
   "AF_ACC_LW_TREL_1": {
     "names": {
@@ -43490,6 +44443,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -43500,7 +44456,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_TREL"
     },
-    "releaseDate": "01/03/2020"
+    "releaseDate": "01/03/2020",
+    "rType": "AF_ACC_LW_TREL_1"
   },
   "AF_CLT_LW_RAIN_1": {
     "names": {
@@ -43597,6 +44554,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -43607,7 +44567,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RAIN"
     },
-    "releaseDate": "17/03/2020"
+    "releaseDate": "17/03/2020",
+    "rType": "AF_CLT_LW_RAIN_1"
   },
   "AF_ACC_FF1_WROL_1": {
     "names": {
@@ -43734,6 +44695,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -43744,7 +44708,8 @@
       "type": "tmr",
       "unitId": "UN_FF1_P_WROL"
     },
-    "releaseDate": "25/03/2020"
+    "releaseDate": "25/03/2020",
+    "rType": "AF_ACC_FF1_WROL_1"
   },
   "AF_ACC_LW_QILF_1": {
     "names": {
@@ -43867,6 +44832,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -43877,7 +44845,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_QILF"
     },
-    "releaseDate": "01/04/2020"
+    "releaseDate": "01/04/2020",
+    "rType": "AF_ACC_LW_QILF_1"
   },
   "AF_KAT_LW_SIMR_1": {
     "names": {
@@ -43947,7 +44916,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_SIMR"
     },
-    "releaseDate": "01/04/2020"
+    "releaseDate": "01/04/2020",
+    "rType": "AF_KAT_LW_SIMR_1"
   },
   "AF_ACC_LW_ORDR_1": {
     "names": {
@@ -44020,7 +44990,8 @@
       "JB_LW_MURG",
       "JB_FF7_CLUD",
       "JB_FF7_TIFA",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44030,7 +45001,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ORDR"
     },
-    "releaseDate": "15/04/2020"
+    "releaseDate": "15/04/2020",
+    "rType": "AF_ACC_LW_ORDR_1"
   },
   "AF_SWO_LW_LVES_1": {
     "names": {
@@ -44101,7 +45073,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44111,7 +45084,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_LVES"
     },
-    "releaseDate": "15/04/2020"
+    "releaseDate": "15/04/2020",
+    "rType": "AF_SWO_LW_LVES_1"
   },
   "AF_ACC_FFT_AGRA_1": {
     "names": {
@@ -44201,7 +45175,8 @@
       "type": "tmr",
       "unitId": "UN_FFT_P_AGRA"
     },
-    "releaseDate": "22/04/2020"
+    "releaseDate": "22/04/2020",
+    "rType": "AF_ACC_FFT_AGRA_1"
   },
   "AF_ARM_FFT_DELT_1": {
     "names": {
@@ -44291,7 +45266,8 @@
       "type": "tmr",
       "unitId": "UN_FFT_P_DELT"
     },
-    "releaseDate": "22/04/2020"
+    "releaseDate": "22/04/2020",
+    "rType": "AF_ARM_FFT_DELT_1"
   },
   "AF_GUN_FFT_MSTD_2": {
     "names": {
@@ -44352,7 +45328,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44362,7 +45339,8 @@
       "type": "tmr",
       "unitId": "UN_FFT_P_MSTD"
     },
-    "releaseDate": "22/04/2020"
+    "releaseDate": "22/04/2020",
+    "rType": "AF_GUN_FFT_MSTD_2"
   },
   "AF_ACC_LW_IRDL_1": {
     "names": {
@@ -44434,7 +45412,8 @@
       "JB_LW_LIB_FIRE",
       "JB_LW_WIZ",
       "JB_FF7_AERT",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44444,7 +45423,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_IRDL"
     },
-    "releaseDate": "01/05/2020"
+    "releaseDate": "01/05/2020",
+    "rType": "AF_ACC_LW_IRDL_1"
   },
   "AF_ARM_LW_STRN_01_1": {
     "names": {
@@ -44534,7 +45514,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_STRN_01"
     },
-    "releaseDate": "14/05/2020"
+    "releaseDate": "14/05/2020",
+    "rType": "AF_ARM_LW_STRN_01_1"
   },
   "AF_ARM_LW_GRSR_1": {
     "names": {
@@ -44628,7 +45609,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_GRSR"
     },
-    "releaseDate": "01/06/2020"
+    "releaseDate": "01/06/2020",
+    "rType": "AF_ARM_LW_GRSR_1"
   },
   "AF_BOW_LW_RRIR_1": {
     "names": {
@@ -44698,7 +45680,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RRIR"
     },
-    "releaseDate": "01/06/2020"
+    "releaseDate": "01/06/2020",
+    "rType": "AF_BOW_LW_RRIR_1"
   },
   "AF_CLT_LW_LSWL_1": {
     "names": {
@@ -44799,6 +45782,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -44809,7 +45795,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_LSWL"
     },
-    "releaseDate": "01/06/2020"
+    "releaseDate": "01/06/2020",
+    "rType": "AF_CLT_LW_LSWL_1"
   },
   "AF_ACC_LW_SCAL_1": {
     "names": {
@@ -44936,6 +45923,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -44946,7 +45936,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_SCAL"
     },
-    "releaseDate": "17/06/2020"
+    "releaseDate": "17/06/2020",
+    "rType": "AF_ACC_LW_SCAL_1"
   },
   "AF_SWO_LW_MRAL_1": {
     "names": {
@@ -45017,7 +46008,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45027,7 +46019,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MRAL"
     },
-    "releaseDate": "17/06/2020"
+    "releaseDate": "17/06/2020",
+    "rType": "AF_SWO_LW_MRAL_1"
   },
   "AF_CLT_LW_HWLT_1": {
     "names": {
@@ -45099,7 +46092,8 @@
       "JB_LW_LIB_FIRE",
       "JB_LW_WIZ",
       "JB_FF7_AERT",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45109,13 +46103,14 @@
       "type": "tmr",
       "unitId": "UN_LW_P_HWLT"
     },
-    "releaseDate": "01/07/2020"
+    "releaseDate": "01/07/2020",
+    "rType": "AF_CLT_LW_HWLT_1"
   },
   "AF_ACC_LW_LILS_01_1": {
     "names": {
-      "en": "リリシュの黒眼鏡"
+      "en": "リリシュの黒眼鏡 - Lilyth's Sunglasses"
     },
-    "slug": "riri-shu-no-kuro-megane",
+    "slug": "lilyths-sunglasses",
     "stats": {
       "HP": {
         "min": 288,
@@ -45231,7 +46226,11 @@
       "JB_LW_JEDN",
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
+      "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45241,7 +46240,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_LILS_01"
     },
-    "releaseDate": "01/07/2020"
+    "releaseDate": "01/07/2020",
+    "rType": "AF_ACC_LW_LILS_01_1"
   },
   "AF_ROD_LW_CHEL_1": {
     "names": {
@@ -45303,7 +46303,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45313,7 +46314,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_CHEL"
     },
-    "releaseDate": "01/07/2020"
+    "releaseDate": "01/07/2020",
+    "rType": "AF_ROD_LW_CHEL_1"
   },
   "AF_GUN_LW_LATH_2": {
     "names": {
@@ -45374,7 +46376,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45384,7 +46387,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_LATH"
     },
-    "releaseDate": "15/07/2020"
+    "releaseDate": "15/07/2020",
+    "rType": "AF_GUN_LW_LATH_2"
   },
   "AF_SWO_LW_TITU_1": {
     "names": {
@@ -45455,7 +46459,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45465,7 +46470,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_TITU"
     },
-    "releaseDate": "15/07/2020"
+    "releaseDate": "15/07/2020",
+    "rType": "AF_SWO_LW_TITU_1"
   },
   "AF_ACC_FF4_CECL_1": {
     "names": {
@@ -45592,6 +46598,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -45602,7 +46611,8 @@
       "type": "tmr",
       "unitId": "UN_FF4_P_CECL"
     },
-    "releaseDate": "22/07/2020"
+    "releaseDate": "22/07/2020",
+    "rType": "AF_ACC_FF4_CECL_1"
   },
   "AF_ACC_FF4_ROSA_1": {
     "names": {
@@ -45725,6 +46735,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -45735,7 +46748,8 @@
       "type": "tmr",
       "unitId": "UN_FF4_P_ROSA"
     },
-    "releaseDate": "01/08/2020"
+    "releaseDate": "01/08/2020",
+    "rType": "AF_ACC_FF4_ROSA_1"
   },
   "AF_HLM_FF4_KAIN_1": {
     "names": {
@@ -45827,13 +46841,14 @@
       "type": "tmr",
       "unitId": "UN_FF4_P_KAIN"
     },
-    "releaseDate": "01/08/2020"
+    "releaseDate": "01/08/2020",
+    "rType": "AF_HLM_FF4_KAIN_1"
   },
   "AF_ACC_LW_KTON_01_1": {
     "names": {
-      "en": "夏の髪飾り"
+      "en": "夏の髪飾り - Summer Hair Ribbon"
     },
-    "slug": "natsu-no-kamikazari",
+    "slug": "summer-hair-ribbon",
     "stats": {
       "HP": {
         "min": 314,
@@ -45949,7 +46964,11 @@
       "JB_LW_JEDN",
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
+      "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45959,7 +46978,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_KTON_01"
     },
-    "releaseDate": "18/08/2020"
+    "releaseDate": "18/08/2020",
+    "rType": "AF_ACC_LW_KTON_01_1"
   },
   "AF_ACC_LW_NIVL_1": {
     "names": {
@@ -46016,7 +47036,8 @@
       "JB_FF4_ROSA",
       "JB_LW_ARC_FIRE",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46026,7 +47047,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_NIVL"
     },
-    "releaseDate": "01/09/2020"
+    "releaseDate": "01/09/2020",
+    "rType": "AF_ACC_LW_NIVL_1"
   },
   "AF_ROD_LW_RVAL_1": {
     "names": {
@@ -46088,7 +47110,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46098,7 +47121,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RVAL"
     },
-    "releaseDate": "01/09/2020"
+    "releaseDate": "01/09/2020",
+    "rType": "AF_ROD_LW_RVAL_1"
   },
   "AF_CLT_LW_SAKR_1": {
     "names": {
@@ -46199,6 +47223,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -46209,7 +47236,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_SAKR"
     },
-    "releaseDate": "16/09/2020"
+    "releaseDate": "16/09/2020",
+    "rType": "AF_CLT_LW_SAKR_1"
   },
   "AF_SPE_LW_ALIM_1": {
     "names": {
@@ -46277,7 +47305,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ALIM"
     },
-    "releaseDate": "16/09/2020"
+    "releaseDate": "16/09/2020",
+    "rType": "AF_SPE_LW_ALIM_1"
   },
   "AF_ACC_LW_RYER_01_1": {
     "names": {
@@ -46400,6 +47429,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -46410,7 +47442,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RYER_01"
     },
-    "releaseDate": "01/10/2020"
+    "releaseDate": "01/10/2020",
+    "rType": "AF_ACC_LW_RYER_01_1"
   },
   "AF_ACC_LW_RARD_1": {
     "names": {
@@ -46537,6 +47570,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -46547,7 +47583,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RARD"
     },
-    "releaseDate": "01/10/2020"
+    "releaseDate": "01/10/2020",
+    "rType": "AF_ACC_LW_RARD_1"
   },
   "AF_ROD_LW_ELSI_1": {
     "names": {
@@ -46609,7 +47646,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46619,7 +47657,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ELSI"
     },
-    "releaseDate": "01/10/2020"
+    "releaseDate": "01/10/2020",
+    "rType": "AF_ROD_LW_ELSI_1"
   },
   "AF_ACC_LW_RIRY_01_1": {
     "names": {
@@ -46691,6 +47730,7 @@
       "JB_FF4_ROSA",
       "JB_LW_WIZ",
       "JB_LW_GRSR_01",
+      "JB_LW_SCR_FIRE",
       "JB_LW_ZZAN",
       "JB_LW_FRVA_M"
     ],
@@ -46702,7 +47742,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RIRY_01"
     },
-    "releaseDate": "17/10/2020"
+    "releaseDate": "17/10/2020",
+    "rType": "AF_ACC_LW_RIRY_01_1"
   },
   "AF_GUN_LW_CRIS_1": {
     "names": {
@@ -46759,7 +47800,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46769,7 +47811,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_CRIS"
     },
-    "releaseDate": "17/10/2020"
+    "releaseDate": "17/10/2020",
+    "rType": "AF_GUN_LW_CRIS_1"
   },
   "AF_ACC_LW_GABL_1": {
     "names": {
@@ -46892,6 +47935,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -46902,7 +47948,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_GABL"
     },
-    "releaseDate": "01/11/2020"
+    "releaseDate": "01/11/2020",
+    "rType": "AF_ACC_LW_GABL_1"
   },
   "AF_ACC_LW_ELSR_1": {
     "names": {
@@ -47025,6 +48072,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -47035,7 +48085,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ELSR"
     },
-    "releaseDate": "01/11/2020"
+    "releaseDate": "01/11/2020",
+    "rType": "AF_ACC_LW_ELSR_1"
   },
   "AF_ACC_FF10_TIDU_1": {
     "names": {
@@ -47162,6 +48213,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -47172,7 +48226,8 @@
       "type": "tmr",
       "unitId": "UN_FF10_P_TIDU"
     },
-    "releaseDate": "14/11/2020"
+    "releaseDate": "14/11/2020",
+    "rType": "AF_ACC_FF10_TIDU_1"
   },
   "AF_CLT_FF10_YUNA_1": {
     "names": {
@@ -47273,6 +48328,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -47283,7 +48341,8 @@
       "type": "tmr",
       "unitId": "UN_FF10_P_YUNA"
     },
-    "releaseDate": "14/11/2020"
+    "releaseDate": "14/11/2020",
+    "rType": "AF_CLT_FF10_YUNA_1"
   },
   "AF_CLT_FF10_ARON_1": {
     "names": {
@@ -47384,6 +48443,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -47394,7 +48456,8 @@
       "type": "tmr",
       "unitId": "UN_FF10_P_ARON"
     },
-    "releaseDate": "24/11/2020"
+    "releaseDate": "24/11/2020",
+    "rType": "AF_CLT_FF10_ARON_1"
   },
   "AF_HAT_LW_VNLA_01_1": {
     "names": {
@@ -47492,6 +48555,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -47502,7 +48568,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VNLA_01"
     },
-    "releaseDate": "01/12/2020"
+    "releaseDate": "01/12/2020",
+    "rType": "AF_HAT_LW_VNLA_01_1"
   },
   "AF_ACC_LW_VKTR_01_1": {
     "names": {
@@ -47625,6 +48692,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -47635,7 +48705,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VKTR_01"
     },
-    "releaseDate": "14/12/2020"
+    "releaseDate": "14/12/2020",
+    "rType": "AF_ACC_LW_VKTR_01_1"
   },
   "AF_ACC_NIER_N2TB_1": {
     "names": {
@@ -47758,6 +48829,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -47768,7 +48842,8 @@
       "type": "tmr",
       "unitId": "UN_NIER_P_N2TB"
     },
-    "releaseDate": "23/12/2020"
+    "releaseDate": "23/12/2020",
+    "rType": "AF_ACC_NIER_N2TB_1"
   },
   "AF_CLT_NIER_N9TS_1": {
     "names": {
@@ -47869,6 +48944,9 @@
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -47879,7 +48957,8 @@
       "type": "tmr",
       "unitId": "UN_NIER_P_N9TS"
     },
-    "releaseDate": "23/12/2020"
+    "releaseDate": "23/12/2020",
+    "rType": "AF_CLT_NIER_N9TS_1"
   },
   "AF_ACC_LW_MONT_01_1": {
     "names": {
@@ -48002,6 +49081,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -48012,7 +49094,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MONT_01"
     },
-    "releaseDate": "30/12/2020"
+    "releaseDate": "30/12/2020",
+    "rType": "AF_ACC_LW_MONT_01_1"
   },
   "AF_HAT_LW_RYEL_1": {
     "names": {
@@ -48110,6 +49193,9 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -48120,7 +49206,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_RYEL"
     },
-    "releaseDate": "15/01/2021"
+    "releaseDate": "15/01/2021",
+    "rType": "AF_HAT_LW_RYEL_1"
   },
   "AF_SWO_LW_SIRM_1": {
     "names": {
@@ -48191,7 +49278,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -48201,7 +49289,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_SIRM"
     },
-    "releaseDate": "15/01/2021"
+    "releaseDate": "15/01/2021",
+    "rType": "AF_SWO_LW_SIRM_1"
   },
   "AF_ACC_LW_HLNA_01_1": {
     "names": {
@@ -48268,7 +49357,8 @@
       "JB_LW_SAKR",
       "JB_FF4_ROSA",
       "JB_LW_WIZ",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -48278,7 +49368,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_HLNA_01"
     },
-    "releaseDate": "01/02/2021"
+    "releaseDate": "01/02/2021",
+    "rType": "AF_ACC_LW_HLNA_01_1"
   },
   "AF_CLT_LW_THLA_01_1": {
     "names": {
@@ -48350,7 +49441,8 @@
       "JB_LW_LIB_FIRE",
       "JB_LW_WIZ",
       "JB_FF7_AERT",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -48360,7 +49452,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_THLA_01"
     },
-    "releaseDate": "15/02/2021"
+    "releaseDate": "15/02/2021",
+    "rType": "AF_CLT_LW_THLA_01_1"
   },
   "AF_ARM_LW_CMLO_1": {
     "names": {
@@ -48450,7 +49543,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_CMLO"
     },
-    "releaseDate": "22/02/2021"
+    "releaseDate": "22/02/2021",
+    "rType": "AF_ARM_LW_CMLO_1"
   },
   "AF_HLM_LW_DEAN_1": {
     "names": {
@@ -48527,7 +49621,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_DEAN"
     },
-    "releaseDate": "01/03/2021"
+    "releaseDate": "01/03/2021",
+    "rType": "AF_HLM_LW_DEAN_1"
   },
   "AF_ACC_LW_MORE_1": {
     "names": {
@@ -48650,6 +49745,9 @@
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
       "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP",
       "JB_LW_ZZAN"
     ],
     "equippableUnits": [],
@@ -48660,7 +49758,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MORE"
     },
-    "releaseDate": "17/03/2021"
+    "releaseDate": "17/03/2021",
+    "rType": "AF_ACC_LW_MORE_1"
   },
   "AF_BOW_LW_CWEL_1": {
     "names": {
@@ -48734,7 +49833,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_CWEL"
     },
-    "releaseDate": "17/03/2021"
+    "releaseDate": "17/03/2021",
+    "rType": "AF_BOW_LW_CWEL_1"
   },
   "AF_AXE_LW_MURG_1": {
     "names": {
@@ -48799,7 +49899,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_MURG"
     },
-    "releaseDate": "24/03/2021"
+    "releaseDate": "24/03/2021",
+    "rType": "AF_AXE_LW_MURG_1"
   },
   "AF_SHI_LW_CRLT_1": {
     "names": {
@@ -48859,7 +49960,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_CRLT"
     },
-    "releaseDate": "31/03/2021"
+    "releaseDate": "31/03/2021",
+    "rType": "AF_SHI_LW_CRLT_1"
   },
   "AF_ARM_LW_VLRC_1": {
     "names": {
@@ -48949,7 +50051,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VLRC"
     },
-    "releaseDate": "14/04/2021"
+    "releaseDate": "14/04/2021",
+    "rType": "AF_ARM_LW_VLRC_1"
   },
   "AF_ROD_LW_LMRE_1": {
     "names": {
@@ -49011,7 +50114,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49021,7 +50125,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_LMRE"
     },
-    "releaseDate": "14/04/2021"
+    "releaseDate": "14/04/2021",
+    "rType": "AF_ROD_LW_LMRE_1"
   },
   "AF_ACC_LW_GRGS_1": {
     "names": {
@@ -49143,7 +50248,10 @@
       "JB_LW_JEDN",
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49153,7 +50261,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_GRGS"
     },
-    "releaseDate": "21/04/2021"
+    "releaseDate": "21/04/2021",
+    "rType": "AF_ACC_LW_GRGS_1"
   },
   "AF_ACC_FF7_CLUD_1": {
     "names": {
@@ -49247,7 +50356,8 @@
       "type": "tmr",
       "unitId": "UN_FF7_P_CLUD"
     },
-    "releaseDate": "21/04/2021"
+    "releaseDate": "21/04/2021",
+    "rType": "AF_ACC_FF7_CLUD_1"
   },
   "AF_ACC_FF7_TIFA_1": {
     "names": {
@@ -49373,7 +50483,10 @@
       "JB_LW_JEDN",
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49383,7 +50496,8 @@
       "type": "tmr",
       "unitId": "UN_FF7_P_TIFA"
     },
-    "releaseDate": "21/04/2021"
+    "releaseDate": "21/04/2021",
+    "rType": "AF_ACC_FF7_TIFA_1"
   },
   "AF_CLT_FF7_AERT_1": {
     "names": {
@@ -49483,7 +50597,10 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49493,7 +50610,8 @@
       "type": "tmr",
       "unitId": "UN_FF7_P_AERT"
     },
-    "releaseDate": "01/05/2021"
+    "releaseDate": "01/05/2021",
+    "rType": "AF_CLT_FF7_AERT_1"
   },
   "AF_CLT_FF7_BART_1": {
     "names": {
@@ -49593,7 +50711,10 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49603,7 +50724,8 @@
       "type": "tmr",
       "unitId": "UN_FF7_P_BART"
     },
-    "releaseDate": "01/05/2021"
+    "releaseDate": "01/05/2021",
+    "rType": "AF_CLT_FF7_BART_1"
   },
   "AF_CLT_LW_GRSR_01_1": {
     "names": {
@@ -49703,7 +50825,10 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49713,7 +50838,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_GRSR_01"
     },
-    "releaseDate": "14/05/2021"
+    "releaseDate": "14/05/2021",
+    "rType": "AF_CLT_LW_GRSR_01_1"
   },
   "AF_SPE_LW_VERN_1": {
     "names": {
@@ -49789,7 +50915,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VERN"
     },
-    "releaseDate": "24/05/2021"
+    "releaseDate": "24/05/2021",
+    "rType": "AF_SPE_LW_VERN_1"
   },
   "AF_ACC_LW_JEDN_1": {
     "names": {
@@ -49854,7 +50981,8 @@
       "JB_FF4_ROSA",
       "JB_LW_ARC_FIRE",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49864,7 +50992,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_JEDN"
     },
-    "releaseDate": "01/06/2021"
+    "releaseDate": "01/06/2021",
+    "rType": "AF_ACC_LW_JEDN_1"
   },
   "AF_ARM_LW_VLUC_1": {
     "names": {
@@ -49958,7 +51087,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_VLUC"
     },
-    "releaseDate": "16/06/2021"
+    "releaseDate": "16/06/2021",
+    "rType": "AF_ARM_LW_VLUC_1"
   },
   "AF_FIS_LW_LMIG_1": {
     "names": {
@@ -50027,7 +51157,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_LMIG"
     },
-    "releaseDate": "23/06/2021"
+    "releaseDate": "23/06/2021",
+    "rType": "AF_FIS_LW_LMIG_1"
   },
   "AF_ARM_LW_OBRN_1": {
     "names": {
@@ -50121,7 +51252,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_OBRN"
     },
-    "releaseDate": "30/06/2021"
+    "releaseDate": "30/06/2021",
+    "rType": "AF_ARM_LW_OBRN_1"
   },
   "AF_ACC_LW_QILF_01_1": {
     "names": {
@@ -50230,7 +51362,10 @@
       "JB_LW_JEDN",
       "JB_LW_MSM_FIRE",
       "JB_LW_OBRN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50240,7 +51375,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_QILF_01"
     },
-    "releaseDate": "14/07/2021"
+    "releaseDate": "14/07/2021",
+    "rType": "AF_ACC_LW_QILF_01_1"
   },
   "AF_CLT_LW_FALM_1": {
     "names": {
@@ -50340,7 +51476,10 @@
       "JB_FF7_BART",
       "JB_LW_GRSR_01",
       "JB_LW_JEDN",
-      "JB_LW_AXD_FIRE"
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50350,7 +51489,307 @@
       "type": "tmr",
       "unitId": "UN_LW_P_FALM"
     },
-    "releaseDate": "14/07/2021"
+    "releaseDate": "14/07/2021",
+    "rType": "AF_CLT_LW_FALM_1"
+  },
+  "AF_CLT_FF15_NCTS_1": {
+    "names": {
+      "en": "ルシス王子の戦闘服"
+    },
+    "slug": "rushisu-ouji-no-sentoufuku",
+    "stats": {
+      "HP": {
+        "min": 440,
+        "max": 440
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "SPR": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_CLT_FF15_NCTS_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_CLT_FF15_NCTS_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "ff15wpn_clt_001",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_WAR",
+      "JB_FF14_TNCR",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FFT_DELT",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_LW_BEA_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_FF7_TIFA",
+      "JB_LW_AXD_FIRE",
+      "JB_FF15_NCTS"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_FF15_P_NCTS"
+    },
+    "releaseDate": "21/07/2021",
+    "rType": "AF_CLT_FF15_NCTS_1"
+  },
+  "AF_ACC_FF15_PRMP_1": {
+    "names": {
+      "en": "プロンプトのカメラ"
+    },
+    "slug": "prompto-no-kamera",
+    "stats": {
+      "HP": {
+        "min": 216,
+        "max": 216
+      },
+      "ACCURACY": {
+        "min": 14,
+        "max": 14
+      },
+      "CRITIC_RATE": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_FF15_PRMP_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_ACC_FF15_PRMP_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "ff15wpn_acc_002",
+    "equippableJobs": [
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_FINA",
+      "JB_LW_WGN_FIRE",
+      "JB_FFT_MSTD",
+      "JB_FF4_ROSA",
+      "JB_LW_ARC_FIRE",
+      "JB_FF7_BART",
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_FF15_P_PRMP"
+    },
+    "releaseDate": "21/07/2021",
+    "rType": "AF_ACC_FF15_PRMP_1"
+  },
+  "AF_ACC_LW_MINU_1": {
+    "names": {
+      "en": "救護バッグ"
+    },
+    "slug": "kyuugo-baggu",
+    "stats": {
+      "HP": {
+        "min": 422,
+        "max": 422
+      },
+      "DEF": {
+        "min": 6,
+        "max": 6
+      },
+      "SPR": {
+        "min": 6,
+        "max": 6
+      },
+      "CRITIC_AVOID": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_MINU_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "dataId": "SK_ACC_LW_MINU_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_009",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ",
+      "JB_LW_DEAN",
+      "JB_LW_MURG",
+      "JB_LW_CRLT",
+      "JB_FF7_CLUD",
+      "JB_FF7_TIFA",
+      "JB_FF7_AERT",
+      "JB_FF7_BART",
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN",
+      "JB_LW_MSM_FIRE",
+      "JB_LW_OBRN",
+      "JB_LW_AXD_FIRE",
+      "JB_LW_SCR_FIRE",
+      "JB_FF15_NCTS",
+      "JB_FF15_PRMP"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_MINU"
+    },
+    "releaseDate": "21/07/2021",
+    "rType": "AF_ACC_LW_MINU_1"
   },
   "AF_SWO_LW_MONT_2": {
     "names": {
@@ -50416,7 +51855,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50425,7 +51865,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_MONT_2"
   },
   "AF_SWO_LW_ENBT_2": {
     "names": {
@@ -50491,7 +51932,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50500,7 +51942,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_ENBT_2"
   },
   "AF_SWO_LW_GLMS_2": {
     "names": {
@@ -50566,7 +52009,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50575,7 +52019,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_GLMS_2"
   },
   "AF_BSW_LW_STRN_2": {
     "names": {
@@ -50637,7 +52082,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BSW_LW_STRN_2"
   },
   "AF_KAT_LW_ROBB_2": {
     "names": {
@@ -50697,7 +52143,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_KAT_LW_ROBB_2"
   },
   "AF_FIS_LW_ZIZA_2": {
     "names": {
@@ -50756,7 +52203,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_FIS_LW_ZIZA_2"
   },
   "AF_SPE_LW_ELDE_2": {
     "names": {
@@ -50818,7 +52266,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SPE_LW_ELDE_2"
   },
   "AF_SPE_LW_AILN_2": {
     "names": {
@@ -50880,7 +52329,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SPE_LW_AILN_2"
   },
   "AF_ROD_LW_MDNA_2": {
     "names": {
@@ -50937,7 +52387,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50946,7 +52397,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_LW_MDNA_2"
   },
   "AF_ROD_LW_AYKA_2": {
     "names": {
@@ -51003,7 +52455,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51012,7 +52465,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_LW_AYKA_2"
   },
   "AF_MAC_LW_MACR_2": {
     "names": {
@@ -51072,7 +52526,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_MAC_LW_MACR_2"
   },
   "AF_LW_SHI_001": {
     "names": {
@@ -51109,7 +52564,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SHI_001"
   },
   "AF_GUN_LW_FDRC_2": {
     "names": {
@@ -51153,7 +52609,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51162,7 +52619,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_GUN_LW_FDRC_2"
   },
   "AF_BSW_LW_RAMD_01_2": {
     "names": {
@@ -51216,7 +52674,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BSW_LW_RAMD_01_2"
   },
   "AF_AXE_LW_YERM_2": {
     "names": {
@@ -51267,7 +52726,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_AXE_LW_YERM_2"
   },
   "AF_LW_SHI_002": {
     "names": {
@@ -51304,7 +52764,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SHI_002"
   },
   "AF_SPE_LW_MACR_01_2": {
     "names": {
@@ -51366,7 +52827,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SPE_LW_MACR_01_2"
   },
   "AF_SWO_FFT_RAMZ_2": {
     "names": {
@@ -51432,7 +52894,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51441,7 +52904,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_FFT_RAMZ_2"
   },
   "AF_SWO_FFT_ORND_2": {
     "names": {
@@ -51507,7 +52971,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51516,7 +52981,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_FFT_ORND_2"
   },
   "AF_SWO_LW_WHIS_2": {
     "names": {
@@ -51571,7 +53037,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_WHIS_2"
   },
   "AF_NKN_LW_KTON_2": {
     "names": {
@@ -51629,7 +53096,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_NKN_LW_KTON_2"
   },
   "AF_SWO_LW_MRND_2": {
     "names": {
@@ -51695,7 +53163,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51704,7 +53173,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_MRND_2"
   },
   "AF_GUN_LW_LUCA_2": {
     "names": {
@@ -51756,7 +53226,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51765,7 +53236,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_GUN_LW_LUCA_2"
   },
   "AF_SPE_LW_VKTR_2": {
     "names": {
@@ -51827,7 +53299,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SPE_LW_VKTR_2"
   },
   "AF_DAG_LW_VNLA_2": {
     "names": {
@@ -51885,7 +53358,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_DAG_LW_VNLA_2"
   },
   "AF_BSW_LW_RAIN_2": {
     "names": {
@@ -51947,7 +53421,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BSW_LW_RAIN_2"
   },
   "AF_SWO_FF1_WROL_2": {
     "names": {
@@ -52013,7 +53488,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52022,7 +53498,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_FF1_WROL_2"
   },
   "AF_ROD_LW_QILF_2": {
     "names": {
@@ -52079,7 +53556,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52088,7 +53566,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_LW_QILF_2"
   },
   "AF_BSW_LW_ORDR_2": {
     "names": {
@@ -52150,7 +53629,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BSW_LW_ORDR_2"
   },
   "AF_LW_SHI_003": {
     "names": {
@@ -52187,7 +53667,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SHI_003"
   },
   "AF_SWO_FFT_AGRA_2": {
     "names": {
@@ -52253,7 +53734,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52262,7 +53744,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_FFT_AGRA_2"
   },
   "AF_SWO_FFT_DELT_2": {
     "names": {
@@ -52328,7 +53811,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52337,7 +53821,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_FFT_DELT_2"
   },
   "AF_MAC_LW_IRDL_2": {
     "names": {
@@ -52399,7 +53884,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_MAC_LW_IRDL_2"
   },
   "AF_BSW_LW_STRN_01_2": {
     "names": {
@@ -52461,7 +53947,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BSW_LW_STRN_01_2"
   },
   "AF_SPE_LW_GRSR_2": {
     "names": {
@@ -52523,7 +54010,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SPE_LW_GRSR_2"
   },
   "AF_KAT_LW_LSWL_2": {
     "names": {
@@ -52583,7 +54071,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_KAT_LW_LSWL_2"
   },
   "AF_ROD_LW_SCAL_2": {
     "names": {
@@ -52640,7 +54129,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52649,7 +54139,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_LW_SCAL_2"
   },
   "AF_SWO_LW_HWLT_2": {
     "names": {
@@ -52715,7 +54206,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52724,13 +54216,14 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_HWLT_2"
   },
   "AF_BOW_LW_LILS_01_2": {
     "names": {
-      "en": "朱夏嵐"
+      "en": "朱夏嵐 - Summerstorm"
     },
-    "slug": "shuka-arashi",
+    "slug": "summerstorm",
     "stats": {
       "HP": {
         "min": 4,
@@ -52784,7 +54277,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BOW_LW_LILS_01_2"
   },
   "AF_LW_SHI_004": {
     "names": {
@@ -52821,7 +54315,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SHI_004"
   },
   "AF_SWO_FF4_CECL_2": {
     "names": {
@@ -52887,7 +54382,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52896,7 +54392,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_FF4_CECL_2"
   },
   "AF_BOW_FF4_ROSA_2": {
     "names": {
@@ -52956,7 +54453,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BOW_FF4_ROSA_2"
   },
   "AF_SPE_FF4_KAIN_2": {
     "names": {
@@ -53018,7 +54516,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SPE_FF4_KAIN_2"
   },
   "AF_ROD_FF4_GLBZ_2": {
     "names": {
@@ -53075,7 +54574,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53084,13 +54584,14 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_FF4_GLBZ_2"
   },
   "AF_MAC_LW_KTON_01_2": {
     "names": {
-      "en": "さざなみの棍"
+      "en": "さざなみの棍 - Rippling Bludgeon"
     },
-    "slug": "sazanami-no-kon",
+    "slug": "rippling-bludgeon",
     "stats": {
       "HP": {
         "min": 4,
@@ -53144,7 +54645,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_MAC_LW_KTON_01_2"
   },
   "AF_BOW_LW_NIVL_2": {
     "names": {
@@ -53204,7 +54706,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BOW_LW_NIVL_2"
   },
   "AF_ROD_LW_SAKR_2": {
     "names": {
@@ -53261,7 +54764,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53270,7 +54774,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_LW_SAKR_2"
   },
   "AF_MAC_LW_RYER_01_2": {
     "names": {
@@ -53330,7 +54835,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_MAC_LW_RYER_01_2"
   },
   "AF_FIS_LW_RARD_2": {
     "names": {
@@ -53389,7 +54895,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_FIS_LW_RARD_2"
   },
   "AF_SWO_LW_RIRY_01_2": {
     "names": {
@@ -53455,7 +54962,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53464,7 +54972,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_RIRY_01_2"
   },
   "AF_GLO_LW_GABL_2": {
     "names": {
@@ -53521,7 +55030,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_GLO_LW_GABL_2"
   },
   "AF_BSW_LW_ELSR_2": {
     "names": {
@@ -53583,7 +55093,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BSW_LW_ELSR_2"
   },
   "AF_SWO_FF10_TIDU_2": {
     "names": {
@@ -53649,7 +55160,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53658,7 +55170,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_FF10_TIDU_2"
   },
   "AF_ROD_FF10_YUNA_2": {
     "names": {
@@ -53715,7 +55228,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53724,7 +55238,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_FF10_YUNA_2"
   },
   "AF_BSW_FF10_ARON_2": {
     "names": {
@@ -53786,7 +55301,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BSW_FF10_ARON_2"
   },
   "AF_FIS_LW_VNLA_01_2": {
     "names": {
@@ -53845,7 +55361,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_FIS_LW_VNLA_01_2"
   },
   "AF_BOW_LW_VKTR_01_2": {
     "names": {
@@ -53905,7 +55422,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BOW_LW_VKTR_01_2"
   },
   "AF_KAT_NIER_N2TB_2": {
     "names": {
@@ -53965,7 +55483,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_KAT_NIER_N2TB_2"
   },
   "AF_SPE_NIER_N9TS_2": {
     "names": {
@@ -54027,7 +55546,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SPE_NIER_N9TS_2"
   },
   "AF_SWO_LW_MONT_01_2": {
     "names": {
@@ -54093,7 +55613,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54102,7 +55623,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_MONT_01_2"
   },
   "AF_ROD_LW_MONT_01_2": {
     "names": {
@@ -54159,7 +55681,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54168,7 +55691,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_LW_MONT_01_2"
   },
   "AF_BOK_LW_RYEL_2": {
     "names": {
@@ -54225,7 +55749,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BOK_LW_RYEL_2"
   },
   "AF_ROD_LW_HLNA_01_2": {
     "names": {
@@ -54282,7 +55807,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54291,7 +55817,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_LW_HLNA_01_2"
   },
   "AF_GLO_LW_THLA_01_2": {
     "names": {
@@ -54348,7 +55875,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_GLO_LW_THLA_01_2"
   },
   "AF_SWO_LW_DEAN_2": {
     "names": {
@@ -54414,7 +55942,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54423,7 +55952,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_DEAN_2"
   },
   "AF_MAC_LW_MORE_2": {
     "names": {
@@ -54483,7 +56013,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_MAC_LW_MORE_2"
   },
   "AF_SWO_LW_CRLT_2": {
     "names": {
@@ -54549,7 +56080,8 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN",
-      "JB_LW_CRLT"
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54558,7 +56090,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_SWO_LW_CRLT_2"
   },
   "AF_LW_SHI_005": {
     "names": {
@@ -54595,7 +56128,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_LW_SHI_005"
   },
   "AF_BSW_LW_VLRC_2": {
     "names": {
@@ -54657,7 +56191,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BSW_LW_VLRC_2"
   },
   "AF_BSW_LW_CLUD_2": {
     "names": {
@@ -54719,7 +56254,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_BSW_LW_CLUD_2"
   },
   "AF_ROD_LW_AERT_2": {
     "names": {
@@ -54776,7 +56312,8 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ",
-      "JB_FF7_AERT"
+      "JB_FF7_AERT",
+      "JB_LW_SCR_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54785,7 +56322,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_ROD_LW_AERT_2"
   },
   "AF_MAC_LW_GRSR_01_2": {
     "names": {
@@ -54845,7 +56383,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/01/1970"
+    "releaseDate": "01/01/1970",
+    "rType": "AF_MAC_LW_GRSR_01_2"
   },
   "AF_GUN_LW_JEDN_2": {
     "names": {
@@ -54889,7 +56428,8 @@
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
       "JB_FF7_BART",
-      "JB_LW_JEDN"
+      "JB_LW_JEDN",
+      "JB_FF15_PRMP"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54898,7 +56438,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "01/06/2021"
+    "releaseDate": "01/06/2021",
+    "rType": "AF_GUN_LW_JEDN_2"
   },
   "AF_KAT_LW_VLUC_2": {
     "names": {
@@ -54958,7 +56499,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "16/06/2021"
+    "releaseDate": "16/06/2021",
+    "rType": "AF_KAT_LW_VLUC_2"
   },
   "AF_SPE_LW_OBRN_2": {
     "names": {
@@ -55020,7 +56562,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "30/06/2021"
+    "releaseDate": "30/06/2021",
+    "rType": "AF_SPE_LW_OBRN_2"
   },
   "AF_AXE_LW_QILF_01_2": {
     "names": {
@@ -55071,7 +56614,8 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/07/2021"
+    "releaseDate": "14/07/2021",
+    "rType": "AF_AXE_LW_QILF_01_2"
   },
   "AF_NKN_LW_FALM_2": {
     "names": {
@@ -55128,7 +56672,162 @@
     "acquisition": {
       "type": "Unknown"
     },
-    "releaseDate": "14/07/2021"
+    "releaseDate": "14/07/2021",
+    "rType": "AF_NKN_LW_FALM_2"
+  },
+  "AF_SWO_FF15_NCTS_2": {
+    "names": {
+      "en": "ノクティス専用武器"
+    },
+    "slug": "noctis-senyou-buki",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 17
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_FF15_NCTS_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "ff15wpn_swo_000",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF10_TIDU",
+      "JB_LW_MONT_01",
+      "JB_LW_DEAN",
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "21/07/2021",
+    "rType": "AF_SWO_FF15_NCTS_2"
+  },
+  "AF_GUN_FF15_PRMP_2": {
+    "names": {
+      "en": "プロンプト専用武器"
+    },
+    "slug": "prompto-senyou-buki",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 17
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_GUN_FF15_PRMP_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "ff15wpn_gun_000",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF10_TIDU",
+      "JB_LW_MONT_01",
+      "JB_LW_DEAN",
+      "JB_LW_CRLT",
+      "JB_FF15_NCTS"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "21/07/2021",
+    "rType": "AF_GUN_FF15_PRMP_2"
   },
   "AF_ACC_LW_FRVA_1": {
     "names": {
@@ -55264,7 +56963,8 @@
       "type": "tmr",
       "unitId": "UN_LW_P_FRVA"
     },
-    "releaseDate": "01/07/2020"
+    "releaseDate": "01/07/2020",
+    "rType": "AF_ACC_LW_FRVA_1"
   },
   "AF_CLT_LW_ZZAN_01_1": {
     "names": {
@@ -55379,6 +57079,7 @@
       "type": "tmr",
       "unitId": "UN_LW_P_ZZAN_01"
     },
-    "releaseDate": "30/06/2021"
+    "releaseDate": "30/06/2021",
+    "rType": "AF_CLT_LW_ZZAN_01_1"
   }
 }

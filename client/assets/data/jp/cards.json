@@ -3176,7 +3176,8 @@
               "JB_LW_SAKR",
               "JB_FF10_YUNA",
               "JB_LW_WIZ",
-              "JB_FF7_AERT"
+              "JB_FF7_AERT",
+              "JB_LW_SCR_FIRE"
             ]
           }
         ]
@@ -3196,7 +3197,8 @@
               "JB_LW_SAKR",
               "JB_FF10_YUNA",
               "JB_LW_WIZ",
-              "JB_FF7_AERT"
+              "JB_FF7_AERT",
+              "JB_LW_SCR_FIRE"
             ]
           }
         ]
@@ -3418,7 +3420,8 @@
               "JB_FF10_TIDU",
               "JB_LW_MONT_01",
               "JB_LW_DEAN",
-              "JB_LW_CRLT"
+              "JB_LW_CRLT",
+              "JB_FF15_NCTS"
             ]
           }
         ]
@@ -3448,7 +3451,8 @@
               "JB_FF10_TIDU",
               "JB_LW_MONT_01",
               "JB_LW_DEAN",
-              "JB_LW_CRLT"
+              "JB_LW_CRLT",
+              "JB_FF15_NCTS"
             ]
           }
         ]
@@ -3565,7 +3569,8 @@
               "JB_LW_SAKR",
               "JB_FF10_YUNA",
               "JB_LW_WIZ",
-              "JB_FF7_AERT"
+              "JB_FF7_AERT",
+              "JB_LW_SCR_FIRE"
             ]
           }
         ]
@@ -3585,7 +3590,8 @@
               "JB_LW_SAKR",
               "JB_FF10_YUNA",
               "JB_LW_WIZ",
-              "JB_FF7_AERT"
+              "JB_FF7_AERT",
+              "JB_LW_SCR_FIRE"
             ]
           }
         ]
@@ -6345,6 +6351,118 @@
         "classic": "SK_VC_LW_EFKS_P",
         "awake": "SK_VC_LW_EFKS_PAW",
         "lvmax": "SK_VC_LW_EFKS_PMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_FF15_MV1": {
+    "dataId": "VC_FF15_MV1",
+    "names": {
+      "en": "救星の誓い"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 29,
+        "max": 224
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 34,
+        "max": 132
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 30,
+        "max": 116
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ff15mv1",
+    "releaseDate": "21/07/2021",
+    "slug": "sukui-hoshi-no-chikai",
+    "partyBuffs": [
+      {
+        "classic": "SK_VC_FF15_MV1_GS",
+        "awake": "SK_VC_FF15_MV1_GS_AW",
+        "lvmax": "SK_VC_FF15_MV1_GSMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_VC_FF15_MV1_GS_2",
+        "awake": "SK_VC_FF15_MV1_GS_AW_2",
+        "lvmax": "SK_VC_FF15_MV1_GSMAX_2",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": "SK_VC_FF15_MV1_P",
+        "awake": "SK_VC_FF15_MV1_PAW",
+        "lvmax": "SK_VC_FF15_MV1_PMAX",
         "cond": [
           {
             "type": "elem",

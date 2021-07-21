@@ -37332,6 +37332,241 @@
     "slug": "sanctum-monk",
     "attack": "SK_LW_MNK_ATK"
   },
+  "UN_LW_E_CBCL": {
+    "dataId": "UN_LW_E_CBCL",
+    "names": {
+      "en": "Carbuncle",
+      "fr": "Carbuncle",
+      "de": "Karfunkel",
+      "es": "Rubí",
+      "ko": "카벙클",
+      "zh": "卡邦庫爾"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 199,
+        "max": 1479
+      },
+      "TP": {
+        "min": 32,
+        "max": 56
+      },
+      "AP": {
+        "min": 38,
+        "max": 58
+      },
+      "ATK": {
+        "min": 40,
+        "max": 97
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 39,
+        "max": 95
+      },
+      "DEX": {
+        "min": 92,
+        "max": 230
+      },
+      "AGI": {
+        "min": 38,
+        "max": 67
+      },
+      "LUCK": {
+        "min": 92,
+        "max": 220
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "light",
+    "image": "lapscbcl",
+    "species": "netherBeast",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "carbuncle",
+    "attack": "SK_CBCL_ATK"
+  },
+  "UN_LW_E_LAMA_02": {
+    "dataId": "UN_LW_E_LAMA_02",
+    "names": {
+      "en": "Lamia Matriarch",
+      "fr": "Mère Lamia",
+      "de": "Lamia-Mutter",
+      "es": "Lamia matriarca",
+      "ko": "마더 라미아",
+      "zh": "蛇身母后"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 296,
+        "max": 1966
+      },
+      "TP": {
+        "min": 57,
+        "max": 90
+      },
+      "AP": {
+        "min": 69,
+        "max": 84
+      },
+      "ATK": {
+        "min": 111,
+        "max": 323
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 32,
+        "max": 55
+      },
+      "DEX": {
+        "min": 76,
+        "max": 208
+      },
+      "AGI": {
+        "min": 32,
+        "max": 66
+      },
+      "LUCK": {
+        "min": 79,
+        "max": 206
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {
+        "min": -50,
+        "max": -50
+      },
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2
+      },
+      "MAX_LV": {}
+    },
+    "element": "fire",
+    "image": "lapslama_02",
+    "species": "demon",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "lamia-matriarch",
+    "attack": "SK_LAMA_ATK"
+  },
   "UN_LW_E_OGRE_02": {
     "dataId": "UN_LW_E_OGRE_02",
     "names": {
@@ -39050,134 +39285,6 @@
     "type": "enemy",
     "slug": "iron-giant",
     "attack": "SK_IGNT_ATK"
-  },
-  "UN_LW_E_LAMA_02": {
-    "dataId": "UN_LW_E_LAMA_02",
-    "names": {
-      "en": "Lamia Matriarch",
-      "fr": "Mère Lamia",
-      "de": "Lamia-Mutter",
-      "es": "Lamia matriarca",
-      "ko": "마더 라미아",
-      "zh": "蛇身母后"
-    },
-    "rarity": "N",
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 296,
-        "max": 1966
-      },
-      "TP": {
-        "min": 57,
-        "max": 90
-      },
-      "AP": {
-        "min": 69,
-        "max": 84
-      },
-      "ATK": {
-        "min": 111,
-        "max": 323
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 32,
-        "max": 55
-      },
-      "DEX": {
-        "min": 76,
-        "max": 208
-      },
-      "AGI": {
-        "min": 32,
-        "max": 66
-      },
-      "LUCK": {
-        "min": 79,
-        "max": 206
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {
-        "min": 25,
-        "max": 25
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 25,
-        "max": 25
-      },
-      "MAGIC_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {
-        "min": -50,
-        "max": -50
-      },
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "TOAD_RES": {
-        "min": 100,
-        "max": 100
-      },
-      "CHARM_RES": {
-        "min": 25,
-        "max": 25
-      },
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3
-      },
-      "JUMP": {
-        "min": 2,
-        "max": 2
-      },
-      "MAX_LV": {}
-    },
-    "element": "fire",
-    "image": "lapslama_02",
-    "species": "demon",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "lamia-matriarch",
-    "attack": "SK_LAMA_ATK"
   },
   "UN_LW_E_SO_00_DRG": {
     "dataId": "UN_LW_E_SO_00_DRG",

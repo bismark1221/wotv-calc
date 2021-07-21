@@ -9360,6 +9360,32 @@
     "type": "unit_shard",
     "image": "it_pi_lw_cwel"
   },
+  "IT_PI_LW_LILS_01": {
+    "dataId": "IT_PI_LW_LILS_01",
+    "names": {
+      "en": "Lilyth (Summer) Unit Shard",
+      "fr": "Fragment d'unité de Lilyth (Été)",
+      "de": "„Lilith (Sommer)“-Einheitenfragment",
+      "es": "Fragmento de Lilit veraniega",
+      "ko": "릴리스(여름)의 조각",
+      "zh": "莉莉絲（夏日）的碎片"
+    },
+    "type": "unit_shard",
+    "image": "it_pi_lw_lils_01"
+  },
+  "IT_PI_LW_KTON_01": {
+    "dataId": "IT_PI_LW_KTON_01",
+    "names": {
+      "en": "Kitone (Summer) Unit Shard",
+      "fr": "Fragment d'unité de Kitone (Été)",
+      "de": "„Kiton (Sommer)“-Einheitenfragment",
+      "es": "Fragmento de Kiton veraniega",
+      "ko": "키튼(여름)의 조각",
+      "zh": "基頓（夏日）的碎片"
+    },
+    "type": "unit_shard",
+    "image": "it_pi_lw_kton_01"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -10270,19 +10296,6 @@
     "type": "exjob_orb",
     "image": "it_sp_lw_mral"
   },
-  "IT_SP_LW_LILS_01": {
-    "dataId": "IT_SP_LW_LILS_01",
-    "names": {
-      "en": "Lilyth (Summer) Mindsphere",
-      "fr": "Sphère spirituelle de Lilyth (Été)",
-      "de": "„Lilith (Sommer)“-Geistesperle",
-      "es": "Esfera espiritual de Lilit veraniega",
-      "ko": "릴리스(여름)의 마음 구슬",
-      "zh": "莉莉絲（夏日）的思珠"
-    },
-    "type": "exjob_orb",
-    "image": "it_sp_lw_lils_01"
-  },
   "IT_SP_LW_HWLT": {
     "dataId": "IT_SP_LW_HWLT",
     "names": {
@@ -10334,19 +10347,6 @@
     },
     "type": "exjob_orb",
     "image": "it_sp_lw_titu"
-  },
-  "IT_SP_LW_KTON_01": {
-    "dataId": "IT_SP_LW_KTON_01",
-    "names": {
-      "en": "Kitone (Summer) Mindsphere",
-      "fr": "Sphère spirituelle de Kitone (Été)",
-      "de": "„Kiton (Sommer)“-Geistesperle",
-      "es": "Esfera espiritual de Kiton veraniega",
-      "ko": "키튼(여름)의 마음 구슬",
-      "zh": "基頓（夏日）的思珠"
-    },
-    "type": "exjob_orb",
-    "image": "it_sp_lw_kton_01"
   },
   "IT_SP_LW_NIVL": {
     "dataId": "IT_SP_LW_NIVL",
@@ -10777,6 +10777,19 @@
     },
     "type": "exjob_orb",
     "image": "it_sp_lw_cwel"
+  },
+  "IT_SP_LW_SUMM_UR": {
+    "dataId": "IT_SP_LW_SUMM_UR",
+    "names": {
+      "en": "[Summer] UR Unit Mindsphere",
+      "fr": "[Été] Sphère spirituelle d'unité UR",
+      "de": "Sommer-[UR]-Einheit-Geistesperle",
+      "es": "[Verano] Esfera espiritual de unidad UR",
+      "ko": "[여름] 유닛의 마음 구슬(UR)",
+      "zh": "【夏日】兵員的思珠（UR）"
+    },
+    "type": "exjob_orb",
+    "image": "it_sp_lw_summ_ur"
   },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
@@ -15343,6 +15356,20 @@
     "icon": "IT_EC_MEDAL_SP2021",
     "image": "it_ec_medal_sp2021"
   },
+  "IT_EC_MEDAL_SU2021": {
+    "dataId": "IT_EC_MEDAL_SU2021",
+    "names": {
+      "en": "Summer 2021 Medal A",
+      "fr": "Médaille du Spécial été 2021 [A]",
+      "de": "Sommermedaille 2021 A",
+      "es": "Medalla de verano 2021 (A)",
+      "ko": "2021 여름 기념 메달 A",
+      "zh": "2021夏日獎牌A"
+    },
+    "type": "medal",
+    "icon": "IT_EC_MEDAL_SU2021",
+    "image": "it_ec_medal_su2021"
+  },
   "IT_EC_FF10_2_A": {
     "dataId": "IT_EC_FF10_2_A",
     "names": {
@@ -16047,6 +16074,20 @@
       "es": "Tícket seleccionador de 120 fragmentos de unidad de NieR",
       "ko": "NieR 콜라보 유닛의 조각 × 120 선택 소환 티켓",
       "zh": "NieR聯動兵員碎片×120選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_PI_GL_37": {
+    "dataId": "IT_US_SE_PI_GL_37",
+    "names": {
+      "en": "Select Summer Unit Shard x120 Summon Ticket",
+      "fr": "Ticket sélectionneur de 120 fragments d'unité estivale",
+      "de": "„Auswählbares Sommer-Einheitenfragment x120“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 120 fragmentos de unidad de verano",
+      "ko": "여름 유닛의 조각×120 선택 소환 티켓",
+      "zh": "夏日兵員碎片×120選擇召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET",
@@ -16850,6 +16891,76 @@
     "icon": "IT_US_SE_ITEM_TICKET",
     "image": "it_us_se_item_ticket"
   },
+  "IT_US_SE_JB_05_GL_20": {
+    "dataId": "IT_US_SE_JB_05_GL_20",
+    "names": {
+      "en": "[Summer 2021 Part I] Select Spinel x70 Summon Ticket",
+      "fr": "[Spécial été 2021 - Partie I] Ticket sélectionneur de 70 spinelles",
+      "de": "[Sommer 2021 Teil I] „Auswählbarer Spinell x70“-Beschwörungsticket",
+      "es": "[Verano 2021 I] Tícket seleccionador de 70 espinelas",
+      "ko": "[2021 여름 기념 제1탄] 스피넬×70 선택 소환 티켓",
+      "zh": "【2021夏日第1階段】尖晶石×70選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_JB_04_GL_16": {
+    "dataId": "IT_US_SE_JB_04_GL_16",
+    "names": {
+      "en": "[Summer 2021 Part I] Select Citrine x30 Summon Ticket",
+      "fr": "[Spécial été 2021 - Partie I] Ticket sélectionneur de 30 citrines",
+      "de": "[Sommer 2021 Teil I] „Auswählbarer Citrin x30“-Beschwörungsticket",
+      "es": "[Verano 2021 I] Tícket seleccionador de 30 citrinos",
+      "ko": "[2021 여름 기념 제1탄] 시트린×30 선택 소환 티켓",
+      "zh": "【2021夏日第1階段】黃水晶×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_JB_03_GL_15": {
+    "dataId": "IT_US_SE_JB_03_GL_15",
+    "names": {
+      "en": "[Summer 2021 Part I] Select Charoite x30 Summon Ticket",
+      "fr": "[Spécial été 2021 - Partie I] Ticket sélectionneur de 30 charoïtes",
+      "de": "[Sommer 2021 Teil I] „Auswählbarer Charoit x30“-Beschwörungsticket",
+      "es": "[Verano 2021 I] Tícket seleccionador de 30 charoítas",
+      "ko": "[2021 여름 기념 제1탄] 차로아이트×30 선택 소환 티켓",
+      "zh": "【2021夏日第1階段】紫龍晶×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_JB_02_GL_13": {
+    "dataId": "IT_US_SE_JB_02_GL_13",
+    "names": {
+      "en": "[Summer 2021 Part I] Select Azurite x30 Summon Ticket",
+      "fr": "[Spécial été 2021 - Partie I] Ticket sélectionneur de 30 azurites",
+      "de": "[Sommer 2021 Teil I] „Auswählbarer Azurit x30“-Beschwörungsticket",
+      "es": "[Verano 2021 I] Tícket seleccionador de 30 azuritas",
+      "ko": "[2021 여름 기념 제1탄] 아즈라이트×30 선택 소환 티켓",
+      "zh": "【2021夏日第1階段】藍銅礦×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_JB_01_GL_13": {
+    "dataId": "IT_US_SE_JB_01_GL_13",
+    "names": {
+      "en": "[Summer 2021 Part I] Select Jadeite x15 Summon Ticket",
+      "fr": "[Spécial été 2021 - Partie I] Ticket sélectionneur de 15 jades",
+      "de": "[Sommer 2021 Teil I] „Auswählbarer Jadeit x15“-Beschwörungsticket",
+      "es": "[Verano 2021 I] Tícket seleccionador de 15 jadeítas",
+      "ko": "[2021 여름 기념 제1탄] 제이다이트×15 선택 소환 티켓",
+      "zh": "【2021夏日第1階段】翡翠硬玉×15選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
   "IT_US_SE_PI_COM_GL_04": {
     "dataId": "IT_US_SE_PI_COM_GL_04",
     "names": {
@@ -16866,6 +16977,20 @@
   },
   "IT_US_SE_UR_U_BG_01": {
     "dataId": "IT_US_SE_UR_U_BG_01",
+    "names": {
+      "en": "Select UR Unit Summon Ticket",
+      "fr": "Ticket sélectionneur d'unité UR",
+      "de": "„Auswählbare [UR]-Einheit“-Beschwörungsticket",
+      "es": "Tícket seleccionador de unidad UR",
+      "ko": "UR 유닛 선택 소환 티켓",
+      "zh": "UR兵員選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_SE_UR_U_BG_GL01": {
+    "dataId": "IT_US_SE_UR_U_BG_GL01",
     "names": {
       "en": "Select UR Unit Summon Ticket",
       "fr": "Ticket sélectionneur d'unité UR",
@@ -23428,6 +23553,20 @@
     "icon": "IT_US_SE_ITEM_TICKET",
     "image": "it_us_se_item_ticket"
   },
+  "IT_US_SE_JBEX_EM_04": {
+    "dataId": "IT_US_SE_JBEX_EM_04",
+    "names": {
+      "en": "Select Alcryst Statue x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 sculptures d'alcrist",
+      "de": "„Auswählbare Alkriststatue x100“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 100 estatuas de alcrists",
+      "ko": "휘석상 × 100 선택 소환 티켓",
+      "zh": "輝石像×100選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
   "IT_US_SE_JBEX_AF_01": {
     "dataId": "IT_US_SE_JBEX_AF_01",
     "names": {
@@ -23507,6 +23646,20 @@
       "es": "Tícket seleccionador de 300 losas de armas",
       "ko": "낙인석×300 선택 소환 티켓",
       "zh": "焦印石×300選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET",
+    "image": "it_us_se_item_ticket"
+  },
+  "IT_US_GL_SE_JBEX_AF_GL01": {
+    "dataId": "IT_US_GL_SE_JBEX_AF_GL01",
+    "names": {
+      "en": "Select Branded Tablet x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 stèles",
+      "de": "„Auswählbare Symboltafel x50“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 50 losas de armas",
+      "ko": "낙인석×50 선택 소환 티켓",
+      "zh": "焦印石×50選擇召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET",

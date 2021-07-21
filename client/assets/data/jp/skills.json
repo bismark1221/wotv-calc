@@ -61405,6 +61405,2135 @@
       "neutral"
     ]
   },
+  "SK_LB_FF15_NCTS": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": -10,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": -10,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "STRIKE_RES",
+        "minValue": -10,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_FF15_NCTS",
+    "type": "limit",
+    "names": {
+      "en": "ファントムラッシュ"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_NCTS_ATK": {
+    "effects": [],
+    "dataId": "SK_FF15_NCTS_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_MA_FF15_NCTS": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "EARTH_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "EARTH_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF15_NCTS",
+    "type": "masterSkill",
+    "names": {
+      "en": "マスターアビリティ"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_FF15_NCTS_S_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": -20,
+        "maxValue": -38,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": -20,
+        "maxValue": -38,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_NCTS_S_1",
+    "type": "skill",
+    "names": {
+      "en": "ブレードスロー"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 14
+    },
+    "count": 6,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_NCTS_S_2": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "calcType": "apply",
+        "rate": 200,
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_NCTS_S_2",
+    "type": "skill",
+    "names": {
+      "en": "王の力"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_FF15_NCTS_P_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 24,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "ALL_ELEMENTS_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF15_NCTS_P_1",
+    "type": "support",
+    "names": {
+      "en": "ルシスの王位後継者"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_FF15_NCTS_R_1": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_PHYSIC",
+        "minValue": 15,
+        "maxValue": 45,
+        "calcType": "percent",
+        "turnType": "TURNS",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_NCTS_R_1",
+    "type": "counter",
+    "names": {
+      "en": "ジャストガード"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "counter": {
+      "minValue": 10,
+      "maxValue": 20,
+      "reactDamage": "PHYSIC",
+      "calcType": "percent"
+    }
+  },
+  "SK_FF15_NCTS_S_4": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_PHYSIC",
+        "minValue": 500,
+        "maxValue": 1500,
+        "calcType": "hp",
+        "turnType": "TURNS",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MOVE_UNIT",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "AGI",
+        "minValue": -10,
+        "maxValue": -20,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_NCTS_S_4",
+    "type": "skill",
+    "names": {
+      "en": "シフトバッシュ"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 22
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 1,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_NCTS_S_3": {
+    "effects": [],
+    "dataId": "SK_FF15_NCTS_S_3",
+    "type": "skill",
+    "names": {
+      "en": "トライブレード"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 18
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "combo": {
+      "num": 3,
+      "rate": 77
+    },
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_NCTS_M_1": {
+    "effects": [
+      {
+        "type": "MOVE_UNIT",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "DEF",
+        "minValue": -10,
+        "maxValue": -30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_FF15_NCTS_M_1",
+    "type": "skill",
+    "names": {
+      "en": "シフトブレイク"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 21
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 1,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_NCTS_M_2": {
+    "effects": [
+      {
+        "type": "CT",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "decrease",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_NCTS_M_2",
+    "type": "skill",
+    "names": {
+      "en": "リライアフォール"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 28
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "hit": 100,
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_NCTS_M_3": {
+    "effects": [
+      {
+        "type": "MOVE_UNIT",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "SPR",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PROTECT_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "apply",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_NCTS_M_3",
+    "type": "skill",
+    "names": {
+      "en": "マップシフト"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 36
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_FF15_EC_NCTS_C_01": {
+    "effects": [],
+    "dataId": "SK_FF15_EC_NCTS_C_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "シフトブレイク強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_FF15_EC_NCTS_C_02": {
+    "effects": [],
+    "dataId": "SK_FF15_EC_NCTS_C_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "王の力強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_FF15_EC_NCTS_A_01": {
+    "effects": [
+      {
+        "type": "BREAK_BARRIER_PHYSIC",
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "MOVE_UNIT",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_EC_NCTS_A_01",
+    "type": "skill",
+    "names": {
+      "en": "シフトアサルト"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 21
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "m": 1,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_EC_NCTS_C_01B": {
+    "effects": [
+      {
+        "type": "MOVE_UNIT",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "DEF",
+        "minValue": -10,
+        "maxValue": -30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "REDUCE_COUNTER_CHANCE",
+        "minValue": 50,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_FF15_EC_NCTS_C_01B",
+    "type": "skill",
+    "names": {
+      "en": "シフトブレイク改"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 21
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 1,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_EC_NCTS_C_02B": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "calcType": "apply",
+        "rate": 200,
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_EC_NCTS_C_02B",
+    "type": "skill",
+    "names": {
+      "en": "真王の力"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
+  "SK_LB_FF15_PRMP": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 15,
+        "maxValue": 25,
+        "calcType": "unknow",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_FF15_PRMP",
+    "type": "limit",
+    "names": {
+      "en": "トリガーハッピー"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "combo": {
+      "num": 3,
+      "rate": 77
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_PRMP_ATK": {
+    "effects": [],
+    "dataId": "SK_FF15_PRMP_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_MA_FF15_PRMP": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "DARK_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "DARK_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "DARK_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF15_PRMP",
+    "type": "masterSkill",
+    "names": {
+      "en": "マスターアビリティ"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_FF15_PRMP_S_1": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_S_1",
+    "type": "skill",
+    "names": {
+      "en": "パライズバレット"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 14
+    },
+    "count": 6,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_PRMP_S_2": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_S_2",
+    "type": "skill",
+    "names": {
+      "en": "ファストアクション"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 22
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
+  "SK_FF15_PRMP_P_1": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "AGI",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_P_1",
+    "type": "support",
+    "names": {
+      "en": "アサルトカスタム"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_FF15_PRMP_P_2": {
+    "effects": [
+      {
+        "type": "RANGE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 16,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_P_2",
+    "type": "support",
+    "names": {
+      "en": "スナイプカスタム"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_FF15_PRMP_S_3": {
+    "effects": [],
+    "dataId": "SK_FF15_PRMP_S_3",
+    "type": "skill",
+    "names": {
+      "en": "コンダクター"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 26
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "knockback": {
+      "rate": 100,
+      "value": 1,
+      "dir": 1
+    },
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_PRMP_R_1": {
+    "effects": [
+      {
+        "type": "PHYSIC_EVADE",
+        "calcType": "apply",
+        "rate": 200,
+        "target": "self",
+        "timing": "SKILL_REACTION"
+      },
+      {
+        "type": "MAGIC_EVADE",
+        "calcType": "apply",
+        "rate": 200,
+        "target": "self",
+        "timing": "SKILL_REACTION"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_R_1",
+    "type": "counter",
+    "names": {
+      "en": "王都警護隊・回避術"
+    },
+    "target": "self",
+    "maxLevel": 20,
+    "based": "physic",
+    "counter": {
+      "minValue": 5,
+      "maxValue": 15,
+      "reactDamage": "ALL",
+      "calcType": "percent"
+    }
+  },
+  "SK_FF15_PRMP_S_4": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": -20,
+        "maxValue": -38,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": -20,
+        "maxValue": -38,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEF",
+        "minValue": -10,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": -10,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_S_4",
+    "type": "skill",
+    "names": {
+      "en": "スターシェル"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 5,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    }
+  },
+  "SK_FF15_PRMP_M_1": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_M_1",
+    "type": "skill",
+    "names": {
+      "en": "ペネトレイト"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 5,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "maths": [
+      {
+        "type": "EFFECT_CONDITION",
+        "formula": "AT_LEAST",
+        "condition": 1,
+        "value": 60,
+        "dst": "DAMAGE",
+        "effects": [
+          "POISON",
+          "BLIND",
+          "PARALYZE",
+          "SLOW",
+          "DARK"
+        ]
+      }
+    ],
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_PRMP_M_3": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "RANGE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_M_3",
+    "type": "skill",
+    "names": {
+      "en": "王都警護隊・狙撃術"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 34
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_FF15_PRMP_M_2": {
+    "effects": [
+      {
+        "type": "BLIND_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_M_2",
+    "type": "skill",
+    "names": {
+      "en": "ブラインバレット"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 28
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ARC_M_2_SUB": {
+    "effects": [
+      {
+        "type": "MASS_DISPEL",
+        "calcType": "buffs",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "HASTE"
+        ],
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ARC_M_2_SUB",
+    "type": "skill",
+    "names": {
+      "en": "デスペルスプレッド"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 40
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_PRMP_S_5": {
+    "effects": [
+      {
+        "type": "AP",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "decrease",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_PRMP_S_5",
+    "type": "skill",
+    "names": {
+      "en": "カーズバレット"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 20
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_EC_PRMP_C_01": {
+    "effects": [],
+    "dataId": "SK_FF15_EC_PRMP_C_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "ブラインバレット強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_FF15_EC_PRMP_C_02": {
+    "effects": [],
+    "dataId": "SK_FF15_EC_PRMP_C_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "スナイプカスタム強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_FF15_EC_PRMP_A_01": {
+    "effects": [
+      {
+        "type": "CT",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "decrease",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SLOW_ATK",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_EC_PRMP_A_01",
+    "type": "skill",
+    "names": {
+      "en": "ディレイブラスター"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 21
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 5,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_EC_PRMP_C_01B": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": -10,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "BLIND_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_FF15_EC_PRMP_C_01B",
+    "type": "skill",
+    "names": {
+      "en": "ダクネスバレット"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 28
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_FF15_EC_PRMP_C_02B": {
+    "effects": [
+      {
+        "type": "RANGE",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF15_EC_PRMP_C_02B",
+    "type": "support",
+    "names": {
+      "en": "スナイプカスタム＋"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_SCR_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_SCR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_MA_LW_MINU": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "FIRE_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "FIRE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "FIRE_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MINU",
+    "type": "masterSkill",
+    "names": {
+      "en": "マスターアビリティ"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_LW_SCR_S_1_INIT": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 90,
+        "maxValue": 120,
+        "calcType": "unknow",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_SCR_S_1_INIT",
+    "type": "skill",
+    "names": {
+      "en": "ケアル"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP",
+      "value": 12
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    }
+  },
+  "SK_LW_SCR_FIRE_S_2_INIT": {
+    "effects": [
+      {
+        "type": "FIRE_ATK",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEBUFF_RES",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -100,
+        "maxValue": -300,
+        "calcType": "fixe",
+        "turn": 4,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATTACK_ACTIVATION_TIME",
+        "minValue": -100,
+        "maxValue": -300,
+        "calcType": "fixe",
+        "turn": 4,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_SCR_FIRE_S_2_INIT",
+    "type": "skill",
+    "names": {
+      "en": "火援の教え"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    }
+  },
+  "SK_LW_SCR_P_1": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_ATK",
+        "minValue": -40,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SCR_P_1",
+    "type": "support",
+    "names": {
+      "en": "導師の心得"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_SCR_R_1": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 90,
+        "maxValue": 120,
+        "calcType": "unknow",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_SCR_R_1",
+    "type": "counter",
+    "names": {
+      "en": "反癒"
+    },
+    "target": "self",
+    "maxLevel": 20,
+    "based": "magic",
+    "counter": {
+      "minValue": 10,
+      "maxValue": 20,
+      "reactDamage": "ALL",
+      "calcType": "percent"
+    }
+  },
+  "SK_LW_SCR_S_4": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 90,
+        "maxValue": 120,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_SCR_S_4",
+    "type": "skill",
+    "names": {
+      "en": "ケアルラ"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "time": {
+      "minValue": 120,
+      "maxValue": 320
+    }
+  },
+  "SK_LW_SCR_S_3": {
+    "effects": [
+      {
+        "type": "AOE_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SLASH_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_SCR_S_3",
+    "type": "skill",
+    "names": {
+      "en": "払災の法"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 20
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "magic"
+  },
+  "SK_LW_SCR_M_1": {
+    "effects": [
+      {
+        "type": "SLEEP_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_SCR_M_1",
+    "type": "skill",
+    "names": {
+      "en": "スリプルエクスプロージョン"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 34
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "time": {
+      "minValue": 120,
+      "maxValue": 320
+    },
+    "damage": {
+      "minValue": 80,
+      "maxValue": 120,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_SCR_M_2": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "HEAL_POWER",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_SCR_M_2",
+    "type": "skill",
+    "names": {
+      "en": "身護の教え"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    }
+  },
+  "SK_LW_SCR_M_3": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "HP",
+        "minValue": 180,
+        "maxValue": 210,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_SCR_M_3",
+    "type": "skill",
+    "names": {
+      "en": "活癒の法"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic"
+  },
+  "SK_LW_EC_SCR_C_01": {
+    "effects": [],
+    "dataId": "SK_LW_EC_SCR_C_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "活癒の法強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_SCR_C_02": {
+    "effects": [],
+    "dataId": "SK_LW_EC_SCR_C_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "火援の教え強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_SCR_A_01": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_EC_SCR_A_01",
+    "type": "skill",
+    "names": {
+      "en": "アルテマ"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 40
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 5,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 120,
+      "maxValue": 200
+    },
+    "damage": {
+      "minValue": 120,
+      "maxValue": 160,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
+        "type": 0
+      }
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_EC_SCR_C_01B": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "HP",
+        "minValue": 180,
+        "maxValue": 210,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_SCR_C_01B",
+    "type": "skill",
+    "names": {
+      "en": "活癒の延法"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 3,
+      "l": 5,
+      "s": 1
+    },
+    "based": "magic"
+  },
+  "SK_LW_EC_SCR_C_02B": {
+    "effects": [
+      {
+        "type": "FIRE_ATK",
+        "minValue": 20,
+        "maxValue": 45,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEBUFF_RES",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -200,
+        "maxValue": -400,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATTACK_ACTIVATION_TIME",
+        "minValue": -200,
+        "maxValue": -400,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_SCR_C_02B",
+    "type": "skill",
+    "names": {
+      "en": "火援の伝授"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    }
+  },
   "SK_LW_CLR_ATK_100": {
     "effects": [],
     "dataId": "SK_LW_CLR_ATK_100",
@@ -71563,6 +73692,158 @@
       }
     ],
     "dataId": "BUFF_TITN_33",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_TITN_34": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_TITN_34",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_TITN_35": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_TITN_35",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_TITN_36": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_TITN_36",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_TITN_37": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_TITN_37",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_TITN_38": {
+    "effects": [
+      {
+        "type": "EARTH_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_TITN_38",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_TITN_39": {
+    "effects": [
+      {
+        "type": "EARTH_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_TITN_39",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_TITN_40": {
+    "effects": [
+      {
+        "type": "EARTH_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_TITN_40",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_TITN_41": {
+    "effects": [
+      {
+        "type": "EARTH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_TITN_41",
     "type": "buff",
     "count": null,
     "maxLevel": null,
@@ -108891,6 +111172,216 @@
     "target": "self",
     "maxLevel": 1
   },
+  "SK_VC_FF15_MV1_GS": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 15,
+        "maxValue": 30,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "DEX",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_FF15_MV1_GS",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 99
+  },
+  "SK_VC_FF15_MV1_GS_AW": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 1,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "DEX",
+        "minValue": 1,
+        "maxValue": 4,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_FF15_MV1_GS_AW",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 4
+  },
+  "SK_VC_FF15_MV1_GSMAX": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "DEX",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_FF15_MV1_GSMAX",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_VC_FF15_MV1_GS_2": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 0,
+        "maxValue": 0,
+        "calcType": "resistance",
+        "condition": "EARTH_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_FF15_MV1_GS_2",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 99
+  },
+  "SK_VC_FF15_MV1_GS_AW_2": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 0,
+        "maxValue": 0,
+        "calcType": "resistance",
+        "condition": "EARTH_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_FF15_MV1_GS_AW_2",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 4
+  },
+  "SK_VC_FF15_MV1_GSMAX_2": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "condition": "EARTH_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_FF15_MV1_GSMAX_2",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_VC_FF15_MV1_P": {
+    "effects": [
+      {
+        "type": "EARTH_ATK",
+        "minValue": 2,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "condition": "EARTH_ELEMENT",
+        "target": "self"
+      },
+      {
+        "type": "HP",
+        "minValue": 1,
+        "maxValue": 2,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_FF15_MV1_P",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 99
+  },
+  "SK_VC_FF15_MV1_PAW": {
+    "effects": [
+      {
+        "type": "EARTH_ATK",
+        "minValue": 1,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "condition": "EARTH_ELEMENT",
+        "target": "self"
+      },
+      {
+        "type": "HP",
+        "minValue": 1,
+        "maxValue": 2,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_FF15_MV1_PAW",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 4
+  },
+  "SK_VC_FF15_MV1_PMAX": {
+    "effects": [
+      {
+        "type": "EARTH_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "condition": "EARTH_ELEMENT",
+        "target": "self"
+      },
+      {
+        "type": "HP",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_FF15_MV1_PMAX",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_VC_LW_IGNT_GS": {
     "effects": [
       {
@@ -116034,6 +118525,96 @@
     "type": "support",
     "names": {
       "en": "防御貫通率+20"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCESLA_1": {
+    "effects": [
+      {
+        "type": "RES_SLASH_ATK_PENETRATION",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCESLA_1",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性貫通率+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCESLA_2": {
+    "effects": [
+      {
+        "type": "RES_SLASH_ATK_PENETRATION",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCESLA_2",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性貫通率+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCESLA_3": {
+    "effects": [
+      {
+        "type": "RES_SLASH_ATK_PENETRATION",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCESLA_3",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性貫通率+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCESLA_4": {
+    "effects": [
+      {
+        "type": "RES_SLASH_ATK_PENETRATION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCESLA_4",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性貫通率+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCESLA_5": {
+    "effects": [
+      {
+        "type": "RES_SLASH_ATK_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCESLA_5",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性貫通率+20"
     },
     "target": "self",
     "maxLevel": 50
@@ -124671,6 +127252,118 @@
     },
     "count": 2,
     "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_CLT_FF15_NCTS_1": {
+    "effects": [
+      {
+        "type": "AUTO_RESTORE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "percent",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PROTECT_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "apply",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_FF15_NCTS_1",
+    "type": "skill",
+    "names": {
+      "en": "歴代王の護り"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
+  "SK_ACC_FF15_PRMP_1": {
+    "effects": [
+      {
+        "type": "PROVOKE",
+        "minValue": -6,
+        "maxValue": -6,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CT",
+        "minValue": 100,
+        "maxValue": 250,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_FF15_PRMP_1",
+    "type": "skill",
+    "names": {
+      "en": "ハイドアクション"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_MINU_1": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "CONFUSION",
+          "DISABLE",
+          "STUN"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_MINU_1",
+    "type": "skill",
+    "names": {
+      "en": "予防医術"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
     "aoe": {
       "s": 0,
       "l": 1,
@@ -133885,6 +136578,51 @@
       "fire"
     ]
   },
+  "SK_LW_CAL_SHIN_S_1_INIT": {
+    "effects": [],
+    "dataId": "SK_LW_CAL_SHIN_S_1_INIT",
+    "type": "skill",
+    "names": {
+      "en": "ハイト高バニシュ"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 8
+    },
+    "count": 6,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "maths": [
+      {
+        "type": "HEIGHT",
+        "formula": "CURVE",
+        "condition": 15,
+        "value": -80,
+        "dst": "DAMAGE"
+      }
+    ],
+    "damage": {
+      "minValue": 75,
+      "maxValue": 101,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    },
+    "elem": [
+      "light"
+    ]
+  },
   "SK_BTL_ATK_1-999_D": {
     "effects": [
       {
@@ -138151,6 +140889,408 @@
     "target": "self",
     "maxLevel": 80
   },
+  "SK_ENTP_ATK": {
+    "effects": [],
+    "dataId": "SK_ENTP_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_ENTP_M_1": {
+    "effects": [
+      {
+        "type": "STUN_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 1,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ENTP_M_1",
+    "type": "skill",
+    "names": {
+      "en": "銃殴り"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 15
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 20,
+      "maxValue": 50,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_ENTP_M_2": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": -10,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ENTP_M_2",
+    "type": "skill",
+    "names": {
+      "en": "フルオート射撃"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 20
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 80,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_FF15_ARNA_ATK": {
+    "effects": [],
+    "dataId": "SK_FF15_ARNA_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_FF15_ARNA_R_1": {
+    "effects": [],
+    "dataId": "SK_FF15_ARNA_R_1",
+    "type": "counter",
+    "names": {
+      "en": "ファストスティング"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "counter": {
+      "minValue": 15,
+      "maxValue": 30,
+      "reactDamage": "PHYSIC",
+      "calcType": "percent"
+    },
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_FF15_ARNA_M_1": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": -10,
+        "maxValue": -30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_FF15_ARNA_M_1",
+    "type": "skill",
+    "names": {
+      "en": "ドラゴンリープ"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 26
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "physic",
+    "time": {
+      "minValue": 120,
+      "maxValue": 280
+    },
+    "damage": {
+      "minValue": 50,
+      "maxValue": 85,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_FF15_ARNA_M_2": {
+    "effects": [
+      {
+        "type": "MASS_DISPEL",
+        "calcType": "buffs",
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "HASTE"
+        ],
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_FF15_ARNA_M_2",
+    "type": "skill",
+    "names": {
+      "en": "バーストピアッサー"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_FF15_ARNA_M_3": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": -10,
+        "maxValue": -20,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FF15_ARNA_M_3",
+    "type": "skill",
+    "names": {
+      "en": "エア・アセンダント"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 30
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    },
+    "damage": {
+      "minValue": 50,
+      "maxValue": 85,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_FF15_ARNA_S_1": {
+    "effects": [],
+    "dataId": "SK_FF15_ARNA_S_1",
+    "type": "skill",
+    "names": {
+      "en": "ブランディッシュ"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 18
+    },
+    "count": 6,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 10,
+      "w": 1
+    },
+    "based": "physic",
+    "hit": 100,
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_CORL_M_01": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CORL_M_01",
+    "type": "skill",
+    "names": {
+      "en": "ブラスター"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 32
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    },
+    "damage": {
+      "minValue": 35,
+      "maxValue": 70,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "lightning"
+    ]
+  },
+  "SK_BTL_RESMGPIERCE_1-100_U": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_RESMGPIERCE_1-100_U",
+    "type": "support",
+    "names": {
+      "en": "魔法耐性貫通率1-100アップ"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
   "SK_LW_MKN_FIRE_M_1": {
     "effects": [
       {
@@ -138777,24 +141917,6 @@
       "reactDamage": "ALL",
       "calcType": "percent"
     }
-  },
-  "SK_BTL_RESMGPIERCE_1-100_U": {
-    "effects": [
-      {
-        "type": "RES_MAGIC_ATK_PENETRATION",
-        "minValue": 1,
-        "maxValue": 100,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_BTL_RESMGPIERCE_1-100_U",
-    "type": "support",
-    "names": {
-      "en": "魔法耐性貫通率1-100アップ"
-    },
-    "target": "self",
-    "maxLevel": 100
   },
   "SK_BTL_STR_MAGIC_1_100_U": {
     "effects": [
@@ -143576,48 +146698,6 @@
       "neutral"
     ]
   },
-  "SK_CORL_M_01": {
-    "effects": [
-      {
-        "type": "PARALYZE_ATK",
-        "minValue": 60,
-        "maxValue": 80,
-        "calcType": "apply",
-        "rate": 30,
-        "turn": 3,
-        "target": "target",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_CORL_M_01",
-    "type": "skill",
-    "names": {
-      "en": "ブラスター"
-    },
-    "target": "target",
-    "cost": {
-      "type": "AP",
-      "value": 32
-    },
-    "count": 3,
-    "maxLevel": 20,
-    "based": "magic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 2
-    },
-    "damage": {
-      "minValue": 35,
-      "maxValue": 70,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "lightning"
-    ]
-  },
   "SK_DABL_M_01": {
     "effects": [
       {
@@ -145203,6 +148283,296 @@
       "formula": {}
     }
   },
+  "SK_IGNT_M_01_B": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 50,
+        "maxValue": 100,
+        "calcType": "percent",
+        "turn": 10,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEF",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 10,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": -20,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "turn": 10,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_IGNT_M_01_B",
+    "type": "skill",
+    "names": {
+      "en": "アイアンバーサーカー"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 14
+    },
+    "count": 20,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_OMEG_M_02": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": -20,
+        "maxValue": -40,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_OMEG_M_02",
+    "type": "skill",
+    "names": {
+      "en": "アトミックレイ"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 0
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "dark"
+    ]
+  },
+  "SK_OMEG_M_03": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_OMEG_M_03",
+    "type": "skill",
+    "names": {
+      "en": "波動砲"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 28
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 135,
+      "maxValue": 200,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "dark"
+    ]
+  },
+  "SK_OMEG_M_04": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_PHYSIC",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "TURNS",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_OMEG_M_04",
+    "type": "skill",
+    "names": {
+      "en": "防衛システム"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 40
+    },
+    "count": 3,
+    "maxLevel": 100,
+    "based": "magic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_PNIX_M_05": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ICE_RES",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "WIND_RES",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "EARTH_RES",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "LIGHTNING_RES",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "LIGHT_RES",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DARK_RES",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEBUFF_RES",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "HEAL_POWER",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "RERAISE",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "rate": 200,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_PNIX_M_05",
+    "type": "skill",
+    "names": {
+      "en": "灼熱の輝き"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic"
+  },
+  "SK_PNIX_M_06": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_PNIX_M_06",
+    "type": "skill",
+    "names": {
+      "en": "転生の炎"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 35
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic"
+  },
   "SK_BTL_RES_OTWATER_1_80_U": {
     "effects": [
       {
@@ -145962,127 +149332,6 @@
       "neutral"
     ]
   },
-  "SK_OMEG_M_02": {
-    "effects": [
-      {
-        "type": "DARK_RES",
-        "minValue": -20,
-        "maxValue": -40,
-        "calcType": "resistance",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_OMEG_M_02",
-    "type": "skill",
-    "names": {
-      "en": "アトミックレイ"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 24
-    },
-    "count": 5,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 0
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 0,
-      "l": 1,
-      "h": 1
-    },
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "dark"
-    ]
-  },
-  "SK_OMEG_M_03": {
-    "effects": [
-      {
-        "type": "PARALYZE_ATK",
-        "minValue": 60,
-        "maxValue": 80,
-        "calcType": "apply",
-        "rate": 30,
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_OMEG_M_03",
-    "type": "skill",
-    "names": {
-      "en": "波動砲"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 28
-    },
-    "count": 3,
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 4,
-      "s": 0
-    },
-    "based": "magic",
-    "damage": {
-      "minValue": 135,
-      "maxValue": 200,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "dark"
-    ]
-  },
-  "SK_OMEG_M_04": {
-    "effects": [
-      {
-        "type": "REDUCE_DAMAGE_PHYSIC",
-        "minValue": 1,
-        "maxValue": 100,
-        "calcType": "percent",
-        "turn": 3,
-        "turnType": "TURNS",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_OMEG_M_04",
-    "type": "skill",
-    "names": {
-      "en": "防衛システム"
-    },
-    "target": "self",
-    "cost": {
-      "type": "TP",
-      "value": 40
-    },
-    "count": 3,
-    "maxLevel": 100,
-    "based": "magic",
-    "damage": {
-      "minValue": 0,
-      "maxValue": 0,
-      "effType": "DAMAGE",
-      "formula": {}
-    }
-  },
   "SK_OMEG_M_05": {
     "effects": [
       {
@@ -146153,130 +149402,6 @@
       "l": 2,
       "s": 1
     },
-    "based": "magic"
-  },
-  "SK_PNIX_M_05": {
-    "effects": [
-      {
-        "type": "FIRE_RES",
-        "minValue": 10,
-        "maxValue": 30,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "ICE_RES",
-        "minValue": 10,
-        "maxValue": 30,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "WIND_RES",
-        "minValue": 10,
-        "maxValue": 30,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "EARTH_RES",
-        "minValue": 10,
-        "maxValue": 30,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "LIGHTNING_RES",
-        "minValue": 10,
-        "maxValue": 30,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "LIGHT_RES",
-        "minValue": 10,
-        "maxValue": 30,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "DARK_RES",
-        "minValue": 10,
-        "maxValue": 30,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "DEBUFF_RES",
-        "minValue": 30,
-        "maxValue": 30,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "HEAL_POWER",
-        "minValue": 20,
-        "maxValue": 50,
-        "calcType": "fixe",
-        "rate": 200,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "RERAISE",
-        "minValue": 20,
-        "maxValue": 20,
-        "calcType": "percent",
-        "rate": 200,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_PNIX_M_05",
-    "type": "skill",
-    "names": {
-      "en": "灼熱の輝き"
-    },
-    "target": "self",
-    "cost": {
-      "type": "TP",
-      "value": 30
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "based": "magic"
-  },
-  "SK_PNIX_M_06": {
-    "effects": [
-      {
-        "type": "HP",
-        "minValue": 100,
-        "maxValue": 100,
-        "calcType": "percent",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_PNIX_M_06",
-    "type": "skill",
-    "names": {
-      "en": "転生の炎"
-    },
-    "target": "self",
-    "cost": {
-      "type": "TP",
-      "value": 35
-    },
-    "count": 1,
-    "maxLevel": 20,
     "based": "magic"
   },
   "SK_CBCL_M_01": {
@@ -147584,24 +150709,6 @@
     "target": "target",
     "maxLevel": 1
   },
-  "SK_BTL_RES_FIRE_1_80_D_KISO": {
-    "effects": [
-      {
-        "type": "FIRE_RES",
-        "minValue": -1,
-        "maxValue": -80,
-        "calcType": "resistance",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_BTL_RES_FIRE_1_80_D_KISO",
-    "type": "support",
-    "names": {
-      "en": "▼火属性耐性1-80ダウン(基礎)"
-    },
-    "target": "self",
-    "maxLevel": 80
-  },
   "SK_BTL_RES_BLOW_1_80_D_KISO": {
     "effects": [
       {
@@ -147616,6 +150723,24 @@
     "type": "support",
     "names": {
       "en": "▼打撃耐性1-80ダウン(基礎)"
+    },
+    "target": "self",
+    "maxLevel": 80
+  },
+  "SK_BTL_RES_FIRE_1_80_D_KISO": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": -1,
+        "maxValue": -80,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_RES_FIRE_1_80_D_KISO",
+    "type": "support",
+    "names": {
+      "en": "▼火属性耐性1-80ダウン(基礎)"
     },
     "target": "self",
     "maxLevel": 80
@@ -147984,51 +151109,6 @@
       "effType": "DAMAGE",
       "formula": {}
     }
-  },
-  "SK_IGNT_M_01_B": {
-    "effects": [
-      {
-        "type": "ATK",
-        "minValue": 50,
-        "maxValue": 100,
-        "calcType": "percent",
-        "turn": 10,
-        "increaseMax": true,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "DEF",
-        "minValue": 20,
-        "maxValue": 40,
-        "calcType": "fixe",
-        "turn": 10,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "SPR",
-        "minValue": -20,
-        "maxValue": -20,
-        "calcType": "fixe",
-        "turn": 10,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_IGNT_M_01_B",
-    "type": "skill",
-    "names": {
-      "en": "アイアンバーサーカー"
-    },
-    "target": "self",
-    "cost": {
-      "type": "TP",
-      "value": 14
-    },
-    "count": 20,
-    "maxLevel": 20,
-    "based": "physic"
   },
   "SK_IGNT_M_01_B_R": {
     "effects": [

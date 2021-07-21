@@ -819,6 +819,66 @@
       "zh": "完成【超高難度】挑戰任務3 #2的協力任務玩家獲贈之稱號"
     }
   },
+  "LW_PA_00079": {
+    "dataId": "LW_PA_00079",
+    "names": {
+      "en": "Technician",
+      "fr": "Technicien",
+      "de": "Techniker",
+      "es": "Técnico",
+      "ko": "기술자",
+      "zh": "技巧派"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who completed all Quest Missions for [Nightmare Difficulty] Challenge Quest IV",
+      "fr": "Titre attribué aux joueurs qui ont complété toutes les missions [Méga difficile] de la quête de défi IV",
+      "es": "Título que se le otorga a jugadores que han completado todos los objetivos de la misión de desafío de dificultad pesadilla IV",
+      "de": "Titel, der Spielern verliehen wird, die alle Auftragsmissionen von „[Fürchterlicher Schwierigkeitsgrad] Herausforderungsauftrag 4“ abgeschlossen haben.",
+      "ko": "[극고난도] 도전 퀘스트 4의 모든 퀘스트 미션을 달성한 플레이어에게 주어지는 칭호",
+      "zh": "完成所有【極高難度】挑戰任務4的任務挑戰玩家獲贈之稱號"
+    }
+  },
+  "LW_PA_00080": {
+    "dataId": "LW_PA_00080",
+    "names": {
+      "en": "Midsummer Adversary",
+      "fr": "Combattant estival",
+      "de": "Heroe des Hochsommers",
+      "es": "Adversario de verano",
+      "ko": "한여름의 도전자",
+      "zh": "仲夏的挑戰者"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who completed the Multi Quest for [Brutal Difficulty] Challenge Quest IV ",
+      "fr": "Titre attribué aux joueurs qui ont terminé la quête multi [Super difficile] de la quête de défi IV ",
+      "es": "Título que se le otorga a jugadores que han completado la multimisión de desafío de dificultad extrema IV ",
+      "de": "Titel, der Spielern verliehen wird, die den Multiauftrag von „[Brutaler Schwierigkeitsgrad] Herausforderungsauftrag 4“ abgeschlossen haben. ",
+      "ko": "[초고난도] 도전 퀘스트 4의 멀티 퀘스트를 완료한 플레이어에게 주어지는 칭호 ",
+      "zh": "完成【超高難度】挑戰任務4的協力任務玩家獲贈之稱號 "
+    }
+  },
+  "LW_PA_00081": {
+    "dataId": "LW_PA_00081",
+    "names": {
+      "en": "Seasoned Professional",
+      "fr": "Guerrier chevronné",
+      "de": "Kenner",
+      "es": "Profesional veterano",
+      "ko": "숙련자",
+      "zh": "行家"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who completed the Multi Quest for [Nightmare Difficulty] Challenge Quest IV",
+      "fr": "Titre attribué aux joueurs qui ont terminé la quête multi [Méga difficile] de la quête de défi IV",
+      "es": "Título que se le otorga a jugadores que han completado la multimisión de desafío de dificultad pesadilla IV",
+      "de": "Titel, der Spielern verliehen wird, die den Multiauftrag von „[Fürchterlicher Schwierigkeitsgrad] Herausforderungsauftrag 4“ abgeschlossen haben.",
+      "ko": "[극고난도] 도전 퀘스트 4의 멀티 퀘스트를 완료한 플레이어에게 주어지는 칭호",
+      "zh": "完成【極高難度】挑戰任務4的協力任務玩家獲贈之稱號"
+    }
+  },
   "AWD_P_FF04_1": {
     "dataId": "AWD_P_FF04_1",
     "names": {
@@ -7539,6 +7599,86 @@
       "zh": "帶著『瑪利亞爾』完成任務10,000次的玩家獲贈之稱號"
     }
   },
+  "LW_PA_CH_080_1": {
+    "dataId": "LW_PA_CH_080_1",
+    "names": {
+      "en": "Lilyth (Summer) Fan",
+      "fr": "Admirateur de Lilyth (Été)",
+      "de": "Vernarrt in Lilith (Sommer)",
+      "es": "Fan de Lilit veraniega",
+      "ko": "릴리스(여름) 팬",
+      "zh": "偏愛夏日莉莉絲"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players who have taken Lilyth (Summer) on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lilyth (Été) à 100 quêtes",
+      "es": "Título que se le otorga a jugadores que han usado a Lilit veraniega en 100 misiones",
+      "de": "Titel, der Spielern verliehen wird, die mit Lilith (Sommer) 100 Aufträge abgeschlossen haben.",
+      "ko": "릴리스(여름)를 편성하여 퀘스트를 100회 완료한 플레이어에게 주어지는 칭호",
+      "zh": "帶著『莉莉絲（夏日）』完成任務100次的玩家獲贈之稱號"
+    }
+  },
+  "LW_PA_CH_080_2": {
+    "dataId": "LW_PA_CH_080_2",
+    "names": {
+      "en": "Lilyth (Summer) Enthusiast",
+      "fr": "Adepte de Lilyth (Été)",
+      "de": "Verbunden mit Lilith (Sommer)",
+      "es": "Admirador de Lilit veraniega",
+      "ko": "릴리스(여름)와의 인연",
+      "zh": "與夏日莉莉絲的羈絆"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players who have taken Lilyth (Summer) on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lilyth (Été) à 500 quêtes",
+      "es": "Título que se le otorga a jugadores que han usado a Lilit veraniega en 500 misiones",
+      "de": "Titel, der Spielern verliehen wird, die mit Lilith (Sommer) 500 Aufträge abgeschlossen haben.",
+      "ko": "릴리스(여름)를 편성하여 퀘스트를 500회 완료한 플레이어에게 주어지는 칭호",
+      "zh": "帶著『莉莉絲（夏日）』完成任務500次的玩家獲贈之稱號"
+    }
+  },
+  "LW_PA_CH_080_3": {
+    "dataId": "LW_PA_CH_080_3",
+    "names": {
+      "en": "Lilyth (Summer) Devotee",
+      "fr": "Fanatique de Lilyth (Été)",
+      "de": "Besessen von Lilith (Sommer)",
+      "es": "Fanático de Lilit veraniega",
+      "ko": "릴리스(여름) 사랑",
+      "zh": "對夏日莉莉絲的愛"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who have taken Lilyth (Summer) on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lilyth (Été) à 3 000 quêtes",
+      "es": "Título que se le otorga a jugadores que han usado a Lilit veraniega en 3000 misiones",
+      "de": "Titel, der Spielern verliehen wird, die mit Lilith (Sommer) 3.000 Aufträge abgeschlossen haben.",
+      "ko": "릴리스(여름)를 편성하여 퀘스트를 3,000회 완료한 플레이어에게 주어지는 칭호",
+      "zh": "帶著『莉莉絲（夏日）』完成任務3,000次的玩家獲贈之稱號"
+    }
+  },
+  "LW_PA_CH_080_4": {
+    "dataId": "LW_PA_CH_080_4",
+    "names": {
+      "en": "Blaze of the Beach",
+      "fr": "Le Joyau de la plage",
+      "de": "Flamme des Strandes",
+      "es": "El Azote Playero",
+      "ko": "해안의 붉은 불꽃",
+      "zh": "海岸的赤焰"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have taken Lilyth (Summer) on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lilyth (Été) à 10 000 quêtes",
+      "es": "Título que se le otorga a jugadores que han usado a Lilit veraniega en 10 000 misiones",
+      "de": "Titel, der Spielern verliehen wird, die mit Lilith (Sommer) 10.000 Aufträge abgeschlossen haben.",
+      "ko": "릴리스(여름)를 편성하여 퀘스트를 10,000회 완료한 플레이어에게 주어지는 칭호",
+      "zh": "帶著『莉莉絲（夏日）』完成任務10,000次的玩家獲贈之稱號"
+    }
+  },
   "LW_PA_CH_081_1": {
     "dataId": "LW_PA_CH_081_1",
     "names": {
@@ -8097,6 +8237,86 @@
       "de": "Titel, der Spielern verliehen wird, die mit Rosa 10.000 Aufträge abgeschlossen haben.",
       "ko": "로자를 편성하여 퀘스트를 10,000회 완료한 플레이어에게 주어지는 칭호",
       "zh": "帶著『羅莎』完成任務10,000次的玩家獲贈之稱號"
+    }
+  },
+  "LW_PA_CH_088_1": {
+    "dataId": "LW_PA_CH_088_1",
+    "names": {
+      "en": "Kitone (Summer) Fan",
+      "fr": "Admirateur de Kitone (Été)",
+      "de": "Vernarrt in Kiton (Sommer)",
+      "es": "Fan de Kiton veraniega",
+      "ko": "키튼(여름) 팬",
+      "zh": "偏愛夏日基頓"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players who have taken Kitone (Summer) on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kitone (Été) à 100 quêtes",
+      "es": "Título que se le otorga a jugadores que han usado a Kiton veraniega en 100 misiones",
+      "de": "Titel, der Spielern verliehen wird, die mit Kiton (Sommer) 100 Aufträge abgeschlossen haben.",
+      "ko": "키튼(여름)을 편성하여 퀘스트를 100회 완료한 플레이어에게 주어지는 칭호",
+      "zh": "帶著『基頓（夏日）』完成任務100次的玩家獲贈之稱號"
+    }
+  },
+  "LW_PA_CH_088_2": {
+    "dataId": "LW_PA_CH_088_2",
+    "names": {
+      "en": "Kitone (Summer) Enthusiast",
+      "fr": "Adepte de Kitone (Été)",
+      "de": "Verbunden mit Kiton (Sommer)",
+      "es": "Admirador de Kiton veraniega",
+      "ko": "키튼(여름)과의 인연",
+      "zh": "與夏日基頓的羈絆"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players who have taken Kitone (Summer) on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kitone (Été) à 500 quêtes",
+      "es": "Título que se le otorga a jugadores que han usado a Kiton veraniega en 500 misiones",
+      "de": "Titel, der Spielern verliehen wird, die mit Kiton (Sommer) 500 Aufträge abgeschlossen haben.",
+      "ko": "키튼(여름)을 편성하여 퀘스트를 500회 완료한 플레이어에게 주어지는 칭호",
+      "zh": "帶著『基頓（夏日）』完成任務500次的玩家獲贈之稱號"
+    }
+  },
+  "LW_PA_CH_088_3": {
+    "dataId": "LW_PA_CH_088_3",
+    "names": {
+      "en": "Kitone (Summer) Devotee",
+      "fr": "Fanatique de Kitone (Été)",
+      "de": "Besessen von Kiton (Sommer)",
+      "es": "Fanático de Kiton veraniega",
+      "ko": "키튼(여름) 사랑",
+      "zh": "對夏日基頓的愛"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who have taken Kitone (Summer) on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kitone (Été) à 3 000 quêtes",
+      "es": "Título que se le otorga a jugadores que han usado a Kiton veraniega en 3000 misiones",
+      "de": "Titel, der Spielern verliehen wird, die mit Kiton (Sommer) 3.000 Aufträge abgeschlossen haben.",
+      "ko": "키튼(여름)을 편성하여 퀘스트를 3,000회 완료한 플레이어에게 주어지는 칭호",
+      "zh": "帶著『基頓（夏日）』完成任務3,000次的玩家獲贈之稱號"
+    }
+  },
+  "LW_PA_CH_088_4": {
+    "dataId": "LW_PA_CH_088_4",
+    "names": {
+      "en": "Shinobi Learning to Swim",
+      "fr": "La shinobi qui apprend à nager",
+      "de": "Schwimmen übende Shinobi",
+      "es": "La Nadadora Novata",
+      "ko": "수영 특훈 중인 닌자",
+      "zh": "游泳特訓中的忍者"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have taken Kitone (Summer) on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kitone (Été) à 10 000 quêtes",
+      "es": "Título que se le otorga a jugadores que han usado a Kiton veraniega en 10 000 misiones",
+      "de": "Titel, der Spielern verliehen wird, die mit Kiton (Sommer) 10.000 Aufträge abgeschlossen haben.",
+      "ko": "키튼(여름)을 편성하여 퀘스트를 10,000회 완료한 플레이어에게 주어지는 칭호",
+      "zh": "帶著『基頓（夏日）』完成任務10,000次的玩家獲贈之稱號"
     }
   },
   "LW_PA_CH_089_1": {
