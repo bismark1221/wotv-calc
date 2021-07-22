@@ -1297,7 +1297,7 @@ export class SkillService {
       case 'GRANT_SKILL' :
         // const newSkill = await this.getSkill(effect.unlockSkill);
         const newSkill = null;
-        html = 'Do something for basic attack based on unlock skill show below... I will do some test soon to understand...' + this.getTurns(effect);
+        html = 'When casting another attack skill also launch the following skill on target : check the unlocked skill on the bottom' + this.getTurns(effect);
         if (effect.calcType !== 'apply') {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
