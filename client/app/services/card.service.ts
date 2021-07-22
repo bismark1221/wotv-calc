@@ -256,18 +256,23 @@ export class CardService {
 
   async getCardBySlug(slug) {
     const apiResult = await this.getApi(slug, [{name: 'forDetail', value: 1}]);
-    this.card = new Card();
-    this.card.constructFromJson(apiResult.card, this.translateService);
 
-    this.card.rawJobs = apiResult.jobs;
-    this.card.rawSkills = apiResult.skills;
-    this.card.rawUnits = apiResult.units;
+    if (apiResult.card) {
+      this.card = new Card();
+      this.card.constructFromJson(apiResult.card, this.translateService);
 
-    if (this.card) {
-      this.card.statsType = this.getAvailableStats();
+      this.card.rawJobs = apiResult.jobs;
+      this.card.rawSkills = apiResult.skills;
+      this.card.rawUnits = apiResult.units;
+
+      if (this.card) {
+        this.card.statsType = this.getAvailableStats();
+      }
+
+      return this.card;
+    } else {
+      return null;
     }
-
-    return this.card;
   }
 
   getLocalStorage() {

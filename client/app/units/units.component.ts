@@ -13,10 +13,12 @@ import { ToolService } from '../services/tool.service';
   styleUrls: ['./units.component.css']
 })
 export class UnitsComponent implements OnInit {
-  units = [];
+  rawUnits = [];
+  units: any = [];
   searchText = '';
   sort = 'rarity';
   order = 'desc';
+  rawJobs = [];
   jobs = [];
   filters = {
     rarity: [],
@@ -95,8 +97,8 @@ export class UnitsComponent implements OnInit {
 
   async ngOnInit() {
     this.navService.setTitle('Units');
-    await this.getJobs();
-    this.costs = await this.unitService.getCosts();
+
+    await this.getUnits();
 
     if (sessionStorage.getItem('unitsFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('unitsFilters'));
@@ -114,24 +116,22 @@ export class UnitsComponent implements OnInit {
       }
     }
     this.filterChecked();
-
-    await this.getUnits();
   }
 
   async getUnits() {
-    this.units = await this.unitService.getUnitsForListing(this.filters, this.sort, this.order);
-    this.translateUnits();
+    const result = await this.unitService.getUnitsForListingWithCost(this.filters, this.sort, this.order);
+
+    this.units = result.units;
+    this.rawUnits = result.rawUnits;
+    this.rawJobs = result.rawJobs;
+    this.jobs = result.jobs;
+    this.costs = result.costs;
+
+    console.log(result)
   }
 
-  async getJobs() {
-    const jobs = await this.jobService.getUniqJobs();
-    jobs.forEach(job => {
-      if (job.statsModifiers && job.statsModifiers.length > 10) {
-        this.jobs.push(job);
-      }
-    });
-
-    this.translateJobs();
+  filterUnits() {
+    this.units = this.unitService.filterUnitsWithApi(this.rawUnits, this.filters, this.sort, this.order, this.rawJobs);
   }
 
   private translateUnits() {
@@ -163,7 +163,7 @@ export class UnitsComponent implements OnInit {
     }
   }
 
-  async filterList(type, value) {
+  filterList(type, value) {
     if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
     } else {
@@ -173,10 +173,10 @@ export class UnitsComponent implements OnInit {
     sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
-    await this.getUnits();
+    this.filterUnits();
   }
 
-  async filterEquipment(type, value) {
+  filterEquipment(type, value) {
     if (type === 'armor') {
       if (this.filters.equipment.armor.indexOf(value) === -1) {
         this.filters.equipment.armor.push(value);
@@ -188,30 +188,30 @@ export class UnitsComponent implements OnInit {
     }
     this.filterChecked();
 
-    await this.getUnits();
+    this.filterUnits();
     sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
   }
 
-  async toggleMainJob() {
+  toggleMainJob() {
     this.filters.mainJob = !this.filters.mainJob;
     this.filters.subJob = false;
 
-    await this.getUnits();
+    this.filterUnits();
     sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
   }
 
-  async toggleSubJob() {
+  toggleSubJob() {
     this.filters.mainJob = false;
     this.filters.subJob = !this.filters.subJob;
 
-    await this.getUnits();
+    this.filterUnits();
     sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
   }
 
-  async toggleExJob() {
+  toggleExJob() {
     this.filters.exJob = !this.filters.exJob;
 
-    await this.getUnits();
+    this.filterUnits();
     sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
   }
 
@@ -270,12 +270,12 @@ export class UnitsComponent implements OnInit {
     sessionStorage.setItem('unitsCollapsed', JSON.stringify(this.collapsed));
   }
 
-  async unselectAllJobs() {
+  unselectAllJobs() {
     this.filters.job = [];
 
     sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
-    await this.getUnits();
+    this.filterUnits();
   }
 }

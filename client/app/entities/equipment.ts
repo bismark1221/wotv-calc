@@ -28,6 +28,11 @@ export class Equipment {
   materials;
   releaseDate;
 
+  rawSkills;
+  rawJobs;
+  rawUnits;
+  rawItems;
+
   // for builder
   passiveSkills;
   skill;
@@ -57,6 +62,8 @@ export class Equipment {
     this.equippableUnits = equipment.equippableUnits;
     this.materials = equipment.materials;
     this.releaseDate = equipment.releaseDate;
+
+    this.name = this.getName(translateService);
   }
 
   getName(translateService: TranslateService): string {

@@ -41,7 +41,7 @@ export class EquipmentComponent implements OnInit {
       if (!this.equipment) {
         this.router.navigate([this.navService.getRoute('/equipment-not-found')]);
       } else {
-        await this.formatEquipment();
+        this.formatEquipment();
 
         this.navService.setTitle(this.equipment.name);
       }
@@ -61,7 +61,7 @@ export class EquipmentComponent implements OnInit {
     });
 
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
-      await this.formatEquipment();
+      this.formatEquipment();
     });
   }
 
@@ -85,7 +85,7 @@ export class EquipmentComponent implements OnInit {
     });
   }
 
-  private async formatEquipment() {
+  private formatEquipment() {
     if (this.equipment) {
       this.equipment.name = this.nameService.getName(this.equipment);
       this.equipment.statsTypes = Object.keys(this.equipment.stats);
@@ -134,7 +134,7 @@ export class EquipmentComponent implements OnInit {
       }
 
       if (this.equipment.acquisition.type === 'tmr') {
-        const unit = await this.getUnit(this.equipment.acquisition.unitId);
+        const unit = this.equipment.rawUnits.find(searchedUnit => searchedUnit.dataId === this.equipment.acquisition.unitId);
         if (unit) {
           this.equipment.acquisition.unit = {
             name: this.nameService.getName(unit),
@@ -194,7 +194,7 @@ export class EquipmentComponent implements OnInit {
 
       this.equipment.jobs = [];
       for (const jobId of this.equipment.equippableJobs) {
-        const job = await this.jobService.getJob(jobId);
+        const job = this.equipment.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
         if (job) {
           job.name = this.nameService.getName(job);
           this.equipment.jobs.push(job);
@@ -203,7 +203,7 @@ export class EquipmentComponent implements OnInit {
 
       this.equipment.units = [];
       for (const unitId of this.equipment.equippableUnits) {
-        const unit = await this.getUnit(unitId);
+        const unit = this.equipment.rawUnits.find(searchedUnit => searchedUnit.dataId === unitId);
         if (unit) {
           unit.name = this.nameService.getName(unit);
           this.equipment.units.push(unit);
@@ -217,7 +217,7 @@ export class EquipmentComponent implements OnInit {
           this.equipment.formattedMaterials.push([]);
 
           for (const itemId of Object.keys(items)) {
-            let item = await this.itemService.getItem(itemId);
+            let item = this.equipment.rawItems.find(searchedItem => searchedItem.dataId === itemId);
 
             if (item) {
               item = JSON.parse(JSON.stringify(item));
@@ -244,10 +244,6 @@ export class EquipmentComponent implements OnInit {
 
   getRoute(route) {
     return this.navService.getRoute(route);
-  }
-
-  private async getUnit(unitId) {
-    return await this.unitService.getUnit(unitId);
   }
 
   clickSpecialBismark() {

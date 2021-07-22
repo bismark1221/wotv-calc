@@ -104,6 +104,36 @@ export class JobService {
     return this[this.navService.getVersion() + '_uniqJobs'];
   }
 
+  getUniqJobsByIds(jobsToFilter) {
+    const uniqJobs = [];
+
+    for (const rawJob of jobsToFilter) {
+      const job = new Job();
+      job.constructFromJson(rawJob);
+
+      const tableJob = job.dataId.split('_');
+      const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2] + (tableJob[3] && tableJob[3] === '01' ? '_01' : '');
+      job.dataId = genericDataId;
+
+      if (!uniqJobs.find(searchedJob => searchedJob.dataId === genericDataId)) {
+        if (job.dataId === 'JB_LW_WAR') {
+          job.names = {
+            en: 'Warrior',
+            fr: 'Guerrier',
+            de: 'Krieger',
+            es: 'Guerrero',
+            ko: '전사',
+            zh: '戰士'
+          };
+        }
+
+        uniqJobs.push(job);
+      }
+    }
+
+    return this.toolService.sortByName(uniqJobs);
+  }
+
   async getJob(id, forcedVersion = null) {
     await this.getJobs(forcedVersion);
 

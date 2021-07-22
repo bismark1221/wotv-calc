@@ -126,6 +126,100 @@ export class UnitService {
     return JSON.parse(JSON.stringify(await this.apiService.loadData('units', param, extraQuery)));
   }
 
+  async getUnitsForListingWithCost(filters = null, sort = 'rarity', order = 'desc') {
+    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+
+    const rawUnits = [];
+    const costs = [];
+
+    for (const apiUnit of apiResult.units) {
+      const rawUnit = new Unit();
+      rawUnit.constructFromJson(apiUnit, this.translateService);
+      rawUnits.push(rawUnit);
+
+      if (costs.indexOf(rawUnit.cost) === -1) {
+        costs.push(rawUnit.cost);
+      }
+    }
+
+    const jobs = [];
+    for (const rawJob of apiResult.jobs) {
+      if (rawJob.statsModifiers && rawJob.statsModifiers.length > 10) {
+        rawJob.name = this.nameService.getName(rawJob);
+        jobs.push(rawJob);
+      }
+    }
+
+    return {
+      rawUnits: rawUnits,
+      rawJobs: jobs,
+      units: this.filterUnitsWithApi(rawUnits, filters, sort, order, jobs),
+      jobs: this.jobService.getUniqJobsByIds(jobs),
+      costs: costs.sort((a, b) => b - a)
+    };
+  }
+
+  filterUnitsWithApi(units, filters, sort = 'rarity', order = 'desc', jobs = []) {
+    if (filters) {
+      const filteredUnits = [];
+
+      for (const unit of units) {
+        if ((filters.element.length === 0 || filters.element.indexOf(unit.element) !== -1)
+          && (filters.rarity.length === 0 || filters.rarity.indexOf(unit.rarity) !== -1)
+          && (filters.cost.length === 0 || filters.cost.indexOf(unit.cost) !== -1)
+          && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) !== -1)
+          && (!filters.exJob || unit.exJobs.length > 0)
+        ) {
+          let possbibleToAdd = true;
+
+          if (filters.job && filters.job.length > 0) {
+            possbibleToAdd = this.unitHasJob(unit, filters);
+          }
+
+          if (possbibleToAdd && filters.equipment && (filters.equipment.weapon !== 'ALL' || (filters.equipment.armor && filters.equipment.armor.length > 0))) {
+            possbibleToAdd = this.unitCanEquipWithApi(unit, filters, jobs);
+          }
+
+          if (possbibleToAdd) {
+            filteredUnits.push(unit);
+          }
+        }
+      }
+
+      return this.sortUnits(filteredUnits, sort, order);
+    } else {
+      return this.sortUnits(units, sort, order);
+    }
+  }
+
+  private unitCanEquipWithApi(unit, filters, jobs = []) {
+    let unitCanEquip = true;
+    const job = jobs.find(searchedJob => searchedJob.dataId === unit.jobs[0]);
+
+    if (filters.equipment.weapon !== 'ALL' && job.equipments.weapons.indexOf(filters.equipment.weapon) === -1) {
+      unitCanEquip = false;
+    }
+
+    if (filters.equipment.armor && filters.equipment.armor.length > 0) {
+      let armorFound = false;
+      let i = 0;
+
+      while (!armorFound && i <= filters.equipment.armor.length - 1) {
+        if (job.equipments.armors.indexOf(filters.equipment.armor[i]) !== -1) {
+          armorFound = true;
+        }
+
+        i++;
+      }
+
+      if (!armorFound) {
+        unitCanEquip = false;
+      }
+    }
+
+    return unitCanEquip;
+  }
+
   private getRaw(forcedVersion = null) {
     return this.dataService.loadData('units', forcedVersion);
   }
@@ -162,21 +256,6 @@ export class UnitService {
     await this.getUnits();
     const units = await this.filterUnits(this[this.navService.getVersion() + '_units'], filters);
 
-    switch (sort) {
-      case 'rarity' :
-        this.toolService.sortByRarity(units, order);
-      break;
-      case 'name' :
-        this.toolService.sortByName(units, order);
-      break;
-      case 'releaseDate' :
-        this.toolService.sortByReleaseDate(units, order);
-      break;
-      default :
-        console.log('not managed sort');
-      break;
-    }
-
     return units;
   }
 
@@ -199,7 +278,7 @@ export class UnitService {
     return costs.sort((a, b) => b - a);
   }
 
-  private async filterUnits(units, filters) {
+  private async filterUnits(units, filters, sort = 'rarity', order = 'desc') {
     if (filters) {
       const filteredUnits = [];
 
@@ -226,9 +305,27 @@ export class UnitService {
         }
       }
 
-      return filteredUnits;
+      return this.sortUnits(filteredUnits);
     } else {
-      return units;
+      return this.sortUnits(units);
+    }
+  }
+
+  sortUnits(units, sort = 'rarity', order = 'desc') {
+    switch (sort) {
+      case 'rarity' :
+        return this.toolService.sortByRarity(units, order);
+      break;
+      case 'name' :
+        return this.toolService.sortByName(units, order);
+      break;
+      case 'releaseDate' :
+        return this.toolService.sortByReleaseDate(units, order);
+      break;
+      default :
+        console.log('not managed sort');
+        return units;
+      break;
     }
   }
 

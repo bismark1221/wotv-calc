@@ -13,6 +13,7 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./equipments.component.css']
 })
 export class EquipmentsComponent implements OnInit {
+  rawEquipments = [];
   equipments = [];
   acquisitionTypes;
   equipmentTypes = [];
@@ -93,8 +94,7 @@ export class EquipmentsComponent implements OnInit {
   async ngOnInit() {
     this.navService.setTitle('Equipment');
 
-    await this.getJobs();
-    await this.getAcquisitionTypes();
+    await this.getEquipments();
 
     if (sessionStorage.getItem('equipmentFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('equipmentFilters'));
@@ -104,24 +104,28 @@ export class EquipmentsComponent implements OnInit {
     }
 
     this.filterChecked();
-
-    await this.getEquipments();
   }
 
-  async getJobs() {
-    const jobs = await this.jobService.getUniqJobs();
-    jobs.forEach(job => {
-      if (job.statsModifiers && job.statsModifiers.length > 10) {
-        this.jobs.push(job);
-      }
-    });
-
-    this.translateJobs();
+  filterEquipments() {
+    this.equipments = this.equipmentService.filterEquipments(this.rawEquipments, this.filters, this.sort, this.order);
   }
 
   async getEquipments() {
-    this.equipments = await this.equipmentService.getEquipmentsForListing(this.filters, this.sort, this.order);
-    this.translateEquipments();
+    const result = await this.equipmentService.getEquipmentForListingWithAcquisitionTypes(this.filters, this.sort, this.order);
+
+    this.equipments = result.equipments;
+    this.rawEquipments = result.rawEquipments;
+    this.acquisitionTypes = result.acquisitionTypes;
+    this.equipmentTypes = result.equipmentTypes;
+    this.jobs = result.jobs;
+
+    this.acquisitionTypes.forEach(type => {
+      if (type !== 'Unknown') {
+        this.filters.acquisition.push(type);
+      }
+    });
+
+    this.filterEquipments();
   }
 
   private translateJobs() {
@@ -153,7 +157,7 @@ export class EquipmentsComponent implements OnInit {
     }
   }
 
-  async filterList(type, value) {
+  filterList(type, value) {
     if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
     } else {
@@ -162,29 +166,16 @@ export class EquipmentsComponent implements OnInit {
 
     sessionStorage.setItem('equipmentFilters', JSON.stringify(this.filters));
 
-    await this.getEquipments();
+    this.filterEquipments();
   }
 
-  async getAcquisitionTypes() {
-    const types = await this.equipmentService.getAcquisitionTypes();
-
-    this.acquisitionTypes = types.acquisitionTypes;
-    this.acquisitionTypes.forEach(type => {
-      if (type !== 'Unknown') {
-        this.filters.acquisition.push(type);
-      }
-    });
-
-    this.equipmentTypes = types.equipmentTypes;
-  }
-
-  async unselectAllType() {
+  unselectAllType() {
     this.filters.acquisition = [];
 
     sessionStorage.setItem('equipmentFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
-    await this.getEquipments();
+    this.filterEquipments();
   }
 
   filterChecked() {

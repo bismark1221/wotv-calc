@@ -72,6 +72,8 @@ export class EspersComponent implements OnInit {
   async ngOnInit() {
     this.navService.setTitle('Espers');
 
+    await this.getEspers();
+
     if (sessionStorage.getItem('espersFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('espersFilters'));
 
@@ -88,8 +90,6 @@ export class EspersComponent implements OnInit {
       }
     }
     this.filterChecked();
-
-    await this.getEspers();
   }
 
   async getEspers() {

@@ -11,6 +11,8 @@ import { NameService } from './name.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
 import { DataService } from './data.service';
+import { ApiService } from './api.service';
+import { JobService } from './job.service';
 
 import { Equipment } from '../entities/equipment';
 
@@ -242,14 +244,71 @@ export class EquipmentService {
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private dataService: DataService,
+    private apiService: ApiService,
     private skillService: SkillService,
     private rangeService: RangeService,
     private navService: NavService,
     private toolService: ToolService,
     private authService: AuthService,
     private nameService: NameService,
+    private jobService: JobService,
     private firestore: AngularFirestore
   ) {}
+
+  private async getApi(param = null, extraQuery = []) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('equipments', param, extraQuery)));
+  }
+
+  async getEquipmentForListingWithAcquisitionTypes(filters = null, sort = 'rarity', order = 'desc') {
+    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+
+    const rawEquipments = [];
+    const acquisitionTypes = ['Unknown', 'tmr'];
+    const equipmentTypes = [];
+
+    for (const apiEquipment of apiResult.equipments) {
+      const rawEquipment = new Equipment();
+      rawEquipment.constructFromJson(apiEquipment, this.translateService);
+      if (this.equipmentsAcquisition[rawEquipment.dataId]) {
+        rawEquipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[rawEquipment.dataId]];
+      }
+      rawEquipments.push(rawEquipment);
+
+      if (rawEquipment.acquisition.type !== 'Unknown' && rawEquipment.acquisition.type !== 'tmr') {
+        const acquisition = rawEquipment.acquisition.type[this.translateService.getDefaultLang()];
+
+        if (acquisitionTypes.indexOf(acquisition) === -1) {
+          acquisitionTypes.push(acquisition);
+        }
+      }
+
+      Object.keys(rawEquipment.grows).forEach(growId => {
+        const grow = rawEquipment.grows[growId].names[this.translateService.getDefaultLang()];
+
+        if (grow !== 'ARTIFACT_50' && grow !== 'ARTIFACT_TRUST' && equipmentTypes.indexOf(growId + '###' + grow) === -1) {
+          equipmentTypes.push(growId + '###' + grow);
+        }
+      });
+    }
+
+    const jobs = [];
+    for (const rawJob of apiResult.jobs) {
+      if (rawJob.statsModifiers && rawJob.statsModifiers.length > 10) {
+        rawJob.name = this.nameService.getName(rawJob);
+        jobs.push(rawJob);
+      }
+    }
+
+    const equipments = this.filterEquipments(rawEquipments, filters, sort, order);
+
+    return {
+      rawEquipments: rawEquipments,
+      equipments: equipments,
+      acquisitionTypes: acquisitionTypes,
+      equipmentTypes: equipmentTypes,
+      jobs: this.jobService.getUniqJobsByIds(jobs)
+    };
+  }
 
   private getRaw() {
     return this.dataService.loadData('equipments');
@@ -279,27 +338,12 @@ export class EquipmentService {
 
   async getEquipmentsForListing(filters = null, sort = 'rarity', order = 'desc') {
     await this.getEquipments();
-    const equipments = this.filterEquipments(this[this.navService.getVersion() + '_equipments'], filters);
-
-    switch (sort) {
-      case 'rarity' :
-        this.toolService.sortByRarity(equipments, order);
-      break;
-      case 'name' :
-        this.toolService.sortByName(equipments, order);
-      break;
-      case 'releaseDate' :
-        this.toolService.sortByReleaseDate(equipments, order);
-      break;
-      default :
-        console.log('not managed sort');
-      break;
-    }
+    const equipments = this.filterEquipments(this[this.navService.getVersion() + '_equipments'], filters, sort, order);
 
     return equipments;
   }
 
-  filterEquipments(equipments, filters) {
+  filterEquipments(equipments, filters, sort = 'rarity', order = 'desc') {
     if (filters) {
       const filteredEquipments = [];
 
@@ -325,9 +369,27 @@ export class EquipmentService {
         }
       });
 
-      return filteredEquipments;
+      return this.sortEquipments(filteredEquipments, sort, order);
     } else {
-      return equipments;
+      return this.sortEquipments(equipments, sort, order);
+    }
+  }
+
+  sortEquipments(equipments, sort = 'rarity', order = 'desc') {
+    switch (sort) {
+      case 'rarity' :
+        return this.toolService.sortByRarity(equipments, order);
+      break;
+      case 'name' :
+        return this.toolService.sortByName(equipments, order);
+      break;
+      case 'releaseDate' :
+        return this.toolService.sortByReleaseDate(equipments, order);
+      break;
+      default :
+        console.log('not managed sort');
+        return equipments;
+      break;
     }
   }
 
@@ -357,15 +419,48 @@ export class EquipmentService {
   }
 
   async getEquipmentBySlug(slug: string) {
-    await this.getEquipments();
+    const apiResult = await this.getApi(slug, [{name: 'forDetail', value: 1}]);
 
-    const equipment = this[this.navService.getVersion() + '_equipments'].find(searchedEquipment => searchedEquipment.slug === slug);
+    if (apiResult.equipment) {
+      const equipment = new Equipment();
+      equipment.constructFromJson(apiResult.equipment, this.translateService);
 
-    if (equipment) {
-      await this.formatSkills(equipment);
+      if (this.equipmentsAcquisition[equipment.dataId]) {
+        equipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[equipment.dataId]];
+      }
+
+      equipment.rawSkills = apiResult.skills;
+      equipment.rawJobs = apiResult.jobs;
+      equipment.rawUnits = apiResult.units;
+      equipment.rawItems = apiResult.items;
+
+      for (const item of equipment.rawItems) {
+        item.name = this.nameService.getName(item);
+      }
+
+      this.formatSkillsWithApi(equipment);
+
+      return equipment;
+    } else {
+      return null;
     }
+  }
 
-    return equipment;
+  async formatSkillsWithApi(equipment) {
+    equipment.formattedSkills = [];
+    for (const equipmentLvl of equipment.skills) {
+      const formattedSkills = [];
+      for (const skillData of equipmentLvl) {
+        const formattedSkill = equipment.rawSkills.find(searchedSkill => searchedSkill.dataId === skillData.dataId);
+        formattedSkill.upgrade = skillData.upgrade;
+        formattedSkill.grow = skillData.grow;
+        formattedSkill.maxLevel = skillData.maxLevel;
+
+        formattedSkills.push(formattedSkill);
+      }
+
+      equipment.formattedSkills.push(formattedSkills);
+    }
   }
 
   async formatSkills(equipment) {

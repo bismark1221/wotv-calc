@@ -185,12 +185,17 @@ export class EsperService {
 
   async getEsperBySlug(slug) {
     const apiResult = await this.getApi(slug, [{name: 'forDetail', value: 1}]);
-    const esper = new Esper();
-    esper.constructFromJson(apiResult.esper, this.translateService);
 
-    esper.rawSkills = apiResult.skills;
+    if (apiResult.esper) {
+      const esper = new Esper();
+      esper.constructFromJson(apiResult.esper, this.translateService);
 
-    return esper;
+      esper.rawSkills = apiResult.skills;
+
+      return esper;
+    } else {
+      return null;
+    }
   }
 
   getLocalStorage() {
