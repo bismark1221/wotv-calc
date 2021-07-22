@@ -1295,9 +1295,12 @@ export class SkillService {
         }
         break;
       case 'GRANT_SKILL' :
-        // const newSkill = await this.getSkill(effect.unlockSkill);
-        const newSkill = null;
-        html = 'When casting another attack skill also launch the following skill on target : check the unlocked skill on the bottom' + this.getTurns(effect);
+        let newSkill = null;
+        if (unit.rawSkills) {
+          newSkill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        html = 'When casting another attack skill also launch the following skill on target : ' + (newSkill ? this.nameService.getName(newSkill) : '???') + ' ' + this.getTurns(effect);
         if (effect.calcType !== 'apply') {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }

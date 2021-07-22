@@ -76,31 +76,31 @@
         </table>
       </div>
 
-      <div class="rightBlock" *ngIf="unit && unit.formattedTmr">
+      <div class="rightBlock" *ngIf="unit && unit.tmr">
         <table class="tmrTable">
           <tbody>
             <tr>
               <th colspan="20">TMR</th>
             </tr>
             <tr>
-              <td rowspan="2" class="tmrTd"><img src="assets/equipments/{{unit.formattedTmr.image}}.png" class="tmrImg"/></td>
+              <td rowspan="2" class="tmrTd"><img src="assets/equipments/{{unit.tmr.image}}.png" class="tmrImg"/></td>
               <th class="sub tmrSubTd">Name</th>
               <th class="sub tmrSubTd">Type</th>
-              <th class="sub tmrSubTd" *ngFor="let statType of unit.formattedTmr.statsTypes">{{ statType }}</th>
+              <th class="sub tmrSubTd" *ngFor="let statType of unit.tmr.statsTypes">{{ statType }}</th>
             </tr>
             <tr>
-              <td>{{ unit.formattedTmr.name }}</td>
-              <td>{{ getEquipementType(unit.formattedTmr.type) }}</td>
-              <td *ngFor="let statType of unit.formattedTmr.statsTypes">{{ unit.formattedTmr.stats[statType].min }}</td>
+              <td>{{ unit.tmr.name }}</td>
+              <td>{{ getEquipementType(unit.tmr.type) }}</td>
+              <td *ngFor="let statType of unit.tmr.statsTypes">{{ unit.tmr.stats[statType].min }}</td>
             </tr>
           </tbody>
         </table>
 
-        <table class="tmrSkillTable" *ngIf="unit.formattedTmr.formattedSkills && unit.formattedTmr.formattedSkills[0]">
+        <table class="tmrSkillTable" *ngIf="unit.tmr.formattedSkills && unit.tmr.formattedSkills[0]">
           <tr>
             <th colspan="7">TMR Skill</th>
           </tr>
-          <tbody *ngFor="let skill of unit.formattedTmr.formattedSkills">
+          <tbody *ngFor="let skill of unit.tmr.formattedSkills">
             <tr>
               <th class="sub">Type</th>
               <th class="sub" *ngIf="skill.type === 'skill'">name</th>

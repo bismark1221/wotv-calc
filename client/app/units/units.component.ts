@@ -126,8 +126,6 @@ export class UnitsComponent implements OnInit {
     this.rawJobs = result.rawJobs;
     this.jobs = result.jobs;
     this.costs = result.costs;
-
-    console.log(result)
   }
 
   filterUnits() {

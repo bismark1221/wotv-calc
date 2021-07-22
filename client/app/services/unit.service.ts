@@ -159,7 +159,7 @@ export class UnitService {
     };
   }
 
-  filterUnitsWithApi(units, filters, sort = 'rarity', order = 'desc', jobs = []) {
+  filterUnitsWithApi(units, filters, sort = 'rarity', order = 'desc', jobs) {
     if (filters) {
       const filteredUnits = [];
 
@@ -192,7 +192,7 @@ export class UnitService {
     }
   }
 
-  private unitCanEquipWithApi(unit, filters, jobs = []) {
+  private unitCanEquipWithApi(unit, filters, jobs) {
     let unitCanEquip = true;
     const job = jobs.find(searchedJob => searchedJob.dataId === unit.jobs[0]);
 
@@ -218,6 +218,68 @@ export class UnitService {
     }
 
     return unitCanEquip;
+  }
+
+  async getUnitBySlugWithApi(slug) {
+    const apiResult = await this.getApi(slug, [{name: 'forDetail', value: 1}]);
+
+    if (apiResult.unit) {
+      const unit = new Unit();
+      unit.constructFromJson(apiResult.unit, this.translateService);
+
+      unit.rawJobs = apiResult.jobs;
+      unit.rawSkills = apiResult.skills;
+      unit.index = apiResult.index;
+      unit.tmr = apiResult.tmr;
+
+      this.formatSkillsWithApi(unit);
+
+      return unit;
+    }
+
+    return null;
+  }
+
+  formatSkillsWithApi(unit) {
+    unit.formattedUnlockedSkills = [];
+    if (unit.unlockedSkills) {
+      for (const skillId of unit.unlockedSkills) {
+        unit.formattedUnlockedSkills.push(unit.rawSkills.find(searchedSkill => searchedSkill.dataId === skillId));
+      }
+    }
+
+    for (const nodeId of Object.keys(unit.board.nodes)) {
+      const node = unit.board.nodes[nodeId];
+      if (node.dataId) {
+        unit.board.nodes[nodeId].skill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === node.dataId);
+      }
+
+      if (unit.board.nodes[nodeId].skill) {
+        if (unit.board.nodes[nodeId].skill.type === 'buff' || unit.board.nodes[nodeId].skill.type === 'ex_buff') {
+          unit.board.nodes[nodeId].skill = JSON.parse(JSON.stringify(unit.board.nodes[nodeId].skill));
+        }
+
+        unit.board.nodes[nodeId].skill.unlockStar = node.unlockStar;
+        unit.board.nodes[nodeId].skill.unlockJob = node.unlockJob;
+        unit.board.nodes[nodeId].skill.jobLevel = node.jobLevel;
+        unit.board.nodes[nodeId].skill.jp = node.jp;
+        unit.board.nodes[nodeId].skill.mainSkill = node.mainSkill;
+      }
+    }
+
+    if (unit.replacedSkills) {
+      for (const replace of Object.keys(unit.replacedSkills)) {
+        for (const upgrade of unit.replacedSkills[replace]) {
+          if (typeof upgrade.newSkill === 'string') {
+            upgrade.newSkill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === upgrade.newSkill);
+            const oldSkill = this.getSkillByIdFromBoard(unit, upgrade.oldSkill);
+            if (oldSkill) {
+              upgrade.newSkill.mainSkill = oldSkill.mainSkill;
+            }
+          }
+        }
+      }
+    }
   }
 
   private getRaw(forcedVersion = null) {

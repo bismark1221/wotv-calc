@@ -103,6 +103,9 @@ export class Unit {
   attack;
   releaseDate = 'XX/XX/XXXX';
   unlockedSkills = [];
+  rawJobs = [];
+  rawSkills = [];
+  index = {};
 
   // Only for builder
   star;
