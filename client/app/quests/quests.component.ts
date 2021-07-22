@@ -13,6 +13,7 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./quests.component.css']
 })
 export class QuestsComponent implements OnInit {
+  rawQuests = [];
   quests = [];
   searchText = '';
   sort = 'name';
@@ -72,8 +73,16 @@ export class QuestsComponent implements OnInit {
   }
 
   async getQuests() {
-    this.quests = await this.questService.getQuestsForListing(this.filters, this.sort, this.order);
+    const result = await this.questService.getQuestsForListing(this.filters, this.sort, this.order);
+
+    this.quests = result.quests;
+    this.rawQuests = result.rawQuests;
+
     this.translateQuests();
+  }
+
+  filterQuests() {
+    this.quests = this.questService.filterQuests(this.rawQuests, this.filters, this.sort, this.order);
   }
 
   private translateQuests() {
@@ -107,7 +116,7 @@ export class QuestsComponent implements OnInit {
     sessionStorage.setItem('questsFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
-    this.getQuests();
+    this.filterQuests();
   }
 
   filterChecked() {

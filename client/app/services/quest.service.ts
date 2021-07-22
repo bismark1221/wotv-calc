@@ -113,29 +113,22 @@ export class QuestService {
 
   async getQuestsForListing(filters = null, sort = 'name', order = 'asc') {
     let quests: Quest[] = [];
-    const rawQuests = await this.getApi(null, [{name: 'forListing', value: 1}]);
+    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+    const rawQuests = [];
 
-    Object.keys(rawQuests).forEach(questId => {
+    apiResult.forEach(apiQuest => {
       const quest = new Quest();
-      quest.constructFromJson(rawQuests[questId], this.translateService);
+      quest.constructFromJson(apiQuest, this.translateService);
       quests.push(quest);
+      rawQuests.push(quest);
     });
 
     quests = this.filterQuests(quests, filters);
 
-    switch (sort) {
-      case 'name' :
-        this.sortByName(quests, order);
-      break;
-      case 'lastRelease' :
-        this.toolService.sortByLastRelease(quests, order);
-      break;
-      default :
-        console.log('not managed sort');
-      break;
-    }
-
-    return quests;
+    return {
+      quests: quests,
+      rawQuests: rawQuests
+    };
   }
 
   private async formatItems(quest, searchedItemIds, items) {
@@ -217,7 +210,7 @@ export class QuestService {
     return quests;
   }
 
-  filterQuests(quests, filters) {
+  filterQuests(quests, filters, sort = 'name', order = 'asc') {
     if (filters) {
       const filteredQuests = [];
 
@@ -226,6 +219,18 @@ export class QuestService {
           filteredQuests.push(quest);
         }
       });
+
+      switch (sort) {
+        case 'name' :
+          this.sortByName(filteredQuests, order);
+        break;
+        case 'lastRelease' :
+          this.toolService.sortByLastRelease(filteredQuests, order);
+        break;
+        default :
+          console.log('not managed sort');
+        break;
+      }
 
       return filteredQuests;
     } else {

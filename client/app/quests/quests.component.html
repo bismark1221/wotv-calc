@@ -29,7 +29,7 @@
         <div class="sortOrderBlock">
           <div class="sortBy">
             <span>Sort by :</span>
-            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['name', 'lastRelease']" [(ngModel)]="sort" (ngModelChange)="getQuests()" [clearable]="false" [searchable]="false">
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['name', 'lastRelease']" [(ngModel)]="sort" (ngModelChange)="filterQuests()" [clearable]="false" [searchable]="false">
               <ng-template ng-label-tmp let-item="item">
                 {{ (item === 'lastRelease' ? 'Last Release' : item) | titlecase }}
               </ng-template>
@@ -41,7 +41,7 @@
           </div>
           <div class="orderBy">
             <span>Order by :</span>
-            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="getQuests()" [clearable]="false" [searchable]="false">
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="filterQuests()" [clearable]="false" [searchable]="false">
               <ng-template ng-label-tmp let-item="item">
                 {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
               </ng-template>
