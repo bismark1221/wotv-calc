@@ -32,7 +32,7 @@ export class EsperComponent implements OnInit {
     private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
-      await this.formatEsper();
+      this.formatEsper();
     });
   }
 
@@ -42,7 +42,7 @@ export class EsperComponent implements OnInit {
       if (!this.esper) {
         this.router.navigate([this.navService.getRoute('/esper-not-found')]);
       } else {
-        await this.formatEsper();
+        this.formatEsper();
 
         this.navService.setTitle(this.esper.name);
       }
@@ -62,13 +62,13 @@ export class EsperComponent implements OnInit {
     });
   }
 
-  private async formatEsper() {
+  private formatEsper() {
     if (this.esper) {
       const lang = this.translateService.currentLang;
       this.esper.name = this.nameService.getName(this.esper);
       this.esper.limited = this.esperService.isLimited(this.esper.dataId);
 
-      this.esper.formattedSkill = await this.skillService.getSkill(this.esper.skill);
+      this.esper.formattedSkill = this.esper.rawSkills.find(searchedSkill => searchedSkill.dataId === this.esper.skill);
       if (this.esper.formattedSkill) {
         this.esper.formattedSkill.name = this.nameService.getName(this.esper.formattedSkill);
         this.esper.formattedSkill.effectsHtml = this.skillService.formatEffects(this.esper, this.esper.formattedSkill);
@@ -91,7 +91,7 @@ export class EsperComponent implements OnInit {
         });
       });
 
-      this.grid = await this.gridService.generateEsperGrid(this.esper, 800);
+      this.grid = this.gridService.generateEsperGridForDetail(this.esper, 800);
     }
   }
 

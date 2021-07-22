@@ -12,6 +12,7 @@ import { AuthService } from './auth.service';
 import { SkillService } from './skill.service';
 import { NameService } from './name.service';
 import { DataService } from './data.service';
+import { ApiService } from './api.service';
 
 import { Esper } from '../entities/esper';
 
@@ -42,6 +43,7 @@ export class EsperService {
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private dataService: DataService,
+    private apiService: ApiService,
     private gridService: GridService,
     private navService: NavService,
     private toolService: ToolService,
@@ -50,6 +52,35 @@ export class EsperService {
     private nameService: NameService,
     private firestore: AngularFirestore
   ) {}
+
+  private async getApi(param = null, extraQuery = []) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('espers', param, extraQuery)));
+  }
+
+  async getEspersForListingWithCosts(filters = null, sort = 'rarity', order = 'desc') {
+    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+
+    const rawEspers = [];
+    const costs = [];
+
+    for (const apiEsper of apiResult) {
+      const rawEsper = new Esper();
+      rawEsper.constructFromJson(apiEsper, this.translateService);
+      rawEspers.push(rawEsper);
+
+      if (costs.indexOf(rawEsper.cost) === -1) {
+        costs.push(rawEsper.cost);
+      }
+    }
+
+    const espers = this.filterEspers(rawEspers, filters, sort, order);
+
+    return {
+      rawEspers: rawEspers,
+      espers: espers,
+      costs: costs.sort((a, b) => b - a)
+    };
+  }
 
   private getRaw() {
     return this.dataService.loadData('espers');
@@ -76,21 +107,6 @@ export class EsperService {
     await this.getEspers();
     const espers = this.filterEspers(this[this.navService.getVersion() + '_espers'], filters);
 
-    switch (sort) {
-      case 'rarity' :
-        this.toolService.sortByRarity(espers, order);
-      break;
-      case 'name' :
-        this.toolService.sortByName(espers, order);
-      break;
-      case 'releaseDate' :
-        this.toolService.sortByReleaseDate(espers, order);
-      break;
-      default :
-        console.log('not managed sort');
-      break;
-    }
-
     return espers;
   }
 
@@ -107,7 +123,7 @@ export class EsperService {
     return costs.sort((a, b) => b - a);
   }
 
-  filterEspers(espers, filters) {
+  filterEspers(espers, filters, sort = 'rarity', order = 'desc') {
     if (filters) {
       const filteredEspers = [];
 
@@ -122,9 +138,27 @@ export class EsperService {
         }
       });
 
-      return filteredEspers;
+      return this.sortEspers(filteredEspers, sort, order);
     } else {
-      return espers;
+      return this.sortEspers(espers, sort, order);
+    }
+  }
+
+  private sortEspers(espers, sort = 'rarity', order = 'desc') {
+    switch (sort) {
+      case 'rarity' :
+        return this.toolService.sortByRarity(espers, order);
+      break;
+      case 'name' :
+        return this.toolService.sortByName(espers, order);
+      break;
+      case 'releaseDate' :
+        return this.toolService.sortByReleaseDate(espers, order);
+      break;
+      default :
+        console.log('not managed sort');
+        return espers;
+      break;
     }
   }
 
@@ -150,12 +184,11 @@ export class EsperService {
   }
 
   async getEsperBySlug(slug) {
-    await this.getEspers();
+    const apiResult = await this.getApi(slug, [{name: 'forDetail', value: 1}]);
+    const esper = new Esper();
+    esper.constructFromJson(apiResult.esper, this.translateService);
 
-    let esper = this[this.navService.getVersion() + '_espers'].find(searchedEsper => searchedEsper.slug === slug);
-    if (esper) {
-      esper = JSON.parse(JSON.stringify(esper));
-    }
+    esper.rawSkills = apiResult.skills;
 
     return esper;
   }

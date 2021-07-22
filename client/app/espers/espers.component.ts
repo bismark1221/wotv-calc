@@ -11,6 +11,7 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./espers.component.css']
 })
 export class EspersComponent implements OnInit {
+  rawEspers = [];
   espers = [];
   searchText = '';
   sort = 'rarity';
@@ -70,7 +71,6 @@ export class EspersComponent implements OnInit {
 
   async ngOnInit() {
     this.navService.setTitle('Espers');
-    this.costs = await this.esperService.getCosts();
 
     if (sessionStorage.getItem('espersFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('espersFilters'));
@@ -93,8 +93,15 @@ export class EspersComponent implements OnInit {
   }
 
   async getEspers() {
-    this.espers = await this.esperService.getEspersForListing(this.filters, this.sort, this.order);
-    this.translateEspers();
+    const result = await this.esperService.getEspersForListingWithCosts(this.filters, this.sort, this.order);
+
+    this.espers = result.espers;
+    this.rawEspers = result.rawEspers;
+    this.costs = result.costs;
+  }
+
+  filterEspers() {
+    this.espers = this.esperService.filterEspers(this.rawEspers, this.filters, this.sort, this.order);
   }
 
   private translateEspers() {
@@ -127,12 +134,12 @@ export class EspersComponent implements OnInit {
 
     sessionStorage.setItem('espersFilters', JSON.stringify(this.filters));
 
-    await this.getEspers();
+    this.filterEspers();
   }
 
   async toggleThreeStars() {
     this.filters.threeStars = !this.filters.threeStars;
-    await this.getEspers();
+    this.filterEspers();
   }
 
   filterChecked() {
