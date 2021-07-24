@@ -1,43 +1,42 @@
 <div class="row">
-  <div class="searchBlock">
-    <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for a card by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredCards()" id="click_search" (blur)="blurSearch()" (focus)="focusSearch()">
-    <i class="fas fa-times" id="reset_search" aria-hidden="true" (click)="selectCard('')"></i>
-    <i class="fas fa-chevron-up" id="open_search" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
-    <i class="fas fa-chevron-down" id="hide_search" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
-  </div>
-
   <div class="loadingBlock" *ngIf="loadingBuild">
     <h1>Your build is loading</h1>
     <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
   </div>
 
-  <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-    <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredCards[rarity] && filteredCards[rarity].length > 0">
-      <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
-    </div>
-    <div class="cardBlock" *ngIf="showList && !loadingBuild && filteredCards[rarity] && filteredCards[rarity].length > 0">
-      <div class="cardLine" *ngFor="let filteredCard of filteredCards[rarity]; let j = index">
-        <div class="cardSelector" id="selector_{{filteredCard.slug}}" [ngClass]="{'cardSelectorWithSave': savedCards[filteredCard.dataId]}" (click)="selectCard(filteredCard.dataId)">
-          <div class="cardLogo">
-            <img src="assets/cards/{{ filteredCard.image }}_m.png" />
-          </div>
-          <div class="cardName" innerHTML="{{ filteredCard.name | highlight: searchText }}"></div>
-        </div>
-        <div class="loadDiv" *ngIf="savedCards[filteredCard.dataId] && savedCards[filteredCard.dataId].length > 0">
-          <a id="load_{{filteredCard.slug}}" (click)="openLoadModal(filteredCard.dataId)"><i class="fas fa-download"></i></a>
-        </div>
-        <hr *ngIf="j !== filteredCards[rarity].length - 1"/>
-      </div>
-    </div>
-  </div>
+  <ng-select #selectBuilderCard placeholder="Search a card by name" class="select-builder-card" [items]="cards" groupBy="rarity" [(ngModel)]="selectedCardId" (ngModelChange)="selectCard()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true">
+    <ng-template ng-label-tmp let-item="item">
+      {{item.name}}
+    </ng-template>
 
-  <div class="saveBlock" *ngIf="!showList && card">
+    <ng-template ng-optgroup-tmp let-item="item" let-index="index">
+      <div class="rarityLine">
+        <img src="assets/rarity/{{item.rarity}}.png" /><span>{{ rarityTranslate[item.rarity] }}</span>
+      </div>
+    </ng-template>
+
+    <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+      <div class="cardLine" id="card_{{item.dataId}}">
+        <div class="cardSelector" id="cardSelector_{{item.dataId}}" [ngClass]="{'cardSelectorWithSave': savedCards[item.dataId]}">
+          <div class="cardLogo">
+            <img src="assets/cards/{{ item.image }}_m.png" />
+          </div>
+          <div class="cardNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+        </div>
+        <div class="loadDiv" *ngIf="savedCards[item.dataId] && savedCards[item.dataId].length > 0">
+          <i class="fas fa-download"></i>
+        </div>
+        <hr />
+      </div>
+    </ng-template>
+  </ng-select>
+
+  <div class="saveBlock" *ngIf="card">
     <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
-  <div class="leftBlock" *ngIf="!showList && card">
+  <div class="leftBlock" *ngIf="card">
     <table>
       <tbody>
         <tr>
@@ -97,7 +96,7 @@
     </table>
   </div>
 
-  <div class="rightBlock" *ngIf="!showList && card">
+  <div class="rightBlock" *ngIf="card">
     <table class="statsTable">
       <tbody>
         <tr>

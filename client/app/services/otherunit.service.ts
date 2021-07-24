@@ -1,26 +1,13 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
-import { HttpClient } from '@angular/common/http';
 
 import { TranslateService } from '@ngx-translate/core';
-import { AngularFirestore } from '@angular/fire/firestore';
 
 import { Unit } from '../entities/unit';
 
-import { GridService } from './grid.service';
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';
-import { JobService } from './job.service';
-import { GuildService } from './guild.service';
-import { MasterRanksService } from './mr.service';
-import { NavService } from './nav.service';
 import { NameService } from './name.service';
-import { EquipmentService } from './equipment.service';
-import { CardService } from './card.service';
-import { EsperService } from './esper.service';
-import { AuthService } from './auth.service';
 import { ToolService } from './tool.service';
-import { DataService } from './data.service';
 import { ApiService } from './api.service';
 
 @Injectable()
@@ -33,23 +20,10 @@ export class OtherUnitService {
 
   constructor(
     private translateService: TranslateService,
-    private localStorageService: LocalStorageService,
-    private gridService: GridService,
     private skillService: SkillService,
     private rangeService: RangeService,
-    private jobService: JobService,
-    private guildService: GuildService,
-    private masterRanksService: MasterRanksService,
-    private navService: NavService,
     private nameService: NameService,
-    private equipmentService: EquipmentService,
-    private cardService: CardService,
-    private esperService: EsperService,
-    private http: HttpClient,
-    private firestore: AngularFirestore,
-    private authService: AuthService,
     private toolService: ToolService,
-    private dataService: DataService,
     private apiService: ApiService
   ) {}
 

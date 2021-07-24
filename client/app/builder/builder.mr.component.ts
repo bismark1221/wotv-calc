@@ -12,6 +12,7 @@ import { NavService } from '../services/nav.service';
 export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
   masterRanks;
   ranks;
+  formattedRanks;
   showSave = false;
   version = 'GL';
 

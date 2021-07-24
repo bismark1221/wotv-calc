@@ -4,7 +4,7 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 import { NavService } from './nav.service';
-import { DataService } from './data.service';
+import { ApiService } from './api.service';
 import { AuthService } from './auth.service';
 
 @Injectable()
@@ -24,24 +24,28 @@ export class MasterRanksService {
   private JP_dataMasterRanks;
   private GL_dataMasterRanks;
 
-
   constructor(
     private localStorageService: LocalStorageService,
-    private dataService: DataService,
+    private apiService: ApiService,
     private navService: NavService,
     private authService: AuthService,
     private firestore: AngularFirestore
   ) {}
 
-  private getRaw() {
-    return this.dataService.loadData('masterRanks');
+  private async getApi(param = null, extraQuery = []) {
+    return JSON.parse(JSON.stringify(await this.apiService.loadData('masterRanks', param, extraQuery)));
   }
 
   async getMRs() {
     if (this[this.navService.getVersion() + '_dataMasterRanks'] === null || this[this.navService.getVersion() + '_dataMasterRanks'] === undefined) {
-      const rawMRs = JSON.parse(JSON.stringify(await this.getRaw()));
+      const rawMRs = await this.getApi();
 
-      this[this.navService.getVersion() + '_dataMasterRanks'] = rawMRs;
+      const formattedRanks = {};
+      for (const rank of rawMRs) {
+        formattedRanks[rank.condition] = rank;
+      }
+
+      this[this.navService.getVersion() + '_dataMasterRanks'] = formattedRanks;
     }
 
     return this[this.navService.getVersion() + '_dataMasterRanks'];

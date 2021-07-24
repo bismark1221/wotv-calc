@@ -167,6 +167,10 @@ export class CardService {
     };
   }
 
+  async getCardsForBuilder() {
+    return await this.getApi(null, [{name: 'forBuilder', value: 1}]);
+  }
+
   filterCards(cards, filters, sort = 'rarity', order = 'desc') {
     if (filters) {
       const filteredCards = [];
@@ -231,21 +235,6 @@ export class CardService {
         return cards;
       break;
     }
-  }
-
-  async getCardsForBuilder() {
-    const cards = await this.getCardsForListing(null, 'rarity', 'desc');
-
-    const formattedCardsForBuilder = [];
-    cards.forEach(card => {
-      formattedCardsForBuilder.push({
-        id: card.dataId,
-        name: card.getName(this.translateService),
-        rarity: card.rarity
-      });
-    });
-
-    return formattedCardsForBuilder;
   }
 
   async getCard(id) {

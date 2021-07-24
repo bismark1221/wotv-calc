@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -21,7 +21,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   styleUrls: ['./builder.card.component.css']
 })
 export class BuilderCardComponent implements OnInit, AfterViewInit {
-  cards = {};
+  cards = [];
   filteredCards = {};
   card;
   searchText = '';
@@ -29,6 +29,9 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
   loadingBuild = false;
   showSave = false;
   showList = true;
+  selectedCardId = null;
+
+  @ViewChild('selectBuilderCard') cardSelector;
 
   rarityTranslate = {
     UR: 'Ultra Rare',
@@ -55,8 +58,8 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     });
   }
 
-  ngOnInit() {
-    this.getCards();
+  async ngOnInit() {
+    await this.getCards();
 
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       const data = params.get('data');
@@ -77,6 +80,8 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
         }
 
         this.loadingBuild = false;
+      } else {
+        this.cardSelector.open();
       }
     });
 
@@ -102,66 +107,32 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
   }
 
   private async getCards() {
-    this.cards = this.formatCards(await this.cardService.getCardsForListing());
-    this.updateFilteredCards();
+    this.cards = await this.cardService.getCardsForBuilder();
     this.translateCards();
 
     this.savedCards = this.cardService.getSavedCards();
   }
 
   private translateCards() {
-    Object.keys(this.cards).forEach(rarity => {
-      this.cards[rarity].forEach(card => {
-        card.name = this.nameService.getName(card);
-      });
+    this.cards.forEach(card => {
+      card.name = this.nameService.getName(card);
     });
   }
 
-  private formatCards(cards) {
-    const formattedCards = { UR: [], MR: [], SR: [], R: [], N: [] };
-
-    cards.forEach(card => {
-      formattedCards[card.rarity].push(card);
-    });
-
-    return formattedCards;
-  }
-
-  updateFilteredCards() {
-    const text = this.searchText.toLowerCase();
-    this.filteredCards = { UR: [], MR: [], SR: [], R: [], N: [] };
-
-    Object.keys(this.cards).forEach(rarity => {
-      this.filteredCards[rarity] = this.cards[rarity].filter(card => {
-        return card.name.toLowerCase().includes(text);
-      });
-    });
-  }
-
-  focusSearch() {
-    if (!this.showList) {
-      this.updateFilteredCards();
-      this.showList = true;
-    }
-  }
-
-  blurSearch() {
-    if (this.card) {
-      this.searchText = this.card.name;
-      this.showList = false;
-    }
-  }
-
-  async selectCard(dataId, customData = null) {
-    if (dataId) {
-      this.card = await this.cardService.selectCardForBuilder(dataId, customData);
-      this.searchText = this.card.name;
-      this.showList = false;
-      await this.formatCardBuffs();
+  async selectCard(customData = null, fromModal = false) {
+    if (this.selectedCardId) {
+      if (!fromModal && this.savedCards[this.selectedCardId] && this.savedCards[this.selectedCardId].length > 0) {
+        this.openLoadModal(this.selectedCardId);
+        this.cardSelector.handleClearClick()
+      } else {
+        this.card = await this.cardService.selectCardForBuilder(this.selectedCardId, customData);
+        this.searchText = this.card.name;
+        this.showList = false;
+        await this.formatCardBuffs();
+      }
     } else {
       this.card = null;
       this.searchText = '';
-      this.updateFilteredCards();
       this.showList = true;
     }
   }
@@ -293,7 +264,8 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
 
     modalRef.result.then(async result => {
       if (result.type === 'load' && result.item) {
-        await this.selectCard(result.item.dataId, result.item);
+        this.selectedCardId = result.item.dataId;
+        await this.selectCard(result.item, true);
       }
 
       if (result.type === 'fullDelete') {

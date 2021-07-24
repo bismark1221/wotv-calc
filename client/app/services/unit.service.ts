@@ -61,7 +61,11 @@ export class UnitService {
     'UN_LW_P_LILS_01',
     'UN_FF7_P_AERT',
     'UN_FF7_P_BART',
-    'UN_LW_P_ZZAN_01'
+    'UN_LW_P_ZZAN_01',
+    'UN_LW_P_QILF_01',
+    'UN_LW_P_ELSR_01',
+    'UN_FF15_P_PRMP',
+    'UN_FF15_P_NCTS'
   ];
 
   private JP_limitedUnits = [
@@ -96,7 +100,11 @@ export class UnitService {
     'UN_LW_P_LILS_01',
     'UN_FF7_P_AERT',
     'UN_FF7_P_BART',
-    'UN_LW_P_ZZAN_01'
+    'UN_LW_P_ZZAN_01',
+    'UN_LW_P_QILF_01',
+    'UN_LW_P_ELSR_01',
+    'UN_FF15_P_PRMP',
+    'UN_FF15_P_NCTS'
   ];
 
 

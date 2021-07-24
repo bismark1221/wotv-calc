@@ -742,6 +742,23 @@ small {
 }
 
 
+.select-builder-card {
+  width: 1300px;
+}
+
+.select-builder-card .ng-input input {
+  cursor: text !important;
+}
+
+.select-builder-card .ng-optgroup {
+  padding: 0 !important;
+}
+
+.select-builder-card .ng-option {
+  padding: 0 !important;
+  padding-left: 5px !important;
+}
+
 
 
 .select-left-builder .ng-dropdown-panel-items {
@@ -797,4 +814,8 @@ small {
 
 .select-item-farmcalculator .ng-value {
   display: none;
+}
+
+.ng-placeholder {
+  padding-left: 2px;
 }

@@ -3,7 +3,6 @@ import { TranslateService } from '@ngx-translate/core';
 import { of } from 'rxjs';
 
 import { NavService } from './nav.service';
-import { DataService } from './data.service';
 import { JobService } from './job.service';
 import { EquipmentService } from './equipment.service';
 import { ApiService } from './api.service';
@@ -21,51 +20,13 @@ export class ItemService {
   constructor(
     private translateService: TranslateService,
     private navService: NavService,
-    private dataService: DataService,
     private jobService: JobService,
     private equipmentService: EquipmentService,
     private apiService: ApiService
   ) {}
 
-  private getRaw() {
-    return this.dataService.loadData('items');
-  }
-
   private async getApi(param = null, extraQuery = []) {
     return JSON.parse(JSON.stringify(await this.apiService.loadData('items', param, extraQuery)));
-  }
-
-  async getItems() {
-    if (this[this.navService.getVersion() + '_items'] === null || this[this.navService.getVersion() + '_items'] === undefined) {
-      const items: Item[] = [];
-      const rawItems = JSON.parse(JSON.stringify(await this.getRaw()));
-
-      Object.keys(rawItems).forEach(itemId => {
-        const item = new Item();
-        item.constructFromJson(rawItems[itemId]);
-        items.push(item);
-      });
-
-      this[this.navService.getVersion() + '_items'] = items;
-    }
-
-    return this[this.navService.getVersion() + '_items'];
-  }
-
-  async getItem(id: string, formatToShow = false) {
-    await this.getItems();
-
-    const item = this[this.navService.getVersion() + '_items'].find(itemData => itemData.dataId === id);
-
-    if (item) {
-      item.getName(this.translateService);
-
-      if (formatToShow) {
-        await this.formatItemToShow(item);
-      }
-    }
-
-    return item;
   }
 
   async getItemsByIds(itemIds) {
@@ -130,7 +91,7 @@ export class ItemService {
         const equipment = await this.equipmentService.getEquipment(item.icon);
         item.image = equipment.image;
       } else if (item.type === 'medal' && item.icon) {
-        const oldItem = await this.getItem(item.icon);
+        const oldItem = await this.getApi(item.icon);
         if (oldItem) {
           item.image = oldItem.dataId.toLowerCase();
         } else {
