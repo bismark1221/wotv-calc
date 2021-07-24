@@ -24,11 +24,9 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
   cards = [];
   filteredCards = {};
   card;
-  searchText = '';
   savedCards = {};
   loadingBuild = false;
   showSave = false;
-  showList = true;
   selectedCardId = null;
 
   @ViewChild('selectBuilderCard') cardSelector;
@@ -66,14 +64,17 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
       if (data) {
         this.loadingBuild = true;
 
-        const card = await this.cardService.getCardBySlug(data);
+        const card = await this.cardService.selectCardForBuilder(null, false, data);
+
         if (card) {
-          await this.selectCard(card.dataId);
+          this.selectedCardId = card.dataId;
+          this.card = card;
+          this.formatCardBuffs();
         } else {
-          this.cardService.getStoredCard(data).subscribe(async cardData => {
+          this.cardService.getStoredCard(data).subscribe(async (cardData: any) => {
             if (cardData) {
-              // @ts-ignore
-              await this.selectCard(cardData.dataId, cardData);
+              this.selectedCardId = cardData.dataId;
+              await this.selectCard(cardData, true);
               this.card.storeId = data;
             }
           });
@@ -123,22 +124,14 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     if (this.selectedCardId) {
       if (!fromModal && this.savedCards[this.selectedCardId] && this.savedCards[this.selectedCardId].length > 0) {
         this.openLoadModal(this.selectedCardId);
-        this.cardSelector.handleClearClick()
+        this.cardSelector.handleClearClick();
       } else {
         this.card = await this.cardService.selectCardForBuilder(this.selectedCardId, customData);
-        this.searchText = this.card.name;
-        this.showList = false;
-        await this.formatCardBuffs();
+        this.formatCardBuffs();
       }
     } else {
       this.card = null;
-      this.searchText = '';
-      this.showList = true;
     }
-  }
-
-  toogleList() {
-    this.showList = !this.showList;
   }
 
   async changeStar(value) {
@@ -148,25 +141,25 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
 
     this.card.star = value;
     this.cardService.changeStar(this.card);
-    await this.formatCardBuffs();
+    this.formatCardBuffs();
   }
 
   async updateLevel(level) {
     this.cardService.changeLevel(this.card);
-    await this.formatCardBuffs();
+    this.formatCardBuffs();
   }
 
   async maxCard() {
     this.cardService.maxCard(this.card);
-    await this.formatCardBuffs();
+    this.formatCardBuffs();
   }
 
   async resetCard() {
     this.cardService.resetCard(this.card);
-    await this.formatCardBuffs();
+    this.formatCardBuffs();
   }
 
-  private async formatCardBuffs() {
+  private formatCardBuffs() {
     this.card.formattedBuffs = {
       self: [],
       party: []
@@ -194,7 +187,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
                 for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
                   const jobId = cond.items[jobIndex];
                   if (jobId && !jobId.dataId) {
-                    const job = await this.jobService.getJob(jobId);
+                    const job = this.card.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
                     cond.items[jobIndex] = job ? job : cond.items[jobIndex];
                   }
                 }
@@ -202,7 +195,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
                 for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
                   const jobId = cond.items[jobIndex];
                   if (jobId && !jobId.dataId) {
-                    const job = await this.jobService.getJob(jobId);
+                    const job = this.card.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
                     cond.items[jobIndex] = job ? job : cond.items[jobIndex];
                   }
                 }
@@ -210,7 +203,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
                 for (let unitIndex = 0; unitIndex <= cond.items.length - 1; unitIndex++) {
                   const unitId = cond.items[unitIndex];
                   if (unitId && !unitId.dataId) {
-                    const unit = await this.unitService.getUnit(unitId);
+                    const unit = this.card.rawUnits.find(searchedUnit => searchedUnit.dataId === unitId);
                     cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
                   }
                 }
@@ -230,7 +223,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
             for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
               const jobId = cond.items[jobIndex];
               if (jobId && !jobId.dataId) {
-                const job = await this.jobService.getJob(jobId);
+                const job = this.card.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
                 cond.items[jobIndex] = job ? job : cond.items[jobIndex];
               }
             }
@@ -238,7 +231,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
             for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
               const jobId = cond.items[jobIndex];
               if (jobId && !jobId.dataId) {
-                const job = await this.jobService.getJob(jobId);
+                const job = this.card.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
                 cond.items[jobIndex] = job ? job : cond.items[jobIndex];
               }
             }
@@ -246,7 +239,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
             for (let unitIndex = 0; unitIndex <= cond.items.length - 1; unitIndex++) {
               const unitId = cond.items[unitIndex];
               if (unitId && !unitId.dataId) {
-                const unit = await this.unitService.getUnit(unitId);
+                const unit = this.card.rawUnits.find(searchedUnit => searchedUnit.dataId === unitId);
                 cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
               }
             }

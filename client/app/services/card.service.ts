@@ -254,9 +254,7 @@ export class CardService {
       this.card.rawSkills = apiResult.skills;
       this.card.rawUnits = apiResult.units;
 
-      if (this.card) {
-        this.card.statsType = this.getAvailableStats();
-      }
+      this.card.statsType = this.card.getAvailableStats();
 
       return this.card;
     } else {
@@ -290,54 +288,68 @@ export class CardService {
     return data;
   }
 
-  async selectCardForBuilder(cardId, customData = null) {
-    this.card = new Card();
-    this.card.constructFromJson(JSON.parse(JSON.stringify(await this.getCard(cardId))), this.translateService);
-    this.card.name = this.card.getName(this.translateService);
+  async selectCardForBuilder(cardId, customData = null, slug = null) {
+    let apiResult = null;
+    if (slug === null) {
+      apiResult = await this.getApi(cardId, [{name: 'forBuilder', value: 1}, {name: 'byId', value: 1}]);
+    } else {
+      apiResult = await this.getApi(slug, [{name: 'forBuilder', value: 1}, {name: 'bySlug', value: 1}]);
+    }
 
-    this.card.star = 0;
-    this.card.level = 1;
-    this.card.statsType = this.card.getAvailableStats();
+    if (apiResult.card) {
+      this.card = new Card();
+      this.card.constructFromJson(apiResult.card, this.translateService);
 
-    const skills = ['classic', 'awake', 'lvmax'];
-    const buffTypes = ['unitBuffs', 'partyBuffs'];
+      this.card.rawJobs = apiResult.jobs;
+      this.card.rawSkills = apiResult.skills;
+      this.card.rawUnits = apiResult.units;
 
-    for (const buffType of buffTypes) {
-      this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)] = [];
-      for (const buffIds of this.card[buffType]) {
-        const buffs = {};
-        for (const skillType of skills) {
-          if (buffIds[skillType]) {
-            const buff = await this.skillService.getSkill(buffIds[skillType]);
-            if (buff) {
-              buffs[skillType] = buff;
+      this.card.star = 0;
+      this.card.level = 1;
+      this.card.statsType = this.card.getAvailableStats();
+
+      const skills = ['classic', 'awake', 'lvmax'];
+      const buffTypes = ['unitBuffs', 'partyBuffs'];
+
+      for (const buffType of buffTypes) {
+        this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)] = [];
+        for (const buffIds of this.card[buffType]) {
+          const buffs = {};
+          for (const skillType of skills) {
+            if (buffIds[skillType]) {
+              const buff = this.card.rawSkills.find(searchedSkill => searchedSkill.dataId === buffIds[skillType]);
+              if (buff) {
+                buffs[skillType] = buff;
+              }
             }
           }
+          this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)].push(buffs);
         }
-        this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)].push(buffs);
       }
-    }
 
-    for (const buffType of buffTypes) {
-      let i = 0;
-      for (const buff of this.card[buffType]) {
-        if (buff.cond) {
-          this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)][i].cond = buff.cond;
+      for (const buffType of buffTypes) {
+        let i = 0;
+        for (const buff of this.card[buffType]) {
+          if (buff.cond) {
+            this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)][i].cond = buff.cond;
+          }
+          i++;
         }
-        i++;
       }
+
+      const existingCard = this.initiateSavedCard(customData);
+
+      if (!existingCard) {
+        this.maxCard();
+      } else {
+        this.card.updateMaxLevel();
+        this.card.changeLevel(this.nameService, this.skillService, this.rangeService);
+      }
+
+      return this.card;
     }
 
-    const existingCard = this.initiateSavedCard(customData);
-
-    if (!existingCard) {
-      this.maxCard();
-    } else {
-      this.card.updateMaxLevel();
-      this.card.changeLevel(this.nameService, this.skillService, this.rangeService);
-    }
-
-    return this.card;
+    return null;
   }
 
   private initiateSavedCard(customData = null) {
