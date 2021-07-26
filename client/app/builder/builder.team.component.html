@@ -13,7 +13,7 @@
   </div>
 
   <div class="unitCol" *ngFor="let unitPos of [0, 1, 2, 3, 4]">
-    <ng-select placeholder="Select an unit" class="select-unit-team" [items]="availableUnits[unitPos]" groupBy="rarity" [(ngModel)]="selectedUnits[unitPos]" (ngModelChange)="selectUnit(unitPos)" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true">
+    <ng-select placeholder="Select an unit" class="select-unit-team" [items]="availableUnits[unitPos]" groupBy="rarity" [(ngModel)]="selectedUnits[unitPos]" (ngModelChange)="selectUnit(unitPos)" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true" dropdownPosition="bottom">
       <ng-template ng-label-tmp let-item="item">
         {{item.name}}
       </ng-template>

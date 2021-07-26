@@ -7,7 +7,7 @@ import { SkillService } from '../services/skill.service';
 import { RangeService } from '../services/range.service';
 import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 
 @Component({
   selector: 'app-esper',
@@ -29,7 +29,7 @@ export class EsperComponent implements OnInit {
     private translateService: TranslateService,
     private gridService: GridService,
     private navService: NavService,
-    private nameService: NameService
+    private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
       this.formatEsper();
@@ -65,12 +65,12 @@ export class EsperComponent implements OnInit {
   private formatEsper() {
     if (this.esper) {
       const lang = this.translateService.currentLang;
-      this.esper.name = this.nameService.getName(this.esper);
+      this.esper.name = this.toolService.getName(this.esper);
       this.esper.limited = this.esperService.isLimited(this.esper.dataId);
 
       this.esper.formattedSkill = this.esper.rawSkills.find(searchedSkill => searchedSkill.dataId === this.esper.skill);
       if (this.esper.formattedSkill) {
-        this.esper.formattedSkill.name = this.nameService.getName(this.esper.formattedSkill);
+        this.esper.formattedSkill.name = this.toolService.getName(this.esper.formattedSkill);
         this.esper.formattedSkill.effectsHtml = this.skillService.formatEffects(this.esper, this.esper.formattedSkill);
 
         if (this.esper.formattedSkill.damage) {

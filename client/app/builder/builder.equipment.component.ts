@@ -1,10 +1,10 @@
-import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { EquipmentService } from '../services/equipment.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { AuthService } from '../services/auth.service';
 import { NavService } from '../services/nav.service';
 
@@ -18,14 +18,14 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   styleUrls: ['./builder.equipment.component.css']
 })
 export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
+  equipments = [];
   equipment;
-  filteredEquipments = {};
-  equipments = {};
-  searchText = '';
   savedEquipments = {};
   loadingBuild = false;
   showSave = false;
-  showList = true;
+  selectedEquipmentId = null;
+
+  @ViewChild('selectBuilderEquipment') equipmentSelector;
 
   rarityTranslate = {
     UR: 'Ultra Rare',
@@ -40,7 +40,7 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
     private modalService: NgbModal,
-    private nameService: NameService,
+    private toolService: ToolService,
     private authService: AuthService,
     private navService: NavService
   ) {
@@ -57,20 +57,24 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
       if (data) {
         this.loadingBuild = true;
 
-        const equipment = await this.equipmentService.getEquipmentBySlug(data);
+        const equipment = await this.equipmentService.selectEquipmentForBuilder(null, false, data);
+
         if (equipment) {
-          await this.selectEquipment(equipment.dataId);
+          this.selectedEquipmentId = equipment.dataId;
+          this.equipment = equipment;
+          this.loadingBuild = false;
         } else {
-          this.equipmentService.getStoredEquipment(data).subscribe(async equipmentData => {
+          this.equipmentService.getStoredEquipment(data).subscribe(async (equipmentData: any) => {
             if (equipmentData) {
-              // @ts-ignore
-              await this.selectEquipment(equipmentData.dataId, equipmentData);
+              this.selectedEquipmentId = equipmentData.dataId;
+              await this.selectEquipment(equipmentData, true);
               this.equipment.storeId = data;
             }
+            this.loadingBuild = false;
           });
         }
-
-        this.loadingBuild = false;
+      } else {
+        this.equipmentSelector.open();
       }
     });
 
@@ -96,83 +100,28 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   }
 
   private async getEquipments() {
-    const types = await this.equipmentService.getAcquisitionTypes();
-    const acquisitionTypes = types.acquisitionTypes;
-    const filters = {
-      acquisition: []
-    };
-
-    acquisitionTypes.forEach(type => {
-      if (type !== 'Unknown') {
-        filters.acquisition.push(type);
-      }
-    });
-
-    this.equipments = this.formatEquipments(await this.equipmentService.getEquipmentsForListing(filters));
-    this.updateFilteredEquipments();
-    this.translateEquipments();
-
+    this.equipments = await this.equipmentService.getEquipmentsForBuilder();
     this.savedEquipments = this.equipmentService.getSavedEquipments();
+    this.translateEquipments();
   }
 
   private translateEquipments() {
-    Object.keys(this.equipments).forEach(rarity => {
-      this.equipments[rarity].forEach(equipment => {
-        equipment.name = this.nameService.getName(equipment);
-      });
+    this.equipments.forEach(equipment => {
+      equipment.name = this.toolService.getName(equipment);
     });
   }
 
-  private formatEquipments(equipments) {
-    const formattedEquipments = { UR: [], MR: [], SR: [], R: [], N: [] };
-
-    equipments.forEach(equipment => {
-      formattedEquipments[equipment.rarity].push(equipment);
-    });
-
-    return formattedEquipments;
-  }
-
-  updateFilteredEquipments() {
-    const text = this.searchText.toLowerCase();
-    this.filteredEquipments = { UR: [], MR: [], SR: [], R: [], N: [] };
-
-    Object.keys(this.equipments).forEach(rarity => {
-      this.filteredEquipments[rarity] = this.equipments[rarity].filter(equipment => {
-        return equipment.name.toLowerCase().includes(text);
-      });
-    });
-  }
-
-  focusSearch() {
-    if (!this.showList) {
-      this.updateFilteredEquipments();
-      this.showList = true;
-    }
-  }
-
-  blurSearch() {
-    if (this.equipment) {
-      this.searchText = this.equipment.name;
-      this.showList = false;
-    }
-  }
-
-  async selectEquipment(dataId, customData = null) {
-    if (dataId) {
-      this.equipment = await this.equipmentService.selectEquipmentForBuilder(dataId, customData);
-      this.searchText = this.equipment.name;
-      this.showList = false;
+  async selectEquipment(customData = null, fromModal = false) {
+    if (this.selectedEquipmentId) {
+      if (!fromModal && this.savedEquipments[this.selectedEquipmentId] && this.savedEquipments[this.selectedEquipmentId].length > 0) {
+        this.openLoadModal(this.selectedEquipmentId);
+        this.equipmentSelector.handleClearClick();
+      } else {
+        this.equipment = await this.equipmentService.selectEquipmentForBuilder(this.selectedEquipmentId, customData);
+      }
     } else {
       this.equipment = null;
-      this.searchText = '';
-      this.updateFilteredEquipments();
-      this.showList = true;
     }
-  }
-
-  toogleList() {
-    this.showList = !this.showList;
   }
 
   updateUpgrade() {
@@ -204,10 +153,17 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
 
     modalRef.componentInstance.type = 'equipment';
     modalRef.componentInstance.savedItems = this.savedEquipments[equipmentId];
+    modalRef.componentInstance.allowNew = true;
 
     modalRef.result.then(async result => {
+      if (result.type === 'new') {
+        this.selectedEquipmentId = equipmentId;
+        await this.selectEquipment(null, true);
+      }
+
       if (result.type === 'load' && result.item) {
-        await this.selectEquipment(result.item.dataId, result.item);
+        this.selectedEquipmentId = result.item.dataId;
+        await this.selectEquipment(result.item, true);
       }
 
       if (result.type === 'fullDelete') {

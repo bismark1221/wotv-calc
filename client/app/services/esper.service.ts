@@ -10,7 +10,6 @@ import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
 import { SkillService } from './skill.service';
-import { NameService } from './name.service';
 import { DataService } from './data.service';
 import { ApiService } from './api.service';
 
@@ -46,10 +45,9 @@ export class EsperService {
     private apiService: ApiService,
     private gridService: GridService,
     private navService: NavService,
-    private toolService: ToolService,
     private authService: AuthService,
     private skillService: SkillService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private firestore: AngularFirestore
   ) {}
 
@@ -80,6 +78,16 @@ export class EsperService {
       espers: espers,
       costs: costs.sort((a, b) => b - a)
     };
+  }
+
+  async getEspersForBuilder() {
+    const espers = await this.getApi(null, [{name: 'forBuilder', value: 1}]);
+
+    if (espers && espers.length > 0) {
+      return this.sortEspers(espers);
+    }
+
+    return [];
   }
 
   private getRaw() {
@@ -162,21 +170,6 @@ export class EsperService {
     }
   }
 
-  async getEspersForBuilder() {
-    const espers = await this.getEspersForListing(null, 'rarity', 'desc');
-
-    const formattedEspersForBuilder = [];
-    espers.forEach(esper => {
-      formattedEspersForBuilder.push({
-        id: esper.dataId,
-        name: esper.getName(this.translateService),
-        rarity: esper.rarity
-      });
-    });
-
-    return formattedEspersForBuilder;
-  }
-
   async getEsper(id) {
     await this.getEspers();
 
@@ -230,41 +223,52 @@ export class EsperService {
     return data;
   }
 
-  async selectEsperForBuilder(esperId, customData = null) {
-    this.esper = new Esper();
-    this.esper.constructFromJson(JSON.parse(JSON.stringify(await this.getEsper(esperId))), this.translateService);
-
-    this.esper.name = this.esper.getName(this.translateService);
-
-    for (const nodeId of Object.keys(this.esper.board.nodes)) {
-      const node = this.esper.board.nodes[nodeId];
-      this.esper.board.nodes[nodeId].skill = await this.skillService.getSkill(node.dataId);
-      if (this.esper.board.nodes[nodeId].skill) {
-        this.esper.board.nodes[nodeId].skill.sp = node.sp;
-        this.esper.board.nodes[nodeId].skill.unlockStar = node.unlockStar;
-      }
-    }
-
-    this.esper.star = 1;
-    this.esper.level = 1;
-    this.esper.maxSPs = 0;
-    this.esper.usedSPs = 0;
-    this.esper.resonance = 10;
-    this.esper.possibleBuffs = null;
-
-    const existingEsper = this.initiateSavedEsper(customData);
-
-    if (!existingEsper) {
-      this.maxEsper();
+  async selectEsperForBuilder(esperId, customData = null, slug = null) {
+    let apiResult = null;
+    if (slug === null) {
+      apiResult = await this.getApi(esperId, [{name: 'forBuilder', value: 1}, {name: 'byId', value: 1}]);
     } else {
-      this.esper.updateMaxLevel();
-      this.esper.changeLevel();
+      apiResult = await this.getApi(slug, [{name: 'forBuilder', value: 1}, {name: 'bySlug', value: 1}]);
     }
 
-    this.esper.updateEsperBuffs();
-    this.esper.grid = await this.gridService.generateEsperGrid(this.esper, 1000);
+    if (apiResult.esper) {
+      this.esper = new Esper();
+      this.esper.constructFromJson(apiResult.esper, this.translateService);
 
-    return this.esper;
+      this.esper.rawSkills = apiResult.skills;
+
+      for (const nodeId of Object.keys(this.esper.board.nodes)) {
+        const node = this.esper.board.nodes[nodeId];
+        this.esper.board.nodes[nodeId].skill = this.esper.rawSkills.find(searchedSkill => searchedSkill.dataId === node.dataId);
+        if (this.esper.board.nodes[nodeId].skill) {
+          this.esper.board.nodes[nodeId].skill.sp = node.sp;
+          this.esper.board.nodes[nodeId].skill.unlockStar = node.unlockStar;
+        }
+      }
+
+      this.esper.star = 1;
+      this.esper.level = 1;
+      this.esper.maxSPs = 0;
+      this.esper.usedSPs = 0;
+      this.esper.resonance = 10;
+      this.esper.possibleBuffs = null;
+
+      const existingEsper = this.initiateSavedEsper(customData);
+
+      if (!existingEsper) {
+        this.maxEsper();
+      } else {
+        this.esper.updateMaxLevel();
+        this.esper.changeLevel();
+      }
+
+      this.esper.updateEsperBuffs();
+      this.esper.grid = this.gridService.generateEsperGridForDetail(this.esper, 1000);
+
+      return this.esper;
+    }
+
+    return null;
   }
 
   private initiateSavedEsper(customData = null) {

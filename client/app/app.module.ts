@@ -90,7 +90,6 @@ import { EsperService } from './services/esper.service';
 import { JobService } from './services/job.service';
 import { GridService } from './services/grid.service';
 import { GuildService } from './services/guild.service';
-import { NameService } from './services/name.service';
 import { ThemeService } from './services/theme.service';
 import { RaidService } from './services/raid.service';
 import { TeamService } from './services/team.service';
@@ -213,7 +212,6 @@ export function createTranslateLoader(http: HttpClient) {
     JobService,
     GridService,
     GuildService,
-    NameService,
     ThemeService,
     RaidService,
     TeamService,

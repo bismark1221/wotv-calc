@@ -4,7 +4,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { CardService } from '../services/card.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { AuthService } from '../services/auth.service';
 import { NavService } from '../services/nav.service';
 import { SkillService } from '../services/skill.service';
@@ -22,7 +22,6 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 })
 export class BuilderCardComponent implements OnInit, AfterViewInit {
   cards = [];
-  filteredCards = {};
   card;
   savedCards = {};
   loadingBuild = false;
@@ -44,7 +43,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     private cardService: CardService,
     private translateService: TranslateService,
     private modalService: NgbModal,
-    private nameService: NameService,
+    private toolService: ToolService,
     private authService: AuthService,
     private navService: NavService,
     private skillService: SkillService,
@@ -70,6 +69,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
           this.selectedCardId = card.dataId;
           this.card = card;
           this.formatCardBuffs();
+          this.loadingBuild = false;
         } else {
           this.cardService.getStoredCard(data).subscribe(async (cardData: any) => {
             if (cardData) {
@@ -77,10 +77,9 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
               await this.selectCard(cardData, true);
               this.card.storeId = data;
             }
+            this.loadingBuild = false;
           });
         }
-
-        this.loadingBuild = false;
       } else {
         this.cardSelector.open();
       }
@@ -109,14 +108,13 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
 
   private async getCards() {
     this.cards = await this.cardService.getCardsForBuilder();
-    this.translateCards();
-
     this.savedCards = this.cardService.getSavedCards();
+    this.translateCards();
   }
 
   private translateCards() {
     this.cards.forEach(card => {
-      card.name = this.nameService.getName(card);
+      card.name = this.toolService.getName(card);
     });
   }
 
@@ -254,8 +252,14 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
 
     modalRef.componentInstance.type = 'card';
     modalRef.componentInstance.savedItems = this.savedCards[cardId];
+    modalRef.componentInstance.allowNew = true;
 
     modalRef.result.then(async result => {
+      if (result.type === 'new') {
+        this.selectedCardId = cardId;
+        await this.selectCard(null, true);
+      }
+
       if (result.type === 'load' && result.item) {
         this.selectedCardId = result.item.dataId;
         await this.selectCard(result.item, true);

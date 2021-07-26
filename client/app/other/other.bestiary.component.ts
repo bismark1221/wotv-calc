@@ -3,9 +3,8 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { OtherUnitService } from '../services/otherunit.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
-import { JobService } from '../services/job.service';
 import { ToolService } from '../services/tool.service';
+import { JobService } from '../services/job.service';
 
 @Component({
   selector: 'app-other-bestiary',
@@ -50,9 +49,8 @@ export class OtherBestiaryComponent implements OnInit {
     private otherUnitService: OtherUnitService,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
-    private jobService: JobService,
-    private toolService: ToolService
+    private toolService: ToolService,
+    private jobService: JobService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateUnits();
@@ -91,7 +89,7 @@ export class OtherBestiaryComponent implements OnInit {
 
   private translateUnits() {
     this.units.forEach(unit => {
-      unit.name = this.nameService.getName(unit);
+      unit.name = this.toolService.getName(unit);
     });
   }
 

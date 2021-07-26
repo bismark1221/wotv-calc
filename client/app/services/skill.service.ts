@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
-import { NameService } from './name.service';
+import { ToolService } from './tool.service';
 import { NavService } from './nav.service';
 import { DataService } from './data.service';
 
@@ -55,7 +55,7 @@ export class SkillService {
   constructor(
     private sanitizer: DomSanitizer,
     private translateService: TranslateService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private navService: NavService,
     private dataService: DataService
   ) {}
@@ -1300,7 +1300,7 @@ export class SkillService {
           newSkill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
         }
 
-        html = 'When casting another attack skill also launch the following skill on target : ' + (newSkill ? this.nameService.getName(newSkill) : '???') + ' ' + this.getTurns(effect);
+        html = 'When casting another attack skill also launch the following skill on target : ' + (newSkill ? this.toolService.getName(newSkill) : '???') + ' ' + this.getTurns(effect);
         if (effect.calcType !== 'apply') {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
@@ -1777,7 +1777,7 @@ export class SkillService {
       const skillNames = [];
       replacedSkills.forEach((replacedSkill, skillIndex) => {
         if (this.isSkillExistForUnit(unit, replacedSkill.oldSkill)) {
-          const name = this.nameService.getName(replacedSkill.newSkill);
+          const name = this.toolService.getName(replacedSkill.newSkill);
           if (name === '通常攻撃') {
             skillNames.push('Basic attack');
           } else {

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { TitleService } from '../services/title.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { NavService } from '../services/nav.service';
 
 
@@ -21,7 +21,7 @@ export class OtherTitlesComponent implements OnInit {
   constructor(
     private titleService: TitleService,
     private translateService: TranslateService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -41,7 +41,7 @@ export class OtherTitlesComponent implements OnInit {
     const types = ['player', 'guild'];
     types.forEach(type => {
       this.titles[type].forEach(title => {
-        title.name = this.nameService.getName(title);
+        title.name = this.toolService.getName(title);
         title.translatedHowToGet = title.howToGet.fr && this.translateService.currentLang === 'fr' ? title.howToGet.fr : title.howToGet.en;
       });
     });

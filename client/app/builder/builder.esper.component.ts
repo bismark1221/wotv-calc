@@ -1,10 +1,10 @@
-import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { EsperService } from '../services/esper.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { AuthService } from '../services/auth.service';
 import { NavService } from '../services/nav.service';
 
@@ -18,15 +18,15 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   styleUrls: ['./builder.esper.component.css']
 })
 export class BuilderEsperComponent implements OnInit, AfterViewInit {
-  espers = {};
-  filteredEspers = {};
+  espers = [];
   esper;
-  searchText = '';
   savedEspers = {};
   loadingBuild = false;
   showSave = false;
-  showList = true;
   maxStar = 1;
+  selectedEsperId = null;
+
+  @ViewChild('selectBuilderEsper') esperSelector;
 
   buffsImage = [
     'dark_atk',
@@ -82,7 +82,7 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     private esperService: EsperService,
     private translateService: TranslateService,
     private modalService: NgbModal,
-    private nameService: NameService,
+    private toolService: ToolService,
     private authService: AuthService,
     private navService: NavService
   ) {
@@ -99,20 +99,25 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
       if (data) {
         this.loadingBuild = true;
 
-        const esper = await this.esperService.getEsperBySlug(data);
+        const esper = await this.esperService.selectEsperForBuilder(null, false, data);
+
         if (esper) {
-          await this.selectEsper(esper.dataId);
+          this.selectedEsperId = esper.dataId;
+          this.esper = esper;
+          this.maxStar = this.esper.SPs.length;
+          this.loadingBuild = false;
         } else {
-          this.esperService.getStoredEsper(data).subscribe(async esperData => {
+          this.esperService.getStoredEsper(data).subscribe(async (esperData: any) => {
             if (esperData) {
-              // @ts-ignore
-              await this.selectEsper(esperData.dataId, esperData);
+              this.selectedEsperId = esperData.dataId;
+              await this.selectEsper(esperData, true);
               this.esper.storeId = data;
             }
+            this.loadingBuild = false;
           });
         }
-
-        this.loadingBuild = false;
+      } else {
+        this.esperSelector.open();
       }
     });
 
@@ -138,73 +143,30 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
   }
 
   private async getEspers() {
-    this.espers = this.formatEspers(await this.esperService.getEspersForListing());
-    this.updateFilteredEspers();
-    this.translateEspers();
-
+    this.espers = await this.esperService.getEspersForBuilder();
     this.savedEspers = this.esperService.getSavedEspers();
+    this.translateEspers();
   }
 
   private translateEspers() {
-    Object.keys(this.espers).forEach(rarity => {
-      this.espers[rarity].forEach(esper => {
-        esper.name = this.nameService.getName(esper);
-      });
+    this.espers.forEach(esper => {
+      esper.name = this.toolService.getName(esper);
     });
   }
 
-  private formatEspers(espers) {
-    const formattedEspers = { UR: [], MR: [], SR: [], R: [], N: [] };
-
-    espers.forEach(esper => {
-      formattedEspers[esper.rarity].push(esper);
-    });
-
-    return formattedEspers;
-  }
-
-  updateFilteredEspers() {
-    const text = this.searchText.toLowerCase();
-    this.filteredEspers = { UR: [], MR: [], SR: [], R: [], N: [] };
-
-    Object.keys(this.espers).forEach(rarity => {
-      this.filteredEspers[rarity] = this.espers[rarity].filter(esper => {
-        return esper.name.toLowerCase().includes(text);
-      });
-    });
-  }
-
-  focusSearch() {
-    if (!this.showList) {
-      this.updateFilteredEspers();
-      this.showList = true;
-    }
-  }
-
-  blurSearch() {
-    if (this.esper) {
-      this.searchText = this.esper.name;
-      this.showList = false;
-    }
-  }
-
-  async selectEsper(dataId, customData = null) {
-    if (dataId) {
-      this.esper = await this.esperService.selectEsperForBuilder(dataId, customData);
-      this.searchText = this.esper.name;
-      this.showList = false;
+  async selectEsper(customData = null, fromModal = false) {
+    if (this.selectedEsperId) {
+      if (!fromModal && this.savedEspers[this.selectedEsperId] && this.savedEspers[this.selectedEsperId].length > 0) {
+        this.openLoadModal(this.selectedEsperId);
+        this.esperSelector.handleClearClick();
+      } else {
+        this.esper = await this.esperService.selectEsperForBuilder(this.selectedEsperId, customData);
       this.maxStar = this.esper.SPs.length;
+      }
     } else {
       this.esper = null;
-      this.searchText = '';
-      this.updateFilteredEspers();
-      this.showList = true;
       this.maxStar = 1;
     }
-  }
-
-  toogleList() {
-    this.showList = !this.showList;
   }
 
   changeStar(value) {
@@ -241,10 +203,17 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
 
     modalRef.componentInstance.type = 'esper';
     modalRef.componentInstance.savedItems = this.savedEspers[esperId];
+    modalRef.componentInstance.allowNew = true;
 
     modalRef.result.then(async result => {
+      if (result.type === 'new') {
+        this.selectedEsperId = esperId;
+        await this.selectEsper(null, true);
+      }
+
       if (result.type === 'load' && result.item) {
-        await this.selectEsper(result.item.dataId, result.item);
+        this.selectedEsperId = result.item.dataId;
+        await this.selectEsper(result.item, true);
       }
 
       if (result.type === 'fullDelete') {

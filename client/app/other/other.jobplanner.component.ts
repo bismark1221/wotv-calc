@@ -4,9 +4,8 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
-import { JobService } from '../services/job.service';
 import { ToolService } from '../services/tool.service';
+import { JobService } from '../services/job.service';
 import { ItemService } from '../services/item.service';
 
 @Component({
@@ -37,7 +36,6 @@ export class OtherJobPlannerComponent implements OnInit {
     private unitService: UnitService,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
     private toolService: ToolService,
     private jobService: JobService,
     private itemService: ItemService
@@ -57,7 +55,7 @@ export class OtherJobPlannerComponent implements OnInit {
 
   private translateUnits() {
     this.units.forEach(unit => {
-      unit.name = this.nameService.getName(unit);
+      unit.name = this.toolService.getName(unit);
     });
   }
 
@@ -154,7 +152,7 @@ export class OtherJobPlannerComponent implements OnInit {
               for (const itemId of Object.keys(job.materials[i])) {
                 if (!this.materials[itemId]) {
                   this.materials[itemId] = this.items.find(searchedItem => searchedItem.dataId === itemId);
-                  this.materials[itemId].name = this.nameService.getName(this.materials[itemId]);
+                  this.materials[itemId].name = this.toolService.getName(this.materials[itemId]);
                   this.materials[itemId].count = job.materials[i][itemId];
                   this.materials[itemId].image = itemId.toLowerCase();
                   this.materials[itemId].activated = true;

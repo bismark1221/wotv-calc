@@ -61,12 +61,12 @@ export class Card {
     return this.name;
   }
 
-  resetCard(nameService, skillService, rangeService) {
+  resetCard(toolService, skillService, rangeService) {
     this.star = 0;
     this.level = 1;
 
     this.updateMaxLevel();
-    this.changeLevel(nameService, skillService, rangeService);
+    this.changeLevel(toolService, skillService, rangeService);
   }
 
   private getLevelPerStar(rarity, star) {
@@ -124,7 +124,7 @@ export class Card {
     }
   }
 
-  changeLevel(nameService, skillService, rangeService) {
+  changeLevel(toolService, skillService, rangeService) {
     this.statsType.forEach(stat => {
       const min = this.stats[stat].min;
       const max = this.stats[stat].max;
@@ -180,7 +180,7 @@ export class Card {
       } else {
         const skill = buff.classic;
         skill.level = this.level;
-        skill.name = nameService.getName(skill);
+        skill.name = toolService.getName(skill);
 
         skill.effectsHtml = skillService.formatEffects(this, skill);
 
@@ -240,12 +240,12 @@ export class Card {
     this.buffs = buffs;
   }
 
-  maxCard(nameService, skillService, rangeService) {
+  maxCard(toolService, skillService, rangeService) {
     this.star = 4;
     this.level = this.getLevelPerStar(this.rarity, this.star);
 
     this.updateMaxLevel();
-    this.changeLevel(nameService, skillService, rangeService);
+    this.changeLevel(toolService, skillService, rangeService);
   }
 
   getAvailableStats() {

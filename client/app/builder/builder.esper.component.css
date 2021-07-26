@@ -41,11 +41,6 @@
 /**********/
 /* Search */
 /**********/
-
-.rarityBlock {
-  width: 100%;
-}
-
 .rarityLine {
   padding: 5px;
   background: #E8E6DF;
@@ -64,28 +59,27 @@
   position: relative;
 }
 
-.esperBlock {
-  border-left: 2px solid #E8E6DF;
-  border-right: 2px solid #E8E6DF;
-  border-bottom: 2px solid #E8E6DF;
-  padding-left: 10px;
-}
-
 .esperLine {
-  padding-top: 10px;
+  padding-top: 5px;
   cursor: pointer;
 }
 
 .esperLine hr {
   margin: 0;
-  width: 1276px;
+  width: 1270px;
+}
+
+.esperSelector {
+  padding: 0;
+  display: block;
+  height: 50px;
 }
 
 .esperLogo {
   padding: 5px;
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 45px;
+  height: 45px;
   background-color: #E8E6DF;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -93,13 +87,13 @@
 }
 
 .esperLogo img {
-  max-height: 70px;
-  max-width: 70px;
+  max-height: 35px;
+  max-width: 35px;
 }
 
-.esperName {
+.esperNameSelector {
   display: inline-block;
-  font-size: 22px;
+  font-size: 18px;
   vertical-align: middle;
 }
 

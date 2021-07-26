@@ -6,7 +6,7 @@ import { CardService } from '../services/card.service';
 import { SkillService } from '../services/skill.service';
 import { RangeService } from '../services/range.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { JobService } from '../services/job.service';
 import { UnitService } from '../services/unit.service';
 
@@ -28,7 +28,7 @@ export class CardComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private jobService: JobService,
     private unitService: UnitService
   ) {
@@ -57,7 +57,7 @@ export class CardComponent implements OnInit {
       const skills = ['classic', 'awake', 'lvmax'];
       const buffTypes = ['unitBuffs', 'partyBuffs'];
 
-      this.card.name = this.nameService.getName(this.card);
+      this.card.name = this.toolService.getName(this.card);
       this.card.limited = this.cardService.isLimited(this.card.dataId);
 
       for (const buffType of buffTypes) {
@@ -70,7 +70,7 @@ export class CardComponent implements OnInit {
 
               if (buff) {
                 if (buff.type !== 'buff' && buff.type !== 'support' && buff.type !== 'party') {
-                  buff.name = this.nameService.getName(buff);
+                  buff.name = this.toolService.getName(buff);
 
                   buff.effectsHtml = this.skillService.formatEffects(this.card, buff);
 

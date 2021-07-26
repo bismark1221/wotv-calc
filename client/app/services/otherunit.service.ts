@@ -6,7 +6,6 @@ import { Unit } from '../entities/unit';
 
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';
-import { NameService } from './name.service';
 import { ToolService } from './tool.service';
 import { ApiService } from './api.service';
 
@@ -22,7 +21,6 @@ export class OtherUnitService {
     private translateService: TranslateService,
     private skillService: SkillService,
     private rangeService: RangeService,
-    private nameService: NameService,
     private toolService: ToolService,
     private apiService: ApiService
   ) {}
@@ -113,7 +111,7 @@ export class OtherUnitService {
   }
 
   getActiveSkills() {
-    this.unit.getActiveSkills(true, this.nameService, this.skillService, this.rangeService);
+    this.unit.getActiveSkills(true, this.toolService, this.skillService, this.rangeService);
   }
 
   async getSlugDetail(slug) {
@@ -143,7 +141,7 @@ export class OtherUnitService {
         if (otherUnitIds.indexOf(rawEnemy.dataId) !== -1 && addedEnemies.indexOf(rawEnemy.dataId) === -1) {
           const formattedEnemy = this.formatEnemyOrAlly(rawEnemy, units, result.jobs, result.skills);
           formattedEnemy.questData = quest;
-          formattedEnemy.questData.name = this.nameService.getName(formattedEnemy.questData);
+          formattedEnemy.questData.name = this.toolService.getName(formattedEnemy.questData);
 
           formattedEnemies.push(formattedEnemy);
           addedEnemies.push(rawEnemy.dataId);
@@ -158,7 +156,7 @@ export class OtherUnitService {
 
   formatEnemyOrAlly(enemy, rawEnemies, rawJobs, rawSkills) {
     let formattedEnemy = rawEnemies.find(searchedEnemy => searchedEnemy.dataId === enemy.dataId);
-    formattedEnemy.name = this.nameService.getName(formattedEnemy);
+    formattedEnemy.name = this.toolService.getName(formattedEnemy);
     formattedEnemy.statsForJob = {};
 
     if (enemy.element) {
@@ -177,7 +175,7 @@ export class OtherUnitService {
     formattedEnemy.job = null;
     if (formattedEnemy.jobs && formattedEnemy.jobs[0]) {
       formattedEnemy.job = rawJobs.find(searchedJob => searchedJob.dataId === formattedEnemy.jobs[0]);
-      formattedEnemy.job.name = this.nameService.getName(formattedEnemy.job);
+      formattedEnemy.job.name = this.toolService.getName(formattedEnemy.job);
     }
 
     formattedEnemy.calculateBaseStats(true);
@@ -225,7 +223,7 @@ export class OtherUnitService {
     if (formattedEnemy.attack) {
       const formattedSkill = rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.attack);
       if (formattedSkill) {
-        formattedSkill.name = this.nameService.getName(formattedSkill);
+        formattedSkill.name = this.toolService.getName(formattedSkill);
 
         formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
@@ -244,7 +242,7 @@ export class OtherUnitService {
         formattedSkill.level = rawSkill.rank;
 
         if (formattedSkill.type !== 'support') {
-          formattedSkill.name = this.nameService.getName(formattedSkill);
+          formattedSkill.name = this.toolService.getName(formattedSkill);
 
           formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
@@ -273,7 +271,7 @@ export class OtherUnitService {
     if (formattedEnemy.limit) {
       const formattedSkill = rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.limit);
       if (formattedSkill) {
-        formattedSkill.name = this.nameService.getName(formattedSkill);
+        formattedSkill.name = this.toolService.getName(formattedSkill);
 
         formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 

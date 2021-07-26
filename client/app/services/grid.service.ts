@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 import { SkillService } from './skill.service';
-import { NameService } from './name.service';
+import { ToolService } from './tool.service';
 
 @Injectable()
 export class GridService {
@@ -1144,7 +1144,7 @@ export class GridService {
   constructor(
     private skillService: SkillService,
     private translateService: TranslateService,
-    private nameService: NameService
+    private toolService: ToolService
   ) {}
 
   generateEsperGridForDetail(esper, size) {
@@ -1241,7 +1241,7 @@ export class GridService {
           if (unit.board.nodes[node.toString()].type === 'buff') {
             text = this.skillService.formatEffect(unit, skill, skill.effects[0], false);
           } else {
-            text = this.nameService.getName(skill);
+            text = this.toolService.getName(skill);
           }
 
           nodesForGrid[node] = {
@@ -1268,7 +1268,7 @@ export class GridService {
           if (unit.board.nodes[node.toString()].type === 'buff') {
             text = this.skillService.formatEffect(unit, skill, skill.effects[0], false);
           } else {
-            text = this.nameService.getName(skill);
+            text = this.toolService.getName(skill);
           }
 
           nodesForGrid[node] = {

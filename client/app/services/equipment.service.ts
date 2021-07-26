@@ -7,7 +7,6 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';
 import { NavService } from './nav.service';
-import { NameService } from './name.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
 import { DataService } from './data.service';
@@ -250,7 +249,6 @@ export class EquipmentService {
     private navService: NavService,
     private toolService: ToolService,
     private authService: AuthService,
-    private nameService: NameService,
     private jobService: JobService,
     private firestore: AngularFirestore
   ) {}
@@ -294,7 +292,7 @@ export class EquipmentService {
     const jobs = [];
     for (const rawJob of apiResult.jobs) {
       if (rawJob.statsModifiers && rawJob.statsModifiers.length > 10) {
-        rawJob.name = this.nameService.getName(rawJob);
+        rawJob.name = this.toolService.getName(rawJob);
         jobs.push(rawJob);
       }
     }
@@ -308,6 +306,24 @@ export class EquipmentService {
       equipmentTypes: equipmentTypes,
       jobs: this.jobService.getUniqJobsByIds(jobs)
     };
+  }
+
+  async getEquipmentsForBuilder() {
+    const rawEquipments = await this.getApi(null, [{name: 'forBuilder', value: 1}]);
+
+    if (rawEquipments && rawEquipments.length > 0) {
+      const equipments = [];
+
+      for (const rawEquipment of rawEquipments) {
+        if (this.equipmentsAcquisition[rawEquipment.dataId] || rawEquipment.acquisition.type !== 'Unknown') {
+          equipments.push(rawEquipment);
+        }
+      }
+
+      return this.sortEquipments(equipments);
+    }
+
+    return [];
   }
 
   private getRaw() {
@@ -435,7 +451,7 @@ export class EquipmentService {
       equipment.rawItems = apiResult.items;
 
       for (const item of equipment.rawItems) {
-        item.name = this.nameService.getName(item);
+        item.name = this.toolService.getName(item);
       }
 
       this.formatSkillsWithApi(equipment);
@@ -546,33 +562,45 @@ export class EquipmentService {
     return data;
   }
 
-  async selectEquipmentForBuilder(equipmentId, customData = null) {
-    this.equipment = new Equipment();
-    this.equipment.constructFromJson(JSON.parse(JSON.stringify(await this.getEquipment(equipmentId))), this.translateService);
-    this.equipment.name = this.equipment.getName(this.translateService);
-
-    this.equipment.name = this.equipment.getName(this.translateService);
-    this.equipment.upgrade = 0;
-    this.equipment.level = 1;
-
-    await this.formatSkills(this.equipment);
-
-    if (this.equipment.formattedSkills[0] && this.equipment.formattedSkills[0][0] && this.equipment.formattedSkills[0][0].type === 'skill') {
-      this.equipment.formattedSkills[0][0].level = 1;
+  async selectEquipmentForBuilder(equipmentId, customData = null, slug = null) {
+    let apiResult = null;
+    if (slug === null) {
+      apiResult = await this.getApi(equipmentId, [{name: 'forBuilder', value: 1}, {name: 'byId', value: 1}]);
+    } else {
+      apiResult = await this.getApi(slug, [{name: 'forBuilder', value: 1}, {name: 'bySlug', value: 1}]);
     }
-    this.equipment.growIds = Object.keys(this.equipment.grows);
-    this.equipment.grow = this.equipment.growIds[0];
 
-    this.initiateSavedEquipment(customData);
-    this.equipment.updateMaxStat(this.nameService, this.skillService, this.rangeService);
+    if (apiResult.equipment) {
+      this.equipment = new Equipment();
+      this.equipment.constructFromJson(apiResult.equipment, this.translateService);
+      this.equipment.name = this.equipment.getName(this.translateService);
 
-    this.equipment.changeLevel(this.skillService, this.rangeService);
-    this.equipment.changeUpgrade(this.skillService, this.rangeService);
-    this.equipment.changeGrow();
+      this.equipment.rawSkills = apiResult.skills;
 
-    this.equipmentCategory();
+      this.equipment.upgrade = 0;
+      this.equipment.level = 1;
 
-    return this.equipment;
+      this.formatSkillsWithApi(this.equipment);
+
+      if (this.equipment.formattedSkills[0] && this.equipment.formattedSkills[0][0] && this.equipment.formattedSkills[0][0].type === 'skill') {
+        this.equipment.formattedSkills[0][0].level = 1;
+      }
+      this.equipment.growIds = Object.keys(this.equipment.grows);
+      this.equipment.grow = this.equipment.growIds[0];
+
+      this.initiateSavedEquipment(customData);
+      this.equipment.updateMaxStat(this.toolService, this.skillService, this.rangeService);
+
+      this.equipment.changeLevel(this.skillService, this.rangeService);
+      this.equipment.changeUpgrade(this.skillService, this.rangeService);
+      this.equipment.changeGrow();
+
+      this.equipmentCategory();
+
+      return this.equipment;
+    }
+
+    return null;
   }
 
   private initiateSavedEquipment(customData = null) {

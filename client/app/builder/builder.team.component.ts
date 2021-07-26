@@ -13,7 +13,7 @@ import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
 import { TeamService } from '../services/team.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { AuthService } from '../services/auth.service';
 import { NavService } from '../services/nav.service';
 import { SimulatorService } from '../services/simulator.service';
@@ -82,7 +82,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     private esperService: EsperService,
     private cardService: CardService,
     private equipmentService: EquipmentService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private modalService: NgbModal,
     private clipboardService: ClipboardService,
     private teamService: TeamService,
@@ -123,7 +123,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
               Object.keys(unit.board.nodes).forEach(nodeId => {
                 if (unit.board.nodes[nodeId].skill.type !== 'buff') {
-                  unit.board.nodes[nodeId].skill.name = this.nameService.getName(unit.board.nodes[nodeId].skill);
+                  unit.board.nodes[nodeId].skill.name = this.toolService.getName(unit.board.nodes[nodeId].skill);
                 }
               });
             }
@@ -166,7 +166,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   private translateUnits(pos) {
     if (this.availableUnits[pos]) {
       this.availableUnits[pos].forEach(unit => {
-        unit.name = this.nameService.getName(unit);
+        unit.name = this.toolService.getName(unit);
       });
     }
   }
@@ -182,7 +182,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       if (this.team.units[pos]) {
         Object.keys(this.team.units[pos].board.nodes).forEach(nodeId => {
           if (this.team.units[pos].board.nodes[nodeId].skill.type !== 'buff') {
-            this.team.units[pos].board.nodes[nodeId].skill.name = this.nameService.getName(this.team.units[pos].board.nodes[nodeId].skill);
+            this.team.units[pos].board.nodes[nodeId].skill.name = this.toolService.getName(this.team.units[pos].board.nodes[nodeId].skill);
           }
         });
 
@@ -190,11 +190,11 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
           Object.keys(this.team.units[pos].replacedSkills).forEach(upgradeId => {
             this.team.units[pos].replacedSkills[upgradeId].forEach(upgrade => {
               if (upgrade.newSkill) {
-                upgrade.newSkill.name = this.nameService.getName(upgrade.newSkill);
+                upgrade.newSkill.name = this.toolService.getName(upgrade.newSkill);
               }
 
               if (upgrade.oldSkillData) {
-                upgrade.oldSkillData.name = this.nameService.getName(upgrade.oldSkillData);
+                upgrade.oldSkillData.name = this.toolService.getName(upgrade.oldSkillData);
               }
             });
           });
@@ -427,7 +427,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       if (unit) {
         Object.keys(unit.board.nodes).forEach(nodeId => {
           if (unit.board.nodes[nodeId].skill.type !== 'buff') {
-            unit.board.nodes[nodeId].skill.name = this.nameService.getName(unit.board.nodes[nodeId].skill);
+            unit.board.nodes[nodeId].skill.name = this.toolService.getName(unit.board.nodes[nodeId].skill);
           }
         });
       }

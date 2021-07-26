@@ -6,7 +6,7 @@ import { RaidService } from '../services/raid.service';
 import { SkillService } from '../services/skill.service';
 import { RangeService } from '../services/range.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { UnitService } from '../services/unit.service';
 import { CardService } from '../services/card.service';
 
@@ -28,7 +28,7 @@ export class RaidComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private unitService: UnitService,
     private cardService: CardService,
   ) {
@@ -66,7 +66,7 @@ export class RaidComponent implements OnInit {
   private async formatRaid() {
     if (this.raid) {
       for (const boss of this.raid.bosses) {
-        boss.name = this.nameService.getName(boss);
+        boss.name = this.toolService.getName(boss);
 
         boss.totalBuffs = {
           HP: 0,
@@ -88,7 +88,7 @@ export class RaidComponent implements OnInit {
           const skill = skillData.skill;
 
           if (skill) {
-            skill.name = this.nameService.getName(skill);
+            skill.name = this.toolService.getName(skill);
 
             skill.effectsHtml = this.skillService.formatEffects(boss, skill);
 

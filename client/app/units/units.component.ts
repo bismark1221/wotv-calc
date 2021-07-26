@@ -3,9 +3,8 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
-import { JobService } from '../services/job.service';
 import { ToolService } from '../services/tool.service';
+import { JobService } from '../services/job.service';
 
 @Component({
   selector: 'app-units',
@@ -85,9 +84,8 @@ export class UnitsComponent implements OnInit {
     private unitService: UnitService,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
-    private jobService: JobService,
-    private toolService: ToolService
+    private toolService: ToolService,
+    private jobService: JobService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateUnits();
@@ -134,13 +132,13 @@ export class UnitsComponent implements OnInit {
 
   private translateUnits() {
     this.units.forEach(unit => {
-      unit.name = this.nameService.getName(unit);
+      unit.name = this.toolService.getName(unit);
     });
   }
 
   private translateJobs() {
     this.jobs.forEach(job => {
-      job.name = this.nameService.getName(job);
+      job.name = this.toolService.getName(job);
     });
 
     this.toolService.sortByName(this.jobs);

@@ -4,7 +4,7 @@ import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
 import { EquipmentService } from '../../services/equipment.service';
 import { NavService } from '../../services/nav.service';
-import { NameService } from '../../services/name.service';
+import { ToolService } from '../../services/tool.service';
 
 @Component({
   selector: 'app-modal-equipments',
@@ -34,7 +34,7 @@ export class ModalEquipmentsComponent implements OnInit {
   constructor(
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private modal: NgbActiveModal
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -62,7 +62,7 @@ export class ModalEquipmentsComponent implements OnInit {
 
   private translateEquipments() {
     this.equipments.forEach(equipment => {
-      equipment.name = this.nameService.getName(equipment);
+      equipment.name = this.toolService.getName(equipment);
     });
   }
 

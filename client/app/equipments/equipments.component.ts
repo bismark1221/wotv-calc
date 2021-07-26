@@ -5,7 +5,6 @@ import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service';
 import { JobService } from '../services/job.service';
 import { ToolService } from '../services/tool.service';
-import { NameService } from '../services/name.service';
 
 @Component({
   selector: 'app-equipments',
@@ -82,8 +81,7 @@ export class EquipmentsComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private jobService: JobService,
-    private toolService: ToolService,
-    private nameService: NameService
+    private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEquipments();
@@ -130,7 +128,7 @@ export class EquipmentsComponent implements OnInit {
 
   private translateJobs() {
     this.jobs.forEach(job => {
-      job.name = this.nameService.getName(job);
+      job.name = this.toolService.getName(job);
     });
 
     this.toolService.sortByName(this.jobs);
@@ -138,7 +136,7 @@ export class EquipmentsComponent implements OnInit {
 
   private translateEquipments() {
     this.equipments.forEach(equipment => {
-      equipment.name = this.nameService.getName(equipment);
+      equipment.name = this.toolService.getName(equipment);
     });
   }
 

@@ -3,7 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { RaidService } from '../services/raid.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 
 @Component({
   selector: 'app-raids',
@@ -41,7 +41,7 @@ export class RaidsComponent implements OnInit {
     private raidService: RaidService,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService
+    private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateRaids();
@@ -69,7 +69,7 @@ export class RaidsComponent implements OnInit {
 
   private translateRaids() {
     this.raids.forEach(raid => {
-      raid.name = this.nameService.getName(raid);
+      raid.name = this.toolService.getName(raid);
     });
   }
 

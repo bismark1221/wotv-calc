@@ -12,7 +12,7 @@ import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { AuthService } from '../services/auth.service';
 import { SimulatorService } from '../services/simulator.service';
 
@@ -155,7 +155,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     private equipmentService: EquipmentService,
     private modalService: NgbModal,
     private navService: NavService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private authService: AuthService,
     private simulatorService: SimulatorService
   ) {
@@ -223,7 +223,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   private translateUnits() {
     Object.keys(this.units).forEach(rarity => {
       this.units[rarity].forEach(unit => {
-        unit.name = this.nameService.getName(unit);
+        unit.name = this.toolService.getName(unit);
       });
     });
   }
@@ -300,7 +300,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
       Object.keys(this.unit.board.nodes).forEach(nodeId => {
         if (this.unit.board.nodes[nodeId].skill.type !== 'buff') {
-          this.unit.board.nodes[nodeId].skill.name = this.nameService.getName(this.unit.board.nodes[nodeId].skill);
+          this.unit.board.nodes[nodeId].skill.name = this.toolService.getName(this.unit.board.nodes[nodeId].skill);
         }
       });
 

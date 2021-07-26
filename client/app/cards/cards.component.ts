@@ -3,7 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { CardService } from '../services/card.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 
 @Component({
   selector: 'app-cards',
@@ -64,7 +64,7 @@ export class CardsComponent implements OnInit {
     private cardService: CardService,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService
+    private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateCards();
@@ -109,7 +109,7 @@ export class CardsComponent implements OnInit {
 
   private translateCards() {
     this.cards.forEach(card => {
-      card.name = this.nameService.getName(card);
+      card.name = this.toolService.getName(card);
     });
   }
 

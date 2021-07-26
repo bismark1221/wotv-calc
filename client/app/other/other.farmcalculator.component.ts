@@ -5,7 +5,7 @@ import { concat, Observable, of, Subject } from 'rxjs';
 import { catchError, distinctUntilChanged, switchMap, tap } from 'rxjs/operators';
 
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { QuestService } from '../services/quest.service';
 import { ItemService } from '../services/item.service';
 
@@ -34,7 +34,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private itemService: ItemService,
     private questService: QuestService
   ) {
@@ -133,7 +133,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
             if (itemId !== '') {
               const formattedItem = apiResult.items.find(item => item.dataId === itemId);
               if (formattedItem) {
-                formattedItem.name = this.nameService.getName(formattedItem);
+                formattedItem.name = this.toolService.getName(formattedItem);
               }
 
               for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {

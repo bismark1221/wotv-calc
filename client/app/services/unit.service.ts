@@ -14,7 +14,6 @@ import { JobService } from './job.service';
 import { GuildService } from './guild.service';
 import { MasterRanksService } from './mr.service';
 import { NavService } from './nav.service';
-import { NameService } from './name.service';
 import { EquipmentService } from './equipment.service';
 import { CardService } from './card.service';
 import { EsperService } from './esper.service';
@@ -118,7 +117,6 @@ export class UnitService {
     private guildService: GuildService,
     private masterRanksService: MasterRanksService,
     private navService: NavService,
-    private nameService: NameService,
     private equipmentService: EquipmentService,
     private cardService: CardService,
     private esperService: EsperService,
@@ -153,7 +151,7 @@ export class UnitService {
     const jobs = [];
     for (const rawJob of apiResult.jobs) {
       if (rawJob.statsModifiers && rawJob.statsModifiers.length > 10) {
-        rawJob.name = this.nameService.getName(rawJob);
+        rawJob.name = this.toolService.getName(rawJob);
         jobs.push(rawJob);
       }
     }
@@ -922,7 +920,7 @@ export class UnitService {
   }
 
   getActiveSkills() {
-    this.unit.getActiveSkills(true, this.nameService, this.skillService, this.rangeService);
+    this.unit.getActiveSkills(true, this.toolService, this.skillService, this.rangeService);
   }
 
   resetUnit() {

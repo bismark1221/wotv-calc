@@ -742,19 +742,19 @@ small {
 }
 
 
-.select-builder-card {
+.select-builder-card, .select-builder-esper, .select-builder-equipment {
   width: 1300px;
 }
 
-.select-builder-card .ng-input input {
+.select-builder-card .ng-input input, .select-builder-esper .ng-input input, .select-builder-equipment .ng-input input {
   cursor: text !important;
 }
 
-.select-builder-card .ng-optgroup {
+.select-builder-card .ng-optgroup, .select-builder-esper .ng-optgroup, .select-builder-equipment .ng-optgroup {
   padding: 0 !important;
 }
 
-.select-builder-card .ng-option {
+.select-builder-card .ng-option, .select-builder-esper .ng-option, .select-builder-equipment .ng-option {
   padding: 0 !important;
   padding-left: 5px !important;
 }

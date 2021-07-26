@@ -9,7 +9,7 @@ import { RangeService } from '../services/range.service';
 import { JobService } from '../services/job.service';
 import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { IndexService } from '../services/index.service';
 
 @Component({
@@ -76,7 +76,7 @@ export class UnitComponent implements OnInit {
     private translateService: TranslateService,
     private gridService: GridService,
     private navService: NavService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private indexService: IndexService
   ) {}
 
@@ -125,7 +125,7 @@ export class UnitComponent implements OnInit {
   private formatUnit() {
     if (this.unit) {
       this.jobs = [];
-      this.unit.name = this.nameService.getName(this.unit);
+      this.unit.name = this.toolService.getName(this.unit);
       this.unit.limited = this.unitService.isLimited(this.unit.dataId);
 
       this.unit.skills = [];
@@ -164,7 +164,7 @@ export class UnitComponent implements OnInit {
       let exempleSkillMaxExLevel = null;
 
       for (let skill of this.unit.formattedUnlockedSkills) {
-        skill.name = this.nameService.getName(skill);
+        skill.name = this.toolService.getName(skill);
         skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
 
         skill.effectsHtml = this.skillService.formatEffects(this.unit, skill);
@@ -184,7 +184,7 @@ export class UnitComponent implements OnInit {
       Object.keys(this.unit.board.nodes).forEach(nodeId => {
         let skill = this.unit.board.nodes[nodeId].skill;
         if (skill.type !== 'buff' && !(this.unit.board.nodes[nodeId].type === 'buff' && skill.type === 'ex_buff')) {
-          skill.name = this.nameService.getName(skill);
+          skill.name = this.toolService.getName(skill);
           skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
 
           skill.effectsHtml = this.skillService.formatEffects(this.unit, skill);
@@ -240,7 +240,7 @@ export class UnitComponent implements OnInit {
         for (const masterSkillId of this.unit.masterSkill) {
           let masterSkill = this.unit.rawSkills.find(searchedSkill => searchedSkill.dataId === masterSkillId);
           if (masterSkill) {
-            masterSkill.name = this.nameService.getName(masterSkill);
+            masterSkill.name = this.toolService.getName(masterSkill);
             masterSkill.upgradeHtml = this.skillService.formatUpgrade(this.unit, masterSkill);
 
             masterSkill.effects.forEach(effect => {
@@ -258,7 +258,7 @@ export class UnitComponent implements OnInit {
       if (this.unit.limit) {
         this.unit.formattedLimit = this.unit.rawSkills.find(searchedSkill => searchedSkill.dataId === this.unit.limit);
         if (this.unit.formattedLimit) {
-          this.unit.formattedLimit.name = this.nameService.getName(this.unit.formattedLimit);
+          this.unit.formattedLimit.name = this.toolService.getName(this.unit.formattedLimit);
           this.unit.formattedLimit.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.formattedLimit);
 
           this.unit.formattedLimit.basedHtml = this.unit.formattedLimit.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.formattedLimit.based.toLowerCase() + '.png\' />' : '';
@@ -291,14 +291,14 @@ export class UnitComponent implements OnInit {
       }
 
       if (this.unit.tmr) {
-        this.unit.tmr.name = this.nameService.getName(this.unit.tmr);
+        this.unit.tmr.name = this.toolService.getName(this.unit.tmr);
         this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats);
 
         this.unit.tmr.formattedSkills = [];
         for (const skillData of this.unit.tmr.skills[0]) {
           const skill = this.unit.rawSkills.find(searchedSkill => searchedSkill.dataId === skillData.dataId);
 
-          skill.name = this.nameService.getName(skill);
+          skill.name = this.toolService.getName(skill);
           skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
           this.rangeService.formatRange(this.unit, skill);
           skill.effectsHtml = this.skillService.formatEffects(this.unit, skill);
@@ -316,7 +316,7 @@ export class UnitComponent implements OnInit {
       for (const jobId of this.unit.jobs) {
         const job = this.unit.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
         this.calcJobStat(job, (i > 0 ? true : false));
-        job.name = this.nameService.getName(job);
+        job.name = this.toolService.getName(job);
         this.jobs.push(job);
         i++;
       }
@@ -325,7 +325,7 @@ export class UnitComponent implements OnInit {
         for (const jobId of this.unit.exJobs) {
           const job = this.unit.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
           this.calcEXJobStat(job, false);
-          job.name = this.nameService.getName(job);
+          job.name = this.toolService.getName(job);
           this.exJobs.push(job);
           i++;
         }
@@ -360,7 +360,7 @@ export class UnitComponent implements OnInit {
         this.unit.replacedSkills[upgradeSkillId].forEach(upgrade => {
           if (upgrade.oldSkill === skill.dataId) {
             let newSkill = upgrade.newSkill;
-            newSkill.name = this.nameService.getName(newSkill);
+            newSkill.name = this.toolService.getName(newSkill);
 
             newSkill.upgradeHtml = this.skillService.formatUpgrade(this.unit, newSkill);
             newSkill.effectsHtml = this.skillService.formatEffects(this.unit, newSkill);
@@ -391,21 +391,21 @@ export class UnitComponent implements OnInit {
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
       if (this.unit.board.nodes[nodeId].skill.dataId === upgradeSkillId) {
-        name = this.nameService.getName(this.unit.board.nodes[nodeId].skill);
+        name = this.toolService.getName(this.unit.board.nodes[nodeId].skill);
       }
     });
 
     if (name === '' && this.unit.masterSkill.length > 0) {
       this.unit.formattedMasterSkill.forEach(masterSkill => {
         if (masterSkill.dataId === upgradeSkillId) {
-          name = this.nameService.getName(masterSkill);
+          name = this.toolService.getName(masterSkill);
         }
       });
     }
 
     if (name === '' && this.unit.limit && this.unit.formattedLimit) {
       if (this.unit.limit === upgradeSkillId) {
-        name = this.nameService.getName(this.unit.formattedLimit);
+        name = this.toolService.getName(this.unit.formattedLimit);
       }
     }
 
@@ -413,7 +413,7 @@ export class UnitComponent implements OnInit {
       Object.keys(this.unit.replacedSkills).forEach(otherUpgradeSkillId => {
         this.unit.replacedSkills[otherUpgradeSkillId].forEach(upgrade => {
           if (upgrade.newSkill.dataId === upgradeSkillId) {
-            name = this.nameService.getName(upgrade.newSkill);
+            name = this.toolService.getName(upgrade.newSkill);
           }
         });
       });

@@ -1,10 +1,5 @@
 <div class="row">
-  <div class="loadingBlock" *ngIf="loadingBuild">
-    <h1>Your build is loading</h1>
-    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
-  </div>
-
-  <ng-select #selectBuilderCard placeholder="Search a card by name" class="select-builder-card" [items]="cards" groupBy="rarity" [(ngModel)]="selectedCardId" (ngModelChange)="selectCard()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true">
+  <ng-select #selectBuilderCard placeholder="Search a card by name" class="select-builder-card" [items]="cards" groupBy="rarity" [(ngModel)]="selectedCardId" (ngModelChange)="selectCard()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true" dropdownPosition="bottom">
     <ng-template ng-label-tmp let-item="item">
       {{item.name}}
     </ng-template>
@@ -30,6 +25,11 @@
       </div>
     </ng-template>
   </ng-select>
+
+  <div class="loadingBlock" *ngIf="loadingBuild">
+    <h1>Your build is loading</h1>
+    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+  </div>
 
   <div class="saveBlock" *ngIf="card">
     <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>

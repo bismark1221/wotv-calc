@@ -7,7 +7,6 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';
 import { NavService } from './nav.service';
-import { NameService } from './name.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
 import { DataService } from './data.service';
@@ -90,7 +89,6 @@ export class CardService {
     private skillService: SkillService,
     private rangeService: RangeService,
     private navService: NavService,
-    private nameService: NameService,
     private toolService: ToolService,
     private authService: AuthService,
     private firestore: AngularFirestore
@@ -98,6 +96,42 @@ export class CardService {
 
   private async getApi(param = null, extraQuery = []) {
     return JSON.parse(JSON.stringify(await this.apiService.loadData('cards', param, extraQuery)));
+  }
+
+  async getCardsForListingWithCosts(filters = null, sort = 'rarity', order = 'desc') {
+    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+    this.listingSkills = apiResult.skills;
+
+    const rawCards = [];
+    const costs = [];
+
+    for (const apiCard of apiResult.cards) {
+      const rawCard = new Card();
+      rawCard.constructFromJson(apiCard, this.translateService);
+      rawCards.push(rawCard);
+
+      if (costs.indexOf(rawCard.cost) === -1) {
+        costs.push(rawCard.cost);
+      }
+    }
+
+    const cards = this.filterCards(rawCards, filters, sort, order);
+
+    return {
+      rawCards: rawCards,
+      cards: cards,
+      costs: costs.sort((a, b) => b - a)
+    };
+  }
+
+  async getCardsForBuilder() {
+    const cards = await this.getApi(null, [{name: 'forBuilder', value: 1}]);
+
+    if (cards && cards.length > 0) {
+      return this.sortCards(cards);
+    }
+
+    return [];
   }
 
   private getRaw() {
@@ -141,36 +175,6 @@ export class CardService {
     }
 
     return cards;
-  }
-
-  async getCardsForListingWithCosts(filters = null, sort = 'rarity', order = 'desc') {
-    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
-    this.listingSkills = apiResult.skills;
-
-    const rawCards = [];
-    const costs = [];
-
-    for (const apiCard of apiResult.cards) {
-      const rawCard = new Card();
-      rawCard.constructFromJson(apiCard, this.translateService);
-      rawCards.push(rawCard);
-
-      if (costs.indexOf(rawCard.cost) === -1) {
-        costs.push(rawCard.cost);
-      }
-    }
-
-    const cards = this.filterCards(rawCards, filters, sort, order);
-
-    return {
-      rawCards: rawCards,
-      cards: cards,
-      costs: costs.sort((a, b) => b - a)
-    };
-  }
-
-  async getCardsForBuilder() {
-    return await this.getApi(null, [{name: 'forBuilder', value: 1}]);
   }
 
   filterCards(cards, filters, sort = 'rarity', order = 'desc') {
@@ -345,7 +349,7 @@ export class CardService {
         this.maxCard();
       } else {
         this.card.updateMaxLevel();
-        this.card.changeLevel(this.nameService, this.skillService, this.rangeService);
+        this.card.changeLevel(this.toolService, this.skillService, this.rangeService);
       }
 
       return this.card;
@@ -483,7 +487,7 @@ export class CardService {
       this.card = card;
     }
 
-    this.card.resetCard(this.nameService, this.skillService, this.rangeService);
+    this.card.resetCard(this.toolService, this.skillService, this.rangeService);
   }
 
   changeStar(card = null) {
@@ -492,7 +496,7 @@ export class CardService {
     }
 
     this.card.updateMaxLevel();
-    this.card.changeLevel(this.nameService, this.skillService, this.rangeService);
+    this.card.changeLevel(this.toolService, this.skillService, this.rangeService);
   }
 
   changeLevel(card = null) {
@@ -500,7 +504,7 @@ export class CardService {
       this.card = card;
     }
 
-    this.card.changeLevel(this.nameService, this.skillService, this.rangeService);
+    this.card.changeLevel(this.toolService, this.skillService, this.rangeService);
   }
 
   maxCard(card = null) {
@@ -508,7 +512,7 @@ export class CardService {
       this.card = card;
     }
 
-    this.card.maxCard(this.nameService, this.skillService, this.rangeService);
+    this.card.maxCard(this.toolService, this.skillService, this.rangeService);
   }
 
   getAvailableStats() {

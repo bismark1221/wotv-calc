@@ -3,7 +3,6 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { IndexService } from '../services/index.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
 import { ToolService } from '../services/tool.service';
 
 @Component({
@@ -89,7 +88,6 @@ export class OtherIndexComponent implements OnInit {
     private indexService: IndexService,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
     private toolService: ToolService
   ) {
   }
@@ -105,7 +103,7 @@ export class OtherIndexComponent implements OnInit {
 
     if (this.units) {
       this.units.forEach(unit => {
-        unit.name = this.nameService.getName(unit);
+        unit.name = this.toolService.getName(unit);
       });
 
       this.sortTable();

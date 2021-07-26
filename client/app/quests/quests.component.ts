@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 
 import { QuestService } from '../services/quest.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { AuthService } from '../services/auth.service';
 
 @Component({
@@ -54,7 +54,7 @@ export class QuestsComponent implements OnInit {
     private navService: NavService,
     private authService: AuthService,
     private router: Router,
-    private nameService: NameService
+    private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateQuests();
@@ -87,7 +87,7 @@ export class QuestsComponent implements OnInit {
 
   private translateQuests() {
     this.quests.forEach(quest => {
-      quest.name = this.nameService.getName(quest);
+      quest.name = this.toolService.getName(quest);
     });
   }
 

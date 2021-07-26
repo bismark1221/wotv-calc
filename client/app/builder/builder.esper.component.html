@@ -1,35 +1,34 @@
 <div class="row">
-  <div class="searchBlock">
-    <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for an esper by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredEspers()" id="click_search" (blur)="blurSearch()" (focus)="focusSearch()">
-    <i class="fas fa-times" id="reset_search" aria-hidden="true" (click)="selectEsper('')"></i>
-    <i class="fas fa-chevron-up" id="open_search" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
-    <i class="fas fa-chevron-down" id="hide_search" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
-  </div>
+  <ng-select #selectBuilderEsper placeholder="Search an esper by name" class="select-builder-esper" [items]="espers" groupBy="rarity" [(ngModel)]="selectedEsperId" (ngModelChange)="selectEsper()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true" dropdownPosition="bottom">
+    <ng-template ng-label-tmp let-item="item">
+      {{item.name}}
+    </ng-template>
+
+    <ng-template ng-optgroup-tmp let-item="item" let-index="index">
+      <div class="rarityLine">
+        <img src="assets/rarity/{{item.rarity}}.png" /><span>{{ rarityTranslate[item.rarity] }}</span>
+      </div>
+    </ng-template>
+
+    <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+      <div class="esperLine" id="esper_{{item.dataId}}">
+        <div class="esperSelector" id="esperSelector_{{item.dataId}}" [ngClass]="{'esperSelectorWithSave': savedEspers[item.dataId]}">
+          <div class="esperLogo">
+            <img src="assets/units/{{ item.image }}_s.png" />
+          </div>
+          <div class="esperNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+        </div>
+        <div class="loadDiv" *ngIf="savedEspers[item.dataId] && savedEspers[item.dataId].length > 0">
+          <i class="fas fa-download"></i>
+        </div>
+        <hr />
+      </div>
+    </ng-template>
+  </ng-select>
 
   <div class="loadingBlock" *ngIf="loadingBuild">
     <h1>Your build is loading</h1>
     <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
-  </div>
-
-  <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-    <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredEspers[rarity] && filteredEspers[rarity].length > 0">
-      <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
-    </div>
-    <div class="esperBlock" *ngIf="showList && !loadingBuild && filteredEspers[rarity] && filteredEspers[rarity].length > 0">
-      <div class="esperLine" *ngFor="let filteredEsper of filteredEspers[rarity]; let j = index">
-        <div class="esperSelector" id="selector_{{filteredEsper.slug}}" [ngClass]="{'esperSelectorWithSave': savedEspers[filteredEsper.dataId]}" (click)="selectEsper(filteredEsper.dataId)">
-          <div class="esperLogo">
-            <img src="assets/units/{{ filteredEsper.image }}_m.png" />
-          </div>
-          <div class="esperName" innerHTML="{{ filteredEsper.name | highlight: searchText }}"></div>
-        </div>
-        <div class="loadDiv" *ngIf="savedEspers[filteredEsper.dataId] && savedEspers[filteredEsper.dataId].length > 0">
-          <a id="load_{{filteredEsper.slug}}" (click)="openLoadModal(filteredEsper.dataId)"><i class="fas fa-download"></i></a>
-        </div>
-        <hr *ngIf="j !== filteredEspers[rarity].length - 1"/>
-      </div>
-    </div>
   </div>
 
   <div class="saveBlock" *ngIf="!showList && esper">

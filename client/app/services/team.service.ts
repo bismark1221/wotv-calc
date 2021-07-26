@@ -8,13 +8,12 @@ import { Unit } from '../entities/unit';
 import { GuildService } from './guild.service';
 import { MasterRanksService } from './mr.service';
 import { NavService } from './nav.service';
-import { NameService } from './name.service';
+import { ToolService } from './tool.service';
 import { EquipmentService } from './equipment.service';
 import { CardService } from './card.service';
 import { EsperService } from './esper.service';
 import { UnitService } from './unit.service';
 import { AuthService } from './auth.service';
-import { ToolService } from './tool.service';
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';
 
@@ -31,7 +30,6 @@ export class TeamService {
     private guildService: GuildService,
     private masterRanksService: MasterRanksService,
     private navService: NavService,
-    private nameService: NameService,
     private equipmentService: EquipmentService,
     private cardService: CardService,
     private esperService: EsperService,
@@ -551,6 +549,6 @@ export class TeamService {
   }
 
   getActiveSkills(pos) {
-    this.team.units[pos].getActiveSkills(true, this.nameService, this.skillService, this.rangeService);
+    this.team.units[pos].getActiveSkills(true, this.toolService, this.skillService, this.rangeService);
   }
 }

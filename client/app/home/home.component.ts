@@ -5,7 +5,7 @@ import { UnitService } from '../services/unit.service';
 import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { JobService } from '../services/job.service';
 import { EquipmentService } from '../services/equipment.service';
 import { HomeService } from '../services/home.service';
@@ -121,7 +121,7 @@ export class HomeComponent {
     private esperService: EsperService,
     private cardService: CardService,
     private navService: NavService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private jobService: JobService,
     private equipmentService: EquipmentService,
     private homeService: HomeService,

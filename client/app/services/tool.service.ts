@@ -17,8 +17,8 @@ export class ToolService {
 
   sortByName(items, order = 'asc') {
     items.sort((a: any, b: any) => {
-      const x = this.reduceString(a.name && a.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? a.name : a.getName(this.translateService));
-      const y = this.reduceString(b.name && b.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? b.name : b.getName(this.translateService));
+      const x = this.reduceString(a.name && a.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? a.name : this.getName(a));
+      const y = this.reduceString(b.name && b.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? b.name : this.getName(b));
 
       if (order === 'asc') {
         return x.localeCompare(y, 'ja');
@@ -28,6 +28,18 @@ export class ToolService {
     });
 
     return items;
+  }
+
+  getName(item) {
+    if (item) {
+      if (!item.names[this.translateService.currentLang]) {
+        return item.names[this.translateService.getDefaultLang()].replace('<br>', ' ');
+      } else {
+        return item.names[this.translateService.currentLang].replace('<br>', ' ');
+      }
+    } else {
+      return '-';
+    }
   }
 
   sortByRarity(items, order = 'asc') {
@@ -42,8 +54,8 @@ export class ToolService {
       } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
         return 1;
       } else {
-        const x = this.reduceString(a.getName(this.translateService));
-        const y = this.reduceString(b.getName(this.translateService));
+        const x = this.reduceString(this.getName(a));
+        const y = this.reduceString(this.getName(b));
 
         return x.localeCompare(y, 'ja');
       }
@@ -72,8 +84,8 @@ export class ToolService {
         } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
           return 1;
         } else {
-          const nameA = this.reduceString(a.getName(this.translateService));
-          const nameB = this.reduceString(b.getName(this.translateService));
+          const nameA = this.reduceString(this.getName(a));
+          const nameB = this.reduceString(this.getName(b));
 
           return nameA.localeCompare(nameB, 'ja');
         }
@@ -103,8 +115,8 @@ export class ToolService {
         } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
           return 1;
         } else {
-          const nameA = this.reduceString(a.getName(this.translateService));
-          const nameB = this.reduceString(b.getName(this.translateService));
+          const nameA = this.reduceString(this.getName(a));
+          const nameB = this.reduceString(this.getName(b));
 
           return nameA.localeCompare(nameB, 'ja');
         }

@@ -6,7 +6,7 @@ import { OtherUnitService } from '../services/otherunit.service';
 import { SkillService } from '../services/skill.service';
 import { RangeService } from '../services/range.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { QuestService } from '../services/quest.service';
 import { JobService } from '../services/job.service';
 
@@ -66,7 +66,7 @@ export class OtherUnitComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private questService: QuestService,
     private jobService: JobService
   ) {
@@ -89,7 +89,7 @@ export class OtherUnitComponent implements OnInit {
 
   getMasterInfos() {
     if (this.otherUnits.length > 0) {
-      this.masterInfos.name = this.nameService.getName(this.otherUnits[0]);
+      this.masterInfos.name = this.toolService.getName(this.otherUnits[0]);
       this.navService.setTitle(this.masterInfos.name);
       this.masterInfos.image = this.otherUnits[0].image;
       this.masterInfos.species = this.otherUnits[0].species;

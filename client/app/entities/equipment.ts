@@ -76,13 +76,13 @@ export class Equipment {
     return this.name;
   }
 
-  updateMaxStat(nameService, skillService, rangeService) {
+  updateMaxStat(toolService, skillService, rangeService) {
     this.statsTypes = Object.keys(this.stats);
 
     this.passiveSkills = [];
     this.formattedSkills.forEach(equipmentLvl => {
       equipmentLvl.forEach(skill => {
-        skill.name = nameService.getName(skill);
+        skill.name = toolService.getName(skill);
         skill.effectsHtml = skillService.formatEffects(this, skill);
 
         if (skill.damage) {
@@ -104,7 +104,7 @@ export class Equipment {
     });
 
     Object.keys(this.grows).forEach(growId => {
-      this.grows[growId].name = nameService.getName(this.grows[growId]);
+      this.grows[growId].name = toolService.getName(this.grows[growId]);
       this.grows[growId].stats = {};
       this.statsTypes.forEach(statType => {
         const maxValue = this.stats[statType].max;

@@ -5,7 +5,7 @@ import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 import { CardService } from '../../services/card.service';
 import { TeamService } from '../../services/team.service';
 import { NavService } from '../../services/nav.service';
-import { NameService } from '../../services/name.service';
+import { ToolService } from '../../services/tool.service';
 import { SkillService } from '../../services/skill.service';
 import { JobService } from '../../services/job.service';
 import { UnitService } from '../../services/unit.service';
@@ -35,7 +35,7 @@ export class ModalCardsComponent implements OnInit {
     private cardService: CardService,
     private teamService: TeamService,
     private translateService: TranslateService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private skillService: SkillService,
     private jobService: JobService,
     private unitService: UnitService,
@@ -70,7 +70,7 @@ export class ModalCardsComponent implements OnInit {
 
   private translateCards() {
     this.cards.forEach(card => {
-      card.name = this.nameService.getName(card);
+      card.name = this.toolService.getName(card);
     });
   }
 

@@ -1441,7 +1441,7 @@ export class Unit {
     });
   }
 
-  getActiveSkills(formatHtml = false, nameService, skillService, rangeService) {
+  getActiveSkills(formatHtml = false, toolService, skillService, rangeService) {
     this.activeSkills = [];
 
     Object.keys(this.board.nodes).forEach(nodeId => {
@@ -1451,7 +1451,7 @@ export class Unit {
       ) {
         node.skill.level = node.level;
 
-        this.activeSkills.push(formatHtml ? this.formatActiveSkill(node.skill, nameService, skillService, rangeService) : node.skill);
+        this.activeSkills.push(formatHtml ? this.formatActiveSkill(node.skill, toolService, skillService, rangeService) : node.skill);
       }
 
       if (node.type === 'buff' && node.skill.type === 'ex_buff' && node.skill.maxLevel > 1 && node.level >= 1 && this.grid) {
@@ -1461,14 +1461,14 @@ export class Unit {
     });
 
     if (this.formattedLimit && formatHtml) {
-      this.formattedLimit = this.formatActiveSkill(this.formattedLimit, nameService, skillService, rangeService);
+      this.formattedLimit = this.formatActiveSkill(this.formattedLimit, toolService, skillService, rangeService);
     }
 
     this.activatedSupport.forEach(supportNode => {
       if (supportNode !== '0') {
         this.board.nodes[supportNode].skill.level = this.board.nodes[supportNode].level;
         if (formatHtml) {
-          this.board.nodes[supportNode].skill = this.formatActiveSkill(this.board.nodes[supportNode].skill, nameService, skillService, rangeService);
+          this.board.nodes[supportNode].skill = this.formatActiveSkill(this.board.nodes[supportNode].skill, toolService, skillService, rangeService);
         }
       }
     });
@@ -1476,13 +1476,13 @@ export class Unit {
     if (this.activatedCounter !== '0') {
       this.board.nodes[this.activatedCounter].skill.level = this.board.nodes[this.activatedCounter].level;
       if (formatHtml) {
-        this.board.nodes[this.activatedCounter].skill = this.formatActiveSkill(this.board.nodes[this.activatedCounter].skill, nameService, skillService, rangeService);
+        this.board.nodes[this.activatedCounter].skill = this.formatActiveSkill(this.board.nodes[this.activatedCounter].skill, toolService, skillService, rangeService);
       }
     }
   }
 
-  private formatActiveSkill(skill, nameService, skillService, rangeService) {
-    skill.name = nameService.getName(skill);
+  private formatActiveSkill(skill, toolService, skillService, rangeService) {
+    skill.name = toolService.getName(skill);
 
     skill.effectsHtml = skillService.formatEffects(this, skill);
 

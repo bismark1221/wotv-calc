@@ -5,7 +5,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { QuestService } from '../services/quest.service';
 import { RangeService } from '../services/range.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { AuthService } from '../services/auth.service';
 import { SkillService } from '../services/skill.service';
 
@@ -65,7 +65,7 @@ export class QuestComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private skillService: SkillService
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
@@ -184,7 +184,7 @@ export class QuestComponent implements OnInit {
           if (itemId !== '') {
             const formattedItem = this.quest.rawItems.find(searchedItem => searchedItem.dataId === itemId);
             if (formattedItem) {
-              formattedItem.name = this.nameService.getName(formattedItem);
+              formattedItem.name = this.toolService.getName(formattedItem);
               for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
                 formattedItem.drop = {
                   num: itemDropNum,
@@ -220,14 +220,14 @@ export class QuestComponent implements OnInit {
 
       if (reward.type === 'item') {
         formattedReward.reward = this.quest.rawItems.find(searchedItem => searchedItem.dataId === reward.rewardId);
-        formattedReward.reward.name = this.nameService.getName(formattedReward.reward);
+        formattedReward.reward.name = this.toolService.getName(formattedReward.reward);
       } else if (reward.type === 'equipment') {
         formattedReward.reward = this.quest.rawEquipments.find(searchedItem => searchedItem.dataId === reward.rewardId);
         if (formattedReward.reward === undefined) {
           formattedReward.reward = this.quest.rawEquipments.find(searchedItem => searchedItem.dataId === reward.rewardId.slice(0, -2));
-          formattedReward.reward.name = this.nameService.getName(formattedReward.reward) + ' +' + reward.rewardId[reward.rewardId.length - 1];
+          formattedReward.reward.name = this.toolService.getName(formattedReward.reward) + ' +' + reward.rewardId[reward.rewardId.length - 1];
         } else {
-          formattedReward.reward.name = this.nameService.getName(formattedReward.reward);
+          formattedReward.reward.name = this.toolService.getName(formattedReward.reward);
         }
       } else if (reward.type === 'visiores') {
         formattedReward.reward = {
@@ -244,7 +244,7 @@ export class QuestComponent implements OnInit {
 
   async formatEnemyOrAlly(enemy, index, type) {
     let formattedEnemy = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === enemy.dataId);
-    formattedEnemy.name = this.nameService.getName(formattedEnemy);
+    formattedEnemy.name = this.toolService.getName(formattedEnemy);
     formattedEnemy.statsForJob = {};
 
     if (enemy.element) {
@@ -264,7 +264,7 @@ export class QuestComponent implements OnInit {
     formattedEnemy.job = null;
     if (formattedEnemy.jobs && formattedEnemy.jobs[0]) {
       formattedEnemy.job = this.quest.rawJobs.find(searchedJob => searchedJob.dataId === formattedEnemy.jobs[0]);
-      formattedEnemy.job.name = this.nameService.getName(formattedEnemy.job);
+      formattedEnemy.job.name = this.toolService.getName(formattedEnemy.job);
     }
 
     formattedEnemy.calculateBaseStats(true);
@@ -312,7 +312,7 @@ export class QuestComponent implements OnInit {
     if (formattedEnemy.attack) {
       const formattedSkill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.attack);
       if (formattedSkill) {
-        formattedSkill.name = this.nameService.getName(formattedSkill);
+        formattedSkill.name = this.toolService.getName(formattedSkill);
 
         formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
@@ -331,7 +331,7 @@ export class QuestComponent implements OnInit {
         formattedSkill.level = rawSkill.rank;
 
         if (formattedSkill.type !== 'support') {
-          formattedSkill.name = this.nameService.getName(formattedSkill);
+          formattedSkill.name = this.toolService.getName(formattedSkill);
 
           formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
@@ -360,7 +360,7 @@ export class QuestComponent implements OnInit {
     if (formattedEnemy.limit) {
       const formattedSkill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.limit);
       if (formattedSkill) {
-        formattedSkill.name = this.nameService.getName(formattedSkill);
+        formattedSkill.name = this.toolService.getName(formattedSkill);
 
         formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
@@ -566,7 +566,7 @@ export class QuestComponent implements OnInit {
 
   async formatOtherItem(item) {
     const formattedItem = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === item.dataId);
-    formattedItem.name = this.nameService.getName(formattedItem);
+    formattedItem.name = this.toolService.getName(formattedItem);
 
     return formattedItem;
   }

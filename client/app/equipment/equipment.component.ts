@@ -7,7 +7,7 @@ import { SkillService } from '../services/skill.service';
 import { RangeService } from '../services/range.service';
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
-import { NameService } from '../services/name.service';
+import { ToolService } from '../services/tool.service';
 import { JobService } from '../services/job.service';
 import { ItemService } from '../services/item.service';
 
@@ -30,7 +30,7 @@ export class EquipmentComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService,
+    private toolService: ToolService,
     private jobService: JobService,
     private itemService: ItemService
   ) {}
@@ -87,7 +87,7 @@ export class EquipmentComponent implements OnInit {
 
   private formatEquipment() {
     if (this.equipment) {
-      this.equipment.name = this.nameService.getName(this.equipment);
+      this.equipment.name = this.toolService.getName(this.equipment);
       this.equipment.statsTypes = Object.keys(this.equipment.stats);
 
       let i = 0;
@@ -101,7 +101,7 @@ export class EquipmentComponent implements OnInit {
         this.sortSkills(equipmentLvl);
 
         for (const skill of equipmentLvl) {
-         skill.name = this.nameService.getName(skill);
+         skill.name = this.toolService.getName(skill);
 
           skill.effectsHtml = this.skillService.formatEquipmentEffects(this.equipment, skill);
 
@@ -137,7 +137,7 @@ export class EquipmentComponent implements OnInit {
         const unit = this.equipment.rawUnits.find(searchedUnit => searchedUnit.dataId === this.equipment.acquisition.unitId);
         if (unit) {
           this.equipment.acquisition.unit = {
-            name: this.nameService.getName(unit),
+            name: this.toolService.getName(unit),
             slug: unit.slug
           };
         } else {
@@ -160,7 +160,7 @@ export class EquipmentComponent implements OnInit {
 
       this.equipment.growIds = Object.keys(this.equipment.grows);
       this.equipment.growIds.forEach(growId => {
-        this.equipment.grows[growId].name = this.nameService.getName(this.equipment.grows[growId]);
+        this.equipment.grows[growId].name = this.toolService.getName(this.equipment.grows[growId]);
         this.equipment.grows[growId].stats = {};
         this.equipment.statsTypes.forEach(statType => {
           const maxValue = this.equipment.stats[statType].max;
@@ -196,7 +196,7 @@ export class EquipmentComponent implements OnInit {
       for (const jobId of this.equipment.equippableJobs) {
         const job = this.equipment.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
         if (job) {
-          job.name = this.nameService.getName(job);
+          job.name = this.toolService.getName(job);
           this.equipment.jobs.push(job);
         }
       }
@@ -205,7 +205,7 @@ export class EquipmentComponent implements OnInit {
       for (const unitId of this.equipment.equippableUnits) {
         const unit = this.equipment.rawUnits.find(searchedUnit => searchedUnit.dataId === unitId);
         if (unit) {
-          unit.name = this.nameService.getName(unit);
+          unit.name = this.toolService.getName(unit);
           this.equipment.units.push(unit);
         }
       }

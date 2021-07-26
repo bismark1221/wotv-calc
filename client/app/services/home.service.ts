@@ -3,13 +3,13 @@ import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 import { ApiService } from './api.service';
-import { NameService } from './name.service';
+import { ToolService } from './tool.service';
 
 @Injectable()
 export class HomeService {
   constructor(
     private apiService: ApiService,
-    private nameService: NameService
+    private toolService: ToolService
   ) {}
 
   private async getApi() {
@@ -49,7 +49,7 @@ export class HomeService {
           const formattedItem = {
             type: item.type,
             slug: dataItem.slug,
-            name: this.nameService.getName(dataItem),
+            name: this.toolService.getName(dataItem),
             image: dataItem.image,
             element: dataItem.element,
             rarity: dataItem.rarity,

@@ -5,7 +5,6 @@ import { TranslateService } from '@ngx-translate/core';
 import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
 import { ApiService } from './api.service';
-import { NameService } from './name.service';
 
 import { Quest } from '../entities/quest';
 import { Unit } from '../entities/unit';
@@ -25,9 +24,8 @@ export class QuestService {
   constructor(
     private translateService: TranslateService,
     private navService: NavService,
-    private toolService: ToolService,
     private apiService: ApiService,
-    private nameService: NameService
+    private toolService: ToolService
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
@@ -103,7 +101,7 @@ export class QuestService {
     }
 
     for (const rawEnemy of result.bestiary) {
-      rawEnemy.name = this.nameService.getName(rawEnemy);
+      rawEnemy.name = this.toolService.getName(rawEnemy);
     }
 
     result.quests = quests;
