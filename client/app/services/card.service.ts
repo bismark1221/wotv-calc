@@ -47,7 +47,8 @@ export class CardService {
     'VC_LW_MOGL',
     'VC_FF7_MV1',
     'VC_FF7_SCPN',
-    'VC_LW_GREEN'
+    'VC_LW_GREEN',
+    'VC_FF15_MV1'
   ];
 
   private JP_limitedCards = [
@@ -77,7 +78,8 @@ export class CardService {
     'VC_LW_APPLE',
     'VC_LW_MOGL',
     'VC_FF7_MV1',
-    'VC_FF7_SCPN'
+    'VC_FF7_SCPN',
+    'VC_FF15_MV1'
   ];
 
   constructor(
