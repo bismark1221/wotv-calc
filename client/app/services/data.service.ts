@@ -18,13 +18,13 @@ export class DataService {
     private toastr: ToastrService
   ) {}
 
-  private getStorageName(type, forcedVersion = null) {
-    return this.navService.getVersion() === 'JP' || forcedVersion === 'JP' ? 'jp_data_' + type : 'gl_data_' + type;
+  private getStorageName(type) {
+    return this.navService.getVersion() === 'JP' ? 'jp_data_' + type : 'gl_data_' + type;
   }
 
-  public async loadData(type, forcedVersion = null) {
+  public async loadData(type) {
     await this.checkHashService.getLaunchedRequest();
-    const storageName = this.getStorageName(type, forcedVersion);
+    const storageName = this.getStorageName(type);
     let cache = null;
     let data = null;
     let cacheAvailable = true;

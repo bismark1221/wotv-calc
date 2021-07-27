@@ -1,34 +1,23 @@
 <table style="display: inline-block; vertical-align: top;">
   <tr>
     <td>
-      ### GL Index ###
+      ### Index ###
       <div>
-        <!-- <textarea id="rawJson">{{ GLIndex | json }}</textarea> -->
-        <button class="btn btn-main copyButton" (click)="copyData('GLIndex')">Copy GLIndex</button>
+        <button class="btn btn-main copyButton" (click)="copyData('indexes')">Copy Index</button>
       </div>
-      <span *ngIf="loadingIndexGL > 0">Loading : {{ loadingIndexGL }}</span>
+      <span *ngIf="loadingIndex > 0">Loading : {{ loadingIndex }}</span>
     </td>
     <td>
-      ### JP Index ###
-      <div>
-        <!-- <textarea id="rawJson">{{ JPIndex | json }}</textarea> -->
-        <button class="btn btn-main copyButton" (click)="copyData('JPIndex')">Copy JPIndex</button>
-      </div>
-      <span *ngIf="loadingIndexJP > 0">Loading : {{ loadingIndexJP }}</span>
+  </tr>
+  <tr>
+    <td>
+      <button (click)="generateIndex()">Generate Index</button>
     </td>
   </tr>
   <tr>
     <td>
-      <button (click)="generateIndex('GL')">GL Index</button>
-    </td>
-    <td>
-      <button (click)="generateIndex('JP')">JP Index</button>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      NEW ESPER SET RARITY<br />
-      NEW EQUIPMENT SET ACQUISITION<br />
+      <h1>NEW ESPER SET RARITY</h1><br />
+      <h1>NEW EQUIPMENT SET ACQUISITION</h1><br />
     </td>
   </tr>
 </table>

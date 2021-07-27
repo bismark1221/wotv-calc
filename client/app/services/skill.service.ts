@@ -60,16 +60,16 @@ export class SkillService {
     private dataService: DataService
   ) {}
 
-  private async getRaw(forcedVersion = null) {
-    return await this.dataService.loadData('skills', forcedVersion);
+  private async getRaw() {
+    return await this.dataService.loadData('skills');
   }
 
-  async getSkills(forcedVersion = null) {
-    if (this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'] === null
-      || this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'] === undefined
+  async getSkills() {
+    if (this[this.navService.getVersion() + '_skills'] === null
+      || this[this.navService.getVersion() + '_skills'] === undefined
     ) {
       const skills: Skill[] = [];
-      const rawSkills = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
+      const rawSkills = JSON.parse(JSON.stringify(await this.getRaw()));
 
       Object.keys(rawSkills).forEach(skillId => {
         const skill = new Skill();
@@ -77,16 +77,16 @@ export class SkillService {
         skills.push(skill);
       });
 
-      this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'] = skills;
+      this[this.navService.getVersion() + '_skills'] = skills;
     }
 
-    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'];
+    return this[this.navService.getVersion() + '_skills'];
   }
 
-  async getSkill(id, forcedVersion = null) {
-    await this.getSkills(forcedVersion);
+  async getSkill(id) {
+    await this.getSkills();
 
-    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'].find(skill => skill.dataId === id);
+    return this[this.navService.getVersion() + '_skills'].find(skill => skill.dataId === id);
   }
 
   async getSkillName(id) {

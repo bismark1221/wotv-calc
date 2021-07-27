@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -7,10 +7,6 @@ import { UnitService } from '../services/unit.service';
 import { JobService } from '../services/job.service';
 import { GuildService } from '../services/guild.service';
 import { MasterRanksService } from '../services/mr.service';
-import { GridService } from '../services/grid.service';
-import { EsperService } from '../services/esper.service';
-import { CardService } from '../services/card.service';
-import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service';
 import { ToolService } from '../services/tool.service';
 import { AuthService } from '../services/auth.service';
@@ -31,17 +27,15 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   styleUrls: ['./builder.unit.component.css']
 })
 export class BuilderUnitComponent implements OnInit, AfterViewInit {
-  units = {};
-  filteredUnits = {};
+  units = [];
   unit = null;
-  searchText = '';
   savedUnits = {};
   loadingBuild = false;
   version = 'GL';
+  selectedUnitId = null;
 
   statueNames;
 
-  showList = true;
   showSave = false;
   showStatsDetail = false;
   showBuffsDetail = false;
@@ -50,6 +44,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   isCollapsedSubJob = true;
   isCollapsedOther = true;
   isCollapsedDamageSim = true;
+
+  @ViewChild('selectBuilderUnit') unitSelector;
 
   statsType = ['HP', 'TP', 'AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'MOVE', 'JUMP'];
   statsFrom = [
@@ -150,9 +146,6 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     private translateService: TranslateService,
     private guildService: GuildService,
     private masterRanksService: MasterRanksService,
-    private esperService: EsperService,
-    private cardService: CardService,
-    private equipmentService: EquipmentService,
     private modalService: NgbModal,
     private navService: NavService,
     private toolService: ToolService,
@@ -160,7 +153,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     private simulatorService: SimulatorService
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
-      await this.getUnits();
+      this.translateUnits();
     });
 
     this.version = this.navService.getVersion();
@@ -174,20 +167,25 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
       if (data) {
         this.loadingBuild = true;
 
-        const unit = await this.unitService.getUnitBySlug(data);
+        const unit = await this.unitService.selectUnitForBuilder(null, null, false, data);
+
         if (unit) {
-          await this.selectUnit(unit.dataId);
+          this.selectedUnitId = unit.dataId;
+          this.unit = unit;
+          this.formatUnit();
+          this.loadingBuild = false;
         } else {
-          this.unitService.getStoredUnit(data).subscribe(async unitData => {
+          this.unitService.getStoredUnit(data).subscribe(async (unitData: any) => {
             if (unitData) {
-              // @ts-ignore
-              await this.selectUnit(unitData.dataId, unitData);
+              this.selectedUnitId = unitData.dataId;
+              await this.selectUnit(unitData, true);
               this.unit.storeId = data;
             }
+            this.loadingBuild = false;
           });
         }
-
-        this.loadingBuild = false;
+      } else {
+        this.unitSelector.open();
       }
     });
 
@@ -213,39 +211,14 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   private async getUnits() {
-    this.units = this.formatUnits(await this.unitService.getUnitsForJPBuilder());
-    this.updateFilteredUnits();
-    this.translateUnits();
-
+    this.units = await this.unitService.getUnitsForBuilder();
     this.savedUnits = this.unitService.getSavedUnits();
+    this.translateUnits();
   }
 
   private translateUnits() {
-    Object.keys(this.units).forEach(rarity => {
-      this.units[rarity].forEach(unit => {
-        unit.name = this.toolService.getName(unit);
-      });
-    });
-  }
-
-  private formatUnits(units) {
-    const formattedUnits = { UR: [], MR: [], SR: [], R: [], N: [] };
-
-    units.forEach(unit => {
-      formattedUnits[unit.rarity].push(unit);
-    });
-
-    return formattedUnits;
-  }
-
-  updateFilteredUnits() {
-    const text = this.searchText.toLowerCase();
-    this.filteredUnits = { UR: [], MR: [], SR: [], R: [], N: [] };
-
-    Object.keys(this.units).forEach(rarity => {
-      this.filteredUnits[rarity] = this.units[rarity].filter(unit => {
-        return unit.name.toLowerCase().includes(text);
-      });
+    this.units.forEach(unit => {
+      unit.name = this.toolService.getName(unit);
     });
   }
 
@@ -260,58 +233,36 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.unitService.changeLevel();
   }
 
-  private async loadMasterRanks() {
-    this.unit.masterRanks = await this.masterRanksService.getMasterRanksForBuilder();
+  async selectUnit(customData = null, fromModal = false) {
+    if (this.selectedUnitId) {
+      this.loadingBuild = true;
 
-    if (this.unit.savedMasterRanks) {
-      this.unit.masterRanks.data = this.unit.savedMasterRanks;
-    }
+      if (!fromModal && this.savedUnits[this.selectedUnitId] && this.savedUnits[this.selectedUnitId].length > 0) {
+        this.openLoadModal(this.selectedUnitId);
+        this.unitSelector.handleClearClick();
+      } else {
+        this.unit = await this.unitService.selectUnitForBuilder(this.selectedUnitId, customData);
+        this.formatUnit();
+      }
 
-    this.unitService.changeLevel();
-  }
-
-  focusSearch() {
-    if (!this.showList) {
-      this.updateFilteredUnits();
-      this.showList = true;
-    }
-  }
-
-  blurSearch() {
-    if (this.unit) {
-      this.searchText = this.unit.name;
-      this.showList = false;
-    }
-  }
-
-  toogleList() {
-    this.showList = !this.showList;
-  }
-
-  async selectUnit(dataId, customData = null) {
-    if (dataId) {
-      this.unit = await this.unitService.selectUnitForBuilder(dataId, customData);
-      this.searchText = this.unit.name;
-
-      this.loadGuild();
-      await this.loadMasterRanks();
-      this.unitService.getActiveSkills();
-      this.showList = false;
-
-      Object.keys(this.unit.board.nodes).forEach(nodeId => {
-        if (this.unit.board.nodes[nodeId].skill.type !== 'buff') {
-          this.unit.board.nodes[nodeId].skill.name = this.toolService.getName(this.unit.board.nodes[nodeId].skill);
-        }
-      });
-
-      this.newDamageSim();
-      this.updateActiveSkillsForSim();
+      this.loadingBuild = false;
     } else {
       this.unit = null;
-      this.searchText = '';
-      this.updateFilteredUnits();
-      this.showList = true;
     }
+  }
+
+  private formatUnit() {
+    this.loadGuild();
+    this.unitService.getActiveSkills();
+
+    Object.keys(this.unit.board.nodes).forEach(nodeId => {
+      if (this.unit.board.nodes[nodeId].skill.type !== 'buff') {
+        this.unit.board.nodes[nodeId].skill.name = this.toolService.getName(this.unit.board.nodes[nodeId].skill);
+      }
+    });
+
+    this.newDamageSim();
+    this.updateActiveSkillsForSim();
   }
 
   changeStar(value) {
@@ -479,10 +430,17 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     modalRef.componentInstance.type = 'unit';
     modalRef.componentInstance.savedItems = this.savedUnits[unitId];
+    modalRef.componentInstance.allowNew = true;
 
     modalRef.result.then(async result => {
+      if (result.type === 'new') {
+        this.selectedUnitId = unitId;
+        await this.selectUnit(null, true);
+      }
+
       if (result.type === 'load' && result.item) {
-        await this.selectUnit(result.item.dataId, result.item);
+        this.selectedUnitId = result.item.dataId;
+        await this.selectUnit(result.item, true);
       }
 
       if (result.type === 'fullDelete') {

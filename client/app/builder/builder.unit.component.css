@@ -38,14 +38,21 @@
   text-align: center;
 }
 
+.loadDiv {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.loadDiv .fa-download {
+  font-size: 40px;
+}
+
 /**********/
 /* Search */
 /**********/
-
-.rarityBlock {
-  width: 100%;
-}
-
 .rarityLine {
   padding: 5px;
   background: #E8E6DF;
@@ -64,37 +71,27 @@
   position: relative;
 }
 
-.unitBlock {
-  border-left: 2px solid #E8E6DF;
-  border-right: 2px solid #E8E6DF;
-  border-bottom: 2px solid #E8E6DF;
-  padding-left: 10px;
-}
-
 .unitLine {
-  padding-top: 10px;
+  padding-top: 5px;
   cursor: pointer;
 }
 
 .unitLine hr {
   margin: 0;
-  width: 1276px;
+  width: 1270px;
 }
 
 .unitSelector {
+  padding: 0;
   display: block;
-}
-
-.unitSelectorWithSave {
-  display: inline-block;
-  width: 1200px;
+  height: 50px;
 }
 
 .unitLogo {
   padding: 5px;
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 45px;
+  height: 45px;
   background-color: #E8E6DF;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -102,27 +99,19 @@
 }
 
 .unitLogo img {
-  max-height: 70px;
-  max-width: 70px;
+  max-height: 35px;
+  max-width: 35px;
 }
 
-.unitName {
+.unitNameSelector {
   display: inline-block;
-  font-size: 22px;
+  font-size: 18px;
   vertical-align: middle;
 }
 
-.loadDiv {
+.unitSelectorWithSave {
   display: inline-block;
-  vertical-align: middle;
-  width: 80px;
-  text-align: center;
-  height: 72px;
-  padding-top: 20px;
-}
-
-.loadDiv .fa-download {
-  font-size: 40px;
+  width: 1200px;
 }
 
 /***********/

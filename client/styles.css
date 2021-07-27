@@ -742,19 +742,19 @@ small {
 }
 
 
-.select-builder-card, .select-builder-esper, .select-builder-equipment {
+.select-builder-card, .select-builder-esper, .select-builder-equipment, .select-builder-unit {
   width: 1300px;
 }
 
-.select-builder-card .ng-input input, .select-builder-esper .ng-input input, .select-builder-equipment .ng-input input {
+.select-builder-card .ng-input input, .select-builder-esper .ng-input input, .select-builder-equipment .ng-input input, .select-builder-unit .ng-input input {
   cursor: text !important;
 }
 
-.select-builder-card .ng-optgroup, .select-builder-esper .ng-optgroup, .select-builder-equipment .ng-optgroup {
+.select-builder-card .ng-optgroup, .select-builder-esper .ng-optgroup, .select-builder-equipment .ng-optgroup, .select-builder-unit .ng-optgroup {
   padding: 0 !important;
 }
 
-.select-builder-card .ng-option, .select-builder-esper .ng-option, .select-builder-equipment .ng-option {
+.select-builder-card .ng-option, .select-builder-esper .ng-option, .select-builder-equipment .ng-option, .select-builder-unit .ng-option {
   padding: 0 !important;
   padding-left: 5px !important;
 }

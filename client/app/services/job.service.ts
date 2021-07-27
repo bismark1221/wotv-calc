@@ -28,8 +28,8 @@ export class JobService {
     return JSON.parse(JSON.stringify(await this.apiService.loadData('jobs', param, extraQuery)));
   }
 
-  private getRaw(forcedVersion = null) {
-    return this.dataService.loadData('jobs', forcedVersion);
+  private getRaw() {
+    return this.dataService.loadData('jobs');
   }
 
   async getJobsForJobPlanner(jobsIds) {
@@ -48,12 +48,12 @@ export class JobService {
     };
   }
 
-  async getJobs(forcedVersion = null) {
-    if (this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'] === null
-      || this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'] === undefined
+  async getJobs() {
+    if (this[this.navService.getVersion() + '_jobs'] === null
+      || this[this.navService.getVersion() + '_jobs'] === undefined
     ) {
       const jobs = [];
-      const rawJobs = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
+      const rawJobs = JSON.parse(JSON.stringify(await this.getRaw()));
 
       Object.keys(rawJobs).forEach(jobId => {
         const job = new Job();
@@ -61,10 +61,10 @@ export class JobService {
         jobs.push(job);
       });
 
-      this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'] = jobs;
+      this[this.navService.getVersion() + '_jobs'] = jobs;
     }
 
-    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'];
+    return this[this.navService.getVersion() + '_jobs'];
   }
 
   async getUniqJobs() {
@@ -134,10 +134,10 @@ export class JobService {
     return this.toolService.sortByName(uniqJobs);
   }
 
-  async getJob(id, forcedVersion = null) {
-    await this.getJobs(forcedVersion);
+  async getJob(id) {
+    await this.getJobs();
 
-    const rawJob = this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'].find(findJob => findJob.dataId === id);
+    const rawJob = this[this.navService.getVersion() + '_jobs'].find(findJob => findJob.dataId === id);
     const job = new Job();
 
     job.constructFromJson(JSON.parse(JSON.stringify(rawJob)));

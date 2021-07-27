@@ -1,43 +1,42 @@
 <div class="row">
-  <div class="searchBlock">
-    <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredUnits()" id="click_search" (blur)="blurSearch()" (focus)="focusSearch()" />
-    <i class="fas fa-times" id="reset_search" aria-hidden="true" (click)="selectUnit('')"></i>
-    <i class="fas fa-chevron-up" id="open_search" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
-    <i class="fas fa-chevron-down" id="hide_search" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
-  </div>
+  <ng-select #selectBuilderUnit placeholder="Search an unit by name" class="select-builder-unit" [items]="units" groupBy="rarity" [(ngModel)]="selectedUnitId" (ngModelChange)="selectUnit()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true" dropdownPosition="bottom">
+    <ng-template ng-label-tmp let-item="item">
+      {{item.name}}
+    </ng-template>
+
+    <ng-template ng-optgroup-tmp let-item="item" let-index="index">
+      <div class="rarityLine">
+        <img src="assets/rarity/{{item.rarity}}.png" /><span>{{ rarityTranslate[item.rarity] }}</span>
+      </div>
+    </ng-template>
+
+    <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+      <div class="unitLine" id="unit_{{item.dataId}}">
+        <div class="unitSelector" id="unitSelector_{{item.dataId}}" [ngClass]="{'unitSelectorWithSave': savedUnits[item.dataId]}">
+          <div class="unitLogo">
+            <img src="assets/units/{{ item.image }}_m.png" />
+          </div>
+          <div class="unitNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+        </div>
+        <div class="loadDiv" *ngIf="savedUnits[item.dataId] && savedUnits[item.dataId].length > 0">
+          <i class="fas fa-download"></i>
+        </div>
+        <hr />
+      </div>
+    </ng-template>
+  </ng-select>
 
   <div class="loadingBlock" *ngIf="loadingBuild">
     <h1>Your build is loading</h1>
     <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
   </div>
 
-  <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-    <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredUnits[rarity] && filteredUnits[rarity].length > 0">
-      <img src="assets/rarity/{{rarity}}.png"/><span>{{ rarityTranslate[rarity] }}</span>
-    </div>
-    <div class="unitBlock" *ngIf="showList && !loadingBuild && filteredUnits[rarity] && filteredUnits[rarity].length > 0">
-      <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[rarity]; let j = index">
-        <div class="unitSelector" id="selector_{{filteredUnit.slug}}" [ngClass]="{'unitSelectorWithSave': savedUnits[filteredUnit.dataId]}" (click)="selectUnit(filteredUnit.dataId)">
-          <div class="unitLogo">
-            <img src="assets/units/{{ filteredUnit.image }}_m.png" />
-          </div>
-          <div class="unitName" innerHTML="{{ filteredUnit.name | highlight: searchText }}"></div>
-        </div>
-        <div class="loadDiv" *ngIf="savedUnits[filteredUnit.dataId] && savedUnits[filteredUnit.dataId].length > 0">
-          <a id="load_{{filteredUnit.slug}}" (click)="openLoadModal(filteredUnit.dataId)"><i class="fas fa-download"></i></a>
-        </div>
-        <hr *ngIf="j !== filteredUnits[rarity].length - 1"/>
-      </div>
-    </div>
-  </div>
-
-  <div class="saveBlock" *ngIf="!showList && unit">
+  <div class="saveBlock" *ngIf="unit">
     <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
-  <div class="leftBlock" *ngIf="!showList && unit">
+  <div class="leftBlock" *ngIf="unit">
     <table>
       <tbody>
         <tr>

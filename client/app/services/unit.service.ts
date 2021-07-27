@@ -6,6 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 import { Unit } from '../entities/unit';
+import { Job } from '../entities/job';
 
 import { GridService } from './grid.service';
 import { SkillService } from './skill.service';
@@ -288,16 +289,26 @@ export class UnitService {
     }
   }
 
-  private getRaw(forcedVersion = null) {
-    return this.dataService.loadData('units', forcedVersion);
+  async getUnitsForBuilder() {
+    const units = await this.getApi(null, [{name: 'forBuilder', value: 1}]);
+
+    if (units && units.length > 0) {
+      return this.sortUnits(units);
+    }
+
+    return [];
   }
 
-  async getUnits(forcedVersion = null) {
-    if (this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'] === null
-      || this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'] === undefined
+  private getRaw() {
+    return this.dataService.loadData('units');
+  }
+
+  async getUnits() {
+    if (this[this.navService.getVersion() + '_units'] === null
+      || this[this.navService.getVersion() + '_units'] === undefined
     ) {
       const units: Unit[] = [];
-      const rawUnits = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
+      const rawUnits = JSON.parse(JSON.stringify(await this.getRaw()));
 
       Object.keys(rawUnits).forEach(unitId => {
         const unit = new Unit();
@@ -305,10 +316,10 @@ export class UnitService {
         units.push(unit);
       });
 
-      this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'] = units;
+      this[this.navService.getVersion() + '_units'] = units;
     }
 
-    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'];
+    return this[this.navService.getVersion() + '_units'];
   }
 
   async getUnitsForJPBuilder() {
@@ -439,10 +450,10 @@ export class UnitService {
     return unitCanEquip;
   }
 
-  async getUnit(id, forcedVersion = null) {
-    await this.getUnits(forcedVersion);
+  async getUnit(id) {
+    await this.getUnits();
 
-    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'].find(unit => unit.dataId === id);
+    return this[this.navService.getVersion() + '_units'].find(unit => unit.dataId === id);
   }
 
   async getUnitBySlug(slug) {
@@ -457,18 +468,18 @@ export class UnitService {
     return unit;
   }
 
-  async formatSkills(unit, forcedVersion = null) {
+  async formatSkills(unit) {
     unit.formattedUnlockedSkills = [];
     if (unit.unlockedSkills) {
       for (const skillId of unit.unlockedSkills) {
-        unit.formattedUnlockedSkills.push(await this.skillService.getSkill(skillId, forcedVersion));
+        unit.formattedUnlockedSkills.push(await this.skillService.getSkill(skillId));
       }
     }
 
     for (const nodeId of Object.keys(unit.board.nodes)) {
       const node = unit.board.nodes[nodeId];
       if (node.dataId) {
-        unit.board.nodes[nodeId].skill = await this.skillService.getSkill(node.dataId, forcedVersion);
+        unit.board.nodes[nodeId].skill = await this.skillService.getSkill(node.dataId);
       }
 
       if (unit.board.nodes[nodeId].skill) {
@@ -488,7 +499,7 @@ export class UnitService {
       for (const replace of Object.keys(unit.replacedSkills)) {
         for (const upgrade of unit.replacedSkills[replace]) {
           if (typeof upgrade.newSkill === 'string') {
-            upgrade.newSkill = await this.skillService.getSkill(upgrade.newSkill, forcedVersion);
+            upgrade.newSkill = await this.skillService.getSkill(upgrade.newSkill);
             const oldSkill = this.getSkillByIdFromBoard(unit, upgrade.oldSkill);
             if (oldSkill) {
               upgrade.newSkill.mainSkill = oldSkill.mainSkill;
@@ -582,91 +593,109 @@ export class UnitService {
     return data;
   }
 
-  async selectUnitForBuilder(unitId, customData = null, forceEmptyGuild = false, forcedVersion = null) {
-    this.unit = new Unit();
-    this.unit.constructFromJson(JSON.parse(JSON.stringify(await this.getUnit(unitId, forcedVersion))), this.translateService);
-    this.unit.name = this.unit.getName(this.translateService);
-
-    await this.formatSkills(this.unit, forcedVersion);
-
-    this.unit.formatUpgrades();
-
-    this.unit.jobsData = [];
-    for (const jobId of this.unit.jobs) {
-      const job = await this.jobService.getJob(jobId, forcedVersion);
-
-      job.name = job.getName(this.translateService);
-      job.level = 1;
-      this.unit.jobsData.push(job);
-    }
-    this.unit.subjob = 0;
-
-    this.unit.exJobsData = [];
-    for (const jobId of this.unit.exJobs) {
-      const job = await this.jobService.getJob(jobId, forcedVersion);
-      this.unit.exJobsData.push(job);
+  async selectUnitForBuilder(unitId, customData = null, forceEmptyGuild = false, slug = null) {
+    let apiResult = null;
+    if (slug === null) {
+      apiResult = await this.getApi(unitId, [{name: 'forBuilder', value: 1}, {name: 'byId', value: 1}]);
+    } else {
+      apiResult = await this.getApi(slug, [{name: 'forBuilder', value: 1}, {name: 'bySlug', value: 1}]);
     }
 
-    this.unit.star = 1;
-    this.unit.lb = 0;
-    this.unit.level = 1;
-    this.unit.activatedSupport = [
-      '0',
-      '0'
-    ];
-    this.unit.activatedCounter = '0';
+    if (apiResult.unit) {
+      this.unit = new Unit();
+      this.unit.constructFromJson(apiResult.unit, this.translateService);
 
-    this.unit.formattedMasterSkill = [];
-    this.unit.masterSkillLevel = [-1];
-    this.unit.masterSkillActivated = -1;
-    let i = 0;
-    for (const masterSkillId of this.unit.masterSkill) {
-      const masterSkill = await this.skillService.getSkill(masterSkillId, forcedVersion);
-      if (masterSkill) {
-        this.unit.formattedMasterSkill.push(masterSkill);
-        this.unit.masterSkillLevel.push(i);
-        i++;
+      this.unit.rawJobs = [];
+      for (const rawJob of apiResult.jobs) {
+        const job = new Job();
+        job.constructFromJson(rawJob);
+        this.unit.rawJobs.push(job);
       }
-    }
 
-    this.unit.equipments = [];
+      this.unit.rawSkills = apiResult.skills;
 
-    Object.keys(this.unit.board.nodes).forEach(nodeId => {
-      if (this.unit.board.nodes[nodeId].skill.unlockStar === null) {
-        this.unit.board.nodes[nodeId].activated = true;
-        this.unit.board.nodes[nodeId].level = 1;
+      this.formatSkillsWithApi(this.unit);
+
+      this.unit.formatUpgrades();
+
+      this.unit.jobsData = [];
+      for (const jobId of this.unit.jobs) {
+        const job = this.unit.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
+        job.name = job.getName(this.translateService);
+        job.level = 1;
+        this.unit.jobsData.push(job);
       }
-    });
+      this.unit.subjob = 0;
 
-    if (this.unit.attack) {
-      this.unit.formattedAttack = await this.skillService.getSkill(this.unit.attack, forcedVersion);
-    }
-
-    if (this.unit.limit) {
-      this.unit.formattedLimit = await this.skillService.getSkill(this.unit.limit, forcedVersion);
-      if (this.unit.formattedLimit) {
-        this.unit.formattedLimit.level = 1;
+      this.unit.exJobsData = [];
+      for (const jobId of this.unit.exJobs) {
+        const job = this.unit.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
+        this.unit.exJobsData.push(job);
       }
+
+      this.unit.star = 1;
+      this.unit.lb = 0;
+      this.unit.level = 1;
+      this.unit.activatedSupport = [
+        '0',
+        '0'
+      ];
+      this.unit.activatedCounter = '0';
+
+      this.unit.formattedMasterSkill = [];
+      this.unit.masterSkillLevel = [-1];
+      this.unit.masterSkillActivated = -1;
+      let i = 0;
+      for (const masterSkillId of this.unit.masterSkill) {
+        const masterSkill = this.unit.rawSkills.find(searchedSkill => searchedSkill.dataId === masterSkillId);
+        if (masterSkill) {
+          this.unit.formattedMasterSkill.push(masterSkill);
+          this.unit.masterSkillLevel.push(i);
+          i++;
+        }
+      }
+
+      this.unit.equipments = [];
+
+      Object.keys(this.unit.board.nodes).forEach(nodeId => {
+        if (this.unit.board.nodes[nodeId].skill.unlockStar === null) {
+          this.unit.board.nodes[nodeId].activated = true;
+          this.unit.board.nodes[nodeId].level = 1;
+        }
+      });
+
+      if (this.unit.attack) {
+        this.unit.formattedAttack = this.unit.rawSkills.find(searchedSkill => searchedSkill.dataId === this.unit.attack);
+      }
+
+      if (this.unit.limit) {
+        this.unit.formattedLimit = this.unit.rawSkills.find(searchedSkill => searchedSkill.dataId === this.unit.limit);
+        if (this.unit.formattedLimit) {
+          this.unit.formattedLimit.level = 1;
+        }
+      }
+
+      this.unit.guild = this.guildService.getGuildForBuilder(forceEmptyGuild);
+      this.unit.masterRanks = await this.masterRanksService.getMasterRanksForBuilder(forceEmptyGuild);
+
+      const existingUnit = await this.initiateSavedUnit(customData);
+
+      this.unit.grid = this.gridService.generateUnitGrid(this.unit, 1000, this.unit.exJobs && this.unit.exJobs.length > 0);
+
+      this.unit.updateMaxLevel();
+      this.unit.updateMaxJobLevel();
+
+      if (!existingUnit) {
+        this.unit.maxUnit();
+        this.unit.activateMasterSkill();
+      }
+
+      this.unit.changeLevel(customData || existingUnit ? false : true);
+
+      return this.unit;
     }
 
-    this.unit.guild = this.guildService.getGuildForBuilder(forceEmptyGuild);
-    this.unit.masterRanks = await this.masterRanksService.getMasterRanksForBuilder(forceEmptyGuild);
-
-    const existingUnit = await this.initiateSavedUnit(customData);
-
-    this.unit.grid = this.gridService.generateUnitGrid(this.unit, 1000, this.unit.exJobs && this.unit.exJobs.length > 0);
-
-    this.unit.updateMaxLevel();
-    this.unit.updateMaxJobLevel();
-
-    if (!existingUnit) {
-      this.unit.maxUnit();
-      this.unit.activateMasterSkill();
-    }
-
-    this.unit.changeLevel(customData || existingUnit ? false : true);
-
-    return this.unit;
+    return null;
   }
 
   private async initiateSavedUnit(customData = null) {

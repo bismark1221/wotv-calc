@@ -9,15 +9,9 @@ import { UnitService } from '../services/unit.service';
   styleUrls: ['./json.component.css']
 })
 export class JsonComponent implements OnInit {
-  GLIndex = {};
-  JPIndex = {};
+  indexes = [];
 
-  JPRomaji = {};
-
-  loadingIndexGL = 0;
-  loadingIndexJP = 0;
-
-  loadingData = false;
+  loadingIndex = 0;
 
   constructor(
     private unitService: UnitService,
@@ -27,33 +21,31 @@ export class JsonComponent implements OnInit {
   ngOnInit(): void {}
 
   async generateIndex(version) {
-    this[version + 'Index'] = {
-      units: []
-    };
-    const units = await this.unitService.getUnits(version);
+    const units = await this.unitService.getUnitsForBuilder();
 
-    this['loadingIndex' + version] = units.length;
+    this.loadingIndex = units.length;
+    this.indexes = [];
 
     for (const unit of units) {
-      const buildedUnit = await this.unitService.selectUnitForBuilder(unit.dataId, null, true, version);
+      const buildedUnit = await this.unitService.selectUnitForBuilder(unit.dataId, null, true);
 
       const stats = {};
       Object.keys(buildedUnit.stats).forEach(statType => {
         stats[statType] = buildedUnit.stats[statType].total;
       });
 
-      this[version + 'Index'].units.push({
+      this.indexes.push({
         'names': buildedUnit.names,
         'stats': stats,
         'image': buildedUnit.image,
         'dataId': buildedUnit.dataId
       });
 
-      this['loadingIndex' + version]--;
+      this.loadingIndex--;
     }
   }
 
-  copyData(type) {
-    this.clipboardService.copyFromContent(JSON.stringify(this[type], null, 2).replace('/ /g', '&nbsp;'));
+  copyData() {
+    this.clipboardService.copyFromContent(JSON.stringify({'units': this.indexes}, null, 2).replace('/ /g', '&nbsp;'));
   }
 }

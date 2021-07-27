@@ -14,8 +14,8 @@ export class ApiService {
     private http: HttpClient
   ) {}
 
-  public async loadData(type, param = null, extraQuery = [], forcedVersion = null) {
-    const version = forcedVersion === 'JP' || this.navService.getVersion() === 'JP' ? 'jp' : 'gl';
+  public async loadData(type, param = null, extraQuery = []) {
+    const version = this.navService.getVersion() === 'JP' ? 'jp' : 'gl';
 
     let uri = '/api/' + version + '/' + type + (param ? '/' + param : '');
 
