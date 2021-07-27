@@ -74,16 +74,6 @@ export class OtherBestiaryComponent implements OnInit {
   async getUnits() {
     this.units = await this.otherUnitService.getUnitsForListing(this.filters, this.sort, this.order);
 
-    for (const unit of this.units) {
-      unit.formattedJobs = [];
-      if (unit.jobs) {
-        for (const jobId of unit.jobs) {
-          const job = await this.jobService.getJob(jobId);
-          unit.formattedJobs.push(job);
-        }
-      }
-    }
-
     this.translateUnits();
   }
 

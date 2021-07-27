@@ -4,7 +4,6 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { ToolService } from './tool.service';
 import { NavService } from './nav.service';
-import { DataService } from './data.service';
 
 import { Skill } from '../entities/skill';
 
@@ -56,49 +55,8 @@ export class SkillService {
     private sanitizer: DomSanitizer,
     private translateService: TranslateService,
     private toolService: ToolService,
-    private navService: NavService,
-    private dataService: DataService
+    private navService: NavService
   ) {}
-
-  private async getRaw() {
-    return await this.dataService.loadData('skills');
-  }
-
-  async getSkills() {
-    if (this[this.navService.getVersion() + '_skills'] === null
-      || this[this.navService.getVersion() + '_skills'] === undefined
-    ) {
-      const skills: Skill[] = [];
-      const rawSkills = JSON.parse(JSON.stringify(await this.getRaw()));
-
-      Object.keys(rawSkills).forEach(skillId => {
-        const skill = new Skill();
-        skill.constructFromJson(rawSkills[skillId], this.translateService);
-        skills.push(skill);
-      });
-
-      this[this.navService.getVersion() + '_skills'] = skills;
-    }
-
-    return this[this.navService.getVersion() + '_skills'];
-  }
-
-  async getSkill(id) {
-    await this.getSkills();
-
-    return this[this.navService.getVersion() + '_skills'].find(skill => skill.dataId === id);
-  }
-
-  async getSkillName(id) {
-    await this.getSkills();
-
-    const searchedSkill = this[this.navService.getVersion() + '_skills'].find(skill => skill.dataId === id);
-    if (searchedSkill) {
-      return searchedSkill.getName(this.translateService);
-    }
-
-    return '???';
-  }
 
   private i(s: any) {
       return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');

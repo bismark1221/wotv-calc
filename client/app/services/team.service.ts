@@ -243,7 +243,7 @@ export class TeamService {
       }
     });
 
-    const units = await this.unitService.getUnitsForJPBuilder();
+    const units = await this.unitService.getUnitsForBuilder();
     const availableUnits = [];
 
     units.forEach(unit => {

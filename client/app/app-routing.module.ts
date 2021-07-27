@@ -24,7 +24,6 @@ import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
 import { OtherIndexComponent } from './other/other.index.component';
 import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
-import { OtherIlluminatiComponent } from './other/other.illuminati.component';
 import { OtherFarmCalculatorComponent } from './other/other.farmcalculator.component';
 import { OtherBestiaryComponent } from './other/other.bestiary.component';
 import { OtherUnitComponent } from './other/other.unit.component';
@@ -61,8 +60,6 @@ const ROUTES: Routes = [
       { path: 'titles', component: OtherTitlesComponent },
       { path: 'index', component: OtherIndexComponent },
       { path: 'jobplanner', component: OtherJobPlannerComponent },
-      { path: 'illuminati', component: OtherIlluminatiComponent },
-      { path: 'illuminati/:data', component: OtherIlluminatiComponent },
       { path: 'farm-calculator', component: OtherFarmCalculatorComponent },
       { path: 'farm-calculator/:data', component: OtherFarmCalculatorComponent },
       { path: 'bestiary', component: OtherBestiaryComponent },

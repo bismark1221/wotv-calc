@@ -20,7 +20,6 @@ import { CardService } from './card.service';
 import { EsperService } from './esper.service';
 import { AuthService } from './auth.service';
 import { ToolService } from './tool.service';
-import { DataService } from './data.service';
 import { ApiService } from './api.service';
 
 @Injectable()
@@ -125,7 +124,6 @@ export class UnitService {
     private firestore: AngularFirestore,
     private authService: AuthService,
     private toolService: ToolService,
-    private dataService: DataService,
     private apiService: ApiService
   ) {}
 
@@ -299,95 +297,10 @@ export class UnitService {
     return [];
   }
 
-  private getRaw() {
-    return this.dataService.loadData('units');
-  }
-
-  async getUnits() {
-    if (this[this.navService.getVersion() + '_units'] === null
-      || this[this.navService.getVersion() + '_units'] === undefined
-    ) {
-      const units: Unit[] = [];
-      const rawUnits = JSON.parse(JSON.stringify(await this.getRaw()));
-
-      Object.keys(rawUnits).forEach(unitId => {
-        const unit = new Unit();
-        unit.constructFromJson(rawUnits[unitId], this.translateService);
-        units.push(unit);
-      });
-
-      this[this.navService.getVersion() + '_units'] = units;
-    }
-
-    return this[this.navService.getVersion() + '_units'];
-  }
-
-  async getUnitsForJPBuilder() {
-    await this.getUnits();
-
-    const units = await this.filterUnits(this[this.navService.getVersion() + '_units'], null);
-    this.toolService.sortByRarity(units, 'desc');
-
-    return units;
-  }
-
-  async getUnitsForListing(filters = null, sort = 'rarity', order = 'desc') {
-    await this.getUnits();
-    const units = await this.filterUnits(this[this.navService.getVersion() + '_units'], filters);
-
-    return units;
-  }
-
   async getUnitsForJobPlanner() {
     const units = this.getApi(null, [{name: 'forJobPlanner', value: 1}]);
 
     return units;
-  }
-
-  async getCosts() {
-    const units = await this.getUnits();
-
-    const costs = [];
-    units.forEach(unit => {
-      if (costs.indexOf(unit.cost) === -1) {
-        costs.push(unit.cost);
-      }
-    });
-
-    return costs.sort((a, b) => b - a);
-  }
-
-  private async filterUnits(units, filters, sort = 'rarity', order = 'desc') {
-    if (filters) {
-      const filteredUnits = [];
-
-      for (const unit of units) {
-        if ((filters.element.length === 0 || filters.element.indexOf(unit.element) !== -1)
-          && (filters.rarity.length === 0 || filters.rarity.indexOf(unit.rarity) !== -1)
-          && (filters.cost.length === 0 || filters.cost.indexOf(unit.cost) !== -1)
-          && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) !== -1)
-          && (!filters.exJob || unit.exJobs.length > 0)
-        ) {
-          let possbibleToAdd = true;
-
-          if (filters.job && filters.job.length > 0) {
-            possbibleToAdd = this.unitHasJob(unit, filters);
-          }
-
-          if (possbibleToAdd && filters.equipment && (filters.equipment.weapon !== 'ALL' || (filters.equipment.armor && filters.equipment.armor.length > 0))) {
-            possbibleToAdd = await this.unitCanEquip(unit, filters);
-          }
-
-          if (possbibleToAdd) {
-            filteredUnits.push(unit);
-          }
-        }
-      }
-
-      return this.sortUnits(filteredUnits);
-    } else {
-      return this.sortUnits(units);
-    }
   }
 
   sortUnits(units, sort = 'rarity', order = 'desc') {
@@ -420,94 +333,6 @@ export class UnitService {
     }
 
     return unitHasJob;
-  }
-
-  private async unitCanEquip(unit, filters) {
-    let unitCanEquip = true;
-    const job = await this.jobService.getJob(unit.jobs[0]);
-
-    if (filters.equipment.weapon !== 'ALL' && job.equipments.weapons.indexOf(filters.equipment.weapon) === -1) {
-      unitCanEquip = false;
-    }
-
-    if (filters.equipment.armor && filters.equipment.armor.length > 0) {
-      let armorFound = false;
-      let i = 0;
-
-      while (!armorFound && i <= filters.equipment.armor.length - 1) {
-        if (job.equipments.armors.indexOf(filters.equipment.armor[i]) !== -1) {
-          armorFound = true;
-        }
-
-        i++;
-      }
-
-      if (!armorFound) {
-        unitCanEquip = false;
-      }
-    }
-
-    return unitCanEquip;
-  }
-
-  async getUnit(id) {
-    await this.getUnits();
-
-    return this[this.navService.getVersion() + '_units'].find(unit => unit.dataId === id);
-  }
-
-  async getUnitBySlug(slug) {
-    await this.getUnits();
-
-    const unit = this[this.navService.getVersion() + '_units'].find(searchedUnit => searchedUnit.slug === slug);
-
-    if (unit) {
-      await this.formatSkills(unit);
-    }
-
-    return unit;
-  }
-
-  async formatSkills(unit) {
-    unit.formattedUnlockedSkills = [];
-    if (unit.unlockedSkills) {
-      for (const skillId of unit.unlockedSkills) {
-        unit.formattedUnlockedSkills.push(await this.skillService.getSkill(skillId));
-      }
-    }
-
-    for (const nodeId of Object.keys(unit.board.nodes)) {
-      const node = unit.board.nodes[nodeId];
-      if (node.dataId) {
-        unit.board.nodes[nodeId].skill = await this.skillService.getSkill(node.dataId);
-      }
-
-      if (unit.board.nodes[nodeId].skill) {
-        if (unit.board.nodes[nodeId].skill.type === 'buff' || unit.board.nodes[nodeId].skill.type === 'ex_buff') {
-          unit.board.nodes[nodeId].skill = JSON.parse(JSON.stringify(unit.board.nodes[nodeId].skill));
-        }
-
-        unit.board.nodes[nodeId].skill.unlockStar = node.unlockStar;
-        unit.board.nodes[nodeId].skill.unlockJob = node.unlockJob;
-        unit.board.nodes[nodeId].skill.jobLevel = node.jobLevel;
-        unit.board.nodes[nodeId].skill.jp = node.jp;
-        unit.board.nodes[nodeId].skill.mainSkill = node.mainSkill;
-      }
-    }
-
-    if (unit.replacedSkills) {
-      for (const replace of Object.keys(unit.replacedSkills)) {
-        for (const upgrade of unit.replacedSkills[replace]) {
-          if (typeof upgrade.newSkill === 'string') {
-            upgrade.newSkill = await this.skillService.getSkill(upgrade.newSkill);
-            const oldSkill = this.getSkillByIdFromBoard(unit, upgrade.oldSkill);
-            if (oldSkill) {
-              upgrade.newSkill.mainSkill = oldSkill.mainSkill;
-            }
-          }
-        }
-      }
-    }
   }
 
   getSkillByIdFromBoard(unit, skillId) {

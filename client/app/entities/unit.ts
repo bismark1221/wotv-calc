@@ -1705,7 +1705,8 @@ export class Unit {
       onlyTmr = true;
     }
 
-    const equipments = await equipmentService.getEquipmentsForUnitBuilder();
+    const result = await equipmentService.getEquipmentsForUnitBuilder();
+    const equipments = result.equipments;
     const availableEquipments = [];
     let mainJob = this.jobs[0].split('_');
     mainJob = mainJob[0] + '_' + mainJob[1] + '_' + mainJob[2];
@@ -1732,7 +1733,10 @@ export class Unit {
       }
     });
 
-    return availableEquipments;
+    return {
+      equipments: availableEquipments,
+      acquisitionTypes: result.acquisitionTypes
+    };
   }
 
   updateCost() {

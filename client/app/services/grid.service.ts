@@ -1147,53 +1147,12 @@ export class GridService {
     private toolService: ToolService
   ) {}
 
-  generateEsperGridForDetail(esper, size) {
+  generateEsperGrid(esper, size) {
     const nodesForGrid = [];
 
     for (const node of this.gridNodes) {
       if (esper.board.nodes[node.toString()]) {
         const buff = esper.rawSkills.find(searchedSkill => searchedSkill.dataId === esper.board.nodes[node.toString()].dataId);
-
-        nodesForGrid[node] = {
-          type: 'text',
-          value: this.skillService.formatEffect(esper, buff, buff.effects[0], false)
-        };
-      } else if (node === 0) {
-        nodesForGrid[node] = {
-          type: 'center'
-        };
-      } else {
-        nodesForGrid[node] = {
-          type: 'hidden'
-        };
-      }
-    }
-
-    let linesHtml = '';
-    esper.board.lines.forEach(line => {
-      let html = '<div class="line" style="top: ' + (this.lines[line].top * size / 1000) + 'px; left: ' + (this.lines[line].left * size / 1000) + 'px;';
-      if (this.lines[line].transform) {
-        html = html + 'transform: rotate(' + this.lines[line].transform + 'deg);';
-      }
-      html = html + '"></div>';
-      linesHtml += html;
-    });
-
-    this.generateNodesHierachy(esper);
-
-    return {
-      lines: linesHtml,
-      nodesForGrid: nodesForGrid,
-      gridNodes: this.gridNodes
-    };
-  }
-
-  async generateEsperGrid(esper, size) {
-    const nodesForGrid = [];
-
-    for (const node of this.gridNodes) {
-      if (esper.board.nodes[node.toString()]) {
-        const buff = await this.skillService.getSkill(esper.board.nodes[node.toString()].dataId);
 
         nodesForGrid[node] = {
           type: 'text',

@@ -9,7 +9,6 @@ import { RangeService } from './range.service';
 import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
-import { DataService } from './data.service';
 import { ApiService } from './api.service';
 
 import { Card } from '../entities/card';
@@ -84,7 +83,6 @@ export class CardService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
-    private dataService: DataService,
     private apiService: ApiService,
     private skillService: SkillService,
     private rangeService: RangeService,
@@ -124,6 +122,22 @@ export class CardService {
     };
   }
 
+  async getCardsForListing(filters = null, sort = 'rarity', order = 'desc') {
+    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+
+    const rawCards = [];
+
+    for (const apiCard of apiResult.cards) {
+      const rawCard = new Card();
+      rawCard.constructFromJson(apiCard, this.translateService);
+      rawCards.push(rawCard);
+    }
+
+    const cards = this.filterCards(rawCards, filters, sort, order);
+
+    return cards;
+  }
+
   async getCardsForBuilder() {
     const cards = await this.getApi(null, [{name: 'forBuilder', value: 1}]);
 
@@ -132,49 +146,6 @@ export class CardService {
     }
 
     return [];
-  }
-
-  private getRaw() {
-    return this.dataService.loadData('cards');
-  }
-
-  async getCards() {
-    if (this[this.navService.getVersion() + '_cards'] === null || this[this.navService.getVersion() + '_cards'] === undefined) {
-      const cards: Card[] = [];
-      const rawCards = await this.getRaw();
-
-      Object.keys(rawCards).forEach(cardId => {
-        const card = new Card();
-        card.constructFromJson(rawCards[cardId], this.translateService);
-        cards.push(card);
-      });
-
-      this[this.navService.getVersion() + '_cards'] = cards;
-    }
-
-    return this[this.navService.getVersion() + '_cards'];
-  }
-
-  async getCardsForListing(filters = null, sort = 'rarity', order = 'desc') {
-    await this.getCards();
-    const cards = await this.filterCards(this[this.navService.getVersion() + '_cards'], filters);
-
-    switch (sort) {
-      case 'rarity' :
-        this.toolService.sortByRarity(cards, order);
-      break;
-      case 'name' :
-        this.toolService.sortByName(cards, order);
-      break;
-      case 'releaseDate' :
-        this.toolService.sortByReleaseDate(cards, order);
-      break;
-      default :
-        console.log('not managed sort');
-      break;
-    }
-
-    return cards;
   }
 
   filterCards(cards, filters, sort = 'rarity', order = 'desc') {
@@ -241,12 +212,6 @@ export class CardService {
         return cards;
       break;
     }
-  }
-
-  async getCard(id) {
-    await this.getCards();
-
-    return this[this.navService.getVersion() + '_cards'].find(card => card.dataId === id);
   }
 
   async getCardBySlug(slug) {

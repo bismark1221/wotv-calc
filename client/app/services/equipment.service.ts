@@ -9,7 +9,6 @@ import { RangeService } from './range.service';
 import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
-import { DataService } from './data.service';
 import { ApiService } from './api.service';
 import { JobService } from './job.service';
 
@@ -242,7 +241,6 @@ export class EquipmentService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
-    private dataService: DataService,
     private apiService: ApiService,
     private skillService: SkillService,
     private rangeService: RangeService,
@@ -326,37 +324,25 @@ export class EquipmentService {
     return [];
   }
 
-  private getRaw() {
-    return this.dataService.loadData('equipments');
-  }
+  async getEquipmentsForUnitBuilder() {
+    const equipments = await this.getApi(null, [{name: 'forModal', value: 1}]);
 
-  async getEquipments() {
-    if (this[this.navService.getVersion() + '_equipments'] === null || this[this.navService.getVersion() + '_equipments'] === undefined) {
-      const equipments: Equipment[] = [];
-      const rawEquipments = JSON.parse(JSON.stringify(await this.getRaw()));
+    const acquisitionTypes = ['Unknown', 'tmr'];
 
-      Object.keys(rawEquipments).forEach(equipmentId => {
-        const equipment = new Equipment();
-        equipment.constructFromJson(rawEquipments[equipmentId], this.translateService);
+    for (const equipment of equipments) {
+      if (this.equipmentsAcquisition[equipment.dataId]) {
+        equipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[equipment.dataId]];
 
-        if (this.equipmentsAcquisition[equipment.dataId]) {
-          equipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[equipment.dataId]];
+        if (acquisitionTypes.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) === -1) {
+          acquisitionTypes.push(equipment.acquisition.type[this.translateService.getDefaultLang()]);
         }
-
-        equipments.push(equipment);
-      });
-
-      this[this.navService.getVersion() + '_equipments'] = equipments;
+      }
     }
 
-    return this[this.navService.getVersion() + '_equipments'];
-  }
-
-  async getEquipmentsForListing(filters = null, sort = 'rarity', order = 'desc') {
-    await this.getEquipments();
-    const equipments = this.filterEquipments(this[this.navService.getVersion() + '_equipments'], filters, sort, order);
-
-    return equipments;
+    return {
+      equipments: this.sortEquipments(equipments),
+      acquisitionTypes: acquisitionTypes
+    };
   }
 
   filterEquipments(equipments, filters, sort = 'rarity', order = 'desc') {
@@ -479,29 +465,6 @@ export class EquipmentService {
     }
   }
 
-  async formatSkills(equipment) {
-    equipment.formattedSkills = [];
-    for (const equipmentLvl of equipment.skills) {
-      const formattedSkills = [];
-      for (const skillData of equipmentLvl) {
-        const formattedSkill = await this.skillService.getSkill(skillData.dataId);
-        formattedSkill.upgrade = skillData.upgrade;
-        formattedSkill.grow = skillData.grow;
-        formattedSkill.maxLevel = skillData.maxLevel;
-
-        formattedSkills.push(formattedSkill);
-      }
-
-      equipment.formattedSkills.push(formattedSkills);
-    }
-  }
-
-  async getEquipment(id: string) {
-    await this.getEquipments();
-
-    return this[this.navService.getVersion() + '_equipments'].find(equipment => equipment.dataId === id);
-  }
-
   isWeapon(type) {
     return this.weaponTypes.indexOf(type) !== -1 ? true : false;
   }
@@ -512,17 +475,6 @@ export class EquipmentService {
 
   getFormatType(type) {
     return this.formatType[type];
-  }
-
-  async getEquipmentsForUnitBuilder() {
-    const equipments = await this.getEquipmentsForListing(null, 'rarity', 'desc');
-
-    const formattedEquipmentsForBuilder = [];
-    equipments.forEach(equipment => {
-      formattedEquipmentsForBuilder.push(equipment);
-    });
-
-    return formattedEquipmentsForBuilder;
   }
 
   getLocalStorage() {
@@ -807,35 +759,5 @@ export class EquipmentService {
     }
 
     this.equipment.category = category;
-  }
-
-  async getAcquisitionTypes() {
-    await this.getEquipments();
-
-    const acquisitionTypes = ['Unknown', 'tmr'];
-    const equipmentTypes = [];
-
-    this[this.navService.getVersion() + '_equipments'].forEach(equipment => {
-      if (equipment.acquisition.type !== 'Unknown' && equipment.acquisition.type !== 'tmr') {
-        const acquisition = equipment.acquisition.type[this.translateService.getDefaultLang()];
-
-        if (acquisitionTypes.indexOf(acquisition) === -1) {
-          acquisitionTypes.push(acquisition);
-        }
-      }
-
-      Object.keys(equipment.grows).forEach(growId => {
-        const grow = equipment.grows[growId].names[this.translateService.getDefaultLang()];
-
-        if (grow !== 'ARTIFACT_50' && grow !== 'ARTIFACT_TRUST' && equipmentTypes.indexOf(growId + '###' + grow) === -1) {
-          equipmentTypes.push(growId + '###' + grow);
-        }
-      });
-    });
-
-    return {
-      acquisitionTypes: acquisitionTypes,
-      equipmentTypes: equipmentTypes
-    };
   }
 }

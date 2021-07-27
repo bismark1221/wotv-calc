@@ -44,7 +44,6 @@ export class ModalEquipmentsComponent implements OnInit {
 
   async ngOnInit() {
     await this.getEquipments();
-    await this.getAcquisitionTypes();
 
     if (this.equipment) {
       this.equipment = await this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment));
@@ -52,12 +51,15 @@ export class ModalEquipmentsComponent implements OnInit {
   }
 
   async getEquipments() {
-    this.equipments = await this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService);
+    const result = await this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService);
+    this.equipments = result.equipments;
     this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters);
     this.getFilteredEquipments();
     this.translateEquipments();
 
     this.savedEquipments = this.equipmentService.getSavedEquipments();
+
+    this.getAcquisitionTypes(result.acquisitionTypes);
   }
 
   private translateEquipments() {
@@ -77,9 +79,8 @@ export class ModalEquipmentsComponent implements OnInit {
     }
   }
 
-  async getAcquisitionTypes() {
-    const types = await this.equipmentService.getAcquisitionTypes();
-    this.acquisitionTypes = types.acquisitionTypes;
+  async getAcquisitionTypes(acquisitionTypes) {
+    this.acquisitionTypes = acquisitionTypes;
     let unknownIndex = 0;
 
     this.acquisitionTypes.forEach((type, typeIndex) => {

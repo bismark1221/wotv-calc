@@ -10,7 +10,6 @@ import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
 import { SkillService } from './skill.service';
-import { DataService } from './data.service';
 import { ApiService } from './api.service';
 
 import { Esper } from '../entities/esper';
@@ -41,7 +40,6 @@ export class EsperService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
-    private dataService: DataService,
     private apiService: ApiService,
     private gridService: GridService,
     private navService: NavService,
@@ -80,6 +78,22 @@ export class EsperService {
     };
   }
 
+  async getEspersForListing(filters = null, sort = 'rarity', order = 'desc') {
+    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+
+    const rawEspers = [];
+
+    for (const apiEsper of apiResult) {
+      const rawEsper = new Esper();
+      rawEsper.constructFromJson(apiEsper, this.translateService);
+      rawEspers.push(rawEsper);
+    }
+
+    const espers = this.filterEspers(rawEspers, filters, sort, order);
+
+    return espers;
+  }
+
   async getEspersForBuilder() {
     const espers = await this.getApi(null, [{name: 'forBuilder', value: 1}]);
 
@@ -88,47 +102,6 @@ export class EsperService {
     }
 
     return [];
-  }
-
-  private getRaw() {
-    return this.dataService.loadData('espers');
-  }
-
-  async getEspers() {
-    if (this[this.navService.getVersion() + '_espers'] === null || this[this.navService.getVersion() + '_espers'] === undefined) {
-      const espers: Esper[] = [];
-      const rawEspers = JSON.parse(JSON.stringify(await this.getRaw()));
-
-      Object.keys(rawEspers).forEach(esperId => {
-        const esper = new Esper();
-        esper.constructFromJson(rawEspers[esperId], this.translateService);
-        espers.push(esper);
-      });
-
-      this[this.navService.getVersion() + '_espers'] = espers;
-    }
-
-    return this[this.navService.getVersion() + '_espers'];
-  }
-
-  async getEspersForListing(filters = null, sort = 'rarity', order = 'desc') {
-    await this.getEspers();
-    const espers = this.filterEspers(this[this.navService.getVersion() + '_espers'], filters);
-
-    return espers;
-  }
-
-  async getCosts() {
-    const espers = await this.getEspers();
-
-    const costs = [];
-    espers.forEach(esper => {
-      if (costs.indexOf(esper.cost) === -1) {
-        costs.push(esper.cost);
-      }
-    });
-
-    return costs.sort((a, b) => b - a);
   }
 
   filterEspers(espers, filters, sort = 'rarity', order = 'desc') {
@@ -168,12 +141,6 @@ export class EsperService {
         return espers;
       break;
     }
-  }
-
-  async getEsper(id) {
-    await this.getEspers();
-
-    return this[this.navService.getVersion() + '_espers'].find(esper => esper.dataId === id);
   }
 
   async getEsperBySlug(slug) {
@@ -263,7 +230,7 @@ export class EsperService {
       }
 
       this.esper.updateEsperBuffs();
-      this.esper.grid = this.gridService.generateEsperGridForDetail(this.esper, 1000);
+      this.esper.grid = this.gridService.generateEsperGrid(this.esper, 1000);
 
       return this.esper;
     }

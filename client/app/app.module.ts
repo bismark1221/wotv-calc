@@ -56,7 +56,6 @@ import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
 import { OtherIndexComponent } from './other/other.index.component';
 import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
-import { OtherIlluminatiComponent } from './other/other.illuminati.component';
 import { OtherFarmCalculatorComponent } from './other/other.farmcalculator.component';
 import { OtherBestiaryComponent } from './other/other.bestiary.component';
 import { OtherUnitComponent } from './other/other.unit.component';
@@ -103,7 +102,6 @@ import { RangeService } from './services/range.service';
 import { IndexService } from './services/index.service';
 import { ReviewService } from './services/review.service';
 import { QuestService } from './services/quest.service';
-import { DataService } from './services/data.service';
 import { SimulatorService } from './services/simulator.service';
 import { OtherUnitService } from './services/otherunit.service';
 import { ApiService } from './services/api.service';
@@ -163,7 +161,6 @@ export function createTranslateLoader(http: HttpClient) {
     OtherTitlesComponent,
     OtherIndexComponent,
     OtherJobPlannerComponent,
-    OtherIlluminatiComponent,
     OtherFarmCalculatorComponent,
     OtherBestiaryComponent,
     OtherUnitComponent,
@@ -225,7 +222,6 @@ export function createTranslateLoader(http: HttpClient) {
     IndexService,
     ReviewService,
     QuestService,
-    DataService,
     SimulatorService,
     OtherUnitService,
     ApiService,

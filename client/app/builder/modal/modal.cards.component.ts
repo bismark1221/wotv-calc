@@ -51,7 +51,7 @@ export class ModalCardsComponent implements OnInit {
 
     if (this.card) {
       this.card = await this.cardService.selectCardForBuilder(this.card.dataId, this.card);
-      await this.formatCardBuffs();
+      this.formatCardBuffs();
     }
   }
 
@@ -118,7 +118,7 @@ export class ModalCardsComponent implements OnInit {
       this.modalStep = 'load';
     } else {
       this.card = await this.cardService.selectCardForBuilder(cardId, customData);
-      await this.formatCardBuffs();
+      this.formatCardBuffs();
 
       this.modalStep = 'custom';
     }
@@ -139,20 +139,20 @@ export class ModalCardsComponent implements OnInit {
 
     this.card.star = value;
     this.cardService.changeStar(this.card);
-    await this.formatCardBuffs();
+    this.formatCardBuffs();
   }
 
   async updateLevel() {
     this.cardService.changeLevel(this.card);
-    await this.formatCardBuffs();
+    this.formatCardBuffs();
   }
 
   async maxCard() {
     this.cardService.maxCard(this.card);
-    await this.formatCardBuffs();
+    this.formatCardBuffs();
   }
 
-  private async formatCardBuffs() {
+  private formatCardBuffs() {
     this.card.formattedBuffs = {
       self: [],
       party: []
@@ -180,21 +180,21 @@ export class ModalCardsComponent implements OnInit {
                 cond.formattedItems = [];
                 for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
                   const jobId = cond.items[jobIndex];
-                  const job = await this.jobService.getJob(jobId);
+                  const job = this.card.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
                   cond.formattedItems[jobIndex] = job ? job : cond.items[jobIndex];
                 }
               } else if (cond.type === 'job') {
                 cond.formattedItems = [];
                 for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
                   const jobId = cond.items[jobIndex];
-                  const job = await this.jobService.getJob(jobId);
+                  const job = this.card.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
                   cond.formattedItems[jobIndex] = job ? job : cond.items[jobIndex];
                 }
               } else if (cond.type === 'unit') {
                 cond.formattedItems = [];
                 for (let unitIndex = 0; unitIndex <= cond.items.length - 1; unitIndex++) {
                   const unitId = cond.items[unitIndex];
-                  const unit = await this.unitService.getUnit(unitId);
+                  const unit = this.card.rawUnits.find(searchedUnit => searchedUnit.dataId === unitId);
                   cond.formattedItems[unitIndex] = unit ? unit : cond.items[unitIndex];
                 }
               }
@@ -213,21 +213,21 @@ export class ModalCardsComponent implements OnInit {
             cond.formattedItems = [];
             for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
               const jobId = cond.items[jobIndex];
-              const job = await this.jobService.getJob(jobId);
+              const job = this.card.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
               cond.formattedItems[jobIndex] = job ? job : cond.items[jobIndex];
             }
           } else if (cond.type === 'job') {
             cond.formattedItems = [];
             for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
               const jobId = cond.items[jobIndex];
-              const job = await this.jobService.getJob(jobId);
+              const job = this.card.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
               cond.formattedItems[jobIndex] = job ? job : cond.items[jobIndex];
             }
           } else if (cond.type === 'unit') {
             cond.formattedItems = [];
             for (let unitIndex = 0; unitIndex <= cond.items.length - 1; unitIndex++) {
               const unitId = cond.items[unitIndex];
-              const unit = await this.unitService.getUnit(unitId);
+              const unit = this.card.rawUnits.find(searchedUnit => searchedUnit.dataId === unitId);
               cond.formattedItems[unitIndex] = unit ? unit : cond.items[unitIndex];
             }
           }
