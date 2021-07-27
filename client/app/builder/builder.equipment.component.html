@@ -31,12 +31,12 @@
     <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
   </div>
 
-  <div class="saveBlock" *ngIf="!showList && equipment">
+  <div class="saveBlock" *ngIf="equipment">
     <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
-  <div class="leftBlock" *ngIf="!showList && equipment">
+  <div class="leftBlock" *ngIf="equipment">
     <table>
       <tbody>
         <tr>
@@ -98,7 +98,7 @@
     </table>
   </div>
 
-  <div class="rightBlock" *ngIf="!showList && equipment">
+  <div class="rightBlock" *ngIf="equipment">
     <table class="statsTable">
       <tbody>
         <tr>

@@ -20,7 +20,7 @@ export class JsonComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  async generateIndex(version) {
+  async generateIndex() {
     const units = await this.unitService.getUnitsForBuilder();
 
     this.loadingIndex = units.length;
