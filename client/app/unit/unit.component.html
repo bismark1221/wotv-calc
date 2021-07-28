@@ -551,14 +551,14 @@
               <th class="sub"><img class="elementImg" title="dark resistance" src="{{'assets/elements/dark.png'}}" /></th>
             </tr>
             <tr>
-              <td class="heightResTd"><span *ngIf="unit.stats.FIRE_RES.min">{{ unit.stats.FIRE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.ICE_RES.min">{{ unit.stats.ICE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.WIND_RES.min">{{ unit.stats.WIND_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.EARTH_RES.min">{{ unit.stats.EARTH_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.LIGHTNING_RES.min">{{ unit.stats.LIGHTNING_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.WATER_RES.min">{{ unit.stats.WATER_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.LIGHT_RES.min">{{ unit.stats.LIGHT_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.DARK_RES.min">{{ unit.stats.DARK_RES.min }} %</span></td>
+              <td class="heightResTd"><span *ngIf="unit.stats.FIRE_RES && unit.stats.FIRE_RES.min">{{ unit.stats.FIRE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.ICE_RES && unit.stats.ICE_RES.min">{{ unit.stats.ICE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.WIND_RES && unit.stats.WIND_RES.min">{{ unit.stats.WIND_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.EARTH_RES && unit.stats.EARTH_RES.min">{{ unit.stats.EARTH_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.LIGHTNING_RES && unit.stats.LIGHTNING_RES.min">{{ unit.stats.LIGHTNING_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.WATER_RES && unit.stats.WATER_RES.min">{{ unit.stats.WATER_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.LIGHT_RES && unit.stats.LIGHT_RES.min">{{ unit.stats.LIGHT_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.DARK_RES && unit.stats.DARK_RES.min">{{ unit.stats.DARK_RES.min }} %</span></td>
             </tr>
           </tbody>
         </table>
@@ -576,11 +576,11 @@
               <th class="sub"><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.png'}}" /></th>
             </tr>
             <tr>
-              <td class="heightResTd"><span *ngIf="unit.stats.SLASH_RES.min">{{ unit.stats.SLASH_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.PIERCE_RES.min">{{ unit.stats.PIERCE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.STRIKE_RES.min">{{ unit.stats.STRIKE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.MISSILE_RES.min">{{ unit.stats.MISSILE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.MAGIC_RES.min">{{ unit.stats.MAGIC_RES.min }} %</span></td>
+              <td class="heightResTd"><span *ngIf="unit.stats.SLASH_RES && unit.stats.SLASH_RES.min">{{ unit.stats.SLASH_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.PIERCE_RES && unit.stats.PIERCE_RES.min">{{ unit.stats.PIERCE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.STRIKE_RES && unit.stats.STRIKE_RES.min">{{ unit.stats.STRIKE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.MISSILE_RES && unit.stats.MISSILE_RES.min">{{ unit.stats.MISSILE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.MAGIC_RES && unit.stats.MAGIC_RES.min">{{ unit.stats.MAGIC_RES.min }} %</span></td>
             </tr>
           </tbody>
         </table>
@@ -602,15 +602,15 @@
               <th class="sub"><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.png'}}" /></th>
             </tr>
             <tr>
-              <td class="heightResTd"><span *ngIf="unit.stats.POISON_RES.min">{{ unit.stats.POISON_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.FROSTBITE_RES.min">{{ unit.stats.FROSTBITE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.BLIND_RES.min">{{ unit.stats.BLIND_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.SLEEP_RES.min">{{ unit.stats.SLEEP_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.SILENCE_RES.min">{{ unit.stats.SILENCE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.PARALYZE_RES.min">{{ unit.stats.PARALYZE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.CONFUSION_RES.min">{{ unit.stats.CONFUSION_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.PETRIFY_RES.min">{{ unit.stats.PETRIFY_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.TOAD_RES.min">{{ unit.stats.TOAD_RES.min }} %</span></td>
+              <td class="heightResTd"><span *ngIf="unit.stats.POISON_RES && unit.stats.POISON_RES.min">{{ unit.stats.POISON_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.FROSTBITE_RES && unit.stats.FROSTBITE_RES.min">{{ unit.stats.FROSTBITE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.BLIND_RES && unit.stats.BLIND_RES.min">{{ unit.stats.BLIND_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.SLEEP_RES && unit.stats.SLEEP_RES.min">{{ unit.stats.SLEEP_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.SILENCE_RES && unit.stats.SILENCE_RES.min">{{ unit.stats.SILENCE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.PARALYZE_RES && unit.stats.PARALYZE_RES.min">{{ unit.stats.PARALYZE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.CONFUSION_RES && unit.stats.CONFUSION_RES.min">{{ unit.stats.CONFUSION_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.PETRIFY_RES && unit.stats.PETRIFY_RES.min">{{ unit.stats.PETRIFY_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.TOAD_RES && unit.stats.TOAD_RES.min">{{ unit.stats.TOAD_RES.min }} %</span></td>
             </tr>
             <tr>
               <th class="sub"><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.png'}}" /></th>
@@ -624,14 +624,14 @@
               <th class="sub"></th>
             </tr>
             <tr>
-              <td class="heightResTd"><span *ngIf="unit.stats.CHARM_RES.min">{{ unit.stats.CHARM_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.SLOW_RES.min">{{ unit.stats.SLOW_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.STOP_RES.min">{{ unit.stats.STOP_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.IMMOBILIZE_RES.min">{{ unit.stats.IMMOBILIZE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.DISABLE_RES.min">{{ unit.stats.DISABLE_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.BERSERK_RES.min">{{ unit.stats.BERSERK_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.DOOM_RES.min">{{ unit.stats.DOOM_RES.min }} %</span></td>
-              <td><span *ngIf="unit.stats.STUN_RES.min">{{ unit.stats.STUN_RES.min }} %</span></td>
+              <td class="heightResTd"><span *ngIf="unit.stats.CHARM_RES && unit.stats.CHARM_RES.min">{{ unit.stats.CHARM_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.SLOW_RES && unit.stats.SLOW_RES.min">{{ unit.stats.SLOW_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.STOP_RES && unit.stats.STOP_RES.min">{{ unit.stats.STOP_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.IMMOBILIZE_RES && unit.stats.IMMOBILIZE_RES.min">{{ unit.stats.IMMOBILIZE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.DISABLE_RES && unit.stats.DISABLE_RES.min">{{ unit.stats.DISABLE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.BERSERK_RES && unit.stats.BERSERK_RES.min">{{ unit.stats.BERSERK_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.DOOM_RES && unit.stats.DOOM_RES.min">{{ unit.stats.DOOM_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.STUN_RES && unit.stats.STUN_RES.min">{{ unit.stats.STUN_RES.min }} %</span></td>
               <td></td>
             </tr>
           </tbody>
