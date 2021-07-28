@@ -35,8 +35,7 @@ export class ItemService {
     const items = [];
     for (const rawItem of rawItems) {
       const item = new Item();
-      item.constructFromJson(rawItem);
-      item.getName(this.translateService);
+      item.constructFromJson(rawItem, this.translateService);
 
       items.push(item);
     }
@@ -50,8 +49,7 @@ export class ItemService {
     const items = [];
     for (const rawItem of rawItems) {
       const item = new Item();
-      item.constructFromJson(rawItem);
-      item.getName(this.translateService);
+      item.constructFromJson(rawItem, this.translateService);
 
       items.push(item);
     }

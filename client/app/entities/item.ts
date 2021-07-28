@@ -10,13 +10,15 @@ export class Item {
   icon;
   class;
 
-  constructFromJson(item: Item): void {
+  constructFromJson(item: Item, translateService): void {
     this.dataId = item.dataId;
     this.names = item.names;
     this.type = item.type;
     this.icon = item.icon;
     this.image = item.image;
     this.class = item.class;
+
+    this.name = this.getName(translateService);
   }
 
   getName(translateService): string {

@@ -32,7 +32,7 @@ export class JobService {
 
     result.jobs.forEach(rawJob => {
       const job = new Job();
-      job.constructFromJson(rawJob);
+      job.constructFromJson(rawJob, this.translateService);
       jobs.push(job);
     });
 
@@ -47,7 +47,7 @@ export class JobService {
 
     for (const rawJob of jobsToFilter) {
       const job = new Job();
-      job.constructFromJson(rawJob);
+      job.constructFromJson(rawJob, this.translateService);
 
       const tableJob = job.dataId.split('_');
       const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2] + (tableJob[3] && tableJob[3] === '01' ? '_01' : '');

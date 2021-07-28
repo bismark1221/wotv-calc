@@ -433,7 +433,7 @@ export class UnitService {
       this.unit.rawJobs = [];
       for (const rawJob of apiResult.jobs) {
         const job = new Job();
-        job.constructFromJson(rawJob);
+        job.constructFromJson(rawJob, this.translateService);
         this.unit.rawJobs.push(job);
       }
 

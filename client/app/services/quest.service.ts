@@ -50,7 +50,7 @@ export class QuestService {
       this.quest.rawItems = [];
       for (const rawItem of result.items) {
         const item = new Item();
-        item.constructFromJson(rawItem);
+        item.constructFromJson(rawItem, this.translateService);
         this.quest.rawItems.push(item);
       }
 
@@ -71,7 +71,7 @@ export class QuestService {
       this.quest.rawJobs = [];
       for (const rawJob of result.jobs) {
         const job = new Job();
-        job.constructFromJson(rawJob);
+        job.constructFromJson(rawJob, this.translateService);
         this.quest.rawJobs.push(job);
       }
     }

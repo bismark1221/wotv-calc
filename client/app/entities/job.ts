@@ -19,7 +19,7 @@ export class Job {
   startTableLevel;
   goalTableLevel;
 
-  constructFromJson(job: Job): void {
+  constructFromJson(job: Job, translateService: TranslateService): void {
     this.dataId = job.dataId;
     this.names = job.names;
     this.statsModifiers = job.statsModifiers;
@@ -27,6 +27,8 @@ export class Job {
     this.subRate = job.subRate;
     this.equipments = job.equipments;
     this.materials = job.materials;
+
+    this.name = this.getName(translateService);
   }
 
   getName(translateService: TranslateService): string {
