@@ -655,9 +655,9 @@ export class SimulatorService {
       // TODO will be hybrid
     }
 
-    if (formula.type === 1) {
+    if (formula && formula.type === 1) {
       damage += mainStat * (100 + formula[1]) / 100;
-    } else if (formula.type === 0) {
+    } else if (formula && formula.type === 0) {
       damage += mainStat;
 
       damage += stats.DEX * (formula[1] ? formula[1] : 0) / 100;
