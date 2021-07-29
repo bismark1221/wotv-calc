@@ -527,22 +527,22 @@
               <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                 <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
                   <div *ngIf="skill.based === 'magic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
                     {{ skill.damage.formula[1] }}% DEX
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
                     {{ skill.damage.formula[2] }}% AGI
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
                 </ng-template>
@@ -606,22 +606,22 @@
               <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                 <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
                   <div *ngIf="skill.based === 'magic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
                     {{ skill.damage.formula[1] }}% DEX
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
                     {{ skill.damage.formula[2] }}% AGI
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
                 </ng-template>
@@ -687,22 +687,22 @@
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
                   <div *ngIf="skill.based === 'magic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
                     {{ skill.damage.formula[1] }}% DEX
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
                     {{ skill.damage.formula[2] }}% AGI
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
                   </ng-template>
@@ -750,22 +750,22 @@
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
                   <div *ngIf="skill.based === 'magic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
                     {{ skill.damage.formula[1] }}% DEX
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
                     {{ skill.damage.formula[2] }}% AGI
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
                   </ng-template>
@@ -813,22 +813,22 @@
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
                   <div *ngIf="skill.based === 'magic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
                     {{ skill.damage.formula[1] }}% DEX
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
                     {{ skill.damage.formula[2] }}% AGI
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
                   </ng-template>
@@ -876,22 +876,22 @@
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
                   <div *ngIf="skill.based === 'magic'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
                     {{ skill.damage.formula[1] }}% DEX
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
                     {{ skill.damage.formula[2] }}% AGI
                   </div>
-                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
                   </ng-template>
@@ -939,22 +939,22 @@
                 <div *ngIf="unit.formattedLimit.damageHtml.value">
                   <ng-template #tip_damage>
                     <div *ngIf="unit.formattedLimit.based === 'physic'">
-                      {{ (100 + (unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% ATK' }}
+                      {{ (100 + (unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
                     <div *ngIf="unit.formattedLimit.based === 'magic'">
-                      {{ (100 + (unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% MAG' }}
+                      {{ (100 + (unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% MAG' }}
                     </div>
                     <div *ngIf="unit.formattedLimit.based === 'hybrid'">
-                      {{ (100 + (unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% ATK' }}
+                      {{ (100 + (unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
 
-                    <div *ngIf="unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[1] > 0">
+                    <div *ngIf="unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[1] > 0">
                       {{ unit.formattedLimit.damage.formula[1] }}% DEX
                     </div>
-                    <div *ngIf="unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[2] > 0">
+                    <div *ngIf="unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[2] > 0">
                       {{ unit.formattedLimit.damage.formula[2] }}% AGI
                     </div>
-                    <div *ngIf="unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[3] > 0">
+                    <div *ngIf="unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[3] > 0">
                       {{ unit.formattedLimit.damage.formula[3] }}% LUCK
                     </div>
                   </ng-template>
