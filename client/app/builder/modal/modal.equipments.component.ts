@@ -43,23 +43,24 @@ export class ModalEquipmentsComponent implements OnInit {
   }
 
   async ngOnInit() {
-    await this.getEquipments();
+    await this.getEquipments(true);
 
     if (this.equipment) {
       this.equipment = await this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment));
     }
   }
 
-  async getEquipments() {
+  async getEquipments(getAcquisitionTypes = false) {
     const result = await this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService);
     this.equipments = result.equipments;
     this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters);
-    this.getFilteredEquipments();
     this.translateEquipments();
+    this.getFilteredEquipments();
 
-    this.savedEquipments = this.equipmentService.getSavedEquipments();
-
-    this.getAcquisitionTypes(result.acquisitionTypes);
+    if (getAcquisitionTypes) {
+      this.savedEquipments = this.equipmentService.getSavedEquipments();
+      this.getAcquisitionTypes(result.acquisitionTypes);
+    }
   }
 
   private translateEquipments() {

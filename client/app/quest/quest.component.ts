@@ -180,17 +180,19 @@ export class QuestComponent implements OnInit {
       for (const rawDrop of this.quest.drops) {
         const formattedDropList = [];
 
-        for (const itemId of Object.keys(rawDrop.items)) {
-          if (itemId !== '') {
-            const formattedItem = this.quest.rawItems.find(searchedItem => searchedItem.dataId === itemId);
-            if (formattedItem) {
-              formattedItem.name = this.toolService.getName(formattedItem);
-              for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
-                formattedItem.drop = {
-                  num: itemDropNum,
-                  value: rawDrop.items[itemId][itemDropNum]
-                };
-                formattedDropList.push(JSON.parse(JSON.stringify(formattedItem)));
+        if (rawDrop.items) {
+          for (const itemId of Object.keys(rawDrop.items)) {
+            if (itemId !== '') {
+              const formattedItem = this.quest.rawItems.find(searchedItem => searchedItem.dataId === itemId);
+              if (formattedItem) {
+                formattedItem.name = this.toolService.getName(formattedItem);
+                for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
+                  formattedItem.drop = {
+                    num: itemDropNum,
+                    value: rawDrop.items[itemId][itemDropNum]
+                  };
+                  formattedDropList.push(JSON.parse(JSON.stringify(formattedItem)));
+                }
               }
             }
           }

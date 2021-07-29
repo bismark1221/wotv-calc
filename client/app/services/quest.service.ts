@@ -81,7 +81,7 @@ export class QuestService {
 
   async getQuestsForFarmCalc(searchedItems) {
     if (searchedItems.length === 0) {
-      return [];
+      return {quests: []};
     }
 
     const itemIds = [];
