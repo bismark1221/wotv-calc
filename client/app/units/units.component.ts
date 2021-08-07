@@ -113,7 +113,9 @@ export class UnitsComponent implements OnInit {
         this.collapsed.cost = true;
       }
     }
+
     this.filterChecked();
+    this.filterUnits();
   }
 
   async getUnits() {

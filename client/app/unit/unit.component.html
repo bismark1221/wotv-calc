@@ -89,7 +89,7 @@
               <th class="sub tmrSubTd" *ngFor="let statType of unit.tmr.statsTypes">{{ statType }}</th>
             </tr>
             <tr>
-              <td>{{ unit.tmr.name }}</td>
+              <td><a [routerLink]="[getRoute('/equipment/' + unit.tmr.slug)]" [routerLinkActive]="['active']">{{ unit.tmr.name }}</a></td>
               <td>{{ getEquipementType(unit.tmr.type) }}</td>
               <td *ngFor="let statType of unit.tmr.statsTypes">{{ unit.tmr.stats[statType].min }}</td>
             </tr>

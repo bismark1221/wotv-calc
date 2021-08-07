@@ -76,6 +76,8 @@ export class CardsComponent implements OnInit {
   async ngOnInit() {
     this.navService.setTitle('Cards');
 
+    await this.getCards();
+
     if (sessionStorage.getItem('cardsFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('cardsFilters'));
 
@@ -91,9 +93,9 @@ export class CardsComponent implements OnInit {
         this.collapsed.cost = true;
       }
     }
-    this.filterChecked();
 
-    this.getCards();
+    this.filterChecked();
+    this.filterCards();
   }
 
   async getCards() {

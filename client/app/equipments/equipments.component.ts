@@ -102,6 +102,7 @@ export class EquipmentsComponent implements OnInit {
     }
 
     this.filterChecked();
+    this.getEquipments();
   }
 
   filterEquipments() {

@@ -89,7 +89,9 @@ export class EspersComponent implements OnInit {
         this.collapsed.cost = true;
       }
     }
+
     this.filterChecked();
+    this.filterEspers();
   }
 
   async getEspers() {
