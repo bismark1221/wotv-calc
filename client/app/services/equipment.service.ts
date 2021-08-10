@@ -95,6 +95,7 @@ export class EquipmentService {
 
     'AF_LW_ACC_001': 'BOX_EVENT',
     'AF_LW_RNG_006': 'BOX_EVENT',
+    'AF_FF15_ACC_001': 'BOX_EVENT',
 
     'AF_SWO_FF14_TNCT': 'COLLABORATION',
     'AF_FFT_SWO_001': 'COLLABORATION',

@@ -25,7 +25,8 @@ export class EsperService {
     'UN_LW_S_MOGL',
     'UN_FFT_S_CHCB_01',
     'UN_LW_S_KRKN',
-    'UN_FF7_S_SCPN'
+    'UN_FF7_S_SCPN',
+    'UN_FF15_S_MNPL'
   ];
 
   private GL_limitedEspers = [
@@ -34,7 +35,8 @@ export class EsperService {
     'UN_LW_S_MOGL',
     'UN_FFT_S_CHCB_01',
     'UN_LW_S_KRKN',
-    'UN_FF7_S_SCPN'
+    'UN_FF7_S_SCPN',
+    'UN_FF15_S_MNPL'
   ];
 
   constructor(
