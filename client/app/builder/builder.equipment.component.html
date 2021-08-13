@@ -158,14 +158,17 @@
             <span *ngIf="equipment.activeSkill.based">
               <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.activeSkill.based + '.png'}}" />
             </span>
-            <div *ngIf="equipment.activeSkill.time && equipment.activeSkill.time.minValue">
+            <span *ngIf="equipment.activeSkill.reflectable">
+              <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+            </span>
+            <span *ngIf="equipment.activeSkill.time && equipment.activeSkill.time.minValue">
               <ng-template #tip_time>
                 <div>
                   {{ equipment.activeSkill.time.realValue }}
                 </div>
               </ng-template>
               <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-            </div>
+            </span>
           </td>
           <td class="skillEffectTd">
             <div>{{ equipment.activeSkill.counterHtml }}</div>

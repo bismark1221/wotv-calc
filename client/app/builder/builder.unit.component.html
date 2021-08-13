@@ -507,14 +507,17 @@
             <td>
               <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
               <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-              <div *ngIf="skill.time && skill.time.minValue">
+              <span *ngIf="skill.reflectable">
+                <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+              </span>
+              <span *ngIf="skill.time && skill.time.minValue">
                 <ng-template #tip_time>
                   <div>
                     {{ skill.time.realValue }}
                   </div>
                 </ng-template>
                 <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-              </div>
+              </span>
             </td>
             <td>{{ skill.name }}</td>
             <td class="skillEffectTd">
@@ -586,14 +589,17 @@
             <td>
               <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
               <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-              <div *ngIf="skill.time && skill.time.minValue">
+              <span *ngIf="skill.reflectable">
+                <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+              </span>
+              <span *ngIf="skill.time && skill.time.minValue">
                 <ng-template #tip_time>
                   <div>
                     {{ skill.time.realValue }}
                   </div>
                 </ng-template>
                 <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-              </div>
+              </span>
             </td>
             <td>{{ skill.name }}</td>
             <td class="skillEffectTd">
@@ -667,14 +673,17 @@
               <td>
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/weapon.png'}}" />
                 <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-                <div *ngIf="skill.time && skill.time.minValue">
+                <span *ngIf="skill.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
                     <div>
                       {{ skill.time.realValue }}
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                </div>
+                </span>
               </td>
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
@@ -730,14 +739,17 @@
               <td>
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/support.png'}}" />
                 <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-                <div *ngIf="skill.time && skill.time.minValue">
+                <span *ngIf="skill.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
                     <div>
                       {{ skill.time.realValue }}
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                </div>
+                </span>
               </td>
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
@@ -793,14 +805,17 @@
               <td>
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/support.png'}}" />
                 <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-                <div *ngIf="skill.time && skill.time.minValue">
+                <span *ngIf="skill.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
                     <div>
                       {{ skill.time.realValue }}
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                </div>
+                </span>
               </td>
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
@@ -856,14 +871,17 @@
               <td>
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/counter.png'}}" />
                 <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-                <div *ngIf="skill.time && skill.time.minValue">
+                <span *ngIf="skill.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
                     <div>
                       {{ skill.time.realValue }}
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                </div>
+                </span>
               </td>
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
@@ -919,14 +937,17 @@
               <td>
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/limit.png'}}" />
                 <span *ngIf="unit.formattedLimit.based"><img title="{{ unit.formattedLimit.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + unit.formattedLimit.based + '.png'}}" /></span>
-                <div *ngIf="unit.formattedLimit.time && unit.formattedLimit.time.minValue">
+                <span *ngIf="unit.formattedLimit.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="unit.formattedLimit.time && unit.formattedLimit.time.minValue">
                   <ng-template #tip_time>
                     <div>
                       {{ unit.formattedLimit.time.realValue }
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                </div>
+                </span>
               </td>
               <td>{{ unit.formattedLimit.name }}</td>
               <td class="skillEffectTd">

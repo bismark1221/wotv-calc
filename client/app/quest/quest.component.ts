@@ -23,6 +23,9 @@ export class QuestComponent implements OnInit {
   isCollapsedAlly = {};
   isCollapsedObject = {};
   statImage = {
+    BRAVERY: '',
+    FAITH: '',
+
     FIRE_RES : 'assets/elements/fire.png',
     ICE_RES : 'assets/elements/ice.png',
     EARTH_RES : 'assets/elements/earth.png',
@@ -253,7 +256,6 @@ export class QuestComponent implements OnInit {
       formattedEnemy.element = enemy.element;
     }
 
-
     if (typeof(enemy.minLevel) === 'number') {
       formattedEnemy.level = enemy.minLevel > 0 ? enemy.minLevel : 1;
       formattedEnemy.hasMaxLevel = true;
@@ -268,6 +270,16 @@ export class QuestComponent implements OnInit {
       formattedEnemy.job = this.quest.rawJobs.find(searchedJob => searchedJob.dataId === formattedEnemy.jobs[0]);
       formattedEnemy.job.name = this.toolService.getName(formattedEnemy.job);
     }
+
+    formattedEnemy.stats['BRAVERY'] = {
+      min: enemy.brave,
+      max: enemy.brave
+    };
+
+    formattedEnemy.stats['FAITH'] = {
+      min: enemy.faith,
+      max: enemy.faith
+    };
 
     formattedEnemy.calculateBaseStats(true);
     formattedEnemy.calculateTotalStats();
@@ -487,6 +499,8 @@ export class QuestComponent implements OnInit {
     ];
 
     const statsManaged = [
+      'BRAVERY',
+      'FAITH',
       'FIRE_RES',
       'ICE_RES',
       'EARTH_RES',

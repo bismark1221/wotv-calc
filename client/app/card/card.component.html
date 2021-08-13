@@ -133,7 +133,10 @@
           <td class="skillNameTd">
             <span>{{ buff.classic.name }}</span>
             <span *ngIf="buff.classic.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + buff.classic.based + '.png'}}" /></span>
-            <div *ngIf="buff.classic.time && buff.classic.time.minValue">
+            <span *ngIf="buff.classic.activeSkill.reflectable">
+              <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+            </span>
+            <span *ngIf="buff.classic.time && buff.classic.time.minValue">
               <ng-template #tip_time>
                 <div>
                   Min time: {{ buff.classic.time.minValue }}<br />
@@ -141,7 +144,7 @@
                 </div>
               </ng-template>
               <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-            </div>
+            </span>
           </td>
           <td class="skillEffectTd">
             <div>{{ buff.classic.counterHtml }}</div>
