@@ -311,7 +311,7 @@
                   <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
 
                   <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-                  <span *ngIf="skill.activeSkill.reflectable">
+                  <span *ngIf="skill.reflectable">
                     <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
                   </span>
                   <span *ngIf="skill.time && skill.time.minValue">

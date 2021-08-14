@@ -133,7 +133,7 @@
           <td class="skillNameTd">
             <span>{{ buff.classic.name }}</span>
             <span *ngIf="buff.classic.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + buff.classic.based + '.png'}}" /></span>
-            <span *ngIf="buff.classic.activeSkill.reflectable">
+            <span *ngIf="buff.classic.reflectable">
               <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
             </span>
             <span *ngIf="buff.classic.time && buff.classic.time.minValue">
