@@ -65,7 +65,8 @@ export class UnitService {
     'UN_LW_P_ELSR_01',
     'UN_FF15_P_PRMP',
     'UN_FF15_P_NCTS',
-    'UN_FF15_P_ARNA'
+    'UN_FF15_P_ARNA',
+    'UN_LW_P_ELSR_01'
   ];
 
   private JP_limitedUnits = [
@@ -105,7 +106,8 @@ export class UnitService {
     'UN_LW_P_ELSR_01',
     'UN_FF15_P_PRMP',
     'UN_FF15_P_NCTS',
-    'UN_FF15_P_ARNA'
+    'UN_FF15_P_ARNA',
+    'UN_LW_P_ELSR_01'
   ];
 
 
