@@ -876,6 +876,18 @@ export class SkillService {
       case 'RES_MAGIC_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' Magic resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'RES_PIERCE_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Pierce resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_STRIKE_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Strike resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_MISSILE_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Missile resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_MAGIC_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Magic resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'RES_FIRE_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' Fire resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
