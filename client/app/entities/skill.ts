@@ -29,6 +29,7 @@ export class Skill {
   pierce;
   increaseDamageOnDecreaseHp;
   reflectable;
+  takeUnitElem;
 
   // For builder
   level;
@@ -60,6 +61,7 @@ export class Skill {
     this.pierce = skill.pierce;
     this.increaseDamageOnDecreaseHp = skill.increaseDamageOnDecreaseHp;
     this.reflectable = skill.reflectable;
+    this.takeUnitElem = skill.takeUnitElem;
 
     // @TODO Remove when finish work on skills
     Object.keys(skill).forEach(key => {
