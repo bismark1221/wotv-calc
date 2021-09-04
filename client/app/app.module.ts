@@ -38,6 +38,7 @@ import { LegalComponent } from './legal/legal.component';
 import { JsonComponent } from './json/json.component';
 
 import { LoginComponent } from './auth/login.component';
+import { UserComponent } from './user/user.component';
 
 import { UnitsComponent } from './units/units.component';
 import { UnitComponent } from './unit/unit.component';
@@ -106,6 +107,7 @@ import { SimulatorService } from './services/simulator.service';
 import { OtherUnitService } from './services/otherunit.service';
 import { ApiService } from './services/api.service';
 import { HomeService } from './services/home.service';
+import { UserService } from './services/user.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -164,7 +166,8 @@ export function createTranslateLoader(http: HttpClient) {
     OtherFarmCalculatorComponent,
     OtherBestiaryComponent,
     OtherUnitComponent,
-    TemplateItemComponent
+    TemplateItemComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -226,6 +229,7 @@ export function createTranslateLoader(http: HttpClient) {
     OtherUnitService,
     ApiService,
     HomeService,
+    UserService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler

@@ -1,0 +1,14 @@
+<table style="display: inline-block; vertical-align: top;">
+  <tr>
+    <td>
+      ### TEST get login ###
+      <div>
+        <textarea [(ngModel)]="token"></textarea>
+      </div>
+      <div>
+        <button class="btn btn-main copyButton" (click)="getLoginInfos('google')">Google</button>
+        <button class="btn btn-main copyButton" (click)="getLoginInfos('facebook')">Facebook</button>
+      </div>
+    </td>
+  </tr>
+</table>

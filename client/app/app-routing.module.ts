@@ -20,6 +20,8 @@ import { RaidComponent } from './raid/raid.component';
 import { QuestsComponent } from './quests/quests.component';
 import { QuestComponent } from './quest/quest.component';
 
+import { UserComponent } from './user/user.component';
+
 import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
 import { OtherIndexComponent } from './other/other.index.component';
@@ -53,6 +55,8 @@ const ROUTES: Routes = [
   { path: 'quests', component: QuestsComponent },
   { path: 'quest/:slug', component: QuestComponent },
   { path: 'index', redirectTo: 'other/index', pathMatch: 'full' },
+
+  { path: 'user', component: UserComponent },
 
   { path: 'other', component: OtherComponent,
     children: [

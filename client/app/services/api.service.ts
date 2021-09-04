@@ -40,4 +40,21 @@ export class ApiService {
       })
       .toPromise();
   }
+
+  public async postForLogin(type, data) {
+    let uri = '/api/gl/' + type;
+
+    return this.http.post(
+      uri,
+      data
+    )
+    .map(response => {
+      return response;
+    })
+    .catch(error => {
+      console.error(error)
+      return of(null);
+    })
+    .toPromise();
+  }
 }
