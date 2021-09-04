@@ -20,4 +20,8 @@ export class UserComponent implements OnInit {
   getLoginInfos(type) {
     this.userService.getDeviceInfos(type, this.token);
   }
+
+  getLoginData() {
+    this.userService.getLoginData();
+  }
 }
