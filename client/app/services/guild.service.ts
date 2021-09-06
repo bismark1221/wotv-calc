@@ -74,6 +74,14 @@ export class GuildService {
     ]
   };
 
+  private lvTbl = {
+    bull: [0, 2000, 33249, 130901, 375030, 883633, 1791856, 3210962, 5181955, 7645714],
+    kirin: [0, 2000, 33249, 130901, 375030, 883633, 1791856, 3210962, 5181955, 7645714],
+    knight: [0, 800, 22498, 95304, 488258, 1017206, 1816446, 4838212, 8691986, 12577518],
+    lion: [0, 2000, 33249, 130901, 375030, 883633, 1791856, 3210962, 5181955, 7645714],
+    serpent: [0, 50, 31299, 128951, 373080, 881683, 1789906, 3209012, 5180005, 7643764]
+  };
+
   constructor(
     private localStorageService: LocalStorageService,
     private navService: NavService,
@@ -177,5 +185,21 @@ export class GuildService {
 
   getStatues() {
     return this.statues;
+  }
+
+  getLevelFromExp(statue, exp) {
+    let level = 0;
+    let minusOne = false;
+
+    for (level = 0; level <= this.lvTbl[statue].length - 1; level++) {
+      if (this.lvTbl[statue][level] > exp) {
+        minusOne = true;
+        break;
+      } if (this.lvTbl[statue][level] === exp) {
+        break;
+      }
+    }
+
+    return level + (minusOne ? 0 : 1);
   }
 }

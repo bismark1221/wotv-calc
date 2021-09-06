@@ -17,3 +17,165 @@
     </td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <th colspan="99">RESULT</th>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;">
+      <table>
+        <tr>
+          <th class="sub" colspan="3">Cards</th>
+        </tr>
+        <tr>
+          <th class="sub">Card Id</th>
+          <th class="sub">Stars</th>
+          <th class="sub">Level</th>
+        </tr>
+        <tbody *ngIf="dumpResult">
+          <tr *ngFor="let card of dumpResult.cards">
+            <td>{{card.dataId}}</td>
+            <td>{{card.star}}</td>
+            <td>{{card.level}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <td style="vertical-align: top;">
+      <table>
+        <tr>
+          <th class="sub" colspan="4">Espers</th>
+        </tr>
+        <tr>
+          <th class="sub">Esper Id</th>
+          <th class="sub">Stars</th>
+          <th class="sub">Level</th>
+          <th class="sub">Activated nodes</th>
+        </tr>
+        <tbody *ngIf="dumpResult">
+          <tr *ngFor="let esper of dumpResult.espers">
+            <td>{{esper.dataId}}</td>
+            <td>{{esper.star}}</td>
+            <td>{{esper.level}}</td>
+            <td>{{esper.formattedNodes}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <td style="vertical-align: top;">
+      <table>
+        <tr>
+          <th class="sub" colspan="5">Equipments</th>
+        </tr>
+        <tr>
+          <th class="sub">Equipment Id</th>
+          <th class="sub">Upgrade</th>
+          <th class="sub">Grow</th>
+          <th class="sub">Level</th>
+          <th class="sub">Stats</th>
+        </tr>
+        <tbody *ngIf="dumpResult">
+          <tr *ngFor="let equipment of dumpResult.equipments">
+            <td>{{equipment.dataId}}</td>
+            <td>{{equipment.upgrade}}</td>
+            <td>{{equipment.grow}}</td>
+            <td>{{equipment.level}}</td>
+            <td>{{equipment.formattedStats}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <td style="vertical-align: top;">
+      <table *ngIf="dumpResult">
+        <tr>
+          <th class="sub" colspan="11">Units</th>
+        </tr>
+        <tr>
+          <th class="sub">Unit Id</th>
+          <th class="sub">level</th>
+          <th class="sub">Star</th>
+          <th class="sub">LB</th>
+          <th class="sub">MasterSkill</th>
+          <th class="sub">Jobs</th>
+          <th class="sub">Subjob N°</th>
+          <th class="sub">limitLv</th>
+          <th class="sub">Counter</th>
+          <th class="sub">Support 1</th>
+          <th class="sub">Support 2</th>
+        </tr>
+        <tbody *ngFor="let unit of dumpResult.units">
+          <tr>
+            <td>{{unit.dataId}}</td>
+            <td>{{unit.level}}</td>
+            <td>{{unit.star}}</td>
+            <td>{{unit.lb}}</td>
+            <td>{{unit.masterSkill}}</td>
+
+            <td>{{unit.jobs[0]}} - {{unit.jobs[1]}} - {{unit.jobs[2]}}</td>
+            <td>{{unit.subjob}}</td>
+            <td>{{unit.limitLv}}</td>
+            <td>{{unit.activatedCounter}}</td>
+            <td>{{unit.activatedSupport[0]}}</td>
+            <td>{{unit.activatedSupport[1]}}</td>
+          </tr>
+          <tr>
+            <td colspan="11">Nodes : {{unit.formattedNodes}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <td style="vertical-align: top;">
+      <table>
+        <tr>
+          <th class="sub" colspan="5">Guild</th>
+        </tr>
+        <tr>
+          <th class="sub">Bull</th>
+          <th class="sub">Serpent</th>
+          <th class="sub">Kirin</th>
+          <th class="sub">Lion</th>
+          <th class="sub">Knight</th>
+        </tr>
+        <tbody *ngIf="dumpResult">
+          <tr>
+            <td>{{dumpResult.guild.bull}}</td>
+            <td>{{dumpResult.guild.serpent}}</td>
+            <td>{{dumpResult.guild.kirin}}</td>
+            <td>{{dumpResult.guild.lion}}</td>
+            <td>{{dumpResult.guild.knight}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <td style="vertical-align: top;">
+      <table>
+        <tr>
+          <th class="sub" colspan="8">Master Ranks</th>
+        </tr>
+        <tr>
+          <th class="sub">fire</th>
+          <th class="sub">ice</th>
+          <th class="sub">wind</th>
+          <th class="sub">earth</th>
+          <th class="sub">lightning</th>
+          <th class="sub">water</th>
+          <th class="sub">dark</th>
+          <th class="sub">light</th>
+        </tr>
+        <tbody *ngIf="dumpResult">
+          <tr>
+            <td>{{dumpResult.masterRanks.fire}}</td>
+            <td>{{dumpResult.masterRanks.ice}}</td>
+            <td>{{dumpResult.masterRanks.wind}}</td>
+            <td>{{dumpResult.masterRanks.earth}}</td>
+            <td>{{dumpResult.masterRanks.lightning}}</td>
+            <td>{{dumpResult.masterRanks.water}}</td>
+            <td>{{dumpResult.masterRanks.dark}}</td>
+            <td>{{dumpResult.masterRanks.light}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</table>

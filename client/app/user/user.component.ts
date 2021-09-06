@@ -10,6 +10,7 @@ import { UserService } from '../services/user.service';
 })
 export class UserComponent implements OnInit {
   token;
+  dumpResult;
 
   constructor(
     private userService: UserService
@@ -21,7 +22,9 @@ export class UserComponent implements OnInit {
     this.userService.getDeviceInfos(type, this.token);
   }
 
-  getLoginData() {
-    this.userService.getLoginData();
+  async getLoginData() {
+    this.dumpResult = await this.userService.getLoginData();
+
+    console.log(this.dumpResult);
   }
 }

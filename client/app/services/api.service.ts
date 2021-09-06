@@ -42,7 +42,7 @@ export class ApiService {
   }
 
   public async postForLogin(type, data) {
-    let uri = '/api/gl/' + type;
+    const uri = '/api/gl/' + type;
 
     return this.http.post(
       uri,
@@ -52,7 +52,7 @@ export class ApiService {
       return response;
     })
     .catch(error => {
-      console.error(error)
+      console.error(error);
       return of(null);
     })
     .toPromise();
