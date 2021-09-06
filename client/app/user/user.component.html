@@ -1,5 +1,5 @@
 <table style="display: inline-block; vertical-align: top;">
-  <tr>
+  <tr *ngIf="haveDevice == false">
     <td>
       ### TEST get login ###
       <div>
@@ -11,14 +11,34 @@
       </div>
     </td>
   </tr>
-  <tr>
+  <tr *ngIf="haveDevice == true">
     <td>
       <button class="btn btn-main copyButton" (click)="getLoginData()">Dump data</button>
+    </td>
+    <td>
+      <button class="btn btn-main copyButton" (click)="deleteLoginInfos()">Delete device</button>
     </td>
   </tr>
 </table>
 
-<table>
+
+<div *ngIf="loadingHaveDevice">
+  Check if device exists...
+</div>
+
+<div *ngIf="loadingUploadDevice">
+  Upload token to create the device...
+</div>
+
+<div *ngIf="loadingData">
+  Loading Data...
+</div>
+
+<div *ngIf="loadingDeleteDevice">
+  Deleting device...
+</div>
+
+<table *ngIf="dumpResult">
   <tr>
     <th colspan="99">RESULT</th>
   </tr>
@@ -33,7 +53,7 @@
           <th class="sub">Stars</th>
           <th class="sub">Level</th>
         </tr>
-        <tbody *ngIf="dumpResult">
+        <tbody>
           <tr *ngFor="let card of dumpResult.cards">
             <td>{{card.dataId}}</td>
             <td>{{card.star}}</td>
@@ -53,7 +73,7 @@
           <th class="sub">Level</th>
           <th class="sub">Activated nodes</th>
         </tr>
-        <tbody *ngIf="dumpResult">
+        <tbody>
           <tr *ngFor="let esper of dumpResult.espers">
             <td>{{esper.dataId}}</td>
             <td>{{esper.star}}</td>
@@ -75,7 +95,7 @@
           <th class="sub">Level</th>
           <th class="sub">Stats</th>
         </tr>
-        <tbody *ngIf="dumpResult">
+        <tbody>
           <tr *ngFor="let equipment of dumpResult.equipments">
             <td>{{equipment.dataId}}</td>
             <td>{{equipment.upgrade}}</td>
@@ -87,7 +107,7 @@
       </table>
     </td>
     <td style="vertical-align: top;">
-      <table *ngIf="dumpResult">
+      <table>
         <tr>
           <th class="sub" colspan="11">Units</th>
         </tr>
@@ -137,7 +157,7 @@
           <th class="sub">Lion</th>
           <th class="sub">Knight</th>
         </tr>
-        <tbody *ngIf="dumpResult">
+        <tbody>
           <tr>
             <td>{{dumpResult.guild.bull}}</td>
             <td>{{dumpResult.guild.serpent}}</td>
@@ -163,7 +183,7 @@
           <th class="sub">dark</th>
           <th class="sub">light</th>
         </tr>
-        <tbody *ngIf="dumpResult">
+        <tbody>
           <tr>
             <td>{{dumpResult.masterRanks.fire}}</td>
             <td>{{dumpResult.masterRanks.ice}}</td>

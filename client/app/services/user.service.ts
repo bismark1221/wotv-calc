@@ -46,6 +46,36 @@ export class UserService {
   ) {
   }
 
+  async userHaveDevice() {
+    const data = {
+      userId: this.authService.getUser().uid
+    };
+
+    const apiResult = await this.apiService.postForLogin('userHaveDevice', data);
+    console.log(apiResult);
+
+    if (apiResult.result === true) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  async deleteLoginInfos() {
+    const data = {
+      userId: this.authService.getUser().uid
+    };
+
+    const apiResult = await this.apiService.postForLogin('deleteDevice', data);
+    console.log(apiResult);
+
+    if (apiResult.result === true) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   async getDeviceInfos(type, token) {
     const data = {
       type: type,
@@ -53,7 +83,14 @@ export class UserService {
       userId: this.authService.getUser().uid
     };
 
-    console.log(await this.apiService.postForLogin('generateDeviceId', data));
+    const apiResult = await this.apiService.postForLogin('generateDeviceId', data);
+    console.log(apiResult);
+
+    if (apiResult.result === 'success') {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   async getLoginData() {
@@ -68,22 +105,22 @@ export class UserService {
 
     if (apiResult) {
       const guild = {
-        serpent: this.guildService.getLevelFromExp('serpent', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_SNAKE').experience),
-        bull: this.guildService.getLevelFromExp('bull', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_COW').experience),
-        kirin: this.guildService.getLevelFromExp('kirin', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_GIRAFFE').experience),
-        lion: this.guildService.getLevelFromExp('lion', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_LION').experience),
-        knight: this.guildService.getLevelFromExp('knight', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_HUNT').experience)
+        serpent: apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_SNAKE') ? this.guildService.getLevelFromExp('serpent', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_SNAKE').experience) : 0,
+        bull: apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_COW') ? this.guildService.getLevelFromExp('bull', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_COW').experience) : 0,
+        kirin: apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_GIRAFFE') ? this.guildService.getLevelFromExp('kirin', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_GIRAFFE').experience) : 0,
+        lion: apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_LION') ? this.guildService.getLevelFromExp('lion', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_LION').experience) : 0,
+        knight: apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_HUNT') ? this.guildService.getLevelFromExp('knight', apiResult.guild.find(searchedStatue => searchedStatue.id === 'GSI_HUNT').experience) : 0
       };
 
       const masterRanks = {
-        dark: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_DARK').rank,
-        fire: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_FIRE').rank,
-        ice: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_ICE').rank,
-        water: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_WATER').rank,
-        wind: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_WIND').rank,
-        earth: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_SOIL').rank,
-        light: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_SHINE').rank,
-        lightning: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_THUNDER').rank
+        dark: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_DARK') ? apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_DARK').rank : 0,
+        fire: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_FIRE') ? apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_FIRE').rank : 0,
+        ice: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_ICE') ? apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_ICE').rank : 0,
+        water: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_WATER') ? apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_WATER').rank : 0,
+        wind: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_WIND') ? apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_WIND').rank : 0,
+        earth: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_SOIL') ? apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_SOIL').rank : 0,
+        light: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_SHINE') ? apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_SHINE').rank : 0,
+        lightning: apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_THUNDER') ? apiResult.masterRanks.find(searchedMasterRank => searchedMasterRank.iname === 'MR_THUNDER').rank : 0
       };
 
       const cards = [];
