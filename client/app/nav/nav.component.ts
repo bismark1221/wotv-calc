@@ -34,6 +34,7 @@ export class NavComponent implements OnInit, AfterViewInit {
   showOtherNav = false;
   showVersionSelector = false;
   showLangSelector = false;
+  showUserMenu = false;
   actualRoute = null;
   version = null;
   theme = null;

@@ -52,6 +52,21 @@
     </ul>
   </div>
 
+  <div class="userBlock">
+    <button *ngIf="!user" class="btn btn-main btn-login" (click)="openLoginModal()">LOGIN</button>
+    <div  (mouseover)="showUserMenu=true" (mouseleave)="showUserMenu=false">
+      <i *ngIf="user" class="fas fa-user-circle" aria-hidden="true"></i>
+      <div class="userMenuBlock">
+        <div class="userMenuDiv" *ngIf="showUserMenu" >
+          <a [routerLink]="[getRoute('/user')]" (click)="showUserMenu=false">Inventory Importer</a>
+        </div>
+        <div class="userMenuDiv" *ngIf="showUserMenu" >
+          <a (click)="logout(); showUserMenu=false">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="lang" (mouseover)="showLangSelector=true" (mouseleave)="showLangSelector=false">
     <div class="actualLang">
       <div *ngIf="lang === 'fr'">
@@ -123,11 +138,6 @@
 
   <div class="them">
     <ui-switch class="switchTheme" (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme === 'light'"></ui-switch>
-  </div>
-
-  <div class="userBlock">
-    <button *ngIf="!user" class="btn btn-main btn-login" (click)="openLoginModal()">LOGIN</button>
-    <button *ngIf="user" class="btn btn-sub btn-logout" (click)="logout()">LOGOUT</button>
   </div>
 </nav>
 
@@ -226,6 +236,7 @@
 
         <div class="nav-link">
           <button *ngIf="!user" class="btn btn-main btn-login" (click)="openLoginModal(); toggleMobileMenu(true);">LOGIN</button>
+          <a class="nav-link" [routerLink]="[getRoute('/user')]" (click)="toggleMobileMenu(true)">Inventory Importer</a>
           <button *ngIf="user" class="btn btn-sub btn-logout" (click)="logout(); toggleMobileMenu(true);">LOGOUT</button>
         </div>
       </li>

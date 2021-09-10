@@ -255,6 +255,36 @@
   margin-left: 10px;
 }
 
+.fa-user-circle {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.userMenuBlock {
+  position: fixed;
+  background-color: var(--nav-background-main);
+  z-index: 20;
+}
+
+.userMenuDiv {
+  padding: 5px;
+  width: 150px;
+}
+
+.userMenuDiv a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.userMenuDiv a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+
 
 /* Mobile version */
 .mobileNav {
