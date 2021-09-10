@@ -284,6 +284,12 @@ export class UserService {
         await this.saveNewData(result[type], type);
       }
 
+      await this.deleteSavedGuildMR('guild');
+      await this.saveNewGuildMR(guild, 'guild');
+
+      await this.deleteSavedGuildMR('masterRank');
+      await this.saveNewGuildMR(masterRanks, 'masterRank');
+
       return result;
     }
 
@@ -299,7 +305,6 @@ export class UserService {
     this.savedItems = this.getSavedItems(this.type);
 
     for (const item of data) {
-      console.log(item);
       await this.firestore.collection(this.type).add(item).then((storedData: any) => {
         data.storeId = storedData.id;
 
@@ -352,5 +357,44 @@ export class UserService {
         this.localStorageService.set(this.type, this.savedItems);
       }
     });
+  }
+
+  async deleteSavedGuildMR(type) {
+    this.type = type;
+    this.savedItems = this.getSavedItems(this.type);
+    const itemPromise = new Promise((resolve, reject) => {
+       this.firestore.collection(
+        this.type,
+        ref => ref.where('user', '==', this.authService.getUser().uid)
+      )
+      .snapshotChanges()
+      .subscribe(data => {
+        resolve(data);
+      });
+    });
+
+    await itemPromise.then(async (data: any) => {
+      if (data) {
+        for (const item of data) {
+          await this.firestore.collection(this.type).doc(item.payload.doc.id).delete();
+        }
+
+        this.localStorageService.remove(this.type);
+      }
+    });
+  }
+
+  async saveNewGuildMR(data, type) {
+    this.type = type;
+
+    if (data) {
+      await this.firestore.collection(this.type).add(data).then((storedData: any) => {
+        data.storeId = storedData.id;
+
+        this.savedItems = data;
+      });
+    }
+
+    this.localStorageService.set(this.type, this.savedItems);
   }
 }
