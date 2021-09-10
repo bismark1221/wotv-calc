@@ -1,19 +1,39 @@
-:host ::ng-deep pre span{
-  white-space: normal;
+.row {
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-:host ::ng-deep .string {
-  color: green;
+.userTable {
+  margin: auto;
+  border: 0;
 }
 
-:host ::ng-deep .number {
-  color: darkorange;
+.userTable tr, .userTable td {
+  border: 0;
 }
 
-:host ::ng-deep .boolean {
-  color: blue;
+.howToTd {
+  width: 650px;
+  vertical-align: top;
+  text-align: left;
 }
 
-:host ::ng-deep .null {
-  color: magenta;
+.howToTd h1, .howToTd h3 {
+  text-align: center;
+}
+
+.dumpTd {
+  width: 400px;
+  vertical-align: top;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.loadingDiv {
+  margin-top: 15px;
+  text-align: left;
 }

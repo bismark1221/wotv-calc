@@ -14,50 +14,53 @@ export class UserComponent implements OnInit {
   dumpResult;
   haveDevice;
 
-  loadingHaveDevice = true;
-  loadingUploadDevice = false;
-  loadingData = false;
-  loadingDeleteDevice = false;
+  loading;
 
   constructor(
     private userService: UserService,
     private authService: AuthService
   ) {}
 
-  async ngOnInit() {}
+  async ngOnInit() {
+    this.loading = this.userService.getLoading();
+  }
 
   ngAfterViewInit() {
     setTimeout(() => {
       this.authService.$user.subscribe(async user => {
         if (user) {
-          await this.userHaveDevice();
+          await this.userHaveDevice('haveDevice');
         }
-        this.loadingHaveDevice = false;
       });
     });
   }
 
-  async userHaveDevice() {
-    this.haveDevice = await this.userService.userHaveDevice();
+  async userHaveDevice(loadingType) {
+    this.haveDevice = await this.userService.userHaveDevice(loadingType);
   }
 
   async getLoginInfos(type) {
-    this.loadingUploadDevice = true;
     this.haveDevice = await this.userService.getDeviceInfos(type, this.token);
-    this.loadingUploadDevice = false;
   }
 
   async deleteLoginInfos() {
-    this.loadingDeleteDevice = true;
     this.haveDevice = await this.userService.deleteLoginInfos();
-    await this.userHaveDevice();
-    this.loadingDeleteDevice = false;
+    await this.userHaveDevice('deleteDevice');
   }
 
   async getLoginData() {
-    this.loadingData = true;
     this.dumpResult = await this.userService.getLoginData();
-    this.loadingData = false;
+
+    await this.userService.deleteSavedGuildMR('guild');
+    await this.userService.saveNewGuildMR(this.dumpResult.guild, 'guild');
+
+    await this.userService.deleteSavedGuildMR('masterRank');
+    await this.userService.saveNewGuildMR(this.dumpResult.masterRanks, 'masterRank');
+
+    for (const type of ['cards', 'espers', 'units', 'equipments']) {
+      await this.userService.deleteAllSaved(type);
+      await this.userService.saveNewData(this.dumpResult[type], type);
+    }
 
     console.log(this.dumpResult);
   }

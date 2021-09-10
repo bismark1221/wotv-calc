@@ -1,201 +1,81 @@
-<table style="display: inline-block; vertical-align: top;">
-  <tr *ngIf="haveDevice == false">
-    <td>
-      ### TEST get login ###
-      <div>
-        <textarea [(ngModel)]="token"></textarea>
-      </div>
-      <div>
-        <button class="btn btn-main copyButton" (click)="getLoginInfos('google')">Google</button>
-        <button class="btn btn-main copyButton" (click)="getLoginInfos('facebook')">Facebook</button>
-      </div>
-    </td>
-  </tr>
-  <tr *ngIf="haveDevice == true">
-    <td>
-      <button class="btn btn-main copyButton" (click)="getLoginData()">Dump data</button>
-    </td>
-    <td>
-      <button class="btn btn-main copyButton" (click)="deleteLoginInfos()">Delete device</button>
-    </td>
-  </tr>
-</table>
+<div class="row">
+  <table class="userTable">
+    <tr>
+      <td class="howToTd">
+        <h1>WotV Inventory Importer</h1>
+        <h3>What is the Inventory Importer ?</h3>
+        The Inventory importer is a tool that that collects inventory data about your WotV account directly from GUMI’s servers and imports that data into WotV-Calc.<br/><br/>
 
+        <h3>How does this work ?</h3>
+        First you have to get the Wotv Token Exporter for either <a href="https://chrome.google.com/webstore/detail/wotv-token-exporter/ekkmdkaekhjmgohgnmapmegfiknmjibo">chrome</a> or <a href="assets/wotv_token_exporter-1.0.0-fx.xpi">firefox</a><br/>
+        Next you can generate a new "device" that will be used by wotv-calc<br/>
+        And the final step will be to export the data<br/>
+        <b>Be careful, as each import request will disconnect you from any existing in-game session, giving an “Invalid Session” error</b><br/><br/>
 
-<div *ngIf="loadingHaveDevice">
-  Check if device exists...
+        <h3>What does it do ?</h3>
+        It will let you export everything from your game data (units, cards, ...)<br/>
+        Parties are still missing... But this is coming soon!<br/>
+        When the export is finished, you have a build saved for every item named 'in-game' saved in your WotV-Calc account<br/>
+        You will be able to update it, clone it and even share it<br/>
+        You can at anytime delete the device stored on wotv-calc if you want<br/><br/>
+
+        <h3>How to update if I update my builds in-game ?</h3>
+        Since the new “Device” is stored on the WotV-Calc server, refreshing data is done by simply re-clicking on "dump data"<br/>Remember that this will invalidate any open sessions<br/>
+        This will refresh all the data you have in WotV-Calc, replacing what was there before<br/><br/>
+
+        <h3>What are the risks</h3>
+        This tool is clearly making API calls against WotV's servers outside of the game itself, which is against the published Terms of Service, so use it at your own risk<br/>
+        All calls to the game’s servers are read-only, however, so it’s not giving any player an unfair advantage<br/>
+        GUMI allows similar tools to exist in other games they publish<br/>
+        That said, <b>USE THIS TOOL AT YOUR OWN RISK!</b><br/>
+      </td>
+      <td class="dumpTd">
+        <div *ngIf="haveDevice == false">
+          <div>
+            <textarea placeholder="Put your token here" [(ngModel)]="token"></textarea>
+          </div>
+          <div>
+            <button class="btn btn-main copyButton" (click)="getLoginInfos('google')">Connect with Google</button>
+            <button class="btn btn-main copyButton" (click)="getLoginInfos('facebook')">Connect with Facebook</button>
+          </div>
+        </div>
+        <div *ngIf="haveDevice == true">
+          <button class="btn btn-main copyButton" (click)="getLoginData()">Export in-game data</button>
+          <button class="btn btn-main copyButton" (click)="deleteLoginInfos()">Delete device</button>
+        </div>
+        <div class="loadingDiv">
+          <div *ngIf="loading.haveDevice">
+            Check if device exists...
+          </div>
+
+          <div *ngIf="loading.uploadDevice">
+            Upload token to create the device...
+          </div>
+
+          <div *ngIf="loading.data">
+            Loading Data...
+          </div>
+
+          <div *ngIf="loading.deleteDevice">
+            Deleting device...
+          </div>
+
+          <div *ngFor="let type of ['guild', 'masterRank']">
+            <div *ngIf="loading.saveData[type] != 'wait'">
+              {{ type | titlecase }} : {{ loading.saveData[type] }}
+            </div>
+          </div>
+
+          <div *ngFor="let type of ['cards', 'espers', 'units', 'equipments']">
+            <div *ngIf="loading.saveData[type].delete != -1">
+              Deleting {{ type | lowercase }} : {{ loading.saveData[type].delete > 0 ? loading.saveData[type].delete : 'finish' }}
+            </div>
+            <div *ngIf="loading.saveData[type].save != -1">
+              Saving {{ type | lowercase }} : {{ loading.saveData[type].save > 0 ? loading.saveData[type].save : 'finish' }}
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
-
-<div *ngIf="loadingUploadDevice">
-  Upload token to create the device...
-</div>
-
-<div *ngIf="loadingData">
-  Loading Data...
-</div>
-
-<div *ngIf="loadingDeleteDevice">
-  Deleting device...
-</div>
-
-<table *ngIf="dumpResult">
-  <tr>
-    <th colspan="99">RESULT</th>
-  </tr>
-  <tr>
-    <td style="vertical-align: top;">
-      <table>
-        <tr>
-          <th class="sub" colspan="3">Cards</th>
-        </tr>
-        <tr>
-          <th class="sub">Card Id</th>
-          <th class="sub">Stars</th>
-          <th class="sub">Level</th>
-        </tr>
-        <tbody>
-          <tr *ngFor="let card of dumpResult.cards">
-            <td>{{card.dataId}}</td>
-            <td>{{card.star}}</td>
-            <td>{{card.level}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-    <td style="vertical-align: top;">
-      <table>
-        <tr>
-          <th class="sub" colspan="4">Espers</th>
-        </tr>
-        <tr>
-          <th class="sub">Esper Id</th>
-          <th class="sub">Stars</th>
-          <th class="sub">Level</th>
-          <th class="sub">Activated nodes</th>
-        </tr>
-        <tbody>
-          <tr *ngFor="let esper of dumpResult.espers">
-            <td>{{esper.dataId}}</td>
-            <td>{{esper.star}}</td>
-            <td>{{esper.level}}</td>
-            <td>{{esper.formattedNodes}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-    <td style="vertical-align: top;">
-      <table>
-        <tr>
-          <th class="sub" colspan="5">Equipments</th>
-        </tr>
-        <tr>
-          <th class="sub">Equipment Id</th>
-          <th class="sub">Upgrade</th>
-          <th class="sub">Grow</th>
-          <th class="sub">Level</th>
-          <th class="sub">Stats</th>
-        </tr>
-        <tbody>
-          <tr *ngFor="let equipment of dumpResult.equipments">
-            <td>{{equipment.dataId}}</td>
-            <td>{{equipment.upgrade}}</td>
-            <td>{{equipment.grow}}</td>
-            <td>{{equipment.level}}</td>
-            <td>{{equipment.formattedStats}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-    <td style="vertical-align: top;">
-      <table>
-        <tr>
-          <th class="sub" colspan="11">Units</th>
-        </tr>
-        <tr>
-          <th class="sub">Unit Id</th>
-          <th class="sub">level</th>
-          <th class="sub">Star</th>
-          <th class="sub">LB</th>
-          <th class="sub">MasterSkill</th>
-          <th class="sub">Jobs</th>
-          <th class="sub">Subjob N°</th>
-          <th class="sub">limitLv</th>
-          <th class="sub">Counter</th>
-          <th class="sub">Support 1</th>
-          <th class="sub">Support 2</th>
-        </tr>
-        <tbody *ngFor="let unit of dumpResult.units">
-          <tr>
-            <td>{{unit.dataId}}</td>
-            <td>{{unit.level}}</td>
-            <td>{{unit.star}}</td>
-            <td>{{unit.lb}}</td>
-            <td>{{unit.masterSkill}}</td>
-
-            <td>{{unit.jobs[0]}} - {{unit.jobs[1]}} - {{unit.jobs[2]}}</td>
-            <td>{{unit.subjob}}</td>
-            <td>{{unit.limitLv}}</td>
-            <td>{{unit.activatedCounter}}</td>
-            <td>{{unit.activatedSupport[0]}}</td>
-            <td>{{unit.activatedSupport[1]}}</td>
-          </tr>
-          <tr>
-            <td colspan="11">Nodes : {{unit.formattedNodes}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-    <td style="vertical-align: top;">
-      <table>
-        <tr>
-          <th class="sub" colspan="5">Guild</th>
-        </tr>
-        <tr>
-          <th class="sub">Bull</th>
-          <th class="sub">Serpent</th>
-          <th class="sub">Kirin</th>
-          <th class="sub">Lion</th>
-          <th class="sub">Knight</th>
-        </tr>
-        <tbody>
-          <tr>
-            <td>{{dumpResult.guild.bull}}</td>
-            <td>{{dumpResult.guild.serpent}}</td>
-            <td>{{dumpResult.guild.kirin}}</td>
-            <td>{{dumpResult.guild.lion}}</td>
-            <td>{{dumpResult.guild.knight}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-    <td style="vertical-align: top;">
-      <table>
-        <tr>
-          <th class="sub" colspan="8">Master Ranks</th>
-        </tr>
-        <tr>
-          <th class="sub">fire</th>
-          <th class="sub">ice</th>
-          <th class="sub">wind</th>
-          <th class="sub">earth</th>
-          <th class="sub">lightning</th>
-          <th class="sub">water</th>
-          <th class="sub">dark</th>
-          <th class="sub">light</th>
-        </tr>
-        <tbody>
-          <tr>
-            <td>{{dumpResult.masterRanks.fire}}</td>
-            <td>{{dumpResult.masterRanks.ice}}</td>
-            <td>{{dumpResult.masterRanks.wind}}</td>
-            <td>{{dumpResult.masterRanks.earth}}</td>
-            <td>{{dumpResult.masterRanks.lightning}}</td>
-            <td>{{dumpResult.masterRanks.water}}</td>
-            <td>{{dumpResult.masterRanks.dark}}</td>
-            <td>{{dumpResult.masterRanks.light}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-  </tr>
-</table>
