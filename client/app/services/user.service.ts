@@ -201,7 +201,7 @@ export class UserService {
       for (const dumpedEquipment of apiResult.artifacts) {
         let realDataId = dumpedEquipment.iname;
         if (dumpedEquipment.grow !== 'ARTIFACT_TRUST' && dumpedEquipment.grow !== 'ARTIFACT_50') {
-          realDataId = realDataId.split('_').slice(0,-1).join('_');
+          realDataId = realDataId.split('_').slice(0, -1).join('_');
         }
 
         const equipmentCustomData = {
