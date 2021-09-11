@@ -545,6 +545,7 @@ export class EquipmentService {
       this.equipment.grow = this.equipment.growIds[0];
 
       this.initiateSavedEquipment(customData);
+
       this.equipment.updateMaxStat(this.toolService, this.skillService, this.rangeService);
 
       this.equipment.changeLevel(this.skillService, this.rangeService);
@@ -576,19 +577,27 @@ export class EquipmentService {
 
       Object.keys(equipment.stats).forEach(stat => {
         if (this.equipment.stats[stat]) {
-          this.equipment.stats[stat].selected = equipment.stats[stat];
+          this.equipment.stats[stat].selected = equipment.stats[stat] + (this.equipment.customName === 'in-game' ? this.equipment.stats[stat].min : 0);
         }
       });
 
-      Object.keys(equipment.skill).forEach(skillId => {
-        this.equipment.formattedSkills.forEach(skill => {
-          skill.forEach(subSkill => {
-            if (subSkill.dataId === skillId) {
-              subSkill.level = equipment.skill[skillId];
-            }
+      if (equipment.skill) {
+        Object.keys(equipment.skill).forEach(skillId => {
+          this.equipment.formattedSkills.forEach(skill => {
+            skill.forEach(subSkill => {
+              if (subSkill.dataId === skillId) {
+                subSkill.level = equipment.skill[skillId];
+              }
+            });
           });
         });
-      });
+      } else {
+        this.equipment.formattedSkills.forEach(skill => {
+          skill.forEach(subSkill => {
+            subSkill.level = this.equipment.level;
+          });
+        });
+      }
     }
   }
 

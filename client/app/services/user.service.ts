@@ -190,30 +190,33 @@ export class UserService {
           resonance: 1,
           nodes: nodes,
           customName: 'in-game',
-          formattedNodes: '',
           user: this.authService.getUser().uid
         };
-        esperCustomData.formattedNodes = Object.keys(esperCustomData.nodes).join(',');
         espers.push(esperCustomData);
       }
 
       const equipments = [];
+      const equipmentIdsCounts = {};
+
       for (const dumpedEquipment of apiResult.artifacts) {
+        let realDataId = dumpedEquipment.iname;
+        if (dumpedEquipment.grow !== 'ARTIFACT_TRUST' && dumpedEquipment.grow !== 'ARTIFACT_50') {
+          realDataId = realDataId.split('_').slice(0,-1).join('_');
+        }
+
         const equipmentCustomData = {
           customName: 'in-game',
-          dataId: dumpedEquipment.iname,
-          upgrade: dumpedEquipment.awake,
+          dataId: realDataId,
+          upgrade: dumpedEquipment.awake - (dumpedEquipment.grow !== 'ARTIFACT_TRUST' && dumpedEquipment.grow !== 'ARTIFACT_50' ? 0 : 1),
           grow: dumpedEquipment.grow,
           level: this.equipmentService.getLevelFromExp(dumpedEquipment.exp),
           stats: {},
-          formattedStats: '',
           user: this.authService.getUser().uid
         };
 
         for (const statType of Object.keys(this.equipmentStatMapping)) {
           if (dumpedEquipment[statType]) {
             equipmentCustomData.stats[this.equipmentStatMapping[statType]] = dumpedEquipment[statType];
-            equipmentCustomData.formattedStats += this.equipmentStatMapping[statType] + ': ' + dumpedEquipment[statType] + ', ';
           }
         }
 
@@ -235,7 +238,7 @@ export class UserService {
           masterRanks: masterRanks,
           star: dumpedUnit.awake,
           lb: dumpedUnit.rank,
-          masterSkill: dumpedUnit.abilities.filter(searchedSkill => searchedSkill.ability_iname.includes('_MA_')).length,
+          masterSkill: dumpedUnit.abilities.filter(searchedSkill => searchedSkill.ability_iname.includes('_MA_')).length - 1,
           jobs: [
             dumpedUnit.jobs[0].lv,
             dumpedUnit.jobs[1] ? dumpedUnit.jobs[1].lv : 1,
@@ -246,7 +249,6 @@ export class UserService {
           activatedCounter: null,
           activatedSupport: [null, null],
           nodes: {},
-          formattedNodes: '',
           user: this.authService.getUser().uid
         };
 
@@ -289,18 +291,24 @@ export class UserService {
             const findedSkill = dumpedUnit.abilities.find(searchedSkill => searchedSkill.ability_iname === rawUnit.board.nodes[nodeId].dataId);
             unitCustomData.nodes[nodeId] = findedSkill ? findedSkill.lv : 0;
           } else {
-            unitCustomData.nodes[nodeId] = dumpedUnit.abilityboards.indexOf(parseInt(nodeId, 10)) !== -1 ? 1 : 0;
+            if (
+              rawUnit.board.nodes[nodeId].jobLevel > 15 &&
+              rawUnit.board.nodes[nodeId].dataId &&
+              rawUnit.board.nodes[nodeId].dataId.split('_')[0] === 'SK'
+            ) {
+              const findedSkill = dumpedUnit.abilities.find(searchedSkill => searchedSkill.ability_iname === rawUnit.board.nodes[nodeId].dataId);
+              unitCustomData.nodes[nodeId] = findedSkill ? findedSkill.lv : 0;
+            } else {
+              unitCustomData.nodes[nodeId] = dumpedUnit.abilityboards.indexOf(parseInt(nodeId, 10)) !== -1 ? 1 : 0;
+            }
           }
-        }
-
-        for (const formattedNodeId of Object.keys(unitCustomData.nodes)) {
-          unitCustomData.formattedNodes += formattedNodeId + ': ' + unitCustomData.nodes[formattedNodeId] + ', ';
         }
 
         units.push(unitCustomData);
       }
 
       this.loading.data = false;
+
       return {
         cards: cards,
         espers: espers,
@@ -327,12 +335,12 @@ export class UserService {
 
     for (const item of data) {
       await this.firestore.collection(this.type).add(item).then((storedData: any) => {
-        data.storeId = storedData.id;
+        item.storeId = storedData.id;
 
         if (this.savedItems[item.dataId]) {
-          this.savedItems[item.dataId].push(data);
+          this.savedItems[item.dataId].push(item);
         } else {
-          this.savedItems[item.dataId] = [data];
+          this.savedItems[item.dataId] = [item];
         }
       });
 

@@ -169,7 +169,7 @@ export class Equipment {
     this.statsTypes.forEach(statType => {
       this.tableStats[statType] = this.grows[this.grow].stats[statType];
 
-      if (!this.stats[statType].selected) {
+      if (!this.stats[statType].selected && this.stats[statType].selected !== 0) {
         this.stats[statType].selected = this.tableStats[statType][0];
       } else if (this.stats[statType].selected > this.tableStats[statType][this.tableStats[statType].length - 1]) {
         this.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1];

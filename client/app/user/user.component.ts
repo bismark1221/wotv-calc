@@ -61,7 +61,5 @@ export class UserComponent implements OnInit {
       await this.userService.deleteAllSaved(type);
       await this.userService.saveNewData(this.dumpResult[type], type);
     }
-
-    console.log(this.dumpResult);
   }
 }
