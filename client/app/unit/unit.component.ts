@@ -447,19 +447,23 @@ export class UnitComponent implements OnInit {
     const stats = {};
 
     if (job) {
-      Object.keys(job.statsModifiers[9]).forEach(stat => {
+      let jobStatsModifier = job.statsModifiers[9];
+      if (this.unit.dataId === 'UN_LW_P_LCIO') {
+        jobStatsModifier = job.statsModifiers[5];
+      }
+      Object.keys(jobStatsModifier).forEach(stat => {
         if (this.unit.stats[stat]) {
           const existingStat = this.unit.jobsStats[0][stat];
-          stats[stat] = Math.floor(this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)) - existingStat;
+          stats[stat] = Math.floor(this.unit.stats[stat].ex * (jobStatsModifier[stat] / 10000) * (subJob ? 0.5 : 1)) - existingStat;
           if (stats[stat] < 0) {
             stats[stat] = 0;
           }
 
           if (!subJob) {
-            const newStat = (this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)) - existingStat;
+            const newStat = (this.unit.stats[stat].ex * (jobStatsModifier[stat] / 10000) * (subJob ? 0.5 : 1)) - existingStat;
             this.unit.totalEXJobsStats[stat] = this.unit.totalJobsStats[stat] + (newStat < 0 ? 0 : newStat);
           } else {
-            this.unit.totalEXJobsStats[stat] += this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1);
+            this.unit.totalEXJobsStats[stat] += this.unit.stats[stat].ex * (jobStatsModifier[stat] / 10000) * (subJob ? 0.5 : 1);
           }
         }
       });
