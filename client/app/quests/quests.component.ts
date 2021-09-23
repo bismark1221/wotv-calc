@@ -16,8 +16,8 @@ export class QuestsComponent implements OnInit {
   rawQuests = [];
   quests = [];
   searchText = '';
-  sort = 'name';
-  order = 'asc';
+  sort = 'lastRelease';
+  order = 'desc';
   filters = {
     type: []
   };
