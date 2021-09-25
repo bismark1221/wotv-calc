@@ -1359,14 +1359,14 @@ export class SkillService {
     if (skill.damage) {
       if (damage.type) {
         let elem = 'neutral';
-        if (skill.elem) {
-          elem = skill.elem;
-        } else if (skill.takeUnitElem) {
+        if (skill.takeUnitElem) {
           if (unit.element) {
             elem = unit.element;
           } else {
             elem = 'all';
           }
+        } else if (skill.elem) {
+          elem = skill.elem;
         }
 
         const image = elem + '_' + damage.type.toLowerCase();
