@@ -272,13 +272,13 @@ export class QuestComponent implements OnInit {
     }
 
     formattedEnemy.stats['BRAVERY'] = {
-      min: enemy.brave,
-      max: enemy.brave
+      min: 50 + enemy.brave,
+      max: 50 + enemy.brave
     };
 
     formattedEnemy.stats['FAITH'] = {
-      min: enemy.faith,
-      max: enemy.faith
+      min: 50 + enemy.faith,
+      max: 50 + enemy.faith
     };
 
     formattedEnemy.calculateBaseStats(true);
@@ -319,7 +319,6 @@ export class QuestComponent implements OnInit {
 
     formattedEnemy = JSON.parse(JSON.stringify(formattedEnemy));
 
-    this.updateStatsFromMap(formattedEnemy, enemy.status);
 
     formattedEnemy.skills = [];
 
@@ -387,6 +386,8 @@ export class QuestComponent implements OnInit {
     }
 
     this.applyStatsForJob(formattedEnemy);
+    this.updateStatsFromMap(formattedEnemy, enemy.status);
+
     this.getAvailableStatTypes(formattedEnemy);
 
     // @TODO Managed INITIAL_AP !!! RANGE !!!
@@ -471,11 +472,20 @@ export class QuestComponent implements OnInit {
   }
 
   applyStatsForJob(enemy) {
+    const overwritedStatTypes = [];
+    if (enemy.status) {
+      enemy.status.forEach(statType => {
+        overwritedStatTypes.push(statType.type);
+      });
+    }
+
     Object.keys(enemy.statsForJob).forEach(statType => {
-      enemy.stats[statType].total += Math.floor(enemy.stats[statType].baseTotal * enemy.statsForJob[statType] / 100);
-      if (enemy.hasMaxLevel) {
-        enemy.stats[statType].minTotal += Math.floor(enemy.stats[statType].minBaseTotal * enemy.statsForJob[statType] / 100);
-        enemy.stats[statType].maxTotal += Math.floor(enemy.stats[statType].maxBaseTotal * enemy.statsForJob[statType] / 100);
+      if (overwritedStatTypes.indexOf(statType) === -1) {
+        enemy.stats[statType].total += Math.floor(enemy.stats[statType].baseTotal * enemy.statsForJob[statType] / 100);
+        if (enemy.hasMaxLevel) {
+          enemy.stats[statType].minTotal += Math.floor(enemy.stats[statType].minBaseTotal * enemy.statsForJob[statType] / 100);
+          enemy.stats[statType].maxTotal += Math.floor(enemy.stats[statType].maxBaseTotal * enemy.statsForJob[statType] / 100);
+        }
       }
     });
   }
