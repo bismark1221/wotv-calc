@@ -429,6 +429,9 @@ export class QuestService {
       case 'ALL_MISSIONS' :
         html = 'Complete all missions simultaneously';
       break;
+      case 'ALL_MISSIONS_NOT_SIMULTANEOUSLY' :
+        html = 'Complete all missions';
+      break;
       case 'TOWER_FIRST_COMPLETE' :
         html = 'Complete the quest (1st run)';
       break;
@@ -573,6 +576,14 @@ export class QuestService {
             html += cond.condition.count + ' enemies defeated';
           } else {
             html += cond.condition.count + ' allies defeated';
+          }
+        break;
+
+        case 'CRYSTAL_POPPED' :
+          if (cond.condition.side === 1) {
+            html += cond.condition.count + ' enemies\' crystals popped';
+          } else {
+            html += cond.condition.count + ' allies\' crystals popped';
           }
         break;
 
