@@ -15,6 +15,7 @@ import { Esper } from '../../entities/esper';
   styleUrls: ['./modal.espers.component.css']
 })
 export class ModalEspersComponent implements OnInit {
+  rawEspers;
   espers = [];
 
   searchText = '';
@@ -99,11 +100,15 @@ export class ModalEspersComponent implements OnInit {
   }
 
   async getEspers() {
-    if (isNaN(this.teamUnitPos)) {
-      this.espers = await this.esperService.getEspersForListing(this.filters);
-    } else {
-      this.espers = await this.teamService.getAvailableEspers(this.teamUnitPos, this.filters);
+    if (!this.rawEspers) {
+      if (isNaN(this.teamUnitPos)) {
+        this.rawEspers = await this.esperService.getEspersForListing();
+      } else {
+        this.rawEspers = await this.teamService.getAvailableEspers(this.teamUnitPos);
+      }
     }
+
+    this.espers = this.esperService.filterEspers(this.rawEspers, this.filters);
 
     this.getFilteredEspers();
     this.translateEspers();

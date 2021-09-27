@@ -356,7 +356,11 @@ export class EquipmentService {
     return [];
   }
 
-  async getEquipmentsForUnitBuilder() {
+  async getEquipmentsForUnitBuilder(rawData = null) {
+    if (rawData && rawData.equipments && rawData.equipments.length > 0) {
+      return rawData;
+    }
+
     const equipments = await this.getApi(null, [{name: 'forModal', value: 1}]);
 
     const acquisitionTypes = ['Unknown', 'tmr'];

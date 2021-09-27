@@ -1678,7 +1678,7 @@ export class Unit {
     });
   }
 
-  async getAvailableEquipments(pos, equipmentService) {
+  async getAvailableEquipments(pos, equipmentService, rawData = null) {
     const armorTypes = [];
 
     this.jobsData[0].equipments.armors.forEach(type => {
@@ -1709,7 +1709,8 @@ export class Unit {
       onlyTmr = true;
     }
 
-    const result = await equipmentService.getEquipmentsForUnitBuilder();
+    const result = await equipmentService.getEquipmentsForUnitBuilder(rawData);
+
     const equipments = result.equipments;
     const availableEquipments = [];
     let mainJob = this.jobs[0].split('_');
@@ -1739,6 +1740,7 @@ export class Unit {
 
     return {
       equipments: availableEquipments,
+      rawEquipments: result.equipments,
       acquisitionTypes: result.acquisitionTypes
     };
   }

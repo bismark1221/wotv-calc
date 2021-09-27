@@ -12,6 +12,10 @@ import { ToolService } from '../../services/tool.service';
   styleUrls: ['./modal.equipments.component.css']
 })
 export class ModalEquipmentsComponent implements OnInit {
+  rawData = {
+    equipments: [],
+    acquisitionTypes: []
+  };
   equipments;
   acquisitionTypes;
 
@@ -51,13 +55,17 @@ export class ModalEquipmentsComponent implements OnInit {
   }
 
   async getEquipments(getAcquisitionTypes = false) {
-    const result = await this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService);
+    const result = await this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService, this.rawData);
+
+    this.rawData.equipments = result.rawEquipments;
+
     this.equipments = result.equipments;
     this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters);
     this.translateEquipments();
     this.getFilteredEquipments();
 
     if (getAcquisitionTypes) {
+      this.rawData.acquisitionTypes = result.acquisitionTypes;
       this.savedEquipments = this.equipmentService.getSavedEquipments();
       this.getAcquisitionTypes(result.acquisitionTypes);
     }

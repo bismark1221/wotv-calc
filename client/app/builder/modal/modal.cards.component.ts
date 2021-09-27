@@ -16,6 +16,7 @@ import { UnitService } from '../../services/unit.service';
   styleUrls: ['./modal.cards.component.css']
 })
 export class ModalCardsComponent implements OnInit {
+  rawCards;
   cards = [];
 
   searchText = '';
@@ -56,11 +57,15 @@ export class ModalCardsComponent implements OnInit {
   }
 
   async getCards() {
-    if (isNaN(this.teamUnitPos)) {
-      this.cards = await this.cardService.getCardsForListing(this.filters);
-    } else {
-      this.cards = await this.teamService.getAvailableCards(this.teamUnitPos, this.filters);
+    if (!this.rawCards) {
+      if (isNaN(this.teamUnitPos)) {
+        this.rawCards = await this.cardService.getCardsForListing();
+      } else {
+        this.rawCards = await this.teamService.getAvailableCards(this.teamUnitPos);
+      }
     }
+
+    this.cards = this.cardService.filterCards(this.rawCards, this.filters);
 
     this.getFilteredCards();
     this.translateCards();
