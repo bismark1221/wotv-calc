@@ -88,7 +88,10 @@ export class EquipmentComponent implements OnInit {
   private formatEquipment() {
     if (this.equipment) {
       this.equipment.name = this.toolService.getName(this.equipment);
-      this.equipment.statsTypes = Object.keys(this.equipment.stats);
+      this.equipment.statsTypes = [];
+      if (this.equipment.stats) {
+        this.equipment.statsTypes = Object.keys(this.equipment.stats);
+      }
 
       let i = 0;
       this.equipment.countSkills = [];

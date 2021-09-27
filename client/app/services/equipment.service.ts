@@ -269,8 +269,8 @@ export class EquipmentService {
     for (const apiEquipment of apiResult.equipments) {
       const rawEquipment = new Equipment();
       rawEquipment.constructFromJson(apiEquipment, this.translateService);
-      if (this.equipmentsAcquisition[rawEquipment.dataId]) {
-        rawEquipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[rawEquipment.dataId]];
+      if (this.getAcquisition(rawEquipment)) {
+        rawEquipment.acquisition.type = this.acquisitionTypesTranslation[this.getAcquisition(rawEquipment)];
       }
       rawEquipments.push(rawEquipment);
 
@@ -310,6 +310,34 @@ export class EquipmentService {
     };
   }
 
+  getAcquisition(equipment) {
+    if (this.equipmentsAcquisition[equipment.dataId]) {
+      return this.equipmentsAcquisition[equipment.dataId];
+    }
+
+    const unknowEquipment = [
+      'AF_LW_ARW_003',
+      'AF_LW_SHI_002',
+      'AF_LW_SHI_003',
+      'AF_LW_SHI_004',
+      'AF_LW_SHI_001',
+      'AF_LW_SHI_005'
+    ];
+
+    if (unknowEquipment.indexOf(equipment.dataId) !== -1) {
+      return null;
+    }
+
+    if (equipment.acquisition.type === 'Unknown'
+      && equipment.dataId.split('_')[equipment.dataId.split('_').length - 1] !== '2'
+      && equipment.dataId.split('_')[equipment.dataId.split('_').length - 1] !== 'INIT'
+    ) {
+      return 'RECURRENT';
+    }
+
+    return null;
+  }
+
   async getEquipmentsForBuilder() {
     const rawEquipments = await this.getApi(null, [{name: 'forBuilder', value: 1}]);
 
@@ -317,7 +345,7 @@ export class EquipmentService {
       const equipments = [];
 
       for (const rawEquipment of rawEquipments) {
-        if (this.equipmentsAcquisition[rawEquipment.dataId] || rawEquipment.acquisition.type !== 'Unknown') {
+        if (this.getAcquisition(rawEquipment) || rawEquipment.acquisition.type !== 'Unknown') {
           equipments.push(rawEquipment);
         }
       }
@@ -334,8 +362,8 @@ export class EquipmentService {
     const acquisitionTypes = ['Unknown', 'tmr'];
 
     for (const equipment of equipments) {
-      if (this.equipmentsAcquisition[equipment.dataId]) {
-        equipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[equipment.dataId]];
+      if (this.getAcquisition(equipment)) {
+        equipment.acquisition.type = this.acquisitionTypesTranslation[this.getAcquisition(equipment)];
 
         if (acquisitionTypes.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) === -1) {
           acquisitionTypes.push(equipment.acquisition.type[this.translateService.getDefaultLang()]);
@@ -431,8 +459,8 @@ export class EquipmentService {
       const equipment = new Equipment();
       equipment.constructFromJson(apiResult.equipment, this.translateService);
 
-      if (this.equipmentsAcquisition[equipment.dataId]) {
-        equipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[equipment.dataId]];
+      if (this.getAcquisition(equipment)) {
+        equipment.acquisition.type = this.acquisitionTypesTranslation[this.getAcquisition(equipment)];
       }
 
       equipment.rawSkills = apiResult.skills;
