@@ -2,13 +2,16 @@ import { Injectable } from '@angular/core';
 
 import { TranslateService } from '@ngx-translate/core';
 
+import { NavService } from './nav.service';
+
 @Injectable()
 export class ToolService {
 
   private sre = /^\s+|\s+$/g;
 
   constructor(
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private navService: NavService
   ) {}
 
   private reduceString(s: any) {
@@ -157,5 +160,65 @@ export class ToolService {
 
     // true if both equals or NaN, false otherwise
     return a === b || (a !== a && b !== b);
+  }
+
+  isLimited(dataId) {
+    if (dataId.split('_')[1] !== 'LW') {
+      return true;
+    }
+
+    if (dataId.split('_')[0] === 'UN' && dataId.split('_')[dataId.split('_').length - 1] === '01') {
+      const notSoLimited = [
+        'UN_LW_P_STRN_01',
+        'UN_LW_P_MONT_01',
+        'UN_LW_P_HLNA_01',
+        'UN_LW_P_THLA_01',
+        'UN_LW_P_GRSR_01',
+        'UN_LW_S_LAMA_01',
+        'UN_LW_S_ARMN_01'
+      ];
+
+      if (notSoLimited.indexOf(dataId) === -1) {
+        return true;
+      }
+    }
+
+    const versionSpecificLimited = {
+      GL: [
+        'UN_LW_P_FRVA',
+        'UN_LW_P_DEAN',
+        'VC_LW_XMAS',
+        'VC_LW_HALL',
+        'VC_LW_DEAN',
+        'VC_LW_ART',
+        'VC_LW_MOGL',
+        'VC_LW_GREEN',
+        'VC_LW_KRKN',
+        'UN_LW_S_MOGL',
+        'UN_LW_S_KRKN'
+      ],
+      JP: [
+        'UN_LW_P_FRVA',
+        'VC_LW_HOLYNIGHT',
+        'VC_LW_XMAS',
+        'VC_LW_HALL',
+        'VC_LW_VALE1',
+        'VC_LW_VALE2',
+        'VC_LW_ART',
+        'VC_LW_NEWYEAR',
+        'VC_LW_WHITEDAY1',
+        'VC_LW_APPLE',
+        'VC_LW_MOGL',
+        'VC_LW_KRKN',
+        'UN_LW_S_MOGL',
+        'UN_LW_S_KRKN'
+      ]
+    };
+
+    if (versionSpecificLimited[this.navService.getVersion()].indexOf(dataId) !== -1) {
+      return true;
+    }
+
+    return false;
   }
 }

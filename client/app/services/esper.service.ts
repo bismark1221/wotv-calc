@@ -19,26 +19,6 @@ export class EsperService {
   private espers: Esper[];
   esper;
 
-  private JP_limitedEspers = [
-    'UN_FF01_S_WRMC',
-    'UN_FF4_S_DMNW',
-    'UN_LW_S_MOGL',
-    'UN_FFT_S_CHCB_01',
-    'UN_LW_S_KRKN',
-    'UN_FF7_S_SCPN',
-    'UN_FF15_S_MNPL'
-  ];
-
-  private GL_limitedEspers = [
-    'UN_FF01_S_WRMC',
-    'UN_FF4_S_DMNW',
-    'UN_LW_S_MOGL',
-    'UN_FFT_S_CHCB_01',
-    'UN_LW_S_KRKN',
-    'UN_FF7_S_SCPN',
-    'UN_FF15_S_MNPL'
-  ];
-
   private lvTbl = {
     SR: [
       [0, 224, 500, 844, 1273, 1805, 2460, 3259, 4226, 5385, 6765, 8394, 10305, 12533, 15116, 18094, 21512, 25419, 29867, 34911, 40614, 47042, 54268, 62369, 71430, 81543, 92807, 105331, 119232, 134636, 151681, 170517, 191304, 214217, 239446, 267198, 297694, 331178, 367911, 408177, 452285, 500568, 553388, 611137, 674241, 743160, 818395, 900487, 990023, 1087639],
@@ -450,7 +430,7 @@ export class EsperService {
   }
 
   isLimited(id) {
-    return this[this.navService.getVersion() + '_limitedEspers'].indexOf(id) !== -1;
+    return this.toolService.isLimited(id);
   }
 
   getLevelFromExp(rarity, awake, exp) {
