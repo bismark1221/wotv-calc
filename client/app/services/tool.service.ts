@@ -195,7 +195,8 @@ export class ToolService {
         'VC_LW_GREEN',
         'VC_LW_KRKN',
         'UN_LW_S_MOGL',
-        'UN_LW_S_KRKN'
+        'UN_LW_S_KRKN',
+        'UN_LW_P_SLEN'
       ],
       JP: [
         'UN_LW_P_FRVA',
@@ -211,7 +212,8 @@ export class ToolService {
         'VC_LW_MOGL',
         'VC_LW_KRKN',
         'UN_LW_S_MOGL',
-        'UN_LW_S_KRKN'
+        'UN_LW_S_KRKN',
+        'UN_LW_P_SLEN'
       ]
     };
 
