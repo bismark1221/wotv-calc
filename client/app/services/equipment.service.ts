@@ -373,6 +373,14 @@ export class EquipmentService {
           acquisitionTypes.push(equipment.acquisition.type[this.translateService.getDefaultLang()]);
         }
       }
+
+
+      if (equipment.acquisition.type !== 'Unknown'
+        && equipment.acquisition.type !== 'tmr'
+        && acquisitionTypes.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) === -1
+      ) {
+        acquisitionTypes.push(equipment.acquisition.type[this.translateService.getDefaultLang()]);
+      }
     }
 
     return {
