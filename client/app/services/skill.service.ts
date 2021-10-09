@@ -125,12 +125,22 @@ export class SkillService {
       return 'Decrease';
     }
 
-    if (effect.rate && effect.rate !== 200) {
-      text = effect.rate + '% chance' + ((effect.minValue < 0 || effect.value < 0) && !inverted ? ' to decrease' : ' to increase');
-    } else if ((effect.minValue < 0 || effect.value < 0) && !inverted) {
-      text = 'Decrease';
+    if (inverted) {
+      if (effect.rate && effect.rate !== 200) {
+        text = effect.rate + '% chance' + ((effect.minValue < 0 || effect.value < 0) ? ' to increase' : ' to decrease');
+      } else if ((effect.minValue < 0 || effect.value < 0)) {
+        text = 'Increase';
+      } else {
+        text = 'Decrease';
+      }
     } else {
-      text = 'Increase';
+      if (effect.rate && effect.rate !== 200) {
+        text = effect.rate + '% chance' + ((effect.minValue < 0 || effect.value < 0) ? ' to decrease' : ' to increase');
+      } else if ((effect.minValue < 0 || effect.value < 0)) {
+        text = 'Decrease';
+      } else {
+        text = 'Increase';
+      }
     }
 
     return text;
