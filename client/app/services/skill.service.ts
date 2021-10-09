@@ -118,7 +118,7 @@ export class SkillService {
     return this.calcTypeFormat[effect.calcType];
   }
 
-  private getIncrease(effect) {
+  private getIncrease(effect, inverted = false) {
     let text = '';
 
     if (effect.calcType === 'decrease') {
@@ -126,8 +126,8 @@ export class SkillService {
     }
 
     if (effect.rate && effect.rate !== 200) {
-      text = effect.rate + '% chance' + (effect.minValue < 0 || effect.value < 0 ? ' to decrease' : ' to increase');
-    } else if (effect.minValue < 0 || effect.value < 0) {
+      text = effect.rate + '% chance' + ((effect.minValue < 0 || effect.value < 0) && !inverted ? ' to decrease' : ' to increase');
+    } else if ((effect.minValue < 0 || effect.value < 0) && !inverted) {
       text = 'Decrease';
     } else {
       text = 'Increase';
@@ -1180,7 +1180,7 @@ export class SkillService {
         html = 'Increase dark resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'AP_CONSUMPTION' :
-        html = 'Decrease AP consumption' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect, true) + ' AP consumption' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ABSORB_HP_ONTIME' :
         html = 'Absorb ' + this.getValue(skill, effect) + ' of the damage done' + this.getTurns(effect);
