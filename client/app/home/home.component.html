@@ -1,3 +1,13 @@
+<div class="amazonBanner">
+  <a class="amazonBannerLink" href="https://l.linklyhq.com/l/I5OA" *ngIf="lang === 'fr'"><i class="fab fa-amazon" aria-hidden="true"></i>
+  Amazon Appstore: Save up to 20% on offers in MARVEL Strike Force when using Amazon Coins! Learn More
+  <i class="fas fa-chevron-circle-right" aria-hidden="true"></i></a>
+
+  <a class="amazonBannerLink" href="https://www.amazon.com/dp/B0096E8EPY/ref=twister_B009CDKIA8?_encoding=UTF8&psc=1&_encoding=UTF8&tag=bismarktv-20&linkCode=ur2&linkId=6d5adabc497e55270b7b56ed660f0bce&camp=1789&creative=9325" *ngIf="lang !== 'fr'"><i class="fab fa-amazon" aria-hidden="true"></i>
+  Amazon Appstore: Save up to 20% on offers in MARVEL Strike Force when using Amazon Coins! Learn More
+  <i class="fas fa-chevron-circle-right" aria-hidden="true"></i></a>
+</div>
+
 <div class="header">
   <div class="headerBlock">
     <h1 class="title">{{ 'home.title' | translate }}</h1>
@@ -19,7 +29,7 @@
         Become a Patron!
       </a>
 
-      <a class="amazonLink" href='https://amzn.to/34j2dig' target='_blank' *ngIf="lang === 'fr'">
+      <a class="amazonLink" href='https://l.linklyhq.com/l/I5OA' target='_blank' *ngIf="lang === 'fr'">
         <img src='assets/home/amazon_appstore.png' alt='amazon_appstore' />
       </a>
 
@@ -29,6 +39,7 @@
     </div>
   </div>
 </div>
+
 <div class="updates">
   <div class="lastUpdate">
     Last Updates

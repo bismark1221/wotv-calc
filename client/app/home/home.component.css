@@ -6,6 +6,21 @@
   position: relative;
 }
 
+.amazonBanner {
+  text-align: center;
+  padding-top: 10px;
+  background-color: var(--home-title);
+}
+
+.amazonBannerLink {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.amazonBannerLink:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
 .updated {
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
