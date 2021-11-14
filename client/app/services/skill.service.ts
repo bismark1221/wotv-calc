@@ -383,6 +383,9 @@ export class SkillService {
           (effect.calcType === 'decrease' ? 'Decrease' : 'Restore') + ' CT' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
+      case 'SUMMON_GAUGE' :
+        html = this.getIncrease(effect) + ' Summon Gauge' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'ATK' :
         html = this.getIncrease(effect) + ' ATK' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
@@ -1197,6 +1200,9 @@ export class SkillService {
       break;
       case 'REDUCE_COUNTER_CHANCE' :
         html = 'Reduce counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'INCREASE_COUNTER_CHANCE' :
+        html = 'Increase counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
 
       /* ONLY TESTABLE WITH OTHER UNIT */
