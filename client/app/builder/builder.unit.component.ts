@@ -57,7 +57,9 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     {type: 'masterSkill', translate: 'Master Skill'},
     {type: 'esper', translate: 'Esper'},
     {type: 'card', translate: 'Card'},
-    {type: 'cardParty', translate: 'Card Party'}
+    {type: 'cardParty', translate: 'Card Party'},
+    {type: 'subCard', translate: 'Sub Card'},
+    {type: 'subCardParty', translate: 'Sub Card Party'}
   ];
 
   buffsFrom = [
@@ -67,7 +69,9 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     {type: 'masterSkill', translate: 'Master Skill'},
     {type: 'esper', translate: 'Esper'},
     {type: 'card', translate: 'Card'},
-    {type: 'cardParty', translate: 'Card Party'}
+    {type: 'cardParty', translate: 'Card Party'},
+    {type: 'subCard', translate: 'Sub Card'},
+    {type: 'subCardParty', translate: 'Sub Card Party'}
   ];
 
   rarityTranslate = {
@@ -408,16 +412,25 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     });
   }
 
-  openCardsModal() {
+  openCardsModal(subCard = false) {
     const modalRef = this.modalService.open(ModalCardsComponent, { windowClass: 'builder-modal' });
 
-    if (this.unit.card) {
+    if (!subCard && this.unit.card) {
       modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.card));
       modalRef.componentInstance.modalStep = 'custom';
     }
 
+    if (subCard && this.unit.subCard) {
+      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.subCard));
+      modalRef.componentInstance.modalStep = 'custom';
+    }
+
     modalRef.result.then((card) => {
-      this.unit.card = card;
+      if (!subCard) {
+        this.unit.card = card;
+      } else {
+        this.unit.subCard = card;
+      }
 
       this.unitService.changeLevel();
       this.updateActiveSkillsForSim();
@@ -560,6 +573,14 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     if (this.unit.card) {
       this.unit.card.skills.forEach(skill => {
+        if (skill.damage) {
+          this.unit.skillsForSim.push(skill);
+        }
+      });
+    }
+
+    if (this.unit.subCard) {
+      this.unit.subCard.skills.forEach(skill => {
         if (skill.damage) {
           this.unit.skillsForSim.push(skill);
         }

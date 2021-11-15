@@ -189,22 +189,22 @@
                 <div *ngIf="esper.formattedSkill.damageHtml && esper.formattedSkill.damageHtml.value">
                   <ng-template #tip_damage>
                     <div *ngIf="esper.formattedSkill.based === 'physic'">
-                      {{ (100 + (esper.formattedSkill.damage.formula.type === 1 && esper.formattedSkill.damage.formula[1] > 0 ? esper.formattedSkill.damage.formula[1] : 0)) + '% ATK' }}
+                      {{ (100 + (esper.formattedSkill.damage.formula && esper.formattedSkill.damage.formula.type === 1 && esper.formattedSkill.damage.formula[1] > 0 ? esper.formattedSkill.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
                     <div *ngIf="esper.formattedSkill.based === 'magic'">
-                      {{ (100 + (esper.formattedSkill.damage.formula.type === 1 && esper.formattedSkill.damage.formula[1] > 0 ? esper.formattedSkill.damage.formula[1] : 0)) + '% MAG' }}
+                      {{ (100 + (esper.formattedSkill.damage.formula && esper.formattedSkill.damage.formula.type === 1 && esper.formattedSkill.damage.formula[1] > 0 ? esper.formattedSkill.damage.formula[1] : 0)) + '% MAG' }}
                     </div>
                     <div *ngIf="esper.formattedSkill.based === 'hybrid'">
-                      {{ (100 + (esper.formattedSkill.damage.formula.type === 1 && esper.formattedSkill.damage.formula[1] > 0 ? esper.formattedSkill.damage.formula[1] : 0)) + '% ATK' }}
+                      {{ (100 + (esper.formattedSkill.damage.formula && esper.formattedSkill.damage.formula.type === 1 && esper.formattedSkill.damage.formula[1] > 0 ? esper.formattedSkill.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
 
-                    <div *ngIf="esper.formattedSkill.damage.formula.type === 0 && esper.formattedSkill.damage.formula[1] > 0">
+                    <div *ngIf="esper.formattedSkill.damage.formula && esper.formattedSkill.damage.formula.type === 0 && esper.formattedSkill.damage.formula[1] > 0">
                       {{ esper.formattedSkill.damage.formula[1] }}% DEX
                     </div>
-                    <div *ngIf="esper.formattedSkill.damage.formula.type === 0 && esper.formattedSkill.damage.formula[2] > 0">
+                    <div *ngIf="esper.formattedSkill.damage.formula && esper.formattedSkill.damage.formula.type === 0 && esper.formattedSkill.damage.formula[2] > 0">
                       {{ esper.formattedSkill.damage.formula[2] }}% AGI
                     </div>
-                    <div *ngIf="esper.formattedSkill.damage.formula.type === 0 && esper.formattedSkill.damage.formula[3] > 0">
+                    <div *ngIf="esper.formattedSkill.damage.formula && esper.formattedSkill.damage.formula.type === 0 && esper.formattedSkill.damage.formula[3] > 0">
                       {{ esper.formattedSkill.damage.formula[3] }}% LUCK
                     </div>
                   </ng-template>

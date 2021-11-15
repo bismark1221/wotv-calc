@@ -2,6 +2,9 @@ import { Skill } from './skill';
 import { Buff } from './buff';
 import { Equipment } from './equipment';
 
+import { GL_SUB_CARD_BUFF_RATIO } from '../data/gl/subCardBuffRatio';
+import { JP_SUB_CARD_BUFF_RATIO } from '../data/jp/subCardBuffRatio';
+
 export class Unit {
   dataId?;
   rarity = 'N';
@@ -125,6 +128,7 @@ export class Unit {
   subjob;
   esper;
   card;
+  subCard;
   equipments;
   grid;
   imbue;
@@ -767,33 +771,98 @@ export class Unit {
       'JUMP'
     ];
 
-    this.card.statsType.forEach(statType => {
-      this.updateStat(statType, this.card.stats[statType].total, 'card', 'fixe');
-    });
+    const mainSubType = [
+      'HP',
+      'TP',
+      'AP',
+      'DEF',
+      'SPR',
+      'DEX',
+      'AGI',
+      'LUCK'
+    ];
 
-    Object.keys(this.card.buffs.self).forEach(statType => {
-      this.card.buffs.self[statType].forEach(selfBuff => {
-        if (!selfBuff.cond || this.checkCondition(selfBuff.cond)) {
-          if (selfBuff.calcType === 'percent') {
-            this.updatePercentStats(statType, 'card', selfBuff.value);
-          } else {
-            this.updateStat(statType, selfBuff.value, 'card', 'fixe');
-          }
-        }
-      });
-    });
+    const subStatusRatio = {
+      'main': [
+        0.10,
+        0.20,
+        0.30,
+        0.40,
+        0.50
+      ],
+      'sub': [
+        0.10,
+        0.15,
+        0.20,
+        0.25,
+        0.30
+      ]
+    };
 
-    Object.keys(this.card.buffs.party).forEach(statType => {
-      this.card.buffs.party[statType].forEach(partyBuff => {
-        if (!partyBuff.cond || this.checkCondition(partyBuff.cond)) {
-          if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
-            this.updatePercentStats(statType, 'cardParty', partyBuff.value);
-          } else {
-            this.updateStat(statType, partyBuff.value, 'cardParty', 'fixe');
-          }
-        }
+    console.log("calculateCardStats")
+
+    if (this.card) {
+      this.card.statsType.forEach(statType => {
+        this.updateStat(statType, this.card.stats[statType].total, 'card', 'fixe');
       });
-    });
+
+      Object.keys(this.card.buffs.self).forEach(statType => {
+        this.card.buffs.self[statType].forEach(selfBuff => {
+          if (!selfBuff.cond || this.checkCondition(selfBuff.cond)) {
+            if (selfBuff.calcType === 'percent') {
+              this.updatePercentStats(statType, 'card', selfBuff.value);
+            } else {
+              this.updateStat(statType, selfBuff.value, 'card', 'fixe');
+            }
+          }
+        });
+      });
+
+      Object.keys(this.card.buffs.party).forEach(statType => {
+        this.card.buffs.party[statType].forEach(partyBuff => {
+          if (!partyBuff.cond || this.checkCondition(partyBuff.cond)) {
+            if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
+              this.updatePercentStats(statType, 'cardParty', partyBuff.value);
+            } else {
+              this.updateStat(statType, partyBuff.value, 'cardParty', 'fixe');
+            }
+          }
+        });
+      });
+    }
+
+    if (this.subCard) {
+      console.log(this.subCard)
+      this.subCard.statsType.forEach(statType => {
+        this.updateStat(statType, Math.floor(this.subCard.stats[statType].total * (mainSubType.indexOf(statType) != -1 ? subStatusRatio['main'][this.subCard.star] : subStatusRatio['sub'][this.subCard.star])), 'subCard', 'fixe');
+      });
+
+      /*Object.keys(this.subCard.buffs.self).forEach(statType => {
+        this.subCard.buffs.self[statType].forEach(selfBuff => {
+          if (!selfBuff.cond || this.checkCondition(selfBuff.cond)) {
+            if (selfBuff.calcType === 'percent') {
+              this.updatePercentStats(statType, 'subCard', selfBuff.value);
+            } else {
+              this.updateStat(statType, selfBuff.value, 'subCard', 'fixe');
+            }
+          }
+        });
+      });
+
+      Object.keys(this.subCard.buffs.party).forEach(statType => {
+        this.subCard.buffs.party[statType].forEach(partyBuff => {
+          if (!partyBuff.cond || this.checkCondition(partyBuff.cond)) {
+            if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
+              this.updatePercentStats(statType, 'subCardParty', partyBuff.value);
+            } else {
+              this.updateStat(statType, partyBuff.value, 'subCardParty', 'fixe');
+            }
+          }
+        });
+      });*/
+    }
+
+    console.log(this)
   }
 
   private checkCondition(conditions) {
@@ -1077,7 +1146,7 @@ export class Unit {
       this.calculateEsperStats();
     }
 
-    if (this.card) {
+    if (this.card || this.subCard) {
       this.calculateCardStats();
     }
 
