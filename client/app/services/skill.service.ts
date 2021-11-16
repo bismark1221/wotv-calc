@@ -1201,8 +1201,8 @@ export class SkillService {
       case 'REDUCE_COUNTER_CHANCE' :
         html = 'Reduce counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
-      case 'INCREASE_COUNTER_CHANCE' :
-        html = 'Increase counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
+      case 'RES_REDUCE_COUNTER_CHANCE' :
+        html = 'Increase resistance to counter chance reduction ' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
 
       /* ONLY TESTABLE WITH OTHER UNIT */

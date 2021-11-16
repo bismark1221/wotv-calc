@@ -202,6 +202,7 @@ export class ToolService {
       ],
       JP: [
         'UN_LW_P_FRVA',
+        'UN_LW_P_THLA_01',
         'VC_LW_HOLYNIGHT',
         'VC_LW_XMAS',
         'VC_LW_HALL',
