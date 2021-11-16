@@ -254,7 +254,7 @@
           </div>
 
           <div class="esparCardDiv">
-            Vision Card
+            Main Card
             <div *ngIf="unit.card">
               <img src="{{'assets/cards/' + unit.card.image + '_m.png'}}" class="cardImg" id="openCardsModal_{{unitPos}}" (click)="openCardsModal(unitPos)"/>
               <button class="btn btn-sub btn-card" id="openCardsModal_{{unitPos}}_custom" (click)="openCardsModal(unitPos)">Custom</button>
@@ -263,6 +263,19 @@
             <div *ngIf="!unit.card">
               <img src="{{'assets/builder/no_card.png'}}" class="cardImg" id="openCardsModal_{{unitPos}}_new" (click)="openCardsModal(unitPos)"/>
               <button class="btn btn-sub btn-disable btn-card" id="openCardsModal_{{unitPos}}_custom_new" (click)="openCardsModal(unitPos)">Custom</button>
+            </div>
+          </div>
+
+          <div class="esparCardDiv" *ngIf="version && version == 'JP'">
+            Sub Card
+            <div *ngIf="unit.subCard">
+              <img src="{{'assets/cards/' + unit.subCard.image + '_m.png'}}" class="cardImg" id="openSubCardsModal_{{unitPos}}" (click)="openCardsModal(unitPos, true)"/>
+              <button class="btn btn-sub btn-card" id="openSubCardsModal_{{unitPos}}_custom" (click)="openCardsModal(unitPos, true)">Custom</button>
+            </div>
+
+            <div *ngIf="!unit.subCard">
+              <img src="{{'assets/builder/no_card.png'}}" class="cardImg" id="openSubCardsModal_{{unitPos}}_new" (click)="openCardsModal(unitPos, true)"/>
+              <button class="btn btn-sub btn-disable btn-card" id="openSubCardsModal_{{unitPos}}_custom_new" (click)="openCardsModal(unitPos, true)">Custom</button>
             </div>
           </div>
         </td>

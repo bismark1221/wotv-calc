@@ -275,20 +275,20 @@
 
               <div *ngIf="!unit.card">
                 <img src="{{'assets/builder/no_card.png'}}" class="cardImg" id="openModalEsper_new" (click)="openCardsModal()"/>
-                <button class="btn btn-sub btn-disable btn-card" id="openModalEsper_custom_new" (click)="openCardsModal()">Custom</button>
+                <button class="btn btn-sub btn-disable btn-card" id="openModalCard_custom_new" (click)="openCardsModal()">Custom</button>
               </div>
             </div>
 
             <div class="esparCardDiv" *ngIf="version && version == 'JP'">
               Sub Card
               <div *ngIf="unit.subCard">
-                <img src="{{'assets/cards/' + unit.subCard.image + '_m.png'}}" class="cardImg" id="openModalCard_{{unit.subCard.dataId}}" (click)="openCardsModal(true)"/>
-                <button class="btn btn-sub btn-card" id="openModalCard_custom_{{unit.subCard.dataId}}" (click)="openCardsModal(true)">Custom</button>
+                <img src="{{'assets/cards/' + unit.subCard.image + '_m.png'}}" class="cardImg" id="openModalSubCard_{{unit.subCard.dataId}}" (click)="openCardsModal(true)"/>
+                <button class="btn btn-sub btn-card" id="openModalSubCard_custom_{{unit.subCard.dataId}}" (click)="openCardsModal(true)">Custom</button>
               </div>
 
               <div *ngIf="!unit.subCard">
-                <img src="{{'assets/builder/no_card.png'}}" class="cardImg" id="openModalEsper_new" (click)="openCardsModal(true)"/>
-                <button class="btn btn-sub btn-disable btn-card" id="openModalEsper_custom_new" (click)="openCardsModal(true)">Custom</button>
+                <img src="{{'assets/builder/no_card.png'}}" class="cardImg" id="openModalSubCard_new" (click)="openCardsModal(true)"/>
+                <button class="btn btn-sub btn-disable btn-card" id="openModalSubCard_custom_new" (click)="openCardsModal(true)">Custom</button>
               </div>
             </div>
           </td>

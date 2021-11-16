@@ -450,7 +450,61 @@ export class SimulatorService {
       });
     }
 
+    if (unit.subCard) {
+      Object.keys(unit.subCard.buffs.self).forEach(buffType => {
+        unit.subCard.buffs.self[buffType].forEach(effect => {
+          if (!effect.cond || this.checkCondition(unit, effect.cond)) {
+            if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'physic')
+              || (effect.buffOnCondition === 'ON_PHYSIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'magic')
+            ) {
+              this.updateRealStat(dataSimulator, 'unit', buffType, -(effect.value));
+            } else if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' || effect.buffOnCondition === 'ON_PHYSIC_ATTACK')
+              && dataSimulator.unit.selectedSkill.based === 'hybrid'
+            ) {
+
+            }
+          }
+        });
+      });
+
+      Object.keys(unit.subCard.buffs.party).forEach(buffType => {
+        unit.subCard.buffs.party[buffType].forEach(effect => {
+          if (!effect.cond || this.checkCondition(unit, effect.cond)) {
+            if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'physic')
+              || (effect.buffOnCondition === 'ON_PHYSIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'magic')
+            ) {
+              this.updateRealStat(dataSimulator, 'unit', buffType, -(effect.value));
+            } else if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' || effect.buffOnCondition === 'ON_PHYSIC_ATTACK')
+              && dataSimulator.unit.selectedSkill.based === 'hybrid'
+            ) {
+
+            }
+          }
+        });
+      });
+    }
+
     unit.teamCards.forEach(card => {
+      if (card) {
+        Object.keys(card.buffs.party).forEach(buffType => {
+          card.buffs.party[buffType].forEach(effect => {
+            if (!effect.cond || this.checkCondition(unit, effect.cond)) {
+              if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'physic')
+                || (effect.buffOnCondition === 'ON_PHYSIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'magic')
+              ) {
+                this.updateRealStat(dataSimulator, 'unit', buffType, -(effect.value));
+              } else if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' || effect.buffOnCondition === 'ON_PHYSIC_ATTACK')
+                && dataSimulator.unit.selectedSkill.based === 'hybrid'
+              ) {
+
+              }
+            }
+          });
+        });
+      }
+    });
+
+    unit.teamSubCards.forEach(card => {
       if (card) {
         Object.keys(card.buffs.party).forEach(buffType => {
           card.buffs.party[buffType].forEach(effect => {

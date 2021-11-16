@@ -217,6 +217,13 @@ export class TeamService {
             }
           }
         }
+        if (this.team.units[i] && this.team.units[i].subCard) {
+          for (let j = 0; j <= 4; j++) {
+            if (j !== i && this.team.units[j]) {
+              this.team.units[j].teamSubCards[i] = this.team.units[i].subCard;
+            }
+          }
+        }
 
         for (let j = 0; j <= 4; j++) {
           if (this.team.units[i] && this.team.units[j] && j !== i) {
@@ -255,13 +262,25 @@ export class TeamService {
     return availableUnits;
   }
 
-  async getAvailableCards(pos) {
+  async getAvailableCards(pos, type) {
     const alreadyUsedCardIds = [];
     this.team.units.forEach((unit, unitIndex) => {
-      if (unit && unitIndex !== pos && unit.card) {
-        alreadyUsedCardIds.push(unit.card.dataId);
+      if (unit && unitIndex !== pos) {
+        if (unit.card) {
+          alreadyUsedCardIds.push(unit.card.dataId);
+        }
+
+        if (unit.subCard) {
+          alreadyUsedCardIds.push(unit.subCard.dataId);
+        }
       }
     });
+
+    if (type === 'main' && this.team.units[pos].subCard) {
+      alreadyUsedCardIds.push(this.team.units[pos].subCard.dataId);
+    } else if (type === 'sub' && this.team.units[pos].card) {
+      alreadyUsedCardIds.push(this.team.units[pos].card.dataId);
+    }
 
     const cards = await this.cardService.getCardsForListing();
     const availableCards = [];
@@ -307,6 +326,9 @@ export class TeamService {
             this.team.units[pos].teamCards[i] = this.team.units[i].card;
             this.team.units[i].teamCards[pos] = this.team.units[pos].card;
 
+            this.team.units[pos].teamSubCards[i] = this.team.units[i].subCard;
+            this.team.units[i].teamSubCards[pos] = this.team.units[pos].subCard;
+
             this.addMasterAbility(pos, i);
             this.addMasterAbility(i, pos);
 
@@ -322,6 +344,7 @@ export class TeamService {
       for (let i = 0; i <= 4; i++) {
         if (i !== pos && this.team.units[i]) {
           this.team.units[i].teamCards[pos] = null;
+          this.team.units[i].teamSubCards[pos] = null;
           this.team.units[i].teamMasterAbility[pos] = null;
           this.team.units[i].changeLevel();
         }

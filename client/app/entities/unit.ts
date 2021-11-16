@@ -135,6 +135,7 @@ export class Unit {
   guild;
   masterRanks;
   teamCards = [];
+  teamSubCards = [];
   teamMasterAbility = [];
   cost;
   calcCost;
@@ -146,6 +147,7 @@ export class Unit {
   formattedLimit;
   formattedAttack;
   formattedMasterSkill = [];
+  version;
 
   // Only for quests/enemies
   species = '';
@@ -153,6 +155,10 @@ export class Unit {
   size;
   realMaxLevel;
 
+  subCardBuffRatio = {
+    GL: GL_SUB_CARD_BUFF_RATIO,
+    JP: JP_SUB_CARD_BUFF_RATIO
+  };
 
   constructFromJson(unit: Unit, translateService): void {
     this.dataId = unit.dataId;
@@ -799,8 +805,6 @@ export class Unit {
       ]
     };
 
-    console.log("calculateCardStats")
-
     if (this.card) {
       this.card.statsType.forEach(statType => {
         this.updateStat(statType, this.card.stats[statType].total, 'card', 'fixe');
@@ -809,7 +813,7 @@ export class Unit {
       Object.keys(this.card.buffs.self).forEach(statType => {
         this.card.buffs.self[statType].forEach(selfBuff => {
           if (!selfBuff.cond || this.checkCondition(selfBuff.cond)) {
-            if (selfBuff.calcType === 'percent') {
+            if (statsType.indexOf(statType) !== -1 && selfBuff.calcType === 'percent') {
               this.updatePercentStats(statType, 'card', selfBuff.value);
             } else {
               this.updateStat(statType, selfBuff.value, 'card', 'fixe');
@@ -832,18 +836,17 @@ export class Unit {
     }
 
     if (this.subCard) {
-      console.log(this.subCard)
       this.subCard.statsType.forEach(statType => {
-        this.updateStat(statType, Math.floor(this.subCard.stats[statType].total * (mainSubType.indexOf(statType) != -1 ? subStatusRatio['main'][this.subCard.star] : subStatusRatio['sub'][this.subCard.star])), 'subCard', 'fixe');
+        this.updateStat(statType, Math.floor(this.subCard.stats[statType].total * (mainSubType.indexOf(statType) !== -1 ? subStatusRatio['main'][this.subCard.star] : subStatusRatio['sub'][this.subCard.star])), 'subCard', 'fixe');
       });
 
-      /*Object.keys(this.subCard.buffs.self).forEach(statType => {
+      Object.keys(this.subCard.buffs.self).forEach(statType => {
         this.subCard.buffs.self[statType].forEach(selfBuff => {
           if (!selfBuff.cond || this.checkCondition(selfBuff.cond)) {
-            if (selfBuff.calcType === 'percent') {
-              this.updatePercentStats(statType, 'subCard', selfBuff.value);
+            if (statsType.indexOf(statType) !== -1 && selfBuff.calcType === 'percent') {
+              this.updatePercentStats(statType, 'subCard', this.subCardBuffRatio[this.version][statType] ? selfBuff.value * this.subCardBuffRatio[this.version][statType].unitRatio[this.subCard.star] : selfBuff.value * this.subCardBuffRatio[this.version]['DEFAULT'].unitRatio[this.subCard.star]);
             } else {
-              this.updateStat(statType, selfBuff.value, 'subCard', 'fixe');
+              this.updateStat(statType, Math.floor(this.subCardBuffRatio[this.version][statType] ? selfBuff.value * this.subCardBuffRatio[this.version][statType].unitRatio[this.subCard.star] : selfBuff.value * this.subCardBuffRatio[this.version]['DEFAULT'].unitRatio[this.subCard.star]), 'subCard', 'fixe');
             }
           }
         });
@@ -853,16 +856,14 @@ export class Unit {
         this.subCard.buffs.party[statType].forEach(partyBuff => {
           if (!partyBuff.cond || this.checkCondition(partyBuff.cond)) {
             if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
-              this.updatePercentStats(statType, 'subCardParty', partyBuff.value);
+              this.updatePercentStats(statType, 'subCardParty', this.subCardBuffRatio[this.version][statType] ? partyBuff.value * this.subCardBuffRatio[this.version][statType].partyRatio[this.subCard.star] : partyBuff.value * this.subCardBuffRatio[this.version]['DEFAULT'].partyRatio[this.subCard.star]);
             } else {
-              this.updateStat(statType, partyBuff.value, 'subCardParty', 'fixe');
+              this.updateStat(statType, Math.floor(this.subCardBuffRatio[this.version][statType] ? partyBuff.value * this.subCardBuffRatio[this.version][statType].partyRatio[this.subCard.star] : partyBuff.value * this.subCardBuffRatio[this.version]['DEFAULT'].partyRatio[this.subCard.star]), 'subCardParty', 'fixe');
             }
           }
         });
-      });*/
+      });
     }
-
-    console.log(this)
   }
 
   private checkCondition(conditions) {
@@ -932,8 +933,8 @@ export class Unit {
       'JUMP'
     ];
 
-    const teamBuffs = {};
-    const statsTypePercent = {};
+    let teamBuffs = {};
+    let statsTypePercent = {};
 
     this.teamCards.forEach(card => {
       if (card) {
@@ -972,6 +973,47 @@ export class Unit {
 
     Object.keys(statsTypePercent).forEach(statType => {
       this.updatePercentStats(statType, 'cardParty', statsTypePercent[statType]);
+    });
+
+    teamBuffs = {};
+    statsTypePercent = {};
+    this.teamSubCards.forEach(card => {
+      if (card) {
+        Object.keys(card.buffs.party).forEach(statType => {
+          card.buffs.party[statType].forEach(partyBuff => {
+            if (!partyBuff.cond || this.checkCondition(partyBuff.cond)) {
+              const initialValue = this.subCardBuffRatio[this.version][statType] ? partyBuff.value * this.subCardBuffRatio[this.version][statType].partyRatio[card.star] : partyBuff.value * this.subCardBuffRatio[this.version]['DEFAULT'].partyRatio[card.star];
+              let value = this.subCardBuffRatio[this.version][statType] ? partyBuff.value * this.subCardBuffRatio[this.version][statType].partyRatio[card.star] : partyBuff.value * this.subCardBuffRatio[this.version]['DEFAULT'].partyRatio[card.star];
+
+              if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
+                value = Math.floor(this.stats[statType].baseTotal * value);
+              }
+
+              if ((!teamBuffs[statType] || Math.floor(value) > teamBuffs[statType])
+                && (!this.stats[statType] || !this.stats[statType].cardParty || value > this.stats[statType].cardParty)
+              ) {
+                if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
+                  if (!statsTypePercent[statType]) {
+                    statsTypePercent[statType] = 0;
+                  }
+                  statsTypePercent[statType] = initialValue;
+                } else {
+                  teamBuffs[statType] = Math.floor(value);
+                }
+              }
+            }
+          });
+        });
+      }
+    });
+
+    Object.keys(teamBuffs).forEach(statType => {
+      this.updateStat(statType, 0, 'subCardParty', 'fixe', true);
+      this.updateStat(statType, teamBuffs[statType], 'subCardParty', 'fixe');
+    });
+
+    Object.keys(statsTypePercent).forEach(statType => {
+      this.updatePercentStats(statType, 'subCardParty', statsTypePercent[statType]);
     });
   }
 
@@ -1205,6 +1247,14 @@ export class Unit {
 
       if (this.stats[stat].cardParty) {
         this.stats[stat].total += this.stats[stat].cardParty;
+      }
+
+      if (this.stats[stat].subCard) {
+        this.stats[stat].total += this.stats[stat].subCard;
+      }
+
+      if (this.stats[stat].subCardParty) {
+        this.stats[stat].total += this.stats[stat].subCardParty;
       }
 
       if (this.stats[stat].totalEquipment) {

@@ -305,6 +305,7 @@ export class UnitService {
       subjob: unit.subjob,
       esper: null,
       card: null,
+      subCard: null,
       equipments: [null, null, null],
       guild: this.guildService.getSavableData(unit.guild.data, false),
       masterRanks: this.masterRanksService.getSavableData(unit.masterRanks.data, false),
@@ -325,6 +326,12 @@ export class UnitService {
       data.card = this.cardService.getSavableData(unit.card, false);
     } else {
       data.card = null;
+    }
+
+    if (unit.subCard) {
+      data.subCard = this.cardService.getSavableData(unit.subCard, false);
+    } else {
+      data.subCard = null;
     }
 
     for (let i = 0; i <= 2; i++) {
@@ -431,6 +438,8 @@ export class UnitService {
 
       this.unit.grid = this.gridService.generateUnitGrid(this.unit, 1000, this.unit.exJobs && this.unit.exJobs.length > 0);
 
+      this.unit.version = this.navService.getVersion();
+
       this.unit.updateMaxLevel();
       this.unit.updateMaxJobLevel();
 
@@ -517,6 +526,12 @@ export class UnitService {
         this.unit.card = await this.cardService.selectCardForBuilder(unit.card.dataId, unit.card);
       } else {
         this.unit.card = null;
+      }
+
+      if (unit.subCard) {
+        this.unit.subCard = await this.cardService.selectCardForBuilder(unit.subCard.dataId, unit.subCard);
+      } else {
+        this.unit.subCard = null;
       }
 
       this.unit.equipments = [];
@@ -743,5 +758,25 @@ export class UnitService {
     }
 
     return level + (minusOne ? 0 : 1);
+  }
+
+  async getAvailableCards(type) {
+    let alreadyUsedCardId = null;
+    if (type === 'main' && this.unit.subCard) {
+      alreadyUsedCardId = this.unit.subCard.dataId;
+    } else if (type === 'sub' && this.unit.card) {
+      alreadyUsedCardId = this.unit.card.dataId;
+    }
+
+    const cards = await this.cardService.getCardsForListing();
+    const availableCards = [];
+
+    cards.forEach(card => {
+      if (alreadyUsedCardId !== card.dataId) {
+        availableCards.push(card);
+      }
+    });
+
+    return availableCards;
   }
 }

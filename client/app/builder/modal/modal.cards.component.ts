@@ -29,6 +29,7 @@ export class ModalCardsComponent implements OnInit {
   loadCardId = null;
 
   @Input() public modalStep = 'select';
+  @Input() public cardType = 'main';
   @Input() public card;
   @Input() public teamUnitPos;
 
@@ -59,9 +60,9 @@ export class ModalCardsComponent implements OnInit {
   async getCards() {
     if (!this.rawCards) {
       if (isNaN(this.teamUnitPos)) {
-        this.rawCards = await this.cardService.getCardsForListing();
+        this.rawCards = await this.unitService.getAvailableCards(this.cardType);
       } else {
-        this.rawCards = await this.teamService.getAvailableCards(this.teamUnitPos);
+        this.rawCards = await this.teamService.getAvailableCards(this.teamUnitPos, this.cardType);
       }
     }
 

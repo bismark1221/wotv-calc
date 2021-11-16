@@ -415,6 +415,12 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   openCardsModal(subCard = false) {
     const modalRef = this.modalService.open(ModalCardsComponent, { windowClass: 'builder-modal' });
 
+    if (subCard) {
+      modalRef.componentInstance.cardType = 'sub';
+    } else {
+      modalRef.componentInstance.cardType = 'main';
+    }
+
     if (!subCard && this.unit.card) {
       modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.card));
       modalRef.componentInstance.modalStep = 'custom';

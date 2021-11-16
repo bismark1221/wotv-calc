@@ -261,26 +261,15 @@
   -webkit-box-orient: vertical;
 }
 
-.equipmentDiv {
+.equipmentDiv, .esparCardDiv {
   width: 33%;
   display: inline-block;
   vertical-align: top;
 }
 
-.equipmentImg {
+.equipmentImg, .esperImg, .cardImg {
   max-width: 70px;
   max-height: 70px;
-}
-
-.esparCardDiv {
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.esperImg, .cardImg {
-  width: 110px;
-  height: 110px;
   cursor: pointer;
 }
 
@@ -293,12 +282,7 @@
   width: 110px;
 }
 
-.btn-esper, .btn-card {
-  margin-top: 5px;
-  width: 110px;
-}
-
-.btn-equipment {
+.btn-equipment, .btn-esper, .btn-card {
   width: 70px;
   margin-top: 5px;
 }
