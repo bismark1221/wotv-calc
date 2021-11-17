@@ -46,7 +46,7 @@ export class Unit {
     },
     'ACCURACY': {},
     'CRITIC_RATE': {},
-    'CRITIC_AVOID': {},
+    'CRITIC_EVADE': {},
     'EVADE': {},
     'FIRE': {},
     'ICE': {},
@@ -447,7 +447,7 @@ export class Unit {
         },
         'ACCURACY': {},
         'CRITIC_RATE': {},
-        'CRITIC_AVOID': {},
+        'CRITIC_EVADE': {},
         'EVADE': {},
         'FIRE': {},
         'ICE': {},
@@ -1035,7 +1035,7 @@ export class Unit {
       ACCURACY:     [100, 50, 30],
       EVADE:        [100, 30, 20],
       CRITIC_RATE:  [100, 50, 30],
-      CRITIC_AVOID: [100, 50, 30]
+      CRITIC_EVADE: [100, 50, 30]
     };
 
     for (let i = 0; i <= 2; i++) {
@@ -1727,7 +1727,7 @@ export class Unit {
       'MAGIC_ATK',
       'ACCURACY',
       'CRITIC_RATE',
-      'CRITIC_AVOID',
+      'CRITIC_EVADE',
       'EVADE',
       'POISON',
       'FROSTBITE',

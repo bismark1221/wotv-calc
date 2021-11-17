@@ -33,7 +33,7 @@ export class UserService {
     'iniap': 'INITIAL_AP',
     'hit' : 'ACCURACY',
     'crt' : 'CRITIC_RATE',
-    'crta': 'CRITIC_AVOID',
+    'crta': 'CRITIC_EVADE',
     'avd' : 'EVADE'
   };
 
