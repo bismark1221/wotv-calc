@@ -24,67 +24,11 @@ export class HomeComponent {
 
   updated = {
     GL: [
-
-
-
-
-
-
-
-
-      {
-        "date": "14/11",
-        "items": [
-          {"type": "unit", "dataId": "UN_FF6_P_TERA"},
-          {"type": "unit", "dataId": "UN_FF6_P_LOCK"},
-          {"type": "esper", "dataId": "UN_LW_S_ODIN_01"},
-          {"type": "card", "dataId": "VC_LW_ODIN_01"},
-          {"type": "equipment", "dataId": "AF_FF6_SWO_000"},
-          {"type": "equipment", "dataId": "AF_FF6_DAG_000"},
-          {"type": "equipment", "dataId": "AF_LW_ACC_054"}
-        ]
-      },
-
-      {
-        "date": "31/10",
-        "items": [
-          {"type": "unit", "dataId": "UN_LW_P_LNAN"},
-          {"type": "equipment", "dataId": "AF_LW_ROD_029"},
-          {"type": "equipment", "dataId": "AF_LW_ACC_037"}
-        ]
-      },
-
-
       {
         date: '30/06',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_ZZAN_01'},
           {type: 'card', dataId: 'VC_LW_MONT'}
-        ]
-      },
-      {
-        date: '',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_KTON'},
-          {type: 'unit', dataId: 'UN_LW_P_FRVA'},
-          {type: 'unit', dataId: 'UN_LW_P_DEAN'}
-        ]
-      },
-      {
-        date: '23/06',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_CMLO'},
-          {type: 'esper', dataId: 'UN_LW_S_ICDG'},
-          {type: 'card', dataId: 'VC_LW_ICDG'},
-          {type: 'equipment', dataId: 'AF_LW_ACC_039'}
-        ]
-      },
-      {
-        date: '',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_SZRT'},
-          {type: 'unit', dataId: 'UN_LW_P_DRND'},
-          {type: 'esper', dataId: 'UN_LW_S_MABR'}
         ]
       }
     ],
@@ -97,39 +41,6 @@ export class HomeComponent {
           {type: 'esper', dataId: 'UN_LW_S_WHDG'},
           {type: 'card', dataId: 'VC_LW_WHDG'},
           {type: 'equipment', dataId: 'AF_LW_ARM_031'}
-        ]
-      },
-      {
-        date: '',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_THLA'},
-          {type: 'unit', dataId: 'UN_LW_P_ADLD'},
-          {type: 'unit', dataId: 'UN_LW_P_NAIA'}
-        ]
-      },
-      {
-        date: '01/07',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_OBRN'},
-          {type: 'equipment', dataId: 'AF_LW_SPE_003'}
-        ]
-      },
-      {
-        date: '23/06',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_LMIG'},
-          {type: 'card', dataId: 'VC_LW_LUCA2'},
-          {type: 'equipment', dataId: 'AF_LW_ACC_048'}
-        ]
-      },
-      {
-        date: '',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_GRSR'},
-          {type: 'unit', dataId: 'UN_LW_P_CRIS'},
-          {type: 'unit', dataId: 'UN_LW_P_LVES'},
-          {type: 'esper', dataId: 'UN_LW_S_LVAT'},
-          {type: 'esper', dataId: 'UN_LW_S_TYPN'}
         ]
       }
     ]

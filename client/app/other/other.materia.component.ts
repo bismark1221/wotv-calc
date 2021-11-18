@@ -21,24 +21,25 @@ export class OtherMateriaComponent implements OnInit {
     H: 'right',
     O: 'right',
     S: 'right'
-  }
-
-  left = {
-    mainStats: {},
-    passives: {},
-    I: {},
-    F: {},
-    W: {},
-    groupSkills: []
   };
 
-  right = {
-    mainStats: {},
-    passives: {},
-    H: {},
-    O: {},
-    S: {},
-    groupSkills: []
+  groups = {
+    left: {
+      mainStats: {},
+      passives: {},
+      I: {},
+      F: {},
+      W: {},
+      groupSkills: []
+    },
+    right: {
+      mainStats: {},
+      passives: {},
+      H: {},
+      O: {},
+      S: {},
+      groupSkills: []
+    }
   };
 
   constructor(
@@ -61,8 +62,6 @@ export class OtherMateriaComponent implements OnInit {
     this.materiaGroup = result.materiaGroup;
     this.skills = result.skills;
 
-    console.log(result)
-
     for (const materia of this.materia) {
       for (const type of materia.types) {
         this.manageMainStats(type.mainStat, materia);
@@ -71,23 +70,21 @@ export class OtherMateriaComponent implements OnInit {
         this.manageSkills(type.skills, materia);
       }
     }
-
-    console.log(this.left);
-    console.log(this.right);
   }
 
   manageMainStats(mainStats, materia) {
     mainStats.forEach(rawMainStat => {
       materia.slots.forEach(slot => {
-        if (!this[this.slots[slot]].mainStats[materia.rarity]) {
-          this[this.slots[slot]].mainStats[materia.rarity] = {};
+        if (!this.groups[this.slots[slot]].mainStats[materia.rarity]) {
+          this.groups[this.slots[slot]].mainStats[materia.rarity] = [];
         }
 
-        if (!this[this.slots[slot]].mainStats[materia.rarity][rawMainStat.type]) {
-          this[this.slots[slot]].mainStats[materia.rarity][rawMainStat.type] = {
+        if (!this.groups[this.slots[slot]].mainStats[materia.rarity].find(searchedMainStat => searchedMainStat.type === rawMainStat.type)) {
+          this.groups[this.slots[slot]].mainStats[materia.rarity].push({
+            type: rawMainStat.type,
             min: rawMainStat.min,
             max: rawMainStat.max
-          }
+          });
         }
       });
     });
@@ -97,15 +94,16 @@ export class OtherMateriaComponent implements OnInit {
     subStats.forEach(rawSubStat => {
       rawSubStat.forEach(subStat => {
         materia.slots.forEach(slot => {
-          if (!this[this.slots[slot]][slot][materia.rarity]) {
-            this[this.slots[slot]][slot][materia.rarity] = {};
+          if (!this.groups[this.slots[slot]][slot][materia.rarity]) {
+            this.groups[this.slots[slot]][slot][materia.rarity] = [];
           }
 
-          if (!this[this.slots[slot]][slot][materia.rarity][subStat.type]) {
-            this[this.slots[slot]][slot][materia.rarity][subStat.type] = {
+          if (!this.groups[this.slots[slot]][slot][materia.rarity].find(searchedType => searchedType.type === subStat.type)) {
+            this.groups[this.slots[slot]][slot][materia.rarity].push({
+              type: subStat.type,
               min: subStat.min,
               max: subStat.max
-            }
+            });
           }
         });
       });
@@ -115,7 +113,7 @@ export class OtherMateriaComponent implements OnInit {
   manageGroup(group, rawMainStat, materia) {
     materia.slots.forEach(slot => {
       const materiaGroup = this.materiaGroup.find(searchedGroup => searchedGroup.dataId === group);
-      if (!this[this.slots[slot]].groupSkills[group] && materiaGroup) {
+      if (!this.groups[this.slots[slot]].groupSkills.find(searchedFormattedGroup => searchedFormattedGroup.dataId === group) && materiaGroup) {
         let mainStat = '';
         rawMainStat.forEach((stat, statIndex) => {
           if (statIndex > 0) {
@@ -126,9 +124,10 @@ export class OtherMateriaComponent implements OnInit {
         });
 
         const formattedGroup = {
+          dataId: group,
           mainStat: mainStat,
           bonus: []
-        }
+        };
 
         Object.keys(materiaGroup.bonus).forEach(bonusNumber => {
           const skill = this.skills.find(searchedSkill => searchedSkill.dataId === materiaGroup.bonus[bonusNumber]);
@@ -136,32 +135,34 @@ export class OtherMateriaComponent implements OnInit {
           if (skill) {
             formattedGroup.bonus.push({
               num: bonusNumber,
-              formatedSkill: this.skillService.formatEffects(materia, skill)
+              formattedSkill: this.skillService.formatEffects(materia, skill)
             });
           }
         });
 
-        this[this.slots[slot]].groupSkills[group] = formattedGroup;
+        this.groups[this.slots[slot]].groupSkills.push(formattedGroup);
       }
     });
   }
 
   manageSkills(skills, materia) {
-    /*subStats.forEach(rawSubStat => {
-      rawSubStat.forEach(subStat => {
+    skills.forEach(skillId => {
+      const skill = this.skills.find(searchedSkill => searchedSkill.dataId === skillId);
+
+      if (skill) {
         materia.slots.forEach(slot => {
-          if (!this[this.slots[slot]][slot][materia.rarity]) {
-            this[this.slots[slot]][slot][materia.rarity] = {};
+          if (!this.groups[this.slots[slot]].passives[materia.rarity]) {
+            this.groups[this.slots[slot]].passives[materia.rarity] = [];
           }
 
-          if (!this[this.slots[slot]][slot][materia.rarity][subStat.type]) {
-            this[this.slots[slot]][slot][materia.rarity][subStat.type] = {
-              min: subStat.min,
-              max: subStat.max
-            }
+          if (!this.groups[this.slots[slot]].passives[materia.rarity].find(searchedPassive => searchedPassive.dataId === skillId)) {
+            this.groups[this.slots[slot]].passives[materia.rarity].push({
+              dataId: skillId,
+              formattedSkill: this.skillService.formatEffects(materia, skill)
+            });
           }
         });
-      });
-    });*/
+      }
+    });
   }
 }
