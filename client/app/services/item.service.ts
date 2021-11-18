@@ -11,9 +11,6 @@ import { Item } from '../entities/item';
 
 @Injectable()
 export class ItemService {
-  private JP_items: Item[];
-  private GL_items: Item[];
-
   savedVersion;
   item;
 

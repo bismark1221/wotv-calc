@@ -60,6 +60,7 @@ import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
 import { OtherFarmCalculatorComponent } from './other/other.farmcalculator.component';
 import { OtherBestiaryComponent } from './other/other.bestiary.component';
 import { OtherUnitComponent } from './other/other.unit.component';
+import { OtherMateriaComponent } from './other/other.materia.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -108,6 +109,7 @@ import { OtherUnitService } from './services/otherunit.service';
 import { ApiService } from './services/api.service';
 import { HomeService } from './services/home.service';
 import { UserService } from './services/user.service';
+import { MateriaService } from './services/materia.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -166,6 +168,7 @@ export function createTranslateLoader(http: HttpClient) {
     OtherFarmCalculatorComponent,
     OtherBestiaryComponent,
     OtherUnitComponent,
+    OtherMateriaComponent,
     TemplateItemComponent,
     UserComponent
   ],
@@ -230,6 +233,7 @@ export function createTranslateLoader(http: HttpClient) {
     ApiService,
     HomeService,
     UserService,
+    MateriaService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler
