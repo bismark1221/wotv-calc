@@ -114,16 +114,19 @@
   <div class="rightBlock">
     <table class="statsTable">
       <tr>
-        <th class="sub">Main Characteristics</th>
+        <th colspan="4">Main Characteristics</th>
+      </tr>
+      <tr>
+        <th class="sub">Type</th>
+        <th class="sub">Rarity</th>
+        <th class="sub">Level</th>
+        <th class="sub">Main Stat</th>
       </tr>
       <tr>
         <td>
           <div class="typeDiv">
-            <div>
-              Type
-            </div>
             <div class="zone-select-type">
-              <ng-select placeholder="Select a type" class="select-type select-left-builder" [items]="['I', 'F', 'W', 'H', 'O', 'S']" [(ngModel)]="materia.slot" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
+              <ng-select placeholder="Select a type" class="select-type select-left-builder" [items]="types" [(ngModel)]="materia.slot" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
                 <ng-template ng-label-tmp let-item="item">
                   {{ item }}
                 </ng-template>
@@ -134,11 +137,9 @@
               </ng-select>
             </div>
           </div>
-
+        </td>
+        <td>
           <div class="rarityDiv">
-            <div>
-              Rarity
-            </div>
             <div class="zone-select-rarity">
               <ng-select placeholder="Select a rarity" class="select-rarity select-left-builder" [items]="['UR', 'MR', 'SR', 'R', 'N']" [(ngModel)]="materia.rarity" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
                 <ng-template ng-label-tmp let-item="item">
@@ -151,13 +152,11 @@
               </ng-select>
             </div>
           </div>
-
+        </td>
+        <td>
           <div class="levelDiv">
-            <div>
-              Level
-            </div>
             <div class="zone-select-level">
-              <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="materia.tableLevels" [(ngModel)]="materia.level" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
+              <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="materia.tableLevels" [(ngModel)]="materia.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
                 <ng-template ng-label-tmp let-item="item">
                   {{ item }}
                 </ng-template>
@@ -168,11 +167,9 @@
               </ng-select>
             </div>
           </div>
-
+        </td>
+        <td>
           <div class="mainStatDiv">
-            <div>
-              Main Stat
-            </div>
             <div class="zone-select-main-stat">
               <ng-select placeholder="Select a main stat" class="select-main-stat select-left-builder" [items]="materia.mainStasAvailable" [(ngModel)]="materia.mainStat" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
                 <ng-template ng-label-tmp let-item="item">
@@ -185,6 +182,62 @@
               </ng-select>
             </div>
           </div>
+        </td>
+      </tr>
+    </table>
+
+    <table class="statsTable">
+      <tr>
+        <th colspan="10">Sub Stats</th>
+      </tr>
+      <tr>
+        <th class="sub" *ngFor="let subStat of materia.subStats">
+          {{ subStat.type }}
+        </th>
+      </tr>
+      <tr>
+        <td *ngFor="let subStat of materia.subStats">
+          <select [(ngModel)]="subStat.value">
+            <option *ngFor="let level of subStat.tableLevels">{{ level }}</option>
+          </select> / {{ subStat.maxValue }}
+        </td>
+      </tr>
+    </table>
+
+    <table class="statsTable">
+      <tr>
+        <th colspan="4">Skills</th>
+      </tr>
+      <tr>
+        <th class="sub">Effect</th>
+        <th class="sub">Level</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="zone-select-skill">
+            <ng-select
+              placeholder="Select a skill"
+              class="select-skill select-left-builder"
+              [items]="materia.availableSkills"
+              [(ngModel)]="materia.skills[0]"
+              [clearable]="false"
+              [searchable]="false"
+              bindValue="dataId"
+              (ngModelChange)="updateSkill(0)">
+
+              <ng-template ng-label-tmp let-item="item">
+                {{ item.formattedEffect.after }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.formattedEffect.after }}
+              </ng-template>
+
+            </ng-select>
+          </div>
+        </td>
+        <td>
+
         </td>
       </tr>
     </table>

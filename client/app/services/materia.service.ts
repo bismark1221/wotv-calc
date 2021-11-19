@@ -71,6 +71,8 @@ export class MateriaService {
   }
 
   getMateriaFromCharacteristics(materia, rawMaterias, rawSkills) {
+    let foundedMateria = false;
+
     rawMaterias.forEach(rawMateria => {
       if (rawMateria.slots.indexOf(materia.slot) !== -1 && rawMateria.rarity === materia.rarity) {
         rawMateria.types.forEach(type => {
@@ -84,25 +86,53 @@ export class MateriaService {
           });
 
           if (mainStat === materia.mainStat) {
-            materia.image = rawMateria.image;
-            materia.subStats = type.subStats[0];
-            materia.availableSkills = [];
-
-            type.skills.forEach(skillId => {
-              materia.availableSkills.push({
-                dataId: skillId,
-                formattedEffect: this.skillService.formatEffects(materia, rawSkills.find(searchedSkill => searchedSkill.dataId === skillId))
-              });
-            });
-
-            materia.skills = [
-              materia.availableSkills[0].dataId
-            ];
+            this.updateMateriaForBuilder(materia, rawMateria, rawSkills, type, mainStat);
+            foundedMateria = true;
+            return;
           }
         });
       }
     });
 
+    if (!foundedMateria) {
+      rawMaterias.forEach(rawMateria => {
+        if (rawMateria.slots.indexOf(materia.slot) !== -1 && rawMateria.rarity === materia.rarity) {
+          this.updateMateriaForBuilder(materia, rawMateria, rawSkills, rawMateria.types[0]);
+          return;
+        }
+      });
+    }
+  }
 
+  private updateMateriaForBuilder(materia, rawMateria, rawSkills, type, mainStat = '') {
+    if (mainStat === '') {
+      type.mainStat.forEach((rawMainStat, rawMainStatIndex) => {
+        if (rawMainStatIndex > 0) {
+          mainStat += '_';
+        }
+
+        mainStat += rawMainStat.type;
+      });
+    }
+
+    materia.mainStat = mainStat;
+    materia.image = rawMateria.image;
+    materia.subStats = type.subStats[0];
+    materia.availableSkills = [];
+
+    type.skills.forEach(skillId => {
+      materia.availableSkills.push({
+        dataId: skillId,
+        formattedEffect: this.skillService.formatEffects(materia, rawSkills.find(searchedSkill => searchedSkill.dataId === skillId))
+      });
+    });
+
+    materia.skills = [
+      materia.availableSkills[0].dataId
+    ];
+
+    materia.skillsLevel = [
+      1
+    ];
   }
 }

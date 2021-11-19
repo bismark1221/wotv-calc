@@ -179,6 +179,7 @@ export class BuilderMateriaComponent implements OnInit {
     this.materia = new Materia();
     this.materia.constructFromJson(this.materias[0]);
     this.materia.slot = this.materia.slots[0];
+    this.materia.level = 20;
     this.materia.mainStat = '';
 
     this.materia.types[0].mainStat.forEach((rawMainStat, rawMainStatIndex) => {
@@ -205,6 +206,16 @@ export class BuilderMateriaComponent implements OnInit {
   updateMateria() {
     this.materiaService.getAvailableMainStats(this.materia, this.materias);
     this.materiaService.getMateriaFromCharacteristics(this.materia, this.materias, this.materiaSkills);
+
+    this.updateLevel();
+    console.log(this.materia);
+  }
+
+  updateLevel() {
+    this.materia.updateLevel();
+  }
+
+  updateSkill(skillPos) {
     console.log(this.materia);
   }
 }
