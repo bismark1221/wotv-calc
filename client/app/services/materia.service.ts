@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Materia } from '../entities/materia';
 
 import { SkillService } from './skill.service';
 import { ApiService } from './api.service';
+import { NavService } from './nav.service';
 
 @Injectable()
 export class MateriaService {
@@ -11,6 +13,8 @@ export class MateriaService {
 
   constructor(
     private skillService: SkillService,
+    private localStorageService: LocalStorageService,
+    private navService: NavService,
     private apiService: ApiService
   ) {}
 
@@ -33,5 +37,72 @@ export class MateriaService {
       materiaGroup: result.materiaGroup,
       skills: result.skills
     };
+  }
+
+  private getLocalStorage() {
+    return this.navService.getVersion() === 'JP' ? 'jp_materia' : 'materia';
+  }
+
+  getSavedMaterias() {
+    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
+  }
+
+  getAvailableMainStats(materia, rawMaterias) {
+    materia.mainStasAvailable = [];
+
+    rawMaterias.forEach(rawMateria => {
+      if (rawMateria.slots.indexOf(materia.slot) !== -1 && rawMateria.rarity === materia.rarity) {
+        rawMateria.types.forEach(type => {
+          let mainStat = '';
+          type.mainStat.forEach((rawMainStat, rawMainStatIndex) => {
+            if (rawMainStatIndex > 0) {
+              mainStat += '_';
+            }
+
+            mainStat += rawMainStat.type;
+          });
+
+          if (materia.mainStasAvailable.indexOf(mainStat) === -1) {
+            materia.mainStasAvailable.push(mainStat);
+          }
+        });
+      }
+    });
+  }
+
+  getMateriaFromCharacteristics(materia, rawMaterias, rawSkills) {
+    rawMaterias.forEach(rawMateria => {
+      if (rawMateria.slots.indexOf(materia.slot) !== -1 && rawMateria.rarity === materia.rarity) {
+        rawMateria.types.forEach(type => {
+          let mainStat = '';
+          type.mainStat.forEach((rawMainStat, rawMainStatIndex) => {
+            if (rawMainStatIndex > 0) {
+              mainStat += '_';
+            }
+
+            mainStat += rawMainStat.type;
+          });
+
+          if (mainStat === materia.mainStat) {
+            materia.image = rawMateria.image;
+            materia.subStats = type.subStats[0];
+            materia.availableSkills = [];
+
+            type.skills.forEach(skillId => {
+              materia.availableSkills.push({
+                dataId: skillId,
+                formattedEffect: this.skillService.formatEffects(materia, rawSkills.find(searchedSkill => searchedSkill.dataId === skillId))
+              });
+            });
+
+            materia.skills = [
+              materia.availableSkills[0].dataId
+            ];
+          }
+        });
+      }
+    });
+
+
   }
 }

@@ -66,7 +66,24 @@ export class AuthService {
 
       if (result.syncPossible) {
         let localDataFound = false;
-        const types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank'];
+        const types = [
+          'teams',
+          'units',
+          'espers',
+          'cards',
+          'equipments',
+          'guild',
+          'jp_teams',
+          'jp_units',
+          'jp_espers',
+          'jp_cards',
+          'jp_equipments',
+          'jp_guild',
+          'jp_masterRank',
+          'masterRank',
+          'jp_materia',
+          'materia'
+        ];
 
         types.forEach(type => {
           const savedData = this.localStorageService.get(type);
@@ -113,7 +130,7 @@ export class AuthService {
   private loadSavedData() {
     const promises = [];
 
-    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank'].forEach(type => {
+    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank', 'jp_materia', 'materia'].forEach(type => {
       promises.push(new Promise((resolve, reject) => {
         this.firestore.collection(type, ref => ref.where('user', '==', this.user.uid)).snapshotChanges().subscribe(data => {
           const items = [];
@@ -137,7 +154,7 @@ export class AuthService {
   }
 
   private emptyLocalStorage() {
-    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank'].forEach(type => {
+    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank', 'jp_materia', 'materia'].forEach(type => {
       this.localStorageService.remove(type);
     });
 
@@ -200,7 +217,7 @@ export class AuthService {
   }
 
   firstSync() {
-    const types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank'];
+    const types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank', 'materia', 'jp_materia'];
     const promises = [];
 
     types.forEach(type => {
@@ -232,7 +249,7 @@ export class AuthService {
 
   getAvailableSync() {
     const data = {};
-    const types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank'];
+    const types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank', 'materia', 'jp_materia'];
     const promises = [];
 
     types.forEach(type => {

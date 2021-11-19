@@ -39,6 +39,7 @@ import { BuilderEquipmentComponent } from './builder/builder.equipment.component
 import { BuilderGuildComponent } from './builder/builder.guild.component';
 import { BuilderTeamComponent } from './builder/builder.team.component';
 import { BuilderMasterRanksComponent } from './builder/builder.mr.component';
+import { BuilderMateriaComponent } from './builder/builder.materia.component';
 
 const ROUTES: Routes = [
   // GL Router
@@ -88,6 +89,8 @@ const ROUTES: Routes = [
       { path: 'master-ranks', component: BuilderMasterRanksComponent },
       { path: 'team', component: BuilderTeamComponent },
       { path: 'team/:data', component: BuilderTeamComponent },
+      { path: 'materia', component: BuilderMateriaComponent },
+      { path: 'materia/:data', component: BuilderMateriaComponent },
     ]
   },
 
@@ -140,6 +143,8 @@ const ROUTES: Routes = [
       { path: 'master-ranks', component: BuilderMasterRanksComponent },
       { path: 'team', component: BuilderTeamComponent },
       { path: 'team/:data', component: BuilderTeamComponent },
+      { path: 'materia', component: BuilderMateriaComponent },
+      { path: 'materia/:data', component: BuilderMateriaComponent },
     ]
   },
 
