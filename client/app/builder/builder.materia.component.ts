@@ -69,6 +69,10 @@ export class BuilderMateriaComponent implements OnInit {
     'S'
   ];
 
+  changeSkill = [
+    false
+  ];
+
   constructor(
     private materiaService: MateriaService,
     private translateService: TranslateService,
@@ -97,19 +101,12 @@ export class BuilderMateriaComponent implements OnInit {
 
     this.filterChecked();
     this.filterMaterias();
-
-    /*console.log("=== INIT ===")
-    console.log(this.materias)
-    console.log(this.materiaGroups)
-    console.log(this.materiaSkills)*/
   }
 
   ngAfterViewInit() {
     setTimeout(() => {
       this.authService.$load.subscribe(load => {
         this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
-        console.log('=== SAVED ===');
-        console.log(this.savedMateriasWithoutFilters);
       });
     });
 
@@ -133,8 +130,7 @@ export class BuilderMateriaComponent implements OnInit {
   }
 
   filterMaterias() {
-    // Filter on saved Materias
-    // this.savedMaterias = this.materiaService.filterMaterias(this.savedMateriasWithoutFilters, this.filters, this.sort, this.order);
+    this.savedMaterias = this.materiaService.filterMaterias(this.savedMateriasWithoutFilters, this.filters, this.sort, this.order, this.materias, this.materiaSkills);
   }
 
   getRoute(route) {
@@ -175,6 +171,13 @@ export class BuilderMateriaComponent implements OnInit {
     });
   }
 
+  /***********/
+  /* BUILDER */
+  /***********/
+  backToMateriaList() {
+    this.step = 'list';
+  }
+
   buildNewMateria() {
     this.materia = new Materia();
     this.materia.constructFromJson(this.materias[0]);
@@ -192,15 +195,44 @@ export class BuilderMateriaComponent implements OnInit {
 
     this.updateMateria();
 
+    console.log(this.materia);
+
+    this.step = 'build';
+  }
+
+  selectMateria(materia) {
+    this.materia = materia;
+
+    console.log(this.materia);
+
     this.step = 'build';
   }
 
   resetMateria() {
-
+    this.materia.resetMateria(this.materiaSkills, this.skillService);
   }
 
   maxMateria() {
+    this.materia.maxMateria(this.materiaSkills, this.skillService);
+  }
 
+  randomSubStats() {
+    this.materia.subStats.forEach(subStat => {
+      subStat.value = subStat.tableLevels[Math.floor(Math.random() * subStat.tableLevels.length)];
+    });
+  }
+
+  randomSkill(skillPos) {
+    this.materia.skills[skillPos] = this.materia.availableSkills[Math.floor(Math.random() * this.materia.availableSkills.length)].dataId;
+    this.updateSkill(skillPos);
+  }
+
+  toogleChangeSkill(skillPos, forceHide = false) {
+    if (!this.changeSkill[skillPos] && !forceHide) {
+      this.changeSkill[skillPos] = true;
+    } else {
+      this.changeSkill[skillPos] = false;
+    }
   }
 
   updateMateria() {
@@ -208,7 +240,7 @@ export class BuilderMateriaComponent implements OnInit {
     this.materiaService.getMateriaFromCharacteristics(this.materia, this.materias, this.materiaSkills);
 
     this.updateLevel();
-    console.log(this.materia);
+    this.updateSkill(0);
   }
 
   updateLevel() {
@@ -216,6 +248,31 @@ export class BuilderMateriaComponent implements OnInit {
   }
 
   updateSkill(skillPos) {
-    console.log(this.materia);
+    this.materia.updateSkill(skillPos, this.materiaSkills, this.skillService);
+    this.toogleChangeSkill(skillPos, true);
+  }
+
+  removeSkill(skillPos) {
+    this.materia.skills.splice(skillPos, 1);
+    this.updateSkill(skillPos);
+  }
+
+  openSaveModal() {
+    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'materia';
+    modalRef.componentInstance.item = this.materia;
+
+    modalRef.result.then(result => {
+      this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
+    }, (reason) => {
+    });
+  }
+
+  openLinkModal() {
+    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'materia';
+    modalRef.componentInstance.item = this.materia;
   }
 }

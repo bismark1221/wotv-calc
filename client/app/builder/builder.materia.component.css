@@ -155,7 +155,6 @@
 .materiaName {
   font-weight: bold;
   margin-left: 10px;
-  display: table-cell;
   vertical-align: middle;
   color: var(--card-title-color);
 }
@@ -168,10 +167,72 @@
   width: 140px;
 }
 
-
+/***********/
+/* Builder */
+/***********/
 .materiaBuild {
   width: 1200px;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 10px;
+}
+
+.saveBlock {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.btn-buildLink {
+  margin-right: 10px;
+}
+
+.leftBlockBuilder {
+  width: 200px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.leftBlockBuilder table {
+  width: 100%
+}
+
+.btn-reset-materia {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.btn-max-materia {
+  width: 105px;
+}
+
+.rightBlockBuilder {
+  width: 980px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.materiaImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.statsTable {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level {
+  display: inline-block;
+  width: 60px;
+}
+
+.btn-change-skill, .btn-random {
+  margin-right: 10px;
 }

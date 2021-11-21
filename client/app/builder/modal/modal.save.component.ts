@@ -7,6 +7,7 @@ import { UnitService } from '../../services/unit.service';
 import { EsperService } from '../../services/esper.service';
 import { EquipmentService } from '../../services/equipment.service';
 import { TeamService } from '../../services/team.service';
+import { MateriaService } from '../../services/materia.service';
 
 @Component({
   selector: 'app-modal-save',
@@ -26,11 +27,15 @@ export class ModalSaveComponent implements OnInit {
     private equipmentService: EquipmentService,
     private teamService: TeamService,
     private translateService: TranslateService,
+    private materiaService: MateriaService,
     private modal: NgbActiveModal
   ) {
   }
 
   ngOnInit() {
+    if (this.type === 'materia') {
+      this.save();
+    }
   }
 
   close() {
@@ -62,6 +67,9 @@ export class ModalSaveComponent implements OnInit {
       case 'equipment' :
         alreadyExists = this.equipmentService.equipmentAlreadyExists(this.item);
         break;
+      case 'materia' :
+        alreadyExists = this.materiaService.materiaAlreadyExists(this.item);
+        break;
       case 'team' :
         alreadyExists = this.teamService.teamAlreadyExists(this.item);
         break;
@@ -88,6 +96,9 @@ export class ModalSaveComponent implements OnInit {
         break;
       case 'equipment' :
         savePromise = this.equipmentService.saveEquipment(this.item, method);
+        break;
+      case 'materia' :
+        savePromise = this.materiaService.saveMateria(this.item, method);
         break;
       case 'team' :
         savePromise = this.teamService.saveTeam(this.item, method);

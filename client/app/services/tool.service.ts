@@ -34,7 +34,7 @@ export class ToolService {
   }
 
   getName(item) {
-    if (item) {
+    if (item && item.names) {
       if (!item.names[this.translateService.currentLang]) {
         return item.names[this.translateService.getDefaultLang()].replace('<br>', ' ');
       } else {

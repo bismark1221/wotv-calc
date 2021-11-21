@@ -10,6 +10,8 @@ export class Materia {
   tableLevels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   level = 1;
   subStats = [];
+  skills;
+  skillsDetail;
 
   constructFromJson(materia: Materia) {
     this.dataId = materia.dataId;
@@ -35,6 +37,60 @@ export class Materia {
       for (let i = subStat.minValue; i <= subStat.maxValue; i++) {
         subStat.tableLevels.push(i);
       }
+    });
+  }
+
+  updateSkill(skillPos, rawSkills, skillService) {
+    if (this.skills[skillPos]) {
+      if (!this.skillsDetail[skillPos]) {
+        this.skillsDetail[skillPos] = {
+          level: 1,
+          formattedEffect: ''
+        };
+      }
+
+      const rawSkill = rawSkills.find(searchedSkill => searchedSkill.dataId === this.skills[skillPos]);
+      rawSkill.level = this.skillsDetail[skillPos].level;
+
+      this.skillsDetail[skillPos].formattedEffect = skillService.formatEffects(this, rawSkill);
+    } else {
+      this.skillsDetail[skillPos] = {
+        level: 1,
+        formattedEffect: ''
+      };
+    }
+  }
+
+  resetMateria(rawSkills, skillService) {
+    this.level = 1;
+    this.updateLevel();
+
+    this.subStats.forEach(subStat => {
+      subStat.value = subStat.minValue;
+    });
+
+    for (let i = this.skills.length - 1; i > 0; i --) {
+      this.skills.splice(i, 1);
+      this.updateSkill(i, rawSkills, skillService);
+    }
+
+    this.skillsDetail.forEach(skillDetail => {
+      skillDetail.level = 1;
+    });
+    this.updateSkill(0, rawSkills, skillService);
+  }
+
+  maxMateria(rawSkills, skillService) {
+    this.level = 20;
+    this.updateLevel();
+
+    this.subStats.forEach(subStat => {
+      subStat.value = subStat.maxValue;
+    });
+
+    this.skillsDetail.forEach((skillDetail, skillDetailIndex) => {
+      skillDetail.level = 20;
+      this.updateSkill(skillDetailIndex, rawSkills, skillService);
     });
   }
 }

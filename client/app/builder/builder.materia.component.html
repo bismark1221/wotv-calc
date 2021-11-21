@@ -73,13 +73,14 @@
     </div>
     <div class="materiasList">
       <div class="materiasCol" *ngFor="let materia of getFilteredMaterias()">
-        <a>
+        <a (click)="selectMateria(materia)">
           <div class="materiaImgBlock">
             <img class="materiaImg" src="assets/items/{{ materia.image }}.png" />
           </div>
-          <!-- <div class="materiaTitle">
-            <span class="materiaName">{{ materia.name }}</span>
-          </div> -->
+          <div class="materiaTitle">
+            <div class="materiaName">{{ materia.mainStat }} - Level : {{ materia.level }}</div>
+            <div class="materiaName">short skill</div>
+          </div>
         </a>
       </div>
     </div>
@@ -88,11 +89,12 @@
 
 <div class="materiaBuild" *ngIf="step == 'build'">
   <div class="saveBlock">
+    <button class="btn btn-sub btn-buildLink" id="back_materia_list" (click)="backToMateriaList()"><< Back to list</button>
     <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
-  <div class="leftBlock">
+  <div class="leftBlockBuilder">
     <table>
       <!-- <tr>
         <th>{{ card.name }}<span *ngIf="card.customName"> - {{ card.customName }}</span></th>
@@ -100,8 +102,8 @@
       <tr>
         <td>
           <div class="materiaButtons">
-            <button class="btn btn-sub btn-left" id="reset_materia" (click)="resetMateria()">Reset</button>
-            <button class="btn btn-main btn-right" id="max_materia" (click)="maxMateria()">Max materia</button>
+            <button class="btn btn-sub btn-reset-materia" id="reset_materia" (click)="resetMateria()">Reset</button>
+            <button class="btn btn-main btn-max-materia" id="max_materia" (click)="maxMateria()">Max materia</button>
           </div>
           <div>
             <img class="materiaImg" src="assets/items/{{ materia.image }}.png" />
@@ -111,7 +113,7 @@
     </table>
   </div>
 
-  <div class="rightBlock">
+  <div class="rightBlockBuilder">
     <table class="statsTable">
       <tr>
         <th colspan="4">Main Characteristics</th>
@@ -155,8 +157,8 @@
         </td>
         <td>
           <div class="levelDiv">
-            <div class="zone-select-level">
-              <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="materia.tableLevels" [(ngModel)]="materia.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+            <div class="zone-select-level-materia">
+              <ng-select placeholder="Select a level" class="select-level-materia select-left-builder" [items]="materia.tableLevels" [(ngModel)]="materia.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
                 <ng-template ng-label-tmp let-item="item">
                   {{ item }}
                 </ng-template>
@@ -188,7 +190,7 @@
 
     <table class="statsTable">
       <tr>
-        <th colspan="10">Sub Stats</th>
+        <th colspan="10">Sub Stats <button (click)='randomSubStats()' class="btn btn-sub">Random</button></th>
       </tr>
       <tr>
         <th class="sub" *ngFor="let subStat of materia.subStats">
@@ -211,35 +213,50 @@
       <tr>
         <th class="sub">Effect</th>
         <th class="sub">Level</th>
+        <th class="sub"></th>
       </tr>
-      <tr>
-        <td>
-          <div class="zone-select-skill">
-            <ng-select
-              placeholder="Select a skill"
-              class="select-skill select-left-builder"
-              [items]="materia.availableSkills"
-              [(ngModel)]="materia.skills[0]"
-              [clearable]="false"
-              [searchable]="false"
-              bindValue="dataId"
-              (ngModelChange)="updateSkill(0)">
+      <tbody *ngFor="let skillNumber of materia.skillsNumTable">
+        <tr>
+          <td>
+            <div class="zone-select-skill" *ngIf="changeSkill[skillNumber]">
+              <ng-select
+                placeholder="Select a skill"
+                class="select-skill select-left-builder"
+                [items]="materia.availableSkills"
+                [(ngModel)]="materia.skills[skillNumber]"
+                [clearable]="false"
+                [searchable]="false"
+                bindValue="dataId"
+                (ngModelChange)="updateSkill(skillNumber)">
 
-              <ng-template ng-label-tmp let-item="item">
-                {{ item.formattedEffect.after }}
-              </ng-template>
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item.formattedEffect.after }}
+                </ng-template>
 
-              <ng-template ng-option-tmp let-item="item">
-                {{ item.formattedEffect.after }}
-              </ng-template>
-
-            </ng-select>
-          </div>
-        </td>
-        <td>
-
-        </td>
-      </tr>
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item.formattedEffect.after }}
+                </ng-template>
+              </ng-select>
+            </div>
+            <div *ngIf="!changeSkill[skillNumber] && materia.skillsDetail[skillNumber]">
+              <div *ngFor="let skillBefore of materia.skillsDetail[skillNumber].formattedEffect.before">{{ skillBefore }}</div>
+              <div *ngFor="let skillAfter of materia.skillsDetail[skillNumber].formattedEffect.after">{{ skillAfter }}</div>
+            </div>
+          </td>
+          <td>
+            <div *ngIf="!changeSkill[skillNumber] && materia.skillsDetail[skillNumber]">
+              <select [(ngModel)]="materia.skillsDetail[skillNumber].level" (ngModelChange)="updateSkill(skillNumber)">
+                <option *ngFor="let level of materia.tableLevels">{{ level }}</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <button (click)='toogleChangeSkill(skillNumber)'  class="btn btn-sub btn-change-skill">Change Skill</button>
+            <button (click)='randomSkill(skillNumber)'  class="btn btn-sub btn-random">Random</button>
+            <button (click)='removeSkill(skillNumber)' class="btn btn-sub" *ngIf="skillNumber > 0">Remove Skill</button>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </div>
