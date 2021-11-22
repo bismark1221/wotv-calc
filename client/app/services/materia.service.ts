@@ -94,7 +94,6 @@ export class MateriaService {
   }
 
   materiaAlreadyExists(materia) {
-    console.log('==> materiaAlreadyExists');
     const savedMaterias = this.getSavedMaterias();
     let materiaFinded = false;
 
@@ -157,6 +156,45 @@ export class MateriaService {
         return materia.storeId;
       });
     }
+  }
+
+  getExportableLink(materia) {
+    if (!materia.storeId || this.hasChangeBeenMade(materia)) {
+      return this.saveMateria(materia, 'share');
+    }
+
+    return new Promise((resolve, reject) => {
+      resolve(materia.storeId);
+    });
+  }
+
+  hasChangeBeenMade(materia) {
+    if (materia.storeId) {
+      const newData = this.getSavableData(materia);
+      let oldData = null;
+
+      if (this.getSavedMaterias()[materia.dataId]) {
+        this.getSavedMaterias()[materia.dataId].forEach(savedMateria => {
+          if (savedMateria.storeId === materia.storeId) {
+            oldData = savedMateria;
+            delete oldData.customName;
+          }
+        });
+
+        // @ts-ignore
+        delete newData.customName;
+
+        return !this.toolService.equal(oldData, newData);
+      }
+    }
+
+    return true;
+  }
+
+  getStoredMateria(dataId) {
+    const document = this.firestore.collection(this.getLocalStorage()).doc(dataId);
+
+    return document.valueChanges();
   }
 
   filterMaterias(materias, filters, sort = 'rarity', order = 'desc', rawMaterias, rawSkills) {

@@ -1,4 +1,4 @@
-<div class="materias" *ngIf="step == 'list'">
+<div class="materias" *ngIf="step == 'list' && !loadingBuild">
   <div class="leftBlock">
     <h1 class="boldText">FILTERS</h1>
     <div class="filters">
@@ -33,7 +33,7 @@
   <div class="rightBlock">
     <div class="upperBlock">
       <div>
-        <button class="btn btn-main" (click)="buildNewMateria()">BUILD NEW MATERIA</button>
+        <button class="btn btn-main" (click)="buildNewMateria()" *ngIf="!loadingData">BUILD NEW MATERIA</button>
       </div>
       <!-- <div class="searchBlock">
         <i class="fas fa-search" aria-hidden="true"></i>
@@ -90,7 +90,12 @@
   </div>
 </div>
 
-<div class="materiaBuild" *ngIf="step == 'build'">
+<div class="loadingBlock" *ngIf="loadingBuild">
+  <h1>Your build is loading</h1>
+  <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+</div>
+
+<div class="materiaBuild" *ngIf="step == 'build' && !loadingBuild">
   <div class="saveBlock">
     <button class="btn btn-sub btn-buildLink" id="back_materia_list" (click)="backToMateriaList()"><< Back to list</button>
     <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>

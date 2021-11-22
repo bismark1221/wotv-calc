@@ -31,6 +31,7 @@ export class BuilderMateriaComponent implements OnInit {
   step = 'list';
 
   loadingBuild = false;
+  loadingData = true;
   showSave = false;
   selectedMateriaId = null;
 
@@ -96,8 +97,6 @@ export class BuilderMateriaComponent implements OnInit {
   async ngOnInit() {
     this.navService.setTitle('Materia Builder');
 
-    await this.getMaterias();
-
     if (sessionStorage.getItem('materiasFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('materiasFilters'));
     }
@@ -108,12 +107,34 @@ export class BuilderMateriaComponent implements OnInit {
 
     this.filterChecked();
     this.filterMaterias();
+
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
+      const data = params.get('data');
+      if (data) {
+        this.loadingBuild = true;
+
+        this.materiaService.getStoredMateria(data).subscribe(async (materiaData: any) => {
+          if (materiaData && this.materias.length > 0) {
+            const materia = new Materia();
+            this.materiaService.buildMateriaFromData(materia, materiaData, this.materias, this.materiaSkills);
+            this.selectMateria(materia);
+          }
+          this.loadingBuild = false;
+        });
+      }
+    });
   }
 
   ngAfterViewInit() {
+    this.loadingData = true;
+
     setTimeout(() => {
-      this.authService.$load.subscribe(load => {
+      this.authService.$load.subscribe(async load => {
+        await this.getMaterias();
+        this.loadingData = false;
         this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
+
+        this.filterMaterias();
       });
     });
 
@@ -131,13 +152,14 @@ export class BuilderMateriaComponent implements OnInit {
   async getMaterias() {
     const result = await this.materiaService.getMateriaForListing(this.filters, this.sort, this.order);
     this.materias = result.materia;
-
     this.materiaGroups = result.materiaGroup;
     this.materiaSkills = result.skills;
   }
 
   filterMaterias() {
-    this.savedMaterias = this.materiaService.filterMaterias(this.savedMateriasWithoutFilters, this.filters, this.sort, this.order, this.materias, this.materiaSkills);
+    if (this.materias.length > 0) {
+      this.savedMaterias = this.materiaService.filterMaterias(this.savedMateriasWithoutFilters, this.filters, this.sort, this.order, this.materias, this.materiaSkills);
+    }
   }
 
   getRoute(route) {
@@ -202,16 +224,12 @@ export class BuilderMateriaComponent implements OnInit {
 
     this.updateMateria();
 
-    console.log(this.materia);
-
     this.step = 'build';
   }
 
   selectMateria(materia) {
     this.materia = this.materiaService.copyMateriaFromData(materia) ;
     this.materia.initialDataId = materia.dataId;
-
-    console.log(this.materia);
 
     this.step = 'build';
   }

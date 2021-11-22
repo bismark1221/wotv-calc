@@ -9,6 +9,7 @@ import { EsperService } from '../../services/esper.service';
 import { EquipmentService } from '../../services/equipment.service';
 import { TeamService } from '../../services/team.service';
 import { NavService } from '../../services/nav.service';
+import { MateriaService } from '../../services/materia.service';
 
 @Component({
   selector: 'app-modal-link',
@@ -16,11 +17,11 @@ import { NavService } from '../../services/nav.service';
   styleUrls: ['./modal.link.component.css']
 })
 export class ModalLinkComponent implements AfterViewInit {
-  item;
   exportableLink = '';
   saveStep = 'loading';
 
   @Input() public type;
+  @Input() public item;
 
   constructor(
     private cardService: CardService,
@@ -28,6 +29,7 @@ export class ModalLinkComponent implements AfterViewInit {
     private esperService: EsperService,
     private equipmentService: EquipmentService,
     private teamService: TeamService,
+    private materiaService: MateriaService,
     private clipboardService: ClipboardService,
     private navService: NavService,
     private modal: NgbActiveModal
@@ -63,6 +65,12 @@ export class ModalLinkComponent implements AfterViewInit {
       case 'team' :
         this.teamService.getExportableLink().then(link => {
           this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/team') + '/' + link;
+          this.saveStep = 'link';
+        });
+        break;
+      case 'materia' :
+        this.materiaService.getExportableLink(this.item).then(link => {
+          this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/materia') + '/' + link;
           this.saveStep = 'link';
         });
         break;

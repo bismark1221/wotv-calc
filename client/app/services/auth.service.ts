@@ -57,13 +57,6 @@ export class AuthService {
         syncPossible: true
       };
 
-      for (let i = 0; i <= 13; i++) {
-        // @ts-ignore
-        if (responses[i].data.length > 0) {
-          result.syncPossible = false;
-        }
-      }
-
       const types = [
         'teams',
         'units',
@@ -82,6 +75,13 @@ export class AuthService {
         'jp_materia',
         'materia'
       ];
+
+      for (let i = 0; i <= types.length - 1; i++) {
+        // @ts-ignore
+        if (responses[i].data.length > 0) {
+          result.syncPossible = false;
+        }
+      }
 
       if (result.syncPossible) {
         let localDataFound = false;
