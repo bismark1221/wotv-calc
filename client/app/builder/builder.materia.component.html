@@ -33,7 +33,7 @@
   <div class="rightBlock">
     <div class="upperBlock">
       <div>
-        <button (click)="buildNewMateria()">BUILD NEW MATERIA</button>
+        <button class="btn btn-main" (click)="buildNewMateria()">BUILD NEW MATERIA</button>
       </div>
       <!-- <div class="searchBlock">
         <i class="fas fa-search" aria-hidden="true"></i>
@@ -73,13 +73,16 @@
     </div>
     <div class="materiasList">
       <div class="materiasCol" *ngFor="let materia of getFilteredMaterias()">
-        <a (click)="selectMateria(materia)">
+        <a (click)="selectMateria(materia)" class="selectMateriaLink">
           <div class="materiaImgBlock">
             <img class="materiaImg" src="assets/items/{{ materia.image }}.png" />
           </div>
           <div class="materiaTitle">
-            <div class="materiaName">{{ materia.mainStat }} - Level : {{ materia.level }}</div>
-            <div class="materiaName">short skill</div>
+            <div class="materiaName">{{ mainStatTranslate[materia.mainStat] ? mainStatTranslate[materia.mainStat] : materia.mainStat }} - Level : {{ materia.level }}</div>
+            <div class="materiaName" *ngFor="let skillsDetail of materia.skillsDetail">
+              <div *ngFor="let shortEffect of skillsDetail.shortEffect.before">{{ shortEffect }}</div>
+              <div *ngFor="let shortEffect of skillsDetail.shortEffect.after">{{ shortEffect }}</div>
+            </div>
           </div>
         </a>
       </div>
@@ -95,17 +98,14 @@
   </div>
 
   <div class="leftBlockBuilder">
-    <table>
-      <!-- <tr>
-        <th>{{ card.name }}<span *ngIf="card.customName"> - {{ card.customName }}</span></th>
-      </tr> -->
-      <tr>
-        <td>
+    <table class="noBorder">
+      <tr class="noBorder">
+        <td class="noBorder">
           <div class="materiaButtons">
             <button class="btn btn-sub btn-reset-materia" id="reset_materia" (click)="resetMateria()">Reset</button>
             <button class="btn btn-main btn-max-materia" id="max_materia" (click)="maxMateria()">Max materia</button>
           </div>
-          <div>
+          <div class="builderMateriaImgBlock">
             <img class="materiaImg" src="assets/items/{{ materia.image }}.png" />
           </div>
         </td>
@@ -212,8 +212,8 @@
       </tr>
       <tr>
         <th class="sub">Effect</th>
-        <th class="sub">Level</th>
-        <th class="sub"></th>
+        <th class="sub levelTd">Level</th>
+        <th class="sub actionsTd"></th>
       </tr>
       <tbody *ngFor="let skillNumber of materia.skillsNumTable">
         <tr>
@@ -225,17 +225,9 @@
                 [items]="materia.availableSkills"
                 [(ngModel)]="materia.skills[skillNumber]"
                 [clearable]="false"
-                [searchable]="false"
                 bindValue="dataId"
+                bindLabel="formattedEffect"
                 (ngModelChange)="updateSkill(skillNumber)">
-
-                <ng-template ng-label-tmp let-item="item">
-                  {{ item.formattedEffect.after }}
-                </ng-template>
-
-                <ng-template ng-option-tmp let-item="item">
-                  {{ item.formattedEffect.after }}
-                </ng-template>
               </ng-select>
             </div>
             <div *ngIf="!changeSkill[skillNumber] && materia.skillsDetail[skillNumber]">

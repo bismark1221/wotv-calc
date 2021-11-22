@@ -64,26 +64,27 @@ export class AuthService {
         }
       }
 
+      const types = [
+        'teams',
+        'units',
+        'espers',
+        'cards',
+        'equipments',
+        'guild',
+        'jp_teams',
+        'jp_units',
+        'jp_espers',
+        'jp_cards',
+        'jp_equipments',
+        'jp_guild',
+        'jp_masterRank',
+        'masterRank',
+        'jp_materia',
+        'materia'
+      ];
+
       if (result.syncPossible) {
         let localDataFound = false;
-        const types = [
-          'teams',
-          'units',
-          'espers',
-          'cards',
-          'equipments',
-          'guild',
-          'jp_teams',
-          'jp_units',
-          'jp_espers',
-          'jp_cards',
-          'jp_equipments',
-          'jp_guild',
-          'jp_masterRank',
-          'masterRank',
-          'jp_materia',
-          'materia'
-        ];
 
         types.forEach(type => {
           const savedData = this.localStorageService.get(type);
@@ -98,7 +99,7 @@ export class AuthService {
       }
 
       if (!newLogin || !result.syncPossible) {
-        for (let i = 0; i <= 13; i++) {
+        for (let i = 0; i <= types.length - 1; i++) {
           let data = {};
 
           // @ts-ignore

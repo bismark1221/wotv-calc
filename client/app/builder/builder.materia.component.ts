@@ -69,6 +69,13 @@ export class BuilderMateriaComponent implements OnInit {
     'S'
   ];
 
+  mainStatTranslate = {
+    CRITIC_RATE: 'Critic Rate',
+    CRITIC_EVADE: 'Critic Evade',
+    ACCURACY: 'Accuracy',
+    EVADE: 'Evade'
+  };
+
   changeSkill = [
     false
   ];
@@ -201,7 +208,8 @@ export class BuilderMateriaComponent implements OnInit {
   }
 
   selectMateria(materia) {
-    this.materia = materia;
+    this.materia = this.materiaService.copyMateriaFromData(materia) ;
+    this.materia.initialDataId = materia.dataId;
 
     console.log(this.materia);
 

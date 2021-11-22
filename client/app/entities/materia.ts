@@ -12,6 +12,7 @@ export class Materia {
   subStats = [];
   skills;
   skillsDetail;
+  slot;
 
   constructFromJson(materia: Materia) {
     this.dataId = materia.dataId;
@@ -49,14 +50,16 @@ export class Materia {
         };
       }
 
-      const rawSkill = rawSkills.find(searchedSkill => searchedSkill.dataId === this.skills[skillPos]);
+      const rawSkill = JSON.parse(JSON.stringify(rawSkills.find(searchedSkill => searchedSkill.dataId === this.skills[skillPos])));
       rawSkill.level = this.skillsDetail[skillPos].level;
 
-      this.skillsDetail[skillPos].formattedEffect = skillService.formatEffects(this, rawSkill);
+      this.skillsDetail[skillPos].formattedEffect = skillService.formatEffects(this, rawSkill, false);
+      this.skillsDetail[skillPos].shortEffect = skillService.formatEffects(this, rawSkill, false, false, true);
     } else {
       this.skillsDetail[skillPos] = {
         level: 1,
-        formattedEffect: ''
+        formattedEffect: '',
+        shortEffect: ''
       };
     }
   }

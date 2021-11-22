@@ -103,13 +103,17 @@
   margin-top: 10px;
 }
 
+.selectMateriaLink {
+  cursor: pointer;
+}
+
 .materiaImgBlock {
-  height: 160px;
+  height: 110px;
   width: 200px;
 }
 
 .materiaImg {
-  height: 150px;
+  height: 100px;
   max-width: 190px;
   margin: auto;
   margin-top: 5px;
@@ -154,7 +158,6 @@
 
 .materiaName {
   font-weight: bold;
-  margin-left: 10px;
   vertical-align: middle;
   color: var(--card-title-color);
 }
@@ -207,15 +210,18 @@
   width: 105px;
 }
 
+.noBorder {
+  border: 0;
+}
+
+.builderMateriaImgBlock {
+  margin-top: 10px;
+}
+
 .rightBlockBuilder {
   width: 980px;
   display: inline-block;
   vertical-align: top;
-}
-
-.materiaImg {
-  height: 150px;
-  margin-top: 10px;
 }
 
 .statsTable {
@@ -235,4 +241,12 @@
 
 .btn-change-skill, .btn-random {
   margin-right: 10px;
+}
+
+.levelTd {
+  width: 80px;
+}
+
+.actionsTd {
+  width: 350px;
 }

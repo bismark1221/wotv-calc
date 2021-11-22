@@ -118,28 +118,28 @@ export class SkillService {
     return this.calcTypeFormat[effect.calcType];
   }
 
-  private getIncrease(effect, inverted = false) {
+  private getIncrease(effect, shortDesc = false, inverted = false) {
     let text = '';
 
     if (effect.calcType === 'decrease') {
-      return 'Decrease';
+      return shortDesc ? '-' : 'Decrease';
     }
 
     if (inverted) {
       if (effect.rate && effect.rate !== 200) {
         text = effect.rate + '% chance' + ((effect.minValue < 0 || effect.value < 0) ? ' to increase' : ' to decrease');
       } else if ((effect.minValue < 0 || effect.value < 0)) {
-        text = 'Increase';
+        text = shortDesc ? '+' : 'Increase';
       } else {
-        text = 'Decrease';
+        text = shortDesc ? '-' : 'Decrease';
       }
     } else {
       if (effect.rate && effect.rate !== 200) {
         text = effect.rate + '% chance' + ((effect.minValue < 0 || effect.value < 0) ? ' to decrease' : ' to increase');
       } else if ((effect.minValue < 0 || effect.value < 0)) {
-        text = 'Decrease';
+        text = shortDesc ? '-' : 'Decrease';
       } else {
-        text = 'Increase';
+        text = shortDesc ? '+' : 'Increase';
       }
     }
 
@@ -201,7 +201,7 @@ export class SkillService {
     }
   }
 
-  private getValue(skill, effect, getPositiveValue = true, explaination = '', forceCalc = null, getValueOnly = false) {
+  private getValue(skill, effect, shortDesc = false, getPositiveValue = true, explaination = '', forceCalc = null, getValueOnly = false) {
     let value = '';
     if (typeof(effect.minValue) === 'number' || typeof(effect.value) === 'number') {
       let maxReduceValueFromMath = 0;
@@ -234,9 +234,17 @@ export class SkillService {
             valueForLevel = Math.floor(minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
           }
 
-          value = getValueOnly ? valueForLevel.toString() : ' (' + valueForLevel + calc + explaination + ')';
+          if (shortDesc) {
+            value = valueForLevel + calc + explaination;
+          } else {
+            value = getValueOnly ? valueForLevel.toString() : ' (' + valueForLevel + calc + explaination + ')';
+          }
         } else {
-          value = getValueOnly ? minValue.toString() : ' (' + minValue + calc + explaination + ')';
+          if (shortDesc) {
+            value = minValue + calc + explaination;
+          } else {
+            value = getValueOnly ? minValue.toString() : ' (' + minValue + calc + explaination + ')';
+          }
         }
       }
     }
@@ -324,7 +332,7 @@ export class SkillService {
   }
 
 
-  formatEffects(unit, skill, getTarget = true, fromEquipment = false) {
+  formatEffects(unit, skill, getTarget = true, fromEquipment = false, shortDesc = false) {
     const effectHtmls = {
       before: [],
       after: []
@@ -332,21 +340,25 @@ export class SkillService {
 
     skill.effects.forEach(effect => {
       if (effect.timing === 'QUEST_START' || effect.timing === 'SKILL_BEFORE') {
-        effectHtmls.before.push(this.formatEffect(unit, skill, effect, getTarget, fromEquipment));
+        effectHtmls.before.push(this.formatEffect(unit, skill, effect, getTarget, fromEquipment, shortDesc));
       } else {
-        effectHtmls.after.push(this.formatEffect(unit, skill, effect, getTarget, fromEquipment));
+        effectHtmls.after.push(this.formatEffect(unit, skill, effect, getTarget, fromEquipment, shortDesc));
       }
     });
 
     return effectHtmls;
   }
 
-  formatEffect(unit, skill, effect, getTarget = true, fromEquipment = false) {
+  formatEffect(unit, skill, effect, getTarget = true, fromEquipment = false, shortDesc = false) {
     let html = '';
     switch (effect.type) {
       case 'HP' :
         if (skill.slot === 3 || (skill.type !== 'skill' && skill.type !== 'esper')) {
-          html = this.getIncrease(effect) + ' HP' + this.getValue(skill, effect) + this.getTurns(effect);
+          if (shortDesc) {
+            html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' HP';
+          } else {
+            html = this.getIncrease(effect) + ' HP' + this.getValue(skill, effect) + this.getTurns(effect);
+          }
         } else {
           if (effect.increaseMax) {
             if (effect.minValue < 0) {
@@ -361,7 +373,11 @@ export class SkillService {
       break;
       case 'TP' :
         if (skill.slot === 3 || skill.type !== 'skill') {
-          html = this.getIncrease(effect) + ' TP' + this.getValue(skill, effect) + this.getTurns(effect);
+          if (shortDesc) {
+            html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' TP';
+          } else {
+            html = this.getIncrease(effect) + ' TP' + this.getValue(skill, effect) + this.getTurns(effect);
+          }
         } else {
           html = (effect.rate ? effect.rate + '% chance to ' : '') +
           (effect.calcType === 'decrease' ? 'Decrease' : 'Restore') + ' TP' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -387,25 +403,41 @@ export class SkillService {
         html = this.getIncrease(effect) + ' Summon Gauge' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ATK' :
-        html = this.getIncrease(effect) + ' ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' ATK';
+        } else {
+          html = this.getIncrease(effect) + ' ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DEF' :
         html = this.getIncrease(effect) + ' DEF' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'MAG' :
-        html = this.getIncrease(effect) + ' MAG' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' MAG';
+        } else {
+          html = this.getIncrease(effect) + ' MAG' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'SPR' :
         html = this.getIncrease(effect) + ' SPR' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'DEX' :
-        html = this.getIncrease(effect) + ' DEX' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' DEX';
+        } else {
+          html = this.getIncrease(effect) + ' DEX' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'AGI' :
         html = this.getIncrease(effect) + ' AGI' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'LUCK' :
-        html = this.getIncrease(effect) + ' LUCK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' LUCK';
+        } else {
+          html = this.getIncrease(effect) + ' LUCK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'MOVE' :
         html = this.getIncrease(effect) + ' MOVE' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -414,100 +446,208 @@ export class SkillService {
         html = this.getIncrease(effect) + ' JUMP' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FIRE_RES' :
-        html = this.getIncrease(effect) + ' fire resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' fire res';
+        } else {
+          html = this.getIncrease(effect) + ' fire resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'ICE_RES' :
-        html = this.getIncrease(effect) + ' ice resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' ice res';
+        } else {
+          html = this.getIncrease(effect) + ' ice resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'WIND_RES' :
-        html = this.getIncrease(effect) + ' wind resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' wind res';
+        } else {
+          html = this.getIncrease(effect) + ' wind resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'EARTH_RES' :
-        html = this.getIncrease(effect) + ' earth resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' earth res';
+        } else {
+          html = this.getIncrease(effect) + ' earth resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'LIGHTNING_RES' :
-        html = this.getIncrease(effect) + ' lightning resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' lightning res';
+        } else {
+          html = this.getIncrease(effect) + ' lightning resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'WATER_RES' :
-        html = this.getIncrease(effect) + ' water resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' water res';
+        } else {
+          html = this.getIncrease(effect) + ' water resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'LIGHT_RES' :
-        html = this.getIncrease(effect) + ' light resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' light res';
+        } else {
+          html = this.getIncrease(effect) + ' light resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DARK_RES' :
-        html = this.getIncrease(effect) + ' dark resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' dark res';
+        } else {
+          html = this.getIncrease(effect) + ' dark resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'ALL_ELEMENTS_RES' :
         html = this.getIncrease(effect) + ' all elemental resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'SLASH_RES' :
-        html = this.getIncrease(effect) + ' slash resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' slash res';
+        } else {
+          html = this.getIncrease(effect) + ' slash resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'STRIKE_RES' :
-        html = this.getIncrease(effect) + ' strike resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' strike res';
+        } else {
+          html = this.getIncrease(effect) + ' strike resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'PIERCE_RES' :
-        html = this.getIncrease(effect) + ' pierce resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' pierce res';
+        } else {
+          html = this.getIncrease(effect) + ' pierce resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'MISSILE_RES' :
-        html = this.getIncrease(effect) + ' missile resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' missile res';
+        } else {
+          html = this.getIncrease(effect) + ' missile resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'MAGIC_RES' :
-        html = this.getIncrease(effect) + ' magic resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' magic res';
+        } else {
+          html = this.getIncrease(effect) + ' magic resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'ALL_ATTACKS_RES' :
         html = this.getIncrease(effect) + ' all attacks resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FIRE_ATK' :
-        html = this.getIncrease(effect) + ' fire ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' fire ATK';
+        } else {
+          html = this.getIncrease(effect) + ' fire ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'ICE_ATK' :
-        html = this.getIncrease(effect) + ' ice ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' ice ATK';
+        } else {
+          html = this.getIncrease(effect) + ' ice ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'WIND_ATK' :
-        html = this.getIncrease(effect) + ' wind ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' wind ATK';
+        } else {
+          html = this.getIncrease(effect) + ' wind ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'EARTH_ATK' :
-        html = this.getIncrease(effect) + ' earth ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' earth ATK';
+        } else {
+          html = this.getIncrease(effect) + ' earth ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'LIGHTNING_ATK' :
-        html = this.getIncrease(effect) + ' lightning ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' lightning ATK';
+        } else {
+          html = this.getIncrease(effect) + ' lightning ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'WATER_ATK' :
-        html = this.getIncrease(effect) + ' water ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' water ATK';
+        } else {
+          html = this.getIncrease(effect) + ' water ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'LIGHT_ATK' :
-        html = this.getIncrease(effect) + ' light ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' light ATK';
+        } else {
+          html = this.getIncrease(effect) + ' light ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DARK_ATK' :
-        html = this.getIncrease(effect) + ' dark ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' dark ATK';
+        } else {
+          html = this.getIncrease(effect) + ' dark ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'ALL_ELEMENTS_ATK' :
         html = this.getIncrease(effect) + ' all elemental ATK' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'SLASH_ATK' :
-        html = this.getIncrease(effect) + ' slash ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' slash ATK';
+        } else {
+          html = this.getIncrease(effect) + ' slash ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'STRIKE_ATK' :
-        html = this.getIncrease(effect) + ' strike ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' strike ATK';
+        } else {
+          html = this.getIncrease(effect) + ' strike ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'PIERCE_ATK' :
-        html = this.getIncrease(effect) + ' pierce ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' pierce ATK';
+        } else {
+          html = this.getIncrease(effect) + ' pierce ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'MISSILE_ATK' :
-        html = this.getIncrease(effect) + ' missile ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' missile ATK';
+        } else {
+          html = this.getIncrease(effect) + ' missile ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'MAGIC_ATK' :
-        html = this.getIncrease(effect) + ' magic ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' magic ATK';
+        } else {
+          html = this.getIncrease(effect) + ' magic ATK' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'ALL_ATTACKS_ATK' :
         html = this.getIncrease(effect) + ' all attacks ATK' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'HEAL_POWER' :
-        html = this.getIncrease(effect) + ' healing power' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' healing power';
+        } else {
+          html = this.getIncrease(effect) + ' healing power' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'REGEN_ATK' :
-        html = this.getChance(effect, false) + ' regen (HP)' + this.getValue(skill, effect, true, ' health restored by turn') + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' regen (HP)' + this.getValue(skill, effect, false, true, ' health restored by turn') + this.getTurns(effect);
       break;
       case 'AUTO_RESTORE_ATK' :
         html = this.getChance(effect, false) + ' auto-restore (AP)' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -516,14 +656,14 @@ export class SkillService {
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
           html = 'Increase chance to apply poison by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' poison' + this.getValue(skill, effect, true, ' damage') + this.getTurns(effect);
+          html = this.getChance(effect) + ' poison' + this.getValue(skill, effect, false, true, ' damage') + this.getTurns(effect);
         }
       break;
       case 'BLIND_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
           html = 'Increase chance to apply blind by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' blind' + this.getValue(skill, effect, true, ' reduced accuracy') + this.getTurns(effect);
+          html = this.getChance(effect) + ' blind' + this.getValue(skill, effect, false, true, ' reduced accuracy') + this.getTurns(effect);
         }
       break;
       case 'SLEEP_ATK' :
@@ -544,7 +684,7 @@ export class SkillService {
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
           html = 'Increase chance to apply paralyze by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' paralyze' + this.getValue(skill, effect, true, ' chance of paralysis') + this.getTurns(effect);
+          html = this.getChance(effect) + ' paralyze' + this.getValue(skill, effect, false, true, ' chance of paralysis') + this.getTurns(effect);
         }
       break;
       case 'CONFUSION_ATK' :
@@ -597,13 +737,13 @@ export class SkillService {
         }
       break;
       case 'HASTE_ATK' :
-        html = this.getChance(effect, false) + ' haste' + this.getValue(skill, effect, true, ' increased speed') + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' haste' + this.getValue(skill, effect, false, true, ' increased speed') + this.getTurns(effect);
       break;
       case 'SLOW_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
           html = 'Increase chance to apply slow by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' slow' + this.getValue(skill, effect, true, ' reduced speed') + this.getTurns(effect);
+          html = this.getChance(effect) + ' slow' + this.getValue(skill, effect, false, true, ' reduced speed') + this.getTurns(effect);
         }
       break;
       case 'STOP_ATK' :
@@ -645,20 +785,20 @@ export class SkillService {
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
           html = 'Increase chance to apply doom by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-        html = this.getChance(effect) + ' doom' + this.getValue(skill, effect, true, ' turns before death', 'fixe');
+        html = this.getChance(effect) + ' doom' + this.getValue(skill, effect, false, true, ' turns before death', 'fixe');
         }
       break;
       case 'REVIVE_ATK' :
-        html = this.getChance(effect, false) + ' to revive' + this.getValue(skill, effect, true, ' HP regained') + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' to revive' + this.getValue(skill, effect, false, true, ' HP regained') + this.getTurns(effect);
       break;
       case 'RERAISE' :
-        html = this.getChance(effect, false) + ' auto-revive' + this.getValue(skill, effect, true, ' HP regained') + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' auto-revive' + this.getValue(skill, effect, false, true, ' HP regained') + this.getTurns(effect);
       break;
       case 'PROTECT_ATK' :
-        html = this.getChance(effect, false) + ' protect' + this.getValue(skill, effect, true, ' reduced physical damage') + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' protect' + this.getValue(skill, effect, false, true, ' reduced physical damage') + this.getTurns(effect);
       break;
       case 'SHELL_ATK' :
-        html = this.getChance(effect, false) + ' shell' + this.getValue(skill, effect, true, ' reduced magical damage') + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' shell' + this.getValue(skill, effect, false, true, ' reduced magical damage') + this.getTurns(effect);
       break;
       case 'FLOAT_ATK' :
         html = this.getChance(effect, false) + ' float' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -679,64 +819,144 @@ export class SkillService {
         html = this.getChance(effect, false) + ' auto-restore (AP) resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'POISON_RES' :
-        html = this.getChance(effect) + ' poison resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' poison res';
+        } else {
+          html = this.getChance(effect) + ' poison resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'BLIND_RES' :
-        html = this.getChance(effect) + ' blind resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' blind res';
+        } else {
+          html = this.getChance(effect) + ' blind resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'SLEEP_RES' :
-        html = this.getChance(effect) + ' sleep resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' sleep res';
+        } else {
+          html = this.getChance(effect) + ' sleep resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'SILENCE_RES' :
-        html = this.getChance(effect) + ' silence resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' silence res';
+        } else {
+          html = this.getChance(effect) + ' silence resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'PARALYZE_RES' :
-        html = this.getChance(effect) + ' paralyze resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' paralyze res';
+        } else {
+          html = this.getChance(effect) + ' paralyze resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'CONFUSION_RES' :
-        html = this.getChance(effect) + ' confusion resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' confusion res';
+        } else {
+          html = this.getChance(effect) + ' confusion resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'CHARM_RES' :
-        html = this.getChance(effect) + ' charm resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' charm res';
+        } else {
+          html = this.getChance(effect) + ' charm resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'PETRIFY_RES' :
-        html = this.getChance(effect) + ' petrify resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' petrify res';
+        } else {
+          html = this.getChance(effect) + ' petrify resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'GRADUAL_PETRIFY_RES' :
-        html = this.getChance(effect) + ' gradual petrify resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' gradual petrify res';
+        } else {
+          html = this.getChance(effect) + ' gradual petrify resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'FROSTBITE_RES' :
-        html = this.getChance(effect) + ' frostbite resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' frostbite res';
+        } else {
+          html = this.getChance(effect) + ' frostbite resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'INSTANT_DEATH_RES' :
-        html = this.getChance(effect) + ' instant death resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' instant death res';
+        } else {
+          html = this.getChance(effect) + ' instant death resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'TOAD_RES' :
-        html = this.getChance(effect) + ' toad resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' toad res';
+        } else {
+          html = this.getChance(effect) + ' toad resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'HASTE_RES' :
-        html = this.getChance(effect, false) + ' haste resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' haste res';
+        } else {
+          html = this.getChance(effect, false) + ' haste resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'SLOW_RES' :
-        html = this.getChance(effect) + ' slow resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' slow res';
+        } else {
+          html = this.getChance(effect) + ' slow resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'STOP_RES' :
-        html = this.getChance(effect) + ' stop resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' stop res';
+        } else {
+          html = this.getChance(effect) + ' stop resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'STUN_RES' :
-        html = this.getChance(effect) + ' stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' stun res';
+        } else {
+          html = this.getChance(effect) + ' stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'IMMOBILIZE_RES' :
-        html = this.getChance(effect) + ' immobilize resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' immobilize res';
+        } else {
+          html = this.getChance(effect) + ' immobilize resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DISABLE_RES' :
-        html = this.getChance(effect) + ' disable resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' disable res';
+        } else {
+          html = this.getChance(effect) + ' disable resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'BERSERK_RES' :
-        html = this.getChance(effect) + ' berserk resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' berserk res';
+        } else {
+          html = this.getChance(effect) + ' berserk resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DOOM_RES' :
-        html = this.getChance(effect) + ' doom resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' doom res';
+        } else {
+          html = this.getChance(effect) + ' doom resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'REVIVE_RES' :
         html = this.getChance(effect, false) + ' to revive resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -778,13 +998,25 @@ export class SkillService {
         html = this.getIncrease(effect) + ' Range' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ACCURACY' :
-        html = this.getIncrease(effect) + ' Accuracy' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' Accuracy';
+        } else {
+          html = this.getIncrease(effect) + ' Accuracy' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'EVADE' :
-        html = this.getIncrease(effect) + ' Evasion Rate' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' Evade rate';
+        } else {
+          html = this.getIncrease(effect) + ' Evasion Rate' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'CRITIC_RATE' :
-        html = this.getIncrease(effect) + ' Critical Rate' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' Critic rate';
+        } else {
+          html = this.getIncrease(effect) + ' Critical Rate' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'PROVOKE' :
         html = this.getIncrease(effect) + ' chance of being targeted' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -812,10 +1044,18 @@ export class SkillService {
         }
       break;
       case 'ATTACK_ACTIVATION_TIME' :
-        html = this.getIncrease(effect) + ' Attack Skill Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' Atk Skill Act. Time';
+        } else {
+          html = this.getIncrease(effect) + ' Attack Skill Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'ACQUIRED_AP' :
-        html = this.getIncrease(effect) + ' Acquired AP' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' Acquired AP';
+        } else {
+          html = this.getIncrease(effect) + ' Acquired AP' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'ACQUIRED_JP' :
         html = this.getIncrease(effect) + ' Acquired JP' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -836,31 +1076,63 @@ export class SkillService {
         html = this.getIncrease(effect) + ' AOE Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'CRITIC_DAMAGE' :
-        html = this.getIncrease(effect) + ' Critical Damage' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' Critic damage';
+        } else {
+          html = this.getIncrease(effect) + ' Critical Damage' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'MAX_HP_DOWN_RES' :
         html = this.getIncrease(effect) + ' Max HP Down Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ATK_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' ATK Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' ATK Debuff res';
+        } else {
+          html = this.getIncrease(effect) + ' ATK Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DEF_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' DEF Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' DEF Debuff res';
+        } else {
+          html = this.getIncrease(effect) + ' DEF Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'MAG_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' MAG Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' MAG Debuff res';
+        } else {
+          html = this.getIncrease(effect) + ' MAG Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'SPR_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' SPR Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' SPR Debuff res';
+        } else {
+          html = this.getIncrease(effect) + ' SPR Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'AGI_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' AGI Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' AGI Debuff res';
+        } else {
+          html = this.getIncrease(effect) + ' AGI Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'LUCK_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' LUCK Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' LUCK Debuff res';
+        } else {
+          html = this.getIncrease(effect) + ' LUCK Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DEX_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' DEX Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' DEX Debuff res';
+        } else {
+          html = this.getIncrease(effect) + ' DEX Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'ACCURACY_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' ACCURACY Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -926,10 +1198,18 @@ export class SkillService {
         html = this.getIncrease(effect) + ' Light resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'RES_ALL_ATTACKS_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' Debuff Resistance for All Attacks Type Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' All Atk type debuff res';
+        } else {
+          html = this.getIncrease(effect) + ' Debuff Resistance for All Attacks Type Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'RES_ALL_ELEMENTS_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' Debuff Resistance for All Elements Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' All Elem debuff res';
+        } else {
+          html = this.getIncrease(effect) + ' Debuff Resistance for All Elements Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'EVOCATION_GAUGE_BOOST' :
         html = this.getIncrease(effect) + ' Evocation Gauge Boost' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1121,7 +1401,11 @@ export class SkillService {
         html = 'Reduces the magic damage taken' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'CRITIC_EVADE' :
-        html = this.getIncrease(effect) + ' critical evasion' + this.getValue(skill, effect, false) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true, false) + ' Critic evade';
+        } else {
+          html = this.getIncrease(effect) + ' critical evasion' + this.getValue(skill, effect, false, false) + this.getTurns(effect);
+        }
       break;
       case 'EVOCATION_MAGIC' :
         html = 'Boost Evocation damage' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1145,28 +1429,60 @@ export class SkillService {
         html = 'Auto restore (TP)' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'MAX_DAMAGE' :
-        html = 'Increase max damage' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' max damage';
+        } else {
+          html = 'Increase max damage' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DEFENSE_PENETRATION' :
-        html = 'Increase defense penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' DEF penetration';
+        } else {
+          html = 'Increase defense penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'SPIRIT_PENETRATION' :
-        html = 'Increase spirit penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' SPR penetration';
+        } else {
+          html = 'Increase spirit penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'RES_SLASH_ATK_PENETRATION' :
-        html = 'Increase slash resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' slash res penet.';
+        } else {
+          html = 'Increase slash resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'RES_PIERCE_ATK_PENETRATION' :
-        html = 'Increase pierce resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' pierce res penet.';
+        } else {
+          html = 'Increase pierce resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'RES_STRIKE_ATK_PENETRATION' :
-        html = 'Increase strike resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' strike res penet.';
+        } else {
+          html = 'Increase strike resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'RES_MISSILE_ATK_PENETRATION' :
-        html = 'Increase missile resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' missile res penet.';
+        } else {
+          html = 'Increase missile resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'RES_MAGIC_ATK_PENETRATION' :
-        html = 'Increase magic resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' magic res penet.';
+        } else {
+          html = 'Increase magic resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'RES_FIRE_ATK_PENETRATION' :
         html = 'Increase fire resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1193,7 +1509,7 @@ export class SkillService {
         html = 'Increase dark resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'AP_CONSUMPTION' :
-        html = this.getIncrease(effect, true) + ' AP consumption' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect, false, true) + ' AP consumption' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ABSORB_HP_ONTIME' :
         html = 'Absorb ' + this.getValue(skill, effect) + ' of the damage done' + this.getTurns(effect);
@@ -1202,7 +1518,11 @@ export class SkillService {
         html = 'Reduce counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'STOP_COUNTER_CHANCE' :
-        html = this.getValue(skill, effect) + '% chance the counter doesn\'t activate ' + this.getTurns(effect);
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' % chance the counter doesn\'t activate';
+        } else {
+          html = this.getValue(skill, effect) + '% chance the counter doesn\'t activate ' + this.getTurns(effect);
+        }
       break;
 
       /* ONLY TESTABLE WITH OTHER UNIT */
@@ -1327,7 +1647,7 @@ export class SkillService {
     }
 
     if (skill.time) {
-      skill.time.realValue = this.getValue(skill, skill.time, true, '', 'fixe', true);
+      skill.time.realValue = this.getValue(skill, skill.time, false, true, '', 'fixe', true);
     }
 
     if (getTarget) {
@@ -1438,7 +1758,7 @@ export class SkillService {
     }
 
     if (skill.time) {
-      skill.time.realValue = this.getValue(skill, skill.time, true, '', 'fixe', true);
+      skill.time.realValue = this.getValue(skill, skill.time, false, true, '', 'fixe', true);
     }
 
     return formattedDamage;

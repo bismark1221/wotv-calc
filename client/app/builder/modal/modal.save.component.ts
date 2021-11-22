@@ -123,7 +123,7 @@ export class ModalSaveComponent implements OnInit {
   }
 
   closeSave() {
-    if (this.saveStep === 'confirm') {
+    if (this.saveStep === 'confirm' && this.type !== 'materia') {
       this.saveStep = 'save';
     } else {
       this.modal.dismiss();

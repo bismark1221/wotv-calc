@@ -12,6 +12,7 @@ import { ToolService } from './tool.service';
 
 @Injectable()
 export class MateriaService {
+  private sre = /^\s+|\s+$/g;
   materia;
 
   constructor(
@@ -62,7 +63,8 @@ export class MateriaService {
       subStats: [],
       skills: materia.skills,
       slot: materia.slot,
-      skillsLevel: []
+      skillsLevel: [],
+      storeId: materia.storeId
     };
 
     materia.subStats.forEach(subStat => {
@@ -75,6 +77,10 @@ export class MateriaService {
     materia.skillsDetail.forEach(skillDetail => {
       data.skillsLevel.push(skillDetail.level);
     });
+
+    if (!data.storeId) {
+      delete data.storeId;
+    }
 
     if (onlyMateria) {
       const user = this.authService.getUser();
@@ -129,12 +135,22 @@ export class MateriaService {
     } else {
       return this.firestore.collection(this.getLocalStorage()).doc(materia.storeId).set(savableData).then(data => {
         const savedMaterias = this.getSavedMaterias();
-        savedMaterias[materia.dataId].forEach((savedMateria, materiaIndex) => {
-          if (savedMateria.storeId === materia.storeId) {
-            savedMaterias[materia.dataId][materiaIndex] = savableData;
-            savedMaterias[materia.dataId][materiaIndex].storeId = materia.storeId;
+
+        if (materia.initialDataId !== materia.dataId) {
+          savedMaterias[materia.initialDataId].splice(savedMaterias[materia.initialDataId].findIndex(searchedMateria => searchedMateria.storeId === materia.storeId), 1);
+
+          if (!savedMaterias[materia.dataId]) {
+            savedMaterias[materia.dataId] = [];
           }
-        });
+          savedMaterias[materia.dataId].push(savableData);
+        } else {
+          savedMaterias[materia.dataId].forEach((savedMateria, materiaIndex) => {
+            if (savedMateria.storeId === materia.storeId) {
+              savedMaterias[materia.dataId][materiaIndex] = savableData;
+              savedMaterias[materia.dataId][materiaIndex].storeId = materia.storeId;
+            }
+          });
+        }
 
         this.localStorageService.set(this.getLocalStorage(), savedMaterias);
 
@@ -159,15 +175,9 @@ export class MateriaService {
               needToAddMateria = true;
             } else {
               if (filters.type && filters.type.length > 0) {
-                /*for (const type of materia.partyBuffs) {
-                  if (buff && buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
-                    filters.element.forEach(elem => {
-                      if (buff.cond[0].items.indexOf(elem) !== -1) {
-                        needToAddMateria = true;
-                      }
-                    });
-                  }
-                }*/
+                if (filters.type.indexOf(materia.slot) !== -1) {
+                  needToAddMateria = true;
+                }
               }
             }
 
@@ -222,34 +232,36 @@ export class MateriaService {
   getMateriaFromCharacteristics(materia, rawMaterias, rawSkills) {
     let foundedMateria = false;
 
-    rawMaterias.forEach(rawMateria => {
+    for (const rawMateria of rawMaterias) {
       if (rawMateria.slots.indexOf(materia.slot) !== -1 && rawMateria.rarity === materia.rarity) {
-        rawMateria.types.forEach(type => {
+        for (const type of rawMateria.types) {
           let mainStat = '';
-          type.mainStat.forEach((rawMainStat, rawMainStatIndex) => {
+          let rawMainStatIndex = 0;
+          for (const rawMainStat of type.mainStat) {
             if (rawMainStatIndex > 0) {
               mainStat += '_';
             }
 
             mainStat += rawMainStat.type;
-          });
+            rawMainStatIndex++;
+          }
 
           if (mainStat === materia.mainStat) {
             this.updateMateriaForBuilder(materia, rawMateria, rawSkills, type, mainStat);
             foundedMateria = true;
             return;
           }
-        });
+        }
       }
-    });
+    }
 
     if (!foundedMateria) {
-      rawMaterias.forEach(rawMateria => {
+      for (const rawMateria of rawMaterias) {
         if (rawMateria.slots.indexOf(materia.slot) !== -1 && rawMateria.rarity === materia.rarity) {
           this.updateMateriaForBuilder(materia, rawMateria, rawSkills, rawMateria.types[0]);
           return;
         }
-      });
+      }
     }
   }
 
@@ -265,17 +277,29 @@ export class MateriaService {
     }
 
     materia.dataId = rawMateria.dataId;
+    materia.maxSkill = rawMateria.maxSkill;
     materia.mainStat = mainStat;
     materia.image = rawMateria.image;
     materia.subStats = type.subStats[0];
     materia.availableSkills = [];
 
     type.skills.forEach(skillId => {
+      let formattedEffect = '';
+      const formattedEffects = this.skillService.formatEffects(materia, rawSkills.find(searchedSkill => searchedSkill.dataId === skillId), false);
+      formattedEffects.before.forEach(beforeEffect => {
+        formattedEffect += (formattedEffect !== '' ? ', ' : '') + beforeEffect;
+      });
+
+      formattedEffects.after.forEach(afterEffect => {
+        formattedEffect += (formattedEffect !== '' ? ', ' : '') + afterEffect;
+      });
+
       materia.availableSkills.push({
         dataId: skillId,
-        formattedEffect: this.skillService.formatEffects(materia, rawSkills.find(searchedSkill => searchedSkill.dataId === skillId))
+        formattedEffect: formattedEffect
       });
     });
+    materia.availableSkills = this.sortAvailableSkillsByName(materia.availableSkills);
 
     materia.skills = [
       materia.availableSkills[0].dataId
@@ -283,7 +307,8 @@ export class MateriaService {
 
     materia.skillsDetail = [{
       level: 1,
-      formattedEffect: ''
+      formattedEffect: '',
+        shortEffect: ''
     }];
 
     materia.skillsNumTable = [];
@@ -325,11 +350,23 @@ export class MateriaService {
       if (mainStat === materia.mainStat) {
         materia.subStats = type.subStats[0];
         type.skills.forEach(skillId => {
+          let formattedEffect = '';
+          const formattedEffects = this.skillService.formatEffects(materia, rawSkills.find(searchedSkill => searchedSkill.dataId === skillId), false);
+          formattedEffects.before.forEach(beforeEffect => {
+            formattedEffect += (formattedEffect !== '' ? ', ' : '') + beforeEffect;
+          });
+
+          formattedEffects.after.forEach(afterEffect => {
+            formattedEffect += (formattedEffect !== '' ? ', ' : '') + afterEffect;
+          });
+
           materia.availableSkills.push({
             dataId: skillId,
-            formattedEffect: this.skillService.formatEffects(materia, rawSkills.find(searchedSkill => searchedSkill.dataId === skillId))
+            formattedEffect: formattedEffect
           });
         });
+
+        materia.availableSkills = this.sortAvailableSkillsByName(materia.availableSkills);
       }
     });
 
@@ -343,11 +380,38 @@ export class MateriaService {
     materiaData.skillsLevel.forEach((skillLevel, skillLevelIndex) => {
       materia.skillsDetail.push({
         level: skillLevel,
-        formattedEffect: ''
+        formattedEffect: '',
+        shortEffect: ''
       });
       materia.updateSkill(skillLevelIndex, rawSkills, this.skillService);
     });
 
     materia.updateLevel();
+  }
+
+  copyMateriaFromData(materiaData) {
+    const materia = new Materia();
+    materiaData = JSON.parse(JSON.stringify(materiaData));
+
+    Object.keys(materiaData).forEach(materiaKey => {
+      materia[materiaKey] = materiaData[materiaKey];
+    });
+
+    return materia;
+  }
+
+  private reduceString(s: any) {
+    return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
+  }
+
+  sortAvailableSkillsByName(skills) {
+    skills.sort((a: any, b: any) => {
+      const x = this.reduceString(a.dataId);
+      const y = this.reduceString(b.dataId);
+
+      return x.localeCompare(y, 'ja');
+    });
+
+    return skills;
   }
 }
