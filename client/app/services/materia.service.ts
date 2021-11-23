@@ -197,6 +197,20 @@ export class MateriaService {
     return document.valueChanges();
   }
 
+  deleteMateria(materia) {
+    this.firestore.collection(this.getLocalStorage()).doc(materia.storeId).delete();
+
+    const savedMaterias = this.getSavedMaterias();
+
+    savedMaterias[materia.dataId].forEach((savedMateria, savedMateriaIndex) => {
+      if (savedMateria.storeId === materia.storeId) {
+        savedMaterias[materia.dataId].splice(savedMateriaIndex, 1);
+      }
+    });
+
+    this.localStorageService.set(this.getLocalStorage(), savedMaterias);
+  }
+
   filterMaterias(materias, filters, sort = 'rarity', order = 'desc', rawMaterias, rawSkills) {
     if (filters) {
       const filteredMaterias = [];
@@ -356,7 +370,7 @@ export class MateriaService {
   }
 
   buildMateriaFromData(materia, materiaData, rawMaterias, rawSkills) {
-    const rawMateria = rawMaterias.find(searchedMateria => searchedMateria.dataId === materiaData.dataId);
+    const rawMateria = JSON.parse(JSON.stringify(rawMaterias.find(searchedMateria => searchedMateria.dataId === materiaData.dataId)));
 
     materia.dataId = rawMateria.dataId;
     materia.image = rawMateria.image;

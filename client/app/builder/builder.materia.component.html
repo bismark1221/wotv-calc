@@ -100,6 +100,7 @@
     <button class="btn btn-sub btn-buildLink" id="back_materia_list" (click)="backToMateriaList()"><< Back to list</button>
     <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+    <button class="btn btn-delete" id="open_deletebuild" (click)="openDeleteModal(saveModal)" *ngIf="materia.storeId">Delete</button>
   </div>
 
   <div class="leftBlockBuilder">

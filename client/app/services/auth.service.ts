@@ -16,6 +16,7 @@ import { NavService } from './nav.service';
 export class AuthService {
   user = null;
   load = 0;
+  initialLoad = false;
 
   private userDataSubject = new BehaviorSubject(this.user);
   $user = this.userDataSubject.asObservable();
@@ -34,12 +35,14 @@ export class AuthService {
     });
   }
 
-  private updateUser(user, newLogin = false) {
+  private async updateUser(user, newLogin = false) {
     let result = null;
 
     if (user && (this.user === null || this.user === undefined)) {
       this.user = new User(user.displayName, user.email, user.uid);
-      result = this.loadUserData(newLogin);
+      this.initialLoad = true;
+      result = await this.loadUserData(newLogin);
+      this.initialLoad = false;
     } else if (user === null && (this.user !== null || this.user === undefined)) {
       this.user = null;
     }
@@ -49,82 +52,84 @@ export class AuthService {
     return result;
   }
 
-  private loadUserData(newLogin = false) {
-    return Promise.all(
+  private async loadUserData(newLogin = false) {
+    return await Promise.all(
       this.loadSavedData()
     ).then(responses => {
-      const result = {
-        syncPossible: true
-      };
+      if (this.initialLoad) {
+        const result = {
+          syncPossible: true
+        };
 
-      const types = [
-        'teams',
-        'units',
-        'espers',
-        'cards',
-        'equipments',
-        'guild',
-        'jp_teams',
-        'jp_units',
-        'jp_espers',
-        'jp_cards',
-        'jp_equipments',
-        'jp_guild',
-        'jp_masterRank',
-        'masterRank',
-        'jp_materia',
-        'materia'
-      ];
+        const types = [
+          'teams',
+          'units',
+          'espers',
+          'cards',
+          'equipments',
+          'guild',
+          'jp_teams',
+          'jp_units',
+          'jp_espers',
+          'jp_cards',
+          'jp_equipments',
+          'jp_guild',
+          'jp_masterRank',
+          'masterRank',
+          'jp_materia',
+          'materia'
+        ];
 
-      for (let i = 0; i <= types.length - 1; i++) {
-        // @ts-ignore
-        if (responses[i].data.length > 0) {
-          result.syncPossible = false;
-        }
-      }
-
-      if (result.syncPossible) {
-        let localDataFound = false;
-
-        types.forEach(type => {
-          const savedData = this.localStorageService.get(type);
-          if (savedData && Object.keys(savedData).length > 0) {
-            localDataFound = true;
-          }
-        });
-
-        if (!localDataFound) {
-          result.syncPossible = false;
-        }
-      }
-
-      if (!newLogin || !result.syncPossible) {
         for (let i = 0; i <= types.length - 1; i++) {
-          let data = {};
-
           // @ts-ignore
-          responses[i].data.forEach(item => {
-            if (i === 5 || i === 11 || i === 12 || i === 13) {
-              data = item;
-            } else if (i === 0 || i === 6) {
-              data[item.name] = item;
-            } else {
-              if (!data[item.dataId]) {
-                data[item.dataId] = [];
-              }
-              data[item.dataId].push(item);
+          if (responses[i].data.length > 0) {
+            result.syncPossible = false;
+          }
+        }
+
+        if (result.syncPossible) {
+          let localDataFound = false;
+
+          types.forEach(type => {
+            const savedData = this.localStorageService.get(type);
+            if (savedData && Object.keys(savedData).length > 0) {
+              localDataFound = true;
             }
           });
 
-          // @ts-ignore
-          this.localStorageService.set(responses[i].type, data);
+          if (!localDataFound) {
+            result.syncPossible = false;
+          }
         }
 
-        this.load++;
-        this.loadDataSubject.next(this.load);
-      }
+        if (!newLogin || !result.syncPossible) {
+          for (let i = 0; i <= types.length - 1; i++) {
+            let data = {};
 
-      return result;
+            // @ts-ignore
+            responses[i].data.forEach(item => {
+              if (i === 5 || i === 11 || i === 12 || i === 13) {
+                data = item;
+              } else if (i === 0 || i === 6) {
+                data[item.name] = item;
+              } else {
+                if (!data[item.dataId]) {
+                  data[item.dataId] = [];
+                }
+                data[item.dataId].push(item);
+              }
+            });
+
+            // @ts-ignore
+            this.localStorageService.set(responses[i].type, data);
+          }
+
+          this.load++;
+          this.loadDataSubject.next(this.load);
+        }
+
+        return result;
+      }
     });
   }
 

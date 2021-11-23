@@ -247,6 +247,29 @@ label {
   margin-right: 10px;
 }
 
+.btn-delete {
+  color: #fff;
+  background-color: #c75050;
+  border-color: #c75050;
+  height: 30px;
+  line-height: 10px;
+  border-radius: 2px;
+}
+
+.btn-delete:hover {
+  color: #fff;
+  background-color: #c74343;
+}
+
+.btn-delete:active {
+  color: #fff;
+  background-color: #c12e2e;
+}
+
+.btn-delete i {
+  margin-right: 10px;
+}
+
 .btn-disable, .btn-disable:hover, .btn-disable:active {
   color: rgba(29, 27, 27, 0.2);
   background-color: #FAFAFA;

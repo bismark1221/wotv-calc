@@ -13,6 +13,7 @@ import { Materia } from '../entities/materia';
 
 import { ModalSaveComponent } from './modal/modal.save.component';
 import { ModalLinkComponent } from './modal/modal.link.component';
+import { ModalDeleteComponent } from './modal/modal.delete.component';
 
 @Component({
   selector: 'app-builder-materia',
@@ -30,6 +31,7 @@ export class BuilderMateriaComponent implements OnInit {
 
   step = 'list';
 
+  initialLoad = false;
   loadingBuild = false;
   loadingData = true;
   showSave = false;
@@ -107,22 +109,6 @@ export class BuilderMateriaComponent implements OnInit {
 
     this.filterChecked();
     this.filterMaterias();
-
-    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
-      const data = params.get('data');
-      if (data) {
-        this.loadingBuild = true;
-
-        this.materiaService.getStoredMateria(data).subscribe(async (materiaData: any) => {
-          if (materiaData && this.materias.length > 0) {
-            const materia = new Materia();
-            this.materiaService.buildMateriaFromData(materia, materiaData, this.materias, this.materiaSkills);
-            this.selectMateria(materia);
-          }
-          this.loadingBuild = false;
-        });
-      }
-    });
   }
 
   ngAfterViewInit() {
@@ -135,6 +121,23 @@ export class BuilderMateriaComponent implements OnInit {
         this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
 
         this.filterMaterias();
+
+        this.activatedRoute.paramMap.subscribe(async (params: Params) => {
+          const data = params.get('data');
+          if (data && !this.initialLoad) {
+            this.loadingBuild = true;
+            this.initialLoad = true;
+
+            this.materiaService.getStoredMateria(data).subscribe(async (materiaData: any) => {
+              if (materiaData && this.materias.length > 0) {
+                const materia = new Materia();
+                this.materiaService.buildMateriaFromData(materia, materiaData, this.materias, this.materiaSkills);
+                this.selectMateria(materia);
+              }
+              this.loadingBuild = false;
+            });
+          }
+        });
       });
     });
 
@@ -291,6 +294,22 @@ export class BuilderMateriaComponent implements OnInit {
 
     modalRef.result.then(result => {
       this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
+      this.filterMaterias();
+    }, (reason) => {
+    });
+  }
+
+  openDeleteModal() {
+    const modalRef = this.modalService.open(ModalDeleteComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'materia';
+    modalRef.componentInstance.item = this.materia;
+
+    modalRef.result.then(result => {
+      this.step = 'list';
+      this.materia = null;
+      this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
+      this.filterMaterias();
     }, (reason) => {
     });
   }

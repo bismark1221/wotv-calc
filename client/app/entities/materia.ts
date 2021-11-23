@@ -13,6 +13,7 @@ export class Materia {
   skills;
   skillsDetail;
   slot;
+  storeId;
 
   constructFromJson(materia: Materia) {
     this.dataId = materia.dataId;
