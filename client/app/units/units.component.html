@@ -68,7 +68,7 @@
         </div>
         <div class="switchInJob">
           2nd master ability ?
-          <ui-switch class="switchMainJob" (click)="toggleSecondMasterAbility()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.SecondMasterAbility === true"></ui-switch>
+          <ui-switch class="switchMainJob" (click)="toggleSecondMasterAbility()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.secondMasterAbility === true"></ui-switch>
         </div>
         <div><a class="unselectAllJobsLink" (click)="unselectAllJobs()">unselect all</a></div>
         <div *ngFor="let job of jobs">
