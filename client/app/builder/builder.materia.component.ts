@@ -211,23 +211,25 @@ export class BuilderMateriaComponent implements OnInit {
   }
 
   buildNewMateria() {
-    this.materia = new Materia();
-    this.materia.constructFromJson(this.materias[0]);
-    this.materia.slot = this.materia.slots[0];
-    this.materia.level = 20;
-    this.materia.mainStat = '';
+    if (this.materias[0]) {
+      this.materia = new Materia();
+      this.materia.constructFromJson(this.materias[0]);
+      this.materia.slot = this.materia.slots[0];
+      this.materia.level = 20;
+      this.materia.mainStat = '';
 
-    this.materia.types[0].mainStat.forEach((rawMainStat, rawMainStatIndex) => {
-      if (rawMainStatIndex > 0) {
-        this.materia.mainStat += '_';
-      }
+      this.materia.types[0].mainStat.forEach((rawMainStat, rawMainStatIndex) => {
+        if (rawMainStatIndex > 0) {
+          this.materia.mainStat += '_';
+        }
 
-      this.materia.mainStat += rawMainStat.type;
-    });
+        this.materia.mainStat += rawMainStat.type;
+      });
 
-    this.updateMateria();
+      this.updateMateria();
 
-    this.step = 'build';
+      this.step = 'build';
+    }
   }
 
   selectMateria(materia) {
