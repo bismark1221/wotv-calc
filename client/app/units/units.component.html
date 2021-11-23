@@ -66,6 +66,10 @@
           exJob available ?
           <ui-switch class="switchMainJob" (click)="toggleExJob()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.exJob === true"></ui-switch>
         </div>
+        <div class="switchInJob">
+          2nd master ability ?
+          <ui-switch class="switchMainJob" (click)="toggleSecondMasterAbility()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.SecondMasterAbility === true"></ui-switch>
+        </div>
         <div><a class="unselectAllJobsLink" (click)="unselectAllJobs()">unselect all</a></div>
         <div *ngFor="let job of jobs">
           <input type="checkbox" id="job{{job.dataId}}" (change)="filterList('job', job.dataId)" [checked]="isFilterChecked.job[job.dataId]"/>

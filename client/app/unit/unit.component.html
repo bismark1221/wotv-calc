@@ -1266,6 +1266,82 @@
               <td><span *ngIf="unit.formattedLimit.combo">{{ unit.formattedLimit.combo.num }}</span></td>
               <td><span *ngIf="unit.formattedLimit.cost">{{ unit.formattedLimit.cost.value }} {{ unit.formattedLimit.cost.type }}</span></td>
             </tr>
+
+
+
+
+            <tr *ngFor="let upgradedSkill of unit.formattedLimit.upgrades">
+              <td>Upgrade</td>
+              <td class="limitBased" *ngIf="upgradedSkill.based">
+                <img class='atkBasedImg' src="{{ 'assets/atkBased/' + upgradedSkill.based + '.png' }}" />
+                <span *ngIf="upgradedSkill.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="upgradedSkill.time && upgradedSkill.time.minValue">
+                  <ng-template #tip_time>
+                    <div>
+                      Min time: {{ upgradedSkill.time.minValue }}<br />
+                      Max time: {{ upgradedSkill.time.maxValue }}
+                    </div>
+                  </ng-template>
+                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                </span>
+              </td>
+              <td [className]="upgradedSkill.based ? 'skillEffectTdAndNoBorderLeft' : 'skillEffectTd'">
+                <div *ngIf="upgradedSkill.upgradeHtml !== ''">
+                  {{ upgradedSkill.upgradeHtml }}
+                </div>
+
+                <div *ngFor="let effect of upgradedSkill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
+                <div *ngIf="upgradedSkill.damageHtml && upgradedSkill.damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div *ngIf="upgradedSkill.based === 'physic'">
+                      {{ (100 + (upgradedSkill.damage.formula && upgradedSkill.damage.formula.type === 1 && upgradedSkill.damage.formula[1] > 0 ? upgradedSkill.damage.formula[1] : 0)) + '% ATK' }}
+                    </div>
+                    <div *ngIf="upgradedSkill.based === 'magic'">
+                      {{ (100 + (upgradedSkill.damage.formula && upgradedSkill.damage.formula.type === 1 && upgradedSkill.damage.formula[1] > 0 ? upgradedSkill.damage.formula[1] : 0)) + '% MAG' }}
+                    </div>
+                    <div *ngIf="upgradedSkill.based === 'hybrid'">
+                      {{ (100 + (upgradedSkill.damage.formula && upgradedSkill.damage.formula.type === 1 && upgradedSkill.damage.formula[1] > 0 ? upgradedSkill.damage.formula[1] : 0)) + '% ATK' }}
+                    </div>
+
+                    <div *ngIf="upgradedSkill.damage.formula && upgradedSkill.damage.formula.type === 0 && upgradedSkill.damage.formula[1] > 0">
+                      {{ upgradedSkill.damage.formula[1] }}% DEX
+                    </div>
+                    <div *ngIf="upgradedSkill.damage.formula && upgradedSkill.damage.formula.type === 0 && upgradedSkill.damage.formula[2] > 0">
+                      {{ upgradedSkill.damage.formula[2] }}% AGI
+                    </div>
+                    <div *ngIf="upgradedSkill.damage.formula && upgradedSkill.damage.formula.type === 0 && upgradedSkill.damage.formula[3] > 0">
+                      {{ upgradedSkill.damage.formula[3] }}% LUCK
+                    </div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ upgradedSkill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ upgradedSkill.damageHtml.type.image }}.png" />&nbsp; {{ upgradedSkill.damageHtml.effType }} {{ upgradedSkill.damageHtml.pool }} {{ upgradedSkill.damageHtml.value }}
+                  <div [innerHTML]="upgradedSkill.damageHtml.others | safeHtml"></div>
+                </div>
+
+                <div *ngFor="let effect of upgradedSkill.effectsHtml.after">
+                  {{ effect }}
+                </div>
+              </td>
+              <td>
+                <ng-template #tip_table><div [innerHTML]="upgradedSkill.skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="upgradedSkill.skillTableHtml"></div>
+                </div>
+              </td>
+              <td><span *ngIf="upgradedSkill.combo">{{ upgradedSkill.combo.num }}</span></td>
+              <td><span *ngIf="upgradedSkill.cost">{{ upgradedSkill.cost.value }} {{ upgradedSkill.cost.type }}</span></td>
+            </tr>
+
+
+
+
+
+
+
           </tbody>
         </table>
       </div>

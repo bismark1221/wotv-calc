@@ -31,7 +31,8 @@ export class UnitsComponent implements OnInit {
     cost: [],
     mainJob: false,
     subJob: false,
-    exJob: false
+    exJob: false,
+    secondMasterAbility: false
   };
   isFilterChecked = {
     rarity: [],
@@ -208,6 +209,13 @@ export class UnitsComponent implements OnInit {
 
   toggleExJob() {
     this.filters.exJob = !this.filters.exJob;
+
+    this.filterUnits();
+    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+  }
+
+  toggleSecondMasterAbility() {
+    this.filters.secondMasterAbility = !this.filters.secondMasterAbility;
 
     this.filterUnits();
     sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
