@@ -203,6 +203,11 @@ export class BuilderMateriaComponent implements OnInit {
     });
   }
 
+  toogleCollapse(section) {
+    this.collapsed[section] = !this.collapsed[section];
+    sessionStorage.setItem('materiasCollapsed', JSON.stringify(this.collapsed));
+  }
+
   /***********/
   /* BUILDER */
   /***********/
@@ -235,6 +240,7 @@ export class BuilderMateriaComponent implements OnInit {
   selectMateria(materia) {
     this.materia = this.materiaService.copyMateriaFromData(materia) ;
     this.materia.initialDataId = materia.dataId;
+    this.materiaService.getAvailableMainStats(this.materia, this.materias);
 
     this.step = 'build';
   }

@@ -14,6 +14,11 @@ export class Materia {
   skillsDetail;
   slot;
   storeId;
+  mainStatValue = {
+    min: 0,
+    max: 0,
+    value: 0
+  };
 
   constructFromJson(materia: Materia) {
     this.dataId = materia.dataId;
@@ -39,6 +44,8 @@ export class Materia {
       for (let i = subStat.minValue; i <= subStat.maxValue; i++) {
         subStat.tableLevels.push(i);
       }
+
+      this.mainStatValue.value = Math.floor(this.mainStatValue.min + ((this.mainStatValue.max - this.mainStatValue.min) / (20 - 1) * (this.level - 1)));
     });
   }
 

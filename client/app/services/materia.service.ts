@@ -335,6 +335,11 @@ export class MateriaService {
     materia.subStats = type.subStats[0];
     materia.availableSkills = [];
 
+    materia.mainStatValue = {
+      min: type.mainStat[0].min,
+      max: type.mainStat[0].max
+    };
+
     type.skills.forEach(skillId => {
       let formattedEffect = '';
       const formattedEffects = this.skillService.formatEffects(materia, rawSkills.find(searchedSkill => searchedSkill.dataId === skillId), false);
@@ -401,6 +406,11 @@ export class MateriaService {
 
       if (mainStat === materia.mainStat) {
         materia.subStats = type.subStats[0];
+        materia.mainStatValue = {
+          min: type.mainStat[0].min,
+          max: type.mainStat[0].max
+        };
+
         type.skills.forEach(skillId => {
           let formattedEffect = '';
           const formattedEffects = this.skillService.formatEffects(materia, rawSkills.find(searchedSkill => searchedSkill.dataId === skillId), false);

@@ -238,6 +238,12 @@
   vertical-align: top;
 }
 
+.mainStatDiv {
+  display: inline-block;
+  width: 250px;
+  margin-right: 10px;
+}
+
 .statsTable {
   width: 100%;
   margin-bottom: 10px;
