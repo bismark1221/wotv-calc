@@ -252,8 +252,8 @@ export class Equipment {
     };
 
     this.materiaGroups = {
-      left: {},
-      right: {}
+      left: null,
+      right: null
     };
 
     this.formattedMateriaGroups = {
@@ -277,7 +277,7 @@ export class Equipment {
       Object.keys(countGroups[group]).forEach(groupId => {
         if (countGroups[group][groupId] >= 2) {
           this.materiaGroups[group] = this.rawMateriaGroups.find(searchedMateriaGroup => searchedMateriaGroup.dataId === groupId).bonus[countGroups[group][groupId]];
-          this.formattedMateriaGroups[group] = skillService.formatEffects(this, this.rawSkills.find(searchedSkill => searchedSkill.dataId === this.materiaGroups[group]));
+          this.formattedMateriaGroups[group] = skillService.formatEffects(this, this.rawSkills.find(searchedSkill => searchedSkill.dataId === this.materiaGroups[group]), false);
         }
       });
     });

@@ -1119,6 +1119,10 @@ export class Unit {
             });
           }
         });
+
+        if (i === 2) {
+          this.calculateMateriaStats(this.equipments[i]);
+        }
       }
     }
 
@@ -1171,6 +1175,69 @@ export class Unit {
 
       if (this.stats[statType].equipmentBuff) {
         this.updateStat(statType, this.stats[statType].equipmentBuff.positive + this.stats[statType].equipmentBuff.negative, 'totalEquipment', 'fixe');
+      }
+    });
+  }
+
+  private calculateMateriaStats(equipment) {
+    const statsTypePercent = [
+      'HP',
+      'TP',
+      'AP',
+      'ATK',
+      'DEF',
+      'SPR',
+      'MAG',
+      'DEX',
+      'AGI',
+      'LUCK'
+    ];
+
+    Object.keys(equipment.materias).forEach(materiaType => {
+      const materia = equipment.materias[materiaType];
+      if (materia) {
+        this.updateStat(materia.mainStat, materia.mainStatValue.value, 'materia', 'fixe');
+
+        materia.subStats.forEach(subStat => {
+          this.updateStat(subStat.type, subStat.value, 'materia', 'fixe');
+        });
+
+        materia.skills.forEach((skillId, skillIndex) => {
+          const skill = materia.rawSkills.find(searchedSkill => searchedSkill.dataId === skillId);
+
+          skill.effects.forEach(effect => {
+            const value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (20 - 1) * (materia.skillsDetail[skillIndex].level - 1)));
+
+            if (statsTypePercent.indexOf(effect.type) !== -1 && effect.calcType === 'percent') {
+              this.updatePercentStats(effect.type, 'materia', value);
+            } else {
+              this.updateStat(effect.type, value, 'materia', 'fixe');
+            }
+          });
+        });
+      }
+    });
+
+    Object.keys(equipment.materiaGroups).forEach(group => {
+      if (equipment.materiaGroups[group]) {
+        const skill = equipment.rawSkills.find(searchedSkill => searchedSkill.dataId === equipment.materiaGroups[group]);
+        skill.effects.forEach(effect => {
+          let value = 0;
+
+          if (effect.minValue) {
+            value = effect.minValue;
+          } else if (effect.maxValue) {
+            value = effect.maxValue;
+          } else if (effect.value) {
+            value = effect.value;
+          }
+
+          if (statsTypePercent.indexOf(effect.type) !== -1 && effect.calcType === 'percent') {
+            this.updatePercentStats(effect.type, 'materia', value);
+          } else {
+            this.updateStat(effect.type, value, 'materia', 'fixe');
+          }
+        });
       }
     });
   }
@@ -1267,6 +1334,10 @@ export class Unit {
 
       if (this.stats[stat].masterRanks) {
         this.stats[stat].total += this.stats[stat].masterRanks;
+      }
+
+      if (this.stats[stat].materia) {
+        this.stats[stat].total += this.stats[stat].materia;
       }
 
       if (!Number.isInteger(this.stats[stat].total)) {

@@ -59,7 +59,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     {type: 'card', translate: 'Card'},
     {type: 'cardParty', translate: 'Card Party'},
     {type: 'subCard', translate: 'Sub Card'},
-    {type: 'subCardParty', translate: 'Sub Card Party'}
+    {type: 'subCardParty', translate: 'Sub Card Party'},
+    {type: 'materia', translate: 'Materia'}
   ];
 
   buffsFrom = [
@@ -71,7 +72,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     {type: 'card', translate: 'Card'},
     {type: 'cardParty', translate: 'Card Party'},
     {type: 'subCard', translate: 'Sub Card'},
-    {type: 'subCardParty', translate: 'Sub Card Party'}
+    {type: 'subCardParty', translate: 'Sub Card Party'},
+    {type: 'materia', translate: 'Materia'}
   ];
 
   rarityTranslate = {
@@ -226,11 +228,15 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     });
   }
 
-  private loadGuild() {
+  private loadGuildAndMasterRanks() {
     this.unit.guild = this.guildService.getGuildForBuilder();
 
     if (this.unit.savedGuild) {
       this.unit.guild.data = this.unit.savedGuild;
+    }
+
+    if (this.unit.savedMasterRanks) {
+      this.unit.masterRanks.data = this.unit.savedMasterRanks;
     }
 
     this.statueNames = Object.keys(this.unit.guild.statues);
@@ -256,7 +262,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   private formatUnit() {
-    this.loadGuild();
+    this.loadGuildAndMasterRanks();
     this.unitService.getActiveSkills();
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {

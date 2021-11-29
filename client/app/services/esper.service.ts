@@ -366,6 +366,9 @@ export class EsperService {
           }
         });
 
+        delete oldData.resonance;
+        delete newData.resonance;
+
         return !this.toolService.equal(oldData, newData);
       }
     }

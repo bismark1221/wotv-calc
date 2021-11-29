@@ -399,6 +399,8 @@ export class MateriaService {
     materia.slot = materiaData.slot;
     materia.maxSkill = rawMateria.maxSkill;
 
+    materia.rawSkills = rawSkills;
+
     materia.skills = materiaData.skills;
     materia.level = materiaData.level;
     materia.storeId = materiaData.storeId;

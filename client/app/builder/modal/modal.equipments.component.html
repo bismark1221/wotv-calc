@@ -330,6 +330,60 @@
           </tr>
         </tbody>
       </table>
+
+
+      <table class="statsTable" *ngIf="version == 'JP' && equipment.acquisition && equipment.acquisition.type == 'tmr'">
+        <tr>
+          <th colspan="4">Materias</th>
+        </tr>
+        <tr *ngFor="let materiaGroup of [[{type: 'I', select: true}, {type: 'I', select: false}, {type: 'H', select: true}, {type: 'H', select: false}], [{type: 'F', select: true}, {type: 'F', select: false}, {type: 'O', select: true}, {type: 'O', select: false}], [{type: 'W', select: true}, {type: 'W', select: false}, {type: 'S', select: true}, {type: 'S', select: false}]]" class="materiaGroup">
+          <td *ngFor="let materiaType of materiaGroup" [ngClass]="{'materiaTd': materiaType.select, 'materiaEffectTd': !materiaType.select}">
+            <div *ngIf="materiaType.select">
+              <div *ngIf="equipment.materias[materiaType.type]" class="materiaDiv">
+                <img src="{{'assets/items/' + equipment.materias[materiaType.type].image + '.png'}}" class="materiaImg" id="openModalMateria_{{equipment.materias[materiaType.type].dataId}}" (click)="openMateriaModal(materiaType.type)"/>
+              </div>
+
+              <div *ngIf="!equipment.materias[materiaType.type]" class="materiaDivEmpty">
+                <img src="{{ 'assets/builder/materia_' + materiaType.type.toLowerCase() + '.png' }}" class="materiaImg" id="openModalMateria_new" (click)="openMateriaModal(materiaType.type)"/>
+              </div>
+
+              <button class="btn btn-sub btn-materia" id="openModalMateria_custom_{{materiaType.type}}" (click)="openMateriaModal(materiaType.type)">Custom</button>
+            </div>
+
+            <div *ngIf="!materiaType.select && equipment.materias[materiaType.type]">
+              <div>
+                Main Stat : {{ equipment.materias[materiaType.type].mainStatValue.value + ' ' + equipment.materias[materiaType.type].mainStat}}
+              </div>
+              <div>
+                Sub Stats :
+                <span *ngFor="let subStat of equipment.materias[materiaType.type].subStats; let subStatIndex = index">
+                  {{ subStat.value + ' ' + subStat.type}}<span *ngIf="subStatIndex != equipment.materias[materiaType.type].subStats.length - 1">, </span>
+                </span>
+              </div>
+              <div>
+                Passives :
+                <div *ngFor="let skillDetail of equipment.materias[materiaType.type].skillsDetail">
+                  <div *ngFor="let shortEffect of skillDetail.shortEffect.before">{{ shortEffect }}</div>
+                  <div *ngFor="let shortEffect of skillDetail.shortEffect.after">{{ shortEffect }}</div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub" colspan="4">Group effects</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div *ngFor="let formattedEffect of equipment.formattedMateriaGroups.left.before">{{ formattedEffect }}</div>
+            <div *ngFor="let formattedEffect of equipment.formattedMateriaGroups.left.after">{{ formattedEffect }}</div>
+          </td>
+          <td colspan="2">
+            <div *ngFor="let formattedEffect of equipment.formattedMateriaGroups.right.before">{{ formattedEffect }}</div>
+            <div *ngFor="let formattedEffect of equipment.formattedMateriaGroups.right.after">{{ formattedEffect }}</div>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 

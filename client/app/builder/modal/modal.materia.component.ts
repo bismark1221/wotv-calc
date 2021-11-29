@@ -85,7 +85,11 @@ export class ModalMateriaComponent implements OnInit {
     this.version = this.navService.getVersion();
   }
 
-  async ngOnInit() {}
+  async ngOnInit() {
+    if (this.materia) {
+      this.materia = this.materiaService.copyMateriaFromData(this.materia);
+    }
+  }
 
   ngAfterViewInit() {
     this.loadingData = true;

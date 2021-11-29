@@ -1,10 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { EquipmentService } from '../../services/equipment.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
+
+import { ModalMateriaComponent } from './modal.materia.component';
 
 @Component({
   selector: 'app-modal-equipments',
@@ -18,6 +21,8 @@ export class ModalEquipmentsComponent implements OnInit {
   };
   equipments;
   acquisitionTypes;
+
+  version = 'GL';
 
   searchText = '';
   filters = {
@@ -39,8 +44,12 @@ export class ModalEquipmentsComponent implements OnInit {
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
     private toolService: ToolService,
+    private navService: NavService,
+    private modalService: NgbModal,
     private modal: NgbActiveModal
   ) {
+    this.version = this.navService.getVersion();
+
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEquipments();
     });
@@ -181,5 +190,23 @@ export class ModalEquipmentsComponent implements OnInit {
 
   removeEquipment() {
     this.modal.close(null);
+  }
+
+  openMateriaModal(type) {
+    const modalRef = this.modalService.open(ModalMateriaComponent, { windowClass: 'builder-modal' });
+    modalRef.componentInstance.equipment = this.equipment;
+    modalRef.componentInstance.materiaType = type;
+
+    if (this.equipment.materias[type]) {
+      modalRef.componentInstance.materia = JSON.parse(JSON.stringify(this.equipment.materias[type]));
+      modalRef.componentInstance.modalStep = 'custom';
+    }
+
+    modalRef.result.then((materia) => {
+      this.equipment.materias[type] = materia;
+
+      this.equipmentService.changeMateria(this.equipment);
+    }, (reason) => {
+    });
   }
 }
