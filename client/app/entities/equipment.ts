@@ -32,6 +32,7 @@ export class Equipment {
   rawJobs;
   rawUnits;
   rawItems;
+  rawMateriaGroups;
 
   // for builder
   passiveSkills;
@@ -45,6 +46,22 @@ export class Equipment {
   tableLevel;
   activeSkill;
   formattedSkills;
+  materias = {
+    I: null,
+    F: null,
+    W: null,
+    H: null,
+    O: null,
+    S: null
+  };
+  materiaGroups = {
+    left: null,
+    right: null
+  };
+  formattedMateriaGroups = {
+    left: null,
+    right: null
+  };
 
   constructFromJson(equipment: Equipment, translateService: TranslateService): void {
     this.dataId = equipment.dataId;
@@ -220,6 +237,49 @@ export class Equipment {
           this.passiveSkills.push(skill);
         }
       }
+    });
+  }
+
+  changeMateria(skillService) {
+    const materiaGroupTypes = {
+      left: ['I', 'F', 'W'],
+      right: ['H', 'O', 'S']
+    };
+
+    const countGroups = {
+      left: {},
+      right: {}
+    };
+
+    this.materiaGroups = {
+      left: {},
+      right: {}
+    };
+
+    this.formattedMateriaGroups = {
+      left: {},
+      right: {}
+    };
+
+    Object.keys(materiaGroupTypes).forEach(group => {
+      materiaGroupTypes[group].forEach(type => {
+        if (this.materias[type]) {
+          if (!countGroups[group][this.materias[type].group]) {
+            countGroups[group][this.materias[type].group] = 1;
+          } else {
+            countGroups[group][this.materias[type].group]++;
+          }
+        }
+      });
+    });
+
+    Object.keys(countGroups).forEach(group => {
+      Object.keys(countGroups[group]).forEach(groupId => {
+        if (countGroups[group][groupId] >= 2) {
+          this.materiaGroups[group] = this.rawMateriaGroups.find(searchedMateriaGroup => searchedMateriaGroup.dataId === groupId).bonus[countGroups[group][groupId]];
+          this.formattedMateriaGroups[group] = skillService.formatEffects(this, this.rawSkills.find(searchedSkill => searchedSkill.dataId === this.materiaGroups[group]));
+        }
+      });
     });
   }
 

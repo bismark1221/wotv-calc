@@ -81,6 +81,7 @@ import { ModalSaveComponent } from './builder/modal/modal.save.component';
 import { ModalDeleteComponent } from './builder/modal/modal.delete.component';
 import { ModalLinkComponent } from './builder/modal/modal.link.component';
 import { ModalMasterRanksComponent } from './builder/modal/modal.mr.component';
+import { ModalMateriaComponent } from './builder/modal/modal.materia.component';
 
 import { TemplateItemComponent } from './template/template.item.component';
 
@@ -160,6 +161,7 @@ export function createTranslateLoader(http: HttpClient) {
     ModalCardsComponent,
     ModalGuildComponent,
     ModalMasterRanksComponent,
+    ModalMateriaComponent,
     ModalLoadComponent,
     ModalSaveComponent,
     ModalDeleteComponent,

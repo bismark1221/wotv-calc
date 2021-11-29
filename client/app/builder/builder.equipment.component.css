@@ -248,3 +248,43 @@
   float: right;
   width: 60px;
 }
+
+.materiaTd {
+  height: 150px;
+  width: 97px;
+}
+
+.materiaDiv {
+  width: 80px;
+  height: 80px;
+  display: block;
+  vertical-align: top;
+}
+
+.materiaDivEmpty {
+  width: 80px;
+  height: 80px;
+  display: block;
+  vertical-align: top;
+  background: url("assets/builder/materia_background.png") 0px 0px no-repeat;
+  background-size: 80px;
+}
+
+.materiaImg {
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  display: block;
+}
+
+.btn-materia {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.materiaEffectTd {
+  width: 417px;
+}

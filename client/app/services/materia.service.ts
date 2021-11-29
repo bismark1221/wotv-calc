@@ -46,6 +46,10 @@ export class MateriaService {
     };
   }
 
+  async getMateriaGroups() {
+    return await this.getApi(null, [{name: 'onlyGroups', value: 1}]);
+  }
+
   private getLocalStorage() {
     return this.navService.getVersion() === 'JP' ? 'jp_materia' : 'materia';
   }
@@ -88,6 +92,8 @@ export class MateriaService {
       data.user = user ? user.uid : null;
       // @ts-ignore
       data.customName = Date.now();
+    } else {
+      delete data.storeId;
     }
 
     return data;
@@ -355,6 +361,8 @@ export class MateriaService {
         dataId: skillId,
         formattedEffect: formattedEffect
       });
+
+      materia.group = type.group;
     });
     materia.availableSkills = this.sortAvailableSkillsByName(materia.availableSkills);
 
@@ -374,8 +382,16 @@ export class MateriaService {
     }
   }
 
-  buildMateriaFromData(materia, materiaData, rawMaterias, rawSkills) {
-    const rawMateria = JSON.parse(JSON.stringify(rawMaterias.find(searchedMateria => searchedMateria.dataId === materiaData.dataId)));
+  async buildMateriaFromData(materia, materiaData, rawMaterias = null, rawSkills = null) {
+    let rawMateria = null;
+
+    if (rawMaterias) {
+      rawMateria = JSON.parse(JSON.stringify(rawMaterias.find(searchedMateria => searchedMateria.dataId === materiaData.dataId)));
+    } else {
+      const apiResult = await this.getApi(materiaData.dataId);
+      rawMateria = apiResult.materia;
+      rawSkills = apiResult.skills;
+    }
 
     materia.dataId = rawMateria.dataId;
     materia.image = rawMateria.image;
@@ -428,6 +444,8 @@ export class MateriaService {
           });
         });
 
+        materia.group = type.group;
+
         materia.availableSkills = this.sortAvailableSkillsByName(materia.availableSkills);
       }
     });
@@ -449,6 +467,8 @@ export class MateriaService {
     });
 
     materia.updateLevel();
+
+    return materia;
   }
 
   copyMateriaFromData(materiaData) {

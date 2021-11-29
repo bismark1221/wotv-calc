@@ -11,6 +11,7 @@ import { NavService } from '../services/nav.service';
 import { ModalLoadComponent } from './modal/modal.load.component';
 import { ModalSaveComponent } from './modal/modal.save.component';
 import { ModalLinkComponent } from './modal/modal.link.component';
+import { ModalMateriaComponent } from './modal/modal.materia.component';
 
 @Component({
   selector: 'app-builder-equipment',
@@ -24,6 +25,8 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   loadingBuild = false;
   showSave = false;
   selectedEquipmentId = null;
+
+  version = 'GL';
 
   @ViewChild('selectBuilderEquipment') equipmentSelector;
 
@@ -44,6 +47,8 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     private authService: AuthService,
     private navService: NavService
   ) {
+    this.version = this.navService.getVersion();
+
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEquipments();
     });
@@ -190,5 +195,23 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
 
     modalRef.componentInstance.type = 'equipment';
     modalRef.componentInstance.item = this.equipment;
+  }
+
+  openMateriaModal(type) {
+    const modalRef = this.modalService.open(ModalMateriaComponent, { windowClass: 'builder-modal' });
+    modalRef.componentInstance.equipment = this.equipment;
+    modalRef.componentInstance.materiaType = type;
+
+    if (this.equipment.materias[type]) {
+      modalRef.componentInstance.materia = JSON.parse(JSON.stringify(this.equipment.materias[type]));
+      modalRef.componentInstance.modalStep = 'custom';
+    }
+
+    modalRef.result.then((materia) => {
+      this.equipment.materias[type] = materia;
+
+      this.equipmentService.changeMateria(this.equipment);
+    }, (reason) => {
+    });
   }
 }

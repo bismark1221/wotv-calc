@@ -11,8 +11,10 @@ import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
 import { ApiService } from './api.service';
 import { JobService } from './job.service';
+import { MateriaService } from './materia.service';
 
 import { Equipment } from '../entities/equipment';
+import { Materia } from '../entities/materia';
 
 @Injectable()
 export class EquipmentService {
@@ -253,6 +255,7 @@ export class EquipmentService {
     private toolService: ToolService,
     private authService: AuthService,
     private jobService: JobService,
+    private materiaService: MateriaService,
     private firestore: AngularFirestore
   ) {}
 
@@ -537,7 +540,8 @@ export class EquipmentService {
       grow: equipment.grow,
       level: equipment.level,
       stats: {},
-      skill: {}
+      skill: {},
+      materias: {}
     };
 
     Object.keys(equipment.stats).forEach(stat => {
@@ -547,6 +551,16 @@ export class EquipmentService {
     equipment.skill.forEach(skill => {
       data.skill[skill.dataId] = skill.level;
     });
+
+    if (equipment.materias) {
+      Object.keys(equipment.materias).forEach(materiaType => {
+        if (equipment.materias[materiaType]) {
+          data.materias[materiaType] = this.materiaService.getSavableData(equipment.materias[materiaType], false);
+        } else {
+          data.materias[materiaType] = null;
+        }
+      });
+    }
 
     if (onlyEquipment) {
       const user = this.authService.getUser();
@@ -585,7 +599,14 @@ export class EquipmentService {
       this.equipment.growIds = Object.keys(this.equipment.grows);
       this.equipment.grow = this.equipment.growIds[0];
 
-      this.initiateSavedEquipment(customData);
+      await this.initiateSavedEquipment(customData);
+
+      const rawMateriaGroups = await this.materiaService.getMateriaGroups();
+      this.equipment.rawMateriaGroups = rawMateriaGroups.materiaGroup;
+      for (const skill of rawMateriaGroups.skills) {
+        this.equipment.rawSkills.push(skill);
+      }
+      this.changeMateria();
 
       this.equipment.updateMaxStat(this.toolService, this.skillService, this.rangeService);
 
@@ -601,7 +622,7 @@ export class EquipmentService {
     return null;
   }
 
-  private initiateSavedEquipment(customData = null) {
+  private async initiateSavedEquipment(customData = null) {
     const equipment = customData;
 
     if (equipment) {
@@ -638,6 +659,14 @@ export class EquipmentService {
             subSkill.level = this.equipment.level;
           });
         });
+      }
+
+      if (equipment.materias) {
+        for (const materiaType of Object.keys(equipment.materias)) {
+          if (equipment.materias[materiaType]) {
+            this.equipment.materias[materiaType] = await this.materiaService.buildMateriaFromData(new Materia(), equipment.materias[materiaType]);
+          }
+        }
       }
     }
   }
@@ -782,6 +811,14 @@ export class EquipmentService {
     }
 
     this.equipment.changeSkillLevel(this.skillService, this.rangeService);
+  }
+
+  changeMateria(equipment = null) {
+    if (equipment) {
+      this.equipment = equipment;
+    }
+
+    this.equipment.changeMateria(this.skillService);
   }
 
   maxEquipment(equipment = null) {
