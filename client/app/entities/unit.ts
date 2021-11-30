@@ -1489,6 +1489,7 @@ export class Unit {
                 newSkill.jobLevel = oldSkill.jobLevel;
                 newSkill.unlockJob = oldSkill.unlockJob;
                 newSkill.unlockStar = oldSkill.unlockStar;
+                newSkill.name = oldSkill.name;
 
                 this.board.nodes[oldNodeId].skill = newSkill;
               }
@@ -1507,6 +1508,7 @@ export class Unit {
                 newSkill.jobLevel = oldSkill.jobLevel;
                 newSkill.unlockJob = oldSkill.unlockJob;
                 newSkill.unlockStar = oldSkill.unlockStar;
+                newSkill.name = oldSkill.name;
 
                 this.board.nodes[oldNodeId].skill = newSkill;
               }

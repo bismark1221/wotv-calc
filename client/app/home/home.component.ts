@@ -22,31 +22,11 @@ export class HomeComponent {
 
   updated = {
     /*GL: [
-
       {
-        "date": "24/11",
+        "date": "30/11",
         "items": [
-          {"type": "unit", "dataId": "UN_FF15_P_NCTS"},
-          {"type": "unit", "dataId": "UN_FF15_P_PRMP"},
-          {"type": "unit", "dataId": "UN_LW_P_MINU"},
-          {"type": "card", "dataId": "VC_FF15_MV1"},
-          {"type": "equipment", "dataId": "AF_FF15_SWO_000"},
-          {"type": "equipment", "dataId": "AF_FF15_GUN_000"},
-          {"type": "esper", "dataId": "UN_LW_S_TITN"}
-        ]
-      }
-
-
-    ],
-    JP: [
-      {
-        date: '07/07',
-        items: [
-          {type: 'esper', dataId: 'UN_LW_S_EFKS'},
-          {type: 'card', dataId: 'VC_LW_EFKS'},
-          {type: 'esper', dataId: 'UN_LW_S_WHDG'},
-          {type: 'card', dataId: 'VC_LW_WHDG'},
-          {type: 'equipment', dataId: 'AF_LW_ARM_031'}
+          {"type": "unit", "dataId": "UN_LW_P_BELS"},
+          {"type": "equipment", "dataId": "AF_LW_BOK_008"}
         ]
       }
     ]*/
