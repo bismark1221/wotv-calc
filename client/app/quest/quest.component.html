@@ -422,31 +422,51 @@
               </tr>
               <tr *ngIf="enemy.hasMaxLevel">
                 <td>MIN</td>
-                <td>{{ enemy.stats.HP.minTotal }}</td>
-                <td>{{ enemy.stats.TP.minTotal }}</td>
-                <td>{{ enemy.stats.AP.minTotal }}</td>
-                <td>{{ enemy.stats.ATK.minTotal }}</td>
-                <td>{{ enemy.stats.DEF.minTotal }}</td>
-                <td>{{ enemy.stats.MAG.minTotal }}</td>
-                <td>{{ enemy.stats.SPR.minTotal }}</td>
-                <td>{{ enemy.stats.DEX.minTotal }}</td>
-                <td>{{ enemy.stats.AGI.minTotal }}</td>
-                <td>{{ enemy.stats.LUCK.minTotal }}</td>
+                <td *ngIf="enemy.stats.HP.minTotal">{{ enemy.stats.HP.minTotal }}</td>
+                <td *ngIf="!enemy.stats.HP.minTotal" rowspan="2">{{ enemy.stats.HP.total }}</td>
+
+                <td *ngIf="enemy.stats.TP.minTotal">{{ enemy.stats.TP.minTotal }}</td>
+                <td *ngIf="!enemy.stats.TP.minTotal" rowspan="2">{{ enemy.stats.TP.total }}</td>
+
+                <td *ngIf="enemy.stats.AP.minTotal">{{ enemy.stats.AP.minTotal }}</td>
+                <td *ngIf="!enemy.stats.AP.minTotal" rowspan="2">{{ enemy.stats.AP.total }}</td>
+
+                <td *ngIf="enemy.stats.ATK.minTotal">{{ enemy.stats.ATK.minTotal }}</td>
+                <td *ngIf="!enemy.stats.ATK.minTotal" rowspan="2">{{ enemy.stats.ATK.total }}</td>
+
+                <td *ngIf="enemy.stats.DEF.minTotal">{{ enemy.stats.DEF.minTotal }}</td>
+                <td *ngIf="!enemy.stats.DEF.minTotal" rowspan="2">{{ enemy.stats.DEF.total }}</td>
+
+                <td *ngIf="enemy.stats.MAG.minTotal">{{ enemy.stats.MAG.minTotal }}</td>
+                <td *ngIf="!enemy.stats.MAG.minTotal" rowspan="2">{{ enemy.stats.MAG.total }}</td>
+
+                <td *ngIf="enemy.stats.SPR.minTotal">{{ enemy.stats.SPR.minTotal }}</td>
+                <td *ngIf="!enemy.stats.SPR.minTotal" rowspan="2">{{ enemy.stats.SPR.total }}</td>
+
+                <td *ngIf="enemy.stats.DEX.minTotal">{{ enemy.stats.DEX.minTotal }}</td>
+                <td *ngIf="!enemy.stats.DEX.minTotal" rowspan="2">{{ enemy.stats.DEX.total }}</td>
+
+                <td *ngIf="enemy.stats.AGI.minTotal">{{ enemy.stats.AGI.minTotal }}</td>
+                <td *ngIf="!enemy.stats.AGI.minTotal" rowspan="2">{{ enemy.stats.AGI.total }}</td>
+
+                <td *ngIf="enemy.stats.LUCK.minTotal">{{ enemy.stats.LUCK.minTotal }}</td>
+                <td *ngIf="!enemy.stats.LUCK.minTotal" rowspan="2">{{ enemy.stats.LUCK.total }}</td>
+
                 <td rowspan="2">{{ enemy.stats.MOVE.total }}</td>
                 <td rowspan="2">{{ enemy.stats.JUMP.total }}</td>
               </tr>
               <tr *ngIf="enemy.hasMaxLevel">
                 <td>MAX</td>
-                <td>{{ enemy.stats.HP.maxTotal }}</td>
-                <td>{{ enemy.stats.TP.maxTotal }}</td>
-                <td>{{ enemy.stats.AP.maxTotal }}</td>
-                <td>{{ enemy.stats.ATK.maxTotal }}</td>
-                <td>{{ enemy.stats.DEF.maxTotal }}</td>
-                <td>{{ enemy.stats.MAG.maxTotal }}</td>
-                <td>{{ enemy.stats.SPR.maxTotal }}</td>
-                <td>{{ enemy.stats.DEX.maxTotal }}</td>
-                <td>{{ enemy.stats.AGI.maxTotal }}</td>
-                <td>{{ enemy.stats.LUCK.maxTotal }}</td>
+                <td *ngIf="enemy.stats.HP.maxTotal">{{ enemy.stats.HP.maxTotal }}</td>
+                <td *ngIf="enemy.stats.TP.maxTotal">{{ enemy.stats.TP.maxTotal }}</td>
+                <td *ngIf="enemy.stats.AP.maxTotal">{{ enemy.stats.AP.maxTotal }}</td>
+                <td *ngIf="enemy.stats.ATK.maxTotal">{{ enemy.stats.ATK.maxTotal }}</td>
+                <td *ngIf="enemy.stats.DEF.maxTotal">{{ enemy.stats.DEF.maxTotal }}</td>
+                <td *ngIf="enemy.stats.MAG.maxTotal">{{ enemy.stats.MAG.maxTotal }}</td>
+                <td *ngIf="enemy.stats.SPR.maxTotal">{{ enemy.stats.SPR.maxTotal }}</td>
+                <td *ngIf="enemy.stats.DEX.maxTotal">{{ enemy.stats.DEX.maxTotal }}</td>
+                <td *ngIf="enemy.stats.AGI.maxTotal">{{ enemy.stats.AGI.maxTotal }}</td>
+                <td *ngIf="enemy.stats.LUCK.maxTotal">{{ enemy.stats.LUCK.maxTotal }}</td>
               </tr>
             </table>
             <table>
@@ -517,22 +537,22 @@
                     <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                       <ng-template #tip_damage>
                         <div *ngIf="skill.based === 'physic'">
-                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                          {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                         </div>
                         <div *ngIf="skill.based === 'magic'">
-                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                          {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                         </div>
                         <div *ngIf="skill.based === 'hybrid'">
-                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                          {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                         </div>
 
-                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                        <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
                           {{ skill.damage.formula[1] }}% DEX
                         </div>
-                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                        <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
                           {{ skill.damage.formula[2] }}% AGI
                         </div>
-                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                        <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                           {{ skill.damage.formula[3] }}% LUCK
                         </div>
                       </ng-template>

@@ -312,6 +312,18 @@ export class QuestService {
     let html = '';
     let unit = null;
 
+    const elements = [
+      'neutral',
+      'fire',
+      'ice',
+      'wind',
+      'earth',
+      'lightning',
+      'water',
+      'light',
+      'dark'
+    ];
+
     switch (mission.type) {
       case 'COMPLETE_QUEST' :
         html = 'Complete the quest';
@@ -335,9 +347,9 @@ export class QuestService {
       case 'ELEMENT' :
         html = 'Party includes only ';
         mission.value.forEach((element, elementIndex) => {
-          html += (elementIndex > 0 ? ' or ' : '') + element;
+          html += (elementIndex > 0 ? ' or ' : '') + (Number.isInteger(element) ? elements[element] : element);
         });
-        html += 'unit(s)';
+        html += ' unit(s)';
       break;
       case 'SPECIFIC_UNIT_IN_PARTY' :
         unit = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === mission.value);

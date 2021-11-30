@@ -861,7 +861,8 @@ export class SimulatorService {
 
   getSingleOrAoeResistanceMultiplier(unit, dataSimulator) {
     let aoeOrSingleRes = 0;
-    if (dataSimulator.unit.selectedSkill.aoe) {
+
+    if (dataSimulator.unit.selectedSkill.aoe || dataSimulator.unit.selectedSkill.range.s === 13) {
       aoeOrSingleRes = 1 - dataSimulator.realStats.target.aoe_res / 100;
     } else {
       aoeOrSingleRes = 1 - dataSimulator.realStats.target.attack_res / 100;

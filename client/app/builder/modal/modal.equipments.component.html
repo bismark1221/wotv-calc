@@ -318,13 +318,22 @@
           </tr>
           <tr>
             <td colspan="7">
-              <div *ngFor="let skill of equipment.passiveSkills">
+              <div *ngFor="let skill of equipment.passiveSkills; let skillIndex = index">
+                <div *ngIf="skill.cond">
+                  Condition :
+                  <span *ngFor="let skillCond of skill.cond">
+                    <span *ngFor="let item of skillCond.formattedItems">
+                      <img src="{{'assets/units/' + item + '_m.png'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
+                    </span>
+                  </span>
+                </div>
                 <div *ngFor="let effect of skill.effectsHtml.before">
                   {{ effect }}
                 </div>
                 <div *ngFor="let effect of skill.effectsHtml.after">
                   {{ effect }}
                 </div>
+                <hr class="passiveHR" *ngIf="skillIndex != equipment.passiveSkills.length - 1"/>
               </div>
             </td>
           </tr>

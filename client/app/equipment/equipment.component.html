@@ -191,7 +191,15 @@
           </tr>
           <tr *ngFor="let effectType of equipment.effectTypes">
             <td *ngFor="let i of equipment.countSkills">
-              <div *ngFor="let skill of equipment.formattedSkills[i]">
+              <div *ngFor="let skill of equipment.formattedSkills[i]; let skillIndex = index">
+                <div *ngIf="skill.mainEffect === effectType && skillIndex == 0 && skill.cond && skill.cond.length > 0">
+                  Condition :
+                  <span *ngFor="let skillCond of skill.cond">
+                    <span *ngFor="let item of skillCond.items">
+                      <img src="{{'assets/units/' + item + '_m.png'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
+                    </span>
+                  </span>
+                </div>
                 <div *ngIf="skill.mainEffect === effectType">
                   <div *ngFor="let effect of skill.effectsHtml.before">
                     <span [innerHTML]="effect"></span>

@@ -149,11 +149,11 @@
                   <th class="sub"><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.png'}}" /></th>
                 </tr>
                 <tr>
-                  <td class="heightResTd"><span *ngIf="boss.stats.SLASH_RES.min">{{ boss.stats.SLASH_RES.min }} %</span></td>
-                  <td><span *ngIf="boss.stats.PIERCE_RES.min">{{ boss.stats.PIERCE_RES.min }} %</span></td>
-                  <td><span *ngIf="boss.stats.STRIKE_RES.min">{{ boss.stats.STRIKE_RES.min }} %</span></td>
-                  <td><span *ngIf="boss.stats.MISSILE_RES.min">{{ boss.stats.MISSILE_RES.min }} %</span></td>
-                  <td><span *ngIf="boss.stats.MAGIC_RES.min">{{ boss.stats.MAGIC_RES.min }} %</span></td>
+                  <td class="heightResTd"><span *ngIf="boss.stats.SLASH_RES && boss.stats.SLASH_RES.min">{{ boss.stats.SLASH_RES.min }} %</span></td>
+                  <td><span *ngIf="boss.stats.PIERCE_RES && boss.stats.PIERCE_RES.min">{{ boss.stats.PIERCE_RES.min }} %</span></td>
+                  <td><span *ngIf="boss.stats.STRIKE_RES && boss.stats.STRIKE_RES.min">{{ boss.stats.STRIKE_RES.min }} %</span></td>
+                  <td><span *ngIf="boss.stats.MISSILE_RES && boss.stats.MISSILE_RES.min">{{ boss.stats.MISSILE_RES.min }} %</span></td>
+                  <td><span *ngIf="boss.stats.MAGIC_RES && boss.stats.MAGIC_RES.min">{{ boss.stats.MAGIC_RES.min }} %</span></td>
                 </tr>
               </tbody>
             </table>

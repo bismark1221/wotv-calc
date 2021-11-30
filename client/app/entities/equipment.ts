@@ -231,6 +231,18 @@ export class Equipment {
 
         rangeService.formatRange(this, skill);
 
+        if (skill.cond) {
+          skill.cond.forEach(skillCond => {
+            skillCond.formattedItems = [];
+            skillCond.items.forEach((itemCond, itemCondIndex) => {
+              if (skillCond.type === 'unit') {
+                const unitCond = this.rawUnits.find(searchedUnit => searchedUnit.dataId === itemCond);
+                skillCond.formattedItems.push(unitCond.image);
+              }
+            });
+          });
+        }
+
         if (skill.type === 'skill') {
           this.activeSkill = skill;
         } else {

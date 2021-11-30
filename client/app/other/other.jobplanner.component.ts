@@ -64,6 +64,17 @@ export class OtherJobPlannerComponent implements OnInit {
       this.tableUnits.push(this.tableUnits.length);
     }
 
+    const elements = [
+      'FIRE',
+      'ICE',
+      'WATER',
+      'WIND',
+      'SOIL',
+      'SHINE',
+      'THUN',
+      'DARK'
+    ];
+
     if (this.selectedUnits[pos]) {
       const unit = this.units.find(searchedUnit => searchedUnit.dataId === this.selectedUnits[pos]);
       unit.jobsData = [];
@@ -71,6 +82,10 @@ export class OtherJobPlannerComponent implements OnInit {
       const jobsIds = [];
       for (const jobId of unit.jobs) {
         jobsIds.push(jobId);
+
+        if (jobId.split('_').length === 4) {
+          jobsIds.push(jobId.split('_')[0] + '_' + jobId.split('_')[1] + '_' + jobId.split('_')[2]);
+        }
       }
 
       for (const jobId of unit.exJobs) {
@@ -87,6 +102,22 @@ export class OtherJobPlannerComponent implements OnInit {
         job.maxLevel = 15;
         job.startTableLevel = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
         job.goalTableLevel = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+        if (jobId.split('_').length === 4) {
+          const masterJob = result.jobs.find(searchedJob => searchedJob.dataId === jobId.split('_')[0] + '_' + jobId.split('_')[1] + '_' + jobId.split('_')[2]);
+          if (masterJob) {
+            job.materials.forEach((jobMaterials, jobMaterialsIndex) => {
+              if (Object.keys(jobMaterials).length < Object.keys(masterJob.materials[jobMaterialsIndex]).length) {
+                Object.keys(masterJob.materials[jobMaterialsIndex]).forEach(materiaId => {
+                  if (Object.keys(jobMaterials).indexOf(materiaId) === -1 && elements.indexOf(materiaId.split('_')[3]) === -1) {
+                    jobMaterials[materiaId] = masterJob.materials[jobMaterialsIndex][materiaId];
+                  }
+                });
+              }
+            });
+          }
+        }
+
         unit.jobsData.push(job);
       }
 
@@ -95,6 +126,30 @@ export class OtherJobPlannerComponent implements OnInit {
         const exJob = result.jobs.find(searchedJob => searchedJob.dataId === unit.exJobs[0]);
         unit.jobsData[jobIndex].maxLevel = 25;
         exJob.materials.forEach((materials, matIndex) => {
+          if (matIndex === 3 || matIndex === 6 || matIndex === 9) {
+            let findedJobOrb = false;
+
+            Object.keys(materials).forEach(materiaId => {
+              if (materiaId.slice(0, 9) === 'IT_JB_MM_') {
+                findedJobOrb = true;
+              }
+            });
+
+            if (!findedJobOrb) {
+              Object.keys(unit.jobsData[jobIndex].materials[14]).forEach(materiaId => {
+                if (materiaId.slice(0, 9) === 'IT_JB_MM_') {
+                  if (matIndex === 3) {
+                    materials[materiaId] = 5;
+                  } else if (matIndex === 6) {
+                    materials[materiaId] = 7;
+                  } else {
+                    materials[materiaId] = 10;
+                  }
+                }
+              });
+            }
+          }
+
           unit.jobsData[jobIndex].materials.push(materials);
           unit.jobsData[jobIndex].startTableLevel.push(16 + matIndex);
           unit.jobsData[jobIndex].goalTableLevel.push(16 + matIndex);

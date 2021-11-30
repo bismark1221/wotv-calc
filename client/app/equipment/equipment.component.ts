@@ -130,6 +130,17 @@ export class EquipmentComponent implements OnInit {
               skill.mainEffect = skill.effects[0].type;
             }
 
+            if (skill.cond) {
+              skill.cond.forEach(skillCond => {
+                skillCond.items.forEach((itemCond, itemCondIndex) => {
+                  if (skillCond.type === 'unit') {
+                    const unitCond = this.equipment.rawUnits.find(searchedUnit => searchedUnit.dataId === itemCond);
+                    skillCond.items[itemCondIndex] = unitCond.image;
+                  }
+                });
+              });
+            }
+
             this.equipment.passiveSkills.push(skill);
           }
         }

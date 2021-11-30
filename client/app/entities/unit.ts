@@ -1068,7 +1068,7 @@ export class Unit {
         });
 
         this.equipments[i].passiveSkills.forEach(skill => {
-          if (skill.type !== 'skill') {
+          if (skill.type !== 'skill' && (!skill.cond || this.checkCondition(skill.cond))) {
             skill.level = this.equipments[i].level;
 
             skill.effects.forEach(effect => {
@@ -1127,7 +1127,6 @@ export class Unit {
     }
 
     statsType.forEach(statType => {
-      this.updateStat(statType, 0, 'totalEquipment', 'fixe', true);
       if (this.stats[statType].equipments) {
         if (cumulativeRatio[statType]) {
           const statOrder = {

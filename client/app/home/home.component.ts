@@ -17,8 +17,6 @@ import { HomeService } from '../services/home.service';
 })
 
 export class HomeComponent {
-  markdown = '';
-  thanks = '';
   lang = 'en';
   version = 'GL';
 
@@ -70,28 +68,15 @@ export class HomeComponent {
   ) {
     this.navService.setTitle(null);
 
-    this.getTranslation();
     this.getUpdate();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       if (!this.noLangChangeOnInit) {
-        this.getTranslation();
         this.getUpdate();
         this.noLangChangeOnInit = false;
       }
     });
   }
-
-  private getTranslation() {
-    this.translateService.get('home.markdown').subscribe((res: string) => {
-      this.markdown = res;
-    });
-
-    this.translateService.get('home.thanks').subscribe((res: string) => {
-      this.thanks = res;
-    });
-  }
-
   private async getUpdate() {
     this.lang = this.translateService.currentLang;
     this.version = this.navService.getVersion();

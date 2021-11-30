@@ -505,6 +505,7 @@ export class EquipmentService {
         formattedSkill.upgrade = skillData.upgrade;
         formattedSkill.grow = skillData.grow;
         formattedSkill.maxLevel = skillData.maxLevel;
+        formattedSkill.cond = skillData.cond;
 
         formattedSkills.push(formattedSkill);
       }
@@ -587,6 +588,7 @@ export class EquipmentService {
       this.equipment.name = this.equipment.getName(this.translateService);
 
       this.equipment.rawSkills = apiResult.skills;
+      this.equipment.rawUnits = apiResult.units;
 
       this.equipment.upgrade = 0;
       this.equipment.level = 1;
