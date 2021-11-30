@@ -1537,6 +1537,9 @@ export class SkillService {
       case 'IMMUNE_CT_CHANGE' :
         html = 'Immune to CT change';
       break;
+      case 'IMMUNE_AP_CHANGE' :
+        html = 'Immune to AP change';
+      break;
       case 'AVG_CT' :
         html = 'Average CT of all units within the range';
       break;
