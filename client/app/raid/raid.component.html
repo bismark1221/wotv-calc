@@ -322,7 +322,9 @@
                       </div>
                     </ng-template>
                     <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                    <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                   </span>
+                  <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.png'}}" /></span>
                 </td>
                 <td>{{ skill.name }}</td>
                 <td class="skillEffectTd">

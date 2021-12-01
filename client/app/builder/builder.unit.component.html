@@ -530,6 +530,7 @@
                   </div>
                 </ng-template>
                 <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
               </span>
             </td>
             <td>{{ skill.name }}</td>
@@ -612,6 +613,7 @@
                   </div>
                 </ng-template>
                 <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
               </span>
             </td>
             <td>{{ skill.name }}</td>
@@ -696,6 +698,7 @@
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                 </span>
               </td>
               <td>{{ skill.name }}</td>
@@ -762,6 +765,7 @@
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                 </span>
               </td>
               <td>{{ skill.name }}</td>
@@ -828,6 +832,7 @@
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                 </span>
               </td>
               <td>{{ skill.name }}</td>
@@ -894,6 +899,7 @@
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                 </span>
               </td>
               <td>{{ skill.name }}</td>
@@ -960,6 +966,7 @@
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="unit.formattedLimit.possibleTarget == 'unit'"/>
                 </span>
               </td>
               <td>{{ unit.formattedLimit.name }}</td>

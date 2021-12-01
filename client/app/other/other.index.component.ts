@@ -25,9 +25,12 @@ export class OtherIndexComponent implements OnInit {
     {type: 'AGI', width: 60},
     {type: 'DEX', width: 65},
     {type: 'LUCK', width: 80},
+    {type: 'MOVE', width: 90},
+    {type: 'JUMP', width: 90},
     {type: 'EVADE', width: 90},
     {type: 'ACCURACY', width: 125},
-    {type: 'CRITIC_RATE', width: 150}
+    {type: 'CRITIC_RATE', width: 150},
+    {type: 'CRITIC_DAMAGE', width: 160}
   ];
 
   imageStatsType = [

@@ -168,6 +168,7 @@
                 </div>
               </ng-template>
               <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+              <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="equipment.activeSkill.possibleTarget == 'unit'"/>
             </span>
           </td>
           <td class="skillEffectTd">
