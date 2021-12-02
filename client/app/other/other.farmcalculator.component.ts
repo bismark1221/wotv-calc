@@ -28,7 +28,6 @@ export class OtherFarmCalculatorComponent implements OnInit {
 
   itemClassInInput = 'in-ng-input';
   itemClassListQuest = 'in-quest-list';
-  version = 'GL';
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -42,7 +41,6 @@ export class OtherFarmCalculatorComponent implements OnInit {
 
   async ngOnInit() {
     this.navService.setTitle('Farm Calculator');
-    this.version = this.navService.getVersion();
 
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       const data = params.get('data');

@@ -209,7 +209,7 @@
   height: 100%;
 }
 
-.otherIndex, .otherBestiary, .otherTitles, .otherJobPlanner, .otherFarmCalculator, .otherMateria {
+.otherIndex, .otherBestiary, .otherTitles, .otherJobPlanner, .otherFarmCalculator, .otherMaterialLookup, .otherMateria {
   position: fixed;
   padding: 5px;
   width: 150px;
@@ -218,12 +218,12 @@
   text-align: left;
 }
 
-.otherIndex a, .otherBestiary a, .otherTitles a, .otherJobPlanner a, .otherFarmCalculator a, .otherMateria a {
+.otherIndex a, .otherBestiary a, .otherTitles a, .otherJobPlanner a, .otherFarmCalculator a, .otherMaterialLookup a, .otherMateria a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.otherIndex a:hover, .otherBestiary a:hover, .otherTitles a:hover, .otherJobPlanner a:hover, .otherFarmCalculator a:hover, .otherMateria a:hover {
+.otherIndex a:hover, .otherBestiary a:hover, .otherTitles a:hover, .otherJobPlanner a:hover, .otherFarmCalculator a:hover, .otherMaterialLookup a:hover, .otherMateria a:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
 }
@@ -244,8 +244,12 @@
   margin-top: 136px;
 }
 
-.otherMateria {
+.otherMaterialLookup {
   margin-top: 170px;
+}
+
+.otherMateria {
+  margin-top: 204px;
 }
 
 /* Theme toogle switch */

@@ -2,7 +2,8 @@
   class="itemBlock"
   [ngClass]="{
     'in-ng-input': customClass === 'in-ng-input',
-    'in-quest-list': customClass === 'in-quest-list'
+    'in-quest-list': customClass === 'in-quest-list',
+    'in-material-lookup': customClass === 'in-material-lookup'
   }">
   <img
     *ngIf="item.type !== 'recipe' && (item.type !== 'job_awake_orb' || (item.type === 'job_awake_orb' && !item.class))"

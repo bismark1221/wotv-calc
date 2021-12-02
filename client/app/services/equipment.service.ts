@@ -393,6 +393,41 @@ export class EquipmentService {
     };
   }
 
+  async getEquipmentsFromMaterialLookup() {
+    const apiResult = await this.getApi(null, [{name: 'forMaterialLookup', value: 1}]);
+
+    if (apiResult.equipments && apiResult.equipments.length > 0) {
+      const rawItems = {};
+      for (const item of apiResult.items) {
+        if (item.type !== 'recipe' && item.dataId.slice(0, 9) !== 'IT_AF_AW_') {
+          item.equipments = [];
+          rawItems[item.dataId] = item;
+        }
+      }
+
+      for (const equipment of apiResult.equipments) {
+        if (equipment.materials && equipment.materials.length > 0 && Object.keys(equipment.materials[0]).length > 0) {
+          for (const materialLevel of equipment.materials) {
+            for (const itemId of Object.keys(materialLevel)) {
+              if (rawItems[itemId] && !rawItems[itemId].equipments.find(searchedEquipment => searchedEquipment.dataId === equipment.dataId)) {
+                rawItems[itemId].equipments.push(equipment);
+              }
+            }
+          }
+        }
+      }
+
+      const items = [];
+      for (const itemId of Object.keys(rawItems)) {
+        items.push(rawItems[itemId]);
+      }
+
+      return items;
+    }
+
+    return [];
+  }
+
   filterEquipments(equipments, filters, sort = 'rarity', order = 'desc') {
     if (filters) {
       const filteredEquipments = [];

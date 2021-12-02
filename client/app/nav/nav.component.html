@@ -46,6 +46,9 @@
           <div class="otherFarmCalculator" *ngIf="showOtherNav">
             <a [routerLink]="[getRoute('/other/farm-calculator')]" (click)="showOtherNav=false">Farm Calculator</a>
           </div>
+          <div class="otherMaterialLookup" *ngIf="showOtherNav">
+            <a [routerLink]="[getRoute('/other/material-lookup')]" (click)="showOtherNav=false">Material Lookup</a>
+          </div>
           <div class="otherMateria" *ngIf="showOtherNav">
             <a [routerLink]="[getRoute('/other/materia')]" (click)="showOtherNav=false">Materia</a>
           </div>
@@ -231,6 +234,7 @@
           <a class="nav-link" [routerLink]="[getRoute('/other/titles')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Titles</a>
           <a class="nav-link" [routerLink]="[getRoute('/other/jobplanner')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Job Planner</a>
           <a class="nav-link" [routerLink]="[getRoute('/other/farm-calculator')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Farm Calculator</a>
+          <a class="nav-link" [routerLink]="[getRoute('/other/material-lookup')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Material Lookup</a>
           <a class="nav-link" [routerLink]="[getRoute('/other/materia')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Materia</a>
         </div>
 

@@ -752,7 +752,10 @@
 
             <tr *ngFor="let upgradedSkill of skill.upgrades">
               <td colspan="3">Upgrade</td>
-              <td *ngIf="i === 'counter'"></td>
+              <td *ngIf="i === 'counter'">
+                <span *ngIf="upgradedSkill.based"><img title="{{ upgradedSkill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + upgradedSkill.based + '.png'}}" /></span>
+                <span *ngIf="upgradedSkill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.png'}}" /></span>
+              </td>
               <td>{{ upgradedSkill.name }}</td>
               <td class="skillEffectTd">
                 <div *ngIf="upgradedSkill.upgradeHtml !== ''">
