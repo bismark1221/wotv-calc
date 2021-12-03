@@ -1649,7 +1649,7 @@ export class SkillService {
     }
 
     if (skill.maths) {
-      html = this.formatMaths(skill, html, 'notDamage');
+      html = this.formatMaths(skill, html, 'notDamage', effect);
     }
 
     if (skill.time) {
@@ -1770,13 +1770,13 @@ export class SkillService {
     return formattedDamage;
   }
 
-  formatMaths(skill, html, from) {
+  formatMaths(skill, html, from, effect = null) {
     if (skill.maths) {
       skill.maths.forEach(math => {
         if ((from === 'damage' && (math.dst === 'DAMAGE' || math.dst === 'ABSORB'))
-          || (from === 'notDamage' && (math.dst !== 'DAMAGE' && math.dst !== 'ABSORB'))
+          || (from === 'notDamage' && (math.dst !== 'DAMAGE' && math.dst !== 'ABSORB') && (math.dst !== 'BUFF' || effect.timing === 'SKILL_AFTER'))
         ) {
-          if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB' && math.dst !== 'TRIGGER') {
+          if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB' && math.dst !== 'TRIGGER' && math.dst !== 'BUFF') {
             html += ' + Increase ';
 
             switch (math.dst) {
@@ -1814,6 +1814,8 @@ export class SkillService {
               }
               break;
             case 'PERCENT' :
+              break;
+            case 'MORE_THAN' :
               break;
             default:
               html += math.value + '% ';
@@ -1944,7 +1946,13 @@ export class SkillService {
             case 'EFFECT_CONDITION' :
               switch (math.formula) {
                 case 'AT_LEAST' :
-                  html += ' If the target have at least ' + math.condition + ' of the following effects : ';
+                  html += ' If ' + (math.conditionTarget === 'self' ? 'you' : 'the target') + ' have at least ' + math.condition + ' of the following effects : ';
+                  math.effects.forEach((effectName, effectIndex) => {
+                    html += effectName[0].toUpperCase() + effectName.slice(1).toLowerCase() + (effectIndex < math.effects.length - 1 ? ', ' : '');
+                  });
+                  break;
+                case 'MORE_THAN' :
+                  html += ' If ' + (math.conditionTarget === 'self' ? 'you' : 'the target') + ' have ' + math.condition + ' or more of the following effects : ';
                   math.effects.forEach((effectName, effectIndex) => {
                     html += effectName[0].toUpperCase() + effectName.slice(1).toLowerCase() + (effectIndex < math.effects.length - 1 ? ', ' : '');
                   });
