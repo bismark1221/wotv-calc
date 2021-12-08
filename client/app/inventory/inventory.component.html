@@ -1,0 +1,93 @@
+<div class="row">
+  <div>
+    <button class="btn btn-main" (click)="save()">Save</button>
+  </div>
+  <div>
+    <div class="searchBlock">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      <input class="searchInput" type="text" placeholder="Search by name" [(ngModel)]="searchText['equipments']">
+
+      <button class="btn btn-main" (click)="addEquipment()">
+        Add an equipment
+      </button>
+    </div>
+    <div class="unitList">
+      <div class="unitCol" *ngFor="let equipment of getFilteredItems('equipments')">
+        <div class="item-plus" (click)="ownItem(item.dataId, 'equipments')">
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="cardIcons">
+          <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
+          <img class="elementImg" src="{{'assets/elements/' + equipment.element + '.png'}}" *ngIf="equipment.element" />
+        </div>
+        <div class="unitImgBlock" (click)="ownItem(equipment.dataId, 'equipments')">
+          <img class="unitImg" src="assets/equipments/{{ equipment.image }}.png"/>
+        </div>
+        <div class="cardTitle">
+          <div class="unitName">{{ equipment.name }}</div>
+          <div class="selectLevelBlock" *ngIf="equipment && equipment.skills.length > 1">
+            Upgrade : +{{ equipment.upgrade}}
+          </div>
+          <div class="selectLevelBlock" *ngIf="equipment && equipment.growIds.length > 1">
+            Type : {{ equipment.grows[equipment.grow].names.en }}
+          </div>
+          <div class="selectLevelBlock" *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+            Level : {{ equipment.level }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let type of ['units', 'cards', 'espers']">
+    <div class="searchBlock">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      <input class="searchInput" type="text" placeholder="Search by name" [(ngModel)]="searchText[type]">
+
+      <button
+        class="btn-filter"
+        [ngClass]="{'btn-filter-selected': isFilterSelected(type, true)}"
+        (click)="filterList(type, true)"
+      >
+        Only owned {{ type }}
+      </button>
+
+      <button
+        class="btn-filter"
+        [ngClass]="{'btn-filter-selected': isFilterSelected(type, false)}"
+        (click)="filterList(type, false)"
+      >
+        Only not owned {{ type }}
+      </button>
+    </div>
+    <div class="unitList">
+      <div class="unitCol" *ngFor="let item of getFilteredItems(type)" [ngClass]="{'unitNotOwned': !inventory[type][item.dataId]}">
+        <div class="item-plus" (click)="ownItem(item.dataId, type)">
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="cardIcons">
+          <img class="rarityImg" src="{{'assets/rarity/' + item.rarity + '.png'}}" />
+          <img class="elementImg" src="{{'assets/elements/' + item.element + '.png'}}" *ngIf="item.element" />
+        </div>
+        <div class="unitImgBlock" (click)="ownItem(item.dataId, type)">
+          <img class="unitImg" src="assets/units/{{ item.image }}_m.png" *ngIf="type == 'units'"/>
+          <img class="unitImg" src="assets/cards/{{ item.image }}_m.png" *ngIf="type == 'cards'"/>
+          <img class="unitImg" src="assets/units/{{ item.image }}_m.png" *ngIf="type == 'espers'"/>
+        </div>
+        <div class="cardTitle">
+          <div class="unitName">{{ item.name }}</div>
+          <div class="selectLevelBlock" *ngIf="inventory[type][item.dataId]">
+            Level : <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="tableLevels[type == 'units' && item.exJobs.length > 0 ? '120' : type !== 'espers' || item.SPs.length === 3 ? '99' : '80']" [(ngModel)]="inventory[type][item.dataId]" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item }}
+              </ng-template>
+            </ng-select> / {{ type == 'units' && item.exJobs.length > 0 ? '120' : type !== 'espers' || item.SPs.length === 3 ? '99' : '80' }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

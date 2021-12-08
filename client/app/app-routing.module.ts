@@ -19,6 +19,7 @@ import { RaidsComponent } from './raids/raids.component';
 import { RaidComponent } from './raid/raid.component';
 import { QuestsComponent } from './quests/quests.component';
 import { QuestComponent } from './quest/quest.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 import { UserComponent } from './user/user.component';
 
@@ -57,6 +58,7 @@ const ROUTES: Routes = [
   { path: 'raid/:slug', component: RaidComponent },
   { path: 'quests', component: QuestsComponent },
   { path: 'quest/:slug', component: QuestComponent },
+  { path: 'inventory', component: InventoryComponent },
   { path: 'index', redirectTo: 'other/index', pathMatch: 'full' },
 
   { path: 'user', component: UserComponent },
@@ -114,6 +116,7 @@ const ROUTES: Routes = [
   { path: 'JP/raid/:slug', component: RaidComponent },
   { path: 'JP/quests', component: QuestsComponent },
   { path: 'JP/quest/:slug', component: QuestComponent },
+  { path: 'JP/inventory', component: InventoryComponent },
   { path: 'JP/index', redirectTo: 'other/index', pathMatch: 'full' },
 
   { path: 'JP/other', component: OtherComponent,

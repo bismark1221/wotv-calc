@@ -53,6 +53,10 @@ import { RaidComponent } from './raid/raid.component';
 import { QuestsComponent } from './quests/quests.component';
 import { QuestComponent } from './quest/quest.component';
 
+import { InventoryComponent } from './inventory/inventory.component';
+import { ModalInventoryEquipmentsComponent } from './inventory/modal/modal.equipments';
+
+
 import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
 import { OtherIndexComponent } from './other/other.index.component';
@@ -114,6 +118,7 @@ import { ApiService } from './services/api.service';
 import { HomeService } from './services/home.service';
 import { UserService } from './services/user.service';
 import { MateriaService } from './services/materia.service';
+import { InventoryService } from './services/inventory.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -145,6 +150,7 @@ export function createTranslateLoader(http: HttpClient) {
     RaidComponent,
     QuestsComponent,
     QuestComponent,
+    InventoryComponent,
     RoundDownPipe,
     SafeHtmlPipe,
     HighlightSearchPipe,
@@ -167,6 +173,7 @@ export function createTranslateLoader(http: HttpClient) {
     ModalSaveComponent,
     ModalDeleteComponent,
     ModalLinkComponent,
+    ModalInventoryEquipmentsComponent,
     LoginComponent,
     OtherComponent,
     OtherTitlesComponent,
@@ -242,6 +249,7 @@ export function createTranslateLoader(http: HttpClient) {
     HomeService,
     UserService,
     MateriaService,
+    InventoryService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler

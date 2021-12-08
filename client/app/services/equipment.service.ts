@@ -360,6 +360,40 @@ export class EquipmentService {
     return [];
   }
 
+
+  async getEquipmentForInventory() {
+    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+
+    const rawEquipments = [];
+    const acquisitionTypes = ['tmr'];
+
+    for (const apiEquipment of apiResult.equipments) {
+      const rawEquipment = new Equipment();
+      rawEquipment.constructFromJson(apiEquipment, this.translateService);
+      if (this.getAcquisition(rawEquipment) || rawEquipment.acquisition.type !== 'Unknown') {
+        if (this.getAcquisition(rawEquipment)) {
+          rawEquipment.acquisition.type = this.acquisitionTypesTranslation[this.getAcquisition(rawEquipment)];
+        }
+
+        rawEquipments.push(rawEquipment);
+
+        if (rawEquipment.acquisition.type !== 'Unknown' && rawEquipment.acquisition.type !== 'tmr') {
+          const acquisition = rawEquipment.acquisition.type[this.translateService.getDefaultLang()];
+
+          if (acquisitionTypes.indexOf(acquisition) === -1) {
+            acquisitionTypes.push(acquisition);
+          }
+        }
+      }
+    }
+
+    return {
+      rawEquipments: this.sortEquipments(rawEquipments),
+      equipments: this.filterEquipments(rawEquipments, {}),
+      acquisitionTypes: acquisitionTypes
+    };
+  }
+
   async getEquipmentsForUnitBuilder(rawData = null) {
     if (rawData && rawData.equipments && rawData.equipments.length > 0) {
       return rawData;

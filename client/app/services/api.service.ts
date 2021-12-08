@@ -41,8 +41,9 @@ export class ApiService {
       .toPromise();
   }
 
-  public async postForLogin(type, data) {
-    const uri = '/api/gl/' + type;
+  public async postForLogin(type, data, forceGLVersion = false) {
+    const version = !forceGLVersion && this.navService.getVersion() === 'JP' ? 'jp' : 'gl';
+    const uri = '/api/' + version + '/' + type;
 
     return this.http.post(
       uri,
