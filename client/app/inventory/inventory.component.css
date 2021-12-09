@@ -5,6 +5,37 @@
   margin-top: 20px;
 }
 
+.searchBlock {
+  width: 1250px;
+  background: #F5F6F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  height: 40px;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 860px;
+  margin-right: 10px;
+}
+
+.fa-search {
+  padding-right: 8px;
+  color: #000;
+}
+
+.btn-filter {
+  border-color: black;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.btn-in-search {
+  float: right;
+}
+
 .unitsList {
   margin-top: 10px;
 }
@@ -68,7 +99,7 @@
   margin-left: 76px;
 }
 
-.unitNotOwned:hover .unit-plus {
+.unitNotOwned:hover .item-plus {
   opacity: 1;
   cursor: pointer;
 }
@@ -100,4 +131,14 @@
 .select-level {
   display: inline-block;
   width: 70px;
+}
+
+.equipmentBlock {
+  cursor: pointer;
+}
+
+.loadingBlock {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }

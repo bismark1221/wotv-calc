@@ -614,13 +614,17 @@ export class EquipmentService {
       materias: {}
     };
 
-    Object.keys(equipment.stats).forEach(stat => {
-      data.stats[stat] = equipment.stats[stat].selected ? equipment.stats[stat].selected : 0;
-    });
+    if (equipment.stats) {
+      Object.keys(equipment.stats).forEach(stat => {
+        data.stats[stat] = equipment.stats[stat].selected ? equipment.stats[stat].selected : 0;
+      });
+    }
 
-    equipment.skill.forEach(skill => {
-      data.skill[skill.dataId] = skill.level;
-    });
+    if (equipment.skill) {
+      equipment.skill.forEach(skill => {
+        data.skill[skill.dataId] = skill.level;
+      });
+    }
 
     if (equipment.materias) {
       Object.keys(equipment.materias).forEach(materiaType => {

@@ -59,6 +59,7 @@ const ROUTES: Routes = [
   { path: 'quests', component: QuestsComponent },
   { path: 'quest/:slug', component: QuestComponent },
   { path: 'inventory', component: InventoryComponent },
+  { path: 'inventory/:inventoryId', component: InventoryComponent },
   { path: 'index', redirectTo: 'other/index', pathMatch: 'full' },
 
   { path: 'user', component: UserComponent },
@@ -117,6 +118,7 @@ const ROUTES: Routes = [
   { path: 'JP/quests', component: QuestsComponent },
   { path: 'JP/quest/:slug', component: QuestComponent },
   { path: 'JP/inventory', component: InventoryComponent },
+  { path: 'JP/inventory/:inventoryId', component: InventoryComponent },
   { path: 'JP/index', redirectTo: 'other/index', pathMatch: 'full' },
 
   { path: 'JP/other', component: OtherComponent,

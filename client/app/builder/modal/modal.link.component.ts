@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, Input } from '@angular/core';
+import { Component, AfterViewInit, Input, OnInit } from '@angular/core';
 import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
 import { ClipboardService } from 'ngx-clipboard';
@@ -16,7 +16,7 @@ import { MateriaService } from '../../services/materia.service';
   templateUrl: './modal.link.component.html',
   styleUrls: ['./modal.link.component.css']
 })
-export class ModalLinkComponent implements AfterViewInit {
+export class ModalLinkComponent implements OnInit, AfterViewInit {
   exportableLink = '';
   saveStep = 'loading';
 
@@ -34,6 +34,13 @@ export class ModalLinkComponent implements AfterViewInit {
     private navService: NavService,
     private modal: NgbActiveModal
   ) {
+  }
+
+  ngOnInit() {
+    if (this.type === 'inventory') {
+      this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/inventory') + '/' + this.item;
+      this.saveStep = 'link';
+    }
   }
 
   ngAfterViewInit() {
@@ -73,6 +80,8 @@ export class ModalLinkComponent implements AfterViewInit {
           this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/materia') + '/' + link;
           this.saveStep = 'link';
         });
+        break;
+      case 'inventory' :
         break;
       default :
         console.log('Trying to link something not managed : ' + this.type);

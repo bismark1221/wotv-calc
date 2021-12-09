@@ -32,10 +32,13 @@ export class InventoryService {
   }
 
   async getInventory(user) {
-    console.log(user);
     const apiResult = await this.apiService.loadData('inventory', user.uid);
 
-    console.log(apiResult);
+    return apiResult;
+  }
+
+  async getInventoryFromId(inventoryId) {
+    const apiResult = await this.apiService.loadData('inventory', inventoryId, [{name: 'fromShareId', value: 1}]);
 
     return apiResult;
   }
@@ -43,19 +46,4 @@ export class InventoryService {
   saveInventory(data) {
     this.apiService.postForLogin('inventory', data);
   }
-
-  /*async userHaveDevice(loadingType) {
-    const data = {
-      userId: this.authService.getUser().uid
-    };
-
-    const apiResult = await this.apiService.postForLogin('userHaveDevice', data);
-    this.loading[loadingType] = false;
-
-    if (apiResult.result === true) {
-      return true;
-    } else {
-      return false;
-    }
-  }*/
 }

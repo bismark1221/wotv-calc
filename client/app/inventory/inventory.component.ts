@@ -1,11 +1,14 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 import { ClipboardService } from 'ngx-clipboard';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { v5 as uuidv5 } from 'uuid';
 
 import { InventoryService } from '../services/inventory.service';
 import { AuthService } from '../services/auth.service';
 import { ToolService } from '../services/tool.service';
 
+import { ModalLinkComponent } from '../builder/modal/modal.link.component';
 import { ModalInventoryEquipmentsComponent } from './modal/modal.equipments';
 
 @Component({
@@ -24,13 +27,13 @@ export class InventoryComponent implements OnInit {
   units = [];
   cards = [];
   espers = [];
-  equipments = [];
 
   inventory = {
     units: {},
     espers: {},
     cards: {},
-    equipments: []
+    equipments: [],
+    uuid: null
   };
 
   searchText = {
@@ -50,11 +53,15 @@ export class InventoryComponent implements OnInit {
   tableLevels = {};
 
   loading = true;
+  inventoryFromId = false;
+  countUserUpdate = 0;
 
   constructor(
     private inventoryService: InventoryService,
     private toolService: ToolService,
     private authService: AuthService,
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
     private modalService: NgbModal
   ) {}
 
@@ -65,22 +72,58 @@ export class InventoryComponent implements OnInit {
         this.tableLevels[max].push(i);
       }
     });
+
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
+      if (params.get('inventoryId')) {
+        this.inventoryFromId = true;
+        await this.getInventory(params.get('inventoryId'));
+      }
+    });
   }
 
   ngAfterViewInit() {
     setTimeout(() => {
       this.authService.$user.subscribe(async user => {
-        if (user) {
+        if (user && !this.inventoryFromId) {
           this.user = user;
           await this.getInventory();
+        } else if (!user && !this.inventoryFromId) {
+          if (this.countUserUpdate > 0) {
+            this.loading = false;
+
+            this.user = null;
+
+            this.rawUnits = [];
+            this.rawCards = [];
+            this.rawEspers = [];
+            this.rawEquipments = [];
+
+            this.units = [];
+            this.cards = [];
+            this.espers = [];
+
+            this.inventory = {
+              units: {},
+              espers: {},
+              cards: {},
+              equipments: [],
+              uuid: null
+            };
+          } else {
+            this.countUserUpdate++;
+          }
         }
       });
     });
   }
 
   async getInventory(userShareId = null) {
-    this.loading = true;
-    const result = await this.inventoryService.getInventory(this.user);
+    let result = null;
+    if (!userShareId) {
+      result = await this.inventoryService.getInventory(this.user);
+    } else {
+      result = await this.inventoryService.getInventoryFromId(userShareId);
+    }
 
     if (result.units) {
       this.rawUnits = result.units;
@@ -98,10 +141,39 @@ export class InventoryComponent implements OnInit {
           units: {},
           espers: {},
           cards: {},
-          equipments: []
+          equipments: [],
+          uuid: null
         };
       } else {
-        this.inventory = result.inventory;
+        let equipments = [];
+
+        if (result.inventory.equipments) {
+          result.inventory.equipments.forEach(rawEquipment => {
+            const newEquipment = JSON.parse(JSON.stringify(this.rawEquipments.find(searchedEquipment => searchedEquipment.dataId === rawEquipment.dataId)));
+
+            newEquipment.grow = rawEquipment.grow;
+            newEquipment.upgrade = rawEquipment.upgrade;
+            newEquipment.level = rawEquipment.level;
+            newEquipment.growIds = Object.keys(newEquipment.grows);
+            newEquipment.name = this.toolService.getName(newEquipment);
+
+            equipments.push(newEquipment);
+          });
+
+          equipments = this.toolService.sortByRarity(equipments);
+
+          equipments.forEach((equipment, equipmentIndex) => {
+            equipment.equipmentIndex = equipmentIndex;
+          });
+        }
+
+        this.inventory = {
+          units: result.inventory.units ? result.inventory.units : {},
+          espers: result.inventory.espers ? result.inventory.espers : {},
+          cards: result.inventory.cards ? result.inventory.cards : {},
+          equipments: equipments,
+          uuid: result.inventory.uuid
+        };
       }
     }
 
@@ -109,7 +181,7 @@ export class InventoryComponent implements OnInit {
   }
 
   translate() {
-    ['units', 'cards', 'espers', 'equipments'].forEach(type => {
+    ['units', 'cards', 'espers'].forEach(type => {
       this['raw' + type.slice(0, 1).toUpperCase() + type.slice(1, type.length)].forEach(item => {
         item.name = this.toolService.getName(item);
       });
@@ -120,6 +192,7 @@ export class InventoryComponent implements OnInit {
   ownItem(dataId, type) {
     if (!this.inventory[type][dataId]) {
       this.inventory[type][dataId] = 1;
+      this.save();
     }
   }
 
@@ -178,17 +251,8 @@ export class InventoryComponent implements OnInit {
     this.openEquipmentsModal();
   }
 
-  save() {
-    const dataToSave = {
-      units: this.inventory.units,
-      cards: this.inventory.cards,
-      espers: this.inventory.espers,
-      equipments: []
-    };
-
-    console.log(dataToSave);
-
-    this.inventoryService.saveInventory(dataToSave);
+  updateEquipment(equipment) {
+    this.openEquipmentsModal(equipment);
   }
 
   openEquipmentsModal(loadedEquipment = null) {
@@ -201,14 +265,70 @@ export class InventoryComponent implements OnInit {
 
     modalRef.result.then((equipment) => {
       if (loadedEquipment) {
-        loadedEquipment = equipment;
+        if (equipment) {
+          this.inventory.equipments[loadedEquipment.equipmentIndex] = equipment;
+        } else {
+          this.inventory.equipments.splice(loadedEquipment.equipmentIndex, 1);
+        }
       } else {
         this.inventory.equipments.push(equipment);
       }
 
-      console.log(this.inventory.equipments);
+      this.inventory.equipments = this.toolService.sortByRarity(this.inventory.equipments);
+      this.inventory.equipments.forEach((newEquipment, equipmentIndex) => {
+        newEquipment.equipmentIndex = equipmentIndex;
+      });
+
+      this.save();
 
     }, (reason) => {
     });
+  }
+
+  save() {
+    if (this.user) {
+      let uuid = '';
+      if (this.inventory.uuid) {
+        uuid = this.inventory.uuid;
+      } else {
+        uuid = uuidv5(this.user.uid, uuidv5.URL);
+        this.inventory.uuid = uuid;
+      }
+
+      const dataToSave = {
+        units: this.inventory.units,
+        cards: this.inventory.cards,
+        espers: this.inventory.espers,
+        equipments: [],
+        user: this.user.uid,
+        uuid: uuid
+      };
+
+      this.inventory.equipments.forEach(equipment => {
+        dataToSave.equipments.push({
+          dataId: equipment.dataId,
+          upgrade: equipment.upgrade,
+          grow: equipment.grow,
+          level: equipment.level
+        });
+      });
+
+      this.inventoryService.saveInventory(dataToSave);
+    }
+  }
+
+  openLinkModal() {
+    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
+
+    let uuid = '';
+    if (this.inventory.uuid) {
+      uuid = this.inventory.uuid;
+    } else {
+      uuid = uuidv5(this.user.uid, uuidv5.URL);
+      this.inventory.uuid = uuid;
+    }
+
+    modalRef.componentInstance.type = 'inventory';
+    modalRef.componentInstance.item = uuid;
   }
 }
