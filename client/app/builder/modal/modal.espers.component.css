@@ -16,6 +16,13 @@
 
 .closeButton button {
   padding: 10px;
+  background: none;
+  border: 0;
+}
+
+.closeButton button span {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .espers {
@@ -292,4 +299,8 @@
 .select-level {
   display: inline-block;
   width: 60px;
+}
+
+.buffImg {
+  width: 40px;
 }

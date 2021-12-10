@@ -122,6 +122,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
+  padding: 0;
 }
 
 .btn-buildLink {
@@ -133,6 +134,7 @@
   margin-right: 20px;
   display: inline-block;
   vertical-align: top;
+  padding: 0;
 }
 
 .leftBlock table {
@@ -363,6 +365,7 @@
   width: 1030px;
   display: inline-block;
   vertical-align: top;
+  padding: 0;
 }
 
 .statsTable, .skillsTable {

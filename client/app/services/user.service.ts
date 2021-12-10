@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { LocalStorageService } from 'angular-2-local-storage';
 
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { ApiService } from './api.service';
 import { AuthService } from './auth.service';
@@ -20,21 +20,21 @@ import { GuildService } from './guild.service';
 export class UserService {
 
   private equipmentStatMapping = {
-    'hp': 'HP',
-    'mp': 'TP',
-    'ap': 'AP',
-    'atk': 'ATK',
-    'def': 'DEF',
-    'mnd': 'SPR',
-    'mag': 'MAG',
-    'dex': 'DEX',
-    'spd': 'AGI',
-    'luk': 'LUCK',
-    'iniap': 'INITIAL_AP',
-    'hit' : 'ACCURACY',
-    'crt' : 'CRITIC_RATE',
-    'crta': 'CRITIC_EVADE',
-    'avd' : 'EVADE'
+    hp: 'HP',
+    mp: 'TP',
+    ap: 'AP',
+    atk: 'ATK',
+    def: 'DEF',
+    mnd: 'SPR',
+    mag: 'MAG',
+    dex: 'DEX',
+    spd: 'AGI',
+    luk: 'LUCK',
+    iniap: 'INITIAL_AP',
+    hit : 'ACCURACY',
+    crt : 'CRITIC_RATE',
+    crta: 'CRITIC_EVADE',
+    avd : 'EVADE'
   };
 
   private type = '';

@@ -11,6 +11,7 @@
 .masterButtons {
   width: 100%;
   margin-bottom: 10px;
+  padding: 0;
 }
 
 .masterButtons > button {
@@ -88,6 +89,7 @@
   display: inline-block;
   width: 250px;
   vertical-align: top;
+  padding: 0;
 }
 
 .unitCol:not(:last-child) {
@@ -346,6 +348,7 @@
 .teamGuild {
   width: 100%;
   margin-top: 10px;
+  padding: 0;
 }
 
 .teamGuild > table {

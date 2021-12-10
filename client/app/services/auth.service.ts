@@ -1,7 +1,8 @@
 import { Injectable, NgZone } from '@angular/core';
-import { auth } from 'firebase/app';
-import { AngularFireAuth } from '@angular/fire/auth';
-import { AngularFirestore } from '@angular/fire/firestore';
+import firebase from 'firebase/compat/app';
+import "firebase/compat/auth";
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { LocalStorageService } from 'angular-2-local-storage';
@@ -173,13 +174,13 @@ export class AuthService {
 
     switch (provider) {
       case 'google':
-        authProvider = new auth.GoogleAuthProvider();
+        authProvider = new firebase.auth.GoogleAuthProvider();
         break;
       case 'facebook':
-        authProvider = new auth.FacebookAuthProvider();
+        authProvider = new firebase.auth.FacebookAuthProvider();
         break;
       case 'twitter':
-        authProvider = new auth.TwitterAuthProvider();
+        authProvider = new firebase.auth.TwitterAuthProvider();
         break;
       default:
         console.log('Not manage auth provider : ' + provider);

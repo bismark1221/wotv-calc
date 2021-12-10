@@ -9,7 +9,7 @@ import { AuthService } from '../services/auth.service';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent implements OnInit {
+export class UserComponent implements OnInit, AfterViewInit {
   token;
   dumpResult;
   haveDevice;

@@ -131,28 +131,41 @@ export class ToolService {
 
   equal(a, b) {
     if (a && b && typeof a === 'object' && typeof b === 'object') {
-      let length, i, keys;
+      let length;
+      let i;
+
       if (Array.isArray(a)) {
         length = a.length;
-        if (length !== b.length) { return false; }
+        if (length !== b.length) {
+          return false;
+        }
+
         for (i = length; i-- !== 0;) {
-          if (!this.equal(a[i], b[i])) { return false; }
+          if (!this.equal(a[i], b[i])) {
+            return false;
+          }
         }
         return true;
       }
 
-      keys = Object.keys(a);
+      const keys = Object.keys(a);
       length = keys.length;
-      if (length !== Object.keys(b).length) { return false; }
+      if (length !== Object.keys(b).length) {
+        return false;
+      }
 
       for (i = length; i-- !== 0;) {
-        if (!Object.prototype.hasOwnProperty.call(b, keys[i])) { return false; }
+        if (!Object.prototype.hasOwnProperty.call(b, keys[i])) {
+          return false;
+        }
       }
 
       for (i = length; i-- !== 0;) {
         const key = keys[i];
 
-        if (!this.equal(a[key], b[key])) { return false; }
+        if (!this.equal(a[key], b[key])) {
+          return false;
+        }
       }
 
       return true;

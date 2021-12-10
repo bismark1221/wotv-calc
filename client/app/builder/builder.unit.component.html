@@ -438,7 +438,7 @@
           <th class="sub"></th>
           <th class="sub" *ngFor="let statType of line">
             <img *ngIf="buffsImage.indexOf(statType.toLowerCase()) !== -1" class="buffImg" title="{{ statType }}" src="{{ '/assets/buffs/' + statType.toLowerCase() + '.png' }}">
-            <span *ngIf="buffsImage.indexOf(statType.toLowerCase()) === -1">{{ statType }}</span>
+            <span *ngIf="buffsImage.indexOf(statType.toLowerCase()) === -1">{{ statType.replace("_", " ") }}</span>
           </th>
         </tr>
         <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let comeFrom of buffsFrom">

@@ -20,6 +20,13 @@
 
 .closeButton button {
   padding: 10px;
+  background: none;
+  border: 0;
+}
+
+.closeButton button span {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .cards {

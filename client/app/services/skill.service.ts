@@ -10,36 +10,36 @@ import { Skill } from '../entities/skill';
 @Injectable()
 export class SkillService {
   calcTypeFormat = {
-    '0': '',
-    'fixe': '',
-    'percent': '%',
-    'apply': '%',
-    'resistance': '%',
-    'nullify': 'x',
-    'dispel': 'x',
-    'unknow': 'x',
-    'decrease': 'x',
-    'hp': 'hp',
+    0: '',
+    fixe: '',
+    percent: '%',
+    apply: '%',
+    resistance: '%',
+    nullify: 'x',
+    dispel: 'x',
+    unknow: 'x',
+    decrease: 'x',
+    hp: 'hp',
     undefined: 'x'
   };
 
   counterType = {
-    'ALL': 'all',
-    'PHYSIC': 'physical',
-    'MAGIC': 'magical'
+    ALL: 'all',
+    PHYSIC: 'physical',
+    MAGIC: 'magical'
   };
 
   targets = {
-    'self': 'caster',
-    'target': 'target',
-    'allyNotSelf': 'ally',
-    'selfSide': 'all allies',
-    'ennemySide': 'all enemies',
-    'all': 'everyone on map',
-    'deadAlly': 'dead ally',
-    'deadEnnemy': 'dead enemy',
-    'deadAll': 'everyone dead',
-    'panel': 'panel'
+    self: 'caster',
+    target: 'target',
+    allyNotSelf: 'ally',
+    selfSide: 'all allies',
+    ennemySide: 'all enemies',
+    all: 'everyone on map',
+    deadAlly: 'dead ally',
+    deadEnnemy: 'dead enemy',
+    deadAll: 'everyone dead',
+    panel: 'panel'
   };
 
   private re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g;
@@ -59,11 +59,11 @@ export class SkillService {
   ) {}
 
   private i(s: any) {
-      return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
+    return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
   }
 
   private normChunk(s: any, l: any) {
-      return (!s.match(this.ore) || l === 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
+    return (!s.match(this.ore) || l === 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
   public sortEffectBuffs(effects) {
@@ -74,24 +74,34 @@ export class SkillService {
       const xN = x.replace(this.re, '\0$1\0').replace(/\0$/, '').replace(/^\0/, '').split('\0');
       const yN = y.replace(this.re, '\0$1\0').replace(/\0$/, '').replace(/^\0/, '').split('\0');
 
-      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
-      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
+      const xD = parseInt((x as any).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
+      const yD = parseInt((y as any).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
 
       if (yD) {
-          if (xD < yD) { return -1; } else if (xD > yD) { return 1; }
+        if (xD < yD) {
+          return -1;
+        } else if (xD > yD) {
+          return 1;
+        }
       }
 
       for (let cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
           this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
           this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
           if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
-              return isNaN(this.oFxNcL) ? 1 : -1;
+            return isNaN(this.oFxNcL) ? 1 : -1;
           }
+
           if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
-              const comp = this.oFxNcL.localeCompare(this.oFyNcL);
-              return comp / Math.abs(comp);
+            const comp = this.oFxNcL.localeCompare(this.oFyNcL);
+            return comp / Math.abs(comp);
           }
-          if (this.oFxNcL < this.oFyNcL) { return -1; } else if (this.oFxNcL > this.oFyNcL) { return 1; }
+
+          if (this.oFxNcL < this.oFyNcL) {
+            return -1;
+          } else if (this.oFxNcL > this.oFyNcL) {
+            return 1;
+          }
       }
     });
 
@@ -1665,13 +1675,13 @@ export class SkillService {
 
   private formatConditions(condition) {
     const conditions = {
-      'BEHIND': ' when attacking from behind',
-      'MALE': ' when attacking male units',
-      'ON_PHYSIC_ATTACK': ' when attacking with physic attacks',
-      'ON_MAGIC_ATTACK': ' when attacking with magic attacks',
-      'ON_CRITICAL': ' when performing a critical hit',
-      'HUMAN': ' when cast on human',
-      'NETHERBEAST': ' when cast on nether beast'
+      BEHIND: ' when attacking from behind',
+      MALE: ' when attacking male units',
+      ON_PHYSIC_ATTACK: ' when attacking with physic attacks',
+      ON_MAGIC_ATTACK: ' when attacking with magic attacks',
+      ON_CRITICAL: ' when performing a critical hit',
+      HUMAN: ' when cast on human',
+      NETHERBEAST: ' when cast on nether beast'
     };
 
     return conditions[condition];
@@ -1975,14 +1985,14 @@ export class SkillService {
 
   formatTarget(skill, effect, html, fromEquipment = false) {
     const conditions = {
-      'FIRE_ELEMENT': ' for fire ',
-      'ICE_ELEMENT': ' for ice ',
-      'WIND_ELEMENT': ' for wind ',
-      'EARTH_ELEMENT': ' for earth ',
-      'LIGHTNING_ELEMENT': ' for lightning ',
-      'WATER_ELEMENT': ' for water ',
-      'LIGHT_ELEMENT': ' for light ',
-      'DARK_ELEMENT': ' for dark ',
+      FIRE_ELEMENT: ' for fire ',
+      ICE_ELEMENT: ' for ice ',
+      WIND_ELEMENT: ' for wind ',
+      EARTH_ELEMENT: ' for earth ',
+      LIGHTNING_ELEMENT: ' for lightning ',
+      WATER_ELEMENT: ' for water ',
+      LIGHT_ELEMENT: ' for light ',
+      DARK_ELEMENT: ' for dark ',
     };
 
     if (!effect.target) {
