@@ -7,25 +7,25 @@
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" [routerLink]="[getRoute('/units')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inUnit}">
-          {{ 'nav.units' | translate }}
+          UNITS
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/cards')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inCard}">
-          {{ 'nav.cards' | translate }}
+          VISION CARDS
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/espers')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inEsper}">
-          {{ 'nav.espers' | translate }}
+          ESPERS
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/equipments')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inEquipment}">
-          {{ 'nav.equipments' | translate }}
+          EQUIPMENT
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/quests')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inQuest}">
-          {{ 'nav.quests' | translate }}
+          QUESTS
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/raids')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inRaid}">
-          {{ 'nav.raids' | translate }}
+          RAIDS
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/builder')]" (mouseover)="showBuilderNav=true; showOtherNav=false" [ngClass]="{'active': inBuilder}">
-          {{ 'nav.builder' | translate }}
+          BUILDER
         </a>
         <div class="inlineBlock otherBlock" (mouseleave)="showOtherNav=false" (mouseover)="showBuilderNav=false; showOtherNav=true">
           <a class="nav-link" [ngClass]="{'active': inOther || showOtherNav}">
@@ -154,14 +154,14 @@
   <div class="centerNav">
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="[getRoute('/builder/team')]" [routerLinkActive]="['active']">{{ 'nav.team' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/unit')]" [routerLinkActive]="['active']">{{ 'nav.units' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/card')]" [routerLinkActive]="['active']">{{ 'nav.cards' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']">{{ 'nav.espers' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/equipment')]" [routerLinkActive]="['active']">{{ 'nav.equipments' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/team')]" [routerLinkActive]="['active']">TEAM</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/unit')]" [routerLinkActive]="['active']">UNITS</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/card')]" [routerLinkActive]="['active']">VISION CARDS</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']">ESPERS</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/equipment')]" [routerLinkActive]="['active']">EQUIPMENT</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/materia')]" [routerLinkActive]="['active']">MATERIA</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']">{{ 'nav.guild' | translate }}</a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']">{{ 'nav.masterRanks' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']">GUILD</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']">MASTER RANKS</a>
       </li>
     </ul>
   </div>
@@ -176,53 +176,53 @@
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" [routerLink]="[getRoute('/units')]" [ngClass]="{'active': inUnit}" (click)="toggleMobileMenu(true)">
-          {{ 'nav.units' | translate }}
+          UNITS
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/cards')]" [ngClass]="{'active': inCard}" (click)="toggleMobileMenu(true)">
-          {{ 'nav.cards' | translate }}
+          VISION CARDS
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/espers')]" [ngClass]="{'active': inEsper}" (click)="toggleMobileMenu(true)">
-          {{ 'nav.espers' | translate }}
+          ESPERS
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/equipments')]" [ngClass]="{'active': inEquipment}" (click)="toggleMobileMenu(true)">
-          {{ 'nav.equipments' | translate }}
+          EQUIPMENT
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/quests')]" [ngClass]="{'active': inQuest}" (click)="toggleMobileMenu(true)">
-          {{ 'nav.quests' | translate }}
+          QUESTS
         </a>
         <a class="nav-link" [routerLink]="[getRoute('/raids')]" [ngClass]="{'active': inRaid}" (click)="toggleMobileMenu(true)">
-          {{ 'nav.raids' | translate }}
+          RAIDS
         </a>
 
         <a class="nav-link" [ngClass]="{'active': inBuilder}" (click)="showMobileBuilderNav = !showMobileBuilderNav" [attr.aria-expanded]="!showMobileBuilderNav">
-          {{ 'nav.builder' | translate }}
+          BUILDER
           <i class="fas fa-chevron-up" *ngIf="showMobileBuilderNav" aria-hidden="true"></i>
           <i class="fas fa-chevron-down" *ngIf="!showMobileBuilderNav" aria-hidden="true"></i>
         </a>
         <div class="subLinksMobile" [ngbCollapse]="!showMobileBuilderNav">
           <a class="nav-link" [routerLink]="[getRoute('/builder/team')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
-            {{ 'nav.team' | translate }}
+            TEAM
           </a>
           <a class="nav-link" [routerLink]="[getRoute('/builder/unit')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
-            {{ 'nav.units' | translate }}
+            UNITS
           </a>
           <a class="nav-link" [routerLink]="[getRoute('/builder/card')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
-            {{ 'nav.cards' | translate }}
+            VISION CARDS
           </a>
           <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
-            {{ 'nav.espers' | translate }}
+            ESPERS
           </a>
           <a class="nav-link" [routerLink]="[getRoute('/builder/equipment')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
-            {{ 'nav.equipments' | translate }}
+            EQUIPMENT
           </a>
           <a class="nav-link" [routerLink]="[getRoute('/builder/materia')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
             MATERIA
           </a>
           <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
-            {{ 'nav.guild' | translate }}
+            GUILD
           </a>
           <a class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
-            {{ 'nav.masterRanks' | translate }}
+            MASTER RANKS
           </a>
         </div>
 
