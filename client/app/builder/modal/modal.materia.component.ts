@@ -16,7 +16,7 @@ import { Materia } from '../../entities/materia';
   templateUrl: './modal.materia.component.html',
   styleUrls: ['./modal.materia.component.css']
 })
-export class ModalMateriaComponent implements OnInit {
+export class ModalMateriaComponent implements OnInit, AfterViewInit {
   materias = [];
   materiaGroups = [];
   materiaSkills = [];

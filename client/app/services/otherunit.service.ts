@@ -439,7 +439,7 @@ export class OtherUnitService {
       }
     });
 
-    hasStats.sort(function(a, b) {
+    hasStats.sort((a, b) => {
       if (statsManaged.indexOf(a) > statsManaged.indexOf(b)) {
         return 1;
       } else {

@@ -20,7 +20,7 @@ import { ModalDeleteComponent } from './modal/modal.delete.component';
   templateUrl: './builder.materia.component.html',
   styleUrls: ['./builder.materia.component.css']
 })
-export class BuilderMateriaComponent implements OnInit {
+export class BuilderMateriaComponent implements OnInit, AfterViewInit {
   materias = [];
   materiaGroups = [];
   materiaSkills = [];

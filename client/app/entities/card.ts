@@ -10,9 +10,9 @@ export class Card {
   name = 'New Vision Card';
 
   stats = {
-    'HP': {},
-    'ATK': {},
-    'MAG': {}
+    HP: {},
+    ATK: {},
+    MAG: {}
   };
 
   image = 'ITEMcrst';
@@ -71,35 +71,35 @@ export class Card {
 
   private getLevelPerStar(rarity, star) {
     const levelPerStar = {
-      'UR' : {
+      UR : {
         0: 40,
         1: 55,
         2: 70,
         3: 85,
         4: 99
       },
-      'MR' : {
+      MR : {
         0: 30,
         1: 40,
         2: 50,
         3: 60,
         4: 70
       },
-      'SR' : {
+      SR : {
         0: 20,
         1: 30,
         2: 40,
         3: 50,
         4: 60
       },
-      'R' : {
+      R : {
         0: 20,
         1: 25,
         2: 30,
         3: 35,
         4: 40
       },
-      'N' : {
+      N : {
         0: 10,
         1: 15,
         2: 20,

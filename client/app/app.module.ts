@@ -123,6 +123,7 @@ import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
 import { HighlightSearchPipe } from './pipes/highlightSearch.pipe';
 
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }

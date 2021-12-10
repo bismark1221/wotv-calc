@@ -16,7 +16,7 @@ import { ModalInventoryEquipmentsComponent } from './modal/modal.equipments';
   templateUrl: './inventory.component.html',
   styleUrls: ['./inventory.component.css']
 })
-export class InventoryComponent implements OnInit {
+export class InventoryComponent implements OnInit, AfterViewInit {
   user;
 
   rawUnits = [];

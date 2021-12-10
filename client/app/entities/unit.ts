@@ -28,57 +28,57 @@ export class Unit {
   skills: Skill[] = [new Skill()];
   buffs: Buff[] = [new Buff()];
   stats = {
-    'HP': {},
-    'TP': {},
-    'AP': {
+    HP: {},
+    TP: {},
+    AP: {
       total: 0
     },
-    'ATK': {},
-    'DEF': {},
-    'SPR': {},
-    'MAG': {},
-    'DEX': {},
-    'AGI': {},
-    'LUCK': {},
-    'INITIAL_AP': {
+    ATK: {},
+    DEF: {},
+    SPR: {},
+    MAG: {},
+    DEX: {},
+    AGI: {},
+    LUCK: {},
+    INITIAL_AP: {
       base: 0,
       baseTotal: 0
     },
-    'ACCURACY': {},
-    'CRITIC_RATE': {},
-    'CRITIC_EVADE': {},
-    'EVADE': {},
-    'FIRE': {},
-    'ICE': {},
-    'EARTH': {},
-    'WIND': {},
-    'LIGHTNING': {},
-    'WATER': {},
-    'LIGHT': {},
-    'DARK': {},
-    'SLASH': {},
-    'PIERCE': {},
-    'STRIKE': {},
-    'MISSILE': {},
-    'MAGIC': {},
-    'POISION': {},
-    'BLIND': {},
-    'SLEEP': {},
-    'SILENCE': {},
-    'PARALYZE': {},
-    'CONFUSION': {},
-    'PETRIFY': {},
-    'TOAD': {},
-    'CHARM': {},
-    'SLOW': {},
-    'STOP': {},
-    'IMMOBILIZE': {},
-    'DISABLE': {},
-    'BERSERK': {},
-    'DOOM': {},
-    'MOVE': {},
-    'JUMP': {},
-    'COST': {}
+    ACCURACY: {},
+    CRITIC_RATE: {},
+    CRITIC_EVADE: {},
+    EVADE: {},
+    FIRE: {},
+    ICE: {},
+    EARTH: {},
+    WIND: {},
+    LIGHTNING: {},
+    WATER: {},
+    LIGHT: {},
+    DARK: {},
+    SLASH: {},
+    PIERCE: {},
+    STRIKE: {},
+    MISSILE: {},
+    MAGIC: {},
+    POISION: {},
+    BLIND: {},
+    SLEEP: {},
+    SILENCE: {},
+    PARALYZE: {},
+    CONFUSION: {},
+    PETRIFY: {},
+    TOAD: {},
+    CHARM: {},
+    SLOW: {},
+    STOP: {},
+    IMMOBILIZE: {},
+    DISABLE: {},
+    BERSERK: {},
+    DOOM: {},
+    MOVE: {},
+    JUMP: {},
+    COST: {}
   };
 
   element = 'fire';
@@ -429,57 +429,57 @@ export class Unit {
       });
     } else {
       this.stats = {
-        'HP': {},
-        'TP': {},
-        'AP': {
+        HP: {},
+        TP: {},
+        AP: {
           total: 0
         },
-        'ATK': {},
-        'DEF': {},
-        'SPR': {},
-        'MAG': {},
-        'DEX': {},
-        'AGI': {},
-        'LUCK': {},
-        'INITIAL_AP': {
+        ATK: {},
+        DEF: {},
+        SPR: {},
+        MAG: {},
+        DEX: {},
+        AGI: {},
+        LUCK: {},
+        INITIAL_AP: {
           base: 0,
           baseTotal: 0
         },
-        'ACCURACY': {},
-        'CRITIC_RATE': {},
-        'CRITIC_EVADE': {},
-        'EVADE': {},
-        'FIRE': {},
-        'ICE': {},
-        'EARTH': {},
-        'WIND': {},
-        'LIGHTNING': {},
-        'WATER': {},
-        'LIGHT': {},
-        'DARK': {},
-        'SLASH': {},
-        'PIERCE': {},
-        'STRIKE': {},
-        'MISSILE': {},
-        'MAGIC': {},
-        'POISION': {},
-        'BLIND': {},
-        'SLEEP': {},
-        'SILENCE': {},
-        'PARALYZE': {},
-        'CONFUSION': {},
-        'PETRIFY': {},
-        'TOAD': {},
-        'CHARM': {},
-        'SLOW': {},
-        'STOP': {},
-        'IMMOBILIZE': {},
-        'DISABLE': {},
-        'BERSERK': {},
-        'DOOM': {},
-        'MOVE': {},
-        'JUMP': {},
-        'COST': {}
+        ACCURACY: {},
+        CRITIC_RATE: {},
+        CRITIC_EVADE: {},
+        EVADE: {},
+        FIRE: {},
+        ICE: {},
+        EARTH: {},
+        WIND: {},
+        LIGHTNING: {},
+        WATER: {},
+        LIGHT: {},
+        DARK: {},
+        SLASH: {},
+        PIERCE: {},
+        STRIKE: {},
+        MISSILE: {},
+        MAGIC: {},
+        POISION: {},
+        BLIND: {},
+        SLEEP: {},
+        SILENCE: {},
+        PARALYZE: {},
+        CONFUSION: {},
+        PETRIFY: {},
+        TOAD: {},
+        CHARM: {},
+        SLOW: {},
+        STOP: {},
+        IMMOBILIZE: {},
+        DISABLE: {},
+        BERSERK: {},
+        DOOM: {},
+        MOVE: {},
+        JUMP: {},
+        COST: {}
       };
     }
   }
@@ -789,14 +789,14 @@ export class Unit {
     ];
 
     const subStatusRatio = {
-      'main': [
+      main: [
         0.10,
         0.20,
         0.30,
         0.40,
         0.50
       ],
-      'sub': [
+      sub: [
         0.10,
         0.15,
         0.20,
@@ -1147,8 +1147,13 @@ export class Unit {
             }
           }
 
-          statOrder.positive.sort(function(a, b) { return b - a; });
-          statOrder.negative.sort(function(a, b) { return a - b; });
+          statOrder.positive.sort((a, b) => {
+            return b - a;
+          });
+
+          statOrder.negative.sort((a, b) => {
+            return a - b;
+          });
 
           let value = 0;
           for (let i = 0; i < 3; i++) {

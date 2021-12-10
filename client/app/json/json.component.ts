@@ -35,10 +35,10 @@ export class JsonComponent implements OnInit {
       });
 
       this.indexes.push({
-        'names': buildedUnit.names,
-        'stats': stats,
-        'image': buildedUnit.image,
-        'dataId': buildedUnit.dataId
+        names: buildedUnit.names,
+        stats: stats,
+        image: buildedUnit.image,
+        dataId: buildedUnit.dataId
       });
 
       this.loadingIndex--;
@@ -46,6 +46,6 @@ export class JsonComponent implements OnInit {
   }
 
   copyData() {
-    this.clipboardService.copyFromContent(JSON.stringify({'units': this.indexes}, null, 2).replace('/ /g', '&nbsp;'));
+    this.clipboardService.copyFromContent(JSON.stringify({units: this.indexes}, null, 2).replace('/ /g', '&nbsp;'));
   }
 }

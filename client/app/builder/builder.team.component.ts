@@ -37,6 +37,8 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 export class BuilderTeamComponent implements OnInit, AfterViewInit {
   availableUnits = [null, null, null, null, null];
   selectedUnits = [null, null, null, null, null];
+
+  // eslint-disable-next-line @typescript-eslint/ban-types
   savedUnits: {};
 
   team = {

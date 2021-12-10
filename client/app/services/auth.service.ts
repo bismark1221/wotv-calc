@@ -1,6 +1,6 @@
 import { Injectable, NgZone } from '@angular/core';
 import firebase from 'firebase/compat/app';
-import "firebase/compat/auth";
+import 'firebase/compat/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
@@ -191,7 +191,7 @@ export class AuthService {
       const token = result.credential;
 
       return this.updateUser(result.user, true);
-    }).catch(function(error) {
+    }).catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       const email = error.email;
@@ -216,7 +216,7 @@ export class AuthService {
     return this.fireauth.signOut().then(result => {
       this.updateUser(null);
       this.emptyLocalStorage();
-    }).catch(function(error) {});
+    }).catch((error) => {});
   }
 
   getUser() {

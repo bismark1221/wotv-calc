@@ -165,14 +165,14 @@ export class QuestComponent implements OnInit {
 
         if (effect.condition) {
           const conditions = {
-            'FIRE_ELEMENT': ' for fire units',
-            'ICE_ELEMENT': ' for ice units',
-            'WIND_ELEMENT': ' for wind units',
-            'EARTH_ELEMENT': ' for earth units',
-            'LIGHTNING_ELEMENT': ' for lightning units',
-            'WATER_ELEMENT': ' for water units',
-            'LIGHT_ELEMENT': ' for light units',
-            'DARK_ELEMENT': ' for dark units',
+            FIRE_ELEMENT: ' for fire units',
+            ICE_ELEMENT: ' for ice units',
+            WIND_ELEMENT: ' for wind units',
+            EARTH_ELEMENT: ' for earth units',
+            LIGHTNING_ELEMENT: ' for lightning units',
+            WATER_ELEMENT: ' for water units',
+            LIGHT_ELEMENT: ' for light units',
+            DARK_ELEMENT: ' for dark units',
           };
 
           this.quest.formattedBuffs[this.quest.formattedBuffs.length - 1] += conditions[effect.condition];
@@ -565,7 +565,7 @@ export class QuestComponent implements OnInit {
       }
     });
 
-    hasStats.sort(function(a, b) {
+    hasStats.sort((a, b) => {
       if (statsManaged.indexOf(a) > statsManaged.indexOf(b)) {
         return 1;
       } else {
