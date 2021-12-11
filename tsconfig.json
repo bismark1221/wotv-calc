@@ -17,5 +17,8 @@
       "dom"
     ],
     "skipLibCheck": true
+  },
+  "angularCompilerOptions": {
+    "disableTypeScriptVersionCheck": true
   }
 }

@@ -33,7 +33,11 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "allowedCommonJsDependencies": [
+              "rxjs/add/operator/catch",
+              "rxjs/add/operator/map"
+            ]
           },
           "configurations": {
             "production": {
