@@ -990,7 +990,7 @@ export class Unit {
               }
 
               if ((!teamBuffs[statType] || Math.floor(value) > teamBuffs[statType])
-                && (!this.stats[statType] || !this.stats[statType].cardParty || value > this.stats[statType].cardParty)
+                && (!this.stats[statType] || !this.stats[statType].subCardParty || value > this.stats[statType].subCardParty)
               ) {
                 if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
                   if (!statsTypePercent[statType]) {
