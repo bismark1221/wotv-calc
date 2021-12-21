@@ -64,7 +64,8 @@ export class UserService {
         delete:  -1,
         save: -1
       }
-    }
+    },
+    inError: false
   };
 
   constructor(
@@ -317,6 +318,8 @@ export class UserService {
         equipments: equipments,
         units: units
       };
+    } else {
+      this.loading.inError = true;
     }
 
     this.loading.data = false;

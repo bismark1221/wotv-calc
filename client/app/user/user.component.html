@@ -60,6 +60,10 @@
             Deleting device...
           </div>
 
+          <div *ngIf="loading.inError">
+            Error in getting your inventory...<br>Try to delete device and restart the process<br>If that continue to append contact me
+          </div>
+
           <div *ngFor="let type of ['guild', 'masterRank']">
             <div *ngIf="loading.saveData[type] != 'wait'">
               {{ type | titlecase }} : {{ loading.saveData[type] }}

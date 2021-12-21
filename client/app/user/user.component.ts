@@ -51,15 +51,17 @@ export class UserComponent implements OnInit, AfterViewInit {
   async getLoginData() {
     this.dumpResult = await this.userService.getLoginData();
 
-    await this.userService.deleteSavedGuildMR('guild');
-    await this.userService.saveNewGuildMR(this.dumpResult.guild, 'guild');
+    if (this.dumpResult) {
+      await this.userService.deleteSavedGuildMR('guild');
+      await this.userService.saveNewGuildMR(this.dumpResult.guild, 'guild');
 
-    await this.userService.deleteSavedGuildMR('masterRank');
-    await this.userService.saveNewGuildMR(this.dumpResult.masterRanks, 'masterRank');
+      await this.userService.deleteSavedGuildMR('masterRank');
+      await this.userService.saveNewGuildMR(this.dumpResult.masterRanks, 'masterRank');
 
-    for (const type of ['cards', 'espers', 'units', 'equipments']) {
-      await this.userService.deleteAllSaved(type);
-      await this.userService.saveNewData(this.dumpResult[type], type);
+      for (const type of ['cards', 'espers', 'units', 'equipments']) {
+        await this.userService.deleteAllSaved(type);
+        await this.userService.saveNewData(this.dumpResult[type], type);
+      }
     }
   }
 }
