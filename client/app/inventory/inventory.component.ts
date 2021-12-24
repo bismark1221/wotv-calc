@@ -149,15 +149,18 @@ export class InventoryComponent implements OnInit, AfterViewInit {
 
         if (result.inventory.equipments) {
           result.inventory.equipments.forEach(rawEquipment => {
-            const newEquipment = JSON.parse(JSON.stringify(this.rawEquipments.find(searchedEquipment => searchedEquipment.dataId === rawEquipment.dataId)));
+            const findedEquipment = this.rawEquipments.find(searchedEquipment => searchedEquipment.dataId === rawEquipment.dataId);
+            if (findedEquipment) {
+              const newEquipment = JSON.parse(JSON.stringify(findedEquipment));
 
-            newEquipment.grow = rawEquipment.grow;
-            newEquipment.upgrade = rawEquipment.upgrade;
-            newEquipment.level = rawEquipment.level;
-            newEquipment.growIds = Object.keys(newEquipment.grows);
-            newEquipment.name = this.toolService.getName(newEquipment);
+              newEquipment.grow = rawEquipment.grow;
+              newEquipment.upgrade = rawEquipment.upgrade;
+              newEquipment.level = rawEquipment.level;
+              newEquipment.growIds = Object.keys(newEquipment.grows);
+              newEquipment.name = this.toolService.getName(newEquipment);
 
-            equipments.push(newEquipment);
+              equipments.push(newEquipment);
+            }
           });
 
           equipments = this.toolService.sortByRarity(equipments);

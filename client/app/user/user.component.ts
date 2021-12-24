@@ -1,8 +1,10 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ClipboardService } from 'ngx-clipboard';
+import { v5 as uuidv5 } from 'uuid';
 
 import { UserService } from '../services/user.service';
 import { AuthService } from '../services/auth.service';
+import { InventoryService } from '../services/inventory.service';
 
 @Component({
   selector: 'app-user',
@@ -16,9 +18,12 @@ export class UserComponent implements OnInit, AfterViewInit {
 
   loading;
 
+  user;
+
   constructor(
     private userService: UserService,
-    private authService: AuthService
+    private authService: AuthService,
+    private inventoryService: InventoryService
   ) {}
 
   async ngOnInit() {
@@ -29,6 +34,7 @@ export class UserComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.authService.$user.subscribe(async user => {
         if (user) {
+          this.user = user;
           await this.userHaveDevice('haveDevice');
         }
       });
@@ -62,6 +68,40 @@ export class UserComponent implements OnInit, AfterViewInit {
         await this.userService.deleteAllSaved(type);
         await this.userService.saveNewData(this.dumpResult[type], type);
       }
+
+      await this.updateInventory();
+    }
+  }
+
+  async updateInventory() {
+    if (this.user) {
+      const uuid = uuidv5(this.user.uid, uuidv5.URL);
+
+      const dataToSave = {
+        units: {},
+        cards: {},
+        espers: {},
+        equipments: [],
+        user: this.user.uid,
+        uuid: uuid
+      };
+
+      for (const type of ['cards', 'espers', 'units']) {
+        for (const item of this.dumpResult[type]) {
+          dataToSave[type][item.dataId] = item.level;
+        }
+      }
+
+      this.dumpResult.equipments.forEach(equipment => {
+        dataToSave.equipments.push({
+          dataId: equipment.dataId,
+          upgrade: equipment.upgrade,
+          grow: equipment.grow,
+          level: equipment.level
+        });
+      });
+
+      await this.inventoryService.saveInventory(dataToSave);
     }
   }
 }
