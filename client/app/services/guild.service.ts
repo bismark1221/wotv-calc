@@ -70,7 +70,7 @@ export class GuildService {
       [{type: 'HP', value: 7, calcType: 'percent'}, {type: 'ACCURACY', value: 8, calcType: 'fixe'}, {type: 'EVADE', value: 7, calcType: 'fixe'}],
       [{type: 'HP', value: 8, calcType: 'percent'}, {type: 'ACCURACY', value: 8, calcType: 'fixe'}, {type: 'EVADE', value: 8, calcType: 'fixe'}],
       [{type: 'HP', value: 9, calcType: 'percent'}, {type: 'ACCURACY', value: 9, calcType: 'fixe'}, {type: 'EVADE', value: 9, calcType: 'fixe'}],
-      [{type: 'HP', value: 10, calcType: 'percent'}, {type: 'ACCURACY', value: 10, calcType: 'fixe'}, {type: 'EVADE', value: 5, calcType: 'fixe'}]
+      [{type: 'HP', value: 10, calcType: 'percent'}, {type: 'ACCURACY', value: 10, calcType: 'fixe'}, {type: 'EVADE', value: 10, calcType: 'fixe'}]
     ]
   };
 
