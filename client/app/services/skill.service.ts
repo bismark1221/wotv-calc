@@ -2103,7 +2103,11 @@ export class SkillService {
   }
 
   formatCounter(unit, skill, counter) {
-    return 'Chance to counter ' + this.counterType[counter.reactDamage] + ' damage ' + this.getValue(skill, counter);
+    if (!counter.applyEffectOnEvade) {
+      return 'Chance to counter ' + this.counterType[counter.reactDamage] + ' damage ' + this.getValue(skill, counter);
+    } else {
+      return 'Activate the effects only when evading';
+    }
   }
 
   formatUpgrade(unit, skill) {
