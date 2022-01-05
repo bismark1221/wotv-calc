@@ -267,29 +267,18 @@ export class RangeService {
     return skillTable;
   }
 
-  aoeX(skillTable, aoe, maxLine) {
+  aoeX(skillTable, aoe, maxLine, dataId) {
     const middle = 8;
     let countLine = 0;
 
-    for (let i = middle; i >= middle - aoe.l; i--) {
-
-      if (i === middle) {
+    for (let i = maxLine; i >= maxLine - aoe.l; i--) {
+      if (i === maxLine) {
         skillTable[i][middle] = skillTable[i][middle] === 'N' ? 'A' : 'AR';
       } else {
-        for (let j = 0; j <= aoe.l; j++) {
-          if ((middle - j) === i) {
-            if (j <= countLine) {
-              skillTable[i][middle + j] = 'A';
-              skillTable[i][middle - j] = 'A';
-            } else {
-              skillTable[i][middle + j] = 'A';
-              skillTable[i][middle - j] = 'A';
-            }
-
-            skillTable[(maxLine + countLine)][middle + j] = 'A';
-            skillTable[(maxLine + countLine)][middle - j] = 'A';
-          }
-        }
+        skillTable[i][middle + countLine] = skillTable[i][middle + countLine] === 'N' || skillTable[i][middle + countLine] === 'A' ? 'A' : 'AR';
+        skillTable[i][middle - countLine] = skillTable[i][middle - countLine] === 'N' || skillTable[i][middle - countLine] === 'A' ? 'A' : 'AR';
+        skillTable[maxLine + countLine][middle + countLine] = skillTable[maxLine + countLine][middle + countLine] === 'N' || skillTable[maxLine + countLine][middle + countLine] === 'A' ? 'A' : 'AR';
+        skillTable[maxLine + countLine][middle - countLine] = skillTable[maxLine + countLine][middle - countLine] === 'N' || skillTable[maxLine + countLine][middle - countLine] === 'A' ? 'A' : 'AR';
       }
 
       countLine++;
@@ -297,7 +286,6 @@ export class RangeService {
 
     return skillTable;
   }
-
 
   formatRange(unit, skill) {
     if (skill.type !== 'passive') {
@@ -341,7 +329,7 @@ export class RangeService {
         } else if (skill.aoe.s === 3) {
           skillTable = this.aoeLine(skillTable, skill.aoe, maxLine, true);
         } else if (skill.aoe.s === 5) {
-          skillTable = this.aoeX(skillTable, skill.aoe, maxLine);
+          skillTable = this.aoeX(skillTable, skill.aoe, maxLine, skill.dataId);
         } else {
           console.log('unknow aoe -- ' + skill.dataId);
         }
