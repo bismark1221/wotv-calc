@@ -1784,7 +1784,11 @@ export class SkillService {
     if (skill.maths) {
       skill.maths.forEach(math => {
         if ((from === 'damage' && (math.dst === 'DAMAGE' || math.dst === 'ABSORB'))
-          || (from === 'notDamage' && (math.dst !== 'DAMAGE' && math.dst !== 'ABSORB') && (math.dst !== 'BUFF' || effect.timing === 'SKILL_AFTER'))
+          || (
+            from === 'notDamage' && (math.dst !== 'DAMAGE' && math.dst !== 'ABSORB')
+            && (math.dst !== 'BUFF' || effect.timing === 'SKILL_AFTER')
+            && (math.dst !== 'EFFECT' || skill.effects.indexOf(effect) === 0)
+          )
         ) {
           if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB' && math.dst !== 'TRIGGER' && math.dst !== 'BUFF') {
             html += ' + Increase ';
