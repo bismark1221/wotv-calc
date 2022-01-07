@@ -340,6 +340,7 @@ export class MateriaService {
     materia.image = rawMateria.image;
     materia.subStats = type.subStats[0];
     materia.availableSkills = [];
+    materia.rawSkills = rawSkills;
 
     materia.mainStatValue = {
       min: type.mainStat[0].min,
