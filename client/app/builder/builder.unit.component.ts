@@ -28,6 +28,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 })
 export class BuilderUnitComponent implements OnInit, AfterViewInit {
   units = [];
+  rawUnits = [];
   unit = null;
   savedUnits = {};
   loadingBuild = false;
@@ -44,6 +45,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   isCollapsedSubJob = true;
   isCollapsedOther = true;
   isCollapsedDamageSim = true;
+
+  showOnlyOtherVersion = false;
 
   @ViewChild('selectBuilderUnit') unitSelector;
 
@@ -217,15 +220,29 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   private async getUnits() {
-    this.units = await this.unitService.getUnitsForBuilder();
-    this.savedUnits = this.unitService.getSavedUnits();
+    this.rawUnits = await this.unitService.getUnitsForBuilder();
     this.translateUnits();
+
+    this.filterUnits();
+
+    this.savedUnits = this.unitService.getSavedUnits();
   }
 
   private translateUnits() {
-    this.units.forEach(unit => {
+    this.rawUnits.forEach(unit => {
       unit.name = this.toolService.getName(unit);
     });
+  }
+
+  private filterUnits() {
+    this.units = [];
+    for(const unit of this.rawUnits) {
+      if ((this.showOnlyOtherVersion && unit.fromOtherVersion)
+        || (!this.showOnlyOtherVersion && !unit.fromOtherVersion)
+      ){
+        this.units.push(unit);
+      }
+    }
   }
 
   private loadGuildAndMasterRanks() {
@@ -688,5 +705,11 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
   resetJob() {
     this.unitService.resetJob();
+  }
+
+  toggleOtherVersion() {
+    this.showOnlyOtherVersion = !this.showOnlyOtherVersion;
+
+    this.filterUnits();
   }
 }

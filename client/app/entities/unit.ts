@@ -109,6 +109,7 @@ export class Unit {
   rawJobs = [];
   rawSkills = [];
   index = {};
+  fromOtherVersion = false;
 
   // Only for builder
   star;
@@ -185,6 +186,7 @@ export class Unit {
     this.type = unit.type;
     this.releaseDate = unit.releaseDate;
     this.unlockedSkills = unit.unlockedSkills;
+    this.fromOtherVersion = unit.fromOtherVersion;
 
     this.getName(translateService);
   }
