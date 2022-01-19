@@ -26,6 +26,7 @@ export class UnitComponent implements OnInit {
   activeTab;
   possibleSkillTypes = ['support', 'counter'];
   indexUnit = [];
+  version = 'GL';
 
   indexImageStatsType = [
     'SLASH_RES',
@@ -78,7 +79,9 @@ export class UnitComponent implements OnInit {
     private navService: NavService,
     private toolService: ToolService,
     private indexService: IndexService
-  ) {}
+  ) {
+    this.version = this.navService.getVersion();
+  }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
@@ -447,11 +450,11 @@ export class UnitComponent implements OnInit {
     const stats = {};
 
     if (job) {
-      const jobStatsModifier = job.statsModifiers[9];
+      let jobStatsModifier = job.statsModifiers[9];
 
-      /* if (this.unit.dataId === 'UN_LW_P_LCIO') {
+      if (this.version === 'GL' && this.unit.dataId === 'UN_LW_P_LCIO') {
         jobStatsModifier = job.statsModifiers[5];
-      } */
+      }
 
       Object.keys(jobStatsModifier).forEach(stat => {
         if (this.unit.stats[stat]) {

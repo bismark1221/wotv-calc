@@ -290,9 +290,9 @@ export class Unit {
       6 + levelPerLB[this.lb ? this.lb : 0]
     ];
 
-    /* if (this.dataId === 'UN_LW_P_LCIO' && this.exJobs.length > 0) {
+    if (this.version === 'GL' && this.dataId === 'UN_LW_P_LCIO' && this.exJobs.length > 0) {
       this.maxJobLevel[0] = 21;
-    } */
+    }
 
     let updated = false;
     this.jobsData.forEach((job, jobIndex) => {
