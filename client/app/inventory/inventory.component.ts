@@ -126,7 +126,15 @@ export class InventoryComponent implements OnInit, AfterViewInit {
     }
 
     if (result.units) {
-      this.rawUnits = result.units;
+      const rawUnits = result.units;
+      const filteredUnits = [];
+      for (const unit of rawUnits) {
+        if (!unit.fromOtherVersion) {
+          filteredUnits.push(unit);
+        }
+      }
+      this.rawUnits = filteredUnits;
+
       this.rawCards = result.cards;
       this.rawEspers = result.espers;
       this.rawEquipments = result.equipments;

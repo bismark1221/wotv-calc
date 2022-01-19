@@ -89,9 +89,9 @@ export class UnitService {
   }
 
   filterUnitsWithApi(units, filters, sort = 'rarity', order = 'desc', jobs) {
-    if (filters) {
-      const filteredUnits = [];
+    const filteredUnits = [];
 
+    if (filters) {
       for (const unit of units) {
         if ((filters.element.length === 0 || filters.element.indexOf(unit.element) !== -1)
           && (filters.rarity.length === 0 || filters.rarity.indexOf(unit.rarity) !== -1)
@@ -99,6 +99,7 @@ export class UnitService {
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) !== -1)
           && (!filters.exJob || unit.exJobs.length > 0)
           && (!filters.secondMasterAbility || (unit.masterSkill && unit.masterSkill.length > 1))
+          && (!unit.fromOtherVersion)
         ) {
           let possbibleToAdd = true;
 
@@ -118,7 +119,13 @@ export class UnitService {
 
       return this.sortUnits(filteredUnits, sort, order);
     } else {
-      return this.sortUnits(units, sort, order);
+      for (const unit of units) {
+        if (!unit.fromOtherVersion) {
+          filteredUnits.push(unit);
+        }
+      }
+
+      return this.sortUnits(filteredUnits, sort, order);
     }
   }
 
@@ -223,9 +230,16 @@ export class UnitService {
   }
 
   async getUnitsForJobPlanner() {
-    const units = this.getApi(null, [{name: 'forJobPlanner', value: 1}]);
+    const units = await this.getApi(null, [{name: 'forJobPlanner', value: 1}]);
 
-    return units;
+    const filteredUnits = [];
+    for (const unit of units) {
+      if (!unit.fromOtherVersion) {
+        filteredUnits.push(unit);
+      }
+    }
+
+    return filteredUnits;
   }
 
   sortUnits(units, sort = 'rarity', order = 'desc') {
