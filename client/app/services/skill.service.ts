@@ -285,10 +285,12 @@ export class SkillService {
     }
 
     if (turnText !== '') {
-      if (effect.timing === 'SKILL_AFTER') {
-        turnText += ' (After)';
-      } else if (effect.timing === 'SKILL_BEFORE' || effect.timing === 'QUEST_START') {
+      if (effect.checkTiming === 'actionStart') {
         turnText += ' (Start)';
+      } else if (effect.checkTiming === 'actionEnd') {
+        turnText += ' (End)';
+      } else if (effect.checkTiming === 'skillAfter') {
+        turnText = ' for just this cast';
       }
     }
 
