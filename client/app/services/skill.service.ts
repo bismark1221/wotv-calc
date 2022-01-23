@@ -276,13 +276,23 @@ export class SkillService {
   }
 
   private getTurns(effect) {
+    let turnText = '';
+
     if (effect.type === 'STOP_ATK') {
-      return ' for ' + effect.turn + ' clock ticks';
+      turnText = ' for ' + effect.turn + ' clock ticks';
     } else if (effect.turn) {
-      return ' for ' + effect.turn + (effect.turnType === 'COUNT' ? ' time' : ' turn') + (effect.turn > 1 ? 's' : '');
+      turnText = ' for ' + effect.turn + (effect.turnType === 'COUNT' ? ' time' : ' turn') + (effect.turn > 1 ? 's' : '');
     }
 
-    return '';
+    if (turnText !== '') {
+      if (effect.timing === 'SKILL_AFTER') {
+        turnText += ' (After)';
+      } else if (effect.timing === 'SKILL_BEFORE' || effect.timing === 'QUEST_START') {
+        turnText += ' (Start)';
+      }
+    }
+
+    return turnText;
   }
 
   private getChance(effect, inflict = true) {

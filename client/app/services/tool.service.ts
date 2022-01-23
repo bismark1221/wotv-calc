@@ -212,7 +212,8 @@ export class ToolService {
         'UN_LW_P_SLEN',
         'VC_LW_USER1',
         'VC_LW_SLEN',
-        'UN_LW_P_IBRA'
+        'UN_LW_P_IBRA',
+        'VC_LW_XMAS2'
       ],
       JP: [
         'UN_LW_P_FRVA',
@@ -231,7 +232,8 @@ export class ToolService {
         'UN_LW_S_MOGL',
         'UN_LW_S_KRKN',
         'UN_LW_P_SLEN',
-        'UN_LW_P_IBRA'
+        'UN_LW_P_IBRA',
+        'VC_LW_XMAS2'
       ]
     };
 
