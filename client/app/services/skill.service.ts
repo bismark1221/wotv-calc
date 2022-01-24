@@ -232,7 +232,7 @@ export class SkillService {
       const calc = this.getCalc(effect);
 
       if (!skill.level) {
-        value = ' (' + minValue + calc + this.getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath) + explaination + ')';
+        value = ' (' + minValue + calc + this.getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath, skill) + explaination + ')';
       } else {
         if (effect.minValue !== effect.maxValue) {
           let valueForLevel = 0;
@@ -262,8 +262,8 @@ export class SkillService {
     return value;
   }
 
-  private getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath) {
-    if (effect.maxValue && effect.minValue !== effect.maxValue) {
+  private getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath, skill) {
+    if (effect.maxValue && effect.minValue !== effect.maxValue && skill.maxLevel > 1) {
       const maxValue = this.getPositiveValue(effect.maxValue + maxReduceValueFromMath, getPositiveValue);
       if (forceCalc) {
         effect.calcType = forceCalc;
