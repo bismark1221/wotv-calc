@@ -1180,7 +1180,7 @@ export class Unit {
       }
 
       if (this.stats[statType].equipmentBuff) {
-        this.updateStat(statType, this.stats[statType].equipmentBuff.positive + this.stats[statType].equipmentBuff.negative, 'totalEquipment', 'fixe');
+        this.updateStat(statType, this.stats[statType].equipmentBuff.positive + this.stats[statType].equipmentBuff.negative, 'totalEquipment', 'fixe', true);
       }
     });
   }

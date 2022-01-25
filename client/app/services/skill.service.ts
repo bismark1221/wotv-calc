@@ -232,7 +232,7 @@ export class SkillService {
       const calc = this.getCalc(effect);
 
       if (!skill.level) {
-        value = ' (' + minValue + calc + this.getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath) + explaination + ')';
+        value = ' (' + minValue + calc + this.getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath, skill) + explaination + ')';
       } else {
         if (effect.minValue !== effect.maxValue) {
           let valueForLevel = 0;
@@ -262,8 +262,8 @@ export class SkillService {
     return value;
   }
 
-  private getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath) {
-    if (effect.maxValue && effect.minValue !== effect.maxValue) {
+  private getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath, skill) {
+    if (effect.maxValue && effect.minValue !== effect.maxValue && skill.maxLevel > 1) {
       const maxValue = this.getPositiveValue(effect.maxValue + maxReduceValueFromMath, getPositiveValue);
       if (forceCalc) {
         effect.calcType = forceCalc;
@@ -276,13 +276,25 @@ export class SkillService {
   }
 
   private getTurns(effect) {
+    let turnText = '';
+
     if (effect.type === 'STOP_ATK') {
-      return ' for ' + effect.turn + ' clock ticks';
+      turnText = ' for ' + effect.turn + ' clock ticks';
     } else if (effect.turn) {
-      return ' for ' + effect.turn + (effect.turnType === 'COUNT' ? ' time' : ' turn') + (effect.turn > 1 ? 's' : '');
+      turnText = ' for ' + effect.turn + (effect.turnType === 'COUNT' ? ' time' : ' turn') + (effect.turn > 1 ? 's' : '');
     }
 
-    return '';
+    if (turnText !== '') {
+      if (effect.checkTiming === 'actionStart') {
+        turnText += ' (Start)';
+      } else if (effect.checkTiming === 'actionEnd') {
+        turnText += ' (End)';
+      } else if (effect.checkTiming === 'skillAfter') {
+        turnText = ' for just this cast';
+      }
+    }
+
+    return turnText;
   }
 
   private getChance(effect, inflict = true) {
