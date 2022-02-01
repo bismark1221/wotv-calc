@@ -1082,11 +1082,6 @@ export class Unit {
                   value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
                 }
 
-                if (effect.calcType === 'percent') {
-                  // @TODO Equipment %%%%%%%%
-                  // this.updatePercentStats(effect.type, value);
-                }
-
                 const modifiedValue = this.updateStat(effect.type, value, 'equipment' + i + '_buff', effect.calcType === 'percent' ? 'percent' : 'fixe', true);
                 if (this.stats[effect.type] && this.stats[effect.type]['equipment' + i + '_buff']) {
                   this.stats[effect.type]['equipment' + i + '_buff'] = Math.floor(this.stats[effect.type]['equipment' + i + '_buff']);
@@ -1130,6 +1125,8 @@ export class Unit {
 
     statsType.forEach(statType => {
       if (this.stats[statType].equipments) {
+        this.updateStat(statType, 0, 'totalEquipment', 'fixe', true);
+
         if (cumulativeRatio[statType]) {
           const statOrder = {
             positive: [],
@@ -1164,8 +1161,7 @@ export class Unit {
           }
 
           value = Math.floor(value);
-
-          this.updateStat(statType, value, 'totalEquipment', 'fixe', true);
+          this.updateStat(statType, value, 'totalEquipment', 'fixe');
         } else {
           for (let i = 0; i < 3; i++) {
             if (this.stats[statType].equipments[i] > 0 && this.stats[statType].equipments[i] > this.stats[statType].equipments.total.positive) {
@@ -1175,12 +1171,12 @@ export class Unit {
             }
           }
 
-          this.updateStat(statType, this.stats[statType].equipments.total.positive + this.stats[statType].equipments.total.negative, 'totalEquipment', 'fixe', true);
+          this.updateStat(statType, this.stats[statType].equipments.total.positive + this.stats[statType].equipments.total.negative, 'totalEquipment', 'fixe');
         }
       }
 
       if (this.stats[statType].equipmentBuff) {
-        this.updateStat(statType, this.stats[statType].equipmentBuff.positive + this.stats[statType].equipmentBuff.negative, 'totalEquipment', 'fixe', true);
+        this.updateStat(statType, this.stats[statType].equipmentBuff.positive + this.stats[statType].equipmentBuff.negative, 'totalEquipment', 'fixe');
       }
     });
   }
