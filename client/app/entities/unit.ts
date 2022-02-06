@@ -1176,6 +1176,10 @@ export class Unit {
       }
 
       if (this.stats[statType].equipmentBuff) {
+        if (!this.stats[statType].equipments) {
+          this.updateStat(statType, 0, 'totalEquipment', 'fixe', true);
+        }
+
         this.updateStat(statType, this.stats[statType].equipmentBuff.positive + this.stats[statType].equipmentBuff.negative, 'totalEquipment', 'fixe');
       }
     });
