@@ -1213,6 +1213,7 @@
               <th class="sub limitNameTd">Name</th>
               <th class="sub" [attr.colspan]="unit.formattedLimit.based ? '2' : '1'">Effects</th>
               <th class="sub rangeTd">Range</th>
+              <th class="sub skillCastTd">Casts</th>
               <th class="sub skillHitTd">Hits</th>
               <th class="sub skillCostTd">Cost</th>
             </tr>
@@ -1279,11 +1280,10 @@
                   <div class="divSkillTableHtml" [innerHTML]="unit.formattedLimit.skillTableHtml"></div>
                 </div>
               </td>
+              <td>{{ unit.formattedLimit.count }}</td>
               <td><span *ngIf="unit.formattedLimit.combo">{{ unit.formattedLimit.combo.num }}</span></td>
               <td><span *ngIf="unit.formattedLimit.cost">{{ unit.formattedLimit.cost.value }} {{ unit.formattedLimit.cost.type }}</span></td>
             </tr>
-
-
 
 
             <tr *ngFor="let upgradedSkill of unit.formattedLimit.upgrades">
@@ -1349,6 +1349,7 @@
                   <div class="divSkillTableHtml" [innerHTML]="upgradedSkill.skillTableHtml"></div>
                 </div>
               </td>
+              <td>{{ upgradedSkill.count }}</td>
               <td><span *ngIf="upgradedSkill.combo">{{ upgradedSkill.combo.num }}</span></td>
               <td><span *ngIf="upgradedSkill.cost">{{ upgradedSkill.cost.value }} {{ upgradedSkill.cost.type }}</span></td>
             </tr>
