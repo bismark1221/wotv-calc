@@ -28,6 +28,8 @@ export class ModalCardsComponent implements OnInit {
   savedCards = {};
   loadCardId = null;
 
+  showOnlyOtherVersion = false;
+
   @Input() public modalStep = 'select';
   @Input() public cardType = 'main';
   @Input() public card;
@@ -66,7 +68,16 @@ export class ModalCardsComponent implements OnInit {
       }
     }
 
-    this.cards = this.cardService.filterCards(this.rawCards, this.filters);
+    const filteredCards = this.cardService.filterCards(this.rawCards, this.filters, 'rarity', 'desc', true);
+
+    this.cards = [];
+    for (const card of filteredCards) {
+      if ((this.showOnlyOtherVersion && card.fromOtherVersion)
+        || (!this.showOnlyOtherVersion && !card.fromOtherVersion)
+      ){
+        this.cards.push(card);
+      }
+    }
 
     this.getFilteredCards();
     this.translateCards();
@@ -240,5 +251,15 @@ export class ModalCardsComponent implements OnInit {
         }
       }
     }
+  }
+
+  toggleOtherVersion() {
+    this.showOnlyOtherVersion = !this.showOnlyOtherVersion;
+
+    this.getCards();
+  }
+
+  checkNan(value) {
+    return isNaN(value);
   }
 }

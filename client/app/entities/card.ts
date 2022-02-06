@@ -22,6 +22,7 @@ export class Card {
   slug;
   cost;
   releaseDate;
+  fromOtherVersion = false;
 
   // For builder
   buffs;
@@ -47,6 +48,7 @@ export class Card {
     this.slug = card.slug;
     this.cost = card.cost;
     this.releaseDate = card.releaseDate;
+    this.fromOtherVersion = card.fromOtherVersion;
 
     this.name = this.getName(translateService);
   }

@@ -66,7 +66,7 @@ export class CardService {
     };
   }
 
-  async getCardsForListing(filters = null, sort = 'rarity', order = 'desc') {
+  async getCardsForListing(filters = null, sort = 'rarity', order = 'desc', withFromOtherVersion = false) {
     const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
 
     const rawCards = [];
@@ -77,7 +77,7 @@ export class CardService {
       rawCards.push(rawCard);
     }
 
-    const cards = this.filterCards(rawCards, filters, sort, order);
+    const cards = this.filterCards(rawCards, filters, sort, order, withFromOtherVersion);
 
     return cards;
   }
@@ -92,14 +92,15 @@ export class CardService {
     return [];
   }
 
-  filterCards(cards, filters, sort = 'rarity', order = 'desc') {
-    if (filters) {
-      const filteredCards = [];
+  filterCards(cards, filters, sort = 'rarity', order = 'desc', withFromOtherVersion = false) {
+    const filteredCards = [];
 
+    if (filters) {
       for (const card of cards) {
         if ((filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1)
           && (filters.cost.length === 0 || filters.cost.indexOf(card.cost) !== -1)
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(card.dataId)) !== -1)
+          && (withFromOtherVersion || !card.fromOtherVersion)
         ) {
           let needToAddCard = false;
           if ((!filters.element || filters.element.length === 0) && !filters.onlyActiveSkill) {
@@ -136,7 +137,13 @@ export class CardService {
 
       return this.sortCards(filteredCards, sort, order);
     } else {
-      return this.sortCards(cards, sort, order);
+      for (const card of cards) {
+        if (withFromOtherVersion || !card.fromOtherVersion) {
+          filteredCards.push(card);
+        }
+      }
+
+      return this.sortCards(filteredCards, sort, order);
     }
   }
 

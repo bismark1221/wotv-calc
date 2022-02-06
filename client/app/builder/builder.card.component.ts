@@ -22,11 +22,14 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 })
 export class BuilderCardComponent implements OnInit, AfterViewInit {
   cards = [];
+  rawCards = [];
   card;
   savedCards = {};
   loadingBuild = false;
   showSave = false;
   selectedCardId = null;
+
+  showOnlyOtherVersion = false;
 
   @ViewChild('selectBuilderCard') cardSelector;
 
@@ -107,15 +110,27 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
   }
 
   private async getCards() {
-    this.cards = await this.cardService.getCardsForBuilder();
-    this.savedCards = this.cardService.getSavedCards();
+    this.rawCards = await this.cardService.getCardsForBuilder();
     this.translateCards();
+    this.filterCards();
+    this.savedCards = this.cardService.getSavedCards();
   }
 
   private translateCards() {
-    this.cards.forEach(card => {
+    this.rawCards.forEach(card => {
       card.name = this.toolService.getName(card);
     });
+  }
+
+  private filterCards() {
+    this.cards = [];
+    for (const card of this.rawCards) {
+      if ((this.showOnlyOtherVersion && card.fromOtherVersion)
+        || (!this.showOnlyOtherVersion && !card.fromOtherVersion)
+      ){
+        this.cards.push(card);
+      }
+    }
   }
 
   async selectCard(customData = null, fromModal = false) {
@@ -289,5 +304,11 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
 
     modalRef.componentInstance.type = 'card';
     modalRef.componentInstance.item = this.card;
+  }
+
+  toggleOtherVersion() {
+    this.showOnlyOtherVersion = !this.showOnlyOtherVersion;
+
+    this.filterCards();
   }
 }
