@@ -479,8 +479,12 @@ export class EquipmentService {
             possbibleToAdd = this.equipmentHasJob(equipment, filters);
           }
 
-          if (filters.equipmentTypes && filters.equipmentTypes.length > 0) {
+          if (possbibleToAdd && filters.equipmentTypes && filters.equipmentTypes.length > 0) {
             possbibleToAdd = this.equipmentHasGrow(equipment, filters);
+          }
+
+          if (possbibleToAdd && filters.equipmentStats && filters.equipmentStats.length > 0) {
+            possbibleToAdd = this.equipmentHasStat(equipment, filters);
           }
 
           if (possbibleToAdd) {
@@ -536,6 +540,18 @@ export class EquipmentService {
     });
 
     return equipmentHasGrow;
+  }
+
+  private equipmentHasStat(equipment, filters) {
+    if (equipment.stats) {
+      for (const statType of Object.keys(equipment.stats)) {
+        if (filters.equipmentStats.indexOf(statType) !== -1) {
+          return true;
+        }
+      }
+    }
+
+    return false;
   }
 
   async getEquipmentBySlug(slug: string) {
