@@ -236,7 +236,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
   private filterUnits() {
     this.units = [];
-    for(const unit of this.rawUnits) {
+    for (const unit of this.rawUnits) {
       if ((this.showOnlyOtherVersion && unit.fromOtherVersion)
         || (!this.showOnlyOtherVersion && !unit.fromOtherVersion)
       ){

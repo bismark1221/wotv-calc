@@ -213,7 +213,10 @@ export class ToolService {
         'VC_LW_USER1',
         'VC_LW_SLEN',
         'UN_LW_P_IBRA',
-        'VC_LW_XMAS2'
+        'VC_LW_XMAS2',
+        'VC_LW_MORE01',
+        'VC_LW_HALL2',
+        'VC_LW_IBRA'
       ],
       JP: [
         'UN_LW_P_FRVA',

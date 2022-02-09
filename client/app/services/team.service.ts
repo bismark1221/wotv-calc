@@ -282,7 +282,7 @@ export class TeamService {
       alreadyUsedCardIds.push(this.team.units[pos].card.dataId);
     }
 
-    const cards = await this.cardService.getCardsForListing();
+    const cards = await this.cardService.getCardsForListing(null, 'rarity', 'desc', true);
     const availableCards = [];
 
     cards.forEach(card => {

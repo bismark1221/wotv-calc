@@ -34,6 +34,10 @@
         >
           <img class="filterRarity" src="assets/elements/{{element}}.png" />
         </button>
+        <div class="switchShowOnlyOtherVersion">
+          Only from other version ?
+          <ui-switch class="switchMainJob" (click)="toggleOtherVersion()" checkedLabel="yes" uncheckedLabel="no" [checked]="showOnlyOtherVersion === true"></ui-switch>
+        </div>
       </div>
     </div>
 

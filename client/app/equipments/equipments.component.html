@@ -80,6 +80,20 @@
           <label for="equipmentType{{equipmentType.split('###')[1]}}">{{ equipmentType.split('###')[1] }}</label>
         </div>
       </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('equipmentStats')" [attr.aria-expanded]="!collapsed.equipmentStats">
+        Stats
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.equipmentStats" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.equipmentStats" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.equipmentStats">
+        <div *ngFor="let equipmentStat of equipmentStats">
+          <input type="checkbox" id="equipmentStat{{equipmentStat}}" (change)="filterList('equipmentStats', equipmentStat)" [checked]="isFilterChecked.equipmentStats[equipmentStat]"/>
+          <label *ngIf="equipmentStat" for="equipmentStat{{equipmentStat}}" >{{ equipmentStat.replace('_', ' ') | titlecase }}</label>
+        </div>
+      </div>
     </div>
   </div>
 

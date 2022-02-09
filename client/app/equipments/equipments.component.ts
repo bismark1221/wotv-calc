@@ -16,6 +16,7 @@ export class EquipmentsComponent implements OnInit {
   equipments = [];
   acquisitionTypes;
   equipmentTypes = [];
+  equipmentStats = [];
   searchText = '';
   sort = 'rarity';
   order = 'desc';
@@ -25,7 +26,8 @@ export class EquipmentsComponent implements OnInit {
     type: [],
     job: [],
     acquisition: [],
-    equipmentTypes: []
+    equipmentTypes: [],
+    equipmentStats: []
   };
 
   isFilterChecked = {
@@ -33,14 +35,16 @@ export class EquipmentsComponent implements OnInit {
     type: [],
     job: [],
     acquisition: [],
-    equipmentTypes: []
+    equipmentTypes: [],
+    equipmentStats: []
   };
   collapsed = {
     rarity: true,
     type: true,
     job: true,
     acquisition: true,
-    equipmentTypes: true
+    equipmentTypes: true,
+    equipmentStats: false,
   };
 
   rarities = [
@@ -101,8 +105,8 @@ export class EquipmentsComponent implements OnInit {
       this.collapsed = JSON.parse(sessionStorage.getItem('equipmentCollapsed'));
     }
 
+    this.filterEquipments();
     this.filterChecked();
-    this.getEquipments();
   }
 
   filterEquipments() {
@@ -124,7 +128,17 @@ export class EquipmentsComponent implements OnInit {
       }
     });
 
-    this.filterEquipments();
+    this.equipmentStats = [];
+    for (const equipment of this.equipments) {
+      if (equipment.stats) {
+        for (const statType of Object.keys(equipment.stats)) {
+          if (this.equipmentStats.indexOf(statType) === -1) {
+            this.equipmentStats.push(statType);
+          }
+        }
+      }
+    }
+    this.equipmentStats.sort();
   }
 
   private translateJobs() {
@@ -213,6 +227,14 @@ export class EquipmentsComponent implements OnInit {
         this.isFilterChecked.acquisition[acquisition] = false;
       } else {
         this.isFilterChecked.acquisition[acquisition] = true;
+      }
+    });
+
+    this.equipmentStats.forEach(equipmentStat => {
+      if (this.filters.equipmentStats.indexOf(equipmentStat) === -1) {
+        this.isFilterChecked.equipmentStats[equipmentStat] = false;
+      } else {
+        this.isFilterChecked.equipmentStats[equipmentStat] = true;
       }
     });
 

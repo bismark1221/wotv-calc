@@ -783,7 +783,7 @@ export class UnitService {
       alreadyUsedCardId = this.unit.card.dataId;
     }
 
-    const cards = await this.cardService.getCardsForListing();
+    const cards = await this.cardService.getCardsForListing(null, 'rarity', 'desc', true);
     const availableCards = [];
 
     cards.forEach(card => {
