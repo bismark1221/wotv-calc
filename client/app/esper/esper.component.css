@@ -65,11 +65,11 @@
   margin-right: 20px;
 }
 
-.statsTable, .skillsTable, .resTable {
+.statsTable, .skillsTable, .resTable, .loreTable {
   width: 100%;
 }
 
-.skillsTable, .resTable {
+.skillsTable, .resTable, .loreTable {
   margin-top: 10px;
 }
 

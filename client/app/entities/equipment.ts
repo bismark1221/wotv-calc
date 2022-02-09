@@ -14,6 +14,11 @@ export class Equipment {
   };
   name = 'New Equipment';
 
+  descriptions: any = {
+    en: 'New Equipment'
+  };
+  description = 'New Equipment';
+
   skills;
   buffs;
 
@@ -67,6 +72,7 @@ export class Equipment {
     this.dataId = equipment.dataId;
     this.rarity = equipment.rarity;
     this.names = equipment.names;
+    this.descriptions = equipment.descriptions;
     this.skills = equipment.skills;
     this.buffs = equipment.buffs;
     this.stats = equipment.stats;
@@ -91,6 +97,16 @@ export class Equipment {
     }
 
     return this.name;
+  }
+
+  getDescription(translateService: TranslateService): string {
+    if (!this.descriptions[translateService.currentLang]) {
+      this.description = this.descriptions[translateService.getDefaultLang()];
+    } else {
+      this.description = this.descriptions[translateService.currentLang];
+    }
+
+    return this.description;
   }
 
   updateMaxStat(toolService, skillService, rangeService) {

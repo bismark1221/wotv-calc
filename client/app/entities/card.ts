@@ -9,6 +9,11 @@ export class Card {
   };
   name = 'New Vision Card';
 
+  descriptions: any = {
+    en: ''
+  };
+  description = '';
+
   stats = {
     HP: {},
     ATK: {},
@@ -41,6 +46,7 @@ export class Card {
     this.dataId = card.dataId;
     this.rarity = card.rarity;
     this.names = card.names;
+    this.descriptions = card.descriptions;
     this.stats = card.stats;
     this.image = card.image;
     this.unitBuffs = card.unitBuffs;
@@ -61,6 +67,16 @@ export class Card {
     }
 
     return this.name;
+  }
+
+  getDescription(translateService: TranslateService): string {
+    if (!this.descriptions[translateService.currentLang]) {
+      this.description = this.descriptions[translateService.getDefaultLang()];
+    } else {
+      this.description = this.descriptions[translateService.currentLang];
+    }
+
+    return this.description;
   }
 
   resetCard(toolService, skillService, rangeService) {

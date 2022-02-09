@@ -45,6 +45,18 @@ export class ToolService {
     }
   }
 
+  getDescription(item) {
+    if (item && item.descriptions) {
+      if (!item.descriptions[this.translateService.currentLang]) {
+        return item.descriptions[this.translateService.getDefaultLang()].replace('<br>', ' ');
+      } else {
+        return item.descriptions[this.translateService.currentLang].replace('<br>', ' ');
+      }
+    } else {
+      return '-';
+    }
+  }
+
   sortByRarity(items, order = 'desc') {
     let rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
     if (order === 'desc') {

@@ -58,6 +58,8 @@ export class CardComponent implements OnInit {
       const buffTypes = ['unitBuffs', 'partyBuffs'];
 
       this.card.name = this.toolService.getName(this.card);
+      this.card.description = this.toolService.getDescription(this.card);
+
       this.card.limited = this.cardService.isLimited(this.card.dataId);
 
       for (const buffType of buffTypes) {

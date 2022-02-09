@@ -88,6 +88,7 @@ export class EquipmentComponent implements OnInit {
   private formatEquipment() {
     if (this.equipment) {
       this.equipment.name = this.toolService.getName(this.equipment);
+      this.equipment.description = this.toolService.getDescription(this.equipment);
       this.equipment.statsTypes = [];
       if (this.equipment.stats) {
         this.equipment.statsTypes = Object.keys(this.equipment.stats);

@@ -63,11 +63,11 @@
   margin-right: 20px;
 }
 
-.StatTable, .skillsTable, .equippableJobsTable {
+.StatTable, .skillsTable, .equippableJobsTable, .loreTable {
   width: 100%;
 }
 
-.skillsTable, .equippableJobsTable {
+.skillsTable, .equippableJobsTable, .loreTable {
   margin-top: 10px;
 }
 

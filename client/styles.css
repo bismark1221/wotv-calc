@@ -846,3 +846,30 @@ small {
 .ng-placeholder {
   padding-left: 2px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.customTEST .ng-dropdown-panel {
+  display: none !important;
+}
+
+.customTEST .ng-select-container {
+  border-radius: 4px !important;
+}
+
+.customTEST .ng-select-container .ng-arrow-wrapper {
+  display: none !important;
+}
+
+.customTEST .ng-select-container .ng-value-container .ng-input input {
+  cursor: text !important;
+}

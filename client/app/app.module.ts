@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -191,6 +191,7 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule.withServerTransition({appId: 'app-root'}),
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     MultiselectDropdownModule,
     LocalStorageModule.forRoot({
@@ -217,7 +218,7 @@ export function createTranslateLoader(http: HttpClient) {
     ClickOutsideModule,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
-    }),
+    })
   ],
   providers: [
     UnitService,

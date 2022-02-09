@@ -129,6 +129,7 @@ export class UnitComponent implements OnInit {
     if (this.unit) {
       this.jobs = [];
       this.unit.name = this.toolService.getName(this.unit);
+      this.unit.description = this.toolService.getDescription(this.unit);
       this.unit.limited = this.unitService.isLimited(this.unit.dataId);
 
       this.unit.skills = [];

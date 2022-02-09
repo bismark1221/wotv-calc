@@ -11,6 +11,11 @@ export class Esper {
   };
   name = 'New Esper';
 
+  descriptions: any = {
+    en: ''
+  };
+  description = '';
+
   skill = new Skill();
   stats = {
     HP: {},
@@ -86,6 +91,7 @@ export class Esper {
     this.dataId = esper.dataId;
     this.rarity = esper.rarity;
     this.names = esper.names;
+    this.descriptions = esper.descriptions;
     this.skill = esper.skill;
     this.stats = esper.stats;
     this.element = esper.element;
@@ -107,6 +113,16 @@ export class Esper {
     }
 
     return this.name;
+  }
+
+  getDescription(translateService: TranslateService): string {
+    if (!this.descriptions[translateService.currentLang]) {
+      this.description = this.descriptions[translateService.getDefaultLang()];
+    } else {
+      this.description = this.descriptions[translateService.currentLang];
+    }
+
+    return this.description;
   }
 
   updateMaxLevel() {

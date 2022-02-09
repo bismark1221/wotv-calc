@@ -60,7 +60,7 @@
 
     <table class="effectsTable">
       <tr>
-        <th class="sub" colspan="10">Unit Effects</th>
+        <th colspan="10">Unit Effects</th>
       </tr>
       <tbody *ngFor="let buff of card.formattedUnitBuffs">
         <tr *ngFor="let cond of buff.cond">
@@ -211,7 +211,7 @@
     <table class="effectsTable" *ngIf="card.formattedPartyBuffs">
       <tbody>
         <tr>
-          <th class="sub" colspan="10">Party Effects</th>
+          <th colspan="10">Party Effects</th>
         </tr>
         <tr *ngIf="card.formattedPartyBuffs.classic">
           <td>Classic</td>
@@ -300,6 +300,15 @@
         </tr>
         <tr class="separatorLine"></tr>
       </tbody>
+    </table>
+
+    <table class="loreTable">
+      <tr>
+        <th>Lore</th>
+      </tr>
+      <tr>
+        <td>{{ card.description }}</td>
+      </tr>
     </table>
   </div>
 </div>

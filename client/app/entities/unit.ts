@@ -12,6 +12,12 @@ export class Unit {
     en: 'New Unit'
   };
   name = 'New Unit';
+
+  descriptions: any = {
+    en: ''
+  };
+  description = '';
+
   jobs: any = [
     {
       en: 'Job 1'
@@ -165,6 +171,7 @@ export class Unit {
     this.dataId = unit.dataId;
     this.rarity = unit.rarity;
     this.names = unit.names;
+    this.descriptions = unit.descriptions;
     this.jobs = unit.jobs;
     this.exJobs = unit.exJobs;
     this.skills = unit.skills;
@@ -199,6 +206,16 @@ export class Unit {
     }
 
     return this.name;
+  }
+
+  getDescription(translateService): string {
+    if (!this.descriptions[translateService.currentLang]) {
+      this.description = this.descriptions[translateService.getDefaultLang()];
+    } else {
+      this.description = this.descriptions[translateService.currentLang];
+    }
+
+    return this.description;
   }
 
   updateStar(value, autoGetSkills = false) {

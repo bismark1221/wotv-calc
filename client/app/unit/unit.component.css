@@ -44,7 +44,7 @@
   vertical-align: top;
 }
 
-.unitTable, .tmrTable, .tmrSkillTable, .masterSkillTable, .statsTable {
+.unitTable, .tmrTable, .tmrSkillTable, .masterSkillTable, .statsTable, .descriptionSkillTable {
   width: 100%;
 }
 
@@ -111,7 +111,7 @@
   width: 50px;
 }
 
-.tmrSkillTable, .masterSkillTable {
+.tmrSkillTable, .masterSkillTable, .descriptionSkillTable {
   margin-top: 10px;
 }
 
