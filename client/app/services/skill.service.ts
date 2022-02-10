@@ -176,14 +176,14 @@ export class SkillService {
         });
       }
 
-      const minValue = 100 + (typeof(effect.minValue) === 'number' ? effect.minValue : effect.value) + maxReduceValueFromMath;
+      const minValue = (effect.fixedDamage === true ? 0 : 100) + (typeof(effect.minValue) === 'number' ? effect.minValue : effect.value) + maxReduceValueFromMath;
 
       if (!skill.level) {
         value = ' (' + minValue + this.getDamageCalc(effect) + this.getDamageMaxValue(effect, maxReduceValueFromMath) + ')';
       } else {
         if (effect.minValue !== effect.maxValue) {
           const valueForLevel = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / ((skill.maxLevel > 1 ? skill.maxLevel : 2) - 1) * ((skill.level > 1 ? skill.level : 2) - 1)));
-          value = ' (' + (100 + valueForLevel) + this.getDamageCalc(effect) + ')';
+          value = ' (' + ((effect.fixedDamage === true ? 0 : 100) + valueForLevel) + this.getDamageCalc(effect) + ')';
         } else {
           value = ' (' + minValue + this.getDamageCalc(effect) + ')';
         }
@@ -195,7 +195,7 @@ export class SkillService {
 
   private getDamageMaxValue(effect, maxReduceValueFromMath) {
     if (effect.minValue !== effect.maxValue) {
-      const maxValue = 100 + effect.maxValue + maxReduceValueFromMath;
+      const maxValue = (effect.fixedDamage === true ? 0 : 100) + effect.maxValue + maxReduceValueFromMath;
 
       return ' => ' + maxValue + this.getDamageCalc(effect);
     }
