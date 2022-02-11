@@ -1964,10 +1964,11 @@ export class Unit {
     this.calcCost = {
       baseTotal: this.cost,
       esper: this.esper ? this.esper.cost : 0,
-      card: this.card ? this.card.cost : 0
+      card: this.card ? this.card.cost : 0,
+      subCard: this.subCard ? this.subCard.cost * 0.7 : 0
     };
 
-    this.calcCost.total = this.calcCost.baseTotal + this.calcCost.esper + this.calcCost.card;
+    this.calcCost.total = this.calcCost.baseTotal + this.calcCost.esper + this.calcCost.card + this.calcCost.subCard;
   }
 
   formatUpgrades() {
