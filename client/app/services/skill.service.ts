@@ -1545,9 +1545,9 @@ export class SkillService {
         } else {
           html = this.getValue(skill, effect) + '% chance the counter doesn\'t activate ' + this.getTurns(effect);
         }
-      break;
-      case 'ABSORB_REFLECT_HIT' :
-        html = 'Absorbs up to ' + effect.absorbNumber + ' reflectable magic hits & absorbs ' + this.getValue(skill, effect) + ' TP/AP used ' + this.getTurns(effect);
+      break;;
+      case 'RUNIC_SHIELD' :
+        html = 'Grant Runic Shield (Absorbs up to ' + effect.absorbNumber + ' reflectable magic hits & absorbs ' + this.getValue(skill, effect) + ' TP/AP used) ' + this.getTurns(effect);
       break;
 
       /* ONLY TESTABLE WITH OTHER UNIT */
