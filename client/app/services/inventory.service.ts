@@ -44,6 +44,6 @@ export class InventoryService {
   }
 
   saveInventory(data) {
-    this.apiService.postForLogin('inventory', data);
+    this.apiService.post('inventory', data);
   }
 }

@@ -90,7 +90,7 @@ export class UserService {
       userId: this.authService.getUser().uid
     };
 
-    const apiResult = await this.apiService.postForLogin('userHaveDevice', data);
+    const apiResult = await this.apiService.post('userHaveDevice', data);
     this.loading[loadingType] = false;
 
     if (apiResult.result === true) {
@@ -106,7 +106,7 @@ export class UserService {
     };
 
     this.loading.deleteDevice = true;
-    const apiResult = await this.apiService.postForLogin('deleteDevice', data);
+    const apiResult = await this.apiService.post('deleteDevice', data);
 
     if (apiResult.result === true) {
       return true;
@@ -123,7 +123,7 @@ export class UserService {
     };
 
     this.loading.uploadDevice = true;
-    const apiResult = await this.apiService.postForLogin('generateDeviceId', data);
+    const apiResult = await this.apiService.post('generateDeviceId', data);
     this.loading.uploadDevice = false;
 
     if (apiResult.result === 'success') {
@@ -139,7 +139,7 @@ export class UserService {
     };
 
     this.loading.data = true;
-    const apiResult = JSON.parse(JSON.stringify(await this.apiService.postForLogin('dumpLogin', data)));
+    const apiResult = JSON.parse(JSON.stringify(await this.apiService.post('dumpLogin', data)));
 
     if (apiResult) {
       const guild = {

@@ -1,6 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
 import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service';
@@ -81,20 +80,13 @@ export class EquipmentsComponent implements OnInit {
     'SHIELD'
   ];
 
-  testFilters = [];
-  testFiltersResult = [];
-  savedOpenFunction = null;
-  @ViewChild('MySearchBar') ngselect;
-  searchForm: FormGroup;
-
 
   constructor(
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
     private navService: NavService,
     private jobService: JobService,
-    private toolService: ToolService,
-    private formBuilder: FormBuilder
+    private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEquipments();
@@ -116,12 +108,6 @@ export class EquipmentsComponent implements OnInit {
 
     this.filterEquipments();
     this.filterChecked();
-
-    this.searchForm = new FormGroup({
-      selectedCitiesIds: new FormControl()
-    });
-
-    this.searchForm.get('selectedCitiesIds').patchValue([1,2]);
   }
 
   filterEquipments() {
@@ -273,65 +259,5 @@ export class EquipmentsComponent implements OnInit {
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
     sessionStorage.setItem('equipmentCollapsed', JSON.stringify(this.collapsed));
-  }
-
-
-
-
-
-
-  onChange($event) {
-      //console.log({ name: '(change)', value: $event });
-  }
-
-  onFocus($event: Event) {
-      //console.log({ name: '(focus)', value: $event });
-  }
-
-  onBlur($event: Event) {
-      //console.log({ name: '(blur)', value: $event });
-  }
-
-  onOpen() {
-      //console.log({ name: '(open)', value: null });
-  }
-
-  onClose() {
-      //console.log({ name: '(close)', value: null });
-  }
-
-  onAdd($event) {
-    // console.log({ name: '(add)', value: $event });
-    // console.log(this.testFiltersResult)
-  }
-
-  onRemove($event) {
-      //console.log({ name: '(remove)', value: $event });
-  }
-
-  onClear() {
-      //console.log({ name: '(clear)', value: null });
-  }
-
-  onScrollToEnd($event) {
-      //console.log({ name: '(scrollToEnd)', value: $event });
-  }
-
-  onSearch($event) {
-    // console.log({ name: '(search)', value: $event });
-  }
-
-  testOpen() {
-    this.ngselect.searchTerm = 'FOO';
-    this.ngselect.searchInput.nativeElement.value = 'FOO';
-  }
-
-
-  testOpen2() {
-
-  }
-
-  testOpen3() {
-
   }
 }

@@ -1,0 +1,38 @@
+.titleBlock {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #fff;
+}
+
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.closeButtonBlock {
+  float: right;
+}
+
+.closeButtonBlock button {
+  padding: 10px;
+  background: none;
+  border: 0;
+}
+
+.closeButtonBlock button span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mainBlock {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 800px;
+}
+
+.closeButton {
+  margin: 10px;
+  float: right;
+}

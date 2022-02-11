@@ -89,6 +89,8 @@ import { ModalMateriaComponent } from './builder/modal/modal.materia.component';
 
 import { TemplateItemComponent } from './template/template.item.component';
 
+import { SearchOptionsModalComponent } from './searchOptionsModal/searchOptionsModal.component';
+
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
 import { SkillService } from './services/skill.service';
@@ -185,7 +187,8 @@ export function createTranslateLoader(http: HttpClient) {
     OtherMateriaComponent,
     OtherMaterialLookupComponent,
     TemplateItemComponent,
-    UserComponent
+    UserComponent,
+    SearchOptionsModalComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

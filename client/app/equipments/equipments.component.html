@@ -104,37 +104,6 @@
         <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText">
       </div>
 
-
-      <!-- <div>
-        <form *ngIf="searchForm" [formGroup]="searchForm">
-          <ng-select #MySearchBar
-            [items]="testFilters"
-            bindLabel="name"
-            [addTag]="true"
-            [multiple]="true"
-            [hideSelected]="true"
-            (open)="onOpen()"
-            (close)="onClose()"
-            (focus)="onFocus($event)"
-            (search)="onSearch($event)"
-            (blur)="onBlur($event)"
-            (clear)="onClear()"
-            (add)="onAdd($event)"
-            (scrollToEnd)="onScrollToEnd($event)"
-            (remove)="onRemove($event)"
-            (change)="onChange($event)"
-            formControlName="selectedCitiesIds"
-            class="customTEST"
-            [clearable]="false"
-          >
-          </ng-select>
-          <button (click)="testOpen()">TEST OPEN</button>
-          <button (click)="testOpen2()">TEST OPEN 2</button>
-          <button (click)="testOpen3()">TEST OPEN 3</button>
-        </form>
-      </div> -->
-
-
       <div class="underSearchBlock">
         <div class="totalEquipments">
           A total of <span class="countEquipments">{{ getFilteredEquipments().length }}</span> equipments found

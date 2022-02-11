@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
@@ -41,7 +42,7 @@ export class ApiService {
       .toPromise();
   }
 
-  public async postForLogin(type, data, forceGLVersion = false) {
+  public async post(type, data, forceGLVersion = false) {
     const version = !forceGLVersion && this.navService.getVersion() === 'JP' ? 'jp' : 'gl';
     const uri = '/api/' + version + '/' + type;
 

@@ -1,9 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EsperService } from '../services/esper.service';
 import { NavService } from '../services/nav.service';
 import { ToolService } from '../services/tool.service';
+
+import { SearchOptionsModalComponent } from '../searchOptionsModal/searchOptionsModal.component';
 
 @Component({
   selector: 'app-espers',
@@ -58,10 +62,16 @@ export class EspersComponent implements OnInit {
 
   costs = [];
 
+  filtersCount = 0;
+
+  @ViewChild('SearchBar') ngselect;
+  searchForm: FormGroup;
+
   constructor(
     private esperService: EsperService,
     private translateService: TranslateService,
     private navService: NavService,
+    private modalService: NgbModal,
     private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -74,36 +84,71 @@ export class EspersComponent implements OnInit {
 
     await this.getEspers();
 
-    if (sessionStorage.getItem('espersFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('espersFilters'));
-
-      if (!this.filters.cost) {
-        this.filters.cost = [];
-      }
-    }
-
-    if (sessionStorage.getItem('espersCollapsed')) {
-      this.collapsed = JSON.parse(sessionStorage.getItem('espersCollapsed'));
-
-      if (this.collapsed.cost === undefined) {
-        this.collapsed.cost = true;
-      }
-    }
-
-    this.filterChecked();
-    this.filterEspers();
+    this.searchForm = new FormGroup({
+      searchOptions: new FormControl()
+    });
   }
 
   async getEspers() {
-    const result = await this.esperService.getEspersForListingWithCosts(this.filters, this.sort, this.order);
+    const options = {};
+
+    if (this.searchForm) {
+      for (const option of this.searchForm.get('searchOptions').value) {
+        const optionTable = option.label.substring(1).split('=');
+        if (!options[optionTable[0]]) {
+          options[optionTable[0]] = [];
+        }
+        options[optionTable[0]].push(optionTable[1]);
+      }
+    }
+
+    let result = null;
+
+    if (Object.keys(options).length === 0) {
+      result = await this.esperService.getEspersForListingWithCosts(this.filters, this.sort, this.order);
+    } else {
+      result = await this.esperService.getEspersForListingWithCosts(this.filters, this.sort, this.order, options);
+    }
 
     this.espers = result.espers;
     this.rawEspers = result.rawEspers;
-    this.costs = result.costs;
+
+    if (Object.keys(options).length === 0) {
+      this.costs = result.costs;
+
+      if (sessionStorage.getItem('espersFilters')) {
+        this.filters = JSON.parse(sessionStorage.getItem('espersFilters'));
+
+        if (!this.filters.cost) {
+          this.filters.cost = [];
+        }
+      }
+
+      if (sessionStorage.getItem('espersCollapsed')) {
+        this.collapsed = JSON.parse(sessionStorage.getItem('espersCollapsed'));
+
+        if (this.collapsed.cost === undefined) {
+          this.collapsed.cost = true;
+        }
+      }
+
+      this.filterChecked();
+    }
+
+    this.filterEspers();
   }
 
   filterEspers() {
     this.espers = this.esperService.filterEspers(this.rawEspers, this.filters, this.sort, this.order);
+    this.countFilters();
+  }
+
+  countFilters() {
+    this.filtersCount = this.filters.cost.length
+      + this.filters.element.length
+      + this.filters.limited.length
+      + this.filters.rarity.length
+      + (this.filters.threeStars ? 1 : 0);
   }
 
   private translateEspers() {
@@ -181,5 +226,42 @@ export class EspersComponent implements OnInit {
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
     sessionStorage.setItem('espersCollapsed', JSON.stringify(this.collapsed));
+  }
+
+  onSearchBarClose() {
+    // console.log({ name: '(close)', value: null });
+    this.ngselect.searchTerm = this.searchText;
+    this.ngselect.searchInput.nativeElement.value = this.searchText;
+    this.getFilteredEspers();
+  }
+
+  onSearchBarAdd($event) {
+    // console.log({ name: '(add)', value: $event.name });
+    // console.log(this.searchForm.get('searchOptions').value);
+
+    const labelTable = $event.label.split('=');
+
+    if ($event.label[0] !== '!' || labelTable.length !== 2 || labelTable[1] === '') {
+      this.searchForm.get('searchOptions').value.pop();
+      this.searchForm.get('searchOptions').patchValue(this.searchForm.get('searchOptions').value);
+
+      if ($event.label[0] !== '!') {
+        this.searchText = $event.label;
+      }
+    } else {
+      this.getEspers();
+    }
+  }
+
+  onSearchBarUpdateTerm($event) {
+    // console.log({ name: '(search)', value: $event });
+    if ($event.term[0] !== '!') {
+      this.searchText = $event.term;
+      this.getFilteredEspers();
+    }
+  }
+
+  openSearchOptionsModal() {
+    this.modalService.open(SearchOptionsModalComponent, { windowClass: 'options-modal' });
   }
 }
