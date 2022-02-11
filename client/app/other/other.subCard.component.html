@@ -1,0 +1,20 @@
+<div class="subCardRatio">
+  <h1 class="title">Sub Cards Ratio</h1>
+
+  <div class="ratioBlock" *ngFor="let buffType of buffTypes">
+    <table>
+      <tr>
+        <th colspan="99">{{ buffType }}</th>
+      <tr>
+        <th class="sub">Awake</th>
+        <th class="sub">Unit</th>
+        <th class="sub">Party</th>
+      </tr>
+      <tr *ngFor="let partyRatio of subCardBuffRatio[version][buffType].partyRatio; let awake = index">
+        <td>{{ awake + 1 }}</td>
+        <td>{{ subCardBuffRatio[version][buffType].unitRatio[awake] * 100 }}%</td>
+        <td>{{ subCardBuffRatio[version][buffType].partyRatio[awake] * 100 }}%</td>
+      </tr>
+    </table>
+  </div>
+</div>

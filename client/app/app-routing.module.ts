@@ -32,6 +32,7 @@ import { OtherBestiaryComponent } from './other/other.bestiary.component';
 import { OtherUnitComponent } from './other/other.unit.component';
 import { OtherMateriaComponent } from './other/other.materia.component';
 import { OtherMaterialLookupComponent } from './other/other.materiallookup.component';
+import { OtherSubCardComponent } from './other/other.subCard.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -76,6 +77,7 @@ const ROUTES: Routes = [
       { path: 'unit/:slug', component: OtherUnitComponent },
       { path: 'materia', component: OtherMateriaComponent },
       { path: 'material-lookup', component: OtherMaterialLookupComponent },
+      { path: 'subcard-ratio', component: OtherSubCardComponent },
     ]
   },
 
@@ -133,6 +135,7 @@ const ROUTES: Routes = [
       { path: 'unit/:slug', component: OtherUnitComponent },
       { path: 'materia', component: OtherMateriaComponent },
       { path: 'material-lookup', component: OtherMaterialLookupComponent },
+      { path: 'subcard-ratio', component: OtherSubCardComponent },
     ]
   },
 

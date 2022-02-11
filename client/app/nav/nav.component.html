@@ -52,6 +52,9 @@
           <div class="otherMateria" *ngIf="showOtherNav">
             <a [routerLink]="[getRoute('/other/materia')]" (click)="showOtherNav=false">Materia</a>
           </div>
+          <div class="otherSubCardRatio" *ngIf="showOtherNav">
+            <a [routerLink]="[getRoute('/other/subcard-ratio')]" (click)="showOtherNav=false">Sub Cards Ratio</a>
+          </div>
         </div>
         <div class="inlineBlock" (mouseover)="showBuilderNav=false; showOtherNav=false">&nbsp;</div>
       </li>
@@ -239,6 +242,7 @@
           <a class="nav-link" [routerLink]="[getRoute('/other/farm-calculator')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Farm Calculator</a>
           <a class="nav-link" [routerLink]="[getRoute('/other/material-lookup')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Material Lookup</a>
           <a class="nav-link" [routerLink]="[getRoute('/other/materia')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Materia</a>
+          <a class="nav-link" [routerLink]="[getRoute('/other/subcard-ratio')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Sub Cards Ratio</a>
         </div>
 
         <div class="nav-link">
