@@ -80,11 +80,30 @@
     <div class="upperBlock">
       <div class="searchBlock">
         <i class="fas fa-search" aria-hidden="true"></i>
-        <input class="searchInput" type="text" placeholder="Search for a card by name" [(ngModel)]="searchText">
+        <form *ngIf="searchForm" [formGroup]="searchForm" class="search-form">
+          <ng-select #SearchBar
+            bindLabel="name"
+            placeholder="Search for a card by name"
+            [addTag]="true"
+            [multiple]="true"
+            [hideSelected]="true"
+            (close)="onSearchBarClose()"
+            (search)="onSearchBarUpdateTerm($event)"
+            (add)="onSearchBarAdd($event)"
+            (remove)="getCards()"
+            formControlName="searchOptions"
+            class="search-select"
+            [clearable]="false"
+          >
+          </ng-select>
+        </form>
+        <i class="far fa-question-circle" (click)="openSearchOptionsModal()"></i>
       </div>
+
       <div class="underSearchBlock">
         <div class="totalCards">
           A total of <span class="countCards">{{ getFilteredCards().length }}</span> cards found
+          <span *ngIf="filtersCount > 0">({{ filtersCount }} filters activated)</span>
         </div>
         <div class="sortOrderBlock">
           <!-- <div>

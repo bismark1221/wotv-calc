@@ -1,10 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service';
 import { JobService } from '../services/job.service';
 import { ToolService } from '../services/tool.service';
+
+import { SearchOptionsModalComponent } from '../searchOptionsModal/searchOptionsModal.component';
 
 @Component({
   selector: 'app-equipments',
@@ -80,12 +84,17 @@ export class EquipmentsComponent implements OnInit {
     'SHIELD'
   ];
 
+  filtersCount = 0;
+
+  @ViewChild('SearchBar') ngselect;
+  searchForm: FormGroup;
 
   constructor(
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
     private navService: NavService,
     private jobService: JobService,
+    private modalService: NgbModal,
     private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -99,47 +108,83 @@ export class EquipmentsComponent implements OnInit {
 
     await this.getEquipments();
 
-    if (sessionStorage.getItem('equipmentFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('equipmentFilters'));
-    }
-    if (sessionStorage.getItem('equipmentCollapsed')) {
-      this.collapsed = JSON.parse(sessionStorage.getItem('equipmentCollapsed'));
+    this.searchForm = new FormGroup({
+      searchOptions: new FormControl()
+    });
+  }
+
+  async getEquipments() {
+    const options = {};
+
+    if (this.searchForm) {
+      for (const option of this.searchForm.get('searchOptions').value) {
+        const optionTable = option.label.substring(1).split('=');
+        if (!options[optionTable[0]]) {
+          options[optionTable[0]] = [];
+        }
+        options[optionTable[0]].push(optionTable[1]);
+      }
     }
 
-    this.filterEquipments();
+    let result = null;
+
+    if (Object.keys(options).length === 0) {
+      result = await this.equipmentService.getEquipmentForListingWithAcquisitionTypes(this.filters, this.sort, this.order);
+    } else {
+      result = await this.equipmentService.getEquipmentForListingWithAcquisitionTypes(this.filters, this.sort, this.order, options);
+    }
+
+    this.equipments = result.equipments;
+    this.rawEquipments = result.rawEquipments;
+
+    if (Object.keys(options).length === 0) {
+      this.acquisitionTypes = result.acquisitionTypes;
+      this.equipmentTypes = result.equipmentTypes;
+      this.jobs = result.jobs;
+
+      this.acquisitionTypes.forEach(type => {
+        if (type !== 'Unknown') {
+          this.filters.acquisition.push(type);
+        }
+      });
+
+      this.equipmentStats = [];
+      for (const equipment of this.equipments) {
+        if (equipment.stats) {
+          for (const statType of Object.keys(equipment.stats)) {
+            if (this.equipmentStats.indexOf(statType) === -1) {
+              this.equipmentStats.push(statType);
+            }
+          }
+        }
+      }
+      this.equipmentStats.sort();
+
+      if (sessionStorage.getItem('equipmentFilters')) {
+        this.filters = JSON.parse(sessionStorage.getItem('equipmentFilters'));
+      }
+      if (sessionStorage.getItem('equipmentCollapsed')) {
+        this.collapsed = JSON.parse(sessionStorage.getItem('equipmentCollapsed'));
+      }
+
+      this.filterEquipments();
+    }
+
     this.filterChecked();
   }
 
   filterEquipments() {
     this.equipments = this.equipmentService.filterEquipments(this.rawEquipments, this.filters, this.sort, this.order);
+    this.countFilters();
   }
 
-  async getEquipments() {
-    const result = await this.equipmentService.getEquipmentForListingWithAcquisitionTypes(this.filters, this.sort, this.order);
-
-    this.equipments = result.equipments;
-    this.rawEquipments = result.rawEquipments;
-    this.acquisitionTypes = result.acquisitionTypes;
-    this.equipmentTypes = result.equipmentTypes;
-    this.jobs = result.jobs;
-
-    this.acquisitionTypes.forEach(type => {
-      if (type !== 'Unknown') {
-        this.filters.acquisition.push(type);
-      }
-    });
-
-    this.equipmentStats = [];
-    for (const equipment of this.equipments) {
-      if (equipment.stats) {
-        for (const statType of Object.keys(equipment.stats)) {
-          if (this.equipmentStats.indexOf(statType) === -1) {
-            this.equipmentStats.push(statType);
-          }
-        }
-      }
-    }
-    this.equipmentStats.sort();
+  countFilters() {
+    this.filtersCount = this.filters.rarity.length
+      + this.filters.type.length
+      + this.filters.job.length
+      + this.filters.acquisition.length
+      + this.filters.equipmentTypes.length
+      + this.filters.equipmentStats.length;
   }
 
   private translateJobs() {
@@ -259,5 +304,37 @@ export class EquipmentsComponent implements OnInit {
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
     sessionStorage.setItem('equipmentCollapsed', JSON.stringify(this.collapsed));
+  }
+
+  onSearchBarClose() {
+    this.ngselect.searchTerm = this.searchText;
+    this.ngselect.searchInput.nativeElement.value = this.searchText;
+    this.getFilteredEquipments();
+  }
+
+  onSearchBarAdd($event) {
+    const labelTable = $event.label.split('=');
+
+    if ($event.label[0] !== '!' || labelTable.length !== 2 || labelTable[1] === '') {
+      this.searchForm.get('searchOptions').value.pop();
+      this.searchForm.get('searchOptions').patchValue(this.searchForm.get('searchOptions').value);
+
+      if ($event.label[0] !== '!') {
+        this.searchText = $event.label;
+      }
+    } else {
+      this.getEquipments();
+    }
+  }
+
+  onSearchBarUpdateTerm($event) {
+    if ($event.term[0] !== '!') {
+      this.searchText = $event.term;
+      this.getFilteredEquipments();
+    }
+  }
+
+  openSearchOptionsModal() {
+    this.modalService.open(SearchOptionsModalComponent, { windowClass: 'options-modal' });
   }
 }

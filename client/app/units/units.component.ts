@@ -1,10 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
 import { ToolService } from '../services/tool.service';
 import { JobService } from '../services/job.service';
+
+import { SearchOptionsModalComponent } from '../searchOptionsModal/searchOptionsModal.component';
 
 @Component({
   selector: 'app-units',
@@ -80,11 +84,16 @@ export class UnitsComponent implements OnInit {
 
   costs = [];
 
+  filtersCount = 0;
+
+  @ViewChild('SearchBar') ngselect;
+  searchForm: FormGroup;
 
   constructor(
     private unitService: UnitService,
     private translateService: TranslateService,
     private navService: NavService,
+    private modalService: NgbModal,
     private toolService: ToolService,
     private jobService: JobService
   ) {
@@ -99,38 +108,79 @@ export class UnitsComponent implements OnInit {
 
     await this.getUnits();
 
-    if (sessionStorage.getItem('unitsFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('unitsFilters'));
-
-      if (!this.filters.cost) {
-        this.filters.cost = [];
-      }
-    }
-
-    if (sessionStorage.getItem('unitsCollapsed')) {
-      this.collapsed = JSON.parse(sessionStorage.getItem('unitsCollapsed'));
-
-      if (this.collapsed.cost === undefined) {
-        this.collapsed.cost = true;
-      }
-    }
-
-    this.filterChecked();
-    this.filterUnits();
+    this.searchForm = new FormGroup({
+      searchOptions: new FormControl()
+    });
   }
 
   async getUnits() {
-    const result = await this.unitService.getUnitsForListingWithCost(this.filters, this.sort, this.order);
+    const options = {};
+
+    if (this.searchForm) {
+      for (const option of this.searchForm.get('searchOptions').value) {
+        const optionTable = option.label.substring(1).split('=');
+        if (!options[optionTable[0]]) {
+          options[optionTable[0]] = [];
+        }
+        options[optionTable[0]].push(optionTable[1]);
+      }
+    }
+
+    let result = null;
+
+    if (Object.keys(options).length === 0) {
+      result = await this.unitService.getUnitsForListingWithCost(this.filters, this.sort, this.order);
+    } else {
+      result = await this.unitService.getUnitsForListingWithCost(this.filters, this.sort, this.order, options);
+    }
 
     this.units = result.units;
     this.rawUnits = result.rawUnits;
-    this.rawJobs = result.rawJobs;
-    this.jobs = result.jobs;
-    this.costs = result.costs;
+
+    if (Object.keys(options).length === 0) {
+      this.rawJobs = result.rawJobs;
+      this.jobs = result.jobs;
+      this.costs = result.costs;
+
+      if (sessionStorage.getItem('unitsFilters')) {
+        this.filters = JSON.parse(sessionStorage.getItem('unitsFilters'));
+
+        if (!this.filters.cost) {
+          this.filters.cost = [];
+        }
+      }
+
+      if (sessionStorage.getItem('unitsCollapsed')) {
+        this.collapsed = JSON.parse(sessionStorage.getItem('unitsCollapsed'));
+
+        if (this.collapsed.cost === undefined) {
+          this.collapsed.cost = true;
+        }
+      }
+
+      this.filterChecked();
+    }
+
+    this.filterUnits();
   }
 
   filterUnits() {
     this.units = this.unitService.filterUnitsWithApi(this.rawUnits, this.filters, this.sort, this.order, this.rawJobs);
+    this.countFilters();
+  }
+
+  countFilters() {
+    this.filtersCount = this.filters.rarity.length
+      + this.filters.element.length
+      + this.filters.job.length
+      + this.filters.limited.length
+      + (this.filters.equipment.weapon !== 'ALL' ? 1 : 0)
+      + this.filters.equipment.armor.length
+      + this.filters.cost.length
+      + (this.filters.mainJob ? 1 : 0)
+      + (this.filters.subJob ? 1 : 0)
+      + (this.filters.exJob ? 1 : 0)
+      + (this.filters.secondMasterAbility ? 1 : 0);
   }
 
   private translateUnits() {
@@ -283,5 +333,37 @@ export class UnitsComponent implements OnInit {
     this.filterChecked();
 
     this.filterUnits();
+  }
+
+  onSearchBarClose() {
+    this.ngselect.searchTerm = this.searchText;
+    this.ngselect.searchInput.nativeElement.value = this.searchText;
+    this.getFilteredUnits();
+  }
+
+  onSearchBarAdd($event) {
+    const labelTable = $event.label.split('=');
+
+    if ($event.label[0] !== '!' || labelTable.length !== 2 || labelTable[1] === '') {
+      this.searchForm.get('searchOptions').value.pop();
+      this.searchForm.get('searchOptions').patchValue(this.searchForm.get('searchOptions').value);
+
+      if ($event.label[0] !== '!') {
+        this.searchText = $event.label;
+      }
+    } else {
+      this.getUnits();
+    }
+  }
+
+  onSearchBarUpdateTerm($event) {
+    if ($event.term[0] !== '!') {
+      this.searchText = $event.term;
+      this.getFilteredUnits();
+    }
+  }
+
+  openSearchOptionsModal() {
+    this.modalService.open(SearchOptionsModalComponent, { windowClass: 'options-modal' });
   }
 }

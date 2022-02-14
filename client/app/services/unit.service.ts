@@ -55,8 +55,18 @@ export class UnitService {
     return JSON.parse(JSON.stringify(await this.apiService.loadData('units', param, extraQuery)));
   }
 
-  async getUnitsForListingWithCost(filters = null, sort = 'rarity', order = 'desc') {
-    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+  private async getApiPost(data = null) {
+    return JSON.parse(JSON.stringify(await this.apiService.post('units', data)));
+  }
+
+  async getUnitsForListingWithCost(filters = null, sort = 'rarity', order = 'desc', options = null) {
+    let apiResult = null;
+
+    if (!options) {
+      apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+    } else {
+      apiResult = await this.getApiPost(options);
+    }
 
     const rawUnits = [];
     const costs = [];

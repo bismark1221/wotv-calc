@@ -40,8 +40,19 @@ export class CardService {
     return JSON.parse(JSON.stringify(await this.apiService.loadData('cards', param, extraQuery)));
   }
 
-  async getCardsForListingWithCosts(filters = null, sort = 'rarity', order = 'desc') {
-    const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+  private async getApiPost(data = null) {
+    return JSON.parse(JSON.stringify(await this.apiService.post('cards', data)));
+  }
+
+  async getCardsForListingWithCosts(filters = null, sort = 'rarity', order = 'desc', options = null) {
+    let apiResult = null;
+
+    if (!options) {
+      apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
+    } else {
+      apiResult = await this.getApiPost(options);
+    }
+
     this.listingSkills = apiResult.skills;
 
     const rawCards = [];

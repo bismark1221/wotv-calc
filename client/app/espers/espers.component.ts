@@ -229,16 +229,12 @@ export class EspersComponent implements OnInit {
   }
 
   onSearchBarClose() {
-    // console.log({ name: '(close)', value: null });
     this.ngselect.searchTerm = this.searchText;
     this.ngselect.searchInput.nativeElement.value = this.searchText;
     this.getFilteredEspers();
   }
 
   onSearchBarAdd($event) {
-    // console.log({ name: '(add)', value: $event.name });
-    // console.log(this.searchForm.get('searchOptions').value);
-
     const labelTable = $event.label.split('=');
 
     if ($event.label[0] !== '!' || labelTable.length !== 2 || labelTable[1] === '') {
@@ -254,7 +250,6 @@ export class EspersComponent implements OnInit {
   }
 
   onSearchBarUpdateTerm($event) {
-    // console.log({ name: '(search)', value: $event });
     if ($event.term[0] !== '!') {
       this.searchText = $event.term;
       this.getFilteredEspers();

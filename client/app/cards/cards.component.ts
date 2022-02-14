@@ -1,9 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { CardService } from '../services/card.service';
 import { NavService } from '../services/nav.service';
 import { ToolService } from '../services/tool.service';
+
+import { SearchOptionsModalComponent } from '../searchOptionsModal/searchOptionsModal.component';
 
 @Component({
   selector: 'app-cards',
@@ -60,10 +64,16 @@ export class CardsComponent implements OnInit {
 
   costs = [];
 
+  filtersCount = 0;
+
+  @ViewChild('SearchBar') ngselect;
+  searchForm: FormGroup;
+
   constructor(
     private cardService: CardService,
     private translateService: TranslateService,
     private navService: NavService,
+    private modalService: NgbModal,
     private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -78,35 +88,71 @@ export class CardsComponent implements OnInit {
 
     await this.getCards();
 
-    if (sessionStorage.getItem('cardsFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('cardsFilters'));
-
-      if (!this.filters.cost) {
-        this.filters.cost = [];
-      }
-    }
-
-    if (sessionStorage.getItem('cardsCollapsed')) {
-      this.collapsed = JSON.parse(sessionStorage.getItem('cardsCollapsed'));
-
-      if (this.collapsed.cost === undefined) {
-        this.collapsed.cost = true;
-      }
-    }
-
-    this.filterChecked();
-    this.filterCards();
+    this.searchForm = new FormGroup({
+      searchOptions: new FormControl()
+    });
   }
 
   async getCards() {
-    const result = await this.cardService.getCardsForListingWithCosts(this.filters, this.sort, this.order);
+    const options = {};
+
+    if (this.searchForm) {
+      for (const option of this.searchForm.get('searchOptions').value) {
+        const optionTable = option.label.substring(1).split('=');
+        if (!options[optionTable[0]]) {
+          options[optionTable[0]] = [];
+        }
+        options[optionTable[0]].push(optionTable[1]);
+      }
+    }
+
+    let result = null;
+
+    if (Object.keys(options).length === 0) {
+      result = await this.cardService.getCardsForListingWithCosts(this.filters, this.sort, this.order);
+    } else {
+      result = await this.cardService.getCardsForListingWithCosts(this.filters, this.sort, this.order, options);
+    }
+
     this.cards = result.cards;
     this.rawCards = result.rawCards;
-    this.costs = result.costs;
+
+    if (Object.keys(options).length === 0) {
+      this.costs = result.costs;
+
+      if (sessionStorage.getItem('cardsFilters')) {
+        this.filters = JSON.parse(sessionStorage.getItem('cardsFilters'));
+
+        if (!this.filters.cost) {
+          this.filters.cost = [];
+        }
+      }
+
+      if (sessionStorage.getItem('cardsCollapsed')) {
+        this.collapsed = JSON.parse(sessionStorage.getItem('cardsCollapsed'));
+
+        if (this.collapsed.cost === undefined) {
+          this.collapsed.cost = true;
+        }
+      }
+
+      this.filterChecked();
+    }
+
+    this.filterCards();
   }
 
   filterCards() {
     this.cards = this.cardService.filterCards(this.rawCards, this.filters, this.sort, this.order);
+    this.countFilters();
+  }
+
+  countFilters() {
+    this.filtersCount = this.filters.cost.length
+      + this.filters.element.length
+      + this.filters.limited.length
+      + this.filters.rarity.length
+      + (this.filters.onlyActiveSkill ? 1 : 0);
   }
 
   private translateCards() {
@@ -186,5 +232,37 @@ export class CardsComponent implements OnInit {
 
     this.filterCards();
     sessionStorage.setItem('cardsFilters', JSON.stringify(this.filters));
+  }
+
+  onSearchBarClose() {
+    this.ngselect.searchTerm = this.searchText;
+    this.ngselect.searchInput.nativeElement.value = this.searchText;
+    this.getFilteredCards();
+  }
+
+  onSearchBarAdd($event) {
+    const labelTable = $event.label.split('=');
+
+    if ($event.label[0] !== '!' || labelTable.length !== 2 || labelTable[1] === '') {
+      this.searchForm.get('searchOptions').value.pop();
+      this.searchForm.get('searchOptions').patchValue(this.searchForm.get('searchOptions').value);
+
+      if ($event.label[0] !== '!') {
+        this.searchText = $event.label;
+      }
+    } else {
+      this.getCards();
+    }
+  }
+
+  onSearchBarUpdateTerm($event) {
+    if ($event.term[0] !== '!') {
+      this.searchText = $event.term;
+      this.getFilteredCards();
+    }
+  }
+
+  openSearchOptionsModal() {
+    this.modalService.open(SearchOptionsModalComponent, { windowClass: 'options-modal' });
   }
 }
