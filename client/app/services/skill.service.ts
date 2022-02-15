@@ -297,9 +297,18 @@ export class SkillService {
     return turnText;
   }
 
-  private getChance(effect, inflict = true) {
+  private getChance(skill, effect, inflict = true) {
     if (effect.rate) {
-      return effect.rate + '% chance' + (inflict ? ' to inflict' : '');
+      let value = effect.rate;
+      if (skill.maths) {
+        skill.maths.forEach(math => {
+          if (math.dst === 'CHANCE' && math.notHasExtraValue) {
+            value += math.value;
+          }
+        });
+      }
+
+      return value + '% chance' + (inflict ? ' to inflict' : '');
     } else if (effect.calcType === 'nullify') {
       return 'Nullify';
     } else if (effect.calcType === 'dispel') {
@@ -669,343 +678,343 @@ export class SkillService {
         }
       break;
       case 'REGEN_ATK' :
-        html = this.getChance(effect, false) + ' regen (HP)' + this.getValue(skill, effect, false, true, ' health restored by turn') + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' regen (HP)' + this.getValue(skill, effect, false, true, ' health restored by turn') + this.getTurns(effect);
       break;
       case 'AUTO_RESTORE_ATK' :
-        html = this.getChance(effect, false) + ' auto-restore (AP)' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' auto-restore (AP)' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'POISON_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply poison by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' poison' + this.getValue(skill, effect, false, true, ' damage') + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' poison' + this.getValue(skill, effect, false, true, ' damage') + this.getTurns(effect);
         }
       break;
       case 'BLIND_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply blind by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' blind' + this.getValue(skill, effect, false, true, ' reduced accuracy') + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' blind' + this.getValue(skill, effect, false, true, ' reduced accuracy') + this.getTurns(effect);
         }
       break;
       case 'SLEEP_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply sleep by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' sleep' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' sleep' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'SILENCE_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply silence by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' silence' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' silence' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'PARALYZE_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply paralyze by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' paralyze' + this.getValue(skill, effect, false, true, ' chance of paralysis') + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' paralyze' + this.getValue(skill, effect, false, true, ' chance of paralysis') + this.getTurns(effect);
         }
       break;
       case 'CONFUSION_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply confusion by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' confusion' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' confusion' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'CHARM_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply charm by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' charm' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' charm' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'PETRIFY_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply petrify by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' petrify' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' petrify' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'GRADUAL_PETRIFY_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply gradual petrify by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' gradual petrify' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' gradual petrify' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'FROSTBITE_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply frostbite by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' frostbite' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' frostbite' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'INSTANT_DEATH_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply instant death by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' to instant death' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' to instant death' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'TOAD_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply toad by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' toad' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' toad' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'HASTE_ATK' :
-        html = this.getChance(effect, false) + ' haste' + this.getValue(skill, effect, false, true, ' increased speed') + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' haste' + this.getValue(skill, effect, false, true, ' increased speed') + this.getTurns(effect);
       break;
       case 'SLOW_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply slow by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' slow' + this.getValue(skill, effect, false, true, ' reduced speed') + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' slow' + this.getValue(skill, effect, false, true, ' reduced speed') + this.getTurns(effect);
         }
       break;
       case 'STOP_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply stop by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' stop' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' stop' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'STUN_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply stun by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' stun' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' stun' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'IMMOBILIZE_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply immobilize by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' immobilize' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' immobilize' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'DISABLE_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply disable by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' disable' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' disable' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'BERSERK_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply berserk by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = this.getChance(effect) + ' berserk' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' berserk' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'DOOM_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply doom by' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-        html = this.getChance(effect) + ' doom' + this.getValue(skill, effect, false, true, ' turns before death', 'fixe');
+        html = this.getChance(skill, effect) + ' doom' + this.getValue(skill, effect, false, true, ' turns before death', 'fixe');
         }
       break;
       case 'REVIVE_ATK' :
-        html = this.getChance(effect, false) + ' to revive' + this.getValue(skill, effect, false, true, ' HP regained') + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' to revive' + this.getValue(skill, effect, false, true, ' HP regained') + this.getTurns(effect);
       break;
       case 'RERAISE' :
-        html = this.getChance(effect, false) + ' auto-revive' + this.getValue(skill, effect, false, true, ' HP regained') + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' auto-revive' + this.getValue(skill, effect, false, true, ' HP regained') + this.getTurns(effect);
       break;
       case 'PROTECT_ATK' :
-        html = this.getChance(effect, false) + ' protect' + this.getValue(skill, effect, false, true, ' reduced physical damage') + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' protect' + this.getValue(skill, effect, false, true, ' reduced physical damage') + this.getTurns(effect);
       break;
       case 'SHELL_ATK' :
-        html = this.getChance(effect, false) + ' shell' + this.getValue(skill, effect, false, true, ' reduced magical damage') + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' shell' + this.getValue(skill, effect, false, true, ' reduced magical damage') + this.getTurns(effect);
       break;
       case 'FLOAT_ATK' :
-        html = this.getChance(effect, false) + ' float' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' float' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'QUICKEN_ATK' :
-        html = this.getChance(effect, false) + ' quicken' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' quicken' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ALL_AILMENTS_ATK' :
-        html = this.getChance(effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'MASS_DISPEL' :
         html = 'Dispel all ' + effect.calcType + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'REGEN_RES' :
-        html = this.getChance(effect, false) + ' regen resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' regen resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'AUTO_RESTORE_RES' :
-        html = this.getChance(effect, false) + ' auto-restore (AP) resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' auto-restore (AP) resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'POISON_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' poison res';
         } else {
-          html = this.getChance(effect) + ' poison resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' poison resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'BLIND_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' blind res';
         } else {
-          html = this.getChance(effect) + ' blind resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' blind resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'SLEEP_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' sleep res';
         } else {
-          html = this.getChance(effect) + ' sleep resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' sleep resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'SILENCE_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' silence res';
         } else {
-          html = this.getChance(effect) + ' silence resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' silence resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'PARALYZE_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' paralyze res';
         } else {
-          html = this.getChance(effect) + ' paralyze resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' paralyze resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'CONFUSION_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' confusion res';
         } else {
-          html = this.getChance(effect) + ' confusion resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' confusion resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'CHARM_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' charm res';
         } else {
-          html = this.getChance(effect) + ' charm resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' charm resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'PETRIFY_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' petrify res';
         } else {
-          html = this.getChance(effect) + ' petrify resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' petrify resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'GRADUAL_PETRIFY_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' gradual petrify res';
         } else {
-          html = this.getChance(effect) + ' gradual petrify resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' gradual petrify resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'FROSTBITE_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' frostbite res';
         } else {
-          html = this.getChance(effect) + ' frostbite resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' frostbite resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'INSTANT_DEATH_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' instant death res';
         } else {
-          html = this.getChance(effect) + ' instant death resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' instant death resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'TOAD_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' toad res';
         } else {
-          html = this.getChance(effect) + ' toad resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' toad resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'HASTE_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' haste res';
         } else {
-          html = this.getChance(effect, false) + ' haste resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect, false) + ' haste resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'SLOW_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' slow res';
         } else {
-          html = this.getChance(effect) + ' slow resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' slow resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'STOP_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' stop res';
         } else {
-          html = this.getChance(effect) + ' stop resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' stop resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'STUN_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' stun res';
         } else {
-          html = this.getChance(effect) + ' stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'IMMOBILIZE_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' immobilize res';
         } else {
-          html = this.getChance(effect) + ' immobilize resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' immobilize resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'DISABLE_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' disable res';
         } else {
-          html = this.getChance(effect) + ' disable resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' disable resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'BERSERK_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' berserk res';
         } else {
-          html = this.getChance(effect) + ' berserk resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' berserk resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'DOOM_RES' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' doom res';
         } else {
-          html = this.getChance(effect) + ' doom resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect) + ' doom resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'REVIVE_RES' :
-        html = this.getChance(effect, false) + ' to revive resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' to revive resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'PROTECT_RES' :
-        html = this.getChance(effect, false) + ' protect resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' protect resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'SHELL_RES' :
-        html = this.getChance(effect, false) + ' shell resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' shell resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FLOAT_RES' :
-        html = this.getChance(effect, false) + ' float resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' float resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'QUICKEN_RES' :
-        html = this.getChance(effect, false) + ' quicken resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' quicken resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ALL_AILMENTS_RES' :
-        html = this.getChance(effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'IGNORE_FATAL' :
-        html = this.getChance(effect, false) + ' to ignore fatal damage' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' to ignore fatal damage' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'PHYSIC_EVADE' :
-        html = this.getChance(effect, false) + ' to physical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' to physical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'MAGIC_EVADE' :
-        html = this.getChance(effect, false) + ' to magical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' to magical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'CRITIC_GUARENTED' :
         html = 'Guarented critical hit';
@@ -1723,6 +1732,10 @@ export class SkillService {
       html = this.formatTarget(skill, effect, html, fromEquipment);
     }
 
+    if (effect.continues && effect.continues.length > 0) {
+      html = this.formatContinues(effect, html);
+    }
+
     return html;
   }
 
@@ -1844,7 +1857,11 @@ export class SkillService {
           )
         ) {
           if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB' && math.dst !== 'TRIGGER' && math.dst !== 'BUFF') {
-            html += ' + Increase ';
+            if (math.notHasExtraValue) {
+              html += ' + Decrease ';
+            } else {
+              html += ' + Increase ';
+            }
 
             switch (math.dst) {
               case 'DAMAGE' :
@@ -2232,5 +2249,20 @@ export class SkillService {
     }
 
     return exist;
+  }
+
+  formatContinues(effect, html) {
+    for (const continueId of effect.continues) {
+      const conditionRealId = continueId.split('_').slice(0, -1).join('_');
+      switch (conditionRealId) {
+        case 'REMOVE_AFTER_HIT':
+          html += ', remove effect after ' + continueId.split('_')[continueId.split('_').length - 1] + ' hits received';
+        break;
+        default:
+        break;
+      }
+    }
+
+    return html;
   }
 }
