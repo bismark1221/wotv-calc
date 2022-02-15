@@ -1549,6 +1549,41 @@ export class SkillService {
       case 'RUNIC_SHIELD' :
         html = 'Grant Runic Shield (Absorbs up to ' + effect.absorbNumber + ' reflectable magic hits & absorbs ' + this.getValue(skill, effect) + ' TP/AP used) ' + this.getTurns(effect);
       break;
+      case 'SLASH_EVADE' :
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' slash evade';
+        } else {
+          html = this.getIncrease(effect) + ' Slash evade' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
+      case 'STRIKE_EVADE' :
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' strike evade';
+        } else {
+          html = this.getIncrease(effect) + ' Strike evade' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
+      case 'PIERCE_EVADE' :
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' pierce evade';
+        } else {
+          html = this.getIncrease(effect) + ' Pierce evade' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
+      case 'MISSILE_EVADE' :
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' missile evade';
+        } else {
+          html = this.getIncrease(effect) + ' Missile evade' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
+      case 'MAGIC_EVADE' :
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' magic evade';
+        } else {
+          html = this.getIncrease(effect) + ' Magic evade' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
 
       /* ONLY TESTABLE WITH OTHER UNIT */
       case 'INCREASE_MOD' :
