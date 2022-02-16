@@ -453,10 +453,6 @@ export class UnitComponent implements OnInit {
     if (job) {
       let jobStatsModifier = job.statsModifiers[9];
 
-      if (this.version === 'GL' && this.unit.dataId === 'UN_LW_P_LCIO') {
-        jobStatsModifier = job.statsModifiers[5];
-      }
-
       Object.keys(jobStatsModifier).forEach(stat => {
         if (this.unit.stats[stat]) {
           const existingStat = this.unit.jobsStats[0][stat];
