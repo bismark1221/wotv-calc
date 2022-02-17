@@ -885,3 +885,7 @@ small {
 .options-modal .modal-dialog {
   width: 850px;
 }
+
+.ng-dropdown-panel {
+  z-index: 1000 !important;
+}
