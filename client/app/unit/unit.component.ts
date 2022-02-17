@@ -451,7 +451,7 @@ export class UnitComponent implements OnInit {
     const stats = {};
 
     if (job) {
-      let jobStatsModifier = job.statsModifiers[9];
+      const jobStatsModifier = job.statsModifiers[9];
 
       Object.keys(jobStatsModifier).forEach(stat => {
         if (this.unit.stats[stat]) {
