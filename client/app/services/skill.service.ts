@@ -1857,7 +1857,7 @@ export class SkillService {
           )
         ) {
           if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB' && math.dst !== 'TRIGGER' && math.dst !== 'BUFF') {
-            if (math.notHasExtraValue) {
+            if (math.notHasExtraValue && math.dst === 'CHANCE') {
               html += ' + Decrease ';
             } else {
               html += ' + Increase ';
