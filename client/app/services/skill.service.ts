@@ -1666,9 +1666,34 @@ export class SkillService {
         }
         break;
       case 'GRANT_BUFF' :
-        html = '';
+        let newBuff = null;
+        if (unit.rawSkills) {
+          newBuff = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockBuff);
+        }
         getTarget = false;
-        if (effect.calcType !== 'apply') {
+
+        // grants allies 'dispel AP regen & follow-up attacks/armiger' upon hit for 3 turns
+
+        if (effect.calcType === 'apply') {
+          html = 'Grants following effect(s) upon hit ' + this.formatTarget(skill, effect, html, fromEquipment) + ' : ';
+
+          if (newBuff) {
+            let countBuff = 1;
+            for (const newEffect of newBuff.effects) {
+              html += this.formatEffect(unit, skill, newEffect, false, fromEquipment, shortDesc = true);
+
+              if (countBuff < newBuff.effects.length) {
+                html += ', ';
+              }
+
+              countBuff++;
+            }
+          } else {
+            html += '???';
+          }
+
+          html += ' ' + this.getTurns(effect);
+        } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
@@ -1681,7 +1706,7 @@ export class SkillService {
         if (effect.calcType === 'apply') {
           html = 'When casting another attack skill also launch the following skill on target : ' + (newSkill ? this.toolService.getName(newSkill) : '???') + ' ' + this.getTurns(effect);
         } else if (effect.calcType === 'dispel') {
-          html = 'Dispel other automatic 2nd cast skill on target';
+          html = 'Dispel follow-up casts';
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
