@@ -191,7 +191,9 @@ export class UnitService {
     unit.formattedUnlockedSkills = [];
     if (unit.unlockedSkills) {
       for (const skillId of unit.unlockedSkills) {
-        unit.formattedUnlockedSkills.push(unit.rawSkills.find(searchedSkill => searchedSkill.dataId === skillId));
+        if (skillId) {
+          unit.formattedUnlockedSkills.push(unit.rawSkills.find(searchedSkill => searchedSkill.dataId === skillId));
+        }
       }
     }
 

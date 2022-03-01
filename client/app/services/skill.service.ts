@@ -1678,8 +1678,11 @@ export class SkillService {
           newSkill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
         }
 
-        html = 'When casting another attack skill also launch the following skill on target : ' + (newSkill ? this.toolService.getName(newSkill) : '???') + ' ' + this.getTurns(effect);
-        if (effect.calcType !== 'apply') {
+        if (effect.calcType === 'apply') {
+          html = 'When casting another attack skill also launch the following skill on target : ' + (newSkill ? this.toolService.getName(newSkill) : '???') + ' ' + this.getTurns(effect);
+        } else if (effect.calcType === 'dispel') {
+          html = 'Dispel other automatic 2nd cast skill on target';
+        } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
