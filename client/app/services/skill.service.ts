@@ -1672,8 +1672,6 @@ export class SkillService {
         }
         getTarget = false;
 
-        // grants allies 'dispel AP regen & follow-up attacks/armiger' upon hit for 3 turns
-
         if (effect.calcType === 'apply') {
           html = 'Grants following effect(s) upon hit ' + this.formatTarget(skill, effect, html, fromEquipment) + ' : ';
 
