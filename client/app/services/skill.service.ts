@@ -1323,6 +1323,60 @@ export class SkillService {
       case 'FLOAT_KILLER' :
         html = 'Increase killer against unit with float' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'HUMAN_RES' :
+        html = 'Increase human resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'FENNES_RES' :
+        html = 'Increase fennes resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'UNDEAD_RES' :
+        html = 'Increase undead resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'BEAST_RES' :
+        html = 'Increase beast resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'DEMON_RES' :
+        html = 'Increase demon resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'AQUATIC_RES' :
+        html = 'Increase aquatic resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'FAIRY_RES' :
+        html = 'Increase fairy resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'BIRD_RES' :
+        html = 'Increase bird resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'MALES_RES' :
+        html = 'Increase male resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'DRAGON_RES' :
+        html = 'Increase dragon resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'METAL_RES' :
+        html = 'Increase metal resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'MACHINE_RES' :
+        html = 'Increase machine resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'NETHERBEAST_RES' :
+        html = 'Increase Nether Beast resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'INSECT_RES' :
+        html = 'Increase insect resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'STONE_RES' :
+        html = 'Increase stone resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'PLANT_RES' :
+        html = 'Increase plant resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'ARCANA_RES' :
+        html = 'Increase arcana resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'FLOAT_RES' :
+        html = 'Increase resistance against unit with float' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'IGNORE_FLOAT' :
         html = 'Ignore float';
       break;
