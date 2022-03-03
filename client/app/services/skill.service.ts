@@ -1017,7 +1017,10 @@ export class SkillService {
         html = this.getChance(skill, effect, false) + ' to magical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'CRITIC_GUARENTED' :
-        html = 'Guarented critical hit';
+        html = 'Guarenteed critical hit';
+      break;
+      case 'HIT_GUARENTED' :
+        html = 'Guarenteed hit';
       break;
       case 'IMBUE' :
         console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- SHOULD NOT BE USED !!!');
