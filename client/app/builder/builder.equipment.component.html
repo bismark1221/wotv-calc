@@ -67,7 +67,7 @@
               <div>
                 Upgrade
               </div>
-              <ng-select placeholder="Select an upgrade" class="select-upgrade select-left-builder" [items]="[0, 1, 2, 3, 4, 5]" [(ngModel)]="equipment.upgrade" (ngModelChange)="updateUpgrade()" [clearable]="false" [searchable]="false">
+              <ng-select placeholder="Select an upgrade" class="select-upgrade select-left-builder" [items]="upgradeTable" [(ngModel)]="equipment.upgrade" (ngModelChange)="updateUpgrade()" [clearable]="false" [searchable]="false">
                 <ng-template ng-label-tmp let-item="item">
                   {{ item === 0 ? 0 : '+' + item }}
                 </ng-template>
@@ -116,18 +116,18 @@
           </td>
           <td *ngFor="let statType of equipment.statsTypes">
             <span *ngIf="equipment.growIds.length > 1 || equipment.grows[equipment.growIds[0]].dataId !== 'ARTIFACT_50'">
-              <select [(ngModel)]="equipment.stats[statType].selected">
+              <select [(ngModel)]="equipment.selectedStats[statType]">
                 <option *ngFor="let stat of equipment.tableStats[statType]">{{ stat }}</option>
               </select>
             </span>
             <span *ngIf="equipment.growIds.length === 1 && equipment.grows[equipment.growIds[0]].dataId === 'ARTIFACT_50'">
-              {{ equipment.stats[statType].selected }}
+              {{ equipment.selectedStats[statType] }}
             </span> / {{ equipment.tableStats[statType][equipment.tableStats[statType].length - 1] }}
           </td>
         </tr>
         <tr *ngIf="equipment.acquisition && equipment.acquisition.type === 'tmr'">
           <td *ngFor="let statType of equipment.statsTypes">
-            {{ equipment.stats[statType].min }}
+            {{ equipment.stats[equipment.upgrade][statType].min }}
           </td>
         </tr>
       </tbody>

@@ -38,6 +38,8 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     N: 'Normal'
   };
 
+  upgradeTable = [];
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private equipmentService: EquipmentService,
@@ -67,6 +69,14 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
         if (equipment) {
           this.selectedEquipmentId = equipment.dataId;
           this.equipment = equipment;
+
+          if (this.equipment.skills.length > 1) {
+            this.upgradeTable = [];
+            for (let i = 0; i <= this.equipment.skills.length - 1; i++) {
+              this.upgradeTable.push(i);
+            }
+          }
+
           this.loadingBuild = false;
         } else {
           this.equipmentService.getStoredEquipment(data).subscribe(async (equipmentData: any) => {
@@ -123,6 +133,13 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
         this.equipmentSelector.handleClearClick();
       } else {
         this.equipment = await this.equipmentService.selectEquipmentForBuilder(this.selectedEquipmentId, customData);
+
+        if (this.equipment.skills.length > 1) {
+          this.upgradeTable = [];
+          for (let i = 0; i <= this.equipment.skills.length - 1; i++) {
+            this.upgradeTable.push(i);
+          }
+        }
       }
     } else {
       this.equipment = null;

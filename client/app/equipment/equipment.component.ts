@@ -91,7 +91,7 @@ export class EquipmentComponent implements OnInit {
       this.equipment.description = this.toolService.getDescription(this.equipment);
       this.equipment.statsTypes = [];
       if (this.equipment.stats) {
-        this.equipment.statsTypes = Object.keys(this.equipment.stats);
+        this.equipment.statsTypes = Object.keys(this.equipment.stats[this.equipment.stats.length - 1]);
       }
 
       let i = 0;
@@ -177,8 +177,9 @@ export class EquipmentComponent implements OnInit {
       this.equipment.growIds.forEach(growId => {
         this.equipment.grows[growId].name = this.toolService.getName(this.equipment.grows[growId]);
         this.equipment.grows[growId].stats = {};
+
         this.equipment.statsTypes.forEach(statType => {
-          const maxValue = this.equipment.stats[statType].max;
+          const maxValue = this.equipment.stats[0][statType].max;
           if (typeof(this.equipment.grows[growId].curve[statType]) === 'number') {
             const value = maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100);
             if (value < 0 && value > -1) {
@@ -190,6 +191,26 @@ export class EquipmentComponent implements OnInit {
             this.equipment.grows[growId].stats[statType] = maxValue;
           }
         });
+
+        if (JSON.stringify(this.equipment.stats[0]) !== JSON.stringify(this.equipment.stats[this.equipment.stats.length - 1])) {
+          this.equipment.grows[growId].extraStats = {};
+
+          this.equipment.statsTypes.forEach(statType => {
+            const maxValue = this.equipment.stats[this.equipment.stats.length - 1][statType].max;
+            if (typeof(this.equipment.grows[growId].curve[statType]) === 'number') {
+              const value = maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100);
+              if (value < 0 && value > -1) {
+                this.equipment.grows[growId].extraStats[statType] = 0;
+              } else {
+                this.equipment.grows[growId].extraStats[statType] = Math.floor(value);
+              }
+            } else {
+              this.equipment.grows[growId].extraStats[statType] = maxValue;
+            }
+          });
+
+        }
+
       });
 
       const usableStatsTypes = [];

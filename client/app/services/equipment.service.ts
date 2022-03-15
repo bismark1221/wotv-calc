@@ -553,8 +553,8 @@ export class EquipmentService {
   }
 
   private equipmentHasStat(equipment, filters) {
-    if (equipment.stats) {
-      for (const statType of Object.keys(equipment.stats)) {
+    if (equipment.stats && equipment.stats[0]) {
+      for (const statType of Object.keys(equipment.stats[0])) {
         if (filters.equipmentStats.indexOf(statType) !== -1) {
           return true;
         }
@@ -641,9 +641,9 @@ export class EquipmentService {
       materias: {}
     };
 
-    if (equipment.stats) {
-      Object.keys(equipment.stats).forEach(stat => {
-        data.stats[stat] = equipment.stats[stat].selected ? equipment.stats[stat].selected : 0;
+    if (equipment.selectedStats) {
+      Object.keys(equipment.selectedStats).forEach(stat => {
+        data.stats[stat] = equipment.selectedStats[stat] ? equipment.selectedStats[stat] : 0;
       });
     }
 
@@ -701,6 +701,8 @@ export class EquipmentService {
       this.equipment.growIds = Object.keys(this.equipment.grows);
       this.equipment.grow = this.equipment.growIds[0];
 
+      this.equipment.initSelectedStats(this.equipment);
+
       await this.initiateSavedEquipment(customData);
 
       const rawMateriaGroups = await this.materiaService.getMateriaGroups();
@@ -710,10 +712,14 @@ export class EquipmentService {
       }
       this.changeMateria();
 
-      this.equipment.updateMaxStat(this.toolService, this.skillService, this.rangeService);
+      this.equipment.updateMaxStat();
+
+      this.equipment.formatSkillsAndGrows(this.toolService, this.skillService, this.rangeService);
 
       this.equipment.changeLevel(this.skillService, this.rangeService);
+
       this.equipment.changeUpgrade(this.skillService, this.rangeService);
+
       this.equipment.changeGrow();
 
       this.equipmentCategory();
@@ -740,8 +746,8 @@ export class EquipmentService {
       this.equipment.level = equipment.level;
 
       Object.keys(equipment.stats).forEach(stat => {
-        if (this.equipment.stats[stat]) {
-          this.equipment.stats[stat].selected = equipment.stats[stat] + (this.equipment.customName === 'in-game' ? this.equipment.stats[stat].min : 0);
+        if (this.equipment.selectedStats[stat]) {
+          this.equipment.selectedStats[stat] = parseInt(equipment.stats[stat], 10) + (this.equipment.customName === 'in-game' ? this.equipment.stats[0][stat].min : 0);
         }
       });
 

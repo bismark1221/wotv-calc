@@ -151,7 +151,7 @@ export class EquipmentsComponent implements OnInit {
       this.equipmentStats = [];
       for (const equipment of this.equipments) {
         if (equipment.stats) {
-          for (const statType of Object.keys(equipment.stats)) {
+          for (const statType of Object.keys(equipment.stats[equipment.stats.length - 1])) {
             if (this.equipmentStats.indexOf(statType) === -1) {
               this.equipmentStats.push(statType);
             }

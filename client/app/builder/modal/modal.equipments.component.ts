@@ -35,6 +35,8 @@ export class ModalEquipmentsComponent implements OnInit {
   loadEquipmentId = null;
   collapsedAcquisition = true;
 
+  upgradeTable = [];
+
   @Input() public unit;
   @Input() public equipmentPos;
   @Input() public modalStep = 'select';
@@ -60,6 +62,13 @@ export class ModalEquipmentsComponent implements OnInit {
 
     if (this.equipment) {
       this.equipment = await this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment));
+
+      if (this.equipment.skills.length > 1) {
+        this.upgradeTable = [];
+        for (let i = 0; i <= this.equipment.skills.length - 1; i++) {
+          this.upgradeTable.push(i);
+        }
+      }
     }
   }
 
@@ -155,6 +164,13 @@ export class ModalEquipmentsComponent implements OnInit {
       this.modalStep = 'load';
     } else {
       this.equipment = await this.equipmentService.selectEquipmentForBuilder(equipmentId, customData);
+
+      if (this.equipment.skills.length > 1) {
+        this.upgradeTable = [];
+        for (let i = 0; i <= this.equipment.skills.length - 1; i++) {
+          this.upgradeTable.push(i);
+        }
+      }
 
       this.modalStep = 'custom';
     }

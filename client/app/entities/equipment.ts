@@ -51,6 +51,7 @@ export class Equipment {
   tableLevel;
   activeSkill;
   formattedSkills;
+  selectedStats;
   materias = {
     I: null,
     F: null,
@@ -109,9 +110,14 @@ export class Equipment {
     return this.description;
   }
 
-  updateMaxStat(toolService, skillService, rangeService) {
-    this.statsTypes = Object.keys(this.stats);
+  initSelectedStats(equipment) {
+    this.selectedStats = {};
+    for (const statType of Object.keys(this.stats[0])) {
+      this.selectedStats[statType] = this.stats[0][statType].min;
+    }
+  }
 
+  formatSkillsAndGrows(toolService, skillService, rangeService) {
     this.passiveSkills = [];
     this.formattedSkills.forEach(equipmentLvl => {
       equipmentLvl.forEach(skill => {
@@ -136,11 +142,19 @@ export class Equipment {
       });
     });
 
+
     Object.keys(this.grows).forEach(growId => {
       this.grows[growId].name = toolService.getName(this.grows[growId]);
+    });
+  }
+
+  updateMaxStat() {
+    this.statsTypes = Object.keys(this.stats[this.stats.length - 1]);
+
+    Object.keys(this.grows).forEach(growId => {
       this.grows[growId].stats = {};
       this.statsTypes.forEach(statType => {
-        const maxValue = this.stats[statType].max;
+        const maxValue = this.stats[this.upgrade][statType].max;
 
         let growMax = this.grows[growId].curve[statType] ? maxValue + ((maxValue * this.grows[growId].curve[statType]) / 100) : maxValue;
         if (growMax < 0 && growMax > -1) {
@@ -150,7 +164,7 @@ export class Equipment {
         }
 
         this.grows[growId].stats[statType] = [];
-        for (let i = this.stats[statType].min; i <= growMax; i++) {
+        for (let i = this.stats[this.upgrade][statType].min; i <= growMax; i++) {
           this.grows[growId].stats[statType].push(i);
         }
       });
@@ -165,7 +179,7 @@ export class Equipment {
         }
       });
 
-      if (maxDifferentZero || this.stats[statType].min !== 0) {
+      if (maxDifferentZero || this.stats[this.upgrade][statType].min !== 0) {
         usableStatsTypes.push(statType);
       }
     });
@@ -195,6 +209,8 @@ export class Equipment {
     }
 
     this.changeSkillLevel(skillService, rangeService);
+    this.updateMaxStat();
+    this.changeGrow();
   }
 
   changeGrow() {
@@ -202,10 +218,10 @@ export class Equipment {
     this.statsTypes.forEach(statType => {
       this.tableStats[statType] = this.grows[this.grow].stats[statType];
 
-      if (!this.stats[statType].selected && this.stats[statType].selected !== 0) {
-        this.stats[statType].selected = this.tableStats[statType][0];
-      } else if (this.stats[statType].selected > this.tableStats[statType][this.tableStats[statType].length - 1]) {
-        this.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1];
+      if (!this.selectedStats[statType] && this.selectedStats[statType] !== 0) {
+        this.selectedStats[statType] = this.tableStats[statType][0];
+      } else if (this.selectedStats[statType] > this.tableStats[statType][this.tableStats[statType].length - 1]) {
+        this.selectedStats[statType] = this.tableStats[statType][this.tableStats[statType].length - 1];
       }
     });
   }
@@ -213,9 +229,9 @@ export class Equipment {
   changeLevel(skillService, rangeService) {
     if (this.growIds.length === 1 && this.grows[this.growIds[0]].dataId === 'ARTIFACT_50') {
       this.statsTypes.forEach(statType => {
-        const minValue = this.stats[statType].min;
+        const minValue = this.stats[this.upgrade][statType].min;
         const maxValue = this.grows[this.growIds[0]].stats[statType][this.grows[this.growIds[0]].stats[statType].length - 1];
-        this.stats[statType].selected = Math.floor(minValue + ((maxValue - minValue) / (this.maxLevel - 1) * (this.level - 1)));
+        this.selectedStats[statType] = Math.floor(minValue + ((maxValue - minValue) / (this.maxLevel - 1) * (this.level - 1)));
       });
     }
 
@@ -314,18 +330,19 @@ export class Equipment {
   maxEquipment(skillService, rangeService) {
     this.level = this.maxLevel;
     if (this.skills.length > 1) {
-      this.upgrade = 5;
+      this.upgrade = this.skills.length - 1;
     }
-
-    this.statsTypes.forEach(statType => {
-      this.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1];
-    });
 
     if (this.activeSkill && this.activeSkill.tableLevel) {
       this.activeSkill.level = this.activeSkill.tableLevel[this.activeSkill.tableLevel.length - 1];
     }
 
     this.changeUpgrade(skillService, rangeService);
+
+    this.statsTypes.forEach(statType => {
+      this.selectedStats[statType] = this.tableStats[statType][this.tableStats[statType].length - 1];
+    });
+
     this.changeLevel(skillService, rangeService);
   }
 
@@ -334,7 +351,7 @@ export class Equipment {
     this.upgrade = 0;
 
     this.statsTypes.forEach(statType => {
-      this.stats[statType].selected = this.tableStats[statType][0];
+      this.selectedStats[statType] = this.tableStats[statType][0];
     });
 
     if (this.activeSkill) {
