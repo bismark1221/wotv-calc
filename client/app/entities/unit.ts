@@ -1055,8 +1055,8 @@ export class Unit {
 
     for (let i = 0; i <= 2; i++) {
       if (this.equipments[i]) {
-        Object.keys(this.equipments[i].stats).forEach(statType => {
-          const value = parseInt(this.equipments[i].stats[statType].selected, 10);
+        this.equipments[i].statsTypes.forEach(statType => {
+          const value = parseInt(this.equipments[i].selectedStats[statType], 10);
 
           if (!this.stats[statType]) {
             this.stats[statType] = {
