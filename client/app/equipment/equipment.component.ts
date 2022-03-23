@@ -222,7 +222,7 @@ export class EquipmentComponent implements OnInit {
           }
         });
 
-        if (maxDifferentZero || this.equipment.stats[statType].min !== 0) {
+        if (maxDifferentZero || this.equipment.stats[0][statType].min !== 0) {
           usableStatsTypes.push(statType);
         }
       });
