@@ -72,6 +72,25 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
     'S'
   ];
 
+  translatedTypes = {
+    GL: {
+      I: 'I',
+      F: 'J',
+      W: 'P',
+      H: 'A',
+      O: 'T',
+      S: 'G'
+    },
+    JP: {
+      I: 'I',
+      F: 'F',
+      W: 'W',
+      H: 'H',
+      O: 'O',
+      S: 'S'
+    }
+  };
+
   mainStatTranslate = {
     CRITIC_RATE: 'Critic Rate',
     CRITIC_EVADE: 'Critic Evade',

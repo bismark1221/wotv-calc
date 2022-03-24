@@ -41,7 +41,7 @@
       <div class="materiasCol" *ngFor="let materia of getFilteredMaterias()">
         <a (click)="selectMateria(materia)" class="selectMateriaLink">
           <div class="materiaImgBlock">
-            <img class="materiaImg" src="assets/items/{{ materia.image }}.png" />
+            <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.png" />
           </div>
           <div class="materiaTitle">
             <div class="materiaName">{{ mainStatTranslate[materia.mainStat] ? mainStatTranslate[materia.mainStat] : materia.mainStat }} - Level : {{ materia.level }}</div>
@@ -82,7 +82,7 @@
               <button class="btn btn-main btn-max-materia" id="max_materia" (click)="maxMateria()">Max materia</button>
             </div>
             <div class="builderMateriaImgBlock">
-              <img class="materiaImg" src="assets/items/{{ materia.image }}.png" />
+              <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.png" />
             </div>
           </td>
         </tr>

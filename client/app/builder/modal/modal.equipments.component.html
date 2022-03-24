@@ -349,11 +349,11 @@
           <td *ngFor="let materiaType of materiaGroup" [ngClass]="{'materiaTd': materiaType.select, 'materiaEffectTd': !materiaType.select}">
             <div *ngIf="materiaType.select">
               <div *ngIf="equipment.materias[materiaType.type]" class="materiaDiv">
-                <img src="{{'assets/items/' + equipment.materias[materiaType.type].image + '.png'}}" class="materiaImg" id="openModalMateria_{{equipment.materias[materiaType.type].dataId}}" (click)="openMateriaModal(materiaType.type)"/>
+                <img src="{{'assets/materia/' + version + '/' + equipment.materias[materiaType.type].image + '.png'}}" class="materiaImg" id="openModalMateria_{{equipment.materias[materiaType.type].dataId}}" (click)="openMateriaModal(materiaType.type)"/>
               </div>
 
               <div *ngIf="!equipment.materias[materiaType.type]" class="materiaDivEmpty">
-                <img src="{{ 'assets/builder/materia_' + materiaType.type.toLowerCase() + '.png' }}" class="materiaImg" id="openModalMateria_new" (click)="openMateriaModal(materiaType.type)"/>
+                <img src="{{ 'assets/builder/' + version + '/materia_' + materiaType.type.toLowerCase() + '.png' }}" class="materiaImg" id="openModalMateria_new" (click)="openMateriaModal(materiaType.type)"/>
               </div>
 
               <button class="btn btn-sub btn-materia" id="openModalMateria_custom_{{materiaType.type}}" (click)="openMateriaModal(materiaType.type)">Custom</button>
