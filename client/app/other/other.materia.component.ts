@@ -14,6 +14,8 @@ export class OtherMateriaComponent implements OnInit {
   materiaGroup = [];
   skills = [];
 
+  version = 'GL';
+
   slots = {
     I: 'left',
     F: 'left',
@@ -42,11 +44,31 @@ export class OtherMateriaComponent implements OnInit {
     }
   };
 
+  formattedGroups = {
+    GL: {
+      I: 'I',
+      F: 'J',
+      W: 'P',
+      H: 'A',
+      O: 'T',
+      S: 'G'
+    },
+    JP: {
+      I: 'I',
+      F: 'F',
+      W: 'W',
+      H: 'H',
+      O: 'O',
+      S: 'S'
+    }
+  };
+
   constructor(
     private materiaService: MateriaService,
     private skillService: SkillService,
     private navService: NavService
   ) {
+    this.version = this.navService.getVersion();
   }
 
   async ngOnInit() {

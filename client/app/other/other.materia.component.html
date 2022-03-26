@@ -6,7 +6,7 @@
     The design of this page is ugly but you have all infos :)
   </div>
 
-  <div class="groupBlock" *ngFor="let group of [{name: 'left', types: ['F', 'I', 'W']}, {name: 'right', types: ['H', 'O', 'S']}]">
+  <div class="groupBlock" *ngFor="let group of [{name: 'left', types: ['I', 'F', 'W']}, {name: 'right', types: ['H', 'O', 'S']}]">
     <h1 class="groupTitle">{{ group.name | titlecase }}</h1>
 
     <div class="groupDetailBlock">
@@ -57,7 +57,7 @@
           <th>Lv. 20</th>
         </tr>
         <tr>
-          <th class="sub" colspan="3">{{ materiaType }}</th>
+          <th class="sub" colspan="3">{{ formattedGroups[version][materiaType] }}</th>
         </tr>
         <tbody *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
           <tr>
