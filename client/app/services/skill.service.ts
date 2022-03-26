@@ -1071,11 +1071,7 @@ export class SkillService {
         html = this.getIncrease(effect) + ' Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'NON_ATTACK_ACTIVATION_TIME' :
-        if (this.navService.getVersion() === 'JP') {
-          html = this.getIncrease(effect) + ' None Attack Skill Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
-        } else {
-          html = this.getIncrease(effect) + ' Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
-        }
+        html = this.getIncrease(effect) + ' None Attack Skill Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ATTACK_ACTIVATION_TIME' :
         if (shortDesc) {

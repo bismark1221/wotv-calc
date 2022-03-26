@@ -285,7 +285,7 @@
               </div>
             </div>
 
-            <div class="esparCardDiv" *ngIf="version && version == 'JP'">
+            <div class="esparCardDiv">
               Sub Card
               <div *ngIf="unit.subCard">
                 <img src="{{'assets/cards/' + unit.subCard.image + '_m.png'}}" class="cardImg" id="openModalSubCard_{{unit.subCard.dataId}}" (click)="openCardsModal(true)"/>
