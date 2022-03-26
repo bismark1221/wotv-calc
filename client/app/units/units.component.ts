@@ -23,6 +23,7 @@ export class UnitsComponent implements OnInit {
   order = 'desc';
   rawJobs = [];
   jobs = [];
+
   filters = {
     rarity: [],
     element: [],
@@ -38,6 +39,7 @@ export class UnitsComponent implements OnInit {
     exJob: false,
     secondMasterAbility: false
   };
+
   isFilterChecked = {
     rarity: [],
     element: [],
@@ -46,6 +48,7 @@ export class UnitsComponent implements OnInit {
     cost: [],
     armor: []
   };
+
   collapsed = {
     rarity: true,
     element: true,

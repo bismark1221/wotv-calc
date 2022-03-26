@@ -94,6 +94,24 @@
           <label *ngIf="equipmentStat" for="equipmentStat{{equipmentStat}}" >{{ equipmentStat.replace('_', ' ') | titlecase }}</label>
         </div>
       </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('extra')" [attr.aria-expanded]="!collapsed.extra">
+        Has Extra Star ?
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.extra" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.extra" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.extra">
+        <div>
+          <input type="checkbox" id="limitedYes" (change)="filterList('extra', true)" [checked]="isFilterChecked.extra['true']"/>
+          <label for="limitedYes">Yes</label>
+        </div>
+        <div>
+          <input type="checkbox" id="limitedNo" (change)="filterList('extra', false)" [checked]="isFilterChecked.extra['false']"/>
+          <label for="limitedNo">No</label>
+        </div>
+      </div>
     </div>
   </div>
 

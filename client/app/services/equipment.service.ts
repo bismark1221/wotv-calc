@@ -497,6 +497,10 @@ export class EquipmentService {
             possbibleToAdd = this.equipmentHasStat(equipment, filters);
           }
 
+          if (possbibleToAdd && filters.extra && filters.extra.length > 0 && filters.extra.length < 2) {
+            possbibleToAdd = this.equipmentHasExtraStar(equipment, filters);
+          }
+
           if (possbibleToAdd) {
             filteredEquipments.push(equipment);
           }
@@ -559,6 +563,17 @@ export class EquipmentService {
           return true;
         }
       }
+    }
+
+    return false;
+  }
+
+  private equipmentHasExtraStar(equipment, filters) {
+    if (equipment.stats &&
+      ((filters.extra[0] === true && (equipment.stats.length === 7 || equipment.stats.length === 2))
+      || (filters.extra[0] === false && (equipment.stats.length === 6 || equipment.stats.length === 1)))
+    ) {
+      return true;
     }
 
     return false;

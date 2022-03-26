@@ -31,7 +31,8 @@ export class EquipmentsComponent implements OnInit {
     job: [],
     acquisition: [],
     equipmentTypes: [],
-    equipmentStats: []
+    equipmentStats: [],
+    extra: []
   };
 
   isFilterChecked = {
@@ -40,8 +41,10 @@ export class EquipmentsComponent implements OnInit {
     job: [],
     acquisition: [],
     equipmentTypes: [],
-    equipmentStats: []
+    equipmentStats: [],
+    extra: []
   };
+
   collapsed = {
     rarity: true,
     type: true,
@@ -49,6 +52,7 @@ export class EquipmentsComponent implements OnInit {
     acquisition: true,
     equipmentTypes: true,
     equipmentStats: false,
+    extra: true
   };
 
   rarities = [
@@ -184,7 +188,8 @@ export class EquipmentsComponent implements OnInit {
       + this.filters.job.length
       + this.filters.acquisition.length
       + this.filters.equipmentTypes.length
-      + this.filters.equipmentStats.length;
+      + this.filters.equipmentStats.length
+      + this.filters.extra.length;
   }
 
   private translateJobs() {
@@ -297,6 +302,14 @@ export class EquipmentsComponent implements OnInit {
         this.isFilterChecked.job[job.dataId] = false;
       } else {
         this.isFilterChecked.job[job.dataId] = true;
+      }
+    });
+
+    ['true', 'false'].forEach(extra => {
+      if (this.filters.extra.indexOf(extra === 'true' ? true : false) === -1) {
+        this.isFilterChecked.extra[extra] = false;
+      } else {
+        this.isFilterChecked.extra[extra] = true;
       }
     });
   }
