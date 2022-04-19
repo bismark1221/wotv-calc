@@ -200,7 +200,8 @@ export class ToolService {
         'UN_LW_P_THLA_01',
         'UN_LW_P_GRSR_01',
         'UN_LW_S_LAMA_01',
-        'UN_LW_S_ARMN_01'
+        'UN_LW_S_ARMN_01',
+        'UN_LW_P_FINA_01'
       ];
 
       if (notSoLimited.indexOf(dataId) === -1) {

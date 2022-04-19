@@ -1008,7 +1008,12 @@ export class SkillService {
         html = this.getChance(skill, effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'IGNORE_FATAL' :
-        html = this.getChance(skill, effect, false) + ' to ignore fatal damage' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' to ignore fatal damage' + this.getValue(skill, effect);
+        if (effect.condition === 'HP_THRESHOLD' && effect.hpThreshold) {
+          html += ' when HP >= ' + effect.hpThreshold + '% ';
+        }
+
+        html += this.getTurns(effect);
       break;
       case 'PHYSIC_EVADE' :
         html = this.getChance(skill, effect, false) + ' to physical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1799,16 +1804,16 @@ export class SkillService {
       getTarget = false;
     }
 
-    if (skill.maths) {
-      html = this.formatMaths(skill, html, 'notDamage', effect);
-    }
-
     if (skill.time) {
       skill.time.realValue = this.getValue(skill, skill.time, false, true, '', 'fixe', true);
     }
 
     if (getTarget) {
       html = this.formatTarget(skill, effect, html, fromEquipment);
+    }
+
+    if (skill.maths) {
+      html = this.formatMaths(skill, html, 'notDamage', effect);
     }
 
     if (effect.continues && effect.continues.length > 0) {
@@ -1936,7 +1941,7 @@ export class SkillService {
           )
         ) {
           if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB' && math.dst !== 'TRIGGER' && math.dst !== 'BUFF') {
-            if (math.notHasExtraValue && math.dst === 'CHANCE') {
+            if (math.notHasExtraValue && math.dst === 'CHANCE' && math.type !== 'EFFECT_CONDITION') {
               html += ' + Decrease ';
             } else {
               html += ' + Increase ';
