@@ -296,7 +296,7 @@ export class UnitComponent implements OnInit {
 
       if (this.unit.tmr) {
         this.unit.tmr.name = this.toolService.getName(this.unit.tmr);
-        this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats);
+        this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats[0]);
 
         this.unit.tmr.formattedSkills = [];
         for (const skillData of this.unit.tmr.skills[0]) {

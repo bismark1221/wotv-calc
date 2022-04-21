@@ -97,7 +97,7 @@
             <tr>
               <td><a [routerLink]="[getRoute('/equipment/' + unit.tmr.slug)]" [routerLinkActive]="['active']">{{ unit.tmr.name }}</a></td>
               <td>{{ getEquipementType(unit.tmr.type) }}</td>
-              <td *ngFor="let statType of unit.tmr.statsTypes">{{ unit.tmr.stats[statType].min }}</td>
+              <td *ngFor="let statType of unit.tmr.statsTypes">{{ unit.tmr.stats[0][statType].min }}</td>
             </tr>
           </tbody>
         </table>
@@ -1220,7 +1220,7 @@
         <table class="skillsTable" *ngIf="unit.formattedLimit">
           <tbody>
             <tr>
-              <th [attr.colspan]="unit.formattedLimit.based ? '6' : '5'">Limit Burst</th>
+              <th colspan="99">Limit Burst</th>
             </tr>
             <tr>
               <th class="sub limitNameTd">Name</th>

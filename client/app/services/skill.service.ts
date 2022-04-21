@@ -2340,7 +2340,7 @@ export class SkillService {
       const conditionRealId = continueId.split('_').slice(0, -1).join('_');
       switch (conditionRealId) {
         case 'REMOVE_AFTER_HIT':
-          html += ', remove effect after ' + continueId.split('_')[continueId.split('_').length - 1] + ' hits received';
+          html += ', remove effect after ' + (continueId.split('_')[continueId.split('_').length - 1] - 1) + ' hits received';
         break;
         default:
         break;
