@@ -1212,6 +1212,11 @@ export class Unit {
       'LUCK'
     ];
 
+    const highestPassives = {
+      fixe: {},
+      percent: {}
+    };
+
     Object.keys(equipment.materias).forEach(materiaType => {
       const materia = equipment.materias[materiaType];
       if (materia) {
@@ -1228,14 +1233,26 @@ export class Unit {
             const value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (20 - 1) * (materia.skillsDetail[skillIndex].level - 1)));
 
             if (statsTypePercent.indexOf(effect.type) !== -1 && effect.calcType === 'percent') {
-              this.updatePercentStats(effect.type, 'materia', value);
+              if (!highestPassives.percent[effect.type] || value > highestPassives.percent[effect.type]) {
+                highestPassives.percent[effect.type] = value;
+              }
             } else {
-              this.updateStat(effect.type, value, 'materia', 'fixe');
+              if (!highestPassives.fixe[effect.type] || value > highestPassives.fixe[effect.type]) {
+                highestPassives.fixe[effect.type] = value;
+              }
             }
           });
         });
       }
     });
+
+    for (const effectType of Object.keys(highestPassives.fixe)) {
+      this.updateStat(effectType, highestPassives.fixe[effectType], 'materia', 'fixe');
+    }
+
+    for (const effectType of Object.keys(highestPassives.percent)) {
+      this.updatePercentStats(effectType, 'materia', highestPassives.percent[effectType]);
+    }
 
     Object.keys(equipment.materiaGroups).forEach(group => {
       if (equipment.materiaGroups[group]) {
