@@ -94,6 +94,7 @@ export class EquipmentService {
     AF_LW_RNG_009: 'TOWER',
     AF_LW_RNG_008: 'TOWER',
     AF_LW_RNG_010: 'TOWER',
+    AF_LW_RNG_011: 'TOWER',
 
     AF_LW_SWO_016: 'FREE',
 
