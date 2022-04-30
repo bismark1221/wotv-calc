@@ -22,11 +22,26 @@ export class HomeComponent {
 
   updated = {
     /*GL: [
+    : GL
+New Unit : UN_PRS5_P_JOKR
+New Unit : UN_PRS5_P_QUEN
+New Unit : UN_PRS5_P_VOLT
+New Equipment : AF_PRS5_SWO_000
+New Equipment : AF_PRS5_FIS_000
+New Equipment : AF_PRS5_DAG_000
+New Equipment : AF_LW_ROD_013
+
+
       {
-        "date": "30/11",
+        "date": "27/05",
         "items": [
-          {"type": "unit", "dataId": "UN_LW_P_BELS"},
-          {"type": "equipment", "dataId": "AF_LW_BOK_008"}
+          {"type": "unit", "dataId": "UN_PRS5_P_JOKR"},
+          {"type": "unit", "dataId": "UN_PRS5_P_QUEN"},
+          {"type": "unit", "dataId": "UN_PRS5_P_VOLT"},
+          {"type": "equipment", "dataId": "AF_PRS5_SWO_000"},
+          {"type": "equipment", "dataId": "AF_PRS5_FIS_000"},
+          {"type": "equipment", "dataId": "AF_PRS5_DAG_000"},
+          {"type": "equipment", "dataId": "AF_LW_ROD_013"},
         ]
       }
     ]*/
