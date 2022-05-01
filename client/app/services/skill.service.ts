@@ -1767,6 +1767,18 @@ export class SkillService {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
+      case 'AUTO_CAST_ON_REVIVAL' :
+        let newCastOnRevive = null;
+        if (unit.rawSkills) {
+          newCastOnRevive = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'When target is revive automatically cast another attack skill on it : ' + (newCastOnRevive ? this.toolService.getName(newCastOnRevive) : '???') + ' ' + this.getTurns(effect);
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
       case 'AUTO_RECOVER_HP' :
         html = 'Recovers own HP when it is less than ' + effect.rate / 10 + '% HP';
         if (effect.calcType !== 'apply') {
