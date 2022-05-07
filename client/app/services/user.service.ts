@@ -11,6 +11,7 @@ import { CardService } from './card.service';
 import { EsperService } from './esper.service';
 import { UnitService } from './unit.service';
 import { EquipmentService } from './equipment.service';
+import { MateriaService } from './materia.service';
 import { GuildService } from './guild.service';
 
 @Injectable({
@@ -75,6 +76,7 @@ export class UserService {
     private esperService: EsperService,
     private unitService: UnitService,
     private equipmentService: EquipmentService,
+    private materiaService: MateriaService,
     private guildService: GuildService,
     private localStorageService: LocalStorageService,
     private firestore: AngularFirestore
@@ -195,6 +197,39 @@ export class UserService {
         };
         espers.push(esperCustomData);
       }
+
+      const materias = [];
+      let i = 0;
+
+      for (const dumpedMateria of apiResult.materia) {
+        const materiaCustomData = {
+          customName: Date.now().toString() + i,
+          dataId: dumpedMateria.iname,
+          level: dumpedMateria.lv,
+
+          /*rarity: this.materiaService.getRarityFromDataId(dumpedMateria.iname),
+          mainStat: this.materiaService.getMainStatFromDataId(dumpedMateria.iname),
+          slot: this.materiaService.getSlotFromDataId(dumpedMateria.iname),*/
+          subStats: [],
+
+          skills: [],
+          skillsLevel: [],
+
+          user: this.authService.getUser().uid,
+          fromInGame: true,
+          ingameId: dumpedMateria.id
+        };
+
+        dumpedMateria.skills.forEach(skillData => {
+          materiaCustomData.skills.push(this.getMateriaSkillId(apiResult.materiaAttachSkill ,skillData.iname));
+          materiaCustomData.skillsLevel.push(this.materiaService.getSkillLevelFromExp(skillData.exp));
+        });
+
+        materias.push(materiaCustomData);
+        i++;
+      }
+
+      // console.log(materias)
 
       const equipments = [];
       const equipmentIdsCounts = {};
@@ -330,6 +365,10 @@ export class UserService {
     this.loading.data = false;
 
     return null;
+  }
+
+  private getMateriaSkillId(materiaAttachSkills, dataId) {
+    return materiaAttachSkills.find(rawMateriaAttachSkill => rawMateriaAttachSkill.iname === dataId).skill_iname;
   }
 
   private getSavedItems(type) {

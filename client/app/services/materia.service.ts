@@ -15,6 +15,8 @@ export class MateriaService {
   private sre = /^\s+|\s+$/g;
   materia;
 
+  private skillLvTbl = [0, 50, 150, 300, 450, 600, 800, 1000, 1200, 1400, 1700, 2000, 2300, 2600, 2900, 3300, 3700, 4100, 4500, 5000];
+
   constructor(
     private skillService: SkillService,
     private localStorageService: LocalStorageService,
@@ -498,5 +500,42 @@ export class MateriaService {
     });
 
     return skills;
+  }
+
+  getSkillLevelFromExp(exp) {
+    let level = 0;
+    let minusOne = false;
+
+    for (level = 0; level <= this.skillLvTbl.length - 1; level++) {
+      if (this.skillLvTbl[level] > exp) {
+        minusOne = true;
+        break;
+      } if (this.skillLvTbl[level] === exp) {
+        break;
+      }
+    }
+
+    return level + (minusOne ? 0 : 1);
+  }
+
+  getCharacteristicsFromDataId(dataId) {
+    const slotTranslation = {
+      I: 'I',
+      F: 'J',
+      W: 'P',
+      H: 'A',
+      O: 'T',
+      S: 'G'
+    };
+
+    const tableDateId = dataId.split('_');
+
+    const characteristics = {
+      slot: slotTranslation[tableDateId[3]],
+      mainStat: null,
+      rarity: null
+    };
+
+
   }
 }
