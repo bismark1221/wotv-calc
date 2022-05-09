@@ -70,7 +70,7 @@
             </div>
           </div>
 
-          <div *ngFor="let type of ['cards', 'espers', 'units', 'equipments']">
+          <div *ngFor="let type of ['cards', 'espers', 'units', 'equipments', 'materia']">
             <div *ngIf="loading.saveData[type].delete != -1">
               Deleting {{ type | lowercase }} : {{ loading.saveData[type].delete > 0 ? loading.saveData[type].delete : 'finish' }}
             </div>

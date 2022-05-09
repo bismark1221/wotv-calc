@@ -17,6 +17,23 @@ export class MateriaService {
 
   private skillLvTbl = [0, 50, 150, 300, 450, 600, 800, 1000, 1200, 1400, 1700, 2000, 2300, 2600, 2900, 3300, 3700, 4100, 4500, 5000];
 
+  private translationSkillFromId = {
+    HP: 'HP',
+    TP: 'TP',
+    DF: 'DEF',
+    MDF: 'SPR',
+    LCK: 'LUCK',
+    AVO: 'EVADE',
+    CAV: 'CRITIC_EVADE',
+    AP: 'AP',
+    ATK: 'ATK',
+    MGK: 'MAG',
+    DEX: 'DEX',
+    HIT: 'ACCURACY',
+    CRT: 'CRITIC_RATE',
+    SPD: 'AGI'
+  };
+
   constructor(
     private skillService: SkillService,
     private localStorageService: LocalStorageService,
@@ -519,23 +536,44 @@ export class MateriaService {
   }
 
   getCharacteristicsFromDataId(dataId) {
-    const slotTranslation = {
-      I: 'I',
-      F: 'J',
-      W: 'P',
-      H: 'A',
-      O: 'T',
-      S: 'G'
+    const rarityFromId = {
+      UR: 'UR',
+      SSR: 'MR',
+      SR: 'SR',
+      R: 'R',
+      N: 'N'
     };
 
     const tableDateId = dataId.split('_');
 
     const characteristics = {
-      slot: slotTranslation[tableDateId[3]],
-      mainStat: null,
-      rarity: null
+      slot: tableDateId[3],
+      mainStat: this.translationSkillFromId[tableDateId[5]],
+      rarity: rarityFromId[tableDateId[4]]
     };
 
+    return characteristics;
+  }
 
+  formatSubStatsFromInventory(dumpMateria, rawMaterias) {
+    const subStats = [];
+
+    const rawMateria = rawMaterias.find(searchedMateria => searchedMateria.dataId === dumpMateria.iname);
+
+    if (rawMateria) {
+      dumpMateria.statuses.forEach(subStat => {
+        const subStatType = this.translationSkillFromId[subStat.iname.split('_')[1]];
+        const rawSubStatValue = rawMateria.types[0].subStats[0].find(searchedSubStat => searchedSubStat.type === subStatType);
+
+        if (subStatType && rawSubStatValue) {
+          subStats.push({
+            type: this.translationSkillFromId[subStat.iname.split('_')[1]],
+            value: Math.floor(rawSubStatValue.min[0] + ((rawSubStatValue.max[0] - rawSubStatValue.min[0]) / (20 - 1) * (dumpMateria.lv - 1))) + subStat.val
+          });
+        }
+      });
+    }
+
+    return subStats;
   }
 }
