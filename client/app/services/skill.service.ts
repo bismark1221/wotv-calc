@@ -1524,6 +1524,20 @@ export class SkillService {
           html = 'Increase max damage' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
+      case 'PHYSIC_DAMAGE' :
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' physic damage';
+        } else {
+          html = 'Increase physic damage' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
+      case 'MAGIC_DAMAGE' :
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' magic damage';
+        } else {
+          html = 'Increase magic damage' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
       case 'DEFENSE_PENETRATION' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' DEF penetration';
@@ -1768,13 +1782,25 @@ export class SkillService {
         }
         break;
       case 'AUTO_CAST_ON_REVIVAL' :
+        let newCastOnKill = null;
+        if (unit.rawSkills) {
+          newCastOnKill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'When target is revive automatically cast another attack skill on it : ' + (newCastOnKill ? this.toolService.getName(newCastOnKill) : '???') + ' ' + this.getTurns(effect);
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
+      case 'AUTO_CAST_ON_KILL_ENEMY' :
         let newCastOnRevive = null;
         if (unit.rawSkills) {
           newCastOnRevive = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
         }
 
         if (effect.calcType === 'apply') {
-          html = 'When target is revive automatically cast another attack skill on it : ' + (newCastOnRevive ? this.toolService.getName(newCastOnRevive) : '???') + ' ' + this.getTurns(effect);
+          html = 'When enemy target is killed automatically cast another attack skill on it : ' + (newCastOnRevive ? this.toolService.getName(newCastOnRevive) : '???') + ' ' + this.getTurns(effect);
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
@@ -1998,7 +2024,7 @@ export class SkillService {
             case 'MORE_THAN' :
               break;
             default:
-              html += math.value + '% ';
+              html += math.value + (math.type !== 'KILL_TARGET' ? '% ' : ' ');
               break;
           }
 
@@ -2136,6 +2162,16 @@ export class SkillService {
                   math.effects.forEach((effectName, effectIndex) => {
                     html += effectName[0].toUpperCase() + effectName.slice(1).toLowerCase() + (effectIndex < math.effects.length - 1 ? ', ' : '');
                   });
+                  break;
+                default:
+                  console.log('Not manage math formula right now...');
+                  break;
+              }
+            break;
+            case 'KILL_TARGET' :
+              switch (math.formula) {
+                case 'AT_LEAST' :
+                  html += ' for each enemy kill (up to ' + math.condition + ')';
                   break;
                 default:
                   console.log('Not manage math formula right now...');

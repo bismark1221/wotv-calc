@@ -1150,8 +1150,8 @@
           <tbody *ngFor="let skill of unit.formattedUnlockedSkills">
             <tr>
               <td>{{ skill.name }}</td>
-              <td class="limitBased">
-                <img class='atkBasedImg' src="{{ 'assets/atkBased/' + skill.based + '.png' }}" />
+              <td>
+                <img class='atkBasedImg' src="{{ 'assets/atkBased/' + skill.based + '.png' }}" *ngIf="skill.based"/>
                 <span *ngIf="skill.reflectable">
                   <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
                 </span>
