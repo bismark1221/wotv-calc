@@ -603,10 +603,10 @@ export class Unit {
         }
 
         if (calc === 'percent') {
-          this.stats[type][statType] = (reset ? 0 : this.stats[type][statType]) + this.stats[type].baseTotal * value / 100;
-          return this.stats[type].baseTotal * value / 100;
+          this.stats[type][statType] = (reset ? 0 : this.stats[type][statType]) + this.stats[type].baseTotal * parseInt(value, 10) / 100;
+          return this.stats[type].baseTotal * parseInt(value, 10) / 100;
         } else {
-          this.stats[type][statType] = (reset ? 0 : this.stats[type][statType]) + value;
+          this.stats[type][statType] = (reset ? 0 : this.stats[type][statType]) + parseInt(value, 10);
           return value;
         }
       break;

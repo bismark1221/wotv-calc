@@ -305,7 +305,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   showGuildDetail() {
-    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'options-modal' });
+    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'builder-modal' });
 
     modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.team.guild.data));
 
@@ -322,7 +322,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   showMasterRanksDetail() {
-    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'options-modal' });
+    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'builder-modal' });
 
     modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.team.masterRanks.data));
 
@@ -712,5 +712,13 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
         this.calculateDamageSim();
       }
     }
+  }
+
+  getInitialApValue(pos) {
+    if (this.team.units[pos]) {
+      return Math.floor((this.team.units[pos].stats['INITIAL_AP'].baseTotal / this.team.units[pos].stats['AP'].baseTotal * this.team.units[pos].stats['AP'].total) + (this.team.units[pos].stats['INITIAL_AP'].total - this.team.units[pos].stats['INITIAL_AP'].baseTotal));
+    }
+
+    return null;
   }
 }

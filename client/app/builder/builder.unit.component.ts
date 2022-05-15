@@ -378,7 +378,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   showGuildDetail() {
-    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'options-modal' });
+    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'builder-modal' });
 
     modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.unit.guild.data));
 
@@ -390,7 +390,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   showMasterRanksDetail() {
-    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'options-modal' });
+    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'builder-modal' });
 
     modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.unit.masterRanks.data));
 
@@ -711,5 +711,13 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.showOnlyOtherVersion = !this.showOnlyOtherVersion;
 
     this.filterUnits();
+  }
+
+  getInitialApValue() {
+    if (this.unit) {
+      return Math.floor((this.unit.stats['INITIAL_AP'].baseTotal / this.unit.stats['AP'].baseTotal * this.unit.stats['AP'].total) + (this.unit.stats['INITIAL_AP'].total - this.unit.stats['INITIAL_AP'].baseTotal));
+    }
+
+    return null;
   }
 }
