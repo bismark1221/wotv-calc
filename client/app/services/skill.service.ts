@@ -1869,7 +1869,8 @@ export class SkillService {
       ON_MAGIC_ATTACK: ' when attacking with magic attacks',
       ON_CRITICAL: ' when performing a critical hit',
       HUMAN: ' when cast on human',
-      NETHERBEAST: ' when cast on nether beast'
+      NETHERBEAST: ' when cast on nether beast',
+      HP_THRESHOLD: ' only when HP < 70%'
     };
 
     return conditions[condition];

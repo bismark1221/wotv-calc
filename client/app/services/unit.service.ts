@@ -755,6 +755,11 @@ export class UnitService {
     this.unit.resetJob();
   }
 
+  updateMasterSkill() {
+    this.unit.manageUpgradeFromMasterSkill(this.toolService, this.skillService, this.rangeService);
+    this.changeLevel();
+  }
+
   getLevelFromExp(exp) {
     let level = 0;
     let minusOne = false;

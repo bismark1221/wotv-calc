@@ -112,6 +112,10 @@
           <label for="equipmentBOOK">Book</label>
         </div>
         <div>
+          <input type="radio" id="equipmentBOOMERANG" (change)="filterEquipment('weapon', 'BOOMERANG')" [checked]="filters.equipment.weapon === 'BOOMERANG'"/>
+          <label for="equipmentBOOMERANG">Boomerang</label>
+        </div>
+        <div>
           <input type="radio" id="equipmentBOW" (change)="filterEquipment('weapon', 'BOW')" [checked]="filters.equipment.weapon === 'BOW'"/>
           <label for="equipmentBOW">Bow</label>
         </div>

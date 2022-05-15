@@ -83,8 +83,8 @@ export class ToolService {
     const rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
 
     items.sort((a: any, b: any) => {
-      const splittedDateA = a.releaseDate.split('/');
-      const splittedDateB = b.releaseDate.split('/');
+      const splittedDateA = a.releaseDate && a.releaseDate.split('/').length === 3 ? a.releaseDate.split('/') : order === 'asc' ? '01/01/3000'.split('/') : '01/01/1970'.split('/');
+      const splittedDateB = b.releaseDate && b.releaseDate.split('/').length === 3 ? b.releaseDate.split('/') : order === 'asc' ? '01/01/3000'.split('/') : '01/01/1970'.split('/');
 
       const x = new Date(splittedDateA[2], splittedDateA[1] - 1, splittedDateA[0]);
       const y = new Date(splittedDateB[2], splittedDateB[1] - 1, splittedDateB[0]);

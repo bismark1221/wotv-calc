@@ -534,7 +534,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   updateMasterSkillLevel() {
-    this.unitService.changeLevel();
+    this.unitService.updateMasterSkill();
+    this.updateActiveSkillsForSim();
   }
 
   updateLimitLevel(level) {

@@ -77,7 +77,8 @@ export class EquipmentsComponent implements OnInit {
     'NINJABLADE',
     'ROD',
     'SPEAR',
-    'SWORD'
+    'SWORD',
+    'BOOMERANG'
   ];
 
   armors = [

@@ -155,6 +155,9 @@ export class Unit {
   formattedAttack;
   formattedMasterSkill = [];
   version;
+  hasUpgradeFromMasterSKill = false;
+  upgradeActivatedFromMasterSKill = false;
+  hasGetUpgradeFromMasterSkill = null;
 
   // Only for quests/enemies
   species = '';
@@ -363,6 +366,57 @@ export class Unit {
       this.masterSkillActivated = 0;
     } else {
       this.masterSkillActivated = -1;
+    }
+
+    this.manageUpgradeFromMasterSkill();
+  }
+
+  private hasUpgradeFromMasterSkill() {
+    if (this.replacedSkills && this.hasGetUpgradeFromMasterSkill === null) {
+      for (let i = 0; i <= 1; i++) {
+        if (this.replacedSkills[this.masterSkill[i]]) {
+          this.hasUpgradeFromMasterSKill = true;
+          this.hasGetUpgradeFromMasterSkill = i;
+        }
+      }
+    }
+  }
+
+  private manageUpgradeFromMasterSkill(toolService = null, skillService = null, rangeService = null) {
+    this.hasUpgradeFromMasterSkill();
+
+    if (this.replacedSkills && this.hasUpgradeFromMasterSKill) {
+      if (!this.replacedSkills[this.masterSkill[this.masterSkillActivated]] && this.upgradeActivatedFromMasterSKill) {
+        this.replacedSkills[this.masterSkill[this.hasGetUpgradeFromMasterSkill]].forEach(upgrade => {
+          if (upgrade.oldSkillData) {
+            const oldSkill = JSON.parse(JSON.stringify(this.formattedLimit));
+
+            this.formattedLimit = JSON.parse(JSON.stringify(upgrade.oldSkillData));
+            this.formattedLimit.level = oldSkill.level;
+            if (toolService) {
+              this.formattedLimit = this.formatActiveSkill(this.formattedLimit, toolService, skillService, rangeService);
+            }
+          }
+        });
+        this.upgradeActivatedFromMasterSKill = false;
+      } else if (this.replacedSkills[this.masterSkill[this.masterSkillActivated]] && !this.upgradeActivatedFromMasterSKill) {
+        this.replacedSkills[this.masterSkill[this.masterSkillActivated]].forEach(upgrade => {
+          if (upgrade.newSkill) {
+            const oldSkill = JSON.parse(JSON.stringify(this.formattedLimit));
+            if (!upgrade.oldSkillData) {
+              upgrade.oldSkillData = oldSkill;
+            }
+
+
+            this.formattedLimit = JSON.parse(JSON.stringify(upgrade.newSkill));
+            this.formattedLimit.level = oldSkill.level;
+            if (toolService) {
+              this.formattedLimit = this.formatActiveSkill(this.formattedLimit, toolService, skillService, rangeService);
+            }
+          }
+        });
+        this.upgradeActivatedFromMasterSKill = true;
+      }
     }
   }
 
@@ -2005,6 +2059,10 @@ export class Unit {
         skill = this.board.nodes[nodeId];
       }
     });
+
+    if (!skill && this.limit === skillId) {
+      return this.formattedLimit;
+    }
 
     return skill;
   }
