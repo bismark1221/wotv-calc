@@ -395,7 +395,7 @@
           <td>Equipment {{ statFrom }} Stats</td>
           <td *ngFor="let type of statsType">
             <div *ngIf="unit.stats[type].equipments">
-              <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP'].equipments[statFrom]">{{ unit.stats["INITIAL_AP"].equipments[statFrom] }} / </span>
+              <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP'].equipments && unit.stats['INITIAL_AP'].equipments[statFrom]">{{ unit.stats["INITIAL_AP"].equipments[statFrom] }} / </span>
               <span>{{ unit.stats[type].equipments[statFrom] }}</span>
             </div>
           </td>
