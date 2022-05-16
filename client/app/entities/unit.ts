@@ -1165,8 +1165,8 @@ export class Unit {
 
     for (let i = 0; i <= 2; i++) {
       if (this.equipments[i]) {
-        this.equipments[i].statsTypes.forEach(statType => {
-          const value = parseInt(this.equipments[i].selectedStats[statType], 10);
+        Object.keys(this.equipments[i].statsWithMateria).forEach(statType => {
+          const value = parseInt(this.equipments[i].statsWithMateria[statType], 10);
 
           if (!this.stats[statType]) {
             this.stats[statType] = {
@@ -1192,9 +1192,11 @@ export class Unit {
           statsType.push(statType);
         });
 
-        this.equipments[i].passiveSkills.forEach(skill => {
+        this.equipments[i].formattedSkillsWithMateria.forEach(skill => {
           if (skill.type !== 'skill' && (!skill.cond || this.checkCondition(skill.cond))) {
-            skill.level = this.equipments[i].level;
+            if (!skill.level) {
+              skill.level = this.equipments[i].level;
+            }
 
             skill.effects.forEach(effect => {
               if (!effect.fromImbue) {
@@ -1321,48 +1323,6 @@ export class Unit {
       'AGI',
       'LUCK'
     ];
-
-    const highestPassives = {
-      fixe: {},
-      percent: {}
-    };
-
-    Object.keys(equipment.materias).forEach(materiaType => {
-      const materia = equipment.materias[materiaType];
-      if (materia) {
-        this.updateStat(materia.mainStat, materia.mainStatValue.value, 'materia', 'fixe');
-
-        materia.subStats.forEach(subStat => {
-          this.updateStat(subStat.type, subStat.value, 'materia', 'fixe');
-        });
-
-        materia.skills.forEach((skillId, skillIndex) => {
-          const skill = materia.rawSkills.find(searchedSkill => searchedSkill.dataId === skillId);
-
-          skill.effects.forEach(effect => {
-            const value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (20 - 1) * (materia.skillsDetail[skillIndex].level - 1)));
-
-            if (statsTypePercent.indexOf(effect.type) !== -1 && effect.calcType === 'percent') {
-              if (!highestPassives.percent[effect.type] || value > highestPassives.percent[effect.type]) {
-                highestPassives.percent[effect.type] = value;
-              }
-            } else {
-              if (!highestPassives.fixe[effect.type] || value > highestPassives.fixe[effect.type]) {
-                highestPassives.fixe[effect.type] = value;
-              }
-            }
-          });
-        });
-      }
-    });
-
-    for (const effectType of Object.keys(highestPassives.fixe)) {
-      this.updateStat(effectType, highestPassives.fixe[effectType], 'materia', 'fixe');
-    }
-
-    for (const effectType of Object.keys(highestPassives.percent)) {
-      this.updatePercentStats(effectType, 'materia', highestPassives.percent[effectType]);
-    }
 
     Object.keys(equipment.materiaGroups).forEach(group => {
       if (equipment.materiaGroups[group]) {

@@ -52,6 +52,10 @@ export class Equipment {
   activeSkill;
   formattedSkills;
   selectedStats;
+
+  statsWithMateria;
+  formattedSkillsWithMateria;
+
   materias = {
     I: null,
     F: null,
@@ -224,6 +228,8 @@ export class Equipment {
         this.selectedStats[statType] = this.tableStats[statType][this.tableStats[statType].length - 1];
       }
     });
+
+    this.calculateStatsWithMateria();
   }
 
   changeLevel(skillService, rangeService) {
@@ -238,6 +244,8 @@ export class Equipment {
     if (this.skill) {
       this.changeSkillLevel(skillService, rangeService);
     }
+
+    this.calculateStatsWithMateria();
   }
 
   changeSkillLevel(skillService, rangeService) {
@@ -325,6 +333,47 @@ export class Equipment {
         }
       });
     });
+
+    this.calculateStatsWithMateria();
+  }
+
+  calculateStatsWithMateria() {
+    if (this.selectedStats && this.passiveSkills) {
+      this.statsWithMateria = JSON.parse(JSON.stringify(this.selectedStats));
+      this.formattedSkillsWithMateria = JSON.parse(JSON.stringify(this.passiveSkills));
+
+      const materiaGroupTypes = {
+        left: ['I', 'F', 'W'],
+        right: ['H', 'O', 'S']
+      };
+      Object.keys(materiaGroupTypes).forEach(group => {
+        materiaGroupTypes[group].forEach(type => {
+          if (this.materias[type]) {
+            if (!this.statsWithMateria[this.materias[type].mainStat]) {
+              this.statsWithMateria[this.materias[type].mainStat] = parseInt(this.materias[type].mainStatValue.value, 10);
+            } else {
+              this.statsWithMateria[this.materias[type].mainStat] += parseInt(this.materias[type].mainStatValue.value, 10);
+            }
+
+            this.materias[type].subStats.forEach(subStat => {
+              if (!this.statsWithMateria[subStat.type]) {
+                this.statsWithMateria[subStat.type] = parseInt(subStat.value, 10);
+              } else {
+                this.statsWithMateria[subStat.type] += parseInt(subStat.value, 10);
+              }
+            });
+
+            this.materias[type].skills.forEach((skillId, skillIndex) => {
+              const skill = JSON.parse(JSON.stringify(this.materias[type].rawSkills.find(searchedSkill => searchedSkill.dataId === skillId)));
+              if (skill) {
+                skill.level = parseInt(this.materias[type].skillsDetail[skillIndex].level, 10);
+                this.formattedSkillsWithMateria.push(skill);
+              }
+            });
+          }
+        });
+      });
+    }
   }
 
   maxEquipment(skillService, rangeService) {
