@@ -424,7 +424,7 @@
         <tr>
           <td>Total</td>
           <td *ngFor="let type of statsType">
-            <span *ngIf="type === 'AP'">{{ getInitialApValue() }} / </span>
+            <span *ngIf="type === 'AP'">{{ unit.stats['INITIAL_AP'].total }} / </span>
             <span>{{ unit.stats[type].total }}</span>
           </td>
           <td>{{ unit.calcCost ? unit.calcCost.total : 0 }}</td>

@@ -713,12 +713,4 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       }
     }
   }
-
-  getInitialApValue(pos) {
-    if (this.team.units[pos]) {
-      return Math.floor((this.team.units[pos].stats['INITIAL_AP'].baseTotal / this.team.units[pos].stats['AP'].baseTotal * this.team.units[pos].stats['AP'].total) + (this.team.units[pos].stats['INITIAL_AP'].total - this.team.units[pos].stats['INITIAL_AP'].baseTotal));
-    }
-
-    return null;
-  }
 }

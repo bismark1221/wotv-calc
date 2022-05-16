@@ -713,12 +713,4 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     this.filterUnits();
   }
-
-  getInitialApValue() {
-    if (this.unit) {
-      return Math.floor((this.unit.stats['INITIAL_AP'].baseTotal / this.unit.stats['AP'].baseTotal * this.unit.stats['AP'].total) + (this.unit.stats['INITIAL_AP'].total - this.unit.stats['INITIAL_AP'].baseTotal));
-    }
-
-    return null;
-  }
 }

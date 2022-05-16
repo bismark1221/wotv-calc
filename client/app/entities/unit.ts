@@ -37,7 +37,21 @@ export class Unit {
     HP: {},
     TP: {},
     AP: {
-      total: 0
+      baseTotal: 0,
+      total: 0,
+      board: 0,
+      support: 0,
+      masterSkill: 0,
+      teamMasterSkill: 0,
+      esper: 0,
+      card: 0,
+      cardParty: 0,
+      subCard: 0,
+      subCardParty: 0,
+      totalEquipment: 0,
+      guild: 0,
+      masterRanks: 0,
+      materia: 0
     },
     ATK: {},
     DEF: {},
@@ -48,7 +62,21 @@ export class Unit {
     LUCK: {},
     INITIAL_AP: {
       base: 0,
-      baseTotal: 0
+      baseTotal: 0,
+      total: 0,
+      board: 0,
+      support: 0,
+      masterSkill: 0,
+      teamMasterSkill: 0,
+      esper: 0,
+      card: 0,
+      cardParty: 0,
+      subCard: 0,
+      subCardParty: 0,
+      totalEquipment: 0,
+      guild: 0,
+      masterRanks: 0,
+      materia: 0
     },
     ACCURACY: {},
     CRITIC_RATE: {},
@@ -501,7 +529,21 @@ export class Unit {
         HP: {},
         TP: {},
         AP: {
-          total: 0
+          baseTotal: 0,
+          total: 0,
+          board: 0,
+          support: 0,
+          masterSkill: 0,
+          teamMasterSkill: 0,
+          esper: 0,
+          card: 0,
+          cardParty: 0,
+          subCard: 0,
+          subCardParty: 0,
+          totalEquipment: 0,
+          guild: 0,
+          masterRanks: 0,
+          materia: 0
         },
         ATK: {},
         DEF: {},
@@ -512,7 +554,21 @@ export class Unit {
         LUCK: {},
         INITIAL_AP: {
           base: 0,
-          baseTotal: 0
+          baseTotal: 0,
+          total: 0,
+          board: 0,
+          support: 0,
+          masterSkill: 0,
+          teamMasterSkill: 0,
+          esper: 0,
+          card: 0,
+          cardParty: 0,
+          subCard: 0,
+          subCardParty: 0,
+          totalEquipment: 0,
+          guild: 0,
+          masterRanks: 0,
+          materia: 0
         },
         ACCURACY: {},
         CRITIC_RATE: {},
@@ -1358,80 +1414,68 @@ export class Unit {
 
     const statsToRemove = [];
     Object.keys(this.stats).forEach(stat => {
-      if (stat === 'INITIAL_AP') {
-        let jobModifier = 0;
-        if (this.jobsData && this.jobsData[0].level <= 15) {
-          jobModifier = this.jobsData[0].statsModifiers[this.jobsData[0].level - 1]['INITIAL_AP'];
-        } else if (this.exJobsData) {
-          jobModifier = this.exJobsData[0].statsModifiers[this.jobsData[0].level - 16]['INITIAL_AP'];
+      if (stat !== 'INITIAL_AP') {
+        this.stats[stat].total = this.stats[stat].baseTotal;
+
+        if (this.stats[stat].board) {
+          this.stats[stat].board = Math.floor(this.stats[stat].board);
+          this.stats[stat].total += this.stats[stat].board;
         }
 
-        const initialAPModifier = 100 + jobModifier;
-        const initialAP = this.stats['AP'].total * initialAPModifier / 100;
+        if (this.stats[stat].support) {
+          this.stats[stat].support = Math.floor(this.stats[stat].support);
+          this.stats[stat].total += this.stats[stat].support;
+        }
 
-        this.stats['INITIAL_AP'].base = Math.floor(initialAP);
-        this.stats['INITIAL_AP'].baseTotal = Math.floor(initialAP);
-      }
-      this.stats[stat].total = this.stats[stat].baseTotal;
+        if (this.stats[stat].masterSkill) {
+          this.stats[stat].masterSkill = Math.floor(this.stats[stat].masterSkill);
+          this.stats[stat].total += this.stats[stat].masterSkill;
+        }
 
-      if (this.stats[stat].board) {
-        this.stats[stat].board = Math.floor(this.stats[stat].board);
-        this.stats[stat].total += this.stats[stat].board;
-      }
+        if (this.stats[stat].teamMasterSkill) {
+          this.stats[stat].teamMasterSkill = Math.floor(this.stats[stat].teamMasterSkill);
+          this.stats[stat].total += this.stats[stat].teamMasterSkill;
+        }
 
-      if (this.stats[stat].support) {
-        this.stats[stat].support = Math.floor(this.stats[stat].support);
-        this.stats[stat].total += this.stats[stat].support;
-      }
+        if (this.stats[stat].esper) {
+          this.stats[stat].total += this.stats[stat].esper;
+        }
 
-      if (this.stats[stat].masterSkill) {
-        this.stats[stat].masterSkill = Math.floor(this.stats[stat].masterSkill);
-        this.stats[stat].total += this.stats[stat].masterSkill;
-      }
+        if (this.stats[stat].card) {
+          this.stats[stat].total += this.stats[stat].card;
+        }
 
-      if (this.stats[stat].teamMasterSkill) {
-        this.stats[stat].teamMasterSkill = Math.floor(this.stats[stat].teamMasterSkill);
-        this.stats[stat].total += this.stats[stat].teamMasterSkill;
-      }
+        if (this.stats[stat].cardParty) {
+          this.stats[stat].total += this.stats[stat].cardParty;
+        }
 
-      if (this.stats[stat].esper) {
-        this.stats[stat].total += this.stats[stat].esper;
-      }
+        if (this.stats[stat].subCard) {
+          this.stats[stat].total += this.stats[stat].subCard;
+        }
 
-      if (this.stats[stat].card) {
-        this.stats[stat].total += this.stats[stat].card;
-      }
+        if (this.stats[stat].subCardParty) {
+          this.stats[stat].total += this.stats[stat].subCardParty;
+        }
 
-      if (this.stats[stat].cardParty) {
-        this.stats[stat].total += this.stats[stat].cardParty;
-      }
+        if (this.stats[stat].totalEquipment) {
+          this.stats[stat].total += this.stats[stat].totalEquipment;
+        }
 
-      if (this.stats[stat].subCard) {
-        this.stats[stat].total += this.stats[stat].subCard;
-      }
+        if (this.stats[stat].guild) {
+          this.stats[stat].total += this.stats[stat].guild;
+        }
 
-      if (this.stats[stat].subCardParty) {
-        this.stats[stat].total += this.stats[stat].subCardParty;
-      }
+        if (this.stats[stat].masterRanks) {
+          this.stats[stat].total += this.stats[stat].masterRanks;
+        }
 
-      if (this.stats[stat].totalEquipment) {
-        this.stats[stat].total += this.stats[stat].totalEquipment;
-      }
+        if (this.stats[stat].materia) {
+          this.stats[stat].total += this.stats[stat].materia;
+        }
 
-      if (this.stats[stat].guild) {
-        this.stats[stat].total += this.stats[stat].guild;
-      }
-
-      if (this.stats[stat].masterRanks) {
-        this.stats[stat].total += this.stats[stat].masterRanks;
-      }
-
-      if (this.stats[stat].materia) {
-        this.stats[stat].total += this.stats[stat].materia;
-      }
-
-      if (!Number.isInteger(this.stats[stat].total)) {
-        statsToRemove.push(stat);
+        if (!Number.isInteger(this.stats[stat].total)) {
+          statsToRemove.push(stat);
+        }
       }
     });
 
@@ -1479,11 +1523,81 @@ export class Unit {
       }
     });
 
+    this.updateInitialAP();
+
     statsToRemove.forEach(stat => {
       delete this.stats[stat];
     });
 
     this.getAvailableStatTypes();
+  }
+
+  private updateInitialAP() {
+    let jobModifier = 0;
+    if (this.jobsData && this.jobsData[0].level <= 15) {
+      jobModifier = this.jobsData[0].statsModifiers[this.jobsData[0].level - 1].INITIAL_AP;
+    } else if (this.exJobsData) {
+      jobModifier = this.exJobsData[0].statsModifiers[this.jobsData[0].level - 16].INITIAL_AP;
+    }
+
+    const initialAPModifier = 100 + jobModifier;
+    const initialAP = Math.floor(this.stats['AP'].baseTotal * initialAPModifier / 100);
+
+    this.stats.INITIAL_AP.base = initialAP;
+    this.stats.INITIAL_AP.baseTotal = initialAP;
+    this.stats.INITIAL_AP.total = Math.floor(this.stats['AP'].total * initialAPModifier / 100);
+
+    if (this.stats.INITIAL_AP.board) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.board;
+    }
+
+    if (this.stats.INITIAL_AP.support) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.support;
+    }
+
+    if (this.stats.INITIAL_AP.masterSkill) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.masterSkill;
+    }
+
+    if (this.stats.INITIAL_AP.teamMasterSkill) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.teamMasterSkill;
+    }
+
+    if (this.stats.INITIAL_AP.esper) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.esper;
+    }
+
+    if (this.stats.INITIAL_AP.card) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.card;
+    }
+
+    if (this.stats.INITIAL_AP.cardParty) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.cardParty;
+    }
+
+    if (this.stats.INITIAL_AP.subCard) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.subCard;
+    }
+
+    if (this.stats.INITIAL_AP.subCardParty) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.subCardParty;
+    }
+
+    if (this.stats.INITIAL_AP.totalEquipment) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.totalEquipment;
+    }
+
+    if (this.stats.INITIAL_AP.guild) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.guild;
+    }
+
+    if (this.stats.INITIAL_AP.masterRanks) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.masterRanks;
+    }
+
+    if (this.stats.INITIAL_AP.materia) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.materia;
+    }
   }
 
   rightClickNode(node) {
