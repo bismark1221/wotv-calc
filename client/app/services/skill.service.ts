@@ -1528,14 +1528,14 @@ export class SkillService {
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' physic damage';
         } else {
-          html = 'Increase physic damage' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect, false) + ' physic damage' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'MAGIC_DAMAGE' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' magic damage';
         } else {
-          html = 'Increase magic damage' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect, false) + ' magic damage' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'DEFENSE_PENETRATION' :
