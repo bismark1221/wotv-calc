@@ -1503,6 +1503,27 @@ export class Unit {
     const initialAPModifier = 100 + jobModifier;
     const initialAP = Math.floor(this.stats['AP'].baseTotal * initialAPModifier / 100);
 
+    if (!this.stats.INITIAL_AP) {
+      this.stats.INITIAL_AP = {
+        base: 0,
+        baseTotal: 0,
+        total: 0,
+        board: 0,
+        support: 0,
+        masterSkill: 0,
+        teamMasterSkill: 0,
+        esper: 0,
+        card: 0,
+        cardParty: 0,
+        subCard: 0,
+        subCardParty: 0,
+        totalEquipment: 0,
+        guild: 0,
+        masterRanks: 0,
+        materia: 0
+      };
+    }
+
     this.stats.INITIAL_AP.base = initialAP;
     this.stats.INITIAL_AP.baseTotal = initialAP;
     this.stats.INITIAL_AP.total = Math.floor(this.stats['AP'].total * initialAPModifier / 100);
