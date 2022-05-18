@@ -416,7 +416,7 @@ export class Unit {
     if (this.replacedSkills && this.hasUpgradeFromMasterSKill) {
       if (!this.replacedSkills[this.masterSkill[this.masterSkillActivated]] && this.upgradeActivatedFromMasterSKill) {
         this.replacedSkills[this.masterSkill[this.hasGetUpgradeFromMasterSkill]].forEach(upgrade => {
-          if (upgrade.oldSkillData) {
+          if (upgrade.oldSkillData && this.formattedLimit) {
             const oldSkill = JSON.parse(JSON.stringify(this.formattedLimit));
 
             this.formattedLimit = JSON.parse(JSON.stringify(upgrade.oldSkillData));
@@ -429,7 +429,7 @@ export class Unit {
         this.upgradeActivatedFromMasterSKill = false;
       } else if (this.replacedSkills[this.masterSkill[this.masterSkillActivated]] && !this.upgradeActivatedFromMasterSKill) {
         this.replacedSkills[this.masterSkill[this.masterSkillActivated]].forEach(upgrade => {
-          if (upgrade.newSkill) {
+          if (upgrade.newSkill && this.formattedLimit) {
             const oldSkill = JSON.parse(JSON.stringify(this.formattedLimit));
             if (!upgrade.oldSkillData) {
               upgrade.oldSkillData = oldSkill;
