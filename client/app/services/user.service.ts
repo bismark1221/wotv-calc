@@ -240,8 +240,6 @@ export class UserService {
         i++;
       }
 
-      // console.log(materias)
-
       const equipments = [];
       const equipmentIdsCounts = {};
 
@@ -263,12 +261,48 @@ export class UserService {
           grow: dumpedEquipment.grow,
           level: this.equipmentService.getLevelFromExp(dumpedEquipment.exp),
           stats: {},
-          user: this.authService.getUser().uid
+          user: this.authService.getUser().uid,
+          materias: {
+            F: null,
+            H: null,
+            I: null,
+            O: null,
+            S: null,
+            W: null
+          }
         };
 
         for (const statType of Object.keys(this.equipmentStatMapping)) {
           if (dumpedEquipment[statType]) {
             equipmentCustomData.stats[this.equipmentStatMapping[statType]] = dumpedEquipment[statType];
+          }
+        }
+
+        if (dumpedEquipment.materia_slots) {
+          const materiaIds = [
+            'F',
+            'H',
+            'I',
+            'O',
+            'S',
+            'W'
+          ];
+
+          let materiaCount = 0;
+          for (const dumpedMat of dumpedEquipment.materia_slots) {
+            if (dumpedMat.id !== 0) {
+              const materiaData = materias.find(searchedMateria => searchedMateria.ingameId === dumpedMat.id);
+
+              if (materiaData) {
+                equipmentCustomData.materias[materiaIds[materiaCount]] = JSON.parse(JSON.stringify(materiaData));
+                delete equipmentCustomData.materias[materiaIds[materiaCount]].ingameId;
+                delete equipmentCustomData.materias[materiaIds[materiaCount]].user;
+                delete equipmentCustomData.materias[materiaIds[materiaCount]].fromInGame;
+                delete equipmentCustomData.materias[materiaIds[materiaCount]].customName;
+              }
+            }
+
+            materiaCount++;
           }
         }
 
