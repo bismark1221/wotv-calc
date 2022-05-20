@@ -15,7 +15,7 @@ export class MateriaService {
   private sre = /^\s+|\s+$/g;
   materia;
 
-  private skillLvTbl = [0, 50, 150, 300, 450, 600, 800, 1000, 1200, 1400, 1700, 2000, 2300, 2600, 2900, 3300, 3700, 4100, 4500, 5000];
+  private skillLvTbl = [0, 50, 200, 500, 950, 1550, 2350, 3350, 4550, 5950, 7650, 9650, 11950, 14550, 17450, 20750, 24450, 28550, 33050, 38050];
 
   private translationSkillFromId = {
     HP: 'HP',

@@ -70,7 +70,7 @@ export class UserComponent implements OnInit, AfterViewInit {
       }
 
       await this.userService.deleteMateria();
-      // await this.userService.saveNewData(this.dumpResult[type], type);
+      await this.userService.saveNewData(this.dumpResult.materias, 'materia');
 
       await this.updateInventory();
     }
