@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
+import { ToolService } from '../../services/tool.service';
 import { CardService } from '../../services/card.service';
 import { UnitService } from '../../services/unit.service';
 import { EsperService } from '../../services/esper.service';
@@ -19,6 +20,7 @@ export class ModalLoadComponent implements OnInit {
   @Input() public allowNew = false;
 
   constructor(
+    private toolService: ToolService,
     private cardService: CardService,
     private unitService: UnitService,
     private esperService: EsperService,
@@ -36,7 +38,7 @@ export class ModalLoadComponent implements OnInit {
         formattedItems.push(this.savedItems[itemName]);
       });
 
-      this.savedItems = formattedItems;
+      this.savedItems = this.toolService.sortByName(formattedItems);
     }
   }
 

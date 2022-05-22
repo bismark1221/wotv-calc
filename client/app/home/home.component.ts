@@ -22,36 +22,11 @@ export class HomeComponent {
 
   updated = {
     /*GL: [
-
-
-New Unit : UN_FF13_P_LTNG
-New Unit : UN_FF13_P_HOPE
-New Card : VC_FF13_MV1
-New Card : VC_FF13_MV2
-New Equipment : AF_FF13_SWO_000
-New Equipment : AF_FF13_UNI_000
-
-
-
       {
-        "date": "13/05",
+        "date": "30/11",
         "items": [
-          {"type": "unit", "dataId": "UN_FF13_P_LTNG"},
-          {"type": "unit", "dataId": "UN_FF13_P_HOPE"},
-          {"type": "card", "dataId": "VC_FF13_MV1"},
-          {"type": "card", "dataId": "VC_FF13_MV2"},
-          {"type": "equipment", "dataId": "AF_FF13_SWO_000"},
-          {"type": "equipment", "dataId": "AF_FF13_UNI_000"}
-        ]
-      }
-
-      {
-        "date": "11/05",
-        "items": [
-          {"type": "card", "dataId": "VC_LW_NEWYEAR2"},
-          {"type": "card", "dataId": "VC_LW_TREL"},
-          {"type": "card", "dataId": "VC_PRS5_MV2"},
-          {"type": "equipment", "dataId": "AF_PRS5_ACC_002"}
+          {"type": "unit", "dataId": "UN_LW_P_BELS"},
+          {"type": "equipment", "dataId": "AF_LW_BOK_008"}
         ]
       }
     ]*/

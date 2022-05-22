@@ -18,10 +18,10 @@ export class ToolService {
     return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
   }
 
-  sortByName(items, order = 'asc') {
+  sortByName(items, order = 'asc', field = 'name') {
     items.sort((a: any, b: any) => {
-      const x = this.reduceString(a.name && a.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? a.name : this.getName(a));
-      const y = this.reduceString(b.name && b.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? b.name : this.getName(b));
+      const x = this.reduceString(a[field] && a[field] !== 'New Unit' && a[field] !== 'New Job' && a[field] !== 'New Vision Card' && a[field] !== 'New Esper' && a[field] !== 'New Equipment' ? a[field] : this.getName(a));
+      const y = this.reduceString(b[field] && b[field] !== 'New Unit' && a[field] !== 'New Job' && a[field] !== 'New Vision Card' && a[field] !== 'New Esper' && a[field] !== 'New Equipment' ? b[field] : this.getName(b));
 
       if (order === 'asc') {
         return x.localeCompare(y, 'ja');

@@ -754,7 +754,8 @@ export class EquipmentService {
     const equipment = customData;
 
     if (equipment) {
-      this.equipment.upgrade = equipment.upgrade;
+      const maxUpgrade = this.equipment.skills.length - 1;
+      this.equipment.upgrade = equipment.upgrade <= maxUpgrade ? equipment.upgrade : maxUpgrade;
       this.equipment.grow = equipment.grow;
       this.equipment.storeId = equipment.storeId ? equipment.storeId : null;
       this.equipment.customName = equipment.customName ? equipment.customName : '';

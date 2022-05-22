@@ -37,6 +37,8 @@ export class UserComponent implements OnInit, AfterViewInit {
           this.user = user;
           await this.userHaveDevice('haveDevice');
         }
+
+        this.haveDevice = true;
       });
     });
   }
@@ -55,6 +57,8 @@ export class UserComponent implements OnInit, AfterViewInit {
   }
 
   async getLoginData() {
+    // await this.userService.addFromInGameEveryWhere();
+
     this.dumpResult = await this.userService.getLoginData();
 
     if (this.dumpResult) {
@@ -64,13 +68,10 @@ export class UserComponent implements OnInit, AfterViewInit {
       await this.userService.deleteSavedGuildMR('masterRank');
       await this.userService.saveNewGuildMR(this.dumpResult.masterRanks, 'masterRank');
 
-      for (const type of ['cards', 'espers', 'units', 'equipments']) {
+      for (const type of ['materia', 'cards', 'espers', 'equipments', 'units', 'teams']) {
         await this.userService.deleteAllSaved(type);
         await this.userService.saveNewData(this.dumpResult[type], type);
       }
-
-      await this.userService.deleteMateria();
-      await this.userService.saveNewData(this.dumpResult.materias, 'materia');
 
       await this.updateInventory();
     }
