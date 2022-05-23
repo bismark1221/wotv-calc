@@ -57,8 +57,6 @@ export class UserComponent implements OnInit, AfterViewInit {
   }
 
   async getLoginData() {
-    // await this.userService.addFromInGameEveryWhere();
-
     this.dumpResult = await this.userService.getLoginData();
 
     if (this.dumpResult) {
