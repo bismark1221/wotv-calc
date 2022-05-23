@@ -1470,5 +1470,21 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.75,
       1
     ]
+  },
+  DEFENSE_PENETRATION: {
+    partyRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    unitRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ]
   }
 };
