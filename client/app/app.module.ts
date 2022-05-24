@@ -112,7 +112,6 @@ import { CheckHashService } from './services/checkHash.service';
 import { TitleService } from './services/title.service';
 import { RangeService } from './services/range.service';
 import { IndexService } from './services/index.service';
-import { ReviewService } from './services/review.service';
 import { QuestService } from './services/quest.service';
 import { SimulatorService } from './services/simulator.service';
 import { OtherUnitService } from './services/otherunit.service';
@@ -246,7 +245,6 @@ export function createTranslateLoader(http: HttpClient) {
     TitleService,
     RangeService,
     IndexService,
-    ReviewService,
     QuestService,
     SimulatorService,
     OtherUnitService,

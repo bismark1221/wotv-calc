@@ -265,12 +265,4 @@ export class AuthService {
 
     return data;
   }
-
-  getIlluminty() {
-    return new Promise((resolve, reject) => {
-      this.firestore.collection('illuminati', ref => ref.where('userId', '==', this.user.uid)).snapshotChanges().subscribe(data => {
-        resolve(data.length > 0);
-      });
-    });
-  }
 }

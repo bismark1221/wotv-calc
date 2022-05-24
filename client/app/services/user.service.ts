@@ -647,7 +647,7 @@ export class UserService {
     this.type = type;
     this.savedItems = this.getSavedItems(this.type);
     const itemPromise = new Promise((resolve, reject) => {
-       this.firestore.collection(
+      this.firestore.collection(
         this.type,
         ref => ref.where('user', '==', this.authService.getUser().uid)
       )

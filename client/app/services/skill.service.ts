@@ -1022,10 +1022,10 @@ export class SkillService {
         html = this.getChance(skill, effect, false) + ' to magical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'CRITIC_GUARENTED' :
-        html = 'Guarenteed critical hit';
+        html = 'Guarenteed critical hit' + (effect.turn ? this.getTurns(effect) : '');
       break;
       case 'HIT_GUARENTED' :
-        html = 'Guarenteed hit';
+        html = 'Guarenteed hit' + (effect.turn ? this.getTurns(effect) : '');
       break;
       case 'IMBUE' :
         console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- SHOULD NOT BE USED !!!');
@@ -1542,49 +1542,49 @@ export class SkillService {
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' DEF penetration';
         } else {
-          html = 'Increase defense penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getIncrease(effect) + ' defense penetration' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'SPIRIT_PENETRATION' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' SPR penetration';
         } else {
-          html = 'Increase spirit penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getIncrease(effect) + ' spirit penetration' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'RES_SLASH_ATK_PENETRATION' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' slash res penet.';
         } else {
-          html = 'Increase slash resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getIncrease(effect) + ' slash atk resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'RES_PIERCE_ATK_PENETRATION' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' pierce res penet.';
         } else {
-          html = 'Increase pierce resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getIncrease(effect) + ' pierce atk resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'RES_STRIKE_ATK_PENETRATION' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' strike res penet.';
         } else {
-          html = 'Increase strike resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getIncrease(effect) + ' strike atk resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'RES_MISSILE_ATK_PENETRATION' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' missile res penet.';
         } else {
-          html = 'Increase missile resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getIncrease(effect) + ' missile atk resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'RES_MAGIC_ATK_PENETRATION' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' magic res penet.';
         } else {
-          html = 'Increase magic resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getIncrease(effect) + ' magic atk resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'RES_FIRE_ATK_PENETRATION' :
@@ -1870,7 +1870,7 @@ export class SkillService {
       ON_CRITICAL: ' when performing a critical hit',
       HUMAN: ' when cast on human',
       NETHERBEAST: ' when cast on nether beast',
-      HP_THRESHOLD: ' only when HP < 70%'
+      HP_THRESHOLD: ' only when HP >= 70%'
     };
 
     return conditions[condition];
