@@ -51,7 +51,7 @@ export class EsperService {
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('espers', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('espers', param, extraQuery)));
   }
 
   private async getApiPost(data = null) {

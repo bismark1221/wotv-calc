@@ -13,13 +13,13 @@ export class InventoryService {
   }
 
   async getInventory(user) {
-    const apiResult = await this.apiService.loadData('inventory', user.uid);
+    const apiResult = await this.apiService.get('inventory', user.uid);
 
     return apiResult;
   }
 
   async getInventoryFromId(inventoryId) {
-    const apiResult = await this.apiService.loadData('inventory', inventoryId, [{name: 'fromShareId', value: 1}]);
+    const apiResult = await this.apiService.get('inventory', inventoryId, [{name: 'fromShareId', value: 1}]);
 
     return apiResult;
   }

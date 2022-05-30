@@ -45,7 +45,7 @@ export class MateriaService {
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('materia', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('materia', param, extraQuery)));
   }
 
   async getMateriaForListing(filters = null, sort = 'name', order = 'asc') {

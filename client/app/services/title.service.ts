@@ -12,8 +12,8 @@ export class TitleService {
 
   private async getApi() {
     return {
-      player: JSON.parse(JSON.stringify(await this.apiService.loadData('playerTitles'))),
-      guild: JSON.parse(JSON.stringify(await this.apiService.loadData('guildTitles')))
+      player: JSON.parse(JSON.stringify(await this.apiService.get('playerTitles'))),
+      guild: JSON.parse(JSON.stringify(await this.apiService.get('guildTitles')))
     };
   }
 

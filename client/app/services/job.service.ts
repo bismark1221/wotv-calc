@@ -23,7 +23,7 @@ export class JobService {
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('jobs', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('jobs', param, extraQuery)));
   }
 
   async getJobsForJobPlanner(jobsIds) {

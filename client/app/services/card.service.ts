@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from '@ngx-translate/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';
@@ -32,16 +31,34 @@ export class CardService {
     private rangeService: RangeService,
     private navService: NavService,
     private toolService: ToolService,
-    private authService: AuthService,
-    private firestore: AngularFirestore
+    private authService: AuthService
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('cards', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('cards', param, extraQuery)));
   }
 
   private async getApiPost(data = null) {
     return JSON.parse(JSON.stringify(await this.apiService.post('cards', data)));
+  }
+
+  private async getApiUser(type, extra = null) {
+    switch (type) {
+      case 'get':
+        extra.push({name: 'type', value: 'cards'});
+        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra)));
+      break;
+      case 'post':
+        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'cards', data: extra})));
+      break;
+      case 'delete':
+        return JSON.parse(JSON.stringify(await this.apiService.delete('userData', {type: 'cards', storeId: extra})));
+      break;
+      default:
+      break;
+    }
+
+    return null;
   }
 
   async getCardsForListingWithCosts(filters = null, sort = 'rarity', order = 'desc', options = null) {
@@ -315,7 +332,7 @@ export class CardService {
     return cardFinded;
   }
 
-  saveCard(card, method) {
+  async saveCard(card, method) {
     const savableData = this.getSavableData(card);
 
     if (method === 'new' || method === 'share') {
@@ -324,43 +341,42 @@ export class CardService {
         delete savableData.user;
       }
 
-      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method === 'new') {
-          // @ts-ignore
-          savableData.storeId = data.id;
-          const savedCards = this.getSavedCards();
+      const data = await this.getApiUser('post', savableData);
 
-          if (savedCards[card.dataId]) {
-            savedCards[card.dataId].push(savableData);
-          } else {
-            savedCards[card.dataId] = [savableData];
-          }
-
-          this.localStorageService.set(this.getLocalStorage(), savedCards);
-        }
-        this.card.storeId = data.id;
-
-        return data.id;
-      });
-    } else {
-      return this.firestore.collection(this.getLocalStorage()).doc(card.storeId).set(savableData).then(data => {
+      if (method === 'new') {
+        // @ts-ignore
+        savableData.storeId = data.storeId;
         const savedCards = this.getSavedCards();
-        savedCards[card.dataId].forEach((savedCard, cardIndex) => {
-          if (savedCard.storeId === card.storeId) {
-            savedCards[card.dataId][cardIndex] = savableData;
-            savedCards[card.dataId][cardIndex].storeId = card.storeId;
-          }
-        });
+
+        if (savedCards[card.dataId]) {
+          savedCards[card.dataId].push(savableData);
+        } else {
+          savedCards[card.dataId] = [savableData];
+        }
 
         this.localStorageService.set(this.getLocalStorage(), savedCards);
+      }
+      this.card.storeId = data.storeId;
 
-        return card.storeId;
+      return data.storeId;
+    } else {
+      const data = await this.getApiUser('post', savableData);
+      const savedCards = this.getSavedCards();
+      savedCards[card.dataId].forEach((savedCard, cardIndex) => {
+        if (savedCard.storeId === card.storeId) {
+          savedCards[card.dataId][cardIndex] = savableData;
+          savedCards[card.dataId][cardIndex].storeId = card.storeId;
+        }
       });
+
+      this.localStorageService.set(this.getLocalStorage(), savedCards);
+
+      return card.storeId;
     }
   }
 
-  deleteCard(card) {
-    this.firestore.collection(this.getLocalStorage()).doc(card.storeId).delete();
+  async deleteCard(card) {
+    const data = await this.getApiUser('delete', card.storeId);
 
     const savedCards = this.getSavedCards();
 
@@ -373,20 +389,16 @@ export class CardService {
     this.localStorageService.set(this.getLocalStorage(), savedCards);
   }
 
-  getStoredCard(dataId) {
-    const document = this.firestore.collection(this.getLocalStorage()).doc(dataId);
-
-    return document.valueChanges();
+  async getStoredCard(storeId) {
+    return await this.getApiUser('get', [{name: 'storeId', value: storeId}]);
   }
 
-  getExportableLink() {
+  async getExportableLink() {
     if (!this.card.storeId || this.hasChangeBeenMade()) {
-      return this.saveCard(this.card, 'share');
+      return await this.saveCard(this.card, 'share');
     }
 
-    return new Promise((resolve, reject) => {
-      resolve(this.card.storeId);
-    });
+    return this.card.storeId
   }
 
   hasChangeBeenMade() {

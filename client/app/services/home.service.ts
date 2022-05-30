@@ -13,7 +13,7 @@ export class HomeService {
   ) {}
 
   private async getApi() {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('home')));
+    return JSON.parse(JSON.stringify(await this.apiService.get('home')));
   }
 
   async getHomeData() {

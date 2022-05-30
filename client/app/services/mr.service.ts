@@ -33,7 +33,7 @@ export class MasterRanksService {
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('masterRanks', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('masterRanks', param, extraQuery)));
   }
 
   async getMRs() {

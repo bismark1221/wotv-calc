@@ -23,7 +23,7 @@ export class ItemService {
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('items', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('items', param, extraQuery)));
   }
 
   async getItemsByIds(itemIds) {

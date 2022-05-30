@@ -54,7 +54,7 @@ export class ModalLoadComponent implements OnInit {
     }
   }
 
-  delete(item) {
+  async delete(item) {
     let dataId = null;
 
     switch (this.type) {
@@ -65,7 +65,7 @@ export class ModalLoadComponent implements OnInit {
         break;
       case 'card' :
         dataId = item.dataId;
-        this.cardService.deleteCard(item);
+        await this.cardService.deleteCard(item);
         this.savedItems = this.cardService.getSavedCards()[dataId];
         break;
       case 'esper' :

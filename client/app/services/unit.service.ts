@@ -52,7 +52,7 @@ export class UnitService {
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('units', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('units', param, extraQuery)));
   }
 
   private async getApiPost(data = null) {

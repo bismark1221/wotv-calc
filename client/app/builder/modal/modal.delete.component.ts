@@ -38,13 +38,13 @@ export class ModalDeleteComponent implements OnInit {
     this.modal.dismiss();
   }
 
-  private deleteItem() {
+  private async deleteItem() {
     switch (this.type) {
       case 'unit' :
         this.unitService.deleteUnit(this.item);
         break;
       case 'card' :
-        this.cardService.deleteCard(this.item);
+        await this.cardService.deleteCard(this.item);
         break;
       case 'esper' :
         this.esperService.deleteEsper(this.item);

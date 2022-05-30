@@ -23,7 +23,7 @@ export class RaidService {
   ) {}
 
   private async getRaw(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('raids', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('raids', param, extraQuery)));
   }
 
   async getRaids() {

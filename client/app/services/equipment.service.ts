@@ -266,7 +266,7 @@ export class EquipmentService {
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('equipments', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('equipments', param, extraQuery)));
   }
 
   private async getApiPost(data = null) {

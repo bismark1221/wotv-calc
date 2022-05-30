@@ -29,7 +29,7 @@ export class QuestService {
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('quests', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('quests', param, extraQuery)));
   }
 
   async getQuestBySlug(slug) {

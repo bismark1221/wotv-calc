@@ -74,14 +74,13 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
           this.formatCardBuffs();
           this.loadingBuild = false;
         } else {
-          this.cardService.getStoredCard(data).subscribe(async (cardData: any) => {
-            if (cardData) {
-              this.selectedCardId = cardData.dataId;
-              await this.selectCard(cardData, true);
-              this.card.storeId = data;
-            }
-            this.loadingBuild = false;
-          });
+          const cardData = await this.cardService.getStoredCard(data);
+          if (cardData) {
+            this.selectedCardId = cardData.dataId;
+            await this.selectCard(cardData, true);
+            this.card.storeId = data;
+          }
+          this.loadingBuild = false;
         }
       } else {
         this.cardSelector.open();

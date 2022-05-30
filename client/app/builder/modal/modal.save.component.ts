@@ -81,37 +81,35 @@ export class ModalSaveComponent implements OnInit {
     return alreadyExists;
   }
 
-  private saveItem(method) {
-    let savePromise = null;
+  private async saveItem(method) {
+    let savedItem = null;
 
     switch (this.type) {
       case 'unit' :
-        savePromise = this.unitService.saveUnit(this.item, method);
+        savedItem = this.unitService.saveUnit(this.item, method);
         break;
       case 'card' :
-        savePromise = this.cardService.saveCard(this.item, method);
+        savedItem = await this.cardService.saveCard(this.item, method);
         break;
       case 'esper' :
-        savePromise = this.esperService.saveEsper(this.item, method);
+        savedItem = this.esperService.saveEsper(this.item, method);
         break;
       case 'equipment' :
-        savePromise = this.equipmentService.saveEquipment(this.item, method);
+        savedItem = this.equipmentService.saveEquipment(this.item, method);
         break;
       case 'materia' :
-        savePromise = this.materiaService.saveMateria(this.item, method);
+        savedItem = this.materiaService.saveMateria(this.item, method);
         break;
       case 'team' :
-        savePromise = this.teamService.saveTeam(this.item, method);
+        savedItem = this.teamService.saveTeam(this.item, method);
         break;
       default :
         console.log('Trying to save something not managed : ' + this.type);
         break;
     }
 
-    if (savePromise) {
-      savePromise.then(result => {
-        this.modal.close();
-      });
+    if (savedItem) {
+      this.modal.close();
     } else {
       this.modal.dismiss();
     }

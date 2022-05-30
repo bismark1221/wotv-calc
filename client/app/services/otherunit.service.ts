@@ -26,7 +26,7 @@ export class OtherUnitService {
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('bestiary', param, extraQuery)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('bestiary', param, extraQuery)));
   }
 
   async getUnitsForListing(filters = null, sort = 'name', order = 'asc') {

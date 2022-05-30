@@ -9,10 +9,10 @@ export class IndexService {
   ) {}
 
   async getUnits() {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('index')));
+    return JSON.parse(JSON.stringify(await this.apiService.get('index')));
   }
 
   async getOneUnit(dataId) {
-    return JSON.parse(JSON.stringify(await this.apiService.loadData('index', dataId)));
+    return JSON.parse(JSON.stringify(await this.apiService.get('index', dataId)));
   }
 }

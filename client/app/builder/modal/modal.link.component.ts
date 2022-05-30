@@ -43,7 +43,7 @@ export class ModalLinkComponent implements OnInit, AfterViewInit {
     }
   }
 
-  ngAfterViewInit() {
+  async ngAfterViewInit() {
     switch (this.type) {
       case 'unit' :
         this.unitService.getExportableLink().then(link => {
@@ -52,10 +52,9 @@ export class ModalLinkComponent implements OnInit, AfterViewInit {
         });
         break;
       case 'card' :
-        this.cardService.getExportableLink().then(link => {
-          this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/card') + '/' + link;
-          this.saveStep = 'link';
-        });
+        const link = await this.cardService.getExportableLink();
+        this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/card') + '/' + link;
+        this.saveStep = 'link';
         break;
       case 'esper' :
         this.esperService.getExportableLink().then(link => {
