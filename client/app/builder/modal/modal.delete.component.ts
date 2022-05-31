@@ -41,22 +41,22 @@ export class ModalDeleteComponent implements OnInit {
   private async deleteItem() {
     switch (this.type) {
       case 'unit' :
-        this.unitService.deleteUnit(this.item);
+        await this.unitService.deleteUnit(this.item);
         break;
       case 'card' :
         await this.cardService.deleteCard(this.item);
         break;
       case 'esper' :
-        this.esperService.deleteEsper(this.item);
+        await this.esperService.deleteEsper(this.item);
         break;
       case 'equipment' :
-        this.equipmentService.deleteEquipment(this.item);
+        await this.equipmentService.deleteEquipment(this.item);
         break;
       case 'materia' :
-        this.materiaService.deleteMateria(this.item);
+        await this.materiaService.deleteMateria(this.item);
         break;
       case 'team' :
-        this.teamService.deleteTeam(this.item);
+        await this.teamService.deleteTeam(this.item);
         break;
       default :
         console.log('Trying to delete something not managed : ' + this.type);

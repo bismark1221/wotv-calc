@@ -86,22 +86,22 @@ export class ModalSaveComponent implements OnInit {
 
     switch (this.type) {
       case 'unit' :
-        savedItem = this.unitService.saveUnit(this.item, method);
+        savedItem = await this.unitService.saveUnit(this.item, method);
         break;
       case 'card' :
         savedItem = await this.cardService.saveCard(this.item, method);
         break;
       case 'esper' :
-        savedItem = this.esperService.saveEsper(this.item, method);
+        savedItem = await this.esperService.saveEsper(this.item, method);
         break;
       case 'equipment' :
-        savedItem = this.equipmentService.saveEquipment(this.item, method);
+        savedItem = await this.equipmentService.saveEquipment(this.item, method);
         break;
       case 'materia' :
-        savedItem = this.materiaService.saveMateria(this.item, method);
+        savedItem = await this.materiaService.saveMateria(this.item, method);
         break;
       case 'team' :
-        savedItem = this.teamService.saveTeam(this.item, method);
+        savedItem = await this.teamService.saveTeam(this.item, method);
         break;
       default :
         console.log('Trying to save something not managed : ' + this.type);

@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from '@ngx-translate/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { GridService } from './grid.service';
 import { NavService } from './nav.service';
@@ -46,8 +45,7 @@ export class EsperService {
     private navService: NavService,
     private authService: AuthService,
     private skillService: SkillService,
-    private toolService: ToolService,
-    private firestore: AngularFirestore
+    private toolService: ToolService
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
@@ -308,7 +306,7 @@ export class EsperService {
     return esperFinded;
   }
 
-  saveEsper(esper, method) {
+  async saveEsper(esper, method) {
     const savableData = this.getSavableData(esper);
 
     if (method === 'new' || method === 'share') {
@@ -317,44 +315,42 @@ export class EsperService {
         delete savableData.user;
       }
 
-      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method === 'new') {
-          // @ts-ignore
-          savableData.storeId = data.id;
-          const savedEspers = this.getSavedEspers();
+      const data = await this.getApiUser('post', savableData);
 
-          if (savedEspers[esper.dataId]) {
-            savedEspers[esper.dataId].push(savableData);
-          } else {
-            savedEspers[esper.dataId] = [savableData];
-          }
+      if (method === 'new') {
+        // @ts-ignore
+        savableData.storeId = data.storeId;
+        const savedEspers = this.getSavedEspers();
 
-          this.localStorageService.set(this.getLocalStorage(), savedEspers);
+        if (savedEspers[esper.dataId]) {
+          savedEspers[esper.dataId].push(savableData);
+        } else {
+          savedEspers[esper.dataId] = [savableData];
         }
 
-        this.esper.storeId = data.id;
-
-        return data.id;
-      });
-    } else {
-      return this.firestore.collection(this.getLocalStorage()).doc(esper.storeId).set(savableData).then(data => {
-        const savedEspers = this.getSavedEspers();
-        savedEspers[esper.dataId].forEach((savedEsper, esperIndex) => {
-          if (savedEsper.storeId === esper.storeId) {
-            savedEspers[esper.dataId][esperIndex] = savableData;
-            savedEspers[esper.dataId][esperIndex].storeId = esper.storeId;
-          }
-        });
-
         this.localStorageService.set(this.getLocalStorage(), savedEspers);
+      }
+      this.esper.storeId = data.id;
 
-        return esper.storeId;
+      return data.storeId;
+    } else {
+      const data = await this.getApiUser('post', savableData);
+      const savedEspers = this.getSavedEspers();
+      savedEspers[esper.dataId].forEach((savedEsper, esperIndex) => {
+        if (savedEsper.storeId === esper.storeId) {
+          savedEspers[esper.dataId][esperIndex] = savableData;
+          savedEspers[esper.dataId][esperIndex].storeId = esper.storeId;
+        }
       });
+
+      this.localStorageService.set(this.getLocalStorage(), savedEspers);
+
+      return esper.storeId;
     }
   }
 
-  deleteEsper(esper) {
-    this.firestore.collection(this.getLocalStorage()).doc(esper.storeId).delete();
+  async deleteEsper(esper) {
+    const data = await this.getApiUser('delete', esper.storeId);
 
     const savedEspers = this.getSavedEspers();
 
@@ -367,20 +363,16 @@ export class EsperService {
     this.localStorageService.set(this.getLocalStorage(), savedEspers);
   }
 
-  getStoredEsper(dataId) {
-    const document = this.firestore.collection(this.getLocalStorage()).doc(dataId);
-
-    return document.valueChanges();
+  async getStoredEsper(storeId) {
+    return await this.getApiUser('get', [{name: 'storeId', value: storeId}]);
   }
 
-  getExportableLink() {
+  async getExportableLink() {
     if (!this.esper.storeId || this.hasChangeBeenMade()) {
-      return this.saveEsper(this.esper, 'share');
+      return await this.saveEsper(this.esper, 'share');
     }
 
-    return new Promise((resolve, reject) => {
-      resolve(this.esper.storeId);
-    });
+    return this.esper.storeId;
   }
 
   hasChangeBeenMade() {

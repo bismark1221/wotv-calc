@@ -60,7 +60,7 @@ export class ModalLoadComponent implements OnInit {
     switch (this.type) {
       case 'unit' :
         dataId = item.dataId;
-        this.unitService.deleteUnit(item);
+        await this.unitService.deleteUnit(item);
         this.savedItems = this.unitService.getSavedUnits()[dataId];
         break;
       case 'card' :
@@ -70,16 +70,16 @@ export class ModalLoadComponent implements OnInit {
         break;
       case 'esper' :
         dataId = item.dataId;
-        this.esperService.deleteEsper(item);
+        await this.esperService.deleteEsper(item);
         this.savedItems = this.esperService.getSavedEspers()[dataId];
         break;
       case 'equipment' :
         dataId = item.dataId;
-        this.equipmentService.deleteEquipment(item);
+        await this.equipmentService.deleteEquipment(item);
         this.savedItems = this.equipmentService.getSavedEquipments()[dataId];
         break;
       case 'team' :
-        this.teamService.deleteTeam(item);
+        await this.teamService.deleteTeam(item);
         const savedTeams = this.teamService.getSavedTeams();
         this.savedItems = [];
         Object.keys(savedTeams).forEach(teamName => {

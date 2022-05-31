@@ -107,14 +107,13 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
           this.maxStar = this.esper.SPs.length;
           this.loadingBuild = false;
         } else {
-          this.esperService.getStoredEsper(data).subscribe(async (esperData: any) => {
-            if (esperData) {
-              this.selectedEsperId = esperData.dataId;
-              await this.selectEsper(esperData, true);
-              this.esper.storeId = data;
-            }
-            this.loadingBuild = false;
-          });
+          const esperData = await this.esperService.getStoredEsper(data);
+          if (esperData) {
+            this.selectedEsperId = esperData.dataId;
+            await this.selectEsper(esperData, true);
+            this.esper.storeId = data;
+          }
+          this.loadingBuild = false;
         }
       } else {
         this.esperSelector.open();
