@@ -23,9 +23,6 @@ jobs:
       - name: Build prod
         run: ng build --prod
 
-      - name: Check Hash
-        run: npm run post-build
-
       - name: Install Sentry-cli
         run: curl -sL https://sentry.io/get-cli/ | bash
 

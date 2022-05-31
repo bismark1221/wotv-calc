@@ -1,10 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Angulartics2 } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
-
-import { CheckHashService } from './services/checkHash.service';
 
 @Component({
   selector: 'app-root',
@@ -12,13 +10,12 @@ import { CheckHashService } from './services/checkHash.service';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
   constructor(
     angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
     translate: TranslateService,
     private angulartics: Angulartics2,
-    private localStorageService: LocalStorageService,
-    private checkHashService: CheckHashService
+    private localStorageService: LocalStorageService
   ) {
     angulartics2GoogleAnalytics.startTracking();
 
@@ -36,9 +33,5 @@ export class AppComponent implements OnInit {
 
   onActivate(event) {
     window.scroll(0, 0);
-  }
-
-  async ngOnInit() {
-    await this.checkHashService.initHashCheck();
   }
 }

@@ -108,7 +108,6 @@ import { ItemService } from './services/item.service';
 import { AuthService } from './services/auth.service';
 import { ToolService } from './services/tool.service';
 import { MasterRanksService } from './services/mr.service';
-import { CheckHashService } from './services/checkHash.service';
 import { TitleService } from './services/title.service';
 import { RangeService } from './services/range.service';
 import { IndexService } from './services/index.service';
@@ -241,7 +240,6 @@ export function createTranslateLoader(http: HttpClient) {
     AuthService,
     ToolService,
     MasterRanksService,
-    CheckHashService,
     TitleService,
     RangeService,
     IndexService,
