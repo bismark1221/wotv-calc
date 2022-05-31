@@ -66,7 +66,9 @@ export class ApiService {
 
     return this.http.delete(
       uri,
-      data
+      {
+        body: data
+      }
     )
     .map(response => {
       return response;
