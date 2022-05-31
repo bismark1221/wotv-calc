@@ -233,6 +233,11 @@ export class CardService {
       data.user = user ? user.uid : null;
       // @ts-ignore
       data.customName = card.customName ? card.customName : '';
+
+      if (card.storeId) {
+        // @ts-ignore
+        data.storeId = card.storeId;
+      }
     }
 
     return data;

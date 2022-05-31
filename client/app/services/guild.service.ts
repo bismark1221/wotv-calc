@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
-import { AngularFirestore } from '@angular/fire/compat/firestore';
-
 import { Guild } from '../entities/guild';
 import { NavService } from './nav.service';
 import { AuthService } from './auth.service';
+import { ApiService } from './api.service';
 
 @Injectable()
 export class GuildService {
@@ -86,8 +85,27 @@ export class GuildService {
     private localStorageService: LocalStorageService,
     private navService: NavService,
     private authService: AuthService,
-    private firestore: AngularFirestore
+    private apiService: ApiService
   ) {}
+
+  private async getApiUser(type, extra = null) {
+    switch (type) {
+      case 'get':
+        extra.push({name: 'type', value: 'guild'});
+        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra)));
+      break;
+      case 'post':
+        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'guild', data: extra})));
+      break;
+      case 'delete':
+        return JSON.parse(JSON.stringify(await this.apiService.delete('userData', {type: 'guild', storeId: extra})));
+      break;
+      default:
+      break;
+    }
+
+    return null;
+  }
 
   getLocalStorage() {
     return this.navService.getVersion() === 'JP' ? 'jp_guild' : 'guild';
@@ -143,6 +161,11 @@ export class GuildService {
       const user = this.authService.getUser();
       // @ts-ignore
       data.user = user ? user.uid : null;
+
+      if (guild.storeId) {
+        // @ts-ignore
+        data.storeId = guild.storeId;
+      }
     }
 
     return data;
@@ -158,28 +181,26 @@ export class GuildService {
     }
   }
 
-  saveGuild(guild) {
+  async saveGuild(guild) {
     const savableData = this.getSavableData(guild);
 
     if (this.guildAlreadyExists(guild)) {
-      return this.firestore.collection(this.getLocalStorage()).doc(guild.storeId).set(savableData).then(data => {
-        // @ts-ignore
-        savableData.storeId = guild.storeId;
+      const data = await this.getApiUser('post', savableData);
+      // @ts-ignore
+      savableData.storeId = guild.storeId;
 
-        this.localStorageService.set(this.getLocalStorage(), savableData);
+      this.localStorageService.set(this.getLocalStorage(), savableData);
 
-        return guild.storeId;
-      });
+      return guild.storeId;
     } else {
-      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        // @ts-ignore
-        savableData.storeId = data.id;
+      const data = await this.getApiUser('post', savableData);
+      // @ts-ignore
+      savableData.storeId = data.storeId;
 
-        this.localStorageService.set(this.getLocalStorage(), savableData);
-        this.guild.storeId = data.id;
+      this.localStorageService.set(this.getLocalStorage(), savableData);
+      this.guild.storeId = data.storeId;
 
-        return data.id;
-      });
+      return data.storeId;
     }
   }
 

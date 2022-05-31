@@ -213,6 +213,11 @@ export class EsperService {
       data.user = user ? user.uid : null;
       // @ts-ignore
       data.customName = esper.customName ? esper.customName : '';
+
+      if (esper.storeId) {
+        // @ts-ignore
+        data.storeId = esper.storeId;
+      }
     }
 
     return data;

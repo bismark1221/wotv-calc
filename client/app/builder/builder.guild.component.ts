@@ -49,7 +49,7 @@ export class BuilderGuildComponent implements OnInit, AfterViewInit {
     });
   }
 
-  saveGuild() {
-    this.guildService.saveGuild(this.guild);
+  async saveGuild() {
+    await this.guildService.saveGuild(this.guild);
   }
 }
