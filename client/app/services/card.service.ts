@@ -398,7 +398,7 @@ export class CardService {
       return await this.saveCard(this.card, 'share');
     }
 
-    return this.card.storeId
+    return this.card.storeId;
   }
 
   hasChangeBeenMade() {

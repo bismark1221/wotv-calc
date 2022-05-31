@@ -46,39 +46,28 @@ export class ModalLinkComponent implements OnInit, AfterViewInit {
   async ngAfterViewInit() {
     switch (this.type) {
       case 'unit' :
-        this.unitService.getExportableLink().then(link => {
-          this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/unit') + '/' + link;
-          this.saveStep = 'link';
-        });
+        this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/unit') + '/' + await this.unitService.getExportableLink();
+        this.saveStep = 'link';
         break;
       case 'card' :
-        const link = await this.cardService.getExportableLink();
-        this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/card') + '/' + link;
+        this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/card') + '/' + await this.cardService.getExportableLink();
         this.saveStep = 'link';
         break;
       case 'esper' :
-        this.esperService.getExportableLink().then(link => {
-          this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/esper') + '/' + link;
-          this.saveStep = 'link';
-        });
+        this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/esper') + '/' + await this.esperService.getExportableLink();
+        this.saveStep = 'link';
         break;
       case 'equipment' :
-        this.equipmentService.getExportableLink().then(link => {
-          this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/equipment') + '/' + link;
-          this.saveStep = 'link';
-        });
+        this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/equipment') + '/' + await this.equipmentService.getExportableLink();
+        this.saveStep = 'link';
         break;
       case 'team' :
-        this.teamService.getExportableLink().then(link => {
-          this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/team') + '/' + link;
-          this.saveStep = 'link';
-        });
+        this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/team') + '/' + await this.teamService.getExportableLink();
+        this.saveStep = 'link';
         break;
       case 'materia' :
-        this.materiaService.getExportableLink(this.item).then(link => {
-          this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/materia') + '/' + link;
-          this.saveStep = 'link';
-        });
+        this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/materia') + '/' + await this.materiaService.getExportableLink(this.item);
+        this.saveStep = 'link';
         break;
       case 'inventory' :
         break;

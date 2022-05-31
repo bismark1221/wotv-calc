@@ -50,10 +50,9 @@ export class LoginComponent {
     });
   }
 
-  validateSync() {
-    this.authService.firstSync().then(result => {
-      this.modal.close();
-    });
+  async validateSync() {
+    await this.authService.firstSync();
+    this.modal.close();
   }
 
   dontSync() {

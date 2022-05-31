@@ -58,6 +58,25 @@ export class EsperService {
     return JSON.parse(JSON.stringify(await this.apiService.post('espers', data)));
   }
 
+  private async getApiUser(type, extra = null) {
+    switch (type) {
+      case 'get':
+        extra.push({name: 'type', value: 'espers'});
+        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra)));
+      break;
+      case 'post':
+        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'espers', data: extra})));
+      break;
+      case 'delete':
+        return JSON.parse(JSON.stringify(await this.apiService.delete('userData', {type: 'espers', storeId: extra})));
+      break;
+      default:
+      break;
+    }
+
+    return null;
+  }
+
   async getEspersForListingWithCosts(filters = null, sort = 'rarity', order = 'desc', options = null) {
     let apiResult = null;
 

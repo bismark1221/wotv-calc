@@ -2,13 +2,13 @@ import { Injectable, NgZone } from '@angular/core';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { LocalStorageService } from 'angular-2-local-storage';
 
 import { User } from '../entities/user';
 import { NavService } from './nav.service';
+import { ApiService } from './api.service';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +19,9 @@ export class AuthService {
   load = 0;
   initialLoad = false;
 
+  versions = ['gl', 'jp'];
+  types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'masterRank', 'materia'];
+
   private userDataSubject = new BehaviorSubject(this.user);
   $user = this.userDataSubject.asObservable();
 
@@ -27,9 +30,9 @@ export class AuthService {
 
   constructor(
     private fireauth: AngularFireAuth,
-    private firestore: AngularFirestore,
     private localStorageService: LocalStorageService,
-    private navService: NavService
+    private navService: NavService,
+    private apiService: ApiService
   ) {
     this.fireauth.authState.subscribe(user => {
       this.updateUser(user);
@@ -54,64 +57,46 @@ export class AuthService {
   }
 
   private async loadUserData(newLogin = false) {
-    return await Promise.all(
-      this.loadSavedData()
-    ).then(responses => {
-      if (this.initialLoad) {
-        const result = {
-          syncPossible: true
-        };
+    const apiResult = await this.loadSavedData();
 
-        const types = [
-          'teams',
-          'units',
-          'espers',
-          'cards',
-          'equipments',
-          'guild',
-          'jp_teams',
-          'jp_units',
-          'jp_espers',
-          'jp_cards',
-          'jp_equipments',
-          'jp_guild',
-          'jp_masterRank',
-          'masterRank',
-          'jp_materia',
-          'materia'
-        ];
+    if (this.initialLoad) {
+      const result = {
+        syncPossible: true
+      };
 
-        for (let i = 0; i <= types.length - 1; i++) {
-          // @ts-ignore
-          if (responses[i].data.length > 0) {
+      for (const version of this.versions) {
+        for (const type of this.types) {
+          if (apiResult[version][type].length > 0) {
             result.syncPossible = false;
           }
         }
+      }
 
-        if (result.syncPossible) {
-          let localDataFound = false;
+      if (result.syncPossible) {
+        let localDataFound = false;
 
-          types.forEach(type => {
-            const savedData = this.localStorageService.get(type);
+        for (const version of this.versions) {
+          for (const type of this.types) {
+            const savedData = this.localStorageService.get((version === 'jp' ? 'jp_' : '') + type);
             if (savedData && Object.keys(savedData).length > 0) {
               localDataFound = true;
             }
-          });
-
-          if (!localDataFound) {
-            result.syncPossible = false;
           }
         }
 
-        if (!newLogin || !result.syncPossible) {
-          for (let i = 0; i <= types.length - 1; i++) {
-            let data = {};
+        if (!localDataFound) {
+          result.syncPossible = false;
+        }
+      }
 
-            // @ts-ignore
-            responses[i].data.forEach(item => {
-              if (i === 5 || i === 11 || i === 12 || i === 13) {
+      if (!newLogin || !result.syncPossible) {
+        for (const version of this.versions) {
+          for (const type of this.types) {
+            let data = {};
+            for (const item of apiResult[version][type]) {
+              if (type === 'guild' || type === 'masterRank') {
                 data = item;
-              } else if (i === 0 || i === 6) {
+              } else if (type === 'teams') {
                 data[item.name] = item;
               } else {
                 if (!data[item.dataId]) {
@@ -119,51 +104,55 @@ export class AuthService {
                 }
                 data[item.dataId].push(item);
               }
-            });
+            }
 
-            // @ts-ignore
-            this.localStorageService.set(responses[i].type, data);
+            this.localStorageService.set((version === 'jp' ? 'jp_' : '') + type, data);
           }
-
-          this.load++;
-          this.loadDataSubject.next(this.load);
         }
 
-        return result;
+        this.load++;
+        this.loadDataSubject.next(this.load);
       }
-    });
+
+      return result;
+    }
   }
 
-  private loadSavedData() {
-    const promises = [];
+  private async getApiUser(apiCall, type, version, extra = null) {
+    switch (apiCall) {
+      case 'get':
+        extra.push({name: 'type', value: type});
+        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra, version)));
+      break;
+      case 'post':
+        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: type, data: extra}, version)));
+      break;
+      default:
+      break;
+    }
 
-    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank', 'jp_materia', 'materia'].forEach(type => {
-      promises.push(new Promise((resolve, reject) => {
-        this.firestore.collection(type, ref => ref.where('user', '==', this.user.uid)).snapshotChanges().subscribe(data => {
-          const items = [];
+    return null;
+  }
 
-          data.forEach(item => {
-            const itemData = item.payload.doc.data();
-            // @ts-ignore
-            itemData.storeId = item.payload.doc.id;
-            items.push(itemData);
-          });
+  private async loadSavedData() {
+    const result = {};
 
-          resolve({
-            type: type,
-            data: items
-          });
-        });
-      }));
-    });
+    for (const version of this.versions) {
+      result[version] = {};
+      for (const type of this.types) {
+        result[version][type] = await this.getApiUser('get', type, version, [{name: 'user', value: this.user.uid}]);
+      }
+    }
 
-    return promises;
+    return result;
   }
 
   private emptyLocalStorage() {
-    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank', 'jp_materia', 'materia'].forEach(type => {
-      this.localStorageService.remove(type);
-    });
+    for (const version of this.versions) {
+      for (const type of this.types) {
+        this.localStorageService.remove((version === 'jp' ? 'jp_' : '') + type);
+      }
+    }
 
     this.load++;
     this.loadDataSubject.next(this.load);
@@ -223,35 +212,32 @@ export class AuthService {
     return this.user;
   }
 
-  firstSync() {
-    const types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank', 'materia', 'jp_materia'];
+  async firstSync() {
     const promises = [];
 
-    types.forEach(type => {
-      const data = this.localStorageService.get(type);
-      if (data && Object.keys(data).length > 0) {
-        if (type !== 'guild' && type !== 'jp_guild' && type !== 'jp_masterRank' && type !== 'masterRank') {
-          Object.keys(data).forEach(itemId => {
-            data[itemId].customName = '1';
-            data[itemId].user = this.user.uid;
+    for (const version of this.versions) {
+      for (const type of this.types) {
+        const data = this.localStorageService.get((version === 'jp' ? 'jp_' : '') + type);
+        if (data && Object.keys(data).length > 0) {
+          if (type !== 'guild' && type !== 'masterRank') {
+            for (const itemId of Object.keys(data)) {
+              data[itemId].customName = '1';
+              data[itemId].user = this.user.uid;
 
-            promises.push(this.firestore.collection(type).add(data[itemId]));
-          });
-        } else {
-          // @ts-ignore
-          data.user = this.user.uid;
+              await this.getApiUser('post', type, version, data[itemId]);
+            }
+          } else {
+            // @ts-ignore
+            data.user = this.user.uid;
 
-          promises.push(this.firestore.collection(type).add(data));
+            await this.getApiUser('post', type, version, data);
+          }
         }
       }
-    });
+    }
 
-    return Promise.all(
-      promises
-    ).then(responses => {
-      this.emptyLocalStorage();
-      return this.loadUserData();
-    });
+    this.emptyLocalStorage();
+    return await this.loadUserData();
   }
 
   getAvailableSync() {

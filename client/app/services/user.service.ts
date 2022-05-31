@@ -3,8 +3,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { LocalStorageService } from 'angular-2-local-storage';
 
-import { AngularFirestore } from '@angular/fire/compat/firestore';
-
 import { ApiService } from './api.service';
 import { AuthService } from './auth.service';
 import { CardService } from './card.service';
@@ -86,8 +84,7 @@ export class UserService {
     private equipmentService: EquipmentService,
     private materiaService: MateriaService,
     private guildService: GuildService,
-    private localStorageService: LocalStorageService,
-    private firestore: AngularFirestore
+    private localStorageService: LocalStorageService
   ) {
   }
 
@@ -427,7 +424,7 @@ export class UserService {
           6: 16,
           9: 16,
           10: 16
-        }
+        };
 
         if (managedTYype[teamType.type]) {
           for (const partyData of teamType.parties) {
@@ -566,6 +563,25 @@ export class UserService {
     return savedItems;
   }
 
+  private async getApiUser(apiCall, type, extra = null) {
+    switch (apiCall) {
+      case 'get':
+        extra.push({name: 'type', value: type});
+        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra)));
+      break;
+      case 'post':
+        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: type, data: extra})));
+      break;
+      case 'delete':
+        return JSON.parse(JSON.stringify(await this.apiService.delete('userData', {type: type, storeId: extra})));
+      break;
+      default:
+      break;
+    }
+
+    return null;
+  }
+
   async saveNewData(data, type) {
     this.type = type;
     this.savedItems = this.getSavedItems(this.type);
@@ -574,19 +590,18 @@ export class UserService {
     for (const item of data) {
       delete item.ingameId;
 
-      await this.firestore.collection(this.type).add(item).then((storedData: any) => {
-        item.storeId = storedData.id;
+      const storedData = await this.getApiUser('post', type, item);
+      item.storeId = storedData.id;
 
-        if (this.type !== 'teams') {
-          if (this.savedItems[item.dataId]) {
-            this.savedItems[item.dataId].push(item);
-          } else {
-            this.savedItems[item.dataId] = [item];
-          }
+      if (this.type !== 'teams') {
+        if (this.savedItems[item.dataId]) {
+          this.savedItems[item.dataId].push(item);
         } else {
-          this.savedItems[item.name] = item;
+          this.savedItems[item.dataId] = [item];
         }
-      });
+      } else {
+        this.savedItems[item.name] = item;
+      }
 
       this.loading.saveData[this.type].save--;
     }
@@ -598,75 +613,53 @@ export class UserService {
     this.type = type;
     this.savedItems = this.getSavedItems(this.type);
 
-    const itemPromise = new Promise((resolve, reject) => {
-       this.firestore.collection(
-        this.type,
-        ref => ref.where('user', '==', this.authService.getUser().uid).where('fromInGame', '==', true)
-      )
-      .snapshotChanges()
-      .subscribe(data => {
-        resolve(data);
-      });
-    });
+    const data = await this.getApiUser('get', type, [{name: 'user', value: this.authService.getUser().uid}, {name: 'fromInGame', value: 1}]);
+    if (data) {
+      const itemStoreIds = [];
 
-    await itemPromise.then(async (data: any) => {
-      if (data) {
-        const itemStoreIds = [];
+      this.loading.saveData[this.type].delete = data.length;
 
-        this.loading.saveData[this.type].delete = data.length;
+      for (const item of data) {
+        itemStoreIds.push(item.storeId);
+        await this.getApiUser('delete', this.type, item.storeId);
+        this.loading.saveData[this.type].delete--;
+      }
 
-        for (const item of data) {
-          itemStoreIds.push(item.payload.doc.id);
-          await this.firestore.collection(this.type).doc(item.payload.doc.id).delete();
-          this.loading.saveData[this.type].delete--;
-        }
-
-        if (itemStoreIds.length > 0) {
-          for (const itemId of Object.keys(this.savedItems)) {
-            if (this.type !== 'teams') {
-              let index = 0;
-              for (const item of this.savedItems[itemId]) {
-                if (itemStoreIds.indexOf(item.storeId) !== -1) {
-                  this.savedItems[itemId].splice(index, 1);
-                }
-
-                index++;
+      if (itemStoreIds.length > 0) {
+        for (const itemId of Object.keys(this.savedItems)) {
+          if (this.type !== 'teams') {
+            let index = 0;
+            for (const item of this.savedItems[itemId]) {
+              if (itemStoreIds.indexOf(item.storeId) !== -1) {
+                this.savedItems[itemId].splice(index, 1);
               }
-            } else {
-              delete this.savedItems[itemId];
+
+              index++;
             }
+          } else {
+            delete this.savedItems[itemId];
           }
         }
-
-        this.localStorageService.set(this.type, this.savedItems);
       }
-    });
+
+      this.localStorageService.set(this.type, this.savedItems);
+    }
   }
 
   async deleteSavedGuildMR(type) {
     this.type = type;
     this.savedItems = this.getSavedItems(this.type);
-    const itemPromise = new Promise((resolve, reject) => {
-      this.firestore.collection(
-        this.type,
-        ref => ref.where('user', '==', this.authService.getUser().uid)
-      )
-      .snapshotChanges()
-      .subscribe(data => {
-        resolve(data);
-      });
-    });
 
-    await itemPromise.then(async (data: any) => {
-      if (data) {
-        this.loading.saveData[this.type] = 'delete';
-        for (const item of data) {
-          await this.firestore.collection(this.type).doc(item.payload.doc.id).delete();
-        }
+    const data = await this.getApiUser('get', type, [{name: 'user', value: this.authService.getUser().uid}]);
 
-        this.localStorageService.remove(this.type);
+    if (data) {
+      this.loading.saveData[this.type] = 'delete';
+      for (const item of data) {
+        await this.getApiUser('delete', this.type, item.storeId);
       }
-    });
+
+      this.localStorageService.remove(this.type);
+    }
   }
 
   async saveNewGuildMR(data, type) {
@@ -674,11 +667,10 @@ export class UserService {
 
     if (data) {
       this.loading.saveData[this.type] = 'save';
-      await this.firestore.collection(this.type).add(data).then((storedData: any) => {
-        data.storeId = storedData.id;
 
-        this.savedItems = data;
-      });
+      const storedData = await this.getApiUser('post', type, data);
+      data.storeId = storedData.id;
+      this.savedItems = data;
     }
 
     this.localStorageService.set(this.type, this.savedItems);

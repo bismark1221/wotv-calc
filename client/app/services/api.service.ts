@@ -15,8 +15,8 @@ export class ApiService {
     private http: HttpClient
   ) {}
 
-  public async get(type, param = null, extraQuery = []) {
-    const version = this.navService.getVersion() === 'JP' ? 'jp' : 'gl';
+  public async get(type, param = null, extraQuery = [], forcedVersion = null) {
+    const version = forcedVersion ? forcedVersion : this.navService.getVersion() === 'JP' ? 'jp' : 'gl';
 
     let uri = '/api/' + version + '/' + type + (param ? '/' + param : '');
 
@@ -42,8 +42,8 @@ export class ApiService {
       .toPromise();
   }
 
-  public async post(type, data) {
-    const version = this.navService.getVersion() === 'JP' ? 'jp' : 'gl';
+  public async post(type, data, forcedVersion = null) {
+    const version = forcedVersion ? forcedVersion : this.navService.getVersion() === 'JP' ? 'jp' : 'gl';
     const uri = '/api/' + version + '/' + type;
 
     return this.http.post(
