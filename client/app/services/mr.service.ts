@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
-import { AngularFirestore } from '@angular/fire/compat/firestore';
-
 import { NavService } from './nav.service';
 import { ApiService } from './api.service';
 import { AuthService } from './auth.service';
@@ -28,12 +26,15 @@ export class MasterRanksService {
     private localStorageService: LocalStorageService,
     private apiService: ApiService,
     private navService: NavService,
-    private authService: AuthService,
-    private firestore: AngularFirestore
+    private authService: AuthService
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
     return JSON.parse(JSON.stringify(await this.apiService.get('masterRanks', param, extraQuery)));
+  }
+
+  private async getApiUser(extra = null) {
+    return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'masterRank', data: extra})));
   }
 
   async getMRs() {
@@ -121,6 +122,11 @@ export class MasterRanksService {
       const user = this.authService.getUser();
       // @ts-ignore
       data.user = user ? user.uid : null;
+
+      if (masterRanks.storeId) {
+        // @ts-ignore
+        data.storeId = masterRanks.storeId;
+      }
     }
 
     return data;
@@ -136,28 +142,26 @@ export class MasterRanksService {
     }
   }
 
-  saveMasterRanks(masterRanks) {
+  async saveMasterRanks(masterRanks) {
     const savableData = this.getSavableData(masterRanks);
 
     if (this.masterRanksdAlreadyExists()) {
-      return this.firestore.collection(this.getLocalStorage()).doc(masterRanks.storeId).set(savableData).then(data => {
-        // @ts-ignore
-        savableData.storeId = masterRanks.storeId;
+      const data = await this.getApiUser(savableData);
+      // @ts-ignore
+      savableData.storeId = masterRanks.storeId;
 
-        this.localStorageService.set(this.getLocalStorage(), savableData);
+      this.localStorageService.set(this.getLocalStorage(), savableData);
 
-        return masterRanks.storeId;
-      });
+      return masterRanks.storeId;
     } else {
-      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        // @ts-ignore
-        savableData.storeId = data.id;
+      const data = await this.getApiUser(savableData);
+      // @ts-ignore
+      savableData.storeId = data.id;
 
-        this.localStorageService.set(this.getLocalStorage(), savableData);
-        this.masterRanks.storeId = data.id;
+      this.localStorageService.set(this.getLocalStorage(), savableData);
+      this.masterRanks.storeId = data.id;
 
-        return data.id;
-      });
+      return data.id;
     }
   }
 }

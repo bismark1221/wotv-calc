@@ -49,7 +49,7 @@ export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
     });
   }
 
-  saveMasterRanks() {
-    this.masterRanksService.saveMasterRanks(this.masterRanks);
+  async saveMasterRanks() {
+    await this.masterRanksService.saveMasterRanks(this.masterRanks);
   }
 }

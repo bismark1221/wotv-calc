@@ -88,23 +88,8 @@ export class GuildService {
     private apiService: ApiService
   ) {}
 
-  private async getApiUser(type, extra = null) {
-    switch (type) {
-      case 'get':
-        extra.push({name: 'type', value: 'guild'});
-        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra)));
-      break;
-      case 'post':
-        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'guild', data: extra})));
-      break;
-      case 'delete':
-        return JSON.parse(JSON.stringify(await this.apiService.delete('userData', {type: 'guild', storeId: extra})));
-      break;
-      default:
-      break;
-    }
-
-    return null;
+  private async getApiUser(extra = null) {
+    return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'guild', data: extra})));
   }
 
   getLocalStorage() {
@@ -185,7 +170,7 @@ export class GuildService {
     const savableData = this.getSavableData(guild);
 
     if (this.guildAlreadyExists(guild)) {
-      const data = await this.getApiUser('post', savableData);
+      const data = await this.getApiUser(savableData);
       // @ts-ignore
       savableData.storeId = guild.storeId;
 
@@ -193,7 +178,7 @@ export class GuildService {
 
       return guild.storeId;
     } else {
-      const data = await this.getApiUser('post', savableData);
+      const data = await this.getApiUser(savableData);
       // @ts-ignore
       savableData.storeId = data.storeId;
 
