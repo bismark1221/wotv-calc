@@ -3,7 +3,6 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { HttpClient } from '@angular/common/http';
 
 import { TranslateService } from '@ngx-translate/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { Unit } from '../entities/unit';
 import { Job } from '../entities/job';
@@ -45,7 +44,6 @@ export class UnitService {
     private cardService: CardService,
     private esperService: EsperService,
     private http: HttpClient,
-    private firestore: AngularFirestore,
     private authService: AuthService,
     private toolService: ToolService,
     private apiService: ApiService
@@ -57,6 +55,25 @@ export class UnitService {
 
   private async getApiPost(data = null) {
     return JSON.parse(JSON.stringify(await this.apiService.post('units', data)));
+  }
+
+  private async getApiUser(type, extra = null) {
+    switch (type) {
+      case 'get':
+        extra.push({name: 'type', value: 'units'});
+        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra)));
+      break;
+      case 'post':
+        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'units', data: extra})));
+      break;
+      case 'delete':
+        return JSON.parse(JSON.stringify(await this.apiService.delete('userData', {type: 'units', storeId: extra})));
+      break;
+      default:
+      break;
+    }
+
+    return null;
   }
 
   async getUnitsForListingWithCost(filters = null, sort = 'rarity', order = 'desc', options = null) {
@@ -338,7 +355,8 @@ export class UnitService {
       masterRanks: this.masterRanksService.getSavableData(unit.masterRanks.data, false),
       limitLv: unit.limit && unit.formattedLimit ? unit.formattedLimit.level : 0,
       user: user ? user.uid : null,
-      customName: unit.customName ? unit.customName : ''
+      customName: unit.customName ? unit.customName : '',
+      storeId: unit.storeId
     };
 
     if (unit.esper) {
@@ -359,6 +377,10 @@ export class UnitService {
       data.subCard = this.cardService.getSavableData(unit.subCard, false);
     } else {
       data.subCard = null;
+    }
+
+    if (!data.storeId) {
+      delete data.storeId;
     }
 
     for (let i = 0; i <= 2; i++) {
@@ -599,7 +621,7 @@ export class UnitService {
     return unitFinded;
   }
 
-  saveUnit(unit, method) {
+  async saveUnit(unit, method) {
     const savableData = this.getSavableData(unit);
 
     if (method === 'new' || method === 'share') {
@@ -607,43 +629,43 @@ export class UnitService {
         delete savableData.user;
       }
 
-      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method === 'new') {
-          // @ts-ignore
-          savableData.storeId = data.id;
-          const savedUnits = this.getSavedUnits();
+      const data = await this.getApiUser('post', savableData);
 
-          if (savedUnits[unit.dataId]) {
-            savedUnits[unit.dataId].push(savableData);
-          } else {
-            savedUnits[unit.dataId] = [savableData];
-          }
-
-          this.localStorageService.set(this.getLocalStorage(), savedUnits);
-        }
-        this.unit.storeId = data.id;
-
-        return data.id;
-      });
-    } else {
-      return this.firestore.collection(this.getLocalStorage()).doc(unit.storeId).set(savableData).then(data => {
+      if (method === 'new') {
+        // @ts-ignore
+        savableData.storeId = data.storeId;
         const savedUnits = this.getSavedUnits();
-        savedUnits[unit.dataId].forEach((savedUnit, unitIndex) => {
-          if (savedUnit.storeId === unit.storeId) {
-            savedUnits[unit.dataId][unitIndex] = savableData;
-            savedUnits[unit.dataId][unitIndex].storeId = unit.storeId;
-          }
-        });
+
+        if (savedUnits[unit.dataId]) {
+          savedUnits[unit.dataId].push(savableData);
+        } else {
+          savedUnits[unit.dataId] = [savableData];
+        }
 
         this.localStorageService.set(this.getLocalStorage(), savedUnits);
+      }
+      this.unit.storeId = data.storeId;
 
-        return unit.storeId;
+      return data.storeId;
+    } else {
+      const data = await this.getApiUser('post', savableData);
+
+      const savedUnits = this.getSavedUnits();
+      savedUnits[unit.dataId].forEach((savedUnit, unitIndex) => {
+        if (savedUnit.storeId === unit.storeId) {
+          savedUnits[unit.dataId][unitIndex] = savableData;
+          savedUnits[unit.dataId][unitIndex].storeId = unit.storeId;
+        }
       });
+
+      this.localStorageService.set(this.getLocalStorage(), savedUnits);
+
+      return unit.storeId;
     }
   }
 
-  deleteUnit(unit) {
-    this.firestore.collection(this.getLocalStorage()).doc(unit.storeId).delete();
+  async deleteUnit(unit) {
+    await this.getApiUser('delete', unit.storeId);
 
     const savedUnits = this.getSavedUnits();
 
@@ -656,20 +678,16 @@ export class UnitService {
     this.localStorageService.set(this.getLocalStorage(), savedUnits);
   }
 
-  getStoredUnit(dataId) {
-    const document = this.firestore.collection(this.getLocalStorage()).doc(dataId);
-
-    return document.valueChanges();
+  async getStoredUnit(storeId) {
+    return await this.getApiUser('get', [{name: 'storeId', value: storeId}]);
   }
 
-  getExportableLink() {
+  async getExportableLink() {
     if (!this.unit.storeId || this.hasChangeBeenMade()) {
-      return this.saveUnit(this.unit, 'share');
+      return await this.saveUnit(this.unit, 'share');
     }
 
-    return new Promise((resolve, reject) => {
-      resolve(this.unit.storeId);
-    });
+    return this.unit.storeId;
   }
 
   hasChangeBeenMade() {

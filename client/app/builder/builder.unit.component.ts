@@ -184,14 +184,13 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
           this.formatUnit();
           this.loadingBuild = false;
         } else {
-          this.unitService.getStoredUnit(data).subscribe(async (unitData: any) => {
-            if (unitData) {
-              this.selectedUnitId = unitData.dataId;
-              await this.selectUnit(unitData, true);
-              this.unit.storeId = data;
-            }
-            this.loadingBuild = false;
-          });
+          const unitData = await this.unitService.getStoredUnit(data);
+          if (unitData) {
+            this.selectedUnitId = unitData.dataId;
+            await this.selectUnit(unitData, true);
+            this.unit.storeId = data;
+          }
+          this.loadingBuild = false;
         }
       } else {
         this.unitSelector.open();

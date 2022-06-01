@@ -204,9 +204,7 @@ export class MateriaService {
       return await this.saveMateria(materia, 'share');
     }
 
-    return new Promise((resolve, reject) => {
-      resolve(materia.storeId);
-    });
+    return materia.storeId;
   }
 
   hasChangeBeenMade(materia) {

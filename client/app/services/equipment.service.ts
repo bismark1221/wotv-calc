@@ -904,9 +904,7 @@ export class EquipmentService {
       return await this.saveEquipment(this.equipment, 'share');
     }
 
-    return new Promise((resolve, reject) => {
-      resolve(this.equipment.storeId);
-    });
+    return this.equipment.storeId;
   }
 
   hasChangeBeenMade() {
