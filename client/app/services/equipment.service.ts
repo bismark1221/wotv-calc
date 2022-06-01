@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from '@ngx-translate/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';
@@ -261,8 +260,7 @@ export class EquipmentService {
     private toolService: ToolService,
     private authService: AuthService,
     private jobService: JobService,
-    private materiaService: MateriaService,
-    private firestore: AngularFirestore
+    private materiaService: MateriaService
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
@@ -271,6 +269,25 @@ export class EquipmentService {
 
   private async getApiPost(data = null) {
     return JSON.parse(JSON.stringify(await this.apiService.post('equipments', data)));
+  }
+
+  private async getApiUser(type, extra = null) {
+    switch (type) {
+      case 'get':
+        extra.push({name: 'type', value: 'equipments'});
+        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra)));
+      break;
+      case 'post':
+        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'equipments', data: extra})));
+      break;
+      case 'delete':
+        return JSON.parse(JSON.stringify(await this.apiService.delete('userData', {type: 'equipments', storeId: extra})));
+      break;
+      default:
+      break;
+    }
+
+    return null;
   }
 
   async getEquipmentForListingWithAcquisitionTypes(filters = null, sort = 'rarity', order = 'desc', options = null) {
@@ -689,6 +706,11 @@ export class EquipmentService {
       data.user = user ? user.uid : null;
       // @ts-ignore
       data.customName = equipment.customName ? equipment.customName : '';
+
+      if (equipment.storeId) {
+        // @ts-ignore
+        data.storeId = equipment.storeId;
+      }
     }
 
     return data;
@@ -815,7 +837,7 @@ export class EquipmentService {
     return equipmentFinded;
   }
 
-  saveEquipment(equipment, method) {
+  async saveEquipment(equipment, method) {
     const savableData = this.getSavableData(equipment);
 
     if (method === 'new' || method === 'share') {
@@ -824,44 +846,43 @@ export class EquipmentService {
         delete savableData.user;
       }
 
-      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method === 'new') {
-          // @ts-ignore
-          savableData.storeId = data.id;
-          const savedEquipments = this.getSavedEquipments();
+      const data = await this.getApiUser('post', savableData);
 
-          if (savedEquipments[equipment.dataId]) {
-            savedEquipments[equipment.dataId].push(savableData);
-          } else {
-            savedEquipments[equipment.dataId] = [savableData];
-          }
+      if (method === 'new') {
+        // @ts-ignore
+        savableData.storeId = data.storeId;
+        const savedEquipments = this.getSavedEquipments();
 
-          this.localStorageService.set(this.getLocalStorage(), savedEquipments);
+        if (savedEquipments[equipment.dataId]) {
+          savedEquipments[equipment.dataId].push(savableData);
+        } else {
+          savedEquipments[equipment.dataId] = [savableData];
         }
 
-        this.equipment.storeId = data.id;
-
-        return data.id;
-      });
-    } else {
-      return this.firestore.collection(this.getLocalStorage()).doc(equipment.storeId).set(savableData).then(data => {
-        const savedEquipments = this.getSavedEquipments();
-        savedEquipments[equipment.dataId].forEach((savedEquipment, equipmentIndex) => {
-          if (savedEquipment.storeId === equipment.storeId) {
-            savedEquipments[equipment.dataId][equipmentIndex] = savableData;
-            savedEquipments[equipment.dataId][equipmentIndex].storeId = equipment.storeId;
-          }
-        });
-
         this.localStorageService.set(this.getLocalStorage(), savedEquipments);
+      }
 
-        return equipment.storeId;
+      this.equipment.storeId = data.storeId;
+
+      return data.storeId;
+    } else {
+      const data = await this.getApiUser('post', savableData);
+      const savedEquipments = this.getSavedEquipments();
+      savedEquipments[equipment.dataId].forEach((savedEquipment, equipmentIndex) => {
+        if (savedEquipment.storeId === equipment.storeId) {
+          savedEquipments[equipment.dataId][equipmentIndex] = savableData;
+          savedEquipments[equipment.dataId][equipmentIndex].storeId = equipment.storeId;
+        }
       });
+
+      this.localStorageService.set(this.getLocalStorage(), savedEquipments);
+
+      return equipment.storeId;
     }
   }
 
-  deleteEquipment(equipment) {
-    this.firestore.collection(this.getLocalStorage()).doc(equipment.storeId).delete();
+  async deleteEquipment(equipment) {
+    await this.getApiUser('delete', equipment.storeId);
 
     const savedEquipments = this.getSavedEquipments();
 
@@ -874,15 +895,13 @@ export class EquipmentService {
     this.localStorageService.set(this.getLocalStorage(), savedEquipments);
   }
 
-  getStoredEquipment(dataId) {
-    const document = this.firestore.collection(this.getLocalStorage()).doc(dataId);
-
-    return document.valueChanges();
+  async getStoredEquipment(storeId) {
+    return await this.getApiUser('get', [{name: 'storeId', value: storeId}]);
   }
 
-  getExportableLink() {
+  async getExportableLink() {
     if (!this.equipment.storeId || this.hasChangeBeenMade()) {
-      return this.saveEquipment(this.equipment, 'share');
+      return await this.saveEquipment(this.equipment, 'share');
     }
 
     return new Promise((resolve, reject) => {

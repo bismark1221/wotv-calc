@@ -79,14 +79,13 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
 
           this.loadingBuild = false;
         } else {
-          this.equipmentService.getStoredEquipment(data).subscribe(async (equipmentData: any) => {
-            if (equipmentData) {
-              this.selectedEquipmentId = equipmentData.dataId;
-              await this.selectEquipment(equipmentData, true);
-              this.equipment.storeId = data;
-            }
-            this.loadingBuild = false;
-          });
+          const equipmentData = await this.equipmentService.getStoredEquipment(data);
+          if (equipmentData) {
+            this.selectedEquipmentId = equipmentData.dataId;
+            await this.selectEquipment(equipmentData, true);
+            this.equipment.storeId = data;
+          }
+          this.loadingBuild = false;
         }
       } else {
         this.equipmentSelector.open();

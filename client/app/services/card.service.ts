@@ -361,6 +361,7 @@ export class CardService {
 
         this.localStorageService.set(this.getLocalStorage(), savedCards);
       }
+
       this.card.storeId = data.storeId;
 
       return data.storeId;
@@ -381,7 +382,7 @@ export class CardService {
   }
 
   async deleteCard(card) {
-    const data = await this.getApiUser('delete', card.storeId);
+    await this.getApiUser('delete', card.storeId);
 
     const savedCards = this.getSavedCards();
 
