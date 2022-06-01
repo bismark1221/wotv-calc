@@ -147,14 +147,13 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
             this.loadingBuild = true;
             this.initialLoad = true;
 
-            this.materiaService.getStoredMateria(data).subscribe(async (materiaData: any) => {
-              if (materiaData && this.materias.length > 0) {
-                const materia = new Materia();
-                this.materiaService.buildMateriaFromData(materia, materiaData, this.materias, this.materiaSkills);
-                this.selectMateria(materia);
-              }
-              this.loadingBuild = false;
-            });
+            const materiaData = await this.materiaService.getStoredMateria(data);
+            if (materiaData && this.materias.length > 0) {
+              const materia = new Materia();
+              this.materiaService.buildMateriaFromData(materia, materiaData, this.materias, this.materiaSkills);
+              this.selectMateria(materia);
+            }
+            this.loadingBuild = false;
           }
         });
       });

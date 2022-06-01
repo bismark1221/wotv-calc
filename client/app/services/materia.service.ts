@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { Materia } from '../entities/materia';
 
@@ -40,12 +39,30 @@ export class MateriaService {
     private navService: NavService,
     private authService: AuthService,
     private apiService: ApiService,
-    private toolService: ToolService,
-    private firestore: AngularFirestore
+    private toolService: ToolService
   ) {}
 
   private async getApi(param = null, extraQuery = []) {
     return JSON.parse(JSON.stringify(await this.apiService.get('materia', param, extraQuery)));
+  }
+
+  private async getApiUser(type, extra = null) {
+    switch (type) {
+      case 'get':
+        extra.push({name: 'type', value: 'materia'});
+        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra)));
+      break;
+      case 'post':
+        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'materia', data: extra})));
+      break;
+      case 'delete':
+        return JSON.parse(JSON.stringify(await this.apiService.delete('userData', {type: 'materia', storeId: extra})));
+      break;
+      default:
+      break;
+    }
+
+    return null;
   }
 
   async getMateriaForListing(filters = null, sort = 'name', order = 'asc') {
@@ -129,7 +146,7 @@ export class MateriaService {
     return materiaFinded;
   }
 
-  saveMateria(materia, method) {
+  async saveMateria(materia, method) {
     const savableData = this.getSavableData(materia);
 
     if (method === 'new' || method === 'share') {
@@ -138,54 +155,53 @@ export class MateriaService {
         delete savableData.user;
       }
 
-      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method === 'new') {
-          // @ts-ignore
-          savableData.storeId = data.id;
-          const savedMaterias = this.getSavedMaterias();
+      const data = await this.getApiUser('post', savableData);
 
-          if (savedMaterias[materia.dataId]) {
-            savedMaterias[materia.dataId].push(savableData);
-          } else {
-            savedMaterias[materia.dataId] = [savableData];
-          }
-
-          this.localStorageService.set(this.getLocalStorage(), savedMaterias);
-        }
-        materia.storeId = data.id;
-
-        return data.id;
-      });
-    } else {
-      return this.firestore.collection(this.getLocalStorage()).doc(materia.storeId).set(savableData).then(data => {
+      if (method === 'new') {
+        // @ts-ignore
+        savableData.storeId = data.storeId;
         const savedMaterias = this.getSavedMaterias();
 
-        if (materia.initialDataId !== materia.dataId) {
-          savedMaterias[materia.initialDataId].splice(savedMaterias[materia.initialDataId].findIndex(searchedMateria => searchedMateria.storeId === materia.storeId), 1);
-
-          if (!savedMaterias[materia.dataId]) {
-            savedMaterias[materia.dataId] = [];
-          }
+        if (savedMaterias[materia.dataId]) {
           savedMaterias[materia.dataId].push(savableData);
         } else {
-          savedMaterias[materia.dataId].forEach((savedMateria, materiaIndex) => {
-            if (savedMateria.storeId === materia.storeId) {
-              savedMaterias[materia.dataId][materiaIndex] = savableData;
-              savedMaterias[materia.dataId][materiaIndex].storeId = materia.storeId;
-            }
-          });
+          savedMaterias[materia.dataId] = [savableData];
         }
 
         this.localStorageService.set(this.getLocalStorage(), savedMaterias);
+      }
+      materia.storeId = data.storeId;
 
-        return materia.storeId;
-      });
+      return data.storeId;
+    } else {
+      const data = await this.getApiUser('post', savableData);
+      const savedMaterias = this.getSavedMaterias();
+
+      if (materia.initialDataId !== materia.dataId) {
+        savedMaterias[materia.initialDataId].splice(savedMaterias[materia.initialDataId].findIndex(searchedMateria => searchedMateria.storeId === materia.storeId), 1);
+
+        if (!savedMaterias[materia.dataId]) {
+          savedMaterias[materia.dataId] = [];
+        }
+        savedMaterias[materia.dataId].push(savableData);
+      } else {
+        savedMaterias[materia.dataId].forEach((savedMateria, materiaIndex) => {
+          if (savedMateria.storeId === materia.storeId) {
+            savedMaterias[materia.dataId][materiaIndex] = savableData;
+            savedMaterias[materia.dataId][materiaIndex].storeId = materia.storeId;
+          }
+        });
+      }
+
+      this.localStorageService.set(this.getLocalStorage(), savedMaterias);
+
+      return materia.storeId;
     }
   }
 
-  getExportableLink(materia) {
+  async getExportableLink(materia) {
     if (!materia.storeId || this.hasChangeBeenMade(materia)) {
-      return this.saveMateria(materia, 'share');
+      return await this.saveMateria(materia, 'share');
     }
 
     return new Promise((resolve, reject) => {
@@ -216,14 +232,12 @@ export class MateriaService {
     return true;
   }
 
-  getStoredMateria(dataId) {
-    const document = this.firestore.collection(this.getLocalStorage()).doc(dataId);
-
-    return document.valueChanges();
+  async getStoredMateria(storeId) {
+    return await this.getApiUser('get', [{name: 'storeId', value: storeId}]);
   }
 
-  deleteMateria(materia) {
-    this.firestore.collection(this.getLocalStorage()).doc(materia.storeId).delete();
+  async deleteMateria(materia) {
+    await this.getApiUser('delete', materia.storeId);
 
     const savedMaterias = this.getSavedMaterias();
 
