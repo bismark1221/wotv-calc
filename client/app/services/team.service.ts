@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from '@ngx-translate/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { Unit } from '../entities/unit';
 import { GuildService } from './guild.service';
@@ -16,6 +15,7 @@ import { UnitService } from './unit.service';
 import { AuthService } from './auth.service';
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';
+import { ApiService } from './api.service';
 
 @Injectable()
 export class TeamService {
@@ -34,12 +34,31 @@ export class TeamService {
     private cardService: CardService,
     private esperService: EsperService,
     private unitService: UnitService,
-    private firestore: AngularFirestore,
     private toolService: ToolService,
     private authService: AuthService,
     private skillService: SkillService,
-    private rangeService: RangeService
+    private rangeService: RangeService,
+    private apiService: ApiService
   ) {}
+
+  private async getApiUser(type, extra = null) {
+    switch (type) {
+      case 'get':
+        extra.push({name: 'type', value: 'teams'});
+        return JSON.parse(JSON.stringify(await this.apiService.get('userData', null, extra)));
+      break;
+      case 'post':
+        return JSON.parse(JSON.stringify(await this.apiService.post('userData', {type: 'teams', data: extra})));
+      break;
+      case 'delete':
+        return JSON.parse(JSON.stringify(await this.apiService.delete('userData', {type: 'teams', storeId: extra})));
+      break;
+      default:
+      break;
+    }
+
+    return null;
+  }
 
   async newTeam() {
     this.team = {
@@ -84,10 +103,15 @@ export class TeamService {
       }
     });
 
+    if (team.storeId) {
+      // @ts-ignore
+      data.storeId = team.storeId;
+    }
+
     return data;
   }
 
-  saveTeam(team, method) {
+  async saveTeam(team, method) {
     const savableData = this.getSavableData(team);
 
     if (method === 'new' || method === 'share') {
@@ -95,39 +119,39 @@ export class TeamService {
         delete savableData.user;
       }
 
-      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method === 'new') {
-          // @ts-ignore
-          savableData.storeId = data.id;
-          const savedTeams = this.getSavedTeams();
-          savedTeams[team.name] = savableData;
+      const data = await this.getApiUser('post', savableData);
 
-          this.localStorageService.set(this.getLocalStorage(), savedTeams);
-        }
-
-        this.team.storeId = data.id;
-
-        return data.id;
-      });
-    } else {
-      return this.firestore.collection(this.getLocalStorage()).doc(team.storeId).set(savableData).then(data => {
+      if (method === 'new') {
+        // @ts-ignore
+        savableData.storeId = data.storeId;
         const savedTeams = this.getSavedTeams();
-        Object.keys(savedTeams).forEach((teamName, teamIndex) => {
-          if (savedTeams[teamName].storeId === team.storeId) {
-            savedTeams[teamName] = savableData;
-            savedTeams[teamName].storeId = team.storeId;
-          }
-        });
+        savedTeams[team.name] = savableData;
 
         this.localStorageService.set(this.getLocalStorage(), savedTeams);
+      }
 
-        return team.storeId;
+      this.team.storeId = data.storeId;
+
+      return data.storeId;
+    } else {
+      const data = await this.getApiUser('post', savableData);
+
+      const savedTeams = this.getSavedTeams();
+      Object.keys(savedTeams).forEach((teamName, teamIndex) => {
+        if (savedTeams[teamName].storeId === team.storeId) {
+          savedTeams[teamName] = savableData;
+          savedTeams[teamName].storeId = team.storeId;
+        }
       });
+
+      this.localStorageService.set(this.getLocalStorage(), savedTeams);
+
+      return team.storeId;
     }
   }
 
-  deleteTeam(team) {
-    this.firestore.collection(this.getLocalStorage()).doc(team.storeId).delete();
+  async deleteTeam(team) {
+    await this.getApiUser('delete', team.storeId);
 
     const savedTeams = this.getSavedTeams();
 
@@ -140,20 +164,16 @@ export class TeamService {
     this.localStorageService.set(this.getLocalStorage(), savedTeams);
   }
 
-  getStoredTeam(storeId) {
-    const document = this.firestore.collection(this.getLocalStorage()).doc(storeId);
-
-    return document.valueChanges();
+  async getStoredTeam(storeId) {
+    return await this.getApiUser('get', [{name: 'storeId', value: storeId}]);
   }
 
-  getExportableLink() {
+  async getExportableLink() {
     if (!this.team.storeId || this.hasChangeBeenMade()) {
-      return this.saveTeam(this.team, 'share');
+      return await this.saveTeam(this.team, 'share');
     }
 
-    return new Promise((resolve, reject) => {
-      resolve(this.team.storeId);
-    });
+    return this.team.storeId;
   }
 
   hasChangeBeenMade() {

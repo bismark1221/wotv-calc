@@ -109,10 +109,11 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
     this.statueNames = Object.keys(this.team.guild.statues);
 
-    this.activatedRoute.paramMap.subscribe((params: Params) => {
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       const data = params.get('data');
       if (data) {
-        this.teamService.getStoredTeam(data).subscribe(async teamData => {
+        const teamData = await this.teamService.getStoredTeam(data);
+        if (teamData) {
           await this.teamService.updateTeam(teamData);
           // @ts-ignore
           this.team.storeId = data;
@@ -134,7 +135,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
           this.getUnitsForSim();
           this.newDamageSim();
           this.updateActiveSkillsForSim();
-        });
+        }
       }
     });
 
