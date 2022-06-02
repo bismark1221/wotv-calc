@@ -800,7 +800,8 @@ export class Unit {
 
   private calculateMasterSkillStats() {
     if (this.masterSkillActivated >= 0) {
-      const masterSkill = this.formattedMasterSkill[this.masterSkillActivated];
+      const masterSkill = this.formattedMasterSkill[this.masterSkillActivated] ? this.formattedMasterSkill[this.masterSkillActivated] : this.formattedMasterSkill[0];
+
       masterSkill.effects.forEach(effect => {
         if (effect.calcType === 'percent' || effect.calcType === 'fixe' || effect.calcType === 'resistance') {
           let calc = 'fixe';
