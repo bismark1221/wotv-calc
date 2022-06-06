@@ -1,0 +1,72 @@
+.pageNotFound {
+  margin-top: 20px;
+  margin: auto
+}
+
+.littleChocobo {
+  width: 200px;
+}
+
+.sleepingPlaceHolder {
+  width: 200px;
+  height: 100px;
+}
+
+@keyframes sleep {
+  0% {
+    transform: translate(0, 0) scale(0.3);
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(90%, -50%) scale(0.65);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(180%, -100%) scale(1);
+    opacity: 0;
+  }
+}
+
+.sleeping {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zSleep {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 80px;
+  opacity: 0;
+  animation: sleep 9s infinite linear;
+}
+
+.zSleep2 {
+  animation-delay: 3s;
+}
+
+.zSleep3 {
+  animation-delay: 6s;
+}
+
+.chocoboNotFound {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.textNotFound {
+  text-align: center;
+  margin-top: 20px;
+}

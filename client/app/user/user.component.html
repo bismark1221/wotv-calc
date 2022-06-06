@@ -1,0 +1,85 @@
+<div class="row">
+  <table class="userTable">
+    <tr>
+      <td class="howToTd">
+        <h1>WotV Inventory Importer</h1>
+        <h3>What is the Inventory Importer ?</h3>
+        The Inventory importer is a tool that that collects inventory data about your WotV account directly from GUMI’s servers and imports that data into WotV-Calc.<br/><br/>
+
+        <h3>How does this work ?</h3>
+        First you have to get the Wotv Token Exporter for either <a href="https://chrome.google.com/webstore/detail/wotv-token-exporter/ekkmdkaekhjmgohgnmapmegfiknmjibo">chrome</a> or <a href="assets/wotv_token_exporter-1.2.0-fx.xpi">firefox</a><br/>
+        Next you can generate a new "device" that will be used by wotv-calc<br/>
+        And the final step will be to export the data<br/>
+        <b>Be careful, as each import request will disconnect you from any existing in-game session, giving an “Invalid Session” error</b><br/><br/>
+
+        <h3>What does it do ?</h3>
+        It will let you export everything from your game data (units, cards, ...)<br/>
+        Parties are still missing... But this is coming soon!<br/>
+        When the export is finished, you have a build saved for every item named 'in-game' saved in your WotV-Calc account<br/>
+        You will be able to update it, clone it and even share it<br/>
+        You can at anytime delete the device stored on wotv-calc if you want<br/><br/>
+
+        <h3>How to update if I update my builds in-game ?</h3>
+        Since the new “Device” is stored on the WotV-Calc server, refreshing data is done by simply re-clicking on "dump data"<br/>Remember that this will invalidate any open sessions<br/>
+        This will refresh all the data you have in WotV-Calc, replacing what was there before<br/><br/>
+
+        <h3>What are the risks</h3>
+        This tool is clearly making API calls against WotV's servers outside of the game itself, which is against the published Terms of Service, so use it at your own risk<br/>
+        All calls to the game’s servers are read-only, however, so it’s not giving any player an unfair advantage<br/>
+        GUMI allows similar tools to exist in other games they publish<br/>
+        That said, <b>USE THIS TOOL AT YOUR OWN RISK!</b><br/>
+      </td>
+      <td class="dumpTd">
+        <div *ngIf="haveDevice == false">
+          <div>
+            <textarea placeholder="Put your token here" [(ngModel)]="token"></textarea>
+          </div>
+          <div>
+            <button class="btn btn-main copyButton" (click)="getLoginInfos('google')">Connect with Google</button>
+            <button class="btn btn-main copyButton" (click)="getLoginInfos('facebook')">Connect with Facebook</button>
+          </div>
+        </div>
+        <div *ngIf="haveDevice == true">
+          <button class="btn btn-main copyButton" (click)="getLoginData()">Export in-game data</button>
+          <button class="btn btn-main copyButton" (click)="deleteLoginInfos()">Delete device</button>
+        </div>
+        <div class="loadingDiv">
+          <div *ngIf="loading.haveDevice">
+            Check if device exists...
+          </div>
+
+          <div *ngIf="loading.uploadDevice">
+            Upload token to create the device...
+          </div>
+
+          <div *ngIf="loading.data">
+            Loading Data...
+          </div>
+
+          <div *ngIf="loading.deleteDevice">
+            Deleting device...
+          </div>
+
+          <div *ngIf="loading.inError">
+            Error in getting your inventory...<br>Try to delete device and restart the process<br>If that continue to append contact me
+          </div>
+
+          <div *ngFor="let type of ['guild', 'masterRank']">
+            <div *ngIf="loading.saveData[type] != 'wait'">
+              {{ type | titlecase }} : {{ loading.saveData[type] }}
+            </div>
+          </div>
+
+          <div *ngFor="let type of ['materia', 'cards', 'espers', 'equipments', 'units', 'teams']">
+            <div *ngIf="loading.saveData[type].delete != -1">
+              Deleting {{ type | lowercase }} : {{ loading.saveData[type].delete > 0 ? loading.saveData[type].delete : 'finish' }}
+            </div>
+            <div *ngIf="loading.saveData[type].save != -1">
+              Saving {{ type | lowercase }} : {{ loading.saveData[type].save > 0 ? loading.saveData[type].save : 'finish' }}
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

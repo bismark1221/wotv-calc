@@ -1,0 +1,305 @@
+.home {
+  margin: 0 auto;
+  max-width: 850px;
+  text-align: left;
+  padding: 10px;
+  position: relative;
+}
+
+.amazonBanner {
+  text-align: center;
+  padding-top: 10px;
+  background-color: var(--home-title);
+}
+
+.amazonBannerLink {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.amazonBannerLink:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.updated {
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.unitName {
+  display: block;
+}
+
+.separator {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.patreon {
+  background-color: rgb(255, 66, 77);
+  border-radius: 9999px;
+  border: 1px solid rgb(255, 66, 77);
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.patreon:hover {
+  text-decoration: none;
+}
+
+circle, rect {
+  fill: rgb(255, 255, 255);
+}
+
+.logo_patreon {
+  height: 16px;
+}
+
+.itemImgBlock {
+  width: 200px;
+  height: 160px;
+}
+
+.itemImg {
+  height: 150px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.elementImg, .rarityImg {
+  height: 32px;
+}
+
+.rarityImg {
+  float: left;
+}
+
+.elementImg {
+  float: right;
+}
+
+.itemsTable {
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.itemsTable tr, .itemsTable td {
+  border: 0;
+}
+
+.itemsCol {
+  background-color: var(--card-background);
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.itemsCol:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--card-background-hover)
+}
+
+.itemsCol > a:hover {
+  text-decoration: none;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.cardTitle {
+  background-color: var(--card-title-background);
+  display: table;
+  height: 50px;
+  width: 100%;
+}
+
+.itemName {
+  font-weight: bold;
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--card-title-color);
+}
+
+.mainJob {
+  margin-top: 45px;
+  height: 30px;
+  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background-size: 30px;
+  padding: 5px;
+  display: block;
+  width: 30px;
+}
+
+.subJob {
+  margin-top: 5px;
+  height: 30px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 30px;
+  padding: 5px;
+  display: block;
+  width: 30px;
+}
+
+.mainJob img, .subJob img {
+  max-width: 20px;
+  max-height: 20px;
+  vertical-align: top;
+}
+
+.header {
+  padding-top: 15px;
+  background-color: var(--home-title);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.headerBlock {
+  width: 840px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.markdownHome {
+  width: 840px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0;
+}
+
+.title {
+  font-size: 35px;
+  color: var(--white);
+}
+
+.left_zone {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.discord_img {
+  width: 80px;
+  border-radius: 10%;
+}
+
+.right_zone {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.updates {
+  width: 840px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.lastUpdate {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.date {
+  margin-bottom: 10px;
+}
+
+.news {
+  margin-top: 50px;
+  width: 840px;
+  margin: auto;
+}
+
+.whatsnew {
+  text-align: center;
+}
+
+.whatsnew h1 {
+  font-size: 25px;
+}
+
+.chanlog {
+  margin-left: 100px;
+}
+
+.changelog h1 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.amazonLink {
+  display: block;
+  margin-top: 10px;
+}
+
+.amazonLink img {
+  height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.itemImgBlock {
+  width: 200px;
+  height: 160px;
+}
+
+.itemImg {
+  height: 150px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.mainJob {
+  margin-top: 45px;
+  height: 30px;
+  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background-size: 30px;
+  padding: 5px;
+  display: block;
+  width: 30px;
+}
+
+.subJob {
+  margin-top: 5px;
+  height: 30px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 30px;
+  padding: 5px;
+  display: block;
+  width: 30px;
+}
+
+.mainJob img, .subJob img {
+  max-width: 20px;
+  max-height: 20px;
+  vertical-align: top;
+}

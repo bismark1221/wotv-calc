@@ -1,0 +1,164 @@
+.tab-content {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 70px;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  background-color: #F4F5F9;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+  height: 100%;
+  padding-top: 15px;
+  color: var(--th-background);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  font-weight: bold;
+  border-bottom: 4px solid var(--th-background);
+  background-color: #F4F5F9;
+}
+
+.leftBlock {
+  width: 350px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rightBlock {
+  width: 830px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.elementImg, .damageImg, .statusAilmentImg, .skilImg, .damageSkillImg, .rarityImg {
+  height: 32px;
+}
+
+.raidImg {
+  height: 250px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.limitBased{
+  border-right: none;
+  padding-right: 0px;
+  width: 50px;
+}
+
+.bonusTable {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.bonusBlock {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.unitImg, .cardImg {
+  height: 100px;
+  margin-right: 5px;
+}
+
+.raidTable {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.statsTable {
+  width: 100%;
+}
+
+.skillsTable {
+  width: 100%;
+}
+
+.statsTable:not(:first-child) {
+  margin-top: 10px;
+}
+
+.skillsTable:not(:first-child) {
+  margin-top: 10px;
+}
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillJobTd {
+  width: 70px;
+}
+
+.skillStarTd {
+  width: 72px;
+}
+
+.skillTypeTd {
+  width: 85px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.skillNameTd {
+  width: 200px;
+}
+
+.tmrNameTd {
+  width: 150px;
+}
+
+.tmrTypeTd {
+  width: 60px;
+}
+
+.skillEffectTdAndNoBorderLeft {
+  text-align: left;
+  border-left: none;
+}
+
+.skillEffectTd {
+  text-align: left;
+}
+
+.limitNameTd {
+  width: 300px;
+}
+
+.heightResTd {
+  height: 33px;
+}
+
+.reflectImg {
+  height: 32px;
+  margin-top: 2px;
+}
+
+.timeImg {
+  height: 32px;
+  cursor: pointer;
+  margin-top: 2px;
+}

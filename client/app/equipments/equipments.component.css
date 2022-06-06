@@ -1,0 +1,191 @@
+.equipments {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.leftBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  float: left;
+  text-align: left;
+  background: var(--filters-background);
+  color: var(--filters-color);
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.leftBlock h1 {
+  font-size: 20px;
+}
+
+.filters {
+  margin-top: 20px;
+}
+
+.collapsedFilters {
+  margin-top: 5px;
+}
+
+.collapsedFilters input {
+  margin-right: 5px;
+}
+
+.fa-chevron-up, .fa-chevron-down {
+  float: right;
+  margin-right: 10px;
+}
+
+.separatorFilter {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  width: 95%;
+}
+
+.rightBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 900px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.upperBlock {
+  padding-right: 10px;
+}
+
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 750px;
+}
+
+.fa-search {
+  padding-right: 8px;
+  color: #000;
+}
+
+.search-form {
+  width: 750px;
+  display: inline-block;
+}
+
+.fa-question-circle {
+  padding-left: 8px;
+  color: #000;
+  cursor: pointer;
+}
+
+.underSearchBlock {
+  height: 30px;
+}
+
+.totalEquipments {
+  float: left;
+  display: inline-block;
+}
+
+.sortOrderBlock {
+  float: right;
+  display: inline-block;
+}
+
+.sortBy, .orderBy {
+  display: inline-block;
+}
+
+.sortBy > span, .orderBy > span {
+  color: var(--sortby-color);
+  margin-right: 8px;
+}
+
+.orderBy {
+  margin-left: 10px;
+}
+
+.countEquipments {
+  font-weight: bold;
+}
+
+.equipmentsList {
+  margin-top: 10px;
+}
+
+.equipmentImgBlock {
+  width: 200px;
+  height: 160px;
+}
+
+.equipmentImg {
+  height: 150px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.equipmentsCol {
+  background-color: var(--card-background);
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.equipmentsCol:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--card-background-hover)
+}
+
+.equipmentsCol > a:hover {
+  text-decoration: none;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.cardTitle {
+  background-color: var(--card-title-background);
+  display: table;
+  height: 50px;
+  width: 100%;
+}
+
+.equipmentName {
+  font-weight: bold;
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--card-title-color);
+}
+
+.select-sort, .select-order {
+  display: inline-block;
+}
+
+.select-sort {
+  width: 140px;
+}
+
+.unselectAllTypeLink {
+  cursor: pointer;
+  text-decoration: underline;
+}

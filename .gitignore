@@ -1,0 +1,10 @@
+/.angular/cache
+dist/*
+.DS_Store
+**/@eaDir
+Thumbs.db
+node_modules
+.gitsecret/keys/random_seed
+!*.secret
+client/environments/environment.prod.ts
+.github/files/.sentryclirc

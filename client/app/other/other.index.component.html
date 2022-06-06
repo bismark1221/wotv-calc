@@ -1,0 +1,92 @@
+<div class="row">
+  <span class="explainationText">
+    The stats shown are for units max lvl, all job at maxed and the board completed<br/>
+    You can scroll to the right to show more stats :)
+  </span>
+
+  <div class="indexWrapper">
+    <div class="leftWrapper">
+      <div class="leftWrapperHeader">
+        <table class="leftTable">
+          <tr>
+            <th>
+              #
+            </th>
+            <th class="colName">
+              <div (click)="changeSort('name')" class="divTH">
+                Unit
+                <span class="spanArrow">
+                  <i class="fas" [ngClass]="{
+                    'arrowActivated': sort === 'name',
+                    'fa-arrow-up': sort !== 'name' || (sort === 'name' && order === 'asc'),
+                    'fa-arrow-down': sort === 'name' && order === 'desc'
+                  }"></i>
+                </span>
+              </div>
+            </th>
+          </tr>
+        </table>
+      </div>
+
+      <div #leftWrapperContent class="leftWrapperContent" (scroll)="onScrollUnit($event)">
+        <table class="leftTable">
+          <tr *ngFor="let unit of units; let i = index">
+            <td>
+              {{ i + 1 }}
+            </td>
+            <td class="colName">
+              <img class="unitImg" src="assets/units/{{unit.image}}_m.png"/>
+              {{ unit.name }}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="rightWrapper">
+      <div #rightWrapperHeader class="rightWrapperHeader" (scroll)="onScrollStat($event)">
+        <table class="statsTable">
+          <tr>
+            <th *ngFor="let type of statsType" style="width: {{ type.width }}px;">
+              <div (click)="changeSort(type.type)" class="divTH">
+                {{ type.type }}
+                <span class="spanArrow">
+                  <i class="fas" [ngClass]="{
+                    'arrowActivated': sort === type.type,
+                    'fa-arrow-up': sort === type.type && order === 'asc',
+                    'fa-arrow-down': sort !== type.type || (sort === type.type && order === 'desc')
+                  }"></i>
+                </span>
+              </div>
+            </th>
+            <th *ngFor="let type of imageStatsType" style="width: {{ type.width }}px;">
+              <div (click)="changeSort(type.type)" class="divTH">
+                <img class="buffImg" title="{{ type.type }}" src="{{ '/assets/buffs/' + type.type.toLowerCase() + '.png' }}">
+                <span class="spanArrow">
+                  <i class="fas" [ngClass]="{
+                    'arrowActivated': sort === type.type,
+                    'fa-arrow-up': sort === type.type && order === 'asc',
+                    'fa-arrow-down': sort !== type.type || (sort === type.type && order === 'desc')
+                  }"></i>
+                </span>
+              </div>
+            </th>
+          </tr>
+        </table>
+      </div>
+
+      <div #rightWrapperContent class="rightWrapperContent" (scroll)="onScroll($event)">
+        <table class="statsTable">
+          <tr *ngFor="let unit of units">
+            <td *ngFor="let type of statsType" style="width: {{ type.width }}px;">
+              <span *ngIf="unit.stats[type.type]">{{ unit.stats[type.type] }}</span>
+            </td>
+            <td *ngFor="let type of imageStatsType" style="width: {{ type.width }}px;">
+              <span *ngIf="unit.stats[type.type]">{{ unit.stats[type.type] }}</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

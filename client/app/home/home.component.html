@@ -1,0 +1,82 @@
+<div class="amazonBanner">
+  <a class="amazonBannerLink" href="https://l.linklyhq.com/l/I5OA" *ngIf="lang === 'fr'"><i class="fab fa-amazon" aria-hidden="true"></i>
+  Amazon Appstore: Save up to 20% on offers in War of the Visions when using Amazon Coins! Learn More
+  <i class="fas fa-chevron-circle-right" aria-hidden="true"></i></a>
+
+  <a class="amazonBannerLink" href="https://l.linklyhq.com/l/eEKV" *ngIf="lang !== 'fr'"><i class="fab fa-amazon" aria-hidden="true"></i>
+  Amazon Appstore: Save up to 20% on offers in War of the Visions when using Amazon Coins! Learn More
+  <i class="fas fa-chevron-circle-right" aria-hidden="true"></i></a>
+</div>
+
+<div class="header">
+  <div class="headerBlock">
+    <h1 class="title">Your tool for War of the Visions</h1>
+    <div class="markdownHome">
+      WOTV-Calc is a web app for the Global and Japanese version of WotV<br />
+      Based on the datamining of War of the Visions, it will helps you to build your team
+    </div>
+    <div class="left_zone">
+      <a href='https://discord.gg/42PHBD85kN' target='_blank'>
+        <img class='discord_img' src='assets/home/discord.png' alt='Join us on discord' />
+      </a>
+    </div>
+
+    <div class="right_zone">
+      <a href="https://www.patreon.com/_bismark" class="patreon" target="_blank">
+        <svg viewBox="0 0 569 546" xmlns="http://www.w3.org/2000/svg" class="logo_patreon">
+          <g>
+            <circle cx="362.589996" cy="204.589996" data-fill="1" id="Oval" r="204.589996"></circle>
+            <rect data-fill="2" height="545.799988" id="Rectangle" width="100" x="0" y="0"></rect>
+          </g>
+        </svg>
+        Become a Patron!
+      </a>
+
+      <a class="amazonLink" href='https://l.linklyhq.com/l/I5OA' target='_blank' *ngIf="lang === 'fr'">
+        <img src='assets/home/amazon_appstore.png' alt='amazon_appstore' />
+      </a>
+
+      <a class="amazonLink" href='https://l.linklyhq.com/l/eEKV' target='_blank' *ngIf="lang !== 'fr'">
+        <img src='assets/home/amazon_appstore.png' alt='amazon_appstore' />
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="updates">
+  <div class="lastUpdate">
+    Last Updates
+  </div>
+  <div *ngFor="let line of updatedFormatted">
+    <div class="itemsTable">
+      <div class="date">
+        {{ line.date }}
+      </div>
+      <div class="itemsCol" *ngFor="let item of line.items">
+        <a [routerLink]="[getRoute('/'  + item.type + '/' + item.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + item.rarity + '.png'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + item.element + '.png'}}" *ngIf="item.element" />
+            <div *ngIf="item.jobs">
+              <div
+                *ngFor="let job of item.jobs; let j = index"
+                [ngClass]="{
+                  'mainJob': j === 0,
+                  'subJob': j !== 0
+                }"
+              >
+                <img src="{{'assets/jobs/' + job.image + '.png'}}" />
+              </div>
+            </div>
+          </div>
+          <div class="itemImgBlock">
+            <img class="itemImg" src="assets/{{ item.type !== 'esper' ? item.type : 'unit' }}s/{{ item.image }}{{ item.type === 'esper' ? '_s' : '' }}{{ item.type === 'equipment' || item.type === 'esper' ? '' : '_m' }}.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="itemName">{{ item.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

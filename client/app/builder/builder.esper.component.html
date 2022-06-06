@@ -1,0 +1,165 @@
+<div class="row">
+  <ng-select #selectBuilderEsper placeholder="Search an esper by name" class="select-builder-esper" [items]="espers" groupBy="rarity" [(ngModel)]="selectedEsperId" (ngModelChange)="selectEsper()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true" dropdownPosition="bottom">
+    <ng-template ng-label-tmp let-item="item">
+      {{item.name}}
+    </ng-template>
+
+    <ng-template ng-optgroup-tmp let-item="item" let-index="index">
+      <div class="rarityLine">
+        <img src="assets/rarity/{{item.rarity}}.png" /><span>{{ rarityTranslate[item.rarity] }}</span>
+      </div>
+    </ng-template>
+
+    <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+      <div class="esperLine" id="esper_{{item.dataId}}">
+        <div class="esperSelector" id="esperSelector_{{item.dataId}}" [ngClass]="{'esperSelectorWithSave': savedEspers[item.dataId]}">
+          <div class="esperLogo">
+            <img src="assets/units/{{ item.image }}_s.png" />
+          </div>
+          <div class="esperNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+        </div>
+        <div class="loadDiv" *ngIf="savedEspers[item.dataId] && savedEspers[item.dataId].length > 0">
+          <i class="fas fa-download"></i>
+        </div>
+        <hr />
+      </div>
+    </ng-template>
+  </ng-select>
+
+  <div class="loadingBlock" *ngIf="loadingBuild">
+    <h1>Your build is loading</h1>
+    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+  </div>
+
+  <div class="saveBlock" *ngIf="esper">
+    <button class="btn btn-sub btn-buildLink" id="opene_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" id="opene_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+  </div>
+
+  <div class="leftBlock" *ngIf="esper">
+    <table>
+      <tbody>
+        <tr>
+          <th>{{ esper.name }}<span *ngIf="esper.customName"> - {{ esper.customName }}</span></th>
+        </tr>
+        <tr>
+          <td>
+            <div class="esperButtons">
+              <button class="btn btn-sub btn-left" id="reset_esper" (click)="resetEsper()">Reset</button>
+              <button class="btn btn-main btn-right" id="max_esper" (click)="maxEsper()">Max esper</button>
+            </div>
+            <div class="esperIcons">
+              <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
+              <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" />
+            </div>
+            <div>
+              <img class="esperImg" src="assets/units/{{ esper.image }}_m.png" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Level</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="awakeningDiv">
+              <div>
+                Awakening
+              </div>
+              <div class="stars">
+                <ngb-rating [(rate)]="esper.star" [max]="maxStar" class="ratingStars">
+                  <ng-template let-fill="fill" let-index="index">
+                    <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
+                  </ng-template>
+                </ngb-rating>
+              </div>
+            </div>
+
+            <div class="levelDiv">
+              <div>
+                Level
+              </div>
+              <div class="zone-select-level">
+                <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="esper.tableLevels" [(ngModel)]="esper.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select> / {{ esper.maxLevel }}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rightBlock" *ngIf="esper">
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="13">Stats</th>
+        </tr>
+        <tr>
+          <th *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']" class="statTd sub">{{ type }}</th>
+        </tr>
+        <tr>
+          <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
+            {{ esper.stats[type].base }} / {{ esper.stats[type][maxStar - 1].max }}
+          </td>
+        </tr>
+        <tr>
+          <th colspan="9">Buffs</th>
+        </tr>
+      </tbody>
+      <tbody *ngFor="let line of esper.possibleBuffs">
+        <tr>
+          <th *ngFor="let buffType of line" class="sub">
+            <img *ngIf="buffsImage.indexOf(buffType.toLowerCase()) !== -1" class="buffImg" title="{{ buffType }}" src="{{ '/assets/buffs/' + buffType.toLowerCase() + '.png' }}">
+            <span *ngIf="buffsImage.indexOf(buffType.toLowerCase()) === -1">{{ buffType.replace("_", " ") }}</span>
+          </th>
+        </tr>
+        <tr>
+          <td *ngFor="let buffType of line">
+            {{ esper.buffs[buffType] && esper.buffs[buffType].percent ? esper.buffs[buffType].percent + '%' : esper.buffs[buffType] && esper.buffs[buffType].total ? esper.buffs[buffType].total : '' }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div *ngIf="esper.grid">
+      <div class="countSPs">
+        SPs: {{ esper.usedSPs }} / {{ esper.maxSPs }}
+      </div>
+    </div>
+
+    <div *ngIf="esper.grid">
+      <div class="builderEsperGridContainer" style="text-align: center;">
+        <ul class="hexGrid" oncontextmenu="return false;">
+          <li *ngFor="let node of esper.grid.gridNodes; let index;" id="click_node_{{node}}" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
+            <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
+
+            <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type === 'center'">
+              <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
+            </div>
+
+            <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type === 'text'"
+                 [ngClass]="{
+                   'activated': esper.board.nodes[node].activated,
+                   'buff': esper.board.nodes[node].skill.type === 'buff',
+                   'notActivable': !canActivateNode(node)
+            }" >
+              <span class="text">{{ esper.grid.nodesForGrid[node].value }}</span>
+              <span class="cost">{{ esper.board.nodes[node].skill.sp }} SP</span>
+            </div>
+          </li>
+        </ul>
+
+        <div [innerHTML]="esper.grid.lines | safeHtml"></div>
+      </div>
+    </div>
+  </div>
+</div>

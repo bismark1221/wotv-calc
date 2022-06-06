@@ -1,0 +1,87 @@
+.itemBlock {
+  padding: 5px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.itemBlock img {
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.in-ng-input {
+  background-color: #E8E6DF;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.in-quest-list {
+  margin-right: 0 !important;
+}
+
+.in-material-lookup {
+  width: 85px;
+  height: 85px;
+  margin: 0px;
+}
+
+.in-material-lookup img {
+  max-height: 80px;
+  max-width: 80px;
+}
+
+.recipe {
+  height: 35px;
+  background: url("assets/items/recipe.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbGreen {
+  height: 35px;
+  width: 35px;
+  background: url("assets/items/it_jb_mm_all.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbBlue {
+  height: 35px;
+  width: 35px;
+  background: url("assets/items/it_jb_mm_all_2.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbViolet {
+  height: 35px;
+  width: 35px;
+  background: url("assets/items/it_jb_mm_all_3.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbYellow {
+  height: 35px;
+  width: 35px;
+  background: url("assets/items/it_jb_mm_all_4.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbPink {
+  height: 35px;
+  width: 35px;
+  background: url("assets/items/it_jb_mm_all_5.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbGreen img, .imgOrbBlue img, .imgOrbViolet img, .imgOrbYellow img, .imgOrbPink img {
+  max-height: 25px;
+  max-width: 25px;
+  vertical-align: top;
+}

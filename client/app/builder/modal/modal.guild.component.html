@@ -1,0 +1,44 @@
+<div>
+  <div class="titleBlock">
+    <div class="title">
+      GUILD
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="customDiv">
+    <table class="guildTable">
+      <tr>
+        <td colspan="5"><h1>Guild Statues</h1></td>
+      </tr>
+      <tr>
+        <td *ngFor="let statue of statueNames">
+          <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
+        </td>
+      </tr>
+      <tr>
+        <td *ngFor="let statue of statueNames" class="statsTd">
+          <div>
+            lv. <select [(ngModel)]="guild[statue]">
+              <option *ngFor="let level of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ level }}</option>
+            </select>
+          </div>
+          <div *ngIf="guild[statue] > 0">
+            <div *ngFor="let stats of statues[statue][guild[statue] - 1]">
+              {{ stats.value + (stats.calcType === "percent" ? "% " : " ") + stats.type }}
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <button class="btn btn-main" (click)="save()">SAVE</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,304 @@
+.row {
+  width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 1220px;
+}
+
+.fa-search {
+  padding-left: 5px;
+  padding-right: 8px;
+  color: #000;
+}
+
+.fa-times {
+  margin-right: 10px;
+}
+
+.fa-times, .fa-chevron-up, .fa-chevron-down {
+  color: #000;
+  cursor: pointer;
+}
+
+.loadingBlock {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/**********/
+/* Search */
+/**********/
+.rarityLine {
+  padding: 5px;
+  background: #E8E6DF;
+  color: #000;
+  height: 40px;
+}
+
+.rarityLine img {
+  height: 30px;
+}
+
+.rarityLine span {
+  font-weight: 600;
+  margin-left: 5px;
+  top: 3px;
+  position: relative;
+}
+
+.equipmentLine {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.equipmentLine hr {
+  margin: 0;
+  width: 1270px;
+}
+
+.equipmentSelector {
+  padding: 0;
+  display: block;
+  height: 50px;
+}
+
+.equipmentLogo {
+  padding: 5px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #E8E6DF;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.equipmentLogo img {
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.equipmentNameSelector {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/***********/
+/* Builder */
+/***********/
+
+.saveBlock {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0;
+}
+
+.btn-buildLink {
+  margin-right: 10px;
+}
+
+.leftBlock {
+  width: 250px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.leftBlock table {
+  width: 100%
+}
+
+.rightBlock {
+  width: 1030px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.equipmentButtons {
+  text-align: center;
+  border-top: 10px;
+}
+
+.equipmentImg {
+  max-height: 150px;
+  margin-top: 10px;
+  max-width: 240px;
+}
+
+.equipmentIcons {
+  position: absolute;
+  width: 230px;
+  padding: 5px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.awakeningDiv {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.levelDiv {
+  width: 100%;
+  height: 30px;
+}
+
+.awakeningDiv div:first-child, .levelDiv div:first-child {
+  float: left;
+}
+
+.btn-select-grow {
+  width: 100px;
+}
+
+.btn-left {
+  width: 90px;
+  margin-right: 10px;
+}
+
+.btn-right {
+  width: 125px;
+}
+
+.dropdownDiv {
+  display: inline-block;
+}
+
+.statsTable {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.skillNameTd {
+  width: 200px;
+}
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.equipmentSelector {
+  display: block;
+}
+
+.equipmentSelectorWithSave {
+  display: inline-block;
+  width: 1200px;
+}
+
+.loadDiv {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.loadDiv .fa-download {
+  font-size: 40px;
+}
+
+.equipmentButtons {
+  text-align: center;
+  border-top: 10px;
+}
+
+.damageImg, .skilImg, .damageSkillImg {
+  height: 32px;
+}
+
+.select-grow {
+  display: inline-block;
+  float: right;
+  width: 110px;
+}
+
+.select-upgrade {
+  display: inline-block;
+  float: right;
+  width: 60px;
+}
+
+.materiaTd {
+  height: 150px;
+  width: 97px;
+}
+
+.materiaDiv {
+  width: 80px;
+  height: 80px;
+  display: block;
+  vertical-align: top;
+}
+
+.materiaDivEmpty {
+  width: 80px;
+  height: 80px;
+  display: block;
+  vertical-align: top;
+  background: url("assets/builder/materia_background.png") 0px 0px no-repeat;
+  background-size: 80px;
+}
+
+.materiaImg {
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  display: block;
+}
+
+.btn-materia {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.materiaEffectTd {
+  width: 417px;
+}
+
+.conditionImg {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 5px;
+}
+
+.passiveHR {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

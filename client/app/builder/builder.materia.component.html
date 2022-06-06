@@ -1,0 +1,261 @@
+<div class="materias" *ngIf="step == 'list' && !loadingBuild">
+  <div class="leftBlock">
+    <h1 class="boldText">FILTERS</h1>
+    <div class="filters">
+      <div class="boldText" (click)="toogleCollapse('rarity')" [attr.aria-expanded]="!collapsed.rarity">
+        Rarity
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.rarity" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.rarity" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.rarity">
+        <div *ngFor="let rarity of rarities">
+          <input type="checkbox" id="rarity{{ rarity }}" (change)="filterList('rarity', rarity)" [checked]="isFilterChecked.rarity[rarity]"/>
+          <label for="rarity{{ rarity }}">{{ rarity }}</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('type')" [attr.aria-expanded]="!collapsed.type">
+        Type
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.type" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.type" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.type">
+        <div *ngFor="let type of types">
+          <input type="checkbox" id="type{{ type }}" (change)="filterList('type', type)" [checked]="isFilterChecked.type[type]"/>
+          <label for="type{{ type }}">{{ translatedTypes[version][type] | titlecase }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div>
+        <button class="btn btn-main" (click)="buildNewMateria()" *ngIf="!loadingData">BUILD NEW MATERIA</button>
+      </div>
+      <!-- <div class="searchBlock">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for a card by name" [(ngModel)]="searchText">
+      </div> -->
+      <div class="underSearchBlock">
+        <div class="totalMaterias">
+          A total of <span class="countMaterias">{{ getFilteredMaterias().length }}</span> materia found
+        </div>
+        <div class="sortOrderBlock">
+          <div class="sortBy">
+            <span>Sort by :</span>
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['rarity']" [(ngModel)]="sort" (ngModelChange)="filterMaterias()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+              </ng-template>
+            </ng-select>
+          </div>
+          <div class="orderBy">
+            <span>Order by :</span>
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="filterMaterias()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.label }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="materiasList">
+      <div class="materiasCol" *ngFor="let materia of getFilteredMaterias()">
+        <a (click)="selectMateria(materia)" class="selectMateriaLink">
+          <div class="materiaImgBlock">
+            <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.png" />
+          </div>
+          <div class="materiaTitle">
+            <div class="materiaName">{{ mainStatTranslate[materia.mainStat] ? mainStatTranslate[materia.mainStat] : materia.mainStat }} - Level : {{ materia.level }}</div>
+            <div class="materiaName" *ngFor="let skillsDetail of materia.skillsDetail">
+              <div *ngFor="let shortEffect of skillsDetail.shortEffect.before">{{ shortEffect }}</div>
+              <div *ngFor="let shortEffect of skillsDetail.shortEffect.after">{{ shortEffect }}</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="loadingBlock" *ngIf="loadingBuild">
+  <h1>Your build is loading</h1>
+  <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+</div>
+
+<div class="materiaBuild" *ngIf="step == 'build' && !loadingBuild">
+  <div class="saveBlock">
+    <button class="btn btn-sub btn-buildLink" id="back_materia_list" (click)="backToMateriaList()"><< Back to list</button>
+    <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+    <button class="btn btn-delete" id="open_deletebuild" (click)="openDeleteModal(saveModal)" *ngIf="materia.storeId">Delete</button>
+  </div>
+
+  <div class="leftBlockBuilder">
+    <table class="noBorder">
+      <tr class="noBorder">
+        <td class="noBorder">
+          <div class="materiaButtons">
+            <button class="btn btn-sub btn-reset-materia" id="reset_materia" (click)="resetMateria()">Reset</button>
+            <button class="btn btn-main btn-max-materia" id="max_materia" (click)="maxMateria()">Max materia</button>
+          </div>
+          <div class="builderMateriaImgBlock">
+            <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.png" />
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="rightBlockBuilder">
+    <table class="statsTable">
+      <tr>
+        <th colspan="4">Main Characteristics</th>
+      </tr>
+      <tr>
+        <th class="sub">Type</th>
+        <th class="sub">Rarity</th>
+        <th class="sub">Level</th>
+        <th class="sub">Main Stat</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="typeDiv">
+            <div class="zone-select-type">
+              <ng-select placeholder="Select a type" class="select-type select-left-builder" [items]="types" [(ngModel)]="materia.slot" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ translatedTypes[version][item] }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ translatedTypes[version][item] }}
+                </ng-template>
+              </ng-select>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="rarityDiv">
+            <div class="zone-select-rarity">
+              <ng-select placeholder="Select a rarity" class="select-rarity select-left-builder" [items]="['UR', 'MR', 'SR', 'R', 'N']" [(ngModel)]="materia.rarity" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+              </ng-select>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="levelDiv">
+            <div class="zone-select-level-materia">
+              <ng-select placeholder="Select a level" class="select-level-materia select-left-builder" [items]="materia.tableLevels" [(ngModel)]="materia.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+              </ng-select>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="mainStatDiv">
+            <div class="zone-select-main-stat">
+              <ng-select placeholder="Select a main stat" class="select-main-stat select-left-builder" [items]="materia.mainStasAvailable" [(ngModel)]="materia.mainStat" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+              </ng-select>
+            </div>
+          </div>
+          {{ materia.mainStatValue.value }} / {{ materia.mainStatValue.max }}
+        </td>
+      </tr>
+    </table>
+
+    <table class="statsTable">
+      <tr>
+        <th colspan="10">Sub Stats <button (click)='randomSubStats()' class="btn btn-sub">Random</button></th>
+      </tr>
+      <tr>
+        <th class="sub" *ngFor="let subStat of materia.subStats">
+          {{ subStat.type }}
+        </th>
+      </tr>
+      <tr>
+        <td *ngFor="let subStat of materia.subStats">
+          <select [(ngModel)]="subStat.value">
+            <option *ngFor="let level of subStat.tableLevels">{{ level }}</option>
+          </select> / {{ subStat.maxValue }}
+        </td>
+      </tr>
+    </table>
+
+    <table class="statsTable">
+      <tr>
+        <th colspan="4">Skills</th>
+      </tr>
+      <tr>
+        <th class="sub">Effect</th>
+        <th class="sub levelTd">Level</th>
+        <th class="sub actionsTd"></th>
+      </tr>
+      <tbody *ngFor="let skillNumber of materia.skillsNumTable">
+        <tr>
+          <td>
+            <div class="zone-select-skill" *ngIf="changeSkill[skillNumber]">
+              <ng-select
+                placeholder="Select a skill"
+                class="select-skill select-left-builder"
+                [items]="materia.availableSkills"
+                [(ngModel)]="materia.skills[skillNumber]"
+                [clearable]="false"
+                bindValue="dataId"
+                bindLabel="formattedEffect"
+                (ngModelChange)="updateSkill(skillNumber)">
+              </ng-select>
+            </div>
+            <div *ngIf="!changeSkill[skillNumber] && materia.skillsDetail[skillNumber]">
+              <div *ngFor="let skillBefore of materia.skillsDetail[skillNumber].formattedEffect.before">{{ skillBefore }}</div>
+              <div *ngFor="let skillAfter of materia.skillsDetail[skillNumber].formattedEffect.after">{{ skillAfter }}</div>
+            </div>
+          </td>
+          <td>
+            <div *ngIf="!changeSkill[skillNumber] && materia.skillsDetail[skillNumber]">
+              <select [(ngModel)]="materia.skillsDetail[skillNumber].level" (ngModelChange)="updateSkill(skillNumber)">
+                <option *ngFor="let level of materia.tableLevels">{{ level }}</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <button (click)='toogleChangeSkill(skillNumber)'  class="btn btn-sub btn-change-skill">Change Skill</button>
+            <button (click)='randomSkill(skillNumber)'  class="btn btn-sub btn-random">Random</button>
+            <button (click)='removeSkill(skillNumber)' class="btn btn-sub" *ngIf="skillNumber > 0">Remove Skill</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

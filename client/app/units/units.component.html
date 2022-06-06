@@ -1,0 +1,254 @@
+<div class="units">
+  <div class="leftBlock">
+    <h1 class="boldText">FILTERS</h1>
+    <div class="filters">
+      <div class="boldText" (click)="toogleCollapse('rarity')" [attr.aria-expanded]="!collapsed.rarity">
+        Rarity
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.rarity" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.rarity" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.rarity">
+        <div *ngFor="let rarity of rarities">
+          <input type="checkbox" id="rarity{{ rarity }}" (change)="filterList('rarity', rarity)" [checked]="isFilterChecked.rarity[rarity]"/>
+          <label for="rarity{{ rarity }}">{{ rarity }}</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('element')" [attr.aria-expanded]="!collapsed.element">
+        Elements
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.element" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.element" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.element">
+        <div *ngFor="let element of elements">
+          <input type="checkbox" id="element{{ element }}" (change)="filterList('element', element)" [checked]="isFilterChecked.element[element]"/>
+          <label for="element{{ element }}">{{ element | titlecase }}</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('limited')" [attr.aria-expanded]="!collapsed.limited">
+        Limited
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.limited" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.limited" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.limited">
+        <div>
+          <input type="checkbox" id="limitedYes" (change)="filterList('limited', true)" [checked]="isFilterChecked.limited['true']"/>
+          <label for="limitedYes">Yes</label>
+        </div>
+        <div>
+          <input type="checkbox" id="limitedNo" (change)="filterList('limited', false)" [checked]="isFilterChecked.limited['false']"/>
+          <label for="limitedNo">No</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('job')" [attr.aria-expanded]="!collapsed.job">
+        Jobs
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.job" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.job" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.job">
+        <div class="switchInJob">
+          Only main job ?
+          <ui-switch class="switchMainJob" (click)="toggleMainJob()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.mainJob === true"></ui-switch>
+        </div>
+        <div class="switchInJob">
+          Only sub job ?
+          <ui-switch class="switchMainJob" (click)="toggleSubJob()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.subJob === true"></ui-switch>
+        </div>
+        <div class="switchInJob">
+          exJob available ?
+          <ui-switch class="switchMainJob" (click)="toggleExJob()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.exJob === true"></ui-switch>
+        </div>
+        <div class="switchInJob">
+          2nd master ability ?
+          <ui-switch class="switchMainJob" (click)="toggleSecondMasterAbility()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.secondMasterAbility === true"></ui-switch>
+        </div>
+        <div><a class="unselectAllJobsLink" (click)="unselectAllJobs()">unselect all</a></div>
+        <div *ngFor="let job of jobs">
+          <input type="checkbox" id="job{{job.dataId}}" (change)="filterList('job', job.dataId)" [checked]="isFilterChecked.job[job.dataId]"/>
+          <label for="job{{job.dataId}}">{{ job.name }}</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('cost')" [attr.aria-expanded]="!collapsed.cost">
+        Cost
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.cost" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.cost" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.cost">
+        <div *ngFor="let cost of costs">
+          <input type="checkbox" id="cost{{ cost }}" (change)="filterList('cost', cost)" [checked]="isFilterChecked.cost[cost]"/>
+          <label for="cost{{ cost }}">{{ cost }}</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('equipment')" [attr.aria-expanded]="!collapsed.equipment">
+        Equipment
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.equipment" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.equipment" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.equipment">
+        <div>
+          <input type="radio" id="equipmentALL" (change)="filterEquipment('weapon', 'ALL')" [checked]="filters.equipment.weapon === 'ALL'"/>
+          <label for="equipmentAXE">All</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentAXE" (change)="filterEquipment('weapon', 'AXE')" [checked]="filters.equipment.weapon === 'AXE'"/>
+          <label for="equipmentAXE">Axe</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentBOOK" (change)="filterEquipment('weapon', 'BOOK')" [checked]="filters.equipment.weapon === 'BOOK'"/>
+          <label for="equipmentBOOK">Book</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentBOOMERANG" (change)="filterEquipment('weapon', 'BOOMERANG')" [checked]="filters.equipment.weapon === 'BOOMERANG'"/>
+          <label for="equipmentBOOMERANG">Boomerang</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentBOW" (change)="filterEquipment('weapon', 'BOW')" [checked]="filters.equipment.weapon === 'BOW'"/>
+          <label for="equipmentBOW">Bow</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentDAGGER" (change)="filterEquipment('weapon', 'DAGGER')" [checked]="filters.equipment.weapon === 'DAGGER'"/>
+          <label for="equipmentDAGGER">Dagger</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentFIST" (change)="filterEquipment('weapon', 'FIST')" [checked]="filters.equipment.weapon === 'FIST'"/>
+          <label for="equipmentFIST">Fist</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentGLOVE" (change)="filterEquipment('weapon', 'GLOVE')" [checked]="filters.equipment.weapon === 'GLOVE'"/>
+          <label for="equipmentGLOVE">Glove</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentGREATSWORD" (change)="filterEquipment('weapon', 'GREATSWORD')" [checked]="filters.equipment.weapon === 'GREATSWORD'"/>
+          <label for="equipmentGREATSWORD">Great Sword</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentGUN" (change)="filterEquipment('weapon', 'GUN')" [checked]="filters.equipment.weapon === 'GUN'"/>
+          <label for="equipmentGUN">Gun</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentKATANA" (change)="filterEquipment('weapon', 'KATANA')" [checked]="filters.equipment.weapon === 'KATANA'"/>
+          <label for="equipmentKATANA">Katana</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentMACE" (change)="filterEquipment('weapon', 'MACE')" [checked]="filters.equipment.weapon === 'MACE'"/>
+          <label for="equipmentMACE">Mace</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentNINJABLADE" (change)="filterEquipment('weapon', 'NINJABLADE')" [checked]="filters.equipment.weapon === 'NINJABLADE'"/>
+          <label for="equipmentNINJABLADE">Ninja Blade</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentROD" (change)="filterEquipment('weapon', 'ROD')" [checked]="filters.equipment.weapon === 'ROD'"/>
+          <label for="equipmentROD">Rod</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentSPEAR" (change)="filterEquipment('weapon', 'SPEAR')" [checked]="filters.equipment.weapon === 'SPEAR'"/>
+          <label for="equipmentSPEAR">Spear</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentSWORD" (change)="filterEquipment('weapon', 'SWORD')" [checked]="filters.equipment.weapon === 'SWORD'"/>
+          <label for="equipmentSWORD">Sword</label>
+        </div>
+
+        <hr class="separatorFilter" />
+
+        <div *ngFor="let armor of armors">
+          <input type="checkbox" id="equipment{{ armor }}" (change)="filterEquipment('armor', armor)" [checked]="isFilterChecked.armor[armor]"/>
+          <label for="equipment{{ armor }}">{{ armor | titlecase }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <form *ngIf="searchForm" [formGroup]="searchForm" class="search-form">
+          <ng-select #SearchBar
+            bindLabel="name"
+            placeholder="Search for an unit by name"
+            [addTag]="true"
+            [multiple]="true"
+            [hideSelected]="true"
+            (close)="onSearchBarClose()"
+            (search)="onSearchBarUpdateTerm($event)"
+            (add)="onSearchBarAdd($event)"
+            (remove)="getUnits()"
+            formControlName="searchOptions"
+            class="search-select"
+            [clearable]="false"
+          >
+          </ng-select>
+        </form>
+        <i class="far fa-question-circle" (click)="openSearchOptionsModal()"></i>
+      </div>
+
+      <div class="underSearchBlock">
+        <div class="totalUnits">
+          A total of <span class="countUnits">{{ getFilteredUnits().length }}</span> characters found
+          <span *ngIf="filtersCount > 0">({{ filtersCount }} filters activated)</span>
+        </div>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            <span>Sort by :</span>
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['rarity', 'name', 'releaseDate']" [(ngModel)]="sort" (ngModelChange)="filterUnits()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+              </ng-template>
+            </ng-select>
+          </div>
+          <div class="orderBy">
+            <span>Order by :</span>
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="filterUnits()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.label }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="unitsList">
+      <div class="unitsCol" *ngFor="let unit of getFilteredUnits()">
+        <a [routerLink]="[getRoute('/unit/' + unit.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}" *ngIf="unit.element" />
+          </div>
+          <div class="unitImgBlock">
+            <img class="unitImg" src="assets/units/{{ unit.image }}_m.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="unitName">{{ unit.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

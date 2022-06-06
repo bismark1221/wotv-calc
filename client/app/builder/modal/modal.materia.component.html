@@ -1,0 +1,217 @@
+<div *ngIf="modalStep === 'select'">
+  <div class="titleBlock">
+    <div class="title">
+      MATERIAS
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="materias">
+    <div class="upperBlock">
+      <div class="filtersBlock">
+        Filter by :
+        <button
+          *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']"
+          class="btn-filter"
+          [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}"
+          (click)="filterList('rarity', rarity)"
+        >
+          <img class="filterRarity" src="assets/rarity/{{rarity}}.png" />
+        </button>
+
+        <button class="btn btn-main btn-new-materia" (click)="buildNewMateria()">BUILD NEW MATERIA</button>
+      </div>
+    </div>
+
+    <hr class="separator" />
+
+    <div class="materiasList">
+      <div class="materiasCol">
+        <a (click)="removeMateria()" id="removeMateria">
+          <div class="materiaImgBlockRemove">
+            <img class="materiaImg" src="assets/builder/remove.png" />
+          </div>
+        </a>
+      </div>
+
+      <div class="materiasCol" *ngFor="let materia of getFilteredMaterias()">
+        <a (click)="selectMateria(materia)" class="selectMateriaLink">
+          <div class="materiaImgBlock">
+            <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.png" />
+          </div>
+          <div class="materiaTitle">
+            <div class="materiaName">{{ mainStatTranslate[materia.mainStat] ? mainStatTranslate[materia.mainStat] : materia.mainStat }} - Level : {{ materia.level }}</div>
+            <div class="materiaName" *ngFor="let skillsDetail of materia.skillsDetail">
+              <div *ngFor="let shortEffect of skillsDetail.shortEffect.before">{{ shortEffect }}</div>
+              <div *ngFor="let shortEffect of skillsDetail.shortEffect.after">{{ shortEffect }}</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="modalStep === 'custom'">
+  <div class="titleBlock">
+    <div class="title">
+      Custom Materia
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="backButtonDiv">
+    <button class="btn btn-sub" (click)="backToMateriaList()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Materia</button>
+  </div>
+
+  <div class="materiaBuilder">
+    <div class="leftBlockBuilder">
+      <table class="noBorder">
+        <tr class="noBorder">
+          <td class="noBorder">
+            <div class="materiaButtons">
+              <button class="btn btn-sub btn-reset-materia" id="reset_materia" (click)="resetMateria()">Reset</button>
+              <button class="btn btn-main btn-max-materia" id="max_materia" (click)="maxMateria()">Max materia</button>
+            </div>
+            <div class="builderMateriaImgBlock">
+              <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.png" />
+            </div>
+          </td>
+        </tr>
+      </table>
+      <button class="btn btn-main btn-save" id="save_materia" (click)="save()">Save</button>
+    </div>
+
+    <div class="rightBlockBuilder">
+      <table class="statsTable">
+        <tr>
+          <th colspan="4">Main Characteristics</th>
+        </tr>
+        <tr>
+          <th class="sub">Rarity</th>
+          <th class="sub">Level</th>
+          <th class="sub">Main Stat</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="rarityDiv">
+              <div class="zone-select-rarity">
+                <ng-select placeholder="Select a rarity" class="select-rarity select-left-builder" [items]="['UR', 'MR', 'SR', 'R', 'N']" [(ngModel)]="materia.rarity" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="levelDiv">
+              <div class="zone-select-level-materia">
+                <ng-select placeholder="Select a level" class="select-level-materia select-left-builder" [items]="materia.tableLevels" [(ngModel)]="materia.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="mainStatDiv">
+              <div class="zone-select-main-stat">
+                <ng-select placeholder="Select a main stat" class="select-main-stat select-left-builder" [items]="materia.mainStasAvailable" [(ngModel)]="materia.mainStat" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select>
+              </div>
+            </div>
+            {{ materia.mainStatValue.value }} / {{ materia.mainStatValue.max }}
+          </td>
+        </tr>
+      </table>
+
+      <table class="statsTable">
+        <tr>
+          <th colspan="10">Sub Stats <button (click)='randomSubStats()' class="btn btn-sub">Random</button></th>
+        </tr>
+        <tr>
+          <th class="sub" *ngFor="let subStat of materia.subStats">
+            {{ subStat.type }}
+          </th>
+        </tr>
+        <tr>
+          <td *ngFor="let subStat of materia.subStats">
+            <select [(ngModel)]="subStat.value">
+              <option *ngFor="let level of subStat.tableLevels">{{ level }}</option>
+            </select> / {{ subStat.maxValue }}
+          </td>
+        </tr>
+      </table>
+
+      <table class="statsTable">
+        <tr>
+          <th colspan="4">Skills</th>
+        </tr>
+        <tr>
+          <th class="sub">Effect</th>
+          <th class="sub levelTd">Level</th>
+          <th class="sub actionsTd"></th>
+        </tr>
+        <tbody *ngFor="let skillNumber of materia.skillsNumTable">
+          <tr>
+            <td>
+              <div class="zone-select-skill" *ngIf="changeSkill[skillNumber]">
+                <ng-select
+                  placeholder="Select a skill"
+                  class="select-skill select-left-builder"
+                  [items]="materia.availableSkills"
+                  [(ngModel)]="materia.skills[skillNumber]"
+                  [clearable]="false"
+                  bindValue="dataId"
+                  bindLabel="formattedEffect"
+                  (ngModelChange)="updateSkill(skillNumber)">
+                </ng-select>
+              </div>
+              <div *ngIf="!changeSkill[skillNumber] && materia.skillsDetail[skillNumber]">
+                <div *ngFor="let skillBefore of materia.skillsDetail[skillNumber].formattedEffect.before">{{ skillBefore }}</div>
+                <div *ngFor="let skillAfter of materia.skillsDetail[skillNumber].formattedEffect.after">{{ skillAfter }}</div>
+              </div>
+            </td>
+            <td>
+              <div *ngIf="!changeSkill[skillNumber] && materia.skillsDetail[skillNumber]">
+                <select [(ngModel)]="materia.skillsDetail[skillNumber].level" (ngModelChange)="updateSkill(skillNumber)">
+                  <option *ngFor="let level of materia.tableLevels">{{ level }}</option>
+                </select>
+              </div>
+            </td>
+            <td>
+              <button (click)='toogleChangeSkill(skillNumber)'  class="btn btn-sub btn-change-skill">Change Skill</button>
+              <button (click)='randomSkill(skillNumber)'  class="btn btn-sub btn-random">Random</button>
+              <button (click)='removeSkill(skillNumber)' class="btn btn-sub" *ngIf="skillNumber > 0">Remove Skill</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

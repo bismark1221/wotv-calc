@@ -1,0 +1,23 @@
+.row {
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.guildTable {
+  width: 820px;
+  margin: auto;
+}
+
+.guildTable, tbody, tr, th, td {
+  border: 0;
+}
+
+.statueImg {
+  height: 250px;
+  margin-top: 10px;
+}
+
+.statsTd {
+  vertical-align: top;
+}

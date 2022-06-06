@@ -1,0 +1,44 @@
+.titleBlock {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #fff;
+}
+
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.closeButton {
+  float: right;
+}
+
+.closeButton button {
+  padding: 10px;
+  background: none;
+  border: 0;
+}
+
+.closeButton button span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.listModal {
+  margin: 10px;
+}
+
+.tableList {
+  margin: auto;
+  width: 800px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.newBuildBlock {
+  text-align: center;
+  margin-bottom: 10px;
+}

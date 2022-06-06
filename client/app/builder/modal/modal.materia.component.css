@@ -1,0 +1,294 @@
+.titleBlock {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #fff;
+}
+
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.closeButton {
+  float: right;
+}
+
+.closeButton button {
+  padding: 10px;
+  background: none;
+  border: 0;
+}
+
+.closeButton button span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.materias {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.btn-new-materia {
+  float: right;
+}
+
+.leftBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  float: left;
+  text-align: left;
+  background: var(--filters-background);
+  color: var(--filters-color);
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.leftBlock h1 {
+  font-size: 20px;
+}
+
+.filters {
+  margin-top: 20px;
+}
+
+.collapsedFilters {
+  margin-top: 5px;
+}
+
+.collapsedFilters input {
+  margin-right: 5px;
+}
+
+.fa-chevron-up, .fa-chevron-down {
+  float: right;
+  margin-right: 10px;
+}
+
+.rightBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 900px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.upperBlock {
+  padding-right: 10px;
+}
+
+.filtersBlock {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.underSearchBlock {
+  height: 30px;
+}
+
+.totalMaterias {
+  float: left;
+  display: inline-block;
+}
+
+.sortOrderBlock {
+  float: right;
+  display: inline-block;
+}
+
+.sortBy, .orderBy {
+  display: inline-block;
+}
+
+.sortBy > span, .orderBy > span {
+  color: var(--sortby-color);
+  margin-right: 8px;
+}
+
+.orderBy {
+  margin-left: 10px;
+}
+
+.countMaterias {
+  font-weight: bold;
+}
+
+.materiasList {
+  margin-top: 10px;
+}
+
+.selectMateriaLink {
+  cursor: pointer;
+}
+
+.materiaImgBlockRemove {
+  width: 200px;
+  height: 182px;
+  cursor: pointer;
+}
+
+.materiaImgBlockRemove img {
+  padding-top: 5px;
+}
+
+.materiaImgBlock {
+  height: 110px;
+  width: 200px;
+}
+
+.materiaImg {
+  height: 100px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.materiasCol {
+  background-color: var(--card-background);
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.materiasCol:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--card-background-hover)
+}
+
+.materiasCol > a:hover {
+  text-decoration: none;
+}
+
+.materiaIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.materiaTitle {
+  background-color: var(--card-title-background);
+  display: table;
+  height: 50px;
+  width: 100%;
+}
+
+.materiaName {
+  font-weight: bold;
+  vertical-align: middle;
+  color: var(--card-title-color);
+}
+
+.select-sort, .select-order {
+  display: inline-block;
+}
+
+.select-sort {
+  width: 140px;
+}
+
+
+/**********/
+/* LOADER */
+/**********/
+.loadingBlock {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/***********/
+/* Builder */
+/***********/
+.backButtonDiv, .customDiv {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.leftBlockBuilder {
+  width: 200px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.leftBlockBuilder table {
+  width: 100%
+}
+
+.btn-reset-materia {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.btn-max-materia {
+  width: 105px;
+}
+
+.noBorder {
+  border: 0;
+}
+
+.builderMateriaImgBlock {
+  margin-top: 10px;
+}
+
+.btn-save {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.materiaBuilder {
+  margin: 10px;
+}
+
+.rightBlockBuilder {
+  width: 850px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mainStatDiv {
+  display: inline-block;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.statsTable {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level {
+  display: inline-block;
+  width: 60px;
+}
+
+.btn-change-skill, .btn-random {
+  margin-right: 10px;
+}
+
+.levelTd {
+  width: 80px;
+}
+
+.actionsTd {
+  width: 350px;
+}

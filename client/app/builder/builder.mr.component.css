@@ -1,0 +1,22 @@
+.row {
+  max-width: 820px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.masterRanksTable {
+  width: 820px;
+}
+
+.masterRanksTable, tbody, tr, th, td {
+  border: 0;
+}
+
+.masterRankImg {
+  width: 128px;
+  margin-top: 10px;
+}
+
+.elementTd {
+  vertical-align: top;
+}

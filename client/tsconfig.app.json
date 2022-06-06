@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": [],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "timers": [
+        "../node_modules/timers-browserify"
+      ],
+      "stream": [
+        "../node_modules/stream-browserify"
+      ]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+  "include": [
+    "main.ts",
+    "polyfills.ts",
+    "../node_modules/ng2-slugify/charmaps.ts"
+  ]
+}

@@ -1,0 +1,23 @@
+<table style="display: inline-block; vertical-align: top;">
+  <tr>
+    <td>
+      ### Index ###
+      <div>
+        <button class="btn btn-main copyButton" (click)="copyData()">Copy Index</button>
+      </div>
+      <span *ngIf="loadingIndex > 0">Loading : {{ loadingIndex }}</span>
+    </td>
+    <td>
+  </tr>
+  <tr>
+    <td>
+      <button (click)="generateIndex()">Generate Index</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h1>NEW ESPER SET RARITY</h1><br />
+      <h1>NEW EQUIPMENT SET ACQUISITION</h1><br />
+    </td>
+  </tr>
+</table>

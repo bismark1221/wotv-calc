@@ -1,0 +1,156 @@
+<div class="espers">
+  <div class="leftBlock">
+    <h1 class="boldText">FILTERS</h1>
+    <div class="filters">
+      <div class="boldText" (click)="toogleCollapse('rarity')" [attr.aria-expanded]="!collapsed.rarity">
+        Rarity
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.rarity" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.rarity" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.rarity">
+        <div *ngFor="let rarity of rarities">
+          <input type="checkbox" id="rarity{{ rarity }}" (change)="filterList('rarity', rarity)" [checked]="isFilterChecked.rarity[rarity]"/>
+          <label for="rarity{{ rarity }}">{{ rarity }}</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('element')" [attr.aria-expanded]="!collapsed.element">
+        Elements
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.element" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.element" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.element">
+        <div *ngFor="let element of elements">
+          <input type="checkbox" id="element{{ element }}" (change)="filterList('element', element)" [checked]="isFilterChecked.element[element]"/>
+          <label for="element{{ element }}">{{ element | titlecase }}</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('upgrade')" [attr.aria-expanded]="!collapsed.upgrade">
+        Upgrade
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.upgrade" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.upgrade" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.upgrade">
+        <div>
+          3* available ?
+          <ui-switch class="switchMainJob" (click)="toggleThreeStars()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.threeStars === true"></ui-switch>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('limited')" [attr.aria-expanded]="!collapsed.limited">
+        Limited
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.limited" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.limited" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.limited">
+        <div>
+          <input type="checkbox" id="limitedYes" (change)="filterList('limited', true)" [checked]="isFilterChecked.limited['true']"/>
+          <label for="limitedYes">Yes</label>
+        </div>
+        <div>
+          <input type="checkbox" id="limitedNo" (change)="filterList('limited', false)" [checked]="isFilterChecked.limited['false']"/>
+          <label for="limitedNo">No</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('cost')" [attr.aria-expanded]="!collapsed.cost">
+        Cost
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.cost" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.cost" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.cost">
+        <div *ngFor="let cost of costs">
+          <input type="checkbox" id="cost{{ cost }}" (change)="filterList('cost', cost)" [checked]="isFilterChecked.cost[cost]"/>
+          <label for="cost{{ cost }}">{{ cost }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <form *ngIf="searchForm" [formGroup]="searchForm" class="search-form">
+          <ng-select #SearchBar
+            bindLabel="name"
+            placeholder="Search for an esper by name"
+            [addTag]="true"
+            [multiple]="true"
+            [hideSelected]="true"
+            (close)="onSearchBarClose()"
+            (search)="onSearchBarUpdateTerm($event)"
+            (add)="onSearchBarAdd($event)"
+            (remove)="getEspers()"
+            formControlName="searchOptions"
+            class="search-select"
+            [clearable]="false"
+          >
+          </ng-select>
+        </form>
+        <i class="far fa-question-circle" (click)="openSearchOptionsModal()"></i>
+      </div>
+
+      <div class="underSearchBlock">
+        <div class="totalEspers">
+          A total of <span class="countEspers">{{ getFilteredEspers().length }}</span> espers found
+          <span *ngIf="filtersCount > 0">({{ filtersCount }} filters activated)</span>
+        </div>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            <span>Sort by :</span>
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['rarity', 'name', 'releaseDate']" [(ngModel)]="sort" (ngModelChange)="filterEspers()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+              </ng-template>
+            </ng-select>
+          </div>
+          <div class="orderBy">
+            <span>Order by :</span>
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="filterEspers()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.label }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="espersList">
+      <div class="espersCol" *ngFor="let esper of getFilteredEspers()">
+        <a [routerLink]="[getRoute('/esper/' + esper.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" *ngIf="esper.element" />
+          </div>
+          <div class="esperImgBlock">
+            <img class="esperImg" src="assets/units/{{ esper.image }}_s.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="esperName">{{ esper.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

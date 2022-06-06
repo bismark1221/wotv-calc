@@ -1,0 +1,389 @@
+.row {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.leftBlock {
+  width: 350px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.rightBlock {
+  width: 830px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.statTable, .effectsTable, .questTable {
+  width: 100%;
+}
+
+.rarityImg {
+  height: 32px;
+}
+
+.questImg {
+  height: 250px;
+  margin-top: 10px;
+}
+
+.effectsTable {
+  margin-top: 10px;
+}
+
+.subJob {
+  height: 40px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.unit {
+  max-height: 40px;
+  max-width: 40px;
+  margin-right: 5px;
+}
+
+.separatorLine {
+  height: 10px;
+}
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.skillNameTd {
+  width: 150px;
+}
+
+.reflectImg {
+  height: 32px;
+  margin-top: 2px;
+}
+
+.timeImg {
+  height: 32px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+
+
+
+
+.equipmentRewardImg {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+
+/*############*/
+/* GRID TABLE */
+/*############*/
+.gridTable {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.mapTile {
+  width: 58px;
+  height: 58px;
+}
+
+.tileNoAccess {
+  background-color: var(--table-border);
+}
+
+.tile0 {
+  background-color: #242222;
+  color: #fff;
+}
+
+.tile1 {
+  background-color: #2b2929;
+  color: #fff;
+}
+
+.tile2 {
+  background-color: #383535;
+  color: #fff;
+}
+
+.tile3 {
+  background-color: #423f3f;
+  color: #fff;
+}
+
+.tile4 {
+  background-color: #4d4949;
+  color: #fff;
+}
+
+.tile5 {
+  background-color: #595454;
+  color: #fff;
+}
+
+.tile6 {
+  background-color: #656060;
+  color: #fff;
+}
+
+.tile7 {
+  background-color: #716b6b;
+  color: #fff;
+}
+
+.tile8 {
+  background-color: #7d7777;
+  color: #fff;
+}
+
+.tile9 {
+  background-color: #898282;
+  color: #fff;
+}
+
+.tile10 {
+  background-color: #948d8d;
+  color: #fff;
+}
+
+.tile11 {
+  background-color: #9f9898;
+  color: #000;
+}
+
+.tile12 {
+  background-color: #aaa2a2;
+  color: #000;
+}
+
+.tile13 {
+  background-color: #b6adad;
+  color: #000;
+}
+
+.tile14 {
+  background-color: #c0b7b7;
+  color: #000;
+}
+
+.tile15 {
+  background-color: #ccc3c3;
+  color: #000;
+}
+
+.tile16 {
+  background-color: #dacfcf;
+  color: #000;
+}
+
+.tile17 {
+  background-color: #e6dbdb;
+  color: #000;
+}
+
+.tile18 {
+  background-color: #f2e7e7;
+  color: #000;
+}
+
+.tile19 {
+  background-color: #fcf0f0;
+  color: #000;
+}
+
+.tile20 {
+  background-color: #fff;
+  color: #000;
+}
+
+.partyTile {
+  background-image: url("assets/grid/party.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.chestTile {
+  background-image: url("assets/grid/chest.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.enemyTile {
+  background-image: url("assets/grid/enemy.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.objectTile {
+  background-image: url("assets/grid/object.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.allyTile {
+  background-image: url("assets/grid/ally.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.switchTile {
+  background-image: url("assets/grid/switch.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyTopLeft {
+  background-image: url("assets/grid/bigEnemyTopLeft.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyTopMiddle {
+  background-image: url("assets/grid/bigEnemyTopMiddle.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyTopRight {
+  background-image: url("assets/grid/bigEnemyTopRight.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyMiddleLeft {
+  background-image: url("assets/grid/bigEnemyMiddleLeft.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyMiddleMiddle {
+  background-image: url("assets/grid/bigEnemyMiddleMiddle.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyMiddleRight {
+  background-image: url("assets/grid/bigEnemyMiddleRight.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyBottomLeft {
+  background-image: url("assets/grid/bigEnemyBottomLeft.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyBottomMiddle {
+  background-image: url("assets/grid/bigEnemyBottomMiddle.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyBottomRight {
+  background-image: url("assets/grid/bigEnemyBottomRight.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+
+/*#############*/
+/* OTHER UNITS */
+/*#############*/
+.job {
+  height: 40px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+  width: 40px;
+  margin: auto;
+}
+
+.job img {
+  max-width: 30px;
+  max-height: 30px;
+  vertical-align: top;
+}
+
+.enemyImg {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 5px;
+}
+
+.elementImg, .damageImg, .statusAilmentImg {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+
+.allyTable, .enemyTable, .chestTable, .objectTable, .switchTable {
+  width: 120%;
+  margin-top: 10px;
+  margin-left: -100px;
+}
+
+.allyTable .idCol, .enemyTable .idCol, .chestTable .idCol, .objectTable .idCol, .switchTable .idCol {
+  width: 70px;
+}
+
+.enemyDetailCol {
+  padding: 0;
+}
+
+.enemyDetailCol table {
+  width: 100%;
+}
+
+.heightResTd {
+  height: 33px;
+}
+
+.skilImg, .atkBasedImg, .damageSkillImg, .timeImg {
+  width: 32px;
+  height: 32px;
+}
+
+.skillTypeTd {
+  width: 85px;
+}
+
+.skillEffectTd {
+  text-align: left;
+}
+
+.enemyLine {
+  cursor: pointer;
+}
+
+.collapseBlock {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.dropRateItemBlock {
+  display: inline-block;
+  margin-right: 10px;
+}

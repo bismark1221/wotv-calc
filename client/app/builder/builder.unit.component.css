@@ -1,0 +1,679 @@
+.row {
+  width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 1220px;
+}
+
+.fa-search {
+  padding-left: 5px;
+  padding-right: 8px;
+  color: #000;
+}
+
+.fa-times {
+  margin-right: 10px;
+}
+
+.fa-times, .fa-chevron-up, .fa-chevron-down {
+  color: #000;
+  cursor: pointer;
+}
+
+.loadingBlock {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.loadDiv {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.loadDiv .fa-download {
+  font-size: 40px;
+}
+
+/**********/
+/* Search */
+/**********/
+.rarityLine {
+  padding: 5px;
+  background: #E8E6DF;
+  color: #000;
+  height: 40px;
+}
+
+.rarityLine img {
+  height: 30px;
+}
+
+.rarityLine span {
+  font-weight: 600;
+  margin-left: 5px;
+  top: 3px;
+  position: relative;
+}
+
+.rarityLogoAndName {
+  display: inline-block;
+}
+
+.switchShowOnlyOtherVersion {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+  padding-top: 3px;
+}
+
+.unitLine {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.unitLine hr {
+  margin: 0;
+  width: 1270px;
+}
+
+.unitSelector {
+  padding: 0;
+  display: block;
+  height: 50px;
+}
+
+.unitLogo {
+  padding: 5px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #E8E6DF;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.unitLogo img {
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.unitNameSelector {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.unitSelectorWithSave {
+  display: inline-block;
+  width: 1200px;
+}
+
+/***********/
+/* Builder */
+/***********/
+
+.saveBlock {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0;
+}
+
+.btn-buildLink {
+  margin-right: 10px;
+}
+
+.leftBlock {
+  width: 250px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.leftBlock table {
+  width: 100%
+}
+
+.unitImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 230px;
+  padding: 5px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.elementImg {
+  height: 32px;
+  float: right;
+}
+
+.awakeningDiv, .masterSkillDiv, .limitDiv {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.lbDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.levelDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.awakeningDiv div:first-child, .lbDiv div:first-child, .levelDiv div:first-child, .masterSkillDiv div:first-child, .limitDiv div:first-child {
+  float: left;
+}
+
+.lbDiv div:first-child {
+  padding-top: 6px;
+}
+
+.levelDiv div:first-child {
+  padding-top: 5px;
+}
+
+.awakeningDiv div:last-child, .lbDiv div:last-child, .levelDiv div:last-child, .masterSkillDiv div:last-child, .limitDiv div:last-child {
+  float: right;
+}
+
+.levelDiv div:last-child {
+  width: 120px;
+}
+
+.masterSkillDiv div:last-child, .limitDiv div:last-child {
+  padding-right: 38px;
+}
+
+.star {
+  height: 20px;
+  background: url("assets/icons/star_off.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.star.filled {
+  height: 20px;
+  background: url("assets/icons/star_on.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.lb {
+  height: 40px;
+  background: url("assets/icons/lb_off.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.lb.filled {
+  height: 40px;
+  background: url("assets/icons/lb_on.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.jobDiv {
+  width: 72px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.lastJobDiv {
+  margin: 0px;
+}
+
+.subJobColumn .jobDiv {
+  padding: 5px;
+}
+
+.subjobDiv {
+  border: 2px solid transparent;
+}
+
+.selectedSubJob, .subjobDiv:hover {
+  cursor: pointer;
+  border: 2px solid #72767A;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subJobColumn .subjobDisable {
+  border: 2px solid transparent !important;
+}
+
+.subjobDisable {
+  opacity: 0.2;
+  cursor: default !important;
+}
+
+.jobsButton {
+  margin-top: 5px;
+}
+
+.mainJob {
+  height: 55px;
+  width: 55px;
+  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin: auto;
+}
+
+.subJob {
+  height: 55px;
+  width: 55px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin: auto;
+}
+
+.mainJob img, .subJob img {
+  max-height: 45px;
+  max-width: 45px;
+  vertical-align: top;
+}
+
+.equipmentDiv, .esparCardDiv {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.equipmentImg, .esperImg, .cardImg {
+  max-width: 70px;
+  max-height: 70px;
+  cursor: pointer;
+}
+
+.guildDiv, .oneMasterRankDiv {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.statueImg {
+  width: 50px;
+}
+
+.btn-left {
+  width: 110px;
+  margin-right: 10px;
+}
+
+.btn-right {
+  width: 110px;
+}
+
+.btn-esper, .btn-card, .btn-equipment {
+  width: 70px;
+  margin-top: 5px;
+}
+
+.btn-guild, .btn-masterRanks {
+  width: 100%;
+}
+
+.dropdownDiv {
+  display: inline-block;
+}
+
+.dropdownFull {
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdownFull .btn-select {
+  width: 100%;
+}
+
+.selectListFull {
+  width: 232px;
+}
+
+.equipmentPointer {
+  cursor: pointer;
+  width: 70px;
+  margin: auto;
+}
+
+/***************/
+/* Right Block */
+/***************/
+.rightBlock {
+  width: 1030px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.statsTable, .skillsTable {
+  width: 100%;
+}
+
+.btn-detail {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.buffsTable, .imbueTable, .skillsBlock {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.skillTitle {
+  width: 100%;
+  height: 33px;
+  color: var(--white);
+  background-color: var(--th-background);
+  text-align: center;
+  padding: 0.3em 0.5em;
+  border-top: 1px solid var(--table-border);
+  border-left: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+  font-weight: bold;
+}
+
+.skillSubTitle {
+  width: 100%;
+  height: 33px;
+  color: var(--black);
+  background-color: var(--sub-th-background);
+  text-align: center;
+  padding: 0.3em 0.5em;
+  border-top: 1px solid var(--table-border);
+  border-left: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+  cursor: pointer;
+}
+
+.skillSubTitle .fas {
+  float: right;
+}
+
+.skillTypeTd {
+  width: 85px;
+}
+
+.skillNameTd {
+  width: 200px;
+}
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.treeTitle {
+  margin-top: 20px;
+  width: 100%;
+  height: 33px;
+  color: var(--white);
+  background-color: var(--th-background);
+  text-align: center;
+  padding: 0.3em 0.5em;
+  border: 1px solid var(--table-border);
+  font-weight: bold;
+}
+
+.builderUnitGridContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+tr.disable {
+  display: none;
+}
+
+.buffImg {
+  width: 40px;
+}
+
+.unitButtons {
+  text-align: center;
+  border-top: 10px;
+}
+
+.background_acc {
+  background: url("assets/builder/background_acc.png") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.background_weapon {
+  background: url("assets/builder/background_weapon.png") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.background_armor {
+  background: url("assets/builder/background_armor.png") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.damageImg, .skilImg, .damageSkillImg, .timeImg, .reflectImg {
+  height: 32px;
+}
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level {
+  display: inline-block;
+  width: 70px;
+}
+
+.select-limit-level, .select-job, .select-resonance, .select-master-skill {
+  display: inline-block;
+  width: 60px;
+}
+
+.select-limit-level {
+  margin-left: 30px;
+}
+
+.masterSkillDiv {
+  text-align: left;
+}
+
+.select-master-skill {
+  margin-left: 14px;
+  text-align: center;
+}
+
+
+/* Damage Simulator */
+.tableSim {
+  width: 100%;
+}
+
+.selectSimSkill {
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+
+.inputMiniStatBlock {
+  width: 120px;
+}
+
+.inputMiniStatBlock .input-group-prepend {
+  width: 65px;
+  padding-right: 0;
+}
+
+.inputMiniStatBlock .input-group-prepend .input-group-text {
+  width: 100%;
+}
+
+.inputInSim {
+  text-align: right;
+}
+
+.simMiniStats {
+  width: 100%;
+  text-align: left;
+  margin-left: 2px;
+}
+
+.simMiniStats .inlineInputGroup {
+  margin-right: 10px;
+}
+
+.inputPercentage {
+  padding-left: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+
+.appendPercentage {
+  border-left: 0;
+}
+
+.appendPercentage .input-group-text {
+  padding-left: 0;
+  background-color: #fff;
+}
+
+.longStatGroup:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.inputUnitStatBlock {
+  width: 190px;
+}
+
+.inputDamageTypePene {
+  width: 260px;
+}
+
+
+
+
+.targetTd {
+  width: 410px;
+  vertical-align: top;
+}
+
+.select-target-race {
+  display: inline-block;
+  width: 190px;
+  margin-right: 10px;
+}
+
+.select-target-element {
+  display: inline-block;
+  width: 190px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.inputInSim::-webkit-outer-spin-button,
+.inputInSim::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputInSim {
+  -moz-appearance: textfield;
+}
+
+.targetStatBlock {
+  width: 190px;
+}
+
+.inputBreakBlock {
+  border-top: 1px solid rgb(206, 212, 218);
+  border-bottom: 1px solid rgb(206, 212, 218);
+}
+
+.inputBreakIcon {
+  padding-right: 0;
+  background-color: #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.inputTargetBreakStat {
+  padding-left: 5px;
+  border-left: 0;
+}
+
+.inputTargetPrepend {
+  width: 58px;
+  margin: 0;
+}
+
+.inputTargetTextImg {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.targetStatImg {
+  height: 34px;
+}
+
+.inlineInputGroup {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.targetStatGroup:nth-child(even) {
+  margin-right: 10px;
+}
+
+.damageTd {
+  vertical-align: top;
+}
+
+.resultConditionBlock {
+  margin-top: 10px;
+}

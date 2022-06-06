@@ -1,0 +1,39 @@
+.row {
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.userTable {
+  margin: auto;
+  border: 0;
+}
+
+.userTable tr, .userTable td {
+  border: 0;
+}
+
+.howToTd {
+  width: 650px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.howToTd h1, .howToTd h3 {
+  text-align: center;
+}
+
+.dumpTd {
+  width: 400px;
+  vertical-align: top;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.loadingDiv {
+  margin-top: 15px;
+  text-align: left;
+}

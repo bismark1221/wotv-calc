@@ -1,0 +1,344 @@
+<div class="row">
+  <ng-select #selectBuilderCard placeholder="Search a card by name" class="select-builder-card" [items]="cards" groupBy="rarity" [(ngModel)]="selectedCardId" (ngModelChange)="selectCard()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true" dropdownPosition="bottom">
+    <ng-template ng-label-tmp let-item="item">
+      {{item.name}}
+    </ng-template>
+
+    <ng-template ng-optgroup-tmp let-item="item" let-index="index">
+      <div class="rarityLine">
+        <div class="rarityLogoAndName">
+          <img src="assets/rarity/{{item.rarity}}.png" /><span>{{ rarityTranslate[item.rarity] }}</span>
+        </div>
+        <div class="switchShowOnlyOtherVersion">
+          Only from other version ?
+          <ui-switch class="switchMainJob" (click)="toggleOtherVersion()" checkedLabel="yes" uncheckedLabel="no" [checked]="showOnlyOtherVersion === true"></ui-switch>
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+      <div class="cardLine" id="card_{{item.dataId}}">
+        <div class="cardSelector" id="cardSelector_{{item.dataId}}" [ngClass]="{'cardSelectorWithSave': savedCards[item.dataId]}">
+          <div class="cardLogo">
+            <img src="assets/cards/{{ item.image }}_m.png" />
+          </div>
+          <div class="cardNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+        </div>
+        <div class="loadDiv" *ngIf="savedCards[item.dataId] && savedCards[item.dataId].length > 0">
+          <i class="fas fa-download"></i>
+        </div>
+        <hr />
+      </div>
+    </ng-template>
+  </ng-select>
+
+  <div class="loadingBlock" *ngIf="loadingBuild">
+    <h1>Your build is loading</h1>
+    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+  </div>
+
+  <div class="saveBlock" *ngIf="card">
+    <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+  </div>
+
+  <div class="leftBlock" *ngIf="card">
+    <table>
+      <tbody>
+        <tr>
+          <th>{{ card.name }}<span *ngIf="card.customName"> - {{ card.customName }}</span></th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cardButtons">
+              <button class="btn btn-sub btn-left" id="reset_card" (click)="resetCard()">Reset</button>
+              <button class="btn btn-main btn-right" id="max_card" (click)="maxCard()">Max card</button>
+            </div>
+            <div class="cardIcons">
+              <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" />
+            </div>
+            <div>
+              <img class="cardImg" src="assets/cards/{{ card.image }}_m.png" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Level</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="awakeningDiv">
+              <div>
+                Awakening
+              </div>
+              <div class="stars">
+                <ngb-rating [(rate)]="card.star" [max]="4" class="ratingStars">
+                  <ng-template let-fill="fill" let-index="index">
+                    <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
+                  </ng-template>
+                </ngb-rating>
+              </div>
+            </div>
+
+            <div class="levelDiv">
+              <div>
+                Level
+              </div>
+              <div class="zone-select-level">
+                <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="card.tableLevels" [(ngModel)]="card.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select> / {{ card.maxLevel }}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rightBlock" *ngIf="card">
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="10">Stats</th>
+        </tr>
+        <tr>
+          <th class="sub" *ngFor="let type of card.statsType" [ngClass]="{'hideStat': card.stats[type].total == 0}">
+            {{ type }}
+          </th>
+        </tr>
+        <tr>
+          <td *ngFor="let type of card.statsType" [ngClass]="{'hideStat': card.stats[type].total == 0}">
+            {{ card.stats[type].total }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="statsTable" *ngIf="card.formattedBuffs">
+      <tbody>
+        <tr>
+          <th colspan="10">Unit Buff</th>
+        </tr>
+        <tr *ngFor="let buff of card.formattedBuffs.self">
+          <td colspan="10">
+            <div *ngIf="buff.cond">
+              <div *ngFor="let cond of buff.cond">
+                <div *ngIf="cond.type === 'birth'">
+                  <span *ngFor="let birth of cond.items">{{ birth }}</span>
+                </div>
+
+                <div *ngIf="cond.type === 'elem'">
+                  <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+                </div>
+
+                <div *ngIf="cond.type === 'job'">
+                  <span *ngFor="let job of cond.items">
+                    <div *ngIf="job.image" class="subJob" title="{{ job.names.en }}">
+                      <img src="{{'assets/jobs/' + job.image + '.png'}}" />
+                    </div>
+                  </span>
+                </div>
+
+                <div *ngIf="cond.type === 'mainJob'">
+                  <span *ngFor="let job of cond.items">
+                    <div *ngIf="job.image" class="mainJob" title="{{ job.names.en }}">
+                      <img src="{{'assets/jobs/' + job.image + '.png'}}" />
+                    </div>
+                  </span>
+                </div>
+
+                <div *ngIf="cond.type === 'unit'">
+                  <span *ngFor="let unit of cond.items">
+                    <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {{ buff.effect }}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="statsTable" *ngIf="card.skills.length > 0">
+      <tbody>
+        <tr>
+          <th colspan="10">Unit Skill</th>
+        </tr>
+        <tr>
+          <th class="sub">name</th>
+          <th class="sub">Effects</th>
+          <th class="sub">Range</th>
+          <th class="sub">Casts</th>
+          <th class="sub">Hits</th>
+          <th class="sub">Cost</th>
+        </tr>
+      </tbody>
+      <tbody *ngFor="let skill of card.skills">
+        <tr *ngIf="skill.cond">
+          <td>
+            Condition
+          </td>
+          <td colspan="10">
+            <div *ngFor="let cond of skill.cond">
+              <div *ngIf="cond.type === 'birth'">
+                <span *ngFor="let birth of cond.items">{{ birth }}</span>
+              </div>
+
+              <div *ngIf="cond.type === 'elem'">
+                <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+              </div>
+
+              <div *ngIf="cond.type === 'job'">
+                <span *ngFor="let job of cond.items">
+                  <div *ngIf="job.image" class="subJob" title="{{ job.names.en }}">
+                    <img src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  </div>
+                </span>
+              </div>
+
+              <div *ngIf="cond.type === 'mainJob'">
+                <span *ngFor="let job of cond.items">
+                  <div *ngIf="job.image" class="mainJob" title="{{ job.names.en }}">
+                    <img src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  </div>
+                </span>
+              </div>
+
+              <div *ngIf="cond.type === 'unit'">
+                <span *ngFor="let unit of cond.items">
+                  <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="skillNameTd">
+            <span>{{ skill.name }}</span>
+            <span *ngIf="skill.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+            <span *ngIf="skill.reflectable">
+              <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+            </span>
+            <span *ngIf="skill.time && skill.time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  {{ skill.time.realValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+              <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+            </span>
+          </td>
+          <td class="skillEffectTd">
+            <div>{{ skill.counterHtml }}</div>
+
+            <div *ngFor="let effect of skill.effectsHtml.before">
+              {{ effect }}
+            </div>
+
+            <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+              <ng-template #tip_damage>
+                <div *ngIf="skill.based === 'physic'">
+                  {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                </div>
+                <div *ngIf="skill.based === 'magic'">
+                  {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                </div>
+                <div *ngIf="skill.based === 'hybrid'">
+                  {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                </div>
+
+                <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                  {{ skill.damage.formula[1] }}% DEX
+                </div>
+                <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                  {{ skill.damage.formula[2] }}% AGI
+                </div>
+                <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                  {{ skill.damage.formula[3] }}% LUCK
+                </div>
+              </ng-template>
+              <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+              <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+            </div>
+
+            <div *ngFor="let effect of skill.effectsHtml.after">
+              {{ effect }}
+            </div>
+          </td>
+          <td class="rangeTd">
+            <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+            </div>
+          </td>
+          <td class="skillCastTd">
+            {{ skill.count }}
+          </td>
+          <td class="skillHitTd">
+            <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
+          </td>
+          <td class="skillCostTd">
+            <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="statsTable" *ngIf="card.formattedBuffs">
+      <tbody>
+        <tr>
+          <th colspan="10">Party Buff</th>
+        </tr>
+        <tr *ngFor="let buff of card.formattedBuffs.party">
+          <td colspan="10">
+            <div *ngIf="buff.cond">
+              <div *ngFor="let cond of buff.cond">
+                <div *ngIf="cond.type === 'birth'">
+                  <span *ngFor="let birth of cond.items">{{ birth }}</span>
+                </div>
+
+                <div *ngIf="cond.type === 'elem'">
+                  <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+                </div>
+
+                <div *ngIf="cond.type === 'job'">
+                  <span *ngFor="let job of cond.items">
+                    <img *ngIf="job.image" class="subJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  </span>
+                </div>
+
+                <div *ngIf="cond.type === 'mainJob'">
+                  <span *ngFor="let job of cond.items">
+                    <img *ngIf="job.image" class="mainJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  </span>
+                </div>
+
+                <div *ngIf="cond.type === 'unit'">
+                  <span *ngFor="let unit of cond.items">
+                    <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {{ buff.effect }}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

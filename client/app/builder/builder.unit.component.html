@@ -1,0 +1,1445 @@
+<div class="row">
+  <ng-select #selectBuilderUnit placeholder="Search an unit by name" class="select-builder-unit" [items]="units" groupBy="rarity" [(ngModel)]="selectedUnitId" (ngModelChange)="selectUnit()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true" dropdownPosition="bottom">
+    <ng-template ng-label-tmp let-item="item">
+      {{item.name}}
+    </ng-template>
+
+    <ng-template ng-optgroup-tmp let-item="item" let-index="index">
+      <div class="rarityLine">
+        <div class="rarityLogoAndName">
+          <img src="assets/rarity/{{item.rarity}}.png" /><span>{{ rarityTranslate[item.rarity] }}</span>
+        </div>
+        <div class="switchShowOnlyOtherVersion">
+          Only from other version ?
+          <ui-switch class="switchMainJob" (click)="toggleOtherVersion()" checkedLabel="yes" uncheckedLabel="no" [checked]="showOnlyOtherVersion === true"></ui-switch>
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+      <div class="unitLine" id="unit_{{item.dataId}}">
+        <div class="unitSelector" id="unitSelector_{{item.dataId}}" [ngClass]="{'unitSelectorWithSave': savedUnits[item.dataId]}">
+          <div class="unitLogo">
+            <img src="assets/units/{{ item.image }}_m.png" />
+          </div>
+          <div class="unitNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+        </div>
+        <div class="loadDiv" *ngIf="savedUnits[item.dataId] && savedUnits[item.dataId].length > 0">
+          <i class="fas fa-download"></i>
+        </div>
+        <hr />
+      </div>
+    </ng-template>
+  </ng-select>
+
+  <div class="loadingBlock" *ngIf="loadingBuild">
+    <h1>Your build is loading</h1>
+    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+  </div>
+
+  <div class="saveBlock" *ngIf="unit">
+    <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+  </div>
+
+  <div class="leftBlock" *ngIf="unit">
+    <table>
+      <tbody>
+        <tr>
+          <th>{{ unit.name }}<span *ngIf="unit.customName"> - {{ unit.customName }}</span></th>
+        </tr>
+        <tr>
+          <td>
+            <div class="unitButtons">
+              <button class="btn btn-sub btn-left" id="reset_unit" (click)="resetUnit()">Reset</button>
+              <button class="btn btn-main btn-right" id="max_unit" (click)="maxUnit()">Max unit</button>
+            </div>
+            <div class="cardIcons">
+              <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
+              <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}" />
+            </div>
+            <div>
+              <img class="unitImg" src="assets/units/{{ unit.image }}_m.png" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Level</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="awakeningDiv">
+              <div>
+                Awakening
+              </div>
+              <div class="stars">
+                <ngb-rating [(rate)]="unit.star" [max]="6" class="ratingStars">
+                  <ng-template let-fill="fill" let-index="index">
+                    <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
+                  </ng-template>
+                </ngb-rating>
+              </div>
+            </div>
+
+            <div class="lbDiv">
+              <div>
+                Limit Break
+              </div>
+              <div class="lbs">
+                <ngb-rating [(rate)]="unit.lb" [max]="5">
+                  <ng-template let-fill="fill" let-index="index">
+                    <div class="lb" [class.filled]="fill === 100" id="change_lb_{{index + 1}}" (click)="changeLB(index + 1)">&nbsp;</div>
+                  </ng-template>
+                </ngb-rating>
+              </div>
+            </div>
+
+            <div class="levelDiv">
+              <div>
+                Level
+              </div>
+              <div class="zone-select-level">
+                <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="unit.tableLevels" [(ngModel)]="unit.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select> / {{ unit.maxLevel }}
+              </div>
+            </div>
+
+            <div class="masterSkillDiv">
+              <div>
+                Master Skill Level
+              </div>
+              <ng-select placeholder="Select a level" class="select-master-skill select-left-builder" [items]="unit.masterSkillLevel" [(ngModel)]="unit.masterSkillActivated" (ngModelChange)="updateMasterSkillLevel()" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item + 1}}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item + 1 }}
+                </ng-template>
+              </ng-select>
+            </div>
+
+            <div class="limitDiv" *ngIf="unit.formattedLimit">
+              <div>
+                Limit Level
+              </div>
+              <ng-select placeholder="Select a limit level" class="select-limit-level select-left-builder" [items]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" (ngModelChange)="updateLimitLevel($event)" [(ngModel)]="unit.formattedLimit.level" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+              </ng-select>
+            </div>
+
+            <div>
+              <button class="btn btn-sub btn-left" id="reset_level" (click)="resetLevel()">Reset level</button>
+              <button class="btn btn-main btn-right" id="max_level" (click)="maxLevelAndJobs()">Max level</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Jobs</th>
+        </tr>
+        <tr>
+          <td>
+            <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'subjobDisable': !unit.jobsData[i].unlocked}">
+              <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                <img src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
+              </div>
+
+              <ng-select placeholder="Select a level" class="select-job select-left-builder" [items]="unit.tableJobLevels[i]" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="updateJobLevel(i)" [clearable]="false" [disabled]="!unit.jobsData[i].unlocked">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+              </ng-select>
+            </div>
+            <div class="jobsButton">
+              <button class="btn btn-sub btn-left" id="reset_job" (click)="resetJob()">Reset Jobs</button>
+              <button class="btn btn-main btn-right" id="max_job" (click)="maxLevelAndJobs()">Max Jobs</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Sub Job</th>
+        </tr>
+        <tr>
+          <td class="subJobColumn">
+            <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'selectedSubJob': i === unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" id="select_subjob_{{i}}" (click)="selectSubJob(i)">
+              <div class="subJob">
+                <img src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
+              </div>
+              {{ unit.jobsData[i].name }}
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Equipment</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="equipmentDiv">
+              Slot 1
+              <div *ngIf="unit && unit.equipments && unit.equipments[0]" id="openModalEquipment0_{{unit.equipments[0].dataId}}" (click)="openEquipmentsModal(0)" class="equipmentPointer">
+                <div class="background_{{ unit.equipments[0].category }}">
+                  <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg"/>
+                </div>
+              </div>
+              <div *ngIf="!unit.equipments || !unit.equipments[0]" id="openModalEquipment0_new" (click)="openEquipmentsModal(0)" class="equipmentPointer">
+                <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+              </div>
+              <button class="btn btn-sub btn-equipment" id="openModalEquipment0_custom" [ngClass]="{'btn-disable': !unit.equipments || !unit.equipments[0]}" (click)="openEquipmentsModal(0)">Custom</button>
+            </div>
+
+            <div class="equipmentDiv" *ngIf="unit && unit.lb >= 2">
+              Slot 2
+              <div *ngIf="unit && unit.equipments && unit.equipments[1]" id="openModalEquipment1_{{unit.equipments[1].dataId}}" (click)="openEquipmentsModal(1)" class="equipmentPointer">
+                <div class="background_{{ unit.equipments[1].category }}">
+                  <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg"/>
+                </div>
+              </div>
+              <div *ngIf="!unit.equipments || !unit.equipments[1]" id="openModalEquipment1_new" (click)="openEquipmentsModal(1)" class="equipmentPointer">
+                <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+              </div>
+              <button class="btn btn-sub btn-equipment" [ngClass]="{'btn-disable': !unit.equipments || !unit.equipments[1]}" id="openModalEquipment1_custom" (click)="openEquipmentsModal(1)">Custom</button>
+            </div>
+
+            <div class="equipmentDiv" *ngIf="unit && (unit.lb < 2 || !unit.lb)">
+              Slot 2
+              <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+              <button class="btn btn-sub btn-disable btn-equipment">Custom</button>
+            </div>
+
+            <div class="equipmentDiv" *ngIf="unit && unit.lb >= 4">
+              TMR
+              <div *ngIf="unit && unit.equipments && unit.equipments[2]" id="openModalEquipment2_{{unit.equipments[2].dataId}}" (click)="openEquipmentsModal(2)" class="equipmentPointer">
+                <div class="background_{{ unit.equipments[2].category }}">
+                  <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg"/>
+                </div>
+              </div>
+              <div *ngIf="!unit.equipments || !unit.equipments[2]" id="openModalEquipment2_new" (click)="openEquipmentsModal(2)" class="equipmentPointer">
+                <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+              </div>
+              <button class="btn btn-sub btn-equipment" [ngClass]="{'btn-disable': !unit.equipments || !unit.equipments[2]}" id="openModalEquipment2_custom" (click)="openEquipmentsModal(2)">Custom</button>
+            </div>
+
+            <div class="equipmentDiv" *ngIf="unit && (unit.lb < 4 || !unit.lb)">
+              TMR
+              <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+              <button class="btn btn-sub btn-disable btn-equipment">Custom</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Esper & Card</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="esparCardDiv">
+              Esper
+              <div *ngIf="unit.esper">
+                <img src="{{'assets/units/' + unit.esper.image + '_m.png'}}" class="esperImg" id="openModalEsper_{{unit.esper.dataId}}" (click)="openEspersModal()"/>
+                Reso
+                <ng-select placeholder="Select a level" class="select-resonance select-left-builder" [items]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" [(ngModel)]="unit.esper.resonance" (ngModelChange)="updateEsperResonance()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select>
+
+                <button class="btn btn-sub btn-esper" id="openModalEsper_custom_{{unit.esper.dataId}}" (click)="openEspersModal()">Custom</button>
+              </div>
+
+              <div *ngIf="!unit.esper">
+                <img src="{{'assets/builder/no_esper.png'}}" class="esperImg" id="openModalEsper_new" (click)="openEspersModal()"/>
+                <button class="btn btn-sub btn-disable btn-esper" id="openModalEsper_custom_new" (click)="openEspersModal()">Custom</button>
+              </div>
+            </div>
+
+            <div class="esparCardDiv">
+              Main Card
+              <div *ngIf="unit.card">
+                <img src="{{'assets/cards/' + unit.card.image + '_m.png'}}" class="cardImg" id="openModalCard_{{unit.card.dataId}}" (click)="openCardsModal()"/>
+                <button class="btn btn-sub btn-card" id="openModalCard_custom_{{unit.card.dataId}}" (click)="openCardsModal()">Custom</button>
+              </div>
+
+              <div *ngIf="!unit.card">
+                <img src="{{'assets/builder/no_card.png'}}" class="cardImg" id="openModalCard_new" (click)="openCardsModal()"/>
+                <button class="btn btn-sub btn-disable btn-card" id="openModalCard_custom_new" (click)="openCardsModal()">Custom</button>
+              </div>
+            </div>
+
+            <div class="esparCardDiv">
+              Sub Card
+              <div *ngIf="unit.subCard">
+                <img src="{{'assets/cards/' + unit.subCard.image + '_m.png'}}" class="cardImg" id="openModalSubCard_{{unit.subCard.dataId}}" (click)="openCardsModal(true)"/>
+                <button class="btn btn-sub btn-card" id="openModalSubCard_custom_{{unit.subCard.dataId}}" (click)="openCardsModal(true)">Custom</button>
+              </div>
+
+              <div *ngIf="!unit.subCard">
+                <img src="{{'assets/builder/no_card.png'}}" class="cardImg" id="openModalSubCard_new" (click)="openCardsModal(true)"/>
+                <button class="btn btn-sub btn-disable btn-card" id="openModalSubCard_custom_new" (click)="openCardsModal(true)">Custom</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Support Skills</th>
+        </tr>
+        <tr *ngFor="let i of [0, 1]">
+          <td>
+            <ng-select placeholder="Select a skill" class="select-support select-left-builder" [items]="unit.availableSupportNodes[i]" [(ngModel)]="unit.activatedSupport[i]" (ngModelChange)="updateSupportSkill()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ unit.activatedSupport[i] && unit.activatedSupport[i] > 0 ? unit.board.nodes[unit.activatedSupport[i]].skill.name : "Select a skill" }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ unit.board.nodes[item].skill.name }}
+              </ng-template>
+            </ng-select>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Counter Skill</th>
+        </tr>
+        <tr>
+          <td>
+            <ng-select placeholder="Select a skill" class="select-counter select-left-builder" [items]="unit.availableCounterNodes" [(ngModel)]="unit.activatedCounter" (ngModelChange)="updateCounterSkill()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ unit.activatedCounter && unit.activatedCounter > 0 ? unit.board.nodes[unit.activatedCounter].skill.name : "Select a skill" }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ unit.board.nodes[item].skill.name }}
+              </ng-template>
+            </ng-select>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Guild</th>
+        </tr>
+        <tr>
+          <td>
+            <div *ngFor="let statue of statueNames" class="guildDiv">
+              <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
+              {{ unit.guild.data[statue] }}
+            </div>
+            <div>
+              <button class="btn btn-sub btn-guild" id="showGuildDetail" (click)="showGuildDetail()">Custom</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Master Ranks</th>
+        </tr>
+        <tr>
+          <td>
+            <div *ngFor="let elementsLine of [['fire', 'ice', 'wind', 'earth'], ['lightning', 'water', 'light', 'dark']]" class="masterRanksDiv">
+              <div *ngFor="let element of elementsLine" class="oneMasterRankDiv">
+                <div>
+                  <img class="statueImg" src="{{ 'assets/masterRanks/' + unit.masterRanks.ranks[element].ranks[(unit.masterRanks.data[element] - 1)].images.background + '_' + unit.masterRanks.ranks[element].ranks[(unit.masterRanks.data[element] - 1)].images.emblem + '_' + unit.masterRanks.ranks[element].ranks[(unit.masterRanks.data[element] - 1)].images.stars + '.png' }}"/>
+                  {{ unit.masterRanks.data[element] }}
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-sub btn-masterRanks" id="showMasterRanksDetail" (click)="showMasterRanksDetail()">Custom</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rightBlock" *ngIf="unit">
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="14">Stats</th>
+        </tr>
+        <tr>
+          <th class="sub"></th>
+          <th class="sub" *ngFor="let type of statsType">{{ type }}</th>
+          <th class="sub">COST</th>
+        </tr>
+      </tbody>
+      <tbody *ngIf="showStatsDetail">
+        <tr *ngFor="let statFrom of statsFrom">
+          <td>{{ statFrom.translate }}</td>
+          <td *ngFor="let type of statsType">
+            <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP'][statFrom.type]">{{ unit.stats["INITIAL_AP"][statFrom.type] }} / </span>
+            <span>{{ unit.stats[type][statFrom.type] }}</span>
+          </td>
+          <td>
+            <span *ngIf="unit.calcCost && unit.calcCost[statFrom.type]">{{ unit.calcCost[statFrom.type] }}</span>
+          </td>
+        </tr>
+
+        <tr *ngFor="let statFrom of [0, 1, 2]">
+          <td>Equipment {{ statFrom }} Stats</td>
+          <td *ngFor="let type of statsType">
+            <div *ngIf="unit.stats[type].equipments">
+              <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP'].equipments && unit.stats['INITIAL_AP'].equipments[statFrom]">{{ unit.stats["INITIAL_AP"].equipments[statFrom] }} / </span>
+              <span>{{ unit.stats[type].equipments[statFrom] }}</span>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+
+        <tr *ngFor="let statFrom of [0, 1, 2]">
+          <td>Equipment {{ statFrom }} Buffs</td>
+          <td *ngFor="let type of statsType">
+            <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP']['equipment' + statFrom + '_buff']">{{ unit.stats["INITIAL_AP"]['equipment' + statFrom + '_buff'] }} / </span>
+            <span>{{ unit.stats[type]['equipment' + statFrom + '_buff'] }}</span>
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Total Equipement</td>
+          <td *ngFor="let type of statsType">
+            <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP']['totalEquipment']">{{ unit.stats["INITIAL_AP"]['totalEquipment'] }} / </span>
+            <span>{{ unit.stats[type]['totalEquipment'] }}</span>
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Total</td>
+          <td *ngFor="let type of statsType">
+            <span *ngIf="type === 'AP'">{{ unit.stats['INITIAL_AP'].total }} / </span>
+            <span>{{ unit.stats[type].total }}</span>
+          </td>
+          <td>{{ unit.calcCost ? unit.calcCost.total : 0 }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-sub btn-detail" (click)="showHideDetail('Stats')">Stats Detail</button>
+
+    <table class="buffsTable">
+      <tbody>
+        <tr>
+          <th colspan="9">Buffs</th>
+        </tr>
+      </tbody>
+      <tbody *ngFor="let line of getAvailableStatType()">
+        <tr>
+          <th class="sub"></th>
+          <th class="sub" *ngFor="let statType of line">
+            <img *ngIf="buffsImage.indexOf(statType.toLowerCase()) !== -1" class="buffImg" title="{{ statType }}" src="{{ '/assets/buffs/' + statType.toLowerCase() + '.png' }}">
+            <span *ngIf="buffsImage.indexOf(statType.toLowerCase()) === -1">{{ statType.replace("_", " ") }}</span>
+          </th>
+        </tr>
+        <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let comeFrom of buffsFrom">
+          <td>{{ comeFrom.translate }}</td>
+          <td *ngFor="let statType of line">{{ unit.stats[statType] ? unit.stats[statType][comeFrom.type] : '' }}</td>
+        </tr>
+
+        <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let statFrom of [0, 1, 2]">
+          <td>Equipment {{ statFrom }} Stats</td>
+          <td *ngFor="let statType of line">
+            <div *ngIf="unit.stats[statType] && unit.stats[statType].equipments">
+              <span>{{ unit.stats[statType].equipments[statFrom] }}</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let statFrom of [0, 1, 2]">
+          <td>Equipment {{ statFrom }} Buffs</td>
+          <td *ngFor="let statType of line">
+            <span *ngIf="unit.stats[statType]">{{ unit.stats[statType]['equipment' + statFrom + '_buff'] }}</span>
+          </td>
+        </tr>
+
+        <tr  [ngClass]="{'disable': !showBuffsDetail}" >
+          <td>Total Equipement</td>
+          <td *ngFor="let statType of line">
+            <span *ngIf="unit.stats[statType]">{{ unit.stats[statType]['totalEquipment'] }}</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Total</td>
+          <td *ngFor="let statType of line"><span *ngIf="unit.stats[statType]">{{ unit.stats[statType].total }}</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-sub btn-detail" (click)="showHideDetail('Buffs')">Buffs Detail</button>
+
+
+    <table class="imbueTable" *ngIf="unit.imbue">
+      <tbody>
+        <tr>
+          <th colspan="9">Imbue</th>
+        </tr>
+        <tr>
+          <td>
+            <div *ngFor="let effect of unit.imbue.effectsHtml.before">
+              {{ effect }}
+            </div>
+            <div *ngFor="let effect of unit.imbue.effectsHtml.after">
+              {{ effect }}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="skillsBlock">
+      <div class="skillTitle">
+        Active Skills
+      </div>
+      <div class="skillSubTitle" (click)="isCollapsedMainJob = !isCollapsedMainJob" [attr.aria-expanded]="!isCollapsedMainJob">
+        Main Job
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedMainJob" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedMainJob" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedSkills" [ngbCollapse]="isCollapsedMainJob">
+        <table class="skillsTable">
+          <tr>
+            <th class="sub skillTypeTd">Type</th>
+            <th class="sub skillNameTd">Name</th>
+            <th class="sub ">Effects</th>
+            <th class="sub rangeTd">Range</th>
+            <th class="sub skillCastTd">Casts</th>
+            <th class="sub skillHitTd">Hits</th>
+            <th class="sub skillCostTd">Cost</th>
+          </tr>
+          <tr *ngFor="let skill of getSkillsPerJob('main')">
+            <td>
+              <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
+              <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+              <span *ngIf="skill.reflectable">
+                <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+              </span>
+              <span *ngIf="skill.time && skill.time.minValue">
+                <ng-template #tip_time>
+                  <div>
+                    {{ skill.time.realValue }}
+                  </div>
+                </ng-template>
+                <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+              </span>
+            </td>
+            <td>{{ skill.name }}</td>
+            <td class="skillEffectTd">
+              <div>{{ skill.counterHtml }}</div>
+
+              <div *ngFor="let effect of skill.effectsHtml.before">
+                {{ effect }}
+              </div>
+
+              <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                <ng-template #tip_damage>
+                  <div *ngIf="skill.based === 'physic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+                  <div *ngIf="skill.based === 'magic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                  </div>
+                  <div *ngIf="skill.based === 'hybrid'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                    {{ skill.damage.formula[1] }}% DEX
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                    {{ skill.damage.formula[2] }}% AGI
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                    {{ skill.damage.formula[3] }}% LUCK
+                  </div>
+                </ng-template>
+                <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+              </div>
+
+              <div *ngFor="let effect of skill.effectsHtml.after">
+                {{ effect }}
+              </div>
+            </td>
+            <td>
+              <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+              <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+              </div>
+            </td>
+            <td>{{ skill.count }}</td>
+            <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+            <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="skillSubTitle" (click)="isCollapsedSubJob = !isCollapsedSubJob" [attr.aria-expanded]="!isCollapsedSubJob">
+        Sub Job
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedSubJob" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedSubJob" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedSkills" [ngbCollapse]="isCollapsedSubJob">
+        <table class="skillsTable">
+          <tr>
+            <th class="sub skillTypeTd">Type</th>
+            <th class="sub skillNameTd">Name</th>
+            <th class="sub ">Effects</th>
+            <th class="sub rangeTd">Range</th>
+            <th class="sub skillCastTd">Casts</th>
+            <th class="sub skillHitTd">Hits</th>
+            <th class="sub skillCostTd">Cost</th>
+          </tr>
+          <tr *ngFor="let skill of getSkillsPerJob('sub')">
+            <td>
+              <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
+              <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+              <span *ngIf="skill.reflectable">
+                <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+              </span>
+              <span *ngIf="skill.time && skill.time.minValue">
+                <ng-template #tip_time>
+                  <div>
+                    {{ skill.time.realValue }}
+                  </div>
+                </ng-template>
+                <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+              </span>
+            </td>
+            <td>{{ skill.name }}</td>
+            <td class="skillEffectTd">
+              <div>{{ skill.counterHtml }}</div>
+
+              <div *ngFor="let effect of skill.effectsHtml.before">
+                {{ effect }}
+              </div>
+
+              <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                <ng-template #tip_damage>
+                  <div *ngIf="skill.based === 'physic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+                  <div *ngIf="skill.based === 'magic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                  </div>
+                  <div *ngIf="skill.based === 'hybrid'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                    {{ skill.damage.formula[1] }}% DEX
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                    {{ skill.damage.formula[2] }}% AGI
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                    {{ skill.damage.formula[3] }}% LUCK
+                  </div>
+                </ng-template>
+                <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+              </div>
+
+              <div *ngFor="let effect of skill.effectsHtml.after">
+                {{ effect }}
+              </div>
+            </td>
+            <td>
+              <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+              <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+              </div>
+            </td>
+            <td>{{ skill.count }}</td>
+            <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+            <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="skillSubTitle" (click)="isCollapsedOther = !isCollapsedOther" [attr.aria-expanded]="!isCollapsedOther">
+        Other Skills
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedOther" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedOther" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedSkills" [ngbCollapse]="isCollapsedOther">
+        <table class="skillsTable">
+          <tr>
+            <th class="sub skillTypeTd">Type</th>
+            <th class="sub skillNameTd">Name</th>
+            <th class="sub ">Effects</th>
+            <th class="sub rangeTd">Range</th>
+            <th class="sub skillCastTd">Casts</th>
+            <th class="sub skillHitTd">Hits</th>
+            <th class="sub skillCostTd">Cost</th>
+          </tr>
+          <tbody *ngFor="let i of [0, 1, 2]">
+            <tr *ngIf="unit.equipments[i] && unit.equipments[i].activeSkill; let skill">
+              <td>
+                <img class="skilImg" title="skill type" src="{{'assets/skill-type/weapon.png'}}" />
+                <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                <span *ngIf="skill.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="skill.time && skill.time.minValue">
+                  <ng-template #tip_time>
+                    <div>
+                      {{ skill.time.realValue }}
+                    </div>
+                  </ng-template>
+                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+                </span>
+              </td>
+              <td>{{ skill.name }}</td>
+              <td class="skillEffectTd">
+                <div>{{ skill.counterHtml }}</div>
+
+                <div *ngFor="let effect of skill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                  <div *ngIf="skill.based === 'physic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+                  <div *ngIf="skill.based === 'magic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                  </div>
+                  <div *ngIf="skill.based === 'hybrid'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                    {{ skill.damage.formula[1] }}% DEX
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                    {{ skill.damage.formula[2] }}% AGI
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                    {{ skill.damage.formula[3] }}% LUCK
+                  </div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
+                <div *ngFor="let effect of skill.effectsHtml.after">
+                  {{ effect }}
+                </div>
+              </td>
+              <td>
+                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+                </div>
+              </td>
+              <td>{{ skill.count }}</td>
+              <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+              <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="unit.activatedSupport[0] !== '0'">
+            <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[0]].skill]">
+              <td>
+                <img class="skilImg" title="skill type" src="{{'assets/skill-type/support.png'}}" />
+                <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                <span *ngIf="skill.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="skill.time && skill.time.minValue">
+                  <ng-template #tip_time>
+                    <div>
+                      {{ skill.time.realValue }}
+                    </div>
+                  </ng-template>
+                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+                </span>
+              </td>
+              <td>{{ skill.name }}</td>
+              <td class="skillEffectTd">
+                <div>{{ skill.counterHtml }}</div>
+
+                <div *ngFor="let effect of skill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                  <div *ngIf="skill.based === 'physic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+                  <div *ngIf="skill.based === 'magic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                  </div>
+                  <div *ngIf="skill.based === 'hybrid'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                    {{ skill.damage.formula[1] }}% DEX
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                    {{ skill.damage.formula[2] }}% AGI
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                    {{ skill.damage.formula[3] }}% LUCK
+                  </div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
+                <div *ngFor="let effect of skill.effectsHtml.after">
+                  {{ effect }}
+                </div>
+              </td>
+              <td>
+                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+                </div>
+              </td>
+              <td>{{ skill.count }}</td>
+              <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+              <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="unit.activatedSupport[1] !== '0'">
+            <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[1]].skill]">
+              <td>
+                <img class="skilImg" title="skill type" src="{{'assets/skill-type/support.png'}}" />
+                <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                <span *ngIf="skill.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="skill.time && skill.time.minValue">
+                  <ng-template #tip_time>
+                    <div>
+                      {{ skill.time.realValue }}
+                    </div>
+                  </ng-template>
+                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+                </span>
+              </td>
+              <td>{{ skill.name }}</td>
+              <td class="skillEffectTd">
+                <div>{{ skill.counterHtml }}</div>
+
+                <div *ngFor="let effect of skill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                  <div *ngIf="skill.based === 'physic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+                  <div *ngIf="skill.based === 'magic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                  </div>
+                  <div *ngIf="skill.based === 'hybrid'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                    {{ skill.damage.formula[1] }}% DEX
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                    {{ skill.damage.formula[2] }}% AGI
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                    {{ skill.damage.formula[3] }}% LUCK
+                  </div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
+                <div *ngFor="let effect of skill.effectsHtml.after">
+                  {{ effect }}
+                </div>
+              </td>
+              <td>
+                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+                </div>
+              </td>
+              <td>{{ skill.count }}</td>
+              <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+              <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="unit.activatedCounter !== '0'">
+            <tr *ngFor="let skill of [unit.board.nodes[unit.activatedCounter].skill]">
+              <td>
+                <img class="skilImg" title="skill type" src="{{'assets/skill-type/counter.png'}}" />
+                <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                <span *ngIf="skill.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="skill.time && skill.time.minValue">
+                  <ng-template #tip_time>
+                    <div>
+                      {{ skill.time.realValue }}
+                    </div>
+                  </ng-template>
+                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+                </span>
+              </td>
+              <td>{{ skill.name }}</td>
+              <td class="skillEffectTd">
+                <div>{{ skill.counterHtml }}</div>
+
+                <div *ngFor="let effect of skill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                  <div *ngIf="skill.based === 'physic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+                  <div *ngIf="skill.based === 'magic'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                  </div>
+                  <div *ngIf="skill.based === 'hybrid'">
+                    {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                    {{ skill.damage.formula[1] }}% DEX
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                    {{ skill.damage.formula[2] }}% AGI
+                  </div>
+                  <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                    {{ skill.damage.formula[3] }}% LUCK
+                  </div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
+                <div *ngFor="let effect of skill.effectsHtml.after">
+                  {{ effect }}
+                </div>
+              </td>
+              <td>
+                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+                </div>
+              </td>
+              <td>{{ skill.count }}</td>
+              <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+              <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="unit.formattedLimit">
+            <tr>
+              <td>
+                <img class="skilImg" title="skill type" src="{{'assets/skill-type/limit.png'}}" />
+                <span *ngIf="unit.formattedLimit.based"><img title="{{ unit.formattedLimit.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + unit.formattedLimit.based + '.png'}}" /></span>
+                <span *ngIf="unit.formattedLimit.reflectable">
+                  <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                </span>
+                <span *ngIf="unit.formattedLimit.time && unit.formattedLimit.time.minValue">
+                  <ng-template #tip_time>
+                    <div>
+                      {{ unit.formattedLimit.time.realValue }
+                    </div>
+                  </ng-template>
+                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                  <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="unit.formattedLimit.possibleTarget == 'unit'"/>
+                </span>
+              </td>
+              <td>{{ unit.formattedLimit.name }}</td>
+              <td class="skillEffectTd">
+                <div>{{ unit.formattedLimit.counterHtml }}</div>
+
+                <div *ngFor="let effect of unit.formattedLimit.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
+                <div *ngIf="unit.formattedLimit.damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div *ngIf="unit.formattedLimit.based === 'physic'">
+                      {{ (100 + (unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% ATK' }}
+                    </div>
+                    <div *ngIf="unit.formattedLimit.based === 'magic'">
+                      {{ (100 + (unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% MAG' }}
+                    </div>
+                    <div *ngIf="unit.formattedLimit.based === 'hybrid'">
+                      {{ (100 + (unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% ATK' }}
+                    </div>
+
+                    <div *ngIf="unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[1] > 0">
+                      {{ unit.formattedLimit.damage.formula[1] }}% DEX
+                    </div>
+                    <div *ngIf="unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[2] > 0">
+                      {{ unit.formattedLimit.damage.formula[2] }}% AGI
+                    </div>
+                    <div *ngIf="unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[3] > 0">
+                      {{ unit.formattedLimit.damage.formula[3] }}% LUCK
+                    </div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ unit.formattedLimit.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ unit.formattedLimit.damageHtml.type.image }}.png" />&nbsp; {{ unit.formattedLimit.damageHtml.effType }} {{ unit.formattedLimit.damageHtml.pool }} {{ unit.formattedLimit.damageHtml.value }}
+                  <div [innerHTML]="unit.formattedLimit.damageHtml.others | safeHtml"></div>
+                </div>
+
+                <div *ngFor="let effect of unit.formattedLimit.effectsHtml.after">
+                  {{ effect }}
+                </div>
+              </td>
+              <td>
+                <ng-template #tip_table><div [innerHTML]="unit.formattedLimit.skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="unit.formattedLimit.skillTableHtml"></div>
+                </div>
+              </td>
+              <td>{{ unit.formattedLimit.count }}</td>
+              <td><span *ngIf="unit.formattedLimit.combo">{{ unit.formattedLimit.combo.num }}</span></td>
+              <td><span *ngIf="unit.formattedLimit.cost">{{ unit.formattedLimit.cost.value }} {{ unit.formattedLimit.cost.type }}</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="damageSimBlock">
+      <div class="damageSimTitle">
+        <div class="skillSubTitle" (click)="isCollapsedDamageSim = !isCollapsedDamageSim" [attr.aria-expanded]="!isCollapsedDamageSim">
+          Damage Simulator
+          <i class="fas fa-chevron-up" *ngIf="!isCollapsedDamageSim" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" *ngIf="isCollapsedDamageSim" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="damageSimSubBlock" [ngbCollapse]="isCollapsedDamageSim">
+        <table class="tableSim">
+          <tr>
+            <td class="targetTd">
+              <div>Unit</div>
+
+              Active Skills
+              <ng-select
+                placeholder="Select a skill"
+                class="select-support select-left-builder selectSimSkill"
+                [items]="unit.skillsForSim"
+                [clearable]="false"
+                [searchable]="false"
+                [(ngModel)]="damageSim.unit.selectedSkill"
+                (ngModelChange)="calculateDamageSim()">
+
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item.name && item.name !== "" ? item.name : "Basic Attack" }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item.name && item.name !== "" ? item.name : "Basic Attack" }}
+                </ng-template>
+              </ng-select>
+
+              <div class="simLongStats">
+                <div class="inlineInputGroup longStatGroup">
+                  <div class="input-group inputUnitStatBlock">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Bravery</span>
+                    </div>
+                    <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.brave" type="number"/>
+                  </div>
+                </div>
+
+                <div class="inlineInputGroup longStatGroup">
+                  <div class="input-group inputUnitStatBlock">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Faith</span>
+                    </div>
+                    <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.faith" type="number"/>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="titleSim">
+                  External Buffs
+                </div>
+
+                <div class="simMiniStats">
+                  <div class="inlineInputGroup">
+                    <div class="input-group inputMiniStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">ATK</span>
+                      </div>
+                      <input class="form-control inputInSim inputPercentage" [(ngModel)]="damageSim.unit.buffs.atk" type="number"/>
+                      <div class="input-group-append appendPercentage">
+                        <div class="input-group-text">%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup">
+                    <div class="input-group inputMiniStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">MAG</span>
+                      </div>
+                      <input class="form-control inputInSim inputPercentage" [(ngModel)]="damageSim.unit.buffs.mag" type="number"/>
+                      <div class="input-group-append appendPercentage">
+                        <div class="input-group-text">%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup">
+                    <div class="input-group inputMiniStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">DEX</span>
+                      </div>
+                      <input class="form-control inputInSim inputPercentage" [(ngModel)]="damageSim.unit.buffs.dex" type="number"/>
+                      <div class="input-group-append appendPercentage">
+                        <div class="input-group-text">%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup">
+                    <div class="input-group inputMiniStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">LUCK</span>
+                      </div>
+                      <input class="form-control inputInSim inputPercentage" [(ngModel)]="damageSim.unit.buffs.luck" type="number"/>
+                      <div class="input-group-append appendPercentage">
+                        <div class="input-group-text">%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup">
+                    <div class="input-group inputMiniStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">AGI</span>
+                      </div>
+                      <input class="form-control inputInSim inputPercentage" [(ngModel)]="damageSim.unit.buffs.agi" type="number"/>
+                      <div class="input-group-append appendPercentage">
+                        <div class="input-group-text">%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="simLongStats">
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Species Killer</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.buffs.raceKiller" type="number"/>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Element Killer</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.buffs.elementKiller" type="number"/>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Element ATK</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.buffs.elementAtk" type="number"/>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Damage Type</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.buffs.damageType" type="number"/>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">DEF Penetration</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.buffs.defense_penetration" type="number"/>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">SPR Penetration</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.buffs.spirit_penetration" type="number"/>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup">
+                    <div class="input-group inputDamageTypePene">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Damage Type Penetration</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.buffs.typeResPene" type="number"/>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup">
+                    <div class="input-group inputDamageTypePene">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Critical hit damage</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.buffs.critic_damage" type="number"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="titleSim">
+                  Chain
+                </div>
+
+                <div class="simLongStats">
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Damage Type</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.chain.type" type="number"/>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Element</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.chain.element" type="number"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="targetTd">
+              Target
+
+              <div>
+                <ng-select placeholder="Select a target element" class="select-target-race" [items]="species" (ngModelChange)="calculateDamageSim()" [(ngModel)]="damageSim.target.race" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select>
+
+                <ng-select placeholder="Select a target element" class="select-target-element" [items]="['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']" (ngModelChange)="calculateDamageSim()" [(ngModel)]="damageSim.target.element" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select>
+              </div>
+
+              <div class="targetAllStats">
+                <div class="titleSim">
+                  Stats
+                </div>
+
+                <div class="inlineInputGroup targetStatGroup">
+                  <div class="input-group targetStatBlock">
+                    <div class="input-group-prepend inputTargetPrepend">
+                      <span class="input-group-text">DEF</span>
+                    </div>
+                    <input class="form-control inputInSim" [(ngModel)]="damageSim.target.def" type="number"/>
+                    <div class="input-group-prepend input-group-append inputBreakBlock">
+                      <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.def" type="number" min="0" title="DEF break (positive)"/>
+                  </div>
+                </div>
+
+                <div class="inlineInputGroup targetStatGroup">
+                  <div class="input-group targetStatBlock">
+                    <div class="input-group-prepend inputTargetPrepend">
+                      <span class="input-group-text">SPR</span>
+                    </div>
+                    <input class="form-control inputInSim" [(ngModel)]="damageSim.target.spr" type="number"/>
+                    <div class="input-group-prepend input-group-append inputBreakBlock">
+                      <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.spr" type="number" min="0"/>
+                  </div>
+                </div>
+
+                <div class="inlineInputGroup targetStatGroup">
+                  <div class="input-group targetStatBlock">
+                    <div class="input-group-prepend inputTargetPrepend">
+                      <span class="input-group-text inputTargetTextImg">
+                        <img class="targetStatImg" title="Element skill resistance" src="/assets/buffs/{{ damageSim.unit.selectedSkill.elem && damageSim.unit.selectedSkill.elem[0] ? damageSim.unit.selectedSkill.elem[0] : unit.element | lowercase }}_res.png">
+                      </span>
+                    </div>
+                    <input class="form-control inputInSim" [(ngModel)]="damageSim.target.elementRes" type="number"/>
+                    <div class="input-group-prepend input-group-append inputBreakBlock">
+                      <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.elementRes" type="number" min="0"/>
+                  </div>
+                </div>
+
+                <div class="inlineInputGroup targetStatGroup">
+                  <div class="input-group targetStatBlock">
+                    <div class="input-group-prepend inputTargetPrepend">
+                      <span class="input-group-text inputTargetTextImg">
+                        <img class="targetStatImg" title="Damage type resistance" src="/assets/buffs/{{ damageSim.unit.selectedSkill.damage.type | lowercase }}_res.png">
+                      </span>
+                    </div>
+                    <input class="form-control inputInSim" [(ngModel)]="damageSim.target.damageTypeRes" type="number"/>
+                    <div class="input-group-prepend input-group-append inputBreakBlock">
+                      <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.damageTypeRes" type="number" min="0"/>
+                  </div>
+                </div>
+
+                <div class="inlineInputGroup targetStatGroup">
+                  <div class="input-group targetStatBlock">
+                    <div class="input-group-prepend inputTargetPrepend">
+                      <span class="input-group-text inputTargetTextImg">
+                        <img class="targetStatImg" title="Single target resistance" src="/assets/buffs/atk_res.png">
+                      </span>
+                    </div>
+                    <input class="form-control inputInSim" [(ngModel)]="damageSim.target.attack_res" type="number"/>
+                    <div class="input-group-prepend input-group-append inputBreakBlock">
+                      <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.attack_res" type="number" min="0"/>
+                  </div>
+                </div>
+
+                <div class="inlineInputGroup targetStatGroup">
+                  <div class="input-group targetStatBlock">
+                    <div class="input-group-prepend inputTargetPrepend">
+                      <span class="input-group-text inputTargetTextImg">
+                        <img class="targetStatImg" title="AOE resistance" src="/assets/buffs/aoe_res.png">
+                      </span>
+                    </div>
+                    <input class="form-control inputInSim" [(ngModel)]="damageSim.target.aoe_res" type="number"/>
+                    <div class="input-group-prepend input-group-append inputBreakBlock">
+                      <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.aoe_res" type="number" min="0"/>
+                  </div>
+                </div>
+
+                <div class="inlineInputGroup targetStatGroup">
+                  <div class="input-group targetStatBlock">
+                    <div class="input-group-prepend inputTargetPrepend">
+                      <span class="input-group-text inputTargetTextImg">
+                        <img class="targetStatImg" title="Faith" src="/assets/buffs/faith.png">
+                      </span>
+                    </div>
+                    <input class="form-control inputInSim" [(ngModel)]="damageSim.target.faith" type="number"/>
+                    <div class="input-group-prepend input-group-append inputBreakBlock">
+                      <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.faith" type="number" min="0"/>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="damageTd">
+              <div>
+                <div>Damage</div>
+                <div>{{ damageSim.result.normal }}</div>
+
+                <div>Critic</div>
+                <div>{{ damageSim.result.critic }}</div>
+              </div>
+
+              <div *ngFor="let condition of damageSim.result.conditions" class="resultConditionBlock">
+                <div>Max damage for condition : {{ condition.type }}</div>
+                <div>{{ condition.normal }}</div>
+
+                <div>Critic</div>
+                <div>{{ condition.critic }}</div>
+              </div>
+
+              <button class="btn btn-sub" (click)="calculateDamageSim()">Calculate</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="treeTitle">
+      Skill Tree
+    </div>
+
+    <div [className]="unit.exJobs.length > 0 ? 'builderEXUnitGridContainer' : 'builderUnitGridContainer'">
+      <ul class="hexGrid" oncontextmenu="return false;">
+        <li *ngFor="let node of unit.grid.gridNodes; let index;" id="node_{{node}}" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
+          <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
+
+          <div class="hex activated" *ngIf="unit.grid.nodesForGrid[node].type === 'center'">
+            <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.png' }}"></span>
+          </div>
+
+          <div class="hex" *ngIf="unit.grid.nodesForGrid[node].type === 'text'"
+               [ngClass]="{
+                 'activated': unit.board.nodes[node].activated,
+                 'buff': unit.board.nodes[node].type === 'buff' && (!unit.board.nodes[node].skill.type || unit.board.nodes[node].skill.type !== 'ex_buff'),
+                 'skill': unit.board.nodes[node].type === 'skill' && unit.board.nodes[node].skill.type === 'skill',
+                 'support': unit.board.nodes[node].type === 'skill' && unit.board.nodes[node].skill.type === 'support',
+                 'counter': unit.board.nodes[node].type === 'skill' && unit.board.nodes[node].skill.type === 'counter',
+                 'ex_buff':
+                   (unit.board.nodes[node].type === 'skill' && unit.board.nodes[node].skill.type === 'ex_buff') ||
+                   (unit.board.nodes[node].type === 'buff' && unit.board.nodes[node].skill.type && unit.board.nodes[node].skill.type === 'ex_buff'),
+                 'unit_level': unit.board.nodes[node].type === 'buff' && unit.board.nodes[node].skill.effects.length > 0 && unit.board.nodes[node].skill.effects[0].type === 'INCREASE_UNIT_LEVEL',
+                 'notActivable': !canActivateNode(node)
+          }" >
+            <i class="fas fa-plus" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated"></i>
+            <span class="text">{{ unit.grid.nodesForGrid[node].value }}</span>
+            <span class="skillLevel" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level === unit.board.nodes[node].skill.maxLevel ? 'MAX' : unit.board.nodes[node].level }}</span>
+            <i class="fas fa-minus" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated" id="minus_node_{{node}}" (click)="rightClickNode(node); $event.stopPropagation()"></i>
+          </div>
+        </li>
+      </ul>
+
+      <div [innerHTML]="unit.grid.lines | safeHtml"></div>
+    </div>
+  </div>
+</div>

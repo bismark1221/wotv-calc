@@ -1,0 +1,314 @@
+<div class="row" *ngIf="card">
+  <div class="leftBlock">
+    <table class="cardTable">
+      <tbody>
+        <tr>
+          <th colspan="3">{{ card.name }}</th>
+        </tr>
+        <tr>
+          <td colspan="3"><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.png'}}" /></td>
+        </tr>
+        <tr>
+          <th class="sub">Rarity</th>
+          <th class="sub">Cost</th>
+          <th class="sub">Limited</th>
+        </tr>
+        <tr>
+          <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" /></td>
+          <td>{{ card.cost }}</td>
+          <td>{{ card.limited ? "Yes" : "No" }}</td>
+        </tr>
+        <tr>
+          <th class="sub" colspan="3">Release Date</th>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <div>
+              {{ card.releaseDate }}
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <button class="btn btn-sub" [routerLink]="[getRoute('/builder/card/' + card.slug)]">Go To Builder</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rightBlock">
+    <table class="statTable">
+      <tbody>
+        <tr>
+          <th colspan="10">Stats</th>
+        </tr>
+        <tr>
+          <th class="sub"></th>
+          <th class="sub" *ngFor="let stat of card.statsType" [ngClass]="{'hideStat': card.stats[stat].min == 0 && card.stats[stat].max == 0}">{{ stat }}</th>
+        </tr>
+        <tr>
+          <td>Min</td>
+          <td *ngFor="let stat of card.statsType" [ngClass]="{'hideStat': card.stats[stat].min == 0 && card.stats[stat].max == 0}">{{ card.stats[stat].min }}</td>
+        </tr>
+        <tr>
+          <td>Max</td>
+          <td *ngFor="let stat of card.statsType" [ngClass]="{'hideStat': card.stats[stat].min == 0 && card.stats[stat].max == 0}">{{ card.stats[stat].max }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="effectsTable">
+      <tr>
+        <th colspan="10">Unit Effects</th>
+      </tr>
+      <tbody *ngFor="let buff of card.formattedUnitBuffs">
+        <tr *ngFor="let cond of buff.cond">
+          <td>Condition</td>
+          <td colspan="10">
+            <div *ngIf="cond.type === 'birth'">
+              <span *ngFor="let birth of cond.items">{{ birth }}</span>
+            </div>
+
+            <div *ngIf="cond.type === 'elem'">
+              <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+            </div>
+
+            <div *ngIf="cond.type === 'job'">
+              <span *ngFor="let job of cond.formattedItems">
+                <div class="subJob">
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                </div>
+              </span>
+            </div>
+
+            <div *ngIf="cond.type === 'mainJob'">
+              <span *ngFor="let job of cond.formattedItems">
+                <div class="mainJob">
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                </div>
+              </span>
+            </div>
+
+            <div *ngIf="cond.type === 'unit'">
+              <span *ngFor="let unit of cond.formattedItems">
+                <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+              </span>
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="buff.classic && buff.classic.type === 'support'">
+          <td>Classic</td>
+          <td colspan="10">
+            <div *ngFor="let effect of buff.classic.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="buff.awake && buff.classic.type === 'support'">
+          <td>Awake</td>
+          <td colspan="10">
+            <div *ngFor="let effect of buff.awake.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="buff.lvmax && buff.classic.type === 'support'">
+          <td>Max</td>
+          <td colspan="10">
+            <div *ngFor="let effect of buff.lvmax.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
+          <th class="sub">name</th>
+          <th class="sub">Effects</th>
+          <th class="sub">Range</th>
+          <th class="sub">Casts</th>
+          <th class="sub">Hits</th>
+          <th class="sub">Cost</th>
+        </tr>
+        <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
+          <td class="skillNameTd">
+            <span>{{ buff.classic.name }}</span>
+            <span *ngIf="buff.classic.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + buff.classic.based + '.png'}}" /></span>
+            <span *ngIf="buff.classic.reflectable">
+              <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+            </span>
+            <span *ngIf="buff.classic.time && buff.classic.time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  Min time: {{ buff.classic.time.minValue }}<br />
+                  Max time: {{ buff.classic.time.maxValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+              <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="buff.classic.possibleTarget == 'unit'"/>
+            </span>
+          </td>
+          <td class="skillEffectTd">
+            <div>{{ buff.classic.counterHtml }}</div>
+
+            <div *ngFor="let effect of buff.classic.effectsHtml.before">
+              {{ effect }}
+            </div>
+
+            <div *ngIf="buff.classic.damageHtml && buff.classic.damageHtml.value">
+              <ng-template #tip_damage>
+                <div *ngIf="!buff.classic.elem">
+                  Take unit element
+                </div>
+
+                <div *ngIf="buff.classic.based === 'physic'">
+                  {{ (100 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] : 0)) + '% ATK' }}
+                </div>
+                <div *ngIf="buff.classic.based === 'magic'">
+                  {{ (100 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] : 0)) + '% MAG' }}
+                </div>
+                <div *ngIf="buff.classic.based === 'hybrid'">
+                  {{ (100 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] : 0)) + '% ATK' }}
+                </div>
+
+                <div *ngIf="buff.classic.damage.formula.type === 0 && buff.classic.damage.formula[1] > 0">
+                  {{ buff.classic.damage.formula[1] }}% DEX
+                </div>
+                <div *ngIf="buff.classic.damage.formula.type === 0 && buff.classic.damage.formula[2] > 0">
+                  {{ buff.classic.damage.formula[2] }}% AGI
+                </div>
+                <div *ngIf="buff.classic.damage.formula.type === 0 && buff.classic.damage.formula[3] > 0">
+                  {{ buff.classic.damage.formula[3] }}% LUCK
+                </div>
+              </ng-template>
+              <img [ngbTooltip]="tip_damage" title="{{ buff.classic.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ buff.classic.damageHtml.type.image }}.png" />&nbsp; {{ buff.classic.damageHtml.effType }} {{ buff.classic.damageHtml.pool }} {{ buff.classic.damageHtml.value }}
+              <div [innerHTML]="buff.classic.damageHtml.others | safeHtml"></div>
+            </div>
+
+            <div *ngFor="let effect of buff.classic.effectsHtml.after">
+              {{ effect }}
+            </div>
+          </td>
+          <td class="rangeTd">
+            <ng-template #tip_table><div [innerHTML]="buff.classic.skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="buff.classic.skillTableHtml"></div>
+            </div>
+          </td>
+          <td class="skillCastTd">
+            {{ buff.classic.count }}
+          </td>
+          <td class="skillHitTd">
+            <span *ngIf="buff.classic.combo">{{ buff.classic.combo.num }}</span>
+          </td>
+          <td class="skillCostTd">
+            <span *ngIf="buff.classic.cost">{{ buff.classic.cost.value }} {{ buff.classic.cost.type }}</span>
+          </td>
+        </tr>
+        <tr class="separatorLine"></tr>
+      </tbody>
+    </table>
+
+    <table class="effectsTable" *ngIf="card.formattedPartyBuffs">
+      <tbody>
+        <tr>
+          <th colspan="10">Party Effects</th>
+        </tr>
+        <tr *ngIf="card.formattedPartyBuffs.classic">
+          <td>Classic</td>
+          <td colspan="10">
+            <div *ngFor="let effect of card.formattedPartyBuffs.classic.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="card.formattedPartyBuffs.awake">
+          <td>Awake</td>
+          <td colspan="10">
+            <div *ngFor="let effect of card.formattedPartyBuffs.awake.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="card.formattedPartyBuffs.lvmax">
+          <td>Max</td>
+          <td colspan="20">
+            <div *ngFor="let effect of card.formattedPartyBuffs.lvmax.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+
+      <tbody *ngFor="let buff of card.formattedPartyBuffs">
+        <tr *ngFor="let cond of buff.cond">
+          <td>Condition</td>
+          <td colspan="10">
+            <div *ngIf="cond.type === 'birth'">
+              <span *ngFor="let birth of cond.items">{{ birth }}</span>
+            </div>
+
+            <div *ngIf="cond.type === 'elem'">
+              <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+            </div>
+
+            <div *ngIf="cond.type === 'job'">
+              <span *ngFor="let job of cond.formattedItems">
+                <div class="subJob">
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                </div>
+              </span>
+            </div>
+
+            <div *ngIf="cond.type === 'mainJob'">
+              <span *ngFor="let job of cond.formattedItems">
+                <div class="mainJob">
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                </div>
+              </span>
+            </div>
+
+            <div *ngIf="cond.type === 'unit'">
+              <span *ngFor="let unit of cond.formattedItems">
+                <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+              </span>
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="buff.classic">
+          <td>Classic</td>
+          <td colspan="10">
+            <div *ngFor="let effect of buff.classic.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="buff.awake">
+          <td>Awake</td>
+          <td colspan="10">
+            <div *ngFor="let effect of buff.awake.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="buff.lvmax">
+          <td>Max</td>
+          <td colspan="10">
+            <div *ngFor="let effect of buff.lvmax.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+        </tr>
+        <tr class="separatorLine"></tr>
+      </tbody>
+    </table>
+
+    <table class="loreTable">
+      <tr>
+        <th>Lore</th>
+      </tr>
+      <tr>
+        <td>{{ card.description }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

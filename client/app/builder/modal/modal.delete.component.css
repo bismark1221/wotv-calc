@@ -1,0 +1,60 @@
+.titleBlock {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #fff;
+}
+
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.closeButton {
+  float: right;
+}
+
+.closeButton button {
+  padding: 10px;
+  background: none;
+  border: 0;
+}
+
+.closeButton button span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.deleteBlock, .confirmBlock, .loadingBlock {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 800px;
+}
+
+.nameInput, .deleteButton {
+  width: 100%;
+  display: block;
+}
+
+.replaceButton {
+  width: 390px;
+  margin-right: 10px;
+}
+
+.cancelButton {
+  width: 390px;
+}
+
+.deleteButton, .confirmButtons {
+  margin-top: 10px;
+}
+
+.loadingBlock {
+  text-align: center;
+}
+
+.loadingText {
+  display: block;
+  margin-bottom: 10px;
+}

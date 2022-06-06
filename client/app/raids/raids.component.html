@@ -1,0 +1,76 @@
+<div class="raids">
+  <div class="leftBlock">
+    <h1 class="boldText">FILTERS</h1>
+    <div class="filters">
+      <div class="boldText" (click)="toogleCollapse('element')" [attr.aria-expanded]="!collapsed.element">
+        Party effects elements
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.element" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.element" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.element">
+        <div *ngFor="let element of elements">
+          <input type="checkbox" id="element{{ element }}" (change)="filterList('element', element)" [checked]="isFilterChecked.element[element]"/>
+          <label for="element{{ element }}">{{ element | titlecase }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for a character by name" [(ngModel)]="searchText">
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalRaids">
+          A total of <span class="countRaids">{{ getFilteredRaids().length }}</span> raids found
+        </div>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            <span>Sort by :</span>
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['name']" [(ngModel)]="sort" (ngModelChange)="getRaids()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
+            </ng-select>
+          </div>
+          <div class="orderBy">
+            <span>Order by :</span>
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="getRaids()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.label }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="raidsList">
+      <div class="raidsCol" *ngFor="let raid of getFilteredRaids()">
+        <a [routerLink]="[getRoute('/raid/' + raid.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="elementImg" src="{{'assets/elements/' + raid.bosses[0].element + '.png'}}" *ngIf="raid.bosses[0].element" />
+          </div>
+          <div class="raidImgBlock">
+            <img class="raidImg" src="{{'assets/units/' + raid.bosses[0].image + '_m.png'}}" />
+          </div>
+          <div class="cardTitle">
+            <span class="raidName">{{ raid.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
