@@ -1382,7 +1382,7 @@ export class SkillService {
         html = 'Increase resistance against unit with float' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'IGNORE_FLOAT' :
-        html = 'Ignore float';
+        html = 'Ignore targets with Float status';
       break;
       case 'HUMAN_KILLER_RES' :
         html = 'Increase human killer resistance' + this.getValue(skill, effect) + this.getTurns(effect);
