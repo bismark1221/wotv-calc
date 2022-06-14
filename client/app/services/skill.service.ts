@@ -1684,6 +1684,9 @@ export class SkillService {
       case 'INCREASE_UNIT_LEVEL' :
         html = 'Increase max level of unit by ' + this.getValue(skill, effect);
       break;
+      case 'EXTEND_ELEMENT_CHAIN' :
+        html = 'Extend elemental chain by 1 turn';
+      break;
       case 'NULLIFY' :
         html = 'Nullify ' + this.getValue(skill, effect);
         effect.ailments.forEach((ailment, index) => {
