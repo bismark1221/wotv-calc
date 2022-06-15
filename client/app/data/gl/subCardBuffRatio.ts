@@ -21,14 +21,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ],
     unitRatio: [
       0.1,
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ]
   },
   TP: {
@@ -37,14 +37,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ],
     unitRatio: [
       0.1,
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ]
   },
   ATK: {
@@ -53,14 +53,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.46
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.46
+      0.5
     ]
   },
   MAG: {
@@ -69,14 +69,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.46
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.46
+      0.5
     ]
   },
   LUCK: {
@@ -85,14 +85,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.48
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.48
+      0.5
     ]
   },
   DEX: {
@@ -101,430 +101,430 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ],
     unitRatio: [
       0.1,
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ]
   },
   FIRE_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   FIRE_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   ICE_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   ICE_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   WIND_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   WIND_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   EARTH_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   EARTH_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   LIGHTNING_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   LIGHTNING_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   WATER_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   WATER_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   LIGHT_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   LIGHT_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   DARK_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   DARK_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   SLASH_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   SLASH_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   PIERCE_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   PIERCE_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   STRIKE_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   STRIKE_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   MISSILE_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   MISSILE_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   MAGIC_ATK: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   MAGIC_RES: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.4
+      0.4,
+      0.5
     ]
   },
   RES_SLASH_ATK_PENETRATION: {
@@ -533,14 +533,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ]
   },
   RES_PIERCE_ATK_PENETRATION: {
@@ -549,14 +549,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ]
   },
   RES_STRIKE_ATK_PENETRATION: {
@@ -565,14 +565,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ]
   },
   RES_MISSILE_ATK_PENETRATION: {
@@ -581,14 +581,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ]
   },
   RES_MAGIC_ATK_PENETRATION: {
@@ -597,46 +597,46 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ]
   },
   ATTACK_RES: {
     partyRatio: [
       0.1,
-      0.12,
-      0.14,
-      0.17,
-      0.2
+      0.15,
+      0.2,
+      0.25,
+      0.3
     ],
     unitRatio: [
       0.1,
-      0.12,
-      0.14,
-      0.17,
-      0.2
+      0.15,
+      0.2,
+      0.25,
+      0.3
     ]
   },
   AOE_RES: {
     partyRatio: [
       0.1,
-      0.12,
-      0.14,
-      0.17,
-      0.2
+      0.15,
+      0.2,
+      0.25,
+      0.3
     ],
     unitRatio: [
       0.1,
-      0.12,
-      0.14,
-      0.17,
-      0.2
+      0.15,
+      0.2,
+      0.25,
+      0.3
     ]
   },
   ON_PHYSIC_ATTACK: {
@@ -645,14 +645,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ]
   },
   ON_MAGIC_ATTACK: {
@@ -661,78 +661,78 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ]
   },
   ACCURACY: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.42
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.42
+      0.4,
+      0.5
     ]
   },
   EVADE: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.42
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.42
+      0.4,
+      0.5
     ]
   },
   DEF: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
-      0.25,
-      0.3
+      0.3,
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
-      0.25,
-      0.3
+      0.3,
+      0.4,
+      0.5
     ]
   },
   SPR: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
-      0.25,
-      0.3
+      0.3,
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
-      0.25,
-      0.3
+      0.3,
+      0.4,
+      0.5
     ]
   },
   KILLER: {
@@ -741,30 +741,30 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ]
   },
   CRITIC_RATE: {
     partyRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.42
+      0.4,
+      0.5
     ],
     unitRatio: [
       0.1,
-      0.15,
       0.2,
       0.3,
-      0.42
+      0.4,
+      0.5
     ]
   },
   CRITIC_DAMAGE: {
@@ -773,30 +773,30 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ],
     unitRatio: [
       0.1,
       0.2,
       0.3,
       0.4,
-      0.45
+      0.5
     ]
   },
   CRITIC_EVADE: {
     partyRatio: [
       0.1,
-      0.2,
-      0.35,
-      0.5,
-      0.66
+      0.25,
+      0.4,
+      0.6,
+      0.8
     ],
     unitRatio: [
       0.1,
-      0.2,
-      0.35,
-      0.5,
-      0.66
+      0.25,
+      0.4,
+      0.6,
+      0.8
     ]
   },
   ACQUIRED_AP: {
@@ -869,14 +869,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ],
     unitRatio: [
       0.1,
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ]
   },
   SPR_DEBUFF_RES: {
@@ -885,14 +885,14 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ],
     unitRatio: [
       0.1,
       0.25,
       0.4,
       0.6,
-      0.75
+      0.8
     ]
   },
   POISON_ATK: {
