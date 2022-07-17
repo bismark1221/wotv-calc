@@ -201,7 +201,8 @@ export class ToolService {
         'UN_LW_P_GRSR_01',
         'UN_LW_S_LAMA_01',
         'UN_LW_S_ARMN_01',
-        'UN_LW_P_FINA_01'
+        'UN_LW_P_FINA_01',
+        'UN_LW_P_IRDL_01'
       ];
 
       if (notSoLimited.indexOf(dataId) === -1) {
@@ -249,7 +250,8 @@ export class ToolService {
         'UN_LW_S_KRKN',
         'UN_LW_P_SLEN',
         'UN_LW_P_IBRA',
-        'VC_LW_XMAS2'
+        'VC_LW_XMAS2',
+        'UN_LW_P_IRDL_01'
       ]
     };
 

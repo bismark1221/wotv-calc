@@ -1717,7 +1717,7 @@ export class SkillService {
           }
 
           if (ailment === 'ALL_AILMENTS') {
-            ailment = 'All ailments expect charm, slow, stop and doom';
+            ailment = 'All ailments except charm, slow, stop and doom';
           }
 
           html += this.upperCaseFirst(ailment.replace('_', ' '));
