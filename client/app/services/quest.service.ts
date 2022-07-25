@@ -482,9 +482,9 @@ export class QuestService {
 
         case 'ALLDEADEXPECTTAG' :
           if (cond.condition.side === 1) {
-            html += 'All enemies annihilated expect ' + this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest);
+            html += 'All enemies annihilated except ' + this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest);
           } else {
-            html += 'All allies annihilated expect ' + this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest);
+            html += 'All allies annihilated except ' + this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest), quest);
           }
         break;
 
