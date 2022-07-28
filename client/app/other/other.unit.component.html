@@ -6,7 +6,7 @@
           <th colspan="2">{{ masterInfos.name }}</th>
         </tr>
         <tr>
-          <td colspan="2"><img class="unitImg" src="{{'assets/units/' + masterInfos.image + '_m.png'}}" /></td>
+          <td colspan="2"><img class="unitImg" src="{{'assets/units/' + masterInfos.image + '_m.webp'}}" /></td>
         </tr>
         <tr>
           <th colspan="2" class="sub">Species</th>
@@ -43,11 +43,11 @@
             <a [routerLink]="[getRoute('/quest/' + enemy.questData.slug)]" [routerLinkActive]="['active']">{{ enemy.questData.name }}</a>
           </td>
           <td>
-            <img src="assets/elements/{{ enemy.element }}.png" class="elementImg" />
+            <img src="assets/elements/{{ enemy.element }}.webp" class="elementImg" />
           </td>
           <td>
             <div class="job" *ngIf="enemy.job" title="{{ enemy.job.name }}">
-              <img src="{{'assets/jobs/' + enemy.job.image + '.png'}}" />
+              <img src="{{'assets/jobs/' + enemy.job.image + '.webp'}}" />
             </div>
           </td>
           <td>
@@ -164,11 +164,11 @@
                 </tr>
                 <tr *ngFor="let skill of enemy.skills">
                   <td>
-                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
+                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.webp" />
 
-                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.webp'}}" /></span>
                     <span *ngIf="skill.reflectable">
-                      <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                      <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                     </span>
                     <span *ngIf="skill.time && skill.time.minValue">
                       <ng-template #tip_time>
@@ -177,10 +177,10 @@
                           Max time: {{ skill.time.maxValue }}
                         </div>
                       </ng-template>
-                      <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                      <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                      <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                     </span>
-                    <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.png'}}" /></span>
+                    <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.webp'}}" /></span>
                   </td>
                   <td>{{ skill.name }}</td>
                   <td class="skillEffectTd">
@@ -212,7 +212,7 @@
                           {{ skill.damage.formula[3] }}% LUCK
                         </div>
                       </ng-template>
-                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                       <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                     </div>
 

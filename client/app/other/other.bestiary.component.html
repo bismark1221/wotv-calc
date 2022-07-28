@@ -61,7 +61,7 @@
       <div class="unitsCol" *ngFor="let unit of getFilteredUnits()">
         <a [routerLink]="[getRoute('/other/unit/' + unit.slug)]" [routerLinkActive]="['active']">
           <div class="unitImgBlock">
-            <img class="unitImg" src="assets/units/{{ unit.image }}_m.png" />
+            <img class="unitImg" src="assets/units/{{ unit.image }}_m.webp" />
           </div>
           <div class="cardTitle">
             <span class="unitName">{{ unit.name }}</span>

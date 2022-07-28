@@ -11,7 +11,7 @@
             <tr>
               <td>
                 <div class="bonusBlock" *ngFor="let bonusUnit of raid.bonus.units">
-                  <img class="unitImg" src="assets/units/{{ bonusUnit.image }}_m.png" title="{{ bonusUnit.names ? bonusUnit.names.en : '' }}"/><br />
+                  <img class="unitImg" src="assets/units/{{ bonusUnit.image }}_m.webp" title="{{ bonusUnit.names ? bonusUnit.names.en : '' }}"/><br />
                   {{ bonusUnit.value }} %
                 </div>
               </td>
@@ -27,7 +27,7 @@
             <tr>
               <td>
                 <div class="bonusBlock" *ngFor="let bonusCard of raid.bonus.cards">
-                  <img class="cardImg" src="assets/cards/{{ bonusCard.image }}_m.png" title="{{ bonusCard.names ? bonusCard.names.en : '' }}"/><br/>
+                  <img class="cardImg" src="assets/cards/{{ bonusCard.image }}_m.webp" title="{{ bonusCard.names ? bonusCard.names.en : '' }}"/><br/>
                   {{ bonusCard.value }} %
                 </div>
               </td>
@@ -42,14 +42,14 @@
                   <th colspan="2">{{ boss.name }}</th>
                 </tr>
                 <tr>
-                  <td colspan="2"><img class="raidImg" src="{{'assets/units/' + boss.image + '_m.png'}}" /></td>
+                  <td colspan="2"><img class="raidImg" src="{{'assets/units/' + boss.image + '_m.webp'}}" /></td>
                 </tr>
                 <tr>
                   <th class="sub">Element</th>
                   <th class="sub">Species</th>
                 </tr>
                 <tr>
-                  <td><img class="rarityImg" src="{{'assets/elements/' + boss.element + '.png'}}" (click)="clickSpecialBismark()"/></td>
+                  <td><img class="rarityImg" src="{{'assets/elements/' + boss.element + '.webp'}}" (click)="clickSpecialBismark()"/></td>
                   <td>{{ boss.species }}</td>
                 </tr>
               </tbody>
@@ -114,14 +114,14 @@
                   <th colspan="8">Res Elem</th>
                 </tr>
                 <tr>
-                  <th class="sub"><img class="elementImg" title="fire resistance" src="{{'assets/elements/fire.png'}}" /></th>
-                  <th class="sub"><img class="elementImg" title="ice resistance" src="{{'assets/elements/ice.png'}}" /></th>
-                  <th class="sub"><img class="elementImg" title="earht resistance" src="{{'assets/elements/earth.png'}}" /></th>
-                  <th class="sub"><img class="elementImg" title="wind resistance" src="{{'assets/elements/wind.png'}}" /></th>
-                  <th class="sub"><img class="elementImg" title="lightning resistance" src="{{'assets/elements/lightning.png'}}" /></th>
-                  <th class="sub"><img class="elementImg" title="water resistance" src="{{'assets/elements/water.png'}}" /></th>
-                  <th class="sub"><img class="elementImg" title="light resistance" src="{{'assets/elements/light.png'}}" /></th>
-                  <th class="sub"><img class="elementImg" title="dark resistance" src="{{'assets/elements/dark.png'}}" /></th>
+                  <th class="sub"><img class="elementImg" title="fire resistance" src="{{'assets/elements/fire.webp'}}" /></th>
+                  <th class="sub"><img class="elementImg" title="ice resistance" src="{{'assets/elements/ice.webp'}}" /></th>
+                  <th class="sub"><img class="elementImg" title="earht resistance" src="{{'assets/elements/earth.webp'}}" /></th>
+                  <th class="sub"><img class="elementImg" title="wind resistance" src="{{'assets/elements/wind.webp'}}" /></th>
+                  <th class="sub"><img class="elementImg" title="lightning resistance" src="{{'assets/elements/lightning.webp'}}" /></th>
+                  <th class="sub"><img class="elementImg" title="water resistance" src="{{'assets/elements/water.webp'}}" /></th>
+                  <th class="sub"><img class="elementImg" title="light resistance" src="{{'assets/elements/light.webp'}}" /></th>
+                  <th class="sub"><img class="elementImg" title="dark resistance" src="{{'assets/elements/dark.webp'}}" /></th>
                 </tr>
                 <tr>
                   <td class="heightResTd"><span *ngIf="boss.stats.FIRE_RES && boss.stats.FIRE_RES.min">{{ boss.stats.FIRE_RES.min }} %</span></td>
@@ -142,11 +142,11 @@
                   <th colspan="5">Res Damage</th>
                 </tr>
                 <tr>
-                  <th class="sub"><img class="damageImg" title="slash resistance" src="{{'assets/damage/neutral_slash.png'}}" /></th>
-                  <th class="sub"><img class="damageImg" title="pierce resistance" src="{{'assets/damage/neutral_pierce.png'}}" /></th>
-                  <th class="sub"><img class="damageImg" title="strike resistance" src="{{'assets/damage/neutral_strike.png'}}" /></th>
-                  <th class="sub"><img class="damageImg" title="missile resistance" src="{{'assets/damage/neutral_missile.png'}}" /></th>
-                  <th class="sub"><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.png'}}" /></th>
+                  <th class="sub"><img class="damageImg" title="slash resistance" src="{{'assets/damage/neutral_slash.webp'}}" /></th>
+                  <th class="sub"><img class="damageImg" title="pierce resistance" src="{{'assets/damage/neutral_pierce.webp'}}" /></th>
+                  <th class="sub"><img class="damageImg" title="strike resistance" src="{{'assets/damage/neutral_strike.webp'}}" /></th>
+                  <th class="sub"><img class="damageImg" title="missile resistance" src="{{'assets/damage/neutral_missile.webp'}}" /></th>
+                  <th class="sub"><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.webp'}}" /></th>
                 </tr>
                 <tr>
                   <td class="heightResTd"><span *ngIf="boss.stats.SLASH_RES && boss.stats.SLASH_RES.min">{{ boss.stats.SLASH_RES.min }} %</span></td>
@@ -164,15 +164,15 @@
                   <th colspan="15">Res Status Ailment</th>
                 </tr>
                 <tr>
-                  <th class="sub"><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.png'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.webp'}}" /></th>
                 </tr>
                 <tr>
                   <td class="heightResTd"><span *ngIf="boss.stats.POISON_RES && boss.stats.POISON_RES.min">{{ boss.stats.POISON_RES.min }} %</span></td>
@@ -186,14 +186,14 @@
                   <td><span *ngIf="boss.stats.TOAD_RES && boss.stats.TOAD_RES.min">{{ boss.stats.TOAD_RES.min }} %</span></td>
                 </tr>
                 <tr>
-                  <th class="sub"><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="stop resistance" src="{{'assets/status-ailments/STOP.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.png'}}" /></th>
-                  <th class="sub"><img class="statusAilmentImg" title="stun resistance" src="{{'assets/status-ailments/STUN.png'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="stop resistance" src="{{'assets/status-ailments/STOP.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="stun resistance" src="{{'assets/status-ailments/STUN.webp'}}" /></th>
                   <th class="sub"></th>
                 </tr>
                 <tr>
@@ -233,7 +233,7 @@
               <tr *ngIf="boss.formattedAttack">
                 <td class="skillNameTd">Basic Attack</td>
                 <td>
-                  <span *ngIf="boss.formattedAttack.based"><img title="{{ boss.formattedAttack.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + boss.formattedAttack.based + '.png'}}" /></span>
+                  <span *ngIf="boss.formattedAttack.based"><img title="{{ boss.formattedAttack.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + boss.formattedAttack.based + '.webp'}}" /></span>
                 </td>
                 <td class="skillEffectTd">
                   <div *ngIf="boss.formattedAttack.effectsHtml && boss.formattedAttack.effectsHtml.before">
@@ -264,7 +264,7 @@
                         {{ boss.formattedAttack.damage.formula[3] }}% LUCK
                       </div>
                     </ng-template>
-                    <img [ngbTooltip]="tip_damage" title="{{ boss.formattedAttack.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ boss.formattedAttack.damageHtml.type.image }}.png" />&nbsp; {{ boss.formattedAttack.damageHtml.effType }} {{ boss.formattedAttack.damageHtml.pool }} {{ boss.formattedAttack.damageHtml.value }}
+                    <img [ngbTooltip]="tip_damage" title="{{ boss.formattedAttack.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ boss.formattedAttack.damageHtml.type.image }}.webp" />&nbsp; {{ boss.formattedAttack.damageHtml.effType }} {{ boss.formattedAttack.damageHtml.pool }} {{ boss.formattedAttack.damageHtml.value }}
                     <div [innerHTML]="boss.formattedAttack.damageHtml.others | safeHtml"></div>
                   </div>
 
@@ -308,11 +308,11 @@
                 <td>{{ boss.skills[skillIndex].maxLevel }}</td>
                 <td>
 
-                  <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
+                  <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.webp" />
 
-                  <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                  <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.webp'}}" /></span>
                   <span *ngIf="skill.reflectable">
-                    <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                    <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                   </span>
                   <span *ngIf="skill.time && skill.time.minValue">
                     <ng-template #tip_time>
@@ -321,10 +321,10 @@
                         Max time: {{ skill.time.maxValue }}
                       </div>
                     </ng-template>
-                    <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                    <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+                    <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                    <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                   </span>
-                  <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.png'}}" /></span>
+                  <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.webp'}}" /></span>
                 </td>
                 <td>{{ skill.name }}</td>
                 <td class="skillEffectTd">
@@ -356,7 +356,7 @@
                         {{ skill.damage.formula[3] }}% LUCK
                       </div>
                     </ng-template>
-                    <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                    <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                     <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                   </div>
 

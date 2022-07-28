@@ -19,10 +19,10 @@
       <div class="filtersBlock">
         Filter by :
         <button *ngFor="let rarity of ['UR', 'MR', 'SR']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}" (click)="filterList('rarity', rarity)">
-          <img class="filterRarity" src="assets/rarity/{{rarity}}.png" />
+          <img class="filterRarity" src="assets/rarity/{{rarity}}.webp" />
         </button>
         <button *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark', 'neutral']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('element', element)}" (click)="filterList('element', element)">
-          <img src="assets/elements/{{element}}.png" />
+          <img src="assets/elements/{{element}}.webp" />
         </button>
       </div>
     </div>
@@ -33,7 +33,7 @@
       <div class="espersCol">
         <a (click)="removeEsper()" id="removeEsper">
           <div class="esperImgBlockRemove">
-            <img class="esperImg" src="assets/builder/remove.png" />
+            <img class="esperImg" src="assets/builder/remove.webp" />
           </div>
         </a>
       </div>
@@ -41,11 +41,11 @@
       <div class="espersCol" *ngFor="let esper of getFilteredEspers()">
         <a (click)="selectEsper(esper.dataId)">
           <div class="cardIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
-            <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" *ngIf="esper.element" />
+            <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.webp'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + esper.element + '.webp'}}" *ngIf="esper.element" />
           </div>
           <div>
-            <img class="esperImg" src="assets/units/{{ esper.image }}_s.png" />
+            <img class="esperImg" src="assets/units/{{ esper.image }}_s.webp" />
           </div>
           <div class="cardTitle">
             <span class="esperName">{{ esper.name }}</span>
@@ -107,11 +107,11 @@
     <div class="leftBlock">
       <div class="espersCol">
         <div class="cardIcons">
-          <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
-          <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" *ngIf="esper.element" />
+          <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.webp'}}" />
+          <img class="elementImg" src="{{'assets/elements/' + esper.element + '.webp'}}" *ngIf="esper.element" />
         </div>
         <div>
-          <img class="esperImg" src="assets/units/{{ esper.image }}_s.png" />
+          <img class="esperImg" src="assets/units/{{ esper.image }}_s.webp" />
         </div>
         <div class="cardTitle">
           <span class="esperName">{{ esper.customName ? esper.name + ' - ' + esper.customName : esper.name }}</span>
@@ -177,7 +177,7 @@
         <tbody *ngFor="let line of esper.possibleBuffs">
           <tr>
             <th class="sub" *ngFor="let buffType of line">
-              <img *ngIf="buffsImage.indexOf(buffType.toLowerCase()) !== -1" class="buffImg" title="{{ buffType }}" src="{{ '/assets/buffs/' + buffType.toLowerCase() + '.png' }}">
+              <img *ngIf="buffsImage.indexOf(buffType.toLowerCase()) !== -1" class="buffImg" title="{{ buffType }}" src="{{ '/assets/buffs/' + buffType.toLowerCase() + '.webp' }}">
               <span *ngIf="buffsImage.indexOf(buffType.toLowerCase()) === -1">{{ buffType.replace("_", " ") }}</span>
             </th>
           </tr>
@@ -202,7 +202,7 @@
               <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
               <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type === 'center'">
-                <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
+                <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.webp' }}"></span>
               </div>
 
               <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type === 'text'"

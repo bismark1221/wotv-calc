@@ -6,7 +6,7 @@
           <th colspan="3">{{ card.name }}</th>
         </tr>
         <tr>
-          <td colspan="3"><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.png'}}" /></td>
+          <td colspan="3"><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.webp'}}" /></td>
         </tr>
         <tr>
           <th class="sub">Rarity</th>
@@ -14,7 +14,7 @@
           <th class="sub">Limited</th>
         </tr>
         <tr>
-          <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" /></td>
+          <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.webp'}}" /></td>
           <td>{{ card.cost }}</td>
           <td>{{ card.limited ? "Yes" : "No" }}</td>
         </tr>
@@ -71,13 +71,13 @@
             </div>
 
             <div *ngIf="cond.type === 'elem'">
-              <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+              <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
             </div>
 
             <div *ngIf="cond.type === 'job'">
               <span *ngFor="let job of cond.formattedItems">
                 <div class="subJob">
-                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.webp'}}" />
                 </div>
               </span>
             </div>
@@ -85,14 +85,14 @@
             <div *ngIf="cond.type === 'mainJob'">
               <span *ngFor="let job of cond.formattedItems">
                 <div class="mainJob">
-                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.webp'}}" />
                 </div>
               </span>
             </div>
 
             <div *ngIf="cond.type === 'unit'">
               <span *ngFor="let unit of cond.formattedItems">
-                <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.webp'}}" />
               </span>
             </div>
           </td>
@@ -132,9 +132,9 @@
         <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
           <td class="skillNameTd">
             <span>{{ buff.classic.name }}</span>
-            <span *ngIf="buff.classic.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + buff.classic.based + '.png'}}" /></span>
+            <span *ngIf="buff.classic.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + buff.classic.based + '.webp'}}" /></span>
             <span *ngIf="buff.classic.reflectable">
-              <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+              <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
             </span>
             <span *ngIf="buff.classic.time && buff.classic.time.minValue">
               <ng-template #tip_time>
@@ -143,8 +143,8 @@
                   Max time: {{ buff.classic.time.maxValue }}
                 </div>
               </ng-template>
-              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-              <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="buff.classic.possibleTarget == 'unit'"/>
+              <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+              <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="buff.classic.possibleTarget == 'unit'"/>
             </span>
           </td>
           <td class="skillEffectTd">
@@ -180,7 +180,7 @@
                   {{ buff.classic.damage.formula[3] }}% LUCK
                 </div>
               </ng-template>
-              <img [ngbTooltip]="tip_damage" title="{{ buff.classic.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ buff.classic.damageHtml.type.image }}.png" />&nbsp; {{ buff.classic.damageHtml.effType }} {{ buff.classic.damageHtml.pool }} {{ buff.classic.damageHtml.value }}
+              <img [ngbTooltip]="tip_damage" title="{{ buff.classic.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ buff.classic.damageHtml.type.image }}.webp" />&nbsp; {{ buff.classic.damageHtml.effType }} {{ buff.classic.damageHtml.pool }} {{ buff.classic.damageHtml.value }}
               <div [innerHTML]="buff.classic.damageHtml.others | safeHtml"></div>
             </div>
 
@@ -248,13 +248,13 @@
             </div>
 
             <div *ngIf="cond.type === 'elem'">
-              <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+              <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
             </div>
 
             <div *ngIf="cond.type === 'job'">
               <span *ngFor="let job of cond.formattedItems">
                 <div class="subJob">
-                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.webp'}}" />
                 </div>
               </span>
             </div>
@@ -262,14 +262,14 @@
             <div *ngIf="cond.type === 'mainJob'">
               <span *ngFor="let job of cond.formattedItems">
                 <div class="mainJob">
-                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.webp'}}" />
                 </div>
               </span>
             </div>
 
             <div *ngIf="cond.type === 'unit'">
               <span *ngFor="let unit of cond.formattedItems">
-                <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.webp'}}" />
               </span>
             </div>
           </td>

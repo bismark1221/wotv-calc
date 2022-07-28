@@ -217,28 +217,28 @@
 
 .star {
   height: 20px;
-  background: url("assets/icons/star_off.png") 0px 0px no-repeat;
+  background: url("assets/icons/star_off.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
 
 .star.filled {
   height: 20px;
-  background: url("assets/icons/star_on.png") 0px 0px no-repeat;
+  background: url("assets/icons/star_on.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
 
 .lb {
   height: 40px;
-  background: url("assets/icons/lb_off.png") 0px 0px no-repeat;
+  background: url("assets/icons/lb_off.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
 
 .lb.filled {
   height: 40px;
-  background: url("assets/icons/lb_on.png") 0px 0px no-repeat;
+  background: url("assets/icons/lb_on.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
@@ -285,7 +285,7 @@
 .mainJob {
   height: 55px;
   width: 55px;
-  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background: url("assets/jobs/base_main.webp") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
   margin: auto;
@@ -294,7 +294,7 @@
 .subJob {
   height: 55px;
   width: 55px;
-  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
   margin: auto;
@@ -478,21 +478,21 @@ tr.disable {
 }
 
 .background_acc {
-  background: url("assets/builder/background_acc.png") 0px 0px no-repeat;
+  background: url("assets/builder/background_acc.webp") 0px 0px no-repeat;
   background-size: 70px;
   width: 70px;
   height: 70px;
 }
 
 .background_weapon {
-  background: url("assets/builder/background_weapon.png") 0px 0px no-repeat;
+  background: url("assets/builder/background_weapon.webp") 0px 0px no-repeat;
   background-size: 70px;
   width: 70px;
   height: 70px;
 }
 
 .background_armor {
-  background: url("assets/builder/background_armor.png") 0px 0px no-repeat;
+  background: url("assets/builder/background_armor.webp") 0px 0px no-repeat;
   background-size: 70px;
   width: 70px;
   height: 70px;

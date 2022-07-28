@@ -86,7 +86,7 @@
             </div>
 
             <div *ngIf="reward.type === 'equipment'">
-              <img class="equipmentRewardImg" src="assets/equipments/{{ reward.reward.image }}.png" title="{{ reward.reward.name }}" /><br />
+              <img class="equipmentRewardImg" src="assets/equipments/{{ reward.reward.image }}.webp" title="{{ reward.reward.name }}" /><br />
               {{ reward.reward.name }}
             </div>
           </div>
@@ -158,14 +158,14 @@
             A{{ j + 1 }}
           </td>
           <td>
-            <img src="assets/units/{{ally.image}}_m.png" class="enemyImg" />{{ ally.name }}
+            <img src="assets/units/{{ally.image}}_m.webp" class="enemyImg" />{{ ally.name }}
           </td>
           <td>
-            <img src="assets/elements/{{ ally.element }}.png" class="elementImg" />
+            <img src="assets/elements/{{ ally.element }}.webp" class="elementImg" />
           </td>
           <td>
             <div class="job" *ngIf="ally.job" title="{{ ally.job.name }}">
-              <img src="{{'assets/jobs/' + ally.job.image + '.png'}}" />
+              <img src="{{'assets/jobs/' + ally.job.image + '.webp'}}" />
             </div>
           </td>
           <td>{{ ally.level }}</td>
@@ -271,11 +271,11 @@
                 </tr>
                 <tr *ngFor="let skill of ally.skills">
                   <td>
-                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
+                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.webp" />
 
-                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.webp'}}" /></span>
                     <span *ngIf="skill.reflectable">
-                      <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                      <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                     </span>
                     <span *ngIf="skill.time && skill.time.minValue">
                       <ng-template #tip_time>
@@ -284,10 +284,10 @@
                           Max time: {{ skill.time.maxValue }}
                         </div>
                       </ng-template>
-                      <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                      <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                      <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                     </span>
-                    <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.png'}}" /></span>
+                    <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.webp'}}" /></span>
                   </td>
                   <td>{{ skill.name }}</td>
                   <td class="skillEffectTd">
@@ -319,7 +319,7 @@
                           {{ skill.damage.formula[3] }}% LUCK
                         </div>
                       </ng-template>
-                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                       <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                     </div>
 
@@ -368,15 +368,15 @@
             E{{ j + 1 }}
           </td>
           <td>
-            <img src="assets/units/{{enemy.image}}_m.png" class="enemyImg" />
+            <img src="assets/units/{{enemy.image}}_m.webp" class="enemyImg" />
             <a [routerLink]="[getRoute('/other/unit/' + enemy.slug)]" [routerLinkActive]="['active']">{{ enemy.name }}</a>
           </td>
           <td>
-            <img src="assets/elements/{{ enemy.element }}.png" class="elementImg" />
+            <img src="assets/elements/{{ enemy.element }}.webp" class="elementImg" />
           </td>
           <td>
             <div class="job" *ngIf="enemy.job" title="{{ enemy.job.name }}">
-              <img src="{{'assets/jobs/' + enemy.job.image + '.png'}}" />
+              <img src="{{'assets/jobs/' + enemy.job.image + '.webp'}}" />
             </div>
           </td>
           <td>{{ enemy.level }}</td>
@@ -387,7 +387,7 @@
                 <span *ngIf="entryIndex > 0">Or </span>{{ entryCond }}
               </div>
             </ng-template>
-            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time" *ngIf="enemy.formattedEntryCond && enemy.formattedEntryCond.length > 0"/>
+            <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time" *ngIf="enemy.formattedEntryCond && enemy.formattedEntryCond.length > 0"/>
           </td>
         </tr>
         <tr [ngbCollapse]="isCollapsedEnemy[j]">
@@ -512,11 +512,11 @@
                 </tr>
                 <tr *ngFor="let skill of enemy.skills">
                   <td>
-                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
+                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.webp" />
 
-                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.webp'}}" /></span>
                     <span *ngIf="skill.reflectable">
-                      <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                      <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                     </span>
                     <span *ngIf="skill.time && skill.time.minValue">
                       <ng-template #tip_time>
@@ -525,10 +525,10 @@
                           Max time: {{ skill.time.maxValue }}
                         </div>
                       </ng-template>
-                      <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                      <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                      <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                     </span>
-                    <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.png'}}" /></span>
+                    <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.webp'}}" /></span>
                   </td>
                   <td>{{ skill.name }}</td>
                   <td class="skillEffectTd">
@@ -560,7 +560,7 @@
                           {{ skill.damage.formula[3] }}% LUCK
                         </div>
                       </ng-template>
-                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                       <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                     </div>
 
@@ -619,7 +619,7 @@
             </div>
             C{{ j + 1 }}
           </td>
-          <td><img src="assets/units/{{chest.image}}_m.png" class="enemyImg" />{{ chest.name }}</td>
+          <td><img src="assets/units/{{chest.image}}_m.webp" class="enemyImg" />{{ chest.name }}</td>
         </tr>
         <tr [ngbCollapse]="isCollapsedChest[j]">
           <td colspan="99" class="enemyDetailCol">
@@ -651,7 +651,7 @@
             </div>
             O{{ j + 1 }}
           </td>
-          <td><img src="assets/units/{{object.image}}_m.png" class="enemyImg" />{{ object.name }}</td>
+          <td><img src="assets/units/{{object.image}}_m.webp" class="enemyImg" />{{ object.name }}</td>
         </tr>
         <tr [ngbCollapse]="isCollapsedObject[j]">
           <td colspan="99" class="enemyDetailCol">
@@ -754,11 +754,11 @@
                 </tr>
                 <tr *ngFor="let skill of object.skills">
                   <td>
-                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
+                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.webp" />
 
-                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.webp'}}" /></span>
                     <span *ngIf="skill.reflectable">
-                      <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                      <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                     </span>
                     <span *ngIf="skill.time && skill.time.minValue">
                       <ng-template #tip_time>
@@ -767,10 +767,10 @@
                           Max time: {{ skill.time.maxValue }}
                         </div>
                       </ng-template>
-                      <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                      <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                      <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                     </span>
-                    <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.png'}}" /></span>
+                    <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.webp'}}" /></span>
                   </td>
                   <td>{{ skill.name }}</td>
                   <td class="skillEffectTd">
@@ -802,7 +802,7 @@
                           {{ skill.damage.formula[3] }}% LUCK
                         </div>
                       </ng-template>
-                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                       <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                     </div>
 
@@ -838,7 +838,7 @@
       </tr>
       <tr *ngFor="let switch of quest.formattedSwitchs; let j = index">
         <td>S{{ j + 1 }}</td>
-        <td><img src="assets/units/{{switch.image}}_m.png" class="enemyImg" />{{ switch.name }}</td>
+        <td><img src="assets/units/{{switch.image}}_m.webp" class="enemyImg" />{{ switch.name }}</td>
       </tr>
     </table>
   </div>

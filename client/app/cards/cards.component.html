@@ -140,10 +140,10 @@
       <div class="cardsCol" *ngFor="let card of getFilteredCards()">
         <a [routerLink]="[getRoute('/card/' + card.slug)]" [routerLinkActive]="['active']">
           <div class="cardIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" />
+            <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.webp'}}" />
           </div>
           <div class="cardImgBlock">
-            <img class="cardImg" src="assets/cards/{{ card.image }}_m.png" />
+            <img class="cardImg" src="assets/cards/{{ card.image }}_m.webp" />
           </div>
           <div class="cardTitle">
             <span class="cardName">{{ card.name }}</span>

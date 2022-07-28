@@ -265,7 +265,7 @@ export class UnitComponent implements OnInit {
           this.unit.formattedLimit.name = this.toolService.getName(this.unit.formattedLimit);
           this.unit.formattedLimit.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.formattedLimit);
 
-          this.unit.formattedLimit.basedHtml = this.unit.formattedLimit.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.formattedLimit.based.toLowerCase() + '.png\' />' : '';
+          this.unit.formattedLimit.basedHtml = this.unit.formattedLimit.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.formattedLimit.based.toLowerCase() + '.webp\' />' : '';
 
           this.unit.formattedLimit.effectsHtml = this.skillService.formatEffects(this.unit, this.unit.formattedLimit);
 
@@ -282,7 +282,7 @@ export class UnitComponent implements OnInit {
         this.unit.formattedAttack = this.unit.rawSkills.find(searchedSkill => searchedSkill.dataId === this.unit.attack);
         if (this.unit.formattedAttack) {
           this.unit.formattedAttack.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.formattedAttack);
-          this.unit.formattedAttack.basedHtml = this.unit.formattedAttack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.formattedAttack.based.toLowerCase() + '.png\' />' : '';
+          this.unit.formattedAttack.basedHtml = this.unit.formattedAttack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.formattedAttack.based.toLowerCase() + '.webp\' />' : '';
 
           this.unit.formattedAttack.effectsHtml = this.skillService.formatEffects(this.unit, this.unit.formattedAttack);
 

@@ -238,11 +238,11 @@
       <div class="unitsCol" *ngFor="let unit of getFilteredUnits()">
         <a [routerLink]="[getRoute('/unit/' + unit.slug)]" [routerLinkActive]="['active']">
           <div class="cardIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
-            <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}" *ngIf="unit.element" />
+            <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.webp'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + unit.element + '.webp'}}" *ngIf="unit.element" />
           </div>
           <div class="unitImgBlock">
-            <img class="unitImg" src="assets/units/{{ unit.image }}_m.png" />
+            <img class="unitImg" src="assets/units/{{ unit.image }}_m.webp" />
           </div>
           <div class="cardTitle">
             <span class="unitName">{{ unit.name }}</span>

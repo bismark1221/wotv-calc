@@ -97,7 +97,7 @@
 
 .job {
   height: 50px;
-  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
   background-size: 50px;
   padding: 5px;
   width: 50px;
@@ -123,7 +123,7 @@
 .recipe {
   height: 50px;
   width: 50px;
-  background: url("assets/items/recipe.png") 0px 0px no-repeat;
+  background: url("assets/items/recipe.webp") 0px 0px no-repeat;
   background-size: 50px;
   padding: 5px;
   margin: auto;

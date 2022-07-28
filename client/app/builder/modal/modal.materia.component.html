@@ -20,7 +20,7 @@
           [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}"
           (click)="filterList('rarity', rarity)"
         >
-          <img class="filterRarity" src="assets/rarity/{{rarity}}.png" />
+          <img class="filterRarity" src="assets/rarity/{{rarity}}.webp" />
         </button>
 
         <button class="btn btn-main btn-new-materia" (click)="buildNewMateria()">BUILD NEW MATERIA</button>
@@ -33,7 +33,7 @@
       <div class="materiasCol">
         <a (click)="removeMateria()" id="removeMateria">
           <div class="materiaImgBlockRemove">
-            <img class="materiaImg" src="assets/builder/remove.png" />
+            <img class="materiaImg" src="assets/builder/remove.webp" />
           </div>
         </a>
       </div>
@@ -41,7 +41,7 @@
       <div class="materiasCol" *ngFor="let materia of getFilteredMaterias()">
         <a (click)="selectMateria(materia)" class="selectMateriaLink">
           <div class="materiaImgBlock">
-            <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.png" />
+            <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.webp" />
           </div>
           <div class="materiaTitle">
             <div class="materiaName">{{ mainStatTranslate[materia.mainStat] ? mainStatTranslate[materia.mainStat] : materia.mainStat }} - Level : {{ materia.level }}</div>
@@ -82,7 +82,7 @@
               <button class="btn btn-main btn-max-materia" id="max_materia" (click)="maxMateria()">Max materia</button>
             </div>
             <div class="builderMateriaImgBlock">
-              <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.png" />
+              <img class="materiaImg" src="assets/materia/{{ version }}/{{ materia.image }}.webp" />
             </div>
           </td>
         </tr>

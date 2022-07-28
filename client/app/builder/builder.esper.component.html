@@ -6,7 +6,7 @@
 
     <ng-template ng-optgroup-tmp let-item="item" let-index="index">
       <div class="rarityLine">
-        <img src="assets/rarity/{{item.rarity}}.png" /><span>{{ rarityTranslate[item.rarity] }}</span>
+        <img src="assets/rarity/{{item.rarity}}.webp" /><span>{{ rarityTranslate[item.rarity] }}</span>
       </div>
     </ng-template>
 
@@ -14,7 +14,7 @@
       <div class="esperLine" id="esper_{{item.dataId}}">
         <div class="esperSelector" id="esperSelector_{{item.dataId}}" [ngClass]="{'esperSelectorWithSave': savedEspers[item.dataId]}">
           <div class="esperLogo">
-            <img src="assets/units/{{ item.image }}_s.png" />
+            <img src="assets/units/{{ item.image }}_s.webp" />
           </div>
           <div class="esperNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
         </div>
@@ -49,11 +49,11 @@
               <button class="btn btn-main btn-right" id="max_esper" (click)="maxEsper()">Max esper</button>
             </div>
             <div class="esperIcons">
-              <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
-              <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" />
+              <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.webp'}}" />
+              <img class="elementImg" src="{{'assets/elements/' + esper.element + '.webp'}}" />
             </div>
             <div>
-              <img class="esperImg" src="assets/units/{{ esper.image }}_m.png" />
+              <img class="esperImg" src="assets/units/{{ esper.image }}_m.webp" />
             </div>
           </td>
         </tr>
@@ -118,7 +118,7 @@
       <tbody *ngFor="let line of esper.possibleBuffs">
         <tr>
           <th *ngFor="let buffType of line" class="sub">
-            <img *ngIf="buffsImage.indexOf(buffType.toLowerCase()) !== -1" class="buffImg" title="{{ buffType }}" src="{{ '/assets/buffs/' + buffType.toLowerCase() + '.png' }}">
+            <img *ngIf="buffsImage.indexOf(buffType.toLowerCase()) !== -1" class="buffImg" title="{{ buffType }}" src="{{ '/assets/buffs/' + buffType.toLowerCase() + '.webp' }}">
             <span *ngIf="buffsImage.indexOf(buffType.toLowerCase()) === -1">{{ buffType.replace("_", " ") }}</span>
           </th>
         </tr>
@@ -143,7 +143,7 @@
             <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
             <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type === 'center'">
-              <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
+              <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.webp' }}"></span>
             </div>
 
             <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type === 'text'"

@@ -35,7 +35,7 @@
               {{ i + 1 }}
             </td>
             <td class="colName">
-              <img class="unitImg" src="assets/units/{{unit.image}}_m.png"/>
+              <img class="unitImg" src="assets/units/{{unit.image}}_m.webp"/>
               {{ unit.name }}
             </td>
           </tr>
@@ -61,7 +61,7 @@
             </th>
             <th *ngFor="let type of imageStatsType" style="width: {{ type.width }}px;">
               <div (click)="changeSort(type.type)" class="divTH">
-                <img class="buffImg" title="{{ type.type }}" src="{{ '/assets/buffs/' + type.type.toLowerCase() + '.png' }}">
+                <img class="buffImg" title="{{ type.type }}" src="{{ '/assets/buffs/' + type.type.toLowerCase() + '.webp' }}">
                 <span class="spanArrow">
                   <i class="fas" [ngClass]="{
                     'arrowActivated': sort === type.type,

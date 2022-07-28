@@ -282,14 +282,14 @@
 
 .star {
   height: 40px;
-  background: url("assets/icons/star_off.png") 0px 0px no-repeat;
+  background: url("assets/icons/star_off.webp") 0px 0px no-repeat;
   background-size: 40px;
   width: 40px;
 }
 
 .star.filled {
   height: 40px;
-  background: url("assets/icons/star_on.png") 0px 0px no-repeat;
+  background: url("assets/icons/star_on.webp") 0px 0px no-repeat;
   background-size: 40px;
   width: 40px;
 }
@@ -301,7 +301,7 @@
 .mainJob {
   height: 40px;
   width: 40px;
-  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background: url("assets/jobs/base_main.webp") 0px 0px no-repeat;
   background-size: 40px;
   padding: 5px;
   margin-right: 5px;
@@ -317,7 +317,7 @@
 .subJob {
   height: 40px;
   width: 40px;
-  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
   background-size: 40px;
   padding: 5px;
   margin-right: 5px;

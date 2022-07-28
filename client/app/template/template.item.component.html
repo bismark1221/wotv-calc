@@ -7,13 +7,13 @@
   }">
   <img
     *ngIf="item.type !== 'recipe' && (item.type !== 'job_awake_orb' || (item.type === 'job_awake_orb' && !item.class))"
-    src="assets/items/{{ item.image }}.png"
+    src="assets/items/{{ item.image }}.webp"
     title="{{ item.name }}" />
 
   <img
     *ngIf="item.type === 'recipe'"
-    src="{{'assets/equipments/' + item.image + '.png'}}"
-    onerror="this.src='assets/equipments/placeholder.png';"
+    src="{{'assets/equipments/' + item.image + '.webp'}}"
+    onerror="this.src='assets/equipments/placeholder.webp';"
     class="recipe"
     title="{{ item.name }}" />
 
@@ -26,6 +26,6 @@
       'imgOrbPink': item.class === 'imgOrbPink'}"
     title="{{ item.name }}"
   >
-    <img src="{{ 'assets/jobs/' + item.image + '.png'}}" />
+    <img src="{{ 'assets/jobs/' + item.image + '.webp'}}" />
     </div>
 </div>

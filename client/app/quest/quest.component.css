@@ -39,7 +39,7 @@
 
 .subJob {
   height: 40px;
-  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
   background-size: 40px;
   padding: 5px;
   margin-right: 5px;
@@ -219,91 +219,91 @@
 }
 
 .partyTile {
-  background-image: url("assets/grid/party.png");
+  background-image: url("assets/grid/party.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .chestTile {
-  background-image: url("assets/grid/chest.png");
+  background-image: url("assets/grid/chest.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .enemyTile {
-  background-image: url("assets/grid/enemy.png");
+  background-image: url("assets/grid/enemy.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .objectTile {
-  background-image: url("assets/grid/object.png");
+  background-image: url("assets/grid/object.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .allyTile {
-  background-image: url("assets/grid/ally.png");
+  background-image: url("assets/grid/ally.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .switchTile {
-  background-image: url("assets/grid/switch.png");
+  background-image: url("assets/grid/switch.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .bigEnemyTopLeft {
-  background-image: url("assets/grid/bigEnemyTopLeft.png");
+  background-image: url("assets/grid/bigEnemyTopLeft.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .bigEnemyTopMiddle {
-  background-image: url("assets/grid/bigEnemyTopMiddle.png");
+  background-image: url("assets/grid/bigEnemyTopMiddle.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .bigEnemyTopRight {
-  background-image: url("assets/grid/bigEnemyTopRight.png");
+  background-image: url("assets/grid/bigEnemyTopRight.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .bigEnemyMiddleLeft {
-  background-image: url("assets/grid/bigEnemyMiddleLeft.png");
+  background-image: url("assets/grid/bigEnemyMiddleLeft.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .bigEnemyMiddleMiddle {
-  background-image: url("assets/grid/bigEnemyMiddleMiddle.png");
+  background-image: url("assets/grid/bigEnemyMiddleMiddle.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .bigEnemyMiddleRight {
-  background-image: url("assets/grid/bigEnemyMiddleRight.png");
+  background-image: url("assets/grid/bigEnemyMiddleRight.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .bigEnemyBottomLeft {
-  background-image: url("assets/grid/bigEnemyBottomLeft.png");
+  background-image: url("assets/grid/bigEnemyBottomLeft.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .bigEnemyBottomMiddle {
-  background-image: url("assets/grid/bigEnemyBottomMiddle.png");
+  background-image: url("assets/grid/bigEnemyBottomMiddle.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .bigEnemyBottomRight {
-  background-image: url("assets/grid/bigEnemyBottomRight.png");
+  background-image: url("assets/grid/bigEnemyBottomRight.webp");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
@@ -314,7 +314,7 @@
 /*#############*/
 .job {
   height: 40px;
-  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
   background-size: 40px;
   padding: 5px;
   width: 40px;

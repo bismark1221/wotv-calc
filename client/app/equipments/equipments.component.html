@@ -179,10 +179,10 @@
       <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
         <a [routerLink]="[getRoute('/equipment/' + equipment.slug)]" [routerLinkActive]="['active']">
           <div class="cardIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
+            <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
           </div>
           <div class="equipmentImgBlock">
-            <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
+            <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
           </div>
           <div class="cardTitle">
             <span class="equipmentName">{{ equipment.name }}</span>

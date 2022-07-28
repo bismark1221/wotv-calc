@@ -61,10 +61,10 @@
       <div class="raidsCol" *ngFor="let raid of getFilteredRaids()">
         <a [routerLink]="[getRoute('/raid/' + raid.slug)]" [routerLinkActive]="['active']">
           <div class="cardIcons">
-            <img class="elementImg" src="{{'assets/elements/' + raid.bosses[0].element + '.png'}}" *ngIf="raid.bosses[0].element" />
+            <img class="elementImg" src="{{'assets/elements/' + raid.bosses[0].element + '.webp'}}" *ngIf="raid.bosses[0].element" />
           </div>
           <div class="raidImgBlock">
-            <img class="raidImg" src="{{'assets/units/' + raid.bosses[0].image + '_m.png'}}" />
+            <img class="raidImg" src="{{'assets/units/' + raid.bosses[0].image + '_m.webp'}}" />
           </div>
           <div class="cardTitle">
             <span class="raidName">{{ raid.name }}</span>

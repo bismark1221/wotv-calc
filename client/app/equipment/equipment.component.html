@@ -10,8 +10,8 @@
             </tr>
             <tr>
               <td colspan="2">
-                <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}"
-                    onerror="this.src='assets/equipments/placeholder.png';"/>
+                <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.webp'}}"
+                    onerror="this.src='assets/equipments/placeholder.webp';"/>
               </td>
             </tr>
             <tr>
@@ -19,7 +19,7 @@
               <th class="sub">Type</th>
             </tr>
             <tr>
-              <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" (click)="clickSpecialBismark()"/></td>
+              <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" (click)="clickSpecialBismark()"/></td>
               <td>{{ getEquipementType(equipment.type) }}</td>
             </tr>
             <tr *ngIf="equipment.acquisition">
@@ -91,7 +91,7 @@
             <tr>
               <td>
                 <div class="job" *ngFor="let job of equipment.jobs">
-                  <img src="{{ 'assets/jobs/' + job.image + '.png'}}" title="{{ job.name }}"/>
+                  <img src="{{ 'assets/jobs/' + job.image + '.webp'}}" title="{{ job.name }}"/>
                 </div>
               </td>
             </tr>
@@ -102,7 +102,7 @@
             </tr>
             <tr>
               <td>
-                <img *ngFor="let unit of equipment.units" src="{{ 'assets/units/' + unit.image + '_m.png'}}" class="unit" title="{{ unit.name }}"/>
+                <img *ngFor="let unit of equipment.units" src="{{ 'assets/units/' + unit.image + '_m.webp'}}" class="unit" title="{{ unit.name }}"/>
               </td>
             </tr>
           </tbody>
@@ -124,10 +124,10 @@
             <td class="skillNameTd">
               {{ equipment.activeSkill.name }}
               <span *ngIf="equipment.activeSkill.based">
-                <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.activeSkill.based + '.png'}}" />
+                <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.activeSkill.based + '.webp'}}" />
               </span>
               <span *ngIf="equipment.activeSkill.reflectable">
-                <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
               </span>
               <span *ngIf="equipment.activeSkill.time && equipment.activeSkill.time.minValue">
                 <ng-template #tip_time>
@@ -136,8 +136,8 @@
                     Max time: {{ equipment.activeSkill.time.maxValue }}
                   </div>
                 </ng-template>
-                <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="equipment.activeSkill.possibleTarget == 'unit'"/>
+                <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="equipment.activeSkill.possibleTarget == 'unit'"/>
               </span>
             </td>
             <td class="skillEffectTd">
@@ -169,7 +169,7 @@
                     {{ equipment.activeSkill.damage.formula[3] }}% LUCK
                   </div>
                 </ng-template>
-                <img [ngbTooltip]="tip_damage" title="{{ equipment.activeSkill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ equipment.activeSkill.damageHtml.type.image }}.png" />&nbsp; {{ equipment.activeSkill.damageHtml.effType }} {{ equipment.activeSkill.damageHtml.pool }} {{ equipment.activeSkill.damageHtml.value }}
+                <img [ngbTooltip]="tip_damage" title="{{ equipment.activeSkill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ equipment.activeSkill.damageHtml.type.image }}.webp" />&nbsp; {{ equipment.activeSkill.damageHtml.effType }} {{ equipment.activeSkill.damageHtml.pool }} {{ equipment.activeSkill.damageHtml.value }}
                 <div [innerHTML]="equipment.activeSkill.damageHtml.others | safeHtml"></div>
               </div>
 
@@ -209,7 +209,7 @@
                   Condition :
                   <span *ngFor="let skillCond of skill.cond">
                     <span *ngFor="let item of skillCond.items">
-                      <img src="{{'assets/units/' + item + '_m.png'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
+                      <img src="{{'assets/units/' + item + '_m.webp'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
                     </span>
                   </span>
                 </div>
@@ -248,8 +248,8 @@
             </tr>
             <tr>
               <td colspan="2">
-                <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.png'}}"
-                    onerror="this.src='assets/equipments/placeholder.png';"/>
+                <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.webp'}}"
+                    onerror="this.src='assets/equipments/placeholder.webp';"/>
               </td>
             </tr>
             <tr>
@@ -257,7 +257,7 @@
               <th class="sub">Type</th>
             </tr>
             <tr>
-              <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" /></td>
+              <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" /></td>
               <td>{{ getEquipementType(equipment.type) }}</td>
             </tr>
             <tr *ngIf="equipment.acquisition">
@@ -288,10 +288,10 @@
               <td *ngFor="let materials of equipment.formattedMaterials">
                 <div *ngFor="let item of materials">
                   <div *ngIf="item.type === 'recipe'" class="recipe">
-                    <img src="{{'assets/equipments/' + equipment.image + '.png'}}" onerror="this.src='assets/equipments/placeholder.png';" class="recipeImg"/>
+                    <img src="{{'assets/equipments/' + equipment.image + '.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" class="recipeImg"/>
                   </div>
                   <div *ngIf="item.type !== 'recipe'">
-                    <img src="{{ 'assets/items/' + item.image + '.png'}}" class="materialImg"/>
+                    <img src="{{ 'assets/items/' + item.image + '.webp'}}" class="materialImg"/>
                   </div>
                   <span class="materialName">{{ item.name }}</span><br />
                   <span class="materialCount">{{ item.count }}</span>

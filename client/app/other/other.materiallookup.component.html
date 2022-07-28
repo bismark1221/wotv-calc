@@ -7,7 +7,7 @@
       </td>
       <td>
         <div *ngFor="let equipment of item.equipments" class="equipmentBlock">
-          <img src="{{'assets/equipments/' + equipment.image + '.png'}}" class="equipmentImg"/>
+          <img src="{{'assets/equipments/' + equipment.image + '.webp'}}" class="equipmentImg"/>
           <div><a [routerLink]="[getRoute('/equipment/' + equipment.slug)]">{{ equipment.name }}</a></div>
         </div>
       </td>

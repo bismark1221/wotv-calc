@@ -107,7 +107,7 @@ export class RaidComponent implements OnInit {
         if (boss.attack) {
           boss.formattedAttack = boss.attackSkill;
           if (boss.formattedAttack) {
-            boss.formattedAttack.basedHtml = boss.formattedAttack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + boss.formattedAttack.based.toLowerCase() + '.png\' />' : '';
+            boss.formattedAttack.basedHtml = boss.formattedAttack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + boss.formattedAttack.based.toLowerCase() + '.webp\' />' : '';
 
             boss.formattedAttack.effectsHtml = this.skillService.formatEffects(boss, boss.formattedAttack);
 

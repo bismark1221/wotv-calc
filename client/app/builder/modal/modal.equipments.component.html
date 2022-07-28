@@ -19,7 +19,7 @@
       <div class="filtersBlock">
         Filter by :
         <button *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}" (click)="filterList('rarity', rarity)">
-          <img class="filterRarity" src="assets/rarity/{{rarity}}.png" />
+          <img class="filterRarity" src="assets/rarity/{{rarity}}.webp" />
         </button>
         <button *ngFor="let category of ['weapon', 'armor', 'acc']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('category', category)}" (click)="filterList('category', category)">
           {{ category | titlecase }}
@@ -45,7 +45,7 @@
       <div class="equipmentsCol">
         <a (click)="removeEquipment()" id="removeEquipment">
           <div class="equipmentImgBlockRemove">
-            <img class="equipmentImg" src="assets/builder/remove.png" />
+            <img class="equipmentImg" src="assets/builder/remove.webp" />
           </div>
         </a>
       </div>
@@ -53,10 +53,10 @@
       <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
         <a (click)="selectEquipment(equipment.dataId)" id="equipmentBlock_{{equipment.dataId}}">
           <div class="equipmentIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
+            <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
           </div>
           <div class="equipmentImgBlock">
-            <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
+            <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
           </div>
           <div class="equipmentTitle">
             <span class="equipmentName">{{ equipment.name }}</span>
@@ -122,10 +122,10 @@
           <button class="btn btn-main btn-right" id="max_card" (click)="maxEquipment()">Max equipment</button>
         </div>
         <div class="equipmentIcons">
-          <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
+          <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
         </div>
         <div>
-          <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
+          <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
         </div>
         <div class="equipmentTitle">
           <span class="equipmentName">{{ equipment.customName ? equipment.name + ' - ' + equipment.customName : equipment.name }}</span>
@@ -243,10 +243,10 @@
             <td class="skillNameTd">
               {{ equipment.activeSkill.name }}
               <span *ngIf="equipment.activeSkill.based">
-                <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.activeSkill.based + '.png'}}" />
+                <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.activeSkill.based + '.webp'}}" />
               </span>
               <span *ngIf="equipment.activeSkill.reflectable">
-                <img class='reflectImg' src="{{'assets/icons/reflect.png'}}" />
+                <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
               </span>
               <span *ngIf="equipment.activeSkill.time && equipment.activeSkill.time.minValue">
                 <ng-template #tip_time>
@@ -254,8 +254,8 @@
                     {{ equipment.activeSkill.time.realValue }}
                   </div>
                 </ng-template>
-                <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                <img class='timeImg' src="{{'assets/icons/skill_target_unit.png'}}" title="Target unit possible" *ngIf="equipment.activeSkill.possibleTarget == 'unit'"/>
+                <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="equipment.activeSkill.possibleTarget == 'unit'"/>
               </span>
             </td>
             <td class="skillEffectTd">
@@ -287,7 +287,7 @@
                     {{ equipment.activeSkill.damage.formula[3] }}% LUCK
                   </div>
                 </ng-template>
-                <img [ngbTooltip]="tip_damage" title="{{ equipment.activeSkill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ equipment.activeSkill.damageHtml.type.image }}.png" />&nbsp; {{ equipment.activeSkill.damageHtml.effType }} {{ equipment.activeSkill.damageHtml.pool }} {{ equipment.activeSkill.damageHtml.value }}
+                <img [ngbTooltip]="tip_damage" title="{{ equipment.activeSkill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ equipment.activeSkill.damageHtml.type.image }}.webp" />&nbsp; {{ equipment.activeSkill.damageHtml.effType }} {{ equipment.activeSkill.damageHtml.pool }} {{ equipment.activeSkill.damageHtml.value }}
                 <div [innerHTML]="equipment.activeSkill.damageHtml.others | safeHtml"></div>
               </div>
 
@@ -323,7 +323,7 @@
                   Condition :
                   <span *ngFor="let skillCond of skill.cond">
                     <span *ngFor="let item of skillCond.formattedItems">
-                      <img src="{{'assets/units/' + item + '_m.png'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
+                      <img src="{{'assets/units/' + item + '_m.webp'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
                     </span>
                   </span>
                 </div>
@@ -349,11 +349,11 @@
           <td *ngFor="let materiaType of materiaGroup" [ngClass]="{'materiaTd': materiaType.select, 'materiaEffectTd': !materiaType.select}">
             <div *ngIf="materiaType.select">
               <div *ngIf="equipment.materias[materiaType.type]" class="materiaDiv">
-                <img src="{{'assets/materia/' + version + '/' + equipment.materias[materiaType.type].image + '.png'}}" class="materiaImg" id="openModalMateria_{{equipment.materias[materiaType.type].dataId}}" (click)="openMateriaModal(materiaType.type)"/>
+                <img src="{{'assets/materia/' + version + '/' + equipment.materias[materiaType.type].image + '.webp'}}" class="materiaImg" id="openModalMateria_{{equipment.materias[materiaType.type].dataId}}" (click)="openMateriaModal(materiaType.type)"/>
               </div>
 
               <div *ngIf="!equipment.materias[materiaType.type]" class="materiaDivEmpty">
-                <img src="{{ 'assets/builder/' + version + '/materia_' + materiaType.type.toLowerCase() + '.png' }}" class="materiaImg" id="openModalMateria_new" (click)="openMateriaModal(materiaType.type)"/>
+                <img src="{{ 'assets/builder/' + version + '/materia_' + materiaType.type.toLowerCase() + '.webp' }}" class="materiaImg" id="openModalMateria_new" (click)="openMateriaModal(materiaType.type)"/>
               </div>
 
               <button class="btn btn-sub btn-materia" id="openModalMateria_custom_{{materiaType.type}}" (click)="openMateriaModal(materiaType.type)">Custom</button>

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-toggleable-md main fixed-top mainNav">
   <a class="navbar-brand logoLinkDesktop" [routerLink]="[getRoute('/')]">
-    <img src="assets/nav/WOTVCALC_LOGO_WHITE.png" class="logo_desktop"/>
+    <img src="assets/nav/WOTVCALC_LOGO_WHITE.webp" class="logo_desktop"/>
   </a>
 
   <div class="centerNav">
@@ -134,7 +134,7 @@
     </div>
   </div>
 
-  <img src="assets/nav/split.png" class="split"/>
+  <img src="assets/nav/split.webp" class="split"/>
 
   <div class="versions" (mouseover)="showVersionSelector=true" (mouseleave)="showVersionSelector=false">
     <div class="actualVersion">
@@ -172,7 +172,7 @@
 
 <nav class="navbar navbar-toggleable-md main fixed-top mobileNav">
   <a class="navbar-brand" [routerLink]="[getRoute('/')]" (click)="toggleMobileMenu(true)">
-    <img src="assets/nav/WOTVCALC_LOGO_WHITE.png" class="logo_mobile" />
+    <img src="assets/nav/WOTVCALC_LOGO_WHITE.webp" class="logo_mobile" />
   </a>
 
   <div class="centerNav mobileLinks" [ngClass]="{'showMobileMenu': displayMobileMenu === true}">
@@ -246,7 +246,7 @@
         </div>
 
         <div class="nav-link">
-          <a class="mobileVersionLink" (click)="changeVersion('GL'); toggleMobileMenu(true);">Global</a> <img src="assets/nav/split.png" class="split"/> <a class="mobileVersionLink" (click)="changeVersion('JP'); toggleMobileMenu(true);">Japan</a>
+          <a class="mobileVersionLink" (click)="changeVersion('GL'); toggleMobileMenu(true);">Global</a> <img src="assets/nav/split.webp" class="split"/> <a class="mobileVersionLink" (click)="changeVersion('JP'); toggleMobileMenu(true);">Japan</a>
         </div>
 
         <div class="nav-link">
