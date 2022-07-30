@@ -143,7 +143,7 @@ label {
 }
 
 .tooltip-inner .table-skill .table-skill-AR {
-  background: url("assets/range/AR.png") 0px 0px no-repeat;
+  background: url("assets/range/AR.webp") 0px 0px no-repeat;
 }
 
 .table-skill {
@@ -180,35 +180,35 @@ label {
 }
 
 .table-skill-UN {
-  background: url("assets/range/U.png") 0px 0px no-repeat;
+  background: url("assets/range/U.webp") 0px 0px no-repeat;
 }
 
 .table-skill-UR {
-  background: url("assets/range/UR.png") 0px 0px no-repeat;
+  background: url("assets/range/UR.webp") 0px 0px no-repeat;
 }
 
 .table-skill-UAR {
-  background: url("assets/range/UAR.png") 0px 0px no-repeat;
+  background: url("assets/range/UAR.webp") 0px 0px no-repeat;
 }
 
 .table-skill-R {
-  background: url("assets/range/R.png") 0px 0px no-repeat;
+  background: url("assets/range/R.webp") 0px 0px no-repeat;
 }
 
 .table-skill-AR {
-  background: url("assets/range/A.png") 0px 0px no-repeat;
+  background: url("assets/range/A.webp") 0px 0px no-repeat;
 }
 
 .table-skill-TAR {
-  background: url("assets/range/TAR.png") 0px 0px no-repeat;
+  background: url("assets/range/TAR.webp") 0px 0px no-repeat;
 }
 
 .table-skill-A {
-  background: url("assets/range/A.png") 0px 0px no-repeat;
+  background: url("assets/range/A.webp") 0px 0px no-repeat;
 }
 
 .table-skill-T {
-  background: url("assets/range/T.png") 0px 0px no-repeat;
+  background: url("assets/range/T.webp") 0px 0px no-repeat;
 }
 
 .damageSkillImg {
@@ -373,14 +373,14 @@ small {
   width: 65px !important;
   padding-top: 5px !important;
   padding-right: 5px !important;
-  content: url(assets/nav/moon.png);
+  content: url(assets/nav/moon.webp);
 }
 
 .switchTheme .switch-label-checked {
   padding-top: 5px !important;
   padding-left: 5px !important;
   height: 25px !important;
-  content: url(assets/nav/sun.png);
+  content: url(assets/nav/sun.webp);
 }
 
 .switchMainJob .switch {
