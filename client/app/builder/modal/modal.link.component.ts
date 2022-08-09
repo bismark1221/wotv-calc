@@ -38,7 +38,7 @@ export class ModalLinkComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     if (this.type === 'inventory') {
-      this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/builder/inventory') + '/' + this.item;
+      this.exportableLink = 'https://wotv-calc.com' + this.navService.getRoute('/inventory') + '/' + this.item;
       this.saveStep = 'link';
     }
   }
