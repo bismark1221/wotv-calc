@@ -205,7 +205,7 @@
           <tr *ngFor="let effectType of equipment.effectTypes">
             <td *ngFor="let i of equipment.countSkills">
               <div *ngFor="let skill of equipment.formattedSkills[i]; let skillIndex = index">
-                <div *ngIf="skill.mainEffect === effectType && skillIndex == 0 && skill.cond && skill.cond.length > 0">
+                <div *ngIf="skill.mainEffect === effectType && skill.cond && skill.cond.length > 0">
                   Condition :
                   <span *ngFor="let skillCond of skill.cond">
                     <span *ngFor="let item of skillCond.items">
