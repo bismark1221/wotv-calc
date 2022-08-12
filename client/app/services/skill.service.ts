@@ -2394,6 +2394,9 @@ export class SkillService {
         case 'REMOVE_AFTER_HIT':
           html += ', remove effect after ' + (continueId.split('_')[continueId.split('_').length - 1] - 1) + ' hits received';
         break;
+        case 'WHEN_HP_SUPP':
+          html += ', when HP >= ' + (continueId.split('_')[continueId.split('_').length - 1]) + ' %';
+        break;
         default:
         break;
       }
