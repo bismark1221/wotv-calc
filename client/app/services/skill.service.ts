@@ -1814,6 +1814,9 @@ export class SkillService {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
+      case 'INCREASE_DAMAGE_BUT_COST_TP' :
+        html = 'Increase damage done by skills but they will also cost TP' + this.getTurns(effect);
+        break;
       default:
         html = '??? Effect Not Translated - If you have details don\'t hesitate to contact me ???';
         console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- NOT TRANSLATED : ' + effect.type);
