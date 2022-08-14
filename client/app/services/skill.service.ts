@@ -1815,7 +1815,7 @@ export class SkillService {
         }
         break;
       case 'INCREASE_DAMAGE_BUT_COST_TP' :
-        html = 'Increase damage done by skills but they will also cost TP' + this.getTurns(effect);
+        html = 'Increase damage done by skills '+ this.getValue(skill, effect) + ' but they will also cost TP based on AP cost (' + effect.tpModifier + '%)' + this.getTurns(effect);
         break;
       default:
         html = '??? Effect Not Translated - If you have details don\'t hesitate to contact me ???';
