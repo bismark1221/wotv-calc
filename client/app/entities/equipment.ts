@@ -31,6 +31,7 @@ export class Equipment {
   equippableUnits;
   materials;
   releaseDate;
+  updatedDate;
 
   rawSkills;
   rawJobs;
@@ -89,6 +90,7 @@ export class Equipment {
     this.equippableUnits = equipment.equippableUnits;
     this.materials = equipment.materials;
     this.releaseDate = equipment.releaseDate;
+    this.updatedDate = equipment.updatedDate;
 
     this.name = this.getName(translateService);
   }

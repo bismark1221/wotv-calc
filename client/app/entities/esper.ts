@@ -73,6 +73,7 @@ export class Esper {
   board;
   cost;
   releaseDate;
+  updatedDate;
   rawSkills;
 
   // For builder
@@ -100,6 +101,7 @@ export class Esper {
     this.board = esper.board;
     this.cost = esper.cost;
     this.releaseDate = esper.releaseDate;
+    this.updatedDate = esper.updatedDate;
 
     this.name = this.getName(translateService);
   }

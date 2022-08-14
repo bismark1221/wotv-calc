@@ -27,6 +27,7 @@ export class Card {
   slug;
   cost;
   releaseDate;
+  updatedDate;
   fromOtherVersion = false;
 
   // For builder
@@ -54,6 +55,7 @@ export class Card {
     this.slug = card.slug;
     this.cost = card.cost;
     this.releaseDate = card.releaseDate;
+    this.updatedDate = card.updatedDate;
     this.fromOtherVersion = card.fromOtherVersion;
 
     this.name = this.getName(translateService);

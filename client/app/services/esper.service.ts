@@ -164,6 +164,9 @@ export class EsperService {
       case 'releaseDate' :
         return this.toolService.sortByReleaseDate(espers, order);
       break;
+      case 'updatedDate' :
+        return this.toolService.sortByUpdatedDate(espers, order);
+      break;
       default :
         console.log('not managed sort');
         return espers;

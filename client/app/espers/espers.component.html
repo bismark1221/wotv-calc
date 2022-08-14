@@ -111,13 +111,13 @@
           </div> -->
           <div class="sortBy">
             <span>Sort by :</span>
-            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['rarity', 'name', 'releaseDate']" [(ngModel)]="sort" (ngModelChange)="filterEspers()" [clearable]="false" [searchable]="false">
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['rarity', 'name', 'releaseDate', 'updatedDate']" [(ngModel)]="sort" (ngModelChange)="filterEspers()" [clearable]="false" [searchable]="false">
               <ng-template ng-label-tmp let-item="item">
-                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+                {{ (item === 'releaseDate' ? 'Release date' : (item === 'updatedDate' ? 'Updated date' : item)) | titlecase }}
               </ng-template>
 
               <ng-template ng-option-tmp let-item="item">
-                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+                {{ (item === 'releaseDate' ? 'Release date' : (item === 'updatedDate' ? 'Updated date' : item)) | titlecase }}
               </ng-template>
             </ng-select>
           </div>

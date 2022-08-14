@@ -282,6 +282,9 @@ export class UnitService {
       case 'releaseDate' :
         return this.toolService.sortByReleaseDate(units, order);
       break;
+      case 'updatedDate' :
+        return this.toolService.sortByUpdatedDate(units, order);
+      break;
       default :
         console.log('not managed sort');
         return units;

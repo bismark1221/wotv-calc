@@ -137,7 +137,8 @@ export class Unit {
   slug;
   board;
   attack;
-  releaseDate = 'XX/XX/XXXX';
+  releaseDate;
+  updatedDate;
   unlockedSkills = [];
   rawJobs = [];
   rawSkills = [];
@@ -222,6 +223,7 @@ export class Unit {
     this.realMaxLevel = unit.realMaxLevel;
     this.type = unit.type;
     this.releaseDate = unit.releaseDate;
+    this.updatedDate = unit.updatedDate;
     this.unlockedSkills = unit.unlockedSkills;
     this.fromOtherVersion = unit.fromOtherVersion;
 

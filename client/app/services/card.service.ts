@@ -186,6 +186,9 @@ export class CardService {
       case 'releaseDate' :
         return this.toolService.sortByReleaseDate(cards, order);
       break;
+      case 'updatedDate' :
+        return this.toolService.sortByUpdatedDate(cards, order);
+      break;
       default :
         console.log('not managed sort');
         return cards;

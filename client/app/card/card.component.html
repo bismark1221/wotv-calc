@@ -29,6 +29,17 @@
           </td>
         </tr>
         <tr>
+        <tr>
+          <th class="sub" colspan="3">Updated Date</th>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <div>
+              {{ card.updatedDate }}
+            </div>
+          </td>
+        </tr>
+        <tr>
           <td colspan="3">
             <button class="btn btn-sub" [routerLink]="[getRoute('/builder/card/' + card.slug)]">Go To Builder</button>
           </td>

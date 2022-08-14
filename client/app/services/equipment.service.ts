@@ -547,6 +547,9 @@ export class EquipmentService {
       case 'releaseDate' :
         return this.toolService.sortByReleaseDate(equipments, order);
       break;
+      case 'updatedDate' :
+        return this.toolService.sortByUpdatedDate(equipments, order);
+      break;
       default :
         console.log('not managed sort');
         return equipments;
