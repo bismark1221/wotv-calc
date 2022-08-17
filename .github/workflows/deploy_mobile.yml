@@ -1,0 +1,49 @@
+name: Build & Deploy
+
+on:
+  workflow_dispatch
+
+jobs:
+  build-prod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: mobile
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14.17.0'
+      - run: sudo apt-get install sshpass
+      - run: npm install -g @angular/cli
+      - run: npm --version
+      - run: ng version
+      - run: npm i -f
+
+      - name: Minimify json assets
+        run: python3 minimify_assets.py
+
+      - name: Git Secret Reveal
+        uses: entrostat/git-secret-action@v3.3.0
+        with:
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          gpg-private-key-passphrase: ${{ secrets.GPG_PRIVATE_KEY_PASSPHRASE }}
+
+      - name: Build prod
+        run: ng build --prod
+
+      - name: Remove sourcemaps
+        run : rm dist/browser/*.map
+
+      - name: Compress build
+        run : tar -czvf build.tar.gz ./dist
+
+      - name: Copy New Files to server
+        run : sudo sshpass -p ${{ secrets.SSH_PASS }} scp -v -o StrictHostKeyChecking=no -P ${{ secrets.SSH_PORT }} -r build.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}:${{ secrets.SSH_MOBILE_TARGET }}
+
+      - name: Delete Existing Files
+        run : sudo sshpass -p ${{ secrets.SSH_PASS }} -v ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT}} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} 'rm -rf ${{ secrets.SSH_MOBILE_TARGET }}/dist/*'
+        continue-on-error: true
+
+      - name: Uncompress new Files
+        run : sudo sshpass -p ${{ secrets.SSH_PASS }} -v ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT}} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} 'cd ${{ secrets.SSH_MOBILE_TARGET }} && tar -xzvf build.tar.gz && rm build.tar.gz'
+
