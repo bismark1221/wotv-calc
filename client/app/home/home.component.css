@@ -169,7 +169,7 @@ circle, rect {
 }
 
 .headerBlock {
-  width: 840px;
+  max-width: 840px;
   margin: auto;
   position: relative;
   text-align: center;
@@ -253,23 +253,6 @@ circle, rect {
   height: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .itemImgBlock {
   width: 200px;
   height: 160px;
@@ -306,4 +289,28 @@ circle, rect {
   max-width: 20px;
   max-height: 20px;
   vertical-align: top;
+}
+
+@media (max-width: 860px) {
+  .markdownHome {
+    display: none;
+  }
+
+  .left_zone {
+    position: initial;
+    display: inline-block;
+  }
+
+  .right_zone {
+    position: initial;
+    display: inline-block;
+  }
+
+  .patreon {
+    margin-left: 20px;
+  }
+
+  .updates {
+    text-align: center;
+  }
 }
