@@ -47,11 +47,11 @@
   <div class="lastUpdate">
     Last Updates
   </div>
-  <div *ngFor="let line of updatedFormatted">
-    <div class="itemsTable">
-      <div class="date">
-        {{ line.date }}
-      </div>
+  <div *ngFor="let line of updatedFormatted" class="itemsTable">
+    <div class="date">
+      {{ line.date }}
+    </div>
+    <div class="itemsList">
       <div class="itemsCol" *ngFor="let item of line.items">
         <a [routerLink]="[getRoute('/'  + item.type + '/' + item.slug)]" [routerLinkActive]="['active']">
           <div class="cardIcons">

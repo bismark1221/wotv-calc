@@ -87,6 +87,8 @@ circle, rect {
 
 .itemsTable {
   margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: 0;
 }
 
@@ -203,7 +205,7 @@ circle, rect {
 }
 
 .updates {
-  width: 840px;
+  max-width: 860px;
   margin: auto;
   margin-top: 20px;
 }
@@ -211,6 +213,8 @@ circle, rect {
 .lastUpdate {
   font-weight: bold;
   font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .date {
