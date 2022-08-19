@@ -19,6 +19,7 @@ hr {
 }
 
 .textFooter {
+  display: inline-block;
   margin: auto;
 }
 
@@ -38,4 +39,10 @@ hr {
 
 .twitter, .youtube, .contact, .legal, .discord {
   padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .links {
+    float: none;
+  }
 }
