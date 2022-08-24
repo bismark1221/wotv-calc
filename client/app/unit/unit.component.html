@@ -34,12 +34,14 @@
             <tr>
               <th class="sub" colspan="6">Jobs</th>
             </tr>
-            <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
+            <tr *ngIf="jobs">
               <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                  <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                <div *ngIf="jobs[i]">
+                  <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                    <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                  </div>
+                  {{ jobs[i].name }}
                 </div>
-                {{ jobs[i].name }}
               </td>
             </tr>
             <tr *ngIf="unit.species != 'human'">
@@ -48,7 +50,7 @@
             <tr *ngIf="unit.species != 'human'">
               <td colspan="6"><div class="equipmentText">{{ unit.species | titlecase }}</div></td>
             </tr>
-            <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
+            <tr *ngIf="jobs[0]">
               <th class="sub" colspan="6">Weapons</th>
             </tr>
             <tr *ngIf="jobs[0]">
@@ -134,7 +136,7 @@
                 <span>{{ skill.name }}</span>
                 <span *ngIf="skill.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.webp'}}" /></span>
                 <span *ngIf="skill.reflectable">
-                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
+                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" title="reflectable" />
                 </span>
                 <span *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
@@ -321,15 +323,17 @@
             <tr>
               <th class="sub" colspan="6">Jobs</th>
             </tr>
-            <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
+            <tr *ngIf="jobs">
               <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                  <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                <div *ngIf="jobs[i]">
+                  <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                    <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                  </div>
+                  {{ jobs[i].name }}
                 </div>
-                {{ jobs[i].name }}
               </td>
             </tr>
-            <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
+            <tr *ngIf="jobs[0]">
               <th class="sub" colspan="6">Weapons</th>
             </tr>
             <tr *ngIf="jobs[0]">
@@ -451,10 +455,10 @@
                 <div *ngFor="let buff of unit.remainingBuffs">{{ buff }}</div>
               </td>
             </tr>
-            <tr>
+            <tr *ngIf="unit.exJobs && unit.exJobs.length > 0">
               <th colspan="11">EX Board Stats (Max Value)</th>
             </tr>
-            <tr>
+            <tr *ngIf="unit.exJobs && unit.exJobs.length > 0">
               <th class="sub">HP</th>
               <th class="sub">TP</th>
               <th class="sub">INITIAL AP</th>
@@ -467,7 +471,7 @@
               <th class="sub">LUCK</th>
               <th class="sub">CRITIC RATE</th>
             </tr>
-            <tr>
+            <tr *ngIf="unit.exJobs && unit.exJobs.length > 0">
               <td>{{ unit.exBuffs.HP }}</td>
               <td>{{ unit.exBuffs.TP }}</td>
               <td>{{ unit.exBuffs.INITIAL_AP }}</td>
@@ -903,7 +907,7 @@
               <td>
                 <span *ngIf="upgradedSkill.based"><img title="{{ upgradedSkill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + upgradedSkill.based + '.webp'}}" /></span>
                 <span *ngIf="upgradedSkill.reflectable">
-                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
+                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" title="reflectable" />
                 </span>
                 <span *ngIf="upgradedSkill.time && upgradedSkill.time.minValue">
                   <ng-template #tip_time>
@@ -969,7 +973,7 @@
         </table>
 
         <table class="skillsTable" *ngFor="let i of [0, 1, 2, 3]">
-          <tbody>
+          <tbody *ngIf="getSkillsPerJob(i).length > 0">
             <tr>
               <th *ngIf="i === 0 && jobs[0]" colspan="9">
                 <div class="mainJob jobInSkill">
@@ -1004,7 +1008,7 @@
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.webp'}}" />
                 <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.webp'}}" /></span>
                 <span *ngIf="skill.reflectable">
-                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
+                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" title="reflectable" />
                 </span>
                 <span *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
@@ -1075,7 +1079,7 @@
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + upgradedSkill.type + '.webp'}}" />
                 <span *ngIf="upgradedSkill.based"><img title="{{ upgradedSkill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + upgradedSkill.based + '.webp'}}" /></span>
                 <span *ngIf="upgradedSkill.reflectable">
-                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
+                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" title="reflectable" />
                 </span>
                 <span *ngIf="upgradedSkill.time && upgradedSkill.time.minValue">
                   <ng-template #tip_time>
@@ -1163,7 +1167,7 @@
               <td>
                 <img class='atkBasedImg' src="{{ 'assets/atkBased/' + skill.based + '.webp' }}" *ngIf="skill.based"/>
                 <span *ngIf="skill.reflectable">
-                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
+                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" title="reflectable" />
                 </span>
                 <span *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
@@ -1245,7 +1249,7 @@
               <td class="limitBased" *ngIf="unit.formattedLimit.based">
                 <img class='atkBasedImg' src="{{ 'assets/atkBased/' + unit.formattedLimit.based + '.webp' }}" />
                 <span *ngIf="unit.formattedLimit.reflectable">
-                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
+                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" title="reflectable" />
                 </span>
                 <span *ngIf="unit.formattedLimit.time && unit.formattedLimit.time.minValue">
                   <ng-template #tip_time>
@@ -1314,7 +1318,7 @@
               <td class="limitBased" *ngIf="upgradedSkill.based">
                 <img class='atkBasedImg' src="{{ 'assets/atkBased/' + upgradedSkill.based + '.webp' }}" />
                 <span *ngIf="upgradedSkill.reflectable">
-                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
+                  <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" title="reflectable" />
                 </span>
                 <span *ngIf="upgradedSkill.time && upgradedSkill.time.minValue">
                   <ng-template #tip_time>
@@ -1423,15 +1427,17 @@
             <tr>
               <th class="sub" colspan="6">Jobs</th>
             </tr>
-            <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
+            <tr *ngIf="jobs">
               <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                  <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                <div *ngIf="jobs[i]">
+                  <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                    <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                  </div>
+                  {{ jobs[i].name }}
                 </div>
-                {{ jobs[i].name }}
               </td>
             </tr>
-            <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
+            <tr *ngIf="jobs[0]">
               <th class="sub" colspan="6">Weapons</th>
             </tr>
             <tr *ngIf="jobs[0]">

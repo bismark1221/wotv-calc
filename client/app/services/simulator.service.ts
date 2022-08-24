@@ -40,7 +40,9 @@ export class SimulatorService {
     'undead',
     'stone',
     'metal',
-    'arcana'
+    'arcana',
+    'slime',
+    '???'
   ];
 
   constructor(
