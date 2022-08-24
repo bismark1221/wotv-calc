@@ -818,6 +818,7 @@ export class Unit {
         } else {
           console.log('not manage effect in masterSkill percent/fixe');
           console.log(masterSkill);
+          console.log(effect);
         }
       });
     }

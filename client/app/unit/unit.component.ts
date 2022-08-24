@@ -337,7 +337,7 @@ export class UnitComponent implements OnInit {
 
       Object.keys(this.unit.totalJobsStats).forEach(stat => {
         this.unit.totalJobsStats[stat] = Math.floor(this.unit.totalJobsStats[stat]);
-        if (this.unit.totalJobsStats[stat] !== (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])) {
+        if (this.unit.jobsStats.length === 3 && this.unit.totalJobsStats[stat] !== (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])) {
           this.unit.jobsStats[0][stat] += this.unit.totalJobsStats[stat] - (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat]);
         }
       });

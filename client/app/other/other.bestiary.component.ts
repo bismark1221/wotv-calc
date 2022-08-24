@@ -42,7 +42,9 @@ export class OtherBestiaryComponent implements OnInit {
     'undead',
     'stone',
     'metal',
-    'arcana'
+    'arcana',
+    'slime',
+    '???'
   ];
 
   constructor(
