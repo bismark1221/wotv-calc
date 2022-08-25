@@ -18,6 +18,8 @@ jobs:
       - run: npm install -g @angular/cli
       - run: npm --version
       - run: ng version
+      - run: ls -l /opt/hostedtoolcache/node/14.17.0/x64/lib/node_modules/
+      - run: ls -l /opt/hostedtoolcache/node/14.17.0/x64/lib/node_modules/@angular/cli/lib/
       - run: npm i -f
 
       - name: Minimify json assets
