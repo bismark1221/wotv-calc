@@ -29,8 +29,17 @@ jobs:
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-private-key-passphrase: ${{ secrets.GPG_PRIVATE_KEY_PASSPHRASE }}
 
-      - run: ls -l /opt/hostedtoolcache/node/14.17.0/x64/lib/node_modules/
-      - run: ls -l /opt/hostedtoolcache/node/14.17.0/x64/lib/node_modules/@angular/cli/lib/
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular-devkit/build-webpack/src/webpack/index.js
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular-devkit/build-webpack/src/index.js
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular-devkit/build-angular/src/builders/browser/index.js
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular-devkit/architect/node/node-modules-architect-host.js
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular-devkit/architect/node/index.js
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular/cli/src/command-builder/architect-base-command-module.js
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular/cli/src/command-builder/architect-command-module.js
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular/cli/src/commands/build/cli.js
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular/cli/src/command-builder/command-runner.js
+      - run: ls -l /home/runner/work/wotv-calc/wotv-calc/node_modules/@angular/cli/lib/cli/index.js
+      - run: ls -l /opt/hostedtoolcache/node/14.17.0/x64/lib/node_modules/@angular/cli/lib/init.js
 
       - run: ng version
 
