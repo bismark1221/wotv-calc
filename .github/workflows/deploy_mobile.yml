@@ -29,7 +29,7 @@ jobs:
           gpg-private-key-passphrase: ${{ secrets.GPG_PRIVATE_KEY_PASSPHRASE }}
 
       - name: Build prod
-        run: ng build --prod
+        run: ng build --configuration production
 
       - name: Remove sourcemaps
         run : rm dist/browser/*.map
