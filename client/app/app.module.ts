@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import { Angulartics2Module } from 'angulartics2';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -195,7 +194,6 @@ export function createTranslateLoader(http: HttpClient) {
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    MultiselectDropdownModule,
     LocalStorageModule.forRoot({
       prefix: 'wotv-calc',
       storageType: 'localStorage'

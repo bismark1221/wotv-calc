@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
@@ -92,7 +92,7 @@ export class EquipmentsComponent implements OnInit {
   filtersCount = 0;
 
   @ViewChild('SearchBar') ngselect;
-  searchForm: FormGroup;
+  searchForm: UntypedFormGroup;
 
   constructor(
     private equipmentService: EquipmentService,
@@ -113,8 +113,8 @@ export class EquipmentsComponent implements OnInit {
 
     await this.getEquipments();
 
-    this.searchForm = new FormGroup({
-      searchOptions: new FormControl()
+    this.searchForm = new UntypedFormGroup({
+      searchOptions: new UntypedFormControl()
     });
   }
 

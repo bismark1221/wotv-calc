@@ -125,7 +125,6 @@
       }
     }
   },
-  "defaultProject": "wotv-calc",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
@@ -136,6 +135,9 @@
     }
   },
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ],
+    "analytics": false
   }
 }

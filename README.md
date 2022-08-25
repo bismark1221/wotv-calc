@@ -1,7 +1,7 @@
 # wotv-calc
 
 # Install
-npm install
+npm install -f
 
 # Run
 ng serve --proxy-config proxy.conf.json
