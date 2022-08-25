@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: '14.17.0'
       - run: sudo apt-get install sshpass
+      - run: npm cache clean --force
       - run: npm install -g @angular/cli
       - run: npm --version
       - run: ng version
