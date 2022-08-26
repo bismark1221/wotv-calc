@@ -18,7 +18,7 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { ClickOutsideModule } from 'ng-click-outside';
+import { NgClickOutsideDirective } from 'ng-click-outside2';
 import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -214,7 +214,7 @@ export function createTranslateLoader(http: HttpClient) {
     UiSwitchModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    ClickOutsideModule,
+    NgClickOutsideDirective,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
     })

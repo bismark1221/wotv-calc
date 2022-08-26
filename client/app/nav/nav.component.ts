@@ -30,11 +30,12 @@ export class NavComponent implements OnInit, AfterViewInit {
   inEquipment = false;
   inRaid = false;
   inQuest = false;
+
   showBuilderNav = false;
   showOtherNav = false;
-  showVersionSelector = false;
-  showLangSelector = false;
-  showUserMenu = false;
+  showLangNav = false;
+  showUserNav = false;
+
   actualRoute = null;
   version = null;
   theme = null;
@@ -129,7 +130,7 @@ export class NavComponent implements OnInit, AfterViewInit {
       this.angulartics.eventTrack.next({ action: lang, properties: { category: 'change_lang' }});
     }
 
-    this.showLangSelector = false;
+    this.showLangNav = false;
   }
 
   changeVersion(version) {
@@ -144,8 +145,6 @@ export class NavComponent implements OnInit, AfterViewInit {
       const route = this.actualRoute.join('/').split('#');
       this.router.navigate([route[0]], { preserveFragment: true });
     }
-
-    this.showVersionSelector = false;
   }
 
   getRoute(route) {
@@ -173,5 +172,17 @@ export class NavComponent implements OnInit, AfterViewInit {
       this.showMobileBuilderNav = false;
       this.showMobileOtherNav = false;
     }
+  }
+
+  toggleOtherNav(status) {
+    this.showOtherNav = status;
+  }
+
+  toggleUserNav(status) {
+    this.showUserNav = status;
+  }
+
+  toggleLangNav(status) {
+    this.showLangNav = status;
   }
 }
