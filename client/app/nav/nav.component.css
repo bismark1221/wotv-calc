@@ -295,8 +295,20 @@
   width: 24px;
 }
 
-.subNav {
+.subNavHidden {
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  scale: 0.95;
+  transition: all ease-out 0.25s;
+}
+
+.subNavVisible {
+  z-index: 100;
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
+  transition: all ease-in 0.25s;
 }
 
 .home_link {

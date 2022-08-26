@@ -138,7 +138,7 @@
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
           -->
-          <div *ngIf="showLangNav" class="subNav origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="lang-menu-button" tabindex="-1">
+          <div [ngClass]="{'subNavHidden': !showLangNav, 'subNavVisible': showLangNav}" class="subNav origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="lang-menu-button" tabindex="-1">
             <!-- Active: "bg-gray-100", Not Active: "" -->
             <a *ngIf="lang !== 'fr'" (click)="changeLang('fr')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-fr" /></a>
             <a *ngIf="lang !== 'en'" (click)="changeLang('en')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-gb" /></a>
