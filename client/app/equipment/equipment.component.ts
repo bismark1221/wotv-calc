@@ -138,6 +138,13 @@ export class EquipmentComponent implements OnInit {
                     const unitCond = this.equipment.rawUnits.find(searchedUnit => searchedUnit.dataId === itemCond);
                     skillCond.items[itemCondIndex] = unitCond.image;
                   }
+
+                  if (skillCond.type === 'mainjob') {
+                    const jobCond = this.equipment.rawJobs.find(searchedJob => searchedJob.dataId === itemCond);
+                    if (jobCond) {
+                      skillCond.items[itemCondIndex] = jobCond.image;
+                    }
+                  }
                 });
               });
             }

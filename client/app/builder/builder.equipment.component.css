@@ -302,3 +302,19 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.mainjob {
+  height: 50px;
+  background: url("assets/jobs/base_main.webp") 0px 0px no-repeat;
+  background-size: 50px;
+  padding: 5px;
+  width: 50px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.mainjob img {
+  max-width: 40px;
+  max-height: 40px;
+  vertical-align: top;
+}
