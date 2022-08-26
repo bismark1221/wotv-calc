@@ -127,6 +127,10 @@ label {
   margin-bottom: 0;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .boldText {
   font-weight: bold;
 }
@@ -350,7 +354,7 @@ label {
 }
 
 .switch {
-  margin-top: 15px !important;
+  margin-top: 5px !important;
   border: 0 !important;
   background: #3D3A41 !important;
   width: 65px !important;

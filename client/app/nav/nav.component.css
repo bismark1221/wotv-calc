@@ -70,10 +70,6 @@
   display: none;
 }
 
-.pointer {
-  cursor: pointer;
-}
-
 .separator {
   margin-right: 5px;
 }
@@ -107,7 +103,6 @@
 
 .logo_desktop {
   height: 60px;
-  margin-left: 20px;
 }
 
 .logo_mobile {
@@ -176,7 +171,6 @@
 .split {
   height: 40px;
   width: 2px;
-  margin-left: 5px;
 }
 
 /* Version Selector */
@@ -301,6 +295,13 @@
   width: 24px;
 }
 
+.subNav {
+  z-index: 100;
+}
+
+.home_link {
+  width: 60px;
+}
 
 
 /* Mobile version */
