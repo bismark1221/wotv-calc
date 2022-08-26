@@ -129,11 +129,11 @@ export class NavComponent implements OnInit, AfterViewInit {
 
       this.angulartics.eventTrack.next({ action: lang, properties: { category: 'change_lang' }});
     }
-
-    this.showLangNav = false;
   }
 
-  changeVersion(version) {
+  changeVersion() {
+    const version = this.version === 'GL' ? 'JP' : 'GL';
+
     if (version === 'GL' && this.actualRoute.length >= 2 && this.actualRoute[1] === 'JP') {
       this.actualRoute.splice(1, 1);
 

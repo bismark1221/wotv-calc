@@ -93,7 +93,7 @@
       </nav>
 
       <div class="hidden lg:flex items-center justify-end">
-        <a *ngIf="!user" (click)="openLoginModal()" class="ml-2 whitespace-nowrap inline-flex items-center justify-center px-2 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">LOGIN</a>
+        <a *ngIf="!user" (click)="openLoginModal()" class="pointer ml-2 whitespace-nowrap inline-flex items-center justify-center px-2 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">LOGIN</a>
 
         <div class="ml-3 relative" *ngIf="user" (click)="toggleUserNav(!showUserNav)" (clickOutside)="toggleUserNav(false)"> <!-- user menu -->
           <div>
@@ -119,7 +119,7 @@
         </div>
 
         <div class="ml-3 relative" (click)="toggleLangNav(!showLangNav)" (clickOutside)="toggleLangNav(false)"> <!-- Lang selector -->
-          <a class="whitespace-nowrap inline-flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white langImg">
+          <a class="pointer whitespace-nowrap inline-flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white langImg">
             <img *ngIf="lang === 'fr'" src="assets/nav/blank.gif" class="flag flag-fr" />
             <img *ngIf="lang === 'en'" src="assets/nav/blank.gif" class="flag flag-gb" />
             <img *ngIf="lang === 'de'" src="assets/nav/blank.gif" class="flag flag-de" />
@@ -138,21 +138,21 @@
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
           -->
-          <div [ngClass]="{'subNavHidden': !showLangNav, 'subNavVisible': showLangNav}" class="subNav origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="lang-menu-button" tabindex="-1">
+          <div [ngClass]="{'subNavHidden': !showLangNav, 'subNavVisible': showLangNav}" class="subNav subNavLang origin-top-right absolute w-10 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="lang-menu-button" tabindex="-1">
             <!-- Active: "bg-gray-100", Not Active: "" -->
-            <a *ngIf="lang !== 'fr'" (click)="changeLang('fr')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-fr" /></a>
-            <a *ngIf="lang !== 'en'" (click)="changeLang('en')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-gb" /></a>
-            <a *ngIf="lang !== 'de'" (click)="changeLang('de')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-de" /></a>
-            <a *ngIf="lang !== 'es'" (click)="changeLang('es')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-es" /></a>
-            <a *ngIf="lang !== 'ko'" (click)="changeLang('ko')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-kr" /></a>
-            <a *ngIf="lang !== 'zh'" (click)="changeLang('zh')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-tw" /></a>
+            <a *ngIf="lang !== 'fr'" (click)="changeLang('fr')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-fr" /></a>
+            <a *ngIf="lang !== 'en'" (click)="changeLang('en')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-gb" /></a>
+            <a *ngIf="lang !== 'de'" (click)="changeLang('de')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-de" /></a>
+            <a *ngIf="lang !== 'es'" (click)="changeLang('es')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-es" /></a>
+            <a *ngIf="lang !== 'ko'" (click)="changeLang('ko')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-kr" /></a>
+            <a *ngIf="lang !== 'zh'" (click)="changeLang('zh')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-tw" /></a>
           </div>
         </div>
 
         <img src="assets/nav/split.webp" class="split ml-3"/>
 
         <div class="ml-3 relative">
-          <a (click)="changeVersion('JP')" class="whitespace-nowrap inline-flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white">
+          <a (click)="changeVersion()" class="pointer whitespace-nowrap inline-flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white">
             {{ version === 'GL' ? 'Global' : 'Japan' }}
           </a>
         </div>

@@ -311,6 +311,11 @@
   transition: all ease-in 0.25s;
 }
 
+.subNavLang {
+  left: -8px;
+  background-color: var(--nav-background-main);
+}
+
 .home_link {
   width: 60px;
 }
