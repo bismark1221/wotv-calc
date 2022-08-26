@@ -1791,7 +1791,7 @@ export class SkillService {
         }
 
         if (effect.calcType === 'apply') {
-          html = 'When target is revive automatically cast another attack skill on it : ' + (newCastOnKill ? this.toolService.getName(newCastOnKill) : '???') + ' ' + this.getTurns(effect);
+          html = 'When target is revive automatically cast another attack skill on it : ' + (newCastOnKill ? this.toolService.getName(newCastOnKill) : '???');
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
@@ -1803,14 +1803,20 @@ export class SkillService {
         }
 
         if (effect.calcType === 'apply') {
-          html = 'When enemy target is killed automatically cast another attack skill on it : ' + (newCastOnRevive ? this.toolService.getName(newCastOnRevive) : '???') + ' ' + this.getTurns(effect);
+          html = 'When enemy target is killed automatically cast another attack skill on it : ' + (newCastOnRevive ? this.toolService.getName(newCastOnRevive) : '???');
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
-      case 'AUTO_RECOVER_HP' :
-        html = 'Recovers own HP when it is less than ' + effect.rate / 10 + '% HP';
-        if (effect.calcType !== 'apply') {
+      case 'AUTO_CAST_ON_CONDITION' :
+        let newCastOnCondition = null;
+        if (unit.rawSkills) {
+          newCastOnCondition = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'When conditions are met auto-cast following skill : ' + (newCastOnCondition ? this.toolService.getName(newCastOnCondition) : '???');
+        } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
@@ -1876,7 +1882,24 @@ export class SkillService {
       ON_CRITICAL: ' when performing a critical hit',
       HUMAN: ' when cast on human',
       NETHERBEAST: ' when cast on nether beast',
-      HP_THRESHOLD: ' only when HP >= 70%'
+      HP_SUPP_10: ' only when HP >= 10%',
+      HP_SUPP_20: ' only when HP >= 20%',
+      HP_SUPP_30: ' only when HP >= 30%',
+      HP_SUPP_40: ' only when HP >= 40%',
+      HP_SUPP_50: ' only when HP >= 50%',
+      HP_SUPP_60: ' only when HP >= 60%',
+      HP_SUPP_70: ' only when HP >= 70%',
+      HP_SUPP_80: ' only when HP >= 80%',
+      HP_SUPP_90: ' only when HP >= 90%',
+      HP_LESS_10: ' only when HP <= 10%',
+      HP_LESS_20: ' only when HP <= 20%',
+      HP_LESS_30: ' only when HP <= 30%',
+      HP_LESS_40: ' only when HP <= 40%',
+      HP_LESS_50: ' only when HP <= 50%',
+      HP_LESS_60: ' only when HP <= 60%',
+      HP_LESS_70: ' only when HP <= 70%',
+      HP_LESS_80: ' only when HP <= 80%',
+      HP_LESS_90: ' only when HP <= 90%'
     };
 
     return conditions[condition];
@@ -2397,8 +2420,8 @@ export class SkillService {
         case 'REMOVE_AFTER_HIT':
           html += ', remove effect after ' + (continueId.split('_')[continueId.split('_').length - 1] - 1) + ' hits received';
         break;
-        case 'WHEN_HP_SUPP':
-          html += ', when HP >= ' + (continueId.split('_')[continueId.split('_').length - 1]) + ' %';
+        case 'WHEN_HP_LESS':
+          html += ', when HP <= ' + (continueId.split('_')[continueId.split('_').length - 1]) + ' %';
         break;
         default:
         break;
