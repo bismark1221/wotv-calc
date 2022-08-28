@@ -185,4 +185,8 @@ export class NavComponent implements OnInit, AfterViewInit {
   toggleLangNav(status) {
     this.showLangNav = status;
   }
+
+  toggleBuilderNav(status) {
+    this.showBuilderNav = status;
+  }
 }
