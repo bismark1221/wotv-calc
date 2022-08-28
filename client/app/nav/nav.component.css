@@ -295,6 +295,10 @@
   width: 24px;
 }
 
+.subNav {
+  z-index: 10;
+}
+
 .subNavHidden {
   z-index: 100;
   visibility: hidden;

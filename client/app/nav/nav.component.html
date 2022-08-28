@@ -100,21 +100,10 @@
             <i class="fas fa-user-circle" aria-hidden="true"></i>
           </div>
 
-          <!--
-            Dropdown menu, show/hide based on menu state.
-
-            Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-            Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95"
-          -->
-          <div *ngIf="showUserNav" class="subNav origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-            <!-- Active: "bg-gray-100", Not Active: "" -->
-            <a [routerLink]="[getRoute('/inventory')]" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Inventory</a>
-            <a [routerLink]="[getRoute('/user')]" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Inventory Importer</a>
-            <a (click)="logout()" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Logout</a>
+          <div *ngIf="showUserNav" class="subNav subNavLang origin-top-right absolute w-40 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+            <a [routerLink]="[getRoute('/inventory')]" class="block px-4 py-2 text-sm text-gray-400 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-0">Inventory</a>
+            <a [routerLink]="[getRoute('/user')]" class="block px-4 py-2 text-sm text-gray-400 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-1">Inventory Importer</a>
+            <a (click)="logout()" class="pointer block px-4 py-2 text-sm text-gray-400 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-2">Logout</a>
           </div>
         </div>
 
@@ -128,17 +117,7 @@
             <img *ngIf="lang === 'zh'" src="assets/nav/blank.gif" class="flag flag-tw" />
           </a>
 
-          <!--
-            Dropdown menu, show/hide based on menu state.
-
-            Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-            Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95"
-          -->
-          <div [ngClass]="{'subNavHidden': !showLangNav, 'subNavVisible': showLangNav}" class="subNav subNavLang origin-top-right absolute w-10 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="lang-menu-button" tabindex="-1">
+          <div *ngIf="showLangNav" class="subNav subNavLang origin-top-right absolute w-10 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="lang-menu-button" tabindex="-1">
             <!-- Active: "bg-gray-100", Not Active: "" -->
             <a *ngIf="lang !== 'fr'" (click)="changeLang('fr')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-fr" /></a>
             <a *ngIf="lang !== 'en'" (click)="changeLang('en')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-gb" /></a>
