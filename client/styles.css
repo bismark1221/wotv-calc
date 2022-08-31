@@ -395,6 +395,10 @@ small {
   content: url(assets/nav/sun.webp);
 }
 
+.switchThemeMobile button {
+  top: 10px;
+}
+
 .switchMainJob .switch {
   margin: 0 !important;
   height: 24px !important;
