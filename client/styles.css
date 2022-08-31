@@ -47,6 +47,8 @@
   --nav-background-main: #1D1B1B;
   --footer-link: #1D1B1B;
 
+  --mobile-nav-background: #3D3D3D;
+
   --card-background: #E8E6DF;
   --card-title-background: #3D3A41;
   --card-title-color: #FFF;
@@ -396,7 +398,7 @@ small {
 }
 
 .switchThemeMobile button {
-  top: 10px;
+  top: 5px;
 }
 
 .switchMainJob .switch {

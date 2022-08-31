@@ -170,8 +170,11 @@ export class NavComponent implements OnInit, AfterViewInit {
     this.displayMobileMenu = forceClose ? false : !this.displayMobileMenu;
 
     if (forceClose) {
-      this.showMobileBuilderNav = false;
-      this.showMobileOtherNav = false;
+      this.showOtherNav = false;
+      this.showUserNav = false;
+      this.showLangNav = false;
+      this.showBuilderNav = false;
+      this.showListingNav = false;
     }
   }
 

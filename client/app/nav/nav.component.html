@@ -124,66 +124,66 @@
           </div>
         </div>
         <div class="mt-6 space-y-6">
-          <div class="pointer" (click)="toggleListingNav(!showListingNav)">
+          <div class="pointer text-base font-medium text-gray-300 hover:text-white" (click)="toggleListingNav(!showListingNav)">
             Listing
             <svg *ngIf="showListingNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
             <svg *ngIf="!showListingNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
           </div>
           <div class="grid grid-cols-2 gap-y-4 gap-x-8" *ngIf="showListingNav">
-            <a [routerLink]="[getRoute('/units')]"  class="text-base font-medium text-gray-300 hover:text-white">Units</a>
-            <a [routerLink]="[getRoute('/cards')]"  class="text-base font-medium text-gray-300 hover:text-white">Cards</a>
-            <a [routerLink]="[getRoute('/espers')]"  class="text-base font-medium text-gray-300 hover:text-white">Espers</a>
-            <a [routerLink]="[getRoute('/equipments')]"  class="text-base font-medium text-gray-300 hover:text-white">Equipment</a>
-            <a [routerLink]="[getRoute('/quests')]"  class="text-base font-medium text-gray-300 hover:text-white">Quests</a>
-            <a [routerLink]="[getRoute('/raids')]"  class="text-base font-medium text-gray-300 hover:text-white">Raids</a>
+            <a [routerLink]="[getRoute('/units')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Units</a>
+            <a [routerLink]="[getRoute('/cards')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Cards</a>
+            <a [routerLink]="[getRoute('/espers')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Espers</a>
+            <a [routerLink]="[getRoute('/equipments')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Equipment</a>
+            <a [routerLink]="[getRoute('/quests')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Quests</a>
+            <a [routerLink]="[getRoute('/raids')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Raids</a>
           </div>
         </div>
       </div>
 
       <div class="py-6 px-5 space-y-6">
-        <div class="pointer" (click)="toggleBuilderNav(!showBuilderNav)">
+        <div class="pointer text-base font-medium text-gray-300 hover:text-white" (click)="toggleBuilderNav(!showBuilderNav)">
           Builder
           <svg *ngIf="showBuilderNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
           <svg *ngIf="!showBuilderNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
         </div>
         <div class="grid grid-cols-2 gap-y-4 gap-x-8" *ngIf="showBuilderNav">
-          <a [routerLink]="[getRoute('/builder/team')]" class="text-base font-medium text-gray-300 hover:text-white">Team</a>
-          <a [routerLink]="[getRoute('/builder/unit')]" class="text-base font-medium text-gray-300 hover:text-white">Unit</a>
-          <a [routerLink]="[getRoute('/builder/card')]" class="text-base font-medium text-gray-300 hover:text-white">Card</a>
-          <a [routerLink]="[getRoute('/builder/esper')]" class="text-base font-medium text-gray-300 hover:text-white">Esper</a>
-          <a [routerLink]="[getRoute('/builder/equipment')]" class="text-base font-medium text-gray-300 hover:text-white">Equipment</a>
-          <a [routerLink]="[getRoute('/builder/materia')]" class="text-base font-medium text-gray-300 hover:text-white">Materia</a>
-          <a [routerLink]="[getRoute('/builder/guild')]" class="text-base font-medium text-gray-300 hover:text-white">Guild</a>
-          <a [routerLink]="[getRoute('/builder/master-ranks')]" class="text-base font-medium text-gray-300 hover:text-white">Master Ranks</a>
+          <a [routerLink]="[getRoute('/builder/team')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Team</a>
+          <a [routerLink]="[getRoute('/builder/unit')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Unit</a>
+          <a [routerLink]="[getRoute('/builder/card')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Card</a>
+          <a [routerLink]="[getRoute('/builder/esper')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Esper</a>
+          <a [routerLink]="[getRoute('/builder/equipment')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Equipment</a>
+          <a [routerLink]="[getRoute('/builder/materia')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Materia</a>
+          <a [routerLink]="[getRoute('/builder/guild')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Guild</a>
+          <a [routerLink]="[getRoute('/builder/master-ranks')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Master Ranks</a>
         </div>
       </div>
 
       <div class="py-6 px-5 space-y-6">
-        <div class="pointer" (click)="toggleOtherNav(!showOtherNav)">
+        <div class="pointer text-base font-medium text-gray-300 hover:text-white" (click)="toggleOtherNav(!showOtherNav)">
           Other
           <svg *ngIf="showOtherNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
           <svg *ngIf="!showOtherNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
         </div>
         <div class="grid grid-cols-2 gap-y-4 gap-x-8"*ngIf="showOtherNav">
-          <a [routerLink]="[getRoute('/other/index')]" class="text-base font-medium text-gray-300 hover:text-white">Index</a>
-          <a [routerLink]="[getRoute('/other/bestiary')]" class="text-base font-medium text-gray-300 hover:text-white">Bestiary</a>
-          <a [routerLink]="[getRoute('/other/titles')]" class="text-base font-medium text-gray-300 hover:text-white">Titles</a>
-          <a [routerLink]="[getRoute('/other/jobplanner')]" class="text-base font-medium text-gray-300 hover:text-white">Job Planner</a>
-          <a [routerLink]="[getRoute('/other/farm-calculator')]" class="text-base font-medium text-gray-300 hover:text-white">Farm Calculator</a>
-          <a [routerLink]="[getRoute('/other/material-lookup')]" class="text-base font-medium text-gray-300 hover:text-white">Material Lookup</a>
-          <a [routerLink]="[getRoute('/other/materia')]" class="text-base font-medium text-gray-300 hover:text-white">Materia</a>
-          <a [routerLink]="[getRoute('/other/subcard-ratio')]" class="text-base font-medium text-gray-300 hover:text-white">Sub Cards Ratio</a>
+          <a [routerLink]="[getRoute('/other/index')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Index</a>
+          <a [routerLink]="[getRoute('/other/bestiary')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Bestiary</a>
+          <a [routerLink]="[getRoute('/other/titles')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Titles</a>
+          <a [routerLink]="[getRoute('/other/jobplanner')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Job Planner</a>
+          <a [routerLink]="[getRoute('/other/farm-calculator')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Farm Calculator</a>
+          <a [routerLink]="[getRoute('/other/material-lookup')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Material Lookup</a>
+          <a [routerLink]="[getRoute('/other/materia')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Materia</a>
+          <a [routerLink]="[getRoute('/other/subcard-ratio')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white">Sub Cards Ratio</a>
         </div>
       </div>
 
       <div class="py-6 px-5 space-y-6">
         <div class="text-center text-base font-medium text-gray-500">
-          <a *ngIf="!user" (click)="openLoginModal()" class="pointer ml-2 whitespace-nowrap inline-flex items-center justify-center px-2 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">LOGIN</a>
+          <a *ngIf="!user" (click)="openLoginModal(); toggleMobileMenu(true);" class="pointer ml-2 whitespace-nowrap inline-flex items-center justify-center px-2 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">LOGIN</a>
 
           <div class="grid grid-cols-3 gap-y-4 gap-x-8" *ngIf="user">
-            <a [routerLink]="[getRoute('/inventory')]" class="text-base font-medium text-gray-300 hover:text-white" id="user-menu-item-0">Inventory</a>
-            <a [routerLink]="[getRoute('/user')]" class="text-base font-medium text-gray-300 hover:text-white" id="user-menu-item-1">Inventory Importer</a>
-            <a (click)="logout()" class="pointer text-base font-medium text-gray-300 hover:text-white" id="user-menu-item-2">Logout</a>
+            <a [routerLink]="[getRoute('/inventory')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white" id="user-menu-item-0">Inventory</a>
+            <a [routerLink]="[getRoute('/user')]" (click)="toggleMobileMenu(true)" class="text-base font-medium text-gray-300 hover:text-white" id="user-menu-item-1">Inventory Importer</a>
+            <a (click)="logout(); toggleMobileMenu(true);" class="pointer text-base font-medium text-gray-300 hover:text-white" id="user-menu-item-2">Logout</a>
           </div>
         </div>
       </div>
@@ -191,7 +191,7 @@
       <div class="py-6 px-5 space-y-6">
         <div class="text-center text-base font-medium text-gray-500">
           <div class="inline-block">
-            <a class="inline-block pointer px-2 py-1">
+            <a (click)="toggleMobileMenu(true)"class="inline-block pointer px-2 py-1">
               <img *ngIf="lang === 'fr'" src="assets/nav/blank.gif" class="flag flag-fr" />
               <img *ngIf="lang === 'en'" src="assets/nav/blank.gif" class="flag flag-gb" />
               <img *ngIf="lang === 'de'" src="assets/nav/blank.gif" class="flag flag-de" />
@@ -200,22 +200,22 @@
               <img *ngIf="lang === 'zh'" src="assets/nav/blank.gif" class="flag flag-tw" />
             </a>
 
-            <a *ngIf="lang !== 'fr'" (click)="changeLang('fr')" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-fr" /></a>
-            <a *ngIf="lang !== 'en'" (click)="changeLang('en')" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-gb" /></a>
-            <a *ngIf="lang !== 'de'" (click)="changeLang('de')" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-de" /></a>
-            <a *ngIf="lang !== 'es'" (click)="changeLang('es')" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-es" /></a>
-            <a *ngIf="lang !== 'ko'" (click)="changeLang('ko')" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-kr" /></a>
-            <a *ngIf="lang !== 'zh'" (click)="changeLang('zh')" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-tw" /></a>
+            <a *ngIf="lang !== 'fr'" (click)="changeLang('fr'); toggleMobileMenu(true);" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-fr" /></a>
+            <a *ngIf="lang !== 'en'" (click)="changeLang('en'); toggleMobileMenu(true);" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-gb" /></a>
+            <a *ngIf="lang !== 'de'" (click)="changeLang('de'); toggleMobileMenu(true);" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-de" /></a>
+            <a *ngIf="lang !== 'es'" (click)="changeLang('es'); toggleMobileMenu(true);" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-es" /></a>
+            <a *ngIf="lang !== 'ko'" (click)="changeLang('ko'); toggleMobileMenu(true);" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-kr" /></a>
+            <a *ngIf="lang !== 'zh'" (click)="changeLang('zh'); toggleMobileMenu(true);" class="inline-block pointer px-2 py-1"><img src="assets/nav/blank.gif" class="flag flag-tw" /></a>
           </div>
 
           <div class="ml-3 inline-block">
-            <a (click)="changeVersion()" class="pointer whitespace-nowrap inline-flex items-center justify-center py-2 border border-transparent text-base font-medium text-white">
+            <a (click)="changeVersion(); toggleMobileMenu(true);" class="pointer whitespace-nowrap inline-flex items-center justify-center py-2 border border-transparent text-base font-medium text-white">
               {{ version === 'GL' ? 'Global' : 'Japan' }}
             </a>
           </div>
 
           <div class="ml-3 inline-block">
-            <ui-switch class="switchTheme switchThemeMobile" (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme === 'light'"></ui-switch>
+            <ui-switch class="switchTheme switchThemeMobile" (click)="toggleTheme(); toggleMobileMenu(true);" checkedLabel="on" uncheckedLabel="off" [checked]="theme === 'light'"></ui-switch>
           </div>
         </div>
       </div>

@@ -40,6 +40,8 @@ export const themes = {
       '--nav-background-main': '#1D1B1B',
       '--footer-link': '#1D1B1B',
 
+      '--mobile-nav-background': '#3D3D3D',
+
       '--card-background': '#E8E6DF',
       '--card-background-hover': 'var(--white)',
       '--card-title-background': '#3D3A41',
@@ -100,6 +102,8 @@ export const themes = {
 
       '--nav-background-main': '#1D1B1B',
       '--footer-link': 'var(--white)',
+
+      '--mobile-nav-background': '#3D3D3D',
 
       '--card-background': '#3D3D3D',
       '--card-background-hover': 'var(--white)',
