@@ -6,7 +6,8 @@
           <img class="logo_desktop" src="assets/nav/WOTVCALC_LOGO.webp" alt="">
         </a>
       </div>
-      <div class="-mr-2 -my-2 lg:hidden">
+
+      <div *ngIf="!displayMobileMenu" class="-mr-2 -my-2 lg:hidden">
         <button (click)="toggleMobileMenu()" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
           <span class="sr-only">Open menu</span>
           <!-- Heroicon name: outline/menu -->
@@ -15,7 +16,8 @@
           </svg>
         </button>
       </div>
-      <nav class="hidden lg:flex space-x-4">
+
+      <nav *ngIf="!displayMobileMenu" class="hidden lg:flex space-x-4">
         <a [routerLink]="[getRoute('/units')]" class="text-base font-medium text-gray-400 hover:text-white">UNITS</a>
         <a [routerLink]="[getRoute('/cards')]" class="text-base font-medium text-gray-400 hover:text-white">CARDS</a>
         <a [routerLink]="[getRoute('/espers')]" class="text-base font-medium text-gray-400 hover:text-white">ESPERS</a>
@@ -52,7 +54,7 @@
         </div>
       </nav>
 
-      <div class="hidden lg:flex items-center justify-end">
+      <div *ngIf="!displayMobileMenu" class="hidden lg:flex items-center justify-end">
         <a *ngIf="!user" (click)="openLoginModal()" class="pointer ml-2 whitespace-nowrap inline-flex items-center justify-center px-2 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">LOGIN</a>
 
         <div class="ml-3 relative" *ngIf="user" (click)="toggleUserNav(!showUserNav)" (clickOutside)="toggleUserNav(false)"> <!-- user menu -->
@@ -121,65 +123,105 @@
             </button>
           </div>
         </div>
-        <div class="mt-6">
-          <nav class="grid gap-y-8">
-            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-              <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-              <span class="ml-3 text-base font-medium text-gray-900"> Analytics </span>
-            </a>
-
-            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-              <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-              </svg>
-              <span class="ml-3 text-base font-medium text-gray-900"> Engagement </span>
-            </a>
-
-            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-              <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-              <span class="ml-3 text-base font-medium text-gray-900"> Security </span>
-            </a>
-
-            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-              <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-              </svg>
-              <span class="ml-3 text-base font-medium text-gray-900"> Integrations </span>
-            </a>
-
-            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-              <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-              <span class="ml-3 text-base font-medium text-gray-900"> Automations </span>
-            </a>
-          </nav>
+        <div class="mt-6 space-y-6">
+          <div class="pointer" (click)="toggleListingNav(!showListingNav)">
+            Listing
+            <svg *ngIf="showListingNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+            <svg *ngIf="!showListingNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
+          </div>
+          <div class="grid grid-cols-2 gap-y-4 gap-x-8" *ngIf="showListingNav">
+            <a [routerLink]="[getRoute('/units')]"  class="text-base font-medium text-gray-300 hover:text-white">Units</a>
+            <a [routerLink]="[getRoute('/cards')]"  class="text-base font-medium text-gray-300 hover:text-white">Cards</a>
+            <a [routerLink]="[getRoute('/espers')]"  class="text-base font-medium text-gray-300 hover:text-white">Espers</a>
+            <a [routerLink]="[getRoute('/equipments')]"  class="text-base font-medium text-gray-300 hover:text-white">Equipment</a>
+            <a [routerLink]="[getRoute('/quests')]"  class="text-base font-medium text-gray-300 hover:text-white">Quests</a>
+            <a [routerLink]="[getRoute('/raids')]"  class="text-base font-medium text-gray-300 hover:text-white">Raids</a>
+          </div>
         </div>
       </div>
+
       <div class="py-6 px-5 space-y-6">
-        <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Pricing </a>
-
-          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Docs </a>
-
-          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Help Center </a>
-
-          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Guides </a>
-
-          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Events </a>
-
-          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Security </a>
+        <div class="pointer" (click)="toggleBuilderNav(!showBuilderNav)">
+          Builder
+          <svg *ngIf="showBuilderNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+          <svg *ngIf="!showBuilderNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
         </div>
-        <div>
-          <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Sign up </a>
-          <p class="mt-6 text-center text-base font-medium text-gray-500">
-            Existing customer?
-            <a href="#" class="text-indigo-600 hover:text-indigo-500"> Sign in </a>
-          </p>
+        <div class="grid grid-cols-2 gap-y-4 gap-x-8" *ngIf="showBuilderNav">
+          <a [routerLink]="[getRoute('/builder/team')]" class="text-base font-medium text-gray-300 hover:text-white">Team</a>
+          <a [routerLink]="[getRoute('/builder/unit')]" class="text-base font-medium text-gray-300 hover:text-white">Unit</a>
+          <a [routerLink]="[getRoute('/builder/card')]" class="text-base font-medium text-gray-300 hover:text-white">Card</a>
+          <a [routerLink]="[getRoute('/builder/esper')]" class="text-base font-medium text-gray-300 hover:text-white">Esper</a>
+          <a [routerLink]="[getRoute('/builder/equipment')]" class="text-base font-medium text-gray-300 hover:text-white">Equipment</a>
+          <a [routerLink]="[getRoute('/builder/materia')]" class="text-base font-medium text-gray-300 hover:text-white">Materia</a>
+          <a [routerLink]="[getRoute('/builder/guild')]" class="text-base font-medium text-gray-300 hover:text-white">Guild</a>
+          <a [routerLink]="[getRoute('/builder/master-ranks')]" class="text-base font-medium text-gray-300 hover:text-white">Master Ranks</a>
+        </div>
+      </div>
+
+      <div class="py-6 px-5 space-y-6">
+        <div class="pointer" (click)="toggleOtherNav(!showOtherNav)">
+          Other
+          <svg *ngIf="showOtherNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+          <svg *ngIf="!showOtherNav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
+        </div>
+        <div class="grid grid-cols-2 gap-y-4 gap-x-8"*ngIf="showOtherNav">
+          <a [routerLink]="[getRoute('/other/index')]" class="text-base font-medium text-gray-300 hover:text-white">Index</a>
+          <a [routerLink]="[getRoute('/other/bestiary')]" class="text-base font-medium text-gray-300 hover:text-white">Bestiary</a>
+          <a [routerLink]="[getRoute('/other/titles')]" class="text-base font-medium text-gray-300 hover:text-white">Titles</a>
+          <a [routerLink]="[getRoute('/other/jobplanner')]" class="text-base font-medium text-gray-300 hover:text-white">Job Planner</a>
+          <a [routerLink]="[getRoute('/other/farm-calculator')]" class="text-base font-medium text-gray-300 hover:text-white">Farm Calculator</a>
+          <a [routerLink]="[getRoute('/other/material-lookup')]" class="text-base font-medium text-gray-300 hover:text-white">Material Lookup</a>
+          <a [routerLink]="[getRoute('/other/materia')]" class="text-base font-medium text-gray-300 hover:text-white">Materia</a>
+          <a [routerLink]="[getRoute('/other/subcard-ratio')]" class="text-base font-medium text-gray-300 hover:text-white">Sub Cards Ratio</a>
+        </div>
+      </div>
+
+      <div class="py-6 px-5 space-y-6">
+        <div class="mt-6 text-center text-base font-medium text-gray-500">
+          <a *ngIf="!user" (click)="openLoginModal()" class="pointer ml-2 whitespace-nowrap inline-flex items-center justify-center px-2 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">LOGIN</a>
+
+          <div class="ml-3 inline-block" *ngIf="user" (click)="toggleUserNav(!showUserNav)" (clickOutside)="toggleUserNav(false)"> <!-- user menu -->
+            <div>
+              <i class="fas fa-user-circle" aria-hidden="true"></i>
+            </div>
+
+            <div *ngIf="showUserNav" class="subNav origin-top-right absolute w-40 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+              <a [routerLink]="[getRoute('/inventory')]" class="block px-4 py-2 text-sm text-gray-400 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-0">Inventory</a>
+              <a [routerLink]="[getRoute('/user')]" class="block px-4 py-2 text-sm text-gray-400 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-1">Inventory Importer</a>
+              <a (click)="logout()" class="pointer block px-4 py-2 text-sm text-gray-400 hover:text-white" role="menuitem" tabindex="-1" id="user-menu-item-2">Logout</a>
+            </div>
+          </div>
+
+          <div class="ml-3 inline-block" (click)="toggleLangNav(!showLangNav)" (clickOutside)="toggleLangNav(false)"> <!-- Lang selector -->
+            <a class="pointer whitespace-nowrap inline-flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white langImg">
+              <img *ngIf="lang === 'fr'" src="assets/nav/blank.gif" class="flag flag-fr" />
+              <img *ngIf="lang === 'en'" src="assets/nav/blank.gif" class="flag flag-gb" />
+              <img *ngIf="lang === 'de'" src="assets/nav/blank.gif" class="flag flag-de" />
+              <img *ngIf="lang === 'es'" src="assets/nav/blank.gif" class="flag flag-es" />
+              <img *ngIf="lang === 'ko'" src="assets/nav/blank.gif" class="flag flag-kr" />
+              <img *ngIf="lang === 'zh'" src="assets/nav/blank.gif" class="flag flag-tw" />
+            </a>
+
+            <div *ngIf="showLangNav" class="subNav origin-top-right absolute w-10 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="lang-menu-button" tabindex="-1">
+              <!-- Active: "bg-gray-100", Not Active: "" -->
+              <a *ngIf="lang !== 'fr'" (click)="changeLang('fr')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-fr" /></a>
+              <a *ngIf="lang !== 'en'" (click)="changeLang('en')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-gb" /></a>
+              <a *ngIf="lang !== 'de'" (click)="changeLang('de')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-de" /></a>
+              <a *ngIf="lang !== 'es'" (click)="changeLang('es')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-es" /></a>
+              <a *ngIf="lang !== 'ko'" (click)="changeLang('ko')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-kr" /></a>
+              <a *ngIf="lang !== 'zh'" (click)="changeLang('zh')" class="pointer block px-2 py-1 text-sm text-gray-700" role="menuitem" tabindex="-1" id="lang-menu-item-0"><img src="assets/nav/blank.gif" class="flag flag-tw" /></a>
+            </div>
+          </div>
+
+          <div class="ml-3 inline-block">
+            <a (click)="changeVersion()" class="pointer whitespace-nowrap inline-flex items-center justify-center py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white">
+              {{ version === 'GL' ? 'Global' : 'Japan' }}
+            </a>
+          </div>
+
+          <div class="ml-3 inline-block">
+            <ui-switch class="switchTheme" (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme === 'light'"></ui-switch>
+          </div>
         </div>
       </div>
     </div>

@@ -32,6 +32,7 @@ export class NavComponent implements OnInit, AfterViewInit {
   inQuest = false;
 
   showBuilderNav = false;
+  showListingNav = false;
   showOtherNav = false;
   showLangNav = false;
   showUserNav = false;
@@ -188,5 +189,9 @@ export class NavComponent implements OnInit, AfterViewInit {
 
   toggleBuilderNav(status) {
     this.showBuilderNav = status;
+  }
+
+  toggleListingNav(status) {
+    this.showListingNav = status;
   }
 }
