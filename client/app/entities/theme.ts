@@ -59,7 +59,10 @@ export const themes = {
 
       '--sortby-color': 'rgba(61, 58, 65, 0.5)',
 
-      '--black-vs-white': 'var(--black)'
+      '--black-vs-white': 'var(--black)',
+
+      '--modal-title-background': '#E8E6DF',
+      '--modal-body-background': 'var(--white)'
     }
   },
   dark: {
@@ -122,7 +125,10 @@ export const themes = {
 
       '--sortby-color': 'rgba(255, 255, 255, 0.5)',
 
-      '--black-vs-white': 'var(--white)'
+      '--black-vs-white': 'var(--white)',
+
+      '--modal-title-background': 'var(--black)',
+      '--modal-body-background': '#3D3D3D'
     }
   }
 };

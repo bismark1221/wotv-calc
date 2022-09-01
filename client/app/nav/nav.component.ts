@@ -3,7 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 
 import { NavService } from '../services/nav.service';
 import { ThemeService } from '../services/theme.service';
@@ -50,7 +50,7 @@ export class NavComponent implements OnInit, AfterViewInit {
     private navService: NavService,
     private router: Router,
     private themeService: ThemeService,
-    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -157,9 +157,7 @@ export class NavComponent implements OnInit, AfterViewInit {
   }
 
   openLoginModal() {
-    const modalRef = this.modalService.open(LoginComponent, { windowClass: 'login-modal' });
-
-    modalRef.result.then((user) => {}, (reason) => {});
+    const modalRef = this.simpleModalService.addModal(LoginComponent, { bodyClass: 'login-modal' });
   }
 
   logout() {

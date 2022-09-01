@@ -1,11 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { LocalStorageService } from 'angular-2-local-storage';
-import { Angulartics2 } from 'angulartics2';
-import { Router, NavigationEnd, NavigationStart } from '@angular/router';
+import { Component } from '@angular/core';
+import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
 
 import { AuthService } from '../services/auth.service';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-login',
@@ -13,15 +9,15 @@ import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./login.component.css']
 })
 
-export class LoginComponent {
+export class LoginComponent extends SimpleModalComponent<null, null> {
   step = 'login';
   availableSync = [];
 
   constructor(
     private authService: AuthService,
-    private modal: NgbActiveModal
+    private simpleModalService: SimpleModalService
   ) {
-
+    super();
   }
 
   login(provider) {
@@ -42,24 +38,20 @@ export class LoginComponent {
         });
 
         if (!somethingToSync) {
-          this.modal.close();
+          this.close();
         }
       } else {
-        this.modal.close();
+        this.close();
       }
     });
   }
 
   async validateSync() {
     await this.authService.firstSync();
-    this.modal.close();
+    this.close();
   }
 
   dontSync() {
-    this.modal.close();
-  }
-
-  close() {
-    this.modal.dismiss();
+    this.close();
   }
 }

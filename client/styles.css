@@ -66,6 +66,9 @@
   --sortby-color: rgba(61, 58, 65, 0.5);
 
   --black-vs-white: var(--black);
+
+  --modal-title-background: #E8E6DF;
+  --modal-body-background: var(--white);
 }
 
 body {
@@ -906,4 +909,12 @@ small {
 
 .ng-dropdown-panel {
   z-index: 1000 !important;
+}
+
+.modal-title-background {
+  background-color: var(--modal-title-background);
+}
+
+.modal-body-background {
+  background-color: var(--modal-body-background);
 }

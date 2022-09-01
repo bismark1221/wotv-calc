@@ -20,6 +20,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgClickOutsideDirective } from 'ng-click-outside2';
 import { ToastrModule } from 'ngx-toastr';
+import { SimpleModalModule, defaultSimpleModalOptions } from 'ngx-simple-modal';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -217,7 +218,15 @@ export function createTranslateLoader(http: HttpClient) {
     NgClickOutsideDirective,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
-    })
+    }),
+    SimpleModalModule.forRoot({container: 'modal-container'}, {...defaultSimpleModalOptions, ...{
+      closeOnEscape: true,
+      closeOnClickOutside: false,
+      wrapperDefaultClasses: 'foo',
+      wrapperClass: 'bar',
+      animationDuration: 1,
+      autoFocus: false
+    }})
   ],
   providers: [
     UnitService,
