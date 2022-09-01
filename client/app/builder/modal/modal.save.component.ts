@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { CardService } from '../../services/card.service';
 import { UnitService } from '../../services/unit.service';
@@ -27,8 +27,7 @@ export class ModalSaveComponent extends SimpleModalComponent<null, boolean> impl
     private equipmentService: EquipmentService,
     private teamService: TeamService,
     private translateService: TranslateService,
-    private materiaService: MateriaService,
-    private simpleModalService: SimpleModalService
+    private materiaService: MateriaService
   ) {
     super();
   }

@@ -11,6 +11,7 @@
 :root {
   --link-color: #0275d8;
   --table-border: #dadada;
+  --table-border-inverted: #404040;
   --background-tooltip: #635b52;
   --btn-background-activated: #e6e6e6;
   --btn-border-activated: #adadad;
@@ -56,6 +57,9 @@
 
   --th-background: #3D3A41;
   --sub-th-background: #E8E6DF;
+  --th-background-inverted: #3D3A41;
+  --sub-th-background-inverted: #E8E6DF;
+
   --tabs-background: #F4F5F9;
 
   --hr-color: rgba(0, 0, 0, 0.1);
@@ -66,6 +70,7 @@
   --sortby-color: rgba(61, 58, 65, 0.5);
 
   --black-vs-white: var(--black);
+  --white-vs-black: var(--white);
 
   --modal-title-background: #E8E6DF;
   --modal-body-background: var(--white);
@@ -99,6 +104,23 @@ th {
 
 th.sub {
   background-color: var(--sub-th-background);
+  color: var(--black);
+  font-weight: 100;
+}
+
+table.inverted, tbody.inverted, tr.inverted, th.inverted, td.inverted {
+  border: 1px solid var(--table-border-inverted);
+}
+
+th.inverted {
+  color: var(--white-vs-black);
+  background-color: var(--th-background-inverted);
+  text-align: center;
+  padding: 0.3em 0.5em;
+}
+
+th.sub.inverted {
+  background-color: var(--sub-th-background-inverted);
   color: var(--black);
   font-weight: 100;
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { ToolService } from '../../services/tool.service';
 import { CardService } from '../../services/card.service';
@@ -14,10 +14,10 @@ import { TeamService } from '../../services/team.service';
   templateUrl: './modal.load.component.html',
   styleUrls: ['./modal.load.component.css']
 })
-export class ModalLoadComponent implements OnInit {
-  @Input() public savedItems;
-  @Input() public type;
-  @Input() public allowNew = false;
+export class ModalLoadComponent extends SimpleModalComponent<null, any> implements OnInit {
+  public savedItems;
+  public type;
+  public allowNew = false;
 
   constructor(
     private toolService: ToolService,
@@ -26,9 +26,9 @@ export class ModalLoadComponent implements OnInit {
     private esperService: EsperService,
     private equipmentService: EquipmentService,
     private teamService: TeamService,
-    private translateService: TranslateService,
-    private modal: NgbActiveModal
+    private translateService: TranslateService
   ) {
+    super();
   }
 
   ngOnInit() {
@@ -42,16 +42,14 @@ export class ModalLoadComponent implements OnInit {
     }
   }
 
-  close() {
-    this.modal.dismiss();
-  }
-
   load(item) {
     if (item) {
-      this.modal.close({type: 'load', item: item});
+      this.result = {type: 'load', item: item};
     } else {
-      this.modal.close({type: 'new'});
+      this.result = {type: 'new'};
     }
+
+    this.close();
   }
 
   async delete(item) {
@@ -92,7 +90,8 @@ export class ModalLoadComponent implements OnInit {
     }
 
     if (this.savedItems.length === 0) {
-      this.modal.close({type: 'fullDelete'});
+      this.result = {type: 'fullDelete'};
+      this.close();
     }
   }
 }

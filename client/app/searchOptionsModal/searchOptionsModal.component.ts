@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 @Component({
   selector: 'app-search-options-modal',
@@ -9,7 +9,6 @@ import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
 export class SearchOptionsModalComponent extends SimpleModalComponent<null, null> {
 
   constructor(
-    private simpleModalService: SimpleModalService
   ) {
     super();
   }

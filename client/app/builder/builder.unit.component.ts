@@ -469,28 +469,22 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   openLoadModal(unitId) {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'unit', savedItems: this.savedUnits[unitId], allowNew: true })
+      .subscribe(async (result) => {
+        if (result.type === 'new') {
+          this.selectedUnitId = unitId;
+          await this.selectUnit(null, true);
+        }
 
-    modalRef.componentInstance.type = 'unit';
-    modalRef.componentInstance.savedItems = this.savedUnits[unitId];
-    modalRef.componentInstance.allowNew = true;
+        if (result.type === 'load' && result.item) {
+          this.selectedUnitId = result.item.dataId;
+          await this.selectUnit(result.item, true);
+        }
 
-    modalRef.result.then(async result => {
-      if (result.type === 'new') {
-        this.selectedUnitId = unitId;
-        await this.selectUnit(null, true);
-      }
-
-      if (result.type === 'load' && result.item) {
-        this.selectedUnitId = result.item.dataId;
-        await this.selectUnit(result.item, true);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedUnits[unitId] = [];
-      }
-    }, (reason) => {
-    });
+        if (result.type === 'fullDelete') {
+          this.savedUnits[unitId] = [];
+        }
+      });
   }
 
   openSaveModal() {

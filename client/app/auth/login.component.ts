@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { AuthService } from '../services/auth.service';
 
@@ -14,8 +14,7 @@ export class LoginComponent extends SimpleModalComponent<null, null> {
   availableSync = [];
 
   constructor(
-    private authService: AuthService,
-    private simpleModalService: SimpleModalService
+    private authService: AuthService
   ) {
     super();
   }

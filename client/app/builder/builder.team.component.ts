@@ -218,33 +218,30 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   openLoadModalUnits(pos, unitId) {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'unit', savedItems: this.savedUnits[unitId], allowNew: true })
+      .subscribe(async (result) => {
+        if (result) {
+          if (result.type === 'new') {
+            await this.selectUnit(pos, true);
+          }
 
-    modalRef.componentInstance.type = 'unit';
-    modalRef.componentInstance.savedItems = this.savedUnits[unitId];
-    modalRef.componentInstance.allowNew = true;
+          if (result.type === 'load' && result.item) {
+            await this.selectUnit(pos, true, result.item);
+          }
 
-    modalRef.result.then(async result => {
-      if (result.type === 'new') {
-        await this.selectUnit(pos, true);
-      }
+          if (result.type === 'fullDelete') {
+            this.savedUnits[unitId] = [];
+          }
+        } else {
+          if (this.team.units[pos]) {
+            this.selectedUnits[pos] = this.team.units[pos].dataId;
+          } else {
+            this.selectedUnits[pos] = null;
+          }
 
-      if (result.type === 'load' && result.item) {
-        await this.selectUnit(pos, true, result.item);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedUnits[unitId] = [];
-      }
-    }, (reason) => {
-      if (this.team.units[pos]) {
-        this.selectedUnits[pos] = this.team.units[pos].dataId;
-      } else {
-        this.selectedUnits[pos] = null;
-      }
-
-      this.getUnitsForSim();
-    });
+          this.getUnitsForSim();
+        }
+      });
   }
 
   changeStar(pos, value) {
@@ -424,21 +421,16 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   openLoadModal() {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'team', savedItems: this.savedTeams })
+      .subscribe(async (result) => {
+        if (result.type === 'load' && result.item) {
+          await this.loadTeam(result.item);
+        }
 
-    modalRef.componentInstance.type = 'team';
-    modalRef.componentInstance.savedItems = this.savedTeams;
-
-    modalRef.result.then(async result => {
-      if (result.type === 'load' && result.item) {
-        await this.loadTeam(result.item);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedTeams = [];
-      }
-    }, (reason) => {
-    });
+        if (result.type === 'fullDelete') {
+          this.savedTeams = [];
+        }
+      });
   }
 
   async loadTeam(teamData) {

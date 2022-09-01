@@ -172,28 +172,22 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   }
 
   openLoadModal(equipmentId) {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'equipment', savedItems: this.savedEquipments[equipmentId], allowNew: true })
+      .subscribe(async (result) => {
+        if (result.type === 'new') {
+          this.selectedEquipmentId = equipmentId;
+          await this.selectEquipment(null, true);
+        }
 
-    modalRef.componentInstance.type = 'equipment';
-    modalRef.componentInstance.savedItems = this.savedEquipments[equipmentId];
-    modalRef.componentInstance.allowNew = true;
+        if (result.type === 'load' && result.item) {
+          this.selectedEquipmentId = result.item.dataId;
+          await this.selectEquipment(result.item, true);
+        }
 
-    modalRef.result.then(async result => {
-      if (result.type === 'new') {
-        this.selectedEquipmentId = equipmentId;
-        await this.selectEquipment(null, true);
-      }
-
-      if (result.type === 'load' && result.item) {
-        this.selectedEquipmentId = result.item.dataId;
-        await this.selectEquipment(result.item, true);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedEquipments[equipmentId] = [];
-      }
-    }, (reason) => {
-    });
+        if (result.type === 'fullDelete') {
+          this.savedEquipments[equipmentId] = [];
+        }
+      });
   }
 
   openSaveModal() {

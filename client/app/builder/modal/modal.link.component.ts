@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Input, OnInit } from '@angular/core';
-import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { ClipboardService } from 'ngx-clipboard';
 
@@ -31,8 +31,7 @@ export class ModalLinkComponent extends SimpleModalComponent<null, null> impleme
     private teamService: TeamService,
     private materiaService: MateriaService,
     private clipboardService: ClipboardService,
-    private navService: NavService,
-    private simpleModalService: SimpleModalService
+    private navService: NavService
   ) {
     super();
   }

@@ -31,7 +31,7 @@
 
 .tableList {
   margin: auto;
-  width: 800px;
+  width: 100%;
 }
 
 a {
@@ -41,4 +41,8 @@ a {
 .newBuildBlock {
   text-align: center;
   margin-bottom: 10px;
+}
+
+.linkedIcons {
+  color: var(--black-vs-white);
 }
