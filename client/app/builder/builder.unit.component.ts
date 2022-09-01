@@ -437,35 +437,35 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   openCardsModal(subCard = false) {
-    const modalRef = this.modalService.open(ModalCardsComponent, { windowClass: 'builder-modal' });
+    let cardType = 'main';
+    let card = null;
+    let modalStep = 'select';
 
     if (subCard) {
-      modalRef.componentInstance.cardType = 'sub';
-    } else {
-      modalRef.componentInstance.cardType = 'main';
+      cardType = 'sub';
     }
 
     if (!subCard && this.unit.card) {
-      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.card));
-      modalRef.componentInstance.modalStep = 'custom';
+      card = JSON.parse(JSON.stringify(this.unit.card));
+      modalStep = 'custom';
     }
 
     if (subCard && this.unit.subCard) {
-      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.subCard));
-      modalRef.componentInstance.modalStep = 'custom';
+      card = JSON.parse(JSON.stringify(this.unit.subCard));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((card) => {
-      if (!subCard) {
-        this.unit.card = card;
-      } else {
-        this.unit.subCard = card;
-      }
+    this.simpleModalService.addModal(ModalCardsComponent, { cardType: cardType, card: card, modalStep: modalStep })
+      .subscribe(async (card) => {
+        if (!subCard) {
+          this.unit.card = card;
+        } else {
+          this.unit.subCard = card;
+        }
 
-      this.unitService.changeLevel();
-      this.updateActiveSkillsForSim();
-    }, (reason) => {
-    });
+        this.unitService.changeLevel();
+        this.updateActiveSkillsForSim();
+      });
   }
 
   openLoadModal(unitId) {

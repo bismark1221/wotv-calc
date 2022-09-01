@@ -138,7 +138,7 @@ export const themes = {
       '--white-vs-black': 'var(--black)',
 
       '--modal-title-background': 'var(--black)',
-      '--modal-body-background': '#3D3D3D'
+      '--modal-body-background': '#222121'
     }
   }
 };

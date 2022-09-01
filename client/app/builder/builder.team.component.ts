@@ -375,49 +375,48 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   openCardsModal(pos, subCard = false) {
-    const modalRef = this.modalService.open(ModalCardsComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.teamUnitPos = pos;
+    let cardType = 'main';
+    let card = null;
+    let modalStep = 'select';
+    let teamUnitPos = pos;
 
     if (subCard) {
-      modalRef.componentInstance.cardType = 'sub';
-    } else {
-      modalRef.componentInstance.cardType = 'main';
+      cardType = 'sub';
     }
 
     if (!subCard && this.team.units[pos].card) {
-      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.team.units[pos].card));
-      modalRef.componentInstance.modalStep = 'custom';
+      card = JSON.parse(JSON.stringify(this.team.units[pos].card));
+      modalStep = 'custom';
     }
 
     if (subCard && this.team.units[pos].subCard) {
-      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.team.units[pos].subCard));
-      modalRef.componentInstance.modalStep = 'custom';
+      card = JSON.parse(JSON.stringify(this.team.units[pos].subCard));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((card) => {
-      if (!subCard) {
-        this.team.units[pos].card = card;
-      } else {
-        this.team.units[pos].subCard = card;
-      }
-
-      this.teamService.changeLevel(pos);
-
-      this.team.units.forEach((unit, unitIndex) => {
-        if (unit && unitIndex !== pos) {
-          this.team.units[unitIndex].teamCards[pos] = this.team.units[pos].card;
-          this.team.units[unitIndex].teamSubCards[pos] = this.team.units[pos].subCard;
-          this.team.units[unitIndex].changeLevel();
+    this.simpleModalService.addModal(ModalCardsComponent, { cardType: cardType, card: card, modalStep: modalStep, teamUnitPos: teamUnitPos })
+      .subscribe(async (card) => {
+        if (!subCard) {
+          this.team.units[pos].card = card;
+        } else {
+          this.team.units[pos].subCard = card;
         }
+
+        this.teamService.changeLevel(pos);
+
+        this.team.units.forEach((unit, unitIndex) => {
+          if (unit && unitIndex !== pos) {
+            this.team.units[unitIndex].teamCards[pos] = this.team.units[pos].card;
+            this.team.units[unitIndex].teamSubCards[pos] = this.team.units[pos].subCard;
+            this.team.units[unitIndex].changeLevel();
+          }
+        });
+
+        this.updateActiveSkillsForSim();
+        this.calculateDamageSim();
+
+        this.teamService.updateTeamCost();
       });
-
-      this.updateActiveSkillsForSim();
-      this.calculateDamageSim();
-
-      this.teamService.updateTeamCost();
-    }, (reason) => {
-    });
   }
 
   openLoadModal() {
