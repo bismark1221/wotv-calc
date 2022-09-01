@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { EquipmentService } from '../../services/equipment.service';
 import { NavService } from '../../services/nav.service';
@@ -14,7 +13,7 @@ import { ModalMateriaComponent } from '../../builder/modal/modal.materia.compone
   templateUrl: './modal.equipments.html',
   styleUrls: ['./modal.equipments.css']
 })
-export class ModalInventoryEquipmentsComponent implements OnInit {
+export class ModalInventoryEquipmentsComponent extends SimpleModalComponent<null, any> implements OnInit {
   rawData = {
     equipments: [],
     acquisitionTypes: []
@@ -33,17 +32,17 @@ export class ModalInventoryEquipmentsComponent implements OnInit {
   isAcquisitionChecked = [];
   collapsedAcquisition = true;
 
-  @Input() public modalStep = 'select';
-  @Input() public equipment;
+  public modalStep = 'select';
+  public equipment;
 
   constructor(
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
     private toolService: ToolService,
-    private navService: NavService,
-    private modalService: NgbModal,
-    private modal: NgbActiveModal
+    private navService: NavService
   ) {
+    super();
+
     this.version = this.navService.getVersion();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -129,10 +128,6 @@ export class ModalInventoryEquipmentsComponent implements OnInit {
     await this.getEquipments();
   }
 
-  close() {
-    this.modal.dismiss();
-  }
-
   back() {
     this.modalStep = 'select';
   }
@@ -142,11 +137,17 @@ export class ModalInventoryEquipmentsComponent implements OnInit {
     this.modalStep = 'custom';
   }
 
+  closeButton() {
+    this.result = 'close';
+    this.close();
+  }
+
   save() {
-    this.modal.close(this.equipment);
+    this.result = this.equipment;
+    this.close();
   }
 
   removeEquipment() {
-    this.modal.close(null);
+    this.close();
   }
 }

@@ -9,7 +9,6 @@ import { LocalStorageModule } from 'angular-2-local-storage';
 import { Angulartics2Module } from 'angulartics2';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrettyJsonModule } from 'angular2-prettyjson';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { ClipboardModule } from 'ngx-clipboard';
@@ -208,7 +207,6 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    NgbModule,
     PrettyJsonModule,
     NgSelectModule,
     ClipboardModule,

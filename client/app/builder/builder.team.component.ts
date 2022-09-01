@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ClipboardService } from 'ngx-clipboard';
@@ -86,7 +85,6 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     private cardService: CardService,
     private equipmentService: EquipmentService,
     private toolService: ToolService,
-    private modalService: NgbModal,
     private simpleModalService: SimpleModalService,
     private clipboardService: ClipboardService,
     private teamService: TeamService,
