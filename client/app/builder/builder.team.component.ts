@@ -305,37 +305,33 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   showGuildDetail() {
-    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.team.guild.data));
-
-    modalRef.result.then((guild) => {
-      this.team.guild.data = guild;
-      for (let i = 0; i <= 4; i++) {
-        if (this.team.units[i]) {
-          this.teamService.changeLevel(i);
-          this.calculateDamageSim();
+    this.simpleModalService.addModal(ModalGuildComponent, { guild : JSON.parse(JSON.stringify(this.team.guild.data)) })
+      .subscribe(async (guild) => {
+        if (guild !== 'close') {
+          this.team.guild.data = guild;
+          for (let i = 0; i <= 4; i++) {
+            if (this.team.units[i]) {
+              this.teamService.changeLevel(i);
+              this.calculateDamageSim();
+            }
+          }
         }
-      }
-    }, (reason) => {
-    });
+      });
   }
 
   showMasterRanksDetail() {
-    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.team.masterRanks.data));
-
-    modalRef.result.then((masterRanks) => {
-      this.team.masterRanks.data = masterRanks;
-      for (let i = 0; i <= 4; i++) {
-        if (this.team.units[i]) {
-          this.teamService.changeLevel(i);
-          this.calculateDamageSim();
+    this.simpleModalService.addModal(ModalMasterRanksComponent, { masterRanks : JSON.parse(JSON.stringify(this.team.masterRanks.data)) })
+      .subscribe(async (masterRanks) => {
+        if (masterRanks !== 'close') {
+          this.team.masterRanks.data = masterRanks;
+          for (let i = 0; i <= 4; i++) {
+            if (this.team.units[i]) {
+              this.teamService.changeLevel(i);
+              this.calculateDamageSim();
+            }
+          }
         }
-      }
-    }, (reason) => {
-    });
+      });
   }
 
   openEquipmentsModal(unitPos, equipmentPos) {

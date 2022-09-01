@@ -379,27 +379,23 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   showGuildDetail() {
-    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.unit.guild.data));
-
-    modalRef.result.then((guild) => {
-      this.unit.guild.data = guild;
-      this.unitService.changeLevel();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalGuildComponent, { guild : JSON.parse(JSON.stringify(this.unit.guild.data)) })
+      .subscribe(async (guild) => {
+        if (guild !== 'close') {
+          this.unit.guild.data = guild;
+          this.unitService.changeLevel();
+        }
+      });
   }
 
   showMasterRanksDetail() {
-    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.unit.masterRanks.data));
-
-    modalRef.result.then((masterRanks) => {
-      this.unit.masterRanks.data = masterRanks;
-      this.unitService.changeLevel();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalMasterRanksComponent, { masterRanks : JSON.parse(JSON.stringify(this.unit.masterRanks.data)) })
+      .subscribe(async (masterRanks) => {
+        if (masterRanks !== 'close') {
+          this.unit.masterRanks.data = masterRanks;
+          this.unitService.changeLevel();
+        }
+      });
   }
 
   openEquipmentsModal(pos) {
