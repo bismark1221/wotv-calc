@@ -2339,10 +2339,12 @@ export class SkillService {
   }
 
   formatCounter(unit, skill, counter) {
-    if (!counter.applyEffectOnPhysicalEvade) {
-      return 'Chance to counter ' + this.counterType[counter.reactDamage] + ' damage ' + this.getValue(skill, counter);
+    if (counter.type === 'physicalEvade') {
+      return this.getValue(skill, counter) + ' chance to activate the effects when evading physical hit';
+    } else if (counter.type === 'evade') {
+      return this.getValue(skill, counter) + ' chance to activate the effects when evading';
     } else {
-      return 'Activate the effects only when evading physical hit';
+      return 'Chance to counter ' + this.counterType[counter.reactDamage] + ' damage ' + this.getValue(skill, counter);
     }
   }
 
