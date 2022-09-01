@@ -289,15 +289,12 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'card';
-    modalRef.componentInstance.item = this.card;
-
-    modalRef.result.then(result => {
-      this.savedCards = this.cardService.getSavedCards();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'card', item: this.card })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedCards = this.cardService.getSavedCards();
+        }
+      });
   }
 
   openLinkModal() {

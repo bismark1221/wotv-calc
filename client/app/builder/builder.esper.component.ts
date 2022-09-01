@@ -225,15 +225,12 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'esper';
-    modalRef.componentInstance.item = this.esper;
-
-    modalRef.result.then(result => {
-      this.savedEspers = this.esperService.getSavedEspers();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'esper', item: this.esper })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedEspers = this.esperService.getSavedEspers();
+        }
+      });
   }
 
   openLinkModal() {

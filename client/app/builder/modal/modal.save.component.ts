@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
 
 import { CardService } from '../../services/card.service';
 import { UnitService } from '../../services/unit.service';
@@ -14,11 +14,11 @@ import { MateriaService } from '../../services/materia.service';
   templateUrl: './modal.save.component.html',
   styleUrls: ['./modal.save.component.css']
 })
-export class ModalSaveComponent implements OnInit {
+export class ModalSaveComponent extends SimpleModalComponent<null, boolean> implements OnInit {
   saveStep = 'save';
 
-  @Input() public item;
-  @Input() public type;
+  public item;
+  public type;
 
   constructor(
     private cardService: CardService,
@@ -28,18 +28,15 @@ export class ModalSaveComponent implements OnInit {
     private teamService: TeamService,
     private translateService: TranslateService,
     private materiaService: MateriaService,
-    private modal: NgbActiveModal
+    private simpleModalService: SimpleModalService
   ) {
+    super();
   }
 
   ngOnInit() {
     if (this.type === 'materia') {
       this.save();
     }
-  }
-
-  close() {
-    this.modal.dismiss();
   }
 
   save() {
@@ -109,10 +106,10 @@ export class ModalSaveComponent implements OnInit {
     }
 
     if (savedItem) {
-      this.modal.close();
-    } else {
-      this.modal.dismiss();
+      this.result = true;
     }
+
+    this.close();
   }
 
   confirmSave() {
@@ -124,7 +121,7 @@ export class ModalSaveComponent implements OnInit {
     if (this.saveStep === 'confirm' && this.type !== 'materia') {
       this.saveStep = 'save';
     } else {
-      this.modal.dismiss();
+      this.close();
     }
   }
 }

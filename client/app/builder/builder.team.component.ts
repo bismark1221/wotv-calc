@@ -486,15 +486,12 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     });
 
     if (atLeasOneUnit) {
-      const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-      modalRef.componentInstance.type = 'team';
-      modalRef.componentInstance.item = this.team;
-
-      modalRef.result.then(result => {
-        this.savedTeams = this.teamService.getSavedTeams();
-      }, (reason) => {
-      });
+      this.simpleModalService.addModal(ModalSaveComponent, { type: 'team', item: this.team })
+        .subscribe((isSaved) => {
+          if (isSaved) {
+            this.savedTeams = this.teamService.getSavedTeams();
+          }
+        });
     }
   }
 

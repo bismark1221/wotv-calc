@@ -132,6 +132,11 @@ label {
   margin-bottom: 0;
 }
 
+input {
+  color: var(--black);
+  padding: 3px;
+}
+
 .pointer {
   cursor: pointer;
 }

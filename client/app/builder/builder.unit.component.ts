@@ -494,15 +494,12 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'unit';
-    modalRef.componentInstance.item = this.unit;
-
-    modalRef.result.then(result => {
-      this.savedUnits = this.unitService.getSavedUnits();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'unit', item: this.unit })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedUnits = this.unitService.getSavedUnits();
+        }
+      });
   }
 
   openLinkModal() {

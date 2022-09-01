@@ -315,16 +315,13 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'materia';
-    modalRef.componentInstance.item = this.materia;
-
-    modalRef.result.then(result => {
-      this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
-      this.filterMaterias();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'materia', item: this.materia })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
+          this.filterMaterias();
+        }
+      });
   }
 
   openDeleteModal() {

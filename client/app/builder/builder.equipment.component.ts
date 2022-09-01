@@ -197,15 +197,12 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'equipment';
-    modalRef.componentInstance.item = this.equipment;
-
-    modalRef.result.then(result => {
-      this.savedEquipments = this.equipmentService.getSavedEquipments();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'equipment', item: this.equipment })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedEquipments = this.equipmentService.getSavedEquipments();
+        }
+      });
   }
 
   openLinkModal() {
