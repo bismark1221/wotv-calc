@@ -157,7 +157,7 @@ export class NavComponent implements OnInit, AfterViewInit {
   }
 
   openLoginModal() {
-    const modalRef = this.simpleModalService.addModal(LoginComponent, { bodyClass: 'login-modal' });
+    const modalRef = this.simpleModalService.addModal(LoginComponent);
   }
 
   logout() {

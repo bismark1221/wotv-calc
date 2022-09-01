@@ -221,9 +221,6 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     SimpleModalModule.forRoot({container: 'modal-container'}, {...defaultSimpleModalOptions, ...{
       closeOnEscape: true,
-      closeOnClickOutside: false,
-      wrapperDefaultClasses: 'foo',
-      wrapperClass: 'bar',
       animationDuration: 1,
       autoFocus: false
     }})

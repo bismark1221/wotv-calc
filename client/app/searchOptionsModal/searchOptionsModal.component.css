@@ -10,29 +10,23 @@
   display: inline-block;
 }
 
-.closeButtonBlock {
+.mainBlock {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.closeButton {
   float: right;
 }
 
-.closeButtonBlock button {
+.closeButton button {
   padding: 10px;
   background: none;
   border: 0;
 }
 
-.closeButtonBlock button span {
+.closeButton button span {
   font-size: 20px;
   font-weight: bold;
-}
-
-.mainBlock {
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 800px;
-}
-
-.closeButton {
-  margin: 10px;
-  float: right;
 }
