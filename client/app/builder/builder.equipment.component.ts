@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { EquipmentService } from '../services/equipment.service';
@@ -45,6 +46,7 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
     private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private toolService: ToolService,
     private authService: AuthService,
     private navService: NavService
@@ -207,10 +209,7 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'equipment';
-    modalRef.componentInstance.item = this.equipment;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'equipment', item: this.equipment });
   }
 
   openMateriaModal(type) {

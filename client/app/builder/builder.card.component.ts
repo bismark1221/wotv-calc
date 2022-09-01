@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { CardService } from '../services/card.service';
@@ -46,6 +47,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     private cardService: CardService,
     private translateService: TranslateService,
     private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private toolService: ToolService,
     private authService: AuthService,
     private navService: NavService,
@@ -299,10 +301,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'card';
-    modalRef.componentInstance.item = this.card;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'card', item: this.card });
   }
 
   toggleOtherVersion() {

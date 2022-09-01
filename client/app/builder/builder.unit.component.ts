@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { UnitService } from '../services/unit.service';
@@ -156,6 +157,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     private guildService: GuildService,
     private masterRanksService: MasterRanksService,
     private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private navService: NavService,
     private toolService: ToolService,
     private authService: AuthService,
@@ -504,10 +506,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'unit';
-    modalRef.componentInstance.item = this.unit;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'unit', item: this.unit });
   }
 
   getAvailableStatType() {

@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { MateriaService } from '../services/materia.service';
@@ -110,7 +111,8 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
     private skillService: SkillService,
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService
   ) {
     this.version = this.navService.getVersion();
   }
@@ -341,9 +343,6 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'materia';
-    modalRef.componentInstance.item = this.materia;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'materia', item: this.materia });
   }
 }

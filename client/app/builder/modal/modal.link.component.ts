@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Input, OnInit } from '@angular/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
 
 import { ClipboardService } from 'ngx-clipboard';
 
@@ -16,12 +16,12 @@ import { MateriaService } from '../../services/materia.service';
   templateUrl: './modal.link.component.html',
   styleUrls: ['./modal.link.component.css']
 })
-export class ModalLinkComponent implements OnInit, AfterViewInit {
+export class ModalLinkComponent extends SimpleModalComponent<null, null> implements OnInit, AfterViewInit {
   exportableLink = '';
   saveStep = 'loading';
 
-  @Input() public type;
-  @Input() public item;
+  public type;
+  public item;
 
   constructor(
     private cardService: CardService,
@@ -32,8 +32,9 @@ export class ModalLinkComponent implements OnInit, AfterViewInit {
     private materiaService: MateriaService,
     private clipboardService: ClipboardService,
     private navService: NavService,
-    private modal: NgbActiveModal
+    private simpleModalService: SimpleModalService
   ) {
+    super();
   }
 
   ngOnInit() {
@@ -75,10 +76,6 @@ export class ModalLinkComponent implements OnInit, AfterViewInit {
         console.log('Trying to link something not managed : ' + this.type);
         break;
     }
-  }
-
-  close() {
-    this.modal.dismiss();
   }
 
   copyLink() {

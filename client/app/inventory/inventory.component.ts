@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { ClipboardService } from 'ngx-clipboard';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { v5 as uuidv5 } from 'uuid';
 
 import { InventoryService } from '../services/inventory.service';
@@ -62,7 +63,8 @@ export class InventoryComponent implements OnInit, AfterViewInit {
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService
   ) {}
 
   async ngOnInit() {
@@ -337,8 +339,6 @@ export class InventoryComponent implements OnInit, AfterViewInit {
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
     let uuid = '';
     if (this.inventory.uuid) {
       uuid = this.inventory.uuid;
@@ -347,7 +347,6 @@ export class InventoryComponent implements OnInit, AfterViewInit {
       this.inventory.uuid = uuid;
     }
 
-    modalRef.componentInstance.type = 'inventory';
-    modalRef.componentInstance.item = uuid;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'inventory', item: uuid });
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ClipboardService } from 'ngx-clipboard';
 
@@ -86,6 +87,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     private equipmentService: EquipmentService,
     private toolService: ToolService,
     private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private clipboardService: ClipboardService,
     private teamService: TeamService,
     private authService: AuthService,
@@ -497,10 +499,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'team';
-    modalRef.componentInstance.item = this.team;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'team', item: this.team });
   }
 
   getAvailableStatType(pos) {
