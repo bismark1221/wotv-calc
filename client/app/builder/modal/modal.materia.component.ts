@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { MateriaService } from '../../services/materia.service';
@@ -16,7 +16,7 @@ import { Materia } from '../../entities/materia';
   templateUrl: './modal.materia.component.html',
   styleUrls: ['./modal.materia.component.css']
 })
-export class ModalMateriaComponent implements OnInit, AfterViewInit {
+export class ModalMateriaComponent extends SimpleModalComponent<null, any> implements OnInit, AfterViewInit {
   materias = [];
   materiaGroups = [];
   materiaSkills = [];
@@ -30,10 +30,10 @@ export class ModalMateriaComponent implements OnInit, AfterViewInit {
   showSave = false;
   selectedMateriaId = null;
 
-  @Input() public equipment;
-  @Input() public modalStep = 'select';
-  @Input() public materia;
-  @Input() public materiaType;
+  public equipment;
+  public modalStep = 'select';
+  public materia;
+  public materiaType;
 
   searchText = '';
   sort = 'rarity';
@@ -79,9 +79,10 @@ export class ModalMateriaComponent implements OnInit, AfterViewInit {
     private toolService: ToolService,
     private skillService: SkillService,
     private authService: AuthService,
-    private activatedRoute: ActivatedRoute,
-    private modal: NgbActiveModal
+    private activatedRoute: ActivatedRoute
   ) {
+    super();
+
     this.version = this.navService.getVersion();
   }
 
@@ -233,15 +234,17 @@ export class ModalMateriaComponent implements OnInit, AfterViewInit {
     this.updateSkill(skillPos);
   }
 
-  close() {
-    this.modal.dismiss();
+  closeButton() {
+    this.result = 'close';
+    this.close();
   }
 
   save() {
-    this.modal.close(this.materia);
+    this.result = this.materia;
+    this.close();
   }
 
   removeMateria() {
-    this.modal.close(null);
+    this.close();
   }
 }

@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
@@ -111,7 +110,6 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
     private skillService: SkillService,
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
-    private modalService: NgbModal,
     private simpleModalService: SimpleModalService
   ) {
     this.version = this.navService.getVersion();
@@ -325,18 +323,15 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
   }
 
   openDeleteModal() {
-    const modalRef = this.modalService.open(ModalDeleteComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'materia';
-    modalRef.componentInstance.item = this.materia;
-
-    modalRef.result.then(result => {
-      this.step = 'list';
-      this.materia = null;
-      this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
-      this.filterMaterias();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalDeleteComponent, { type: 'materia', item: this.materia })
+      .subscribe(async (result) => {
+        if (result) {
+          this.step = 'list';
+          this.materia = null;
+          this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
+          this.filterMaterias();
+        }
+      });
   }
 
   openLinkModal() {

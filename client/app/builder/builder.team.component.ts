@@ -335,21 +335,23 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   openEquipmentsModal(unitPos, equipmentPos) {
-    const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'builder-modal' });
-    modalRef.componentInstance.unit = this.team.units[unitPos];
-    modalRef.componentInstance.equipmentPos = equipmentPos;
+    let equipment = null;
+    let modalStep = 'select';
+    let unit = this.team.units[unitPos];
 
     if (this.team.units[unitPos].equipments[equipmentPos]) {
-      modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(this.team.units[unitPos].equipments[equipmentPos]));
-      modalRef.componentInstance.modalStep = 'custom';
+      equipment = JSON.parse(JSON.stringify(this.team.units[unitPos].equipments[equipmentPos]));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((equipment) => {
-      this.team.units[unitPos].equipments[equipmentPos] = equipment;
-      this.teamService.changeLevel(unitPos);
-      this.calculateDamageSim(unitPos);
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalEquipmentsComponent, { equipment: equipment, modalStep: modalStep, unit: unit, equipmentPos: equipmentPos })
+      .subscribe(async (equipment) => {
+        if (equipment !== 'close') {
+          this.team.units[unitPos].equipments[equipmentPos] = equipment;
+          this.teamService.changeLevel(unitPos);
+          this.calculateDamageSim(unitPos);
+        }
+      });
   }
 
   openEspersModal(pos) {

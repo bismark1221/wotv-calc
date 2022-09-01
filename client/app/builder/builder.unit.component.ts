@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
@@ -156,7 +155,6 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     private translateService: TranslateService,
     private guildService: GuildService,
     private masterRanksService: MasterRanksService,
-    private modalService: NgbModal,
     private simpleModalService: SimpleModalService,
     private navService: NavService,
     private toolService: ToolService,
@@ -399,21 +397,24 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   openEquipmentsModal(pos) {
-    const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'builder-modal' });
-    modalRef.componentInstance.unit = this.unit;
-    modalRef.componentInstance.equipmentPos = pos;
+    let equipment = null;
+    let modalStep = 'select';
+    let unit = this.unit;
+    let equipmentPos = pos;
 
     if (this.unit.equipments[pos]) {
-      modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(this.unit.equipments[pos]));
-      modalRef.componentInstance.modalStep = 'custom';
+      equipment = JSON.parse(JSON.stringify(this.unit.equipments[pos]));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((equipment) => {
-      this.unit.equipments[pos] = equipment;
+    this.simpleModalService.addModal(ModalEquipmentsComponent, { equipment: equipment, modalStep: modalStep, unit: unit, equipmentPos: equipmentPos })
+      .subscribe(async (equipment) => {
+        if (equipment !== 'close') {
+          this.unit.equipments[pos] = equipment;
 
-      this.unitService.changeLevel();
-    }, (reason) => {
-    });
+          this.unitService.changeLevel();
+        }
+      });
   }
 
   openEspersModal() {
