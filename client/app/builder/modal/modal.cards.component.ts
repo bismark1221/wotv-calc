@@ -138,6 +138,11 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
     }
   }
 
+  closeButton() {
+    this.result = 'close';
+    this.close();
+  }
+
   save() {
     this.result = this.card;
     this.close();

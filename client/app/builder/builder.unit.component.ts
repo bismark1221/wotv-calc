@@ -421,19 +421,22 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   openEspersModal() {
-    const modalRef = this.modalService.open(ModalEspersComponent, { windowClass: 'builder-modal' });
+    let esper = null;
+    let modalStep = 'select';
 
     if (this.unit.esper) {
-      modalRef.componentInstance.esper = JSON.parse(JSON.stringify(this.unit.esper));
-      modalRef.componentInstance.modalStep = 'custom';
+      esper = JSON.parse(JSON.stringify(this.unit.esper));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((esper) => {
-      this.unit.esper = esper;
+    this.simpleModalService.addModal(ModalEspersComponent, { esper: esper, modalStep: modalStep })
+      .subscribe(async (esper) => {
+        if (esper !== 'close') {
+          this.unit.esper = esper;
 
-      this.unitService.changeLevel();
-    }, (reason) => {
-    });
+          this.unitService.changeLevel();
+        }
+      });
   }
 
   openCardsModal(subCard = false) {
@@ -457,14 +460,16 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     this.simpleModalService.addModal(ModalCardsComponent, { cardType: cardType, card: card, modalStep: modalStep })
       .subscribe(async (card) => {
-        if (!subCard) {
-          this.unit.card = card;
-        } else {
-          this.unit.subCard = card;
-        }
+        if (card !== 'close') {
+          if (!subCard) {
+            this.unit.card = card;
+          } else {
+            this.unit.subCard = card;
+          }
 
-        this.unitService.changeLevel();
-        this.updateActiveSkillsForSim();
+          this.unitService.changeLevel();
+          this.updateActiveSkillsForSim();
+        }
       });
   }
 

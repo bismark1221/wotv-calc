@@ -11,7 +11,7 @@
             <span *ngIf="modalStep === 'custom'">{{ card.name }} - Custom</span>
           </div>
           <div class="closeButton justify-end">
-            <button type="button" class="close" aria-label="Close" (click)="close()">
+            <button type="button" class="close" aria-label="Close" (click)="closeButton()">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -19,62 +19,62 @@
 
         <div class="modal-body-background px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
           <div *ngIf="modalStep === 'select'">
-  <div class="cards">
-    <div class="upperBlock">
-      <div class="searchBlock">
-        <i class="fas fa-search" aria-hidden="true"></i>
-        <input class="searchInput" type="text" placeholder="Search for an card by name" [(ngModel)]="searchText">
-      </div>
-      <div class="filtersBlock">
-        Filter by :
-        <button
-          *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']"
-          class="btn-filter"
-          [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}"
-          (click)="filterList('rarity', rarity)"
-        >
-          <img class="filterRarity" src="assets/rarity/{{rarity}}.webp" />
-        </button>
-        <button
-          *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']"
-          class="btn-filter"
-          [ngClass]="{'btn-filter-selected': isFilterSelected('element', element)}"
-          (click)="filterList('element', element)"
-        >
-          <img class="filterRarity" src="assets/elements/{{element}}.webp" />
-        </button>
-        <div class="switchShowOnlyOtherVersion">
-          Only from other version ?
-          <ui-switch class="switchMainJob" (click)="toggleOtherVersion()" checkedLabel="yes" uncheckedLabel="no" [checked]="showOnlyOtherVersion === true"></ui-switch>
-        </div>
-      </div>
-    </div>
+            <div class="cards">
+              <div class="upperBlock">
+                <div class="searchBlock">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                  <input class="searchInput" type="text" placeholder="Search for an card by name" [(ngModel)]="searchText">
+                </div>
+                <div class="filtersBlock">
+                  Filter by :
+                  <button
+                    *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']"
+                    class="btn-filter"
+                    [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}"
+                    (click)="filterList('rarity', rarity)"
+                  >
+                    <img class="filterRarity" src="assets/rarity/{{rarity}}.webp" />
+                  </button>
+                  <button
+                    *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']"
+                    class="btn-filter"
+                    [ngClass]="{'btn-filter-selected': isFilterSelected('element', element)}"
+                    (click)="filterList('element', element)"
+                  >
+                    <img class="filterRarity" src="assets/elements/{{element}}.webp" />
+                  </button>
+                  <div class="switchShowOnlyOtherVersion">
+                    Only from other version ?
+                    <ui-switch class="switchMainJob" (click)="toggleOtherVersion()" checkedLabel="yes" uncheckedLabel="no" [checked]="showOnlyOtherVersion === true"></ui-switch>
+                  </div>
+                </div>
+              </div>
 
-    <hr class="separator" />
+              <hr class="separator" />
 
-    <div class="cardsList">
-      <div class="cardsCol">
-        <a (click)="removeCard()" id="removeCard">
-          <div class="cardImgBlockRemove">
-            <img class="cardImg" src="assets/builder/remove.webp" />
-          </div>
-        </a>
-      </div>
+              <div class="cardsList">
+                <div class="cardsCol">
+                  <a (click)="removeCard()" id="removeCard">
+                    <div class="cardImgBlockRemove">
+                      <img class="cardImg" src="assets/builder/remove.webp" />
+                    </div>
+                  </a>
+                </div>
 
-      <div class="cardsCol" *ngFor="let card of getFilteredCards()">
-        <a (click)="selectCard(card.dataId)">
-          <div class="cardIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.webp'}}" />
-          </div>
-          <div>
-            <img class="cardImg" src="assets/cards/{{ card.image }}_m.webp" />
-          </div>
-          <div class="cardTitle">
-            <span class="cardName">{{ card.name }}</span>
-          </div>
-        </a>
-      </div>
-    </div>
+                <div class="cardsCol" *ngFor="let card of getFilteredCards()">
+                  <a (click)="selectCard(card.dataId)">
+                    <div class="cardIcons">
+                      <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.webp'}}" />
+                    </div>
+                    <div>
+                      <img class="cardImg" src="assets/cards/{{ card.image }}_m.webp" />
+                    </div>
+                    <div class="cardTitle">
+                      <span class="cardName">{{ card.name }}</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
