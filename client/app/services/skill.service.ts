@@ -297,7 +297,7 @@ export class SkillService {
     return turnText;
   }
 
-  private getChance(skill, effect, inflict = true) {
+  private getChance(skill, effect, inflict = true, increase = false) {
     if (effect.rate) {
       let value = effect.rate;
       if (skill.maths) {
@@ -315,8 +315,10 @@ export class SkillService {
       return 'Dispel';
     } else if (effect.calcType === 'resistance') {
       return this.getIncrease(effect);
+    } else if (inflict) {
+      return 'Inflict';
     } else {
-      return inflict ? 'Inflict' : 'Grant';
+      return increase ? 'Increase' : 'Grant';
     }
   }
 
@@ -1016,10 +1018,18 @@ export class SkillService {
         html += this.getTurns(effect);
       break;
       case 'PHYSIC_EVADE' :
-        html = this.getChance(skill, effect, false) + ' to physical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (effect.rate) {
+          html = this.getChance(skill, effect, false) + ' to Physical Evade' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getIncrease(effect) + ' Physical Evasion' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'MAGIC_EVADE' :
-        html = this.getChance(skill, effect, false) + ' to magical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (effect.rate) {
+          html = this.getChance(skill, effect, false) + ' to Magical Evade' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getIncrease(effect) + ' Magical Evasion' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'CRITIC_GUARENTED' :
         html = 'Guarenteed critical hit' + (effect.turn ? this.getTurns(effect) : '');
