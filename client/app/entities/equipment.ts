@@ -280,6 +280,13 @@ export class Equipment {
                 const unitCond = this.rawUnits.find(searchedUnit => searchedUnit.dataId === itemCond);
                 skillCond.formattedItems.push(unitCond.image);
               }
+
+              if (skillCond.type === 'mainjob') {
+                const jobCond = this.rawJobs.find(searchedJob => searchedJob.dataId === itemCond);
+                if (jobCond) {
+                  skillCond.formattedItems.push(jobCond.image);
+                }
+              }
             });
           });
         }

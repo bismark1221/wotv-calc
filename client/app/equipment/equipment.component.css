@@ -111,6 +111,22 @@
   vertical-align: top;
 }
 
+.mainjob {
+  height: 30px;
+  background: url("assets/jobs/base_main.webp") 0px 0px no-repeat;
+  background-size: 30px;
+  padding: 5px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.mainjob img {
+  max-width: 20px;
+  max-height: 20px;
+  vertical-align: top;
+}
+
 .unit {
   height: 100px;
   margin-right: 5px;

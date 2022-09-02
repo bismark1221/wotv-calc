@@ -736,6 +736,7 @@ export class EquipmentService {
 
       this.equipment.rawSkills = apiResult.skills;
       this.equipment.rawUnits = apiResult.units;
+      this.equipment.rawJobs = apiResult.jobs;
 
       this.equipment.upgrade = 0;
       this.equipment.level = 1;

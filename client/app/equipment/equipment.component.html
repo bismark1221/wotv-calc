@@ -218,6 +218,9 @@
                 <span *ngFor="let skillCond of skill.cond">
                   <span *ngFor="let item of skillCond.items">
                     <img src="{{'assets/units/' + item + '_m.webp'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
+                    <div class="mainjob" *ngIf="skillCond.type == 'mainjob'">
+                      <img src="{{ 'assets/jobs/' + item + '.webp'}}" />
+                    </div>
                   </span>
                 </span>
               </div>
