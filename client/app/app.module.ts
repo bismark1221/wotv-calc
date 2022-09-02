@@ -53,6 +53,8 @@ import { QuestComponent } from './quest/quest.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { ModalInventoryEquipmentsComponent } from './inventory/modal/modal.equipments';
 
+import { TabsComponent } from './tabs/tabs.component';
+import { TabComponent } from './tabs/tab.component';
 
 import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
@@ -186,7 +188,9 @@ export function createTranslateLoader(http: HttpClient) {
     OtherSubCardComponent,
     TemplateItemComponent,
     UserComponent,
-    SearchOptionsModalComponent
+    SearchOptionsModalComponent,
+    TabsComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

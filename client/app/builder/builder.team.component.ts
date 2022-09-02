@@ -335,7 +335,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   openEquipmentsModal(unitPos, equipmentPos) {
     let equipment = null;
     let modalStep = 'select';
-    let unit = this.team.units[unitPos];
+    const unit = this.team.units[unitPos];
 
     if (this.team.units[unitPos].equipments[equipmentPos]) {
       equipment = JSON.parse(JSON.stringify(this.team.units[unitPos].equipments[equipmentPos]));
@@ -343,9 +343,9 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     }
 
     this.simpleModalService.addModal(ModalEquipmentsComponent, { equipment: equipment, modalStep: modalStep, unit: unit, equipmentPos: equipmentPos })
-      .subscribe(async (equipment) => {
-        if (equipment !== 'close') {
-          this.team.units[unitPos].equipments[equipmentPos] = equipment;
+      .subscribe(async (loadEquipment) => {
+        if (loadEquipment !== 'close') {
+          this.team.units[unitPos].equipments[equipmentPos] = loadEquipment;
           this.teamService.changeLevel(unitPos);
           this.calculateDamageSim(unitPos);
         }
@@ -355,7 +355,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   openEspersModal(pos) {
     let esper = null;
     let modalStep = 'select';
-    let teamUnitPos = pos;
+    const teamUnitPos = pos;
 
     if (this.team.units[pos].esper) {
       esper = JSON.parse(JSON.stringify(this.team.units[pos].esper));
@@ -363,9 +363,9 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     }
 
     this.simpleModalService.addModal(ModalEspersComponent, { esper: esper, modalStep: modalStep, teamUnitPos: teamUnitPos })
-      .subscribe(async (esper) => {
-        if (esper !== 'close') {
-          this.team.units[pos].esper = esper;
+      .subscribe(async (loadEsper) => {
+        if (loadEsper !== 'close') {
+          this.team.units[pos].esper = loadEsper;
           this.teamService.changeLevel(pos);
           this.calculateDamageSim(pos);
           this.teamService.updateTeamCost();
@@ -377,7 +377,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     let cardType = 'main';
     let card = null;
     let modalStep = 'select';
-    let teamUnitPos = pos;
+    const teamUnitPos = pos;
 
     if (subCard) {
       cardType = 'sub';
@@ -394,12 +394,12 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     }
 
     this.simpleModalService.addModal(ModalCardsComponent, { cardType: cardType, card: card, modalStep: modalStep, teamUnitPos: teamUnitPos })
-      .subscribe(async (card) => {
-        if (card !== 'close') {
+      .subscribe(async (loadCard) => {
+        if (loadCard !== 'close') {
           if (!subCard) {
-            this.team.units[pos].card = card;
+            this.team.units[pos].card = loadCard;
           } else {
-            this.team.units[pos].subCard = card;
+            this.team.units[pos].subCard = loadCard;
           }
 
           this.teamService.changeLevel(pos);

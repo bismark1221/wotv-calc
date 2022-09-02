@@ -399,8 +399,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   openEquipmentsModal(pos) {
     let equipment = null;
     let modalStep = 'select';
-    let unit = this.unit;
-    let equipmentPos = pos;
+    const unit = this.unit;
+    const equipmentPos = pos;
 
     if (this.unit.equipments[pos]) {
       equipment = JSON.parse(JSON.stringify(this.unit.equipments[pos]));
@@ -408,9 +408,9 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     }
 
     this.simpleModalService.addModal(ModalEquipmentsComponent, { equipment: equipment, modalStep: modalStep, unit: unit, equipmentPos: equipmentPos })
-      .subscribe(async (equipment) => {
-        if (equipment !== 'close') {
-          this.unit.equipments[pos] = equipment;
+      .subscribe(async (loadEquipment) => {
+        if (loadEquipment !== 'close') {
+          this.unit.equipments[pos] = loadEquipment;
 
           this.unitService.changeLevel();
         }
@@ -427,9 +427,9 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     }
 
     this.simpleModalService.addModal(ModalEspersComponent, { esper: esper, modalStep: modalStep })
-      .subscribe(async (esper) => {
-        if (esper !== 'close') {
-          this.unit.esper = esper;
+      .subscribe(async (loadEsper) => {
+        if (loadEsper !== 'close') {
+          this.unit.esper = loadEsper;
 
           this.unitService.changeLevel();
         }
@@ -456,12 +456,12 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     }
 
     this.simpleModalService.addModal(ModalCardsComponent, { cardType: cardType, card: card, modalStep: modalStep })
-      .subscribe(async (card) => {
-        if (card !== 'close') {
+      .subscribe(async (loadCard) => {
+        if (loadCard !== 'close') {
           if (!subCard) {
-            this.unit.card = card;
+            this.unit.card = loadCard;
           } else {
-            this.unit.subCard = card;
+            this.unit.subCard = loadCard;
           }
 
           this.unitService.changeLevel();

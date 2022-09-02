@@ -204,8 +204,8 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   openMateriaModal(type) {
     let materia = null;
     let modalStep = 'select';
-    let equipment = this.equipment;
-    let materiaType = type;
+    const equipment = this.equipment;
+    const materiaType = type;
 
     if (this.equipment.materias[type]) {
       materia = JSON.parse(JSON.stringify(this.equipment.materias[type]));
@@ -213,9 +213,9 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     }
 
     this.simpleModalService.addModal(ModalMateriaComponent, { materia: materia, modalStep: modalStep, equipment: equipment, materiaType: materiaType })
-      .subscribe(async (materia) => {
-        if (materia !== 'close') {
-          this.equipment.materias[type] = materia;
+      .subscribe(async (loadMateria) => {
+        if (loadMateria !== 'close') {
+          this.equipment.materias[type] = loadMateria;
 
           this.equipmentService.changeMateria(this.equipment);
         }
