@@ -954,3 +954,7 @@ small {
 .modal-body-background {
   background-color: var(--modal-body-background);
 }
+
+.timeTooltip {
+  width: 115px;
+}
