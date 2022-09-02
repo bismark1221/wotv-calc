@@ -148,13 +148,13 @@
               <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
             </span>
             <span *ngIf="buff.classic.time && buff.classic.time.minValue">
-              <ng-template #tip_time>
-                <div>
+              <popper-content #tip_time>
+                <div class="timeTooltip">
                   Min time: {{ buff.classic.time.minValue }}<br />
                   Max time: {{ buff.classic.time.maxValue }}
                 </div>
-              </ng-template>
-              <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+              </popper-content>
+              <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
               <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="buff.classic.possibleTarget == 'unit'"/>
             </span>
           </td>
@@ -166,7 +166,7 @@
             </div>
 
             <div *ngIf="buff.classic.damageHtml && buff.classic.damageHtml.value">
-              <ng-template #tip_damage>
+              <popper-content #tip_damage>
                 <div *ngIf="!buff.classic.elem">
                   Take unit element
                 </div>
@@ -190,8 +190,8 @@
                 <div *ngIf="buff.classic.damage.formula.type === 0 && buff.classic.damage.formula[3] > 0">
                   {{ buff.classic.damage.formula[3] }}% LUCK
                 </div>
-              </ng-template>
-              <img [ngbTooltip]="tip_damage" title="{{ buff.classic.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ buff.classic.damageHtml.type.image }}.webp" />&nbsp; {{ buff.classic.damageHtml.effType }} {{ buff.classic.damageHtml.pool }} {{ buff.classic.damageHtml.value }}
+              </popper-content>
+              <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ buff.classic.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ buff.classic.damageHtml.type.image }}.webp" />&nbsp; {{ buff.classic.damageHtml.effType }} {{ buff.classic.damageHtml.pool }} {{ buff.classic.damageHtml.value }}
               <div [innerHTML]="buff.classic.damageHtml.others | safeHtml"></div>
             </div>
 
@@ -200,8 +200,8 @@
             </div>
           </td>
           <td class="rangeTd">
-            <ng-template #tip_table><div [innerHTML]="buff.classic.skillTableHtml"></div></ng-template>
-            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+            <popper-content #tip_table><div [innerHTML]="buff.classic.skillTableHtml"></div></popper-content>
+            <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" triggers="click" [autoClose]="true">
               <div class="divSkillTableHtml" [innerHTML]="buff.classic.skillTableHtml"></div>
             </div>
           </td>
