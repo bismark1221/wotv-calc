@@ -171,13 +171,13 @@ input {
   padding: 0;
 }
 
-.tooltip-inner .table-skill {
+.ngxp__inner .table-skill {
   border-collapse: collapse;
   width: 219px;
   height: 219px;
 }
 
-.tooltip-inner .table-skill td {
+.ngxp__inner .table-skill td {
   content: ' ';
   padding: 0;
   margin: 0;
@@ -186,8 +186,17 @@ input {
   background-color: var(--background-tooltip);
 }
 
-.tooltip-inner .table-skill .table-skill-AR {
+.ngxp__inner .table-skill .table-skill-AR {
   background: url("assets/range/AR.webp") 0px 0px no-repeat;
+}
+
+.ngxp__container {
+  background-color: black;
+  border: 0 !important;
+}
+
+.ngxp__container>.ngxp__arrow:before {
+  background-color: black !important;
 }
 
 .table-skill {
@@ -215,7 +224,7 @@ input {
   display: none;
 }
 
-.tooltip-inner {
+.ngxp__inner {
   max-width: 500px;
 }
 

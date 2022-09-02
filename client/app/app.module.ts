@@ -20,6 +20,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { NgClickOutsideDirective } from 'ng-click-outside2';
 import { ToastrModule } from 'ngx-toastr';
 import { SimpleModalModule, defaultSimpleModalOptions } from 'ngx-simple-modal';
+import { NgxPopperjsModule } from 'ngx-popperjs';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -225,7 +226,8 @@ export function createTranslateLoader(http: HttpClient) {
       closeOnEscape: true,
       animationDuration: 1,
       autoFocus: false
-    }})
+    }}),
+    NgxPopperjsModule
   ],
   providers: [
     UnitService,

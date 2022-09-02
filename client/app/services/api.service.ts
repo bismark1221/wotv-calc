@@ -2,9 +2,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
-import { map } from 'rxjs/operators';
+import { map, catchError } from 'rxjs/operators';
 
 import { NavService } from './nav.service';
 
@@ -33,12 +31,17 @@ export class ApiService {
     }
 
     return this.http.get(uri)
-      .map(response => {
-        return response;
-      })
-      .catch(error => {
-        return of(null);
-      })
+      .pipe(
+        map(response => {
+          return response;
+        })
+      )
+      .pipe(
+        catchError(error => {
+          console.error(error);
+          return of(null);
+        })
+      )
       .toPromise();
   }
 
@@ -50,13 +53,17 @@ export class ApiService {
       uri,
       data
     )
-    .map(response => {
-      return response;
-    })
-    .catch(error => {
-      console.error(error);
-      return of(null);
-    })
+    .pipe(
+      map(response => {
+        return response;
+      })
+    )
+    .pipe(
+      catchError(error => {
+        console.error(error);
+        return of(null);
+      })
+    )
     .toPromise();
   }
 
@@ -70,13 +77,17 @@ export class ApiService {
         body: data
       }
     )
-    .map(response => {
-      return response;
-    })
-    .catch(error => {
-      console.error(error);
-      return of(null);
-    })
+    .pipe(
+      map(response => {
+        return response;
+      })
+    )
+    .pipe(
+      catchError(error => {
+        console.error(error);
+        return of(null);
+      })
+    )
     .toPromise();
   }
 }
