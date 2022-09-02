@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { CardService } from '../services/card.service';
@@ -45,7 +45,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     private activatedRoute: ActivatedRoute,
     private cardService: CardService,
     private translateService: TranslateService,
-    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private toolService: ToolService,
     private authService: AuthService,
     private navService: NavService,
@@ -262,47 +262,35 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
   }
 
   openLoadModal(cardId) {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'card', savedItems: this.savedCards[cardId], allowNew: true })
+      .subscribe(async (result) => {
+        if (result.type === 'new') {
+          this.selectedCardId = cardId;
+          await this.selectCard(null, true);
+        }
 
-    modalRef.componentInstance.type = 'card';
-    modalRef.componentInstance.savedItems = this.savedCards[cardId];
-    modalRef.componentInstance.allowNew = true;
+        if (result.type === 'load' && result.item) {
+          this.selectedCardId = result.item.dataId;
+          await this.selectCard(result.item, true);
+        }
 
-    modalRef.result.then(async result => {
-      if (result.type === 'new') {
-        this.selectedCardId = cardId;
-        await this.selectCard(null, true);
-      }
-
-      if (result.type === 'load' && result.item) {
-        this.selectedCardId = result.item.dataId;
-        await this.selectCard(result.item, true);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedCards[cardId] = [];
-      }
-    }, (reason) => {
-    });
+        if (result.type === 'fullDelete') {
+          this.savedCards[cardId] = [];
+        }
+      });
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'card';
-    modalRef.componentInstance.item = this.card;
-
-    modalRef.result.then(result => {
-      this.savedCards = this.cardService.getSavedCards();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'card', item: this.card })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedCards = this.cardService.getSavedCards();
+        }
+      });
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'card';
-    modalRef.componentInstance.item = this.card;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'card', item: this.card });
   }
 
   toggleOtherVersion() {

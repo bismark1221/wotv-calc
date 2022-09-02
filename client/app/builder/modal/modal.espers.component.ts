@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { EsperService } from '../../services/esper.service';
 import { TeamService } from '../../services/team.service';
@@ -14,7 +14,7 @@ import { Esper } from '../../entities/esper';
   templateUrl: './modal.espers.component.html',
   styleUrls: ['./modal.espers.component.css']
 })
-export class ModalEspersComponent implements OnInit {
+export class ModalEspersComponent extends SimpleModalComponent<null, any> implements OnInit {
   rawEspers;
   espers = [];
 
@@ -69,17 +69,18 @@ export class ModalEspersComponent implements OnInit {
     'strike_res',
   ];
 
-  @Input() public modalStep = 'select';
-  @Input() public esper;
-  @Input() public teamUnitPos;
+  public modalStep = 'select';
+  public esper;
+  public teamUnitPos;
 
   constructor(
     private esperService: EsperService,
     private teamService: TeamService,
     private translateService: TranslateService,
-    private toolService: ToolService,
-    private modal: NgbActiveModal
+    private toolService: ToolService
   ) {
+    super();
+
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEspers();
     });
@@ -151,10 +152,6 @@ export class ModalEspersComponent implements OnInit {
     }
   }
 
-  close() {
-    this.modal.dismiss();
-  }
-
   back() {
     this.modalStep = 'select';
   }
@@ -172,8 +169,18 @@ export class ModalEspersComponent implements OnInit {
     }
   }
 
+  closeButton() {
+    this.result = 'close';
+    this.close();
+  }
+
   save() {
-    this.modal.close(this.esper);
+    this.result = this.esper;
+    this.close();
+  }
+
+  removeEsper() {
+    this.close();
   }
 
   changeStar(value) {
@@ -205,9 +212,5 @@ export class ModalEspersComponent implements OnInit {
 
   maxEsper() {
     this.esperService.maxEsper(this.esper);
-  }
-
-  removeEsper() {
-    this.modal.close(null);
   }
 }

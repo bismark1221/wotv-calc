@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { MateriaService } from '../services/materia.service';
@@ -110,7 +110,7 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
     private skillService: SkillService,
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
-    private modalService: NgbModal
+    private simpleModalService: SimpleModalService
   ) {
     this.version = this.navService.getVersion();
   }
@@ -313,37 +313,28 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'materia';
-    modalRef.componentInstance.item = this.materia;
-
-    modalRef.result.then(result => {
-      this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
-      this.filterMaterias();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'materia', item: this.materia })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
+          this.filterMaterias();
+        }
+      });
   }
 
   openDeleteModal() {
-    const modalRef = this.modalService.open(ModalDeleteComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'materia';
-    modalRef.componentInstance.item = this.materia;
-
-    modalRef.result.then(result => {
-      this.step = 'list';
-      this.materia = null;
-      this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
-      this.filterMaterias();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalDeleteComponent, { type: 'materia', item: this.materia })
+      .subscribe(async (result) => {
+        if (result) {
+          this.step = 'list';
+          this.materia = null;
+          this.savedMateriasWithoutFilters = this.materiaService.getSavedMaterias();
+          this.filterMaterias();
+        }
+      });
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'materia';
-    modalRef.componentInstance.item = this.materia;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'materia', item: this.materia });
   }
 }

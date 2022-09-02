@@ -25,11 +25,8 @@
   font-weight: bold;
 }
 
-.linkBlock, .loadingBlock {
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 800px;
+.textLink {
+  color: black;
 }
 
 .textLink, .copyButton {

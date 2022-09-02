@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { CardService } from '../../services/card.service';
 import { UnitService } from '../../services/unit.service';
@@ -14,11 +14,11 @@ import { MateriaService } from '../../services/materia.service';
   templateUrl: './modal.delete.component.html',
   styleUrls: ['./modal.delete.component.css']
 })
-export class ModalDeleteComponent implements OnInit {
+export class ModalDeleteComponent extends SimpleModalComponent<null, boolean> implements OnInit {
   deleteStep = 'confirm';
 
-  @Input() public item;
-  @Input() public type;
+  public item;
+  public type;
 
   constructor(
     private cardService: CardService,
@@ -27,16 +27,12 @@ export class ModalDeleteComponent implements OnInit {
     private equipmentService: EquipmentService,
     private teamService: TeamService,
     private translateService: TranslateService,
-    private materiaService: MateriaService,
-    private modal: NgbActiveModal
+    private materiaService: MateriaService
   ) {
+    super();
   }
 
   ngOnInit() {}
-
-  close() {
-    this.modal.dismiss();
-  }
 
   private async deleteItem() {
     switch (this.type) {
@@ -63,15 +59,12 @@ export class ModalDeleteComponent implements OnInit {
         break;
     }
 
-    this.modal.close();
+    this.result = true;
+    this.close();
   }
 
   confirmDelete() {
     this.deleteStep = 'loading';
     this.deleteItem();
-  }
-
-  closeDelete() {
-    this.modal.dismiss();
   }
 }

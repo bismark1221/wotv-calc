@@ -1,12 +1,17 @@
 /* Import external libraries */
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/*@import "~bootstrap/dist/css/bootstrap.min.css";*/
 @import "~select2-bootstrap-theme/dist/select2-bootstrap.min.css";
 @import "~@ng-select/ng-select/themes/default.theme.css";
 @import '~ngx-toastr/toastr';
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 :root {
   --link-color: #0275d8;
   --table-border: #dadada;
+  --table-border-inverted: #404040;
   --background-tooltip: #635b52;
   --btn-background-activated: #e6e6e6;
   --btn-border-activated: #adadad;
@@ -43,6 +48,8 @@
   --nav-background-main: #1D1B1B;
   --footer-link: #1D1B1B;
 
+  --mobile-nav-background: #3D3D3D;
+
   --card-background: #E8E6DF;
   --card-title-background: #3D3A41;
   --card-title-color: #FFF;
@@ -50,6 +57,9 @@
 
   --th-background: #3D3A41;
   --sub-th-background: #E8E6DF;
+  --th-background-inverted: #3D3A41;
+  --sub-th-background-inverted: #E8E6DF;
+
   --tabs-background: #F4F5F9;
 
   --hr-color: rgba(0, 0, 0, 0.1);
@@ -60,10 +70,14 @@
   --sortby-color: rgba(61, 58, 65, 0.5);
 
   --black-vs-white: var(--black);
+  --white-vs-black: var(--white);
+
+  --modal-title-background: #E8E6DF;
+  --modal-body-background: var(--white);
 }
 
 body {
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   font-family: Roboto, Helvetica, sans-serif !important;
   background-color: var(--body-background);
   color: var(--body-color);
@@ -94,9 +108,30 @@ th.sub {
   font-weight: 100;
 }
 
+table.inverted, tbody.inverted, tr.inverted, th.inverted, td.inverted {
+  border: 1px solid var(--table-border-inverted);
+}
+
+th.inverted {
+  color: var(--white-vs-black);
+  background-color: var(--th-background-inverted);
+  text-align: center;
+  padding: 0.3em 0.5em;
+}
+
+th.sub.inverted {
+  background-color: var(--sub-th-background-inverted);
+  color: var(--black);
+  font-weight: 100;
+}
+
 td {
   text-align: center;
   padding: 0.3em 0.5em;
+}
+
+img {
+  display: inline-block;
 }
 
 .text-regular {
@@ -117,6 +152,15 @@ hr {
 
 label {
   margin-bottom: 0;
+}
+
+input {
+  color: var(--black);
+  padding: 3px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .boldText {
@@ -342,7 +386,7 @@ label {
 }
 
 .switch {
-  margin-top: 15px !important;
+  margin-top: 5px !important;
   border: 0 !important;
   background: #3D3A41 !important;
   width: 65px !important;
@@ -381,6 +425,10 @@ small {
   padding-left: 5px !important;
   height: 25px !important;
   content: url(assets/nav/sun.webp);
+}
+
+.switchThemeMobile button {
+  top: 5px;
 }
 
 .switchMainJob .switch {
@@ -888,4 +936,12 @@ small {
 
 .ng-dropdown-panel {
   z-index: 1000 !important;
+}
+
+.modal-title-background {
+  background-color: var(--modal-title-background);
+}
+
+.modal-body-background {
+  background-color: var(--modal-body-background);
 }

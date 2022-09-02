@@ -9,7 +9,6 @@ import { LocalStorageModule } from 'angular-2-local-storage';
 import { Angulartics2Module } from 'angulartics2';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrettyJsonModule } from 'angular2-prettyjson';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { ClipboardModule } from 'ngx-clipboard';
@@ -18,8 +17,9 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { ClickOutsideModule } from 'ng-click-outside';
+import { NgClickOutsideDirective } from 'ng-click-outside2';
 import { ToastrModule } from 'ngx-toastr';
+import { SimpleModalModule, defaultSimpleModalOptions } from 'ngx-simple-modal';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -53,6 +53,8 @@ import { QuestComponent } from './quest/quest.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { ModalInventoryEquipmentsComponent } from './inventory/modal/modal.equipments';
 
+import { TabsComponent } from './tabs/tabs.component';
+import { TabComponent } from './tabs/tab.component';
 
 import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
@@ -186,7 +188,9 @@ export function createTranslateLoader(http: HttpClient) {
     OtherSubCardComponent,
     TemplateItemComponent,
     UserComponent,
-    SearchOptionsModalComponent
+    SearchOptionsModalComponent,
+    TabsComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -207,17 +211,21 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    NgbModule,
     PrettyJsonModule,
     NgSelectModule,
     ClipboardModule,
     UiSwitchModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    ClickOutsideModule,
+    NgClickOutsideDirective,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
-    })
+    }),
+    SimpleModalModule.forRoot({container: 'modal-container'}, {...defaultSimpleModalOptions, ...{
+      closeOnEscape: true,
+      animationDuration: 1,
+      autoFocus: false
+    }})
   ],
   providers: [
     UnitService,

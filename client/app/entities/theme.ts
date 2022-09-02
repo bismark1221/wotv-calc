@@ -4,6 +4,7 @@ export const themes = {
     properties: {
       '--link-color': '#0275d8',
       '--table-border': '#dadada',
+      '--table-border-inverted': '#404040',
       '--background-tooltip': '#635b52',
       '--btn-background-activated': '#e6e6e6',
       '--btn-border-activated': '#adadad',
@@ -40,6 +41,8 @@ export const themes = {
       '--nav-background-main': '#1D1B1B',
       '--footer-link': '#1D1B1B',
 
+      '--mobile-nav-background': '#3D3D3D',
+
       '--card-background': '#E8E6DF',
       '--card-background-hover': 'var(--white)',
       '--card-title-background': '#3D3A41',
@@ -48,6 +51,9 @@ export const themes = {
 
       '--th-background': '#3D3A41',
       '--sub-th-background': '#E8E6DF',
+      '--th-background-inverted': '#3D3A41',
+      '--sub-th-background-inverted': '#E8E6DF',
+
       '--tabs-background': '#F4F5F9',
 
       '--hr-color': 'rgba(0, 0, 0, 0.1)',
@@ -57,7 +63,11 @@ export const themes = {
 
       '--sortby-color': 'rgba(61, 58, 65, 0.5)',
 
-      '--black-vs-white': 'var(--black)'
+      '--black-vs-white': 'var(--black)',
+      '--white-vs-black': 'var(--white)',
+
+      '--modal-title-background': '#E8E6DF',
+      '--modal-body-background': 'var(--white)'
     }
   },
   dark: {
@@ -65,6 +75,7 @@ export const themes = {
     properties: {
       '--link-color': '#0275d8',
       '--table-border': '#404040',
+      '--table-border-inverted': '#dadada',
       '--background-tooltip': '#635b52',
       '--btn-background-activated': '#e6e6e6',
       '--btn-border-activated': '#adadad',
@@ -101,6 +112,8 @@ export const themes = {
       '--nav-background-main': '#1D1B1B',
       '--footer-link': 'var(--white)',
 
+      '--mobile-nav-background': '#3D3D3D',
+
       '--card-background': '#3D3D3D',
       '--card-background-hover': 'var(--white)',
       '--card-title-background': '#E9E9E9',
@@ -109,6 +122,9 @@ export const themes = {
 
       '--th-background': '#3D3A41',
       '--sub-th-background': '#E8E6DF',
+      '--th-background-inverted': '#a9a9a9',
+      '--sub-th-background-inverted': '#E8E6DF',
+
       '--tabs-background': '#F4F5F9',
 
       '--hr-color': '#6b6a68',
@@ -118,7 +134,11 @@ export const themes = {
 
       '--sortby-color': 'rgba(255, 255, 255, 0.5)',
 
-      '--black-vs-white': 'var(--white)'
+      '--black-vs-white': 'var(--white)',
+      '--white-vs-black': 'var(--black)',
+
+      '--modal-title-background': 'var(--black)',
+      '--modal-body-background': '#222121'
     }
   }
 };

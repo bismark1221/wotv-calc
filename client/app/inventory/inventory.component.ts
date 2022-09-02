@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { ClipboardService } from 'ngx-clipboard';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { v5 as uuidv5 } from 'uuid';
 
 import { InventoryService } from '../services/inventory.service';
@@ -62,7 +62,7 @@ export class InventoryComponent implements OnInit, AfterViewInit {
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private modalService: NgbModal
+    private simpleModalService: SimpleModalService
   ) {}
 
   async ngOnInit() {
@@ -275,33 +275,36 @@ export class InventoryComponent implements OnInit, AfterViewInit {
   }
 
   openEquipmentsModal(loadedEquipment = null) {
-    const modalRef = this.modalService.open(ModalInventoryEquipmentsComponent, { windowClass: 'builder-modal' });
+    let equipment = null;
+    let modalStep = 'select';
 
     if (loadedEquipment) {
-      modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(loadedEquipment));
-      modalRef.componentInstance.modalStep = 'custom';
+      equipment = JSON.parse(JSON.stringify(loadedEquipment));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((equipment) => {
-      if (loadedEquipment) {
-        if (equipment) {
-          this.inventory.equipments[loadedEquipment.equipmentIndex] = equipment;
-        } else {
-          this.inventory.equipments.splice(loadedEquipment.equipmentIndex, 1);
+    this.simpleModalService.addModal(ModalInventoryEquipmentsComponent, { equipment: equipment, modalStep: modalStep })
+      .subscribe(async (loadEquipment) => {
+        if (loadEquipment !== 'close') {
+          if (loadedEquipment) {
+            if (loadEquipment) {
+              this.inventory.equipments[loadedEquipment.equipmentIndex] = loadEquipment;
+            } else {
+              this.inventory.equipments.splice(loadedEquipment.equipmentIndex, 1);
+            }
+          } else {
+            this.inventory.equipments.push(loadEquipment);
+          }
+
+          this.inventory.equipments = this.toolService.sortByRarity(this.inventory.equipments);
+          this.inventory.equipments.forEach((newEquipment, equipmentIndex) => {
+            newEquipment.equipmentIndex = equipmentIndex;
+          });
+
+          this.save();
+
         }
-      } else {
-        this.inventory.equipments.push(equipment);
-      }
-
-      this.inventory.equipments = this.toolService.sortByRarity(this.inventory.equipments);
-      this.inventory.equipments.forEach((newEquipment, equipmentIndex) => {
-        newEquipment.equipmentIndex = equipmentIndex;
       });
-
-      this.save();
-
-    }, (reason) => {
-    });
   }
 
   save() {
@@ -337,8 +340,6 @@ export class InventoryComponent implements OnInit, AfterViewInit {
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
     let uuid = '';
     if (this.inventory.uuid) {
       uuid = this.inventory.uuid;
@@ -347,7 +348,6 @@ export class InventoryComponent implements OnInit, AfterViewInit {
       this.inventory.uuid = uuid;
     }
 
-    modalRef.componentInstance.type = 'inventory';
-    modalRef.componentInstance.item = uuid;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'inventory', item: uuid });
   }
 }

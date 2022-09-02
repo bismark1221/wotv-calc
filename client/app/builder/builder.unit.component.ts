@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { UnitService } from '../services/unit.service';
@@ -155,7 +155,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     private translateService: TranslateService,
     private guildService: GuildService,
     private masterRanksService: MasterRanksService,
-    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private navService: NavService,
     private toolService: ToolService,
     private authService: AuthService,
@@ -377,137 +377,129 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   showGuildDetail() {
-    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.unit.guild.data));
-
-    modalRef.result.then((guild) => {
-      this.unit.guild.data = guild;
-      this.unitService.changeLevel();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalGuildComponent, { guild : JSON.parse(JSON.stringify(this.unit.guild.data)) })
+      .subscribe(async (guild) => {
+        if (guild !== 'close') {
+          this.unit.guild.data = guild;
+          this.unitService.changeLevel();
+        }
+      });
   }
 
   showMasterRanksDetail() {
-    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.unit.masterRanks.data));
-
-    modalRef.result.then((masterRanks) => {
-      this.unit.masterRanks.data = masterRanks;
-      this.unitService.changeLevel();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalMasterRanksComponent, { masterRanks : JSON.parse(JSON.stringify(this.unit.masterRanks.data)) })
+      .subscribe(async (masterRanks) => {
+        if (masterRanks !== 'close') {
+          this.unit.masterRanks.data = masterRanks;
+          this.unitService.changeLevel();
+        }
+      });
   }
 
   openEquipmentsModal(pos) {
-    const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'builder-modal' });
-    modalRef.componentInstance.unit = this.unit;
-    modalRef.componentInstance.equipmentPos = pos;
+    let equipment = null;
+    let modalStep = 'select';
+    const unit = this.unit;
+    const equipmentPos = pos;
 
     if (this.unit.equipments[pos]) {
-      modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(this.unit.equipments[pos]));
-      modalRef.componentInstance.modalStep = 'custom';
+      equipment = JSON.parse(JSON.stringify(this.unit.equipments[pos]));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((equipment) => {
-      this.unit.equipments[pos] = equipment;
+    this.simpleModalService.addModal(ModalEquipmentsComponent, { equipment: equipment, modalStep: modalStep, unit: unit, equipmentPos: equipmentPos })
+      .subscribe(async (loadEquipment) => {
+        if (loadEquipment !== 'close') {
+          this.unit.equipments[pos] = loadEquipment;
 
-      this.unitService.changeLevel();
-    }, (reason) => {
-    });
+          this.unitService.changeLevel();
+        }
+      });
   }
 
   openEspersModal() {
-    const modalRef = this.modalService.open(ModalEspersComponent, { windowClass: 'builder-modal' });
+    let esper = null;
+    let modalStep = 'select';
 
     if (this.unit.esper) {
-      modalRef.componentInstance.esper = JSON.parse(JSON.stringify(this.unit.esper));
-      modalRef.componentInstance.modalStep = 'custom';
+      esper = JSON.parse(JSON.stringify(this.unit.esper));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((esper) => {
-      this.unit.esper = esper;
+    this.simpleModalService.addModal(ModalEspersComponent, { esper: esper, modalStep: modalStep })
+      .subscribe(async (loadEsper) => {
+        if (loadEsper !== 'close') {
+          this.unit.esper = loadEsper;
 
-      this.unitService.changeLevel();
-    }, (reason) => {
-    });
+          this.unitService.changeLevel();
+        }
+      });
   }
 
   openCardsModal(subCard = false) {
-    const modalRef = this.modalService.open(ModalCardsComponent, { windowClass: 'builder-modal' });
+    let cardType = 'main';
+    let card = null;
+    let modalStep = 'select';
 
     if (subCard) {
-      modalRef.componentInstance.cardType = 'sub';
-    } else {
-      modalRef.componentInstance.cardType = 'main';
+      cardType = 'sub';
     }
 
     if (!subCard && this.unit.card) {
-      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.card));
-      modalRef.componentInstance.modalStep = 'custom';
+      card = JSON.parse(JSON.stringify(this.unit.card));
+      modalStep = 'custom';
     }
 
     if (subCard && this.unit.subCard) {
-      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.subCard));
-      modalRef.componentInstance.modalStep = 'custom';
+      card = JSON.parse(JSON.stringify(this.unit.subCard));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((card) => {
-      if (!subCard) {
-        this.unit.card = card;
-      } else {
-        this.unit.subCard = card;
-      }
+    this.simpleModalService.addModal(ModalCardsComponent, { cardType: cardType, card: card, modalStep: modalStep })
+      .subscribe(async (loadCard) => {
+        if (loadCard !== 'close') {
+          if (!subCard) {
+            this.unit.card = loadCard;
+          } else {
+            this.unit.subCard = loadCard;
+          }
 
-      this.unitService.changeLevel();
-      this.updateActiveSkillsForSim();
-    }, (reason) => {
-    });
+          this.unitService.changeLevel();
+          this.updateActiveSkillsForSim();
+        }
+      });
   }
 
   openLoadModal(unitId) {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'unit', savedItems: this.savedUnits[unitId], allowNew: true })
+      .subscribe(async (result) => {
+        if (result.type === 'new') {
+          this.selectedUnitId = unitId;
+          await this.selectUnit(null, true);
+        }
 
-    modalRef.componentInstance.type = 'unit';
-    modalRef.componentInstance.savedItems = this.savedUnits[unitId];
-    modalRef.componentInstance.allowNew = true;
+        if (result.type === 'load' && result.item) {
+          this.selectedUnitId = result.item.dataId;
+          await this.selectUnit(result.item, true);
+        }
 
-    modalRef.result.then(async result => {
-      if (result.type === 'new') {
-        this.selectedUnitId = unitId;
-        await this.selectUnit(null, true);
-      }
-
-      if (result.type === 'load' && result.item) {
-        this.selectedUnitId = result.item.dataId;
-        await this.selectUnit(result.item, true);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedUnits[unitId] = [];
-      }
-    }, (reason) => {
-    });
+        if (result.type === 'fullDelete') {
+          this.savedUnits[unitId] = [];
+        }
+      });
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'unit';
-    modalRef.componentInstance.item = this.unit;
-
-    modalRef.result.then(result => {
-      this.savedUnits = this.unitService.getSavedUnits();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'unit', item: this.unit })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedUnits = this.unitService.getSavedUnits();
+        }
+      });
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'unit';
-    modalRef.componentInstance.item = this.unit;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'unit', item: this.unit });
   }
 
   getAvailableStatType() {
