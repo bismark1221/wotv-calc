@@ -20,6 +20,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 export class BuilderEsperComponent implements OnInit, AfterViewInit {
   espers = [];
   esper;
+  star;
   savedEspers = {};
   loadingBuild = false;
   showSave = false;
@@ -104,6 +105,7 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
         if (esper) {
           this.selectedEsperId = esper.dataId;
           this.esper = esper;
+          this.star = this.esper.star;
           this.maxStar = this.esper.SPs.length;
           this.loadingBuild = false;
         } else {
@@ -160,7 +162,8 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
         this.esperSelector.handleClearClick();
       } else {
         this.esper = await this.esperService.selectEsperForBuilder(this.selectedEsperId, customData);
-      this.maxStar = this.esper.SPs.length;
+        this.star = this.esper.star;
+        this.maxStar = this.esper.SPs.length;
       }
     } else {
       this.esper = null;
@@ -168,8 +171,8 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     }
   }
 
-  changeStar(value) {
-    this.esper.star = value;
+  updateStar() {
+    this.esper.star = this.star;
     this.esperService.changeStar(this.esper);
   }
 
@@ -191,10 +194,12 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
 
   maxEsper() {
     this.esperService.maxEsper(this.esper);
+    this.star = this.esper.star;
   }
 
   resetEsper() {
     this.esperService.resetEsper(this.esper);
+    this.star = this.esper.star;
   }
 
   openLoadModal(esperId) {

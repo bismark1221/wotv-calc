@@ -21,6 +21,7 @@ import { NgClickOutsideDirective } from 'ng-click-outside2';
 import { ToastrModule } from 'ngx-toastr';
 import { SimpleModalModule, defaultSimpleModalOptions } from 'ngx-simple-modal';
 import { NgxPopperjsModule } from 'ngx-popperjs';
+import { BarRatingModule } from 'ngx-bar-rating';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -227,7 +228,8 @@ export function createTranslateLoader(http: HttpClient) {
       animationDuration: 1,
       autoFocus: false
     }}),
-    NgxPopperjsModule
+    NgxPopperjsModule,
+    BarRatingModule
   ],
   providers: [
     UnitService,

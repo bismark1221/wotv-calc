@@ -30,6 +30,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   units = [];
   rawUnits = [];
   unit = null;
+  star;
+  lb;
   savedUnits = {};
   loadingBuild = false;
   version = 'GL';
@@ -181,6 +183,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
         if (unit) {
           this.selectedUnitId = unit.dataId;
           this.unit = unit;
+          this.star = this.unit.star;
+          this.lb = this.unit.lb;
           this.formatUnit();
           this.loadingBuild = false;
         } else {
@@ -268,6 +272,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
         this.unitSelector.handleClearClick();
       } else {
         this.unit = await this.unitService.selectUnitForBuilder(this.selectedUnitId, customData);
+        this.star = this.unit.star;
+        this.lb = this.unit.lb;
         this.formatUnit();
       }
 
@@ -291,18 +297,18 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.updateActiveSkillsForSim();
   }
 
-  changeStar(value) {
-    this.unit.star = value;
+  updateStar() {
+    this.unit.star = this.star;
     this.unitService.changeStar();
     this.unitService.getActiveSkills();
     this.updateActiveSkillsForSim();
   }
 
-  changeLB(value) {
-    if (value === this.unit.lb) {
-      value = undefined;
+  updateLB() {
+    if (this.lb === this.unit.lb) {
+      this.lb = undefined;
     }
-    this.unit.lb = value;
+    this.unit.lb = this.lb;
 
     this.unitService.changeLB();
     this.unitService.getActiveSkills();
@@ -368,6 +374,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.unitService.maxUnit();
     this.unitService.getActiveSkills();
     this.updateActiveSkillsForSim();
+    this.star = this.unit.star;
+    this.lb = this.unit.lb;
   }
 
   maxLevelAndJobs() {
@@ -689,6 +697,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
   resetUnit() {
     this.unitService.resetUnit();
+    this.star = this.unit.star;
+    this.lb = this.unit.lb;
   }
 
   resetLevel() {

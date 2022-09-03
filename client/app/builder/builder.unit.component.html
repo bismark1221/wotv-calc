@@ -73,11 +73,14 @@
                 Awakening
               </div>
               <div class="stars">
-                <ngb-rating [(rate)]="unit.star" [max]="6" class="ratingStars">
-                  <ng-template let-fill="fill" let-index="index">
-                    <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
+                <bar-rating [(ngModel)]="star" (ngModelChange)="updateStar()" [max]="6">
+                  <ng-template ratingInactive let-index="index">
+                    <div class="star-inactive">&nbsp;</div>
                   </ng-template>
-                </ngb-rating>
+                  <ng-template ratingActive let-index="index">
+                    <div class="star-active">&nbsp;</div>
+                  </ng-template>
+                </bar-rating>
               </div>
             </div>
 
@@ -86,11 +89,14 @@
                 Limit Break
               </div>
               <div class="lbs">
-                <ngb-rating [(rate)]="unit.lb" [max]="5">
-                  <ng-template let-fill="fill" let-index="index">
-                    <div class="lb" [class.filled]="fill === 100" id="change_lb_{{index + 1}}" (click)="changeLB(index + 1)">&nbsp;</div>
+                <bar-rating [(ngModel)]="lb" (ngModelChange)="updateLB()" [max]="5">
+                  <ng-template ratingInactive let-index="index">
+                    <div class="lb-inactive">&nbsp;</div>
                   </ng-template>
-                </ngb-rating>
+                  <ng-template ratingActive let-index="index">
+                    <div class="lb-active">&nbsp;</div>
+                  </ng-template>
+                </bar-rating>
               </div>
             </div>
 
@@ -583,7 +589,7 @@
             </td>
             <td>
               <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-              <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" triggers="click" [autoClose]="true">
+              <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                 <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
               </div>
             </td>
@@ -666,7 +672,7 @@
             </td>
             <td>
               <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-              <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" triggers="click" [autoClose]="true">
+              <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                 <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
               </div>
             </td>
@@ -751,7 +757,7 @@
               </td>
               <td>
                 <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" triggers="click" [autoClose]="true">
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
@@ -818,7 +824,7 @@
               </td>
               <td>
                 <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" triggers="click" [autoClose]="true">
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
@@ -885,7 +891,7 @@
               </td>
               <td>
                 <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" triggers="click" [autoClose]="true">
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
@@ -952,7 +958,7 @@
               </td>
               <td>
                 <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" triggers="click" [autoClose]="true">
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
@@ -1019,7 +1025,7 @@
               </td>
               <td>
                 <popper-content #tip_table><div [innerHTML]="unit.formattedLimit.skillTableHtml"></div></popper-content>
-                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" triggers="click" [autoClose]="true">
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="unit.formattedLimit.skillTableHtml"></div>
                 </div>
               </td>

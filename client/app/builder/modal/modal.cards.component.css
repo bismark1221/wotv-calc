@@ -280,14 +280,14 @@
   width: 100%;
 }
 
-.star {
+.star-inactive {
   height: 40px;
   background: url("assets/icons/star_off.webp") 0px 0px no-repeat;
   background-size: 40px;
   width: 40px;
 }
 
-.star.filled {
+.star-active {
   height: 40px;
   background: url("assets/icons/star_on.webp") 0px 0px no-repeat;
   background-size: 40px;

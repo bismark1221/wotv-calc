@@ -72,11 +72,14 @@
                 Awakening
               </div>
               <div class="stars">
-                <ngb-rating [(rate)]="card.star" [max]="4" class="ratingStars">
-                  <ng-template let-fill="fill" let-index="index">
-                    <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
+                <bar-rating [(ngModel)]="star" (ngModelChange)="updateStar()" [max]="4">
+                  <ng-template ratingInactive let-index="index">
+                    <div class="star-inactive">&nbsp;</div>
                   </ng-template>
-                </ngb-rating>
+                  <ng-template ratingActive let-index="index">
+                    <div class="star-active">&nbsp;</div>
+                  </ng-template>
+                </bar-rating>
               </div>
             </div>
 
@@ -279,7 +282,7 @@
           </td>
           <td class="rangeTd">
             <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-            <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" triggers="click" [autoClose]="true">
+            <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
               <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
             </div>
           </td>

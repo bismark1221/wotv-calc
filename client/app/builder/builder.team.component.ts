@@ -37,6 +37,8 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 export class BuilderTeamComponent implements OnInit, AfterViewInit {
   availableUnits = [null, null, null, null, null];
   selectedUnits = [null, null, null, null, null];
+  star = [];
+  lb = [];
 
   // eslint-disable-next-line @typescript-eslint/ban-types
   savedUnits: {};
@@ -122,6 +124,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
             const unit = this.team.units[unitIndex];
             if (unit) {
               this.selectedUnits[unitIndex] = unit.dataId;
+              this.star[unitIndex] = unit.star;
+              this.lb[unitIndex] = unit.lb;
               await this.getAvailableUnits(unitIndex);
 
               Object.keys(unit.board.nodes).forEach(nodeId => {
@@ -183,6 +187,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       await this.teamService.selectUnit(pos, dataId, customData);
 
       if (this.team.units[pos]) {
+        this.star[pos] = this.team.units[pos].star;
+        this.lb[pos] = this.team.units[pos].lb;
         Object.keys(this.team.units[pos].board.nodes).forEach(nodeId => {
           if (this.team.units[pos].board.nodes[nodeId].skill.type !== 'buff') {
             this.team.units[pos].board.nodes[nodeId].skill.name = this.toolService.getName(this.team.units[pos].board.nodes[nodeId].skill);
@@ -242,17 +248,17 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       });
   }
 
-  changeStar(pos, value) {
-    this.teamService.changeStar(pos, value);
+  updateStar(pos) {
+    this.teamService.changeStar(pos, this.star[pos]);
     this.updateActiveSkillsForSim();
   }
 
-  changeLB(pos, value) {
-    if (value === this.team.units[pos].lb) {
-      value = undefined;
+  updateLB(pos) {
+    if (this.lb[pos] === this.team.units[pos].lb) {
+      this.lb[pos] = undefined;
     }
 
-    this.teamService.changeLB(pos, value);
+    this.teamService.changeLB(pos, this.lb[pos]);
     this.updateSelectedEquipments(pos);
     this.changeLevel(pos);
 
@@ -295,6 +301,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   maxUnit(pos) {
     this.teamService.maxUnit(pos);
     this.updateActiveSkillsForSim();
+    this.star[pos] = this.team.units[pos].star;
+    this.lb[pos] = this.team.units[pos].lb;
   }
 
   maxLevelAndJobs(pos) {
@@ -440,6 +448,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
     this.team.units.forEach((unit, unitIndex) => {
       if (unit) {
+        this.star[unitIndex] = unit.star;
+        this.lb[unitIndex] = unit.lb;
         Object.keys(unit.board.nodes).forEach(nodeId => {
           if (unit.board.nodes[nodeId].skill.type !== 'buff') {
             unit.board.nodes[nodeId].skill.name = this.toolService.getName(unit.board.nodes[nodeId].skill);
@@ -518,6 +528,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   resetUnit(pos) {
     this.teamService.resetUnit(pos);
     this.updateActiveSkillsForSim();
+    this.star[pos] = this.team.units[pos].star;
+    this.lb[pos] = this.team.units[pos].lb;
   }
 
   resetLevel(pos) {

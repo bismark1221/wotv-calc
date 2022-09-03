@@ -18,6 +18,7 @@ import { UnitService } from '../../services/unit.service';
 export class ModalCardsComponent extends SimpleModalComponent<null, any> implements OnInit {
   rawCards;
   cards = [];
+  star;
 
   searchText = '';
   filters = {
@@ -56,6 +57,7 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
 
     if (this.card) {
       this.card = await this.cardService.selectCardForBuilder(this.card.dataId, this.card);
+      this.star = this.card.star;
       this.formatCardBuffs();
     }
   }
@@ -132,6 +134,7 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
       this.modalStep = 'load';
     } else {
       this.card = await this.cardService.selectCardForBuilder(cardId, customData);
+      this.star = this.card.star;
       this.formatCardBuffs();
 
       this.modalStep = 'custom';
@@ -152,12 +155,12 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
     this.close();
   }
 
-  async changeStar(value) {
-    if (value === this.card.star) {
-      value = undefined;
+  async updateStar() {
+    if (this.star === this.card.star) {
+      this.star = undefined;
     }
 
-    this.card.star = value;
+    this.card.star = this.star;
     this.cardService.changeStar(this.card);
     this.formatCardBuffs();
   }
@@ -169,6 +172,7 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
 
   async maxCard() {
     this.cardService.maxCard(this.card);
+    this.star = this.card.star;
     this.formatCardBuffs();
   }
 

@@ -17,6 +17,7 @@ import { Esper } from '../../entities/esper';
 export class ModalEspersComponent extends SimpleModalComponent<null, any> implements OnInit {
   rawEspers;
   espers = [];
+  star;
 
   searchText = '';
   filters = {
@@ -96,6 +97,7 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
       });
 
       this.esper = await this.esperService.selectEsperForBuilder(this.esper.dataId, this.esper);
+      this.star = this.esper.star;
       this.maxStar = this.esper.SPs.length;
     }
   }
@@ -163,6 +165,7 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
       this.modalStep = 'load';
     } else {
       this.esper = await this.esperService.selectEsperForBuilder(esperId, customData);
+      this.star = this.esper.star;
       this.maxStar = this.esper.SPs.length;
 
       this.modalStep = 'custom';
@@ -183,8 +186,8 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
     this.close();
   }
 
-  changeStar(value) {
-    this.esper.star = value;
+  updateStar() {
+    this.esper.star = this.star;
     this.esperService.changeStar(this.esper);
   }
 
@@ -212,5 +215,6 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
 
   maxEsper() {
     this.esperService.maxEsper(this.esper);
+    this.star = this.esper.star;
   }
 }
