@@ -100,6 +100,7 @@ export class UserService {
     const apiResult = await this.apiService.post('userHaveDevice', data);
     this.loading[loadingType] = false;
 
+    // @ts-ignore
     if (apiResult.result === true) {
       return true;
     } else {
@@ -115,6 +116,7 @@ export class UserService {
     this.loading.deleteDevice = true;
     const apiResult = await this.apiService.post('deleteDevice', data);
 
+    // @ts-ignore
     if (apiResult.result === true) {
       return true;
     } else {
@@ -133,6 +135,7 @@ export class UserService {
     const apiResult = await this.apiService.post('generateDeviceId', data);
     this.loading.uploadDevice = false;
 
+    // @ts-ignore
     if (apiResult.result === 'success') {
       return true;
     } else {

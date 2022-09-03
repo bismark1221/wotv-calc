@@ -28,6 +28,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
   loadingBuild = false;
   showSave = false;
   selectedCardId = null;
+  star;
 
   showOnlyOtherVersion = false;
 
@@ -71,6 +72,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
         if (card) {
           this.selectedCardId = card.dataId;
           this.card = card;
+          this.star = this.card.star;
           this.formatCardBuffs();
           this.loadingBuild = false;
         } else {
@@ -139,6 +141,8 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
         this.cardSelector.handleClearClick();
       } else {
         this.card = await this.cardService.selectCardForBuilder(this.selectedCardId, customData);
+        this.star = this.card.star;
+
         this.formatCardBuffs();
       }
     } else {
@@ -146,28 +150,30 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     }
   }
 
-  async changeStar(value) {
-    if (value === this.card.star) {
-      value = undefined;
+  updateStar() {
+    if (this.star === this.card.star) {
+      this.star = undefined;
     }
 
-    this.card.star = value;
+    this.card.star = this.star;
     this.cardService.changeStar(this.card);
     this.formatCardBuffs();
   }
 
-  async updateLevel(level) {
+  updateLevel(level) {
     this.cardService.changeLevel(this.card);
     this.formatCardBuffs();
   }
 
-  async maxCard() {
+  maxCard() {
     this.cardService.maxCard(this.card);
+    this.star = this.card.star;
     this.formatCardBuffs();
   }
 
-  async resetCard() {
+  resetCard() {
     this.cardService.resetCard(this.card);
+    this.star = this.card.star;
     this.formatCardBuffs();
   }
 

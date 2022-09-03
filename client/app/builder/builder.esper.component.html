@@ -67,11 +67,14 @@
                 Awakening
               </div>
               <div class="stars">
-                <ngb-rating [(rate)]="esper.star" [max]="maxStar" class="ratingStars">
-                  <ng-template let-fill="fill" let-index="index">
-                    <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
+                <bar-rating [(ngModel)]="star" (ngModelChange)="updateStar()" [max]="maxStar">
+                  <ng-template ratingInactive let-index="index">
+                    <div class="star-inactive">&nbsp;</div>
                   </ng-template>
-                </ngb-rating>
+                  <ng-template ratingActive let-index="index">
+                    <div class="star-active">&nbsp;</div>
+                  </ng-template>
+                </bar-rating>
               </div>
             </div>
 

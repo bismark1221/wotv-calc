@@ -73,11 +73,14 @@
                 Awakening
               </div>
               <div class="stars">
-                <ngb-rating [(rate)]="unit.star" [max]="6" class="ratingStars">
-                  <ng-template let-fill="fill" let-index="index">
-                    <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
+                <bar-rating [(ngModel)]="star" (ngModelChange)="updateStar()" [max]="6">
+                  <ng-template ratingInactive let-index="index">
+                    <div class="star-inactive">&nbsp;</div>
                   </ng-template>
-                </ngb-rating>
+                  <ng-template ratingActive let-index="index">
+                    <div class="star-active">&nbsp;</div>
+                  </ng-template>
+                </bar-rating>
               </div>
             </div>
 
@@ -86,11 +89,14 @@
                 Limit Break
               </div>
               <div class="lbs">
-                <ngb-rating [(rate)]="unit.lb" [max]="5">
-                  <ng-template let-fill="fill" let-index="index">
-                    <div class="lb" [class.filled]="fill === 100" id="change_lb_{{index + 1}}" (click)="changeLB(index + 1)">&nbsp;</div>
+                <bar-rating [(ngModel)]="lb" (ngModelChange)="updateLB()" [max]="5">
+                  <ng-template ratingInactive let-index="index">
+                    <div class="lb-inactive">&nbsp;</div>
                   </ng-template>
-                </ngb-rating>
+                  <ng-template ratingActive let-index="index">
+                    <div class="lb-active">&nbsp;</div>
+                  </ng-template>
+                </bar-rating>
               </div>
             </div>
 
@@ -534,12 +540,12 @@
                 <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
               </span>
               <span *ngIf="skill.time && skill.time.minValue">
-                <ng-template #tip_time>
-                  <div>
+                <popper-content #tip_time>
+                  <div class="timeTooltip">
                     {{ skill.time.realValue }}
                   </div>
-                </ng-template>
-                <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                </popper-content>
+                <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                 <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
               </span>
             </td>
@@ -552,7 +558,7 @@
               </div>
 
               <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                <ng-template #tip_damage>
+                <popper-content #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
                     {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
@@ -572,8 +578,8 @@
                   <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
-                </ng-template>
-                <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                </popper-content>
+                <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                 <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
               </div>
 
@@ -582,8 +588,8 @@
               </div>
             </td>
             <td>
-              <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-              <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+              <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                 <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
               </div>
             </td>
@@ -617,12 +623,12 @@
                 <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
               </span>
               <span *ngIf="skill.time && skill.time.minValue">
-                <ng-template #tip_time>
-                  <div>
+                <popper-content #tip_time>
+                  <div class="timeTooltip">
                     {{ skill.time.realValue }}
                   </div>
-                </ng-template>
-                <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                </popper-content>
+                <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                 <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
               </span>
             </td>
@@ -635,7 +641,7 @@
               </div>
 
               <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                <ng-template #tip_damage>
+                <popper-content #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
                     {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
@@ -655,8 +661,8 @@
                   <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
-                </ng-template>
-                <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                </popper-content>
+                <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                 <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
               </div>
 
@@ -665,8 +671,8 @@
               </div>
             </td>
             <td>
-              <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-              <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+              <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                 <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
               </div>
             </td>
@@ -702,12 +708,12 @@
                   <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                 </span>
                 <span *ngIf="skill.time && skill.time.minValue">
-                  <ng-template #tip_time>
-                    <div>
+                  <popper-content #tip_time>
+                    <div class="timeTooltip">
                       {{ skill.time.realValue }}
                     </div>
-                  </ng-template>
-                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                  </popper-content>
+                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                   <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                 </span>
               </td>
@@ -720,7 +726,7 @@
                 </div>
 
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                  <ng-template #tip_damage>
+                  <popper-content #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
                     {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
@@ -740,8 +746,8 @@
                   <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
-                  </ng-template>
-                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  </popper-content>
+                  <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                   <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                 </div>
 
@@ -750,8 +756,8 @@
                 </div>
               </td>
               <td>
-                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
@@ -769,12 +775,12 @@
                   <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                 </span>
                 <span *ngIf="skill.time && skill.time.minValue">
-                  <ng-template #tip_time>
-                    <div>
+                  <popper-content #tip_time>
+                    <div class="timeTooltip">
                       {{ skill.time.realValue }}
                     </div>
-                  </ng-template>
-                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                  </popper-content>
+                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                   <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                 </span>
               </td>
@@ -787,7 +793,7 @@
                 </div>
 
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                  <ng-template #tip_damage>
+                  <popper-content #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
                     {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
@@ -807,8 +813,8 @@
                   <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
-                  </ng-template>
-                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  </popper-content>
+                  <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                   <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                 </div>
 
@@ -817,8 +823,8 @@
                 </div>
               </td>
               <td>
-                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
@@ -836,12 +842,12 @@
                   <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                 </span>
                 <span *ngIf="skill.time && skill.time.minValue">
-                  <ng-template #tip_time>
-                    <div>
+                  <popper-content #tip_time>
+                    <div class="timeTooltip">
                       {{ skill.time.realValue }}
                     </div>
-                  </ng-template>
-                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                  </popper-content>
+                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                   <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                 </span>
               </td>
@@ -854,7 +860,7 @@
                 </div>
 
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                  <ng-template #tip_damage>
+                  <popper-content #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
                     {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
@@ -874,8 +880,8 @@
                   <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
-                  </ng-template>
-                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  </popper-content>
+                  <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                   <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                 </div>
 
@@ -884,8 +890,8 @@
                 </div>
               </td>
               <td>
-                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
@@ -903,12 +909,12 @@
                   <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                 </span>
                 <span *ngIf="skill.time && skill.time.minValue">
-                  <ng-template #tip_time>
-                    <div>
+                  <popper-content #tip_time>
+                    <div class="timeTooltip">
                       {{ skill.time.realValue }}
                     </div>
-                  </ng-template>
-                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                  </popper-content>
+                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                   <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                 </span>
               </td>
@@ -921,7 +927,7 @@
                 </div>
 
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                  <ng-template #tip_damage>
+                  <popper-content #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
                     {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
@@ -941,8 +947,8 @@
                   <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                     {{ skill.damage.formula[3] }}% LUCK
                   </div>
-                  </ng-template>
-                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  </popper-content>
+                  <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                   <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                 </div>
 
@@ -951,8 +957,8 @@
                 </div>
               </td>
               <td>
-                <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
@@ -970,12 +976,12 @@
                   <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                 </span>
                 <span *ngIf="unit.formattedLimit.time && unit.formattedLimit.time.minValue">
-                  <ng-template #tip_time>
-                    <div>
+                  <popper-content #tip_time>
+                    <div class="timeTooltip">
                       {{ unit.formattedLimit.time.realValue }
                     </div>
-                  </ng-template>
-                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                  </popper-content>
+                  <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                   <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="unit.formattedLimit.possibleTarget == 'unit'"/>
                 </span>
               </td>
@@ -988,7 +994,7 @@
                 </div>
 
                 <div *ngIf="unit.formattedLimit.damageHtml.value">
-                  <ng-template #tip_damage>
+                  <popper-content #tip_damage>
                     <div *ngIf="unit.formattedLimit.based === 'physic'">
                       {{ (100 + (unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
@@ -1008,8 +1014,8 @@
                     <div *ngIf="unit.formattedLimit.damage.formula && unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[3] > 0">
                       {{ unit.formattedLimit.damage.formula[3] }}% LUCK
                     </div>
-                  </ng-template>
-                  <img [ngbTooltip]="tip_damage" title="{{ unit.formattedLimit.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ unit.formattedLimit.damageHtml.type.image }}.webp" />&nbsp; {{ unit.formattedLimit.damageHtml.effType }} {{ unit.formattedLimit.damageHtml.pool }} {{ unit.formattedLimit.damageHtml.value }}
+                  </popper-content>
+                  <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ unit.formattedLimit.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ unit.formattedLimit.damageHtml.type.image }}.webp" />&nbsp; {{ unit.formattedLimit.damageHtml.effType }} {{ unit.formattedLimit.damageHtml.pool }} {{ unit.formattedLimit.damageHtml.value }}
                   <div [innerHTML]="unit.formattedLimit.damageHtml.others | safeHtml"></div>
                 </div>
 
@@ -1018,8 +1024,8 @@
                 </div>
               </td>
               <td>
-                <ng-template #tip_table><div [innerHTML]="unit.formattedLimit.skillTableHtml"></div></ng-template>
-                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <popper-content #tip_table><div [innerHTML]="unit.formattedLimit.skillTableHtml"></div></popper-content>
+                <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                   <div class="divSkillTableHtml" [innerHTML]="unit.formattedLimit.skillTableHtml"></div>
                 </div>
               </td>

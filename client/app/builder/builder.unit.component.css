@@ -215,28 +215,28 @@
   padding-right: 38px;
 }
 
-.star {
+.star-inactive {
   height: 20px;
   background: url("assets/icons/star_off.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
 
-.star.filled {
+.star-active {
   height: 20px;
   background: url("assets/icons/star_on.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
 
-.lb {
+.lb-inactive {
   height: 40px;
   background: url("assets/icons/lb_off.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
 
-.lb.filled {
+.lb-active {
   height: 40px;
   background: url("assets/icons/lb_on.webp") 0px 0px no-repeat;
   background-size: 20px;
