@@ -65,13 +65,15 @@ circle, rect {
 .itemImgBlock {
   width: 200px;
   height: 160px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .itemImg {
-  height: 150px;
+  max-height: 150px;
   max-width: 190px;
-  margin: auto;
-  margin-top: 5px;
+  width: auto;
+  height: auto;
 }
 
 .elementImg, .rarityImg {
@@ -105,6 +107,7 @@ circle, rect {
   text-align: center;
   position: relative;
   margin-bottom: 10px;
+  vertical-align: top;
 }
 
 .itemsCol:hover {
@@ -254,44 +257,6 @@ circle, rect {
   height: 50px;
 }
 
-.itemImgBlock {
-  width: 200px;
-  height: 160px;
-}
-
-.itemImg {
-  height: 150px;
-  max-width: 190px;
-  margin: auto;
-  margin-top: 5px;
-}
-
-.mainJob {
-  margin-top: 45px;
-  height: 30px;
-  background: url("assets/jobs/base_main.webp") 0px 0px no-repeat;
-  background-size: 30px;
-  padding: 5px;
-  display: block;
-  width: 30px;
-}
-
-.subJob {
-  margin-top: 5px;
-  height: 30px;
-  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
-  background-size: 30px;
-  padding: 5px;
-  display: block;
-  width: 30px;
-}
-
-.mainJob img, .subJob img {
-  max-width: 20px;
-  max-height: 20px;
-  vertical-align: top;
-}
-
 @media (max-width: 860px) {
   .markdownHome {
     display: none;
@@ -313,5 +278,20 @@ circle, rect {
 
   .updates {
     text-align: center;
+  }
+}
+
+@media (max-width: 445px) {
+  .itemsTable {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .itemsCol, .itemImgBlock {
+    width: 180px;
+  }
+
+  .itemImg {
+    max-width: 170px;
   }
 }
