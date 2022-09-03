@@ -2,12 +2,12 @@
   <div class="leftBlock">
     <h1 class="boldText">FILTERS</h1>
     <div class="filters">
-      <div class="boldText" (click)="toogleCollapse('species')" [attr.aria-expanded]="!collapsed.species">
+      <div class="boldText my-3" (click)="toogleCollapse('species')">
         Species
         <i class="fas fa-chevron-up" *ngIf="!collapsed.species" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.species" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.species">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.species">
         <div *ngFor="let specie of species">
           <input type="checkbox" id="specie{{ specie }}" (change)="filterList('species', specie)" [checked]="isFilterChecked.species[specie]"/>
           <label for="specie{{ specie }}">{{ specie | titlecase }}</label>

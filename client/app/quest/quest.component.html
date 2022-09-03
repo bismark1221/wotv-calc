@@ -149,7 +149,7 @@
         <th>Level</th>
       </tr>
       <tbody *ngFor="let ally of quest.formattedAllies; let j = index">
-        <tr (click)="isCollapsedAlly[j] = !isCollapsedAlly[j]" [attr.aria-expanded]="!isCollapsedAlly[j]" class="enemyLine">
+        <tr (click)="isCollapsedAlly[j] = !isCollapsedAlly[j]" class="enemyLine">
           <td>
             <div class="collapseBlock">
               <i class="fas fa-chevron-up" *ngIf="!isCollapsedAlly[j]" aria-hidden="true"></i>
@@ -170,7 +170,7 @@
           </td>
           <td>{{ ally.level }}</td>
         </tr>
-        <tr [ngbCollapse]="isCollapsedAlly[j]">
+        <tr *ngIf="!isCollapsedAlly[j]">
           <td colspan="99" class="enemyDetailCol">
             <table>
               <tr>
@@ -359,7 +359,7 @@
         <th>Entry</th>
       </tr>
       <tbody *ngFor="let enemy of quest.formattedEnemies; let j = index">
-        <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" [attr.aria-expanded]="!isCollapsedEnemy[j]" class="enemyLine">
+        <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" class="enemyLine">
           <td>
             <div class="collapseBlock">
               <i class="fas fa-chevron-up" *ngIf="!isCollapsedEnemy[j]" aria-hidden="true"></i>
@@ -390,7 +390,7 @@
             <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true" *ngIf="enemy.formattedEntryCond && enemy.formattedEntryCond.length > 0"/>
           </td>
         </tr>
-        <tr [ngbCollapse]="isCollapsedEnemy[j]">
+        <tr *ngIf="!isCollapsedEnemy[j]">
           <td colspan="99" class="enemyDetailCol">
             <table>
               <tr>
@@ -611,7 +611,7 @@
         <th class="nameCol">Name</th>
       </tr>
       <tbody *ngFor="let chest of quest.formattedChests; let j = index">
-        <tr (click)="isCollapsedChest[j] = !isCollapsedChest[j]" [attr.aria-expanded]="!isCollapsedChest[j]" class="enemyLine">
+        <tr (click)="isCollapsedChest[j] = !isCollapsedChest[j]" class="enemyLine">
           <td>
             <div class="collapseBlock">
               <i class="fas fa-chevron-up" *ngIf="!isCollapsedChest[j]" aria-hidden="true"></i>
@@ -621,7 +621,7 @@
           </td>
           <td><img src="assets/units/{{chest.image}}_m.webp" class="enemyImg" />{{ chest.name }}</td>
         </tr>
-        <tr [ngbCollapse]="isCollapsedChest[j]">
+        <tr *ngIf="!isCollapsedChest[j]">
           <td colspan="99" class="enemyDetailCol">
             <div *ngIf="quest.chests && quest.chests[j].drop && quest.dropLists && quest.dropLists[quest.chests[j].drop]">
               <div *ngFor="let item of quest.dropLists[quest.chests[j].drop]" class="dropRateItemBlock">
@@ -643,7 +643,7 @@
         <th class="nameCol">Name</th>
       </tr>
       <tbody *ngFor="let object of quest.formattedObjects; let j = index">
-        <tr (click)="isCollapsedObject[j] = !isCollapsedObject[j]" [attr.aria-expanded]="!isCollapsedObject[j]" class="enemyLine">
+        <tr (click)="isCollapsedObject[j] = !isCollapsedObject[j]" class="enemyLine">
           <td>
             <div class="collapseBlock">
               <i class="fas fa-chevron-up" *ngIf="!isCollapsedObject[j]" aria-hidden="true"></i>
@@ -653,7 +653,7 @@
           </td>
           <td><img src="assets/units/{{object.image}}_m.webp" class="enemyImg" />{{ object.name }}</td>
         </tr>
-        <tr [ngbCollapse]="isCollapsedObject[j]">
+        <tr *ngIf="!isCollapsedObject[j]">
           <td colspan="99" class="enemyDetailCol">
             <table>
               <tr>

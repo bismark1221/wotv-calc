@@ -516,12 +516,12 @@
       <div class="skillTitle">
         Active Skills
       </div>
-      <div class="skillSubTitle" (click)="isCollapsedMainJob = !isCollapsedMainJob" [attr.aria-expanded]="!isCollapsedMainJob">
+      <div class="skillSubTitle" (click)="isCollapsedMainJob = !isCollapsedMainJob">
         Main Job
         <i class="fas fa-chevron-up" *ngIf="!isCollapsedMainJob" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="isCollapsedMainJob" aria-hidden="true"></i>
       </div>
-      <div class="collapsedSkills" [ngbCollapse]="isCollapsedMainJob">
+      <div class="collapsedSkills" *ngIf="!isCollapsedMainJob">
         <table class="skillsTable">
           <tr>
             <th class="sub skillTypeTd">Type</th>
@@ -599,12 +599,12 @@
           </tr>
         </table>
       </div>
-      <div class="skillSubTitle" (click)="isCollapsedSubJob = !isCollapsedSubJob" [attr.aria-expanded]="!isCollapsedSubJob">
+      <div class="skillSubTitle" (click)="isCollapsedSubJob = !isCollapsedSubJob">
         Sub Job
         <i class="fas fa-chevron-up" *ngIf="!isCollapsedSubJob" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="isCollapsedSubJob" aria-hidden="true"></i>
       </div>
-      <div class="collapsedSkills" [ngbCollapse]="isCollapsedSubJob">
+      <div class="collapsedSkills" *ngIf="!isCollapsedSubJob">
         <table class="skillsTable">
           <tr>
             <th class="sub skillTypeTd">Type</th>
@@ -683,12 +683,12 @@
         </table>
       </div>
 
-      <div class="skillSubTitle" (click)="isCollapsedOther = !isCollapsedOther" [attr.aria-expanded]="!isCollapsedOther">
+      <div class="skillSubTitle" (click)="isCollapsedOther = !isCollapsedOther">
         Other Skills
         <i class="fas fa-chevron-up" *ngIf="!isCollapsedOther" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="isCollapsedOther" aria-hidden="true"></i>
       </div>
-      <div class="collapsedSkills" [ngbCollapse]="isCollapsedOther">
+      <div class="collapsedSkills" *ngIf="!isCollapsedOther">
         <table class="skillsTable">
           <tr>
             <th class="sub skillTypeTd">Type</th>
@@ -1040,13 +1040,13 @@
 
     <div class="damageSimBlock">
       <div class="damageSimTitle">
-        <div class="skillSubTitle" (click)="isCollapsedDamageSim = !isCollapsedDamageSim" [attr.aria-expanded]="!isCollapsedDamageSim">
+        <div class="skillSubTitle" (click)="isCollapsedDamageSim = !isCollapsedDamageSim">
           Damage Simulator
           <i class="fas fa-chevron-up" *ngIf="!isCollapsedDamageSim" aria-hidden="true"></i>
           <i class="fas fa-chevron-down" *ngIf="isCollapsedDamageSim" aria-hidden="true"></i>
         </div>
       </div>
-      <div class="damageSimSubBlock" [ngbCollapse]="isCollapsedDamageSim">
+      <div class="damageSimSubBlock" *ngIf="!isCollapsedDamageSim">
         <table class="tableSim">
           <tr>
             <td class="targetTd">

@@ -34,7 +34,7 @@
         </tr>
       </tbody>
       <tbody *ngFor="let enemy of otherUnits; let j = index">
-        <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" [attr.aria-expanded]="!isCollapsedEnemy[j]" class="enemyLine">
+        <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" class="enemyLine">
           <td class="questName">
             <div class="collapseBlock">
               <i class="fas fa-chevron-up" *ngIf="!isCollapsedEnemy[j]" aria-hidden="true"></i>
@@ -63,7 +63,7 @@
             <span *ngIf="enemy.hasMaxLevel">{{ enemy.stats.MAG.minTotal }}<br />{{ enemy.stats.HP.maxTotal }}</span>
           </td>
         </tr>
-        <tr [ngbCollapse]="isCollapsedEnemy[j]">
+        <tr *ngIf="!isCollapsedEnemy[j]">
           <td colspan="99" class="enemyDetailCol">
             <table>
               <tr>
@@ -193,22 +193,22 @@
                     <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                       <popper-content #tip_damage>
                         <div *ngIf="skill.based === 'physic'">
-                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                          {{ (100 + (skill.damage && skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                         </div>
                         <div *ngIf="skill.based === 'magic'">
-                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                          {{ (100 + (skill.damage && skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                         </div>
                         <div *ngIf="skill.based === 'hybrid'">
-                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                          {{ (100 + (skill.damage && skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                         </div>
 
-                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                        <div *ngIf="skill.damage && skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
                           {{ skill.damage.formula[1] }}% DEX
                         </div>
-                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                        <div *ngIf="skill.damage && skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
                           {{ skill.damage.formula[2] }}% AGI
                         </div>
-                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                        <div *ngIf="skill.damage && skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                           {{ skill.damage.formula[3] }}% LUCK
                         </div>
                       </popper-content>

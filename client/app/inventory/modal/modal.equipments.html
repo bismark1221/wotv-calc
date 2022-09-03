@@ -32,13 +32,13 @@
                   <button *ngFor="let category of ['weapon', 'armor', 'acc']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('category', category)}" (click)="filterList('category', category)">
                     {{ category | titlecase }}
                   </button>
-                  <div class="acquisitionExpander" (click)="collapsedAcquisition = !collapsedAcquisition" [attr.aria-expanded]="collapsedAcquisition">
+                  <div class="acquisitionExpander" (click)="collapsedAcquisition = !collapsedAcquisition">
                     Acquisition Type
                     <i class="fas fa-chevron-up" *ngIf="!collapsedAcquisition" aria-hidden="true"></i>
                     <i class="fas fa-chevron-down" *ngIf="collapsedAcquisition" aria-hidden="true"></i>
                   </div>
                 </div>
-                <div [ngbCollapse]="collapsedAcquisition">
+                <div *ngIf="!collapsedAcquisition">
                   <div class="acquisitionType"><a class="unselectAllTypeLink" (click)="unselectAllType()">unselect all</a></div>
                   <div class="acquisitionType" *ngFor="let type of acquisitionTypes">
                     <input type="checkbox" id="type{{type}}" (change)="filterList('acquisition', type)" [checked]="isAcquisitionChecked[type]"/>

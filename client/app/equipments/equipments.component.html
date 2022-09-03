@@ -2,12 +2,12 @@
   <div class="leftBlock">
     <h1 class="boldText">FILTERS</h1>
     <div class="filters">
-      <div class="boldText" (click)="toogleCollapse('rarity')" [attr.aria-expanded]="!collapsed.rarity">
+      <div class="boldText my-3" (click)="toogleCollapse('rarity')">
         Rarity
         <i class="fas fa-chevron-up" *ngIf="!collapsed.rarity" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.rarity" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.rarity">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.rarity">
         <div *ngFor="let rarity of rarities">
           <input type="checkbox" id="rarity{{ rarity }}" (change)="filterList('rarity', rarity)" [checked]="isFilterChecked.rarity[rarity]"/>
           <label for="rarity{{ rarity }}">{{ rarity }}</label>
@@ -16,12 +16,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('type')" [attr.aria-expanded]="!collapsed.type">
+      <div class="boldText my-3" (click)="toogleCollapse('type')">
         Types
         <i class="fas fa-chevron-up" *ngIf="!collapsed.type" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.type" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.type">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.type">
         <div *ngFor="let weapon of weapons">
           <input type="checkbox" id="type{{ weapon }}" (change)="filterList('type', weapon)" [checked]="isFilterChecked.type[weapon]"/>
           <label for="type{{ weapon }}">{{ weapon | titlecase }}</label>
@@ -40,12 +40,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('acquisition')" [attr.aria-expanded]="!collapsed.acquisition">
+      <div class="boldText my-3" (click)="toogleCollapse('acquisition')">
         Acquisition
         <i class="fas fa-chevron-up" *ngIf="!collapsed.acquisition" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.acquisition" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.acquisition">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.acquisition">
         <div><a class="unselectAllTypeLink" (click)="unselectAllType()">unselect all</a></div>
         <div *ngFor="let type of acquisitionTypes">
           <input type="checkbox" id="type{{type}}" (change)="filterList('acquisition', type)" [checked]="isFilterChecked.acquisition[type]"/>
@@ -55,12 +55,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('job')" [attr.aria-expanded]="!collapsed.job">
+      <div class="boldText my-3" (click)="toogleCollapse('job')">
         Jobs
         <i class="fas fa-chevron-up" *ngIf="!collapsed.job" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.job" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.job">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.job">
         <div *ngFor="let job of jobs">
           <input type="checkbox" id="job{{job.dataId}}" (change)="filterList('job', job.dataId)" [checked]="isFilterChecked.job[job.dataId]"/>
           <label for="job{{job.dataId}}">{{ job.name }}</label>
@@ -69,12 +69,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('equipmentTypes')" [attr.aria-expanded]="!collapsed.equipmentTypes">
+      <div class="boldText my-3" (click)="toogleCollapse('equipmentTypes')">
         Equipment Types
         <i class="fas fa-chevron-up" *ngIf="!collapsed.equipmentTypes" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.equipmentTypes" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.equipmentTypes">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.equipmentTypes">
         <div *ngFor="let equipmentType of equipmentTypes">
           <input type="checkbox" id="equipmentType{{equipmentType.split('###')[1]}}" (change)="filterList('equipmentTypes', equipmentType)" [checked]="isFilterChecked.equipmentTypes[equipmentType]"/>
           <label for="equipmentType{{equipmentType.split('###')[1]}}">{{ equipmentType.split('###')[1] }}</label>
@@ -83,12 +83,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('equipmentStats')" [attr.aria-expanded]="!collapsed.equipmentStats">
+      <div class="boldText my-3" (click)="toogleCollapse('equipmentStats')">
         Stats
         <i class="fas fa-chevron-up" *ngIf="!collapsed.equipmentStats" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.equipmentStats" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.equipmentStats">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.equipmentStats">
         <div *ngFor="let equipmentStat of equipmentStats">
           <input type="checkbox" id="equipmentStat{{equipmentStat}}" (change)="filterList('equipmentStats', equipmentStat)" [checked]="isFilterChecked.equipmentStats[equipmentStat]"/>
           <label *ngIf="equipmentStat" for="equipmentStat{{equipmentStat}}" >{{ equipmentStat.replace('_', ' ') | titlecase }}</label>
@@ -97,12 +97,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('extra')" [attr.aria-expanded]="!collapsed.extra">
+      <div class="boldText my-3" (click)="toogleCollapse('extra')">
         Has Extra Star ?
         <i class="fas fa-chevron-up" *ngIf="!collapsed.extra" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.extra" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.extra">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.extra">
         <div>
           <input type="checkbox" id="limitedYes" (change)="filterList('extra', true)" [checked]="isFilterChecked.extra['true']"/>
           <label for="limitedYes">Yes</label>
