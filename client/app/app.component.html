@@ -1,7 +1,9 @@
 <div class="container-fluid">
   <app-nav></app-nav>
 
-  <router-outlet (activate)="onActivate($event)" ></router-outlet>
+  <div class="pt-14 lg:pt-0">
+    <router-outlet (activate)="onActivate($event)" ></router-outlet>
+  </div>
 
   <app-footer></app-footer>
 </div>

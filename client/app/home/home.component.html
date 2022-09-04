@@ -52,7 +52,7 @@
             </div>
           </div>
           <div class="itemImgBlock">
-            <img class="itemImg" src="assets/{{ item.type !== 'esper' ? item.type : 'unit' }}s/{{ item.image }}{{ item.type === 'esper' ? '_s' : '' }}{{ item.type === 'equipment' || item.type === 'esper' ? '' : '_m' }}.webp" />
+            <img class="itemImg aspect-auto" src="assets/{{ item.type !== 'esper' ? item.type : 'unit' }}s/{{ item.image }}{{ item.type === 'esper' ? '_s' : '' }}{{ item.type === 'equipment' || item.type === 'esper' ? '' : '_m' }}.webp" />
           </div>
           <div class="cardTitle">
             <span class="itemName">{{ item.name }}</span>
