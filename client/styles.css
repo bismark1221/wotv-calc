@@ -1,12 +1,11 @@
 /* Import external libraries */
-/*@import "~bootstrap/dist/css/bootstrap.min.css";*/
 @import "~select2-bootstrap-theme/dist/select2-bootstrap.min.css";
 @import "~@ng-select/ng-select/themes/default.theme.css";
 @import '~ngx-toastr/toastr';
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --link-color: #0275d8;
