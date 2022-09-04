@@ -263,7 +263,8 @@ export class ToolService {
         'VC_LW_HALL2',
         'VC_LW_IBRA',
         'UN_LW_P_HLNA_02',
-        'UN_LW_P_ESTR'
+        'UN_LW_P_ESTR',
+        'VC_LW_ZZAN_01'
       ],
       JP: [
         'UN_LW_P_FRVA',
@@ -286,7 +287,8 @@ export class ToolService {
         'VC_LW_XMAS2',
         'UN_LW_P_IRDL_01',
         'UN_LW_P_HLNA_02',
-        'UN_LW_P_ESTR'
+        'UN_LW_P_ESTR',
+        'VC_LW_ZZAN_01'
       ]
     };
 
