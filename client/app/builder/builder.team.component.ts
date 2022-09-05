@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ClipboardService } from 'ngx-clipboard';
 
@@ -37,6 +37,8 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 export class BuilderTeamComponent implements OnInit, AfterViewInit {
   availableUnits = [null, null, null, null, null];
   selectedUnits = [null, null, null, null, null];
+  star = [];
+  lb = [];
 
   // eslint-disable-next-line @typescript-eslint/ban-types
   savedUnits: {};
@@ -85,7 +87,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     private cardService: CardService,
     private equipmentService: EquipmentService,
     private toolService: ToolService,
-    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private clipboardService: ClipboardService,
     private teamService: TeamService,
     private authService: AuthService,
@@ -122,6 +124,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
             const unit = this.team.units[unitIndex];
             if (unit) {
               this.selectedUnits[unitIndex] = unit.dataId;
+              this.star[unitIndex] = unit.star;
+              this.lb[unitIndex] = unit.lb;
               await this.getAvailableUnits(unitIndex);
 
               Object.keys(unit.board.nodes).forEach(nodeId => {
@@ -183,6 +187,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       await this.teamService.selectUnit(pos, dataId, customData);
 
       if (this.team.units[pos]) {
+        this.star[pos] = this.team.units[pos].star;
+        this.lb[pos] = this.team.units[pos].lb;
         Object.keys(this.team.units[pos].board.nodes).forEach(nodeId => {
           if (this.team.units[pos].board.nodes[nodeId].skill.type !== 'buff') {
             this.team.units[pos].board.nodes[nodeId].skill.name = this.toolService.getName(this.team.units[pos].board.nodes[nodeId].skill);
@@ -216,46 +222,43 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   openLoadModalUnits(pos, unitId) {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'unit', savedItems: this.savedUnits[unitId], allowNew: true })
+      .subscribe(async (result) => {
+        if (result) {
+          if (result.type === 'new') {
+            await this.selectUnit(pos, true);
+          }
 
-    modalRef.componentInstance.type = 'unit';
-    modalRef.componentInstance.savedItems = this.savedUnits[unitId];
-    modalRef.componentInstance.allowNew = true;
+          if (result.type === 'load' && result.item) {
+            await this.selectUnit(pos, true, result.item);
+          }
 
-    modalRef.result.then(async result => {
-      if (result.type === 'new') {
-        await this.selectUnit(pos, true);
-      }
+          if (result.type === 'fullDelete') {
+            this.savedUnits[unitId] = [];
+          }
+        } else {
+          if (this.team.units[pos]) {
+            this.selectedUnits[pos] = this.team.units[pos].dataId;
+          } else {
+            this.selectedUnits[pos] = null;
+          }
 
-      if (result.type === 'load' && result.item) {
-        await this.selectUnit(pos, true, result.item);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedUnits[unitId] = [];
-      }
-    }, (reason) => {
-      if (this.team.units[pos]) {
-        this.selectedUnits[pos] = this.team.units[pos].dataId;
-      } else {
-        this.selectedUnits[pos] = null;
-      }
-
-      this.getUnitsForSim();
-    });
+          this.getUnitsForSim();
+        }
+      });
   }
 
-  changeStar(pos, value) {
-    this.teamService.changeStar(pos, value);
+  updateStar(pos) {
+    this.teamService.changeStar(pos, this.star[pos]);
     this.updateActiveSkillsForSim();
   }
 
-  changeLB(pos, value) {
-    if (value === this.team.units[pos].lb) {
-      value = undefined;
+  updateLB(pos) {
+    if (this.lb[pos] === this.team.units[pos].lb) {
+      this.lb[pos] = undefined;
     }
 
-    this.teamService.changeLB(pos, value);
+    this.teamService.changeLB(pos, this.lb[pos]);
     this.updateSelectedEquipments(pos);
     this.changeLevel(pos);
 
@@ -298,6 +301,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   maxUnit(pos) {
     this.teamService.maxUnit(pos);
     this.updateActiveSkillsForSim();
+    this.star[pos] = this.team.units[pos].star;
+    this.lb[pos] = this.team.units[pos].lb;
   }
 
   maxLevelAndJobs(pos) {
@@ -306,137 +311,134 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   showGuildDetail() {
-    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.team.guild.data));
-
-    modalRef.result.then((guild) => {
-      this.team.guild.data = guild;
-      for (let i = 0; i <= 4; i++) {
-        if (this.team.units[i]) {
-          this.teamService.changeLevel(i);
-          this.calculateDamageSim();
+    this.simpleModalService.addModal(ModalGuildComponent, { guild : JSON.parse(JSON.stringify(this.team.guild.data)) })
+      .subscribe(async (guild) => {
+        if (guild !== 'close') {
+          this.team.guild.data = guild;
+          for (let i = 0; i <= 4; i++) {
+            if (this.team.units[i]) {
+              this.teamService.changeLevel(i);
+              this.calculateDamageSim();
+            }
+          }
         }
-      }
-    }, (reason) => {
-    });
+      });
   }
 
   showMasterRanksDetail() {
-    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.team.masterRanks.data));
-
-    modalRef.result.then((masterRanks) => {
-      this.team.masterRanks.data = masterRanks;
-      for (let i = 0; i <= 4; i++) {
-        if (this.team.units[i]) {
-          this.teamService.changeLevel(i);
-          this.calculateDamageSim();
+    this.simpleModalService.addModal(ModalMasterRanksComponent, { masterRanks : JSON.parse(JSON.stringify(this.team.masterRanks.data)) })
+      .subscribe(async (masterRanks) => {
+        if (masterRanks !== 'close') {
+          this.team.masterRanks.data = masterRanks;
+          for (let i = 0; i <= 4; i++) {
+            if (this.team.units[i]) {
+              this.teamService.changeLevel(i);
+              this.calculateDamageSim();
+            }
+          }
         }
-      }
-    }, (reason) => {
-    });
+      });
   }
 
   openEquipmentsModal(unitPos, equipmentPos) {
-    const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'builder-modal' });
-    modalRef.componentInstance.unit = this.team.units[unitPos];
-    modalRef.componentInstance.equipmentPos = equipmentPos;
+    let equipment = null;
+    let modalStep = 'select';
+    const unit = this.team.units[unitPos];
 
     if (this.team.units[unitPos].equipments[equipmentPos]) {
-      modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(this.team.units[unitPos].equipments[equipmentPos]));
-      modalRef.componentInstance.modalStep = 'custom';
+      equipment = JSON.parse(JSON.stringify(this.team.units[unitPos].equipments[equipmentPos]));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((equipment) => {
-      this.team.units[unitPos].equipments[equipmentPos] = equipment;
-      this.teamService.changeLevel(unitPos);
-      this.calculateDamageSim(unitPos);
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalEquipmentsComponent, { equipment: equipment, modalStep: modalStep, unit: unit, equipmentPos: equipmentPos })
+      .subscribe(async (loadEquipment) => {
+        if (loadEquipment !== 'close') {
+          this.team.units[unitPos].equipments[equipmentPos] = loadEquipment;
+          this.teamService.changeLevel(unitPos);
+          this.calculateDamageSim(unitPos);
+        }
+      });
   }
 
   openEspersModal(pos) {
-    const modalRef = this.modalService.open(ModalEspersComponent, { windowClass: 'builder-modal' });
+    let esper = null;
+    let modalStep = 'select';
+    const teamUnitPos = pos;
 
-    modalRef.componentInstance.teamUnitPos = pos;
     if (this.team.units[pos].esper) {
-      modalRef.componentInstance.esper = JSON.parse(JSON.stringify(this.team.units[pos].esper));
-      modalRef.componentInstance.modalStep = 'custom';
+      esper = JSON.parse(JSON.stringify(this.team.units[pos].esper));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((esper) => {
-      this.team.units[pos].esper = esper;
-      this.teamService.changeLevel(pos);
-      this.calculateDamageSim(pos);
-      this.teamService.updateTeamCost();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalEspersComponent, { esper: esper, modalStep: modalStep, teamUnitPos: teamUnitPos })
+      .subscribe(async (loadEsper) => {
+        if (loadEsper !== 'close') {
+          this.team.units[pos].esper = loadEsper;
+          this.teamService.changeLevel(pos);
+          this.calculateDamageSim(pos);
+          this.teamService.updateTeamCost();
+        }
+      });
   }
 
   openCardsModal(pos, subCard = false) {
-    const modalRef = this.modalService.open(ModalCardsComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.teamUnitPos = pos;
+    let cardType = 'main';
+    let card = null;
+    let modalStep = 'select';
+    const teamUnitPos = pos;
 
     if (subCard) {
-      modalRef.componentInstance.cardType = 'sub';
-    } else {
-      modalRef.componentInstance.cardType = 'main';
+      cardType = 'sub';
     }
 
     if (!subCard && this.team.units[pos].card) {
-      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.team.units[pos].card));
-      modalRef.componentInstance.modalStep = 'custom';
+      card = JSON.parse(JSON.stringify(this.team.units[pos].card));
+      modalStep = 'custom';
     }
 
     if (subCard && this.team.units[pos].subCard) {
-      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.team.units[pos].subCard));
-      modalRef.componentInstance.modalStep = 'custom';
+      card = JSON.parse(JSON.stringify(this.team.units[pos].subCard));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((card) => {
-      if (!subCard) {
-        this.team.units[pos].card = card;
-      } else {
-        this.team.units[pos].subCard = card;
-      }
+    this.simpleModalService.addModal(ModalCardsComponent, { cardType: cardType, card: card, modalStep: modalStep, teamUnitPos: teamUnitPos })
+      .subscribe(async (loadCard) => {
+        if (loadCard !== 'close') {
+          if (!subCard) {
+            this.team.units[pos].card = loadCard;
+          } else {
+            this.team.units[pos].subCard = loadCard;
+          }
 
-      this.teamService.changeLevel(pos);
+          this.teamService.changeLevel(pos);
 
-      this.team.units.forEach((unit, unitIndex) => {
-        if (unit && unitIndex !== pos) {
-          this.team.units[unitIndex].teamCards[pos] = this.team.units[pos].card;
-          this.team.units[unitIndex].teamSubCards[pos] = this.team.units[pos].subCard;
-          this.team.units[unitIndex].changeLevel();
+          this.team.units.forEach((unit, unitIndex) => {
+            if (unit && unitIndex !== pos) {
+              this.team.units[unitIndex].teamCards[pos] = this.team.units[pos].card;
+              this.team.units[unitIndex].teamSubCards[pos] = this.team.units[pos].subCard;
+              this.team.units[unitIndex].changeLevel();
+            }
+          });
+
+          this.updateActiveSkillsForSim();
+          this.calculateDamageSim();
+
+          this.teamService.updateTeamCost();
         }
       });
-
-      this.updateActiveSkillsForSim();
-      this.calculateDamageSim();
-
-      this.teamService.updateTeamCost();
-    }, (reason) => {
-    });
   }
 
   openLoadModal() {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'team', savedItems: this.savedTeams })
+      .subscribe(async (result) => {
+        if (result.type === 'load' && result.item) {
+          await this.loadTeam(result.item);
+        }
 
-    modalRef.componentInstance.type = 'team';
-    modalRef.componentInstance.savedItems = this.savedTeams;
-
-    modalRef.result.then(async result => {
-      if (result.type === 'load' && result.item) {
-        await this.loadTeam(result.item);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedTeams = [];
-      }
-    }, (reason) => {
-    });
+        if (result.type === 'fullDelete') {
+          this.savedTeams = [];
+        }
+      });
   }
 
   async loadTeam(teamData) {
@@ -446,6 +448,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
     this.team.units.forEach((unit, unitIndex) => {
       if (unit) {
+        this.star[unitIndex] = unit.star;
+        this.lb[unitIndex] = unit.lb;
         Object.keys(unit.board.nodes).forEach(nodeId => {
           if (unit.board.nodes[nodeId].skill.type !== 'buff') {
             unit.board.nodes[nodeId].skill.name = this.toolService.getName(unit.board.nodes[nodeId].skill);
@@ -484,23 +488,17 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     });
 
     if (atLeasOneUnit) {
-      const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-      modalRef.componentInstance.type = 'team';
-      modalRef.componentInstance.item = this.team;
-
-      modalRef.result.then(result => {
-        this.savedTeams = this.teamService.getSavedTeams();
-      }, (reason) => {
-      });
+      this.simpleModalService.addModal(ModalSaveComponent, { type: 'team', item: this.team })
+        .subscribe((isSaved) => {
+          if (isSaved) {
+            this.savedTeams = this.teamService.getSavedTeams();
+          }
+        });
     }
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'team';
-    modalRef.componentInstance.item = this.team;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'team', item: this.team });
   }
 
   getAvailableStatType(pos) {
@@ -530,6 +528,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   resetUnit(pos) {
     this.teamService.resetUnit(pos);
     this.updateActiveSkillsForSim();
+    this.star[pos] = this.team.units[pos].star;
+    this.lb[pos] = this.team.units[pos].lb;
   }
 
   resetLevel(pos) {

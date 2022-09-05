@@ -58,7 +58,7 @@
         <tbody *ngFor="let quest of quests">
           <tr>
             <td class="questTd">
-              <div class="collapseBlock" (click)="isCollapsed[quest.dataId] = !isCollapsed[quest.dataId]" [attr.aria-expanded]="!isCollapsed[quest.dataId]">
+              <div class="collapseBlock" (click)="isCollapsed[quest.dataId] = !isCollapsed[quest.dataId]">
                 <i class="fas fa-chevron-up" *ngIf="!isCollapsed[quest.dataId]" aria-hidden="true"></i>
                 <i class="fas fa-chevron-down" *ngIf="isCollapsed[quest.dataId]" aria-hidden="true"></i>
               </div>
@@ -83,7 +83,7 @@
               </div>
             </td>
           </tr>
-          <tr [ngbCollapse]="isCollapsed[quest.dataId]">
+          <tr *ngIf="!isCollapsed[quest.dataId]">
             <td colspan="2">
               <div class="dropBlock">
                 <div class="dropHeader">TOTAL</div>

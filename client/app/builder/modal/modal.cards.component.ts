@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { CardService } from '../../services/card.service';
 import { TeamService } from '../../services/team.service';
@@ -15,9 +15,10 @@ import { UnitService } from '../../services/unit.service';
   templateUrl: './modal.cards.component.html',
   styleUrls: ['./modal.cards.component.css']
 })
-export class ModalCardsComponent implements OnInit {
+export class ModalCardsComponent extends SimpleModalComponent<null, any> implements OnInit {
   rawCards;
   cards = [];
+  star;
 
   searchText = '';
   filters = {
@@ -30,10 +31,10 @@ export class ModalCardsComponent implements OnInit {
 
   showOnlyOtherVersion = false;
 
-  @Input() public modalStep = 'select';
-  @Input() public cardType = 'main';
-  @Input() public card;
-  @Input() public teamUnitPos;
+  public modalStep = 'select';
+  public cardType = 'main';
+  public card;
+  public teamUnitPos;
 
   constructor(
     private cardService: CardService,
@@ -42,9 +43,10 @@ export class ModalCardsComponent implements OnInit {
     private toolService: ToolService,
     private skillService: SkillService,
     private jobService: JobService,
-    private unitService: UnitService,
-    private modal: NgbActiveModal
+    private unitService: UnitService
   ) {
+    super();
+
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateCards();
     });
@@ -55,6 +57,7 @@ export class ModalCardsComponent implements OnInit {
 
     if (this.card) {
       this.card = await this.cardService.selectCardForBuilder(this.card.dataId, this.card);
+      this.star = this.card.star;
       this.formatCardBuffs();
     }
   }
@@ -120,10 +123,6 @@ export class ModalCardsComponent implements OnInit {
     }
   }
 
-  close() {
-    this.modal.dismiss();
-  }
-
   back() {
     this.modalStep = 'select';
   }
@@ -135,26 +134,33 @@ export class ModalCardsComponent implements OnInit {
       this.modalStep = 'load';
     } else {
       this.card = await this.cardService.selectCardForBuilder(cardId, customData);
+      this.star = this.card.star;
       this.formatCardBuffs();
 
       this.modalStep = 'custom';
     }
   }
 
+  closeButton() {
+    this.result = 'close';
+    this.close();
+  }
+
   save() {
-    this.modal.close(this.card);
+    this.result = this.card;
+    this.close();
   }
 
   removeCard() {
-    this.modal.close(null);
+    this.close();
   }
 
-  async changeStar(value) {
-    if (value === this.card.star) {
-      value = undefined;
+  async updateStar() {
+    if (this.star === this.card.star) {
+      this.star = undefined;
     }
 
-    this.card.star = value;
+    this.card.star = this.star;
     this.cardService.changeStar(this.card);
     this.formatCardBuffs();
   }
@@ -166,6 +172,7 @@ export class ModalCardsComponent implements OnInit {
 
   async maxCard() {
     this.cardService.maxCard(this.card);
+    this.star = this.card.star;
     this.formatCardBuffs();
   }
 

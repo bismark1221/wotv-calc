@@ -1,26 +1,36 @@
-<div>
-  <div class="titleBlock">
-    <div class="title">
-      DELETE {{ type | uppercase }}
-    </div>
-    <div class="closeButton">
-      <button type="button" class="close" aria-label="Close" (click)="close()">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div>
+<div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
-  <div class="confirmBlock" *ngIf="deleteStep === 'confirm'">
-    <span>Do you really want to delete this materia, she will not be happy...</span>
-    <div class="confirmButtons">
-      <button class="btn btn-main replaceButton" (click)="confirmDelete()">Delete</button>
-      <button class="btn btn-sub cancelButton" (click)="closeDelete()">Cancel</button>
-    </div>
-  </div>
+  <div class="fixed inset-0 z-10 overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center items-center p-0">
+      <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full lg:max-w-4xl" >
+        <div class="modal-title-background px-4 py-3 sm:px-6">
+          <div class="title justify-start">
+            DELETE {{ type | uppercase }}
+          </div>
+          <div class="closeButton justify-end">
+            <button type="button" class="close" aria-label="Close" (click)="close()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
 
-  <div class="loadingBlock" *ngIf="deleteStep === 'loading'">
-    <span class="loadingText">Delete in progress</span>
-    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+        <div class="modal-body-background px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div class="confirmBlock" *ngIf="deleteStep === 'confirm'">
+            <span>Do you really want to delete this materia, she will not be happy...</span>
+            <div class="confirmButtons">
+              <button class="btn btn-main replaceButton" (click)="confirmDelete()">Delete</button>
+              <button class="btn btn-sub cancelButton" (click)="close()">Cancel</button>
+            </div>
+          </div>
+
+          <div class="loadingBlock" *ngIf="deleteStep === 'loading'">
+            <span class="loadingText">Delete in progress</span>
+            <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

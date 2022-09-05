@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { EquipmentService } from '../services/equipment.service';
@@ -44,7 +44,7 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     private activatedRoute: ActivatedRoute,
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
-    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private toolService: ToolService,
     private authService: AuthService,
     private navService: NavService
@@ -170,64 +170,55 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   }
 
   openLoadModal(equipmentId) {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'equipment', savedItems: this.savedEquipments[equipmentId], allowNew: true })
+      .subscribe(async (result) => {
+        if (result.type === 'new') {
+          this.selectedEquipmentId = equipmentId;
+          await this.selectEquipment(null, true);
+        }
 
-    modalRef.componentInstance.type = 'equipment';
-    modalRef.componentInstance.savedItems = this.savedEquipments[equipmentId];
-    modalRef.componentInstance.allowNew = true;
+        if (result.type === 'load' && result.item) {
+          this.selectedEquipmentId = result.item.dataId;
+          await this.selectEquipment(result.item, true);
+        }
 
-    modalRef.result.then(async result => {
-      if (result.type === 'new') {
-        this.selectedEquipmentId = equipmentId;
-        await this.selectEquipment(null, true);
-      }
-
-      if (result.type === 'load' && result.item) {
-        this.selectedEquipmentId = result.item.dataId;
-        await this.selectEquipment(result.item, true);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedEquipments[equipmentId] = [];
-      }
-    }, (reason) => {
-    });
+        if (result.type === 'fullDelete') {
+          this.savedEquipments[equipmentId] = [];
+        }
+      });
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'equipment';
-    modalRef.componentInstance.item = this.equipment;
-
-    modalRef.result.then(result => {
-      this.savedEquipments = this.equipmentService.getSavedEquipments();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'equipment', item: this.equipment })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedEquipments = this.equipmentService.getSavedEquipments();
+        }
+      });
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'equipment';
-    modalRef.componentInstance.item = this.equipment;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'equipment', item: this.equipment });
   }
 
   openMateriaModal(type) {
-    const modalRef = this.modalService.open(ModalMateriaComponent, { windowClass: 'builder-modal' });
-    modalRef.componentInstance.equipment = this.equipment;
-    modalRef.componentInstance.materiaType = type;
+    let materia = null;
+    let modalStep = 'select';
+    const equipment = this.equipment;
+    const materiaType = type;
 
     if (this.equipment.materias[type]) {
-      modalRef.componentInstance.materia = JSON.parse(JSON.stringify(this.equipment.materias[type]));
-      modalRef.componentInstance.modalStep = 'custom';
+      materia = JSON.parse(JSON.stringify(this.equipment.materias[type]));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((materia) => {
-      this.equipment.materias[type] = materia;
+    this.simpleModalService.addModal(ModalMateriaComponent, { materia: materia, modalStep: modalStep, equipment: equipment, materiaType: materiaType })
+      .subscribe(async (loadMateria) => {
+        if (loadMateria !== 'close') {
+          this.equipment.materias[type] = loadMateria;
 
-      this.equipmentService.changeMateria(this.equipment);
-    }, (reason) => {
-    });
+          this.equipmentService.changeMateria(this.equipment);
+        }
+      });
   }
 }

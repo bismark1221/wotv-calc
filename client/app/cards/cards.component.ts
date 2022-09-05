@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { CardService } from '../services/card.service';
@@ -73,7 +73,7 @@ export class CardsComponent implements OnInit {
     private cardService: CardService,
     private translateService: TranslateService,
     private navService: NavService,
-    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -263,6 +263,6 @@ export class CardsComponent implements OnInit {
   }
 
   openSearchOptionsModal() {
-    this.modalService.open(SearchOptionsModalComponent, { windowClass: 'options-modal' });
+    this.simpleModalService.addModal(SearchOptionsModalComponent);
   }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { MasterRanksService } from '../../services/mr.service';
 
@@ -9,15 +9,16 @@ import { MasterRanksService } from '../../services/mr.service';
   templateUrl: './modal.mr.component.html',
   styleUrls: ['./modal.mr.component.css']
 })
-export class ModalMasterRanksComponent implements OnInit {
+export class ModalMasterRanksComponent extends SimpleModalComponent<null, any> implements OnInit {
   ranks = {};
 
   @Input() public masterRanks;
 
   constructor(
-    private masterRanksService: MasterRanksService,
-    private modal: NgbActiveModal
-  ) {}
+    private masterRanksService: MasterRanksService
+  ) {
+    super();
+  }
 
   async ngOnInit() {
     if (!this.masterRanks) {
@@ -27,11 +28,13 @@ export class ModalMasterRanksComponent implements OnInit {
     this.ranks = await this.masterRanksService.getMRs();
   }
 
-  close() {
-    this.modal.dismiss();
+  closeButton() {
+    this.result = 'close';
+    this.close();
   }
 
   save() {
-    this.modal.close(this.masterRanks);
+    this.result = this.masterRanks;
+    this.close();
   }
 }

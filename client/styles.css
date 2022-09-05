@@ -1,12 +1,16 @@
 /* Import external libraries */
-@import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~select2-bootstrap-theme/dist/select2-bootstrap.min.css";
 @import "~@ng-select/ng-select/themes/default.theme.css";
 @import '~ngx-toastr/toastr';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --link-color: #0275d8;
   --table-border: #dadada;
+  --table-border-inverted: #404040;
   --background-tooltip: #635b52;
   --btn-background-activated: #e6e6e6;
   --btn-border-activated: #adadad;
@@ -43,6 +47,8 @@
   --nav-background-main: #1D1B1B;
   --footer-link: #1D1B1B;
 
+  --mobile-nav-background: #3D3D3D;
+
   --card-background: #E8E6DF;
   --card-title-background: #3D3A41;
   --card-title-color: #FFF;
@@ -50,6 +56,9 @@
 
   --th-background: #3D3A41;
   --sub-th-background: #E8E6DF;
+  --th-background-inverted: #3D3A41;
+  --sub-th-background-inverted: #E8E6DF;
+
   --tabs-background: #F4F5F9;
 
   --hr-color: rgba(0, 0, 0, 0.1);
@@ -60,10 +69,14 @@
   --sortby-color: rgba(61, 58, 65, 0.5);
 
   --black-vs-white: var(--black);
+  --white-vs-black: var(--white);
+
+  --modal-title-background: #E8E6DF;
+  --modal-body-background: var(--white);
 }
 
 body {
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   font-family: Roboto, Helvetica, sans-serif !important;
   background-color: var(--body-background);
   color: var(--body-color);
@@ -75,6 +88,10 @@ a {
 
 button, input, optgroup, select, textarea {
   font-family: Roboto, Helvetica, sans-serif !important;
+}
+
+select {
+  color: black;
 }
 
 table, tbody, tr, th, td {
@@ -94,9 +111,30 @@ th.sub {
   font-weight: 100;
 }
 
+table.inverted, tbody.inverted, tr.inverted, th.inverted, td.inverted {
+  border: 1px solid var(--table-border-inverted);
+}
+
+th.inverted {
+  color: var(--white-vs-black);
+  background-color: var(--th-background-inverted);
+  text-align: center;
+  padding: 0.3em 0.5em;
+}
+
+th.sub.inverted {
+  background-color: var(--sub-th-background-inverted);
+  color: var(--black);
+  font-weight: 100;
+}
+
 td {
   text-align: center;
   padding: 0.3em 0.5em;
+}
+
+img {
+  display: inline-block;
 }
 
 .text-regular {
@@ -119,6 +157,15 @@ label {
   margin-bottom: 0;
 }
 
+input {
+  color: var(--black);
+  padding: 3px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 .boldText {
   font-weight: bold;
 }
@@ -127,13 +174,13 @@ label {
   padding: 0;
 }
 
-.tooltip-inner .table-skill {
+.ngxp__inner .table-skill {
   border-collapse: collapse;
   width: 219px;
   height: 219px;
 }
 
-.tooltip-inner .table-skill td {
+.ngxp__inner .table-skill td {
   content: ' ';
   padding: 0;
   margin: 0;
@@ -142,8 +189,17 @@ label {
   background-color: var(--background-tooltip);
 }
 
-.tooltip-inner .table-skill .table-skill-AR {
+.ngxp__inner .table-skill .table-skill-AR {
   background: url("assets/range/AR.webp") 0px 0px no-repeat;
+}
+
+.ngxp__container {
+  background-color: black;
+  border: 0 !important;
+}
+
+.ngxp__container>.ngxp__arrow:before {
+  background-color: black !important;
 }
 
 .table-skill {
@@ -171,7 +227,7 @@ label {
   display: none;
 }
 
-.tooltip-inner {
+.ngxp__inner {
   max-width: 500px;
 }
 
@@ -342,7 +398,7 @@ label {
 }
 
 .switch {
-  margin-top: 15px !important;
+  margin-top: 5px !important;
   border: 0 !important;
   background: #3D3A41 !important;
   width: 65px !important;
@@ -381,6 +437,10 @@ small {
   padding-left: 5px !important;
   height: 25px !important;
   content: url(assets/nav/sun.webp);
+}
+
+.switchThemeMobile button {
+  top: 5px;
 }
 
 .switchMainJob .switch {
@@ -888,4 +948,16 @@ small {
 
 .ng-dropdown-panel {
   z-index: 1000 !important;
+}
+
+.modal-title-background {
+  background-color: var(--modal-title-background);
+}
+
+.modal-body-background {
+  background-color: var(--modal-body-background);
+}
+
+.timeTooltip {
+  width: 115px;
 }

@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
 
 import { EquipmentService } from '../../services/equipment.service';
 import { NavService } from '../../services/nav.service';
@@ -14,7 +13,7 @@ import { ModalMateriaComponent } from './modal.materia.component';
   templateUrl: './modal.equipments.component.html',
   styleUrls: ['./modal.equipments.component.css']
 })
-export class ModalEquipmentsComponent implements OnInit {
+export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> implements OnInit {
   rawData = {
     equipments: [],
     acquisitionTypes: []
@@ -37,19 +36,20 @@ export class ModalEquipmentsComponent implements OnInit {
 
   upgradeTable = [];
 
-  @Input() public unit;
-  @Input() public equipmentPos;
-  @Input() public modalStep = 'select';
-  @Input() public equipment;
+  public unit;
+  public equipmentPos;
+  public modalStep = 'select';
+  public equipment;
 
   constructor(
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
     private toolService: ToolService,
     private navService: NavService,
-    private modalService: NgbModal,
-    private modal: NgbActiveModal
+    private simpleModalService: SimpleModalService
   ) {
+    super();
+
     this.version = this.navService.getVersion();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -149,10 +149,6 @@ export class ModalEquipmentsComponent implements OnInit {
     await this.getEquipments();
   }
 
-  close() {
-    this.modal.dismiss();
-  }
-
   back() {
     this.modalStep = 'select';
   }
@@ -200,29 +196,38 @@ export class ModalEquipmentsComponent implements OnInit {
     this.equipmentService.resetEquipment(this.equipment);
   }
 
+  closeButton() {
+    this.result = 'close';
+    this.close();
+  }
+
   save() {
-    this.modal.close(this.equipment);
+    this.result = this.equipment;
+    this.close();
   }
 
   removeEquipment() {
-    this.modal.close(null);
+    this.close();
   }
 
   openMateriaModal(type) {
-    const modalRef = this.modalService.open(ModalMateriaComponent, { windowClass: 'builder-modal' });
-    modalRef.componentInstance.equipment = this.equipment;
-    modalRef.componentInstance.materiaType = type;
+    let materia = null;
+    let modalStep = 'select';
+    const equipment = this.equipment;
+    const materiaType = type;
 
     if (this.equipment.materias[type]) {
-      modalRef.componentInstance.materia = JSON.parse(JSON.stringify(this.equipment.materias[type]));
-      modalRef.componentInstance.modalStep = 'custom';
+      materia = JSON.parse(JSON.stringify(this.equipment.materias[type]));
+      modalStep = 'custom';
     }
 
-    modalRef.result.then((materia) => {
-      this.equipment.materias[type] = materia;
+    this.simpleModalService.addModal(ModalMateriaComponent, { materia: materia, modalStep: modalStep, equipment: equipment, materiaType: materiaType })
+      .subscribe(async (loadMateria) => {
+        if (loadMateria !== 'close') {
+          this.equipment.materias[type] = loadMateria;
 
-      this.equipmentService.changeMateria(this.equipment);
-    }, (reason) => {
-    });
+          this.equipmentService.changeMateria(this.equipment);
+        }
+      });
   }
 }

@@ -215,28 +215,28 @@
   padding-right: 38px;
 }
 
-.star {
+.star-inactive {
   height: 20px;
   background: url("assets/icons/star_off.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
 
-.star.filled {
+.star-active {
   height: 20px;
   background: url("assets/icons/star_on.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
 
-.lb {
+.lb-inactive {
   height: 40px;
   background: url("assets/icons/lb_off.webp") 0px 0px no-repeat;
   background-size: 20px;
   width: 20px;
 }
 
-.lb.filled {
+.lb-active {
   height: 40px;
   background: url("assets/icons/lb_on.webp") 0px 0px no-repeat;
   background-size: 20px;
@@ -542,57 +542,11 @@ tr.disable {
 }
 
 .inputMiniStatBlock {
-  width: 120px;
-}
-
-.inputMiniStatBlock .input-group-prepend {
-  width: 65px;
-  padding-right: 0;
-}
-
-.inputMiniStatBlock .input-group-prepend .input-group-text {
-  width: 100%;
-}
-
-.inputInSim {
-  text-align: right;
-}
-
-.simMiniStats {
-  width: 100%;
-  text-align: left;
-  margin-left: 2px;
-}
-
-.simMiniStats .inlineInputGroup {
-  margin-right: 10px;
-}
-
-.inputPercentage {
-  padding-left: 0;
-  padding-right: 0;
-  border-right: 0;
-}
-
-.appendPercentage {
-  border-left: 0;
-}
-
-.appendPercentage .input-group-text {
-  padding-left: 0;
-  background-color: #fff;
-}
-
-.longStatGroup:nth-child(odd) {
-  margin-right: 10px;
+  width: 122px;
 }
 
 .inputUnitStatBlock {
   width: 190px;
-}
-
-.inputDamageTypePene {
-  width: 260px;
 }
 
 
@@ -626,48 +580,8 @@ tr.disable {
   -moz-appearance: textfield;
 }
 
-.targetStatBlock {
-  width: 190px;
-}
-
-.inputBreakBlock {
-  border-top: 1px solid rgb(206, 212, 218);
-  border-bottom: 1px solid rgb(206, 212, 218);
-}
-
-.inputBreakIcon {
-  padding-right: 0;
-  background-color: #fff;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-.inputTargetBreakStat {
-  padding-left: 5px;
-  border-left: 0;
-}
-
-.inputTargetPrepend {
-  width: 58px;
-  margin: 0;
-}
-
-.inputTargetTextImg {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .targetStatImg {
   height: 34px;
-}
-
-.inlineInputGroup {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.targetStatGroup:nth-child(even) {
-  margin-right: 10px;
 }
 
 .damageTd {

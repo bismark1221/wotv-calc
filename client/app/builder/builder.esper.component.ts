@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { EsperService } from '../services/esper.service';
@@ -20,6 +20,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 export class BuilderEsperComponent implements OnInit, AfterViewInit {
   espers = [];
   esper;
+  star;
   savedEspers = {};
   loadingBuild = false;
   showSave = false;
@@ -81,7 +82,7 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     private activatedRoute: ActivatedRoute,
     private esperService: EsperService,
     private translateService: TranslateService,
-    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private toolService: ToolService,
     private authService: AuthService,
     private navService: NavService
@@ -104,6 +105,7 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
         if (esper) {
           this.selectedEsperId = esper.dataId;
           this.esper = esper;
+          this.star = this.esper.star;
           this.maxStar = this.esper.SPs.length;
           this.loadingBuild = false;
         } else {
@@ -160,7 +162,8 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
         this.esperSelector.handleClearClick();
       } else {
         this.esper = await this.esperService.selectEsperForBuilder(this.selectedEsperId, customData);
-      this.maxStar = this.esper.SPs.length;
+        this.star = this.esper.star;
+        this.maxStar = this.esper.SPs.length;
       }
     } else {
       this.esper = null;
@@ -168,8 +171,8 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     }
   }
 
-  changeStar(value) {
-    this.esper.star = value;
+  updateStar() {
+    this.esper.star = this.star;
     this.esperService.changeStar(this.esper);
   }
 
@@ -191,53 +194,43 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
 
   maxEsper() {
     this.esperService.maxEsper(this.esper);
+    this.star = this.esper.star;
   }
 
   resetEsper() {
     this.esperService.resetEsper(this.esper);
+    this.star = this.esper.star;
   }
 
   openLoadModal(esperId) {
-    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+    this.simpleModalService.addModal(ModalLoadComponent, { type: 'esper', savedItems: this.savedEspers[esperId], allowNew: true })
+      .subscribe(async (result) => {
+        if (result.type === 'new') {
+          this.selectedEsperId = esperId;
+          await this.selectEsper(null, true);
+        }
 
-    modalRef.componentInstance.type = 'esper';
-    modalRef.componentInstance.savedItems = this.savedEspers[esperId];
-    modalRef.componentInstance.allowNew = true;
+        if (result.type === 'load' && result.item) {
+          this.selectedEsperId = result.item.dataId;
+          await this.selectEsper(result.item, true);
+        }
 
-    modalRef.result.then(async result => {
-      if (result.type === 'new') {
-        this.selectedEsperId = esperId;
-        await this.selectEsper(null, true);
-      }
-
-      if (result.type === 'load' && result.item) {
-        this.selectedEsperId = result.item.dataId;
-        await this.selectEsper(result.item, true);
-      }
-
-      if (result.type === 'fullDelete') {
-        this.savedEspers[esperId] = [];
-      }
-    }, (reason) => {
-    });
+        if (result.type === 'fullDelete') {
+          this.savedEspers[esperId] = [];
+        }
+      });
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'esper';
-    modalRef.componentInstance.item = this.esper;
-
-    modalRef.result.then(result => {
-      this.savedEspers = this.esperService.getSavedEspers();
-    }, (reason) => {
-    });
+    this.simpleModalService.addModal(ModalSaveComponent, { type: 'esper', item: this.esper })
+      .subscribe((isSaved) => {
+        if (isSaved) {
+          this.savedEspers = this.esperService.getSavedEspers();
+        }
+      });
   }
 
   openLinkModal() {
-    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'esper';
-    modalRef.componentInstance.item = this.esper;
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'esper', item: this.esper });
   }
 }

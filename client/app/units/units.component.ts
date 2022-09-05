@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { UnitService } from '../services/unit.service';
@@ -96,7 +96,7 @@ export class UnitsComponent implements OnInit {
     private unitService: UnitService,
     private translateService: TranslateService,
     private navService: NavService,
-    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private toolService: ToolService,
     private jobService: JobService
   ) {
@@ -367,6 +367,6 @@ export class UnitsComponent implements OnInit {
   }
 
   openSearchOptionsModal() {
-    this.modalService.open(SearchOptionsModalComponent, { windowClass: 'options-modal' });
+    this.simpleModalService.addModal(SearchOptionsModalComponent);
   }
 }

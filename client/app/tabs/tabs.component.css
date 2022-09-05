@@ -1,0 +1,10 @@
+.nav {
+  background-color: #2c2b2b;
+}
+
+.active > button{
+  --tw-text-opacity: 1;
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+}

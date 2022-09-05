@@ -70,10 +70,6 @@
   display: none;
 }
 
-.pointer {
-  cursor: pointer;
-}
-
 .separator {
   margin-right: 5px;
 }
@@ -107,7 +103,6 @@
 
 .logo_desktop {
   height: 60px;
-  margin-left: 20px;
 }
 
 .logo_mobile {
@@ -176,7 +171,6 @@
 .split {
   height: 40px;
   width: 2px;
-  margin-left: 5px;
 }
 
 /* Version Selector */
@@ -297,58 +291,26 @@
   color: rgba(255, 255, 255, 1);
 }
 
+.langImg {
+  width: 24px;
+}
+
+.subNav {
+  z-index: 10;
+  left: -8px;
+  background-color: var(--nav-background-main);
+}
+
+.home_link {
+  width: 60px;
+}
 
 
 /* Mobile version */
 .mobileNav {
-  display: none;
-  min-height: 60px;
+  z-index: 10;
 }
 
-@media (max-width: 1175px) {
-  .mainNav, .navBuilder {
-    display: none;
-  }
-
-  .mobileNav {
-    display: block;
-    text-align: center;
-  }
-
-  .showMobileMenu {
-    display: block !important;
-  }
-
-  .mobileLinks {
-    display: none;
-    text-align: center;
-    height: 400px;
-    overflow-y: auto;
-  }
-
-  .mobileLinks .nav-item {
-    display: list-item !important;
-  }
-
-  .mobileLinks .nav-link {
-    display: block;
-  }
-
-  .btnMenuMobile {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1100;
-  }
-
-  .subLinksMobile {
-    border-top: 1px solid var(--subnav-background);
-    border-bottom: 1px solid var(--subnav-background);
-  }
-
-  .mobileVersionLink {
-    margin-right: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
+.backgroundMobile {
+  background-color: var(--mobile-nav-background);
 }

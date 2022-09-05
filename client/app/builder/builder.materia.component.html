@@ -2,12 +2,12 @@
   <div class="leftBlock">
     <h1 class="boldText">FILTERS</h1>
     <div class="filters">
-      <div class="boldText" (click)="toogleCollapse('rarity')" [attr.aria-expanded]="!collapsed.rarity">
+      <div class="boldText my-3" (click)="toogleCollapse('rarity')">
         Rarity
         <i class="fas fa-chevron-up" *ngIf="!collapsed.rarity" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.rarity" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.rarity">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.rarity">
         <div *ngFor="let rarity of rarities">
           <input type="checkbox" id="rarity{{ rarity }}" (change)="filterList('rarity', rarity)" [checked]="isFilterChecked.rarity[rarity]"/>
           <label for="rarity{{ rarity }}">{{ rarity }}</label>
@@ -16,12 +16,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('type')" [attr.aria-expanded]="!collapsed.type">
+      <div class="boldText my-3" (click)="toogleCollapse('type')">
         Type
         <i class="fas fa-chevron-up" *ngIf="!collapsed.type" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.type" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.type">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.type">
         <div *ngFor="let type of types">
           <input type="checkbox" id="type{{ type }}" (change)="filterList('type', type)" [checked]="isFilterChecked.type[type]"/>
           <label for="type{{ type }}">{{ translatedTypes[version][type] | titlecase }}</label>
@@ -35,10 +35,6 @@
       <div>
         <button class="btn btn-main" (click)="buildNewMateria()" *ngIf="!loadingData">BUILD NEW MATERIA</button>
       </div>
-      <!-- <div class="searchBlock">
-        <i class="fas fa-search" aria-hidden="true"></i>
-        <input class="searchInput" type="text" placeholder="Search for a card by name" [(ngModel)]="searchText">
-      </div> -->
       <div class="underSearchBlock">
         <div class="totalMaterias">
           A total of <span class="countMaterias">{{ getFilteredMaterias().length }}</span> materia found

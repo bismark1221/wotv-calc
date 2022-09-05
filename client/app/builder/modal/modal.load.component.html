@@ -1,32 +1,40 @@
-<div>
-  <div class="titleBlock">
-    <div class="title">
-      LOAD {{ type | uppercase }}
-    </div>
-    <div class="closeButton">
-      <button type="button" class="close" aria-label="Close" (click)="close()">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div>
+<div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
-  <div class="listModal">
-    <div class="newBuildBlock" *ngIf="allowNew">
-      <button class="btn btn-sub" (click)="load(null)">Create new build</button>
-    </div>
+  <div class="fixed inset-0 z-10 overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center items-center p-0">
+      <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full lg:max-w-4xl" >
+        <div class="modal-title-background px-4 py-3 sm:px-6">
+          <div class="title justify-start">
+            LOAD {{ type | uppercase }}
+          </div>
+          <div class="closeButton justify-end">
+            <button type="button" class="close" aria-label="Close" (click)="close()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
 
-    <table class="tableList" *ngIf="savedItems && savedItems.length > 0">
-      <tr>
-        <th>{{ type | titlecase }}</th>
-        <th>Load</th>
-        <th>Delete</th>
-      </tr>
-      <tr *ngFor="let item of savedItems">
-        <td *ngIf="type === 'team'">{{ item ? item.name : '' }}</td>
-        <td *ngIf="type !== 'team'">{{ item ? item.customName : '' }}</td>
-        <td><a (click)="load(item)"><i class="fas fa-download"></i></a></td>
-        <td><a (click)="delete(item)"><i class="fas fa-trash"></i></a></td>
-      </tr>
-    </table>
+        <div class="modal-body-background px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div class="newBuildBlock" *ngIf="allowNew">
+            <button class="btn btn-sub" (click)="load(null)">Create new build</button>
+          </div>
+
+          <table class="tableList inverted" *ngIf="savedItems && savedItems.length > 0">
+            <tr class="inverted">
+              <th class="inverted">{{ type | titlecase }}</th>
+              <th class="inverted">Load</th>
+              <th class="inverted">Delete</th>
+            </tr>
+            <tr class="inverted" *ngFor="let item of savedItems">
+              <td class="inverted" *ngIf="type === 'team'">{{ item ? item.name : '' }}</td>
+              <td class="inverted" *ngIf="type !== 'team'">{{ item ? item.customName : '' }}</td>
+              <td class="inverted"><a class="linkedIcons" (click)="load(item)"><i class="fas fa-download"></i></a></td>
+              <td class="inverted"><a class="linkedIcons" (click)="delete(item)"><i class="fas fa-trash"></i></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

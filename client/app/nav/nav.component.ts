@@ -3,7 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalService } from 'ngx-simple-modal';
 
 import { NavService } from '../services/nav.service';
 import { ThemeService } from '../services/theme.service';
@@ -30,11 +30,13 @@ export class NavComponent implements OnInit, AfterViewInit {
   inEquipment = false;
   inRaid = false;
   inQuest = false;
+
   showBuilderNav = false;
+  showListingNav = false;
   showOtherNav = false;
-  showVersionSelector = false;
-  showLangSelector = false;
-  showUserMenu = false;
+  showLangNav = false;
+  showUserNav = false;
+
   actualRoute = null;
   version = null;
   theme = null;
@@ -48,7 +50,7 @@ export class NavComponent implements OnInit, AfterViewInit {
     private navService: NavService,
     private router: Router,
     private themeService: ThemeService,
-    private modalService: NgbModal,
+    private simpleModalService: SimpleModalService,
     private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -128,11 +130,11 @@ export class NavComponent implements OnInit, AfterViewInit {
 
       this.angulartics.eventTrack.next({ action: lang, properties: { category: 'change_lang' }});
     }
-
-    this.showLangSelector = false;
   }
 
-  changeVersion(version) {
+  changeVersion() {
+    const version = this.version === 'GL' ? 'JP' : 'GL';
+
     if (version === 'GL' && this.actualRoute.length >= 2 && this.actualRoute[1] === 'JP') {
       this.actualRoute.splice(1, 1);
 
@@ -144,8 +146,6 @@ export class NavComponent implements OnInit, AfterViewInit {
       const route = this.actualRoute.join('/').split('#');
       this.router.navigate([route[0]], { preserveFragment: true });
     }
-
-    this.showVersionSelector = false;
   }
 
   getRoute(route) {
@@ -157,9 +157,7 @@ export class NavComponent implements OnInit, AfterViewInit {
   }
 
   openLoginModal() {
-    const modalRef = this.modalService.open(LoginComponent, { windowClass: 'login-modal' });
-
-    modalRef.result.then((user) => {}, (reason) => {});
+    const modalRef = this.simpleModalService.addModal(LoginComponent);
   }
 
   logout() {
@@ -170,8 +168,31 @@ export class NavComponent implements OnInit, AfterViewInit {
     this.displayMobileMenu = forceClose ? false : !this.displayMobileMenu;
 
     if (forceClose) {
-      this.showMobileBuilderNav = false;
-      this.showMobileOtherNav = false;
+      this.showOtherNav = false;
+      this.showUserNav = false;
+      this.showLangNav = false;
+      this.showBuilderNav = false;
+      this.showListingNav = false;
     }
+  }
+
+  toggleOtherNav(status) {
+    this.showOtherNav = status;
+  }
+
+  toggleUserNav(status) {
+    this.showUserNav = status;
+  }
+
+  toggleLangNav(status) {
+    this.showLangNav = status;
+  }
+
+  toggleBuilderNav(status) {
+    this.showBuilderNav = status;
+  }
+
+  toggleListingNav(status) {
+    this.showListingNav = status;
   }
 }

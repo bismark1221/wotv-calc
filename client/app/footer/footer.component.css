@@ -19,10 +19,8 @@ hr {
 }
 
 .textFooter {
-  height: 30px;
-  width: 600px;
+  display: inline-block;
   margin: auto;
-  line-height: 40px;
 }
 
 .red {
@@ -41,4 +39,10 @@ hr {
 
 .twitter, .youtube, .contact, .legal, .discord {
   padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .links {
+    float: none;
+  }
 }

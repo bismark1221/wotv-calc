@@ -29,7 +29,6 @@
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 800px;
 }
 
 .nameInput, .saveButton {
@@ -38,12 +37,12 @@
 }
 
 .replaceButton {
-  width: 390px;
+  width: 48%;
   margin-right: 10px;
 }
 
 .cancelButton {
-  width: 390px;
+  width: 48%;
 }
 
 .saveButton, .confirmButtons {

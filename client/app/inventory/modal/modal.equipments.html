@@ -1,160 +1,162 @@
-<div *ngIf="modalStep === 'select'">
-  <div class="titleBlock">
-    <div class="title">
-      EQUIPEMENT
-    </div>
-    <div class="closeButton">
-      <button type="button" class="close" aria-label="Close" (click)="close()">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div>
+<div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
-  <div class="equipments">
-    <div class="upperBlock">
-      <div class="searchBlock">
-        <i class="fas fa-search" aria-hidden="true"></i>
-        <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText">
-      </div>
-      <div class="filtersBlock">
-        Filter by :
-        <button *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}" (click)="filterList('rarity', rarity)">
-          <img class="filterRarity" src="assets/rarity/{{rarity}}.webp" />
-        </button>
-        <button *ngFor="let category of ['weapon', 'armor', 'acc']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('category', category)}" (click)="filterList('category', category)">
-          {{ category | titlecase }}
-        </button>
-        <div class="acquisitionExpander" (click)="collapsedAcquisition = !collapsedAcquisition" [attr.aria-expanded]="collapsedAcquisition">
-          Acquisition Type
-          <i class="fas fa-chevron-up" *ngIf="!collapsedAcquisition" aria-hidden="true"></i>
-          <i class="fas fa-chevron-down" *ngIf="collapsedAcquisition" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div [ngbCollapse]="collapsedAcquisition">
-        <div class="acquisitionType"><a class="unselectAllTypeLink" (click)="unselectAllType()">unselect all</a></div>
-        <div class="acquisitionType" *ngFor="let type of acquisitionTypes">
-          <input type="checkbox" id="type{{type}}" (change)="filterList('acquisition', type)" [checked]="isAcquisitionChecked[type]"/>
-          <label for="type{{type}}">{{ type }}</label>
-        </div>
-      </div>
-    </div>
-
-    <hr class="separator" />
-
-    <div class="equipmentsList">
-      <div class="equipmentsCol">
-        <a (click)="removeEquipment()" id="removeEquipment">
-          <div class="equipmentImgBlockRemove">
-            <img class="equipmentImg" src="assets/builder/remove.webp" />
+  <div class="fixed inset-0 z-10 overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center items-center p-0">
+      <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full lg:max-w-6xl" >
+        <div class="modal-title-background px-4 py-3 sm:px-6">
+          <div class="title justify-start">
+            <span *ngIf="modalStep === 'select'">EQUIPEMENT</span>
+            <span *ngIf="modalStep === 'custom'">{{ equipment.name }}</span>
           </div>
-        </a>
-      </div>
-
-      <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
-        <a (click)="selectEquipment(equipment.dataId)" id="equipmentBlock_{{equipment.dataId}}">
-          <div class="equipmentIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
+          <div class="closeButton justify-end">
+            <button type="button" class="close" aria-label="Close" (click)="closeButton()">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="equipmentImgBlock">
-            <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
+        </div>
+
+        <div class="modal-body-background px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div *ngIf="modalStep === 'select'">
+            <div class="equipments">
+              <div class="upperBlock">
+                <div class="searchBlock">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                  <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText">
+                </div>
+                <div class="filtersBlock">
+                  Filter by :
+                  <button *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}" (click)="filterList('rarity', rarity)">
+                    <img class="filterRarity" src="assets/rarity/{{rarity}}.webp" />
+                  </button>
+                  <button *ngFor="let category of ['weapon', 'armor', 'acc']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('category', category)}" (click)="filterList('category', category)">
+                    {{ category | titlecase }}
+                  </button>
+                  <div class="acquisitionExpander" (click)="collapsedAcquisition = !collapsedAcquisition">
+                    Acquisition Type
+                    <i class="fas fa-chevron-up" *ngIf="!collapsedAcquisition" aria-hidden="true"></i>
+                    <i class="fas fa-chevron-down" *ngIf="collapsedAcquisition" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div *ngIf="!collapsedAcquisition">
+                  <div class="acquisitionType"><a class="unselectAllTypeLink" (click)="unselectAllType()">unselect all</a></div>
+                  <div class="acquisitionType" *ngFor="let type of acquisitionTypes">
+                    <input type="checkbox" id="type{{type}}" (change)="filterList('acquisition', type)" [checked]="isAcquisitionChecked[type]"/>
+                    <label for="type{{type}}">{{ type }}</label>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="separator" />
+
+              <div class="equipmentsList">
+                <div class="equipmentsCol">
+                  <a (click)="removeEquipment()" id="removeEquipment">
+                    <div class="equipmentImgBlockRemove">
+                      <img class="equipmentImg" src="assets/builder/remove.webp" />
+                    </div>
+                  </a>
+                </div>
+
+                <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
+                  <a (click)="selectEquipment(equipment.dataId)" id="equipmentBlock_{{equipment.dataId}}">
+                    <div class="equipmentIcons">
+                      <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
+                    </div>
+                    <div class="equipmentImgBlock">
+                      <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
+                    </div>
+                    <div class="equipmentTitle">
+                      <span class="equipmentName">{{ equipment.name }}</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="equipmentTitle">
-            <span class="equipmentName">{{ equipment.name }}</span>
+
+          <div *ngIf="modalStep === 'custom'">
+            <div class="backButtonDiv">
+              <button class="btn btn-sub" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Equipment</button>
+            </div>
+
+            <div class="customDiv">
+              <div class="leftBlock">
+                <div class="equipmentsCol">
+                  <div class="equipmentIcons">
+                    <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
+                  </div>
+                  <div>
+                    <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
+                  </div>
+                  <div class="equipmentTitle">
+                    <span class="equipmentName">{{ equipment.name }}</span>
+                  </div>
+                </div>
+
+                <button class="btn btn-main btn-save" (click)="save()">SAVE</button>
+              </div>
+
+              <div class="rightBlock">
+                <div class="equipmentInfo" *ngIf="equipment && equipment.skills.length > 1">
+                  <div class="titleSelect">
+                    Upgrade
+                  </div>
+                  <ng-select
+                    placeholder="Select an upgrade"
+                    class="select-upgrade select-left-builder"
+                    [items]="[0, 1, 2, 3, 4, 5]"
+                    [(ngModel)]="equipment.upgrade"
+                    [clearable]="false"
+                    [searchable]="false"
+                    id="select-upgrade"
+                  >
+                    <ng-template ng-label-tmp let-item="item">
+                      {{ item === 0 ? 0 : '+' + item }}
+                    </ng-template>
+
+                    <ng-template ng-option-tmp let-item="item">
+                      {{ item === 0 ? 0 : '+' + item }}
+                    </ng-template>
+                  </ng-select>
+                </div>
+
+                <div class="equipmentInfo" *ngIf="equipment && equipment.growIds && equipment.growIds.length > 1">
+                  <div class="titleSelect">
+                    Type
+                  </div>
+                  <ng-select
+                    placeholder="Select a grow"
+                    class="select-grow select-left-builder"
+                    [items]="equipment.growIds"
+                    [(ngModel)]="equipment.grow"
+                    [clearable]="false"
+                    [searchable]="false"
+                    id="select-type"
+                  >
+                    <ng-template ng-label-tmp let-item="item">
+                      {{ equipment.grows[item].name }}
+                    </ng-template>
+
+                    <ng-template ng-option-tmp let-item="item">
+                      {{ equipment.grows[item].name }}
+                    </ng-template>
+                  </ng-select>
+                </div>
+
+                <div class="equipmentInfo" *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+                  <div class="titleSelect">
+                    Level
+                  </div>
+                  <div>
+                    <select [(ngModel)]="equipment.level">
+                      <option *ngFor="let level of equipment.tableLevel">{{ level }}</option>
+                    </select> / {{ equipment.maxLevel }}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div *ngIf="modalStep === 'custom'">
-  <div class="titleBlock">
-    <div class="title">
-      {{ equipment.name }}
-    </div>
-    <div class="closeButton">
-      <button type="button" class="close" aria-label="Close" (click)="close()">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div>
-
-  <div class="backButtonDiv">
-    <button class="btn btn-sub" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Equipment</button>
-  </div>
-
-  <div class="customDiv">
-    <div class="leftBlock">
-      <div class="equipmentsCol">
-        <div class="equipmentIcons">
-          <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
-        </div>
-        <div>
-          <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
-        </div>
-        <div class="equipmentTitle">
-          <span class="equipmentName">{{ equipment.name }}</span>
-        </div>
-      </div>
-
-      <button class="btn btn-main btn-save" (click)="save()">SAVE</button>
-    </div>
-
-    <div class="rightBlock">
-      <div class="equipmentInfo" *ngIf="equipment && equipment.skills.length > 1">
-        <div class="titleSelect">
-          Upgrade
-        </div>
-        <ng-select
-          placeholder="Select an upgrade"
-          class="select-upgrade select-left-builder"
-          [items]="[0, 1, 2, 3, 4, 5]"
-          [(ngModel)]="equipment.upgrade"
-          [clearable]="false"
-          [searchable]="false"
-          id="select-upgrade"
-        >
-          <ng-template ng-label-tmp let-item="item">
-            {{ item === 0 ? 0 : '+' + item }}
-          </ng-template>
-
-          <ng-template ng-option-tmp let-item="item">
-            {{ item === 0 ? 0 : '+' + item }}
-          </ng-template>
-        </ng-select>
-      </div>
-
-      <div class="equipmentInfo" *ngIf="equipment && equipment.growIds && equipment.growIds.length > 1">
-        <div class="titleSelect">
-          Type
-        </div>
-        <ng-select
-          placeholder="Select a grow"
-          class="select-grow select-left-builder"
-          [items]="equipment.growIds"
-          [(ngModel)]="equipment.grow"
-          [clearable]="false"
-          [searchable]="false"
-          id="select-type"
-        >
-          <ng-template ng-label-tmp let-item="item">
-            {{ equipment.grows[item].name }}
-          </ng-template>
-
-          <ng-template ng-option-tmp let-item="item">
-            {{ equipment.grows[item].name }}
-          </ng-template>
-        </ng-select>
-      </div>
-
-      <div class="equipmentInfo" *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
-        <div class="titleSelect">
-          Level
-        </div>
-        <div>
-          <select [(ngModel)]="equipment.level">
-            <option *ngFor="let level of equipment.tableLevel">{{ level }}</option>
-          </select> / {{ equipment.maxLevel }}
         </div>
       </div>
     </div>

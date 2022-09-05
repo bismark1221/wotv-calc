@@ -149,7 +149,7 @@
         <th>Level</th>
       </tr>
       <tbody *ngFor="let ally of quest.formattedAllies; let j = index">
-        <tr (click)="isCollapsedAlly[j] = !isCollapsedAlly[j]" [attr.aria-expanded]="!isCollapsedAlly[j]" class="enemyLine">
+        <tr (click)="isCollapsedAlly[j] = !isCollapsedAlly[j]" class="enemyLine">
           <td>
             <div class="collapseBlock">
               <i class="fas fa-chevron-up" *ngIf="!isCollapsedAlly[j]" aria-hidden="true"></i>
@@ -170,7 +170,7 @@
           </td>
           <td>{{ ally.level }}</td>
         </tr>
-        <tr [ngbCollapse]="isCollapsedAlly[j]">
+        <tr *ngIf="!isCollapsedAlly[j]">
           <td colspan="99" class="enemyDetailCol">
             <table>
               <tr>
@@ -278,13 +278,13 @@
                       <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                     </span>
                     <span *ngIf="skill.time && skill.time.minValue">
-                      <ng-template #tip_time>
-                        <div>
+                      <popper-content #tip_time>
+                        <div class="timeTooltip">
                           Min time: {{ skill.time.minValue }}<br />
                           Max time: {{ skill.time.maxValue }}
                         </div>
-                      </ng-template>
-                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                      </popper-content>
+                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                       <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                     </span>
                     <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.webp'}}" /></span>
@@ -298,7 +298,7 @@
                     </div>
 
                     <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                      <ng-template #tip_damage>
+                      <popper-content #tip_damage>
                         <div *ngIf="skill.based === 'physic'">
                           {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                         </div>
@@ -318,8 +318,8 @@
                         <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                           {{ skill.damage.formula[3] }}% LUCK
                         </div>
-                      </ng-template>
-                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      </popper-content>
+                      <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                       <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                     </div>
 
@@ -329,10 +329,10 @@
                   </td>
                   <td>
                     <div *ngIf="skill.type != 'support'">
-                      <ng-template #tip_table>
+                      <popper-content #tip_table>
                         <div [innerHTML]="skill.skillTableHtml"></div>
-                      </ng-template>
-                      <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                      </popper-content>
+                      <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                         <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                       </div>
                     </div>
@@ -359,7 +359,7 @@
         <th>Entry</th>
       </tr>
       <tbody *ngFor="let enemy of quest.formattedEnemies; let j = index">
-        <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" [attr.aria-expanded]="!isCollapsedEnemy[j]" class="enemyLine">
+        <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" class="enemyLine">
           <td>
             <div class="collapseBlock">
               <i class="fas fa-chevron-up" *ngIf="!isCollapsedEnemy[j]" aria-hidden="true"></i>
@@ -382,15 +382,15 @@
           <td>{{ enemy.level }}</td>
           <td>{{ enemy.species }}</td>
           <td>
-            <ng-template #tip_time>
+            <popper-content #tip_time>
               <div *ngFor="let entryCond of enemy.formattedEntryCond; let entryIndex = index">
                 <span *ngIf="entryIndex > 0">Or </span>{{ entryCond }}
               </div>
-            </ng-template>
-            <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time" *ngIf="enemy.formattedEntryCond && enemy.formattedEntryCond.length > 0"/>
+            </popper-content>
+            <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true" *ngIf="enemy.formattedEntryCond && enemy.formattedEntryCond.length > 0"/>
           </td>
         </tr>
-        <tr [ngbCollapse]="isCollapsedEnemy[j]">
+        <tr *ngIf="!isCollapsedEnemy[j]">
           <td colspan="99" class="enemyDetailCol">
             <table>
               <tr>
@@ -519,13 +519,13 @@
                       <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                     </span>
                     <span *ngIf="skill.time && skill.time.minValue">
-                      <ng-template #tip_time>
-                        <div>
+                      <popper-content #tip_time>
+                        <div class="timeTooltip">
                           Min time: {{ skill.time.minValue }}<br />
                           Max time: {{ skill.time.maxValue }}
                         </div>
-                      </ng-template>
-                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                      </popper-content>
+                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                       <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                     </span>
                     <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.webp'}}" /></span>
@@ -539,7 +539,7 @@
                     </div>
 
                     <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                      <ng-template #tip_damage>
+                      <popper-content #tip_damage>
                         <div *ngIf="skill.based === 'physic'">
                           {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                         </div>
@@ -559,8 +559,8 @@
                         <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                           {{ skill.damage.formula[3] }}% LUCK
                         </div>
-                      </ng-template>
-                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      </popper-content>
+                      <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                       <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                     </div>
 
@@ -570,10 +570,10 @@
                   </td>
                   <td>
                     <div *ngIf="skill.type != 'support'">
-                      <ng-template #tip_table>
+                      <popper-content #tip_table>
                         <div [innerHTML]="skill.skillTableHtml"></div>
-                      </ng-template>
-                      <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                      </popper-content>
+                      <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                         <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                       </div>
                     </div>
@@ -611,7 +611,7 @@
         <th class="nameCol">Name</th>
       </tr>
       <tbody *ngFor="let chest of quest.formattedChests; let j = index">
-        <tr (click)="isCollapsedChest[j] = !isCollapsedChest[j]" [attr.aria-expanded]="!isCollapsedChest[j]" class="enemyLine">
+        <tr (click)="isCollapsedChest[j] = !isCollapsedChest[j]" class="enemyLine">
           <td>
             <div class="collapseBlock">
               <i class="fas fa-chevron-up" *ngIf="!isCollapsedChest[j]" aria-hidden="true"></i>
@@ -621,7 +621,7 @@
           </td>
           <td><img src="assets/units/{{chest.image}}_m.webp" class="enemyImg" />{{ chest.name }}</td>
         </tr>
-        <tr [ngbCollapse]="isCollapsedChest[j]">
+        <tr *ngIf="!isCollapsedChest[j]">
           <td colspan="99" class="enemyDetailCol">
             <div *ngIf="quest.chests && quest.chests[j].drop && quest.dropLists && quest.dropLists[quest.chests[j].drop]">
               <div *ngFor="let item of quest.dropLists[quest.chests[j].drop]" class="dropRateItemBlock">
@@ -643,7 +643,7 @@
         <th class="nameCol">Name</th>
       </tr>
       <tbody *ngFor="let object of quest.formattedObjects; let j = index">
-        <tr (click)="isCollapsedObject[j] = !isCollapsedObject[j]" [attr.aria-expanded]="!isCollapsedObject[j]" class="enemyLine">
+        <tr (click)="isCollapsedObject[j] = !isCollapsedObject[j]" class="enemyLine">
           <td>
             <div class="collapseBlock">
               <i class="fas fa-chevron-up" *ngIf="!isCollapsedObject[j]" aria-hidden="true"></i>
@@ -653,7 +653,7 @@
           </td>
           <td><img src="assets/units/{{object.image}}_m.webp" class="enemyImg" />{{ object.name }}</td>
         </tr>
-        <tr [ngbCollapse]="isCollapsedObject[j]">
+        <tr *ngIf="!isCollapsedObject[j]">
           <td colspan="99" class="enemyDetailCol">
             <table>
               <tr>
@@ -761,13 +761,13 @@
                       <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
                     </span>
                     <span *ngIf="skill.time && skill.time.minValue">
-                      <ng-template #tip_time>
-                        <div>
+                      <popper-content #tip_time>
+                        <div class="timeTooltip">
                           Min time: {{ skill.time.minValue }}<br />
                           Max time: {{ skill.time.maxValue }}
                         </div>
-                      </ng-template>
-                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [ngbTooltip]="tip_time"/>
+                      </popper-content>
+                      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
                       <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
                     </span>
                     <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'"><img title="Preemptive Counter" class='atkBasedImg' src="{{'assets/icons/preemptive_counter.webp'}}" /></span>
@@ -781,7 +781,7 @@
                     </div>
 
                     <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                      <ng-template #tip_damage>
+                      <popper-content #tip_damage>
                         <div *ngIf="skill.based === 'physic'">
                           {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                         </div>
@@ -801,8 +801,8 @@
                         <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
                           {{ skill.damage.formula[3] }}% LUCK
                         </div>
-                      </ng-template>
-                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      </popper-content>
+                      <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                       <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                     </div>
 
@@ -812,10 +812,10 @@
                   </td>
                   <td>
                     <div *ngIf="skill.type != 'support'">
-                      <ng-template #tip_table>
+                      <popper-content #tip_table>
                         <div [innerHTML]="skill.skillTableHtml"></div>
-                      </ng-template>
-                      <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                      </popper-content>
+                      <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
                         <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                       </div>
                     </div>

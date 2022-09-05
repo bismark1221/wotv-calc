@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
+import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { GuildService } from '../../services/guild.service';
 
@@ -9,27 +9,30 @@ import { GuildService } from '../../services/guild.service';
   templateUrl: './modal.guild.component.html',
   styleUrls: ['./modal.guild.component.css']
 })
-export class ModalGuildComponent implements OnInit {
+export class ModalGuildComponent extends SimpleModalComponent<null, any> implements OnInit {
   statues;
   statueNames;
 
   @Input() public guild;
 
   constructor(
-    private guildService: GuildService,
-    private modal: NgbActiveModal
-  ) {}
+    private guildService: GuildService
+  ) {
+    super();
+  }
 
   ngOnInit() {
     this.statues = this.guildService.getStatues();
     this.statueNames = Object.keys(this.statues);
   }
 
-  close() {
-    this.modal.dismiss();
+  closeButton() {
+    this.result = 'close';
+    this.close();
   }
 
   save() {
-    this.modal.close(this.guild);
+    this.result = this.guild;
+    this.close();
   }
 }

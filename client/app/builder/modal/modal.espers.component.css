@@ -277,18 +277,18 @@
   width: 100%;
 }
 
-.star {
-  height: 40px;
+.star-inactive {
+  height: 20px;
   background: url("assets/icons/star_off.webp") 0px 0px no-repeat;
-  background-size: 40px;
-  width: 40px;
+  background-size: 20px;
+  width: 20px;
 }
 
-.star.filled {
-  height: 40px;
+.star-active {
+  height: 20px;
   background: url("assets/icons/star_on.webp") 0px 0px no-repeat;
-  background-size: 40px;
-  width: 40px;
+  background-size: 20px;
+  width: 20px;
 }
 
 .zone-select-level {

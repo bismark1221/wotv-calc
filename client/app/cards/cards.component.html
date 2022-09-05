@@ -2,12 +2,12 @@
   <div class="leftBlock">
     <h1 class="boldText">FILTERS</h1>
     <div class="filters">
-      <div class="boldText" (click)="toogleCollapse('rarity')" [attr.aria-expanded]="!collapsed.rarity">
+      <div class="boldText my-3" (click)="toogleCollapse('rarity')">
         Rarity
         <i class="fas fa-chevron-up" *ngIf="!collapsed.rarity" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.rarity" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.rarity">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.rarity">
         <div *ngFor="let rarity of rarities">
           <input type="checkbox" id="rarity{{ rarity }}" (change)="filterList('rarity', rarity)" [checked]="isFilterChecked.rarity[rarity]"/>
           <label for="rarity{{ rarity }}">{{ rarity }}</label>
@@ -16,12 +16,12 @@
 
       <hr/>
 
-      <div class="boldText" (click)="toogleCollapse('element')" [attr.aria-expanded]="!collapsed.element">
+      <div class="boldText my-3" (click)="toogleCollapse('element')">
         Party effects elements
         <i class="fas fa-chevron-up" *ngIf="!collapsed.element" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.element" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.element">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.element">
         <div *ngFor="let element of elements">
           <input type="checkbox" id="element{{ element }}" (change)="filterList('element', element)" [checked]="isFilterChecked.element[element]"/>
           <label for="element{{ element }}">{{ element | titlecase }}</label>
@@ -30,12 +30,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('limited')" [attr.aria-expanded]="!collapsed.limited">
+      <div class="boldText my-3" (click)="toogleCollapse('limited')">
         Limited
         <i class="fas fa-chevron-up" *ngIf="!collapsed.limited" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.limited" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.limited">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.limited">
         <div>
           <input type="checkbox" id="limitedYes" (change)="filterList('limited', true)" [checked]="isFilterChecked.limited['true']"/>
           <label for="limitedYes">Yes</label>
@@ -48,12 +48,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('cost')" [attr.aria-expanded]="!collapsed.cost">
+      <div class="boldText my-3" (click)="toogleCollapse('cost')">
         Cost
         <i class="fas fa-chevron-up" *ngIf="!collapsed.cost" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.cost" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.cost">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.cost">
         <div *ngFor="let cost of costs">
           <input type="checkbox" id="cost{{ cost }}" (change)="filterList('cost', cost)" [checked]="isFilterChecked.cost[cost]"/>
           <label for="cost{{ cost }}">{{ cost }}</label>
@@ -62,12 +62,12 @@
 
       <hr />
 
-      <div class="boldText" (click)="toogleCollapse('skill')" [attr.aria-expanded]="!collapsed.skill">
+      <div class="boldText my-3" (click)="toogleCollapse('skill')">
         Skill
         <i class="fas fa-chevron-up" *ngIf="!collapsed.skill" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="collapsed.skill" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="collapsed.skill">
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.skill">
         <div class="switchMainJob">
           Only active skill ?
           <ui-switch class="switchActiveSkill" (click)="toggleOnlyActiveSkill()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.onlyActiveSkill === true"></ui-switch>
