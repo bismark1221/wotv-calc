@@ -9,7 +9,6 @@ import { LocalStorageModule } from 'angular-2-local-storage';
 import { Angulartics2Module } from 'angulartics2';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { PrettyJsonModule } from 'angular2-prettyjson';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { ClipboardModule } from 'ngx-clipboard';
 import { UiSwitchModule } from 'ngx-ui-switch';
@@ -18,7 +17,6 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgClickOutsideDirective } from 'ng-click-outside2';
-import { ToastrModule } from 'ngx-toastr';
 import { SimpleModalModule, defaultSimpleModalOptions } from 'ngx-simple-modal';
 import { NgxPopperjsModule } from 'ngx-popperjs';
 import { BarRatingModule } from 'ngx-bar-rating';
@@ -213,16 +211,12 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    PrettyJsonModule,
     NgSelectModule,
     ClipboardModule,
     UiSwitchModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     NgClickOutsideDirective,
-    ToastrModule.forRoot({
-      positionClass: 'toast-bottom-right'
-    }),
     SimpleModalModule.forRoot({container: 'modal-container'}, {...defaultSimpleModalOptions, ...{
       closeOnEscape: true,
       animationDuration: 1,

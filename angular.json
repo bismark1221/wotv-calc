@@ -23,10 +23,7 @@
               "client/styles.css",
               "./node_modules/ngx-ui-switch/ui-switch.component.css"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/select2/dist/js/select2.full.min.js"
-            ],
+            "scripts": [],
             "aot": false,
             "vendorChunk": true,
             "extractLicenses": false,
@@ -88,8 +85,6 @@
             "polyfills": "client/polyfills.ts",
             "tsConfig": "client/tsconfig.spec.json",
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/select2/dist/js/select2.full.min.js"
             ],
             "styles": [
               "client/styles.css",

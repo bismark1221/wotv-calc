@@ -1,7 +1,5 @@
 /* Import external libraries */
-@import "~select2-bootstrap-theme/dist/select2-bootstrap.min.css";
 @import "~@ng-select/ng-select/themes/default.theme.css";
-@import '~ngx-toastr/toastr';
 
 @tailwind base;
 @tailwind components;
