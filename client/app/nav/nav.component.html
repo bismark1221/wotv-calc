@@ -110,7 +110,7 @@
       <div class="pt-5 pb-6 px-5">
         <div class="flex items-center justify-between">
           <div>
-            <a [routerLink]="[getRoute('/')]" class="home_link">
+            <a [routerLink]="[getRoute('/')]" class="home_link" (click)="toggleMobileMenu(true)">
               <img class="logo_desktop" src="assets/nav/WOTVCALC_LOGO_WHITE.webp" alt="">
             </a>
           </div>
