@@ -69,7 +69,11 @@
   margin-right: 20px;
 }
 
-.unitImg, .cardImg {
+.unitImg {
+  margin-right: 5px;
+}
+
+.cardImg {
   height: 100px;
   margin-right: 5px;
 }

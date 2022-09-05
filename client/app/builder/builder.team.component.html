@@ -28,7 +28,7 @@
         <div class="unitLine" id="unit_{{item.dataId}}">
           <div class="unitSelector" id="unitSelector_{{item.dataId}}">
             <div class="unitLogo">
-              <img src="assets/units/{{ item.image }}_m.webp" />
+              <img src="assets/units/{{ item.image }}_small.webp" />
             </div>
             <div class="unitNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
           </div>
@@ -52,7 +52,7 @@
             <img class="elementImg" src="{{'assets/elements/' + unit.element + '.webp'}}" />
           </div>
           <div>
-            <img class="unitImg" src="assets/units/{{ unit.image }}_m.webp" />
+            <img class="unitImg" src="assets/units/{{ unit.image }}_card.webp" />
           </div>
         </td>
       </tr>

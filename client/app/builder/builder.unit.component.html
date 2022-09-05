@@ -20,7 +20,7 @@
       <div class="unitLine" id="unit_{{item.dataId}}">
         <div class="unitSelector" id="unitSelector_{{item.dataId}}" [ngClass]="{'unitSelectorWithSave': savedUnits[item.dataId]}">
           <div class="unitLogo">
-            <img src="assets/units/{{ item.image }}_m.webp" />
+            <img src="assets/units/{{ item.image }}_small.webp" />
           </div>
           <div class="unitNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
         </div>
@@ -59,7 +59,7 @@
               <img class="elementImg" src="{{'assets/elements/' + unit.element + '.webp'}}" />
             </div>
             <div>
-              <img class="unitImg" src="assets/units/{{ unit.image }}_m.webp" />
+              <img class="unitImg" src="assets/units/{{ unit.image }}_card.webp" />
             </div>
           </td>
         </tr>
@@ -1374,7 +1374,7 @@
           <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
           <div class="hex activated" *ngIf="unit.grid.nodesForGrid[node].type === 'center'">
-            <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.webp' }}"></span>
+            <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_card.webp' }}"></span>
           </div>
 
           <div class="hex" *ngIf="unit.grid.nodesForGrid[node].type === 'text'"

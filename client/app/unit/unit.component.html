@@ -1450,7 +1450,7 @@
             <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
             <div class="hex activated" *ngIf="grid.nodesForGrid[node].type === 'center'">
-              <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.webp' }}"></span>
+              <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_card.webp' }}"></span>
             </div>
 
             <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type === 'text'">

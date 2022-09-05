@@ -53,7 +53,7 @@
             <img class="elementImg" src="{{'assets/elements/' + item.element + '.webp'}}" *ngIf="item.element" />
           </div>
           <div class="unitImgBlock" (click)="ownItem(item.dataId, type)">
-            <img class="unitImg" src="assets/units/{{ item.image }}_m.webp" *ngIf="type == 'units'"/>
+            <img class="unitImg" src="assets/units/{{ item.image }}_card.webp" *ngIf="type == 'units'"/>
             <img class="unitImg" src="assets/cards/{{ item.image }}_m.webp" *ngIf="type == 'cards'"/>
             <img class="unitImg" src="assets/units/{{ item.image }}_m.webp" *ngIf="type == 'espers'"/>
           </div>
