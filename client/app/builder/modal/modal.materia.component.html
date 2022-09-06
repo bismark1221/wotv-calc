@@ -101,7 +101,17 @@
                     <td>
                       <div class="rarityDiv">
                         <div class="zone-select-rarity">
-                          <ng-select placeholder="Select a rarity" class="select-rarity select-left-builder" [items]="['UR', 'MR', 'SR', 'R', 'N']" [(ngModel)]="materia.rarity" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false" appendTo="body">
+                          <ng-select
+                            placeholder="Select a rarity"
+                            class="select-rarity select-left-builder"
+                            [items]="['UR', 'MR', 'SR', 'R', 'N']"
+                            [(ngModel)]="materia.rarity"
+                            (ngModelChange)="updateMateria()"
+                            [clearable]="false"
+                            [searchable]="false"
+                            appendTo="body"
+                            id="select-rarity"
+                          >
                             <ng-template ng-label-tmp let-item="item">
                               {{ item }}
                             </ng-template>
@@ -116,7 +126,17 @@
                     <td>
                       <div class="levelDiv">
                         <div class="zone-select-level-materia">
-                          <ng-select placeholder="Select a level" class="select-level-materia select-left-builder" [items]="materia.tableLevels" [(ngModel)]="materia.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false" appendTo="body">
+                          <ng-select
+                            placeholder="Select a level"
+                            class="select-level-materia select-left-builder"
+                            [items]="materia.tableLevels"
+                            [(ngModel)]="materia.level"
+                            (ngModelChange)="updateLevel()"
+                            [clearable]="false"
+                            [searchable]="false"
+                            appendTo="body"
+                            id="select-level"
+                          >
                             <ng-template ng-label-tmp let-item="item">
                               {{ item }}
                             </ng-template>
@@ -131,7 +151,17 @@
                     <td>
                       <div class="mainStatDiv">
                         <div class="zone-select-main-stat">
-                          <ng-select placeholder="Select a main stat" class="select-main-stat select-left-builder" [items]="materia.mainStasAvailable" [(ngModel)]="materia.mainStat" (ngModelChange)="updateMateria()" [clearable]="false" [searchable]="false" appendTo="body">
+                          <ng-select
+                            placeholder="Select a main stat"
+                            class="select-main-stat select-left-builder"
+                            [items]="materia.mainStasAvailable"
+                            [(ngModel)]="materia.mainStat"
+                            (ngModelChange)="updateMateria()"
+                            [clearable]="false"
+                            [searchable]="false"
+                            appendTo="body"
+                            id="select-main-stat"
+                          >
                             <ng-template ng-label-tmp let-item="item">
                               {{ item }}
                             </ng-template>
@@ -187,7 +217,8 @@
                             bindValue="dataId"
                             bindLabel="formattedEffect"
                             (ngModelChange)="updateSkill(skillNumber)"
-                            appendTo="body">
+                            id="select-skill-{{skillNumber}}"
+                          >
                           </ng-select>
                         </div>
                         <div *ngIf="!changeSkill[skillNumber] && materia.skillsDetail[skillNumber]">

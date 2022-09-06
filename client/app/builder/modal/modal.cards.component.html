@@ -132,7 +132,17 @@
                       Level
                     </div>
                         <div class="zone-select-level">
-                          <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="card.tableLevels" [(ngModel)]="card.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false" appendTo="body">
+                          <ng-select
+                            placeholder="Select a level"
+                            class="select-level select-left-builder"
+                            [items]="card.tableLevels"
+                            [(ngModel)]="card.level"
+                            (ngModelChange)="updateLevel()"
+                            [clearable]="false"
+                            [searchable]="false"
+                            id="select-level"
+                            appendTo="body"
+                          >
                             <ng-template ng-label-tmp let-item="item">
                               {{ item }}
                             </ng-template>
