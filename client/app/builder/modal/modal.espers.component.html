@@ -122,7 +122,7 @@
                       Level
                     </div>
                     <div class="zone-select-level">
-                      <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="esper.tableLevels" [(ngModel)]="esper.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+                      <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="esper.tableLevels" [(ngModel)]="esper.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false" appendTo="body">
                         <ng-template ng-label-tmp let-item="item">
                           {{ item }}
                         </ng-template>
