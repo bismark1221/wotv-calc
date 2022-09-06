@@ -133,6 +133,7 @@
                       [clearable]="false"
                       [searchable]="false"
                       id="select-upgrade"
+                      appendTo="body"
                     >
                       <ng-template ng-label-tmp let-item="item">
                         {{ item === 0 ? 0 : '+' + item }}
@@ -157,6 +158,7 @@
                       [clearable]="false"
                       [searchable]="false"
                       id="select-type"
+                      appendTo="body"
                     >
                       <ng-template ng-label-tmp let-item="item">
                         {{ equipment.grows[item].name }}
