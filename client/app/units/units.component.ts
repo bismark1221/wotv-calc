@@ -19,7 +19,7 @@ export class UnitsComponent implements OnInit {
   rawUnits = [];
   units: any = [];
   searchText = '';
-  sort = 'rarity';
+  sort = 'releaseDate';
   order = 'desc';
   rawJobs = [];
   jobs = [];

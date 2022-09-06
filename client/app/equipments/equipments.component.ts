@@ -22,7 +22,7 @@ export class EquipmentsComponent implements OnInit {
   equipmentTypes = [];
   equipmentStats = [];
   searchText = '';
-  sort = 'rarity';
+  sort = 'releaseDate';
   order = 'desc';
   jobs = [];
   filters = {

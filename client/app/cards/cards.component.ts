@@ -18,7 +18,7 @@ export class CardsComponent implements OnInit {
   rawCards = [];
   cards = [];
   searchText = '';
-  sort = 'rarity';
+  sort = 'releaseDate';
   order = 'desc';
   filters = {
     rarity: [],
