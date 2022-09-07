@@ -223,8 +223,8 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
     if (!this.firstClickOutside) {
       this.firstClickOutside = true;
     } else {
-      this.result = 'close';
-      this.close();
+      //this.result = 'close';
+      //this.close();
     }
   }
 }

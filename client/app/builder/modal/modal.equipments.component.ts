@@ -215,8 +215,8 @@ export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> im
     if (!this.firstClickOutside) {
       this.firstClickOutside = true;
     } else {
-      this.result = 'close';
-      this.close();
+      //this.result = 'close';
+      //this.close();
     }
   }
 

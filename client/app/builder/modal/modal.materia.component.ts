@@ -253,8 +253,8 @@ export class ModalMateriaComponent extends SimpleModalComponent<null, any> imple
     if (!this.firstClickOutside) {
       this.firstClickOutside = true;
     } else {
-      this.result = 'close';
-      this.close();
+      //this.result = 'close';
+      //this.close();
     }
   }
 }
