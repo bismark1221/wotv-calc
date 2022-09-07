@@ -33,6 +33,7 @@ export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> im
   savedEquipments = {};
   loadEquipmentId = null;
   collapsedAcquisition = true;
+  firstClickOutside = false;
 
   upgradeTable = [];
 
@@ -208,6 +209,15 @@ export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> im
 
   removeEquipment() {
     this.close();
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
+      this.result = 'close';
+      this.close();
+    }
   }
 
   openMateriaModal(type) {

@@ -12,6 +12,7 @@ import { AuthService } from '../services/auth.service';
 export class LoginComponent extends SimpleModalComponent<null, null> {
   step = 'login';
   availableSync = [];
+  firstClickOutside = false;
 
   constructor(
     private authService: AuthService
@@ -52,5 +53,13 @@ export class LoginComponent extends SimpleModalComponent<null, null> {
 
   dontSync() {
     this.close();
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
+      this.close();
+    }
   }
 }

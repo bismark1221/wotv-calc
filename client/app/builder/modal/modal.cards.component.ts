@@ -19,6 +19,7 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
   rawCards;
   cards = [];
   star;
+  firstClickOutside = false;
 
   searchText = '';
   filters = {
@@ -153,6 +154,15 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
 
   removeCard() {
     this.close();
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
+      this.result = 'close';
+      this.close();
+    }
   }
 
   async updateStar() {

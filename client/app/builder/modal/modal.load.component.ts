@@ -18,6 +18,7 @@ export class ModalLoadComponent extends SimpleModalComponent<null, any> implemen
   public savedItems;
   public type;
   public allowNew = false;
+  firstClickOutside = false;
 
   constructor(
     private toolService: ToolService,
@@ -91,6 +92,14 @@ export class ModalLoadComponent extends SimpleModalComponent<null, any> implemen
 
     if (this.savedItems.length === 0) {
       this.result = {type: 'fullDelete'};
+      this.close();
+    }
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
       this.close();
     }
   }

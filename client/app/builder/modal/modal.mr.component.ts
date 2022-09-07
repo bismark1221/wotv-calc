@@ -11,6 +11,7 @@ import { MasterRanksService } from '../../services/mr.service';
 })
 export class ModalMasterRanksComponent extends SimpleModalComponent<null, any> implements OnInit {
   ranks = {};
+  firstClickOutside = false;
 
   @Input() public masterRanks;
 
@@ -36,5 +37,14 @@ export class ModalMasterRanksComponent extends SimpleModalComponent<null, any> i
   save() {
     this.result = this.masterRanks;
     this.close();
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.result = 'close';
+      this.firstClickOutside = true;
+    } else {
+      this.close();
+    }
   }
 }

@@ -16,6 +16,7 @@ import { MateriaService } from '../../services/materia.service';
 })
 export class ModalDeleteComponent extends SimpleModalComponent<null, boolean> implements OnInit {
   deleteStep = 'confirm';
+  firstClickOutside = false;
 
   public item;
   public type;
@@ -66,5 +67,13 @@ export class ModalDeleteComponent extends SimpleModalComponent<null, boolean> im
   confirmDelete() {
     this.deleteStep = 'loading';
     this.deleteItem();
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
+      this.close();
+    }
   }
 }

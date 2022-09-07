@@ -16,6 +16,7 @@ import { MateriaService } from '../../services/materia.service';
 })
 export class ModalSaveComponent extends SimpleModalComponent<null, boolean> implements OnInit {
   saveStep = 'save';
+  firstClickOutside = false;
 
   public item;
   public type;
@@ -119,6 +120,14 @@ export class ModalSaveComponent extends SimpleModalComponent<null, boolean> impl
   closeSave() {
     if (this.saveStep === 'confirm' && this.type !== 'materia') {
       this.saveStep = 'save';
+    } else {
+      this.close();
+    }
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
     } else {
       this.close();
     }

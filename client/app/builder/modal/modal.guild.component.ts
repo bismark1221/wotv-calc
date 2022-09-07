@@ -12,6 +12,7 @@ import { GuildService } from '../../services/guild.service';
 export class ModalGuildComponent extends SimpleModalComponent<null, any> implements OnInit {
   statues;
   statueNames;
+  firstClickOutside = false;
 
   @Input() public guild;
 
@@ -34,5 +35,14 @@ export class ModalGuildComponent extends SimpleModalComponent<null, any> impleme
   save() {
     this.result = this.guild;
     this.close();
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
+      this.result = 'close';
+      this.close();
+    }
   }
 }

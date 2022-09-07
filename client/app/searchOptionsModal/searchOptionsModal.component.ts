@@ -7,9 +7,18 @@ import { SimpleModalComponent } from 'ngx-simple-modal';
   styleUrls: ['./searchOptionsModal.component.css']
 })
 export class SearchOptionsModalComponent extends SimpleModalComponent<null, null> {
+  firstClickOutside = false;
 
   constructor(
   ) {
     super();
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
+      this.close();
+    }
   }
 }

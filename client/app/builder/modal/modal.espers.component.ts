@@ -28,6 +28,7 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
   savedEspers = {};
   loadEsperId = null;
   maxStar = 0;
+  firstClickOutside = false;
 
   buffsImage = [
     'dark_atk',
@@ -216,5 +217,14 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
   maxEsper() {
     this.esperService.maxEsper(this.esper);
     this.star = this.esper.star;
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
+      this.result = 'close';
+      this.close();
+    }
   }
 }

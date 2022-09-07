@@ -19,6 +19,7 @@ import { MateriaService } from '../../services/materia.service';
 export class ModalLinkComponent extends SimpleModalComponent<null, null> implements OnInit, AfterViewInit {
   exportableLink = '';
   saveStep = 'loading';
+  firstClickOutside = false;
 
   public type;
   public item;
@@ -79,5 +80,13 @@ export class ModalLinkComponent extends SimpleModalComponent<null, null> impleme
 
   copyLink() {
     this.clipboardService.copyFromContent(this.exportableLink);
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
+      this.close();
+    }
   }
 }

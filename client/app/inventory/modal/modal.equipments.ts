@@ -31,6 +31,7 @@ export class ModalInventoryEquipmentsComponent extends SimpleModalComponent<null
   };
   isAcquisitionChecked = [];
   collapsedAcquisition = true;
+  firstClickOutside = false;
 
   public modalStep = 'select';
   public equipment;
@@ -149,5 +150,14 @@ export class ModalInventoryEquipmentsComponent extends SimpleModalComponent<null
 
   removeEquipment() {
     this.close();
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.result = 'close';
+      this.firstClickOutside = true;
+    } else {
+      this.close();
+    }
   }
 }

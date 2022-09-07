@@ -29,6 +29,7 @@ export class ModalMateriaComponent extends SimpleModalComponent<null, any> imple
   loadingData = true;
   showSave = false;
   selectedMateriaId = null;
+  firstClickOutside = false;
 
   public equipment;
   public modalStep = 'select';
@@ -246,5 +247,14 @@ export class ModalMateriaComponent extends SimpleModalComponent<null, any> imple
 
   removeMateria() {
     this.close();
+  }
+
+  closeClickOuside() {
+    if (!this.firstClickOutside) {
+      this.firstClickOutside = true;
+    } else {
+      this.result = 'close';
+      this.close();
+    }
   }
 }
