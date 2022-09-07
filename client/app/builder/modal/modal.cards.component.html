@@ -81,7 +81,12 @@
           <div *ngIf="modalStep === 'load'">
             <div class="listModal">
               <div class="newBuildDiv">
-                <button class="btn btn-sub btn-back" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Cards</button>
+                <button class="btn btn-sub btn-back" (click)="back()">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                  </svg>
+                  <span class="align-middle">Back to Cards</span>
+                </button>
                 <button class="btn btn-sub" (click)="selectCard(loadCardId, null, true)">Create new build</button>
               </div>
 
@@ -100,7 +105,12 @@
 
           <div *ngIf="modalStep === 'custom'">
             <div class="backButtonDiv">
-              <button class="btn btn-sub" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Cards</button>
+              <button class="btn btn-sub" (click)="back()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+                <span class="align-middle">Back to Cards</span>
+              </button>
             </div>
 
             <div class="customDiv">
@@ -131,27 +141,9 @@
                     <div class="titleSelect">
                       Level
                     </div>
-                        <div class="zone-select-level">
-                          <ng-select
-                            placeholder="Select a level"
-                            class="select-level select-left-builder"
-                            [items]="card.tableLevels"
-                            [(ngModel)]="card.level"
-                            (ngModelChange)="updateLevel()"
-                            [clearable]="false"
-                            [searchable]="false"
-                            id="select-level"
-                            appendTo="body"
-                          >
-                            <ng-template ng-label-tmp let-item="item">
-                              {{ item }}
-                            </ng-template>
-
-                            <ng-template ng-option-tmp let-item="item">
-                              {{ item }}
-                            </ng-template>
-                          </ng-select> / {{ card.maxLevel }}
-                        </div>
+                    <select [(ngModel)]="card.level" (ngModelChange)="updateLevel()">
+                      <option *ngFor="let level of card.tableLevels">{{ level }}</option>
+                    </select> / {{ card.maxLevel }}
                   </div>
                 </div>
 

@@ -41,8 +41,8 @@ export class ModalGuildComponent extends SimpleModalComponent<null, any> impleme
     if (!this.firstClickOutside) {
       this.firstClickOutside = true;
     } else {
-      //this.result = 'close';
-      //this.close();
+      this.result = 'close';
+      this.close();
     }
   }
 }

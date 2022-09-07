@@ -156,6 +156,7 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
   }
 
   back() {
+    this.firstClickOutside = false;
     this.modalStep = 'select';
   }
 
@@ -163,6 +164,7 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
     if (!forceNewBuild && !customData && this.savedEspers[esperId] && this.savedEspers[esperId].length > 0) {
       this.loadEsperId = esperId;
 
+      this.firstClickOutside = false;
       this.modalStep = 'load';
     } else {
       this.esper = await this.esperService.selectEsperForBuilder(esperId, customData);
@@ -223,8 +225,8 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
     if (!this.firstClickOutside) {
       this.firstClickOutside = true;
     } else {
-      //this.result = 'close';
-      //this.close();
+      this.result = 'close';
+      this.close();
     }
   }
 }

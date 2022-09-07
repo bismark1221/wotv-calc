@@ -125,6 +125,7 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
   }
 
   back() {
+    this.firstClickOutside = false;
     this.modalStep = 'select';
   }
 
@@ -132,6 +133,7 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
     if (!forceNewBuild && !customData && this.savedCards[cardId] && this.savedCards[cardId].length > 0) {
       this.loadCardId = cardId;
 
+      this.firstClickOutside = false;
       this.modalStep = 'load';
     } else {
       this.card = await this.cardService.selectCardForBuilder(cardId, customData);
@@ -160,8 +162,8 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
     if (!this.firstClickOutside) {
       this.firstClickOutside = true;
     } else {
-      //this.result = 'close';
-      //this.close();
+      this.result = 'close';
+      this.close();
     }
   }
 

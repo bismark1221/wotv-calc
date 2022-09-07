@@ -68,7 +68,12 @@
           <div *ngIf="modalStep === 'load'">
             <div class="listModal">
               <div class="newBuildDiv">
-                <button class="btn btn-sub btn-back" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Espers</button>
+                <button class="btn btn-sub btn-back" (click)="back()">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                  </svg>
+                  <span class="align-middle">Back to Espers</span>
+                </button>
                 <button class="btn btn-sub" (click)="selectEsper(loadEsperId, null, true)">Create new build</button>
               </div>
 
@@ -87,7 +92,12 @@
 
           <div *ngIf="modalStep === 'custom' && esper">
             <div class="backButtonDiv">
-              <button class="btn btn-sub" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Espers</button>
+              <button class="btn btn-sub" (click)="back()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+                <span class="align-middle">Back to Espers</span>
+              </button>
             </div>
 
             <div class="customDiv">
@@ -122,15 +132,9 @@
                       Level
                     </div>
                     <div class="zone-select-level">
-                      <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="esper.tableLevels" [(ngModel)]="esper.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false" appendTo="body">
-                        <ng-template ng-label-tmp let-item="item">
-                          {{ item }}
-                        </ng-template>
-
-                        <ng-template ng-option-tmp let-item="item">
-                          {{ item }}
-                        </ng-template>
-                      </ng-select> / {{ esper.maxLevel }}
+                      <select [(ngModel)]="esper.level" (ngModelChange)="updateLevel()">
+                        <option *ngFor="let level of esper.tableLevels">{{ level }}</option>
+                      </select> / {{ esper.maxLevel }}
                     </div>
                   </div>
                 </div>

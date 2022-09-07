@@ -151,6 +151,7 @@ export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> im
   }
 
   back() {
+    this.firstClickOutside = false;
     this.modalStep = 'select';
   }
 
@@ -158,6 +159,7 @@ export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> im
     if (!forceNewBuild && !customData && this.savedEquipments[equipmentId] && this.savedEquipments[equipmentId].length > 0) {
       this.loadEquipmentId = equipmentId;
 
+      this.firstClickOutside = false;
       this.modalStep = 'load';
     } else {
       this.equipment = await this.equipmentService.selectEquipmentForBuilder(equipmentId, customData);
@@ -226,6 +228,8 @@ export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> im
     const equipment = this.equipment;
     const materiaType = type;
 
+    this.firstClickOutside = false;
+
     if (this.equipment.materias[type]) {
       materia = JSON.parse(JSON.stringify(this.equipment.materias[type]));
       modalStep = 'custom';
@@ -234,6 +238,7 @@ export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> im
     this.simpleModalService.addModal(ModalMateriaComponent, { materia: materia, modalStep: modalStep, equipment: equipment, materiaType: materiaType })
       .subscribe(async (loadMateria) => {
         if (loadMateria !== 'close') {
+          this.firstClickOutside = false;
           this.equipment.materias[type] = loadMateria;
 
           this.equipmentService.changeMateria(this.equipment);

@@ -79,7 +79,12 @@
           <div *ngIf="modalStep === 'load'">
             <div class="listModal">
               <div class="newBuildDiv">
-                <button class="btn btn-sub btn-back" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Equipment</button>
+                <button class="btn btn-sub btn-back" (click)="back()">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                  </svg>
+                  <span class="align-middle">Back to Equipment</span>
+                </button>
                 <button class="btn btn-sub" (click)="selectEquipment(loadEquipmentId, null, true)">Create new build</button>
               </div>
 
@@ -98,7 +103,12 @@
 
           <div *ngIf="modalStep === 'custom'">
             <div class="backButtonDiv">
-              <button class="btn btn-sub" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Equipment</button>
+              <button class="btn btn-sub" (click)="back()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+                <span class="align-middle">Back to Equipment</span>
+              </button>
             </div>
 
             <div class="customDiv">
@@ -124,50 +134,18 @@
                     <div class="titleSelect">
                       Upgrade
                     </div>
-                    <ng-select
-                      placeholder="Select an upgrade"
-                      class="select-upgrade select-left-builder"
-                      [items]="upgradeTable"
-                      [(ngModel)]="equipment.upgrade"
-                      (ngModelChange)="updateUpgrade()"
-                      [clearable]="false"
-                      [searchable]="false"
-                      id="select-upgrade"
-                      appendTo="body"
-                    >
-                      <ng-template ng-label-tmp let-item="item">
-                        {{ item === 0 ? 0 : '+' + item }}
-                      </ng-template>
-
-                      <ng-template ng-option-tmp let-item="item">
-                        {{ item === 0 ? 0 : '+' + item }}
-                      </ng-template>
-                    </ng-select>
+                    <select [(ngModel)]="equipment.upgrade" (ngModelChange)="updateUpgrade()">
+                      <option *ngFor="let upgrade of upgradeTable" value="{{ upgrade }}">{{ upgrade === 0 ? 0 : '+' + upgrade }}</option>
+                    </select>
                   </div>
 
                   <div *ngIf="equipment && equipment.growIds.length > 1">
                     <div class="titleSelect">
                       Type
                     </div>
-                    <ng-select
-                      placeholder="Select a grow"
-                      class="select-grow select-left-builder"
-                      [items]="equipment.growIds"
-                      [(ngModel)]="equipment.grow"
-                      (ngModelChange)="updateGrow()"
-                      [clearable]="false"
-                      [searchable]="false"
-                      id="select-type"
-                      appendTo="body"
-                    >
-                      <ng-template ng-label-tmp let-item="item">
-                        {{ equipment.grows[item].name }}
-                      </ng-template>
-
-                      <ng-template ng-option-tmp let-item="item">
-                        {{ equipment.grows[item].name }}
-                      </ng-template>
-                    </ng-select>
+                    <select [(ngModel)]="equipment.grow" (ngModelChange)="updateGrow()">
+                      <option *ngFor="let growId of equipment.growIds" value="{{ growId }}">{{ equipment.grows[growId].name }}</option>
+                    </select>
                   </div>
                 </div>
 

@@ -153,6 +153,7 @@ export class ModalMateriaComponent extends SimpleModalComponent<null, any> imple
   /* BUILDER */
   /***********/
   backToMateriaList() {
+    this.firstClickOutside = false;
     this.modalStep = 'select';
   }
 
@@ -174,6 +175,7 @@ export class ModalMateriaComponent extends SimpleModalComponent<null, any> imple
 
       this.updateMateria();
 
+      this.firstClickOutside = false;
       this.modalStep = 'custom';
     }
   }
@@ -183,6 +185,7 @@ export class ModalMateriaComponent extends SimpleModalComponent<null, any> imple
     this.materia.initialDataId = materia.dataId;
     this.materiaService.getAvailableMainStats(this.materia, this.materias);
 
+    this.firstClickOutside = false;
     this.modalStep = 'custom';
   }
 
@@ -253,8 +256,8 @@ export class ModalMateriaComponent extends SimpleModalComponent<null, any> imple
     if (!this.firstClickOutside) {
       this.firstClickOutside = true;
     } else {
-      //this.result = 'close';
-      //this.close();
+      this.result = 'close';
+      this.close();
     }
   }
 }

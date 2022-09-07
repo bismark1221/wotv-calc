@@ -66,7 +66,12 @@
 
           <div *ngIf="modalStep === 'custom'">
             <div class="backButtonDiv">
-              <button class="btn btn-sub" (click)="backToMateriaList()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Materia</button>
+              <button class="btn btn-sub" (click)="backToMateriaList()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+                <span class="align-middle">Back to Materia</span>
+              </button>
             </div>
 
             <div class="materiaBuilder">
@@ -101,75 +106,27 @@
                     <td>
                       <div class="rarityDiv">
                         <div class="zone-select-rarity">
-                          <ng-select
-                            placeholder="Select a rarity"
-                            class="select-rarity select-left-builder"
-                            [items]="['UR', 'MR', 'SR', 'R', 'N']"
-                            [(ngModel)]="materia.rarity"
-                            (ngModelChange)="updateMateria()"
-                            [clearable]="false"
-                            [searchable]="false"
-                            appendTo="body"
-                            id="select-rarity"
-                          >
-                            <ng-template ng-label-tmp let-item="item">
-                              {{ item }}
-                            </ng-template>
-
-                            <ng-template ng-option-tmp let-item="item">
-                              {{ item }}
-                            </ng-template>
-                          </ng-select>
+                          <select [(ngModel)]="materia.rarity" (ngModelChange)="updateMateria()">
+                            <option *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">{{ rarity }}</option>
+                          </select>
                         </div>
                       </div>
                     </td>
                     <td>
                       <div class="levelDiv">
                         <div class="zone-select-level-materia">
-                          <ng-select
-                            placeholder="Select a level"
-                            class="select-level-materia select-left-builder"
-                            [items]="materia.tableLevels"
-                            [(ngModel)]="materia.level"
-                            (ngModelChange)="updateLevel()"
-                            [clearable]="false"
-                            [searchable]="false"
-                            appendTo="body"
-                            id="select-level"
-                          >
-                            <ng-template ng-label-tmp let-item="item">
-                              {{ item }}
-                            </ng-template>
-
-                            <ng-template ng-option-tmp let-item="item">
-                              {{ item }}
-                            </ng-template>
-                          </ng-select>
+                          <select [(ngModel)]="materia.level" (ngModelChange)="updateLevel()">
+                            <option *ngFor="let level of materia.tableLevels">{{ level }}</option>
+                          </select>
                         </div>
                       </div>
                     </td>
                     <td>
                       <div class="mainStatDiv">
                         <div class="zone-select-main-stat">
-                          <ng-select
-                            placeholder="Select a main stat"
-                            class="select-main-stat select-left-builder"
-                            [items]="materia.mainStasAvailable"
-                            [(ngModel)]="materia.mainStat"
-                            (ngModelChange)="updateMateria()"
-                            [clearable]="false"
-                            [searchable]="false"
-                            appendTo="body"
-                            id="select-main-stat"
-                          >
-                            <ng-template ng-label-tmp let-item="item">
-                              {{ item }}
-                            </ng-template>
-
-                            <ng-template ng-option-tmp let-item="item">
-                              {{ item }}
-                            </ng-template>
-                          </ng-select>
+                          <select [(ngModel)]="materia.mainStat" (ngModelChange)="updateMateria()">
+                            <option *ngFor="let mainStat of materia.mainStasAvailable">{{ mainStat }}</option>
+                          </select>
                         </div>
                       </div>
                       {{ materia.mainStatValue.value }} / {{ materia.mainStatValue.max }}
@@ -208,18 +165,9 @@
                     <tr>
                       <td>
                         <div class="zone-select-skill" *ngIf="changeSkill[skillNumber]">
-                          <ng-select
-                            placeholder="Select a skill"
-                            class="select-skill select-left-builder"
-                            [items]="materia.availableSkills"
-                            [(ngModel)]="materia.skills[skillNumber]"
-                            [clearable]="false"
-                            bindValue="dataId"
-                            bindLabel="formattedEffect"
-                            (ngModelChange)="updateSkill(skillNumber)"
-                            id="select-skill-{{skillNumber}}"
-                          >
-                          </ng-select>
+                          <select [(ngModel)]="materia.skills[skillNumber]" (ngModelChange)="updateSkill(skillNumber)" class="select-skill">
+                            <option *ngFor="let skill of materia.availableSkills" value="{{ skill.dataId }}">{{ skill.formattedEffect }}</option>
+                          </select>
                         </div>
                         <div *ngIf="!changeSkill[skillNumber] && materia.skillsDetail[skillNumber]">
                           <div *ngFor="let skillBefore of materia.skillsDetail[skillNumber].formattedEffect.before">{{ skillBefore }}</div>
