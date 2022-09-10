@@ -25,7 +25,7 @@
           <tr>
             <td>
               <div class="bonusBlock" *ngFor="let bonusCard of raid.bonus.cards">
-                <img class="cardImg" src="assets/cards/{{ bonusCard.image }}_m.webp" title="{{ bonusCard.names ? bonusCard.names.en : '' }}"/><br/>
+                <img class="cardImg" src="assets/cards/{{ bonusCard.image }}_middle.webp" title="{{ bonusCard.names ? bonusCard.names.en : '' }}"/><br/>
                 {{ bonusCard.value }} %
               </div>
             </td>
@@ -40,7 +40,7 @@
                 <th colspan="2">{{ boss.name }}</th>
               </tr>
               <tr>
-                <td colspan="2"><img class="raidImg" src="{{'assets/units/' + boss.image + '_m.webp'}}" /></td>
+                <td colspan="2"><img class="raidImg" src="{{'assets/otherUnits/' + boss.image + '_card.webp'}}" /></td>
               </tr>
               <tr>
                 <th class="sub">Element</th>

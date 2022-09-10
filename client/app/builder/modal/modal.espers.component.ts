@@ -186,6 +186,7 @@ export class ModalEspersComponent extends SimpleModalComponent<null, any> implem
   }
 
   removeEsper() {
+    this.result = null;
     this.close();
   }
 

@@ -249,6 +249,7 @@ export class ModalMateriaComponent extends SimpleModalComponent<null, any> imple
   }
 
   removeMateria() {
+    this.result = null;
     this.close();
   }
 

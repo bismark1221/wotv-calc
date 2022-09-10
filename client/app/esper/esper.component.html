@@ -7,7 +7,7 @@
             <th colspan="4">{{ esper.name }}</th>
           </tr>
           <tr>
-            <td colspan="4"><img class="esperImg" src="{{'assets/units/' + esper.image + '_m.webp'}}" /></td>
+            <td colspan="4"><img class="esperImg" src="{{'assets/espers/' + esper.image + '_full.webp'}}" /></td>
           </tr>
           <tr>
             <th class="sub">Rarity</th>
@@ -255,7 +255,7 @@
             <th colspan="3">{{ esper.name }}</th>
           </tr>
           <tr>
-            <td colspan="3"><img class="esperImg" src="{{'assets/units/' + esper.image + '_m.webp'}}" /></td>
+            <td colspan="3"><img class="esperImg" src="{{'assets/espers/' + esper.image + '_full.webp'}}" /></td>
           </tr>
           <tr>
             <th class="sub">Rarity</th>
@@ -277,9 +277,7 @@
           <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
             <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
-            <div class="hex activated" *ngIf="grid.nodesForGrid[node].type === 'center'">
-              <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.webp' }}"></span>
-            </div>
+            <div class="hex activated" *ngIf="grid.nodesForGrid[node].type === 'center'"></div>
 
             <div class="hex" [ngClass]="{'activated': esper.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type === 'text'">
               <span class="text">{{ grid.nodesForGrid[node].value }}</span>

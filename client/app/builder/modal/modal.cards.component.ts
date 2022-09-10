@@ -155,6 +155,7 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
   }
 
   removeCard() {
+    this.result = null;
     this.close();
   }
 

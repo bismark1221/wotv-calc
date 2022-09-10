@@ -34,13 +34,13 @@
         <tr>
           <td><img class="unitImg" src="assets/units/{{ unit.image }}_small.webp" /></td>
           <td *ngIf="unit.jobsData[0]">
-            <div class="mainJob"><img src="{{'assets/jobs/' + unit.jobsData[0].image + '.webp'}}" title="{{unit.jobsData[0].name}}" /></div>
+            <div class="mainJob"><img src="{{'assets/jobs/' + unit.jobsData[0].image + '_40.webp'}}" title="{{unit.jobsData[0].name}}" /></div>
           </td>
           <td *ngIf="unit.jobsData[1]">
-            <div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[1].image + '.webp'}}" title="{{unit.jobsData[1].name}}" /></div>
+            <div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[1].image + '_40.webp'}}" title="{{unit.jobsData[1].name}}" /></div>
           </td>
           <td *ngIf="unit.jobsData[2]">
-            <div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[2].image + '.webp'}}" title="{{unit.jobsData[2].name}}" /></div>
+            <div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[2].image + '_40.webp'}}" title="{{unit.jobsData[2].name}}" /></div>
           </td>
         </tr>
         <tr>
@@ -87,7 +87,7 @@
     <h3>Material list</h3>
     <div class="materials">
       <div class="materialBlock" *ngFor="let itemId of materialsIds">
-        <img src="{{ 'assets/items/' + materials[itemId].image + '.webp'}}"
+        <img src="{{ 'assets/items/' + materials[itemId].image + '_middle.webp'}}"
           class="materialImg"
           (click)="toogleMaterial(itemId)"
           [ngClass]="{'deactivated': materials[itemId].activated === false}"
@@ -105,7 +105,7 @@
           *ngIf="materials[itemId].type !== 'classic'"
           (click)="toogleMaterial(itemId)"
         >
-          <img src="{{ 'assets/jobs/' + materials[itemId].image + '.webp'}}" title="{{ materials[itemId].name }}" />
+          <img src="{{ 'assets/jobs/' + materials[itemId].image + '_40.webp'}}" title="{{ materials[itemId].name }}" />
         </div>
 
         <span class="materialCount">{{ materials[itemId].count }}</span>

@@ -54,8 +54,8 @@
           </div>
           <div class="unitImgBlock" (click)="ownItem(item.dataId, type)">
             <img class="unitImg" src="assets/units/{{ item.image }}_card.webp" *ngIf="type == 'units'"/>
-            <img class="unitImg" src="assets/cards/{{ item.image }}_m.webp" *ngIf="type == 'cards'"/>
-            <img class="unitImg" src="assets/units/{{ item.image }}_m.webp" *ngIf="type == 'espers'"/>
+            <img class="unitImg" src="assets/cards/{{ item.image }}_card.webp" *ngIf="type == 'cards'"/>
+            <img class="unitImg" src="assets/espers/{{ item.image }}_card.webp" *ngIf="type == 'espers'"/>
           </div>
           <div class="cardTitle">
             <div class="unitName">{{ item.name }}</div>
@@ -91,7 +91,7 @@
             <img class="elementImg" src="{{'assets/elements/' + equipment.element + '.webp'}}" *ngIf="equipment.element" />
           </div>
           <div class="unitImgBlock equipmentBlock" (click)="updateEquipment(equipment)">
-            <img class="unitImg" src="assets/equipments/{{ equipment.image }}.webp"/>
+            <img class="unitImg" src="assets/equipments/{{ equipment.image }}_card.webp"/>
           </div>
           <div class="cardTitle">
             <div class="unitName">{{ equipment.name }}</div>

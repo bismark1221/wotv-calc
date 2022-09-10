@@ -65,7 +65,7 @@
                       <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
                     </div>
                     <div class="equipmentImgBlock">
-                      <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
+                      <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}_card.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
                     </div>
                     <div class="equipmentTitle">
                       <span class="equipmentName">{{ equipment.name }}</span>
@@ -122,7 +122,7 @@
                     <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
                   </div>
                   <div>
-                    <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
+                    <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}_card.webp" onerror="this.src='assets/equipments/placeholder.webp';" />
                   </div>
                   <div class="equipmentTitle">
                     <span class="equipmentName">{{ equipment.customName ? equipment.name + ' - ' + equipment.customName : equipment.name }}</span>
@@ -292,7 +292,7 @@
                               <span *ngFor="let item of skillCond.formattedItems">
                                 <img src="{{'assets/units/' + item + '_small.webp'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
                                 <div class="mainjob" *ngIf="skillCond.type == 'mainjob'">
-                                  <img src="{{ 'assets/jobs/' + item + '.webp'}}" />
+                                  <img src="{{ 'assets/jobs/' + item + '_40.webp'}}" />
                                 </div>
                               </span>
                             </span>

@@ -139,7 +139,7 @@
           <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'subjobDisable': unit.jobsData[i] && !unit.jobsData[i].unlocked}">
             <div *ngIf="unit.jobsData[i]">
               <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                <img src="{{'assets/jobs/' + unit.jobsData[i].image + '.webp'}}" />
+                <img src="{{'assets/jobs/' + unit.jobsData[i].image + '_40.webp'}}" />
               </div>
 
               <ng-select placeholder="Select a level" class="select-job select-left-builder" [items]="unit.tableJobLevels[i]" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="updateJobLevel(unitPos)" [clearable]="false" [disabled]="!unit.jobsData[i].unlocked">
@@ -167,7 +167,7 @@
           <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'selectedSubJob': i === unit.subjob, 'subjobDisable': unit.jobsData[i] && !unit.jobsData[i].unlocked}" id="selectSubJob_{{unitPos}}_{{i}}" (click)="selectSubJob(unitPos, i)">
             <div *ngIf="unit.jobsData[i]">
               <div class="subJob">
-                <img src="{{'assets/jobs/' + unit.jobsData[i].image + '.webp'}}" />
+                <img src="{{'assets/jobs/' + unit.jobsData[i].image + '_40.webp'}}" />
               </div>
               <span class="jobName">{{ unit.jobsData[i].name }}</span>
             </div>
@@ -183,7 +183,7 @@
             Slot 1
             <div *ngIf="unit && unit.equipments && unit.equipments[0]" id="openEquipmentsModal_{{unitPos}}_0_{{unit.equipments[0].dataId}}" (click)="openEquipmentsModal(unitPos, 0)" class="equipmentPointer">
               <div class="background_{{ unit.equipments[0].category }}">
-                <img src="{{'assets/equipments/' + unit.equipments[0].image + '.webp'}}" class="equipmentImg"/>
+                <img src="{{'assets/equipments/' + unit.equipments[0].image + '_middle.webp'}}" class="equipmentImg"/>
               </div>
             </div>
 
@@ -197,7 +197,7 @@
             Slot 2
             <div *ngIf="unit && unit.equipments && unit.equipments[1]" id="openEquipmentsModal_{{unitPos}}_1_{{unit.equipments[1].dataId}}" (click)="openEquipmentsModal(unitPos, 1)" class="equipmentPointer">
               <div class="background_{{ unit.equipments[1].category }}">
-                <img src="{{'assets/equipments/' + unit.equipments[1].image + '.webp'}}" class="equipmentImg"/>
+                <img src="{{'assets/equipments/' + unit.equipments[1].image + '_middle.webp'}}" class="equipmentImg"/>
               </div>
             </div>
 
@@ -217,7 +217,7 @@
             TMR
             <div *ngIf="unit && unit.equipments && unit.equipments[2]" id="openEquipmentsModal_{{unitPos}}_2_{{unit.equipments[2].dataId}}" (click)="openEquipmentsModal(unitPos, 2)" class="equipmentPointer">
               <div class="background_{{ unit.equipments[2].category }}">
-                <img src="{{'assets/equipments/' + unit.equipments[2].image + '.webp'}}" class="equipmentImg"/>
+                <img src="{{'assets/equipments/' + unit.equipments[2].image + '_middle.webp'}}" class="equipmentImg"/>
               </div>
             </div>
 
@@ -242,7 +242,7 @@
           <div class="esparCardDiv">
             Esper
             <div *ngIf="unit.esper">
-              <img src="{{'assets/units/' + unit.esper.image + '_m.webp'}}" class="esperImg" id="openEspersModal_{{unitPos}}" (click)="openEspersModal(unitPos)"/>
+              <img src="{{'assets/espers/' + unit.esper.image + '_middle.webp'}}" class="esperImg" id="openEspersModal_{{unitPos}}" (click)="openEspersModal(unitPos)"/>
               Reso
               <ng-select placeholder="Select a level" class="select-resonance select-left-builder" [items]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" [(ngModel)]="unit.esper.resonance" (ngModelChange)="updateEsperResonance(unitPos)" [clearable]="false" [searchable]="false">
                 <ng-template ng-label-tmp let-item="item">
@@ -266,7 +266,7 @@
           <div class="esparCardDiv">
             Main Card
             <div *ngIf="unit.card">
-              <img src="{{'assets/cards/' + unit.card.image + '_m.webp'}}" class="cardImg" id="openCardsModal_{{unitPos}}" (click)="openCardsModal(unitPos)"/>
+              <img src="{{'assets/cards/' + unit.card.image + '_middle.webp'}}" class="cardImg" id="openCardsModal_{{unitPos}}" (click)="openCardsModal(unitPos)"/>
               <button class="btn btn-sub btn-card" id="openCardsModal_{{unitPos}}_custom" (click)="openCardsModal(unitPos)">Custom</button>
             </div>
 
@@ -279,7 +279,7 @@
           <div class="esparCardDiv">
             Sub Card
             <div *ngIf="unit.subCard">
-              <img src="{{'assets/cards/' + unit.subCard.image + '_m.webp'}}" class="cardImg" id="openSubCardsModal_{{unitPos}}" (click)="openCardsModal(unitPos, true)"/>
+              <img src="{{'assets/cards/' + unit.subCard.image + '_middle.webp'}}" class="cardImg" id="openSubCardsModal_{{unitPos}}" (click)="openCardsModal(unitPos, true)"/>
               <button class="btn btn-sub btn-card" id="openSubCardsModal_{{unitPos}}_custom" (click)="openCardsModal(unitPos, true)">Custom</button>
             </div>
 

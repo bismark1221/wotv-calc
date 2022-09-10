@@ -7,7 +7,7 @@
             <th colspan="6">{{ unit.name }}</th>
           </tr>
           <tr>
-            <td colspan="6"><img class="unitImg" src="{{'assets/units/' + unit.image + '.webp'}}" /></td>
+            <td colspan="6"><img class="unitImg" src="{{'assets/units/' + unit.image + '_full.webp'}}" /></td>
           </tr>
           <tr>
             <th class="sub" colspan="2">Rarity</th>
@@ -36,7 +36,7 @@
             <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
               <div *ngIf="jobs[i]">
                 <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                  <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                  <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
                 </div>
                 {{ jobs[i].name }}
               </div>
@@ -99,7 +99,7 @@
             <th colspan="20">TMR</th>
           </tr>
           <tr>
-            <td rowspan="2" class="tmrTd"><img src="assets/equipments/{{unit.tmr.image}}.webp" class="tmrImg"/></td>
+            <td rowspan="2" class="tmrTd"><img src="assets/equipments/{{unit.tmr.image}}_middle.webp" class="tmrImg"/></td>
             <th class="sub tmrSubTd">Name</th>
             <th class="sub tmrSubTd">Type</th>
             <th class="sub tmrSubTd" *ngFor="let statType of unit.tmr.statsTypes">{{ statType }}</th>
@@ -293,7 +293,7 @@
             <th colspan="6">{{ unit.name }}</th>
           </tr>
           <tr>
-            <td colspan="6"><img class="unitImg" src="{{'assets/units/' + unit.image + '.webp'}}" /></td>
+            <td colspan="6"><img class="unitImg" src="{{'assets/units/' + unit.image + '_full.webp'}}" /></td>
           </tr>
           <tr>
             <th class="sub" colspan="2">Rarity</th>
@@ -322,7 +322,7 @@
             <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
               <div *ngIf="jobs[i]">
                 <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                  <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                  <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
                 </div>
                 {{ jobs[i].name }}
               </div>
@@ -511,7 +511,7 @@
           <tr class="jobsStatsLine" *ngIf="jobs[i]">
             <td>
               <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
               </div>
             </td>
             <td>{{ unit.jobsStats[i].HP }}</td>
@@ -541,7 +541,7 @@
           <tr class="jobsStatsLine">
             <td>
               <div class="mainJob">
-                <img src="{{'assets/jobs/' + exJobs[0].image + '.webp'}}" />
+                <img src="{{'assets/jobs/' + exJobs[0].image + '_30.webp'}}" />
               </div>
             </td>
             <td>{{ unit.EXJobsStats[0].HP }}</td>
@@ -698,7 +698,7 @@
               <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + i + '.webp'}}" />&nbsp;{{ i | titlecase }}
             </th>
             <th colspan="20" *ngIf="i === 'ex_buff' && exJobs[0]">
-              <img class="skilImg" title="skill type" src="{{'assets/jobs/' + exJobs[0].image + '.webp'}}" />&nbsp;EX Buffs
+              <img title="skill type" src="{{'assets/jobs/' + exJobs[0].image + '_30.webp'}}" />&nbsp;EX Buffs
             </th>
           </tr>
           <tr>
@@ -716,7 +716,7 @@
           <tr>
             <td>
               <div class="subJob" *ngIf="jobs[(skill.unlockJob - 1)]">
-                <img src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.webp'}}" />
+                <img src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '_30.webp'}}" />
               </div>
             </td>
             <td>{{ skill.jobLevel }}</td>
@@ -969,13 +969,13 @@
           <tr>
             <th *ngIf="i === 0 && jobs[0]" colspan="9">
               <div class="mainJob jobInSkill">
-                <img src="{{'assets/jobs/' + jobs[0].image + '.webp'}}" />
+                <img src="{{'assets/jobs/' + jobs[0].image + '_30.webp'}}" />
               </div>
               Main Job
             </th>
             <th *ngIf="i !== 0 && jobs[i - 1]" colspan="9">
               <div class="subJob jobInSkill">
-                <img src="{{'assets/jobs/' + jobs[i - 1].image + '.webp'}}" />
+                <img src="{{'assets/jobs/' + jobs[i - 1].image + '_30.webp'}}" />
               </div>
               {{ jobs[i - 1].name }}
             </th>
@@ -1384,7 +1384,7 @@
             <th colspan="6">{{ unit.name }}</th>
           </tr>
           <tr>
-            <td colspan="6"><img class="unitImg" src="{{'assets/units/' + unit.image + '.webp'}}" /></td>
+            <td colspan="6"><img class="unitImg" src="{{'assets/units/' + unit.image + '_full.webp'}}" /></td>
           </tr>
           <tr>
             <th class="sub" colspan="2">Rarity</th>
@@ -1413,7 +1413,7 @@
             <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
               <div *ngIf="jobs[i]">
                 <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                  <img src="{{'assets/jobs/' + jobs[i].image + '.webp'}}" />
+                  <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
                 </div>
                 {{ jobs[i].name }}
               </div>
@@ -1449,9 +1449,7 @@
           <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
             <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
-            <div class="hex activated" *ngIf="grid.nodesForGrid[node].type === 'center'">
-              <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_card.webp' }}"></span>
-            </div>
+            <div class="hex activated" *ngIf="grid.nodesForGrid[node].type === 'center'"></div>
 
             <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type === 'text'">
               <span class="text">{{ grid.nodesForGrid[node].value }}</span>

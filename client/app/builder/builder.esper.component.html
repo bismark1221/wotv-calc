@@ -14,7 +14,7 @@
       <div class="esperLine" id="esper_{{item.dataId}}">
         <div class="esperSelector" id="esperSelector_{{item.dataId}}" [ngClass]="{'esperSelectorWithSave': savedEspers[item.dataId]}">
           <div class="esperLogo">
-            <img src="assets/units/{{ item.image }}_s.webp" />
+            <img src="assets/espers/{{ item.image }}_small.webp" />
           </div>
           <div class="esperNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
         </div>
@@ -53,7 +53,7 @@
               <img class="elementImg" src="{{'assets/elements/' + esper.element + '.webp'}}" />
             </div>
             <div>
-              <img class="esperImg" src="assets/units/{{ esper.image }}_m.webp" />
+              <img class="esperImg" src="assets/espers/{{ esper.image }}_card.webp" />
             </div>
           </td>
         </tr>
@@ -145,9 +145,7 @@
           <li *ngFor="let node of esper.grid.gridNodes; let index;" id="click_node_{{node}}" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
             <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
-            <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type === 'center'">
-              <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.webp' }}"></span>
-            </div>
+            <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type === 'center'"></div>
 
             <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type === 'text'"
                  [ngClass]="{

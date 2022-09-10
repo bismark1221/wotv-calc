@@ -47,12 +47,12 @@
                   'subJob': j !== 0
                 }"
               >
-                <img src="{{'assets/jobs/' + job.image + '.webp'}}" />
+                <img src="{{'assets/jobs/' + job.image + '_20.webp'}}" />
               </div>
             </div>
           </div>
           <div class="itemImgBlock">
-            <img class="itemImg aspect-auto" src="assets/{{ item.type !== 'esper' ? item.type : 'unit' }}s/{{ item.image }}{{ item.type === 'esper' ? '_s' : '' }}{{ item.type === 'equipment' || item.type === 'esper' ? '' : '_m' }}.webp" />
+            <img class="itemImg aspect-auto" src="assets/{{ item.type }}s/{{ item.image }}_card.webp" />
           </div>
           <div class="cardTitle">
             <span class="itemName">{{ item.name }}</span>

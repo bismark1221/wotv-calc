@@ -285,7 +285,7 @@ export class InventoryComponent implements OnInit, AfterViewInit {
 
     this.simpleModalService.addModal(ModalInventoryEquipmentsComponent, { equipment: equipment, modalStep: modalStep })
       .subscribe(async (loadEquipment) => {
-        if (loadEquipment !== 'close') {
+        if (loadEquipment !== 'close' && loadEquipment !== undefined) {
           if (loadedEquipment) {
             if (loadEquipment) {
               this.inventory.equipments[loadedEquipment.equipmentIndex] = loadEquipment;

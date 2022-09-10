@@ -101,7 +101,7 @@
               <div class="dropBlock" *ngFor="let dropList of quest.dropLists">
                 <div class="dropHeader">
                   <span *ngFor="let enemy of dropList.enemies" class="dropEnemyBlock">
-                    <img src="assets/units/{{enemy.image}}_m.webp" class="enemyImg" /> {{ enemy.name }}
+                    <img src="assets/otherUnits/{{enemy.image}}_small.webp" class="enemyImg" /> {{ enemy.name }}
                   </span>
 
                   <span *ngIf="dropList.isHost">

@@ -149,6 +149,7 @@ export class ModalInventoryEquipmentsComponent extends SimpleModalComponent<null
   }
 
   removeEquipment() {
+    this.result = null;
     this.close();
   }
 

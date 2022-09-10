@@ -313,7 +313,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   showGuildDetail() {
     this.simpleModalService.addModal(ModalGuildComponent, { guild : JSON.parse(JSON.stringify(this.team.guild.data)) })
       .subscribe(async (guild) => {
-        if (guild !== 'close') {
+        if (guild !== 'close' && guild !== undefined) {
           this.team.guild.data = guild;
           for (let i = 0; i <= 4; i++) {
             if (this.team.units[i]) {
@@ -328,7 +328,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   showMasterRanksDetail() {
     this.simpleModalService.addModal(ModalMasterRanksComponent, { masterRanks : JSON.parse(JSON.stringify(this.team.masterRanks.data)) })
       .subscribe(async (masterRanks) => {
-        if (masterRanks !== 'close') {
+        if (masterRanks !== 'close' && masterRanks !== undefined) {
           this.team.masterRanks.data = masterRanks;
           for (let i = 0; i <= 4; i++) {
             if (this.team.units[i]) {
@@ -352,7 +352,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
     this.simpleModalService.addModal(ModalEquipmentsComponent, { equipment: equipment, modalStep: modalStep, unit: unit, equipmentPos: equipmentPos })
       .subscribe(async (loadEquipment) => {
-        if (loadEquipment !== 'close') {
+        if (loadEquipment !== 'close' && loadEquipment !== undefined) {
           this.team.units[unitPos].equipments[equipmentPos] = loadEquipment;
           this.teamService.changeLevel(unitPos);
           this.calculateDamageSim(unitPos);
@@ -372,7 +372,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
     this.simpleModalService.addModal(ModalEspersComponent, { esper: esper, modalStep: modalStep, teamUnitPos: teamUnitPos })
       .subscribe(async (loadEsper) => {
-        if (loadEsper !== 'close') {
+        if (loadEsper !== 'close' && loadEsper !== undefined) {
           this.team.units[pos].esper = loadEsper;
           this.teamService.changeLevel(pos);
           this.calculateDamageSim(pos);
@@ -403,7 +403,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
     this.simpleModalService.addModal(ModalCardsComponent, { cardType: cardType, card: card, modalStep: modalStep, teamUnitPos: teamUnitPos })
       .subscribe(async (loadCard) => {
-        if (loadCard !== 'close') {
+        if (loadCard !== 'close' && loadCard !== undefined) {
           if (!subCard) {
             this.team.units[pos].card = loadCard;
           } else {

@@ -387,7 +387,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   showGuildDetail() {
     this.simpleModalService.addModal(ModalGuildComponent, { guild : JSON.parse(JSON.stringify(this.unit.guild.data)) })
       .subscribe(async (guild) => {
-        if (guild !== 'close') {
+        if (guild !== 'close' && guild !== undefined) {
           this.unit.guild.data = guild;
           this.unitService.changeLevel();
         }
@@ -397,7 +397,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   showMasterRanksDetail() {
     this.simpleModalService.addModal(ModalMasterRanksComponent, { masterRanks : JSON.parse(JSON.stringify(this.unit.masterRanks.data)) })
       .subscribe(async (masterRanks) => {
-        if (masterRanks !== 'close') {
+        if (masterRanks !== 'close' && masterRanks !== undefined) {
           this.unit.masterRanks.data = masterRanks;
           this.unitService.changeLevel();
         }
@@ -417,7 +417,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     this.simpleModalService.addModal(ModalEquipmentsComponent, { equipment: equipment, modalStep: modalStep, unit: unit, equipmentPos: equipmentPos })
       .subscribe(async (loadEquipment) => {
-        if (loadEquipment !== 'close') {
+        if (loadEquipment !== 'close' && loadEquipment !== undefined) {
           this.unit.equipments[pos] = loadEquipment;
 
           this.unitService.changeLevel();
@@ -436,7 +436,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     this.simpleModalService.addModal(ModalEspersComponent, { esper: esper, modalStep: modalStep })
       .subscribe(async (loadEsper) => {
-        if (loadEsper !== 'close') {
+        if (loadEsper !== 'close' && loadEsper !== undefined) {
           this.unit.esper = loadEsper;
 
           this.unitService.changeLevel();
@@ -465,7 +465,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     this.simpleModalService.addModal(ModalCardsComponent, { cardType: cardType, card: card, modalStep: modalStep })
       .subscribe(async (loadCard) => {
-        if (loadCard !== 'close') {
+        if (loadCard !== 'close' && loadCard !== undefined) {
           if (!subCard) {
             this.unit.card = loadCard;
           } else {

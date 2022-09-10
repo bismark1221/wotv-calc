@@ -210,6 +210,7 @@ export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> im
   }
 
   removeEquipment() {
+    this.result = null;
     this.close();
   }
 
@@ -237,7 +238,7 @@ export class ModalEquipmentsComponent extends SimpleModalComponent<null, any> im
 
     this.simpleModalService.addModal(ModalMateriaComponent, { materia: materia, modalStep: modalStep, equipment: equipment, materiaType: materiaType })
       .subscribe(async (loadMateria) => {
-        if (loadMateria !== 'close') {
+        if (loadMateria !== 'close' && loadMateria !== undefined) {
           this.firstClickOutside = false;
           this.equipment.materias[type] = loadMateria;
 

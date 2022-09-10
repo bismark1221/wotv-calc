@@ -8,7 +8,7 @@
           </tr>
           <tr>
             <td colspan="2">
-              <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.webp'}}"
+              <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '_full.webp'}}"
                   onerror="this.src='assets/equipments/placeholder.webp';"/>
             </td>
           </tr>
@@ -99,7 +99,7 @@
           <tr>
             <td>
               <div class="job" *ngFor="let job of equipment.jobs">
-                <img src="{{ 'assets/jobs/' + job.image + '.webp'}}" title="{{ job.name }}"/>
+                <img src="{{ 'assets/jobs/' + job.image + '_40.webp'}}" title="{{ job.name }}"/>
               </div>
             </td>
           </tr>
@@ -219,7 +219,7 @@
                   <span *ngFor="let item of skillCond.items">
                     <img src="{{'assets/units/' + item + '_small.webp'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
                     <div class="mainjob" *ngIf="skillCond.type == 'mainjob'">
-                      <img src="{{ 'assets/jobs/' + item + '.webp'}}" />
+                      <img src="{{ 'assets/jobs/' + item + '_40.webp'}}" />
                     </div>
                   </span>
                 </span>
@@ -256,7 +256,7 @@
           </tr>
           <tr>
             <td colspan="2">
-              <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '.webp'}}"
+              <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '_full.webp'}}"
                   onerror="this.src='assets/equipments/placeholder.webp';"/>
             </td>
           </tr>
@@ -287,7 +287,7 @@
       <table class="skillsTable" >
         <tbody>
           <tr>
-            <th colspan="6">Crafting materials to level 50 from 0</th>
+            <th colspan="7">Crafting materials to level 50 from 0</th>
           </tr>
           <tr *ngIf="equipment.materials.length > 1">
             <td *ngFor="let i of equipment.materials; let j = index"><span *ngIf="j > 0">+ </span>{{ j }}</td>
@@ -296,10 +296,10 @@
             <td *ngFor="let materials of equipment.formattedMaterials">
               <div *ngFor="let item of materials">
                 <div *ngIf="item.type === 'recipe'" class="recipe">
-                  <img src="{{'assets/equipments/' + equipment.image + '.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" class="recipeImg"/>
+                  <img src="{{'assets/equipments/' + equipment.image + '_small.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" class="recipeImg"/>
                 </div>
                 <div *ngIf="item.type !== 'recipe'">
-                  <img src="{{ 'assets/items/' + item.image + '.webp'}}" class="materialImg"/>
+                  <img src="{{ 'assets/items/' + item.image + '_middle.webp'}}" class="materialImg"/>
                 </div>
                 <span class="materialName">{{ item.name }}</span><br />
                 <span class="materialCount">{{ item.count }}</span>

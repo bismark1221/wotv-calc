@@ -20,7 +20,7 @@
       <div class="cardLine" id="card_{{item.dataId}}">
         <div class="cardSelector" id="cardSelector_{{item.dataId}}" [ngClass]="{'cardSelectorWithSave': savedCards[item.dataId]}">
           <div class="cardLogo">
-            <img src="assets/cards/{{ item.image }}_m.webp" />
+            <img src="assets/cards/{{ item.image }}_small.webp" />
           </div>
           <div class="cardNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
         </div>
@@ -58,7 +58,7 @@
               <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.webp'}}" />
             </div>
             <div>
-              <img class="cardImg" src="assets/cards/{{ card.image }}_m.webp" />
+              <img class="cardImg" src="assets/cards/{{ card.image }}_card.webp" />
             </div>
           </td>
         </tr>
@@ -144,7 +144,7 @@
                 <div *ngIf="cond.type === 'job'">
                   <span *ngFor="let job of cond.items">
                     <div *ngIf="job.image" class="subJob" title="{{ job.names.en }}">
-                      <img src="{{'assets/jobs/' + job.image + '.webp'}}" />
+                      <img src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                     </div>
                   </span>
                 </div>
@@ -152,7 +152,7 @@
                 <div *ngIf="cond.type === 'mainJob'">
                   <span *ngFor="let job of cond.items">
                     <div *ngIf="job.image" class="mainJob" title="{{ job.names.en }}">
-                      <img src="{{'assets/jobs/' + job.image + '.webp'}}" />
+                      <img src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                     </div>
                   </span>
                 </div>
@@ -205,7 +205,7 @@
               <div *ngIf="cond.type === 'job'">
                 <span *ngFor="let job of cond.items">
                   <div *ngIf="job.image" class="subJob" title="{{ job.names.en }}">
-                    <img src="{{'assets/jobs/' + job.image + '.webp'}}" />
+                    <img src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                   </div>
                 </span>
               </div>
@@ -213,7 +213,7 @@
               <div *ngIf="cond.type === 'mainJob'">
                 <span *ngFor="let job of cond.items">
                   <div *ngIf="job.image" class="mainJob" title="{{ job.names.en }}">
-                    <img src="{{'assets/jobs/' + job.image + '.webp'}}" />
+                    <img src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                   </div>
                 </span>
               </div>
@@ -318,13 +318,13 @@
 
                 <div *ngIf="cond.type === 'job'">
                   <span *ngFor="let job of cond.items">
-                    <img *ngIf="job.image" class="subJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.webp'}}" />
+                    <img *ngIf="job.image" class="subJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                   </span>
                 </div>
 
                 <div *ngIf="cond.type === 'mainJob'">
                   <span *ngFor="let job of cond.items">
-                    <img *ngIf="job.image" class="mainJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.webp'}}" />
+                    <img *ngIf="job.image" class="mainJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                   </span>
                 </div>
 

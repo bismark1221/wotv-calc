@@ -54,7 +54,7 @@
                       <img class="elementImg" src="{{'assets/elements/' + esper.element + '.webp'}}" *ngIf="esper.element" />
                     </div>
                     <div>
-                      <img class="esperImg" src="assets/units/{{ esper.image }}_s.webp" />
+                      <img class="esperImg" src="assets/espers/{{ esper.image }}_card.webp" />
                     </div>
                     <div class="cardTitle">
                       <span class="esperName">{{ esper.name }}</span>
@@ -108,7 +108,7 @@
                     <img class="elementImg" src="{{'assets/elements/' + esper.element + '.webp'}}" *ngIf="esper.element" />
                   </div>
                   <div>
-                    <img class="esperImg" src="assets/units/{{ esper.image }}_s.webp" />
+                    <img class="esperImg" src="assets/espers/{{ esper.image }}_card.webp" />
                   </div>
                   <div class="cardTitle">
                     <span class="esperName">{{ esper.customName ? esper.name + ' - ' + esper.customName : esper.name }}</span>
@@ -195,9 +195,7 @@
                       <li *ngFor="let node of esper.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
                         <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
-                        <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type === 'center'">
-                          <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.webp' }}"></span>
-                        </div>
+                        <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type === 'center'"></div>
 
                         <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type === 'text'"
                              [ngClass]="{
