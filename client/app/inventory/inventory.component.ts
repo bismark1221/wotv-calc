@@ -9,7 +9,7 @@ import { AuthService } from '../services/auth.service';
 import { ToolService } from '../services/tool.service';
 
 import { ModalLinkComponent } from '../builder/modal/modal.link.component';
-import { ModalInventoryEquipmentsComponent } from './modal/modal.equipments';
+import { ModalInventoryEquipmentsComponent } from './modal/modal.inventory.equipments.component';
 
 @Component({
   selector: 'app-inventory',

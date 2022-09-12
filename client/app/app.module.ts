@@ -51,7 +51,7 @@ import { QuestsComponent } from './quests/quests.component';
 import { QuestComponent } from './quest/quest.component';
 
 import { InventoryComponent } from './inventory/inventory.component';
-import { ModalInventoryEquipmentsComponent } from './inventory/modal/modal.equipments';
+import { ModalInventoryEquipmentsComponent } from './inventory/modal/modal.inventory.equipments.component';
 
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tabs/tab.component';

@@ -10,8 +10,8 @@ import { ModalMateriaComponent } from '../../builder/modal/modal.materia.compone
 
 @Component({
   selector: 'app-inventory-modal-equipments',
-  templateUrl: './modal.equipments.html',
-  styleUrls: ['./modal.equipments.css']
+  templateUrl: './modal.inventory.equipments.component.html',
+  styleUrls: ['./modal.inventory.equipments.component.css']
 })
 export class ModalInventoryEquipmentsComponent extends SimpleModalComponent<null, any> implements OnInit {
   rawData = {
