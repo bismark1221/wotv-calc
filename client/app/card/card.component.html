@@ -6,7 +6,11 @@
           <th colspan="3">{{ card.name }}</th>
         </tr>
         <tr>
-          <td colspan="3"><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.webp'}}" /></td>
+          <td colspan="3">
+            <a href="{{'assets/cards/' + card.image + '.webp'}}" target="_blank">
+              <img class="cardImg" src="{{'assets/cards/' + card.image + '_full.webp'}}" />
+            </a>
+          </td>
         </tr>
         <tr>
           <th class="sub">Rarity</th>
