@@ -76,11 +76,6 @@
   margin-right: 30px;
 }
 
-.fa-chevron-up, .fa-chevron-down {
-  float: right;
-  margin-right: 10px;
-}
-
 .upperBlock {
   padding-right: 10px;
 }
@@ -98,11 +93,6 @@
   background: none;
   border: 0;
   width: 1000px;
-}
-
-.fa-search {
-  padding-right: 8px;
-  color: #000;
 }
 
 .underSearchBlock {
@@ -240,10 +230,6 @@
 .tableList {
   margin: auto;
   margin-top: 10px
-}
-
-.fa-download {
-  cursor: pointer;
 }
 
 /**********/

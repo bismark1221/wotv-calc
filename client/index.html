@@ -7,8 +7,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="./assets/fontawesome/css/min.css">
-
   <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png?v=kPLzk5AL62">
   <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png?v=kPLzk5AL62">
   <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png?v=kPLzk5AL62">
@@ -36,10 +34,7 @@
   </script>
 
   <app-root>
-    <style>
-      app-root{display:flex;justify-content:center;align-items:center;height:100vh;color:black;text-transform:uppercase;font-family:Palatino, Helvetica, sans-serif;font-size:2em;text-shadow:2px 2px 10px rgba(0,0,0,0.2);text-align:center;}body {background:#242222;margin:0;padding:0;}img {display:inline-block;}@keyframes dots {50% {  transform:translateY(-.4rem);}100% {  transform:translateY(0);}}.d {animation:dots 1.5s ease-out infinite;}.d-2 {animation-delay:.5s;}.d-3 {animation-delay:1s;}.small-gif {width:50px;height:50px;}
-    </style>
-    <div>
+    <div class="introBlock">
       <div>
         <img class="small-gif d" src="assets/splash/black.gif" />
         <img class="small-gif d d-2" src="assets/splash/blue.gif" />
@@ -47,7 +42,7 @@
         <img class="small-gif d" src="assets/splash/red.gif" />
         <img class="small-gif d d-2" src="assets/splash/yellow.gif" />
       </div>
-      <div style="color:white;">Loading<span class="d">.</span><span class="d d-2">.</span><span class="d d-3">.</span>
+      <div>Loading<span class="d">.</span><span class="d d-2">.</span><span class="d d-3">.</span>
       </div>
     </div>
   </app-root>

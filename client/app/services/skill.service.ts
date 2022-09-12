@@ -352,10 +352,10 @@ export class SkillService {
 
     if (skill.upgrade.length !== 5) {
       if (skill.maxLevel < (skill.upgrade[0] * 10 - 10)) {
-        html += '<b>Acquired at ' + skill.upgrade[0] + ' <i class=\'fas fa-star\'></i></b><br />';
+        html += '<b>Acquired at ' + skill.upgrade[0] + ' <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 inline-block"><path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" /></svg></i></b><br />';
         effect.minValue = effect.maxValue;
       } else {
-        html += '<b>From ' + skill.upgrade[0] + ' to ' + skill.upgrade[skill.upgrade.length - 1] + ' <i class=\'fas fa-star\'></i></b><br />';
+        html += '<b>From ' + skill.upgrade[0] + ' to ' + skill.upgrade[skill.upgrade.length - 1] + ' <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 inline-block"><path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" /></svg></i></b><br />';
       }
     }
 

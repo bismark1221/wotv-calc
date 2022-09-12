@@ -4,8 +4,12 @@
     <div class="filters">
       <div class="boldText my-3" (click)="toogleCollapse('rarity')">
         Rarity
-        <i class="fas fa-chevron-up" *ngIf="!collapsed.rarity" aria-hidden="true"></i>
-        <i class="fas fa-chevron-down" *ngIf="collapsed.rarity" aria-hidden="true"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="!collapsed.rarity">
+          <path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="collapsed.rarity">
+          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+        </svg>
       </div>
       <div class="collapsedFilters my-2" *ngIf="!collapsed.rarity">
         <div *ngFor="let rarity of rarities">
@@ -18,8 +22,12 @@
 
       <div class="boldText my-3" (click)="toogleCollapse('type')">
         Type
-        <i class="fas fa-chevron-up" *ngIf="!collapsed.type" aria-hidden="true"></i>
-        <i class="fas fa-chevron-down" *ngIf="collapsed.type" aria-hidden="true"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="!collapsed.type">
+          <path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="collapsed.type">
+          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+        </svg>
       </div>
       <div class="collapsedFilters my-2" *ngIf="!collapsed.type">
         <div *ngFor="let type of types">
@@ -88,7 +96,9 @@
 
 <div class="loadingBlock" *ngIf="loadingBuild">
   <h1>Your build is loading</h1>
-  <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 mx-auto animate-spin">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+  </svg>
 </div>
 
 <div class="materiaBuild" *ngIf="step == 'build' && !loadingBuild">

@@ -155,10 +155,10 @@ export class ModalInventoryEquipmentsComponent extends SimpleModalComponent<null
 
   closeClickOuside() {
     if (!this.firstClickOutside) {
-      this.result = 'close';
       this.firstClickOutside = true;
     } else {
-      this.close();
+      // this.result = 'close';
+      // this.close();
     }
   }
 }

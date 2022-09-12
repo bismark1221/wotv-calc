@@ -37,7 +37,6 @@ th {
   position: relative;
   overflow: auto;
   height: 750px;
-  margin-top: 17px;
 }
 
 .rightWrapper {
@@ -89,14 +88,6 @@ th {
 
 .spanArrow {
   width: 18px;
-  display: inline-block;
-}
-
-.fa-arrow-up, .fa-arrow-down {
-  display: none;
-}
-
-.arrowActivated {
   display: inline-block;
 }
 

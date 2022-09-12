@@ -32,7 +32,7 @@
   margin-right: 5px;
 }
 
-.fa-chevron-up, .fa-chevron-down {
+.chevron {
   float: right;
   margin-right: 10px;
 }
@@ -61,11 +61,6 @@
   background: none;
   border: 0;
   width: 750px;
-}
-
-.fa-search {
-  padding-right: 8px;
-  color: #000;
 }
 
 .underSearchBlock {

@@ -1,7 +1,9 @@
 <div class="row">
   <div class="loadingBlock" *ngIf="loading">
     <h1>Your inventory is loading</h1>
-    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 mx-auto animate-spin">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+    </svg>
   </div>
 
   <div class="loadingBlock" *ngIf="!loading && user">
@@ -22,7 +24,9 @@
     </div>
     <div *ngFor="let type of ['units', 'cards', 'espers']">
       <div class="searchBlock" *ngIf="inventoryFromId || user">
-        <i class="fas fa-search" aria-hidden="true"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 inline-block text-black">
+          <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+        </svg>
         <input class="searchInput" type="text" placeholder="Search by name" [(ngModel)]="searchText[type]">
 
         <button
@@ -46,7 +50,9 @@
       <div class="unitList">
         <div class="unitCol" *ngFor="let item of getFilteredItems(type)" [ngClass]="{'unitNotOwned': !inventory[type][item.dataId]}">
           <div class="item-plus" (click)="ownItem(item.dataId, type)">
-            <i class="fas fa-plus"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-28 h-28">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
           </div>
           <div class="cardIcons">
             <img class="rarityImg" src="{{'assets/rarity/' + item.rarity + '.webp'}}" />
@@ -77,7 +83,9 @@
 
     <div>
       <div class="searchBlock" *ngIf="inventoryFromId || user">
-        <i class="fas fa-search" aria-hidden="true"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 inline-block text-black">
+          <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+        </svg>
         <input class="searchInput" type="text" placeholder="Search by name" [(ngModel)]="searchText['equipments']">
 
         <button class="btn btn-main btn-in-search" (click)="addEquipment()" *ngIf="user">
