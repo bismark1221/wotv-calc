@@ -2014,7 +2014,7 @@ export class SkillService {
         if ((from === 'damage' && (math.dst === 'DAMAGE' || math.dst === 'ABSORB'))
           || (
             from === 'notDamage' && (math.dst !== 'DAMAGE' && math.dst !== 'ABSORB')
-            && (math.dst !== 'BUFF' || effect.timing === 'SKILL_AFTER')
+            && (math.dst !== 'BUFF' || effect.timing === 'SKILL_AFTER' || (math.targetEffects && math.targetEffects.indexOf(effect.type) !== -1))
             && (math.dst !== 'EFFECT' || skill.effects.indexOf(effect) === 0)
           )
         ) {
@@ -2192,13 +2192,13 @@ export class SkillService {
             case 'EFFECT_CONDITION' :
               switch (math.formula) {
                 case 'AT_LEAST' :
-                  html += ' If ' + (math.conditionTarget === 'self' ? 'you' : 'the target') + ' have at least ' + math.condition + ' of the following effects : ';
+                  html += ' If ' + (math.conditionTarget === 'self' || skill.type === 'masterSkill' || skill.type === 'support' ? 'you' : 'the target') + ' have at least ' + math.condition + ' of the following effects : ';
                   math.effects.forEach((effectName, effectIndex) => {
                     html += effectName[0].toUpperCase() + effectName.slice(1).toLowerCase() + (effectIndex < math.effects.length - 1 ? ', ' : '');
                   });
                   break;
                 case 'MORE_THAN' :
-                  html += ' If ' + (math.conditionTarget === 'self' ? 'you' : 'the target') + ' have ' + math.condition + ' or more of the following effects : ';
+                  html += ' If ' + (math.conditionTarget === 'self' || skill.type === 'masterSkill' || skill.type === 'support' ? 'you' : 'the target') + ' have ' + math.condition + ' or more of the following effects : ';
                   math.effects.forEach((effectName, effectIndex) => {
                     html += effectName[0].toUpperCase() + effectName.slice(1).toLowerCase() + (effectIndex < math.effects.length - 1 ? ', ' : '');
                   });

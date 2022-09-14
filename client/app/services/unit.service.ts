@@ -295,7 +295,7 @@ export class UnitService {
   private unitHasJob(unit, filters) {
     let unitHasJob = false;
 
-    for (let i = (filters.subJob ? 1 : 0); i <= (filters.mainJob ? 0 : 2); i++) {
+    for (let i = (filters.subJob ? 1 : 0); i <= (filters.mainJob ? 0 : unit.jobs.length - 1); i++) {
       const tableJob = unit.jobs[i].split('_');
       if (filters.job.length === 0 || filters.job.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2] + (tableJob[3] && tableJob[3] === '01' ? '_01' : '')) !== -1) {
         unitHasJob = true;
