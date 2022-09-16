@@ -86,17 +86,6 @@ circle, rect {
   float: right;
 }
 
-.itemsTable {
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border: 0;
-}
-
-.itemsTable tr, .itemsTable td {
-  border: 0;
-}
-
 .itemsCol {
   background-color: var(--card-background);
   width: 200px;
@@ -255,8 +244,22 @@ circle, rect {
   height: 50px;
 }
 
+.titleMobile {
+  display: none;
+  font-size: 35px;
+  color: var(--white);
+}
+
 @media (max-width: 860px) {
   .markdownHome {
+    display: none;
+  }
+
+  .titleMobile {
+    display: block;
+  }
+
+  .title {
     display: none;
   }
 
@@ -280,11 +283,6 @@ circle, rect {
 }
 
 @media (max-width: 445px) {
-  .itemsTable {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   .itemsCol, .itemImgBlock {
     width: 180px;
   }
