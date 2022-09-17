@@ -298,4 +298,12 @@ export class ToolService {
 
     return false;
   }
+
+  isWindowSmall() {
+    if (window.innerWidth < 640) {
+      return true;
+    }
+
+    return false;
+  }
 }

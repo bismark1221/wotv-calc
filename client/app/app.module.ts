@@ -26,6 +26,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { SentryErrorHandler } from './sentry.errorHandler';
 
 import { AppComponent } from './app.component';
+import { ResizeDetectorComponent } from './resizeDetector.component';
+
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';

@@ -63,8 +63,6 @@ circle, rect {
 }
 
 .itemImgBlock {
-  width: 200px;
-  height: 160px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -72,10 +70,6 @@ circle, rect {
 .itemImg {
   max-height: 150px;
   max-width: 190px;
-}
-
-.elementImg, .rarityImg {
-  height: 32px;
 }
 
 .rarityImg {
@@ -86,22 +80,10 @@ circle, rect {
   float: right;
 }
 
-.itemsTable {
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border: 0;
-}
-
-.itemsTable tr, .itemsTable td {
-  border: 0;
-}
-
 .itemsCol {
   background-color: var(--card-background);
-  width: 200px;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
   text-align: center;
   position: relative;
   margin-bottom: 10px;
@@ -255,8 +237,22 @@ circle, rect {
   height: 50px;
 }
 
+.titleMobile {
+  display: none;
+  font-size: 35px;
+  color: var(--white);
+}
+
 @media (max-width: 860px) {
   .markdownHome {
+    display: none;
+  }
+
+  .titleMobile {
+    display: block;
+  }
+
+  .title {
     display: none;
   }
 
@@ -276,20 +272,5 @@ circle, rect {
 
   .updates {
     text-align: center;
-  }
-}
-
-@media (max-width: 445px) {
-  .itemsTable {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .itemsCol, .itemImgBlock {
-    width: 180px;
-  }
-
-  .itemImg {
-    max-width: 170px;
   }
 }
