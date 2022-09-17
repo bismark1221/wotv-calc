@@ -63,8 +63,6 @@ circle, rect {
 }
 
 .itemImgBlock {
-  width: 200px;
-  height: 160px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -72,10 +70,6 @@ circle, rect {
 .itemImg {
   max-height: 150px;
   max-width: 190px;
-}
-
-.elementImg, .rarityImg {
-  height: 32px;
 }
 
 .rarityImg {
@@ -88,9 +82,8 @@ circle, rect {
 
 .itemsCol {
   background-color: var(--card-background);
-  width: 200px;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
   text-align: center;
   position: relative;
   margin-bottom: 10px;
@@ -279,15 +272,5 @@ circle, rect {
 
   .updates {
     text-align: center;
-  }
-}
-
-@media (max-width: 445px) {
-  .itemsCol, .itemImgBlock {
-    width: 180px;
-  }
-
-  .itemImg {
-    max-width: 170px;
   }
 }

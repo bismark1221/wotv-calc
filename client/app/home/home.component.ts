@@ -1,13 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import { UnitService } from '../services/unit.service';
-import { EsperService } from '../services/esper.service';
-import { CardService } from '../services/card.service';
+import { ResizeDetectorComponent } from '../resizeDetector.component';
 import { NavService } from '../services/nav.service';
 import { ToolService } from '../services/tool.service';
-import { JobService } from '../services/job.service';
-import { EquipmentService } from '../services/equipment.service';
 import { HomeService } from '../services/home.service';
 
 @Component({
@@ -16,7 +12,7 @@ import { HomeService } from '../services/home.service';
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent {
+export class HomeComponent extends ResizeDetectorComponent {
   lang = 'en';
   version = 'GL';
 
@@ -37,15 +33,12 @@ export class HomeComponent {
 
   constructor(
     private translateService: TranslateService,
-    private unitService: UnitService,
-    private esperService: EsperService,
-    private cardService: CardService,
     private navService: NavService,
-    private toolService: ToolService,
-    private jobService: JobService,
-    private equipmentService: EquipmentService,
     private homeService: HomeService,
+    private toolService: ToolService
   ) {
+    super(toolService);
+
     this.navService.setTitle(null);
 
     this.getUpdate();
@@ -57,6 +50,7 @@ export class HomeComponent {
       }
     });
   }
+
   private async getUpdate() {
     this.lang = this.translateService.currentLang;
     this.version = this.navService.getVersion();
