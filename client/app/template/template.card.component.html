@@ -1,0 +1,25 @@
+<div class="itemsCol w-[110px] sm:w-[200px]" *ngIf="item">
+  <a [routerLink]="[getRoute('/'  + type + '/' + item.slug)]" [routerLinkActive]="['active']">
+    <div class="cardIcons">
+      <img class="rarityImg" src="{{'assets/rarity/' + item.rarity + (isWindowSmall ? '_24' : '_32') + '.webp'}}" />
+      <img class="elementImg" src="{{'assets/elements/' + item.element + (isWindowSmall ? '_24' : '_32') + '.webp'}}" *ngIf="item.element" />
+      <div *ngIf="options.job && item.jobs" class="hidden sm:block">
+        <div
+          *ngFor="let job of item.jobs; let j = index"
+          [ngClass]="{
+            'mainJob': j === 0,
+            'subJob': j !== 0
+          }"
+        >
+          <img src="{{'assets/jobs/' + job.image + '_20.webp'}}" />
+        </div>
+      </div>
+    </div>
+    <div class="itemImgBlock h-[100px] sm:h-[160px]">
+      <img class="itemImg aspect-auto" src="assets/{{ type }}s/{{ item.image }}_card{{ isWindowSmall ? '_m' : '' }}.webp" />
+    </div>
+    <div class="cardTitle h-9 sm:h-[50px]">
+      <span class="itemName text-[12px] leading-[14px] sm:text-[16px] sm:leading-6">{{ item.name }}</span>
+    </div>
+  </a>
+</div>

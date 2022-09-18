@@ -1,0 +1,82 @@
+.itemsCol {
+  background-color: var(--card-background);
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+.itemsCol:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--card-background-hover)
+}
+
+.itemsCol > a:hover {
+  text-decoration: none;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.cardTitle {
+  background-color: var(--card-title-background);
+  display: table;
+  width: 100%;
+}
+
+.itemName {
+  font-weight: bold;
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--card-title-color);
+}
+
+.mainJob {
+  margin-top: 45px;
+  height: 30px;
+  background: url("assets/jobs/base_main.webp") 0px 0px no-repeat;
+  background-size: 30px;
+  padding: 5px;
+  display: block;
+  width: 30px;
+}
+
+.subJob {
+  margin-top: 5px;
+  height: 30px;
+  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
+  background-size: 30px;
+  padding: 5px;
+  display: block;
+  width: 30px;
+}
+
+.mainJob img, .subJob img {
+  max-width: 20px;
+  max-height: 20px;
+  vertical-align: top;
+}
+
+.rarityImg {
+  float: left;
+}
+
+.elementImg {
+  float: right;
+}
+
+.itemImgBlock {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.itemImg {
+  max-height: 150px;
+  max-width: 190px;
+}

@@ -1,7 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import { ResizeDetectorComponent } from '../resizeDetector.component';
 import { NavService } from '../services/nav.service';
 import { ToolService } from '../services/tool.service';
 import { HomeService } from '../services/home.service';
@@ -12,7 +11,7 @@ import { HomeService } from '../services/home.service';
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent extends ResizeDetectorComponent {
+export class HomeComponent {
   lang = 'en';
   version = 'GL';
 
@@ -37,8 +36,6 @@ export class HomeComponent extends ResizeDetectorComponent {
     private homeService: HomeService,
     private toolService: ToolService
   ) {
-    super(toolService);
-
     this.navService.setTitle(null);
 
     this.getUpdate();

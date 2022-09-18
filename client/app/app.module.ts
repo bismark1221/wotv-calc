@@ -91,6 +91,7 @@ import { ModalMasterRanksComponent } from './builder/modal/modal.mr.component';
 import { ModalMateriaComponent } from './builder/modal/modal.materia.component';
 
 import { TemplateItemComponent } from './template/template.item.component';
+import { TemplateCardComponent } from './template/template.card.component';
 
 import { SearchOptionsModalComponent } from './searchOptionsModal/searchOptionsModal.component';
 
@@ -189,6 +190,7 @@ export function createTranslateLoader(http: HttpClient) {
     OtherMaterialLookupComponent,
     OtherSubCardComponent,
     TemplateItemComponent,
+    TemplateCardComponent,
     UserComponent,
     SearchOptionsModalComponent,
     TabsComponent,

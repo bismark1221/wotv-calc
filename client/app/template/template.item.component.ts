@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-import { Item } from '../entities/item';
-
 @Component({
   selector: 'app-template-item',
   templateUrl: './template.item.component.html',
