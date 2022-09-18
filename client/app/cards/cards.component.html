@@ -161,19 +161,7 @@
       </div>
     </div>
     <div class="cardsList">
-      <div class="cardsCol" *ngFor="let card of getFilteredCards()">
-        <a [routerLink]="[getRoute('/card/' + card.slug)]" [routerLinkActive]="['active']">
-          <div class="cardIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.webp'}}" />
-          </div>
-          <div class="cardImgBlock">
-            <img class="cardImg" src="assets/cards/{{ card.image }}_card.webp" />
-          </div>
-          <div class="cardTitle">
-            <span class="cardName">{{ card.name }}</span>
-          </div>
-        </a>
-      </div>
+      <app-template-card *ngFor="let card of getFilteredCards()" [item]="card" [linkType]="'card'" [assetType]="'card'"></app-template-card>
     </div>
   </div>
 </div>

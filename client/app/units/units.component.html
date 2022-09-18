@@ -263,20 +263,7 @@
       </div>
     </div>
     <div class="unitsList">
-      <div class="unitsCol" *ngFor="let unit of getFilteredUnits()">
-        <a [routerLink]="[getRoute('/unit/' + unit.slug)]" [routerLinkActive]="['active']">
-          <div class="cardIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.webp'}}" />
-            <img class="elementImg" src="{{'assets/elements/' + unit.element + '.webp'}}" *ngIf="unit.element" />
-          </div>
-          <div class="unitImgBlock">
-            <img class="unitImg" src="assets/units/{{ unit.image }}_card.webp" />
-          </div>
-          <div class="cardTitle">
-            <span class="unitName">{{ unit.name }}</span>
-          </div>
-        </a>
-      </div>
+      <app-template-card *ngFor="let unit of getFilteredUnits()" [item]="unit" [linkType]="'unit'" [assetType]="'unit'"></app-template-card>
     </div>
   </div>
 </div>

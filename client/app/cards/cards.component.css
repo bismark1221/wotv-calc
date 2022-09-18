@@ -102,63 +102,6 @@
   margin-top: 10px;
 }
 
-.cardImgBlock {
-  height: 160px;
-  width: 200px;
-}
-
-.cardImg {
-  height: 150px;
-  max-width: 190px;
-  margin: auto;
-  margin-top: 5px;
-}
-
-.rarityImg {
-  height: 32px;
-  float: left;
-}
-
-.cardsCol {
-  background-color: var(--card-background);
-  width: 200px;
-  display: inline-block;
-  margin-right: 10px;
-  text-align: center;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.cardsCol:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: var(--card-background-hover)
-}
-
-.cardsCol > a:hover {
-  text-decoration: none;
-}
-
-.cardIcons {
-  position: absolute;
-  width: 100%;
-  padding: 5px;
-}
-
-.cardTitle {
-  background-color: var(--card-title-background);
-  display: table;
-  height: 50px;
-  width: 100%;
-}
-
-.cardName {
-  font-weight: bold;
-  margin-left: 10px;
-  display: table-cell;
-  vertical-align: middle;
-  color: var(--card-title-color);
-}
-
 .select-sort, .select-order {
   display: inline-block;
 }

@@ -161,20 +161,7 @@
       </div>
     </div>
     <div class="espersList">
-      <div class="espersCol" *ngFor="let esper of getFilteredEspers()">
-        <a [routerLink]="[getRoute('/esper/' + esper.slug)]" [routerLinkActive]="['active']">
-          <div class="cardIcons">
-            <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.webp'}}" />
-            <img class="elementImg" src="{{'assets/elements/' + esper.element + '.webp'}}" *ngIf="esper.element" />
-          </div>
-          <div class="esperImgBlock">
-            <img class="esperImg" src="assets/espers/{{ esper.image }}_card.webp" />
-          </div>
-          <div class="cardTitle">
-            <span class="esperName">{{ esper.name }}</span>
-          </div>
-        </a>
-      </div>
+      <app-template-card *ngFor="let esper of getFilteredEspers()" [item]="esper" [linkType]="'esper'" [assetType]="'esper'"></app-template-card>
     </div>
   </div>
 </div>

@@ -35,7 +35,7 @@
       {{ line.date }}
     </div>
     <div class="itemsList">
-      <app-template-card *ngFor="let item of line.items" [item]="item" [type]="item.type" [options]="{job:true}"></app-template-card>
+      <app-template-card *ngFor="let item of line.items" [item]="item" [linkType]="item.type" [assetType]="item.type" [options]="{job:true}"></app-template-card>
     </div>
   </div>
 </div>

@@ -12,7 +12,8 @@ import { ToolService } from '../services/tool.service';
 })
 export class TemplateCardComponent extends ResizeDetectorComponent {
   @Input() item;
-  @Input() type;
+  @Input() linkType;
+  @Input() assetType;
   @Input() options;
 
   constructor(
