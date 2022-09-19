@@ -59,6 +59,11 @@ export class RaidService {
     await this.getRaids();
     const raids = this.filterRaids(this[this.navService.getVersion() + '_raids'], filters);
 
+    for (const raid of raids) {
+      raid.element = raid.bosses[0].element;
+      raid.image = raid.bosses[0].image;
+    }
+
     switch (sort) {
       case 'name' :
         this.toolService.sortByName(raids, order);
