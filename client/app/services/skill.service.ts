@@ -1010,12 +1010,7 @@ export class SkillService {
         html = this.getChance(skill, effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'IGNORE_FATAL' :
-        html = this.getChance(skill, effect, false) + ' to ignore fatal damage' + this.getValue(skill, effect);
-        if (effect.condition === 'HP_THRESHOLD' && effect.hpThreshold) {
-          html += ' when HP >= ' + effect.hpThreshold + '% ';
-        }
-
-        html += this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' to ignore fatal damage' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'PHYSIC_EVADE' :
         if (effect.rate) {
@@ -1839,14 +1834,12 @@ export class SkillService {
       break;
     }
 
-    if (effect.condition || effect.buffOnCondition) {
-      if (this.formatConditions(effect.condition)) {
-        html = html + this.formatConditions(effect.condition);
-      }
+    if (effect.condition && this.formatConditions(effect.condition)) {
+      html = html + this.formatConditions(effect.condition);
+    }
 
-      if (this.formatConditions(effect.buffOnCondition)) {
-        html = html + this.formatConditions(effect.buffOnCondition);
-      }
+    if (effect.buffOnCondition && this.formatConditions(effect.buffOnCondition)) {
+      html = html + this.formatConditions(effect.buffOnCondition);
     }
 
     if (effect.side) {
@@ -1876,7 +1869,7 @@ export class SkillService {
       html = this.formatMaths(skill, html, 'notDamage', effect);
     }
 
-    if (effect.continues && effect.continues.length > 0) {
+    if (effect.continues) {
       html = this.formatContinues(effect, html);
     }
 
@@ -1891,28 +1884,22 @@ export class SkillService {
       ON_MAGIC_ATTACK: ' when attacking with magic attacks',
       ON_CRITICAL: ' when performing a critical hit',
       HUMAN: ' when cast on human',
-      NETHERBEAST: ' when cast on nether beast',
-      HP_SUPP_10: ' only when HP >= 10%',
-      HP_SUPP_20: ' only when HP >= 20%',
-      HP_SUPP_30: ' only when HP >= 30%',
-      HP_SUPP_40: ' only when HP >= 40%',
-      HP_SUPP_50: ' only when HP >= 50%',
-      HP_SUPP_60: ' only when HP >= 60%',
-      HP_SUPP_70: ' only when HP >= 70%',
-      HP_SUPP_80: ' only when HP >= 80%',
-      HP_SUPP_90: ' only when HP >= 90%',
-      HP_LESS_10: ' only when HP <= 10%',
-      HP_LESS_20: ' only when HP <= 20%',
-      HP_LESS_30: ' only when HP <= 30%',
-      HP_LESS_40: ' only when HP <= 40%',
-      HP_LESS_50: ' only when HP <= 50%',
-      HP_LESS_60: ' only when HP <= 60%',
-      HP_LESS_70: ' only when HP <= 70%',
-      HP_LESS_80: ' only when HP <= 80%',
-      HP_LESS_90: ' only when HP <= 90%'
+      NETHERBEAST: ' when cast on nether beast'
     };
 
-    return conditions[condition];
+    if (conditions[condition]) {
+      return conditions[condition];
+    } else {
+      if (condition.indexOf('HP_SUPP') !== -1) {
+        return ' only when HP >= ' + condition.split('_')[2] + '%';
+      }
+
+      if (condition.indexOf('HP_LESS') !== -1) {
+        return ' only when HP <= ' + condition.split('_')[2] + '%';
+      }
+    }
+
+    return null;
   }
 
   private upperCaseFirst(text) {
@@ -2426,18 +2413,12 @@ export class SkillService {
   }
 
   formatContinues(effect, html) {
-    for (const continueId of effect.continues) {
-      const conditionRealId = continueId.split('_').slice(0, -1).join('_');
-      switch (conditionRealId) {
-        case 'REMOVE_AFTER_HIT':
-          html += ', remove effect after ' + (continueId.split('_')[continueId.split('_').length - 1] - 1) + ' hits received';
-        break;
-        case 'WHEN_HP_LESS':
-          html += ', when HP <= ' + (continueId.split('_')[continueId.split('_').length - 1]) + ' %';
-        break;
-        default:
-        break;
-      }
+    if (effect.continues.indexOf('HIT_RECEIVED') !== -1) {
+      html += ', remove effect after ' + (effect.continues.split('_')[2]) + ' hits received';
+    } else if (effect.continues.indexOf('HP_LESS') !== -1) {
+      html += ' only when HP <= ' + effect.continues.split('_')[2] + '%';
+    } else if (effect.continues.indexOf('HP_SUPP') !== -1) {
+      html += ' only when HP >= ' + effect.continues.split('_')[2] + '%';
     }
 
     return html;
