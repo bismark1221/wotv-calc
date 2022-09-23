@@ -1884,7 +1884,9 @@ export class SkillService {
       ON_MAGIC_ATTACK: ' when attacking with magic attacks',
       ON_CRITICAL: ' when performing a critical hit',
       HUMAN: ' when cast on human',
-      NETHERBEAST: ' when cast on nether beast'
+      NETHERBEAST: ' when cast on nether beast',
+      ONLY_FOR_NPC_ALLY: ' only for npc ally',
+      WEZETTE_AFFILIATION: ' only for Wezette affiliation units'
     };
 
     if (conditions[condition]) {
@@ -2419,6 +2421,14 @@ export class SkillService {
       html += ' only when HP <= ' + effect.continues.split('_')[2] + '%';
     } else if (effect.continues.indexOf('HP_SUPP') !== -1) {
       html += ' only when HP >= ' + effect.continues.split('_')[2] + '%';
+    } else if (effect.continues === 'ONLY_FOR_NPC_ALLY') {
+      html += ' only for npc ally';
+    } else if (effect.continues === 'WEZETTE_AFFILIATION') {
+      html += ' only for Wezette affiliation units';
+    } else if (effect.continues === 'LEONIS_AFFILIATION') {
+      html += ' only for Leonis affiliation units';
+    } else if (effect.continues === 'HOURNE_AFFILIATION') {
+      html += ' only for Hourne affiliation units';
     }
 
     return html;

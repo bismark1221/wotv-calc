@@ -175,7 +175,9 @@ export class QuestComponent implements OnInit {
             DARK_ELEMENT: ' for dark units',
           };
 
-          this.quest.formattedBuffs[this.quest.formattedBuffs.length - 1] += conditions[effect.condition];
+          if (conditions[effect.condition]) {
+            this.quest.formattedBuffs[this.quest.formattedBuffs.length - 1] += conditions[effect.condition];
+          }
         }
       });
 
