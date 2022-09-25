@@ -18,6 +18,7 @@ import { Item } from '../entities/item';
 })
 export class OtherFarmCalculatorComponent implements OnInit {
   quests = [];
+  rawQuests = [];
   items: Observable<Item[]>;
   selectedItems = [];
   itemLoading = false;
@@ -28,6 +29,43 @@ export class OtherFarmCalculatorComponent implements OnInit {
 
   itemClassInInput = 'in-ng-input';
   itemClassListQuest = 'in-quest-list';
+
+  filters = {
+    type: [
+      'story',
+      'event',
+      'hard_quest_unit',
+      'multi',
+      'character_quest',
+      'esper_quest',
+      'raid',
+      'tuto',
+      'beginner',
+      'guild_quest',
+      'selection',
+      'hard_quest_vc'
+    ],
+    showNotAvailableQuests: false
+  };
+
+  isFilterChecked = {
+    type: []
+  };
+
+  questTypes = [
+    'story',
+    'event',
+    'hard_quest_unit',
+    'multi',
+    'character_quest',
+    'esper_quest',
+    'raid',
+    'tuto',
+    'beginner',
+    'guild_quest',
+    'selection',
+    'hard_quest_vc'
+  ];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -41,6 +79,12 @@ export class OtherFarmCalculatorComponent implements OnInit {
 
   async ngOnInit() {
     this.navService.setTitle('Farm Calculator');
+
+    if (sessionStorage.getItem('farmCalcQuestsFilters')) {
+      this.filters = JSON.parse(sessionStorage.getItem('farmCalcQuestsFilters'));
+    }
+
+    this.filterChecked();
 
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       const data = params.get('data');
@@ -90,10 +134,10 @@ export class OtherFarmCalculatorComponent implements OnInit {
   async getQuests() {
     this.questLoading = true;
     const apiResult = await this.questService.getQuestsForFarmCalc(this.selectedItems);
-    this.quests = apiResult.quests;
+    this.rawQuests = apiResult.quests;
 
     this.isCollapsed = {};
-    for (const quest of this.quests) {
+    for (const quest of this.rawQuests) {
       this.isCollapsed[quest.dataId] = true;
 
       quest.dropLists = [];
@@ -153,7 +197,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
       }
     }
 
-    this.quests.sort((a, b) => {
+    this.rawQuests.sort((a, b) => {
       if (a.findedItems.length > b.findedItems.length) {
         return -1;
       } else if (a.findedItems.length < b.findedItems.length) {
@@ -177,10 +221,69 @@ export class OtherFarmCalculatorComponent implements OnInit {
       }
     });
 
+    this.filterQuests();
+
     this.questLoading = false;
+  }
+
+  filterQuests() {
+    this.quests = [];
+    this.rawQuests.forEach(quest => {
+      if (this.filters.type.indexOf(quest.type) !== -1) {
+        if (this.filters.showNotAvailableQuests) {
+          this.quests.push(quest);
+        } else {
+          if (!quest.lastRelease) {
+            this.quests.push(quest);
+          } else {
+            const splittedStartDate = quest.lastRelease.start.split('/');
+            const start = new Date(splittedStartDate[2], splittedStartDate[1] - 1, splittedStartDate[0]);
+            const splittedEndDate = quest.lastRelease.end.split('/');
+            const end = new Date(splittedEndDate[2], splittedEndDate[1] - 1, splittedEndDate[0]);
+            const today = new Date();
+
+            if (today >= start && today <= end) {
+              this.quests.push(quest);
+            }
+          }
+        }
+      }
+    });
+  }
+
+  toogleAvailableQuests() {
+    this.filters.showNotAvailableQuests = !this.filters.showNotAvailableQuests;
+    this.filterQuests();
+  }
+
+  filterList(type, value) {
+    if (this.filters[type].indexOf(value) === -1) {
+      this.filters[type].push(value);
+    } else {
+      this.filters[type].splice(this.filters[type].indexOf(value), 1);
+    }
+
+    sessionStorage.setItem('farmCalcQuestsFilters', JSON.stringify(this.filters));
+    this.filterChecked();
+
+    this.filterQuests();
+  }
+
+  filterChecked() {
+    this.questTypes.forEach(type => {
+      if (this.filters.type.indexOf(type) === -1) {
+        this.isFilterChecked.type[type] = false;
+      } else {
+        this.isFilterChecked.type[type] = true;
+      }
+    });
   }
 
   getRoute(route) {
     return this.navService.getRoute(route);
+  }
+
+  formatType(type) {
+    return this.questService.formatType(type);
   }
 }
