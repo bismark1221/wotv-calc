@@ -1,0 +1,3 @@
+<tr app-template-skillRow [skill]="skill" [jobs]="jobs" [showJobIcon]="showJobIcon" [showJobLvl]="showJobLvl" [showStarLvl]="showStarLvl" [showType]="showType" [showName]="showName" [showEffects]="showEffects" [showRange]="showRange" [showCasts]="showCasts" [showHits]="showHits" [showCost]="showCost" [upgradeColSpan]="upgradeColSpan" [basicAttack]="basicAttack"></tr>
+
+<tr app-template-skillRow *ngFor="let upgradedSkill of skill.upgrades" [skill]="upgradedSkill" [jobs]="jobs" [showJobIcon]="showJobIcon" [showType]="showType" [showName]="showName" [showEffects]="showEffects" [showRange]="showRange" [showCasts]="showCasts" [showHits]="showHits" [showCost]="showCost" [upgradeColSpan]="upgradeColSpan" [basicAttack]="basicAttack" [isUpgrade]="true"></tr>

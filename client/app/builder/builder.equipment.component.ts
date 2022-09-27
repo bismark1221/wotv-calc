@@ -25,6 +25,7 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   loadingBuild = false;
   showSave = false;
   selectedEquipmentId = null;
+  skillLevel = 1;
 
   version = 'GL';
 
@@ -158,6 +159,7 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   }
 
   changeSkillLevel() {
+    console.log(this.equipment)
     this.equipmentService.changeSkillLevel(this.equipment);
   }
 

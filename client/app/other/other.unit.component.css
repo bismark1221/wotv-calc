@@ -20,7 +20,7 @@
   padding: 0;
 }
 
-.elementImg, .damageImg, .statusAilmentImg, .skilImg, .damageSkillImg, .rarityImg {
+.elementImg, .skilImg, .damageSkillImg {
   height: 32px;
 }
 
@@ -29,22 +29,6 @@
   max-width: 250px;
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-.limitBased{
-  border-right: none;
-  padding-right: 0px;
-  width: 50px;
-}
-
-.bonusTable {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.bonusBlock {
-  display: inline-block;
-  margin-right: 20px;
 }
 
 .raidTable {
@@ -56,28 +40,12 @@
   width: 100%;
 }
 
-.skillsTable {
-  width: 100%;
-}
-
 .statsTable:not(:first-child) {
-  margin-top: 10px;
-}
-
-.skillsTable:not(:first-child) {
   margin-top: 10px;
 }
 
 .rangeTd {
   width: 69px;
-}
-
-.skillJobTd {
-  width: 70px;
-}
-
-.skillStarTd {
-  width: 72px;
 }
 
 .skillTypeTd {
@@ -100,25 +68,8 @@
   width: 200px;
 }
 
-.tmrNameTd {
-  width: 150px;
-}
-
-.tmrTypeTd {
-  width: 60px;
-}
-
-.skillEffectTdAndNoBorderLeft {
-  text-align: left;
-  border-left: none;
-}
-
 .skillEffectTd {
   text-align: left;
-}
-
-.limitNameTd {
-  width: 300px;
 }
 
 .heightResTd {
@@ -155,26 +106,9 @@
   vertical-align: top;
 }
 
-.enemyImg {
+.elementImg {
   max-width: 40px;
   max-height: 40px;
-  margin-right: 5px;
-}
-
-.elementImg, .damageImg, .statusAilmentImg {
-  max-width: 40px;
-  max-height: 40px;
-}
-
-
-.allyTable, .enemyTable, .chestTable, .objectTable, .switchTable {
-  width: 120%;
-  margin-top: 10px;
-  margin-left: -100px;
-}
-
-.allyTable .idCol, .enemyTable .idCol, .chestTable .idCol, .objectTable .idCol, .switchTable .idCol {
-  width: 70px;
 }
 
 .enemyDetailCol {
@@ -209,9 +143,4 @@
 .collapseBlock {
   margin-right: 5px;
   display: inline-block;
-}
-
-.dropRateItemBlock {
-  display: inline-block;
-  margin-right: 10px;
 }

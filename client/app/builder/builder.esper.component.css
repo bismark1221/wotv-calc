@@ -4,19 +4,6 @@
   margin-bottom: 20px;
 }
 
-.searchBlock {
-  background: #F5F6F8;
-  margin-top: 10px;
-  padding: 5px;
-  width: 100%;
-}
-
-.searchInput {
-  background: none;
-  border: 0;
-  width: 1220px;
-}
-
 .loadingBlock {
   margin: auto;
   padding: 20px;
@@ -187,33 +174,9 @@
   width: 110px;
 }
 
-.dropdownDiv {
-  display: inline-block;
-}
-
 .statsTable {
   width: 100%;
   margin-bottom: 10px;
-}
-
-.skillNameTd {
-  width: 200px;
-}
-
-.rangeTd {
-  width: 69px;
-}
-
-.skillCastTd {
-  width: 61px;
-}
-
-.skillHitTd {
-  width: 50px;
-}
-
-.skillCostTd {
-  width: 60px;
 }
 
 .esperSelector {
@@ -236,10 +199,6 @@
 .esperButtons {
   text-align: center;
   border-top: 10px;
-}
-
-.damageImg, .skilImg, .damageSkillImg {
-  height: 32px;
 }
 
 .buffImg {

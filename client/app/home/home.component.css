@@ -6,37 +6,6 @@
   position: relative;
 }
 
-.amazonBanner {
-  text-align: center;
-  padding-top: 10px;
-  background-color: var(--home-title);
-}
-
-.amazonBannerLink {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.amazonBannerLink:hover {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-
-.updated {
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: .25rem;
-  padding: 10px;
-  text-align: center;
-}
-
-.unitName {
-  display: block;
-}
-
-.separator {
-  margin-bottom: 8px;
-  margin-top: 8px;
-}
-
 .patreon {
   background-color: rgb(255, 66, 77);
   border-radius: 9999px;
@@ -119,38 +88,6 @@ circle, rect {
 
 .date {
   margin-bottom: 10px;
-}
-
-.news {
-  margin-top: 50px;
-  width: 840px;
-  margin: auto;
-}
-
-.whatsnew {
-  text-align: center;
-}
-
-.whatsnew h1 {
-  font-size: 25px;
-}
-
-.chanlog {
-  margin-left: 100px;
-}
-
-.changelog h1 {
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-.amazonLink {
-  display: block;
-  margin-top: 10px;
-}
-
-.amazonLink img {
-  height: 50px;
 }
 
 .titleMobile {

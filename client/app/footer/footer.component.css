@@ -23,21 +23,17 @@ hr {
   margin: auto;
 }
 
-.red {
-  color: red;
-}
-
 .links {
   display: inline-block;
   float: right;
 }
 
-.links a, .reportBug, .vermilionivalice {
+.links a, .reportBug {
   color: var(----footer-link);
   text-decoration: underline;
 }
 
-.twitter, .youtube, .contact, .legal, .discord {
+.contact, .legal, .discord {
   padding: 5px;
 }
 

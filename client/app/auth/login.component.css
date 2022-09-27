@@ -1,17 +1,7 @@
-.titleBlock {
-  text-align: center;
-  padding-bottom: 10px;
-  border-bottom: solid 1px #fff;
-}
-
 .title {
   font-size: 22px;
   margin-top: 10px;
   display: inline-block;
-}
-
-.titleLoad {
-  padding-left: 30px;
 }
 
 .closeButton {
@@ -27,11 +17,6 @@
 .closeButton button span {
   font-size: 20px;
   font-weight: bold;
-}
-
-.modalBody {
-  text-align: center;
-  margin: 10px;
 }
 
 .btn-sub {

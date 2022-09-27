@@ -1,0 +1,33 @@
+.typeImg {
+  height: 20px;
+  margin-right: 2px;
+}
+
+.timeImg {
+  height: 20px;
+  cursor: pointer;
+  margin-right: 2px;
+}
+
+.damageSkillImg {
+  height: 32px;
+}
+
+.skillEffectTd {
+  text-align: left;
+}
+
+.subJob {
+  height: 40px;
+  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+  width: 40px;
+  margin: auto;
+}
+
+.subJob img {
+  max-width: 30px;
+  max-height: 30px;
+  vertical-align: top;
+}

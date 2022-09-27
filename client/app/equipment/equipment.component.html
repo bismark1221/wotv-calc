@@ -122,86 +122,15 @@
           <th colspan="6">Skill</th>
         </tr>
         <tr>
-          <th class="sub">Name</th>
-          <th class="sub">Effects</th>
-          <th class="sub">Range</th>
-          <th class="sub">Casts</th>
-          <th class="sub">Hits</th>
-          <th class="sub">Cost</th>
+          <th class="sub skillNameTd">Name</th>
+          <th class="sub skillEffectTd">Effects</th>
+          <th class="sub rangeTd">Range</th>
+          <th class="sub skillCastTd">Casts</th>
+          <th class="sub skillHitTd">Hits</th>
+          <th class="sub skillCostTd">Cost</th>
         </tr>
-        <tr>
-          <td class="skillNameTd">
-            {{ equipment.activeSkill.name }}
-            <span *ngIf="equipment.activeSkill.based">
-              <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.activeSkill.based + '.webp'}}" />
-            </span>
-            <span *ngIf="equipment.activeSkill.reflectable">
-              <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
-            </span>
-            <span *ngIf="equipment.activeSkill.time && equipment.activeSkill.time.minValue">
-              <popper-content #tip_time>
-                <div class="timeTooltip">
-                  Min time: {{ equipment.activeSkill.time.minValue }}<br />
-                  Max time: {{ equipment.activeSkill.time.maxValue }}
-                </div>
-              </popper-content>
-              <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
-              <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="equipment.activeSkill.possibleTarget == 'unit'"/>
-            </span>
-          </td>
-          <td class="skillEffectTd">
-            <div>{{ equipment.activeSkill.counterHtml }}</div>
 
-            <div *ngFor="let effect of equipment.activeSkill.effectsHtml.before">
-              <span [innerHTML]="effect"></span>
-            </div>
-
-            <div *ngIf="equipment.activeSkill.damageHtml && equipment.activeSkill.damageHtml.value">
-              <popper-content #tip_damage>
-                <div *ngIf="equipment.activeSkill.based === 'physic'">
-                  {{ (100 + (equipment.activeSkill.damage.formula.type === 1 && equipment.activeSkill.damage.formula[1] > 0 ? equipment.activeSkill.damage.formula[1] : 0)) + '% ATK' }}
-                </div>
-                <div *ngIf="equipment.activeSkillsed === 'magic'">
-                  {{ (100 + (equipment.activeSkill.damage.formula.type === 1 && equipment.activeSkill.damage.formula[1] > 0 ? equipment.activeSkill.damage.formula[1] : 0)) + '% MAG' }}
-                </div>
-                <div *ngIf="equipment.activeSkill.based === 'hybrid'">
-                  {{ (100 + (equipment.activeSkill.damage.formula.type === 1 && equipment.activeSkill.damage.formula[1] > 0 ? equipment.activeSkill.damage.formula[1] : 0)) + '% ATK' }}
-                </div>
-
-                <div *ngIf="equipment.activeSkill.damage.formula.type === 0 && equipment.activeSkill.damage.formula[1] > 0">
-                  {{ equipment.activeSkill.damage.formula[1] }}% DEX
-                </div>
-                <div *ngIf="equipment.activeSkill.damage.formula.type === 0 && equipment.activeSkill.damage.formula[2] > 0">
-                  {{ equipment.activeSkill.damage.formula[2] }}% AGI
-                </div>
-                <div *ngIf="equipment.activeSkill.damage.formula.type === 0 && equipment.activeSkill.damage.formula[3] > 0">
-                  {{ equipment.activeSkill.damage.formula[3] }}% LUCK
-                </div>
-              </popper-content>
-              <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ equipment.activeSkill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ equipment.activeSkill.damageHtml.type.image }}.webp" />&nbsp; {{ equipment.activeSkill.damageHtml.effType }} {{ equipment.activeSkill.damageHtml.pool }} {{ equipment.activeSkill.damageHtml.value }}
-              <div [innerHTML]="equipment.activeSkill.damageHtml.others | safeHtml"></div>
-            </div>
-
-            <div *ngFor="let effect of equipment.activeSkill.effectsHtml.after">
-              <span [innerHTML]="effect"></span>
-            </div>
-          </td>
-          <td class="rangeTd">
-            <popper-content #tip_table><div [innerHTML]="equipment.activeSkill.skillTableHtml"></div></popper-content>
-            <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
-              <div class="divSkillTableHtml" [innerHTML]="equipment.activeSkill.skillTableHtml"></div>
-            </div>
-          </td>
-          <td class="skillCastTd">
-            {{ equipment.activeSkill.count }}
-          </td>
-          <td class="skillHitTd">
-            <span *ngIf="equipment.activeSkill.combo">{{ equipment.activeSkill.combo.num }}</span>
-          </td>
-          <td class="skillCostTd">
-            <span *ngIf="equipment.activeSkill.cost">{{ equipment.activeSkill.cost.value }} {{ equipment.activeSkill.cost.type }}</span>
-          </td>
-        </tr>
+        <tr app-template-skillRow [skill]="equipment.activeSkill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
       </table>
 
       <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">

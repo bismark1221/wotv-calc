@@ -27,7 +27,7 @@
   height: 48px;
 }
 
-.damageImg, .statusAilmentImg, .skilImg, .damageSkillImg {
+.damageImg, .statusAilmentImg, .skilImg {
   height: 32px;
 }
 
@@ -70,12 +70,6 @@
   display: inline-block;
   font-weight: 500;
   font-size: 22px
-}
-
-.limitBased{
-  border-right: none;
-  padding-right: 0px;
-  width: 50px;
 }
 
 .tmrSkillTable, .masterSkillTable, .descriptionSkillTable {
@@ -135,40 +129,12 @@
   width: 200px;
 }
 
-.tmrNameTd {
-  width: 150px;
-}
-
-.tmrTypeTd {
-  width: 60px;
-}
-
-.skillEffectTdAndNoBorderLeft {
-  text-align: left;
-  border-left: none;
-}
-
-.skillEffectTd {
-  text-align: left;
-}
-
 .limitNameTd {
   width: 300px;
 }
 
 .heightResTd {
   height: 33px;
-}
-
-.reflectImg {
-  height: 32px;
-  margin-top: 2px;
-}
-
-.timeImg {
-  height: 32px;
-  cursor: pointer;
-  margin-top: 2px;
 }
 
 .jobsStatsLine {

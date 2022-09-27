@@ -1,9 +1,3 @@
-.titleBlock {
-  text-align: center;
-  padding-bottom: 10px;
-  border-bottom: solid 1px #fff;
-}
-
 .title {
   font-size: 22px;
   margin-top: 10px;
@@ -31,18 +25,6 @@
   padding: 5px;
 }
 
-.filters {
-  margin-top: 20px;
-}
-
-.collapsedFilters {
-  margin-top: 5px;
-}
-
-.collapsedFilters input {
-  margin-right: 5px;
-}
-
 .filtersBlock {
   text-align: left;
   margin-left: 20px;
@@ -51,10 +33,6 @@
 .acquisitionExpander {
   display: inline-block;
   cursor: pointer;
-}
-
-.acquisitionExpander i {
-  margin-left: 10px;
 }
 
 .acquisitionType {
@@ -93,37 +71,6 @@
   background: none;
   border: 0;
   width: 1000px;
-}
-
-.underSearchBlock {
-  height: 30px;
-}
-
-.totalEquipments {
-  float: left;
-  display: inline-block;
-}
-
-.sortOrderBlock {
-  float: right;
-  display: inline-block;
-}
-
-.sortBy, .orderBy {
-  display: inline-block;
-}
-
-.sortBy > span, .orderBy > span {
-  color: var(--sortby-color);
-  margin-right: 8px;
-}
-
-.orderBy {
-  margin-left: 10px;
-}
-
-.countEquipments {
-  font-weight: bold;
 }
 
 .equipmentsList {
@@ -176,20 +123,6 @@
   text-decoration: none;
 }
 
-.equipmentButtons {
-  text-align: center;
-  border-top: 10px;
-}
-
-.btn-left {
-  width: 60px;
-  margin-right: 10px;
-}
-
-.btn-right {
-  width: 125px;
-}
-
 .equipmentIcons {
   position: absolute;
   width: 100%;
@@ -209,27 +142,6 @@
   display: table-cell;
   vertical-align: middle;
   color: var(--card-title-color);
-}
-
-/********/
-/* Load */
-/********/
-
-.listModal {
-  margin: 10px;
-}
-
-.newBuildDiv {
-  text-align: center;
-}
-
-.btn-back {
-  margin-right: 25px;
-}
-
-.tableList {
-  margin: auto;
-  margin-top: 10px
 }
 
 /**********/
@@ -254,24 +166,8 @@
   background-color: var(--card-background)
 }
 
-.upgradeTypeDiv {
-  padding-left: 5px;
-}
-
-.upgradeTypeDiv div {
-  margin-bottom: 5px;
-}
-
-.btn-select-grow {
-  width: 100px;
-}
-
 .titleSelect {
   width: 70px;
-  display: inline-block;
-}
-
-.dropdownDiv {
   display: inline-block;
 }
 
@@ -285,62 +181,6 @@
   vertical-align: top;
   padding-left: 15px;
   margin: auto;
-}
-
-.statsTable {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.materiaTd {
-  height: 150px;
-  width: 97px;
-}
-
-.materiaDiv {
-  width: 80px;
-  height: 80px;
-  display: block;
-  vertical-align: top;
-}
-
-.materiaDivEmpty {
-  width: 80px;
-  height: 80px;
-  display: block;
-  vertical-align: top;
-  background: url("assets/builder/materia_background.webp") 0px 0px no-repeat;
-  background-size: 80px;
-}
-
-.materiaImg {
-  padding: 5px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  vertical-align: middle;
-  text-align: center;
-  display: block;
-}
-
-.btn-materia {
-  width: 100%;
-  margin-top: 5px;
-}
-
-.materiaEffectTd {
-  width: 417px;
-}
-
-.conditionImg {
-  max-width: 50px;
-  max-height: 50px;
-  margin-right: 5px;
-}
-
-.passiveHR {
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .equipmentInfo {

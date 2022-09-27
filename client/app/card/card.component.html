@@ -112,6 +112,7 @@
             </div>
           </td>
         </tr>
+
         <tr *ngIf="buff.classic && buff.classic.type === 'support'">
           <td>Classic</td>
           <td colspan="10">
@@ -120,6 +121,7 @@
             </div>
           </td>
         </tr>
+
         <tr *ngIf="buff.awake && buff.classic.type === 'support'">
           <td>Awake</td>
           <td colspan="10">
@@ -128,6 +130,7 @@
             </div>
           </td>
         </tr>
+
         <tr *ngIf="buff.lvmax && buff.classic.type === 'support'">
           <td>Max</td>
           <td colspan="10">
@@ -136,89 +139,18 @@
             </div>
           </td>
         </tr>
+
         <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
-          <th class="sub">name</th>
+          <th class="sub skillNameTd">name</th>
           <th class="sub">Effects</th>
-          <th class="sub">Range</th>
-          <th class="sub">Casts</th>
-          <th class="sub">Hits</th>
-          <th class="sub">Cost</th>
+          <th class="sub rangeTd">Range</th>
+          <th class="sub skillCastTd">Casts</th>
+          <th class="sub skillHitTd">Hits</th>
+          <th class="sub skillCostTd">Cost</th>
         </tr>
-        <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
-          <td class="skillNameTd">
-            <span>{{ buff.classic.name }}</span>
-            <span *ngIf="buff.classic.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + buff.classic.based + '.webp'}}" /></span>
-            <span *ngIf="buff.classic.reflectable">
-              <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
-            </span>
-            <span *ngIf="buff.classic.time && buff.classic.time.minValue">
-              <popper-content #tip_time>
-                <div class="timeTooltip">
-                  Min time: {{ buff.classic.time.minValue }}<br />
-                  Max time: {{ buff.classic.time.maxValue }}
-                </div>
-              </popper-content>
-              <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
-              <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="buff.classic.possibleTarget == 'unit'"/>
-            </span>
-          </td>
-          <td class="skillEffectTd">
-            <div>{{ buff.classic.counterHtml }}</div>
 
-            <div *ngFor="let effect of buff.classic.effectsHtml.before">
-              {{ effect }}
-            </div>
+        <tr *ngIf="buff.classic && buff.classic.type !== 'support'" app-template-skillRow [skill]="buff.classic" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
 
-            <div *ngIf="buff.classic.damageHtml && buff.classic.damageHtml.value">
-              <popper-content #tip_damage>
-                <div *ngIf="!buff.classic.elem">
-                  Take unit element
-                </div>
-
-                <div *ngIf="buff.classic.based === 'physic'">
-                  {{ (100 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] : 0)) + '% ATK' }}
-                </div>
-                <div *ngIf="buff.classic.based === 'magic'">
-                  {{ (100 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] : 0)) + '% MAG' }}
-                </div>
-                <div *ngIf="buff.classic.based === 'hybrid'">
-                  {{ (100 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] : 0)) + '% ATK' }}
-                </div>
-
-                <div *ngIf="buff.classic.damage.formula.type === 0 && buff.classic.damage.formula[1] > 0">
-                  {{ buff.classic.damage.formula[1] }}% DEX
-                </div>
-                <div *ngIf="buff.classic.damage.formula.type === 0 && buff.classic.damage.formula[2] > 0">
-                  {{ buff.classic.damage.formula[2] }}% AGI
-                </div>
-                <div *ngIf="buff.classic.damage.formula.type === 0 && buff.classic.damage.formula[3] > 0">
-                  {{ buff.classic.damage.formula[3] }}% LUCK
-                </div>
-              </popper-content>
-              <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ buff.classic.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ buff.classic.damageHtml.type.image }}.webp" />&nbsp; {{ buff.classic.damageHtml.effType }} {{ buff.classic.damageHtml.pool }} {{ buff.classic.damageHtml.value }}
-              <div [innerHTML]="buff.classic.damageHtml.others | safeHtml"></div>
-            </div>
-
-            <div *ngFor="let effect of buff.classic.effectsHtml.after">
-              {{ effect }}
-            </div>
-          </td>
-          <td class="rangeTd">
-            <popper-content #tip_table><div [innerHTML]="buff.classic.skillTableHtml"></div></popper-content>
-            <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
-              <div class="divSkillTableHtml" [innerHTML]="buff.classic.skillTableHtml"></div>
-            </div>
-          </td>
-          <td class="skillCastTd">
-            {{ buff.classic.count }}
-          </td>
-          <td class="skillHitTd">
-            <span *ngIf="buff.classic.combo">{{ buff.classic.combo.num }}</span>
-          </td>
-          <td class="skillCostTd">
-            <span *ngIf="buff.classic.cost">{{ buff.classic.cost.value }} {{ buff.classic.cost.type }}</span>
-          </td>
-        </tr>
         <tr class="separatorLine"></tr>
       </tbody>
     </table>

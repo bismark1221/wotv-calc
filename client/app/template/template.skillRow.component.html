@@ -1,0 +1,120 @@
+<td *ngIf="showLevelInput">
+  <select [(ngModel)]="skill.level" (ngModelChange)="changeSkillLevel()">
+    <option *ngFor="let level of skill.tableLevel">{{ level }}</option>
+  </select>
+</td>
+
+<td *ngIf="isUpgrade && !basicAttack" [attr.colspan]="upgradeColSpan">
+  Upgrade
+</td>
+
+<td *ngIf="showJobIcon">
+  <div class="subJob" *ngIf="jobs[(skill.unlockJob - 1)]">
+    <img src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '_30.webp'}}" />
+  </div>
+</td>
+
+<td *ngIf="showJobLvl">{{ skill.jobLevel }}</td>
+
+<td *ngIf="showStarLvl">{{ skill.unlockStar }}</td>
+
+<td *ngIf="showType">
+  <img class="typeImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.webp'}}" />
+  <img class='typeImg' title="{{ skill.based }}" src="{{'assets/atkBased/' + skill.based + '.webp'}}" *ngIf="skill.based"/>
+  <img class='typeImg' title="reflectable" src="{{'assets/icons/reflect.webp'}}" *ngIf="skill.reflectable"/>
+  <img class='typeImg' title="Straight line" src="{{'assets/icons/straight_line.webp'}}" *ngIf="skill.line"/>
+  <img class='typeImg' title="Curved skill" src="{{'assets/icons/curve_skill.webp'}}" *ngIf="skill.curve"/>
+  <img class='typeImg' title="Higher height increase range" src="{{'assets/icons/height_range_buff.webp'}}" *ngIf="skill.heightRangeBuff"/>
+  <img class='typeImg' title="Can be range buffed" src="{{'assets/icons/range_buff.webp'}}" *ngIf="skill.rangeBuff"/>
+
+  <span *ngIf="skill.time && skill.time.minValue">
+    <popper-content #tip_time>
+      <div class="timeTooltip">
+        Min time: {{ skill.time.minValue }}<br />
+        Max time: {{ skill.time.maxValue }}
+      </div>
+    </popper-content>
+    <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
+    <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+  </span>
+</td>
+
+<td *ngIf="showName">
+  {{ isUpgrade && basicAttack ? 'Upgrade' : (basicAttack ? 'Basic Attack' : skill.name) }}
+  <div *ngIf="showTypeWithName">
+    <img class="typeImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.webp'}}" />
+    <img class='typeImg' title="{{ skill.based }}" src="{{'assets/atkBased/' + skill.based + '.webp'}}" *ngIf="skill.based"/>
+    <img class='typeImg' title="reflectable" src="{{'assets/icons/reflect.webp'}}" *ngIf="skill.reflectable"/>
+    <img class='typeImg' title="Straight line" src="{{'assets/icons/straight_line.webp'}}" *ngIf="skill.line"/>
+    <img class='typeImg' title="Curved skill" src="{{'assets/icons/curve_skill.webp'}}" *ngIf="skill.curve"/>
+    <img class='typeImg' title="Higher height increase range" src="{{'assets/icons/height_range_buff.webp'}}" *ngIf="skill.heightRangeBuff"/>
+    <img class='typeImg' title="Can be range buffed" src="{{'assets/icons/range_buff.webp'}}" *ngIf="skill.rangeBuff"/>
+
+    <span *ngIf="skill.time && skill.time.minValue">
+      <popper-content #tip_time>
+        <div class="timeTooltip">
+          Min time: {{ skill.time.minValue }}<br />
+          Max time: {{ skill.time.maxValue }}
+        </div>
+      </popper-content>
+      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
+      <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
+    </span>
+  </div>
+</td>
+
+<td *ngIf="showEffects" class="skillEffectTd" [attr.colspan]="effectsColSpan">
+  <div *ngIf="skill.upgradeHtml !== ''">
+    {{ skill.upgradeHtml }}
+  </div>
+  <div>{{ skill.counterHtml }}</div>
+
+  <div *ngFor="let effect of skill.effectsHtml.before" [innerHTML]="effect"></div>
+
+  <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+    <popper-content #tip_damage>
+      <div *ngIf="skill.based === 'physic'">
+        {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+      </div>
+      <div *ngIf="skill.based === 'magic'">
+        {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+      </div>
+      <div *ngIf="skill.based === 'hybrid'">
+        {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+      </div>
+
+      <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+        {{ skill.damage.formula[1] }}% DEX
+      </div>
+      <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+        {{ skill.damage.formula[2] }}% AGI
+      </div>
+      <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+        {{ skill.damage.formula[3] }}% LUCK
+      </div>
+    </popper-content>
+    <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+    <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+  </div>
+
+  <div *ngFor="let effect of skill.effectsHtml.after" [innerHTML]="effect"></div>
+</td>
+
+<td *ngIf="showRange">
+  <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+  <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
+    <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+  </div>
+</td>
+
+<td *ngIf="showCasts">
+  {{ skill.count }}
+</td>
+
+<td *ngIf="showHits">
+  <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
+</td>
+
+<td *ngIf="showCost">
+  <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
+</td>

@@ -9,9 +9,6 @@ th {
   margin-top: 20px;
 }
 
-
-
-
 .indexWrapper {
   display:block;
   width: 100%;
@@ -94,10 +91,6 @@ th {
 .divTH {
   cursor: pointer;
   white-space: nowrap;
-}
-
-.divTH:hover .fas {
-  display: inline-block !important;
 }
 
 .buffImg {

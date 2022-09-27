@@ -1,17 +1,7 @@
-.titleBlock {
-  text-align: center;
-  padding-bottom: 10px;
-  border-bottom: solid 1px #fff;
-}
-
 .title {
   font-size: 22px;
   margin-top: 10px;
   display: inline-block;
-}
-
-.titleLoad {
-  padding-left: 30px;
 }
 
 .closeButton {
@@ -33,18 +23,6 @@
   width: 100%;
   text-align: center;
   padding: 5px;
-}
-
-.filters {
-  margin-top: 20px;
-}
-
-.collapsedFilters {
-  margin-top: 5px;
-}
-
-.collapsedFilters input {
-  margin-right: 5px;
 }
 
 .filtersBlock {
@@ -81,37 +59,6 @@
   background: none;
   border: 0;
   width: 1000px;
-}
-
-.underSearchBlock {
-  height: 30px;
-}
-
-.totalCards {
-  float: left;
-  display: inline-block;
-}
-
-.sortOrderBlock {
-  float: right;
-  display: inline-block;
-}
-
-.sortBy, .orderBy {
-  display: inline-block;
-}
-
-.sortBy > span, .orderBy > span {
-  color: var(--sortby-color);
-  margin-right: 8px;
-}
-
-.orderBy {
-  margin-left: 10px;
-}
-
-.countCards {
-  font-weight: bold;
 }
 
 .cardsList {
@@ -226,14 +173,6 @@
   background-color: var(--card-background)
 }
 
-.upgradeTypeDiv {
-  padding-left: 5px;
-}
-
-.upgradeTypeDiv div {
-  margin-bottom: 5px;
-}
-
 .titleSelect {
   width: 70px;
   display: inline-block;
@@ -256,10 +195,6 @@
 .statsTable {
   width: 100%;
   margin-bottom: 10px;
-}
-
-.builderCardGridContainer {
-  left: 0px;
 }
 
 .starLevelDiv {
@@ -329,14 +264,4 @@
 .elementImg {
   height: 40px;
   margin-right: 5px;
-}
-
-.zone-select-level {
-  display: inline-block;
-  float: right;
-}
-
-.select-level {
-  display: inline-block;
-  width: 60px;
 }

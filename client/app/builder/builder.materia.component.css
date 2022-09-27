@@ -45,19 +45,6 @@
   padding-right: 10px;
 }
 
-.searchBlock {
-  background: #F5F6F8;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 5px;
-}
-
-.searchInput {
-  background: none;
-  border: 0;
-  width: 750px;
-}
-
 .underSearchBlock {
   height: 30px;
 }
@@ -109,11 +96,6 @@
   margin-top: 5px;
 }
 
-.rarityImg {
-  height: 32px;
-  float: left;
-}
-
 .materiasCol {
   background-color: var(--card-background);
   width: 200px;
@@ -131,12 +113,6 @@
 
 .materiasCol > a:hover {
   text-decoration: none;
-}
-
-.materiaIcons {
-  position: absolute;
-  width: 100%;
-  padding: 5px;
 }
 
 .materiaTitle {
@@ -240,16 +216,6 @@
 .statsTable {
   width: 100%;
   margin-bottom: 10px;
-}
-
-.zone-select-level {
-  display: inline-block;
-  float: right;
-}
-
-.select-level {
-  display: inline-block;
-  width: 60px;
 }
 
 .btn-change-skill, .btn-random {

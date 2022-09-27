@@ -73,7 +73,7 @@
   --modal-body-background: var(--white);
 }
 
-
+/* Splashscreen */
 .introBlock {
   background:#242222;
   display:flex;
@@ -176,14 +176,6 @@ td {
 
 img {
   display: inline-block;
-}
-
-.text-regular {
-  font-weight: 100;
-}
-
-.text-medium {
-  font-weight: 500;
 }
 
 button.close {
@@ -393,15 +385,6 @@ input {
   background-color: #0D55A9;
 }
 
-.btn-select {
-  background: #F5F6F8;
-  border-radius: 2px;
-  color: #000;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  width: 50px;
-}
-
 .btn-filter {
   color: #000;
   background: #fff;
@@ -422,17 +405,6 @@ input {
 .btn-filter-selected {
   background: #ceb770;
 }
-
-/* Dropdown */
-.dropdownDiv {
-  display: inline-block;
-}
-
-.dropdown-menu {
-  max-height: 200px;
-  overflow: auto;
-}
-
 
 /* Toogle switch */
 .switch .switch-pane > span {
@@ -479,6 +451,10 @@ small {
   padding-left: 5px !important;
   height: 25px !important;
   content: url(assets/nav/sun.webp);
+}
+
+.switch-label-checked {
+  color: #3D3A41;
 }
 
 .switchThemeMobile button {
@@ -757,22 +733,6 @@ small {
   padding: 5px;
 }
 
-.modal-dialog {
-  max-width: 1200px;
-}
-
-.builder-modal .modal-dialog {
-  max-width: 1100px;
-}
-
-.login-modal .modal-dialog {
-  max-width: 300px;
-}
-
-.modal-content {
-  background-color: var(--body-background);
-}
-
 .selectEquipment ng-dropdown-panel, .selectEsper ng-dropdown-panel {
   width: 300px;
   text-align: left;
@@ -781,10 +741,6 @@ small {
 .selectCard ng-dropdown-panel{
   width: 400px;
   text-align: left;
-}
-
-.link-modal .modal-dialog {
-  width: 270px;
 }
 
 .markdownHome p {
@@ -797,40 +753,6 @@ small {
   box-shadow: 0 !important;
 }
 
-.selectButton {
-  border: 0;
-  padding: 0;
-  background-color: transparent !important; /* Don't know why but bootstrap css always overwrite it... */
-  color: var(--black-vs-white) !important;
-}
-
-.selectButton:focus {
-  box-shadow: none !important;
-}
-
-.selectList {
-  border-radius: 0;
-  padding: 0;
-}
-
-.selectElement {
-  background-color: #FFF;
-  color: black;
-}
-
-.selectElement:hover, .selectElement:active, .selectElement:focus {
-  background-color: #F2F2F2;
-  color: black;
-  box-shadow: none !important;
-  outline: 0 !important;
-  border: 0 !important;
-}
-
-.selectElement.disable {
-  color: rgba(29, 27, 27, 0.3);
-  font-weight: 500;
-}
-
 .notHighlightSearch {
   opacity: 0.5;
 }
@@ -839,19 +761,13 @@ small {
   opacity: 1;
 }
 
-
-
-
-
 .ng-dropdown-panel-items {
   max-height: 400px !important;
 }
 
-
 .ng-select {
   padding: 0;
 }
-
 
 .select-unit-team {
   width: 250px;
@@ -870,7 +786,6 @@ small {
   padding-left: 5px !important;
 }
 
-
 .select-builder-card, .select-builder-esper, .select-builder-equipment, .select-builder-unit {
   width: 1300px;
 }
@@ -887,8 +802,6 @@ small {
   padding: 0 !important;
   padding-left: 5px !important;
 }
-
-
 
 .select-left-builder .ng-dropdown-panel-items {
   max-height: 250px !important;
@@ -915,14 +828,11 @@ small {
   padding-left: 10px !important;
 }
 
-
-
 .select-list .ng-select-container {
   background: transparent !important;
   color: var(--black-vs-white);
   border: 0;
 }
-
 
 .select-item-farmcalculator {
   width: 100%;
@@ -982,10 +892,6 @@ small {
 
 .search-select .ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left {
   border-color: #818181 !important;
-}
-
-.options-modal .modal-dialog {
-  width: 850px;
 }
 
 .ng-dropdown-panel {

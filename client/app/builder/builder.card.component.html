@@ -183,12 +183,12 @@
           <th colspan="10">Unit Skill</th>
         </tr>
         <tr>
-          <th class="sub">name</th>
-          <th class="sub">Effects</th>
-          <th class="sub">Range</th>
-          <th class="sub">Casts</th>
-          <th class="sub">Hits</th>
-          <th class="sub">Cost</th>
+          <th class="sub skillNameTd">name</th>
+          <th class="sub skillEffectTd">Effects</th>
+          <th class="sub rangeTd">Range</th>
+          <th class="sub skillCastTd">Casts</th>
+          <th class="sub skillHitTd">Hits</th>
+          <th class="sub skillCostTd">Cost</th>
         </tr>
       </tbody>
       <tbody *ngFor="let skill of card.skills">
@@ -230,76 +230,8 @@
             </div>
           </td>
         </tr>
-        <tr>
-          <td class="skillNameTd">
-            <span>{{ skill.name }}</span>
-            <span *ngIf="skill.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.webp'}}" /></span>
-            <span *ngIf="skill.reflectable">
-              <img class='reflectImg' src="{{'assets/icons/reflect.webp'}}" />
-            </span>
-            <span *ngIf="skill.time && skill.time.minValue">
-              <popper-content #tip_time>
-                <div class="timeTooltip">
-                  {{ skill.time.realValue }}
-                </div>
-              </popper-content>
-              <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
-              <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
-            </span>
-          </td>
-          <td class="skillEffectTd">
-            <div>{{ skill.counterHtml }}</div>
 
-            <div *ngFor="let effect of skill.effectsHtml.before">
-              {{ effect }}
-            </div>
-
-            <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-              <popper-content #tip_damage>
-                <div *ngIf="skill.based === 'physic'">
-                  {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
-                </div>
-                <div *ngIf="skill.based === 'magic'">
-                  {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
-                </div>
-                <div *ngIf="skill.based === 'hybrid'">
-                  {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
-                </div>
-
-                <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
-                  {{ skill.damage.formula[1] }}% DEX
-                </div>
-                <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
-                  {{ skill.damage.formula[2] }}% AGI
-                </div>
-                <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
-                  {{ skill.damage.formula[3] }}% LUCK
-                </div>
-              </popper-content>
-              <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
-              <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
-            </div>
-
-            <div *ngFor="let effect of skill.effectsHtml.after">
-              {{ effect }}
-            </div>
-          </td>
-          <td class="rangeTd">
-            <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-            <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
-              <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
-            </div>
-          </td>
-          <td class="skillCastTd">
-            {{ skill.count }}
-          </td>
-          <td class="skillHitTd">
-            <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
-          </td>
-          <td class="skillCostTd">
-            <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
-          </td>
-        </tr>
+        <tr app-template-skillRow [skill]="skill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
       </tbody>
     </table>
 
