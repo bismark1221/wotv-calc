@@ -1,3 +1,11 @@
+<td *ngIf="showRaidLevel">
+  {{ rawSkills[skillIndex].minLevel }}
+</td>
+
+<td *ngIf="showRaidLevel">
+  {{ rawSkills[skillIndex].maxLevel }}
+</td>
+
 <td *ngIf="showLevelInput">
   <select [(ngModel)]="skill.level" (ngModelChange)="changeSkillLevel()">
     <option *ngFor="let level of skill.tableLevel">{{ level }}</option>

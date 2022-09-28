@@ -130,9 +130,9 @@
             <th class="sub" *ngIf="skill.type === 'skill'">Hits</th>
             <th class="sub" *ngIf="skill.type === 'skill'">Cost</th>
           </tr>
-          <tr *ngIf="skill.type === 'skill'" app-template-skillRow [skill]="skill" [jobs]="jobs" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+          <tr *ngIf="skill.type === 'skill'" app-template-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
 
-          <tr *ngIf="skill.type !== 'skill'" app-template-skillRow [skill]="skill" [jobs]="jobs" [showType]="true" [showEffects]="true" [effectsColSpan]="6"></tr>
+          <tr *ngIf="skill.type !== 'skill'" app-template-skillRow [skill]="skill" [showType]="true" [showEffects]="true" [effectsColSpan]="6"></tr>
         </tbody>
       </table>
 

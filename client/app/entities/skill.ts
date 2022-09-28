@@ -30,6 +30,10 @@ export class Skill {
   increaseDamageOnDecreaseHp;
   reflectable;
   takeUnitElem;
+  curve;
+  rangeBuff;
+  heightRangeBuff;
+  line;
   possibleTarget;
 
   // For builder
@@ -63,6 +67,10 @@ export class Skill {
     this.increaseDamageOnDecreaseHp = skill.increaseDamageOnDecreaseHp;
     this.reflectable = skill.reflectable;
     this.takeUnitElem = skill.takeUnitElem;
+    this.curve = skill.curve;
+    this.rangeBuff = skill.rangeBuff;
+    this.heightRangeBuff = skill.heightRangeBuff;
+    this.line = skill.line;
     this.possibleTarget = skill.possibleTarget;
 
     // @TODO Remove when finish work on skills

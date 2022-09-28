@@ -23,6 +23,7 @@ export class TemplateSkillRowComponent extends ResizeDetectorComponent {
   @Input() showCasts;
   @Input() showHits;
   @Input() showCost;
+  @Input() showRaidLevel;
 
   @Input() upgradeColSpan;
   @Input() basicAttack;
@@ -31,6 +32,8 @@ export class TemplateSkillRowComponent extends ResizeDetectorComponent {
   @Input() effectsColSpan;
   @Input() showTypeWithName;
   @Input() showLevelInput;
+  @Input() rawSkills;
+  @Input() skillIndex;
 
   @Output() changeLevel = new EventEmitter<string>();
 

@@ -23,9 +23,12 @@ export class TemplateSkillWithUpgradeComponent extends ResizeDetectorComponent {
   @Input() showCasts;
   @Input() showHits;
   @Input() showCost;
+  @Input() showRaidLevel;
 
   @Input() upgradeColSpan;
   @Input() basicAttack;
+  @Input() rawSkills;
+  @Input() skillIndex;
 
   constructor(
     private toolService: ToolService
