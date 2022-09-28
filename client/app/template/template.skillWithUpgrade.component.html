@@ -22,9 +22,9 @@
 <tr
   app-template-skillRow
   *ngFor="let upgradedSkill of skill.upgrades"
+  [isUpgrade]="true"
   [skill]="upgradedSkill"
   [jobs]="jobs"
-  [showJobIcon]="showJobIcon"
   [showType]="showType"
   [showName]="showName"
   [showEffects]="showEffects"
@@ -34,7 +34,6 @@
   [showCost]="showCost"
   [upgradeColSpan]="upgradeColSpan"
   [basicAttack]="basicAttack"
-  [isUpgrade]="true"
   [showRaidLevel]="showRaidLevel"
   [rawSkills]="rawSkills"
   [skillIndex]="skillIndex">
