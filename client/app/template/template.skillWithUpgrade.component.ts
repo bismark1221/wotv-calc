@@ -30,6 +30,7 @@ export class TemplateSkillWithUpgradeComponent extends ResizeDetectorComponent {
   @Input() rawSkills;
   @Input() skillIndex;
   @Input() showTypeWithName;
+  @Input() noNameOnUpgrade;
 
   constructor(
     private toolService: ToolService

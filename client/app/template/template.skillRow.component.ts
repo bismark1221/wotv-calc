@@ -34,6 +34,7 @@ export class TemplateSkillRowComponent extends ResizeDetectorComponent {
   @Input() showLevelInput;
   @Input() rawSkills;
   @Input() skillIndex;
+  @Input() noNameOnUpgrade;
 
   @Output() changeLevel = new EventEmitter<string>();
 
