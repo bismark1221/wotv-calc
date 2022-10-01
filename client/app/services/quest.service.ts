@@ -399,6 +399,9 @@ export class QuestService {
       case 'MAX_ATTACK' :
         html = 'Be attacked no more than ' + mission.value + ' time' + (mission.value > 1 ? 's' : '');
       break;
+      case 'MAX_PARTY_ACTIONS' :
+        html = 'Party action count no more than ' + mission.value;
+      break;
       case 'MAX_DAMAGE' :
         if (mission.value === 0) {
           html = 'Do not take damage';
