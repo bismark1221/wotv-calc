@@ -94,6 +94,7 @@ import { TemplateItemComponent } from './template/template.item.component';
 import { TemplateCardComponent } from './template/template.card.component';
 import { TemplateSkillWithUpgradeComponent } from './template/template.skillWithUpgrade.component';
 import { TemplateSkillRowComponent } from './template/template.skillRow.component';
+import { TemplateSkillTypeComponent } from './template/template.skillType.component';
 
 import { SearchOptionsModalComponent } from './searchOptionsModal/searchOptionsModal.component';
 
@@ -195,6 +196,7 @@ export function createTranslateLoader(http: HttpClient) {
     TemplateCardComponent,
     TemplateSkillWithUpgradeComponent,
     TemplateSkillRowComponent,
+    TemplateSkillTypeComponent,
     UserComponent,
     SearchOptionsModalComponent,
     TabsComponent,

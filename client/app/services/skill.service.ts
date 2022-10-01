@@ -1625,12 +1625,8 @@ export class SkillService {
       case 'REDUCE_COUNTER_CHANCE' :
         html = 'Reduce counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
-      case 'STOP_COUNTER_CHANCE' :
-        if (shortDesc) {
-          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' % chance the counter doesn\'t activate';
-        } else {
-          html = this.getValue(skill, effect) + '% chance the counter doesn\'t activate ' + this.getTurns(effect);
-        }
+      case 'INCREASE_COUNTER_CHANCE' :
+        html = 'Increase counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'RUNIC_SHIELD' :
         html = 'Grant Runic Shield (Absorbs up to ' + effect.absorbNumber + ' reflectable magic hits & absorbs ' + this.getValue(skill, effect) + ' TP/AP used) ' + this.getTurns(effect);

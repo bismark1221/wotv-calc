@@ -15,24 +15,7 @@
 <td *ngIf="isUpgrade && !basicAttack" [attr.colspan]="upgradeColSpan">
   Upgrade
   <div *ngIf="showTypeWithName && noNameOnUpgrade">
-    <img class="typeImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.webp'}}" />
-    <img class='typeImg' title="{{ skill.based }}" src="{{'assets/atkBased/' + skill.based + '.webp'}}" *ngIf="skill.based"/>
-    <img class='typeImg' title="reflectable" src="{{'assets/icons/reflect.webp'}}" *ngIf="skill.reflectable"/>
-    <img class='typeImg' title="Straight line" src="{{'assets/icons/straight_line.webp'}}" *ngIf="skill.line"/>
-    <img class='typeImg' title="Curved skill" src="{{'assets/icons/curve_skill.webp'}}" *ngIf="skill.curve"/>
-    <img class='typeImg' title="Higher height increase range" src="{{'assets/icons/height_range_buff.webp'}}" *ngIf="skill.heightRangeBuff"/>
-    <img class='typeImg' title="Can be range buffed" src="{{'assets/icons/range_buff.webp'}}" *ngIf="skill.rangeBuff"/>
-
-    <span *ngIf="skill.time && skill.time.minValue">
-      <popper-content #tip_time>
-        <div class="timeTooltip">
-          Min time: {{ skill.time.minValue }}<br />
-          Max time: {{ skill.time.maxValue }}
-        </div>
-      </popper-content>
-      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
-      <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
-    </span>
+    <app-template-skillType [skill]="skill"></app-template-skillType>
   </div>
 </td>
 
@@ -47,47 +30,13 @@
 <td *ngIf="showStarLvl">{{ skill.unlockStar }}</td>
 
 <td *ngIf="showType">
-  <img class="typeImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.webp'}}" />
-  <img class='typeImg' title="{{ skill.based }}" src="{{'assets/atkBased/' + skill.based + '.webp'}}" *ngIf="skill.based"/>
-  <img class='typeImg' title="reflectable" src="{{'assets/icons/reflect.webp'}}" *ngIf="skill.reflectable"/>
-  <img class='typeImg' title="Straight line" src="{{'assets/icons/straight_line.webp'}}" *ngIf="skill.line"/>
-  <img class='typeImg' title="Curved skill" src="{{'assets/icons/curve_skill.webp'}}" *ngIf="skill.curve"/>
-  <img class='typeImg' title="Higher height increase range" src="{{'assets/icons/height_range_buff.webp'}}" *ngIf="skill.heightRangeBuff"/>
-  <img class='typeImg' title="Can be range buffed" src="{{'assets/icons/range_buff.webp'}}" *ngIf="skill.rangeBuff"/>
-
-  <span *ngIf="skill.time && skill.time.minValue">
-    <popper-content #tip_time>
-      <div class="timeTooltip">
-        Min time: {{ skill.time.minValue }}<br />
-        Max time: {{ skill.time.maxValue }}
-      </div>
-    </popper-content>
-    <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
-    <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
-  </span>
+  <app-template-skillType [skill]="skill"></app-template-skillType>
 </td>
 
 <td *ngIf="showName && (!isUpgrade || !noNameOnUpgrade)">
   {{ isUpgrade && basicAttack ? 'Upgrade' : (basicAttack ? 'Basic Attack' : skill.name) }}
   <div *ngIf="showTypeWithName">
-    <img class="typeImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.webp'}}" />
-    <img class='typeImg' title="{{ skill.based }}" src="{{'assets/atkBased/' + skill.based + '.webp'}}" *ngIf="skill.based"/>
-    <img class='typeImg' title="reflectable" src="{{'assets/icons/reflect.webp'}}" *ngIf="skill.reflectable"/>
-    <img class='typeImg' title="Straight line" src="{{'assets/icons/straight_line.webp'}}" *ngIf="skill.line"/>
-    <img class='typeImg' title="Curved skill" src="{{'assets/icons/curve_skill.webp'}}" *ngIf="skill.curve"/>
-    <img class='typeImg' title="Higher height increase range" src="{{'assets/icons/height_range_buff.webp'}}" *ngIf="skill.heightRangeBuff"/>
-    <img class='typeImg' title="Can be range buffed" src="{{'assets/icons/range_buff.webp'}}" *ngIf="skill.rangeBuff"/>
-
-    <span *ngIf="skill.time && skill.time.minValue">
-      <popper-content #tip_time>
-        <div class="timeTooltip">
-          Min time: {{ skill.time.minValue }}<br />
-          Max time: {{ skill.time.maxValue }}
-        </div>
-      </popper-content>
-      <img class='timeImg' src="{{'assets/icons/time.webp'}}" [popper]="tip_time" [popperTrigger]="'hover'" [popperHideOnScroll]="true"/>
-      <img class='timeImg' src="{{'assets/icons/skill_target_unit.webp'}}" title="Target unit possible" *ngIf="skill.possibleTarget == 'unit'"/>
-    </span>
+    <app-template-skillType [skill]="skill"></app-template-skillType>
   </div>
 </td>
 
