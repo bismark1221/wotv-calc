@@ -121,7 +121,7 @@
         {{ skill.damage.formula[3] }}% LUCK
       </div>
     </popper-content>
-    <img [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+    <img *ngIf="skill.damageHtml.type.image" [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" /><span *ngIf="skill.damageHtml.type.image">&nbsp;</span>{{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
     <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
   </div>
 
