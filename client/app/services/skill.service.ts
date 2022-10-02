@@ -1625,8 +1625,8 @@ export class SkillService {
       case 'REDUCE_COUNTER_CHANCE' :
         html = 'Reduce counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
-      case 'INCREASE_COUNTER_CHANCE' :
-        html = 'Increase counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
+      case 'INCREASE_REACTION_BLOCK_CHANCE' :
+        html = 'Increase reaction block rate ' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'RUNIC_SHIELD' :
         html = 'Grant Runic Shield (Absorbs up to ' + effect.absorbNumber + ' reflectable magic hits & absorbs ' + this.getValue(skill, effect) + ' TP/AP used) ' + this.getTurns(effect);

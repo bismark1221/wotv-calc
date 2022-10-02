@@ -40,6 +40,7 @@ export class ModalSaveComponent extends SimpleModalComponent<null, boolean> impl
   }
 
   save() {
+    this.firstClickOutside = false;
     if (this.isAlreadyExists()) {
       this.saveStep = 'confirm';
     } else {

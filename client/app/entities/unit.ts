@@ -1765,6 +1765,7 @@ export class Unit {
 
     this.esper = null;
     this.card = null;
+    this.subCard = null;
     for (let i = 0; i <= 2; i++) {
       this.equipments[i] = null;
     }

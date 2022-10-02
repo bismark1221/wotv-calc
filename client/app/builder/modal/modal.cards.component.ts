@@ -169,6 +169,7 @@ export class ModalCardsComponent extends SimpleModalComponent<null, any> impleme
   }
 
   async updateStar() {
+    this.firstClickOutside = false;
     if (this.star === this.card.star) {
       this.star = undefined;
     }
