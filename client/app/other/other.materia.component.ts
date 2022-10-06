@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { MateriaService } from '../services/materia.service';
 import { SkillService } from '../services/skill.service';
 import { NavService } from '../services/nav.service';
+import { ToolService } from '../services/tool.service';
 
 @Component({
   selector: 'app-other-materia',
@@ -66,6 +67,7 @@ export class OtherMateriaComponent implements OnInit {
   constructor(
     private materiaService: MateriaService,
     private skillService: SkillService,
+    private toolService: ToolService,
     private navService: NavService
   ) {
     this.version = this.navService.getVersion();
@@ -92,6 +94,8 @@ export class OtherMateriaComponent implements OnInit {
         this.manageSkills(type.skills, materia);
       }
     }
+
+    this.sortSkills();
   }
 
   manageMainStats(mainStats, materia) {
@@ -185,6 +189,22 @@ export class OtherMateriaComponent implements OnInit {
           }
         });
       }
+    });
+  }
+
+  sortSkills() {
+    ['left', 'right'].forEach(group => {
+      ['UR', 'MR', 'SR', 'R', 'N'].forEach(rarity => {
+        const formattedSkills = [];
+
+        this.groups[group].passives[rarity].forEach(skill => {
+          formattedSkills.push(skill.formattedSkill);
+        });
+
+        this.toolService.sortByName(formattedSkills, 'asc', 'after');
+
+        this.groups[group].passives[rarity] = formattedSkills;
+      });
     });
   }
 }

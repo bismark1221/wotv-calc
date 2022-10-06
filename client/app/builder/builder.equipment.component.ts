@@ -159,7 +159,6 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   }
 
   changeSkillLevel() {
-    console.log(this.equipment)
     this.equipmentService.changeSkillLevel(this.equipment);
   }
 

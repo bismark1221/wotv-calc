@@ -102,8 +102,8 @@
               </tr>
               <tr *ngFor="let passive of groups[group.name].passives[rarity]">
                 <td>
-                  <div *ngFor="let skillBefore of passive.formattedSkill.before">{{ skillBefore }}</div>
-                  <div *ngFor="let skillAfter of passive.formattedSkill.after">{{ skillAfter }}</div>
+                  <div *ngFor="let skillBefore of passive.before">{{ skillBefore }}</div>
+                  <div *ngFor="let skillAfter of passive.after">{{ skillAfter }}</div>
                 </td>
               </tr>
             </tbody>
