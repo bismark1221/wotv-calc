@@ -12,6 +12,8 @@
 
 <img class='typeImg' title="Can be range buffed" src="{{'assets/icons/range_buff.webp'}}" *ngIf="skill.rangeBuff"/>
 
+<img class='typeImg' title="No friendly fire" src="{{'assets/icons/no_friendly_fire.webp'}}" *ngIf="skill.target == 'ennemySide' && skill.aoe"/>
+
 <span *ngIf="skill.counter && skill.counter.type == 'preemptiveCounter'">
   <img title="Preemptive Counter" class='typeImg' src="{{'assets/icons/preemptive_counter.webp'}}" />
 </span>
