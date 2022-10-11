@@ -46,10 +46,7 @@
 
   <div class="quests">
     <h3>Quests list</h3>
-    <div *ngIf="questLoading">
-      Loading quests
-    </div>
-    <div class="mb-5" *ngIf="!questLoading && quests.length > 0">
+    <div class="mb-5">
       <div>
         Show not available quests
         <ui-switch class="switchMainJob" (click)="toogleAvailableQuests()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.showNotAvailableQuests === true"></ui-switch>
@@ -58,6 +55,9 @@
         <input class="mr-2" type="checkbox" id="rarity{{type}}" (change)="filterList('type', type)" [checked]="isFilterChecked.type[type]" />
         <label for="rarity{{type}}">{{ formatType(type) }}</label>
       </div>
+    </div>
+    <div *ngIf="questLoading">
+      Loading quests
     </div>
     <div *ngIf="!questLoading && quests.length > 0">
       <table class="questTable">
