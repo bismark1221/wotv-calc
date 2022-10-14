@@ -18,43 +18,27 @@
         <div class="modal-body-background px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
           <div class="mainBlock">
             You can activate some extra filter via the search bar<br>
-            Here is the formatting of the filter !option=filter, an exemple : !stat_res=poison<br>
+            Here is the formatting of the filter !option=filter, an exemple : !stat_res=poison <br>
             You need to validate your filter by pressing "Enter"<br>
             <br>
 
-            <h3>stat_res</h3><br>
-            For the stat resistance you can filter on either status, element and type, it will only show when the stat resistance is at least at 1 (for the max level/awake/...)<br>
+            <h3 class="font-bold text-lg">stat_res</h3><br>
+            For the stat resistance you can filter on either status, element and type, it will only show when the stat resistance is at least at 1 (for the max level/awake/...)<br><br>
             - fire, ice, wind, earth, lightning, water, light, dark<br>
             - slash, magic, strike, missile, pierce<br>
             - poison, blind, sleep, silence, paralyze, confusion, petrify, toad, charm, slow, stop, immobilize, disable, berserk, doom, frostbite, stun<br>
             <br>
 
-            <h3>buff</h3><br>
-            For every buff possible with skill (active, passive, ...), like the stat the value of the skill need to be at least at 1<br>
-            There is more option here you can filter on skill which give killer, inflict status ailment, add resistance to status ailment, buff type attack resistance or buff type attack damage<br>
-            - fire_killer, ice_killer, wind_killer, earth_killer, lightning_killer, water_killer, light_killer, dark_killer, human_killer, netherbeast_killer, beast_killer, demon_killer, dragon_killer, plant_killer, bird_killer, insect_killer, aquatic_killer, machine_killer, fairy_killer, undead_killer, stone_killer, metal_killer, arcana_killer, fennes_killer, float_killer, males_killer<br>
-            - fire_res, ice_res, wind_res, earth_res, lightning_res, water_res, light_res, dark_res<br>
-            - slash_res, magic_res, strike_res, missile_res, pierce_res<br>
-            - poison_res, blind_res, sleep_res, silence_res, paralyze_res, confusion_res, petrify_res, toad_res, charm_res, slow_res, stop_res, immobilize_res, disable_res, berserk_res, doom_res, frostbite_res, stun_res<br>
-            - fire_atk, ice_atk, wind_atk, earth_atk, lightning_atk, water_atk, light_atk, dark_atk<br>
-            - slash_atk, magic_atk, strike_atk, missile_atk, pierce_atk<br>
-            - poison_atk, blind_atk, sleep_atk, silence_atk, paralyze_atk, confusion_atk, petrify_atk, toad_atk, charm_atk, slow_atk, stop_atk, immobilize_atk, disable_atk, berserk_atk, doom_atk, frostbite_atk, stun_atk<br>
-            - evade<br>
-            - reraise<br>
-            - ignore_fatal (guts)<br>
-            - dispel, mass_dispel
+            <h3 class="font-bold text-lg">buff or break</h3><br>
+            For every buff or break possible with skill (active, passive, ...), like the stat, the value of the skill need to be at least at 1 for !buff and negative value will be shown with !break<br>
+            There is more option here you can filter on skill which give killer, inflict status ailment, add resistance to status ailment, buff type attack resistance or buff type attack damage<br><br>
+            <div *ngFor="let soloBuffType of buffType[version].items">
+              - {{ soloBuffType | lowercase }}
+            </div>
+
             <br>
 
-            <h3>break</h3><br>
-            This time it's skill which apply negative value, like reduce the resistance to some element.
-            - fire_res, ice_res, wind_res, earth_res, lightning_res, water_res, light_res, dark_res<br>
-            - slash_res, magic_res, strike_res, missile_res, pierce_res<br>
-            - poison_res, blind_res, sleep_res, silence_res, paralyze_res, confusion_res, petrify_res, toad_res, charm_res, slow_res, stop_res, immobilize_res, disable_res, berserk_res, doom_res, frostbite_res, stun_res<br>
-            - fire_atk, ice_atk, wind_atk, earth_atk, lightning_atk, water_atk, light_atk, dark_atk<br>
-            - slash_atk, magic_atk, strike_atk, missile_atk, pierce_atk<br>
-            <br>
-
-            <h3>skill_name</h3><br>
+            <h3 class="font-bold text-lg">skill_name</h3><br>
             Pretty easy you just have to type the skill you want to search (only work with english skill name on global or japanese for jp version)<br>
             <button class="btn btn-sub mt-3" (click)="close()">Close</button>
           </div>

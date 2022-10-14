@@ -33,6 +33,21 @@ export class ToolService {
     return items;
   }
 
+  sortTableByName(items, order = 'asc') {
+    items.sort((a: any, b: any) => {
+      const x = this.reduceString(a);
+      const y = this.reduceString(b);
+
+      if (order === 'asc') {
+        return x.localeCompare(y, 'ja');
+      } else {
+        return y.localeCompare(x, 'ja');
+      }
+    });
+
+    return items;
+  }
+
   getName(item) {
     if (item && item.names) {
       if (!item.names[this.translateService.currentLang]) {
