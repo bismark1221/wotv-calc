@@ -382,7 +382,7 @@ export class SkillService {
     return effectHtmls;
   }
 
-  formatEffect(unit, skill, effect, getTarget = true, fromEquipment = false, shortDesc = false) {
+  formatEffect(unit, skill, effect, getTarget = true, fromEquipment = false, shortDesc = false, forSearchOptions = false) {
     let html = '';
     switch (effect.type) {
       case 'HP' :
@@ -1690,39 +1690,47 @@ export class SkillService {
       break;
       case 'NULLIFY' :
         html = 'Nullify ' + this.getValue(skill, effect);
-        effect.ailments.forEach((ailment, index) => {
-          if (index === effect.ailments.length - 1) {
-            if (index !== 0) {
-              html += ' and ';
+        if (forSearchOptions) {
+          html += 'some ailments';
+        } else {
+          effect.ailments.forEach((ailment, index) => {
+            if (index === effect.ailments.length - 1) {
+              if (index !== 0) {
+                html += ' and ';
+              }
+            } else {
+              if (index !== 0) {
+                html += ', ';
+              }
             }
-          } else {
-            if (index !== 0) {
-              html += ', ';
-            }
-          }
 
-          html += this.upperCaseFirst(ailment.replace('_', ' '));
-        });
+            html += this.upperCaseFirst(ailment.replace('_', ' '));
+          });
+        }
         break;
       case 'DISPEL' :
         html = 'Dispel ' + this.getValue(skill, effect);
-        effect.ailments.forEach((ailment, index) => {
-          if (index === effect.ailments.length - 1) {
-            if (index !== 0) {
-              html += ' and ';
+        if (forSearchOptions) {
+          html += 'some ailments';
+        } else {
+          effect.ailments.forEach((ailment, index) => {
+            if (index === effect.ailments.length - 1) {
+              if (index !== 0) {
+                html += ' and ';
+              }
+            } else {
+              if (index !== 0) {
+                html += ', ';
+              }
             }
-          } else {
-            if (index !== 0) {
-              html += ', ';
+
+            if (ailment === 'ALL_AILMENTS') {
+              ailment = 'All ailments except charm, slow, stop and doom';
             }
-          }
 
-          if (ailment === 'ALL_AILMENTS') {
-            ailment = 'All ailments except charm, slow, stop and doom';
-          }
-
-          html += this.upperCaseFirst(ailment.replace('_', ' '));
-        });
+            html += this.upperCaseFirst(ailment.replace('_', ' '));
+          });
+        }
         break;
       case 'STOP_CHAIN_INCREASE_DAMAGE' :
         html = 'The chain break if the combo count is greater than 5 but increase modifier by ' + effect.value + '%';
@@ -1737,7 +1745,10 @@ export class SkillService {
       case 'UPGRADE_SKILL' :
         html = '';
         getTarget = false;
-        if (effect.calcType !== 'apply') {
+
+        if (forSearchOptions) {
+          html = 'Upgrade a skill';
+        } else if (effect.calcType !== 'apply') {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
@@ -1767,7 +1778,9 @@ export class SkillService {
           }
 
           html += ' ' + this.getTurns(effect);
-        } else {
+        } else if (forSearchOptions) {
+          html = 'Grants some effect(s) upon hit';
+        }else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
@@ -1781,30 +1794,36 @@ export class SkillService {
           html = 'When casting another attack skill also launch the following skill on target : ' + (newSkill ? this.toolService.getName(newSkill) : '???') + ' ' + this.getTurns(effect);
         } else if (effect.calcType === 'dispel') {
           html = 'Dispel follow-up casts';
+        } else if (forSearchOptions) {
+          html = 'When casting a attack skill also launch another skill';
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
       case 'AUTO_CAST_ON_REVIVAL' :
-        let newCastOnKill = null;
-        if (unit.rawSkills) {
-          newCastOnKill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
-        }
-
-        if (effect.calcType === 'apply') {
-          html = 'When target is revive automatically cast another attack skill on it : ' + (newCastOnKill ? this.toolService.getName(newCastOnKill) : '???');
-        } else {
-          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
-        }
-        break;
-      case 'AUTO_CAST_ON_KILL_ENEMY' :
         let newCastOnRevive = null;
         if (unit.rawSkills) {
           newCastOnRevive = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
         }
 
         if (effect.calcType === 'apply') {
-          html = 'When enemy target is killed automatically cast another attack skill on it : ' + (newCastOnRevive ? this.toolService.getName(newCastOnRevive) : '???');
+          html = 'When target is revive automatically cast another attack skill on it : ' + (newCastOnRevive ? this.toolService.getName(newCastOnRevive) : '???');
+        } else if (forSearchOptions) {
+          html = 'When target is revive automatically cast another attack skill on it';
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
+      case 'AUTO_CAST_ON_KILL_ENEMY' :
+        let newCastOnKill = null;
+        if (unit.rawSkills) {
+          newCastOnKill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'When enemy target is killed automatically cast another attack skill : ' + (newCastOnKill ? this.toolService.getName(newCastOnKill) : '???');
+        } else if (forSearchOptions) {
+          html = 'When enemy target is killed automatically cast another attack skill';
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
@@ -1817,6 +1836,8 @@ export class SkillService {
 
         if (effect.calcType === 'apply') {
           html = 'When conditions are met auto-cast following skill : ' + (newCastOnCondition ? this.toolService.getName(newCastOnCondition) : '???');
+        } else if (forSearchOptions) {
+          html = 'When conditions are met auto-cast a skill';
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }

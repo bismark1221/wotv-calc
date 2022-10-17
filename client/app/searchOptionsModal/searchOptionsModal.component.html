@@ -32,8 +32,8 @@
             <h3 class="font-bold text-lg">buff or break</h3><br>
             For every buff or break possible with skill (active, passive, ...), like the stat, the value of the skill need to be at least at 1 for !buff and negative value will be shown with !break<br>
             There is more option here you can filter on skill which give killer, inflict status ailment, add resistance to status ailment, buff type attack resistance or buff type attack damage<br><br>
-            <div *ngFor="let soloBuffType of buffType[version].items">
-              - {{ soloBuffType | lowercase }}
+            <div *ngFor="let formattedBuffType of formattedBuffTypes">
+              - {{ formattedBuffType.type | lowercase }} : {{ formattedBuffType.formattedEffect }}
             </div>
 
             <br>
