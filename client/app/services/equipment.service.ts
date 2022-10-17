@@ -796,7 +796,7 @@ export class EquipmentService {
 
       if (equipment.stats) {
         Object.keys(equipment.stats).forEach(stat => {
-          if (this.equipment.selectedStats[stat]) {
+          if (Number.isInteger(this.equipment.selectedStats[stat])) {
             this.equipment.selectedStats[stat] = parseInt(equipment.stats[stat], 10) + (this.equipment.customName === 'in-game' ? this.equipment.stats[0][stat].min : 0);
           }
         });
