@@ -431,11 +431,11 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   openLoadModal() {
     this.simpleModalService.addModal(ModalLoadComponent, { type: 'team', savedItems: this.savedTeams })
       .subscribe(async (result) => {
-        if (result.type === 'load' && result.item) {
+        if (result && result.type === 'load' && result.item) {
           await this.loadTeam(result.item);
         }
 
-        if (result.type === 'fullDelete') {
+        if (result && result.type === 'fullDelete') {
           this.savedTeams = [];
         }
       });
