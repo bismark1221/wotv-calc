@@ -46,8 +46,6 @@ import { EspersComponent } from './espers/espers.component';
 import { EsperComponent } from './esper/esper.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
-import { QuestsComponent } from './quests/quests.component';
-import { QuestComponent } from './quest/quest.component';
 
 import { InventoryComponent } from './inventory/inventory.component';
 import { ModalInventoryEquipmentsComponent } from './inventory/modal/modal.inventory.equipments.component';
@@ -139,8 +137,6 @@ export function createTranslateLoader(http: HttpClient) {
     EsperComponent,
     EquipmentsComponent,
     EquipmentComponent,
-    QuestsComponent,
-    QuestComponent,
     InventoryComponent,
     BuilderComponent,
     BuilderUnitComponent,

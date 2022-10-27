@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
-import { QuestService } from '../services/quest.service';
-import { NavService } from '../services/nav.service';
-import { ToolService } from '../services/tool.service';
-import { AuthService } from '../services/auth.service';
+import { QuestService } from '../../services/quest.service';
+import { NavService } from '../../services/nav.service';
+import { ToolService } from '../../services/tool.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
-  selector: 'app-quests',
-  templateUrl: './quests.component.html',
-  styleUrls: ['./quests.component.css']
+  selector: 'app-quest-list',
+  templateUrl: './quest.list.component.html',
+  styleUrls: ['./quest.list.component.css']
 })
-export class QuestsComponent implements OnInit {
+export class QuestListComponent implements OnInit {
   rawQuests = [];
   quests = [];
   searchText = '';

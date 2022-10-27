@@ -15,8 +15,6 @@ import { EspersComponent } from './espers/espers.component';
 import { EsperComponent } from './esper/esper.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
-import { QuestsComponent } from './quests/quests.component';
-import { QuestComponent } from './quest/quest.component';
 import { InventoryComponent } from './inventory/inventory.component';
 
 import { UserComponent } from './user/user.component';
@@ -52,6 +50,12 @@ const routes: Routes = [
       .then(mod => mod.RaidModule)
   },
 
+  {
+    path: '',
+    loadChildren: () => import('./quest/quest.module')
+      .then(mod => mod.QuestModule)
+  },
+
   { path: 'units', component: UnitsComponent },
   { path: 'unit/:slug', component: UnitComponent },
   { path: 'cards', component: CardsComponent },
@@ -60,8 +64,6 @@ const routes: Routes = [
   { path: 'esper/:slug', component: EsperComponent },
   { path: 'equipments', component: EquipmentsComponent },
   { path: 'equipment/:slug', component: EquipmentComponent },
-  { path: 'quests', component: QuestsComponent },
-  { path: 'quest/:slug', component: QuestComponent },
   { path: 'inventory', component: InventoryComponent },
   { path: 'inventory/:inventoryId', component: InventoryComponent },
   { path: 'index', redirectTo: 'other/index', pathMatch: 'full' },
@@ -118,8 +120,6 @@ const routes: Routes = [
   { path: 'JP/esper/:slug', component: EsperComponent },
   { path: 'JP/equipments', component: EquipmentsComponent },
   { path: 'JP/equipment/:slug', component: EquipmentComponent },
-  { path: 'JP/quests', component: QuestsComponent },
-  { path: 'JP/quest/:slug', component: QuestComponent },
   { path: 'JP/inventory', component: InventoryComponent },
   { path: 'JP/inventory/:inventoryId', component: InventoryComponent },
   { path: 'JP/index', redirectTo: 'other/index', pathMatch: 'full' },

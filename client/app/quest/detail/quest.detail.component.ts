@@ -2,20 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import { QuestService } from '../services/quest.service';
-import { RangeService } from '../services/range.service';
-import { NavService } from '../services/nav.service';
-import { ToolService } from '../services/tool.service';
-import { AuthService } from '../services/auth.service';
-import { SkillService } from '../services/skill.service';
+import { QuestService } from '../../services/quest.service';
+import { RangeService } from '../../services/range.service';
+import { NavService } from '../../services/nav.service';
+import { ToolService } from '../../services/tool.service';
+import { AuthService } from '../../services/auth.service';
+import { SkillService } from '../../services/skill.service';
 
 
 @Component({
-  selector: 'app-quest',
-  templateUrl: './quest.component.html',
-  styleUrls: ['./quest.component.css']
+  selector: 'app-quest-detail',
+  templateUrl: './quest.detail.component.html',
+  styleUrls: ['./quest.detail.component.css']
 })
-export class QuestComponent implements OnInit {
+export class QuestDetailComponent implements OnInit {
   quest = null;
   enemies = [];
   isCollapsedEnemy = {};
