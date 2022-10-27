@@ -64,7 +64,7 @@
       </div>
     </div>
     <div class="raidsList">
-      <app-template-card *ngFor="let raid of getFilteredRaids()" [item]="raid" [linkType]="'raid'" [assetType]="'otherUnit'"></app-template-card>
+      <app-shared-card *ngFor="let raid of getFilteredRaids()" [item]="raid" [linkType]="'raid'" [assetType]="'otherUnit'"></app-shared-card>
     </div>
   </div>
 </div>

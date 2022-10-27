@@ -149,7 +149,7 @@
           <th class="sub skillCostTd">Cost</th>
         </tr>
 
-        <tr *ngIf="buff.classic && buff.classic.type !== 'support'" app-template-skillRow [skill]="buff.classic" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+        <tr *ngIf="buff.classic && buff.classic.type !== 'support'" app-shared-skillRow [skill]="buff.classic" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
 
         <tr class="separatorLine"></tr>
       </tbody>

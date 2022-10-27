@@ -1,5 +1,5 @@
-<app-tabs>
-  <app-tab title="CHARACTER">
+<app-shared-tabs>
+  <app-shared-tab title="CHARACTER">
     <div class="leftBlock" *ngIf="unit">
       <table class="unitTable">
         <tbody>
@@ -130,9 +130,9 @@
             <th class="sub" *ngIf="skill.type === 'skill'">Hits</th>
             <th class="sub" *ngIf="skill.type === 'skill'">Cost</th>
           </tr>
-          <tr *ngIf="skill.type === 'skill'" app-template-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+          <tr *ngIf="skill.type === 'skill'" app-shared-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
 
-          <tr *ngIf="skill.type !== 'skill'" app-template-skillRow [skill]="skill" [showType]="true" [showEffects]="true" [effectsColSpan]="6"></tr>
+          <tr *ngIf="skill.type !== 'skill'" app-shared-skillRow [skill]="skill" [showType]="true" [showEffects]="true" [effectsColSpan]="6"></tr>
         </tbody>
       </table>
 
@@ -167,8 +167,8 @@
         </tbody>
       </table>
     </div>
-  </app-tab>
-  <app-tab title="STATS">
+  </app-shared-tab>
+  <app-shared-tab title="STATS">
     <div class="leftBlock" *ngIf="!specialBismark && unit">
       <table class="unitTable">
         <tbody>
@@ -575,8 +575,8 @@
         </tbody>
       </table>
     </div>
-  </app-tab>
-  <app-tab title="SKILLS">
+  </app-shared-tab>
+  <app-shared-tab title="SKILLS">
     <div *ngIf="unit">
       <table class="skillsTable" *ngFor="let i of possibleSkillTypes">
         <tbody>
@@ -600,7 +600,7 @@
           </tr>
         </tbody>
 
-        <tbody app-template-skillWithUpgrade *ngFor="let skill of getSkillsPerType(i)" [skill]="skill" [jobs]="jobs" [showJobIcon]="true" [showJobLvl]="true" [showStarLvl]="true" [showName]="true" [showEffects]="true" [upgradeColSpan]="3" [showType]="i === 'counter'" [showRange]="i === 'counter'" [showHits]="i === 'counter'"></tbody>
+        <tbody app-shared-skillWithUpgrade *ngFor="let skill of getSkillsPerType(i)" [skill]="skill" [jobs]="jobs" [showJobIcon]="true" [showJobLvl]="true" [showStarLvl]="true" [showName]="true" [showEffects]="true" [upgradeColSpan]="3" [showType]="i === 'counter'" [showRange]="i === 'counter'" [showHits]="i === 'counter'"></tbody>
       </table>
 
       <table class="skillsTable" *ngIf="unit.formattedAttack">
@@ -614,7 +614,7 @@
           </tr>
         </tbody>
 
-        <tbody app-template-skillWithUpgrade [skill]="unit.formattedAttack" [showName]="true" [showEffects]="true" [upgradeColSpan]="1" [showType]="true" [showRange]="true" [showHits]="true" [basicAttack]="true"></tbody>
+        <tbody app-shared-skillWithUpgrade [skill]="unit.formattedAttack" [showName]="true" [showEffects]="true" [upgradeColSpan]="1" [showType]="true" [showRange]="true" [showHits]="true" [basicAttack]="true"></tbody>
       </table>
 
       <table class="skillsTable" *ngFor="let i of [0, 1, 2, 3]">
@@ -645,7 +645,7 @@
             <th class="sub skillCostTd">Cost</th>
           </tr>
         </tbody>
-        <tbody app-template-skillWithUpgrade *ngFor="let skill of getSkillsPerJob(i)" [skill]="skill" [showJobLvl]="true" [showStarLvl]="true" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [upgradeColSpan]="2"></tbody>
+        <tbody app-shared-skillWithUpgrade *ngFor="let skill of getSkillsPerJob(i)" [skill]="skill" [showJobLvl]="true" [showStarLvl]="true" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [upgradeColSpan]="2"></tbody>
       </table>
 
       <table class="skillsTable" *ngIf="unit.formattedUnlockedSkills.length > 0">
@@ -663,7 +663,7 @@
           </tr>
         </tbody>
 
-        <tbody app-template-skillWithUpgrade *ngFor="let skill of unit.formattedUnlockedSkills" [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true" [showCost]="true" [upgradeColSpan]="1"></tbody>
+        <tbody app-shared-skillWithUpgrade *ngFor="let skill of unit.formattedUnlockedSkills" [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true" [showCost]="true" [upgradeColSpan]="1"></tbody>
       </table>
 
       <table class="skillsTable" *ngIf="unit.formattedLimit">
@@ -681,11 +681,11 @@
           </tr>
         </tbody>
 
-        <tbody app-template-skillWithUpgrade [skill]="unit.formattedLimit" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true" [showCost]="true" [showCasts]="true" [upgradeColSpan]="1" [showTypeWithName]="true" [noNameOnUpgrade]="true"></tbody>
+        <tbody app-shared-skillWithUpgrade [skill]="unit.formattedLimit" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true" [showCost]="true" [showCasts]="true" [upgradeColSpan]="1" [showTypeWithName]="true" [noNameOnUpgrade]="true"></tbody>
       </table>
     </div>
-  </app-tab>
-  <app-tab title="SKILL TREE">
+  </app-shared-tab>
+  <app-shared-tab title="SKILL TREE">
     <div class="leftBlock" *ngIf="!specialBismark && unit">
       <table class="unitTable">
         <tbody>
@@ -773,7 +773,7 @@
         <div [innerHTML]="grid.lines | safeHtml"></div>
       </div>
     </div>
-  </app-tab>
-  <app-tab *ngIf="unit" title="GO TO BUILDER >>>" [link]="getRoute('/builder/unit/' + unit.slug)">
-  </app-tab>
-</app-tabs>
+  </app-shared-tab>
+  <app-shared-tab *ngIf="unit" title="GO TO BUILDER >>>" [link]="getRoute('/builder/unit/' + unit.slug)">
+  </app-shared-tab>
+</app-shared-tabs>

@@ -2,7 +2,7 @@
   <table class="itemTable">
     <tr *ngFor="let item of items">
       <td class="itemTd">
-        <app-template-item [item]="item" [customClass]="itemClass"></app-template-item>
+        <app-shared-item [item]="item" [customClass]="itemClass"></app-shared-item>
         <div><a [routerLink]="[getRoute('/other/farm-calculator/' + item.dataId)]">{{ item.name }}</a></div>
       </td>
       <td>

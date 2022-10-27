@@ -213,7 +213,7 @@
                       <th class="sub">Hits</th>
                       <th class="sub">Cost</th>
                     </tr>
-                    <tr app-template-skillRow [skill]="equipment.activeSkill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [showLevelInput]="true" (changeLevel)="changeSkillLevel()"></tr>
+                    <tr app-shared-skillRow [skill]="equipment.activeSkill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [showLevelInput]="true" (changeLevel)="changeSkillLevel()"></tr>
                   </tbody>
                   <tbody  *ngIf="equipment.passiveSkills.length > 0">
                     <tr>

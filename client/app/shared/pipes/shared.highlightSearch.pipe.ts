@@ -1,7 +1,7 @@
-import {Pipe, PipeTransform} from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({name: 'highlight'})
-export class HighlightSearchPipe implements PipeTransform {
+export class SharedHighlightSearchPipe implements PipeTransform {
 
   transform(text, searchText) {
 

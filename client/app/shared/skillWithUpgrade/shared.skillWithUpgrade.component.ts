@@ -1,15 +1,15 @@
 import { Component, Input } from '@angular/core';
 
-import { ResizeDetectorComponent } from '../resizeDetector.component';
+import { SharedResizeDetectorComponent } from '../resizeDetector.component';
 
-import { ToolService } from '../services/tool.service';
+import { ToolService } from '../../services/tool.service';
 
 @Component({
-  selector: 'tbody[app-template-skillWithUpgrade]',
-  templateUrl: './template.skillWithUpgrade.component.html',
-  styleUrls: ['./template.skillWithUpgrade.component.css']
+  selector: 'tbody[app-shared-skillWithUpgrade]',
+  templateUrl: './shared.skillWithUpgrade.component.html',
+  styleUrls: ['./shared.skillWithUpgrade.component.css']
 })
-export class TemplateSkillWithUpgradeComponent extends ResizeDetectorComponent {
+export class SharedSkillWithUpgradeComponent extends SharedResizeDetectorComponent {
   @Input() skill;
   @Input() jobs;
 

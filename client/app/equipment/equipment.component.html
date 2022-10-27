@@ -1,5 +1,5 @@
-<app-tabs>
-  <app-tab title="EQUIPMENT">
+<app-shared-tabs>
+  <app-shared-tab title="EQUIPMENT">
     <div class="leftBlock" *ngIf="equipment">
       <table class="equipmentTable">
         <tbody>
@@ -130,7 +130,7 @@
           <th class="sub skillCostTd">Cost</th>
         </tr>
 
-        <tr app-template-skillRow [skill]="equipment.activeSkill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+        <tr app-shared-skillRow [skill]="equipment.activeSkill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
       </table>
 
       <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
@@ -176,8 +176,8 @@
         </tr>
       </table>
     </div>
-  </app-tab>
-  <app-tab title="CRAFT">
+  </app-shared-tab>
+  <app-shared-tab title="CRAFT">
     <div class="leftBlock" *ngIf="equipment">
       <table class="equipmentTable">
         <tbody>
@@ -240,7 +240,7 @@
         </tbody>
       </table>
     </div>
-  </app-tab>
-  <app-tab *ngIf="equipment" title="GO TO BUILDER >>>" [link]="getRoute('/builder/equipment/' + equipment.slug)">
-  </app-tab>
-</app-tabs>
+  </app-shared-tab>
+  <app-shared-tab *ngIf="equipment" title="GO TO BUILDER >>>" [link]="getRoute('/builder/equipment/' + equipment.slug)">
+  </app-shared-tab>
+</app-shared-tabs>

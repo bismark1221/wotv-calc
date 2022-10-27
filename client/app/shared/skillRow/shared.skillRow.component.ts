@@ -1,15 +1,15 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-import { ResizeDetectorComponent } from '../resizeDetector.component';
+import { SharedResizeDetectorComponent } from '../resizeDetector.component';
 
-import { ToolService } from '../services/tool.service';
+import { ToolService } from '../../services/tool.service';
 
 @Component({
-  selector: 'tr[app-template-skillRow]',
-  templateUrl: './template.skillRow.component.html',
-  styleUrls: ['./template.skillRow.component.css']
+  selector: 'tr[app-shared-skillRow]',
+  templateUrl: './shared.skillRow.component.html',
+  styleUrls: ['./shared.skillRow.component.css']
 })
-export class TemplateSkillRowComponent extends ResizeDetectorComponent {
+export class SharedSkillRowComponent extends SharedResizeDetectorComponent {
   @Input() skill;
   @Input() jobs;
 

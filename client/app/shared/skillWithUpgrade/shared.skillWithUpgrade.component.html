@@ -1,5 +1,5 @@
 <tr
-  app-template-skillRow
+  app-shared-skillRow
   [skill]="skill"
   [jobs]="jobs"
   [showJobIcon]="showJobIcon"
@@ -22,7 +22,7 @@
 
 <ng-container *ngFor="let upgradedSkill of skill.upgrades">
   <tr
-    app-template-skillRow
+    app-shared-skillRow
     [isUpgrade]="true"
     [skill]="upgradedSkill"
     [jobs]="jobs"
@@ -43,7 +43,7 @@
   </tr>
 
   <tr
-    app-template-skillRow
+    app-shared-skillRow
     *ngFor="let upgradedSkillOfUpgrade of upgradedSkill.upgrades"
     [isUpgrade]="true"
     [skill]="upgradedSkillOfUpgrade"

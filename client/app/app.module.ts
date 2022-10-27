@@ -26,7 +26,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { SentryErrorHandler } from './sentry.errorHandler';
 
 import { AppComponent } from './app.component';
-import { ResizeDetectorComponent } from './resizeDetector.component';
 
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
@@ -52,9 +51,6 @@ import { QuestComponent } from './quest/quest.component';
 
 import { InventoryComponent } from './inventory/inventory.component';
 import { ModalInventoryEquipmentsComponent } from './inventory/modal/modal.inventory.equipments.component';
-
-import { TabsComponent } from './tabs/tabs.component';
-import { TabComponent } from './tabs/tab.component';
 
 import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
@@ -88,12 +84,6 @@ import { ModalLinkComponent } from './builder/modal/modal.link.component';
 import { ModalMasterRanksComponent } from './builder/modal/modal.mr.component';
 import { ModalMateriaComponent } from './builder/modal/modal.materia.component';
 
-import { TemplateItemComponent } from './template/template.item.component';
-import { TemplateCardComponent } from './template/template.card.component';
-import { TemplateSkillWithUpgradeComponent } from './template/template.skillWithUpgrade.component';
-import { TemplateSkillRowComponent } from './template/template.skillRow.component';
-import { TemplateSkillTypeComponent } from './template/template.skillType.component';
-
 import { SearchOptionsModalComponent } from './searchOptionsModal/searchOptionsModal.component';
 
 import { UnitService } from './services/unit.service';
@@ -124,9 +114,7 @@ import { UserService } from './services/user.service';
 import { MateriaService } from './services/materia.service';
 import { InventoryService } from './services/inventory.service';
 
-import { RoundDownPipe } from './pipes/roundDown.pipe';
-import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
-import { HighlightSearchPipe } from './pipes/highlightSearch.pipe';
+import { SharedModule } from './shared/shared.module';
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export function createTranslateLoader(http: HttpClient) {
@@ -154,9 +142,6 @@ export function createTranslateLoader(http: HttpClient) {
     QuestsComponent,
     QuestComponent,
     InventoryComponent,
-    RoundDownPipe,
-    SafeHtmlPipe,
-    HighlightSearchPipe,
     BuilderComponent,
     BuilderUnitComponent,
     BuilderCardComponent,
@@ -188,15 +173,8 @@ export function createTranslateLoader(http: HttpClient) {
     OtherMateriaComponent,
     OtherMaterialLookupComponent,
     OtherSubCardComponent,
-    TemplateItemComponent,
-    TemplateCardComponent,
-    TemplateSkillWithUpgradeComponent,
-    TemplateSkillRowComponent,
-    TemplateSkillTypeComponent,
     UserComponent,
-    SearchOptionsModalComponent,
-    TabsComponent,
-    TabComponent
+    SearchOptionsModalComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -229,7 +207,8 @@ export function createTranslateLoader(http: HttpClient) {
       autoFocus: false
     }}),
     NgxPopperjsModule,
-    BarRatingModule
+    BarRatingModule,
+    SharedModule
   ],
   providers: [
     UnitService,

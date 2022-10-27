@@ -15,7 +15,7 @@
 <td *ngIf="isUpgrade && !basicAttack" [attr.colspan]="upgradeColSpan">
   Upgrade
   <div *ngIf="showTypeWithName && noNameOnUpgrade">
-    <app-template-skillType [skill]="skill"></app-template-skillType>
+    <app-shared-skillType [skill]="skill"></app-shared-skillType>
   </div>
 </td>
 
@@ -30,13 +30,13 @@
 <td *ngIf="showStarLvl">{{ skill.unlockStar }}</td>
 
 <td *ngIf="showType">
-  <app-template-skillType [skill]="skill"></app-template-skillType>
+  <app-shared-skillType [skill]="skill"></app-shared-skillType>
 </td>
 
 <td *ngIf="showName && (!isUpgrade || !noNameOnUpgrade)">
   {{ isUpgrade && basicAttack ? 'Upgrade' : (basicAttack ? 'Basic Attack' : skill.name) }}
   <div *ngIf="showTypeWithName">
-    <app-template-skillType [skill]="skill"></app-template-skillType>
+    <app-shared-skillType [skill]="skill"></app-shared-skillType>
   </div>
 </td>
 

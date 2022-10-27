@@ -1,5 +1,5 @@
-<app-tabs>
-  <app-tab title="BOSS">
+<app-shared-tabs>
+  <app-shared-tab title="BOSS">
     <div *ngIf="raid">
       <div *ngIf="raid.bonus.units.length > 0">
         <table class="bonusTable">
@@ -211,8 +211,8 @@
         <hr class="bossSeparator" *ngIf="j !== raid.bosses.length - 1"/>
       </div>
     </div>
-  </app-tab>
-  <app-tab title="SKILLS">
+  </app-shared-tab>
+  <app-shared-tab title="SKILLS">
     <div *ngIf="raid">
       <div *ngFor="let boss of raid.bosses; let j = index">
         <table class="skillsTable">
@@ -225,7 +225,7 @@
               <th class="sub skillHitTd">Hits</th>
             </tr>
           </tbody>
-          <tbody *ngIf="boss.formattedAttack" app-template-skillWithUpgrade [skill]="boss.formattedAttack" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true" [basicAttack]="true"></tbody>
+          <tbody *ngIf="boss.formattedAttack" app-shared-skillWithUpgrade [skill]="boss.formattedAttack" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true" [basicAttack]="true"></tbody>
         </table>
 
         <table class="skillsTable">
@@ -247,10 +247,10 @@
               <th class="sub skillCostTd">Cost</th>
             </tr>
           </tbody>
-          <tbody *ngFor="let skill of boss.formattedSkills; let skillIndex = index" app-template-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [showRaidLevel]="true" [rawSkills]="boss.skills" [skillIndex]="skillIndex"></tbody>
+          <tbody *ngFor="let skill of boss.formattedSkills; let skillIndex = index" app-shared-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [showRaidLevel]="true" [rawSkills]="boss.skills" [skillIndex]="skillIndex"></tbody>
         </table>
         <hr class="bossSeparator mt-5 mb-5" *ngIf="j !== raid.bosses.length - 1"/>
       </div>
     </div>
-  </app-tab>
-</app-tabs>
+  </app-shared-tab>
+</app-shared-tabs>

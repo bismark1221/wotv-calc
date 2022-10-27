@@ -540,7 +540,7 @@
             <th class="sub skillHitTd">Hits</th>
             <th class="sub skillCostTd">Cost</th>
           </tr>
-          <tr *ngFor="let skill of getSkillsPerJob('main')" app-template-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+          <tr *ngFor="let skill of getSkillsPerJob('main')" app-shared-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
         </table>
       </div>
       <div class="skillSubTitle" (click)="isCollapsedSubJob = !isCollapsedSubJob">
@@ -563,7 +563,7 @@
             <th class="sub skillHitTd">Hits</th>
             <th class="sub skillCostTd">Cost</th>
           </tr>
-          <tr *ngFor="let skill of getSkillsPerJob('sub')" app-template-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+          <tr *ngFor="let skill of getSkillsPerJob('sub')" app-shared-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
         </table>
       </div>
 
@@ -588,19 +588,19 @@
             <th class="sub skillCostTd">Cost</th>
           </tr>
           <tbody *ngFor="let i of [0, 1, 2]">
-            <tr *ngIf="unit.equipments[i] && unit.equipments[i].activeSkill; let skill" app-template-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+            <tr *ngIf="unit.equipments[i] && unit.equipments[i].activeSkill; let skill" app-shared-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
           </tbody>
           <tbody *ngIf="unit.activatedSupport[0] !== '0'">
-            <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[0]].skill]" app-template-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+            <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[0]].skill]" app-shared-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
           </tbody>
           <tbody *ngIf="unit.activatedSupport[1] !== '0'">
-            <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[1]].skill]" app-template-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+            <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[1]].skill]" app-shared-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
           </tbody>
           <tbody *ngIf="unit.activatedCounter !== '0'">
-            <tr *ngFor="let skill of [unit.board.nodes[unit.activatedCounter].skill]" app-template-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+            <tr *ngFor="let skill of [unit.board.nodes[unit.activatedCounter].skill]" app-shared-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
           </tbody>
           <tbody *ngIf="unit.formattedLimit">
-            <tr app-template-skillRow [skill]="unit.formattedLimit" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+            <tr app-shared-skillRow [skill]="unit.formattedLimit" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
           </tbody>
         </table>
       </div>

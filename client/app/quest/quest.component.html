@@ -82,7 +82,7 @@
         <td>
           <div *ngFor="let reward of mission.rewards">
             <div *ngIf="reward.type === 'item' || reward.type === 'visiores'">
-              <app-template-item [item]="reward.reward"></app-template-item> x {{ reward.value }}
+              <app-shared-item [item]="reward.reward"></app-shared-item> x {{ reward.value }}
             </div>
 
             <div *ngIf="reward.type === 'equipment'">
@@ -275,7 +275,7 @@
                 </tr>
               </tbody>
 
-              <tbody *ngFor="let skill of ally.skills" app-template-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tbody>
+              <tbody *ngFor="let skill of ally.skills" app-shared-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tbody>
             </table>
           </td>
         </tr>
@@ -449,7 +449,7 @@
                   <th class="sub skillCostTd">Cost</th>
                 </tr>
               </tbody>
-              <tbody *ngFor="let skill of enemy.skills" app-template-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tbody>
+              <tbody *ngFor="let skill of enemy.skills" app-shared-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tbody>
             </table>
             <table>
               <tr>
@@ -458,7 +458,7 @@
               <tr *ngIf="quest.enemies[j].drop && quest.dropLists && quest.dropLists[quest.enemies[j].drop]">
                 <td>
                   <div *ngFor="let item of quest.dropLists[quest.enemies[j].drop]" class="dropRateItemBlock">
-                    <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
+                    <app-shared-item [item]="item" [customClass]="itemClassListQuest"></app-shared-item>
                     <div>
                       ({{ item.drop.num }})<br />
                       {{ item.drop.value | number : '1.2-2'}}%
@@ -496,7 +496,7 @@
           <td colspan="99" class="enemyDetailCol">
             <div *ngIf="quest.chests && quest.chests[j].drop && quest.dropLists && quest.dropLists[quest.chests[j].drop]">
               <div *ngFor="let item of quest.dropLists[quest.chests[j].drop]" class="dropRateItemBlock">
-                <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
+                <app-shared-item [item]="item" [customClass]="itemClassListQuest"></app-shared-item>
                 <div>
                   ({{ item.drop.num }})<br />
                   {{ item.drop.value | number : '1.2-2'}}%
@@ -628,7 +628,7 @@
                   <th class="sub skillCostTd">Cost</th>
                 </tr>
               </tbody>
-              <tbody *ngFor="let skill of object.skills" app-template-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tbody>
+              <tbody *ngFor="let skill of object.skills" app-shared-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tbody>
             </table>
           </td>
         </tr>

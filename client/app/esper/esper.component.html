@@ -1,5 +1,5 @@
-<app-tabs>
-  <app-tab title="ESPER">
+<app-shared-tabs>
+  <app-shared-tab title="ESPER">
     <div class="leftBlock" *ngIf="esper">
       <table class="esperTable">
         <tbody>
@@ -186,7 +186,7 @@
           </tr>
         </tbody>
 
-        <tbody *ngIf="esper.formattedSkill" app-template-skillWithUpgrade [skill]="esper.formattedSkill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true"></tbody>
+        <tbody *ngIf="esper.formattedSkill" app-shared-skillWithUpgrade [skill]="esper.formattedSkill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true"></tbody>
       </table>
 
       <table class="loreTable">
@@ -198,8 +198,8 @@
         </tr>
       </table>
     </div>
-  </app-tab>
-  <app-tab title="SKILL TREE">
+  </app-shared-tab>
+  <app-shared-tab title="SKILL TREE">
     <div class="leftBlock" *ngIf="esper">
       <table class="esperTable">
         <tbody>
@@ -244,7 +244,7 @@
         <div [innerHTML]="grid.lines | safeHtml"></div>
       </div>
     </div>
-  </app-tab>
-  <app-tab *ngIf="esper" title="GO TO BUILDER >>>" [link]="getRoute('/builder/esper/' + esper.slug)">
-  </app-tab>
-</app-tabs>
+  </app-shared-tab>
+  <app-shared-tab *ngIf="esper" title="GO TO BUILDER >>>" [link]="getRoute('/builder/esper/' + esper.slug)">
+  </app-shared-tab>
+</app-shared-tabs>

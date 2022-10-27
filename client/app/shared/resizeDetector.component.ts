@@ -1,11 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 
-import { ToolService } from './services/tool.service';
+import { ToolService } from '../services/tool.service';
 
 @Component({
   template: ''
 })
-export abstract class ResizeDetectorComponent {
+export abstract class SharedResizeDetectorComponent {
   isWindowSmall = false;
 
   constructor(
