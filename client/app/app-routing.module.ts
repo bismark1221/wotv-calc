@@ -15,8 +15,6 @@ import { EspersComponent } from './espers/espers.component';
 import { EsperComponent } from './esper/esper.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
-import { RaidsComponent } from './raids/raids.component';
-import { RaidComponent } from './raid/raid.component';
 import { QuestsComponent } from './quests/quests.component';
 import { QuestComponent } from './quest/quest.component';
 import { InventoryComponent } from './inventory/inventory.component';
@@ -44,9 +42,16 @@ import { BuilderTeamComponent } from './builder/builder.team.component';
 import { BuilderMasterRanksComponent } from './builder/builder.mr.component';
 import { BuilderMateriaComponent } from './builder/builder.materia.component';
 
-const ROUTES: Routes = [
+const routes: Routes = [
   // GL Router
   { path: '', component: HomeComponent },
+
+  {
+    path: '',
+    loadChildren: () => import('./raid/raid.module')
+      .then(mod => mod.RaidModule)
+  },
+
   { path: 'units', component: UnitsComponent },
   { path: 'unit/:slug', component: UnitComponent },
   { path: 'cards', component: CardsComponent },
@@ -55,8 +60,6 @@ const ROUTES: Routes = [
   { path: 'esper/:slug', component: EsperComponent },
   { path: 'equipments', component: EquipmentsComponent },
   { path: 'equipment/:slug', component: EquipmentComponent },
-  { path: 'raids', component: RaidsComponent },
-  { path: 'raid/:slug', component: RaidComponent },
   { path: 'quests', component: QuestsComponent },
   { path: 'quest/:slug', component: QuestComponent },
   { path: 'inventory', component: InventoryComponent },
@@ -115,8 +118,6 @@ const ROUTES: Routes = [
   { path: 'JP/esper/:slug', component: EsperComponent },
   { path: 'JP/equipments', component: EquipmentsComponent },
   { path: 'JP/equipment/:slug', component: EquipmentComponent },
-  { path: 'JP/raids', component: RaidsComponent },
-  { path: 'JP/raid/:slug', component: RaidComponent },
   { path: 'JP/quests', component: QuestsComponent },
   { path: 'JP/quest/:slug', component: QuestComponent },
   { path: 'JP/inventory', component: InventoryComponent },
@@ -167,7 +168,7 @@ const ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(ROUTES, { enableTracing: false, relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, { enableTracing: false, relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 

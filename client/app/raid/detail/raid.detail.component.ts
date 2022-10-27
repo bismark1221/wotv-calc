@@ -2,20 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import { RaidService } from '../services/raid.service';
-import { SkillService } from '../services/skill.service';
-import { RangeService } from '../services/range.service';
-import { NavService } from '../services/nav.service';
-import { ToolService } from '../services/tool.service';
-import { UnitService } from '../services/unit.service';
-import { CardService } from '../services/card.service';
+import { RaidService } from '../../services/raid.service';
+import { SkillService } from '../../services/skill.service';
+import { RangeService } from '../../services/range.service';
+import { NavService } from '../../services/nav.service';
+import { ToolService } from '../../services/tool.service';
+import { UnitService } from '../../services/unit.service';
+import { CardService } from '../../services/card.service';
 
 @Component({
-  selector: 'app-raid',
-  templateUrl: './raid.component.html',
-  styleUrls: ['./raid.component.css']
+  selector: 'app-raid-detail',
+  templateUrl: './raid.detail.component.html',
+  styleUrls: ['./raid.detail.component.css']
 })
-export class RaidComponent implements OnInit {
+export class RaidDetailComponent implements OnInit {
   raid = null;
   specialBismark = false;
   activeTab;

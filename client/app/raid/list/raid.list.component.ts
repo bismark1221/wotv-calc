@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import { RaidService } from '../services/raid.service';
-import { NavService } from '../services/nav.service';
-import { ToolService } from '../services/tool.service';
+import { RaidService } from '../../services/raid.service';
+import { NavService } from '../../services/nav.service';
+import { ToolService } from '../../services/tool.service';
 
 @Component({
-  selector: 'app-raids',
-  templateUrl: './raids.component.html',
-  styleUrls: ['./raids.component.css']
+  selector: 'app-raid-list',
+  templateUrl: './raid.list.component.html',
+  styleUrls: ['./raid.list.component.css']
 })
-export class RaidsComponent implements OnInit {
+export class RaidListComponent implements OnInit {
   raids = [];
   searchText = '';
   sort = 'name';

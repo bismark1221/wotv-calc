@@ -47,8 +47,6 @@ import { EspersComponent } from './espers/espers.component';
 import { EsperComponent } from './esper/esper.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
-import { RaidsComponent } from './raids/raids.component';
-import { RaidComponent } from './raid/raid.component';
 import { QuestsComponent } from './quests/quests.component';
 import { QuestComponent } from './quest/quest.component';
 
@@ -153,8 +151,6 @@ export function createTranslateLoader(http: HttpClient) {
     EsperComponent,
     EquipmentsComponent,
     EquipmentComponent,
-    RaidsComponent,
-    RaidComponent,
     QuestsComponent,
     QuestComponent,
     InventoryComponent,
