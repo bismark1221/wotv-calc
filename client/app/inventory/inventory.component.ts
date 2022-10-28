@@ -8,8 +8,8 @@ import { InventoryService } from '../services/inventory.service';
 import { AuthService } from '../services/auth.service';
 import { ToolService } from '../services/tool.service';
 
-import { SharedLinkModalComponent } from '../shared/linkModal/shared.linkModal.component';
-import { InventoryModalEquipmentsComponent } from './modal/inventory.modal.equipments.component';
+import { ModalLinkComponent } from '../builder/modal/modal.link.component';
+import { ModalInventoryEquipmentsComponent } from './modal/modal.inventory.equipments.component';
 
 @Component({
   selector: 'app-inventory',
@@ -283,7 +283,7 @@ export class InventoryComponent implements OnInit, AfterViewInit {
       modalStep = 'custom';
     }
 
-    this.simpleModalService.addModal(InventoryModalEquipmentsComponent, { equipment: equipment, modalStep: modalStep })
+    this.simpleModalService.addModal(ModalInventoryEquipmentsComponent, { equipment: equipment, modalStep: modalStep })
       .subscribe(async (loadEquipment) => {
         if (loadEquipment !== 'close' && loadEquipment !== undefined) {
           if (loadedEquipment) {
@@ -348,6 +348,6 @@ export class InventoryComponent implements OnInit, AfterViewInit {
       this.inventory.uuid = uuid;
     }
 
-    this.simpleModalService.addModal(SharedLinkModalComponent, { type: 'inventory', item: uuid });
+    this.simpleModalService.addModal(ModalLinkComponent, { type: 'inventory', item: uuid });
   }
 }

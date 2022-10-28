@@ -1,0 +1,115 @@
+<div class="materia">
+  <div>
+    So the new Materia (rune) system is now up.<br>
+    And there is a lot of random in everything of this system, so I thought it might be a good idea to make a page to regroup every possibility...<br>
+    Don't know if I will be able to manage it well on each patch (right now it's automatize but they can broke everything quickly ^^)<br>
+    The design of this page is ugly but you have all infos :)
+  </div>
+
+
+  <table class="noBorder">
+    <tr class="noBorder">
+      <td class="groupBlock noBorder" *ngFor="let group of [{name: 'left'}, {name: 'right'}]">
+        <h1 class="groupTitle">{{ group.name | titlecase }}</h1>
+
+        <div class="groupDetailBlock">
+          <h3>Bonus set</h3>
+          <table>
+            <tbody *ngFor="let groupSkill of groups[group.name].groupSkills">
+              <tr>
+                <th class="sub" colspan="3">{{ groupSkill.mainStat }}</th>
+              </tr>
+              <tr *ngFor="let bonus of groupSkill.bonus">
+                <td>{{ bonus.num }}</td>
+                <td>
+                  <div *ngFor="let skillBefore of bonus.formattedSkill.before">{{ skillBefore }}</div>
+                  <div *ngFor="let skillAfter of bonus.formattedSkill.after">{{ skillAfter }}</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+
+    <tr class="noBorder">
+      <td class="groupBlock noBorder" *ngFor="let group of [{name: 'left'}, {name: 'right'}]">
+        <div class="groupDetailBlock">
+          <h3>Main Stats</h3>
+          <table>
+            <tr>
+              <th>Stat</th>
+              <th>Min</th>
+              <th>Max</th>
+            </tr>
+            <tbody *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
+              <tr>
+                <th class="sub" colspan="3">{{ rarity }}</th>
+              </tr>
+              <tr *ngFor="let mainStat of groups[group.name].mainStats[rarity]">
+                <td>{{ mainStat.type }}</td>
+                <td>{{ mainStat.min }}</td>
+                <td>{{ mainStat.max }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+
+    <tr class="noBorder" *ngFor="let lineGroup of
+    [
+      [{name: 'left', types: ['I']}, {name: 'right', types: ['H']}],
+      [{name: 'left', types: ['F']}, {name: 'right', types: ['O']}],
+      [{name: 'left', types: ['W']}, {name: 'right', types: ['S']}]
+    ]">
+      <td class="groupBlock noBorder" *ngFor="let group of lineGroup">
+        <div class="groupDetailBlock">
+          <h3>Sub stats</h3>
+          <table *ngFor="let materiaType of group.types; let materiaTypeIndex = index">
+            <tr *ngIf="materiaTypeIndex == 0">
+              <th>Stat</th>
+              <th>Lv. 1</th>
+              <th>Lv. 20</th>
+            </tr>
+            <tr>
+              <th class="sub" colspan="3">{{ formattedGroups[version][materiaType] }}</th>
+            </tr>
+            <tbody *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
+              <tr>
+                <th class="sub" colspan="3">{{ rarity }}</th>
+              </tr>
+              <tr *ngFor="let subStat of groups[group.name][materiaType][rarity]">
+                <td>{{ subStat.type }}</td>
+                <td>{{ subStat.min && (subStat.min[0] || subStat.min[1]) ? subStat.min[0] + ' > ' + subStat.min[1] : '' }}</td>
+                <td>{{ subStat.max && (subStat.max[0] || subStat.max[1]) ? subStat.max[0] + ' > ' + subStat.max[1] : '' }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+
+
+    <tr class="noBorder">
+      <td class="groupBlock noBorder" *ngFor="let group of [{name: 'left'}, {name: 'right'}]">
+        <div class="groupDetailBlock">
+          <h3>Passives</h3>
+          <table>
+            <tbody *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
+              <tr>
+                <th class="sub" colspan="3">{{ rarity }}</th>
+              </tr>
+              <tr *ngFor="let passive of groups[group.name].passives[rarity]">
+                <td>
+                  <div *ngFor="let skillBefore of passive.before">{{ skillBefore }}</div>
+                  <div *ngFor="let skillAfter of passive.after">{{ skillAfter }}</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,25 @@
+<div class="row" *ngIf="titles">
+  <div class="typeBlock" *ngFor="let type of ['player', 'guild']">
+    <table class="titleTable">
+      <tbody>
+        <tr>
+          <th colspan="2">{{ type | titlecase }}</th>
+        </tr>
+        <tr>
+          <th class="sub name-col">Name</th>
+          <th class="sub">How to get ?</th>
+        </tr>
+        <tr *ngFor="let title of titles[type]">
+          <td>
+            <div class="{{type}}_{{title.grade}}" *ngIf="title.grade !== 'image'">
+              {{ title.name }}
+            </div>
+
+            <img src="assets/titles/{{title.dataId | lowercase }}.webp" *ngIf="title.grade === 'image'" />
+          </td>
+          <td>{{ title.translatedHowToGet }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

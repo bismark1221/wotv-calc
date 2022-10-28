@@ -1,0 +1,230 @@
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.closeButton {
+  float: right;
+}
+
+.closeButton button {
+  padding: 10px;
+  background: none;
+  border: 0;
+}
+
+.closeButton button span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.espers {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.filtersBlock {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.separator {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.upperBlock {
+  padding-right: 10px;
+}
+
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 1040px;
+  margin-left: 18px;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 1000px;
+}
+
+.espersList {
+  margin-top: 10px;
+}
+
+.esperImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.elementImg {
+  height: 32px;
+  float: right;
+}
+
+.espersCol {
+  background-color: var(--card-background);
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.espersCol:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--card-background-hover)
+}
+
+.espersCol > a:hover {
+  text-decoration: none;
+}
+
+.esperImgBlockRemove {
+  width: 200px;
+  height: 210px;
+}
+
+.esperImgBlockRemove img {
+  padding-top: 40px;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.cardTitle {
+  background-color: var(--card-title-background);
+  display: table;
+  height: 50px;
+  width: 100%;
+}
+
+.esperName {
+  font-weight: bold;
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--card-title-color);
+}
+
+/********/
+/* Load */
+/********/
+
+.listModal {
+  margin: 10px;
+}
+
+.newBuildDiv {
+  text-align: center;
+}
+
+.btn-back {
+  margin-right: 25px;
+}
+
+.tableList {
+  margin: auto;
+  margin-top: 10px
+}
+
+.loadLink {
+  cursor: pointer;
+}
+
+/**********/
+/* Custom */
+/**********/
+
+.backButtonDiv, .customDiv {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.customDiv {
+  margin-bottom: 10px;
+}
+
+.leftBlock {
+  display: inline-block;
+  width: 200px;
+}
+
+.leftBlock .espersCol:hover {
+  box-shadow: 0;
+  background-color: var(--card-background)
+}
+
+.titleSelect {
+  width: 70px;
+  display: inline-block;
+}
+
+.btn-esper {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.rightBlock {
+  width: 850px;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.statsTable {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.builderEsperGridContainer {
+  left: 0px;
+}
+
+.starLevelDiv {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.star-inactive {
+  height: 20px;
+  background: url("assets/icons/star_off.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.star-active {
+  height: 20px;
+  background: url("assets/icons/star_on.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.buffImg {
+  width: 40px;
+}

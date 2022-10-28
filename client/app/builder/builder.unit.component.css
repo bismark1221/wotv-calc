@@ -1,0 +1,541 @@
+.row {
+  width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.loadingBlock {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.loadDiv {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+/**********/
+/* Search */
+/**********/
+.rarityLine {
+  padding: 5px;
+  background: #E8E6DF;
+  color: #000;
+  height: 40px;
+}
+
+.rarityLine img {
+  height: 30px;
+}
+
+.rarityLine span {
+  font-weight: 600;
+  margin-left: 5px;
+  top: 3px;
+  position: relative;
+}
+
+.rarityLogoAndName {
+  display: inline-block;
+}
+
+.switchShowOnlyOtherVersion {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+  padding-top: 3px;
+}
+
+.unitLine {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.unitLine hr {
+  margin: 0;
+  width: 1270px;
+}
+
+.unitSelector {
+  padding: 0;
+  display: block;
+  height: 50px;
+}
+
+.unitLogo {
+  padding: 5px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #E8E6DF;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.unitLogo img {
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.unitNameSelector {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.unitSelectorWithSave {
+  display: inline-block;
+  width: 1200px;
+}
+
+/***********/
+/* Builder */
+/***********/
+
+.saveBlock {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0;
+}
+
+.btn-buildLink {
+  margin-right: 10px;
+}
+
+.leftBlock {
+  width: 250px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.leftBlock table {
+  width: 100%
+}
+
+.unitImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 230px;
+  padding: 5px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.elementImg {
+  height: 32px;
+  float: right;
+}
+
+.awakeningDiv, .masterSkillDiv, .limitDiv {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.lbDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.levelDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.awakeningDiv div:first-child, .lbDiv div:first-child, .levelDiv div:first-child, .masterSkillDiv div:first-child, .limitDiv div:first-child {
+  float: left;
+}
+
+.lbDiv div:first-child {
+  padding-top: 6px;
+}
+
+.levelDiv div:first-child {
+  padding-top: 5px;
+}
+
+.awakeningDiv div:last-child, .lbDiv div:last-child, .levelDiv div:last-child, .masterSkillDiv div:last-child, .limitDiv div:last-child {
+  float: right;
+}
+
+.levelDiv div:last-child {
+  width: 120px;
+}
+
+.masterSkillDiv div:last-child, .limitDiv div:last-child {
+  padding-right: 38px;
+}
+
+.star-inactive {
+  height: 20px;
+  background: url("assets/icons/star_off.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.star-active {
+  height: 20px;
+  background: url("assets/icons/star_on.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.lb-inactive {
+  height: 40px;
+  background: url("assets/icons/lb_off.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.lb-active {
+  height: 40px;
+  background: url("assets/icons/lb_on.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.jobDiv {
+  width: 72px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.lastJobDiv {
+  margin: 0px;
+}
+
+.subJobColumn .jobDiv {
+  padding: 5px;
+}
+
+.subjobDiv {
+  border: 2px solid transparent;
+}
+
+.selectedSubJob, .subjobDiv:hover {
+  cursor: pointer;
+  border: 2px solid #72767A;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subJobColumn .subjobDisable {
+  border: 2px solid transparent !important;
+}
+
+.subjobDisable {
+  opacity: 0.2;
+  cursor: default !important;
+}
+
+.jobsButton {
+  margin-top: 5px;
+}
+
+.mainJob {
+  height: 55px;
+  width: 55px;
+  background: url("assets/jobs/base_main.webp") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin: auto;
+}
+
+.subJob {
+  height: 55px;
+  width: 55px;
+  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin: auto;
+}
+
+.mainJob img, .subJob img {
+  max-height: 45px;
+  max-width: 45px;
+  vertical-align: top;
+}
+
+.equipmentDiv, .esparCardDiv {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.equipmentImg, .esperImg, .cardImg {
+  max-width: 70px;
+  max-height: 70px;
+  cursor: pointer;
+}
+
+.guildDiv, .oneMasterRankDiv {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.statueImg {
+  width: 50px;
+}
+
+.btn-left {
+  width: 110px;
+  margin-right: 10px;
+}
+
+.btn-right {
+  width: 110px;
+}
+
+.btn-esper, .btn-card, .btn-equipment {
+  width: 70px;
+  margin-top: 5px;
+}
+
+.btn-guild, .btn-masterRanks {
+  width: 100%;
+}
+
+.equipmentPointer {
+  cursor: pointer;
+  width: 70px;
+  margin: auto;
+}
+
+/***************/
+/* Right Block */
+/***************/
+.rightBlock {
+  width: 1030px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.statsTable, .skillsTable {
+  width: 100%;
+}
+
+.btn-detail {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.buffsTable, .imbueTable, .skillsBlock {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.skillTitle {
+  width: 100%;
+  height: 33px;
+  color: var(--white);
+  background-color: var(--th-background);
+  text-align: center;
+  padding: 0.3em 0.5em;
+  border-top: 1px solid var(--table-border);
+  border-left: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+  font-weight: bold;
+}
+
+.skillSubTitle {
+  width: 100%;
+  height: 33px;
+  color: var(--black);
+  background-color: var(--sub-th-background);
+  text-align: center;
+  padding: 0.3em 0.5em;
+  border-top: 1px solid var(--table-border);
+  border-left: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+  cursor: pointer;
+}
+
+.skillTypeTd {
+  width: 85px;
+}
+
+.skillNameTd {
+  width: 200px;
+}
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.treeTitle {
+  margin-top: 20px;
+  width: 100%;
+  height: 33px;
+  color: var(--white);
+  background-color: var(--th-background);
+  text-align: center;
+  padding: 0.3em 0.5em;
+  border: 1px solid var(--table-border);
+  font-weight: bold;
+}
+
+.builderUnitGridContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+tr.disable {
+  display: none;
+}
+
+.buffImg {
+  width: 40px;
+}
+
+.unitButtons {
+  text-align: center;
+  border-top: 10px;
+}
+
+.background_acc {
+  background: url("assets/builder/background_acc.webp") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.background_weapon {
+  background: url("assets/builder/background_weapon.webp") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.background_armor {
+  background: url("assets/builder/background_armor.webp") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.skilImg, .damageSkillImg, .timeImg, .reflectImg {
+  height: 32px;
+}
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level {
+  display: inline-block;
+  width: 70px;
+}
+
+.select-limit-level, .select-job, .select-resonance, .select-master-skill {
+  display: inline-block;
+  width: 60px;
+}
+
+.select-limit-level {
+  margin-left: 30px;
+}
+
+.masterSkillDiv {
+  text-align: left;
+}
+
+.select-master-skill {
+  margin-left: 14px;
+  text-align: center;
+}
+
+
+/* Damage Simulator */
+.tableSim {
+  width: 100%;
+}
+
+.selectSimSkill {
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+
+.inputMiniStatBlock {
+  width: 122px;
+}
+
+.inputUnitStatBlock {
+  width: 190px;
+}
+
+.chevron {
+  float: right;
+}
+
+.targetTd {
+  width: 410px;
+  vertical-align: top;
+}
+
+.select-target-race {
+  display: inline-block;
+  width: 190px;
+  margin-right: 10px;
+}
+
+.select-target-element {
+  display: inline-block;
+  width: 190px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.inputInSim::-webkit-outer-spin-button,
+.inputInSim::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputInSim {
+  -moz-appearance: textfield;
+}
+
+.targetStatImg {
+  height: 34px;
+}
+
+.damageTd {
+  vertical-align: top;
+}
+
+.resultConditionBlock {
+  margin-top: 10px;
+}

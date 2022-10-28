@@ -1,0 +1,432 @@
+.row {
+  width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.teamName {
+  width: 100%;
+}
+
+.masterButtons {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.masterButtons > button {
+  margin-right: 10px;
+}
+
+.teamCost {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+/***************/
+/* Search Unit */
+/***************/
+.rarityLine {
+  padding: 5px;
+  background: #E8E6DF;
+  color: #000;
+  height: 40px;
+}
+
+.rarityLine img {
+  height: 30px;
+}
+
+.rarityLine span {
+  font-weight: 600;
+  margin-left: 5px;
+  top: 3px;
+  position: relative;
+}
+
+.unitLine {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.unitLine hr {
+  margin: 0;
+  width: 240px;
+}
+
+.unitSelector {
+  padding: 0;
+  display: block;
+  height: 50px;
+}
+
+.unitLogo {
+  padding: 5px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #E8E6DF;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.unitLogo img {
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.unitNameSelector {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/****************/
+/* Unit Builder */
+/****************/
+.unitCol {
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+  padding: 0;
+}
+
+.unitCol:not(:last-child) {
+  margin-right: 10px;
+}
+
+.builderTable {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.unitImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 230px;
+  padding: 5px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.elementImg {
+  height: 32px;
+  float: right;
+}
+
+.awakeningDiv, .limitDiv {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.lbDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.levelDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.awakeningDiv div:first-child, .lbDiv div:first-child, .levelDiv div:first-child, .limitDiv div:first-child {
+  float: left;
+}
+
+.lbDiv div:first-child {
+  padding-top: 6px;
+}
+
+.levelDiv div:first-child {
+  padding-top: 5px;
+}
+
+.awakeningDiv div:last-child, .lbDiv div:last-child, .levelDiv div:last-child, .limitDiv div:last-child {
+  float: right;
+}
+
+.levelDiv div:last-child {
+  width: 115px;
+}
+
+.limitDiv div:last-child {
+  padding-right: 38px;
+}
+
+.star-inactive {
+  height: 20px;
+  background: url("assets/icons/star_off.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.star-active {
+  height: 20px;
+  background: url("assets/icons/star_on.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.lb-inactive {
+  height: 40px;
+  background: url("assets/icons/lb_off.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.lb-active {
+  height: 40px;
+  background: url("assets/icons/lb_on.webp") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.jobDiv {
+  width: 72px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.lastJobDiv {
+  margin: 0px;
+}
+
+.subJobColumn .jobDiv {
+  padding: 5px;
+}
+
+.subjobDiv {
+  border: 2px solid transparent;
+}
+
+.selectedSubJob, .subjobDiv:hover {
+  cursor: pointer;
+  border: 2px solid #72767A;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subJobColumn .subjobDisable {
+  border: 2px solid transparent !important;
+}
+
+.subjobDisable {
+  opacity: 0.2;
+  cursor: default !important;
+}
+
+.jobsButton {
+  margin-top: 5px;
+}
+
+.mainJob {
+  height: 55px;
+  width: 55px;
+  background: url("assets/jobs/base_main.webp") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin: auto;
+}
+
+.subJob {
+  height: 55px;
+  width: 55px;
+  background: url("assets/jobs/base_sub.webp") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin: auto;
+}
+
+.mainJob img, .subJob img {
+  max-height: 45px;
+  max-width: 45px;
+  vertical-align: top;
+}
+
+.jobName {
+  overflow: hidden;
+  height: 45px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.equipmentDiv, .esparCardDiv {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.equipmentImg, .esperImg, .cardImg {
+  max-width: 70px;
+  max-height: 70px;
+  cursor: pointer;
+}
+
+.btn-left {
+  width: 110px;
+  margin-right: 10px;
+}
+
+.btn-right {
+  width: 110px;
+}
+
+.btn-equipment, .btn-esper, .btn-card {
+  width: 70px;
+  margin-top: 5px;
+}
+
+.equipmentPointer {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
+.background_acc {
+  background: url("assets/builder/background_acc.webp") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.background_weapon {
+  background: url("assets/builder/background_weapon.webp") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.background_armor {
+  background: url("assets/builder/background_armor.webp") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+/**********/
+/* Stats */
+/**********/
+.statsTable {
+  margin-top: 5px;
+  width: 100%;
+}
+
+/*********/
+/* Guild */
+/*********/
+.teamGuild {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.teamGuild > table {
+  width: 100%;
+}
+
+.teamGuild tr {
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+}
+
+.teamGuild td {
+  border: 0;
+}
+
+.statueImg {
+  width: 60px;
+}
+
+.btn-guild {
+  width: 100%;
+}
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level {
+  display: inline-block;
+  width: 70px;
+}
+
+.select-limit-level, .select-job, .select-resonance {
+  display: inline-block;
+  width: 60px;
+}
+
+
+
+
+/********************/
+/* Damage Simulator */
+/********************/
+.selectSimSkill {
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+
+.inputMiniStatBlock {
+  width: 120px;
+}
+
+.inputInSim {
+  text-align: right;
+}
+
+.inputUnitStatBlock {
+  width: 190px;
+}
+
+.targetTd {
+  width: 410px;
+  vertical-align: top;
+}
+
+.select-target-race {
+  display: inline-block;
+  width: 190px;
+  margin-right: 10px;
+}
+
+.select-target-element {
+  display: inline-block;
+  width: 190px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.inputInSim::-webkit-outer-spin-button,
+.inputInSim::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputInSim {
+  -moz-appearance: textfield;
+}
+
+.targetStatImg {
+  height: 34px;
+}
+
+.damageTd {
+  vertical-align: top;
+}

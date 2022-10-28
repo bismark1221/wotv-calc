@@ -1,0 +1,38 @@
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.closeButton {
+  float: right;
+}
+
+.closeButton button {
+  padding: 10px;
+  background: none;
+  border: 0;
+}
+
+.closeButton button span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.masterRanksTable {
+  width: 820px;
+  margin: auto;
+}
+
+.masterRanksTable, tbody, tr, td {
+  border: 0;
+}
+
+.masterRankImg {
+  width: 128px;
+  margin-top: 10px;
+}
+
+.elementTd {
+  vertical-align: top;
+}

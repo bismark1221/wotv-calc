@@ -1,0 +1,256 @@
+<app-tabs>
+  <app-tab title="BOSS">
+    <div *ngIf="raid">
+      <div *ngIf="raid.bonus.units.length > 0">
+        <table class="bonusTable">
+          <tr>
+            <th>Bonus units</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="bonusBlock" *ngFor="let bonusUnit of raid.bonus.units">
+                <img class="unitImg" src="assets/units/{{ bonusUnit.image }}_small.webp" title="{{ bonusUnit.names ? bonusUnit.names.en : '' }}"/><br />
+                {{ bonusUnit.value }} %
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div *ngIf="raid.bonus.cards.length > 0">
+        <table class="bonusTable">
+          <tr>
+            <th>Bonus cards</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="bonusBlock" *ngFor="let bonusCard of raid.bonus.cards">
+                <img class="cardImg" src="assets/cards/{{ bonusCard.image }}_middle.webp" title="{{ bonusCard.names ? bonusCard.names.en : '' }}"/><br/>
+                {{ bonusCard.value }} %
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div *ngFor="let boss of raid.bosses; let j = index">
+        <div class="leftBlock">
+          <table class="raidTable">
+            <tbody>
+              <tr>
+                <th colspan="2">{{ boss.name }}</th>
+              </tr>
+              <tr>
+                <td colspan="2"><img class="raidImg" src="{{'assets/otherUnits/' + boss.image + '_card.webp'}}" /></td>
+              </tr>
+              <tr>
+                <th class="sub">Element</th>
+                <th class="sub">Species</th>
+              </tr>
+              <tr>
+                <td><img class="rarityImg" src="{{'assets/elements/' + boss.element + '.webp'}}" (click)="clickSpecialBismark()"/></td>
+                <td>{{ boss.species }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="rightBlock">
+          <table class="statsTable">
+            <tbody>
+              <tr>
+                <th colspan="13">Boss Stats</th>
+              </tr>
+              <tr>
+                <th class="sub"></th>
+                <th class="sub">HP</th>
+                <th class="sub">TP</th>
+                <th class="sub">AP</th>
+                <th class="sub">ATK</th>
+                <th class="sub">DEF</th>
+                <th class="sub">MAG</th>
+                <th class="sub">SPR</th>
+                <th class="sub">DEX</th>
+                <th class="sub">AGI</th>
+                <th class="sub">LUCK</th>
+                <th class="sub">MOVE</th>
+                <th class="sub">JUMP</th>
+              </tr>
+              <tr>
+                <td>Min</td>
+                <td>{{ boss.stats.HP.min }}</td>
+                <td>{{ boss.stats.TP.min }}</td>
+                <td>{{ boss.stats.AP.min }}</td>
+                <td>{{ boss.stats.ATK.min }}</td>
+                <td>{{ boss.stats.DEF.min }}</td>
+                <td>{{ boss.stats.MAG.min }}</td>
+                <td>{{ boss.stats.SPR.min }}</td>
+                <td>{{ boss.stats.DEX.min }}</td>
+                <td>{{ boss.stats.AGI.min }}</td>
+                <td>{{ boss.stats.LUCK.min }}</td>
+                <td rowspan="2">{{ boss.stats.MOVE.min }}</td>
+                <td rowspan="2">{{ boss.stats.JUMP.min }}</td>
+              </tr>
+              <tr>
+                <td>Max</td>
+                <td>{{ boss.stats.HP.max }}</td>
+                <td>{{ boss.stats.TP.max }}</td>
+                <td>{{ boss.stats.AP.max }}</td>
+                <td>{{ boss.stats.ATK.max }}</td>
+                <td>{{ boss.stats.DEF.max }}</td>
+                <td>{{ boss.stats.MAG.max }}</td>
+                <td>{{ boss.stats.SPR.max }}</td>
+                <td>{{ boss.stats.DEX.max }}</td>
+                <td>{{ boss.stats.AGI.max }}</td>
+                <td>{{ boss.stats.LUCK.max }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="statsTable">
+            <tbody>
+              <tr>
+                <th colspan="8">Res Elem</th>
+              </tr>
+              <tr>
+                <th class="sub"><img class="elementImg" title="fire resistance" src="{{'assets/elements/fire.webp'}}" /></th>
+                <th class="sub"><img class="elementImg" title="ice resistance" src="{{'assets/elements/ice.webp'}}" /></th>
+                <th class="sub"><img class="elementImg" title="earht resistance" src="{{'assets/elements/earth.webp'}}" /></th>
+                <th class="sub"><img class="elementImg" title="wind resistance" src="{{'assets/elements/wind.webp'}}" /></th>
+                <th class="sub"><img class="elementImg" title="lightning resistance" src="{{'assets/elements/lightning.webp'}}" /></th>
+                <th class="sub"><img class="elementImg" title="water resistance" src="{{'assets/elements/water.webp'}}" /></th>
+                <th class="sub"><img class="elementImg" title="light resistance" src="{{'assets/elements/light.webp'}}" /></th>
+                <th class="sub"><img class="elementImg" title="dark resistance" src="{{'assets/elements/dark.webp'}}" /></th>
+              </tr>
+              <tr>
+                <td class="heightResTd"><span *ngIf="boss.stats.FIRE_RES && boss.stats.FIRE_RES.min">{{ boss.stats.FIRE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.ICE_RES && boss.stats.ICE_RES.min">{{ boss.stats.ICE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.EARTH_RES && boss.stats.EARTH_RES.min">{{ boss.stats.EARTH_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.WIND_RES && boss.stats.WIND_RES.min">{{ boss.stats.WIND_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.LIGHTNING_RES && boss.stats.LIGHTNING_RES.min">{{ boss.stats.LIGHTNING_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.WATER_RES && boss.stats.WATER_RES.min">{{ boss.stats.WATER_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.LIGHT_RES && boss.stats.LIGHT_RES.min">{{ boss.stats.LIGHT_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.DARK_RES && boss.stats.DARK_RES.min">{{ boss.stats.DARK_RES.min }} %</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="statsTable">
+            <tbody>
+              <tr>
+                <th colspan="5">Res Damage</th>
+              </tr>
+              <tr>
+                <th class="sub"><img class="damageImg" title="slash resistance" src="{{'assets/damage/neutral_slash.webp'}}" /></th>
+                <th class="sub"><img class="damageImg" title="pierce resistance" src="{{'assets/damage/neutral_pierce.webp'}}" /></th>
+                <th class="sub"><img class="damageImg" title="strike resistance" src="{{'assets/damage/neutral_strike.webp'}}" /></th>
+                <th class="sub"><img class="damageImg" title="missile resistance" src="{{'assets/damage/neutral_missile.webp'}}" /></th>
+                <th class="sub"><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.webp'}}" /></th>
+              </tr>
+              <tr>
+                <td class="heightResTd"><span *ngIf="boss.stats.SLASH_RES && boss.stats.SLASH_RES.min">{{ boss.stats.SLASH_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.PIERCE_RES && boss.stats.PIERCE_RES.min">{{ boss.stats.PIERCE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.STRIKE_RES && boss.stats.STRIKE_RES.min">{{ boss.stats.STRIKE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.MISSILE_RES && boss.stats.MISSILE_RES.min">{{ boss.stats.MISSILE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.MAGIC_RES && boss.stats.MAGIC_RES.min">{{ boss.stats.MAGIC_RES.min }} %</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="statsTable">
+            <tbody>
+              <tr>
+                <th colspan="15">Res Status Ailment</th>
+              </tr>
+              <tr>
+                <th class="sub"><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.webp'}}" /></th>
+              </tr>
+              <tr>
+                <td class="heightResTd"><span *ngIf="boss.stats.POISON_RES && boss.stats.POISON_RES.min">{{ boss.stats.POISON_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.FROSTBITE_RES && boss.stats.FROSTBITE_RES.min">{{ boss.stats.FROSTBITE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.BLIND_RES && boss.stats.BLIND_RES.min">{{ boss.stats.BLIND_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.SLEEP_RES && boss.stats.SLEEP_RES.min">{{ boss.stats.SLEEP_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.SILENCE_RES && boss.stats.SILENCE_RES.min">{{ boss.stats.SILENCE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.PARALYZE_RES && boss.stats.PARALYZE_RES.min">{{ boss.stats.PARALYZE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.CONFUSION_RES && boss.stats.CONFUSION_RES.min">{{ boss.stats.CONFUSION_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.PETRIFY_RES && boss.stats.PETRIFY_RES.min">{{ boss.stats.PETRIFY_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.TOAD_RES && boss.stats.TOAD_RES.min">{{ boss.stats.TOAD_RES.min }} %</span></td>
+              </tr>
+              <tr>
+                <th class="sub"><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="stop resistance" src="{{'assets/status-ailments/STOP.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.webp'}}" /></th>
+                <th class="sub"><img class="statusAilmentImg" title="stun resistance" src="{{'assets/status-ailments/STUN.webp'}}" /></th>
+                <th class="sub"></th>
+              </tr>
+              <tr>
+                <td class="heightResTd"><span *ngIf="boss.stats.CHARM_RES && boss.stats.CHARM_RES.min">{{ boss.stats.CHARM_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.SLOW_RES && boss.stats.SLOW_RES.min">{{ boss.stats.SLOW_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.STOP_RES && boss.stats.STOP_RES.min">{{ boss.stats.STOP_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.IMMOBILIZE_RES && boss.stats.IMMOBILIZE_RES.min">{{ boss.stats.IMMOBILIZE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.DISABLE_RES && boss.stats.DISABLE_RES.min">{{ boss.stats.DISABLE_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.BERSERK_RES && boss.stats.BERSERK_RES.min">{{ boss.stats.BERSERK_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.DOOM_RES && boss.stats.DOOM_RES.min">{{ boss.stats.DOOM_RES.min }} %</span></td>
+                <td><span *ngIf="boss.stats.STUN_RES && boss.stats.STUN_RES.min">{{ boss.stats.STUN_RES.min }} %</span></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr class="bossSeparator" *ngIf="j !== raid.bosses.length - 1"/>
+      </div>
+    </div>
+  </app-tab>
+  <app-tab title="SKILLS">
+    <div *ngIf="raid">
+      <div *ngFor="let boss of raid.bosses; let j = index">
+        <table class="skillsTable">
+          <tbody>
+            <tr>
+              <th class="sub">Type</th>
+              <th class="sub skillNameTd">Name</th>
+              <th class="sub skillEffectTd">Effects</th>
+              <th class="sub rangeTd">Range</th>
+              <th class="sub skillHitTd">Hits</th>
+            </tr>
+          </tbody>
+          <tbody *ngIf="boss.formattedAttack" app-template-skillWithUpgrade [skill]="boss.formattedAttack" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true" [basicAttack]="true"></tbody>
+        </table>
+
+        <table class="skillsTable">
+          <tbody>
+            <tr>
+              <th colspan="9">
+                Skills
+              </th>
+            </tr>
+            <tr>
+              <th class="sub skillJobTd">min lvl</th>
+              <th class="sub skillStarTd">max lvl</th>
+              <th class="sub skillTypeTd">Type</th>
+              <th class="sub skillNameTd">Name</th>
+              <th class="sub">Effects</th>
+              <th class="sub rangeTd">Range</th>
+              <th class="sub skillCastTd">Casts</th>
+              <th class="sub skillHitTd">Hits</th>
+              <th class="sub skillCostTd">Cost</th>
+            </tr>
+          </tbody>
+          <tbody *ngFor="let skill of boss.formattedSkills; let skillIndex = index" app-template-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [showRaidLevel]="true" [rawSkills]="boss.skills" [skillIndex]="skillIndex"></tbody>
+        </table>
+        <hr class="bossSeparator mt-5 mb-5" *ngIf="j !== raid.bosses.length - 1"/>
+      </div>
+    </div>
+  </app-tab>
+</app-tabs>

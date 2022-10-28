@@ -1,0 +1,283 @@
+<div class="row">
+  <ng-select #selectBuilderCard placeholder="Search a card by name" class="select-builder-card" [items]="cards" groupBy="rarity" [(ngModel)]="selectedCardId" (ngModelChange)="selectCard()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true" dropdownPosition="bottom">
+    <ng-template ng-label-tmp let-item="item">
+      {{item.name}}
+    </ng-template>
+
+    <ng-template ng-optgroup-tmp let-item="item" let-index="index">
+      <div class="rarityLine">
+        <div class="rarityLogoAndName">
+          <img src="assets/rarity/{{item.rarity}}.webp" /><span>{{ rarityTranslate[item.rarity] }}</span>
+        </div>
+        <div class="switchShowOnlyOtherVersion">
+          Only from other version ?
+          <ui-switch class="switchMainJob" (click)="toggleOtherVersion()" checkedLabel="yes" uncheckedLabel="no" [checked]="showOnlyOtherVersion === true"></ui-switch>
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+      <div class="cardLine" id="card_{{item.dataId}}">
+        <div class="cardSelector" id="cardSelector_{{item.dataId}}" [ngClass]="{'cardSelectorWithSave': savedCards[item.dataId]}">
+          <div class="cardLogo">
+            <img src="assets/cards/{{ item.image }}_small.webp" />
+          </div>
+          <div class="cardNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+        </div>
+        <div class="loadDiv" *ngIf="savedCards[item.dataId] && savedCards[item.dataId].length > 0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg>
+        </div>
+        <hr />
+      </div>
+    </ng-template>
+  </ng-select>
+
+  <div class="loadingBlock" *ngIf="loadingBuild">
+    <h1>Your build is loading</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 mx-auto animate-spin">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+    </svg>
+  </div>
+
+  <div class="saveBlock" *ngIf="card">
+    <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+  </div>
+
+  <div class="leftBlock" *ngIf="card">
+    <table>
+      <tbody>
+        <tr>
+          <th>{{ card.name }}<span *ngIf="card.customName"> - {{ card.customName }}</span></th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cardButtons">
+              <button class="btn btn-sub btn-left" id="reset_card" (click)="resetCard()">Reset</button>
+              <button class="btn btn-main btn-right" id="max_card" (click)="maxCard()">Max card</button>
+            </div>
+            <div class="cardIcons">
+              <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.webp'}}" />
+            </div>
+            <div>
+              <img class="cardImg" src="assets/cards/{{ card.image }}_card.webp" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Level</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="awakeningDiv">
+              <div>
+                Awakening
+              </div>
+              <div class="stars">
+                <bar-rating [(ngModel)]="star" (ngModelChange)="updateStar()" [max]="4">
+                  <ng-template ratingInactive let-index="index">
+                    <div class="star-inactive">&nbsp;</div>
+                  </ng-template>
+                  <ng-template ratingActive let-index="index">
+                    <div class="star-active">&nbsp;</div>
+                  </ng-template>
+                </bar-rating>
+              </div>
+            </div>
+
+            <div class="levelDiv">
+              <div>
+                Level
+              </div>
+              <div class="zone-select-level">
+                <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="card.tableLevels" [(ngModel)]="card.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select> / {{ card.maxLevel }}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rightBlock" *ngIf="card">
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="10">Stats</th>
+        </tr>
+        <tr>
+          <th class="sub" *ngFor="let type of card.statsType" [ngClass]="{'hideStat': card.stats[type].total == 0}">
+            {{ type }}
+          </th>
+        </tr>
+        <tr>
+          <td *ngFor="let type of card.statsType" [ngClass]="{'hideStat': card.stats[type].total == 0}">
+            {{ card.stats[type].total }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="statsTable" *ngIf="card.formattedBuffs">
+      <tbody>
+        <tr>
+          <th colspan="10">Unit Buff</th>
+        </tr>
+        <tr *ngFor="let buff of card.formattedBuffs.self">
+          <td colspan="10">
+            <div *ngIf="buff.cond">
+              <div *ngFor="let cond of buff.cond">
+                <div *ngIf="cond.type === 'birth'">
+                  <span *ngFor="let birth of cond.items">{{ birth }}</span>
+                </div>
+
+                <div *ngIf="cond.type === 'elem'">
+                  <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
+                </div>
+
+                <div *ngIf="cond.type === 'job'">
+                  <span *ngFor="let job of cond.items">
+                    <div *ngIf="job.image" class="subJob" title="{{ job.names.en }}">
+                      <img src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                    </div>
+                  </span>
+                </div>
+
+                <div *ngIf="cond.type === 'mainJob'">
+                  <span *ngFor="let job of cond.items">
+                    <div *ngIf="job.image" class="mainJob" title="{{ job.names.en }}">
+                      <img src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                    </div>
+                  </span>
+                </div>
+
+                <div *ngIf="cond.type === 'unit'">
+                  <span *ngFor="let unit of cond.items">
+                    <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {{ buff.effect }}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="statsTable" *ngIf="card.skills.length > 0">
+      <tbody>
+        <tr>
+          <th colspan="10">Unit Skill</th>
+        </tr>
+        <tr>
+          <th class="sub skillNameTd">name</th>
+          <th class="sub skillEffectTd">Effects</th>
+          <th class="sub rangeTd">Range</th>
+          <th class="sub skillCastTd">Casts</th>
+          <th class="sub skillHitTd">Hits</th>
+          <th class="sub skillCostTd">Cost</th>
+        </tr>
+      </tbody>
+      <tbody *ngFor="let skill of card.skills">
+        <tr *ngIf="skill.cond">
+          <td>
+            Condition
+          </td>
+          <td colspan="10">
+            <div *ngFor="let cond of skill.cond">
+              <div *ngIf="cond.type === 'birth'">
+                <span *ngFor="let birth of cond.items">{{ birth }}</span>
+              </div>
+
+              <div *ngIf="cond.type === 'elem'">
+                <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
+              </div>
+
+              <div *ngIf="cond.type === 'job'">
+                <span *ngFor="let job of cond.items">
+                  <div *ngIf="job.image" class="subJob" title="{{ job.names.en }}">
+                    <img src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                  </div>
+                </span>
+              </div>
+
+              <div *ngIf="cond.type === 'mainJob'">
+                <span *ngFor="let job of cond.items">
+                  <div *ngIf="job.image" class="mainJob" title="{{ job.names.en }}">
+                    <img src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                  </div>
+                </span>
+              </div>
+
+              <div *ngIf="cond.type === 'unit'">
+                <span *ngFor="let unit of cond.items">
+                  <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr app-template-skillRow [skill]="skill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+      </tbody>
+    </table>
+
+    <table class="statsTable" *ngIf="card.formattedBuffs">
+      <tbody>
+        <tr>
+          <th colspan="10">Party Buff</th>
+        </tr>
+        <tr *ngFor="let buff of card.formattedBuffs.party">
+          <td colspan="10">
+            <div *ngIf="buff.cond">
+              <div *ngFor="let cond of buff.cond">
+                <div *ngIf="cond.type === 'birth'">
+                  <span *ngFor="let birth of cond.items">{{ birth }}</span>
+                </div>
+
+                <div *ngIf="cond.type === 'elem'">
+                  <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
+                </div>
+
+                <div *ngIf="cond.type === 'job'">
+                  <span *ngFor="let job of cond.items">
+                    <img *ngIf="job.image" class="subJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                  </span>
+                </div>
+
+                <div *ngIf="cond.type === 'mainJob'">
+                  <span *ngFor="let job of cond.items">
+                    <img *ngIf="job.image" class="mainJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                  </span>
+                </div>
+
+                <div *ngIf="cond.type === 'unit'">
+                  <span *ngFor="let unit of cond.items">
+                    <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {{ buff.effect }}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

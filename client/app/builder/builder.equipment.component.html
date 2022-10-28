@@ -1,0 +1,243 @@
+<div class="row">
+  <ng-select #selectBuilderEquipment placeholder="Search an equipment by name" class="select-builder-equipment" [items]="equipments" groupBy="rarity" [(ngModel)]="selectedEquipmentId" (ngModelChange)="selectEquipment()" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true" dropdownPosition="bottom">
+    <ng-template ng-label-tmp let-item="item">
+      {{item.name}}
+    </ng-template>
+
+    <ng-template ng-optgroup-tmp let-item="item" let-index="index">
+      <div class="rarityLine">
+        <img src="assets/rarity/{{item.rarity}}.webp" /><span>{{ rarityTranslate[item.rarity] }}</span>
+      </div>
+    </ng-template>
+
+    <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+      <div class="equipmentLine" id="equipment_{{item.dataId}}">
+        <div class="equipmentSelector" id="equipmentSelector_{{item.dataId}}" [ngClass]="{'equipmentSelectorWithSave': savedEquipments[item.dataId]}">
+          <div class="equipmentLogo">
+            <img src="assets/equipments/{{ item.image }}_small.webp" />
+          </div>
+          <div class="equipmentNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+        </div>
+        <div class="loadDiv" *ngIf="savedEquipments[item.dataId] && savedEquipments[item.dataId].length > 0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg>
+        </div>
+        <hr />
+      </div>
+    </ng-template>
+  </ng-select>
+
+  <div class="loadingBlock" *ngIf="loadingBuild">
+    <h1>Your build is loading</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 mx-auto animate-spin">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+    </svg>
+  </div>
+
+  <div class="saveBlock" *ngIf="equipment">
+    <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+  </div>
+
+  <div class="leftBlock" *ngIf="equipment">
+    <table>
+      <tbody>
+        <tr>
+          <th>{{ equipment.name }}<span *ngIf="equipment.customName"> - {{ equipment.customName }}</span></th>
+        </tr>
+        <tr>
+          <td>
+            <div class="equipmentButtons">
+              <button class="btn btn-sub btn-left" id="reset_equipment" (click)="resetEquipment()">Reset</button>
+              <button class="btn btn-main btn-right" id="max_equipment" (click)="maxEquipment()">Max equipment</button>
+            </div>
+            <div class="equipmentIcons">
+              <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" />
+            </div>
+            <div>
+              <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}_card.webp" onerror="this.src='assets/equipments/placeholder.webp';"/>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="equipment.skills.length > 1 || equipment.growIds.length > 1">
+        <tr>
+          <th class="sub">Level</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="awakeningDiv" *ngIf="equipment.skills.length > 1">
+              <div>
+                Upgrade
+              </div>
+              <ng-select placeholder="Select an upgrade" class="select-upgrade select-left-builder" [items]="upgradeTable" [(ngModel)]="equipment.upgrade" (ngModelChange)="updateUpgrade()" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item === 0 ? 0 : '+' + item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item === 0 ? 0 : '+' + item }}
+                </ng-template>
+              </ng-select>
+            </div>
+
+            <div class="levelDiv" *ngIf="equipment.growIds.length > 1">
+              <div>
+                Type
+              </div>
+              <ng-select placeholder="Select a grow" class="select-grow select-left-builder" [items]="equipment.growIds" [(ngModel)]="equipment.grow" (ngModelChange)="updateGrow()" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ equipment.grows[item].name }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ equipment.grows[item].name }}
+                </ng-template>
+              </ng-select>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rightBlock" *ngIf="equipment">
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="13">Stats</th>
+        </tr>
+        <tr>
+          <th class="sub" *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">Level</th>
+          <th class="sub" *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
+        </tr>
+        <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+          <td>
+            <select [(ngModel)]="equipment.level" (ngModelChange)="changeLevel()">
+              <option *ngFor="let level of equipment.tableLevel">{{ level }}</option>
+            </select> / {{ equipment.maxLevel }}
+          </td>
+          <td *ngFor="let statType of equipment.statsTypes">
+            <span *ngIf="equipment.growIds.length > 1 || equipment.grows[equipment.growIds[0]].dataId !== 'ARTIFACT_50'">
+              <select [(ngModel)]="equipment.selectedStats[statType]">
+                <option *ngFor="let stat of equipment.tableStats[statType]">{{ stat }}</option>
+              </select>
+            </span>
+            <span *ngIf="equipment.growIds.length === 1 && equipment.grows[equipment.growIds[0]].dataId === 'ARTIFACT_50'">
+              {{ equipment.selectedStats[statType] }}
+            </span> / {{ equipment.tableStats[statType][equipment.tableStats[statType].length - 1] }}
+          </td>
+        </tr>
+        <tr *ngIf="equipment.acquisition && equipment.acquisition.type === 'tmr'">
+          <td *ngFor="let statType of equipment.statsTypes">
+            {{ equipment.stats[equipment.upgrade][statType].min }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="statsTable" *ngIf="equipment.skill[0]">
+      <tbody *ngIf="equipment.activeSkill">
+        <tr>
+          <th colspan="7">Skill</th>
+        </tr>
+        <tr>
+          <th class="sub">Level</th>
+          <th class="sub skillNameTd">Name</th>
+          <th class="sub">Effects</th>
+          <th class="sub rangeTd">Range</th>
+          <th class="sub skillCastTd">Casts</th>
+          <th class="sub skillHitTd">Hits</th>
+          <th class="sub skillCostTd">Cost</th>
+        </tr>
+
+        <tr app-template-skillRow [skill]="equipment.activeSkill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [showLevelInput]="true" (changeLevel)="changeSkillLevel()"></tr>
+      </tbody>
+      <tbody  *ngIf="equipment.passiveSkills.length > 0">
+        <tr>
+          <th colspan="7">Effects</th>
+        </tr>
+        <tr>
+          <td colspan="7">
+            <div *ngFor="let skill of equipment.passiveSkills; let skillIndex = index">
+              <div *ngIf="skill.cond">
+                Condition :
+                <span *ngFor="let skillCond of skill.cond">
+                  <span *ngFor="let item of skillCond.formattedItems">
+                    <img src="{{'assets/units/' + item + '_small.webp'}}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
+                    <div class="mainjob" *ngIf="skillCond.type == 'mainjob'">
+                      <img src="{{ 'assets/jobs/' + item + '_40.webp'}}" />
+                    </div>
+                  </span>
+                </span>
+              </div>
+              <div *ngFor="let effect of skill.effectsHtml.before">
+                {{ effect }}
+              </div>
+              <div *ngFor="let effect of skill.effectsHtml.after">
+                {{ effect }}
+              </div>
+              <hr class="passiveHR" *ngIf="skillIndex != equipment.passiveSkills.length - 1"/>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div *ngIf="equipment && equipment.acquisition && equipment.acquisition.type == 'tmr'">
+      <table class="statsTable">
+        <tr>
+          <th colspan="4">Materias</th>
+        </tr>
+        <tr *ngFor="let materiaGroup of [[{type: 'I', select: true}, {type: 'I', select: false}, {type: 'H', select: true}, {type: 'H', select: false}], [{type: 'F', select: true}, {type: 'F', select: false}, {type: 'O', select: true}, {type: 'O', select: false}], [{type: 'W', select: true}, {type: 'W', select: false}, {type: 'S', select: true}, {type: 'S', select: false}]]" class="materiaGroup">
+          <td *ngFor="let materiaType of materiaGroup" [ngClass]="{'materiaTd': materiaType.select, 'materiaEffectTd': !materiaType.select}">
+            <div *ngIf="materiaType.select">
+              <div *ngIf="equipment.materias[materiaType.type]" class="materiaDiv">
+                <img src="{{'assets/materia/' + version + '/' + equipment.materias[materiaType.type].image + '.webp'}}" class="materiaImg" id="openModalMateria_{{equipment.materias[materiaType.type].dataId}}" (click)="openMateriaModal(materiaType.type)"/>
+              </div>
+
+              <div *ngIf="!equipment.materias[materiaType.type]" class="materiaDivEmpty">
+                <img src="{{ 'assets/builder/' + version + '/materia_' + materiaType.type.toLowerCase() + '.webp' }}" class="materiaImg" id="openModalMateria_new" (click)="openMateriaModal(materiaType.type)"/>
+              </div>
+
+              <button class="btn btn-sub btn-materia" id="openModalMateria_custom_{{materiaType.type}}" (click)="openMateriaModal(materiaType.type)">Custom</button>
+            </div>
+
+            <div *ngIf="!materiaType.select && equipment.materias[materiaType.type]">
+              <div>
+                Main Stat : {{ equipment.materias[materiaType.type].mainStatValue.value + ' ' + equipment.materias[materiaType.type].mainStat}}
+              </div>
+              <div>
+                Sub Stats :
+                <span *ngFor="let subStat of equipment.materias[materiaType.type].subStats; let subStatIndex = index">
+                  {{ subStat.value + ' ' + subStat.type}}<span *ngIf="subStatIndex != equipment.materias[materiaType.type].subStats.length - 1">, </span>
+                </span>
+              </div>
+              <div>
+                Passives :
+                <div *ngFor="let skillDetail of equipment.materias[materiaType.type].skillsDetail">
+                  <div *ngFor="let shortEffect of skillDetail.shortEffect.before">{{ shortEffect }}</div>
+                  <div *ngFor="let shortEffect of skillDetail.shortEffect.after">{{ shortEffect }}</div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub" colspan="4">Group effects</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div *ngFor="let formattedEffect of equipment.formattedMateriaGroups.left.before">{{ formattedEffect }}</div>
+            <div *ngFor="let formattedEffect of equipment.formattedMateriaGroups.left.after">{{ formattedEffect }}</div>
+          </td>
+          <td colspan="2">
+            <div *ngFor="let formattedEffect of equipment.formattedMateriaGroups.right.before">{{ formattedEffect }}</div>
+            <div *ngFor="let formattedEffect of equipment.formattedMateriaGroups.right.after">{{ formattedEffect }}</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
