@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { SimpleModalComponent } from 'ngx-simple-modal';
 
-import { NavService } from '../services/nav.service';
-import { ToolService } from '../services/tool.service';
-import { SkillService } from '../services/skill.service';
+import { NavService } from '../../services/nav.service';
+import { ToolService } from '../../services/tool.service';
+import { SkillService } from '../../services/skill.service';
 
-import { GL_BUFF_TYPE } from '../data/gl/buffType';
-import { JP_BUFF_TYPE } from '../data/jp/buffType';
+import { GL_BUFF_TYPE } from '../../data/gl/buffType';
+import { JP_BUFF_TYPE } from '../../data/jp/buffType';
 
 @Component({
-  selector: 'app-search-options-modal',
-  templateUrl: './searchOptionsModal.component.html',
-  styleUrls: ['./searchOptionsModal.component.css']
+  selector: 'app-shared-searchOptionsModal',
+  templateUrl: './shared.searchOptionsModal.component.html',
+  styleUrls: ['./shared.searchOptionsModal.component.css']
 })
-export class SearchOptionsModalComponent extends SimpleModalComponent<null, null> {
+export class SharedSearchOptionsModalComponent extends SimpleModalComponent<null, null> {
   firstClickOutside = false;
 
   buffType = {

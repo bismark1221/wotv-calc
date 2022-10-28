@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { NgxPopperjsModule } from 'ngx-popperjs';
@@ -15,11 +16,14 @@ import { SharedSkillTypeComponent } from './skillType/shared.skillType.component
 import { SharedSkillWithUpgradeComponent } from './skillWithUpgrade/shared.skillWithUpgrade.component';
 import { SharedTabComponent } from './tab/shared.tab.component';
 import { SharedTabsComponent } from './tabs/shared.tabs.component';
+import { SharedLinkModalComponent } from './linkModal/shared.linkModal.component';
+import { SharedSearchOptionsModalComponent } from './searchOptionsModal/shared.searchOptionsModal.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule,
     NgxPopperjsModule
   ],
   exports: [
@@ -32,7 +36,9 @@ import { SharedTabsComponent } from './tabs/shared.tabs.component';
     SharedSkillTypeComponent,
     SharedSkillWithUpgradeComponent,
     SharedTabComponent,
-    SharedTabsComponent
+    SharedTabsComponent,
+    SharedLinkModalComponent,
+    SharedSearchOptionsModalComponent
   ],
   declarations: [
     SharedRoundDownPipe,
@@ -44,7 +50,9 @@ import { SharedTabsComponent } from './tabs/shared.tabs.component';
     SharedSkillTypeComponent,
     SharedSkillWithUpgradeComponent,
     SharedTabComponent,
-    SharedTabsComponent
+    SharedTabsComponent,
+    SharedLinkModalComponent,
+    SharedSearchOptionsModalComponent
   ],
   providers: [
   ],

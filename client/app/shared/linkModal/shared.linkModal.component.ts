@@ -12,11 +12,11 @@ import { NavService } from '../../services/nav.service';
 import { MateriaService } from '../../services/materia.service';
 
 @Component({
-  selector: 'app-modal-link',
-  templateUrl: './modal.link.component.html',
-  styleUrls: ['./modal.link.component.css']
+  selector: 'app-shared-linkModal',
+  templateUrl: './shared.linkModal.component.html',
+  styleUrls: ['./shared.linkModal.component.css']
 })
-export class ModalLinkComponent extends SimpleModalComponent<null, null> implements OnInit, AfterViewInit {
+export class SharedLinkModalComponent extends SimpleModalComponent<null, null> implements OnInit, AfterViewInit {
   exportableLink = '';
   saveStep = 'loading';
   firstClickOutside = false;
