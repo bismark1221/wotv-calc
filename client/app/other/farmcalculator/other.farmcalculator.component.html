@@ -1,0 +1,142 @@
+<div class="row">
+  <div class="headerText">
+    <h1>Farm Calculator</h1>
+    <div>Based on the work of CoderCatastrophe</div>
+  </div>
+
+  <div class="items">
+    <ng-select
+      placeholder="Select an item"
+      class="select-item-farmcalculator"
+      [(ngModel)]="selectedItems"
+      (ngModelChange)="changeSelectedItems()"
+
+      [items]="items | async"
+      [editableSearchTerm]="true"
+
+      [multiple]="true"
+      [hideSelected]="true"
+      [loading]="itemLoading"
+      [minTermLength]="2"
+      [typeahead]="itemInput"
+      typeToSearchText="Please enter 2 or more characters">
+      <ng-template ng-label-tmp let-item="item">
+        {{item.name}}
+      </ng-template>
+
+      <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+        <div class="itemLine" id="item_{{item.dataId}}">
+          <div class="itemSelector" id="itemSelector_{{item.dataId}}">
+            <app-shared-item [item]="item" [customClass]="itemClassInInput"></app-shared-item>
+            <div class="itemNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+          </div>
+          <hr />
+        </div>
+      </ng-template>
+    </ng-select>
+  </div>
+
+  <div class="selectedItems">
+    <div *ngFor="let item of selectedItems" class="selectedItemBlock">
+      <app-shared-item [item]="item"></app-shared-item>
+      <div class="selectedItemName">{{ item.name }}</div>
+      <div class="selectedItemRemove" (click)="removeItem(item.dataId)">X</div>
+    </div>
+  </div>
+
+  <div class="quests">
+    <h3>Quests list</h3>
+    <div class="mb-5">
+      <div>
+        Show not available quests
+        <ui-switch class="switchMainJob" (click)="toogleAvailableQuests()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.showNotAvailableQuests === true"></ui-switch>
+      </div>
+      <div class="inline mr-4" *ngFor="let type of questTypes">
+        <input class="mr-2" type="checkbox" id="rarity{{type}}" (change)="filterList('type', type)" [checked]="isFilterChecked.type[type]" />
+        <label for="rarity{{type}}">{{ formatType(type) }}</label>
+      </div>
+    </div>
+    <div *ngIf="questLoading">
+      Loading quests
+    </div>
+    <div *ngIf="!questLoading && quests.length > 0">
+      <table class="questTable">
+        <tr>
+          <th class="questTd">Quest Name</th>
+          <th class="dropRateTd">Drop rate</th>
+        </tr>
+        <tbody *ngFor="let quest of quests">
+          <tr>
+            <td class="questTd">
+              <div class="collapseBlock" (click)="isCollapsed[quest.dataId] = !isCollapsed[quest.dataId]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="!isCollapsed[quest.dataId]">
+                  <path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="isCollapsed[quest.dataId]">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="questName">
+                <a [routerLink]="[getRoute('/quest/' + quest.slug)]">{{ quest.name }}</a>
+              </div>
+              <div class="questParams">
+                NRG : {{ quest.nrg }} - XP : {{ quest.exp }} - JP : {{ quest.jp }} - Gils : {{ quest.gils }} - Enemies : {{ quest.enemies.length }} - Chests : {{ quest.chests.length }}
+              </div>
+            </td>
+            <td class="dropRateTd">
+              <div *ngFor="let item of quest.findedItems" class="dropRateItemBlock">
+                <app-shared-item [item]="item" [customClass]="itemClassListQuest"></app-shared-item>
+                <div *ngIf="quest.dropRateItems[item.dataId].drop">
+                  ({{ quest.dropRateItems[item.dataId].drop.minNum }}<span *ngIf="quest.dropRateItems[item.dataId].drop.maxNum !== quest.dropRateItems[item.dataId].drop.minNum">- {{ quest.dropRateItems[item.dataId].drop.maxNum }}</span>)<br />
+                  {{ quest.dropRateItems[item.dataId].drop.value | number : '1.2-2'}}%
+                </div>
+                <div *ngIf="quest.dropRateItems[item.dataId].host">
+                  Host : ({{ quest.dropRateItems[item.dataId].host.minNum }}<span *ngIf="quest.dropRateItems[item.dataId].host.maxNum !== quest.dropRateItems[item.dataId].host.minNum">- {{ quest.dropRateItems[item.dataId].host.maxNum }}</span>)<br />
+                  {{ quest.dropRateItems[item.dataId].host.value | number : '1.2-2'}}%
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr *ngIf="!isCollapsed[quest.dataId]">
+            <td colspan="2">
+              <div class="dropBlock">
+                <div class="dropHeader">TOTAL</div>
+                <div class="dropContent">
+                  <div *ngFor="let item of quest.formattedItems" class="dropRateItemBlock">
+                    <app-shared-item [item]="item" [customClass]="itemClassListQuest"></app-shared-item>
+                    <div *ngIf="quest.dropRateItems[item.dataId].drop">
+                      ({{ quest.dropRateItems[item.dataId].drop.minNum }}<span *ngIf="quest.dropRateItems[item.dataId].drop.maxNum !== quest.dropRateItems[item.dataId].drop.minNum">- {{ quest.dropRateItems[item.dataId].drop.maxNum }}</span>)<br />
+                      {{ quest.dropRateItems[item.dataId].drop.value | number : '1.2-2'}}%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dropBlock" *ngFor="let dropList of quest.dropLists">
+                <div class="dropHeader">
+                  <span *ngFor="let enemy of dropList.enemies" class="dropEnemyBlock">
+                    <img src="assets/otherUnits/{{enemy.image}}_small.webp" class="enemyImg" /> {{ enemy.name }}
+                  </span>
+
+                  <span *ngIf="dropList.isHost">
+                    HOST
+                  </span>
+                </div>
+
+                <div class="dropContent">
+                  <div *ngFor="let item of dropList.items" class="dropRateItemBlock">
+                    <app-shared-item [item]="item" [customClass]="itemClassListQuest"></app-shared-item>
+                    <div>
+                      ({{ item.drop.num }})<br />
+                      {{ item.drop.value | number : '1.2-2'}}%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

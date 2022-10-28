@@ -1,0 +1,236 @@
+.materias {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.leftBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  float: left;
+  text-align: left;
+  background: var(--filters-background);
+  color: var(--filters-color);
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.leftBlock h1 {
+  font-size: 20px;
+}
+
+.filters {
+  margin-top: 20px;
+}
+
+.collapsedFilters {
+  margin-top: 5px;
+}
+
+.collapsedFilters input {
+  margin-right: 5px;
+}
+
+.rightBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 900px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.upperBlock {
+  padding-right: 10px;
+}
+
+.underSearchBlock {
+  height: 30px;
+}
+
+.totalMaterias {
+  float: left;
+  display: inline-block;
+}
+
+.sortOrderBlock {
+  float: right;
+  display: inline-block;
+}
+
+.sortBy, .orderBy {
+  display: inline-block;
+}
+
+.sortBy > span, .orderBy > span {
+  color: var(--sortby-color);
+  margin-right: 8px;
+}
+
+.orderBy {
+  margin-left: 10px;
+}
+
+.countMaterias {
+  font-weight: bold;
+}
+
+.materiasList {
+  margin-top: 10px;
+}
+
+.selectMateriaLink {
+  cursor: pointer;
+}
+
+.materiaImgBlock {
+  height: 110px;
+  width: 200px;
+}
+
+.materiaImg {
+  height: 100px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.materiasCol {
+  background-color: var(--card-background);
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.materiasCol:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--card-background-hover)
+}
+
+.materiasCol > a:hover {
+  text-decoration: none;
+}
+
+.materiaTitle {
+  background-color: var(--card-title-background);
+  display: table;
+  height: 50px;
+  width: 100%;
+}
+
+.materiaName {
+  font-weight: bold;
+  vertical-align: middle;
+  color: var(--card-title-color);
+}
+
+.select-sort, .select-order {
+  display: inline-block;
+}
+
+.select-sort {
+  width: 140px;
+}
+
+
+/**********/
+/* LOADER */
+/**********/
+.loadingBlock {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/***********/
+/* Builder */
+/***********/
+.materiaBuild {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.saveBlock {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0;
+}
+
+.btn-buildLink {
+  margin-right: 10px;
+}
+
+.btn-delete {
+  margin-left: 10px;
+}
+
+.leftBlockBuilder {
+  width: 200px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.leftBlockBuilder table {
+  width: 100%
+}
+
+.btn-reset-materia {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.btn-max-materia {
+  width: 105px;
+}
+
+.noBorder {
+  border: 0;
+}
+
+.builderMateriaImgBlock {
+  margin-top: 10px;
+}
+
+.rightBlockBuilder {
+  width: 980px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.mainStatDiv {
+  display: inline-block;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.statsTable {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-change-skill, .btn-random {
+  margin-right: 10px;
+}
+
+.levelTd {
+  width: 80px;
+}
+
+.actionsTd {
+  width: 350px;
+}
+
+.chevron {
+  float: right;
+  margin-right: 10px;
+}

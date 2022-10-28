@@ -1,0 +1,70 @@
+<div class="units">
+  <div class="leftBlock">
+    <h1 class="boldText">FILTERS</h1>
+    <div class="filters">
+      <div class="boldText my-3" (click)="toogleCollapse('species')">
+        Species
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="!collapsed.species">
+          <path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="collapsed.species">
+          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="collapsedFilters my-2" *ngIf="!collapsed.species">
+        <div *ngFor="let specie of species">
+          <input type="checkbox" id="specie{{ specie }}" (change)="filterList('species', specie)" [checked]="isFilterChecked.species[specie]"/>
+          <label for="specie{{ specie }}">{{ specie | titlecase }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 inline-block text-black">
+          <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+        </svg>
+        <input class="searchInput" type="text" placeholder="Search for a character by name" [(ngModel)]="searchText">
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalUnits">
+          A total of <span class="countUnits">{{ getFilteredUnits().length }}</span> characters found
+        </div>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            <span>Sort by :</span>
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['name']" [(ngModel)]="sort" (ngModelChange)="getUnits()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
+            </ng-select>
+          </div>
+          <div class="orderBy">
+            <span>Order by :</span>
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="getUnits()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.label }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="unitsList">
+      <app-shared-card *ngFor="let unit of getFilteredUnits()" [item]="unit" [linkType]="'other/unit'" [assetType]="'otherUnit'"></app-shared-card>
+    </div>
+  </div>
+</div>

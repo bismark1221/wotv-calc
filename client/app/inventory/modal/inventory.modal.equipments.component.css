@@ -1,0 +1,190 @@
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.closeButton {
+  float: right;
+}
+
+.closeButton button {
+  padding: 10px;
+  background: none;
+  border: 0;
+}
+
+.closeButton button span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.equipments {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.filtersBlock {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.acquisitionExpander {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.acquisitionType {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.acquisitionType input {
+  margin-right: 5px;
+}
+
+.unselectAllTypeLink {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.separator {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.upperBlock {
+  padding-right: 10px;
+}
+
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 1040px;
+  margin-left: 18px;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 1000px;
+}
+
+.equipmentsList {
+  margin-top: 10px;
+}
+
+.equipmentImgBlockRemove {
+  width: 200px;
+  height: 210px;
+}
+
+.equipmentImgBlockRemove img {
+  padding-top: 40px;
+}
+
+.equipmentImgBlock {
+  width: 200px;
+  height: 160px;
+}
+
+.equipmentImg {
+  height: 150px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.equipmentsCol {
+  background-color: var(--card-background);
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.equipmentsCol:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--card-background-hover)
+}
+
+.equipmentsCol > a:hover {
+  text-decoration: none;
+}
+
+.equipmentIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.equipmentTitle {
+  background-color: var(--card-title-background);
+  display: table;
+  height: 50px;
+  width: 100%;
+}
+
+.equipmentName {
+  font-weight: bold;
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--card-title-color);
+}
+
+/**********/
+/* Custom */
+/**********/
+.backButtonDiv, .customDiv {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.customDiv {
+  margin-bottom: 10px;
+}
+
+.leftBlock {
+  display: inline-block;
+  width: 200px;
+}
+
+.leftBlock .equipmentsCol:hover {
+  box-shadow: 0;
+  background-color: var(--card-background)
+}
+
+.titleSelect {
+  width: 70px;
+  display: inline-block;
+}
+
+.btn-save {
+  width: 100%;
+}
+
+.rightBlock {
+  width: 850px;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.equipmentInfo {
+  display: inline-block;
+  margin-right: 20px;
+  width: 100px;
+}

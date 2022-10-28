@@ -1,0 +1,118 @@
+<div class="row">
+  <div class="headerText">
+    <h1>Job Planner</h1>
+    <div>Based on the work of EatMoarRice</div>
+  </div>
+
+  <div class="units">
+    <div class="unitBlock" *ngFor="let unitPos of tableUnits">
+      <ng-select placeholder="Select an unit" class="select-unit-team" [items]="units" groupBy="rarity" [(ngModel)]="selectedUnits[unitPos]" (ngModelChange)="selectUnit(unitPos)" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true">
+        <ng-template ng-label-tmp let-item="item">
+          {{item.name}}
+        </ng-template>
+
+        <ng-template ng-optgroup-tmp let-item="item" let-index="index">
+          <div class="rarityLine">
+            <img src="assets/rarity/{{ item.rarity }}.webp" /><span>{{ rarityTranslate[item.rarity] }}</span>
+          </div>
+        </ng-template>
+
+        <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+          <div class="unitLine" id="unit_{{item.dataId}}">
+            <div class="unitSelector" id="unitSelector_{{item.dataId}}">
+              <div class="unitLogo">
+                <img src="assets/units/{{ item.image }}_small.webp" />
+              </div>
+              <div class="unitNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
+            </div>
+            <hr />
+          </div>
+        </ng-template>
+      </ng-select>
+
+      <table class="jobTable" *ngIf="jobbedUnits[unitPos]; let unit">
+        <tr>
+          <td><img class="unitImg" src="assets/units/{{ unit.image }}_small.webp" /></td>
+          <td *ngIf="unit.jobsData[0]">
+            <div class="mainJob"><img src="{{'assets/jobs/' + unit.jobsData[0].image + '_40.webp'}}" title="{{unit.jobsData[0].name}}" /></div>
+          </td>
+          <td *ngIf="unit.jobsData[1]">
+            <div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[1].image + '_40.webp'}}" title="{{unit.jobsData[1].name}}" /></div>
+          </td>
+          <td *ngIf="unit.jobsData[2]">
+            <div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[2].image + '_40.webp'}}" title="{{unit.jobsData[2].name}}" /></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Start</td>
+          <td *ngIf="unit.jobsData[0]">
+            <select [(ngModel)]="unit.jobsData[0].start" (ngModelChange)="changeLevel('start', unitPos, 0)">
+              <option *ngFor="let level of unit.jobsData[0].startTableLevel">{{ level }}</option>
+            </select>
+          </td>
+          <td *ngIf="unit.jobsData[1]">
+            <select [(ngModel)]="unit.jobsData[1].start" (ngModelChange)="changeLevel('start', unitPos, 1)">
+              <option *ngFor="let level of unit.jobsData[1].startTableLevel">{{ level }}</option>
+            </select>
+          </td>
+          <td *ngIf="unit.jobsData[2]">
+            <select [(ngModel)]="unit.jobsData[2].start" (ngModelChange)="changeLevel('start', unitPos, 2)">
+              <option *ngFor="let level of unit.jobsData[2].startTableLevel">{{ level }}</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Goal</td>
+          <td *ngIf="unit.jobsData[0]">
+            <select [(ngModel)]="unit.jobsData[0].goal" (ngModelChange)="changeLevel('goal', unitPos, 0)">
+              <option *ngFor="let level of unit.jobsData[0].goalTableLevel">{{ level }}</option>
+            </select>
+          </td>
+          <td *ngIf="unit.jobsData[1]">
+            <select [(ngModel)]="unit.jobsData[1].goal" (ngModelChange)="changeLevel('goal', unitPos, 1)">
+              <option *ngFor="let level of unit.jobsData[1].goalTableLevel">{{ level }}</option>
+            </select>
+          </td>
+          <td *ngIf="unit.jobsData[2]">
+            <select [(ngModel)]="unit.jobsData[2].goal" (ngModelChange)="changeLevel('goal', unitPos, 2)">
+              <option *ngFor="let level of unit.jobsData[2].goalTableLevel">{{ level }}</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="materialsBlock" *ngIf="materialsIds.length > 0">
+    <h3>Material list</h3>
+    <div class="materials">
+      <div class="materialBlock" *ngFor="let itemId of materialsIds">
+        <img src="{{ 'assets/items/' + materials[itemId].image + '_middle.webp'}}"
+          class="materialImg"
+          (click)="toogleMaterial(itemId)"
+          [ngClass]="{'deactivated': materials[itemId].activated === false}"
+          *ngIf="materials[itemId].type === 'classic'" />
+        <br *ngIf="materials[itemId].type === 'classic'" />
+
+        <div
+          [ngClass]="{
+            'imgOrbGreen': materials[itemId].type === 'imgOrbGreen',
+            'imgOrbBlue': materials[itemId].type === 'imgOrbBlue',
+            'imgOrbViolet': materials[itemId].type === 'imgOrbViolet',
+            'imgOrbYellow': materials[itemId].type === 'imgOrbYellow',
+            'imgOrbPink': materials[itemId].type === 'imgOrbPink',
+            'deactivated': materials[itemId].activated === false}"
+          *ngIf="materials[itemId].type !== 'classic'"
+          (click)="toogleMaterial(itemId)"
+        >
+          <img src="{{ 'assets/jobs/' + materials[itemId].image + '_40.webp'}}" title="{{ materials[itemId].name }}" />
+        </div>
+
+        <span class="materialCount">{{ materials[itemId].count }}</span>
+      </div>
+    </div>
+    <div>
+      <button class="btn btn-main" (click)="export()">Export to farm calc</button>
+    </div>
+  </div>
+</div>

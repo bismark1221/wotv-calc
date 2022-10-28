@@ -1,0 +1,178 @@
+<div class="row" *ngIf="masterInfos.name !== ''">
+  <div class="leftBlock">
+    <table class="raidTable">
+      <tbody>
+        <tr>
+          <th colspan="2">{{ masterInfos.name }}</th>
+        </tr>
+        <tr>
+          <td colspan="2"><img class="unitImg" src="{{'assets/otherUnits/' + masterInfos.image + '_card.webp'}}" /></td>
+        </tr>
+        <tr>
+          <th colspan="2" class="sub">Species</th>
+        </tr>
+        <tr>
+          <td>{{ masterInfos.species }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rightBlock">
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="13">Quest list</th>
+        </tr>
+        <tr>
+          <th class="sub">Quest</th>
+          <th class="sub">Element</th>
+          <th class="sub">Jobs</th>
+          <th class="sub">HP</th>
+          <th class="sub">ATK</th>
+          <th class="sub">MAG</th>
+        </tr>
+      </tbody>
+      <tbody *ngFor="let enemy of otherUnits; let j = index">
+        <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" class="enemyLine">
+          <td class="questName">
+            <div class="collapseBlock">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="!isCollapsedEnemy[j]">
+                <path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="isCollapsedEnemy[j]">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <a [routerLink]="[getRoute('/quest/' + enemy.questData.slug)]" [routerLinkActive]="['active']">{{ enemy.questData.name }}</a>
+          </td>
+          <td>
+            <img src="assets/elements/{{ enemy.element }}.webp" class="elementImg" />
+          </td>
+          <td>
+            <div class="job" *ngIf="enemy.job" title="{{ enemy.job.name }}">
+              <img src="{{'assets/jobs/' + enemy.job.image + '_30.webp'}}" />
+            </div>
+          </td>
+          <td>
+            <span *ngIf="!enemy.hasMaxLevel">{{ enemy.stats.HP.total }}</span>
+            <span *ngIf="enemy.hasMaxLevel">{{ enemy.stats.HP.minTotal }}<br />{{ enemy.stats.HP.maxTotal }}</span>
+          </td>
+          <td>
+            <span *ngIf="!enemy.hasMaxLevel">{{ enemy.stats.ATK.total }}</span>
+            <span *ngIf="enemy.hasMaxLevel">{{ enemy.stats.ATK.minTotal }}<br />{{ enemy.stats.HP.maxTotal }}</span>
+          </td>
+          <td>
+            <span *ngIf="!enemy.hasMaxLevel">{{ enemy.stats.MAG.total }}</span>
+            <span *ngIf="enemy.hasMaxLevel">{{ enemy.stats.MAG.minTotal }}<br />{{ enemy.stats.HP.maxTotal }}</span>
+          </td>
+        </tr>
+        <tr *ngIf="!isCollapsedEnemy[j]">
+          <td colspan="99" class="enemyDetailCol">
+            <table>
+              <tr>
+                <th class="sub" *ngIf="enemy.hasMaxLevel"></th>
+                <th class="sub">HP</th>
+                <th class="sub">TP</th>
+                <th class="sub">AP</th>
+                <th class="sub">ATK</th>
+                <th class="sub">DEF</th>
+                <th class="sub">MAG</th>
+                <th class="sub">SPR</th>
+                <th class="sub">DEX</th>
+                <th class="sub">AGI</th>
+                <th class="sub">LUCK</th>
+                <th class="sub">MOVE</th>
+                <th class="sub">JUMP</th>
+              </tr>
+              <tr *ngIf="!enemy.hasMaxLevel">
+                <td>{{ enemy.stats.HP.total }}</td>
+                <td>{{ enemy.stats.TP.total }}</td>
+                <td>{{ enemy.stats.AP.total }}</td>
+                <td>{{ enemy.stats.ATK.total }}</td>
+                <td>{{ enemy.stats.DEF.total }}</td>
+                <td>{{ enemy.stats.MAG.total }}</td>
+                <td>{{ enemy.stats.SPR.total }}</td>
+                <td>{{ enemy.stats.DEX.total }}</td>
+                <td>{{ enemy.stats.AGI.total }}</td>
+                <td>{{ enemy.stats.LUCK.total }}</td>
+                <td>{{ enemy.stats.MOVE.total }}</td>
+                <td>{{ enemy.stats.JUMP.total }}</td>
+              </tr>
+              <tr *ngIf="enemy.hasMaxLevel">
+                <td>MIN</td>
+                <td>{{ enemy.stats.HP.minTotal }}</td>
+                <td>{{ enemy.stats.TP.minTotal }}</td>
+                <td>{{ enemy.stats.AP.minTotal }}</td>
+                <td>{{ enemy.stats.ATK.minTotal }}</td>
+                <td>{{ enemy.stats.DEF.minTotal }}</td>
+                <td>{{ enemy.stats.MAG.minTotal }}</td>
+                <td>{{ enemy.stats.SPR.minTotal }}</td>
+                <td>{{ enemy.stats.DEX.minTotal }}</td>
+                <td>{{ enemy.stats.AGI.minTotal }}</td>
+                <td>{{ enemy.stats.LUCK.minTotal }}</td>
+                <td rowspan="2">{{ enemy.stats.MOVE.total }}</td>
+                <td rowspan="2">{{ enemy.stats.JUMP.total }}</td>
+              </tr>
+              <tr *ngIf="enemy.hasMaxLevel">
+                <td>MAX</td>
+                <td>{{ enemy.stats.HP.maxTotal }}</td>
+                <td>{{ enemy.stats.TP.maxTotal }}</td>
+                <td>{{ enemy.stats.AP.maxTotal }}</td>
+                <td>{{ enemy.stats.ATK.maxTotal }}</td>
+                <td>{{ enemy.stats.DEF.maxTotal }}</td>
+                <td>{{ enemy.stats.MAG.maxTotal }}</td>
+                <td>{{ enemy.stats.SPR.maxTotal }}</td>
+                <td>{{ enemy.stats.DEX.maxTotal }}</td>
+                <td>{{ enemy.stats.AGI.maxTotal }}</td>
+                <td>{{ enemy.stats.LUCK.maxTotal }}</td>
+              </tr>
+            </table>
+            <table>
+              <tbody *ngFor="let line of enemy.hasStats">
+                <tr>
+                  <th class="sub" *ngFor="let stat of line">
+                    <img class="elementImg" src="{{ statImage[stat] }}" />
+                  </th>
+                </tr>
+                <tr>
+                  <td class="heightResTd" *ngFor="let stat of line">
+                    <span>{{ enemy.stats[stat].total }} %</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody *ngIf="enemy.otherStats.length > 0">
+                <tr>
+                  <th class="sub" colspan="99">OTHERS</th>
+                </tr>
+                <tr *ngFor="let otherStat of enemy.otherStats">
+                  <td class="heightResTd" colspan="99">{{ otherStat }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <th colspan="9">
+                    Skills
+                  </th>
+                </tr>
+                <tr>
+                  <th class="sub skillTypeTd">Type</th>
+                  <th class="sub skillNameTd">Name</th>
+                  <th class="sub">Effects</th>
+                  <th class="sub rangeTd">Range</th>
+                  <th class="sub skillCastTd">Casts</th>
+                  <th class="sub skillHitTd">Hits</th>
+                  <th class="sub skillCostTd">Cost</th>
+                </tr>
+              </tbody>
+
+              <tbody *ngFor="let skill of enemy.skills" app-shared-skillWithUpgrade [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
