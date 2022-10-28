@@ -26,77 +26,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { SentryErrorHandler } from './sentry.errorHandler';
 
 import { AppComponent } from './app.component';
-import { ResizeDetectorComponent } from './resizeDetector.component';
 
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ContactComponent } from './contact/contact.component';
-import { LegalComponent } from './legal/legal.component';
-import { JsonComponent } from './json/json.component';
-
 import { LoginComponent } from './auth/login.component';
-import { UserComponent } from './user/user.component';
-
-import { UnitsComponent } from './units/units.component';
-import { UnitComponent } from './unit/unit.component';
-import { CardsComponent } from './cards/cards.component';
-import { CardComponent } from './card/card.component';
-import { EspersComponent } from './espers/espers.component';
-import { EsperComponent } from './esper/esper.component';
-import { EquipmentsComponent } from './equipments/equipments.component';
-import { EquipmentComponent } from './equipment/equipment.component';
-import { RaidsComponent } from './raids/raids.component';
-import { RaidComponent } from './raid/raid.component';
-import { QuestsComponent } from './quests/quests.component';
-import { QuestComponent } from './quest/quest.component';
-
-import { InventoryComponent } from './inventory/inventory.component';
-import { ModalInventoryEquipmentsComponent } from './inventory/modal/modal.inventory.equipments.component';
-
-import { TabsComponent } from './tabs/tabs.component';
-import { TabComponent } from './tabs/tab.component';
-
-import { OtherComponent } from './other/other.component';
-import { OtherTitlesComponent } from './other/other.titles.component';
-import { OtherIndexComponent } from './other/other.index.component';
-import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
-import { OtherFarmCalculatorComponent } from './other/other.farmcalculator.component';
-import { OtherBestiaryComponent } from './other/other.bestiary.component';
-import { OtherUnitComponent } from './other/other.unit.component';
-import { OtherMateriaComponent } from './other/other.materia.component';
-import { OtherMaterialLookupComponent } from './other/other.materiallookup.component';
-import { OtherSubCardComponent } from './other/other.subCard.component';
-
-import { BuilderComponent } from './builder/builder.component';
-import { BuilderUnitComponent } from './builder/builder.unit.component';
-import { BuilderCardComponent } from './builder/builder.card.component';
-import { BuilderEsperComponent } from './builder/builder.esper.component';
-import { BuilderEquipmentComponent } from './builder/builder.equipment.component';
-import { BuilderGuildComponent } from './builder/builder.guild.component';
-import { BuilderTeamComponent } from './builder/builder.team.component';
-import { BuilderMasterRanksComponent } from './builder/builder.mr.component';
-import { BuilderMateriaComponent } from './builder/builder.materia.component';
-
-import { ModalEquipmentsComponent } from './builder/modal/modal.equipments.component';
-import { ModalEspersComponent } from './builder/modal/modal.espers.component';
-import { ModalCardsComponent } from './builder/modal/modal.cards.component';
-import { ModalGuildComponent } from './builder/modal/modal.guild.component';
-import { ModalLoadComponent } from './builder/modal/modal.load.component';
-import { ModalSaveComponent } from './builder/modal/modal.save.component';
-import { ModalDeleteComponent } from './builder/modal/modal.delete.component';
-import { ModalLinkComponent } from './builder/modal/modal.link.component';
-import { ModalMasterRanksComponent } from './builder/modal/modal.mr.component';
-import { ModalMateriaComponent } from './builder/modal/modal.materia.component';
-
-import { TemplateItemComponent } from './template/template.item.component';
-import { TemplateCardComponent } from './template/template.card.component';
-import { TemplateSkillWithUpgradeComponent } from './template/template.skillWithUpgrade.component';
-import { TemplateSkillRowComponent } from './template/template.skillRow.component';
-import { TemplateSkillTypeComponent } from './template/template.skillType.component';
-
-import { SearchOptionsModalComponent } from './searchOptionsModal/searchOptionsModal.component';
 
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
@@ -126,9 +61,7 @@ import { UserService } from './services/user.service';
 import { MateriaService } from './services/materia.service';
 import { InventoryService } from './services/inventory.service';
 
-import { RoundDownPipe } from './pipes/roundDown.pipe';
-import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
-import { HighlightSearchPipe } from './pipes/highlightSearch.pipe';
+import { SharedModule } from './shared/shared.module';
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export function createTranslateLoader(http: HttpClient) {
@@ -142,65 +75,7 @@ export function createTranslateLoader(http: HttpClient) {
     FooterComponent,
     HomeComponent,
     PageNotFoundComponent,
-    ContactComponent,
-    LegalComponent,
-    JsonComponent,
-    UnitsComponent,
-    UnitComponent,
-    CardsComponent,
-    CardComponent,
-    EspersComponent,
-    EsperComponent,
-    EquipmentsComponent,
-    EquipmentComponent,
-    RaidsComponent,
-    RaidComponent,
-    QuestsComponent,
-    QuestComponent,
-    InventoryComponent,
-    RoundDownPipe,
-    SafeHtmlPipe,
-    HighlightSearchPipe,
-    BuilderComponent,
-    BuilderUnitComponent,
-    BuilderCardComponent,
-    BuilderEsperComponent,
-    BuilderEquipmentComponent,
-    BuilderGuildComponent,
-    BuilderTeamComponent,
-    BuilderMasterRanksComponent,
-    BuilderMateriaComponent,
-    ModalEquipmentsComponent,
-    ModalEspersComponent,
-    ModalCardsComponent,
-    ModalGuildComponent,
-    ModalMasterRanksComponent,
-    ModalMateriaComponent,
-    ModalLoadComponent,
-    ModalSaveComponent,
-    ModalDeleteComponent,
-    ModalLinkComponent,
-    ModalInventoryEquipmentsComponent,
-    LoginComponent,
-    OtherComponent,
-    OtherTitlesComponent,
-    OtherIndexComponent,
-    OtherJobPlannerComponent,
-    OtherFarmCalculatorComponent,
-    OtherBestiaryComponent,
-    OtherUnitComponent,
-    OtherMateriaComponent,
-    OtherMaterialLookupComponent,
-    OtherSubCardComponent,
-    TemplateItemComponent,
-    TemplateCardComponent,
-    TemplateSkillWithUpgradeComponent,
-    TemplateSkillRowComponent,
-    TemplateSkillTypeComponent,
-    UserComponent,
-    SearchOptionsModalComponent,
-    TabsComponent,
-    TabComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -233,7 +108,8 @@ export function createTranslateLoader(http: HttpClient) {
       autoFocus: false
     }}),
     NgxPopperjsModule,
-    BarRatingModule
+    BarRatingModule,
+    SharedModule
   ],
   providers: [
     UnitService,
