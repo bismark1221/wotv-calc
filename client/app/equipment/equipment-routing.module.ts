@@ -5,10 +5,8 @@ import { EquipmentDetailComponent } from './detail/equipment.detail.component';
 import { EquipmentListComponent } from './list/equipment.list.component';
 
 const routes: Routes = [
-  { path: 'equipments', component: EquipmentListComponent },
-  { path: 'equipment/:slug', component: EquipmentDetailComponent },
-  { path: 'JP/equipments', component: EquipmentListComponent },
-  { path: 'JP/equipment/:slug', component: EquipmentDetailComponent }
+  { path: '', component: EquipmentListComponent, pathMatch: 'full' },
+  { path: ':slug', component: EquipmentDetailComponent }
 ];
 
 @NgModule({

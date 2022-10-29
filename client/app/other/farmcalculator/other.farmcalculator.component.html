@@ -77,7 +77,7 @@
                 </svg>
               </div>
               <div class="questName">
-                <a [routerLink]="[getRoute('/quest/' + quest.slug)]">{{ quest.name }}</a>
+                <a [routerLink]="[getRoute('/quests/' + quest.slug)]">{{ quest.name }}</a>
               </div>
               <div class="questParams">
                 NRG : {{ quest.nrg }} - XP : {{ quest.exp }} - JP : {{ quest.jp }} - Gils : {{ quest.gils }} - Enemies : {{ quest.enemies.length }} - Chests : {{ quest.chests.length }}

@@ -4,8 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { JsonComponent } from './json.component';
 
 const routes: Routes = [
-  { path: 'json', component: JsonComponent },
-  { path: 'JP/json', component: JsonComponent }
+  { path: '', component: JsonComponent, pathMatch: 'full' }
 ];
 
 @NgModule({

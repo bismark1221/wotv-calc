@@ -5,10 +5,8 @@ import { UnitDetailComponent } from './detail/unit.detail.component';
 import { UnitListComponent } from './list/unit.list.component';
 
 const routes: Routes = [
-  { path: 'units', component: UnitListComponent },
-  { path: 'unit/:slug', component: UnitDetailComponent },
-  { path: 'JP/units', component: UnitListComponent },
-  { path: 'JP/unit/:slug', component: UnitDetailComponent }
+  { path: '', component: UnitListComponent, pathMatch: 'full' },
+  { path: ':slug', component: UnitDetailComponent }
 ];
 
 @NgModule({

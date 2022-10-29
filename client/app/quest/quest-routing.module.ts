@@ -5,10 +5,8 @@ import { QuestDetailComponent } from './detail/quest.detail.component';
 import { QuestListComponent } from './list/quest.list.component';
 
 const routes: Routes = [
-  { path: 'quests', component: QuestListComponent },
-  { path: 'quest/:slug', component: QuestDetailComponent },
-  { path: 'JP/quests', component: QuestListComponent },
-  { path: 'JP/quest/:slug', component: QuestDetailComponent }
+  { path: '', component: QuestListComponent, pathMatch: 'full' },
+  { path: ':slug', component: QuestDetailComponent }
 ];
 
 @NgModule({

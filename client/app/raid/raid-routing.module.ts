@@ -5,10 +5,8 @@ import { RaidDetailComponent } from './detail/raid.detail.component';
 import { RaidListComponent } from './list/raid.list.component';
 
 const routes: Routes = [
-  { path: 'raids', component: RaidListComponent },
-  { path: 'raid/:slug', component: RaidDetailComponent },
-  { path: 'JP/raids', component: RaidListComponent },
-  { path: 'JP/raid/:slug', component: RaidDetailComponent }
+  { path: '', component: RaidListComponent, pathMatch: 'full' },
+  { path: ':slug', component: RaidDetailComponent }
 ];
 
 @NgModule({

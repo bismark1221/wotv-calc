@@ -12,44 +12,21 @@ import { BuilderMasterRanksComponent } from './mr/builder.mr.component';
 import { BuilderMateriaComponent } from './materia/builder.materia.component';
 
 const routes: Routes = [
-  { path: 'builder', component: BuilderComponent,
-    children: [
-      { path: '', redirectTo: 'unit', pathMatch: 'full' },
-      { path: 'unit', component: BuilderUnitComponent },
-      { path: 'unit/:data', component: BuilderUnitComponent },
-      { path: 'card', component: BuilderCardComponent },
-      { path: 'card/:data', component: BuilderCardComponent },
-      { path: 'esper', component: BuilderEsperComponent },
-      { path: 'esper/:data', component: BuilderEsperComponent },
-      { path: 'equipment', component: BuilderEquipmentComponent },
-      { path: 'equipment/:data', component: BuilderEquipmentComponent },
-      { path: 'guild', component: BuilderGuildComponent },
-      { path: 'master-ranks', component: BuilderMasterRanksComponent },
-      { path: 'team', component: BuilderTeamComponent },
-      { path: 'team/:data', component: BuilderTeamComponent },
-      { path: 'materia', component: BuilderMateriaComponent },
-      { path: 'materia/:data', component: BuilderMateriaComponent },
-    ]
-  },
-  { path: 'JP/builder', component: BuilderComponent,
-    children: [
-      { path: '', redirectTo: 'unit', pathMatch: 'full' },
-      { path: 'unit', component: BuilderUnitComponent },
-      { path: 'unit/:data', component: BuilderUnitComponent },
-      { path: 'card', component: BuilderCardComponent },
-      { path: 'card/:data', component: BuilderCardComponent },
-      { path: 'esper', component: BuilderEsperComponent },
-      { path: 'esper/:data', component: BuilderEsperComponent },
-      { path: 'equipment', component: BuilderEquipmentComponent },
-      { path: 'equipment/:data', component: BuilderEquipmentComponent },
-      { path: 'guild', component: BuilderGuildComponent },
-      { path: 'master-ranks', component: BuilderMasterRanksComponent },
-      { path: 'team', component: BuilderTeamComponent },
-      { path: 'team/:data', component: BuilderTeamComponent },
-      { path: 'materia', component: BuilderMateriaComponent },
-      { path: 'materia/:data', component: BuilderMateriaComponent },
-    ]
-  }
+  { path: '', redirectTo: 'unit', pathMatch: 'full' },
+  { path: 'unit', component: BuilderUnitComponent },
+  { path: 'unit/:data', component: BuilderUnitComponent },
+  { path: 'card', component: BuilderCardComponent },
+  { path: 'card/:data', component: BuilderCardComponent },
+  { path: 'esper', component: BuilderEsperComponent },
+  { path: 'esper/:data', component: BuilderEsperComponent },
+  { path: 'equipment', component: BuilderEquipmentComponent },
+  { path: 'equipment/:data', component: BuilderEquipmentComponent },
+  { path: 'guild', component: BuilderGuildComponent },
+  { path: 'master-ranks', component: BuilderMasterRanksComponent },
+  { path: 'team', component: BuilderTeamComponent },
+  { path: 'team/:data', component: BuilderTeamComponent },
+  { path: 'materia', component: BuilderMateriaComponent },
+  { path: 'materia/:data', component: BuilderMateriaComponent }
 ];
 
 @NgModule({

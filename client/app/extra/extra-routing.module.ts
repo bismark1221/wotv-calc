@@ -5,10 +5,9 @@ import { ExtraContactComponent } from './contact/extra.contact.component';
 import { ExtraLegalComponent } from './legal/extra.legal.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'contact', pathMatch: 'full' },
   { path: 'contact', component: ExtraContactComponent },
-  { path: 'legal-notices', component: ExtraLegalComponent },
-  { path: 'JP/contact', component: ExtraContactComponent },
-  { path: 'JP/legal-notices', component: ExtraLegalComponent }
+  { path: 'legal-notices', component: ExtraLegalComponent }
 ];
 
 @NgModule({

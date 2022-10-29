@@ -53,6 +53,16 @@ export class HomeComponent {
     this.version = this.navService.getVersion();
 
     this.updatedFormatted = await this.homeService.getHomeData();
+
+    for (const line of this.updatedFormatted) {
+      for (const item of line.items) {
+        if (item.type !== 'equipment') {
+          item.link = item.type + 's';
+        } else {
+          item.link = item.type;
+        }
+      }
+    }
   }
 
   getRoute(route) {

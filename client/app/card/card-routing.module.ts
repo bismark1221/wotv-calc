@@ -5,10 +5,8 @@ import { CardDetailComponent } from './detail/card.detail.component';
 import { CardListComponent } from './list/card.list.component';
 
 const routes: Routes = [
-  { path: 'cards', component: CardListComponent },
-  { path: 'card/:slug', component: CardDetailComponent },
-  { path: 'JP/cards', component: CardListComponent },
-  { path: 'JP/card/:slug', component: CardDetailComponent }
+  { path: '', component: CardListComponent, pathMatch: 'full' },
+  { path: ':slug', component: CardDetailComponent }
 ];
 
 @NgModule({

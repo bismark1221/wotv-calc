@@ -5,10 +5,8 @@ import { EsperDetailComponent } from './detail/esper.detail.component';
 import { EsperListComponent } from './list/esper.list.component';
 
 const routes: Routes = [
-  { path: 'espers', component: EsperListComponent },
-  { path: 'esper/:slug', component: EsperDetailComponent },
-  { path: 'JP/espers', component: EsperListComponent },
-  { path: 'JP/esper/:slug', component: EsperDetailComponent }
+  { path: '', component: EsperListComponent, pathMatch: 'full' },
+  { path: ':slug', component: EsperDetailComponent }
 ];
 
 @NgModule({

@@ -13,36 +13,17 @@ import { OtherMaterialLookupComponent } from './materiallookup/other.materialloo
 import { OtherSubCardComponent } from './subCard/other.subCard.component';
 
 const routes: Routes = [
-  { path: 'other', component: OtherComponent,
-    children: [
-      { path: '', redirectTo: 'titles', pathMatch: 'full' },
-      { path: 'titles', component: OtherTitlesComponent },
-      { path: 'index', component: OtherIndexComponent },
-      { path: 'jobplanner', component: OtherJobPlannerComponent },
-      { path: 'farm-calculator', component: OtherFarmCalculatorComponent },
-      { path: 'farm-calculator/:data', component: OtherFarmCalculatorComponent },
-      { path: 'bestiary', component: OtherBestiaryComponent },
-      { path: 'unit/:slug', component: OtherUnitComponent },
-      { path: 'materia', component: OtherMateriaComponent },
-      { path: 'material-lookup', component: OtherMaterialLookupComponent },
-      { path: 'subcard-ratio', component: OtherSubCardComponent },
-    ]
-  },
-  { path: 'JP/other', component: OtherComponent,
-    children: [
-      { path: '', redirectTo: 'titles', pathMatch: 'full' },
-      { path: 'titles', component: OtherTitlesComponent },
-      { path: 'index', component: OtherIndexComponent },
-      { path: 'jobplanner', component: OtherJobPlannerComponent },
-      { path: 'farm-calculator', component: OtherFarmCalculatorComponent },
-      { path: 'farm-calculator/:data', component: OtherFarmCalculatorComponent },
-      { path: 'bestiary', component: OtherBestiaryComponent },
-      { path: 'unit/:slug', component: OtherUnitComponent },
-      { path: 'materia', component: OtherMateriaComponent },
-      { path: 'material-lookup', component: OtherMaterialLookupComponent },
-      { path: 'subcard-ratio', component: OtherSubCardComponent },
-    ]
-  }
+  { path: '', redirectTo: 'titles', pathMatch: 'full' },
+  { path: 'titles', component: OtherTitlesComponent },
+  { path: 'index', component: OtherIndexComponent },
+  { path: 'jobplanner', component: OtherJobPlannerComponent },
+  { path: 'farm-calculator', component: OtherFarmCalculatorComponent },
+  { path: 'farm-calculator/:data', component: OtherFarmCalculatorComponent },
+  { path: 'bestiary', component: OtherBestiaryComponent },
+  { path: 'unit/:slug', component: OtherUnitComponent },
+  { path: 'materia', component: OtherMateriaComponent },
+  { path: 'material-lookup', component: OtherMaterialLookupComponent },
+  { path: 'subcard-ratio', component: OtherSubCardComponent }
 ];
 
 @NgModule({
