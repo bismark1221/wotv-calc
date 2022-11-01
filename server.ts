@@ -3,13 +3,14 @@ import 'zone.js/dist/zone-node';
 import {APP_BASE_HREF} from '@angular/common';
 import {ngExpressEngine} from '@nguniversal/express-engine';
 import express from 'express';
+import spdy from 'spdy';
 import {existsSync} from 'fs';
 import {join} from 'path';
 
 const path = require('path');
 const fs = require('fs');
 const domino = require('domino');
-const templateA = fs.readFileSync(path.join('dist/browser', 'index.html')).toString();
+const templateA = fs.readFileSync(path.join('dist/wotv-calc/browser', 'index.html')).toString();
 const win = domino.createWindow(templateA);
 
 global['window'] = win;
@@ -56,8 +57,14 @@ function run(): void {
 
   // Start up the Node server
   const server = app();
-  server.listen(port, () => {
-    console.log(`Node Express server listening on http://localhost:${port}`);
+  spdy.createServer(
+    {
+      key: fs.readFileSync(path.resolve(__dirname, "../../../.keys/server.key")),
+      cert: fs.readFileSync(path.resolve(__dirname, "../../../.keys/server.crt"))
+    },
+    server
+  ).listen(port, () => {
+    console.log('Wotv-calc server listening on https://localhost:' + port);
   });
 }
 
