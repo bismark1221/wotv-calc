@@ -29,8 +29,19 @@ jobs:
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-private-key-passphrase: ${{ secrets.GPG_PRIVATE_KEY_PASSPHRASE }}
 
+      - run: ng version
+
       - name: Build prod
         run: npm run build:ssr
+
+      # - name: Install Sentry-cli
+      #   run: curl -sL https://sentry.io/get-cli/ | bash
+
+      # - name: Copy sentry config
+      #   run: cp .github/files/.sentryclirc ~/.sentryclirc
+
+      # - name: Sentry Release
+      #   run: sentry-cli releases --org wotv-calc --project wotv-calc files prod upload-sourcemaps dist/browser --rewrite
 
       - name: Remove sourcemaps
         run : rm dist/wotv-calc/server/*.map
