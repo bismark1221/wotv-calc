@@ -6,5 +6,5 @@ Thumbs.db
 node_modules
 .gitsecret/keys/random_seed
 !*.secret
-client/environments/environment.prod.ts
+src/environments/environment.prod.ts
 .github/files/.sentryclirc

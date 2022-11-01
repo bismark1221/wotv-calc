@@ -1,8 +1,7 @@
 {
   "root": true,
   "ignorePatterns": [
-    "projects/**/*",
-    "client/app/data/**/*"
+    "src/app/data/**/*"
   ],
   "overrides": [
     {

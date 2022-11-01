@@ -11,6 +11,6 @@ def minify(fileName):
     json_string = json.dumps(json_data, separators=(',', ":"))
     open(fileName, "w+", 1).write(json_string)
 
-fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('client/assets/data')) for f in fn]
+fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('src/assets/data')) for f in fn]
 for fileName in fileNames:
     minify(fileName)
