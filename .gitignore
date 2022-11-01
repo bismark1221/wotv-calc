@@ -7,4 +7,7 @@ node_modules
 .gitsecret/keys/random_seed
 !*.secret
 src/environments/environment.prod.ts
-.github/files/.sentryclirc.pm2/ecosystem.config.js.keys/server.crt.keys/server.key
+.github/files/.sentryclirc
+.pm2/ecosystem.config.js
+.keys/server.crt
+.keys/server.key
