@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import { Angulartics2 } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2';
 import { TranslateService } from '@ngx-translate/core';
@@ -15,7 +16,8 @@ export class AppComponent {
     angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
     translate: TranslateService,
     private angulartics: Angulartics2,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {
     angulartics2GoogleAnalytics.startTracking();
 
@@ -32,6 +34,8 @@ export class AppComponent {
   }
 
   onActivate(event) {
-    window.scroll(0, 0);
+    if (isPlatformBrowser(this.platformId)) {
+      window.scroll(0, 0);
+    }
   }
 }

@@ -5,22 +5,22 @@
   "projects": {
     "wotv-calc": {
       "root": "",
-      "sourceRoot": "client",
+      "sourceRoot": "src",
       "projectType": "application",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/browser",
-            "index": "client/index.html",
-            "main": "client/main.ts",
-            "tsConfig": "client/tsconfig.app.json",
-            "polyfills": "client/polyfills.ts",
+            "outputPath": "dist/wotv-calc/browser",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "polyfills": "src/polyfills.ts",
             "assets": [
-              "client/assets"
+              "src/assets"
             ],
             "styles": [
-              "client/styles.css",
+              "src/styles.css",
               "./node_modules/ngx-ui-switch/ui-switch.component.css"
             ],
             "scripts": [],
@@ -52,8 +52,8 @@
               "buildOptimizer": true,
               "fileReplacements": [
                 {
-                  "replace": "client/environments/environment.ts",
-                  "with": "client/environments/environment.prod.ts"
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
               ]
             }
@@ -80,18 +80,18 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "client/test.ts",
+            "main": "src/test.ts",
             "karmaConfig": "./karma.conf.js",
-            "polyfills": "client/polyfills.ts",
-            "tsConfig": "client/tsconfig.spec.json",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
             ],
             "styles": [
-              "client/styles.css",
+              "src/styles.css",
               "./node_modules/ngx-ui-switch/ui-switch.component.css"
             ],
             "assets": [
-              "client/assets"
+              "src/assets"
             ]
           }
         },
@@ -99,9 +99,72 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "client/app/**/*.ts"
+              "src/app/**/*.ts"
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/wotv-calc/server",
+            "main": "server.ts",
+            "tsConfig": "src/tsconfig.server.json",
+            "optimization": false,
+            "sourceMap": true,
+            "extractLicenses": false
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "sourceMap": {
+                "hidden": true,
+                "scripts": true,
+                "styles": true
+              },
+              "extractLicenses": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "wotv-calc:build:development",
+              "serverTarget": "wotv-calc:server:development"
+            },
+            "production": {
+              "browserTarget": "wotv-calc:build:production",
+              "serverTarget": "wotv-calc:server:production"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "wotv-calc:build:production",
+              "serverTarget": "wotv-calc:server:production"
+            },
+            "development": {
+              "browserTarget": "wotv-calc:build:development",
+              "serverTarget": "wotv-calc:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     },

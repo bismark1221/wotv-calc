@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { BehaviorSubject } from 'rxjs';
 
@@ -12,7 +13,8 @@ export class ThemeService {
   $active = this.activeDataSubject.asObservable();
 
   constructor(
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   initTheme() {
@@ -40,12 +42,14 @@ export class ThemeService {
     this.activeDataSubject.next(this.active);
     this.localStorageService.set('theme', theme);
 
-    Object.keys(themes[theme].properties).forEach(property => {
-      document.documentElement.style.setProperty(
-        property,
-        themes[theme].properties[property]
-      );
-    });
+    if (isPlatformBrowser(this.platformId)) {
+      Object.keys(themes[theme].properties).forEach(property => {
+        document.documentElement.style.setProperty(
+          property,
+          themes[theme].properties[property]
+        );
+      });
+    }
 
     this.active = theme;
   }
