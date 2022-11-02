@@ -8,6 +8,7 @@ import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
 import { QuestService } from '../../services/quest.service';
 import { ItemService } from '../../services/item.service';
+import { SessionService } from '../../services/session.service';
 
 import { Item } from '../../entities/item';
 
@@ -73,6 +74,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
     private navService: NavService,
     private toolService: ToolService,
     private itemService: ItemService,
+    private sessionService: SessionService,
     private questService: QuestService
   ) {
   }
@@ -80,8 +82,9 @@ export class OtherFarmCalculatorComponent implements OnInit {
   async ngOnInit() {
     this.navService.setTitle('Farm Calculator');
 
-    if (sessionStorage.getItem('farmCalcQuestsFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('farmCalcQuestsFilters'));
+    const farmCalcQuestsFilters = this.sessionService.get('farmCalcQuestsFilters');
+    if (farmCalcQuestsFilters) {
+      this.filters = JSON.parse(farmCalcQuestsFilters);
     }
 
     this.filterChecked();
@@ -263,7 +266,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('farmCalcQuestsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('farmCalcQuestsFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
     this.filterQuests();

@@ -6,6 +6,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { EsperService } from '../../services/esper.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
+import { SessionService } from '../../services/session.service';
 
 import { SharedSearchOptionsModalComponent } from '../../shared/searchOptionsModal/shared.searchOptionsModal.component';
 
@@ -72,6 +73,7 @@ export class EsperListComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private simpleModalService: SimpleModalService,
+    private sessionService: SessionService,
     private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -116,16 +118,18 @@ export class EsperListComponent implements OnInit {
     if (Object.keys(options).length === 0) {
       this.costs = result.costs;
 
-      if (sessionStorage.getItem('espersFilters')) {
-        this.filters = JSON.parse(sessionStorage.getItem('espersFilters'));
+      const espersFilters = this.sessionService.get('espersFilters');
+      if (espersFilters) {
+        this.filters = JSON.parse(espersFilters);
 
         if (!this.filters.cost) {
           this.filters.cost = [];
         }
       }
 
-      if (sessionStorage.getItem('espersCollapsed')) {
-        this.collapsed = JSON.parse(sessionStorage.getItem('espersCollapsed'));
+      const espersCollapsed = this.sessionService.get('espersCollapsed');
+      if (espersCollapsed) {
+        this.collapsed = JSON.parse(espersCollapsed);
 
         if (this.collapsed.cost === undefined) {
           this.collapsed.cost = true;
@@ -179,7 +183,7 @@ export class EsperListComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('espersFilters', JSON.stringify(this.filters));
+    this.sessionService.set('espersFilters', JSON.stringify(this.filters));
 
     this.filterEspers();
   }
@@ -225,7 +229,7 @@ export class EsperListComponent implements OnInit {
 
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
-    sessionStorage.setItem('espersCollapsed', JSON.stringify(this.collapsed));
+    this.sessionService.set('espersCollapsed', JSON.stringify(this.collapsed));
   }
 
   onSearchBarClose() {

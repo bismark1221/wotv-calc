@@ -7,6 +7,7 @@ import { EquipmentService } from '../../services/equipment.service';
 import { NavService } from '../../services/nav.service';
 import { JobService } from '../../services/job.service';
 import { ToolService } from '../../services/tool.service';
+import { SessionService } from '../../services/session.service';
 
 import { SharedSearchOptionsModalComponent } from '../../shared/searchOptionsModal/shared.searchOptionsModal.component';
 
@@ -100,6 +101,7 @@ export class EquipmentListComponent implements OnInit {
     private navService: NavService,
     private jobService: JobService,
     private simpleModalService: SimpleModalService,
+    private sessionService: SessionService,
     private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -165,11 +167,14 @@ export class EquipmentListComponent implements OnInit {
       }
       this.equipmentStats.sort();
 
-      if (sessionStorage.getItem('equipmentFilters')) {
-        this.filters = JSON.parse(sessionStorage.getItem('equipmentFilters'));
+      const equipmentFilters = this.sessionService.get('equipmentFilters');
+      if (equipmentFilters) {
+        this.filters = JSON.parse(equipmentFilters);
       }
-      if (sessionStorage.getItem('equipmentCollapsed')) {
-        this.collapsed = JSON.parse(sessionStorage.getItem('equipmentCollapsed'));
+
+      const equipmentCollapsed = this.sessionService.get('equipmentCollapsed');
+      if (equipmentCollapsed) {
+        this.collapsed = JSON.parse(equipmentCollapsed);
       }
 
       this.filterEquipments();
@@ -229,7 +234,7 @@ export class EquipmentListComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('equipmentFilters', JSON.stringify(this.filters));
+    this.sessionService.set('equipmentFilters', JSON.stringify(this.filters));
 
     this.filterEquipments();
   }
@@ -237,7 +242,7 @@ export class EquipmentListComponent implements OnInit {
   unselectAllType() {
     this.filters.acquisition = [];
 
-    sessionStorage.setItem('equipmentFilters', JSON.stringify(this.filters));
+    this.sessionService.set('equipmentFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
     this.filterEquipments();
@@ -317,7 +322,7 @@ export class EquipmentListComponent implements OnInit {
 
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
-    sessionStorage.setItem('equipmentCollapsed', JSON.stringify(this.collapsed));
+    this.sessionService.set('equipmentCollapsed', JSON.stringify(this.collapsed));
   }
 
   onSearchBarClose() {

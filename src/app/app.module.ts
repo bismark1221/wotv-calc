@@ -23,8 +23,6 @@ import { BarRatingModule } from 'ngx-bar-rating';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { SentryErrorHandler } from './sentry.errorHandler';
-
 import { AppComponent } from './app.component';
 
 import { NavComponent } from './nav/nav.component';
@@ -60,6 +58,7 @@ import { HomeService } from './services/home.service';
 import { UserService } from './services/user.service';
 import { MateriaService } from './services/materia.service';
 import { InventoryService } from './services/inventory.service';
+import { SessionService } from './services/session.service';
 
 import { SharedModule } from './shared/shared.module';
 
@@ -139,10 +138,7 @@ export function createTranslateLoader(http: HttpClient) {
     UserService,
     MateriaService,
     InventoryService,
-    {
-      provide: ErrorHandler,
-      useClass: SentryErrorHandler
-    }
+    SessionService
   ],
   bootstrap: [
     AppComponent

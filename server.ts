@@ -10,7 +10,7 @@ import {join} from 'path';
 const path = require('path');
 const fs = require('fs');
 const domino = require('domino');
-const templateA = fs.readFileSync(path.join('dist/wotv-calc/browser', 'index.html')).toString();
+const templateA = fs.readFileSync(path.join(__dirname, '../browser', 'index.html')).toString();
 const win = domino.createWindow(templateA);
 
 global['window'] = win;
@@ -21,7 +21,7 @@ import {AppServerModule} from './src/main.server';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  const distFolder = join(process.cwd(), 'dist/wotv-calc/browser');
+  const distFolder = join(__dirname, '../browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)

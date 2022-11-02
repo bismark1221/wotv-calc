@@ -6,6 +6,7 @@ import { QuestService } from '../../services/quest.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
 import { AuthService } from '../../services/auth.service';
+import { SessionService } from '../../services/session.service';
 
 @Component({
   selector: 'app-quest-list',
@@ -54,6 +55,7 @@ export class QuestListComponent implements OnInit {
     private navService: NavService,
     private authService: AuthService,
     private router: Router,
+    private sessionService: SessionService,
     private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -64,8 +66,9 @@ export class QuestListComponent implements OnInit {
   ngOnInit() {
     this.navService.setTitle('Quests');
 
-    if (sessionStorage.getItem('questsFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('questsFilters'));
+    const questsFilters = this.sessionService.get('questsFilters');
+    if (questsFilters) {
+      this.filters = JSON.parse(questsFilters);
     }
     this.filterChecked();
 
@@ -113,7 +116,7 @@ export class QuestListComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('questsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('questsFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
     this.filterQuests();

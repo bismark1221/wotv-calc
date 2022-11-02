@@ -7,6 +7,7 @@ import { UnitService } from '../../services/unit.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
 import { JobService } from '../../services/job.service';
+import { SessionService } from '../../services/session.service';
 
 import { SharedSearchOptionsModalComponent } from '../../shared/searchOptionsModal/shared.searchOptionsModal.component';
 
@@ -98,6 +99,7 @@ export class UnitListComponent implements OnInit {
     private navService: NavService,
     private simpleModalService: SimpleModalService,
     private toolService: ToolService,
+    private sessionService: SessionService,
     private jobService: JobService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -145,16 +147,18 @@ export class UnitListComponent implements OnInit {
       this.jobs = result.jobs;
       this.costs = result.costs;
 
-      if (sessionStorage.getItem('unitsFilters')) {
-        this.filters = JSON.parse(sessionStorage.getItem('unitsFilters'));
+      const unitsFilters = this.sessionService.get('unitsFilters');
+      if (unitsFilters) {
+        this.filters = JSON.parse(unitsFilters);
 
         if (!this.filters.cost) {
           this.filters.cost = [];
         }
       }
 
-      if (sessionStorage.getItem('unitsCollapsed')) {
-        this.collapsed = JSON.parse(sessionStorage.getItem('unitsCollapsed'));
+      const unitsCollapsed = this.sessionService.get('unitsCollapsed');
+      if (unitsCollapsed) {
+        this.collapsed = JSON.parse(unitsCollapsed);
 
         if (this.collapsed.cost === undefined) {
           this.collapsed.cost = true;
@@ -222,7 +226,7 @@ export class UnitListComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
     this.filterUnits();
@@ -241,7 +245,7 @@ export class UnitListComponent implements OnInit {
     this.filterChecked();
 
     this.filterUnits();
-    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
   }
 
   toggleMainJob() {
@@ -249,7 +253,7 @@ export class UnitListComponent implements OnInit {
     this.filters.subJob = false;
 
     this.filterUnits();
-    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
   }
 
   toggleSubJob() {
@@ -257,21 +261,21 @@ export class UnitListComponent implements OnInit {
     this.filters.subJob = !this.filters.subJob;
 
     this.filterUnits();
-    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
   }
 
   toggleExJob() {
     this.filters.exJob = !this.filters.exJob;
 
     this.filterUnits();
-    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
   }
 
   toggleSecondMasterAbility() {
     this.filters.secondMasterAbility = !this.filters.secondMasterAbility;
 
     this.filterUnits();
-    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
   }
 
   filterChecked() {
@@ -326,13 +330,13 @@ export class UnitListComponent implements OnInit {
 
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
-    sessionStorage.setItem('unitsCollapsed', JSON.stringify(this.collapsed));
+    this.sessionService.set('unitsCollapsed', JSON.stringify(this.collapsed));
   }
 
   unselectAllJobs() {
     this.filters.job = [];
 
-    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
     this.filterUnits();

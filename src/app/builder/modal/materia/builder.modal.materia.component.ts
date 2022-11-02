@@ -136,8 +136,6 @@ export class BuilderModalMateriaComponent extends SimpleModalComponent<null, any
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('materiasFilters', JSON.stringify(this.filters));
-
     this.filterMaterias();
   }
 

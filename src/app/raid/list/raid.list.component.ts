@@ -4,6 +4,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { RaidService } from '../../services/raid.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
+import { SessionService } from '../../services/session.service';
 
 @Component({
   selector: 'app-raid-list',
@@ -41,6 +42,7 @@ export class RaidListComponent implements OnInit {
     private raidService: RaidService,
     private translateService: TranslateService,
     private navService: NavService,
+    private sessionService: SessionService,
     private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -51,12 +53,16 @@ export class RaidListComponent implements OnInit {
   async ngOnInit() {
     this.navService.setTitle('Raids');
 
-    if (sessionStorage.getItem('raidsFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('raidsFilters'));
+    const raidsFilters = this.sessionService.get('raidsFilters');
+    if (raidsFilters) {
+      this.filters = JSON.parse(raidsFilters);
     }
-    if (sessionStorage.getItem('raidsCollapsed')) {
-      this.collapsed = JSON.parse(sessionStorage.getItem('raidsCollapsed'));
+
+    const raidsCollapsed = this.sessionService.get('raidsCollapsed');
+    if (raidsCollapsed) {
+      this.collapsed = JSON.parse(raidsCollapsed);
     }
+
     this.filterChecked();
 
     await this.getRaids();
@@ -95,7 +101,7 @@ export class RaidListComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('raidsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('raidsFilters', JSON.stringify(this.filters));
 
     await this.getRaids();
   }
@@ -112,6 +118,6 @@ export class RaidListComponent implements OnInit {
 
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
-    sessionStorage.setItem('raidsCollapsed', JSON.stringify(this.collapsed));
+    this.sessionService.set('raidsCollapsed', JSON.stringify(this.collapsed));
   }
 }

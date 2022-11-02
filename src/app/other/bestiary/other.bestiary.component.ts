@@ -5,6 +5,7 @@ import { OtherUnitService } from '../../services/otherunit.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
 import { JobService } from '../../services/job.service';
+import { SessionService } from '../../services/session.service';
 
 @Component({
   selector: 'app-other-bestiary',
@@ -52,6 +53,7 @@ export class OtherBestiaryComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private toolService: ToolService,
+    private sessionService: SessionService,
     private jobService: JobService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -62,12 +64,16 @@ export class OtherBestiaryComponent implements OnInit {
   async ngOnInit() {
     this.navService.setTitle('Bestiary');
 
-    if (sessionStorage.getItem('otherUnitsFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('otherUnitsFilters'));
+    const otherUnitsFilters = this.sessionService.get('otherUnitsFilters');
+    if (otherUnitsFilters) {
+      this.filters = JSON.parse(otherUnitsFilters);
     }
-    if (sessionStorage.getItem('otherUnitsCollapsed')) {
-      this.collapsed = JSON.parse(sessionStorage.getItem('otherUnitsCollapsed'));
+
+    const otherUnitsCollapsed = this.sessionService.get('otherUnitsCollapsed');
+    if (otherUnitsCollapsed) {
+      this.collapsed = JSON.parse(otherUnitsCollapsed);
     }
+
     this.filterChecked();
 
     await this.getUnits();
@@ -107,7 +113,7 @@ export class OtherBestiaryComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('otherUnitsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('otherUnitsFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
     await this.getUnits();
@@ -125,6 +131,6 @@ export class OtherBestiaryComponent implements OnInit {
 
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
-    sessionStorage.setItem('otherUnitsCollapsed', JSON.stringify(this.collapsed));
+    this.sessionService.set('otherUnitsCollapsed', JSON.stringify(this.collapsed));
   }
 }

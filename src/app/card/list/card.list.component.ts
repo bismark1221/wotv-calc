@@ -6,6 +6,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { CardService } from '../../services/card.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
+import { SessionService } from '../../services/session.service';
 
 import { SharedSearchOptionsModalComponent } from '../../shared/searchOptionsModal/shared.searchOptionsModal.component';
 
@@ -74,6 +75,7 @@ export class CardListComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private simpleModalService: SimpleModalService,
+    private sessionService: SessionService,
     private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -120,16 +122,18 @@ export class CardListComponent implements OnInit {
     if (Object.keys(options).length === 0) {
       this.costs = result.costs;
 
-      if (sessionStorage.getItem('cardsFilters')) {
-        this.filters = JSON.parse(sessionStorage.getItem('cardsFilters'));
+      const cardsFilters = this.sessionService.get('cardsFilters')
+      if (cardsFilters) {
+        this.filters = JSON.parse(cardsFilters);
 
         if (!this.filters.cost) {
           this.filters.cost = [];
         }
       }
 
-      if (sessionStorage.getItem('cardsCollapsed')) {
-        this.collapsed = JSON.parse(sessionStorage.getItem('cardsCollapsed'));
+      const cardsCollapsed = this.sessionService.get('cardsCollapsed')
+      if (cardsCollapsed) {
+        this.collapsed = JSON.parse(cardsCollapsed);
 
         if (this.collapsed.cost === undefined) {
           this.collapsed.cost = true;
@@ -183,7 +187,7 @@ export class CardListComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('cardsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('cardsFilters', JSON.stringify(this.filters));
 
     this.filterCards();
   }
@@ -224,14 +228,14 @@ export class CardListComponent implements OnInit {
 
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
-    sessionStorage.setItem('cardsCollapsed', JSON.stringify(this.collapsed));
+    this.sessionService.set('cardsCollapsed', JSON.stringify(this.collapsed));
   }
 
   async toggleOnlyActiveSkill() {
     this.filters.onlyActiveSkill = !this.filters.onlyActiveSkill;
 
     this.filterCards();
-    sessionStorage.setItem('cardsFilters', JSON.stringify(this.filters));
+    this.sessionService.set('cardsFilters', JSON.stringify(this.filters));
   }
 
   onSearchBarClose() {

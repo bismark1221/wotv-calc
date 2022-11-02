@@ -8,6 +8,7 @@ import { NavService } from '../../services/nav.service';
 import { AuthService } from '../../services/auth.service';
 import { ToolService } from '../../services/tool.service';
 import { SkillService } from '../../services/skill.service';
+import { SessionService } from '../../services/session.service';
 
 import { Materia } from '../../entities/materia';
 
@@ -110,7 +111,8 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
     private skillService: SkillService,
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
-    private simpleModalService: SimpleModalService
+    private simpleModalService: SimpleModalService,
+    private sessionService: SessionService
   ) {
     this.version = this.navService.getVersion();
   }
@@ -118,12 +120,14 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
   async ngOnInit() {
     this.navService.setTitle('Materia Builder');
 
-    if (sessionStorage.getItem('materiasFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('materiasFilters'));
+    const materiasFilters = this.sessionService.get('materiasFilters');
+    if (materiasFilters) {
+      this.filters = JSON.parse(materiasFilters);
     }
 
-    if (sessionStorage.getItem('materiasCollapsed')) {
-      this.collapsed = JSON.parse(sessionStorage.getItem('materiasCollapsed'));
+    const materiasCollapsed = this.sessionService.get('materiasCollapsed');
+    if (materiasCollapsed) {
+      this.collapsed = JSON.parse(materiasCollapsed);
     }
 
     this.filterChecked();
@@ -198,7 +202,7 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('materiasFilters', JSON.stringify(this.filters));
+    this.sessionService.set('materiasFilters', JSON.stringify(this.filters));
 
     this.filterMaterias();
   }
@@ -223,7 +227,7 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
 
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
-    sessionStorage.setItem('materiasCollapsed', JSON.stringify(this.collapsed));
+    this.sessionService.set('materiasCollapsed', JSON.stringify(this.collapsed));
   }
 
   /***********/

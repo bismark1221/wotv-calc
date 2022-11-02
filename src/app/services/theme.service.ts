@@ -1,5 +1,5 @@
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser, isPlatformServer } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { BehaviorSubject } from 'rxjs';
 
