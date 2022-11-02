@@ -32,7 +32,7 @@ jobs:
       - run: ng version
 
       - name: Build prod
-        run: ng build --configuration production
+        run: npm run build:ssr
 
       - name: Install Sentry-cli
         run: curl -sL https://sentry.io/get-cli/ | bash
@@ -41,21 +41,23 @@ jobs:
         run: cp .github/files/.sentryclirc ~/.sentryclirc
 
       - name: Sentry Release
-        run: sentry-cli releases --org wotv-calc --project wotv-calc files prod upload-sourcemaps dist/browser --rewrite
+        run: sentry-cli releases --org wotv-calc --project wotv-calc files prod upload-sourcemaps dist/wotv-calc/browser --rewrite
 
       - name: Remove sourcemaps
-        run : rm dist/browser/*.map
+        run : rm dist/wotv-calc/browser/*.map
 
       - name: Compress build
-        run : tar -czvf build.tar.gz ./dist
+        run : tar -czvf build.tar.gz ./dist ./.pm2 ./.keys
 
       - name: Copy New Files to server
         run : sudo sshpass -p ${{ secrets.SSH_PASS }} scp -v -o StrictHostKeyChecking=no -P ${{ secrets.SSH_PORT }} -r build.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}:${{ secrets.SSH_TARGET }}
 
       - name: Delete Existing Files
-        run : sudo sshpass -p ${{ secrets.SSH_PASS }} -v ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT}} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} 'rm -rf ${{ secrets.SSH_TARGET }}/dist/*'
+        run : sudo sshpass -p ${{ secrets.SSH_PASS }} -v ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT}} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} 'rm -rf ${{ secrets.SSH_TARGET }}/dist/* ${{ secrets.SSH_TARGET }}/.pm2/* ${{ secrets.SSH_TARGET }}/.keys/*'
         continue-on-error: true
 
       - name: Uncompress new Files
         run : sudo sshpass -p ${{ secrets.SSH_PASS }} -v ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT}} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} 'cd ${{ secrets.SSH_TARGET }} && tar -xzvf build.tar.gz && rm build.tar.gz'
 
+      - name: Reload back process
+        run : sudo sshpass -p ${{ secrets.SSH_PASS }} -v ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT}} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} 'pm2 reload all'
