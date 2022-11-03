@@ -43,7 +43,7 @@ export class EquipmentDetailComponent implements OnInit {
       } else {
         this.formatEquipment();
 
-        this.navService.setTitle(this.equipment.name);
+        this.navService.setSEO(this.equipment.names.en, this.equipment.descriptions.en);
       }
     });
 

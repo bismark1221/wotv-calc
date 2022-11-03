@@ -201,7 +201,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
       }
     });
 
-    this.navService.setTitle('Unit Builder');
+    this.navService.setSEO('Unit Builder', 'Build your unit to see the result before using all your resources in-game. Save and share them to your friends to see if they can do better. You can also use them in the team builder.');
   }
 
   ngAfterViewInit() {

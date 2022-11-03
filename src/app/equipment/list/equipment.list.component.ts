@@ -111,7 +111,7 @@ export class EquipmentListComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Equipment');
+    this.navService.setSEO('Equipment', 'Find all equipment from wotv in one place. Search them by name, skill and multiples filters.');
 
     await this.getEquipments();
 

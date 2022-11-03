@@ -62,7 +62,7 @@ export class OtherBestiaryComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Bestiary');
+    this.navService.setSEO('Bestiary', 'Find all enemies from wotv in one place. Can you beat them all ?');
 
     const otherUnitsFilters = this.sessionService.get('otherUnitsFilters');
     if (otherUnitsFilters) {

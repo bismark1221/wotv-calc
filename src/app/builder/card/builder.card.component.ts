@@ -89,7 +89,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
       }
     });
 
-    this.navService.setTitle('Card Builder');
+    this.navService.setSEO('Card Builder', 'Build your card to see the result before using all your resources in-game. Save them to use them in the unit and team builders.');
   }
 
   ngAfterViewInit() {

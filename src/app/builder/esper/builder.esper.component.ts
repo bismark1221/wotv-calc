@@ -122,7 +122,7 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
       }
     });
 
-    this.navService.setTitle('Esper Builder');
+    this.navService.setSEO('Esper Builder', 'Build your esper to see the result before using all your resources in-game. Save them to use them in the unit and team builders.');
   }
 
   ngAfterViewInit() {

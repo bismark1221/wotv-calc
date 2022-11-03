@@ -140,8 +140,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
         }
       }
     });
-
-    this.navService.setTitle('Team Builder');
+    this.navService.setSEO('Team Builder', 'Build your team to see the result before using all your resources in-game. Save and share them to your friends to see if they can do better, but not to your enemy guild !');
   }
 
   ngAfterViewInit() {

@@ -44,7 +44,7 @@ export class OtherMaterialLookupComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Material Lookup');
+    this.navService.setSEO('Material Lookup', 'What can you craft with each material ? This page is made for you.');
 
     await this.getEquipments();
   }

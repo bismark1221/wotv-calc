@@ -74,7 +74,7 @@ export class OtherMateriaComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Materia');
+    this.navService.setSEO('Materia', 'Ugly page but you have every info for materia (aka Trust Stone). Min and max stats, skills, ... Well every possibilities.');
 
     await this.getMateria();
   }

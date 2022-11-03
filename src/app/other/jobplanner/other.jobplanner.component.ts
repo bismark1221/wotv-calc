@@ -43,7 +43,7 @@ export class OtherJobPlannerComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Job Planner');
+    this.navService.setSEO('Job Planner', 'Here you can find what material you need to max the job of your units.');
 
     await this.getUnits();
   }

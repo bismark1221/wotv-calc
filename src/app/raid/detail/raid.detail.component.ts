@@ -45,7 +45,7 @@ export class RaidDetailComponent implements OnInit {
       } else {
         this.formatRaid();
 
-        this.navService.setTitle(this.raid.bosses[0].name);
+        this.navService.setSEO(this.raid.bosses[0].names.en, this.raid.bosses[0].names.en + 'is a raid in wotv. Find every detail about it, which boss will you fight and what skill can he use.');
       }
     });
 

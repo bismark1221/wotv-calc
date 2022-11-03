@@ -30,7 +30,7 @@ export class OtherTitlesComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Titles');
+    this.navService.setSEO('Titles', 'You want to farm some title ? This page show how you can get each title in-game.');
 
     this.titles = await this.titleService.getTitles();
 

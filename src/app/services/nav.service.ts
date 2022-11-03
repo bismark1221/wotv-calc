@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 import { BehaviorSubject } from 'rxjs';
 
@@ -14,7 +14,8 @@ export class NavService {
 
   constructor(
     private localStorageService: LocalStorageService,
-    private titleService: Title
+    private titleService: Title,
+    private metaService: Meta
   ) {}
 
   updateMenu(status: boolean) {
@@ -47,11 +48,15 @@ export class NavService {
     return formattedRoute;
   }
 
-  setTitle(title) {
+  setSEO(title, description) {
     if (title) {
       this.titleService.setTitle(title + ' - WOTV-CALC');
     } else {
       this.titleService.setTitle('WOTV-CALC');
+    }
+
+    if (description) {
+      this.metaService.updateTag({ name: 'description', content: description });
     }
   }
 }

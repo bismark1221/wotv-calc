@@ -36,7 +36,7 @@ export class HomeComponent {
     private homeService: HomeService,
     private toolService: ToolService
   ) {
-    this.navService.setTitle(null);
+    this.navService.setSEO(null, 'WOTV-Calc is a web app for the Global and Japanese version of WotV. Based on the datamining of War of the Visions, it will helps you to build your team');
 
     this.getUpdate();
 

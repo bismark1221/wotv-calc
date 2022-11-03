@@ -25,7 +25,7 @@ export class ExtraContactComponent {
       this.getTranslation();
     });
 
-    this.navService.setTitle('Contact');
+    this.navService.setSEO('Contact', 'If you need to contact me every method is indicated here.');
   }
 
   private getTranslation() {

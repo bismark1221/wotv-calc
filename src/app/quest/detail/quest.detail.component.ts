@@ -86,7 +86,7 @@ export class QuestDetailComponent implements OnInit {
       } else {
         await this.formatQuest();
 
-        this.navService.setTitle(this.quest.name);
+        this.navService.setSEO(this.quest.names.en, this.quest.names.en + ' is a quest in wotv. Find in which enemies you will fight, their position on the grid, the drops, ...');
       }
     });
   }

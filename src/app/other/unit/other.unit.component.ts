@@ -89,8 +89,9 @@ export class OtherUnitComponent implements OnInit {
 
   getMasterInfos() {
     if (this.otherUnits.length > 0) {
+      this.navService.setSEO(this.otherUnits[0].names.en, this.otherUnits[0].names.en + ' is a foe in wotv. Find in which quest you can beat it, what it drop and what skills he use.');
+
       this.masterInfos.name = this.toolService.getName(this.otherUnits[0]);
-      this.navService.setTitle(this.masterInfos.name);
       this.masterInfos.image = this.otherUnits[0].image;
       this.masterInfos.species = this.otherUnits[0].species;
 

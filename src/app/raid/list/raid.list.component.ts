@@ -51,7 +51,7 @@ export class RaidListComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Raids');
+    this.navService.setSEO('Raids', 'Find all raids from wotv in one place. Can you beat them all ?');
 
     const raidsFilters = this.sessionService.get('raidsFilters');
     if (raidsFilters) {

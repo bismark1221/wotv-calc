@@ -97,7 +97,7 @@ export class UnitDetailComponent implements OnInit {
         this.formatUnit();
         this.getIndexUnit();
 
-        this.navService.setTitle(this.unit.name);
+        this.navService.setSEO(this.unit.names.en, this.unit.descriptions.en);
       }
     });
 

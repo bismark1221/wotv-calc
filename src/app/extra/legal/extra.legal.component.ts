@@ -16,7 +16,7 @@ export class ExtraLegalComponent {
     private translateService: TranslateService,
     private navService: NavService,
   ) {
-    this.navService.setTitle('Legal');
+    this.navService.setSEO('Legal', 'Every legal stuff because we need some.');
 
     this.getTranslation();
 

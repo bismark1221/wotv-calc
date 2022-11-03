@@ -29,6 +29,6 @@ export class OtherSubCardComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Sub Cards Ratio');
+    this.navService.setSEO('Sub Cards Ratio', 'This page is made to show ratio of every effect in card when used as sub card.');
   }
 }

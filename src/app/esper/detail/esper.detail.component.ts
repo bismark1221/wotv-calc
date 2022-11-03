@@ -44,7 +44,7 @@ export class EsperDetailComponent implements OnInit {
       } else {
         this.formatEsper();
 
-        this.navService.setTitle(this.esper.name);
+        this.navService.setSEO(this.esper.names.en, this.esper.descriptions.en);
       }
     });
 

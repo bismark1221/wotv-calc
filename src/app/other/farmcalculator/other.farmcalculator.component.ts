@@ -80,7 +80,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Farm Calculator');
+    this.navService.setSEO('Farm Calculator', 'You don\'t know where item or material drop ? This page is made for you. Just select the item you want and it will show each quest which drop it.');
 
     const farmCalcQuestsFilters = this.sessionService.get('farmCalcQuestsFilters');
     if (farmCalcQuestsFilters) {

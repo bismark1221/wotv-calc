@@ -118,7 +118,7 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Materia Builder');
+    this.navService.setSEO('Materia Builder', 'Build your materia to see the result before using all your resources in-game. Save them to use them in the equipment, unit and team builders. Try your luck with random number to try to get the max stats !');
 
     const materiasFilters = this.sessionService.get('materiasFilters');
     if (materiasFilters) {

@@ -82,7 +82,7 @@ export class EsperListComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Espers');
+    this.navService.setSEO('Espers', 'Find all espers from wotv in one place. Search them by name, skill and multiples filters.');
 
     await this.getEspers();
 

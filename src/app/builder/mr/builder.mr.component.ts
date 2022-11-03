@@ -28,7 +28,7 @@ export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
     this.ranks = await this.masterRanksService.getMRs();
     this.version = this.navService.getVersion();
 
-    this.navService.setTitle('Master Ranks Builder');
+    this.navService.setSEO('Master Ranks Builder', 'Build your master ranks to see the result before using all your resources in-game. Save them to use them in the unit and team builders.');
   }
 
   ngAfterViewInit() {

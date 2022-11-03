@@ -47,7 +47,7 @@ export class CardDetailComponent implements OnInit {
       } else {
         this.formatCard();
 
-        this.navService.setTitle(this.card.name);
+        this.navService.setSEO(this.card.names.en, this.card.descriptions.en);
       }
     });
   }

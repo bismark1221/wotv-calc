@@ -86,7 +86,7 @@ export class CardListComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Cards');
+    this.navService.setSEO('Cards', 'Find all cards from wotv in one place. Search them by name, skill and multiples filters.');
 
     await this.getCards();
 

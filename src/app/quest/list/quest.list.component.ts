@@ -64,7 +64,7 @@ export class QuestListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.navService.setTitle('Quests');
+    this.navService.setSEO('Quests', 'Find all quests from wotv in one place. Can you beat them all ?');
 
     const questsFilters = this.sessionService.get('questsFilters');
     if (questsFilters) {

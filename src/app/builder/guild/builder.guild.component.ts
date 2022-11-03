@@ -28,7 +28,7 @@ export class BuilderGuildComponent implements OnInit, AfterViewInit {
     this.statues = this.guildService.getStatues();
     this.statueNames = Object.keys(this.statues);
 
-    this.navService.setTitle('Guild Builder');
+    this.navService.setSEO('Guild Builder', 'Build your guild statues to see the result before making your team mates focus the wrong one. Save them to use them in the unit and team builders.');
   }
 
   ngAfterViewInit() {

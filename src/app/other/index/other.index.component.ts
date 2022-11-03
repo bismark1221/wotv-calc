@@ -96,7 +96,7 @@ export class OtherIndexComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Index');
+    this.navService.setSEO('Index', 'Which unit have the more attack ? With this page you can compare the maxed stats from each units.');
 
     await this.getUnits();
   }
