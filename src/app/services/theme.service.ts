@@ -14,7 +14,7 @@ export class ThemeService {
 
   constructor(
     private localStorageService: LocalStorageService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: object
   ) {}
 
   initTheme() {

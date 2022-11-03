@@ -17,7 +17,7 @@ export class AppComponent {
     translate: TranslateService,
     private angulartics: Angulartics2,
     private localStorageService: LocalStorageService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     angulartics2GoogleAnalytics.startTracking();
 

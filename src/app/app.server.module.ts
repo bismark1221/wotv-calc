@@ -4,7 +4,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
-import { UniversalRelativeInterceptor } from './universal-relative.interceptor'
+import { UniversalRelativeInterceptor } from './universal-relative.interceptor';
 
 @NgModule({
   imports: [

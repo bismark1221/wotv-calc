@@ -122,7 +122,7 @@ export class CardListComponent implements OnInit {
     if (Object.keys(options).length === 0) {
       this.costs = result.costs;
 
-      const cardsFilters = this.sessionService.get('cardsFilters')
+      const cardsFilters = this.sessionService.get('cardsFilters');
       if (cardsFilters) {
         this.filters = JSON.parse(cardsFilters);
 
@@ -131,7 +131,7 @@ export class CardListComponent implements OnInit {
         }
       }
 
-      const cardsCollapsed = this.sessionService.get('cardsCollapsed')
+      const cardsCollapsed = this.sessionService.get('cardsCollapsed');
       if (cardsCollapsed) {
         this.collapsed = JSON.parse(cardsCollapsed);
 
