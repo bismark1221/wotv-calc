@@ -61,6 +61,7 @@ import { InventoryService } from './services/inventory.service';
 import { SessionService } from './services/session.service';
 
 import { SharedModule } from './shared/shared.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export function createTranslateLoader(http: HttpClient) {
@@ -108,7 +109,11 @@ export function createTranslateLoader(http: HttpClient) {
     }}),
     NgxPopperjsModule,
     BarRatingModule,
-    SharedModule
+    SharedModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [
     UnitService,

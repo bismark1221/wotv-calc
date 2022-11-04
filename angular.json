@@ -19,7 +19,8 @@
             "assets": [
               "src/assets",
               "src/robots.txt",
-              "src/sitemap.xml"
+              "src/sitemap.xml",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.css",
@@ -36,7 +37,9 @@
             "allowedCommonJsDependencies": [
               "rxjs/add/operator/catch",
               "rxjs/add/operator/map"
-            ]
+            ],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -93,7 +96,8 @@
               "./node_modules/ngx-ui-switch/ui-switch.component.css"
             ],
             "assets": [
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ]
           }
         },
