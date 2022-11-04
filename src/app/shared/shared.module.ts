@@ -8,6 +8,7 @@ import { NgxPopperjsModule } from 'ngx-popperjs';
 import { SharedRoundDownPipe } from './pipes/shared.roundDown.pipe';
 import { SharedSafeHtmlPipe } from './pipes/shared.safeHtml.pipe';
 import { SharedHighlightSearchPipe } from './pipes/shared.highlightSearch.pipe';
+import { SharedReplacePipe } from './pipes/shared.replace.pipe';
 
 import { SharedCardComponent } from './card/shared.card.component';
 import { SharedItemComponent } from './item/shared.item.component';
@@ -30,6 +31,7 @@ import { SharedSearchOptionsModalComponent } from './searchOptionsModal/shared.s
     SharedRoundDownPipe,
     SharedSafeHtmlPipe,
     SharedHighlightSearchPipe,
+    SharedReplacePipe,
     SharedCardComponent,
     SharedItemComponent,
     SharedSkillRowComponent,
@@ -44,6 +46,7 @@ import { SharedSearchOptionsModalComponent } from './searchOptionsModal/shared.s
     SharedRoundDownPipe,
     SharedSafeHtmlPipe,
     SharedHighlightSearchPipe,
+    SharedReplacePipe,
     SharedCardComponent,
     SharedItemComponent,
     SharedSkillRowComponent,

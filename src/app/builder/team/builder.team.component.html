@@ -377,7 +377,7 @@
       </tr>
       <tbody *ngFor="let statType of getAvailableStatType(unitPos).text">
         <tr>
-          <td colspan="4">{{ statType }}</td>
+          <td colspan="4">{{ statType | replace : '_' : ' ' }}</td>
         </tr>
         <tr>
           <td colspan="4">{{ unit.stats[statType].total }}</td>
