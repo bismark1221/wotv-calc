@@ -136,13 +136,19 @@ export class EquipmentDetailComponent implements OnInit {
                 skillCond.items.forEach((itemCond, itemCondIndex) => {
                   if (skillCond.type === 'unit') {
                     const unitCond = this.equipment.rawUnits.find(searchedUnit => searchedUnit.dataId === itemCond);
-                    skillCond.items[itemCondIndex] = unitCond.image;
+                    skillCond.items[itemCondIndex] = {
+                      image: unitCond.image,
+                      name: this.toolService.getName(unitCond)
+                    };
                   }
 
                   if (skillCond.type === 'mainjob') {
                     const jobCond = this.equipment.rawJobs.find(searchedJob => searchedJob.dataId === itemCond);
                     if (jobCond) {
-                      skillCond.items[itemCondIndex] = jobCond.image;
+                      skillCond.items[itemCondIndex] = {
+                        image: jobCond.image,
+                        name: this.toolService.getName(jobCond)
+                      };
                     }
                   }
                 });

@@ -50,7 +50,14 @@ export class JobService {
       job.constructFromJson(rawJob, this.translateService);
 
       const tableJob = job.dataId.split('_');
-      const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2] + (tableJob[3] && tableJob[3] === '01' ? '_01' : '');
+      let genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
+
+      if (tableJob[3]) {
+        if (['FIRE', 'ICE', 'WIND', 'SOIL', 'THUN', 'WATER', 'WATR', 'SHIN', 'SHINE', 'DARK'].indexOf(tableJob[3]) === -1) {
+          genericDataId += '_' + tableJob[3];
+        }
+      }
+
       job.dataId = genericDataId;
 
       if (!uniqJobs.find(searchedJob => searchedJob.dataId === genericDataId)) {
