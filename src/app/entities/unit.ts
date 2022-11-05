@@ -1146,6 +1146,8 @@ export class Unit {
   }
 
   private calculateEquipmentsStats() {
+
+
     const statsType = [];
     this.imbue = null;
 
@@ -1236,7 +1238,9 @@ export class Unit {
                   this.stats[effect.type].equipmentBuff.negative = value;
                 }
 
-                statsType.push(effect.type);
+                if (statsType.indexOf(effect.type) === -1) {
+                  statsType.push(effect.type);
+                }
               } else {
                 this.imbue = effect;
                 this.imbue.effectsHtml = skill.effectsHtml;
