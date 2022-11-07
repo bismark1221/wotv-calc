@@ -185,7 +185,8 @@ export class UnitService {
       }
     }
 
-    if (unitCanEquip && filters.equipment.weaponsGroup && filters.equipment.weaponsGroup.length > 0) {
+    if (!unitCanEquip && filters.equipment.weaponsGroup && filters.equipment.weaponsGroup.length > 0) {
+      unitCanEquip = true;
       let weaponGroupFound = false;
       let i = 0;
       const version = this.navService.getVersion();
@@ -211,7 +212,8 @@ export class UnitService {
       }
     }
 
-    if (unitCanEquip && filters.equipment.armor && filters.equipment.armor.length > 0) {
+    if (!unitCanEquip && filters.equipment.armor && filters.equipment.armor.length > 0) {
+      unitCanEquip = true;
       let armorFound = false;
       let i = 0;
 
