@@ -31,7 +31,8 @@ export class UnitListComponent implements OnInit {
     job: [],
     limited: [],
     equipment: {
-      weapon: 'ALL',
+      weapon: [],
+      weaponsGroup: [],
       armor: []
     },
     cost: [],
@@ -47,7 +48,9 @@ export class UnitListComponent implements OnInit {
     job: [],
     limited: [],
     cost: [],
-    armor: []
+    armor: [],
+    weapon: [],
+    weaponsGroup: []
   };
 
   collapsed = {
@@ -76,6 +79,92 @@ export class UnitListComponent implements OnInit {
     'water',
     'light',
     'dark'
+  ];
+
+  weapons = [
+    {
+      id: 'AXE',
+      label: 'AXE'
+    },
+    {
+      id: 'BOOK',
+      label: 'BOOK'
+    },
+    {
+      id: 'BOOMERANG',
+      label: 'BOOMERANG'
+    },
+    {
+      id: 'BOW',
+      label: 'BOW'
+    },
+    {
+      id: 'DAGGER',
+      label: 'DAGGER'
+    },
+    {
+      id: 'FIST',
+      label: 'FIST'
+    },
+    {
+      id: 'GLOVE',
+      label: 'GLOVE'
+    },
+    {
+      id: 'GREATSWORD',
+      label: 'GREAT SWORD'
+    },
+    {
+      id: 'GUN',
+      label: 'GUN'
+    },
+    {
+      id: 'KATANA',
+      label: 'KATANA'
+    },
+    {
+      id: 'MACE',
+      label: 'MACE'
+    },
+    {
+      id: 'NINJABLADE',
+      label: 'NINJA BLADE'
+    },
+    {
+      id: 'ROD',
+      label: 'ROD'
+    },
+    {
+      id: 'SPEAR',
+      label: 'SPEAR'
+    },
+    {
+      id: 'SWORD',
+      label: 'SWORD'
+    }
+  ];
+
+  weaponsGroups = [
+    {
+      id: 'SWORDA',
+      label: 'Sword Group A'
+    },
+    {
+      id: 'SWORDB',
+      label: 'Sword Group B'
+    },
+    {
+      id: 'SWORDC',
+      label: 'Sword Group C'
+    },
+    {
+      id: 'STAFFA',
+      label: 'Rod Group A'
+    },
+    {
+      id: 'STAFFB',
+      label: 'Rod Group B'
+    }
   ];
 
   armors = [
@@ -181,7 +270,8 @@ export class UnitListComponent implements OnInit {
       + this.filters.element.length
       + this.filters.job.length
       + this.filters.limited.length
-      + (this.filters.equipment.weapon !== 'ALL' ? 1 : 0)
+      + this.filters.equipment.weapon.length
+      + this.filters.equipment.weaponsGroup.length
       + this.filters.equipment.armor.length
       + this.filters.cost.length
       + (this.filters.mainJob ? 1 : 0)
@@ -233,15 +323,12 @@ export class UnitListComponent implements OnInit {
   }
 
   filterEquipment(type, value) {
-    if (type === 'armor') {
-      if (this.filters.equipment.armor.indexOf(value) === -1) {
-        this.filters.equipment.armor.push(value);
-      } else {
-        this.filters.equipment.armor.splice(this.filters.equipment.armor.indexOf(value), 1);
-      }
+    if (this.filters.equipment[type].indexOf(value) === -1) {
+      this.filters.equipment[type].push(value);
     } else {
-      this.filters.equipment.weapon = value;
+      this.filters.equipment[type].splice(this.filters.equipment[type].indexOf(value), 1);
     }
+
     this.filterChecked();
 
     this.filterUnits();
@@ -308,6 +395,22 @@ export class UnitListComponent implements OnInit {
         this.isFilterChecked.armor[armor] = false;
       } else {
         this.isFilterChecked.armor[armor] = true;
+      }
+    });
+
+    this.weapons.forEach(weapon => {
+      if (this.filters.equipment.weapon.indexOf(weapon.id) === -1) {
+        this.isFilterChecked.weapon[weapon.id] = false;
+      } else {
+        this.isFilterChecked.weapon[weapon.id] = true;
+      }
+    });
+
+    this.weaponsGroups.forEach(weaponsGroup => {
+      if (this.filters.equipment.weaponsGroup.indexOf(weaponsGroup.id) === -1) {
+        this.isFilterChecked.weaponsGroup[weaponsGroup.id] = false;
+      } else {
+        this.isFilterChecked.weaponsGroup[weaponsGroup.id] = true;
       }
     });
 

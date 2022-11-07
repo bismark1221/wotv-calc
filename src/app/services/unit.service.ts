@@ -21,6 +21,9 @@ import { AuthService } from './auth.service';
 import { ToolService } from './tool.service';
 import { ApiService } from './api.service';
 
+import { GL_JOB_GROUP } from '../data/gl/jobGroup';
+import { JP_JOB_GROUP } from '../data/jp/jobGroup';
+
 @Injectable()
 export class UnitService {
   private JP_units: Unit[];
@@ -29,6 +32,11 @@ export class UnitService {
 
   private lvTbl = [0, 256, 1841, 5060, 10168, 17371, 26830, 38661, 52940, 69706, 88964, 110688, 134825, 161299, 190014, 220858, 253705, 288418, 324853, 362860, 402286, 442978, 484782, 527547, 571125, 615372, 660149, 705322, 750764, 796354, 850011, 911367, 980075, 1055809, 1138261, 1227141, 1322175, 1423105, 1529686, 1641686, 1758885, 1881074, 2008055, 2139639, 2275646, 2415905, 2560252, 2708530, 2860589, 3016285, 3175480, 3338041, 3503840, 3672754, 3844664, 4019456, 4197018, 4377243, 4560026, 4745266, 4943725, 5155044, 5378891, 5614957, 5862956, 6122623, 6393712, 6675996, 6969265, 7273325, 7587997, 7913115, 8248527, 8594093, 8949685, 9315185, 9690486, 10075489, 10470105, 10874253, 11278159, 11682129, 12086445, 12491365, 12897126, 13303945, 13712021, 14121536, 14532657, 14945535, 15360309, 15777105, 16196037, 16617209, 17040715, 17466640, 17895061, 18326047, 18759660, 19195955, 19660007, 20155469, 20682486, 21241240, 21831948, 22454862, 23110270, 23798495, 24519896, 25274868, 26080514, 26938454, 27850414, 28818234, 29843872, 30929412, 32077072, 33289209, 34568330, 35917100, 35917101];
   private limitLvTbl = [0, 670, 2385, 5345, 9734, 15728, 23500, 33223, 45073, 59232, 75890, 95247, 117515, 142919, 171699, 204111, 240431, 280954, 325998, 375907];
+
+  jobGroups = {
+    GL: GL_JOB_GROUP,
+    JP: JP_JOB_GROUP
+  };
 
   constructor(
     private translateService: TranslateService,
@@ -134,7 +142,7 @@ export class UnitService {
             possbibleToAdd = this.unitHasJob(unit, filters);
           }
 
-          if (possbibleToAdd && filters.equipment && (filters.equipment.weapon !== 'ALL' || (filters.equipment.armor && filters.equipment.armor.length > 0))) {
+          if (possbibleToAdd && filters.equipment && ((filters.equipment.weapon && filters.equipment.weapon.length > 0) || (filters.equipment.weaponsGroup && filters.equipment.weaponsGroup.length > 0) || (filters.equipment.armor && filters.equipment.armor.length > 0))) {
             possbibleToAdd = this.unitCanEquipWithApi(unit, filters, jobs);
           }
 
@@ -160,11 +168,50 @@ export class UnitService {
     let unitCanEquip = true;
     const job = jobs.find(searchedJob => searchedJob.dataId === unit.jobs[0]);
 
-    if (filters.equipment.weapon !== 'ALL' && job.equipments.weapons.indexOf(filters.equipment.weapon) === -1) {
-      unitCanEquip = false;
+    if (filters.equipment.weapon && filters.equipment.weapon.length > 0) {
+      let weaponFound = false;
+      let i = 0;
+
+      while (!weaponFound && i <= filters.equipment.weapon.length - 1) {
+        if (job.equipments.weapons.indexOf(filters.equipment.weapon[i]) !== -1) {
+          weaponFound = true;
+        }
+
+        i++;
+      }
+
+      if (!weaponFound) {
+        unitCanEquip = false;
+      }
     }
 
-    if (filters.equipment.armor && filters.equipment.armor.length > 0) {
+    if (unitCanEquip && filters.equipment.weaponsGroup && filters.equipment.weaponsGroup.length > 0) {
+      let weaponGroupFound = false;
+      let i = 0;
+      const version = this.navService.getVersion();
+      const jobGroups = this.jobGroups[version];
+
+      while (!weaponGroupFound && i <= filters.equipment.weaponsGroup.length - 1) {
+        if (jobGroups[filters.equipment.weaponsGroup[i]]) {
+          let j = 0;
+          while(!weaponGroupFound && j <= jobGroups[filters.equipment.weaponsGroup[i]].length - 1) {
+            if (this.unitHasJob(unit, {job: [jobGroups[filters.equipment.weaponsGroup[i]][j]], subjob: false, mainJob: true})) {
+              weaponGroupFound = true;
+            }
+
+            j++;
+          }
+        }
+
+        i++;
+      }
+
+      if (!weaponGroupFound) {
+        unitCanEquip = false;
+      }
+    }
+
+    if (unitCanEquip && filters.equipment.armor && filters.equipment.armor.length > 0) {
       let armorFound = false;
       let i = 0;
 
