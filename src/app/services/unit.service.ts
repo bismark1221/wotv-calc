@@ -167,8 +167,11 @@ export class UnitService {
   private unitCanEquipWithApi(unit, filters, jobs) {
     let unitCanEquip = true;
     const job = jobs.find(searchedJob => searchedJob.dataId === unit.jobs[0]);
+    const hasWeaponFilter = filters.equipment.weapon && filters.equipment.weapon.length > 0;
+    const hasWeaponGroupFilter = filters.equipment.weaponsGroup && filters.equipment.weaponsGroup.length > 0;
+    const hasArmorFilter = filters.equipment.armor && filters.equipment.armor.length > 0;
 
-    if (filters.equipment.weapon && filters.equipment.weapon.length > 0) {
+    if (hasWeaponFilter) {
       let weaponFound = false;
       let i = 0;
 
@@ -185,7 +188,9 @@ export class UnitService {
       }
     }
 
-    if (!unitCanEquip && filters.equipment.weaponsGroup && filters.equipment.weaponsGroup.length > 0) {
+    if ((!unitCanEquip || (unitCanEquip && !hasWeaponFilter))
+      && hasWeaponGroupFilter
+    ) {
       unitCanEquip = true;
       let weaponGroupFound = false;
       let i = 0;
@@ -212,7 +217,9 @@ export class UnitService {
       }
     }
 
-    if (!unitCanEquip && filters.equipment.armor && filters.equipment.armor.length > 0) {
+    if ((!unitCanEquip || (unitCanEquip && !hasWeaponFilter && !hasWeaponGroupFilter))
+      && hasArmorFilter
+    ) {
       unitCanEquip = true;
       let armorFound = false;
       let i = 0;

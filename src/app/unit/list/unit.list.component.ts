@@ -147,23 +147,23 @@ export class UnitListComponent implements OnInit {
   weaponsGroups = [
     {
       id: 'SWORDA',
-      label: 'Sword Group A'
+      label: 'Sword (Red Mage, etc)'
     },
     {
       id: 'SWORDB',
-      label: 'Sword Group B'
+      label: 'Sword (Warrior, etc)'
     },
     {
       id: 'SWORDC',
-      label: 'Sword Group C'
+      label: 'Sword (Knight, etc)'
     },
     {
       id: 'STAFFA',
-      label: 'Rod Group A'
+      label: 'Staff (Black Mage, etc)'
     },
     {
       id: 'STAFFB',
-      label: 'Rod Group B'
+      label: 'Staff (Devout, etc)'
     }
   ];
 
@@ -242,6 +242,14 @@ export class UnitListComponent implements OnInit {
 
         if (!this.filters.cost) {
           this.filters.cost = [];
+        }
+
+        if (!this.filters.equipment.weaponsGroup) {
+          this.filters.equipment.weaponsGroup = [];
+        }
+
+        if (!Array.isArray(this.filters.equipment.weapon)) {
+          this.filters.equipment.weapon = [];
         }
       }
 
