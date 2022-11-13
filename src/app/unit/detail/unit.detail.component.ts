@@ -353,6 +353,26 @@ export class UnitDetailComponent implements OnInit {
         }
       });
 
+      if (this.unit.dream && this.unit.dream.skills) {
+        for (const dreamSkillId of this.unit.dream.skills) {
+          let dreamSkill = this.unit.rawSkills.find(searchedSkill => searchedSkill.dataId === dreamSkillId);
+          if (dreamSkill) {
+            dreamSkill.upgradeHtml = this.skillService.formatUpgrade(this.unit, dreamSkill);
+            dreamSkill.basedHtml = dreamSkill.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + dreamSkill.based.toLowerCase() + '.webp\' />' : '';
+
+            dreamSkill.effectsHtml = this.skillService.formatEffects(this.unit, dreamSkill);
+
+            dreamSkill.damageHtml = this.skillService.formatDamage(this.unit, dreamSkill, dreamSkill.damage);
+
+            this.rangeService.formatRange(this.unit, dreamSkill);
+            dreamSkill.upgrades = [];
+            dreamSkill = this.addUpgrade(dreamSkill);
+
+            this.unit.formattedDreamSkill.push(dreamSkill);
+          }
+        }
+      }
+
       this.grid = this.gridService.generateUnitGrid(this.unit, 800, this.unit.exJobs && this.unit.exJobs.length > 0);
     }
   }

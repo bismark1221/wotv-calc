@@ -154,6 +154,23 @@
         </tbody>
       </table>
 
+      <table class="masterSkillTable" *ngIf="unit.dream && unit.dream.skills">
+        <tbody>
+          <tr>
+            <th>Dream Ability</th>
+          </tr>
+          <tr *ngFor="let dreamSkill of unit.formattedDreamSkill">
+            <td>
+              <div *ngFor="let effect of dreamSkill.effectsHtml.before" [innerHTML]="effect"></div>
+              <div *ngFor="let effect of dreamSkill.effectsHtml.after" [innerHTML]="effect"></div>
+              <div *ngIf="dreamSkill.upgradeHtml !== ''">
+                {{ dreamSkill.upgradeHtml }}
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
       <table class="descriptionSkillTable">
         <tbody>
           <tr>
@@ -373,6 +390,46 @@
             <td colspan="11" *ngIf="unit.remainingExBuffs.length > 0">
               <div *ngFor="let buff of unit.remainingExBuffs">{{ buff }}</div>
             </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="statsTable" *ngIf="unit.dream && unit.dream.stats">
+        <tbody>
+          <tr>
+            <th colspan="14">Dream Stats</th>
+          </tr>
+          <tr>
+            <th class="sub">HP</th>
+            <th class="sub">TP</th>
+            <th class="sub">AP</th>
+            <th class="sub">ATK</th>
+            <th class="sub">DEF</th>
+            <th class="sub">MAG</th>
+            <th class="sub">SPR</th>
+            <th class="sub">AGI</th>
+            <th class="sub">DEX</th>
+            <th class="sub">LUCK</th>
+            <th class="sub">ACCURACY</th>
+            <th class="sub">EVADE</th>
+            <th class="sub">CRITIC RATE</th>
+            <th class="sub">CRITIC EVADE</th>
+          </tr>
+          <tr>
+            <td>{{ unit.dream.stats.HP }}</td>
+            <td>{{ unit.dream.stats.TP }}</td>
+            <td>{{ unit.dream.stats.AP }}</td>
+            <td>{{ unit.dream.stats.ATK }}</td>
+            <td>{{ unit.dream.stats.DEF }}</td>
+            <td>{{ unit.dream.stats.MAG }}</td>
+            <td>{{ unit.dream.stats.SPR }}</td>
+            <td>{{ unit.dream.stats.AGI }}</td>
+            <td>{{ unit.dream.stats.DEX }}</td>
+            <td>{{ unit.dream.stats.LUCK }}</td>
+            <td>{{ unit.dream.stats.ACCURACY }}</td>
+            <td>{{ unit.dream.stats.EVADE }}</td>
+            <td>{{ unit.dream.stats.CRITIC_RATE }}</td>
+            <td>{{ unit.dream.stats.CRITIC_EVADE }}</td>
           </tr>
         </tbody>
       </table>

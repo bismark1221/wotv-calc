@@ -29,7 +29,7 @@ export class Unit {
     }
   ];
   exJobs = [];
-  dreamJobs = [];
+  dream = {};
 
   skills: Skill[] = [new Skill()];
   buffs = [];
@@ -193,8 +193,6 @@ export class Unit {
   upgradeActivatedFromMasterSKill = false;
   hasGetUpgradeFromMasterSkill = null;
 
-  formattedDreamSkills = [];
-
   // Only for quests/enemies
   species = '';
   type = '';
@@ -213,7 +211,7 @@ export class Unit {
     this.descriptions = unit.descriptions;
     this.jobs = unit.jobs;
     this.exJobs = unit.exJobs;
-    //this.dreamJobs = unit.dreamJobs;
+    this.dream = unit.dream;
     this.skills = unit.skills;
     this.buffs = unit.buffs;
     this.stats = unit.stats;
@@ -310,9 +308,9 @@ export class Unit {
       });
     }
 
-    if (this.maxLevel === 120 && this.dreamJobs.length > 0) {
-      this.maxLevel += 20;
-    }
+    // if (this.maxLevel === 120 && this.dream['stats']) {
+    //   this.maxLevel += 20;
+    // }
 
     if (this.level > this.maxLevel) {
       this.level = this.maxLevel;
