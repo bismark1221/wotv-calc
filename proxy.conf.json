@@ -1,9 +1,9 @@
 {
   "/api/": {
-    "target": "https://localhost:3000/",
+    "target": "https://wotv-calc.com/",
     "secure": false,
     "pathRewrite": {
-      "^/api/": "/"
+      "^/api/": "/api/"
     }
   }
 }
