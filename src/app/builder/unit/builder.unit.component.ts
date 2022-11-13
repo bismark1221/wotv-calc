@@ -42,6 +42,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   showSave = false;
   showStatsDetail = false;
   showBuffsDetail = false;
+  showDreamDetail = false;
 
   isCollapsedMainJob = true;
   isCollapsedSubJob = true;
@@ -60,6 +61,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     {type: 'board', translate: 'Board'},
     {type: 'support', translate: 'Support'},
     {type: 'masterSkill', translate: 'Master Skill'},
+    {type: 'dream', translate: 'Dream'},
     {type: 'esper', translate: 'Esper'},
     {type: 'card', translate: 'Card'},
     {type: 'cardParty', translate: 'Card Party'},
@@ -73,6 +75,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     {type: 'board', translate: 'Board'},
     {type: 'support', translate: 'Support'},
     {type: 'masterSkill', translate: 'Master Skill'},
+    {type: 'dream', translate: 'Dream'},
     {type: 'esper', translate: 'Esper'},
     {type: 'card', translate: 'Card'},
     {type: 'cardParty', translate: 'Card Party'},

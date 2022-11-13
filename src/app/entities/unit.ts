@@ -29,6 +29,7 @@ export class Unit {
     }
   ];
   exJobs = [];
+  dreamJobs = [];
 
   skills: Skill[] = [new Skill()];
   buffs = [];
@@ -42,6 +43,8 @@ export class Unit {
       support: 0,
       masterSkill: 0,
       teamMasterSkill: 0,
+      dream: 0,
+      dreamSkill: 0,
       esper: 0,
       card: 0,
       cardParty: 0,
@@ -67,6 +70,8 @@ export class Unit {
       support: 0,
       masterSkill: 0,
       teamMasterSkill: 0,
+      dream: 0,
+      dreamSkill: 0,
       esper: 0,
       card: 0,
       cardParty: 0,
@@ -182,10 +187,13 @@ export class Unit {
   formattedLimit;
   formattedAttack;
   formattedMasterSkill = [];
+  formattedDreamSkill = [];
   version;
   hasUpgradeFromMasterSKill = false;
   upgradeActivatedFromMasterSKill = false;
   hasGetUpgradeFromMasterSkill = null;
+
+  formattedDreamSkills = [];
 
   // Only for quests/enemies
   species = '';
@@ -205,6 +213,7 @@ export class Unit {
     this.descriptions = unit.descriptions;
     this.jobs = unit.jobs;
     this.exJobs = unit.exJobs;
+    //this.dreamJobs = unit.dreamJobs;
     this.skills = unit.skills;
     this.buffs = unit.buffs;
     this.stats = unit.stats;
@@ -301,6 +310,10 @@ export class Unit {
       });
     }
 
+    if (this.maxLevel === 120 && this.dreamJobs.length > 0) {
+      this.maxLevel += 20;
+    }
+
     if (this.level > this.maxLevel) {
       this.level = this.maxLevel;
       this.changeLevel();
@@ -383,6 +396,8 @@ export class Unit {
       this.maxNodes();
     }
 
+    this.updateDreamSkill();
+
     this.calculateTotalStats();
     this.getAvailableSupportNodes();
     this.getAvailableCounterNodes();
@@ -398,6 +413,12 @@ export class Unit {
     }
 
     this.manageUpgradeFromMasterSkill();
+  }
+
+  private updateDreamSkill() {
+    if (this.level > 120) {
+
+    }
   }
 
   private hasUpgradeFromMasterSkill() {
@@ -536,6 +557,8 @@ export class Unit {
           support: 0,
           masterSkill: 0,
           teamMasterSkill: 0,
+          dream: 0,
+          dreamSkill: 0,
           esper: 0,
           card: 0,
           cardParty: 0,
@@ -561,6 +584,8 @@ export class Unit {
           support: 0,
           masterSkill: 0,
           teamMasterSkill: 0,
+          dream: 0,
+          dreamSkill: 0,
           esper: 0,
           card: 0,
           cardParty: 0,
@@ -1519,6 +1544,8 @@ export class Unit {
         support: 0,
         masterSkill: 0,
         teamMasterSkill: 0,
+        dream: 0,
+        dreamSkill: 0,
         esper: 0,
         card: 0,
         cardParty: 0,
@@ -1585,6 +1612,14 @@ export class Unit {
 
     if (this.stats.INITIAL_AP.materia) {
       this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.materia;
+    }
+
+    if (this.stats.INITIAL_AP.dream) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.dream;
+    }
+
+    if (this.stats.INITIAL_AP.dreamSkill) {
+      this.stats.INITIAL_AP.total += this.stats.INITIAL_AP.dreamSkill;
     }
   }
 
