@@ -330,8 +330,12 @@
   padding: 0;
 }
 
-.statsTable, .skillsTable {
+.statsTable, .skillsTable, .dreamTable {
   width: 100%;
+}
+
+.dreamTable {
+  margin-top: 5px;
 }
 
 .btn-detail {
@@ -415,7 +419,7 @@
   margin-top: 20px;
 }
 
-tr.disable {
+tr.disable, table.disable {
   display: none;
 }
 

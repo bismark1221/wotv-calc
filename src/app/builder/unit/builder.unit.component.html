@@ -517,7 +517,31 @@
     </table>
 
 
-    <button class="btn btn-sub btn-detail btn-show-dream" (click)="showHideDetail('Dream')">Dream Detail</button>
+    <button class="btn btn-sub btn-detail btn-show-dream" (click)="showHideDetail('Dream')" *ngIf="unit.dream && unit.dream.stats">Dream Stats Detail</button>
+    <table class="dreamTable" *ngIf="unit.dream && unit.dream.statsType" [ngClass]="{'disable': !showDreamDetail}">
+      <tbody>
+        <tr>
+          <th colspan="14">Dream Stats</th>
+        </tr>
+        <tr>
+          <th class="sub" *ngFor="let i of [0, 1, 2, 3, 4, 5, 6]">{{ unit.dream.statsType[i] | replace : '_' : ' ' }}</th>
+        </tr>
+        <tr>
+          <td *ngFor="let i of [0, 1, 2, 3, 4, 5, 6]">
+            <input class="dreamInput" type="number" min="0" max="{{ unit.dream.stats[unit.dream.statsType[i]] }}" [(ngModel)]="unit.dream.selectedStats[unit.dream.statsType[i]]" (ngModelChange)="updatedDreamStat(unit.dream.statsType[i])"/> / {{ unit.dream.stats[unit.dream.statsType[i]] }}
+          </td>
+        </tr>
+        <tr>
+          <th class="sub" *ngFor="let i of [7, 8, 9, 10, 11, 12, 13]">{{ unit.dream.statsType[i] | replace : '_' : ' ' }}</th>
+        </tr>
+        <tr>
+          <td *ngFor="let i of [7, 8, 9, 10, 11, 12, 13]">
+            <input class="dreamInput" type="number" min="0" max="{{ unit.dream.stats[unit.dream.statsType[i]] }}" [(ngModel)]="unit.dream.selectedStats[unit.dream.statsType[i]]" (ngModelChange)="updatedDreamStat(unit.dream.statsType[i])"/> / {{ unit.dream.stats[unit.dream.statsType[i]] }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
 
 
     <div class="skillsBlock">

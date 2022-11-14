@@ -62,6 +62,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     {type: 'support', translate: 'Support'},
     {type: 'masterSkill', translate: 'Master Skill'},
     {type: 'dream', translate: 'Dream'},
+    {type: 'dreamSkill', translate: 'Dream Skill'},
     {type: 'esper', translate: 'Esper'},
     {type: 'card', translate: 'Card'},
     {type: 'cardParty', translate: 'Card Party'},
@@ -76,6 +77,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     {type: 'support', translate: 'Support'},
     {type: 'masterSkill', translate: 'Master Skill'},
     {type: 'dream', translate: 'Dream'},
+    {type: 'dreamSkill', translate: 'Dream Skill'},
     {type: 'esper', translate: 'Esper'},
     {type: 'card', translate: 'Card'},
     {type: 'cardParty', translate: 'Card Party'},
@@ -716,5 +718,17 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.showOnlyOtherVersion = !this.showOnlyOtherVersion;
 
     this.filterUnits();
+  }
+
+  updatedDreamStat(type) {
+    if (this.unit.dream.selectedStats[type] === null
+      || !Number.isInteger(this.unit.dream.selectedStats[type])
+      || this.unit.dream.selectedStats[type] < 0
+      || this.unit.dream.selectedStats[type] > this.unit.dream.stats[type]
+    ) {
+      this.unit.dream.selectedStats[type] = 0;
+    }
+
+    this.unitService.changeLevel();
   }
 }

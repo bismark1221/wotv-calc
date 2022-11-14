@@ -29,7 +29,12 @@ export class Unit {
     }
   ];
   exJobs = [];
-  dream = {};
+  dream = {
+    statsType: [],
+    stats: {},
+    selectedStats: {},
+    skills: []
+  };
 
   skills: Skill[] = [new Skill()];
   buffs = [];
@@ -308,9 +313,9 @@ export class Unit {
       });
     }
 
-    // if (this.maxLevel === 120 && this.dream['stats']) {
-    //   this.maxLevel += 20;
-    // }
+    if (this.maxLevel === 120 && this.dream['stats']) {
+      this.maxLevel += 20;
+    }
 
     if (this.level > this.maxLevel) {
       this.level = this.maxLevel;
@@ -394,6 +399,7 @@ export class Unit {
       this.maxNodes();
     }
 
+    this.verifyDreamStats();
     this.updateDreamSkill();
 
     this.calculateTotalStats();
@@ -495,7 +501,8 @@ export class Unit {
         this.stats[stat].base = Math.floor(min + ((max - min) / ((this.realMaxLevel ? this.realMaxLevel : 99) - 1) * (this.level - 1)));
 
         if (this.exJobs.length > 0 && this.jobsData && this.jobsData[0].level > 15 && this.level > 99) {
-          this.stats[stat].base = Math.floor(max + (((ex - max) / 21) * (this.level - 99)));
+          const exJobLevel = this.level > 120 ? 120 : this.level;
+          this.stats[stat].base = Math.floor(max + (((ex - max) / 21) * (exJobLevel - 99)));
         }
 
         this.stats[stat].baseTotal = this.stats[stat].base;
@@ -744,6 +751,40 @@ export class Unit {
           return value;
         }
       break;
+    }
+  }
+
+  private calculateDreamSkills() {
+    if (this.level > 120 && this.dream && this.dream.skills) {
+      this.dream.skills.forEach(dreamSkillId => {
+        const dreamSkill = this.rawSkills.find(searchedSkill => searchedSkill.dataId === dreamSkillId);
+
+        if (dreamSkill) {
+          dreamSkill.effects.forEach(effect => {
+            const value = effect.minValue + ((effect.maxValue - effect.minValue) / (20 - 1) * (this.level - 121));
+            if (effect.calcType === 'percent' || effect.calcType === 'fixe' || effect.calcType === 'resistance') {
+              if (effect.calcType === 'percent') {
+                this.updatePercentStats(effect.type, 'dreamSkill', value);
+              } else {
+                this.updateStat(effect.type, value, 'dreamSkill', 'fixe');
+              }
+            } else {
+              console.log('not manage effect in dreamSkill percent/fixe -- ' + this.dataId);
+              console.log(dreamSkill);
+            }
+          });
+        }
+      });
+    }
+  }
+
+  private calculateDreamStats() {
+    this.verifyDreamStats();
+
+    if (this.level > 120 && this.dream && this.dream['selectedStats']) {
+      this.dream['statsType'].forEach(type => {
+        this.updateStat(type, this.dream['selectedStats'][type], 'dream', 'fixe');
+      });
     }
   }
 
@@ -1378,8 +1419,10 @@ export class Unit {
     });
   }
 
-  private calculateTotalStats() {
+  calculateTotalStats() {
     this.percentStats = {};
+    this.calculateDreamStats();
+    this.calculateDreamSkills();
     this.calculateGuildStats();
     this.calculateMasterRanksStats();
     this.calculateBoardStats();
@@ -1461,6 +1504,14 @@ export class Unit {
 
         if (this.stats[stat].materia) {
           this.stats[stat].total += this.stats[stat].materia;
+        }
+
+        if (this.stats[stat].dream) {
+          this.stats[stat].total += this.stats[stat].dream;
+        }
+
+        if (this.stats[stat].dreamSkill) {
+          this.stats[stat].total += this.stats[stat].dreamSkill;
         }
 
         if (!Number.isInteger(this.stats[stat].total)) {
@@ -1775,6 +1826,7 @@ export class Unit {
     this.updateMaxLevel();
     this.level = this.maxLevel;
 
+    this.maxDreamStats();
     this.updateStar(6);
     this.changeLevel(true);
   }
@@ -1823,6 +1875,7 @@ export class Unit {
       this.formattedLimit.level = 1;
     }
 
+    this.resetDreamStats();
     this.resetNodes();
     this.updateStar(1);
     this.changeLevel();
@@ -1861,6 +1914,47 @@ export class Unit {
         }
       }
     });
+  }
+
+  maxDreamStats() {
+    if (this.dream && this.dream.stats) {
+      if (!this.dream.statsType) {
+        this.dream.statsType = Object.keys(this.dream.stats);
+        this.dream.selectedStats = {};
+      }
+
+      this.dream.statsType.forEach(type => {
+        this.dream.selectedStats[type] = this.dream.stats[type];
+      });
+    }
+  }
+
+  resetDreamStats() {
+    if (this.dream && this.dream.stats) {
+      if (!this.dream.statsType) {
+        this.dream.statsType = Object.keys(this.dream.stats);
+        this.dream.selectedStats = {};
+      }
+
+      this.dream.statsType.forEach(type => {
+        this.dream.selectedStats[type] = 0;
+      });
+    }
+  }
+
+  verifyDreamStats() {
+    if (this.dream && this.dream.stats) {
+      if (!this.dream.statsType) {
+        this.dream.statsType = Object.keys(this.dream.stats);
+        this.dream.selectedStats = {};
+      }
+
+      if (this.level <= 120) {
+        this.dream.statsType.forEach(type => {
+          this.dream.selectedStats[type] = 0;
+        });
+      }
+    }
   }
 
   getActiveSkills(formatHtml = false, toolService, skillService, rangeService) {

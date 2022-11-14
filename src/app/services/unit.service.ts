@@ -418,6 +418,7 @@ export class UnitService {
       card: null,
       subCard: null,
       equipments: [null, null, null],
+      dream: null,
       guild: this.guildService.getSavableData(unit.guild.data, false),
       masterRanks: this.masterRanksService.getSavableData(unit.masterRanks.data, false),
       limitLv: unit.limit && unit.formattedLimit ? unit.formattedLimit.level : 0,
@@ -448,6 +449,13 @@ export class UnitService {
 
     if (!data.storeId) {
       delete data.storeId;
+    }
+
+    if (unit.level > 120 && unit.dream && unit.dream.selectedStats) {
+      data.dream = {};
+      Object.keys(unit.dream.selectedStats).forEach(statType => {
+        data.dream[statType] = unit.dream.selectedStats[statType];
+      });
     }
 
     for (let i = 0; i <= 2; i++) {
@@ -549,6 +557,15 @@ export class UnitService {
 
       this.unit.guild = this.guildService.getGuildForBuilder(forceEmptyGuild);
       this.unit.masterRanks = await this.masterRanksService.getMasterRanksForBuilder(forceEmptyGuild);
+
+      if (this.unit.dream && this.unit.dream.stats) {
+        this.unit.dream.statsType = Object.keys(this.unit.dream.stats);
+        this.unit.dream.selectedStats = {};
+
+        this.unit.dream.statsType.forEach(type => {
+          this.unit.dream.selectedStats[type] = 0;
+        });
+      }
 
       const existingUnit = await this.initiateSavedUnit(customData);
 
@@ -665,6 +682,12 @@ export class UnitService {
 
       if (unit.masterRanks) {
         this.unit.savedMasterRanks = unit.masterRanks;
+      }
+
+      if (unit.dream && this.unit.level > 120 && this.unit.dream && this.unit.dream.stats) {
+        this.unit.dream.statsType.forEach(type => {
+          this.unit.dream.selectedStats[type] = parseInt(unit.dream[type], 10);
+        });
       }
 
       return true;

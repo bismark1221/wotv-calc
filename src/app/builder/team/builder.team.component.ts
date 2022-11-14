@@ -75,6 +75,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   damageSim = null;
   species = [];
 
+  showDreamDetail = [false, false, false, false, false];
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private unitService: UnitService,
@@ -710,5 +712,21 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
         this.calculateDamageSim();
       }
     }
+  }
+
+  showHideDreamDetail(pos) {
+    this.showDreamDetail[pos] = !this.showDreamDetail[pos];
+  }
+
+  updatedDreamStat(pos, type) {
+    if (this.team.units[pos].dream.selectedStats[type] === null
+      || !Number.isInteger(this.team.units[pos].dream.selectedStats[type])
+      || this.team.units[pos].dream.selectedStats[type] < 0
+      || this.team.units[pos].dream.selectedStats[type] > this.team.units[pos].dream.stats[type]
+    ) {
+      this.team.units[pos].dream.selectedStats[type] = 0;
+    }
+
+    this.changeLevel(pos);
   }
 }

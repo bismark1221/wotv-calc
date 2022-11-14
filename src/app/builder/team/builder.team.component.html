@@ -322,6 +322,22 @@
           </ng-select>
         </td>
       </tr>
+      <tr *ngIf="unit.dream && unit.dream.statsType">
+        <th class="sub">Dream Stats</th>
+      </tr>
+      <tr *ngIf="unit.dream && unit.dream.statsType">
+        <td>
+          <button class="btn btn-sub btn-detail btn-show-dream" (click)="showHideDreamDetail(unitPos)">Update Dream Stats</button>
+        </td>
+      </tr>
+      <tbody *ngIf="showDreamDetail[unitPos]">
+        <tr *ngFor="let statType of unit.dream.statsType">
+          <td>
+            {{ statType | replace : '_' : ' ' }}<br />
+            <input class="dreamInput" type="number" min="0" max="{{ unit.dream.stats[statType] }}" [(ngModel)]="unit.dream.selectedStats[statType]" (ngModelChange)="updatedDreamStat(unitPos, statType)"/> / {{ unit.dream.stats[statType] }}
+          </td>
+        </tr>
+      </tbody>
     </table>
 
     <table class="statsTable" *ngIf="team.units && team.units[unitPos]; let unit">
