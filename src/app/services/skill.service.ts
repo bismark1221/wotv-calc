@@ -1784,6 +1784,15 @@ export class SkillService {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
+      case 'MULTIPLE_SELECTABLE_TARGET' :
+        if (effect.calcType === 'apply') {
+          html = 'You can select up to ' + effect.value + ' targets';
+        } else if (forSearchOptions) {
+          html = 'When you can select multiple targets';
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
       case 'GRANT_SKILL' :
         let newSkill = null;
         if (unit.rawSkills) {
@@ -1796,6 +1805,20 @@ export class SkillService {
           html = 'Dispel follow-up casts';
         } else if (forSearchOptions) {
           html = 'When casting a attack skill also launch another skill';
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
+      case 'GRANT_REACTION_SKILL' :
+        let newRactionSkill = null;
+        if (unit.rawSkills) {
+          newRactionSkill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'Gain a new counter skill : ' + (newRactionSkill ? this.toolService.getName(newRactionSkill) : '???') + ' ' + this.getTurns(effect);
+        } else if (forSearchOptions) {
+          html = 'When you gain a new counter skill';
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
