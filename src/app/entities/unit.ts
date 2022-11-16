@@ -197,6 +197,7 @@ export class Unit {
   hasUpgradeFromMasterSKill = false;
   upgradeActivatedFromMasterSKill = false;
   hasGetUpgradeFromMasterSkill = null;
+  upgradeActivatedFromDreamSKill = false;
 
   // Only for quests/enemies
   species = '';
@@ -420,8 +421,68 @@ export class Unit {
   }
 
   private updateDreamSkill() {
-    if (this.level > 120) {
+    if (this.dream && this.dream.skills) {
+      this.dream.skills.forEach(dreamSkillId => {
+        if (this.replacedSkills[dreamSkillId]) {
+          this.replacedSkills[dreamSkillId].forEach(upgrade => {
+            if (!upgrade.oldSkillData) {
+              upgrade.oldSkillData = this.getSkillById(upgrade.oldSkill);
+            }
 
+            if (upgrade.oldSkillData) {
+              if (this.upgradeActivatedFromDreamSKill && this.level <= 120) {
+                this.upgradeActivatedFromDreamSKill = false;
+
+                const downgradedSkill = JSON.parse(JSON.stringify(upgrade.oldSkillData));
+
+                if (upgrade.oldSkillData.type === 'limit') {
+                  const limitLevel = this.formattedLimit.level;
+                  this.formattedLimit = downgradedSkill;
+                  this.formattedLimit.level = limitLevel;
+                } else if (this.formattedAttack.dataId === upgrade.newSkill.dataId) {
+                  this.formattedAttack = downgradedSkill;
+                } else {
+                  Object.keys(this.board.nodes).forEach(nodeId => {
+                    if (this.board.nodes[nodeId].skill && this.board.nodes[nodeId].skill.dataId === upgrade.newSkill.dataId) {
+                      const oldSkill = this.board.nodes[nodeId].skill;
+                      downgradedSkill.level = this.board.nodes[nodeId].level;
+                      downgradedSkill.jobLevel = oldSkill.jobLevel;
+                      downgradedSkill.unlockJob = oldSkill.unlockJob;
+                      downgradedSkill.unlockStar = oldSkill.unlockStar;
+
+                      this.board.nodes[nodeId].skill = downgradedSkill;
+                    }
+                  });
+                }
+              } else if (!this.upgradeActivatedFromDreamSKill && this.level > 120) {
+                this.upgradeActivatedFromDreamSKill = true;
+
+                const upgradedSkill = JSON.parse(JSON.stringify(upgrade.newSkill));
+
+                if (upgrade.oldSkillData.type === 'limit') {
+                  const limitLevel = this.formattedLimit.level;
+                  this.formattedLimit = upgradedSkill;
+                  this.formattedLimit.level = limitLevel;
+                } else if (this.formattedAttack.dataId === upgrade.oldSkill) {
+                  this.formattedAttack = upgradedSkill;
+                } else {
+                  Object.keys(this.board.nodes).forEach(nodeId => {
+                    if (this.board.nodes[nodeId].skill && this.board.nodes[nodeId].skill.dataId === upgrade.oldSkill) {
+                      const oldSkill = this.board.nodes[nodeId].skill;
+                      upgradedSkill.level = this.board.nodes[nodeId].level;
+                      upgradedSkill.jobLevel = oldSkill.jobLevel;
+                      upgradedSkill.unlockJob = oldSkill.unlockJob;
+                      upgradedSkill.unlockStar = oldSkill.unlockStar;
+
+                      this.board.nodes[nodeId].skill = upgradedSkill;
+                    }
+                  });
+                }
+              }
+            }
+          });
+        }
+      });
     }
   }
 
@@ -1210,8 +1271,6 @@ export class Unit {
   }
 
   private calculateEquipmentsStats() {
-
-
     const statsType = [];
     this.imbue = null;
 
@@ -2292,6 +2351,10 @@ export class Unit {
 
     if (!skill && this.limit === skillId) {
       return this.formattedLimit;
+    }
+
+    if (!skill && this.attack === skillId) {
+      return this.formattedAttack;
     }
 
     return skill;

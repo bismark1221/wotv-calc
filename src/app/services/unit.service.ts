@@ -810,11 +810,14 @@ export class UnitService {
   }
 
   changeLevel(updateUnitStats = true) {
+    this.unit.updateDreamSkill();
+
     if (updateUnitStats) {
       this.unit.calculateBaseStats();
     }
 
     this.unit.calculateTotalStats();
+    this.getActiveSkills();
   }
 
   changeJobLevel() {
