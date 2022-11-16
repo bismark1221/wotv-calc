@@ -313,7 +313,7 @@ export class Unit {
       });
     }
 
-    if (this.maxLevel === 120 && this.dream['stats']) {
+    if (this.maxLevel === 120 && this.dream && this.dream['stats']) {
       this.maxLevel += 20;
     }
 
