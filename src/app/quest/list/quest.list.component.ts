@@ -46,7 +46,8 @@ export class QuestListComponent implements OnInit {
     'draft_pvp',
     'hard_quest_vc',
     'tower',
-    'guild_raid'
+    'guild_raid',
+    'guild_base_battle'
   ];
 
   constructor(
