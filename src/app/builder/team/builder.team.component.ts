@@ -729,4 +729,12 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
     this.changeLevel(pos);
   }
+
+  maxDreamStats(pos) {
+    this.teamService.maxDreamStats(pos);
+  }
+
+  resetDreamStats(pos) {
+    this.teamService.resetDreamStats(pos);
+  }
 }

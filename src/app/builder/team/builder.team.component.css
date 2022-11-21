@@ -317,6 +317,14 @@
   height: 70px;
 }
 
+.btn-dream {
+  width: 160px;
+}
+
+.btn-dream:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 /**********/
 /* Stats */
 /**********/

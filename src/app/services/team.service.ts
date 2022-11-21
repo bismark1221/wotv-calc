@@ -473,7 +473,7 @@ export class TeamService {
   }
 
   maxUnit(pos) {
-    this.team.units[pos].maxUnit();
+    this.team.units[pos].maxUnit(true);
     this.updateTeamCost();
   }
 
@@ -593,5 +593,15 @@ export class TeamService {
 
   getActiveSkills(pos) {
     this.team.units[pos].getActiveSkills(true, this.toolService, this.skillService, this.rangeService);
+  }
+
+  maxDreamStats(pos) {
+    this.team.units[pos].maxDreamStats();
+    this.team.units[pos].changeLevel();
+  }
+
+  resetDreamStats(pos) {
+    this.team.units[pos].resetDreamStats();
+    this.team.units[pos].changeLevel();
   }
 }

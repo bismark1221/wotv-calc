@@ -517,7 +517,13 @@
     </table>
 
 
-    <button class="btn btn-sub btn-detail btn-show-dream" (click)="showHideDetail('Dream')" *ngIf="unit.dream && unit.dream.stats">Dream Stats Detail</button>
+    <div class="dream-buttons">
+      <button class="btn btn-sub btn-detail btn-dream" (click)="showHideDetail('Dream')" *ngIf="unit.dream && unit.dream.stats">Dream Stats Detail</button>
+      <button class="btn btn-sub btn-detail btn-dream" (click)="maxDreamStats()" *ngIf="unit.dream && unit.dream.stats">Max Dream Stats</button>
+      <button class="btn btn-sub btn-detail btn-dream" (click)="resetDreamStats()" *ngIf="unit.dream && unit.dream.stats">Reset Dream Stats</button>
+    </div>
+
+
     <table class="dreamTable" *ngIf="unit.dream && unit.dream.statsType" [ngClass]="{'disable': !showDreamDetail}">
       <tbody>
         <tr>

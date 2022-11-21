@@ -1871,7 +1871,7 @@ export class Unit {
     }
   }
 
-  maxUnit() {
+  maxUnit(withDreamStat = false) {
     this.star = 6;
     this.lb = 5;
 
@@ -1885,7 +1885,10 @@ export class Unit {
     this.updateMaxLevel();
     this.level = this.maxLevel;
 
-    this.maxDreamStats();
+    if (withDreamStat) {
+      this.maxDreamStats();
+    }
+
     this.updateStar(6);
     this.changeLevel(true);
   }

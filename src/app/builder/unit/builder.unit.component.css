@@ -343,8 +343,16 @@
   margin-top: 5px;
 }
 
-.btn-show-dream {
+.dream-buttons {
   margin-top: 20px;
+}
+
+.btn-dream {
+  width: 340px;
+}
+
+.btn-dream:not(:last-child) {
+  margin-right: 5px;
 }
 
 .buffsTable, .imbueTable, .skillsBlock {

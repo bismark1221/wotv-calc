@@ -327,7 +327,9 @@
       </tr>
       <tr *ngIf="unit.dream && unit.dream.statsType">
         <td>
-          <button class="btn btn-sub btn-detail btn-show-dream" (click)="showHideDreamDetail(unitPos)">Update Dream Stats</button>
+          <button class="btn btn-sub btn-detail btn-dream" (click)="showHideDreamDetail(unitPos)">Update Dream Stats</button>
+          <button class="btn btn-sub btn-detail btn-dream" (click)="maxDreamStats(unitPos)">Max Dream Stats</button>
+          <button class="btn btn-sub btn-detail btn-dream" (click)="resetDreamStats(unitPos)">Reset Dream Stats</button>
         </td>
       </tr>
       <tbody *ngIf="showDreamDetail[unitPos]">

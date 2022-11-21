@@ -731,4 +731,12 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     this.unitService.changeLevel();
   }
+
+  maxDreamStats() {
+    this.unitService.maxDreamStats();
+  }
+
+  resetDreamStats() {
+    this.unitService.resetDreamStats();
+  }
 }

@@ -577,7 +577,7 @@ export class UnitService {
       this.unit.updateMaxJobLevel();
 
       if (!existingUnit) {
-        this.unit.maxUnit();
+        this.unit.maxUnit(false);
         this.unit.activateMasterSkill();
       }
 
@@ -843,7 +843,7 @@ export class UnitService {
   }
 
   maxUnit() {
-    this.unit.maxUnit();
+    this.unit.maxUnit(true);
   }
 
   maxLevelAndJobs() {
@@ -921,5 +921,15 @@ export class UnitService {
     });
 
     return availableCards;
+  }
+
+  maxDreamStats() {
+    this.unit.maxDreamStats();
+    this.unit.changeLevel();
+  }
+
+  resetDreamStats() {
+    this.unit.resetDreamStats();
+    this.unit.changeLevel();
   }
 }
