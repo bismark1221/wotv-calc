@@ -426,14 +426,14 @@ export class Unit {
         if (this.replacedSkills[dreamSkillId]) {
           this.replacedSkills[dreamSkillId].forEach(upgrade => {
             if (!upgrade.oldSkillData) {
-              upgrade.oldSkillData = this.getSkillById(upgrade.oldSkill);
+              upgrade.oldSkillData = JSON.parse(JSON.stringify(this.getSkillById(upgrade.oldSkill)));
             }
 
             if (upgrade.oldSkillData) {
               if (this.upgradeActivatedFromDreamSKill && this.level <= 120) {
                 this.upgradeActivatedFromDreamSKill = false;
 
-                const downgradedSkill = JSON.parse(JSON.stringify(upgrade.oldSkillData));
+                const downgradedSkill = JSON.parse(JSON.stringify(upgrade.oldSkillData.skill));
 
                 if (upgrade.oldSkillData.type === 'limit') {
                   const limitLevel = this.formattedLimit.level;
@@ -445,10 +445,12 @@ export class Unit {
                   Object.keys(this.board.nodes).forEach(nodeId => {
                     if (this.board.nodes[nodeId].skill && this.board.nodes[nodeId].skill.dataId === upgrade.newSkill.dataId) {
                       const oldSkill = this.board.nodes[nodeId].skill;
+
                       downgradedSkill.level = this.board.nodes[nodeId].level;
                       downgradedSkill.jobLevel = oldSkill.jobLevel;
                       downgradedSkill.unlockJob = oldSkill.unlockJob;
                       downgradedSkill.unlockStar = oldSkill.unlockStar;
+                      downgradedSkill.mainSkill = oldSkill.mainSkill;
 
                       this.board.nodes[nodeId].skill = downgradedSkill;
                     }
@@ -469,10 +471,13 @@ export class Unit {
                   Object.keys(this.board.nodes).forEach(nodeId => {
                     if (this.board.nodes[nodeId].skill && this.board.nodes[nodeId].skill.dataId === upgrade.oldSkill) {
                       const oldSkill = this.board.nodes[nodeId].skill;
+
                       upgradedSkill.level = this.board.nodes[nodeId].level;
                       upgradedSkill.jobLevel = oldSkill.jobLevel;
                       upgradedSkill.unlockJob = oldSkill.unlockJob;
                       upgradedSkill.unlockStar = oldSkill.unlockStar;
+                      upgradedSkill.mainSkill = oldSkill.mainSkill;
+                      upgradedSkill.upgradedFromDreamSkill = true;
 
                       this.board.nodes[nodeId].skill = upgradedSkill;
                     }
@@ -1838,8 +1843,9 @@ export class Unit {
             const newSkill = JSON.parse(JSON.stringify(upgrade.newSkill));
 
             Object.keys(this.board.nodes).forEach(oldNodeId => {
-              if (this.board.nodes[oldNodeId].dataId === upgrade.oldSkill) {
+              if (this.board.nodes[oldNodeId].dataId === upgrade.oldSkill && !this.board.nodes[oldNodeId].skill.upgradedFromDreamSkill) {
                 const oldSkill = this.board.nodes[oldNodeId].skill;
+
                 newSkill.level = this.board.nodes[oldNodeId].level;
                 newSkill.jobLevel = oldSkill.jobLevel;
                 newSkill.unlockJob = oldSkill.unlockJob;

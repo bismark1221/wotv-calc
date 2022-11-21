@@ -534,7 +534,9 @@
         </tr>
         <tr>
           <td *ngFor="let i of [0, 1, 2, 3, 4, 5, 6]">
-            <input class="dreamInput" type="number" min="0" max="{{ unit.dream.stats[unit.dream.statsType[i]] }}" [(ngModel)]="unit.dream.selectedStats[unit.dream.statsType[i]]" (ngModelChange)="updatedDreamStat(unit.dream.statsType[i])"/> / {{ unit.dream.stats[unit.dream.statsType[i]] }}
+            <div *ngIf="unit.dream.stats[unit.dream.statsType[i]] >= 0">
+              <input class="dreamInput" type="number" min="0" max="{{ unit.dream.stats[unit.dream.statsType[i]] }}" [(ngModel)]="unit.dream.selectedStats[unit.dream.statsType[i]]" (ngModelChange)="updatedDreamStat(unit.dream.statsType[i])"/> / {{ unit.dream.stats[unit.dream.statsType[i]] }}
+            </div>
           </td>
         </tr>
         <tr>
@@ -542,7 +544,9 @@
         </tr>
         <tr>
           <td *ngFor="let i of [7, 8, 9, 10, 11, 12, 13]">
-            <input class="dreamInput" type="number" min="0" max="{{ unit.dream.stats[unit.dream.statsType[i]] }}" [(ngModel)]="unit.dream.selectedStats[unit.dream.statsType[i]]" (ngModelChange)="updatedDreamStat(unit.dream.statsType[i])"/> / {{ unit.dream.stats[unit.dream.statsType[i]] }}
+            <div *ngIf="unit.dream.stats[unit.dream.statsType[i]] >= 0">
+              <input class="dreamInput" type="number" min="0" max="{{ unit.dream.stats[unit.dream.statsType[i]] }}" [(ngModel)]="unit.dream.selectedStats[unit.dream.statsType[i]]" (ngModelChange)="updatedDreamStat(unit.dream.statsType[i])"/> / {{ unit.dream.stats[unit.dream.statsType[i]] }}
+            </div>
           </td>
         </tr>
       </tbody>
