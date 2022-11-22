@@ -39,6 +39,7 @@ export class UnitListComponent implements OnInit {
     mainJob: false,
     subJob: false,
     exJob: false,
+    dream: false,
     secondMasterAbility: false
   };
 
@@ -285,6 +286,7 @@ export class UnitListComponent implements OnInit {
       + (this.filters.mainJob ? 1 : 0)
       + (this.filters.subJob ? 1 : 0)
       + (this.filters.exJob ? 1 : 0)
+      + (this.filters.dream ? 1 : 0)
       + (this.filters.secondMasterAbility ? 1 : 0);
   }
 
@@ -361,6 +363,13 @@ export class UnitListComponent implements OnInit {
 
   toggleExJob() {
     this.filters.exJob = !this.filters.exJob;
+
+    this.filterUnits();
+    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
+  }
+
+  toggleDream() {
+    this.filters.dream = !this.filters.dream;
 
     this.filterUnits();
     this.sessionService.set('unitsFilters', JSON.stringify(this.filters));

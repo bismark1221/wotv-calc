@@ -1688,6 +1688,9 @@ export class SkillService {
       case 'EXTEND_ELEMENT_CHAIN' :
         html = 'Extend elemental chain by 1 turn';
       break;
+      case 'IGNORE_SUREHIT' :
+        html = 'Ignore surehit' + this.getTurns(effect);
+      break;
       case 'NULLIFY' :
         html = 'Nullify ' + this.getValue(skill, effect);
         if (forSearchOptions) {
@@ -1870,7 +1873,7 @@ export class SkillService {
         break;
       default:
         html = '??? Effect Not Translated - If you have details don\'t hesitate to contact me ???';
-        console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- NOT TRANSLATED : ' + effect.type);
+        console.log('@@@@@ ' + unit.name + ' -- skill : ' + skill.dataId + ' -- NOT TRANSLATED : ' + effect.type);
       break;
     }
 

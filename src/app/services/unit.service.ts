@@ -133,6 +133,7 @@ export class UnitService {
           && (filters.cost.length === 0 || filters.cost.indexOf(unit.cost) !== -1)
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) !== -1)
           && (!filters.exJob || unit.exJobs.length > 0)
+          && (!filters.dream || (unit.dream && unit.dream.skills))
           && (!filters.secondMasterAbility || (unit.masterSkill && unit.masterSkill.length > 1))
           && (!unit.fromOtherVersion)
         ) {

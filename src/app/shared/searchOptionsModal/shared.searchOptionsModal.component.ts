@@ -49,15 +49,17 @@ export class SharedSearchOptionsModalComponent extends SimpleModalComponent<null
     this.toolService.sortTableByName(this.buffType[this.version].items);
 
     this.buffType[this.version].items.forEach(buffType => {
-      const fakeEffect = {
-        type: buffType,
-        value: 1
-      };
+      if (buffType) {
+        const fakeEffect = {
+          type: buffType,
+          value: 1
+        };
 
-      this.formattedBuffTypes.push({
-        type: buffType,
-        formattedEffect: this.skillService.formatEffect({}, {}, fakeEffect, false, false, false, true)
-      });
+        this.formattedBuffTypes.push({
+          type: buffType,
+          formattedEffect: this.skillService.formatEffect({}, {}, fakeEffect, false, false, false, true)
+        });
+      }
     });
   }
 }
