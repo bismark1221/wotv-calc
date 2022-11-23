@@ -32,7 +32,8 @@ export class EquipmentService {
     'FIST',
     'GLOVE',
     'BOOK',
-    'BOOMERANG'
+    'BOOMERANG',
+    'SHURIKEN'
   ];
 
   private armorTypes = [
@@ -65,7 +66,8 @@ export class EquipmentService {
     ACC: 'Accessory',
     GLOVE: 'Glove',
     BOOK: 'Book',
-    BOOMERANG: 'Boomerang'
+    BOOMERANG: 'Boomerang',
+    SHURIKEN: 'Shuriken'
   };
 
   private equipmentsAcquisition = {

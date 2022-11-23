@@ -79,7 +79,8 @@ export class EquipmentListComponent implements OnInit {
     'ROD',
     'SPEAR',
     'SWORD',
-    'BOOMERANG'
+    'BOOMERANG',
+    "SHURIKEN"
   ];
 
   armors = [

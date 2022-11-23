@@ -136,6 +136,10 @@ export class UnitListComponent implements OnInit {
       label: 'ROD'
     },
     {
+      id: 'SHURIKEN',
+      label: 'SHURIKEN'
+    },
+    {
       id: 'SPEAR',
       label: 'SPEAR'
     },
