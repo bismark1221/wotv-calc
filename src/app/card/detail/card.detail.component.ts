@@ -19,6 +19,7 @@ import { UnitService } from '../../services/unit.service';
 export class CardDetailComponent implements OnInit {
   card = null;
   jobs = [];
+  showBuffDetail = false;
 
   constructor(
     private cardService: CardService,
@@ -127,10 +128,84 @@ export class CardDetailComponent implements OnInit {
           i++;
         }
       }
+
+
+      this.card.star = 4;
+      this.card.level = this.card.getLevelPerStar(this.card.rarity, this.card.star);
+      this.card.changeLevel(this.toolService, this.skillService, this.rangeService);
+
+      for (const buffType of ['self', 'party']) {
+        this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)] = {
+          no_cond: []
+        };
+
+        for (const effectType of Object.keys(this.card.buffs[buffType])) {
+          for (const effect of this.card.buffs[buffType][effectType]) {
+            const formattedEffect = {
+              type: effectType,
+              value: effect.value,
+              calcType: effect.calcType
+            };
+
+            const formattedBuff = {
+              effect: this.skillService.formatEffect(this.card, {}, formattedEffect),
+              cond: effect.cond
+            };
+
+            if (effect.cond.length === 0) {
+              this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)].no_cond.push(formattedBuff);
+            } else {
+              let condIds = '';
+              for (const cond of effect.cond) {
+                condIds += cond.type + '_' + cond.items.join('_');
+              }
+
+              if (!this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)][condIds]) {
+                this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)][condIds] = [];
+              }
+
+              this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)][condIds].push(formattedBuff);
+            }
+          }
+        }
+      }
+
+      for (const buff of this.card.formattedUnitBuffs) {
+        if (buff.classic && buff.classic.type === 'skill') {
+          let condIds = 'no_cond';
+          if (buff.cond.length > 0) {
+            condIds = '';
+            for (const cond of buff.cond) {
+              condIds += cond.type + '_' + cond.items.join('_');
+            }
+          }
+
+          if (!this.card.buffs.formattedSelf[condIds]) {
+            this.card.buffs.formattedSelf[condIds] = [];
+          }
+
+          this.card.buffs.formattedSelf[condIds].push({
+            cond: buff.cond,
+            skill: buff.classic
+          });
+        }
+      }
+
+      for (const buffType of ['self', 'party']) {
+        if (this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)].no_cond.length === 0) {
+          delete this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)].no_cond;
+        }
+
+        this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length) + 'Keys'] = Object.keys(this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)]);
+      }
     }
   }
 
   getRoute(route) {
     return this.navService.getRoute(route);
+  }
+
+  toogleShowBuffDetail() {
+    this.showBuffDetail = !this.showBuffDetail;
   }
 }

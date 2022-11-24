@@ -73,181 +73,300 @@
       </tbody>
     </table>
 
-    <table class="effectsTable">
-      <tr>
-        <th colspan="10">Unit Effects</th>
-      </tr>
-      <tbody *ngFor="let buff of card.formattedUnitBuffs">
-        <tr *ngFor="let cond of buff.cond">
-          <td>Condition</td>
-          <td colspan="10">
-            <div *ngIf="cond.type === 'birth'">
-              <span *ngFor="let birth of cond.items">{{ birth }}</span>
-            </div>
-
-            <div *ngIf="cond.type === 'elem'">
-              <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
-            </div>
-
-            <div *ngIf="cond.type === 'job'">
-              <span *ngFor="let job of cond.formattedItems">
-                <div class="subJob">
-                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
-                </div>
-              </span>
-            </div>
-
-            <div *ngIf="cond.type === 'mainJob'">
-              <span *ngFor="let job of cond.formattedItems">
-                <div class="mainJob">
-                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
-                </div>
-              </span>
-            </div>
-
-            <div *ngIf="cond.type === 'unit'">
-              <span *ngFor="let unit of cond.formattedItems">
-                <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
-              </span>
-            </div>
-          </td>
-        </tr>
-
-        <tr *ngIf="buff.classic && buff.classic.type === 'support'">
-          <td>Classic</td>
-          <td colspan="10">
-            <div *ngFor="let effect of buff.classic.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </td>
-        </tr>
-
-        <tr *ngIf="buff.awake && buff.classic.type === 'support'">
-          <td>Awake</td>
-          <td colspan="10">
-            <div *ngFor="let effect of buff.awake.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </td>
-        </tr>
-
-        <tr *ngIf="buff.lvmax && buff.classic.type === 'support'">
-          <td>Max</td>
-          <td colspan="10">
-            <div *ngFor="let effect of buff.lvmax.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </td>
-        </tr>
-
-        <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
-          <th class="sub skillNameTd">name</th>
-          <th class="sub">Effects</th>
-          <th class="sub rangeTd">Range</th>
-          <th class="sub skillCastTd">Casts</th>
-          <th class="sub skillHitTd">Hits</th>
-          <th class="sub skillCostTd">Cost</th>
-        </tr>
-
-        <tr *ngIf="buff.classic && buff.classic.type !== 'support'" app-shared-skillRow [skill]="buff.classic" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
-
-        <tr class="separatorLine"></tr>
-      </tbody>
-    </table>
-
-    <table class="effectsTable" *ngIf="card.formattedPartyBuffs">
-      <tbody>
+    <div>
+      <table class="effectsTable">
         <tr>
-          <th colspan="10">Party Effects</th>
+          <th>Buffs at max level</th>
         </tr>
-        <tr *ngIf="card.formattedPartyBuffs.classic">
-          <td>Classic</td>
-          <td colspan="10">
-            <div *ngFor="let effect of card.formattedPartyBuffs.classic.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </td>
+        <tr>
+          <th>Unit Effects</th>
         </tr>
-        <tr *ngIf="card.formattedPartyBuffs.awake">
-          <td>Awake</td>
-          <td colspan="10">
-            <div *ngFor="let effect of card.formattedPartyBuffs.awake.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </td>
-        </tr>
-        <tr *ngIf="card.formattedPartyBuffs.lvmax">
-          <td>Max</td>
-          <td colspan="20">
-            <div *ngFor="let effect of card.formattedPartyBuffs.lvmax.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </td>
-        </tr>
-      </tbody>
+        <tbody *ngFor="let effectKey of card.buffs.formattedSelfKeys">
+          <tr>
+            <td>
+              <div *ngFor="let effect of card.buffs.formattedSelf[effectKey]; let effectIndex = index">
+                <div *ngIf="effectIndex == 0">
+                  <div *ngFor="let cond of effect.cond">
+                    <div *ngIf="cond.type === 'birth'">
+                      <span *ngFor="let birth of cond.items">{{ birth }}</span>
+                    </div>
 
-      <tbody *ngFor="let buff of card.formattedPartyBuffs">
-        <tr *ngFor="let cond of buff.cond">
-          <td>Condition</td>
-          <td colspan="10">
-            <div *ngIf="cond.type === 'birth'">
-              <span *ngFor="let birth of cond.items">{{ birth }}</span>
-            </div>
+                    <div *ngIf="cond.type === 'elem'">
+                      <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
+                    </div>
 
-            <div *ngIf="cond.type === 'elem'">
-              <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
-            </div>
+                    <div *ngIf="cond.type === 'job'">
+                      <span *ngFor="let job of cond.formattedItems">
+                        <div class="subJob">
+                          <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                        </div>
+                      </span>
+                    </div>
 
-            <div *ngIf="cond.type === 'job'">
-              <span *ngFor="let job of cond.formattedItems">
-                <div class="subJob">
-                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                    <div *ngIf="cond.type === 'mainJob'">
+                      <span *ngFor="let job of cond.formattedItems">
+                        <div class="mainJob">
+                          <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                        </div>
+                      </span>
+                    </div>
+
+                    <div *ngIf="cond.type === 'unit'">
+                      <span *ngFor="let unit of cond.formattedItems">
+                        <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
+                      </span>
+                    </div>
+                  </div>
                 </div>
-              </span>
-            </div>
 
-            <div *ngIf="cond.type === 'mainJob'">
-              <span *ngFor="let job of cond.formattedItems">
-                <div class="mainJob">
-                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                {{ effect.effect }}
+
+                <table *ngIf="effect.skill" class="w-full m-0">
+                  <tr>
+                    <th class="sub skillNameTd">name</th>
+                    <th class="sub">Effects</th>
+                    <th class="sub rangeTd">Range</th>
+                    <th class="sub skillCastTd">Casts</th>
+                    <th class="sub skillHitTd">Hits</th>
+                    <th class="sub skillCostTd">Cost</th>
+                  </tr>
+
+                  <tr *ngIf="effect.skill" app-shared-skillRow [skill]="effect.skill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+                </table>
+
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tr>
+          <th>Party Effects</th>
+        </tr>
+        <tbody *ngFor="let effectKey of card.buffs.formattedPartyKeys">
+          <tr>
+            <td>
+              <div *ngFor="let effect of card.buffs.formattedParty[effectKey]; let effectIndex = index">
+                <div *ngIf="effectIndex == 0">
+                  <div *ngFor="let cond of effect.cond">
+                    <div *ngIf="cond.type === 'birth'">
+                      <span *ngFor="let birth of cond.items">{{ birth }}</span>
+                    </div>
+
+                    <div *ngIf="cond.type === 'elem'">
+                      <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
+                    </div>
+
+                    <div *ngIf="cond.type === 'job'">
+                      <span *ngFor="let job of cond.formattedItems">
+                        <div class="subJob">
+                          <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                        </div>
+                      </span>
+                    </div>
+
+                    <div *ngIf="cond.type === 'mainJob'">
+                      <span *ngFor="let job of cond.formattedItems">
+                        <div class="mainJob">
+                          <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                        </div>
+                      </span>
+                    </div>
+
+                    <div *ngIf="cond.type === 'unit'">
+                      <span *ngFor="let unit of cond.formattedItems">
+                        <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
+                      </span>
+                    </div>
+                  </div>
                 </div>
-              </span>
-            </div>
+                {{ effect.effect }}
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-            <div *ngIf="cond.type === 'unit'">
-              <span *ngFor="let unit of cond.formattedItems">
-                <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
-              </span>
-            </div>
-          </td>
+    <div class="text-center">
+      <button class="btn btn-sub mt-2" (click)="toogleShowBuffDetail()">Show buff Detail</button>
+    </div>
+
+    <div *ngIf="showBuffDetail">
+      <table class="effectsTable">
+        <tr>
+          <th colspan="10">Unit Effects</th>
         </tr>
-        <tr *ngIf="buff.classic">
-          <td>Classic</td>
-          <td colspan="10">
-            <div *ngFor="let effect of buff.classic.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </td>
-        </tr>
-        <tr *ngIf="buff.awake">
-          <td>Awake</td>
-          <td colspan="10">
-            <div *ngFor="let effect of buff.awake.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </td>
-        </tr>
-        <tr *ngIf="buff.lvmax">
-          <td>Max</td>
-          <td colspan="10">
-            <div *ngFor="let effect of buff.lvmax.effects">
-              {{ effect.formatHtml }}
-            </div>
-          </td>
-        </tr>
-        <tr class="separatorLine"></tr>
-      </tbody>
-    </table>
+        <tbody *ngFor="let buff of card.formattedUnitBuffs">
+          <tr *ngFor="let cond of buff.cond">
+            <td>Condition</td>
+            <td colspan="10">
+              <div *ngIf="cond.type === 'birth'">
+                <span *ngFor="let birth of cond.items">{{ birth }}</span>
+              </div>
+
+              <div *ngIf="cond.type === 'elem'">
+                <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
+              </div>
+
+              <div *ngIf="cond.type === 'job'">
+                <span *ngFor="let job of cond.formattedItems">
+                  <div class="subJob">
+                    <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                  </div>
+                </span>
+              </div>
+
+              <div *ngIf="cond.type === 'mainJob'">
+                <span *ngFor="let job of cond.formattedItems">
+                  <div class="mainJob">
+                    <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                  </div>
+                </span>
+              </div>
+
+              <div *ngIf="cond.type === 'unit'">
+                <span *ngFor="let unit of cond.formattedItems">
+                  <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
+                </span>
+              </div>
+            </td>
+          </tr>
+
+          <tr *ngIf="buff.classic && buff.classic.type === 'support'">
+            <td>Classic</td>
+            <td colspan="10">
+              <div *ngFor="let effect of buff.classic.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+          </tr>
+
+          <tr *ngIf="buff.awake && buff.classic.type === 'support'">
+            <td>Awake</td>
+            <td colspan="10">
+              <div *ngFor="let effect of buff.awake.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+          </tr>
+
+          <tr *ngIf="buff.lvmax && buff.classic.type === 'support'">
+            <td>Max</td>
+            <td colspan="10">
+              <div *ngFor="let effect of buff.lvmax.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+          </tr>
+
+          <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
+            <th class="sub skillNameTd">name</th>
+            <th class="sub">Effects</th>
+            <th class="sub rangeTd">Range</th>
+            <th class="sub skillCastTd">Casts</th>
+            <th class="sub skillHitTd">Hits</th>
+            <th class="sub skillCostTd">Cost</th>
+          </tr>
+
+          <tr *ngIf="buff.classic && buff.classic.type !== 'support'" app-shared-skillRow [skill]="buff.classic" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+
+          <tr class="separatorLine"></tr>
+        </tbody>
+      </table>
+
+      <table class="effectsTable" *ngIf="card.formattedPartyBuffs">
+        <tbody>
+          <tr>
+            <th colspan="10">Party Effects</th>
+          </tr>
+          <tr *ngIf="card.formattedPartyBuffs.classic">
+            <td>Classic</td>
+            <td colspan="10">
+              <div *ngFor="let effect of card.formattedPartyBuffs.classic.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+          </tr>
+          <tr *ngIf="card.formattedPartyBuffs.awake">
+            <td>Awake</td>
+            <td colspan="10">
+              <div *ngFor="let effect of card.formattedPartyBuffs.awake.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+          </tr>
+          <tr *ngIf="card.formattedPartyBuffs.lvmax">
+            <td>Max</td>
+            <td colspan="20">
+              <div *ngFor="let effect of card.formattedPartyBuffs.lvmax.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+          </tr>
+        </tbody>
+
+        <tbody *ngFor="let buff of card.formattedPartyBuffs">
+          <tr *ngFor="let cond of buff.cond">
+            <td>Condition</td>
+            <td colspan="10">
+              <div *ngIf="cond.type === 'birth'">
+                <span *ngFor="let birth of cond.items">{{ birth }}</span>
+              </div>
+
+              <div *ngIf="cond.type === 'elem'">
+                <img class="elementImg" src="{{'assets/elements/' + elem + '.webp'}}" *ngFor="let elem of cond.items"/>
+              </div>
+
+              <div *ngIf="cond.type === 'job'">
+                <span *ngFor="let job of cond.formattedItems">
+                  <div class="subJob">
+                    <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                  </div>
+                </span>
+              </div>
+
+              <div *ngIf="cond.type === 'mainJob'">
+                <span *ngFor="let job of cond.formattedItems">
+                  <div class="mainJob">
+                    <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
+                  </div>
+                </span>
+              </div>
+
+              <div *ngIf="cond.type === 'unit'">
+                <span *ngFor="let unit of cond.formattedItems">
+                  <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr *ngIf="buff.classic">
+            <td>Classic</td>
+            <td colspan="10">
+              <div *ngFor="let effect of buff.classic.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+          </tr>
+          <tr *ngIf="buff.awake">
+            <td>Awake</td>
+            <td colspan="10">
+              <div *ngFor="let effect of buff.awake.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+          </tr>
+          <tr *ngIf="buff.lvmax">
+            <td>Max</td>
+            <td colspan="10">
+              <div *ngFor="let effect of buff.lvmax.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </td>
+          </tr>
+          <tr class="separatorLine"></tr>
+        </tbody>
+      </table>
+    </div>
 
     <table class="loreTable">
       <tr>
