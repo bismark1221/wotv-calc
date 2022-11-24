@@ -4,6 +4,8 @@ import { Title, Meta } from '@angular/platform-browser';
 
 import { BehaviorSubject } from 'rxjs';
 
+import { PwaService } from './pwa.service';
+
 @Injectable()
 export class NavService {
   menuDisabled = false;
@@ -15,7 +17,8 @@ export class NavService {
   constructor(
     private localStorageService: LocalStorageService,
     private titleService: Title,
-    private metaService: Meta
+    private metaService: Meta,
+    private pwaService: PwaService
   ) {}
 
   updateMenu(status: boolean) {

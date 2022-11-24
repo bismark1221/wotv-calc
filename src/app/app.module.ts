@@ -59,6 +59,7 @@ import { UserService } from './services/user.service';
 import { MateriaService } from './services/materia.service';
 import { InventoryService } from './services/inventory.service';
 import { SessionService } from './services/session.service';
+import { PwaService } from './services/pwa.service';
 
 import { SharedModule } from './shared/shared.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -143,7 +144,8 @@ export function createTranslateLoader(http: HttpClient) {
     UserService,
     MateriaService,
     InventoryService,
-    SessionService
+    SessionService,
+    PwaService
   ],
   bootstrap: [
     AppComponent

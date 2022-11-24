@@ -248,7 +248,11 @@ export class ToolService {
         'UN_LW_S_LAMA_01',
         'UN_LW_S_ARMN_01',
         'UN_LW_P_FINA_01',
-        'UN_LW_P_IRDL_01'
+        'UN_LW_P_IRDL_01',
+        'UN_LW_S_ODIN_01',
+        'UN_LW_S_TSLP_01',
+        'UN_LW_S_RAMU_01',
+        'UN_LW_S_IFRT_01'
       ];
 
       if (notSoLimited.indexOf(dataId) === -1) {
@@ -279,7 +283,15 @@ export class ToolService {
         'VC_LW_IBRA',
         'UN_LW_P_HLNA_02',
         'UN_LW_P_ESTR',
-        'VC_LW_ZZAN_01'
+        'VC_LW_ZZAN_01',
+        'UN_LW_P_SLVE',
+        'VC_LW_SLVE',
+        'VC_LW_ESTR',
+        'VC_LW_GLORY',
+        'VC_LW_HALL3',
+        'VC_LW_USER2',
+        'VC_LW_ANV1',
+        'VC_LW_ANV2'
       ],
       JP: [
         'UN_LW_P_FRVA',
@@ -298,12 +310,21 @@ export class ToolService {
         'UN_LW_S_MOGL',
         'UN_LW_S_KRKN',
         'UN_LW_P_SLEN',
+        'VC_LW_HALL2',
         'UN_LW_P_IBRA',
         'VC_LW_XMAS2',
         'UN_LW_P_IRDL_01',
         'UN_LW_P_HLNA_02',
         'UN_LW_P_ESTR',
-        'VC_LW_ZZAN_01'
+        'VC_LW_ZZAN_01',
+        'UN_LW_P_SLVE',
+        'VC_LW_SLVE',
+        'VC_LW_ESTR',
+        'VC_LW_GLORY',
+        'VC_LW_HALL3',
+        'VC_LW_USER2',
+        'VC_LW_ANV1',
+        'VC_LW_ANV2'
       ]
     };
 

@@ -121,7 +121,7 @@ export class QuestService {
       rawQuests.push(quest);
     });
 
-    quests = this.filterQuests(quests, filters);
+    quests = this.filterQuests(quests, filters, sort, order);
 
     return {
       quests: quests,

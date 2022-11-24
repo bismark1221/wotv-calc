@@ -80,7 +80,7 @@ export class EquipmentListComponent implements OnInit {
     'SPEAR',
     'SWORD',
     'BOOMERANG',
-    "SHURIKEN"
+    'SHURIKEN'
   ];
 
   armors = [
