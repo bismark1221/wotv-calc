@@ -353,16 +353,7 @@ export class UnitService {
     let unitHasJob = false;
 
     for (let i = (filters.subJob ? 1 : 0); i <= (filters.mainJob ? 0 : unit.jobs.length - 1); i++) {
-      const tableJob = unit.jobs[i].split('_');
-
-      let genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
-      if (tableJob[3]) {
-        if (['FIRE', 'ICE', 'WIND', 'SOIL', 'THUN', 'WATER', 'WATR', 'SHIN', 'SHINE', 'DARK'].indexOf(tableJob[3]) === -1) {
-          genericDataId += '_' + tableJob[3];
-        }
-      }
-
-      if (filters.job.length === 0 || filters.job.indexOf(genericDataId) !== -1) {
+      if (filters.job.length === 0 || filters.job.indexOf(this.jobService.getGenericJobId(unit.jobs[i])) !== -1) {
         unitHasJob = true;
         break;
       }

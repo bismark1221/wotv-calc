@@ -208,4 +208,8 @@ export class CardDetailComponent implements OnInit {
   toogleShowBuffDetail() {
     this.showBuffDetail = !this.showBuffDetail;
   }
+
+  goToUnitList(cond) {
+    this.router.navigate([this.navService.getRoute('/units'), { filterType : cond.type, itemIds : cond.items }]);
+  }
 }

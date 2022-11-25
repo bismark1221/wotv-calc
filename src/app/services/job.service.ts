@@ -42,25 +42,28 @@ export class JobService {
     };
   }
 
+  getGenericJobId(jobId) {
+    const tableJob = jobId.split('_');
+    let genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
+
+    if (tableJob[3]) {
+      if (['FIRE', 'ICE', 'WIND', 'SOIL', 'THUN', 'WATER', 'WATR', 'SHIN', 'SHINE', 'DARK'].indexOf(tableJob[3]) === -1) {
+        genericDataId += '_' + tableJob[3];
+      }
+    }
+
+    return genericDataId;
+  }
+
   getUniqJobsByIds(jobsToFilter) {
     const uniqJobs = [];
 
     for (const rawJob of jobsToFilter) {
       const job = new Job();
       job.constructFromJson(rawJob, this.translateService);
+      job.dataId = this.getGenericJobId(job.dataId);
 
-      const tableJob = job.dataId.split('_');
-      let genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
-
-      if (tableJob[3]) {
-        if (['FIRE', 'ICE', 'WIND', 'SOIL', 'THUN', 'WATER', 'WATR', 'SHIN', 'SHINE', 'DARK'].indexOf(tableJob[3]) === -1) {
-          genericDataId += '_' + tableJob[3];
-        }
-      }
-
-      job.dataId = genericDataId;
-
-      if (!uniqJobs.find(searchedJob => searchedJob.dataId === genericDataId)) {
+      if (!uniqJobs.find(searchedJob => searchedJob.dataId === job.dataId)) {
         if (job.dataId === 'JB_LW_WAR') {
           job.names = {
             en: 'Warrior',

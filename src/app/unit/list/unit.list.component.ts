@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
@@ -188,6 +189,7 @@ export class UnitListComponent implements OnInit {
   searchForm: UntypedFormGroup;
 
   constructor(
+    private activatedRoute: ActivatedRoute,
     private unitService: UnitService,
     private translateService: TranslateService,
     private navService: NavService,
@@ -209,6 +211,53 @@ export class UnitListComponent implements OnInit {
 
     this.searchForm = new UntypedFormGroup({
       searchOptions: new UntypedFormControl()
+    });
+
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
+      const filterType = params.get('filterType');
+      const itemIds = params.get('itemIds');
+
+      if (filterType && itemIds) {
+        this.filters = {
+          rarity: [],
+          element: [],
+          job: [],
+          limited: [],
+          equipment: {
+            weapon: [],
+            weaponsGroup: [],
+            armor: []
+          },
+          cost: [],
+          mainJob: false,
+          subJob: false,
+          exJob: false,
+          dream: false,
+          secondMasterAbility: false
+        };
+
+        this.collapsed = {
+          rarity: true,
+          element: true,
+          limited: true,
+          job: false,
+          cost: true,
+          equipment: true
+        };
+
+        if (filterType === 'mainJob') {
+          this.filters.mainJob = true;
+        }
+
+        if (filterType === 'mainJob' || filterType === 'job') {
+          for (const jobId of itemIds.split(',')) {
+            this.filters.job.push(this.jobService.getGenericJobId(jobId));
+          }
+        }
+
+        this.filterChecked();
+        this.filterUnits();
+      }
     });
   }
 
