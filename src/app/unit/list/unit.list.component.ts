@@ -133,16 +133,16 @@ export class UnitListComponent implements OnInit {
       label: 'NINJA BLADE'
     },
     {
-      id: 'ROD',
-      label: 'ROD'
-    },
-    {
       id: 'SHURIKEN',
       label: 'SHURIKEN'
     },
     {
       id: 'SPEAR',
       label: 'SPEAR'
+    },
+    {
+      id: 'ROD',
+      label: 'STAFF'
     },
     {
       id: 'SWORD',

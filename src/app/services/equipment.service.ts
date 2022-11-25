@@ -50,7 +50,7 @@ export class EquipmentService {
     SWORD: 'Sword',
     GREATSWORD: 'Great Sword',
     KATANA: 'Katana',
-    ROD: 'Rod',
+    ROD: 'Staff',
     NINJABLADE: 'Ninja Blade',
     BOW: 'Bow',
     AXE: 'Axe',
