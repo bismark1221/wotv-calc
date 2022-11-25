@@ -62,6 +62,16 @@
               </div>
             </td>
           </tr>
+          <tr *ngIf="jobs[0] && jobs[0].equipments.weaponGroup">
+            <th class="sub" colspan="6">Weapon Group</th>
+          </tr>
+          <tr *ngIf="jobs[0] && jobs[0].equipments.weaponGroup">
+            <td colspan="6">
+              <div class="equipmentText">
+                {{ jobs[0].equipments.weaponGroup }}
+              </div>
+            </td>
+          </tr>
           <tr>
             <th class="sub" colspan="6">Armors</th>
           </tr>

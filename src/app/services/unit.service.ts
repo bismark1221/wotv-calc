@@ -349,7 +349,7 @@ export class UnitService {
     }
   }
 
-  private unitHasJob(unit, filters) {
+  unitHasJob(unit, filters) {
     let unitHasJob = false;
 
     for (let i = (filters.subJob ? 1 : 0); i <= (filters.mainJob ? 0 : unit.jobs.length - 1); i++) {

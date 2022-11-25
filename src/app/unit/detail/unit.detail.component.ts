@@ -12,6 +12,9 @@ import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
 import { IndexService } from '../../services/index.service';
 
+import { GL_JOB_GROUP } from '../../data/gl/jobGroup';
+import { JP_JOB_GROUP } from '../../data/jp/jobGroup';
+
 @Component({
   selector: 'app-unit-detail',
   templateUrl: './unit.detail.component.html',
@@ -65,6 +68,19 @@ export class UnitDetailComponent implements OnInit {
     'DOOM_RES',
     'STUN_RES'
   ];
+
+  jobGroups = {
+    GL: GL_JOB_GROUP,
+    JP: JP_JOB_GROUP
+  };
+
+  weaponsGroups = {
+    SWORDA: 'Sword (Red Mage, etc)',
+    SWORDB: 'Sword (Warrior, etc)',
+    SWORDC: 'Sword (Knight, etc)',
+    STAFFA: 'Staff (Black Mage, etc)',
+    STAFFB: 'Staff (Devout, etc)'
+  };
 
   constructor(
     private unitService: UnitService,
@@ -321,6 +337,31 @@ export class UnitDetailComponent implements OnInit {
         const job = this.unit.rawJobs.find(searchedJob => searchedJob.dataId === jobId);
         this.calcJobStat(job, (i > 0 ? true : false));
         job.name = this.toolService.getName(job);
+
+        if (i === 0 && (job.equipments.weapons.indexOf('SWORD') !== -1 || job.equipments.weapons.indexOf('ROD') !== -1)) {
+          let jobGroupCount = 0;
+          let weaponGroupFound = null;
+          const jobGroupIds = Object.keys(this.jobGroups[this.version]);
+
+          while (weaponGroupFound === null && jobGroupCount <= jobGroupIds.length - 1) {
+            let jobInGroupCount = 0;
+            const jobGroup = this.jobGroups[this.version][jobGroupIds[jobGroupCount]];
+            while(weaponGroupFound === null && jobInGroupCount <= jobGroup.length - 1) {
+              if (this.unitService.unitHasJob(this.unit, {job: [jobGroup[jobInGroupCount]], subjob: false, mainJob: true})) {
+                weaponGroupFound = jobGroupIds[jobGroupCount];
+              }
+
+              jobInGroupCount++;
+            }
+
+            jobGroupCount++;
+          }
+
+          if (weaponGroupFound) {
+            job.equipments.weaponGroup = this.weaponsGroups[weaponGroupFound];
+          }
+        }
+
         this.jobs.push(job);
         i++;
       }
