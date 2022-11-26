@@ -144,7 +144,9 @@ export class CardDetailComponent implements OnInit {
             const formattedEffect = {
               type: effectType,
               value: effect.value,
-              calcType: effect.calcType
+              calcType: effect.calcType,
+              condition: effect.condition,
+              buffOnCondition: effect.buffOnCondition
             };
 
             const formattedBuff = {

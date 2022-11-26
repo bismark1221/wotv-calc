@@ -191,7 +191,9 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
           const formattedEffect = {
             type: statType,
             value: buff.value,
-            calcType: buff.calcType
+            calcType: buff.calcType,
+            condition: buff.condition,
+            buffOnCondition: buff.buffOnCondition
           };
 
           const formattedBuff = {
