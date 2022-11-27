@@ -23,25 +23,31 @@ export class CardListComponent implements OnInit {
   order = 'desc';
   filters = {
     rarity: [],
-    limited: [],
     element: [],
     cost: [],
+    limited: [],
+    weapon: [],
+    weaponsGroup: [],
     onlyActiveSkill: false,
   };
   version = 'GL';
+  rawJobs = [];
 
   isFilterChecked = {
     rarity: [],
     element: [],
     cost: [],
-    limited: []
+    limited: [],
+    weapon: [],
+    weaponsGroup: [],
   };
   collapsed = {
     rarity: true,
     element: true,
-    limited: true,
     cost: true,
-    skill: true
+    limited: true,
+    skill: true,
+    weapon: true
   };
 
   rarities = [
@@ -64,6 +70,96 @@ export class CardListComponent implements OnInit {
   ];
 
   costs = [];
+
+  weapons = [
+    {
+      id: 'AXE',
+      label: 'AXE'
+    },
+    {
+      id: 'BOOK',
+      label: 'BOOK'
+    },
+    {
+      id: 'BOOMERANG',
+      label: 'BOOMERANG'
+    },
+    {
+      id: 'BOW',
+      label: 'BOW'
+    },
+    {
+      id: 'DAGGER',
+      label: 'DAGGER'
+    },
+    {
+      id: 'FIST',
+      label: 'FIST'
+    },
+    {
+      id: 'GLOVE',
+      label: 'GLOVE'
+    },
+    {
+      id: 'GREATSWORD',
+      label: 'GREAT SWORD'
+    },
+    {
+      id: 'GUN',
+      label: 'GUN'
+    },
+    {
+      id: 'KATANA',
+      label: 'KATANA'
+    },
+    {
+      id: 'MACE',
+      label: 'MACE'
+    },
+    {
+      id: 'NINJABLADE',
+      label: 'NINJA BLADE'
+    },
+    {
+      id: 'SHURIKEN',
+      label: 'SHURIKEN'
+    },
+    {
+      id: 'SPEAR',
+      label: 'SPEAR'
+    },
+    {
+      id: 'ROD',
+      label: 'STAFF'
+    },
+    {
+      id: 'SWORD',
+      label: 'SWORD'
+    }
+  ];
+
+  weaponsGroups = [
+    {
+      id: 'SWORDA',
+      label: 'Sword (Red Mage, etc)'
+    },
+    {
+      id: 'SWORDB',
+      label: 'Sword (Warrior, etc)'
+    },
+    {
+      id: 'SWORDC',
+      label: 'Sword (Knight, etc)'
+    },
+    {
+      id: 'STAFFA',
+      label: 'Staff (Black Mage, etc)'
+    },
+    {
+      id: 'STAFFB',
+      label: 'Staff (Devout, etc)'
+    }
+  ];
 
   filtersCount = 0;
 
@@ -118,6 +214,7 @@ export class CardListComponent implements OnInit {
 
     this.cards = result.cards;
     this.rawCards = result.rawCards;
+    this.rawJobs = result.rawJobs;
 
     if (Object.keys(options).length === 0) {
       this.costs = result.costs;
@@ -129,6 +226,14 @@ export class CardListComponent implements OnInit {
         if (!this.filters.cost) {
           this.filters.cost = [];
         }
+
+        if (!this.filters.weapon) {
+          this.filters.weapon = [];
+        }
+
+        if (!this.filters.weaponsGroup) {
+          this.filters.weaponsGroup = [];
+        }
       }
 
       const cardsCollapsed = this.sessionService.get('cardsCollapsed');
@@ -137,6 +242,10 @@ export class CardListComponent implements OnInit {
 
         if (this.collapsed.cost === undefined) {
           this.collapsed.cost = true;
+        }
+
+        if (this.collapsed.weapon === undefined) {
+          this.collapsed.weapon = true;
         }
       }
 
@@ -147,7 +256,7 @@ export class CardListComponent implements OnInit {
   }
 
   filterCards() {
-    this.cards = this.cardService.filterCards(this.rawCards, this.filters, this.sort, this.order);
+    this.cards = this.cardService.filterCardsWithApi(this.rawCards, this.filters, this.rawJobs, this.sort, this.order);
     this.countFilters();
   }
 
@@ -156,6 +265,8 @@ export class CardListComponent implements OnInit {
       + this.filters.element.length
       + this.filters.limited.length
       + this.filters.rarity.length
+      + this.filters.weapon.length
+      + this.filters.weaponsGroup.length
       + (this.filters.onlyActiveSkill ? 1 : 0);
   }
 
@@ -222,6 +333,22 @@ export class CardListComponent implements OnInit {
         this.isFilterChecked.cost[cost] = false;
       } else {
         this.isFilterChecked.cost[cost] = true;
+      }
+    });
+
+    this.weapons.forEach(weapon => {
+      if (this.filters.weapon.indexOf(weapon.id) === -1) {
+        this.isFilterChecked.weapon[weapon.id] = false;
+      } else {
+        this.isFilterChecked.weapon[weapon.id] = true;
+      }
+    });
+
+    this.weaponsGroups.forEach(weaponsGroup => {
+      if (this.filters.weaponsGroup.indexOf(weaponsGroup.id) === -1) {
+        this.isFilterChecked.weaponsGroup[weaponsGroup.id] = false;
+      } else {
+        this.isFilterChecked.weaponsGroup[weaponsGroup.id] = true;
       }
     });
   }

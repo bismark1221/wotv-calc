@@ -9,8 +9,12 @@ import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
 import { ApiService } from './api.service';
+import { JobService } from './job.service';
 
 import { Card } from '../entities/card';
+
+import { GL_JOB_GROUP } from '../data/gl/jobGroup';
+import { JP_JOB_GROUP } from '../data/jp/jobGroup';
 
 @Injectable()
 export class CardService {
@@ -23,6 +27,11 @@ export class CardService {
 
   private lvTbl = [0, 324, 1740, 4137, 7486, 11797, 17098, 23426, 30825, 39341, 49022, 59918, 72080, 85561, 100416, 116700, 134471, 153787, 174708, 197296, 221615, 247730, 275707, 305615, 337525, 371509, 407642, 446000, 486662, 529709, 575225, 623295, 674008, 727455, 783729, 842927, 905148, 970495, 1039074, 1110994, 1186367, 1265309, 1347940, 1434384, 1524768, 1619225, 1717891, 1820907, 1928419, 2040578, 2157540, 2279467, 2406527, 2538894, 2676748, 2820275, 2969669, 3125131, 3286869, 3455100, 3630049, 3811950, 4001046, 4197590, 4401846, 4614088, 4834602, 5063686, 5301650, 5548818, 5805529, 6072136, 6349008, 6636531, 6935109, 7245165, 7567142, 7901504, 8248738, 8609354, 8983888, 9372904, 9776994, 10196780, 10632918, 11086099, 11557051, 12046542, 12555384, 13084434, 13634598, 14206835, 14802161, 15421653, 16066453, 16737775, 17436908, 18165224, 18924184, 19715346];
 
+  jobGroups = {
+    GL: GL_JOB_GROUP,
+    JP: JP_JOB_GROUP
+  };
+
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
@@ -31,6 +40,7 @@ export class CardService {
     private rangeService: RangeService,
     private navService: NavService,
     private toolService: ToolService,
+    private jobService: JobService,
     private authService: AuthService
   ) {}
 
@@ -85,10 +95,11 @@ export class CardService {
       }
     }
 
-    const cards = this.filterCards(rawCards, filters, sort, order);
+    const cards = this.filterCardsWithApi(rawCards, filters, apiResult.jobs, sort, order);
 
     return {
       rawCards: rawCards,
+      rawJobs: apiResult.jobs,
       cards: cards,
       costs: costs.sort((a, b) => b - a)
     };
@@ -131,7 +142,11 @@ export class CardService {
           && (withFromOtherVersion || !card.fromOtherVersion)
         ) {
           let needToAddCard = false;
-          if ((!filters.element || filters.element.length === 0) && !filters.onlyActiveSkill) {
+          if ((!filters.element || filters.element.length === 0)
+            && !filters.onlyActiveSkill
+            && (!filters.weapon || filters.weapon.length ===0)
+            && (!filters.weaponsGroup || filters.weaponsGroup.length ===0)
+          ) {
             needToAddCard = true;
           } else {
             if (filters.element && filters.element.length > 0) {
@@ -152,6 +167,116 @@ export class CardService {
                 const buff = this.listingSkills.find(searchedSkill => searchedSkill.dataId === buffId.classic);
                 if (buff && buff.type === 'skill') {
                   needToAddCard = true;
+                }
+              }
+            }
+          }
+
+          if (needToAddCard) {
+            filteredCards.push(card);
+          }
+        }
+      }
+
+      return this.sortCards(filteredCards, sort, order);
+    } else {
+      for (const card of cards) {
+        if (withFromOtherVersion || !card.fromOtherVersion) {
+          filteredCards.push(card);
+        }
+      }
+
+      return this.sortCards(filteredCards, sort, order);
+    }
+  }
+
+  filterCardsWithApi(cards, filters, jobs, sort = 'rarity', order = 'desc', withFromOtherVersion = false) {
+    const filteredCards = [];
+    const version = this.navService.getVersion();
+    const jobGroups = this.jobGroups[version];
+
+    if (filters) {
+      for (const card of cards) {
+        if ((filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1)
+          && (filters.cost.length === 0 || filters.cost.indexOf(card.cost) !== -1)
+          && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(card.dataId)) !== -1)
+          && (withFromOtherVersion || !card.fromOtherVersion)
+        ) {
+          let needToAddCard = false;
+          if ((!filters.element || filters.element.length === 0)
+            && !filters.onlyActiveSkill
+            && (!filters.weapon || filters.weapon.length ===0)
+            && (!filters.weaponsGroup || filters.weaponsGroup.length ===0)
+          ) {
+            needToAddCard = true;
+          } else {
+            if (filters.element && filters.element.length > 0) {
+              for (const buff of card.partyBuffs) {
+                if (buff && buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
+                  filters.element.forEach(elem => {
+                    if (buff.cond[0].items.indexOf(elem) !== -1) {
+                      needToAddCard = true;
+                    }
+                  });
+                }
+              }
+            }
+
+            if (filters.onlyActiveSkill && (!filters.element || filters.element.length === 0 || needToAddCard)) {
+              needToAddCard = false;
+              for (const buffId of card.unitBuffs) {
+                const buff = this.listingSkills.find(searchedSkill => searchedSkill.dataId === buffId.classic);
+                if (buff && buff.type === 'skill') {
+                  needToAddCard = true;
+                }
+              }
+            }
+
+            if ((filters.weapon && filters.weapon.length > 0) || (filters.weaponsGroup && filters.weaponsGroup.length > 0)) {
+              needToAddCard = false;
+
+              if (!filters.weapon) {
+                filters.weapon = [];
+              }
+
+              if (!filters.weaponsGroup) {
+                filters.weaponsGroup = [];
+              }
+
+              const swordOrStaffJob = [];
+
+              for (const partyBuff of card.partyBuffs) {
+                for (const cond of partyBuff.cond) {
+                  if (cond.type === 'mainJob' || cond.type === 'job') {
+                    for (const jobId of cond.items) {
+                      const job = jobs.find(searchedJob => searchedJob.dataId === jobId);
+                      for (const weapon of job.equipments.weapons) {
+                        if (!needToAddCard && filters.weapon.indexOf(weapon) !== -1) {
+                          needToAddCard = true;
+                        }
+                      }
+
+                      if (!needToAddCard && filters.weaponsGroup.length > 0 && (job.equipments.weapons.indexOf('SWORD') !== -1 || job.equipments.weapons.indexOf('ROD') !== -1)) {
+                        swordOrStaffJob.push(this.jobService.getGenericJobId(jobId));
+                      }
+                    }
+                  }
+                }
+              }
+
+              for (const weaponsGroup of filters.weaponsGroup) {
+                if (!needToAddCard) {
+                  let jobNotFound = false;
+
+                  for (const jobId of jobGroups[weaponsGroup]) {
+                    if (swordOrStaffJob.indexOf(jobId) === -1) {
+                      jobNotFound = true;
+                    }
+                  }
+
+                  if (!jobNotFound) {
+                    needToAddCard = true;
+                  }
                 }
               }
             }
