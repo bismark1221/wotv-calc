@@ -116,9 +116,12 @@ export class CardService {
       rawCards.push(rawCard);
     }
 
-    const cards = this.filterCards(rawCards, filters, sort, order, withFromOtherVersion);
+    const cards = this.filterCardsWithApi(rawCards, filters, apiResult.jobs, sort, order, withFromOtherVersion);
 
-    return cards;
+    return {
+      rawJobs: apiResult.jobs,
+      cards: cards
+    };
   }
 
   async getCardsForBuilder() {
@@ -129,65 +132,6 @@ export class CardService {
     }
 
     return [];
-  }
-
-  filterCards(cards, filters, sort = 'rarity', order = 'desc', withFromOtherVersion = false) {
-    const filteredCards = [];
-
-    if (filters) {
-      for (const card of cards) {
-        if ((filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1)
-          && (filters.cost.length === 0 || filters.cost.indexOf(card.cost) !== -1)
-          && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(card.dataId)) !== -1)
-          && (withFromOtherVersion || !card.fromOtherVersion)
-        ) {
-          let needToAddCard = false;
-          if ((!filters.element || filters.element.length === 0)
-            && !filters.onlyActiveSkill
-            && (!filters.weapon || filters.weapon.length ===0)
-            && (!filters.weaponsGroup || filters.weaponsGroup.length ===0)
-          ) {
-            needToAddCard = true;
-          } else {
-            if (filters.element && filters.element.length > 0) {
-              for (const buff of card.partyBuffs) {
-                if (buff && buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
-                  filters.element.forEach(elem => {
-                    if (buff.cond[0].items.indexOf(elem) !== -1) {
-                      needToAddCard = true;
-                    }
-                  });
-                }
-              }
-            }
-
-            if (filters.onlyActiveSkill && (!filters.element || filters.element.length === 0 || needToAddCard)) {
-              needToAddCard = false;
-              for (const buffId of card.unitBuffs) {
-                const buff = this.listingSkills.find(searchedSkill => searchedSkill.dataId === buffId.classic);
-                if (buff && buff.type === 'skill') {
-                  needToAddCard = true;
-                }
-              }
-            }
-          }
-
-          if (needToAddCard) {
-            filteredCards.push(card);
-          }
-        }
-      }
-
-      return this.sortCards(filteredCards, sort, order);
-    } else {
-      for (const card of cards) {
-        if (withFromOtherVersion || !card.fromOtherVersion) {
-          filteredCards.push(card);
-        }
-      }
-
-      return this.sortCards(filteredCards, sort, order);
-    }
   }
 
   filterCardsWithApi(cards, filters, jobs, sort = 'rarity', order = 'desc', withFromOtherVersion = false) {
@@ -210,7 +154,9 @@ export class CardService {
           ) {
             needToAddCard = true;
           } else {
+            let previousFilterActivated = false;
             if (filters.element && filters.element.length > 0) {
+              previousFilterActivated = true;
               for (const buff of card.partyBuffs) {
                 if (buff && buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
                   filters.element.forEach(elem => {
@@ -222,7 +168,8 @@ export class CardService {
               }
             }
 
-            if (filters.onlyActiveSkill && (!filters.element || filters.element.length === 0 || needToAddCard)) {
+            if (filters.onlyActiveSkill && (!previousFilterActivated || needToAddCard)) {
+              previousFilterActivated = true;
               needToAddCard = false;
               for (const buffId of card.unitBuffs) {
                 const buff = this.listingSkills.find(searchedSkill => searchedSkill.dataId === buffId.classic);
@@ -232,7 +179,10 @@ export class CardService {
               }
             }
 
-            if ((filters.weapon && filters.weapon.length > 0) || (filters.weaponsGroup && filters.weaponsGroup.length > 0)) {
+            if (((filters.weapon && filters.weapon.length > 0) || (filters.weaponsGroup && filters.weaponsGroup.length > 0))
+              && (!previousFilterActivated || needToAddCard)
+            ) {
+              previousFilterActivated = true;
               needToAddCard = false;
 
               if (!filters.weapon) {
@@ -249,15 +199,19 @@ export class CardService {
                 for (const cond of partyBuff.cond) {
                   if (cond.type === 'mainJob' || cond.type === 'job') {
                     for (const jobId of cond.items) {
-                      const job = jobs.find(searchedJob => searchedJob.dataId === jobId);
-                      for (const weapon of job.equipments.weapons) {
-                        if (!needToAddCard && filters.weapon.indexOf(weapon) !== -1) {
-                          needToAddCard = true;
+                      if (!needToAddCard) {
+                        const job = jobs.find(searchedJob => searchedJob.dataId === jobId);
+                        if (filters.weapon.length > 0 && jobId !== 'JB_DQTC_SLIM'){
+                          for (const weapon of job.equipments.weapons) {
+                            if (!needToAddCard && filters.weapon.indexOf(weapon) !== -1) {
+                              needToAddCard = true;
+                            }
+                          }
                         }
-                      }
 
-                      if (!needToAddCard && filters.weaponsGroup.length > 0 && (job.equipments.weapons.indexOf('SWORD') !== -1 || job.equipments.weapons.indexOf('ROD') !== -1)) {
-                        swordOrStaffJob.push(this.jobService.getGenericJobId(jobId));
+                        if (filters.weaponsGroup.length > 0 && (job.equipments.weapons.indexOf('SWORD') !== -1 || job.equipments.weapons.indexOf('ROD') !== -1)) {
+                          swordOrStaffJob.push(this.jobService.getGenericJobId(jobId));
+                        }
                       }
                     }
                   }

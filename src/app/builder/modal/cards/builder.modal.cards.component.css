@@ -37,6 +37,20 @@
   padding-top: 3px;
 }
 
+.weaponTypeExpander {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.weaponType {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.weaponType input {
+  margin-right: 5px;
+}
+
 .separator {
   margin-left: 20px;
   margin-right: 30px;

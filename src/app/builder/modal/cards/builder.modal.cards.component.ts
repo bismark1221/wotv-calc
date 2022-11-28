@@ -18,6 +18,7 @@ import { UnitService } from '../../../services/unit.service';
 export class BuilderModalCardsComponent extends SimpleModalComponent<null, any> implements OnInit {
   rawCards;
   cards = [];
+  rawJobs = [];
   star;
   firstClickOutside = false;
 
@@ -25,12 +26,109 @@ export class BuilderModalCardsComponent extends SimpleModalComponent<null, any> 
   filters = {
     rarity: [],
     element: [],
-    cost: []
+    cost: [],
+    weapon: [],
+    weaponsGroup: []
   };
+  isWeaponChecked = [];
+  isWeaponsGroupChecked = [];
+
   savedCards = {};
   loadCardId = null;
 
   showOnlyOtherVersion = false;
+
+  collapsedWeaponType = true;
+
+  weapons = [
+    {
+      id: 'AXE',
+      label: 'AXE'
+    },
+    {
+      id: 'BOOK',
+      label: 'BOOK'
+    },
+    {
+      id: 'BOOMERANG',
+      label: 'BOOMERANG'
+    },
+    {
+      id: 'BOW',
+      label: 'BOW'
+    },
+    {
+      id: 'DAGGER',
+      label: 'DAGGER'
+    },
+    {
+      id: 'FIST',
+      label: 'FIST'
+    },
+    {
+      id: 'GLOVE',
+      label: 'GLOVE'
+    },
+    {
+      id: 'GREATSWORD',
+      label: 'GREAT SWORD'
+    },
+    {
+      id: 'GUN',
+      label: 'GUN'
+    },
+    {
+      id: 'KATANA',
+      label: 'KATANA'
+    },
+    {
+      id: 'MACE',
+      label: 'MACE'
+    },
+    {
+      id: 'NINJABLADE',
+      label: 'NINJA BLADE'
+    },
+    {
+      id: 'SHURIKEN',
+      label: 'SHURIKEN'
+    },
+    {
+      id: 'SPEAR',
+      label: 'SPEAR'
+    },
+    {
+      id: 'ROD',
+      label: 'STAFF'
+    },
+    {
+      id: 'SWORD',
+      label: 'SWORD'
+    }
+  ];
+
+  weaponsGroups = [
+    {
+      id: 'SWORDA',
+      label: 'Sword (Red Mage, etc)'
+    },
+    {
+      id: 'SWORDB',
+      label: 'Sword (Warrior, etc)'
+    },
+    {
+      id: 'SWORDC',
+      label: 'Sword (Knight, etc)'
+    },
+    {
+      id: 'STAFFA',
+      label: 'Staff (Black Mage, etc)'
+    },
+    {
+      id: 'STAFFB',
+      label: 'Staff (Devout, etc)'
+    }
+  ];
 
   public modalStep = 'select';
   public cardType = 'main';
@@ -66,13 +164,17 @@ export class BuilderModalCardsComponent extends SimpleModalComponent<null, any> 
   async getCards() {
     if (!this.rawCards) {
       if (isNaN(this.teamUnitPos)) {
-        this.rawCards = await this.unitService.getAvailableCards(this.cardType);
+        const apiResult = await this.unitService.getAvailableCards(this.cardType);
+        this.rawCards = apiResult.cards;
+        this.rawJobs = apiResult.rawJobs;
       } else {
-        this.rawCards = await this.teamService.getAvailableCards(this.teamUnitPos, this.cardType);
+        const apiResult = await this.teamService.getAvailableCards(this.teamUnitPos, this.cardType);
+        this.rawCards = apiResult.cards;
+        this.rawJobs = apiResult.rawJobs;
       }
     }
 
-    const filteredCards = this.cardService.filterCards(this.rawCards, this.filters, 'rarity', 'desc', true);
+    const filteredCards = this.cardService.filterCardsWithApi(this.rawCards, this.filters, this.rawJobs, 'rarity', 'desc', true);
 
     this.cards = [];
     for (const card of filteredCards) {
@@ -142,6 +244,11 @@ export class BuilderModalCardsComponent extends SimpleModalComponent<null, any> 
 
       this.modalStep = 'custom';
     }
+  }
+
+  toogleWeaponFilter() {
+    this.firstClickOutside = false;
+    this.collapsedWeaponType = !this.collapsedWeaponType;
   }
 
   closeButton() {

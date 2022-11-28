@@ -903,7 +903,8 @@ export class UnitService {
       alreadyUsedCardId = this.unit.card.dataId;
     }
 
-    const cards = await this.cardService.getCardsForListing(null, 'rarity', 'desc', true);
+    const result = await this.cardService.getCardsForListing(null, 'rarity', 'desc', true);
+    const cards = result.cards;
     const availableCards = [];
 
     cards.forEach(card => {
@@ -912,7 +913,10 @@ export class UnitService {
       }
     });
 
-    return availableCards;
+    return {
+      cards: availableCards,
+      rawJobs : result.rawJobs
+    };
   }
 
   maxDreamStats() {

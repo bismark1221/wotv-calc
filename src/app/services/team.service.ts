@@ -302,7 +302,8 @@ export class TeamService {
       alreadyUsedCardIds.push(this.team.units[pos].card.dataId);
     }
 
-    const cards = await this.cardService.getCardsForListing(null, 'rarity', 'desc', true);
+    const result = await this.cardService.getCardsForListing(null, 'rarity', 'desc', true);
+    const cards = result.cards;
     const availableCards = [];
 
     cards.forEach(card => {
@@ -311,7 +312,10 @@ export class TeamService {
       }
     });
 
-    return availableCards;
+    return {
+      cards: availableCards,
+      rawJobs : result.rawJobs
+    };
   }
 
   async getAvailableEspers(pos) {

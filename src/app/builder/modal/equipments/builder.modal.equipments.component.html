@@ -35,6 +35,7 @@
                   <button *ngFor="let category of ['weapon', 'armor', 'acc']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('category', category)}" (click)="filterList('category', category)">
                     {{ category | titlecase }}
                   </button>
+
                   <div class="acquisitionExpander" (click)="collapsedAcquisition = !collapsedAcquisition">
                     Acquisition Type
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block" *ngIf="!collapsedAcquisition">
