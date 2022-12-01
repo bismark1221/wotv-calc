@@ -737,7 +737,9 @@ export class Unit {
         ];
 
         elements.forEach(element => {
-          this.updateStat(element + '_RES', value, statType, calc);
+          if (statType !== 'totalEquipment' || reset === false || !this.stats[element + '_RES'].totalEquipment) {
+            this.updateStat(element + '_RES', value, statType, calc);
+          }
         });
       break;
 
@@ -754,7 +756,9 @@ export class Unit {
         ];
 
         elementsATK.forEach(element => {
-          this.updateStat(element + '_ATK', value, statType, calc);
+          if (statType !== 'totalEquipment' || reset === false || !this.stats[element + '_ATK'].totalEquipment) {
+            this.updateStat(element + '_ATK', value, statType, calc);
+          }
         });
       break;
 
@@ -768,7 +772,9 @@ export class Unit {
         ];
 
         atks.forEach(atk => {
-          this.updateStat(atk + '_RES', value, statType, calc);
+          if (statType !== 'totalEquipment' || reset === false || !this.stats[atk + '_RES'].totalEquipment) {
+            this.updateStat(atk + '_RES', value, statType, calc);
+          }
         });
       break;
 
@@ -794,7 +800,9 @@ export class Unit {
         ];
 
         ailments.forEach(ailment => {
-          this.updateStat(ailment + '_RES', value, statType, calc);
+          if (statType !== 'totalEquipment' || reset === false || !this.stats[ailment + '_RES'].totalEquipment) {
+            this.updateStat(ailment + '_RES', value, statType, calc);
+          }
         });
       break;
 
@@ -1436,7 +1444,7 @@ export class Unit {
       }
 
       if (this.stats[statType].equipmentBuff) {
-        if (!this.stats[statType].equipments) {
+        if (!this.stats[statType].totalEquipment) {
           this.updateStat(statType, 0, 'totalEquipment', 'fixe', true);
         }
 
