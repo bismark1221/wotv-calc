@@ -508,31 +508,64 @@ export class Unit {
     if (this.replacedSkills && this.hasUpgradeFromMasterSKill) {
       if (!this.replacedSkills[this.masterSkill[this.masterSkillActivated]] && this.upgradeActivatedFromMasterSKill) {
         this.replacedSkills[this.masterSkill[this.hasGetUpgradeFromMasterSkill]].forEach(upgrade => {
-          if (upgrade.oldSkillData && this.formattedLimit) {
-            const oldSkill = JSON.parse(JSON.stringify(this.formattedLimit));
+          if (!upgrade.oldSkillData) {
+            upgrade.oldSkillData = JSON.parse(JSON.stringify(this.getSkillById(upgrade.oldSkill)));
+          }
 
-            this.formattedLimit = JSON.parse(JSON.stringify(upgrade.oldSkillData));
-            this.formattedLimit.level = oldSkill.level;
-            if (toolService) {
-              this.formattedLimit = this.formatActiveSkill(this.formattedLimit, toolService, skillService, rangeService);
-            }
+          const downgradedSkill = JSON.parse(JSON.stringify(upgrade.oldSkillData));
+
+          if (upgrade.oldSkillData.type === 'limit') {
+            const limitLevel = this.formattedLimit.level;
+            this.formattedLimit = downgradedSkill;
+            this.formattedLimit.level = limitLevel;
+          } else if (this.formattedAttack.dataId === upgrade.newSkill.dataId) {
+            this.formattedAttack = downgradedSkill;
+          } else {
+            Object.keys(this.board.nodes).forEach(nodeId => {
+              if (this.board.nodes[nodeId].skill && this.board.nodes[nodeId].skill.dataId === upgrade.newSkill.dataId) {
+                const oldSkill = this.board.nodes[nodeId].skill;
+
+                downgradedSkill.level = this.board.nodes[nodeId].level;
+                downgradedSkill.jobLevel = oldSkill.jobLevel;
+                downgradedSkill.unlockJob = oldSkill.unlockJob;
+                downgradedSkill.unlockStar = oldSkill.unlockStar;
+                downgradedSkill.mainSkill = oldSkill.mainSkill;
+
+                this.board.nodes[nodeId].skill = downgradedSkill;
+              }
+            });
           }
         });
         this.upgradeActivatedFromMasterSKill = false;
       } else if (this.replacedSkills[this.masterSkill[this.masterSkillActivated]] && !this.upgradeActivatedFromMasterSKill) {
         this.replacedSkills[this.masterSkill[this.masterSkillActivated]].forEach(upgrade => {
-          if (upgrade.newSkill && this.formattedLimit) {
-            const oldSkill = JSON.parse(JSON.stringify(this.formattedLimit));
-            if (!upgrade.oldSkillData) {
-              upgrade.oldSkillData = oldSkill;
-            }
+          if (!upgrade.oldSkillData) {
+            upgrade.oldSkillData = JSON.parse(JSON.stringify(this.getSkillById(upgrade.oldSkill)));
+          }
 
+          const upgradedSkill = JSON.parse(JSON.stringify(upgrade.newSkill));
 
-            this.formattedLimit = JSON.parse(JSON.stringify(upgrade.newSkill));
-            this.formattedLimit.level = oldSkill.level;
-            if (toolService) {
-              this.formattedLimit = this.formatActiveSkill(this.formattedLimit, toolService, skillService, rangeService);
-            }
+          if (upgrade.oldSkillData.type === 'limit') {
+            const limitLevel = this.formattedLimit.level;
+            this.formattedLimit = upgradedSkill;
+            this.formattedLimit.level = limitLevel;
+          } else if (this.formattedAttack.dataId === upgrade.oldSkill) {
+            this.formattedAttack = upgradedSkill;
+          } else {
+            Object.keys(this.board.nodes).forEach(nodeId => {
+              if (this.board.nodes[nodeId].skill && this.board.nodes[nodeId].skill.dataId === upgrade.oldSkill) {
+                const oldSkill = this.board.nodes[nodeId].skill;
+
+                upgradedSkill.level = this.board.nodes[nodeId].level;
+                upgradedSkill.jobLevel = oldSkill.jobLevel;
+                upgradedSkill.unlockJob = oldSkill.unlockJob;
+                upgradedSkill.unlockStar = oldSkill.unlockStar;
+                upgradedSkill.mainSkill = oldSkill.mainSkill;
+                upgradedSkill.upgradedFromDreamSkill = true;
+
+                this.board.nodes[nodeId].skill = upgradedSkill;
+              }
+            });
           }
         });
         this.upgradeActivatedFromMasterSKill = true;
