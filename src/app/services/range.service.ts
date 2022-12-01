@@ -122,6 +122,34 @@ export class RangeService {
     return skillTable;
   }
 
+  formatSquareNoAOE(skillTable, range) {
+    const middle = 8;
+    let countLine = 0;
+    for (let i = middle; i >= middle - range.l; i--) {
+      for (let j = 1; j <= range.l; j++) {
+        if (i !== middle) {
+          if (i > middle - 2 || j < 2) {
+            skillTable[i][middle + j] = 'R';
+            skillTable[i][middle - j] = 'R';
+
+            skillTable[(middle + countLine)][middle + j] = 'R';
+            skillTable[(middle + countLine)][middle - j] = 'R';
+          }
+
+          skillTable[i][middle] = 'AR';
+          skillTable[(middle + countLine)][middle] = 'R';
+        } else {
+          skillTable[i][middle - j] = 'R';
+          skillTable[i][middle + j] = 'R';
+        }
+      }
+
+      countLine++;
+    }
+
+    return skillTable;
+  }
+
   formatL(skillTable, range) {
     const middle = 8;
     let countLine = 0;
@@ -308,6 +336,8 @@ export class RangeService {
           } else {
             skillTable = this.formatSquare(skillTable, skill.range);
           }
+        } else if (skill.range.s === 2) {
+          skillTable = this.formatSquareNoAOE(skillTable, skill.range);
         } else if (skill.range.s === 11) {
           skillTable = this.formatL(skillTable, skill.range);
         } else if (skill.range.s === 13) {
