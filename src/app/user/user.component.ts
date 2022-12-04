@@ -14,7 +14,7 @@ import { InventoryService } from '../services/inventory.service';
 export class UserComponent implements OnInit, AfterViewInit {
   token;
   dumpResult;
-  haveDevice;
+  haveDevice = false;
 
   loading;
 
@@ -37,8 +37,6 @@ export class UserComponent implements OnInit, AfterViewInit {
           this.user = user;
           await this.userHaveDevice('haveDevice');
         }
-
-        this.haveDevice = true;
       });
     });
   }

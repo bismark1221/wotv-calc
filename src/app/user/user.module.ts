@@ -14,14 +14,8 @@ import { UserComponent } from './user.component';
 @NgModule({
   imports: [
     CommonModule,
-    UserRoutingModule
-    /*NgSelectModule,
     FormsModule,
-    ReactiveFormsModule,
-    NgxPopperjsModule,
-    UiSwitchModule,
-    ,
-    SharedModule*/
+    UserRoutingModule
   ],
   declarations: [
     UserComponent
