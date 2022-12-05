@@ -155,19 +155,6 @@ export class CardService {
             needToAddCard = true;
           } else {
             let previousFilterActivated = false;
-            if (filters.element && filters.element.length > 0) {
-              previousFilterActivated = true;
-              for (const buff of card.partyBuffs) {
-                if (buff && buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
-                  filters.element.forEach(elem => {
-                    if (buff.cond[0].items.indexOf(elem) !== -1) {
-                      needToAddCard = true;
-                    }
-                  });
-                }
-              }
-            }
-
             if (filters.onlyActiveSkill && (!previousFilterActivated || needToAddCard)) {
               previousFilterActivated = true;
               needToAddCard = false;
@@ -179,57 +166,72 @@ export class CardService {
               }
             }
 
-            if (((filters.weapon && filters.weapon.length > 0) || (filters.weaponsGroup && filters.weaponsGroup.length > 0))
+            if (((filters.weapon && filters.weapon.length > 0) || (filters.weaponsGroup && filters.weaponsGroup.length > 0) || (filters.element && filters.element.length > 0))
               && (!previousFilterActivated || needToAddCard)
             ) {
               previousFilterActivated = true;
               needToAddCard = false;
 
-              if (!filters.weapon) {
-                filters.weapon = [];
+              if (filters.element && filters.element.length > 0) {
+                previousFilterActivated = true;
+                for (const buff of card.partyBuffs) {
+                  if (buff && buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
+                    filters.element.forEach(elem => {
+                      if (buff.cond[0].items.indexOf(elem) !== -1) {
+                        needToAddCard = true;
+                      }
+                    });
+                  }
+                }
               }
 
-              if (!filters.weaponsGroup) {
-                filters.weaponsGroup = [];
-              }
+              if (!needToAddCard && ((filters.weapon && filters.weapon.length > 0) || (filters.weaponsGroup && filters.weaponsGroup.length > 0))) {
+                if (!filters.weapon) {
+                  filters.weapon = [];
+                }
 
-              const swordOrStaffJob = [];
+                if (!filters.weaponsGroup) {
+                  filters.weaponsGroup = [];
+                }
 
-              for (const partyBuff of card.partyBuffs) {
-                for (const cond of partyBuff.cond) {
-                  if (cond.type === 'mainJob' || cond.type === 'job') {
-                    for (const jobId of cond.items) {
-                      if (!needToAddCard) {
-                        const job = jobs.find(searchedJob => searchedJob.dataId === jobId);
-                        if (filters.weapon.length > 0 && jobId !== 'JB_DQTC_SLIM'){
-                          for (const weapon of job.equipments.weapons) {
-                            if (!needToAddCard && filters.weapon.indexOf(weapon) !== -1) {
-                              needToAddCard = true;
+                const swordOrStaffJob = [];
+
+                for (const partyBuff of card.partyBuffs) {
+                  for (const cond of partyBuff.cond) {
+                    if (cond.type === 'mainJob' || cond.type === 'job') {
+                      for (const jobId of cond.items) {
+                        if (!needToAddCard) {
+                          const job = jobs.find(searchedJob => searchedJob.dataId === jobId);
+                          if (filters.weapon.length > 0 && jobId !== 'JB_DQTC_SLIM'){
+                            for (const weapon of job.equipments.weapons) {
+                              if (!needToAddCard && filters.weapon.indexOf(weapon) !== -1) {
+                                needToAddCard = true;
+                              }
                             }
                           }
-                        }
 
-                        if (filters.weaponsGroup.length > 0 && (job.equipments.weapons.indexOf('SWORD') !== -1 || job.equipments.weapons.indexOf('ROD') !== -1)) {
-                          swordOrStaffJob.push(this.jobService.getGenericJobId(jobId));
+                          if (filters.weaponsGroup.length > 0 && (job.equipments.weapons.indexOf('SWORD') !== -1 || job.equipments.weapons.indexOf('ROD') !== -1)) {
+                            swordOrStaffJob.push(this.jobService.getGenericJobId(jobId));
+                          }
                         }
                       }
                     }
                   }
                 }
-              }
 
-              for (const weaponsGroup of filters.weaponsGroup) {
-                if (!needToAddCard) {
-                  let jobNotFound = false;
+                for (const weaponsGroup of filters.weaponsGroup) {
+                  if (!needToAddCard) {
+                    let jobNotFound = false;
 
-                  for (const jobId of jobGroups[weaponsGroup]) {
-                    if (swordOrStaffJob.indexOf(jobId) === -1) {
-                      jobNotFound = true;
+                    for (const jobId of jobGroups[weaponsGroup]) {
+                      if (swordOrStaffJob.indexOf(jobId) === -1) {
+                        jobNotFound = true;
+                      }
                     }
-                  }
 
-                  if (!jobNotFound) {
-                    needToAddCard = true;
+                    if (!jobNotFound) {
+                      needToAddCard = true;
+                    }
                   }
                 }
               }
