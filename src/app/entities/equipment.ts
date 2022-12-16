@@ -278,7 +278,9 @@ export class Equipment {
             skillCond.items.forEach((itemCond, itemCondIndex) => {
               if (skillCond.type === 'unit') {
                 const unitCond = this.rawUnits.find(searchedUnit => searchedUnit.dataId === itemCond);
-                skillCond.formattedItems.push(unitCond.image);
+                if (unitCond) {
+                  skillCond.formattedItems.push(unitCond.image);
+                }
               }
 
               if (skillCond.type === 'mainjob') {

@@ -21,6 +21,8 @@ export class EquipmentDetailComponent implements OnInit {
   specialBismark = false;
   activeTab;
 
+  showPassivesDetail = false;
+
   constructor(
     private equipmentService: EquipmentService,
     private skillService: SkillService,
@@ -108,6 +110,7 @@ export class EquipmentDetailComponent implements OnInit {
          skill.name = this.toolService.getName(skill);
 
           skill.effectsHtml = this.skillService.formatEquipmentEffects(this.equipment, skill);
+          skill.maxedEffectsHtml = this.skillService.formatEffects(this.equipment, skill);
 
           if (skill.damage) {
             skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);
@@ -297,5 +300,9 @@ export class EquipmentDetailComponent implements OnInit {
 
   clickSpecialBismark() {
     this.specialBismark = !this.specialBismark;
+  }
+
+  tooglePassiveDetail() {
+    this.showPassivesDetail = !this.showPassivesDetail;
   }
 }

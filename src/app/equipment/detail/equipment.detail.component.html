@@ -117,6 +117,7 @@
         </tbody>
       </table>
 
+      <!-- Active skill -->
       <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.activeSkill">
         <tr>
           <th colspan="6">Skill</th>
@@ -133,7 +134,46 @@
         <tr app-shared-skillRow [skill]="equipment.activeSkill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
       </table>
 
+      <!-- Max Passive skills -->
       <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
+        <tr>
+          <th colspan="15">Passive Effects at max level/upgrade</th>
+        </tr>
+        <tr *ngFor="let effectType of equipment.effectTypes">
+          <td>
+            <div *ngFor="let skill of equipment.formattedSkills[equipment.formattedSkills.length - 1]; let skillIndex = index">
+              <div *ngIf="skill.upgrade.indexOf(5) !== -1">
+                <div *ngIf="skill.mainEffect === effectType && skill.cond && skill.cond.length > 0">
+                  Condition :
+                  <span *ngFor="let skillCond of skill.cond">
+                    <span *ngFor="let item of skillCond.items">
+                      <img src="{{'assets/units/' + item.image + '_small.webp'}}" title="{{ item.name }}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
+                      <div class="mainjob" *ngIf="skillCond.type == 'mainjob'">
+                        <img src="{{ 'assets/jobs/' + item.image + '_40.webp'}}" title="{{ item.name }}" />
+                      </div>
+                    </span>
+                  </span>
+                </div>
+                <div *ngIf="skill.mainEffect === effectType">
+                  <div *ngFor="let effect of skill.maxedEffectsHtml.before">
+                    <span [innerHTML]="effect"></span>
+                  </div>
+                  <div *ngFor="let effect of skill.maxedEffectsHtml.after">
+                    <span [innerHTML]="effect"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="text-center" *ngIf="equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
+        <button class="btn btn-sub mt-2" (click)="tooglePassiveDetail()">Show buff Detail</button>
+      </div>
+
+      <!-- Passive skills -->
+      <table class="skillsTable" *ngIf="showPassivesDetail && equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
         <tr>
           <th colspan="15">Passive Effects</th>
         </tr>
