@@ -839,7 +839,9 @@ export class SimulatorService {
       });
     }
 
-    return 1 - ((defensiveValue / 100) * (1 - (ignoreDefensive / 100)));
+    const value = 1 - ((defensiveValue / 100) * (1 - (ignoreDefensive / 100)));
+
+    return value > 1 ? 1: value;
   }
 
   getDamageResistanceMultiplier(unit, dataSimulator) {
@@ -854,7 +856,9 @@ export class SimulatorService {
       });
     }
 
-    return 1 - ((dataSimulator.realStats.target.damageTypeRes / 100) * (1 - (ignoreDefensive / 100)));
+    const value = 1 - ((dataSimulator.realStats.target.damageTypeRes / 100) * (1 - (ignoreDefensive / 100)));
+
+    return value > 1 ? 1: value;
   }
 
   getElementResistanceMultiplier(unit, dataSimulator) {
