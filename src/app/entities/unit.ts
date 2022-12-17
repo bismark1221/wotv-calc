@@ -975,7 +975,7 @@ export class Unit {
       const masterSkill = this.formattedMasterSkill[this.masterSkillActivated] ? this.formattedMasterSkill[this.masterSkillActivated] : this.formattedMasterSkill[0];
 
       masterSkill.effects.forEach(effect => {
-        if (effect.target === 'self' && (effect.calcType === 'percent' || effect.calcType === 'fixe' || effect.calcType === 'resistance')) {
+        if (effect.calcType === 'percent' || effect.calcType === 'fixe' || effect.calcType === 'resistance') {
           let calc = 'fixe';
           if (effect.calcType === 'percent' && !effect.type.includes('KILLER')) {
             calc = 'percent';
@@ -987,11 +987,9 @@ export class Unit {
             this.updateStat(effect.type, effect.minValue, 'masterSkill', calc);
           }
         } else {
-          if (effect.target !== 'selfSide') {
-            console.log('not manage effect in masterSkill percent/fixe');
-            console.log(masterSkill);
-            console.log(effect);
-          }
+          console.log('not manage effect in masterSkill percent/fixe');
+          console.log(masterSkill);
+          console.log(effect);
         }
       });
     }
