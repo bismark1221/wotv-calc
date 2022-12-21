@@ -45,6 +45,11 @@
                       <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                     </svg>
                   </div>
+
+                  <div class="switchShowOnlyOtherVersion">
+                    Only from other version ?
+                    <ui-switch class="switchMainJob" (click)="toggleOtherVersion()" checkedLabel="yes" uncheckedLabel="no" [checked]="showOnlyOtherVersion === true"></ui-switch>
+                  </div>
                 </div>
                 <div *ngIf="!collapsedAcquisition">
                   <div class="acquisitionType"><a class="unselectAllTypeLink" (click)="unselectAllType()">unselect all</a></div>

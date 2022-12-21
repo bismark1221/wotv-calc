@@ -56,6 +56,8 @@ export class Equipment {
   statsWithMateria;
   formattedSkillsWithMateria;
 
+  fromOtherVersion = false;
+
   materias = {
     I: null,
     F: null,
@@ -91,6 +93,7 @@ export class Equipment {
     this.materials = equipment.materials;
     this.releaseDate = equipment.releaseDate;
     this.updatedDate = equipment.updatedDate;
+    this.fromOtherVersion = equipment.fromOtherVersion;
 
     this.name = this.getName(translateService);
   }

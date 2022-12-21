@@ -34,6 +34,7 @@ export class BuilderModalEquipmentsComponent extends SimpleModalComponent<null, 
   loadEquipmentId = null;
   collapsedAcquisition = true;
   firstClickOutside = false;
+  showOnlyOtherVersion = false;
 
   upgradeTable = [];
 
@@ -78,8 +79,17 @@ export class BuilderModalEquipmentsComponent extends SimpleModalComponent<null, 
 
     this.rawData.equipments = result.rawEquipments;
 
-    this.equipments = result.equipments;
-    this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters);
+    const filteredEquipments = this.equipmentService.filterEquipments(result.equipments, this.filters);
+
+    this.equipments = [];
+    for (const equipment of filteredEquipments) {
+      if ((this.showOnlyOtherVersion && equipment.fromOtherVersion)
+        || (!this.showOnlyOtherVersion && !equipment.fromOtherVersion)
+      ){
+        this.equipments.push(equipment);
+      }
+    }
+
     this.translateEquipments();
     this.getFilteredEquipments();
 
@@ -221,6 +231,12 @@ export class BuilderModalEquipmentsComponent extends SimpleModalComponent<null, 
       //this.result = 'close';
       //this.close();
     }
+  }
+
+  toggleOtherVersion() {
+    this.showOnlyOtherVersion = !this.showOnlyOtherVersion;
+
+    this.getEquipments();
   }
 
   openMateriaModal(type) {

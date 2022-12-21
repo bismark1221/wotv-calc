@@ -30,6 +30,13 @@
   margin-left: 20px;
 }
 
+.switchShowOnlyOtherVersion {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+  padding-top: 3px;
+}
+
 .acquisitionExpander {
   display: inline-block;
   cursor: pointer;

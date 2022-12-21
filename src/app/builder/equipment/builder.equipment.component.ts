@@ -21,12 +21,15 @@ import { SharedLinkModalComponent } from '../../shared/linkModal/shared.linkModa
 })
 export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   equipments = [];
+  rawEquipments = [];
   equipment;
   savedEquipments = {};
   loadingBuild = false;
   showSave = false;
   selectedEquipmentId = null;
   skillLevel = 1;
+
+  showOnlyOtherVersion = false;
 
   version = 'GL';
 
@@ -116,15 +119,27 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   }
 
   private async getEquipments() {
-    this.equipments = await this.equipmentService.getEquipmentsForBuilder();
+    this.rawEquipments = await this.equipmentService.getEquipmentsForBuilder();
     this.savedEquipments = this.equipmentService.getSavedEquipments();
     this.translateEquipments();
+    this.filterEquipments();
   }
 
   private translateEquipments() {
-    this.equipments.forEach(equipment => {
+    this.rawEquipments.forEach(equipment => {
       equipment.name = this.toolService.getName(equipment);
     });
+  }
+
+  private filterEquipments() {
+    this.equipments = [];
+    for (const equipment of this.rawEquipments) {
+      if ((this.showOnlyOtherVersion && equipment.fromOtherVersion)
+        || (!this.showOnlyOtherVersion && !equipment.fromOtherVersion)
+      ){
+        this.equipments.push(equipment);
+      }
+    }
   }
 
   async selectEquipment(customData = null, fromModal = false) {
@@ -222,5 +237,11 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
           this.equipmentService.changeMateria(this.equipment);
         }
       });
+  }
+
+  toggleOtherVersion() {
+    this.showOnlyOtherVersion = !this.showOnlyOtherVersion;
+
+    this.filterEquipments();
   }
 }

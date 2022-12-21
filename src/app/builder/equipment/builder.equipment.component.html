@@ -6,7 +6,13 @@
 
     <ng-template ng-optgroup-tmp let-item="item" let-index="index">
       <div class="rarityLine">
-        <img src="assets/rarity/{{item.rarity}}.webp" /><span>{{ rarityTranslate[item.rarity] }}</span>
+        <div class="rarityLogoAndName">
+          <img src="assets/rarity/{{item.rarity}}.webp" /><span>{{ rarityTranslate[item.rarity] }}</span>
+        </div>
+        <div class="switchShowOnlyOtherVersion">
+          Only from other version ?
+          <ui-switch class="switchMainJob" (click)="toggleOtherVersion()" checkedLabel="yes" uncheckedLabel="no" [checked]="showOnlyOtherVersion === true"></ui-switch>
+        </div>
       </div>
     </ng-template>
 
