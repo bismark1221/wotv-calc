@@ -129,7 +129,7 @@ export const themes = {
 
       '--hr-color': '#6b6a68',
 
-      '--filters-background': 'rgba(29, 27, 27, 0.8)',
+      '--filters-background': 'rgba(29, 27, 27)',
       '--filters-color': 'var(--white)',
 
       '--sortby-color': 'rgba(255, 255, 255, 0.5)',

@@ -1,6 +1,11 @@
 <div class="cards">
-  <div class="leftBlock">
+  <div class="leftBlock" [ngClass]="{'mobileFiltersBlock': showMobileFilters}">
     <h1 class="boldText">FILTERS</h1>
+    <div class="filtersMobilecloseButton justify-end">
+      <button type="button" class="close" aria-label="Close" (click)="toogleMobileFilters()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <div class="filters">
       <div class="boldText my-3" (click)="toogleCollapse('rarity')">
         Rarity
@@ -107,6 +112,48 @@
           <ui-switch class="switchActiveSkill" (click)="toggleOnlyActiveSkill()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.onlyActiveSkill === true"></ui-switch>
         </div>
       </div>
+
+      <hr class="hiddedSortOrderInFiltersMobile " [ngClass]="{'sortOrderInFiltersMobile': showMobileFilters}" />
+
+      <div class="hiddedSortOrderInFiltersMobile boldText my-3" (click)="toogleCollapse('sortOrder')" [ngClass]="{'sortOrderInFiltersMobile': showMobileFilters}">
+        Sort & Order
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="!collapsed.sortOrder">
+          <path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 inline-block chevron" *ngIf="collapsed.sortOrder">
+          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="hiddedSortOrderInFiltersMobile collapsedFilters my-2" *ngIf="!collapsed.sortOrder" [ngClass]="{'sortOrderInFiltersMobile': showMobileFilters}">
+        <div class="sortBy">
+          <span>Sort by :</span>
+          <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['rarity', 'name', 'releaseDate', 'updatedDate']" [(ngModel)]="sort" (ngModelChange)="filterCards()" [clearable]="false" [searchable]="false">
+            <ng-template ng-label-tmp let-item="item">
+              {{ (item === 'releaseDate' ? 'Release date' : (item === 'updatedDate' ? 'Updated date' : item)) | titlecase }}
+            </ng-template>
+
+            <ng-template ng-option-tmp let-item="item">
+              {{ (item === 'releaseDate' ? 'Release date' : (item === 'updatedDate' ? 'Updated date' : item)) | titlecase }}
+            </ng-template>
+          </ng-select>
+        </div>
+        <div class="orderBy">
+          <span>Order by :</span>
+          <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="filterCards()" [clearable]="false" [searchable]="false">
+            <ng-template ng-label-tmp let-item="item">
+              {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
+            </ng-template>
+
+            <ng-template ng-option-tmp let-item="item">
+              {{ item.label }}
+            </ng-template>
+          </ng-select>
+        </div>
+      </div>
+
+      <div class="closeFiltersMobile">
+        <button class="btn btn-main btn-filters" (click)="toogleMobileFilters()">Close</button>
+      </div>
     </div>
   </div>
 
@@ -171,6 +218,9 @@
               </ng-template>
             </ng-select>
           </div>
+        </div>
+        <div class="sortOrderBlockMobile">
+          <button class="btn btn-main btn-filters" (click)="toogleMobileFilters()">Filters</button>
         </div>
       </div>
     </div>

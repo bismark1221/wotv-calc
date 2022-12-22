@@ -47,8 +47,11 @@ export class CardListComponent implements OnInit {
     cost: true,
     limited: true,
     skill: true,
-    weapon: true
+    weapon: true,
+    sortOrder: true
   };
+
+  showMobileFilters = false;
 
   rarities = [
     'UR',
@@ -247,6 +250,10 @@ export class CardListComponent implements OnInit {
         if (this.collapsed.weapon === undefined) {
           this.collapsed.weapon = true;
         }
+
+        if (this.collapsed.sortOrder === undefined) {
+          this.collapsed.sortOrder = true;
+        }
       }
 
       this.filterChecked();
@@ -395,5 +402,9 @@ export class CardListComponent implements OnInit {
 
   openSearchOptionsModal() {
     this.simpleModalService.addModal(SharedSearchOptionsModalComponent);
+  }
+
+  toogleMobileFilters() {
+    this.showMobileFilters = !this.showMobileFilters;
   }
 }
