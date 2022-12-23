@@ -1616,6 +1616,9 @@ export class SkillService {
       case 'RES_DARK_ATK_PENETRATION' :
         html = 'Increase dark resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'RES_ELEMENT_CHAIN' :
+        html = 'Increase elemental chain resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'AP_CONSUMPTION' :
         html = this.getIncrease(effect, false, true) + ' AP consumption' + this.getValue(skill, effect) + this.getTurns(effect);
       break;

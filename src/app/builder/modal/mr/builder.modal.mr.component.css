@@ -20,7 +20,6 @@
 }
 
 .masterRanksTable {
-  width: 820px;
   margin: auto;
 }
 
@@ -34,5 +33,6 @@
 }
 
 .elementTd {
+  width: 360px;
   vertical-align: top;
 }

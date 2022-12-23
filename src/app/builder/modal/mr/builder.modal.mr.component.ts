@@ -10,8 +10,10 @@ import { MasterRanksService } from '../../../services/mr.service';
   styleUrls: ['./builder.modal.mr.component.css']
 })
 export class BuilderModalMasterRanksComponent extends SimpleModalComponent<null, any> implements OnInit {
-  ranks = {};
+  ranks;
   firstClickOutside = false;
+
+  levelsTable = [];
 
   @Input() public masterRanks;
 
@@ -27,6 +29,11 @@ export class BuilderModalMasterRanksComponent extends SimpleModalComponent<null,
     }
 
     this.ranks = await this.masterRanksService.getMRs();
+
+    this.levelsTable = [];
+    this.ranks.fire.ranks.forEach((rank, rankIndex) => {
+      this.levelsTable.push(rankIndex + 1);
+    });
   }
 
   closeButton() {

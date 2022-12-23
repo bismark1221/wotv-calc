@@ -16,6 +16,8 @@ export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
   showSave = false;
   version = 'GL';
 
+  levelsTable = [];
+
   constructor(
     private masterRanksService: MasterRanksService,
     private authService: AuthService,
@@ -26,6 +28,12 @@ export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
   async ngOnInit() {
     this.masterRanks = this.masterRanksService.getMasterRanks();
     this.ranks = await this.masterRanksService.getMRs();
+
+    this.levelsTable = [];
+    this.ranks.fire.ranks.forEach((rank, rankIndex) => {
+      this.levelsTable.push(rankIndex + 1);
+    });
+
     this.version = this.navService.getVersion();
 
     this.navService.setSEO('Master Ranks Builder', 'Build your master ranks to see the result before using all your resources in-game. Save them to use them in the unit and team builders.');

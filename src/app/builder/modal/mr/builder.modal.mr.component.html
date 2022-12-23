@@ -16,8 +16,8 @@
         </div>
 
         <div class="modal-body-background px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-          <table class="masterRanksTable">
-            <tbody *ngFor="let elementsLine of [['fire', 'ice', 'wind', 'earth'], ['lightning', 'water', 'light', 'dark']]">
+          <table class="masterRanksTable" *ngIf="ranks">
+            <tbody *ngFor="let elementsLine of [['fire', 'ice'], ['wind', 'earth'], ['lightning', 'water'], ['light', 'dark']]">
               <tr>
                 <td *ngFor="let element of elementsLine">
                   <img *ngIf="ranks[element]" class="masterRankImg" src="{{ 'assets/masterRanks/' + ranks[element].ranks[(masterRanks[element] - 1)].images.background + '_' + ranks[element].ranks[(masterRanks[element] - 1)].images.emblem + '_' + ranks[element].ranks[(masterRanks[element] - 1)].images.stars + '.webp' }}"/>
@@ -27,7 +27,7 @@
                 <td *ngFor="let element of elementsLine" class="elementTd">
                   <div>
                     lv. <select [(ngModel)]="masterRanks[element]">
-                      <option *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]">{{ level }}</option>
+                      <option *ngFor="let level of levelsTable">{{ level }}</option>
                     </select>
                   </div>
                   <div *ngIf="masterRanks[element] > 1 && ranks[element]">
