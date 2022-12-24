@@ -1,266 +1,196 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
+import { Component } from '@angular/core';
 import { SimpleModalService } from 'ngx-simple-modal';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
-import { EsperService } from '../../services/esper.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
 import { SessionService } from '../../services/session.service';
+import { EsperService } from '../../services/esper.service';
 
-import { SharedSearchOptionsModalComponent } from '../../shared/searchOptionsModal/shared.searchOptionsModal.component';
+import { SharedListComponent } from '../../shared/list/shared.list.component';
 
 @Component({
   selector: 'app-esper-list',
-  templateUrl: './esper.list.component.html',
-  styleUrls: ['./esper.list.component.css']
+  templateUrl: '../../shared/list/shared.list.component.html',
+  styleUrls: ['../../shared/list/shared.list.component.css']
 })
-export class EsperListComponent implements OnInit {
-  rawEspers = [];
-  espers = [];
-  searchText = '';
-  sort = 'releaseDate';
-  order = 'desc';
-  filters = {
-    rarity: [],
-    limited: [],
-    element: [],
-    cost: [],
-    threeStars: false
+export class EsperListComponent extends SharedListComponent {
+  filtersSections = {
+    rarity: {
+      label: 'Rarity',
+      collapsed: true,
+      filters : [
+        {
+          id: 'rarity',
+          type: 'list',
+          items: [
+            {
+              id: 'UR',
+              label: 'UR'
+            },
+            {
+              id: 'MR',
+              label: 'MR'
+            },
+            {
+              id: 'SR',
+              label: 'SR'
+            }
+          ],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    },
+    element: {
+      label: 'Elements',
+      collapsed: true,
+      filters : [
+        {
+          id: 'element',
+          type: 'list',
+          items: [
+            {
+              id: 'fire',
+              label: 'Fire'
+            },
+            {
+              id: 'ice',
+              label: 'Ice'
+            },
+            {
+              id: 'wind',
+              label: 'Wind'
+            },
+            {
+              id: 'earth',
+              label: 'Earth'
+            },
+            {
+              id: 'lightning',
+              label: 'Lightning'
+            },
+            {
+              id: 'water',
+              label: 'Water'
+            },
+            {
+              id: 'light',
+              label: 'Light'
+            },
+            {
+              id: 'dark',
+              label: 'Dark'
+            },
+            {
+              id: 'neutral',
+              label: 'Neutral'
+            }
+          ],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    },
+    limited: {
+      label: 'Limited',
+      collapsed: true,
+      filters : [
+        {
+          id: 'limited',
+          type: 'list',
+          items: [
+            {
+              id: true,
+              label: 'Yes'
+            },
+            {
+              id: false,
+              label: 'No'
+            }
+          ],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    },
+    cost: {
+      label: 'Cost',
+      collapsed: true,
+      filters : [
+        {
+          id: 'cost',
+          type: 'list',
+          items: [],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    }
   };
 
-  isFilterChecked = {
-    rarity: [],
-    element: [],
-    cost: [],
-    limited: []
+  itemType = 'esper';
+
+  seoData = {
+    title: 'Espers',
+    desc: 'Find all espers from wotv in one place. Search them by name, skill and multiples filters.'
   };
-  collapsed = {
-    rarity: true,
-    element: true,
-    limited: true,
-    cost: true,
-    upgrade: true
-  };
-
-  rarities = [
-    'UR',
-    'MR',
-    'SR'
-  ];
-
-  elements = [
-    'fire',
-    'ice',
-    'wind',
-    'earth',
-    'lightning',
-    'water',
-    'light',
-    'dark',
-    'neutral'
-  ];
-
-  costs = [];
-
-  filtersCount = 0;
-
-  @ViewChild('SearchBar') ngselect;
-  searchForm: UntypedFormGroup;
 
   constructor(
-    private esperService: EsperService,
-    private translateService: TranslateService,
-    private navService: NavService,
-    private simpleModalService: SimpleModalService,
-    private sessionService: SessionService,
-    private toolService: ToolService
+    translateService: TranslateService,
+    navService: NavService,
+    simpleModalService: SimpleModalService,
+    toolService: ToolService,
+    sessionService: SessionService,
+    private esperService: EsperService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.translateEspers();
-    });
+    super(
+      translateService,
+      navService,
+      simpleModalService,
+      toolService,
+      sessionService
+    );
   }
 
-  async ngOnInit() {
-    this.navService.setSEO('Espers', 'Find all espers from wotv in one place. Search them by name, skill and multiples filters.');
-
-    await this.getEspers();
-
-    this.searchForm = new UntypedFormGroup({
-      searchOptions: new UntypedFormControl()
-    });
-  }
-
-  async getEspers() {
-    const options = {};
-
-    if (this.searchForm) {
-      for (const option of this.searchForm.get('searchOptions').value) {
-        const optionTable = option.label.substring(1).split('=');
-        if (!options[optionTable[0]]) {
-          options[optionTable[0]] = [];
-        }
-        options[optionTable[0]].push(optionTable[1]);
-      }
-    }
+  async getItems() {
+    const options = super.getOptions();
 
     let result = null;
 
     if (Object.keys(options).length === 0) {
-      result = await this.esperService.getEspersForListingWithCosts(this.filters, this.sort, this.order);
+      result = await this.esperService.getEspersForListingWithCosts(this.filtersSections, this.sort, this.order);
     } else {
-      result = await this.esperService.getEspersForListingWithCosts(this.filters, this.sort, this.order, options);
+      result = await this.esperService.getEspersForListingWithCosts(this.filtersSections, this.sort, this.order, options);
     }
 
-    this.espers = result.espers;
-    this.rawEspers = result.rawEspers;
+    super.items = result.espers;
+    super.rawItems = result.rawEspers;
 
     if (Object.keys(options).length === 0) {
-      this.costs = result.costs;
+      for (const cost of result.costs) {
+        this.filtersSections.cost.filters[0].items.push({
+          id: cost,
+          label: cost
+        });
+      }
 
       const espersFilters = this.sessionService.get('espersFilters');
       if (espersFilters) {
-        this.filters = JSON.parse(espersFilters);
-
-        if (!this.filters.cost) {
-          this.filters.cost = [];
+        const oldFilters = JSON.parse(espersFilters);
+        if (oldFilters.rarity.label) {
+          this.filtersSections = oldFilters;
         }
       }
 
-      const espersCollapsed = this.sessionService.get('espersCollapsed');
-      if (espersCollapsed) {
-        this.collapsed = JSON.parse(espersCollapsed);
-
-        if (this.collapsed.cost === undefined) {
-          this.collapsed.cost = true;
-        }
-      }
-
-      this.filterChecked();
+      super.filterChecked();
     }
 
-    this.filterEspers();
+    this.filterItems();
   }
 
-  filterEspers() {
-    this.espers = this.esperService.filterEspers(this.rawEspers, this.filters, this.sort, this.order);
-    this.countFilters();
-  }
-
-  countFilters() {
-    this.filtersCount = this.filters.cost.length
-      + this.filters.element.length
-      + this.filters.limited.length
-      + this.filters.rarity.length
-      + (this.filters.threeStars ? 1 : 0);
-  }
-
-  private translateEspers() {
-    this.espers.forEach(esper => {
-      esper.name = this.toolService.getName(esper);
-    });
-  }
-
-  getRoute(route) {
-    return this.navService.getRoute(route);
-  }
-
-  getFilteredEspers() {
-    if (this.searchText !== '') {
-      const text = this.searchText.toLowerCase();
-      return this.espers.filter(unit => {
-        return unit.name.toLowerCase().includes(text) || unit.slug.toLowerCase().includes(text);
-      });
-    } else {
-      return this.espers;
-    }
-  }
-
-  async filterList(type, value) {
-    if (this.filters[type].indexOf(value) === -1) {
-      this.filters[type].push(value);
-    } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1);
-    }
-
-    this.sessionService.set('espersFilters', JSON.stringify(this.filters));
-
-    this.filterEspers();
-  }
-
-  async toggleThreeStars() {
-    this.filters.threeStars = !this.filters.threeStars;
-    this.filterEspers();
-  }
-
-  filterChecked() {
-    this.rarities.forEach(rarity => {
-      if (this.filters.rarity.indexOf(rarity) === -1) {
-        this.isFilterChecked.rarity[rarity] = false;
-      } else {
-        this.isFilterChecked.rarity[rarity] = true;
-      }
-    });
-
-    ['true', 'false'].forEach(limited => {
-      if (this.filters.limited.indexOf(limited === 'true' ? true : false) === -1) {
-        this.isFilterChecked.limited[limited] = false;
-      } else {
-        this.isFilterChecked.limited[limited] = true;
-      }
-    });
-
-    this.elements.forEach(element => {
-      if (this.filters.element.indexOf(element) === -1) {
-        this.isFilterChecked.element[element] = false;
-      } else {
-        this.isFilterChecked.element[element] = true;
-      }
-    });
-
-    this.costs.forEach(cost => {
-      if (this.filters.cost && this.filters.cost.indexOf(cost) === -1) {
-        this.isFilterChecked.cost[cost] = false;
-      } else {
-        this.isFilterChecked.cost[cost] = true;
-      }
-    });
-  }
-
-  toogleCollapse(section) {
-    this.collapsed[section] = !this.collapsed[section];
-    this.sessionService.set('espersCollapsed', JSON.stringify(this.collapsed));
-  }
-
-  onSearchBarClose() {
-    this.ngselect.searchTerm = this.searchText;
-    this.ngselect.searchInput.nativeElement.value = this.searchText;
-    this.getFilteredEspers();
-  }
-
-  onSearchBarAdd($event) {
-    const labelTable = $event.label.split('=');
-
-    if ($event.label[0] !== '!' || labelTable.length !== 2 || labelTable[1] === '') {
-      this.searchForm.get('searchOptions').value.pop();
-      this.searchForm.get('searchOptions').patchValue(this.searchForm.get('searchOptions').value);
-
-      if ($event.label[0] !== '!') {
-        this.searchText = $event.label;
-      }
-    } else {
-      this.getEspers();
-    }
-  }
-
-  onSearchBarUpdateTerm($event) {
-    if ($event.term[0] !== '!') {
-      this.searchText = $event.term;
-      this.getFilteredEspers();
-    }
-  }
-
-  openSearchOptionsModal() {
-    this.simpleModalService.addModal(SharedSearchOptionsModalComponent);
+  filterItems() {
+    super.items = this.esperService.filterEspers(this.rawItems, this.filtersSections, this.sort, this.order, true);
+    super.countFilters();
   }
 }

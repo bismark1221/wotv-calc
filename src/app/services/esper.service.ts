@@ -97,7 +97,7 @@ export class EsperService {
       }
     }
 
-    const espers = this.filterEspers(rawEspers, filters, sort, order);
+    const espers = this.filterEspers(rawEspers, filters, sort, order, true);
 
     return {
       rawEspers: rawEspers,
@@ -117,7 +117,7 @@ export class EsperService {
       rawEspers.push(rawEsper);
     }
 
-    const espers = this.filterEspers(rawEspers, filters, sort, order);
+    const espers = this.filterEspers(rawEspers, filters, sort, order, false);
 
     return espers;
   }
@@ -132,8 +132,24 @@ export class EsperService {
     return [];
   }
 
-  filterEspers(espers, filters, sort = 'rarity', order = 'desc') {
-    if (filters) {
+  filterEspers(espers, rawFilters, sort, order, fromList) {
+    let filters: any = {};
+
+    if (rawFilters) {
+      if (fromList) {
+        Object.keys(rawFilters).forEach(filterSection => {
+          rawFilters[filterSection].filters.forEach(filter => {
+            if (filter.type === 'list') {
+              filters[filter.id] = filter.values;
+            } else if (filter.type === 'switch') {
+              filters[filter.id] = filter.value;
+            }
+          });
+        });
+      } else {
+        filters = rawFilters;
+      }
+
       const filteredEspers = [];
 
       espers.forEach(esper => {

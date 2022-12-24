@@ -112,7 +112,7 @@ export class BuilderModalEspersComponent extends SimpleModalComponent<null, any>
       }
     }
 
-    this.espers = this.esperService.filterEspers(this.rawEspers, this.filters);
+    this.espers = this.esperService.filterEspers(this.rawEspers, this.filters, 'rarity', 'desc', false);
 
     this.getFilteredEspers();
     this.translateEspers();

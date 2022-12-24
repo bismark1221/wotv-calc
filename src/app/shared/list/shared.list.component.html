@@ -29,7 +29,7 @@
 
             <div *ngIf="filter.type === 'switch'">
               <div class="switchMainJob">
-                Only active skill ?
+                {{ filter.label }}
                 <ui-switch class="switchActiveSkill" (click)="toggleSwitchFilter(filtersSectionsType, filterIndex)" checkedLabel="yes" uncheckedLabel="no" [checked]="filter.value === true"></ui-switch>
               </div>
             </div>
