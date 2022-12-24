@@ -174,7 +174,7 @@ export class BuilderModalCardsComponent extends SimpleModalComponent<null, any> 
       }
     }
 
-    const filteredCards = this.cardService.filterCardsWithApi(this.rawCards, this.filters, this.rawJobs, 'rarity', 'desc', true);
+    const filteredCards = this.cardService.filterCardsWithApi(this.rawCards, this.filters, this.rawJobs, 'rarity', 'desc', false, true);
 
     this.cards = [];
     for (const card of filteredCards) {

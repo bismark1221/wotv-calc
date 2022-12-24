@@ -1,0 +1,177 @@
+.row {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.leftBlock {
+  width: 250px;
+  text-align: left;
+  background: var(--filters-background);
+  color: var(--filters-color);
+  padding-top: 15px;
+  padding-left: 10px;
+  flex: none;
+}
+
+.leftBlock h1 {
+  font-size: 20px;
+}
+
+.filters {
+  margin-top: 20px;
+}
+
+.collapsedFilters {
+  margin-top: 5px;
+}
+
+.collapsedFilters input {
+  margin-right: 5px;
+}
+
+.chevron {
+  float: right;
+  margin-right: 10px;
+}
+
+.rightBlock {
+  vertical-align: top;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.upperBlock {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-form {
+  width: 100%;
+  display: inline-block;
+}
+
+.underSearchBlock {
+  height: 30px;
+}
+
+.totalItems {
+  float: left;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.sortOrderBlock {
+  float: right;
+  display: inline-block;
+}
+
+.sortBy, .orderBy {
+  display: inline-block;
+}
+
+.sortBy > span, .orderBy > span {
+  color: var(--sortby-color);
+  margin-right: 8px;
+}
+
+.orderBy {
+  margin-left: 10px;
+}
+
+.countItems {
+  font-weight: bold;
+}
+
+.itemsList {
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.select-sort, .select-order {
+  display: inline-block;
+}
+
+.select-sort {
+  width: 140px;
+}
+
+.sortOrderBlockMobile {
+  display: none;
+}
+
+.btn-filters {
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.filtersMobilecloseButton, .sortOrderInFiltersMobile, .hiddedSortOrderInFiltersMobile, .closeFiltersMobile {
+  display: none;
+}
+
+@media (max-width: 890px) {
+  .sortOrderBlock, .leftBlock {
+    display: none;
+  }
+
+  .mobileFiltersBlock {
+    display: block;
+    z-index: 60;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0px;
+  }
+
+  .totalItems {
+    margin-top: 3px;
+  }
+
+  .sortOrderBlockMobile {
+    display: block;
+  }
+
+  .closeFiltersMobile {
+    display: block;
+    text-align: center;
+  }
+
+  .mobileFiltersBlock h1 {
+    display: inline-block;
+  }
+
+  .mobileFiltersBlock .filtersMobilecloseButton {
+    display: block;
+  }
+
+  .filtersMobilecloseButton {
+    float: right;
+  }
+
+  .filtersMobilecloseButton button {
+    padding-right: 20px;
+    background: none;
+    border: 0;
+  }
+
+  .filtersMobilecloseButton button span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .sortOrderInFiltersMobile {
+    display: block;
+  }
+}

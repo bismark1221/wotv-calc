@@ -95,7 +95,7 @@ export class CardService {
       }
     }
 
-    const cards = this.filterCardsWithApi(rawCards, filters, apiResult.jobs, sort, order);
+    const cards = this.filterCardsWithApi(rawCards, filters, apiResult.jobs, sort, order, true);
 
     return {
       rawCards: rawCards,
@@ -116,7 +116,7 @@ export class CardService {
       rawCards.push(rawCard);
     }
 
-    const cards = this.filterCardsWithApi(rawCards, filters, apiResult.jobs, sort, order, withFromOtherVersion);
+    const cards = this.filterCardsWithApi(rawCards, filters, apiResult.jobs, sort, order, false, withFromOtherVersion);
 
     return {
       rawJobs: apiResult.jobs,
@@ -134,12 +134,27 @@ export class CardService {
     return [];
   }
 
-  filterCardsWithApi(cards, filters, jobs, sort = 'rarity', order = 'desc', withFromOtherVersion = false) {
+  filterCardsWithApi(cards, rawFilters, jobs, sort, order, fromList, withFromOtherVersion = false) {
     const filteredCards = [];
     const version = this.navService.getVersion();
     const jobGroups = this.jobGroups[version];
+    let filters: any = {};
 
-    if (filters) {
+    if (rawFilters) {
+      if (fromList) {
+        Object.keys(rawFilters).forEach(filterSection => {
+          rawFilters[filterSection].filters.forEach(filter => {
+            if (filter.type === 'list') {
+              filters[filter.id] = filter.values;
+            } else if (filter.type === 'switch') {
+              filters[filter.id] = filter.value;
+            }
+          });
+        });
+      } else {
+        filters = rawFilters;
+      }
+
       for (const card of cards) {
         if ((filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1)
           && (filters.cost.length === 0 || filters.cost.indexOf(card.cost) !== -1)

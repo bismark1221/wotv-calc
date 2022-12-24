@@ -20,6 +20,7 @@ import { SharedTabsComponent } from './tabs/shared.tabs.component';
 import { SharedLinkModalComponent } from './linkModal/shared.linkModal.component';
 import { SharedSearchOptionsModalComponent } from './searchOptionsModal/shared.searchOptionsModal.component';
 import { SharedPwaUpdateModalComponent } from './pwaUpdateModal/shared.pwaUpdateModal.component';
+import { SharedListComponent } from './list/shared.list.component';
 
 @NgModule({
   imports: [
@@ -42,7 +43,8 @@ import { SharedPwaUpdateModalComponent } from './pwaUpdateModal/shared.pwaUpdate
     SharedTabsComponent,
     SharedLinkModalComponent,
     SharedSearchOptionsModalComponent,
-    SharedPwaUpdateModalComponent
+    SharedPwaUpdateModalComponent,
+    SharedListComponent
   ],
   declarations: [
     SharedRoundDownPipe,
@@ -58,7 +60,8 @@ import { SharedPwaUpdateModalComponent } from './pwaUpdateModal/shared.pwaUpdate
     SharedTabsComponent,
     SharedLinkModalComponent,
     SharedSearchOptionsModalComponent,
-    SharedPwaUpdateModalComponent
+    SharedPwaUpdateModalComponent,
+    SharedListComponent
   ],
   providers: [
   ],
