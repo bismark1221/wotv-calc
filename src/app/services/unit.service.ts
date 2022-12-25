@@ -117,16 +117,31 @@ export class UnitService {
     return {
       rawUnits: rawUnits,
       rawJobs: jobs,
-      units: this.filterUnitsWithApi(rawUnits, filters, sort, order, jobs),
+      units: this.filterUnitsWithApi(rawUnits, filters, jobs, sort, order, true),
       jobs: this.jobService.getUniqJobsByIds(jobs),
       costs: costs.sort((a, b) => b - a)
     };
   }
 
-  filterUnitsWithApi(units, filters, sort = 'rarity', order = 'desc', jobs) {
+  filterUnitsWithApi(units, rawFilters, jobs, sort, order, fromList) {
     const filteredUnits = [];
+    let filters: any = {};
 
     if (filters) {
+      if (fromList) {
+        Object.keys(rawFilters).forEach(filterSection => {
+          rawFilters[filterSection].filters.forEach(filter => {
+            if (filter.type === 'list') {
+              filters[filter.id] = filter.values;
+            } else if (filter.type === 'switch') {
+              filters[filter.id] = filter.value;
+            }
+          });
+        });
+      } else {
+        filters = rawFilters;
+      }
+
       for (const unit of units) {
         if ((filters.element.length === 0 || filters.element.indexOf(unit.element) !== -1)
           && (filters.rarity.length === 0 || filters.rarity.indexOf(unit.rarity) !== -1)
@@ -143,7 +158,7 @@ export class UnitService {
             possbibleToAdd = this.unitHasJob(unit, filters);
           }
 
-          if (possbibleToAdd && filters.equipment && ((filters.equipment.weapon && filters.equipment.weapon.length > 0) || (filters.equipment.weaponsGroup && filters.equipment.weaponsGroup.length > 0) || (filters.equipment.armor && filters.equipment.armor.length > 0))) {
+          if (possbibleToAdd && ((filters.weapon && filters.weapon.length > 0) || (filters.weaponsGroup && filters.weaponsGroup.length > 0) || (filters.armor && filters.armor.length > 0))) {
             possbibleToAdd = this.unitCanEquipWithApi(unit, filters, jobs);
           }
 
@@ -168,16 +183,16 @@ export class UnitService {
   private unitCanEquipWithApi(unit, filters, jobs) {
     let unitCanEquip = true;
     const job = jobs.find(searchedJob => searchedJob.dataId === unit.jobs[0]);
-    const hasWeaponFilter = filters.equipment.weapon && filters.equipment.weapon.length > 0;
-    const hasWeaponGroupFilter = filters.equipment.weaponsGroup && filters.equipment.weaponsGroup.length > 0;
-    const hasArmorFilter = filters.equipment.armor && filters.equipment.armor.length > 0;
+    const hasWeaponFilter = filters.weapon && filters.weapon.length > 0;
+    const hasWeaponGroupFilter = filters.weaponsGroup && filters.weaponsGroup.length > 0;
+    const hasArmorFilter = filters.armor && filters.armor.length > 0;
 
     if (hasWeaponFilter) {
       let weaponFound = false;
       let i = 0;
 
-      while (!weaponFound && i <= filters.equipment.weapon.length - 1) {
-        if (job.equipments.weapons.indexOf(filters.equipment.weapon[i]) !== -1) {
+      while (!weaponFound && i <= filters.weapon.length - 1) {
+        if (job.equipments.weapons.indexOf(filters.weapon[i]) !== -1) {
           weaponFound = true;
         }
 
@@ -198,11 +213,11 @@ export class UnitService {
       const version = this.navService.getVersion();
       const jobGroups = this.jobGroups[version];
 
-      while (!weaponGroupFound && i <= filters.equipment.weaponsGroup.length - 1) {
-        if (jobGroups[filters.equipment.weaponsGroup[i]]) {
+      while (!weaponGroupFound && i <= filters.weaponsGroup.length - 1) {
+        if (jobGroups[filters.weaponsGroup[i]]) {
           let j = 0;
-          while(!weaponGroupFound && j <= jobGroups[filters.equipment.weaponsGroup[i]].length - 1) {
-            if (this.unitHasJob(unit, {job: [jobGroups[filters.equipment.weaponsGroup[i]][j]], subjob: false, mainJob: true})) {
+          while(!weaponGroupFound && j <= jobGroups[filters.weaponsGroup[i]].length - 1) {
+            if (this.unitHasJob(unit, {job: [jobGroups[filters.weaponsGroup[i]][j]], subjob: false, mainJob: true})) {
               weaponGroupFound = true;
             }
 
@@ -225,8 +240,8 @@ export class UnitService {
       let armorFound = false;
       let i = 0;
 
-      while (!armorFound && i <= filters.equipment.armor.length - 1) {
-        if (job.equipments.armors.indexOf(filters.equipment.armor[i]) !== -1) {
+      while (!armorFound && i <= filters.armor.length - 1) {
+        if (job.equipments.armors.indexOf(filters.armor[i]) !== -1) {
           armorFound = true;
         }
 

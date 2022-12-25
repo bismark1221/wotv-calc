@@ -1,549 +1,441 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
-import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
+import { Component } from '@angular/core';
 import { SimpleModalService } from 'ngx-simple-modal';
+import { ActivatedRoute, Params } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import { UnitService } from '../../services/unit.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
-import { JobService } from '../../services/job.service';
 import { SessionService } from '../../services/session.service';
+import { UnitService } from '../../services/unit.service';
+import { JobService } from '../../services/job.service';
 
-import { SharedSearchOptionsModalComponent } from '../../shared/searchOptionsModal/shared.searchOptionsModal.component';
+import { SharedListComponent } from '../../shared/list/shared.list.component';
 
 @Component({
   selector: 'app-unit-list',
-  templateUrl: './unit.list.component.html',
-  styleUrls: ['./unit.list.component.css']
+  templateUrl: '../../shared/list/shared.list.component.html',
+  styleUrls: ['../../shared/list/shared.list.component.css']
 })
-export class UnitListComponent implements OnInit {
-  rawUnits = [];
-  units: any = [];
-  searchText = '';
-  sort = 'releaseDate';
-  order = 'desc';
-  rawJobs = [];
-  jobs = [];
-
-  filters = {
-    rarity: [],
-    element: [],
-    job: [],
-    limited: [],
+export class UnitListComponent extends SharedListComponent {
+  filtersSections = {
+    rarity: {
+      label: 'Rarity',
+      collapsed: true,
+      filters : [
+        {
+          id: 'rarity',
+          type: 'list',
+          items: [
+            {
+              id: 'UR',
+              label: 'UR'
+            },
+            {
+              id: 'MR',
+              label: 'MR'
+            },
+            {
+              id: 'SR',
+              label: 'SR'
+            },
+            {
+              id: 'R',
+              label: 'R'
+            },
+            {
+              id: 'N',
+              label: 'N'
+            }
+          ],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    },
+    element: {
+      label: 'Elements',
+      collapsed: true,
+      filters : [
+        {
+          id: 'element',
+          type: 'list',
+          items: [
+            {
+              id: 'fire',
+              label: 'Fire'
+            },
+            {
+              id: 'ice',
+              label: 'Ice'
+            },
+            {
+              id: 'wind',
+              label: 'Wind'
+            },
+            {
+              id: 'earth',
+              label: 'Earth'
+            },
+            {
+              id: 'lightning',
+              label: 'Lightning'
+            },
+            {
+              id: 'water',
+              label: 'Water'
+            },
+            {
+              id: 'light',
+              label: 'Light'
+            },
+            {
+              id: 'dark',
+              label: 'Dark'
+            }
+          ],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    },
+    limited: {
+      label: 'Limited',
+      collapsed: true,
+      filters : [
+        {
+          id: 'limited',
+          type: 'list',
+          items: [
+            {
+              id: true,
+              label: 'Yes'
+            },
+            {
+              id: false,
+              label: 'No'
+            }
+          ],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    },
+    job: {
+      label: 'Jobs',
+      collapsed: true,
+      filters : [
+        {
+          id: 'mainJob',
+          label: 'Only main job ?',
+          type: 'switch',
+          value: false
+        },
+        {
+          id: 'subJob',
+          label: 'Only sub job ?',
+          type: 'switch',
+          value: false
+        },
+        {
+          id: 'secondMasterAbility',
+          label: '2nd master ability ?',
+          type: 'switch',
+          value: false
+        },
+        {
+          id: 'dream',
+          label: 'dream available ?',
+          type: 'switch',
+          value: false
+        },
+        {
+          id: 'job',
+          type: 'list',
+          items: [],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    },
+    cost: {
+      label: 'Cost',
+      collapsed: true,
+      filters : [
+        {
+          id: 'cost',
+          type: 'list',
+          items: [],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    },
     equipment: {
-      weapon: [],
-      weaponsGroup: [],
-      armor: []
-    },
-    cost: [],
-    mainJob: false,
-    subJob: false,
-    exJob: false,
-    dream: false,
-    secondMasterAbility: false
-  };
-
-  isFilterChecked = {
-    rarity: [],
-    element: [],
-    job: [],
-    limited: [],
-    cost: [],
-    armor: [],
-    weapon: [],
-    weaponsGroup: []
-  };
-
-  collapsed = {
-    rarity: true,
-    element: true,
-    limited: true,
-    job: true,
-    cost: true,
-    equipment: true
-  };
-
-  rarities = [
-    'UR',
-    'MR',
-    'SR',
-    'R',
-    'N'
-  ];
-
-  elements = [
-    'fire',
-    'ice',
-    'wind',
-    'earth',
-    'lightning',
-    'water',
-    'light',
-    'dark'
-  ];
-
-  weapons = [
-    {
-      id: 'AXE',
-      label: 'AXE'
-    },
-    {
-      id: 'BOOK',
-      label: 'BOOK'
-    },
-    {
-      id: 'BOOMERANG',
-      label: 'BOOMERANG'
-    },
-    {
-      id: 'BOW',
-      label: 'BOW'
-    },
-    {
-      id: 'DAGGER',
-      label: 'DAGGER'
-    },
-    {
-      id: 'FIST',
-      label: 'FIST'
-    },
-    {
-      id: 'GLOVE',
-      label: 'GLOVE'
-    },
-    {
-      id: 'GREATSWORD',
-      label: 'GREAT SWORD'
-    },
-    {
-      id: 'GUN',
-      label: 'GUN'
-    },
-    {
-      id: 'KATANA',
-      label: 'KATANA'
-    },
-    {
-      id: 'MACE',
-      label: 'MACE'
-    },
-    {
-      id: 'NINJABLADE',
-      label: 'NINJA BLADE'
-    },
-    {
-      id: 'SHURIKEN',
-      label: 'SHURIKEN'
-    },
-    {
-      id: 'SPEAR',
-      label: 'SPEAR'
-    },
-    {
-      id: 'ROD',
-      label: 'STAFF'
-    },
-    {
-      id: 'SWORD',
-      label: 'SWORD'
+      label: 'Equipment',
+      collapsed: true,
+      filters : [
+        {
+          id: 'weapon',
+          type: 'list',
+          items: [
+            {
+              id: 'AXE',
+              label: 'Axe'
+            },
+            {
+              id: 'BOOK',
+              label: 'Book'
+            },
+            {
+              id: 'BOOMERANG',
+              label: 'Boomerang'
+            },
+            {
+              id: 'BOW',
+              label: 'Bow'
+            },
+            {
+              id: 'DAGGER',
+              label: 'Dagger'
+            },
+            {
+              id: 'FIST',
+              label: 'Fist'
+            },
+            {
+              id: 'GLOVE',
+              label: 'Glove'
+            },
+            {
+              id: 'GREATSWORD',
+              label: 'Great Sword'
+            },
+            {
+              id: 'GUN',
+              label: 'Gun'
+            },
+            {
+              id: 'KATANA',
+              label: 'Katana'
+            },
+            {
+              id: 'MACE',
+              label: 'Mace'
+            },
+            {
+              id: 'NINJABLADE',
+              label: 'Ninja Blade'
+            },
+            {
+              id: 'SHURIKEN',
+              label: 'Shuriken'
+            },
+            {
+              id: 'SPEAR',
+              label: 'Spear'
+            },
+            {
+              id: 'ROD',
+              label: 'Staff'
+            },
+            {
+              id: 'SWORD',
+              label: 'Sword'
+            }
+          ],
+          values: [],
+          isChecked: {},
+          separator: true
+        },
+        {
+          id: 'weaponsGroup',
+          type: 'list',
+          items: [
+            {
+              id: 'SWORDA',
+              label: 'Sword (Red Mage, etc)'
+            },
+            {
+              id: 'SWORDB',
+              label: 'Sword (Warrior, etc)'
+            },
+            {
+              id: 'SWORDC',
+              label: 'Sword (Knight, etc)'
+            },
+            {
+              id: 'STAFFA',
+              label: 'Staff (Black Mage, etc)'
+            },
+            {
+              id: 'STAFFB',
+              label: 'Staff (Devout, etc)'
+            }
+          ],
+          values: [],
+          isChecked: {},
+          separator: true
+        },
+        {
+          id: 'armor',
+          type: 'list',
+          items: [
+            {
+              id: 'ARMOR',
+              label: 'Armor'
+            },
+            {
+              id: 'CLOTH',
+              label: 'Cloth'
+            },
+            {
+              id: 'HAT',
+              label: 'Hat'
+            },
+            {
+              id: 'HELM',
+              label: 'Helm'
+            },
+            {
+              id: 'SHIELD',
+              label: 'Shield'
+            }
+          ],
+          values: [],
+          isChecked: {}
+        }
+      ]
     }
-  ];
+  };
 
-  weaponsGroups = [
-    {
-      id: 'SWORDA',
-      label: 'Sword (Red Mage, etc)'
-    },
-    {
-      id: 'SWORDB',
-      label: 'Sword (Warrior, etc)'
-    },
-    {
-      id: 'SWORDC',
-      label: 'Sword (Knight, etc)'
-    },
-    {
-      id: 'STAFFA',
-      label: 'Staff (Black Mage, etc)'
-    },
-    {
-      id: 'STAFFB',
-      label: 'Staff (Devout, etc)'
-    }
-  ];
+  itemType = 'unit';
 
-  armors = [
-    'ARMOR',
-    'CLOTH',
-    'HAT',
-    'HELM',
-    'SHIELD'
-  ];
+  seoData = {
+    title: 'Units',
+    desc: 'Find all cards from wotv in one place. Search them by name, skill and multiples filters.'
+  };
 
-  costs = [];
-
-  filtersCount = 0;
-
-  @ViewChild('SearchBar') ngselect;
-  searchForm: UntypedFormGroup;
+  rawJobs = [];
 
   constructor(
+    translateService: TranslateService,
+    navService: NavService,
+    simpleModalService: SimpleModalService,
+    toolService: ToolService,
+    sessionService: SessionService,
     private activatedRoute: ActivatedRoute,
     private unitService: UnitService,
-    private translateService: TranslateService,
-    private navService: NavService,
-    private simpleModalService: SimpleModalService,
-    private toolService: ToolService,
-    private sessionService: SessionService,
     private jobService: JobService
   ) {
+    super(
+      translateService,
+      navService,
+      simpleModalService,
+      toolService,
+      sessionService
+    );
+
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.translateUnits();
       this.translateJobs();
     });
   }
 
   async ngOnInit() {
-    this.navService.setSEO('Units', 'Find all cards from wotv in one place. Search them by name, skill and multiples filters.');
+    super.ngOnInit();
 
-    await this.getUnits();
+    // this.activatedRoute.paramMap.subscribe(async (params: Params) => {
+    //   const filterType = params.get('filterType');
+    //   const itemIds = params.get('itemIds');
 
-    this.searchForm = new UntypedFormGroup({
-      searchOptions: new UntypedFormControl()
-    });
+    //   if (filterType && itemIds) {
+    //     this.filters = {
+    //       rarity: [],
+    //       element: [],
+    //       job: [],
+    //       limited: [],
+    //       equipment: {
+    //         weapon: [],
+    //         weaponsGroup: [],
+    //         armor: []
+    //       },
+    //       cost: [],
+    //       mainJob: false,
+    //       subJob: false,
+    //       exJob: false,
+    //       dream: false,
+    //       secondMasterAbility: false
+    //     };
 
-    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
-      const filterType = params.get('filterType');
-      const itemIds = params.get('itemIds');
+    //     this.collapsed = {
+    //       rarity: true,
+    //       element: true,
+    //       limited: true,
+    //       job: false,
+    //       cost: true,
+    //       equipment: true
+    //     };
 
-      if (filterType && itemIds) {
-        this.filters = {
-          rarity: [],
-          element: [],
-          job: [],
-          limited: [],
-          equipment: {
-            weapon: [],
-            weaponsGroup: [],
-            armor: []
-          },
-          cost: [],
-          mainJob: false,
-          subJob: false,
-          exJob: false,
-          dream: false,
-          secondMasterAbility: false
-        };
+    //     if (filterType === 'mainJob') {
+    //       this.filters.mainJob = true;
+    //     }
 
-        this.collapsed = {
-          rarity: true,
-          element: true,
-          limited: true,
-          job: false,
-          cost: true,
-          equipment: true
-        };
+    //     if (filterType === 'mainJob' || filterType === 'job') {
+    //       for (const jobId of itemIds.split(',')) {
+    //         this.filters.job.push(this.jobService.getGenericJobId(jobId));
+    //       }
+    //     }
 
-        if (filterType === 'mainJob') {
-          this.filters.mainJob = true;
-        }
-
-        if (filterType === 'mainJob' || filterType === 'job') {
-          for (const jobId of itemIds.split(',')) {
-            this.filters.job.push(this.jobService.getGenericJobId(jobId));
-          }
-        }
-
-        this.filterChecked();
-        this.filterUnits();
-      }
-    });
+    //     this.filterChecked();
+    //     this.filterUnits();
+    //   }
+    // });
   }
 
-  async getUnits() {
-    const options = {};
-
-    if (this.searchForm) {
-      for (const option of this.searchForm.get('searchOptions').value) {
-        const optionTable = option.label.substring(1).split('=');
-        if (!options[optionTable[0]]) {
-          options[optionTable[0]] = [];
-        }
-        options[optionTable[0]].push(optionTable[1]);
-      }
-    }
+  async getItems() {
+    const options = super.getOptions();
 
     let result = null;
 
     if (Object.keys(options).length === 0) {
-      result = await this.unitService.getUnitsForListingWithCost(this.filters, this.sort, this.order);
+      result = await this.unitService.getUnitsForListingWithCost(this.filtersSections, this.sort, this.order);
     } else {
-      result = await this.unitService.getUnitsForListingWithCost(this.filters, this.sort, this.order, options);
+      result = await this.unitService.getUnitsForListingWithCost(this.filtersSections, this.sort, this.order, options);
     }
 
-    this.units = result.units;
-    this.rawUnits = result.rawUnits;
+    super.items = result.units;
+    super.rawItems = result.rawUnits;
+    this.rawJobs = result.rawJobs;
 
     if (Object.keys(options).length === 0) {
-      this.rawJobs = result.rawJobs;
-      this.jobs = result.jobs;
-      this.costs = result.costs;
+      for (const job of result.jobs) {
+        this.filtersSections.job.filters[4].items.push({
+          id: job.dataId,
+          names: job.names
+        });
+      }
+      this.translateJobs();
 
-      const unitsFilters = this.sessionService.get('unitsFilters');
-      if (unitsFilters) {
-        this.filters = JSON.parse(unitsFilters);
-
-        if (!this.filters.cost) {
-          this.filters.cost = [];
-        }
-
-        if (!this.filters.equipment.weaponsGroup) {
-          this.filters.equipment.weaponsGroup = [];
-        }
-
-        if (!Array.isArray(this.filters.equipment.weapon)) {
-          this.filters.equipment.weapon = [];
-        }
+      for (const cost of result.costs) {
+        this.filtersSections.cost.filters[0].items.push({
+          id: cost,
+          label: cost
+        });
       }
 
-      const unitsCollapsed = this.sessionService.get('unitsCollapsed');
-      if (unitsCollapsed) {
-        this.collapsed = JSON.parse(unitsCollapsed);
-
-        if (this.collapsed.cost === undefined) {
-          this.collapsed.cost = true;
-        }
-      }
-
-      this.filterChecked();
+      super.filterChecked();
     }
 
-    this.filterUnits();
+    this.filterItems();
   }
 
-  filterUnits() {
-    this.units = this.unitService.filterUnitsWithApi(this.rawUnits, this.filters, this.sort, this.order, this.rawJobs);
+  filterItems() {
+    this.items = this.unitService.filterUnitsWithApi(this.rawItems, this.filtersSections, this.rawJobs, this.sort, this.order, true);
     this.countFilters();
   }
 
-  countFilters() {
-    this.filtersCount = this.filters.rarity.length
-      + this.filters.element.length
-      + this.filters.job.length
-      + this.filters.limited.length
-      + this.filters.equipment.weapon.length
-      + this.filters.equipment.weaponsGroup.length
-      + this.filters.equipment.armor.length
-      + this.filters.cost.length
-      + (this.filters.mainJob ? 1 : 0)
-      + (this.filters.subJob ? 1 : 0)
-      + (this.filters.exJob ? 1 : 0)
-      + (this.filters.dream ? 1 : 0)
-      + (this.filters.secondMasterAbility ? 1 : 0);
-  }
-
-  private translateUnits() {
-    this.units.forEach(unit => {
-      unit.name = this.toolService.getName(unit);
-    });
-  }
-
   private translateJobs() {
-    this.jobs.forEach(job => {
-      job.name = this.toolService.getName(job);
+    this.filtersSections.job.filters[4].items.forEach(job => {
+      job.label = this.toolService.getName(job);
     });
-
-    this.toolService.sortByName(this.jobs);
-  }
-
-  getRoute(route) {
-    return this.navService.getRoute(route);
-  }
-
-  getFilteredUnits() {
-    if (this.searchText !== '') {
-      const text = this.searchText.toLowerCase();
-      return this.units.filter(unit => {
-        return unit.name.toLowerCase().includes(text) || unit.slug.toLowerCase().includes(text);
-      });
-    } else {
-      return this.units;
-    }
-  }
-
-  filterList(type, value) {
-    if (this.filters[type].indexOf(value) === -1) {
-      this.filters[type].push(value);
-    } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1);
-    }
-
-    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
-    this.filterChecked();
-
-    this.filterUnits();
-  }
-
-  filterEquipment(type, value) {
-    if (this.filters.equipment[type].indexOf(value) === -1) {
-      this.filters.equipment[type].push(value);
-    } else {
-      this.filters.equipment[type].splice(this.filters.equipment[type].indexOf(value), 1);
-    }
-
-    this.filterChecked();
-
-    this.filterUnits();
-    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
-  }
-
-  toggleMainJob() {
-    this.filters.mainJob = !this.filters.mainJob;
-    this.filters.subJob = false;
-
-    this.filterUnits();
-    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
-  }
-
-  toggleSubJob() {
-    this.filters.mainJob = false;
-    this.filters.subJob = !this.filters.subJob;
-
-    this.filterUnits();
-    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
-  }
-
-  toggleExJob() {
-    this.filters.exJob = !this.filters.exJob;
-
-    this.filterUnits();
-    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
-  }
-
-  toggleDream() {
-    this.filters.dream = !this.filters.dream;
-
-    this.filterUnits();
-    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
-  }
-
-  toggleSecondMasterAbility() {
-    this.filters.secondMasterAbility = !this.filters.secondMasterAbility;
-
-    this.filterUnits();
-    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
-  }
-
-  filterChecked() {
-    this.rarities.forEach(rarity => {
-      if (this.filters.rarity.indexOf(rarity) === -1) {
-        this.isFilterChecked.rarity[rarity] = false;
-      } else {
-        this.isFilterChecked.rarity[rarity] = true;
-      }
-    });
-
-    ['true', 'false'].forEach(limited => {
-      if (this.filters.limited.indexOf(limited === 'true' ? true : false) === -1) {
-        this.isFilterChecked.limited[limited] = false;
-      } else {
-        this.isFilterChecked.limited[limited] = true;
-      }
-    });
-
-    this.elements.forEach(element => {
-      if (this.filters.element.indexOf(element) === -1) {
-        this.isFilterChecked.element[element] = false;
-      } else {
-        this.isFilterChecked.element[element] = true;
-      }
-    });
-
-    this.armors.forEach(armor => {
-      if (this.filters.equipment.armor.indexOf(armor) === -1) {
-        this.isFilterChecked.armor[armor] = false;
-      } else {
-        this.isFilterChecked.armor[armor] = true;
-      }
-    });
-
-    this.weapons.forEach(weapon => {
-      if (this.filters.equipment.weapon.indexOf(weapon.id) === -1) {
-        this.isFilterChecked.weapon[weapon.id] = false;
-      } else {
-        this.isFilterChecked.weapon[weapon.id] = true;
-      }
-    });
-
-    this.weaponsGroups.forEach(weaponsGroup => {
-      if (this.filters.equipment.weaponsGroup.indexOf(weaponsGroup.id) === -1) {
-        this.isFilterChecked.weaponsGroup[weaponsGroup.id] = false;
-      } else {
-        this.isFilterChecked.weaponsGroup[weaponsGroup.id] = true;
-      }
-    });
-
-    this.jobs.forEach(job => {
-      if (this.filters.job.indexOf(job.dataId) === -1) {
-        this.isFilterChecked.job[job.dataId] = false;
-      } else {
-        this.isFilterChecked.job[job.dataId] = true;
-      }
-    });
-
-    this.costs.forEach(cost => {
-      if (this.filters.cost && this.filters.cost.indexOf(cost) === -1) {
-        this.isFilterChecked.cost[cost] = false;
-      } else {
-        this.isFilterChecked.cost[cost] = true;
-      }
-    });
-  }
-
-  toogleCollapse(section) {
-    this.collapsed[section] = !this.collapsed[section];
-    this.sessionService.set('unitsCollapsed', JSON.stringify(this.collapsed));
-  }
-
-  unselectAllJobs() {
-    this.filters.job = [];
-
-    this.sessionService.set('unitsFilters', JSON.stringify(this.filters));
-    this.filterChecked();
-
-    this.filterUnits();
-  }
-
-  onSearchBarClose() {
-    this.ngselect.searchTerm = this.searchText;
-    this.ngselect.searchInput.nativeElement.value = this.searchText;
-    this.getFilteredUnits();
-  }
-
-  onSearchBarAdd($event) {
-    const labelTable = $event.label.split('=');
-
-    if ($event.label[0] !== '!' || labelTable.length !== 2 || labelTable[1] === '') {
-      this.searchForm.get('searchOptions').value.pop();
-      this.searchForm.get('searchOptions').patchValue(this.searchForm.get('searchOptions').value);
-
-      if ($event.label[0] !== '!') {
-        this.searchText = $event.label;
-      }
-    } else {
-      this.getUnits();
-    }
-  }
-
-  onSearchBarUpdateTerm($event) {
-    if ($event.term[0] !== '!') {
-      this.searchText = $event.term;
-      this.getFilteredUnits();
-    }
-  }
-
-  openSearchOptionsModal() {
-    this.simpleModalService.addModal(SharedSearchOptionsModalComponent);
   }
 }
