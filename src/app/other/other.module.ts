@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgSelectModule } from '@ng-select/ng-select';
 import { UiSwitchModule } from 'ngx-ui-switch';
@@ -26,7 +26,8 @@ import { OtherSubCardComponent } from './subCard/other.subCard.component';
     FormsModule,
     UiSwitchModule,
     OtherRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   declarations: [
     OtherComponent,

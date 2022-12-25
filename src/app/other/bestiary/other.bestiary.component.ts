@@ -1,136 +1,149 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { Component } from '@angular/core';
+import { SimpleModalService } from 'ngx-simple-modal';
+import { TranslateService } from '@ngx-translate/core';
 
-import { OtherUnitService } from '../../services/otherunit.service';
+
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
-import { JobService } from '../../services/job.service';
 import { SessionService } from '../../services/session.service';
+import { OtherUnitService } from '../../services/otherunit.service';
+
+import { SharedListComponent } from '../../shared/list/shared.list.component';
 
 @Component({
   selector: 'app-other-bestiary',
-  templateUrl: './other.bestiary.component.html',
-  styleUrls: ['./other.bestiary.component.css']
+  templateUrl: '../../shared/list/shared.list.component.html',
+  styleUrls: ['../../shared/list/shared.list.component.css']
 })
-export class OtherBestiaryComponent implements OnInit {
-  units = [];
-  searchText = '';
+export class OtherBestiaryComponent extends SharedListComponent {
+
+  filtersSections = {
+    species: {
+      label: 'Species',
+      collapsed: false,
+      filters : [
+        {
+          id: 'species',
+          type: 'list',
+          items: [
+            {
+              id: 'human',
+              label: 'Human'
+            },
+            {
+              id: 'netherBeast',
+              label: 'NetherBeast'
+            },
+            {
+              id: 'beast',
+              label: 'Beast'
+            },
+            {
+              id: 'demon',
+              label: 'Demon'
+            },
+            {
+              id: 'dragon',
+              label: 'Dragon'
+            },
+            {
+              id: 'plant',
+              label: 'Plant'
+            },
+            {
+              id: 'bird',
+              label: 'Bird'
+            },
+            {
+              id: 'insect',
+              label: 'Insect'
+            },
+            {
+              id: 'aquatic',
+              label: 'Aquatic'
+            },
+            {
+              id: 'machine',
+              label: 'Machine'
+            },
+            {
+              id: 'fairy',
+              label: 'Fairy'
+            },
+            {
+              id: 'undead',
+              label: 'Undead'
+            },
+            {
+              id: 'stone',
+              label: 'Stone'
+            },
+            {
+              id: 'metal',
+              label: 'Metal'
+            },
+            {
+              id: 'arcana',
+              label: 'Arcana'
+            },
+            {
+              id: 'slime',
+              label: 'Slime'
+            },
+            {
+              id: '???',
+              label: '???'
+            }
+          ],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    }
+  };
+
+  sortTable = [
+    'name'
+  ];
   sort = 'name';
   order = 'asc';
-  jobs = [];
-  filters = {
-    species: []
-  };
-  isFilterChecked = {
-    species: []
-  };
-  collapsed = {
-    species: false
-  };
 
-  species = [
-    'human',
-    'netherBeast',
-    'beast',
-    'demon',
-    'dragon',
-    'plant',
-    'bird',
-    'insect',
-    'aquatic',
-    'machine',
-    'fairy',
-    'undead',
-    'stone',
-    'metal',
-    'arcana',
-    'slime',
-    '???'
-  ];
+  itemType = 'otherUnit';
+  linkType = 'other/unit';
+  assetType = 'otherUnit';
+
+  seoData = {
+    title: 'Bestiary',
+    desc: 'Find all enemies from wotv in one place. Can you beat them all ?'
+  };
 
   constructor(
-    private otherUnitService: OtherUnitService,
-    private translateService: TranslateService,
-    private navService: NavService,
-    private toolService: ToolService,
-    private sessionService: SessionService,
-    private jobService: JobService
+    translateService: TranslateService,
+    navService: NavService,
+    simpleModalService: SimpleModalService,
+    toolService: ToolService,
+    sessionService: SessionService,
+    private otherUnitService: OtherUnitService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.translateUnits();
-    });
+    super(
+      translateService,
+      navService,
+      simpleModalService,
+      toolService,
+      sessionService
+    );
   }
 
-  async ngOnInit() {
-    this.navService.setSEO('Bestiary', 'Find all enemies from wotv in one place. Can you beat them all ?');
+  async getItems() {
+    super.rawItems = await this.otherUnitService.getUnitsForListing(this.filtersSections, this.sort, this.order);
+    super.items = this.rawItems;
 
-    const otherUnitsFilters = this.sessionService.get('otherUnitsFilters');
-    if (otherUnitsFilters) {
-      this.filters = JSON.parse(otherUnitsFilters);
-    }
-
-    const otherUnitsCollapsed = this.sessionService.get('otherUnitsCollapsed');
-    if (otherUnitsCollapsed) {
-      this.collapsed = JSON.parse(otherUnitsCollapsed);
-    }
-
-    this.filterChecked();
-
-    await this.getUnits();
+    super.filterChecked('species');
+    this.filterItems();
   }
 
-  async getUnits() {
-    this.units = await this.otherUnitService.getUnitsForListing(this.filters, this.sort, this.order);
-
-    this.translateUnits();
-  }
-
-  private translateUnits() {
-    this.units.forEach(unit => {
-      unit.name = this.toolService.getName(unit);
-    });
-  }
-
-  getRoute(route) {
-    return this.navService.getRoute(route);
-  }
-
-  getFilteredUnits() {
-    if (this.searchText !== '') {
-      const text = this.searchText.toLowerCase();
-      return this.units.filter(unit => {
-        return unit.name.toLowerCase().includes(text) || unit.slug.toLowerCase().includes(text);
-      });
-    } else {
-      return this.units;
-    }
-  }
-
-  async filterList(type, value) {
-    if (this.filters[type].indexOf(value) === -1) {
-      this.filters[type].push(value);
-    } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1);
-    }
-
-    this.sessionService.set('otherUnitsFilters', JSON.stringify(this.filters));
-    this.filterChecked();
-
-    await this.getUnits();
-  }
-
-  filterChecked() {
-    this.species.forEach(specie => {
-      if (this.filters.species.indexOf(specie) === -1) {
-        this.isFilterChecked.species[specie] = false;
-      } else {
-        this.isFilterChecked.species[specie] = true;
-      }
-    });
-  }
-
-  toogleCollapse(section) {
-    this.collapsed[section] = !this.collapsed[section];
-    this.sessionService.set('otherUnitsCollapsed', JSON.stringify(this.collapsed));
+  filterItems() {
+    super.items = this.otherUnitService.filterUnits(this.rawItems, this.filtersSections);
+    super.countFilters();
   }
 }

@@ -53,9 +53,20 @@ export class OtherUnitService {
     return units;
   }
 
-  private filterUnits(units, filters) {
-    if (filters) {
+  filterUnits(units, rawFilters) {
+    if (rawFilters) {
       const filteredUnits = [];
+      const filters: any = {};
+
+      Object.keys(rawFilters).forEach(filterSection => {
+        rawFilters[filterSection].filters.forEach(filter => {
+          if (filter.type === 'list') {
+            filters[filter.id] = filter.values;
+          } else if (filter.type === 'switch') {
+            filters[filter.id] = filter.value;
+          }
+        });
+      });
 
       for (const unit of units) {
         if (unit.type === 'enemy') {

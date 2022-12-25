@@ -18,7 +18,7 @@ export class RaidListComponent extends SharedListComponent {
   filtersSections = {
     element: {
       label: 'Elements',
-      collapsed: true,
+      collapsed: false,
       filters : [
         {
           id: 'element',
