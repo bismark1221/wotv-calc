@@ -62,6 +62,7 @@ export class RaidService {
     for (const raid of raids) {
       raid.element = raid.bosses[0].element;
       raid.image = raid.bosses[0].image;
+      raid.name = this.toolService.getName(raid);
     }
 
     switch (sort) {
@@ -76,9 +77,20 @@ export class RaidService {
     return raids;
   }
 
-  filterRaids(raids, filters) {
-    if (filters) {
+  filterRaids(raids, rawFilters) {
+    if (rawFilters) {
       const filteredRaids = [];
+      const filters: any = {};
+
+      Object.keys(rawFilters).forEach(filterSection => {
+        rawFilters[filterSection].filters.forEach(filter => {
+          if (filter.type === 'list') {
+            filters[filter.id] = filter.values;
+          } else if (filter.type === 'switch') {
+            filters[filter.id] = filter.value;
+          }
+        });
+      });
 
       raids.forEach(raid => {
         if (filters.element.length === 0 || filters.element.indexOf(raid.bosses[0].element) !== -1) {

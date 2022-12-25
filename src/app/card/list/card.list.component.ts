@@ -248,6 +248,8 @@ export class CardListComponent extends SharedListComponent {
   };
 
   itemType = 'card';
+  linkType = 'cards';
+  assetType = 'card';
 
   seoData = {
     title: 'Cards',

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { NgSelectModule } from '@ng-select/ng-select';
 
@@ -15,6 +15,7 @@ import { RaidListComponent } from './list/raid.list.component';
     CommonModule,
     NgSelectModule,
     FormsModule,
+    ReactiveFormsModule,
     RaidRoutingModule,
     SharedModule
   ],

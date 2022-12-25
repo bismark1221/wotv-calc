@@ -247,6 +247,8 @@ export class EquipmentListComponent extends SharedListComponent {
   };
 
   itemType = 'equipment';
+  linkType = 'equipment';
+  assetType = 'equipment';
 
   seoData = {
     title: 'Equipment',

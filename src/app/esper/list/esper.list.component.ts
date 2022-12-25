@@ -130,6 +130,8 @@ export class EsperListComponent extends SharedListComponent {
   };
 
   itemType = 'esper';
+  linkType = 'espers';
+  assetType = 'esper';
 
   seoData = {
     title: 'Espers',

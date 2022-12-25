@@ -38,12 +38,19 @@ export class SharedListComponent implements OnInit {
     desc: ''
   };
 
+  sortTable = [
+    'rarity',
+    'name',
+    'releaseDate',
+    'updatedDate'
+  ];
+
   constructor(
-    public translateService: TranslateService,
+    protected translateService: TranslateService,
     private navService: NavService,
     private simpleModalService: SimpleModalService,
-    public toolService: ToolService,
-    public sessionService: SessionService,
+    protected toolService: ToolService,
+    protected sessionService: SessionService,
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateItems();
@@ -99,7 +106,7 @@ export class SharedListComponent implements OnInit {
     });
   }
 
-  private translateItems() {
+  protected translateItems() {
     this.items.forEach(item => {
       item.name = this.toolService.getName(item);
     });
@@ -132,8 +139,8 @@ export class SharedListComponent implements OnInit {
     this.filterItems();
   }
 
-  filterChecked() {
-    this.getOldFilters();
+  filterChecked(testFilter = 'rarity') {
+    this.getOldFilters(testFilter);
 
     this.filtersSectionsTypes.forEach(filterType => {
       this.filtersSections[filterType].filters.forEach(filter => {
@@ -150,11 +157,11 @@ export class SharedListComponent implements OnInit {
     });
   }
 
-  private getOldFilters() {
+  private getOldFilters(testFilter) {
     const sessionFilters = this.sessionService.get(this.itemType + 'sFilters');
     if (sessionFilters) {
       const oldFilters = JSON.parse(sessionFilters);
-      if (oldFilters.rarity.label) {
+      if (oldFilters && oldFilters[testFilter] && oldFilters[testFilter].label) {
         for (const filtersSectionsType of Object.keys(this.filtersSections)) {
           if (oldFilters[filtersSectionsType]) {
             this.filtersSections[filtersSectionsType].collapsed = oldFilters[filtersSectionsType].collapsed;

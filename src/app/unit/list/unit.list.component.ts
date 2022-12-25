@@ -309,10 +309,12 @@ export class UnitListComponent extends SharedListComponent {
   };
 
   itemType = 'unit';
+  linkType = 'units';
+  assetType = 'unit';
 
   seoData = {
     title: 'Units',
-    desc: 'Find all cards from wotv in one place. Search them by name, skill and multiples filters.'
+    desc: 'Find all units from wotv in one place. Search them by name, skill and multiples filters.'
   };
 
   rawJobs = [];
