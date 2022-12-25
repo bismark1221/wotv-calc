@@ -62,7 +62,7 @@
 }
 
 .underSearchBlock {
-  height: 30px;
+  min-height: 30px;
 }
 
 .totalItems {
@@ -120,6 +120,18 @@
   display: none;
 }
 
+@media (max-width: 1050px) {
+  .totalItems {
+    display: block;
+    float: none;
+  }
+
+  .sortOrderBlock {
+    display: block;
+    float: none;
+  }
+}
+
 @media (max-width: 890px) {
   .sortOrderBlock, .leftBlock {
     display: none;
@@ -136,6 +148,8 @@
   }
 
   .totalItems {
+    float: left;
+    display: inline-block;
     margin-top: 3px;
   }
 

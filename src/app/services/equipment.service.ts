@@ -341,7 +341,7 @@ export class EquipmentService {
       }
     }
 
-    const equipments = this.filterEquipments(rawEquipments, filters, sort, order);
+    const equipments = this.filterEquipments(rawEquipments, filters, sort, order, true);
 
     return {
       rawEquipments: rawEquipments,
@@ -427,7 +427,7 @@ export class EquipmentService {
 
     return {
       rawEquipments: this.sortEquipments(rawEquipments),
-      equipments: this.filterEquipments(rawEquipments, {}),
+      equipments: this.filterEquipments(rawEquipments, {}, 'rarity', 'desc', false),
       acquisitionTypes: acquisitionTypes
     };
   }
@@ -500,8 +500,30 @@ export class EquipmentService {
     return [];
   }
 
-  filterEquipments(equipments, filters, sort = 'rarity', order = 'desc') {
-    if (filters) {
+  filterEquipments(equipments, rawFilters, sort, order, fromList) {
+    let filters: any = {};
+
+    if (rawFilters) {
+      if (fromList) {
+        Object.keys(rawFilters).forEach(filterSection => {
+          rawFilters[filterSection].filters.forEach(filter => {
+            if (filter.type === 'list') {
+              if (!filters[filter.id]) {
+                filters[filter.id] = [];
+              }
+
+              filter.values.forEach(value => {
+                filters[filter.id].push(value);
+              });
+            } else if (filter.type === 'switch') {
+              filters[filter.id] = filter.value;
+            }
+          });
+        });
+      } else {
+        filters = rawFilters;
+      }
+
       const filteredEquipments = [];
 
       equipments.forEach(equipment => {

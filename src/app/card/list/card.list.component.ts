@@ -296,14 +296,6 @@ export class CardListComponent extends SharedListComponent {
         });
       }
 
-      const cardsFilters = this.sessionService.get('cardsFilters');
-      if (cardsFilters) {
-        const oldFilters = JSON.parse(cardsFilters);
-        if (oldFilters.rarity.label) {
-          this.filtersSections = oldFilters;
-        }
-      }
-
       super.filterChecked();
     }
 

@@ -175,14 +175,6 @@ export class EsperListComponent extends SharedListComponent {
         });
       }
 
-      const espersFilters = this.sessionService.get('espersFilters');
-      if (espersFilters) {
-        const oldFilters = JSON.parse(espersFilters);
-        if (oldFilters.rarity.label) {
-          this.filtersSections = oldFilters;
-        }
-      }
-
       super.filterChecked();
     }
 

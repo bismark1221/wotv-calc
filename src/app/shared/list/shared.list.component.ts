@@ -39,10 +39,10 @@ export class SharedListComponent implements OnInit {
   };
 
   constructor(
-    private translateService: TranslateService,
+    public translateService: TranslateService,
     private navService: NavService,
     private simpleModalService: SimpleModalService,
-    private toolService: ToolService,
+    public toolService: ToolService,
     public sessionService: SessionService,
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -133,6 +133,8 @@ export class SharedListComponent implements OnInit {
   }
 
   filterChecked() {
+    this.getOldFilters();
+
     this.filtersSectionsTypes.forEach(filterType => {
       this.filtersSections[filterType].filters.forEach(filter => {
         if (filter.type === 'list') {
@@ -146,6 +148,28 @@ export class SharedListComponent implements OnInit {
         }
       });
     });
+  }
+
+  private getOldFilters() {
+    const sessionFilters = this.sessionService.get(this.itemType + 'sFilters');
+    if (sessionFilters) {
+      const oldFilters = JSON.parse(sessionFilters);
+      if (oldFilters.rarity.label) {
+        for (const filtersSectionsType of Object.keys(this.filtersSections)) {
+          if (oldFilters[filtersSectionsType]) {
+            this.filtersSections[filtersSectionsType].collapsed = oldFilters[filtersSectionsType].collapsed;
+
+            for (let i = 0; i <= oldFilters[filtersSectionsType].filters.length - 1; i++) {
+              if (this.filtersSections[filtersSectionsType].filters[i].values) {
+                this.filtersSections[filtersSectionsType].filters[i].values = oldFilters[filtersSectionsType].filters[i].values;
+              } else if (typeof this.filtersSections[filtersSectionsType].filters[i].value == 'boolean') {
+                this.filtersSections[filtersSectionsType].filters[i].value = oldFilters[filtersSectionsType].filters[i].value;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   toogleCollapse(section) {

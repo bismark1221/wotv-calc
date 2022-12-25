@@ -64,7 +64,7 @@ export class InventoryModalEquipmentsComponent extends SimpleModalComponent<null
     this.rawData.equipments = result.rawEquipments;
 
     this.equipments = result.equipments;
-    this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters);
+    this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters, 'rarity', 'desc', false);
     this.translateEquipments();
     this.getFilteredEquipments();
 

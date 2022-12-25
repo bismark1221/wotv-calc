@@ -79,7 +79,7 @@ export class BuilderModalEquipmentsComponent extends SimpleModalComponent<null, 
 
     this.rawData.equipments = result.rawEquipments;
 
-    const filteredEquipments = this.equipmentService.filterEquipments(result.equipments, this.filters);
+    const filteredEquipments = this.equipmentService.filterEquipments(result.equipments, this.filters, 'rarity', 'desc', false);
 
     this.equipments = [];
     for (const equipment of filteredEquipments) {
