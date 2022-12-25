@@ -108,6 +108,8 @@ export class OtherBestiaryComponent extends SharedListComponent {
   sort = 'name';
   order = 'asc';
 
+  hideOptions = true;
+
   itemType = 'otherUnit';
   linkType = 'other/unit';
   assetType = 'otherUnit';

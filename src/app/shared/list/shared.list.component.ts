@@ -45,6 +45,8 @@ export class SharedListComponent implements OnInit {
     'updatedDate'
   ];
 
+  hideOptions = false;
+
   constructor(
     protected translateService: TranslateService,
     private navService: NavService,

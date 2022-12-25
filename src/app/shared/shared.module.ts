@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { NgSelectModule } from '@ng-select/ng-select';
 import { NgxPopperjsModule } from 'ngx-popperjs';
 
 import { SharedRoundDownPipe } from './pipes/shared.roundDown.pipe';
@@ -27,7 +28,8 @@ import { SharedListComponent } from './list/shared.list.component';
     CommonModule,
     RouterModule,
     FormsModule,
-    NgxPopperjsModule
+    NgxPopperjsModule,
+    NgSelectModule
   ],
   exports: [
     SharedRoundDownPipe,
