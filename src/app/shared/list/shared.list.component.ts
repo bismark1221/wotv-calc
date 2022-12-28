@@ -141,8 +141,10 @@ export class SharedListComponent implements OnInit {
     this.filterItems();
   }
 
-  filterChecked(testFilter = 'rarity') {
-    this.getOldFilters(testFilter);
+  filterChecked(testFilter = 'rarity', getOldFilters = true) {
+    if (getOldFilters) {
+      this.getOldFilters(testFilter);
+    }
 
     this.filtersSectionsTypes.forEach(filterType => {
       this.filtersSections[filterType].filters.forEach(filter => {

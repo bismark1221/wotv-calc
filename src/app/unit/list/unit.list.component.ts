@@ -318,6 +318,7 @@ export class UnitListComponent extends SharedListComponent {
   };
 
   rawJobs = [];
+  hasRouteParams = false;
 
   constructor(
     translateService: TranslateService,
@@ -345,56 +346,31 @@ export class UnitListComponent extends SharedListComponent {
   async ngOnInit() {
     super.ngOnInit();
 
-    // this.activatedRoute.paramMap.subscribe(async (params: Params) => {
-    //   const filterType = params.get('filterType');
-    //   const itemIds = params.get('itemIds');
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
+      this.hasRouteParams = true;
+      const filterType = params.get('filterType');
+      const itemIds = params.get('itemIds');
 
-    //   if (filterType && itemIds) {
-    //     this.filters = {
-    //       rarity: [],
-    //       element: [],
-    //       job: [],
-    //       limited: [],
-    //       equipment: {
-    //         weapon: [],
-    //         weaponsGroup: [],
-    //         armor: []
-    //       },
-    //       cost: [],
-    //       mainJob: false,
-    //       subJob: false,
-    //       exJob: false,
-    //       dream: false,
-    //       secondMasterAbility: false
-    //     };
+      if (filterType && itemIds) {
+        if (filterType === 'mainJob') {
+          this.filtersSections.job.filters[0].value = true;
+        }
 
-    //     this.collapsed = {
-    //       rarity: true,
-    //       element: true,
-    //       limited: true,
-    //       job: false,
-    //       cost: true,
-    //       equipment: true
-    //     };
+        if (filterType === 'mainJob' || filterType === 'job') {
+          this.filtersSections.job.collapsed = false;
+          for (const jobId of itemIds.split(',')) {
+            this.filtersSections.job.filters[4].values.push(this.jobService.getGenericJobId(jobId));
+          }
+        }
 
-    //     if (filterType === 'mainJob') {
-    //       this.filters.mainJob = true;
-    //     }
-
-    //     if (filterType === 'mainJob' || filterType === 'job') {
-    //       for (const jobId of itemIds.split(',')) {
-    //         this.filters.job.push(this.jobService.getGenericJobId(jobId));
-    //       }
-    //     }
-
-    //     this.filterChecked();
-    //     this.filterUnits();
-    //   }
-    // });
+        this.filterChecked('rarity', false);
+        this.filterItems();
+      }
+    });
   }
 
   async getItems() {
-    const options = super.getOptions();
+    const options = this.getOptions();
 
     let result = null;
 
@@ -404,8 +380,8 @@ export class UnitListComponent extends SharedListComponent {
       result = await this.unitService.getUnitsForListingWithCost(this.filtersSections, this.sort, this.order, options);
     }
 
-    super.items = result.units;
-    super.rawItems = result.rawUnits;
+    this.items = result.units;
+    this.rawItems = result.rawUnits;
     this.rawJobs = result.rawJobs;
 
     if (Object.keys(options).length === 0) {
@@ -424,7 +400,7 @@ export class UnitListComponent extends SharedListComponent {
         });
       }
 
-      super.filterChecked();
+      this.filterChecked('rarity', !this.hasRouteParams);
     }
 
     this.filterItems();
