@@ -17,13 +17,13 @@ export class PwaService {
   ) {
     if (isPlatformBrowser(this.platformId)) {
       this.swUpdate.unrecoverable.subscribe(event => {
-        document.location.reload();
+        this.simpleModalService.addModal(SharedPwaUpdateModalComponent);
       });
 
       this.swUpdate.versionUpdates
         .pipe(filter((evt): evt is VersionReadyEvent => evt.type === 'VERSION_READY'))
         .subscribe(evt => {
-          document.location.reload();
+          this.simpleModalService.addModal(SharedPwaUpdateModalComponent);
         });
     }
   }
