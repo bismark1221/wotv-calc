@@ -117,7 +117,10 @@
       <div class="underSearchBlock">
         <div class="totalItems">
           A total of <span class="countItems">{{ getFilteredItems().length }}</span> {{ itemType }}s found
-          <span *ngIf="filtersCount > 0">({{ filtersCount }} filters activated)</span>
+          <span *ngIf="filtersCount > 0">
+            ({{ filtersCount }} filters activated)
+            <span class="removeAllFilters" (click)="removeAllFilters()">X</span>
+          </span>
         </div>
         <div class="sortOrderBlock">
           <!-- <div>

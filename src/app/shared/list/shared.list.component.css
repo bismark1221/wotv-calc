@@ -120,7 +120,15 @@
   display: none;
 }
 
-@media (max-width: 1050px) {
+.removeAllFilters {
+  border: 1px solid var(--table-border);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 1090px) {
   .totalItems {
     display: block;
     float: none;

@@ -230,4 +230,21 @@ export class SharedListComponent implements OnInit {
   toogleMobileFilters() {
     this.showMobileFilters = !this.showMobileFilters;
   }
+
+  removeAllFilters() {
+    for (const filtersSectionsType of Object.keys(this.filtersSections)) {
+      for (const filter of this.filtersSections[filtersSectionsType].filters) {
+        if (filter.type === 'list') {
+          filter.values = [];
+        } else if (filter.type === 'switch') {
+          filter.value = false;
+        }
+      }
+    }
+
+    this.sessionService.set(this.itemType + 'sFilters', JSON.stringify(this.filtersSections));
+
+    this.filterChecked(null, false);
+    this.filterItems();
+  }
 }

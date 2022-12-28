@@ -347,11 +347,11 @@ export class UnitListComponent extends SharedListComponent {
     super.ngOnInit();
 
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
-      this.hasRouteParams = true;
       const filterType = params.get('filterType');
       const itemIds = params.get('itemIds');
 
       if (filterType && itemIds) {
+        this.hasRouteParams = true;
         if (filterType === 'mainJob') {
           this.filtersSections.job.filters[0].value = true;
         }
