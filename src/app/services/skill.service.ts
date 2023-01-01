@@ -2123,6 +2123,16 @@ export class SkillService {
                   break;
               }
               break;
+            case 'ENEMY_IN_AOE' :
+              switch (math.formula) {
+                case 'CURVE' :
+                  html += ' for each enemy less in the aoe (0% at ' + math.condition + ' enemies)';
+                  break;
+                default:
+                  console.log('Not manage math formula right now...');
+                  break;
+              }
+              break;
             case 'UNIT_LEVEL' :
               switch (math.formula) {
                 case 'CURVE' :
