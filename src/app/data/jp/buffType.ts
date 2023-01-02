@@ -74,6 +74,7 @@ export const JP_BUFF_TYPE = {
     "FAITH",
     "FAITH_FIGHT",
     "FENNES_KILLER",
+    "FENNES_RES",
     "FIRE_ATK",
     "FIRE_KILLER",
     "FIRE_RES",

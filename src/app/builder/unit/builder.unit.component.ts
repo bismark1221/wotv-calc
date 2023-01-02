@@ -557,6 +557,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   updateSupportSkill() {
     this.unitService.changeLevel();
     this.unitService.getActiveSkills();
+    this.unitService.getAvailableSupportNodes();
     this.updateActiveSkillsForSim();
   }
 

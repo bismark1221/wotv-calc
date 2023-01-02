@@ -811,6 +811,10 @@ export class UnitService {
     this.unit.disableNotAvailableNodes();
   }
 
+  getAvailableSupportNodes() {
+    this.unit.getAvailableSupportNodes();
+  }
+
   changeLB() {
     this.unit.updateMaxLevel();
     this.unit.updateMaxJobLevel();
