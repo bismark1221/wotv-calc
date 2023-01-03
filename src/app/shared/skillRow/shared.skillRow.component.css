@@ -1,3 +1,7 @@
+.mobileViewTd {
+  padding: 0;
+}
+
 .damageSkillImg {
   height: 32px;
 }
@@ -19,4 +23,9 @@
   max-width: 30px;
   max-height: 30px;
   vertical-align: top;
+}
+
+.divSkillTableHtml {
+  width: 52px;
+  margin: auto;
 }

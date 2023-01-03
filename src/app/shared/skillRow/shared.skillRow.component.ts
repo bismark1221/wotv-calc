@@ -36,6 +36,9 @@ export class SharedSkillRowComponent extends SharedResizeDetectorComponent {
   @Input() skillIndex;
   @Input() noNameOnUpgrade;
 
+  @Input() mobileView;
+  @Input() showMobileTitles;
+
   @Output() changeLevel = new EventEmitter<string>();
 
   constructor(

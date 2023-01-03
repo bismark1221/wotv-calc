@@ -174,8 +174,8 @@
                 {{ effect.effect }}
 
                 <table *ngIf="effect.skill" class="w-full m-0">
-                  <tr>
-                    <th class="sub skillNameTd">name</th>
+                  <tr *ngIf="windowSize >= 950">
+                    <th class="sub skillNameTd">Name</th>
                     <th class="sub">Effects</th>
                     <th class="sub rangeTd">Range</th>
                     <th class="sub skillCastTd">Casts</th>
@@ -183,7 +183,7 @@
                     <th class="sub skillCostTd">Cost</th>
                   </tr>
 
-                  <tr *ngIf="effect.skill" app-shared-skillRow [skill]="effect.skill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+                  <tr *ngIf="effect.skill" app-shared-skillRow [skill]="effect.skill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [showMobileTitles]="true" [mobileView]="windowSize < 950"></tr>
                 </table>
 
               </div>
@@ -312,8 +312,8 @@
             </td>
           </tr>
 
-          <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
-            <th class="sub skillNameTd">name</th>
+          <tr *ngIf="buff.classic && buff.classic.type !== 'support' && windowSize >= 950">
+            <th class="sub skillNameTd">Name</th>
             <th class="sub">Effects</th>
             <th class="sub rangeTd">Range</th>
             <th class="sub skillCastTd">Casts</th>
@@ -321,7 +321,7 @@
             <th class="sub skillCostTd">Cost</th>
           </tr>
 
-          <tr *ngIf="buff.classic && buff.classic.type !== 'support'" app-shared-skillRow [skill]="buff.classic" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+          <tr *ngIf="buff.classic && buff.classic.type !== 'support'" app-shared-skillRow [skill]="buff.classic" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [showMobileTitles]="true" [mobileView]="windowSize < 950"></tr>
 
           <tr class="separatorLine"></tr>
         </tbody>
