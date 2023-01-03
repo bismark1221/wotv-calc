@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, PLATFORM_ID, Inject, ViewChild, ElementRef } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
@@ -20,6 +21,9 @@ export class EsperDetailComponent implements OnInit {
   specialBismark = false;
   activeTab;
 
+  windowSize = 1230;
+  @ViewChild('esperGridContainer') esperGridContainer: ElementRef;
+
   constructor(
     private esperService: EsperService,
     private skillService: SkillService,
@@ -29,11 +33,24 @@ export class EsperDetailComponent implements OnInit {
     private translateService: TranslateService,
     private gridService: GridService,
     private navService: NavService,
-    private toolService: ToolService
+    private toolService: ToolService,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
       this.formatEsper();
     });
+  }
+
+  @HostListener('window:resize', []) onWindowResize() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.windowSize = window.innerWidth;
+
+      if (this.windowSize >= 690) {
+        this.esperGridContainer.nativeElement.style.width = '800px';
+      } else {
+        this.esperGridContainer.nativeElement.style.width = (this.windowSize - 20) + 'px';
+      }
+    }
   }
 
   ngOnInit() {
@@ -60,6 +77,8 @@ export class EsperDetailComponent implements OnInit {
           break;
       }
     });
+
+    this.onWindowResize();
   }
 
   private formatEsper() {

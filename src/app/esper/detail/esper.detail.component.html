@@ -1,6 +1,6 @@
 <app-shared-tabs>
-  <app-shared-tab title="ESPER">
-    <div class="leftBlock" *ngIf="esper">
+  <app-shared-tab title="ESPER" mobileManaged="true">
+    <div class="leftBlock" *ngIf="esper && windowSize >= 1230">
       <table class="esperTable">
         <tbody>
           <tr>
@@ -49,125 +49,181 @@
       </table>
     </div>
 
-    <div class="rightBlock" *ngIf="esper">
-      <table class="statsTable">
+    <div class="leftBlockMediumSize" *ngIf="esper && windowSize < 1230">
+      <table class="esperTable">
         <tbody>
           <tr>
-            <th colspan="20">Stats</th>
+            <th colspan="4">{{ esper.name }}</th>
           </tr>
           <tr>
-            <th class="sub"></th>
-            <th class="sub">HP</th>
-            <th class="sub">TP</th>
-            <th class="sub">AP</th>
-            <th class="sub">ATK</th>
-            <th class="sub">MAG</th>
-            <th class="sub">AGI</th>
-            <th class="sub">DEX</th>
-            <th class="sub">LUCK</th>
-            <th class="sub" *ngIf="esper.stats.POISON_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="poison resistance" src="{{'assets/status-ailments/POISON.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.BLIND_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.PARALYZE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.CONFUSION_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.PETRIFY_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.TOAD_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.CHARM_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.SLOW_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.STOP_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="stop resistance" src="{{'assets/status-ailments/STOP.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.IMMOBILIZE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.DISABLE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.BERSERK_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.DOOM_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.webp'}}" /></th>
-            <th class="sub" *ngIf="esper.stats.STUN_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="stun resistance" src="{{'assets/status-ailments/STUN.webp'}}" /></th>
-            <th class="sub">SP</th>
+            <td rowspan="8">
+              <a href="{{'assets/espers/' + esper.image + '.webp'}}" target="_blank">
+                <img class="esperImg" src="{{'assets/espers/' + esper.image + '_full.webp'}}" />
+              </a>
+            </td>
+            <th class="sub">Rarity</th>
+            <th class="sub">Element</th>
           </tr>
           <tr>
-            <td>Min</td>
-            <td>{{ esper.stats.HP[0].min }}</td>
-            <td>{{ esper.stats.TP[0].min }}</td>
-            <td>{{ esper.stats.AP[0].min }}</td>
-            <td>{{ esper.stats.ATK[0].min }}</td>
-            <td>{{ esper.stats.MAG[0].min }}</td>
-            <td>{{ esper.stats.AGI[0].min }}</td>
-            <td>{{ esper.stats.DEX[0].min }}</td>
-            <td>{{ esper.stats.LUCK[0].min }}</td>
-            <td *ngIf="esper.stats.POISON_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.BLIND_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.PARALYZE_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.CONFUSION_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.PETRIFY_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.TOAD_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.CHARM_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.SLOW_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.STOP_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.IMMOBILIZE_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.DISABLE_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.BERSERK_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.DOOM_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td *ngIf="esper.stats.STUN_RES[esper.SPs.length -1].max > 0">0 %</td>
-            <td rowspan="2">{{ esper.maxSP }}</td>
+            <td><img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.webp'}}" /></td>
+            <td><img class="rarityImg" src="{{'assets/elements/' + esper.element + '.webp'}}" (click)="clickSpecialBismark()"/></td>
           </tr>
           <tr>
-            <td>Max</td>
-            <td>{{ esper.stats.HP[esper.SPs.length - 1].max }}</td>
-            <td>{{ esper.stats.TP[esper.SPs.length - 1].max }}</td>
-            <td>{{ esper.stats.AP[esper.SPs.length - 1].max }}</td>
-            <td>{{ esper.stats.ATK[esper.SPs.length - 1].max }}</td>
-            <td>{{ esper.stats.MAG[esper.SPs.length - 1].max }}</td>
-            <td>{{ esper.stats.AGI[esper.SPs.length - 1].max }}</td>
-            <td>{{ esper.stats.DEX[esper.SPs.length - 1].max }}</td>
-            <td>{{ esper.stats.LUCK[esper.SPs.length - 1].max }}</td>
-            <td *ngIf="esper.stats.POISON_RES[esper.SPs.length -1].max > 0">{{ esper.stats.POISON_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.FROSTBITE_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.BLIND_RES[esper.SPs.length -1].max > 0">{{ esper.stats.BLIND_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SLEEP_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SILENCE_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.PARALYZE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.PARALYZE_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.CONFUSION_RES[esper.SPs.length -1].max > 0">{{ esper.stats.CONFUSION_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.PETRIFY_RES[esper.SPs.length -1].max > 0">{{ esper.stats.PETRIFY_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.TOAD_RES[esper.SPs.length -1].max > 0">{{ esper.stats.TOAD_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.CHARM_RES[esper.SPs.length -1].max > 0">{{ esper.stats.CHARM_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.SLOW_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SLOW_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.STOP_RES[esper.SPs.length -1].max > 0">{{ esper.stats.STOP_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.IMMOBILIZE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.IMMOBILIZE_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.DISABLE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.DISABLE_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.BERSERK_RES[esper.SPs.length -1].max > 0">{{ esper.stats.BERSERK_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.DOOM_RES[esper.SPs.length -1].max > 0">{{ esper.stats.DOOM_RES[esper.SPs.length -1].max }} %</td>
-            <td *ngIf="esper.stats.STUN_RES[esper.SPs.length -1].max > 0">{{ esper.stats.STUN_RES[esper.SPs.length -1].max }} %</td>
+            <th class="sub">Cost</th>
+            <th class="sub">Limited</th>
+          </tr>
+          <tr>
+            <td>{{ esper.cost }}</td>
+            <td>{{ esper.limited ? "Yes" : "No" }}</td>
+          </tr>
+          <tr>
+            <th class="sub" colspan="4">Release Date</th>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <div class="equipmentText">
+                {{ esper.releaseDate }}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="sub" colspan="4">Updated Date</th>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <div class="equipmentText">
+                {{ esper.updatedDate }}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <button class="btn btn-sub" [routerLink]="[getRoute('/builder/esper/' + esper.slug)]">Go To Builder</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="rightBlock" *ngIf="esper">
+      <table class="statsTable">
+        <tr>
+          <th colspan="20">Stats</th>
+        </tr>
+        <tbody *ngFor="let i of (windowSize >= 1230 ? [-1] : [0, 1, 2])">
+          <tr>
+            <th *ngIf="i == -1 || i == 0" class="sub"></th>
+            <th *ngIf="i == -1 || i == 0" class="sub">HP</th>
+            <th *ngIf="i == -1 || i == 0" class="sub">TP</th>
+            <th *ngIf="i == -1 || i == 0" class="sub">AP</th>
+            <th *ngIf="i == -1 || i == 1" class="sub">ATK</th>
+            <th *ngIf="i == -1 || i == 1" class="sub">MAG</th>
+            <th *ngIf="i == -1 || i == 1" class="sub">AGI</th>
+            <th *ngIf="i == -1 || i == 1" class="sub">DEX</th>
+            <th *ngIf="i == -1 || i == 2" class="sub">LUCK</th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.POISON_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="poison resistance" src="{{'assets/status-ailments/POISON.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.BLIND_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.PARALYZE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.CONFUSION_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.PETRIFY_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.TOAD_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.CHARM_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.SLOW_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.STOP_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="stop resistance" src="{{'assets/status-ailments/STOP.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.IMMOBILIZE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.DISABLE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.BERSERK_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.DOOM_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.STUN_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="stun resistance" src="{{'assets/status-ailments/STUN.webp'}}" /></th>
+            <th *ngIf="(i == -1 || i == 2)" class="sub">SP</th>
+          </tr>
+          <tr>
+            <td *ngIf="i == -1 || i == 0">Min</td>
+            <td *ngIf="i == -1 || i == 0">{{ esper.stats.HP[0].min }}</td>
+            <td *ngIf="i == -1 || i == 0">{{ esper.stats.TP[0].min }}</td>
+            <td *ngIf="i == -1 || i == 0">{{ esper.stats.AP[0].min }}</td>
+            <td *ngIf="i == -1 || i == 1">{{ esper.stats.ATK[0].min }}</td>
+            <td *ngIf="i == -1 || i == 1">{{ esper.stats.MAG[0].min }}</td>
+            <td *ngIf="i == -1 || i == 1">{{ esper.stats.AGI[0].min }}</td>
+            <td *ngIf="i == -1 || i == 1">{{ esper.stats.DEX[0].min }}</td>
+            <td *ngIf="i == -1 || i == 2">{{ esper.stats.LUCK[0].min }}</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.POISON_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.BLIND_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.PARALYZE_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.CONFUSION_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.PETRIFY_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.TOAD_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.CHARM_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.SLOW_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.STOP_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.IMMOBILIZE_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.DISABLE_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.BERSERK_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.DOOM_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.STUN_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="i == -1 || i == 2" rowspan="2">{{ esper.maxSP }}</td>
+          </tr>
+          <tr>
+            <td *ngIf="i == -1 || i == 0">Max</td>
+            <td *ngIf="i == -1 || i == 0">{{ esper.stats.HP[esper.SPs.length - 1].max }}</td>
+            <td *ngIf="i == -1 || i == 0">{{ esper.stats.TP[esper.SPs.length - 1].max }}</td>
+            <td *ngIf="i == -1 || i == 0">{{ esper.stats.AP[esper.SPs.length - 1].max }}</td>
+            <td *ngIf="i == -1 || i == 1">{{ esper.stats.ATK[esper.SPs.length - 1].max }}</td>
+            <td *ngIf="i == -1 || i == 1">{{ esper.stats.MAG[esper.SPs.length - 1].max }}</td>
+            <td *ngIf="i == -1 || i == 1">{{ esper.stats.AGI[esper.SPs.length - 1].max }}</td>
+            <td *ngIf="i == -1 || i == 1">{{ esper.stats.DEX[esper.SPs.length - 1].max }}</td>
+            <td *ngIf="i == -1 || i == 2">{{ esper.stats.LUCK[esper.SPs.length - 1].max }}</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.POISON_RES[esper.SPs.length -1].max > 0">{{ esper.stats.POISON_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.FROSTBITE_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.BLIND_RES[esper.SPs.length -1].max > 0">{{ esper.stats.BLIND_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SLEEP_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SILENCE_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.PARALYZE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.PARALYZE_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.CONFUSION_RES[esper.SPs.length -1].max > 0">{{ esper.stats.CONFUSION_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.PETRIFY_RES[esper.SPs.length -1].max > 0">{{ esper.stats.PETRIFY_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.TOAD_RES[esper.SPs.length -1].max > 0">{{ esper.stats.TOAD_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.CHARM_RES[esper.SPs.length -1].max > 0">{{ esper.stats.CHARM_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.SLOW_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SLOW_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.STOP_RES[esper.SPs.length -1].max > 0">{{ esper.stats.STOP_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.IMMOBILIZE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.IMMOBILIZE_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.DISABLE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.DISABLE_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.BERSERK_RES[esper.SPs.length -1].max > 0">{{ esper.stats.BERSERK_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.DOOM_RES[esper.SPs.length -1].max > 0">{{ esper.stats.DOOM_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.STUN_RES[esper.SPs.length -1].max > 0">{{ esper.stats.STUN_RES[esper.SPs.length -1].max }} %</td>
           </tr>
         </tbody>
       </table>
 
       <table class="resTable">
-        <tbody>
+        <tr>
+          <th colspan="10">Res Elem</th>
+        </tr>
+        <tbody *ngFor="let i of (windowSize >= 1230 ? [-1] : [0, 1])">
           <tr>
-            <th colspan="10">Res Elem</th>
+            <th *ngIf="i == -1 || i == 0"class="sub"><img class="elementImg" src="{{'assets/elements/fire.webp'}}" /></th>
+            <th *ngIf="i == -1 || i == 0"class="sub"><img class="elementImg" src="{{'assets/elements/ice.webp'}}" /></th>
+            <th *ngIf="i == -1 || i == 0"class="sub"><img class="elementImg" src="{{'assets/elements/earth.webp'}}" /></th>
+            <th *ngIf="i == -1 || i == 0"class="sub"><img class="elementImg" src="{{'assets/elements/wind.webp'}}" /></th>
+            <th *ngIf="i == -1 || i == 1"class="sub"><img class="elementImg" src="{{'assets/elements/lightning.webp'}}" /></th>
+            <th *ngIf="i == -1 || i == 1"class="sub"><img class="elementImg" src="{{'assets/elements/water.webp'}}" /></th>
+            <th *ngIf="i == -1 || i == 1"class="sub"><img class="elementImg" src="{{'assets/elements/light.webp'}}" /></th>
+            <th *ngIf="i == -1 || i == 1"class="sub"><img class="elementImg" src="{{'assets/elements/dark.webp'}}" /></th>
           </tr>
           <tr>
-            <th class="sub"><img class="elementImg" src="{{'assets/elements/fire.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" src="{{'assets/elements/ice.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" src="{{'assets/elements/earth.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" src="{{'assets/elements/wind.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" src="{{'assets/elements/lightning.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" src="{{'assets/elements/water.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" src="{{'assets/elements/light.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" src="{{'assets/elements/dark.webp'}}" /></th>
-          </tr>
-          <tr>
-            <td><span *ngIf="esper.stats.FIRE_RES[0].min">{{ esper.stats.FIRE_RES[0].min }} %</span></td>
-            <td><span *ngIf="esper.stats.ICE_RES[0].min">{{ esper.stats.ICE_RES[0].min }} %</span></td>
-            <td><span *ngIf="esper.stats.EARTH_RES[0].min">{{ esper.stats.EARTH_RES[0].min }} %</span></td>
-            <td><span *ngIf="esper.stats.WIND_RES[0].min">{{ esper.stats.WIND_RES[0].min }} %</span></td>
-            <td><span *ngIf="esper.stats.LIGHTNING_RES[0].min">{{ esper.stats.LIGHTNING_RES[0].min }} %</span></td>
-            <td><span *ngIf="esper.stats.WATER_RES[0].min">{{ esper.stats.WATER_RES[0].min }} %</span></td>
-            <td><span *ngIf="esper.stats.LIGHT_RES[0].min">{{ esper.stats.LIGHT_RES[0].min }} %</span></td>
-            <td><span *ngIf="esper.stats.DARK_RES[0].min">{{ esper.stats.DARK_RES[0].min }} %</span></td>
+            <td *ngIf="i == -1 || i == 0"><span *ngIf="esper.stats.FIRE_RES[0].min">{{ esper.stats.FIRE_RES[0].min }} %</span></td>
+            <td *ngIf="i == -1 || i == 0"><span *ngIf="esper.stats.ICE_RES[0].min">{{ esper.stats.ICE_RES[0].min }} %</span></td>
+            <td *ngIf="i == -1 || i == 0"><span *ngIf="esper.stats.EARTH_RES[0].min">{{ esper.stats.EARTH_RES[0].min }} %</span></td>
+            <td *ngIf="i == -1 || i == 0"><span *ngIf="esper.stats.WIND_RES[0].min">{{ esper.stats.WIND_RES[0].min }} %</span></td>
+            <td *ngIf="i == -1 || i == 1"><span *ngIf="esper.stats.LIGHTNING_RES[0].min">{{ esper.stats.LIGHTNING_RES[0].min }} %</span></td>
+            <td *ngIf="i == -1 || i == 1"><span *ngIf="esper.stats.WATER_RES[0].min">{{ esper.stats.WATER_RES[0].min }} %</span></td>
+            <td *ngIf="i == -1 || i == 1"><span *ngIf="esper.stats.LIGHT_RES[0].min">{{ esper.stats.LIGHT_RES[0].min }} %</span></td>
+            <td *ngIf="i == -1 || i == 1"><span *ngIf="esper.stats.DARK_RES[0].min">{{ esper.stats.DARK_RES[0].min }} %</span></td>
           </tr>
         </tbody>
       </table>
@@ -177,8 +233,7 @@
           <tr>
             <th colspan="5">Cast Skill</th>
           </tr>
-          <tr>
-            <th class="sub skillTypeTd">Type</th>
+          <tr *ngIf="windowSize >= 950">
             <th class="sub skillNameTd">Name</th>
             <th class="sub skillEffectTd">Effects</th>
             <th class="sub rangeTd">Range</th>
@@ -186,7 +241,17 @@
           </tr>
         </tbody>
 
-        <tbody *ngIf="esper.formattedSkill" app-shared-skillWithUpgrade [skill]="esper.formattedSkill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true"></tbody>
+        <tbody
+          *ngIf="esper.formattedSkill"
+          app-shared-skillWithUpgrade
+          [skill]="esper.formattedSkill"
+          [showTypeWithName]="true"
+          [showName]="true"
+          [showEffects]="true"
+          [showRange]="true"
+          [showHits]="true"
+          [showMobileTitles]="true"
+          [mobileView]="windowSize < 950"></tbody>
       </table>
 
       <table class="loreTable">
@@ -200,7 +265,7 @@
     </div>
   </app-shared-tab>
   <app-shared-tab title="SKILL TREE">
-    <div class="leftBlock" *ngIf="esper">
+    <div class="leftBlock" *ngIf="esper && windowSize >= 1230">
       <table class="esperTable">
         <tbody>
           <tr>
@@ -227,8 +292,8 @@
       </table>
     </div>
 
-    <div class="rightBlock" *ngIf="esper && grid">
-      <div class="esperGridContainer" style="text-align: center;">
+    <div class="rightBlockGrid" *ngIf="esper && grid">
+      <div #esperGridContainer class="esperGridContainer" style="text-align: center;">
         <ul class="hexGrid">
           <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
             <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
@@ -245,6 +310,6 @@
       </div>
     </div>
   </app-shared-tab>
-  <app-shared-tab *ngIf="esper" title="GO TO BUILDER >>>" [link]="getRoute('/builder/esper/' + esper.slug)">
+  <app-shared-tab *ngIf="esper && windowSize >= 1230" title="GO TO BUILDER >>>" [link]="getRoute('/builder/esper/' + esper.slug)">
   </app-shared-tab>
 </app-shared-tabs>

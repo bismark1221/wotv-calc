@@ -178,15 +178,12 @@
           <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
         </div>
       </td>
-
       <td *ngIf="showCasts">
         {{ skill.count }}
       </td>
-
       <td *ngIf="showHits">
         <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
       </td>
-
       <td *ngIf="showCost">
         <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
       </td>

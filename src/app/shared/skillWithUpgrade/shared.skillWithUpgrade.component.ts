@@ -32,6 +32,9 @@ export class SharedSkillWithUpgradeComponent extends SharedResizeDetectorCompone
   @Input() showTypeWithName;
   @Input() noNameOnUpgrade;
 
+  @Input() mobileView;
+  @Input() showMobileTitles;
+
   constructor(
     private toolService: ToolService
   ) {

@@ -5,14 +5,13 @@
   vertical-align: top;
 }
 
-.rightBlock {
+.rightBlock, .rightBlockGrid {
   width: 830px;
   display: inline-block;
   vertical-align: top;
 }
 
 .esperImg {
-  height: 250px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -52,4 +51,39 @@
 
 .skillEffectTd {
   text-align: left;
+}
+
+.esperGridContainer {
+  width: 800px;
+  overflow: hidden;
+}
+
+@media (max-width: 1229px) {
+  .leftBlockMediumSize {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .rightBlock {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .rightBlockGrid {
+    width: auto;
+    margin: auto;
+  }
+
+  .esperGridContainer {
+    width: 100vw;
+    overflow-x: visible;
+    left: 10px;
+    overflow-y: hidden;
+  }
+
+  .esperGridContainer > .hexGrid {
+    width: 800px;
+  }
 }

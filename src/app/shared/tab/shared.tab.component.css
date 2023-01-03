@@ -3,3 +3,8 @@
   margin: auto;
   margin-bottom: 20px;
 }
+
+.mobilePane {
+  width: auto;
+  max-width: 1200px;
+}
