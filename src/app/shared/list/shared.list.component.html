@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="leftBlock" [ngClass]="{'mobileFiltersBlock': showMobileFilters}">
+  <div #leftBlock class="leftBlock" [ngClass]="{'mobileFiltersBlock': showMobileFilters}">
     <h1 class="boldText">FILTERS</h1>
     <div class="filtersMobilecloseButton justify-end">
       <button type="button" class="close" aria-label="Close" (click)="toogleMobileFilters()">
@@ -85,6 +85,8 @@
       </div>
     </div>
   </div>
+
+  <div class="middleBlock"></div>
 
   <div class="rightBlock">
     <div class="upperBlock">

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, PLATFORM_ID, Inject } from '@angular/core';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -264,6 +264,7 @@ export class CardListComponent extends SharedListComponent {
     simpleModalService: SimpleModalService,
     toolService: ToolService,
     sessionService: SessionService,
+    @Inject(PLATFORM_ID) platformId: object,
     private cardService: CardService
   ) {
     super(
@@ -271,7 +272,8 @@ export class CardListComponent extends SharedListComponent {
       navService,
       simpleModalService,
       toolService,
-      sessionService
+      sessionService,
+      platformId
     );
   }
 

@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, ElementRef } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
@@ -30,6 +31,7 @@ export class SharedListComponent implements OnInit {
 
   filtersCount = 0;
 
+  @ViewChild('leftBlock') leftBlock: ElementRef;
   @ViewChild('SearchBar') ngselect;
   searchForm: UntypedFormGroup;
 
@@ -53,6 +55,7 @@ export class SharedListComponent implements OnInit {
     private simpleModalService: SimpleModalService,
     protected toolService: ToolService,
     protected sessionService: SessionService,
+    private platformId: object
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateItems();
@@ -246,5 +249,17 @@ export class SharedListComponent implements OnInit {
 
     this.filterChecked(null, false);
     this.filterItems();
+  }
+
+  @HostListener('window:scroll', ['$event']) onWindowScroll($event) {
+    if (isPlatformBrowser(this.platformId)) {
+      if ($event.srcElement.documentElement.scrollTop >= 60) {
+        this.leftBlock.nativeElement.style.height = window.innerHeight + 'px';
+        this.leftBlock.nativeElement.style.top = '0';
+      } else {
+        this.leftBlock.nativeElement.style.height = (window.innerHeight - (60 - $event.srcElement.documentElement.scrollTop)) + 'px';
+        this.leftBlock.nativeElement.style.top = (60 - $event.srcElement.documentElement.scrollTop) + 'px';
+      }
+    }
   }
 }

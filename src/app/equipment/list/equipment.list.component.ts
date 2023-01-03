@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, PLATFORM_ID, Inject } from '@angular/core';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
@@ -261,6 +261,7 @@ export class EquipmentListComponent extends SharedListComponent {
     simpleModalService: SimpleModalService,
     toolService: ToolService,
     sessionService: SessionService,
+    @Inject(PLATFORM_ID) platformId: object,
     private equipmentService: EquipmentService
   ) {
     super(
@@ -268,7 +269,8 @@ export class EquipmentListComponent extends SharedListComponent {
       navService,
       simpleModalService,
       toolService,
-      sessionService
+      sessionService,
+      platformId
     );
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {

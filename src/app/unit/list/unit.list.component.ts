@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, PLATFORM_ID, Inject } from '@angular/core';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
@@ -326,6 +326,7 @@ export class UnitListComponent extends SharedListComponent {
     simpleModalService: SimpleModalService,
     toolService: ToolService,
     sessionService: SessionService,
+    @Inject(PLATFORM_ID) platformId: object,
     private activatedRoute: ActivatedRoute,
     private unitService: UnitService,
     private jobService: JobService
@@ -335,7 +336,8 @@ export class UnitListComponent extends SharedListComponent {
       navService,
       simpleModalService,
       toolService,
-      sessionService
+      sessionService,
+      platformId
     );
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {

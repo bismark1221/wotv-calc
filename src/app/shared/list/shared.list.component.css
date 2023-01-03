@@ -11,7 +11,12 @@
   color: var(--filters-color);
   padding-top: 15px;
   padding-left: 10px;
-  flex: none;
+  overflow-y: auto;
+  height: 100vh;
+  height: -webkit-calc(100vh - 60px);
+  height: -moz-calc(100vh - 60px);
+  height: calc(100vh - 60px);
+  position: fixed;
 }
 
 .leftBlock h1 {
@@ -33,6 +38,12 @@
 .chevron {
   float: right;
   margin-right: 10px;
+}
+
+.middleBlock {
+  width: 250px;
+  flex: none;
+  display: block;
 }
 
 .rightBlock {
@@ -141,7 +152,11 @@
 }
 
 @media (max-width: 890px) {
-  .sortOrderBlock, .leftBlock {
+  .leftBlock {
+    display: none;
+  }
+
+  .middleBlock, .sortOrderBlock {
     display: none;
   }
 
@@ -150,9 +165,9 @@
     z-index: 60;
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     overflow: auto;
-    top: 0px;
+    top: 0px !important;
   }
 
   .totalItems {
@@ -168,6 +183,7 @@
   .closeFiltersMobile {
     display: block;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .mobileFiltersBlock h1 {
