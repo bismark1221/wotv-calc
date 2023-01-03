@@ -32,7 +32,7 @@ th {
 
 .leftWrapperContent {
   position: relative;
-  overflow: auto;
+  overflow: hidden;
   height: 750px;
 }
 
@@ -40,14 +40,14 @@ th {
   position: absolute;
   top: 0px;
   left: 500px;
-  width: 750px;
+  width: 770px;
   height: 800px;
 }
 
 .rightWrapperHeader {
   position: relative;
-  overflow: auto;
-  width: 730px;
+  overflow: hidden;
+  width: 750px;
 }
 
 .rightWrapperContent {
