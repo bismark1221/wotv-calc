@@ -1,5 +1,5 @@
 <div class="row" *ngIf="card">
-  <div class="leftBlock">
+  <div class="leftBlock" *ngIf="windowSize >= 1230">
     <table class="cardTable">
       <tbody>
         <tr>
@@ -45,6 +45,56 @@
         </tr>
         <tr>
           <td colspan="3">
+            <button class="btn btn-sub" [routerLink]="[getRoute('/builder/card/' + card.slug)]">Go To Builder</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="leftBlockMediumSize" *ngIf="windowSize < 1230">
+    <table class="cardTable">
+      <tbody>
+        <tr>
+          <th colspan="4">{{ card.name }}</th>
+        </tr>
+        <tr>
+          <td rowspan="6">
+            <a href="{{'assets/cards/' + card.image + '.webp'}}" target="_blank">
+              <img class="cardImg" src="{{'assets/cards/' + card.image + '_full.webp'}}" />
+            </a>
+          </td>
+          <th class="sub">Rarity</th>
+          <th class="sub">Cost</th>
+          <th class="sub">Limited</th>
+        </tr>
+        <tr>
+          <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.webp'}}" /></td>
+          <td>{{ card.cost }}</td>
+          <td>{{ card.limited ? "Yes" : "No" }}</td>
+        </tr>
+        <tr>
+          <th class="sub" colspan="3">Release Date</th>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <div>
+              {{ card.releaseDate }}
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub" colspan="3">Updated Date</th>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <div>
+              {{ card.updatedDate }}
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
             <button class="btn btn-sub" [routerLink]="[getRoute('/builder/card/' + card.slug)]">Go To Builder</button>
           </td>
         </tr>
@@ -101,7 +151,7 @@
                           <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                         </div>
                       </span>
-                      <a (click)="goToUnitList(cond)" class="cursor-pointer">Go to unit list</a>
+                      <a (click)="goToUnitList(cond)" class="cursor-pointer inline-block">Go to unit list</a>
                     </div>
 
                     <div *ngIf="cond.type === 'mainJob'">
@@ -110,7 +160,7 @@
                           <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                         </div>
                       </span>
-                      <a (click)="goToUnitList(cond)" class="cursor-pointer">Go to unit list</a>
+                      <a (click)="goToUnitList(cond)" class="cursor-pointer inline-block">Go to unit list</a>
                     </div>
 
                     <div *ngIf="cond.type === 'unit'">
@@ -163,7 +213,7 @@
                           <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                         </div>
                       </span>
-                      <a (click)="goToUnitList(cond)" class="cursor-pointer">Go to unit list</a>
+                      <a (click)="goToUnitList(cond)" class="cursor-pointer inline-block">Go to unit list</a>
                     </div>
 
                     <div *ngIf="cond.type === 'mainJob'">
@@ -172,7 +222,7 @@
                           <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '_30.webp'}}" />
                         </div>
                       </span>
-                      <a (click)="goToUnitList(cond)" class="cursor-pointer">Go to unit list</a>
+                      <a (click)="goToUnitList(cond)" class="cursor-pointer inline-block">Go to unit list</a>
                     </div>
 
                     <div *ngIf="cond.type === 'unit'">

@@ -1,5 +1,5 @@
 .row {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -107,4 +107,18 @@
 
 .hideStat {
   display: none;
+}
+
+@media (max-width: 1230px) {
+  .leftBlockMediumSize {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .rightBlock {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
@@ -21,6 +22,8 @@ export class CardDetailComponent implements OnInit {
   jobs = [];
   showBuffDetail = false;
 
+  windowSize = 1230;
+
   constructor(
     private cardService: CardService,
     private skillService: SkillService,
@@ -31,13 +34,20 @@ export class CardDetailComponent implements OnInit {
     private navService: NavService,
     private toolService: ToolService,
     private jobService: JobService,
-    private unitService: UnitService
+    private unitService: UnitService,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       if (this.card) {
         this.formatCard();
       }
     });
+  }
+
+  @HostListener('window:resize', []) onWindowResize() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.windowSize = window.innerWidth;
+    }
   }
 
   ngOnInit(): void {
@@ -51,6 +61,8 @@ export class CardDetailComponent implements OnInit {
         this.navService.setSEO(this.card.names.en, this.card.descriptions.en);
       }
     });
+
+    this.onWindowResize();
   }
 
   private async formatCard() {
