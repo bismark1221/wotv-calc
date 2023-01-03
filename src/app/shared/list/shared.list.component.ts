@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, ElementRef, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
 import { SimpleModalService } from 'ngx-simple-modal';
@@ -55,7 +55,7 @@ export class SharedListComponent implements OnInit {
     private simpleModalService: SimpleModalService,
     protected toolService: ToolService,
     protected sessionService: SessionService,
-    private platformId: object
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateItems();
