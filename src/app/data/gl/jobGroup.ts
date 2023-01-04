@@ -21,7 +21,8 @@ export const GL_JOB_GROUP = {
     "JB_FF10_TIDU",
     "JB_LW_MONT_01",
     "JB_LW_RAB",
-    "JB_PRS5_VOLT"
+    "JB_PRS5_VOLT",
+    "JB_DQTC_PSAR"
   ],
   SWORDC: [
     "JB_LW_KNT",
