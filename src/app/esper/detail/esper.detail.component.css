@@ -78,6 +78,9 @@
 
   .esperGridContainer {
     width: 100vw;
+    width: -webkit-calc(100vw - 40px);
+    width: -moz-calc(100vw - 40px);
+    width: calc(100vw - 40px);
     overflow-x: visible;
     left: 10px;
     overflow-y: hidden;

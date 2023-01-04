@@ -1,100 +1,102 @@
-<td *ngIf="!mobileView && showRaidLevel">
-  {{ rawSkills[skillIndex].minLevel }}
-</td>
+<ng-container *ngIf="!mobileView">
+  <td *ngIf="showRaidLevel">
+    {{ rawSkills[skillIndex].minLevel }}
+  </td>
 
-<td *ngIf="!mobileView && showRaidLevel">
-  {{ rawSkills[skillIndex].maxLevel }}
-</td>
+  <td *ngIf="showRaidLevel">
+    {{ rawSkills[skillIndex].maxLevel }}
+  </td>
 
-<td *ngIf="!mobileView && showLevelInput">
-  <select [(ngModel)]="skill.level" (ngModelChange)="changeSkillLevel()">
-    <option *ngFor="let level of skill.tableLevel">{{ level }}</option>
-  </select>
-</td>
+  <td *ngIf="showLevelInput">
+    <select [(ngModel)]="skill.level" (ngModelChange)="changeSkillLevel()">
+      <option *ngFor="let level of skill.tableLevel">{{ level }}</option>
+    </select>
+  </td>
 
-<td *ngIf="!mobileView && isUpgrade && !basicAttack" [attr.colspan]="upgradeColSpan">
-  Upgrade
-  <div *ngIf="showTypeWithName && noNameOnUpgrade">
+  <td *ngIf="isUpgrade && !basicAttack" [attr.colspan]="upgradeColSpan">
+    Upgrade
+    <div *ngIf="showTypeWithName && noNameOnUpgrade">
+      <app-shared-skillType [skill]="skill"></app-shared-skillType>
+    </div>
+  </td>
+
+  <td *ngIf="showJobIcon">
+    <div class="subJob" *ngIf="jobs[(skill.unlockJob - 1)]">
+      <img src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '_30.webp'}}" />
+    </div>
+  </td>
+
+  <td *ngIf="showJobLvl">{{ skill.jobLevel }}</td>
+
+  <td *ngIf="showStarLvl">{{ skill.unlockStar }}</td>
+
+  <td *ngIf="showType">
     <app-shared-skillType [skill]="skill"></app-shared-skillType>
-  </div>
-</td>
+  </td>
 
-<td *ngIf="!mobileView && showJobIcon">
-  <div class="subJob" *ngIf="jobs[(skill.unlockJob - 1)]">
-    <img src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '_30.webp'}}" />
-  </div>
-</td>
+  <td *ngIf="showName && (!isUpgrade || !noNameOnUpgrade)">
+    {{ isUpgrade && basicAttack ? 'Upgrade' : (basicAttack ? 'Basic Attack' : skill.name) }}
+    <div *ngIf="showTypeWithName">
+      <app-shared-skillType [skill]="skill"></app-shared-skillType>
+    </div>
+  </td>
 
-<td *ngIf="!mobileView && showJobLvl">{{ skill.jobLevel }}</td>
+  <td *ngIf="showEffects" class="skillEffectTd" [attr.colspan]="effectsColSpan">
+    <div *ngIf="skill.upgradeHtml !== ''">
+      {{ skill.upgradeHtml }}
+    </div>
+    <div>{{ skill.counterHtml }}</div>
 
-<td *ngIf="!mobileView && showStarLvl">{{ skill.unlockStar }}</td>
+    <div *ngFor="let effect of skill.effectsHtml.before" [innerHTML]="effect"></div>
 
-<td *ngIf="!mobileView && showType">
-  <app-shared-skillType [skill]="skill"></app-shared-skillType>
-</td>
+    <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+      <popper-content #tip_damage>
+        <div *ngIf="skill.based === 'physic'">
+          {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+        </div>
+        <div *ngIf="skill.based === 'magic'">
+          {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+        </div>
+        <div *ngIf="skill.based === 'hybrid'">
+          {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+        </div>
 
-<td *ngIf="!mobileView && showName && (!isUpgrade || !noNameOnUpgrade)">
-  {{ isUpgrade && basicAttack ? 'Upgrade' : (basicAttack ? 'Basic Attack' : skill.name) }}
-  <div *ngIf="showTypeWithName">
-    <app-shared-skillType [skill]="skill"></app-shared-skillType>
-  </div>
-</td>
+        <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+          {{ skill.damage.formula[1] }}% DEX
+        </div>
+        <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+          {{ skill.damage.formula[2] }}% AGI
+        </div>
+        <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+          {{ skill.damage.formula[3] }}% LUCK
+        </div>
+      </popper-content>
+      <img *ngIf="skill.damageHtml.type.image" [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" /><span *ngIf="skill.damageHtml.type.image">&nbsp;</span>{{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+      <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+    </div>
 
-<td *ngIf="!mobileView && showEffects" class="skillEffectTd" [attr.colspan]="effectsColSpan">
-  <div *ngIf="skill.upgradeHtml !== ''">
-    {{ skill.upgradeHtml }}
-  </div>
-  <div>{{ skill.counterHtml }}</div>
+    <div *ngFor="let effect of skill.effectsHtml.after" [innerHTML]="effect"></div>
+  </td>
 
-  <div *ngFor="let effect of skill.effectsHtml.before" [innerHTML]="effect"></div>
+  <td *ngIf="showRange">
+    <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+    <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
+      <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+    </div>
+  </td>
 
-  <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-    <popper-content #tip_damage>
-      <div *ngIf="skill.based === 'physic'">
-        {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
-      </div>
-      <div *ngIf="skill.based === 'magic'">
-        {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
-      </div>
-      <div *ngIf="skill.based === 'hybrid'">
-        {{ (100 + (skill.damage.formula && skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
-      </div>
+  <td *ngIf="showCasts">
+    {{ skill.count }}
+  </td>
 
-      <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
-        {{ skill.damage.formula[1] }}% DEX
-      </div>
-      <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
-        {{ skill.damage.formula[2] }}% AGI
-      </div>
-      <div *ngIf="skill.damage.formula && skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
-        {{ skill.damage.formula[3] }}% LUCK
-      </div>
-    </popper-content>
-    <img *ngIf="skill.damageHtml.type.image" [popper]="tip_damage" [popperTrigger]="'hover'" [popperHideOnScroll]="true" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.webp" /><span *ngIf="skill.damageHtml.type.image">&nbsp;</span>{{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
-    <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
-  </div>
+  <td *ngIf="showHits">
+    <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
+  </td>
 
-  <div *ngFor="let effect of skill.effectsHtml.after" [innerHTML]="effect"></div>
-</td>
-
-<td *ngIf="!mobileView && showRange">
-  <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-  <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
-    <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
-  </div>
-</td>
-
-<td *ngIf="!mobileView && showCasts">
-  {{ skill.count }}
-</td>
-
-<td *ngIf="!mobileView && showHits">
-  <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
-</td>
-
-<td *ngIf="!mobileView && showCost">
-  <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
-</td>
+  <td *ngIf="showCost">
+    <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
+  </td>
+</ng-container>
 
 <td *ngIf="mobileView" class="mobileViewTd" colspan="99">
   <table class="mobileViewTable border-collapse border-hidden w-full">

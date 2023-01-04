@@ -45,10 +45,14 @@ export class EsperDetailComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       this.windowSize = window.innerWidth;
 
-      if (this.windowSize >= 690) {
-        this.esperGridContainer.nativeElement.style.width = '800px';
+      if (this.windowSize >= 850) {
+        if (this.esperGridContainer) {
+          this.esperGridContainer.nativeElement.style.width = '800px';
+        }
       } else {
-        this.esperGridContainer.nativeElement.style.width = (this.windowSize - 20) + 'px';
+        if (this.esperGridContainer) {
+          this.esperGridContainer.nativeElement.style.width = (this.windowSize - 40) + 'px';
+        }
       }
     }
   }
