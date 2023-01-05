@@ -1,182 +1,270 @@
-<app-shared-tabs>
-  <app-shared-tab title="EQUIPMENT">
-    <div class="leftBlock" *ngIf="equipment">
-      <table class="equipmentTable">
-        <tbody>
-          <tr>
-            <th colspan="2">{{ equipment.name }}</th>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <a href="{{'assets/equipments/' + equipment.image + '.webp'}}" target="_blank">
-                <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '_full.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" />
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub">Rarity</th>
-            <th class="sub">Type</th>
-          </tr>
-          <tr>
-            <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" (click)="clickSpecialBismark()"/></td>
-            <td>{{ getEquipementType(equipment.type) }}</td>
-          </tr>
-          <tr *ngIf="equipment.acquisition">
-            <th class="sub" colspan="2">Acquisition</th>
-          </tr>
-          <tr>
-            <td *ngIf="equipment.acquisition.type === 'tmr' && equipment.acquisition.unit" colspan="2">
-               <a [routerLink]="[getRoute('/units/' + equipment.acquisition.unit.slug)]" [routerLinkActive]="['active']">{{ equipment.acquisition.unit.name }}</a>'s TMR
-            </td>
-            <td *ngIf="equipment.acquisition.type !== 'tmr'" colspan="2">
-              {{ equipment.acquisition.name }}
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="3">Release Date</th>
-          </tr>
-          <tr>
-            <td colspan="3">
-              <div>
-                {{ equipment.releaseDate }}
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="3">Updated Date</th>
-          </tr>
-          <tr>
-            <td colspan="3">
-              <div>
-                {{ equipment.updatedDate }}
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<ng-template #equipmentLeft>
+  <table class="equipmentTable">
+    <tbody>
+      <tr>
+        <th colspan="2">{{ equipment.name }}</th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <a href="{{'assets/equipments/' + equipment.image + '.webp'}}" target="_blank">
+            <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '_full.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" />
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub">Rarity</th>
+        <th class="sub">Type</th>
+      </tr>
+      <tr>
+        <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" (click)="clickSpecialBismark()"/></td>
+        <td>{{ getEquipementType(equipment.type) }}</td>
+      </tr>
+      <tr *ngIf="equipment.acquisition">
+        <th class="sub" colspan="2">Acquisition</th>
+      </tr>
+      <tr>
+        <td *ngIf="equipment.acquisition.type === 'tmr' && equipment.acquisition.unit" colspan="2">
+           <a [routerLink]="[getRoute('/units/' + equipment.acquisition.unit.slug)]" [routerLinkActive]="['active']">{{ equipment.acquisition.unit.name }}</a>'s TMR
+        </td>
+        <td *ngIf="equipment.acquisition.type !== 'tmr'" colspan="2">
+          {{ equipment.acquisition.name }}
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="3">Release Date</th>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div>
+            {{ equipment.releaseDate }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="3">Updated Date</th>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div>
+            {{ equipment.updatedDate }}
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
 
-    <div class="rightBlock" *ngIf="equipment">
-      <table class="StatTable" *ngIf="equipment.statsTypes.length > 0">
-        <tbody>
-          <tr>
-            <th colspan="13">Equipment Stats</th>
-          </tr>
-          <tr>
-            <th class="sub" *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'"></th>
-            <th class="sub" *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
-          </tr>
-          <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
-            <td>Min</td>
-            <td *ngFor="let statType of equipment.statsTypes">{{ equipment.stats[0][statType].min }}</td>
-          </tr>
-          <tr *ngFor="let growId of equipment.growIds" >
-            <td *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
+<ng-template #equipmentLeftMedium>
+  <table class="equipmentTable">
+    <tbody>
+      <tr>
+        <th colspan="3">{{ equipment.name }}</th>
+      </tr>
+      <tr>
+        <td rowspan="8">
+          <a href="{{'assets/equipments/' + equipment.image + '.webp'}}" target="_blank">
+            <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '_card.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" />
+          </a>
+        </td>
+        <th class="sub">Rarity</th>
+        <th class="sub">Type</th>
+      </tr>
+      <tr>
+        <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" (click)="clickSpecialBismark()"/></td>
+        <td>{{ getEquipementType(equipment.type) }}</td>
+      </tr>
+      <tr *ngIf="equipment.acquisition">
+        <th class="sub" colspan="2">Acquisition</th>
+      </tr>
+      <tr>
+        <td *ngIf="equipment.acquisition.type === 'tmr' && equipment.acquisition.unit" colspan="2">
+           <a [routerLink]="[getRoute('/units/' + equipment.acquisition.unit.slug)]" [routerLinkActive]="['active']">{{ equipment.acquisition.unit.name }}</a>'s TMR
+        </td>
+        <td *ngIf="equipment.acquisition.type !== 'tmr'" colspan="2">
+          {{ equipment.acquisition.name }}
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="2">Release Date</th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div>
+            {{ equipment.releaseDate }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="2">Updated Date</th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div>
+            {{ equipment.updatedDate }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <button class="btn btn-sub" [routerLink]="[getRoute('/builder/equipment/' + equipment.slug)]">Go To Builder</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #equipmentDetail>
+  <div class="leftBlock" *ngIf="equipment && windowSize >= 1230">
+    <ng-container *ngTemplateOutlet="equipmentLeft"></ng-container>
+  </div>
+
+  <div class="leftBlockMediumSize" *ngIf="equipment && windowSize < 1230">
+    <ng-container *ngTemplateOutlet="equipmentLeftMedium"></ng-container>
+  </div>
+
+  <div class="rightBlock" *ngIf="equipment">
+    <table class="StatTable" *ngIf="equipment.statsTypes.length > 0">
+      <tbody>
+        <tr>
+          <th colspan="13">Equipment Stats</th>
+        </tr>
+      </tbody>
+      <tbody *ngFor="let row of this.statsTypesByRow">
+        <tr>
+          <th class="sub" *ngFor="let statType of row">{{ statType }}</th>
+        </tr>
+        <tr *ngIf="row[0] == ''">
+          <td *ngFor="let statType of row">
+            {{ statType == '' ? 'Min' : equipment.stats[0][statType].min }}
+          </td>
+        </tr>
+        <tr *ngFor="let growId of equipment.growIds" >
+          <td *ngFor="let statType of row">
+            <ng-container *ngIf="statType == ''">
               <span *ngIf="equipment.growIds.length === 1">Max</span>
               <span *ngIf="equipment.growIds.length > 1">{{ equipment.grows[growId].name }}</span>
-            </td>
-            <td *ngFor="let statType of equipment.statsTypes">{{ equipment.grows[growId].stats[statType] }}</td>
-          </tr>
-        </tbody>
-        <tbody *ngIf="equipment.grows[equipment.growIds[0]].extraStats">
+            </ng-container>
+            <ng-container *ngIf="statType != ''">
+              {{ equipment.grows[growId].stats[statType] }}
+            </ng-container>
+          </td>
+        </tr>
+        <ng-container *ngIf="equipment.grows[equipment.growIds[0]].extraStats">
           <tr>
             <th class="sub" colspan="13">Stats for +{{ equipment.stats.length - 1 }}</th>
           </tr>
           <tr *ngFor="let growId of equipment.growIds" >
-            <td *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
-              <span *ngIf="equipment.growIds.length === 1">Max</span>
-              <span *ngIf="equipment.growIds.length > 1">{{ equipment.grows[growId].name }}</span>
-            </td>
-            <td *ngFor="let statType of equipment.statsTypes">{{ equipment.grows[growId].extraStats[statType] }}</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="equippableJobsTable">
-        <tbody *ngIf="equipment.jobs && equipment.jobs.length > 0">
-          <tr>
-            <th>Equippable jobs</th>
-          </tr>
-          <tr>
-            <td>
-              <div class="job" *ngFor="let job of equipment.jobs">
-                <img src="{{ 'assets/jobs/' + job.image + '_40.webp'}}" title="{{ job.name }}"/>
-              </div>
+            <td *ngFor="let statType of row">
+              <ng-container *ngIf="statType == ''">
+                <span *ngIf="equipment.growIds.length === 1">Max</span>
+                <span *ngIf="equipment.growIds.length > 1">{{ equipment.grows[growId].name }}</span>
+              </ng-container>
+              <ng-container *ngIf="statType != ''">
+                {{ equipment.grows[growId].extraStats[statType] }}
+              </ng-container>
             </td>
           </tr>
-        </tbody>
-        <tbody *ngIf="equipment.units && equipment.units.length > 0">
-          <tr>
-            <th>Equippable units</th>
-          </tr>
-          <tr>
-            <td>
-              <img *ngFor="let unit of equipment.units" src="{{ 'assets/units/' + unit.image + '_small.webp'}}" class="unit" title="{{ unit.name }}"/>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+        </ng-container>
+      </tbody>
+    </table>
 
-      <!-- Active skill -->
-      <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.activeSkill">
+    <table class="equippableJobsTable">
+      <tbody *ngIf="equipment.jobs && equipment.jobs.length > 0">
         <tr>
-          <th colspan="6">Skill</th>
+          <th>Equippable jobs</th>
         </tr>
         <tr>
-          <th class="sub skillNameTd">Name</th>
-          <th class="sub skillEffectTd">Effects</th>
-          <th class="sub rangeTd">Range</th>
-          <th class="sub skillCastTd">Casts</th>
-          <th class="sub skillHitTd">Hits</th>
-          <th class="sub skillCostTd">Cost</th>
-        </tr>
-
-        <tr app-shared-skillRow [skill]="equipment.activeSkill" [showTypeWithName]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
-      </table>
-
-      <!-- Max Passive skills -->
-      <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
-        <tr>
-          <th colspan="15">Passive Effects at max level/upgrade</th>
-        </tr>
-        <tr *ngFor="let effectType of equipment.effectTypes">
           <td>
-            <div *ngFor="let skill of equipment.formattedSkills[equipment.formattedSkills.length - 1]; let skillIndex = index">
-              <div *ngIf="skill.upgrade.indexOf(5) !== -1">
-                <div *ngIf="skill.mainEffect === effectType && skill.cond && skill.cond.length > 0">
-                  Condition :
-                  <span *ngFor="let skillCond of skill.cond">
-                    <span *ngFor="let item of skillCond.items">
-                      <img src="{{'assets/units/' + item.image + '_small.webp'}}" title="{{ item.name }}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
-                      <div class="mainjob" *ngIf="skillCond.type == 'mainjob'">
-                        <img src="{{ 'assets/jobs/' + item.image + '_40.webp'}}" title="{{ item.name }}" />
-                      </div>
-                    </span>
-                  </span>
-                </div>
-                <div *ngIf="skill.mainEffect === effectType">
-                  <div *ngFor="let effect of skill.maxedEffectsHtml.before">
-                    <span [innerHTML]="effect"></span>
-                  </div>
-                  <div *ngFor="let effect of skill.maxedEffectsHtml.after">
-                    <span [innerHTML]="effect"></span>
-                  </div>
-                </div>
-              </div>
+            <div class="job" *ngFor="let job of equipment.jobs">
+              <img src="{{ 'assets/jobs/' + job.image + '_40.webp'}}" title="{{ job.name }}"/>
             </div>
           </td>
         </tr>
-      </table>
-
-      <div class="text-center" *ngIf="equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
-        <button class="btn btn-sub mt-2" (click)="tooglePassiveDetail()">Show buff Detail</button>
-      </div>
-
-      <!-- Passive skills -->
-      <table class="skillsTable" *ngIf="showPassivesDetail && equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
+      </tbody>
+      <tbody *ngIf="equipment.units && equipment.units.length > 0">
         <tr>
-          <th colspan="15">Passive Effects</th>
+          <th>Equippable units</th>
         </tr>
+        <tr>
+          <td>
+            <img *ngFor="let unit of equipment.units" src="{{ 'assets/units/' + unit.image + '_small.webp'}}" class="unit" title="{{ unit.name }}"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Active skill -->
+    <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.activeSkill">
+      <tr>
+        <th colspan="6">Skill</th>
+      </tr>
+      <tr *ngIf="windowSize >= 830">
+        <th class="sub skillNameTd">Name</th>
+        <th class="sub skillEffectTd">Effects</th>
+        <th class="sub rangeTd">Range</th>
+        <th class="sub skillCastTd">Casts</th>
+        <th class="sub skillHitTd">Hits</th>
+        <th class="sub skillCostTd">Cost</th>
+      </tr>
+
+      <tr app-shared-skillRow
+        [skill]="equipment.activeSkill"
+        [showTypeWithName]="true"
+        [showName]="true"
+        [showEffects]="true"
+        [showRange]="true"
+        [showCasts]="true"
+        [showHits]="true"
+        [showCost]="true"
+        [showMobileTitles]="true"
+        [mobileView]="windowSize < 830"
+      ></tr>
+    </table>
+
+    <!-- Max Passive skills -->
+    <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
+      <tr>
+        <th colspan="15">Passive Effects at max level/upgrade</th>
+      </tr>
+      <tr *ngFor="let effectType of equipment.effectTypes">
+        <td>
+          <div *ngFor="let skill of equipment.formattedSkills[equipment.formattedSkills.length - 1]; let skillIndex = index">
+            <div *ngIf="skill.upgrade.indexOf(5) !== -1">
+              <div *ngIf="skill.mainEffect === effectType && skill.cond && skill.cond.length > 0">
+                Condition :
+                <span *ngFor="let skillCond of skill.cond">
+                  <span *ngFor="let item of skillCond.items">
+                    <img src="{{'assets/units/' + item.image + '_small.webp'}}" title="{{ item.name }}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
+                    <div class="mainjob" *ngIf="skillCond.type == 'mainjob'">
+                      <img src="{{ 'assets/jobs/' + item.image + '_40.webp'}}" title="{{ item.name }}" />
+                    </div>
+                  </span>
+                </span>
+              </div>
+              <div *ngIf="skill.mainEffect === effectType">
+                <div *ngFor="let effect of skill.maxedEffectsHtml.before">
+                  <span [innerHTML]="effect"></span>
+                </div>
+                <div *ngFor="let effect of skill.maxedEffectsHtml.after">
+                  <span [innerHTML]="effect"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <div class="text-center" *ngIf="equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
+      <button class="btn btn-sub mt-2" (click)="tooglePassiveDetail()">Show buff Detail</button>
+    </div>
+
+    <!-- Passive skills -->
+    <table class="skillsTable" *ngIf="showPassivesDetail && equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
+      <tr>
+        <th colspan="15">Passive Effects</th>
+      </tr>
+      <tbody *ngIf="windowSize >= 830">
         <tr *ngIf="equipment.countSkills.length > 1">
           <td *ngFor="let i of equipment.countSkills"><span *ngIf="i > 0">+ </span>{{ i }}</td>
         </tr>
@@ -205,82 +293,128 @@
             </div>
           </td>
         </tr>
-      </table>
-
-      <table class="loreTable">
-        <tr>
-          <th>Lore</th>
-        </tr>
-        <tr>
-          <td>{{ equipment.description }}</td>
-        </tr>
-      </table>
-    </div>
-  </app-shared-tab>
-  <app-shared-tab title="CRAFT">
-    <div class="leftBlock" *ngIf="equipment">
-      <table class="equipmentTable">
-        <tbody>
+      </tbody>
+      <tbody *ngIf="windowSize < 830">
+        <ng-container *ngFor="let i of equipment.countSkills">
           <tr>
-            <th colspan="2">{{ equipment.name }}</th>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <a href="{{'assets/equipments/' + equipment.image + '.webp'}}" target="_blank">
-                <img class="equipmentImg" src="{{'assets/equipments/' + equipment.image + '_full.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" />
-              </a>
+            <td *ngIf="equipment.countSkills.length > 1">
+              <span *ngIf="i > 0">+ </span>{{ i }}
             </td>
-          </tr>
-          <tr>
-            <th class="sub">Rarity</th>
-            <th class="sub">Type</th>
-          </tr>
-          <tr>
-            <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" /></td>
-            <td>{{ getEquipementType(equipment.type) }}</td>
-          </tr>
-          <tr *ngIf="equipment.acquisition">
-            <th class="sub" colspan="2">Acquisition</th>
-          </tr>
-          <tr>
-            <td *ngIf="equipment.acquisition.type === 'tmr' && equipment.acquisition.unit" colspan="2">
-               <a [routerLink]="[getRoute('/units/' + equipment.acquisition.unit.slug)]" [routerLinkActive]="['active']">{{ equipment.acquisition.unit.name }}</a>'s TMR
-            </td>
-            <td *ngIf="equipment.acquisition.type !== 'tmr'" colspan="2">
-              {{ equipment.acquisition.name }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="rightBlock" *ngIf="equipment">
-      <table class="skillsTable" >
-        <tbody>
-          <tr>
-            <th colspan="7">Crafting materials to level 50 from 0</th>
-          </tr>
-          <tr *ngIf="equipment.materials.length > 1">
-            <td *ngFor="let i of equipment.materials; let j = index"><span *ngIf="j > 0">+ </span>{{ j }}</td>
-          </tr>
-          <tr>
-            <td *ngFor="let materials of equipment.formattedMaterials">
-              <div *ngFor="let item of materials">
-                <div *ngIf="item.type === 'recipe'" class="recipe">
-                  <img src="{{'assets/equipments/' + equipment.image + '_small.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" class="recipeImg"/>
+            <td>
+              <div *ngFor="let effectType of equipment.effectTypes">
+                <div *ngFor="let skill of equipment.formattedSkills[i]; let skillIndex = index">
+                  <div *ngIf="skill.mainEffect === effectType && skill.cond && skill.cond.length > 0">
+                    Condition :
+                    <span *ngFor="let skillCond of skill.cond">
+                      <span *ngFor="let item of skillCond.items">
+                        <img src="{{'assets/units/' + item.image + '_small.webp'}}" title="{{ item.name }}" *ngIf="skillCond.type == 'unit'" class="conditionImg"/>
+                        <div class="mainjob" *ngIf="skillCond.type == 'mainjob'">
+                          <img src="{{ 'assets/jobs/' + item.image + '_40.webp'}}" title="{{ item.name }}" />
+                        </div>
+                      </span>
+                    </span>
+                  </div>
+                  <div *ngIf="skill.mainEffect === effectType">
+                    <div *ngFor="let effect of skill.effectsHtml.before">
+                      <span [innerHTML]="effect"></span>
+                    </div>
+                    <div *ngFor="let effect of skill.effectsHtml.after">
+                      <span [innerHTML]="effect"></span>
+                    </div>
+                  </div>
                 </div>
-                <div *ngIf="item.type !== 'recipe'">
-                  <img src="{{ 'assets/items/' + item.image + '_middle.webp'}}" class="materialImg"/>
-                </div>
-                <span class="materialName">{{ item.name }}</span><br />
-                <span class="materialCount">{{ item.count }}</span>
               </div>
             </td>
           </tr>
-        </tbody>
-      </table>
-    </div>
+        </ng-container>
+      </tbody>
+    </table>
+
+    <table class="loreTable">
+      <tr>
+        <th>Lore</th>
+      </tr>
+      <tr>
+        <td>{{ equipment.description }}</td>
+      </tr>
+    </table>
+  </div>
+</ng-template>
+
+<ng-template #equipmentCraft>
+  <div class="leftBlock" *ngIf="equipment && windowSize >= 1230">
+    <ng-container *ngTemplateOutlet="equipmentLeft"></ng-container>
+  </div>
+
+  <div class="rightBlock" *ngIf="equipment">
+    <table class="craftTable" >
+      <tbody>
+        <tr>
+          <th colspan="7">Crafting materials to level 50 from 0</th>
+        </tr>
+        <tr *ngIf="equipment.materials.length > 1">
+          <td *ngFor="let i of equipment.materials; let j = index"><span *ngIf="j > 0">+ </span>{{ j }}</td>
+        </tr>
+        <tr>
+          <td *ngFor="let materials of equipment.formattedMaterials">
+            <div *ngFor="let item of materials">
+              <div *ngIf="item.type === 'recipe'" class="recipe">
+                <img src="{{'assets/equipments/' + equipment.image + '_small.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" class="recipeImg"/>
+              </div>
+              <div *ngIf="item.type !== 'recipe'">
+                <img src="{{ 'assets/items/' + item.image + '_middle.webp'}}" class="materialImg"/>
+              </div>
+              <span class="materialName">{{ item.name }}</span><br />
+              <span class="materialCount">{{ item.count }}</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-template>
+
+<ng-template #equipmentMobile>
+  <div class="rightBlock" *ngIf="equipment.formattedMaterials.length > 1 || (equipment.formattedMaterials.length == 1 && equipment.formattedMaterials[0].length != 0)">
+    <table class="craftTable" >
+      <tr>
+        <th colspan="7">Crafting materials to level 50 from 0</th>
+      </tr>
+      <tbody *ngFor="let i of equipment.materials; let j = index">
+        <tr>
+          <td *ngIf="equipment.materials.length > 1">
+            <span *ngIf="j > 0">+ </span>{{ j }}
+          </td>
+          <td>
+            <div *ngFor="let item of equipment.formattedMaterials[j]" class="inline-block mx-2">
+              <div *ngIf="item.type === 'recipe'" class="recipe">
+                <img src="{{'assets/equipments/' + equipment.image + '_small.webp'}}" onerror="this.src='assets/equipments/placeholder.webp';" class="recipeImg"/>
+              </div>
+              <div *ngIf="item.type !== 'recipe'">
+                <img src="{{ 'assets/items/' + item.image + '_middle.webp'}}" class="materialImg"/>
+              </div>
+              <span class="materialName">{{ item.name }}</span><br />
+              <span class="materialCount">{{ item.count }}</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-template>
+
+<app-shared-tabs *ngIf="windowSize >= 830">
+  <app-shared-tab title="EQUIPMENT" mobileManaged="true">
+    <ng-container *ngTemplateOutlet="equipmentDetail"></ng-container>
+  </app-shared-tab>
+  <app-shared-tab title="CRAFT" *ngIf="equipment && (equipment.formattedMaterials.length > 1 || (equipment.formattedMaterials.length == 1 && equipment.formattedMaterials[0].length != 0))" mobileManaged="true">
+    <ng-container *ngTemplateOutlet="equipmentCraft"></ng-container>
   </app-shared-tab>
   <app-shared-tab *ngIf="equipment" title="GO TO BUILDER >>>" [link]="getRoute('/builder/equipment/' + equipment.slug)">
   </app-shared-tab>
 </app-shared-tabs>
+
+<div *ngIf="equipment && windowSize < 830" class="mobileBlock">
+  <ng-container *ngTemplateOutlet="equipmentDetail"></ng-container>
+  <ng-container *ngTemplateOutlet="equipmentMobile"></ng-container>
+</div>

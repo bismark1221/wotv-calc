@@ -27,7 +27,7 @@
   margin-right: 20px;
 }
 
-.StatTable, .skillsTable, .equippableJobsTable, .loreTable {
+.StatTable, .skillsTable, .equippableJobsTable, .loreTable, .craftTable {
   width: 100%;
 }
 
@@ -118,4 +118,28 @@
   max-width: 50px;
   max-height: 50px;
   margin-right: 5px;
+}
+
+@media (max-width: 1229px) {
+  .leftBlockMediumSize {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .rightBlock {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 829px) {
+  .mobileBlock {
+    margin-top: 20px;
+  }
+
+  .craftTable {
+    margin-top: 10px;
+  }
 }

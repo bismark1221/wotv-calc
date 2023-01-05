@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
@@ -22,6 +23,9 @@ export class EquipmentDetailComponent implements OnInit {
   activeTab;
 
   showPassivesDetail = false;
+  windowSize = 1230;
+
+  statsTypesByRow = [[]];
 
   constructor(
     private equipmentService: EquipmentService,
@@ -34,8 +38,17 @@ export class EquipmentDetailComponent implements OnInit {
     private navService: NavService,
     private toolService: ToolService,
     private jobService: JobService,
-    private itemService: ItemService
+    private itemService: ItemService,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {}
+
+  @HostListener('window:resize', []) onWindowResize() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.windowSize = window.innerWidth;
+
+      this.getStatsTypesByRow();
+    }
+  }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
@@ -65,6 +78,29 @@ export class EquipmentDetailComponent implements OnInit {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
       this.formatEquipment();
     });
+
+    this.onWindowResize();
+  }
+
+  private getStatsTypesByRow() {
+    if (this.equipment) {
+      this.statsTypesByRow = [[]];
+      if (!this.equipment.acquisition || this.equipment.acquisition.type !== 'tmr') {
+        this.statsTypesByRow[0].push('');
+      }
+
+      this.equipment.statsTypes.forEach(statType => {
+        if (this.windowSize < 830 && this.statsTypesByRow[this.statsTypesByRow.length - 1].length === 4) {
+          if (this.statsTypesByRow[0][0] === '') {
+            this.statsTypesByRow.push(['']);
+          } else {
+            this.statsTypesByRow.push([]);
+          }
+        }
+
+        this.statsTypesByRow[this.statsTypesByRow.length - 1].push(statType);
+      });
+    }
   }
 
   private sortSkills(skills) {
@@ -243,6 +279,7 @@ export class EquipmentDetailComponent implements OnInit {
         }
       });
       this.equipment.statsTypes = usableStatsTypes;
+      this.getStatsTypesByRow();
 
       this.equipment.jobs = [];
       for (const jobId of this.equipment.equippableJobs) {
