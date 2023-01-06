@@ -163,3 +163,17 @@
   max-width: 90px;
   max-height: 90px;
 }
+
+@media (max-width: 1229px) {
+  .leftBlockMediumSize {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .rightBlock {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

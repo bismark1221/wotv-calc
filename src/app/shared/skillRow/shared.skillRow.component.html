@@ -116,7 +116,7 @@
 
     <tr *ngIf="showMobileTitles && showEffects">
       <th colspan="4" class="sub">
-        Effects
+        {{ namePassiveEffects ? 'Passive effects' : 'Effects' }}
       </th>
     </tr>
     <tr *ngIf="showEffects">

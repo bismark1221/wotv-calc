@@ -1,361 +1,470 @@
-<app-shared-tabs>
-  <app-shared-tab title="CHARACTER">
-    <div class="leftBlock" *ngIf="unit">
-      <table class="unitTable">
-        <tbody>
-          <tr>
-            <th colspan="6">{{ unit.name }}</th>
-          </tr>
-          <tr>
-            <td colspan="6">
-              <a href="{{'assets/units/' + unit.image + '.webp'}}" target="_blank">
-                <img class="unitImg" src="{{'assets/units/' + unit.image + '_full.webp'}}" />
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="2">Rarity</th>
-            <th class="sub" colspan="2">Element</th>
-            <th class="sub" colspan="2">Limited</th>
-          </tr>
-          <tr>
-            <td colspan="2"><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.webp'}}" /></td>
-            <td colspan="2"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.webp'}}" (click)="clickSpecialBismark()"/></td>
-            <td colspan="2" class="bigText">{{ unit.limited ? "Yes" : "No" }}</td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="2">Move</th>
-            <th class="sub" colspan="2">Jump</th>
-            <th class="sub" colspan="2">Cost</th>
-          </tr>
-          <tr>
-            <td colspan="2" class="bigText">{{ unit.stats.MOVE.min }}</td>
-            <td colspan="2" class="bigText">{{ unit.stats.JUMP.min }}</td>
-            <td colspan="2" class="bigText">{{ unit.cost }}</td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="6">Jobs</th>
-          </tr>
-          <tr *ngIf="jobs">
-            <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-              <div *ngIf="jobs[i]">
-                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                  <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
-                </div>
-                {{ jobs[i].name }}
-              </div>
-            </td>
-          </tr>
-          <tr *ngIf="unit.species != 'human'">
-            <th class="sub" colspan="6">Species</th>
-          </tr>
-          <tr *ngIf="unit.species != 'human'">
-            <td colspan="6"><div class="equipmentText">{{ unit.species | titlecase }}</div></td>
-          </tr>
-          <tr *ngIf="jobs[0]">
-            <th class="sub" colspan="6">Weapons</th>
-          </tr>
-          <tr *ngIf="jobs[0]">
-            <td colspan="6">
-              <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
-                <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
-              </div>
-            </td>
-          </tr>
-          <tr *ngIf="jobs[0] && jobs[0].equipments.weaponGroup">
-            <th class="sub" colspan="6">Weapon Group</th>
-          </tr>
-          <tr *ngIf="jobs[0] && jobs[0].equipments.weaponGroup">
-            <td colspan="6">
-              <div class="equipmentText">
-                {{ jobs[0].equipments.weaponGroup }}
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="6">Armors</th>
-          </tr>
-          <tr *ngIf="jobs[0]">
-            <td colspan="6">
-              <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
-                <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="6">Release Date</th>
-          </tr>
-          <tr>
-            <td colspan="6">
-              <div class="equipmentText">
-                {{ unit.releaseDate }}
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="6">Updated Date</th>
-          </tr>
-          <tr>
-            <td colspan="6">
-              <div class="equipmentText">
-                {{ unit.updatedDate }}
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<ng-template #unitLeft>
+  <table class="unitTable">
+    <tbody>
+      <tr>
+        <th colspan="6">{{ unit.name }}</th>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <a href="{{'assets/units/' + unit.image + '.webp'}}" target="_blank">
+            <img class="unitImg" src="{{'assets/units/' + unit.image + '_full.webp'}}" />
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="2">Rarity</th>
+        <th class="sub" colspan="2">Element</th>
+        <th class="sub" colspan="2">Limited</th>
+      </tr>
+      <tr>
+        <td colspan="2"><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.webp'}}" /></td>
+        <td colspan="2"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.webp'}}"/></td>
+        <td colspan="2" class="bigText">{{ unit.limited ? "Yes" : "No" }}</td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="2">Move</th>
+        <th class="sub" colspan="2">Jump</th>
+        <th class="sub" colspan="2">Cost</th>
+      </tr>
+      <tr>
+        <td colspan="2" class="bigText">{{ unit.stats.MOVE.min }}</td>
+        <td colspan="2" class="bigText">{{ unit.stats.JUMP.min }}</td>
+        <td colspan="2" class="bigText">{{ unit.cost }}</td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="6">Jobs</th>
+      </tr>
+      <tr *ngIf="jobs">
+        <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
+          <div *ngIf="jobs[i]">
+            <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+              <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
+            </div>
+            {{ jobs[i].name }}
+          </div>
+        </td>
+      </tr>
+      <tr *ngIf="unit.species != 'human'">
+        <th class="sub" colspan="6">Species</th>
+      </tr>
+      <tr *ngIf="unit.species != 'human'">
+        <td colspan="6"><div class="equipmentText">{{ unit.species | titlecase }}</div></td>
+      </tr>
+      <tr *ngIf="jobs[0]">
+        <th class="sub" colspan="6">Weapons</th>
+      </tr>
+      <tr *ngIf="jobs[0]">
+        <td colspan="6">
+          <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
+            <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
+          </div>
+        </td>
+      </tr>
+      <tr *ngIf="jobs[0] && jobs[0].equipments.weaponGroup">
+        <th class="sub" colspan="6">Weapon Group</th>
+      </tr>
+      <tr *ngIf="jobs[0] && jobs[0].equipments.weaponGroup">
+        <td colspan="6">
+          <div class="equipmentText">
+            {{ jobs[0].equipments.weaponGroup }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="6">Armors</th>
+      </tr>
+      <tr *ngIf="jobs[0]">
+        <td colspan="6">
+          <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
+            <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="6">Release Date</th>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <div class="equipmentText">
+            {{ unit.releaseDate }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="6">Updated Date</th>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <div class="equipmentText">
+            {{ unit.updatedDate }}
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
 
-    <div class="rightBlock" *ngIf="unit && unit.tmr">
-      <table class="tmrTable">
-        <tbody>
+<ng-template #unitLeftMedium>
+  <table class="unitTable">
+    <tbody>
+      <tr>
+        <th colspan="3">{{ unit.name }}</th>
+      </tr>
+      <tr>
+        <td rowspan="6">
+          <a href="{{'assets/units/' + unit.image + '.webp'}}" target="_blank">
+            <img class="unitImg" src="{{'assets/units/' + unit.image + '_mobile.webp'}}" />
+          </a>
+        </td>
+        <th class="sub">Rarity</th>
+        <th class="sub">Element</th>
+      </tr>
+      <tr>
+        <td><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.webp'}}" /></td>
+        <td><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.webp'}}"/></td>
+      </tr>
+      <tr>
+        <th class="sub">Limited</th>
+        <th class="sub">Cost</th>
+      </tr>
+      <tr>
+        <td class="bigText">{{ unit.limited ? "Yes" : "No" }}</td>
+        <td class="bigText">{{ unit.cost }}</td>
+      </tr>
+      <tr>
+        <th class="sub">Move</th>
+        <th class="sub">Jump</th>
+      </tr>
+      <tr>
+        <td class="bigText">{{ unit.stats.MOVE.min }}</td>
+        <td class="bigText">{{ unit.stats.JUMP.min }}</td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="3">Jobs</th>
+      </tr>
+      <tr *ngIf="jobs">
+        <td class="jobTd" colspan="3">
+          <ng-container *ngFor="let i of [0, 1, 2]">
+            <div *ngIf="jobs[i]" class="inline-block mx-2 max-w-[100px] align-top">
+              <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
+              </div>
+              {{ jobs[i].name }}
+            </div>
+          </ng-container>
+        </td>
+      </tr>
+      <tr *ngIf="unit.species != 'human'">
+        <th class="sub" colspan="6">Species</th>
+      </tr>
+      <tr *ngIf="unit.species != 'human'">
+        <td colspan="6"><div class="equipmentText">{{ unit.species | titlecase }}</div></td>
+      </tr>
+      <tr *ngIf="jobs[0]">
+        <th class="sub" colspan="6">Weapons</th>
+      </tr>
+      <tr *ngIf="jobs[0]">
+        <td colspan="6">
+          <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
+            <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
+          </div>
+        </td>
+      </tr>
+      <tr *ngIf="jobs[0] && jobs[0].equipments.weaponGroup">
+        <th class="sub" colspan="6">Weapon Group</th>
+      </tr>
+      <tr *ngIf="jobs[0] && jobs[0].equipments.weaponGroup">
+        <td colspan="6">
+          <div class="equipmentText">
+            {{ jobs[0].equipments.weaponGroup }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="6">Armors</th>
+      </tr>
+      <tr *ngIf="jobs[0]">
+        <td colspan="6">
+          <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
+            <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="6">Release Date</th>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <div class="equipmentText">
+            {{ unit.releaseDate }}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th class="sub" colspan="6">Updated Date</th>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <div class="equipmentText">
+            {{ unit.updatedDate }}
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<app-shared-tabs>
+  <app-shared-tab title="CHARACTER" mobileManaged="true">
+    <ng-container *ngIf="unit">
+      <div class="leftBlock" *ngIf="windowSize >= 1230">
+        <ng-container *ngTemplateOutlet="unitLeft"></ng-container>
+      </div>
+
+      <div class="leftBlockMediumSize" *ngIf="windowSize < 1230">
+        <ng-container *ngTemplateOutlet="unitLeftMedium"></ng-container>
+      </div>
+
+      <div class="rightBlock" *ngIf="unit.tmr">
+        <table class="tmrTable">
           <tr>
             <th colspan="20">TMR</th>
           </tr>
-          <tr>
-            <td rowspan="2" class="tmrTd"><img src="assets/equipments/{{unit.tmr.image}}_middle.webp" class="tmrImg"/></td>
-            <th class="sub tmrSubTd">Name</th>
-            <th class="sub tmrSubTd">Type</th>
-            <th class="sub tmrSubTd" *ngFor="let statType of unit.tmr.statsTypes">{{ statType }}</th>
-          </tr>
-          <tr>
-            <td><a [routerLink]="[getRoute('/equipment/' + unit.tmr.slug)]" [routerLinkActive]="['active']">{{ unit.tmr.name }}</a></td>
-            <td>{{ getEquipementType(unit.tmr.type) }}</td>
-            <td *ngFor="let statType of unit.tmr.statsTypes">{{ unit.tmr.stats[0][statType].min }}</td>
-          </tr>
-        </tbody>
-      </table>
+          <tbody *ngFor="let row of tmrStatsTypesByRow">
+            <tr>
+              <ng-container *ngFor="let statType of row">
+                <td *ngIf="statType == 'image'" rowspan="2" class="tmrTd"><img src="assets/equipments/{{unit.tmr.image}}_middle.webp" class="tmrImg"/></td>
+                <th *ngIf="statType == 'name'" class="sub tmrSubTd">Name</th>
+                <th *ngIf="statType == 'type'" class="sub tmrSubTd">Type</th>
+                <th *ngIf="statType != 'image' && statType != 'name' && statType != 'type'" class="sub tmrSubTd">{{ statType }}</th>
+              </ng-container>
+            </tr>
+            <tr>
+              <ng-container *ngFor="let statType of row">
+                <td *ngIf="statType == 'name'" ><a [routerLink]="[getRoute('/equipment/' + unit.tmr.slug)]" [routerLinkActive]="['active']">{{ unit.tmr.name }}</a></td>
+                <td *ngIf="statType == 'type'">{{ getEquipementType(unit.tmr.type) }}</td>
+                <td *ngIf="statType != 'image' && statType != 'name' && statType != 'type'">{{ unit.tmr.stats[0][statType].min }}</td>
+              </ng-container>
+            </tr>
+          </tbody>
+        </table>
 
-      <table class="tmrSkillTable" *ngIf="unit.tmr.formattedSkills && unit.tmr.formattedSkills[0]">
-        <tr>
-          <th colspan="7">TMR Skill</th>
-        </tr>
-        <tbody *ngFor="let skill of unit.tmr.formattedSkills">
+        <table class="tmrSkillTable" *ngIf="unit.tmr.formattedSkills && unit.tmr.formattedSkills[0]">
           <tr>
-            <th class="sub">Type</th>
-            <th class="sub" *ngIf="skill.type === 'skill'">name</th>
-            <th class="sub" [attr.colspan]="skill.type === 'skill' ? '1' : '6'">Effects</th>
-            <th class="sub" *ngIf="skill.type === 'skill'">Range</th>
-            <th class="sub" *ngIf="skill.type === 'skill'">Casts</th>
-            <th class="sub" *ngIf="skill.type === 'skill'">Hits</th>
-            <th class="sub" *ngIf="skill.type === 'skill'">Cost</th>
+            <th colspan="7">TMR Skill</th>
           </tr>
-          <tr *ngIf="skill.type === 'skill'" app-shared-skillRow [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true"></tr>
+          <tbody *ngFor="let skill of unit.tmr.formattedSkills">
+            <tr *ngIf="windowSize >= 830">
+              <th class="sub">Type</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">name</th>
+              <th class="sub" [attr.colspan]="skill.type === 'skill' ? '1' : '6'">Effects</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">Range</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">Casts</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">Hits</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">Cost</th>
+            </tr>
+            <tr *ngIf="skill.type === 'skill'"
+              app-shared-skillRow
+              [skill]="skill"
+              [showType]="windowSize >= 830"
+              [showTypeWithName]="windowSize < 830"
+              [showName]="true"
+              [showEffects]="true"
+              [showRange]="true"
+              [showCasts]="true"
+              [showHits]="true"
+              [showCost]="true"
+              [showMobileTitles]="true"
+              [mobileView]="windowSize < 830"
+            ></tr>
 
-          <tr *ngIf="skill.type !== 'skill'" app-shared-skillRow [skill]="skill" [showType]="true" [showEffects]="true" [effectsColSpan]="6"></tr>
-        </tbody>
-      </table>
+            <tr *ngIf="skill.type !== 'skill'"
+              app-shared-skillRow
+              [skill]="skill"
+              [showType]="windowSize >= 830"
+              [showTypeWithName]="windowSize < 830"
+              [showEffects]="true"
+              [namePassiveEffects]="true"
+              [effectsColSpan]="6"
+              [showMobileTitles]="true"
+              [mobileView]="windowSize < 830"
+            ></tr>
+          </tbody>
+        </table>
 
-      <table class="masterSkillTable">
-        <tbody>
-          <tr>
-            <th>Master Ability</th>
-          </tr>
-          <tr *ngFor="let masterSkill of unit.formattedMasterSkill">
-            <td>
-              <div *ngIf="masterSkill.upgradeHtml !== ''">
-                {{ masterSkill.upgradeHtml }}
-              </div>
-              <div *ngFor="let effect of masterSkill.effects">
-                {{ effect.formatHtml }}
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="masterSkillTable" *ngIf="unit.dream && unit.dream.skills">
-        <tbody>
-          <tr>
-            <th>Dream Ability</th>
-          </tr>
-          <tr *ngFor="let dreamSkill of unit.formattedDreamSkill">
-            <td>
-              <div *ngFor="let effect of dreamSkill.effectsHtml.before" [innerHTML]="effect"></div>
-              <div *ngFor="let effect of dreamSkill.effectsHtml.after" [innerHTML]="effect"></div>
-              <div *ngIf="dreamSkill.upgradeHtml !== ''">
-                {{ dreamSkill.upgradeHtml }}
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="descriptionSkillTable">
-        <tbody>
-          <tr>
-            <th>Lore</th>
-          </tr>
-          <tr>
-            <td>
-              {{ unit.description }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </app-shared-tab>
-  <app-shared-tab title="STATS">
-    <div class="leftBlock" *ngIf="!specialBismark && unit">
-      <table class="unitTable">
-        <tbody>
-          <tr>
-            <th colspan="6">{{ unit.name }}</th>
-          </tr>
-          <tr>
-            <td colspan="6">
-              <a href="{{'assets/units/' + unit.image + '.webp'}}" target="_blank">
-                <img class="unitImg" src="{{'assets/units/' + unit.image + '_full.webp'}}" />
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="2">Rarity</th>
-            <th class="sub" colspan="2">Element</th>
-            <th class="sub" colspan="2">Limited</th>
-          </tr>
-          <tr>
-            <td colspan="2"><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.webp'}}" /></td>
-            <td colspan="2"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.webp'}}" /></td>
-            <td colspan="2" class="bigText">{{ unit.limited ? "Yes" : "No" }}</td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="2">Move</th>
-            <th class="sub" colspan="2">Jump</th>
-            <th class="sub" colspan="2">Cost</th>
-          </tr>
-          <tr>
-            <td colspan="2" class="bigText">{{ unit.stats.MOVE.min }}</td>
-            <td colspan="2" class="bigText">{{ unit.stats.JUMP.min }}</td>
-            <td colspan="2" class="bigText">{{ unit.cost }}</td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="6">Jobs</th>
-          </tr>
-          <tr *ngIf="jobs">
-            <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-              <div *ngIf="jobs[i]">
-                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                  <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
+        <table class="masterSkillTable">
+          <tbody>
+            <tr>
+              <th>Master Ability</th>
+            </tr>
+            <tr *ngFor="let masterSkill of unit.formattedMasterSkill">
+              <td>
+                <div *ngIf="masterSkill.upgradeHtml !== ''">
+                  {{ masterSkill.upgradeHtml }}
                 </div>
-                {{ jobs[i].name }}
-              </div>
-            </td>
-          </tr>
-          <tr *ngIf="jobs[0]">
-            <th class="sub" colspan="6">Weapons</th>
-          </tr>
-          <tr *ngIf="jobs[0]">
-            <td colspan="6">
-              <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
-                <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="6">Armors</th>
-          </tr>
-          <tr *ngIf="jobs[0]">
-            <td colspan="6">
-              <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
-                <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+                <div *ngFor="let effect of masterSkill.effects">
+                  {{ effect.formatHtml }}
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-    <div class="rightBlock" *ngIf="unit">
-      <table class="statsTable">
-        <tbody>
+        <table class="masterSkillTable" *ngIf="unit.dream && unit.dream.skills">
+          <tbody>
+            <tr>
+              <th>Dream Ability</th>
+            </tr>
+            <tr *ngFor="let dreamSkill of unit.formattedDreamSkill">
+              <td>
+                <div *ngFor="let effect of dreamSkill.effectsHtml.before" [innerHTML]="effect"></div>
+                <div *ngFor="let effect of dreamSkill.effectsHtml.after" [innerHTML]="effect"></div>
+                <div *ngIf="dreamSkill.upgradeHtml !== ''">
+                  {{ dreamSkill.upgradeHtml }}
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="descriptionSkillTable">
+          <tbody>
+            <tr>
+              <th>Lore</th>
+            </tr>
+            <tr>
+              <td>
+                {{ unit.description }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </ng-container>
+  </app-shared-tab>
+  <app-shared-tab title="STATS" mobileManaged="true">
+    <ng-container *ngIf="unit">
+      <div class="leftBlock" *ngIf="windowSize >= 1230">
+        <ng-container *ngTemplateOutlet="unitLeft"></ng-container>
+      </div>
+
+      <div class="rightBlock">
+        <table class="statsTable" *ngIf="windowSize >= 830">
+          <tr>
+            <th colspan="13">Unit Stats (with only job lvl 1)</th>
+          </tr>
+          <tbody>
+            <tr>
+              <th class="sub"></th>
+              <th class="sub">HP</th>
+              <th class="sub">TP</th>
+              <th class="sub">AP</th>
+              <th class="sub">ATK</th>
+              <th class="sub">MAG</th>
+              <th class="sub">AGI</th>
+              <th class="sub">DEX</th>
+              <th class="sub">LUCK</th>
+              <th class="sub">MOVE</th>
+              <th class="sub">JUMP</th>
+            </tr>
+            <tr>
+              <td>Min</td>
+              <td>{{ unit.stats.HP.min }}</td>
+              <td>{{ unit.stats.TP.min }}</td>
+              <td>{{ unit.stats.AP.min }}</td>
+              <td>{{ unit.stats.ATK.min }}</td>
+              <td>{{ unit.stats.MAG.min }}</td>
+              <td>{{ unit.stats.AGI.min }}</td>
+              <td>{{ unit.stats.DEX.min }}</td>
+              <td>{{ unit.stats.LUCK.min }}</td>
+              <td *ngIf="unit.exJobs && unit.exJobs.length === 0" rowspan="2">{{ unit.stats.MOVE.min }}</td>
+              <td *ngIf="unit.exJobs && unit.exJobs.length === 0" rowspan="2">{{ unit.stats.JUMP.min }}</td>
+              <td *ngIf="unit.exJobs && unit.exJobs.length > 0" rowspan="3">{{ unit.stats.MOVE.min }}</td>
+              <td *ngIf="unit.exJobs && unit.exJobs.length > 0" rowspan="3">{{ unit.stats.JUMP.min }}</td>
+            </tr>
+            <tr>
+              <td>Max</td>
+              <td>{{ unit.stats.HP.max }}</td>
+              <td>{{ unit.stats.TP.max }}</td>
+              <td>{{ unit.stats.AP.max }}</td>
+              <td>{{ unit.stats.ATK.max }}</td>
+              <td>{{ unit.stats.MAG.max }}</td>
+              <td>{{ unit.stats.AGI.max }}</td>
+              <td>{{ unit.stats.DEX.max }}</td>
+              <td>{{ unit.stats.LUCK.max }}</td>
+            </tr>
+            <tr *ngIf="unit.exJobs && unit.exJobs.length > 0">
+              <td>EX</td>
+              <td>{{ unit.stats.HP.ex }}</td>
+              <td>{{ unit.stats.TP.ex }}</td>
+              <td>{{ unit.stats.AP.ex }}</td>
+              <td>{{ unit.stats.ATK.ex }}</td>
+              <td>{{ unit.stats.MAG.ex }}</td>
+              <td>{{ unit.stats.AGI.ex }}</td>
+              <td>{{ unit.stats.DEX.ex }}</td>
+              <td>{{ unit.stats.LUCK.ex }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="statsTable" *ngIf="windowSize < 830">
           <tr>
             <th colspan="13">Unit Stats (with only job lvl 1)</th>
           </tr>
           <tr>
-            <th class="sub"></th>
-            <th class="sub">HP</th>
-            <th class="sub">TP</th>
-            <th class="sub">AP</th>
-            <th class="sub">ATK</th>
-            <th class="sub">MAG</th>
-            <th class="sub">AGI</th>
-            <th class="sub">DEX</th>
-            <th class="sub">LUCK</th>
-            <th class="sub">MOVE</th>
-            <th class="sub">JUMP</th>
+            <th class="sub">Stat</th>
+            <th class="sub">Min</th>
+            <th class="sub">Max</th>
+            <th class="sub" *ngIf="unit.exJobs && unit.exJobs.length > 0">EX</th>
           </tr>
-          <tr>
-            <td>Min</td>
-            <td>{{ unit.stats.HP.min }}</td>
-            <td>{{ unit.stats.TP.min }}</td>
-            <td>{{ unit.stats.AP.min }}</td>
-            <td>{{ unit.stats.ATK.min }}</td>
-            <td>{{ unit.stats.MAG.min }}</td>
-            <td>{{ unit.stats.AGI.min }}</td>
-            <td>{{ unit.stats.DEX.min }}</td>
-            <td>{{ unit.stats.LUCK.min }}</td>
-            <td rowspan="2" *ngIf="unit.exJobs && unit.exJobs.length === 0">{{ unit.stats.MOVE.min }}</td>
-            <td rowspan="2" *ngIf="unit.exJobs && unit.exJobs.length === 0">{{ unit.stats.JUMP.min }}</td>
-            <td rowspan="3" *ngIf="unit.exJobs && unit.exJobs.length > 0">{{ unit.stats.MOVE.min }}</td>
-            <td rowspan="3" *ngIf="unit.exJobs && unit.exJobs.length > 0">{{ unit.stats.JUMP.min }}</td>
-          </tr>
-          <tr>
-            <td>Max</td>
-            <td>{{ unit.stats.HP.max }}</td>
-            <td>{{ unit.stats.TP.max }}</td>
-            <td>{{ unit.stats.AP.max }}</td>
-            <td>{{ unit.stats.ATK.max }}</td>
-            <td>{{ unit.stats.MAG.max }}</td>
-            <td>{{ unit.stats.AGI.max }}</td>
-            <td>{{ unit.stats.DEX.max }}</td>
-            <td>{{ unit.stats.LUCK.max }}</td>
-          </tr>
-          <tr *ngIf="unit.exJobs && unit.exJobs.length > 0">
-            <td>EX</td>
-            <td>{{ unit.stats.HP.ex }}</td>
-            <td>{{ unit.stats.TP.ex }}</td>
-            <td>{{ unit.stats.AP.ex }}</td>
-            <td>{{ unit.stats.ATK.ex }}</td>
-            <td>{{ unit.stats.MAG.ex }}</td>
-            <td>{{ unit.stats.AGI.ex }}</td>
-            <td>{{ unit.stats.DEX.ex }}</td>
-            <td>{{ unit.stats.LUCK.ex }}</td>
-          </tr>
-        </tbody>
-      </table>
+          <tbody *ngFor="let statType of ['HP', 'TP', 'AP', 'ATK', 'MAG', 'AGI', 'DEX', 'LUCK', 'MOVE', 'JUMP']">
+            <tr>
+              <td>{{ statType }}</td>
+              <td [attr.colspan]="statType == 'MOVE' || statType == 'JUMP' ? 3 : 1">{{ unit.stats[statType].min }}</td>
+              <td *ngIf="statType != 'MOVE' && statType != 'JUMP'">{{ unit.stats[statType].max }}</td>
+              <td *ngIf="statType != 'MOVE' && statType != 'JUMP' && unit.exJobs && unit.exJobs.length > 0">{{ unit.stats[statType].ex }}</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <table class="statsTable">
-        <tbody>
+        <table class="statsTable">
           <tr>
             <th colspan="11">Board Stats</th>
           </tr>
-          <tr>
-            <th class="sub">HP</th>
-            <th class="sub">TP</th>
-            <th class="sub">INITIAL AP</th>
-            <th class="sub">ATK</th>
-            <th class="sub">DEF</th>
-            <th class="sub">MAG</th>
-            <th class="sub">SPR</th>
-            <th class="sub">AGI</th>
-            <th class="sub">DEX</th>
-            <th class="sub">LUCK</th>
-            <th class="sub">CRITIC RATE</th>
-          </tr>
-          <tr>
-            <td>{{ unit.totalBuffs.HP }}</td>
-            <td>{{ unit.totalBuffs.TP }}</td>
-            <td>{{ unit.totalBuffs.INITIAL_AP }}</td>
-            <td>{{ unit.totalBuffs.ATK }}</td>
-            <td>{{ unit.totalBuffs.DEF }}</td>
-            <td>{{ unit.totalBuffs.MAG }}</td>
-            <td>{{ unit.totalBuffs.SPR }}</td>
-            <td>{{ unit.totalBuffs.AGI }}</td>
-            <td>{{ unit.totalBuffs.DEX }}</td>
-            <td>{{ unit.totalBuffs.LUCK }}</td>
-            <td>{{ unit.totalBuffs.CRITIC_RATE }}</td>
-          </tr>
+          <tbody *ngIf="windowSize >= 830">
+            <tr>
+              <th class="sub">HP</th>
+              <th class="sub">TP</th>
+              <th class="sub">INITIAL AP</th>
+              <th class="sub">ATK</th>
+              <th class="sub">DEF</th>
+              <th class="sub">MAG</th>
+              <th class="sub">SPR</th>
+              <th class="sub">AGI</th>
+              <th class="sub">DEX</th>
+              <th class="sub">LUCK</th>
+              <th class="sub">CRITIC RATE</th>
+            </tr>
+            <tr>
+              <td>{{ unit.totalBuffs.HP }}</td>
+              <td>{{ unit.totalBuffs.TP }}</td>
+              <td>{{ unit.totalBuffs.INITIAL_AP }}</td>
+              <td>{{ unit.totalBuffs.ATK }}</td>
+              <td>{{ unit.totalBuffs.DEF }}</td>
+              <td>{{ unit.totalBuffs.MAG }}</td>
+              <td>{{ unit.totalBuffs.SPR }}</td>
+              <td>{{ unit.totalBuffs.AGI }}</td>
+              <td>{{ unit.totalBuffs.DEX }}</td>
+              <td>{{ unit.totalBuffs.LUCK }}</td>
+              <td>{{ unit.totalBuffs.CRITIC_RATE }}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="windowSize < 830">
+            <tr *ngFor="let statType of ['HP', 'TP', 'INITIAL_AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'CRITIC_RATE']">
+              <td>{{ statType | replace : '_' : ' ' }}</td>
+              <td>{{ unit.totalBuffs[statType] }}</td>
+            </tr>
+          </tbody>
           <tr>
             <th class="sub" colspan="11" *ngIf="unit.remainingBuffs.length > 0">OTHERS</th>
           </tr>
@@ -367,32 +476,40 @@
           <tr *ngIf="unit.exJobs && unit.exJobs.length > 0">
             <th colspan="11">EX Board Stats (Max Value)</th>
           </tr>
-          <tr *ngIf="unit.exJobs && unit.exJobs.length > 0">
-            <th class="sub">HP</th>
-            <th class="sub">TP</th>
-            <th class="sub">INITIAL AP</th>
-            <th class="sub">ATK</th>
-            <th class="sub">DEF</th>
-            <th class="sub">MAG</th>
-            <th class="sub">SPR</th>
-            <th class="sub">AGI</th>
-            <th class="sub">DEX</th>
-            <th class="sub">LUCK</th>
-            <th class="sub">CRITIC RATE</th>
-          </tr>
-          <tr *ngIf="unit.exJobs && unit.exJobs.length > 0">
-            <td>{{ unit.exBuffs.HP }}</td>
-            <td>{{ unit.exBuffs.TP }}</td>
-            <td>{{ unit.exBuffs.INITIAL_AP }}</td>
-            <td>{{ unit.exBuffs.ATK }}</td>
-            <td>{{ unit.exBuffs.DEF }}</td>
-            <td>{{ unit.exBuffs.MAG }}</td>
-            <td>{{ unit.exBuffs.SPR }}</td>
-            <td>{{ unit.exBuffs.AGI }}</td>
-            <td>{{ unit.exBuffs.DEX }}</td>
-            <td>{{ unit.exBuffs.LUCK }}</td>
-            <td>{{ unit.exBuffs.CRITIC_RATE }}</td>
-          </tr>
+          <tbody *ngIf="windowSize >= 830 && unit.exJobs && unit.exJobs.length > 0">
+            <tr>
+              <th class="sub">HP</th>
+              <th class="sub">TP</th>
+              <th class="sub">INITIAL AP</th>
+              <th class="sub">ATK</th>
+              <th class="sub">DEF</th>
+              <th class="sub">MAG</th>
+              <th class="sub">SPR</th>
+              <th class="sub">AGI</th>
+              <th class="sub">DEX</th>
+              <th class="sub">LUCK</th>
+              <th class="sub">CRITIC RATE</th>
+            </tr>
+            <tr>
+              <td>{{ unit.exBuffs.HP }}</td>
+              <td>{{ unit.exBuffs.TP }}</td>
+              <td>{{ unit.exBuffs.INITIAL_AP }}</td>
+              <td>{{ unit.exBuffs.ATK }}</td>
+              <td>{{ unit.exBuffs.DEF }}</td>
+              <td>{{ unit.exBuffs.MAG }}</td>
+              <td>{{ unit.exBuffs.SPR }}</td>
+              <td>{{ unit.exBuffs.AGI }}</td>
+              <td>{{ unit.exBuffs.DEX }}</td>
+              <td>{{ unit.exBuffs.LUCK }}</td>
+              <td>{{ unit.exBuffs.CRITIC_RATE }}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="windowSize < 830 && unit.exJobs && unit.exJobs.length > 0">
+            <tr *ngFor="let statType of ['HP', 'TP', 'INITIAL_AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'CRITIC_RATE']">
+              <td>{{ statType | replace : '_' : ' ' }}</td>
+              <td>{{ unit.exBuffs[statType] }}</td>
+            </tr>
+          </tbody>
           <tr>
             <th class="sub" colspan="11" *ngIf="unit.remainingExBuffs.length > 0">OTHERS</th>
           </tr>
@@ -401,247 +518,238 @@
               <div *ngFor="let buff of unit.remainingExBuffs">{{ buff }}</div>
             </td>
           </tr>
-        </tbody>
-      </table>
+        </table>
 
-      <table class="statsTable" *ngIf="unit.dream && unit.dream.stats">
-        <tbody>
+        <table class="statsTable" *ngIf="unit.dream && unit.dream.stats">
           <tr>
             <th colspan="14">Dream Stats</th>
           </tr>
-          <tr>
-            <th class="sub">HP</th>
-            <th class="sub">TP</th>
-            <th class="sub">AP</th>
-            <th class="sub">ATK</th>
-            <th class="sub">DEF</th>
-            <th class="sub">MAG</th>
-            <th class="sub">SPR</th>
-            <th class="sub">AGI</th>
-            <th class="sub">DEX</th>
-            <th class="sub">LUCK</th>
-            <th class="sub">ACCURACY</th>
-            <th class="sub">EVADE</th>
-            <th class="sub">CRITIC RATE</th>
-            <th class="sub">CRITIC EVADE</th>
-          </tr>
-          <tr>
-            <td>{{ unit.dream.stats.HP }}</td>
-            <td>{{ unit.dream.stats.TP }}</td>
-            <td>{{ unit.dream.stats.AP }}</td>
-            <td>{{ unit.dream.stats.ATK }}</td>
-            <td>{{ unit.dream.stats.DEF }}</td>
-            <td>{{ unit.dream.stats.MAG }}</td>
-            <td>{{ unit.dream.stats.SPR }}</td>
-            <td>{{ unit.dream.stats.AGI }}</td>
-            <td>{{ unit.dream.stats.DEX }}</td>
-            <td>{{ unit.dream.stats.LUCK }}</td>
-            <td>{{ unit.dream.stats.ACCURACY }}</td>
-            <td>{{ unit.dream.stats.EVADE }}</td>
-            <td>{{ unit.dream.stats.CRITIC_RATE }}</td>
-            <td>{{ unit.dream.stats.CRITIC_EVADE }}</td>
-          </tr>
-        </tbody>
-      </table>
+          <tbody *ngIf="windowSize >= 830">
+            <tr>
+              <th class="sub" *ngFor="let statType of ['HP', 'TP', 'AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'ACCURACY', 'EVADE', 'CRITIC_RATE', 'CRITIC_EVADE']">
+                {{ statType | replace : '_' : ' ' }}
+              </th>
+            </tr>
+            <tr>
+              <td *ngFor="let statType of ['HP', 'TP', 'AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'ACCURACY', 'EVADE', 'CRITIC_RATE', 'CRITIC_EVADE']">
+                {{ unit.dream.stats[statType] }}
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="windowSize < 830">
+            <tr *ngFor="let statType of ['HP', 'TP', 'AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'ACCURACY', 'EVADE', 'CRITIC_RATE', 'CRITIC_EVADE']">
+              <td>{{ statType | replace : '_' : ' ' }}</td>
+              <td>{{ unit.dream.stats[statType] }}</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <table class="statsTable">
-        <tbody>
+        <table class="statsTable" *ngIf="windowSize >= 830">
+          <tbody>
+            <tr>
+              <th colspan="11">Jobs Stats (max available job and unit levels)</th>
+            </tr>
+            <tr>
+              <th class="sub">Job</th>
+              <th class="sub">HP</th>
+              <th class="sub">TP</th>
+              <th class="sub">AP</th>
+              <th class="sub">ATK</th>
+              <th class="sub">MAG</th>
+              <th class="sub">AGI</th>
+              <th class="sub">DEX</th>
+              <th class="sub">LUCK</th>
+            </tr>
+          </tbody>
+          <tbody *ngFor="let i of [0, 1, 2]">
+            <tr class="jobsStatsLine" *ngIf="jobs[i]">
+              <td>
+                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                  <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
+                </div>
+              </td>
+              <td>{{ unit.jobsStats[i].HP }}</td>
+              <td>{{ unit.jobsStats[i].TP }}</td>
+              <td>{{ unit.jobsStats[i].AP }}</td>
+              <td>{{ unit.jobsStats[i].ATK }}</td>
+              <td>{{ unit.jobsStats[i].MAG }}</td>
+              <td>{{ unit.jobsStats[i].AGI }}</td>
+              <td>{{ unit.jobsStats[i].DEX }}</td>
+              <td>{{ unit.jobsStats[i].LUCK }}</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="jobsStatsLine jobsStatsTotal" *ngIf="unit.totalJobsStats">
+              <td>Total</td>
+              <td>{{ unit.totalJobsStats.HP }}</td>
+              <td>{{ unit.totalJobsStats.TP }}</td>
+              <td>{{ unit.totalJobsStats.AP }}</td>
+              <td>{{ unit.totalJobsStats.ATK }}</td>
+              <td>{{ unit.totalJobsStats.MAG }}</td>
+              <td>{{ unit.totalJobsStats.AGI }}</td>
+              <td>{{ unit.totalJobsStats.DEX }}</td>
+              <td>{{ unit.totalJobsStats.LUCK }}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats && unit.EXJobsStats[0] && exJobs[0]">
+            <tr class="jobsStatsLine">
+              <td>
+                <div class="mainJob">
+                  <img src="{{'assets/jobs/' + exJobs[0].image + '_30.webp'}}" />
+                </div>
+              </td>
+              <td>{{ unit.EXJobsStats[0].HP }}</td>
+              <td>{{ unit.EXJobsStats[0].TP }}</td>
+              <td>{{ unit.EXJobsStats[0].AP }}</td>
+              <td>{{ unit.EXJobsStats[0].ATK }}</td>
+              <td>{{ unit.EXJobsStats[0].MAG }}</td>
+              <td>{{ unit.EXJobsStats[0].AGI }}</td>
+              <td>{{ unit.EXJobsStats[0].DEX }}</td>
+              <td>{{ unit.EXJobsStats[0].LUCK }}</td>
+            </tr>
+            <tr class="jobsStatsLine jobsStatsTotal">
+              <td>Total + EX</td>
+              <td>{{ unit.totalEXJobsStats.HP }}</td>
+              <td>{{ unit.totalEXJobsStats.TP }}</td>
+              <td>{{ unit.totalEXJobsStats.AP }}</td>
+              <td>{{ unit.totalEXJobsStats.ATK }}</td>
+              <td>{{ unit.totalEXJobsStats.MAG }}</td>
+              <td>{{ unit.totalEXJobsStats.AGI }}</td>
+              <td>{{ unit.totalEXJobsStats.DEX }}</td>
+              <td>{{ unit.totalEXJobsStats.LUCK }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="statsTable" *ngIf="windowSize < 830">
           <tr>
             <th colspan="11">Jobs Stats (max available job and unit levels)</th>
           </tr>
           <tr>
-            <th class="sub">Job</th>
-            <th class="sub">HP</th>
-            <th class="sub">TP</th>
-            <th class="sub">AP</th>
-            <th class="sub">ATK</th>
-            <th class="sub">MAG</th>
-            <th class="sub">AGI</th>
-            <th class="sub">DEX</th>
-            <th class="sub">LUCK</th>
+            <th class="sub">Stat</th>
+            <th class="sub">Total 99</th>
+            <ng-container *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats && unit.EXJobsStats[0] && exJobs[0]">
+              <th class="sub">Ex</th>
+              <th class="sub">Total 120</th>
+            </ng-container>
           </tr>
-        </tbody>
-        <tbody *ngFor="let i of [0, 1, 2]">
-          <tr class="jobsStatsLine" *ngIf="jobs[i]">
-            <td>
-              <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
-              </div>
-            </td>
-            <td>{{ unit.jobsStats[i].HP }}</td>
-            <td>{{ unit.jobsStats[i].TP }}</td>
-            <td>{{ unit.jobsStats[i].AP }}</td>
-            <td>{{ unit.jobsStats[i].ATK }}</td>
-            <td>{{ unit.jobsStats[i].MAG }}</td>
-            <td>{{ unit.jobsStats[i].AGI }}</td>
-            <td>{{ unit.jobsStats[i].DEX }}</td>
-            <td>{{ unit.jobsStats[i].LUCK }}</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr class="jobsStatsLine jobsStatsTotal" *ngIf="unit.totalJobsStats">
-            <td>Total</td>
-            <td>{{ unit.totalJobsStats.HP }}</td>
-            <td>{{ unit.totalJobsStats.TP }}</td>
-            <td>{{ unit.totalJobsStats.AP }}</td>
-            <td>{{ unit.totalJobsStats.ATK }}</td>
-            <td>{{ unit.totalJobsStats.MAG }}</td>
-            <td>{{ unit.totalJobsStats.AGI }}</td>
-            <td>{{ unit.totalJobsStats.DEX }}</td>
-            <td>{{ unit.totalJobsStats.LUCK }}</td>
-          </tr>
-        </tbody>
-        <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats && unit.EXJobsStats[0] && exJobs[0]">
-          <tr class="jobsStatsLine">
-            <td>
-              <div class="mainJob">
-                <img src="{{'assets/jobs/' + exJobs[0].image + '_30.webp'}}" />
-              </div>
-            </td>
-            <td>{{ unit.EXJobsStats[0].HP }}</td>
-            <td>{{ unit.EXJobsStats[0].TP }}</td>
-            <td>{{ unit.EXJobsStats[0].AP }}</td>
-            <td>{{ unit.EXJobsStats[0].ATK }}</td>
-            <td>{{ unit.EXJobsStats[0].MAG }}</td>
-            <td>{{ unit.EXJobsStats[0].AGI }}</td>
-            <td>{{ unit.EXJobsStats[0].DEX }}</td>
-            <td>{{ unit.EXJobsStats[0].LUCK }}</td>
-          </tr>
-          <tr class="jobsStatsLine jobsStatsTotal">
-            <td>Total + EX</td>
-            <td>{{ unit.totalEXJobsStats.HP }}</td>
-            <td>{{ unit.totalEXJobsStats.TP }}</td>
-            <td>{{ unit.totalEXJobsStats.AP }}</td>
-            <td>{{ unit.totalEXJobsStats.ATK }}</td>
-            <td>{{ unit.totalEXJobsStats.MAG }}</td>
-            <td>{{ unit.totalEXJobsStats.AGI }}</td>
-            <td>{{ unit.totalEXJobsStats.DEX }}</td>
-            <td>{{ unit.totalEXJobsStats.LUCK }}</td>
-          </tr>
-        </tbody>
-      </table>
+          <tbody *ngFor="let statType of ['HP', 'TP', 'AP', 'ATK', 'MAG', 'AGI', 'DEX', 'LUCK']">
+            <tr *ngIf="unit.totalJobsStats">
+              <td>{{ statType }}</td>
+              <td>{{ unit.totalJobsStats[statType] }}</td>
+              <ng-container *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats && unit.EXJobsStats[0] && exJobs[0]">
+                <td>{{ unit.EXJobsStats[0][statType] }}</td>
+                <td>{{ unit.totalEXJobsStats[statType] }}</td>
+              </ng-container>
+            </tr>
+          </tbody>
+        </table>
 
-      <table class="statsTable">
-        <tbody>
+        <table class="statsTable">
           <tr>
             <th colspan="8">Res Elem</th>
           </tr>
-          <tr>
-            <th class="sub"><img class="elementImg" title="fire resistance" src="{{'assets/elements/fire.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" title="ice resistance" src="{{'assets/elements/ice.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" title="wind resistance" src="{{'assets/elements/wind.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" title="earht resistance" src="{{'assets/elements/earth.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" title="lightning resistance" src="{{'assets/elements/lightning.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" title="water resistance" src="{{'assets/elements/water.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" title="light resistance" src="{{'assets/elements/light.webp'}}" /></th>
-            <th class="sub"><img class="elementImg" title="dark resistance" src="{{'assets/elements/dark.webp'}}" /></th>
-          </tr>
-          <tr>
-            <td class="heightResTd"><span *ngIf="unit.stats.FIRE_RES && unit.stats.FIRE_RES.min">{{ unit.stats.FIRE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.ICE_RES && unit.stats.ICE_RES.min">{{ unit.stats.ICE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.WIND_RES && unit.stats.WIND_RES.min">{{ unit.stats.WIND_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.EARTH_RES && unit.stats.EARTH_RES.min">{{ unit.stats.EARTH_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.LIGHTNING_RES && unit.stats.LIGHTNING_RES.min">{{ unit.stats.LIGHTNING_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.WATER_RES && unit.stats.WATER_RES.min">{{ unit.stats.WATER_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.LIGHT_RES && unit.stats.LIGHT_RES.min">{{ unit.stats.LIGHT_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.DARK_RES && unit.stats.DARK_RES.min">{{ unit.stats.DARK_RES.min }} %</span></td>
-          </tr>
-        </tbody>
-      </table>
+          <tbody *ngFor="let i of (windowSize >= 830 ? [-1] : [0, 1])">
+            <tr>
+              <th *ngIf="i == -1 || i == 0" class="sub"><img class="elementImg" title="fire resistance" src="{{'assets/elements/fire.webp'}}" /></th>
+              <th *ngIf="i == -1 || i == 0" class="sub"><img class="elementImg" title="ice resistance" src="{{'assets/elements/ice.webp'}}" /></th>
+              <th *ngIf="i == -1 || i == 0" class="sub"><img class="elementImg" title="wind resistance" src="{{'assets/elements/wind.webp'}}" /></th>
+              <th *ngIf="i == -1 || i == 0" class="sub"><img class="elementImg" title="earht resistance" src="{{'assets/elements/earth.webp'}}" /></th>
+              <th *ngIf="i == -1 || i == 1" class="sub"><img class="elementImg" title="lightning resistance" src="{{'assets/elements/lightning.webp'}}" /></th>
+              <th *ngIf="i == -1 || i == 1" class="sub"><img class="elementImg" title="water resistance" src="{{'assets/elements/water.webp'}}" /></th>
+              <th *ngIf="i == -1 || i == 1" class="sub"><img class="elementImg" title="light resistance" src="{{'assets/elements/light.webp'}}" /></th>
+              <th *ngIf="i == -1 || i == 1" class="sub"><img class="elementImg" title="dark resistance" src="{{'assets/elements/dark.webp'}}" /></th>
+            </tr>
+            <tr>
+              <td *ngIf="i == -1 || i == 0" class="heightResTd"><span *ngIf="unit.stats.FIRE_RES && unit.stats.FIRE_RES.min">{{ unit.stats.FIRE_RES.min }} %</span></td>
+              <td *ngIf="i == -1 || i == 0"><span *ngIf="unit.stats.ICE_RES && unit.stats.ICE_RES.min">{{ unit.stats.ICE_RES.min }} %</span></td>
+              <td *ngIf="i == -1 || i == 0"><span *ngIf="unit.stats.WIND_RES && unit.stats.WIND_RES.min">{{ unit.stats.WIND_RES.min }} %</span></td>
+              <td *ngIf="i == -1 || i == 0"><span *ngIf="unit.stats.EARTH_RES && unit.stats.EARTH_RES.min">{{ unit.stats.EARTH_RES.min }} %</span></td>
+              <td *ngIf="i == -1 || i == 1"><span *ngIf="unit.stats.LIGHTNING_RES && unit.stats.LIGHTNING_RES.min">{{ unit.stats.LIGHTNING_RES.min }} %</span></td>
+              <td *ngIf="i == -1 || i == 1"><span *ngIf="unit.stats.WATER_RES && unit.stats.WATER_RES.min">{{ unit.stats.WATER_RES.min }} %</span></td>
+              <td *ngIf="i == -1 || i == 1"><span *ngIf="unit.stats.LIGHT_RES && unit.stats.LIGHT_RES.min">{{ unit.stats.LIGHT_RES.min }} %</span></td>
+              <td *ngIf="i == -1 || i == 1"><span *ngIf="unit.stats.DARK_RES && unit.stats.DARK_RES.min">{{ unit.stats.DARK_RES.min }} %</span></td>
+            </tr>
+          </tbody>
+        </table>
 
-      <table class="statsTable">
-        <tbody>
-          <tr>
-            <th colspan="5">Res Damage</th>
-          </tr>
-          <tr>
-            <th class="sub"><img class="damageImg" title="slash resistance" src="{{'assets/damage/neutral_slash.webp'}}" /></th>
-            <th class="sub"><img class="damageImg" title="pierce resistance" src="{{'assets/damage/neutral_pierce.webp'}}" /></th>
-            <th class="sub"><img class="damageImg" title="strike resistance" src="{{'assets/damage/neutral_strike.webp'}}" /></th>
-            <th class="sub"><img class="damageImg" title="missile resistance" src="{{'assets/damage/neutral_missile.webp'}}" /></th>
-            <th class="sub"><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.webp'}}" /></th>
-          </tr>
-          <tr>
-            <td class="heightResTd"><span *ngIf="unit.stats.SLASH_RES && unit.stats.SLASH_RES.min">{{ unit.stats.SLASH_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.PIERCE_RES && unit.stats.PIERCE_RES.min">{{ unit.stats.PIERCE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.STRIKE_RES && unit.stats.STRIKE_RES.min">{{ unit.stats.STRIKE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.MISSILE_RES && unit.stats.MISSILE_RES.min">{{ unit.stats.MISSILE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.MAGIC_RES && unit.stats.MAGIC_RES.min">{{ unit.stats.MAGIC_RES.min }} %</span></td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="statsTable">
+          <tbody>
+            <tr>
+              <th colspan="5">Res Damage</th>
+            </tr>
+            <tr>
+              <th class="sub"><img class="damageImg" title="slash resistance" src="{{'assets/damage/neutral_slash.webp'}}" /></th>
+              <th class="sub"><img class="damageImg" title="pierce resistance" src="{{'assets/damage/neutral_pierce.webp'}}" /></th>
+              <th class="sub"><img class="damageImg" title="strike resistance" src="{{'assets/damage/neutral_strike.webp'}}" /></th>
+              <th class="sub"><img class="damageImg" title="missile resistance" src="{{'assets/damage/neutral_missile.webp'}}" /></th>
+              <th class="sub"><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.webp'}}" /></th>
+            </tr>
+            <tr>
+              <td class="heightResTd"><span *ngIf="unit.stats.SLASH_RES && unit.stats.SLASH_RES.min">{{ unit.stats.SLASH_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.PIERCE_RES && unit.stats.PIERCE_RES.min">{{ unit.stats.PIERCE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.STRIKE_RES && unit.stats.STRIKE_RES.min">{{ unit.stats.STRIKE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.MISSILE_RES && unit.stats.MISSILE_RES.min">{{ unit.stats.MISSILE_RES.min }} %</span></td>
+              <td><span *ngIf="unit.stats.MAGIC_RES && unit.stats.MAGIC_RES.min">{{ unit.stats.MAGIC_RES.min }} %</span></td>
+            </tr>
+          </tbody>
+        </table>
 
-      <table class="statsTable">
-        <tbody>
+        <table class="statsTable">
           <tr>
             <th colspan="15">Res Status Ailment</th>
           </tr>
-          <tr>
-            <th class="sub"><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.webp'}}" /></th>
-          </tr>
-          <tr>
-            <td class="heightResTd"><span *ngIf="unit.stats.POISON_RES && unit.stats.POISON_RES.min">{{ unit.stats.POISON_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.FROSTBITE_RES && unit.stats.FROSTBITE_RES.min">{{ unit.stats.FROSTBITE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.BLIND_RES && unit.stats.BLIND_RES.min">{{ unit.stats.BLIND_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.SLEEP_RES && unit.stats.SLEEP_RES.min">{{ unit.stats.SLEEP_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.SILENCE_RES && unit.stats.SILENCE_RES.min">{{ unit.stats.SILENCE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.PARALYZE_RES && unit.stats.PARALYZE_RES.min">{{ unit.stats.PARALYZE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.CONFUSION_RES && unit.stats.CONFUSION_RES.min">{{ unit.stats.CONFUSION_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.PETRIFY_RES && unit.stats.PETRIFY_RES.min">{{ unit.stats.PETRIFY_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.TOAD_RES && unit.stats.TOAD_RES.min">{{ unit.stats.TOAD_RES.min }} %</span></td>
-          </tr>
-          <tr>
-            <th class="sub"><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="stop resistance" src="{{'assets/status-ailments/STOP.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.webp'}}" /></th>
-            <th class="sub"><img class="statusAilmentImg" title="stun resistance" src="{{'assets/status-ailments/STUN.webp'}}" /></th>
-            <th class="sub"></th>
-          </tr>
-          <tr>
-            <td class="heightResTd"><span *ngIf="unit.stats.CHARM_RES && unit.stats.CHARM_RES.min">{{ unit.stats.CHARM_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.SLOW_RES && unit.stats.SLOW_RES.min">{{ unit.stats.SLOW_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.STOP_RES && unit.stats.STOP_RES.min">{{ unit.stats.STOP_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.IMMOBILIZE_RES && unit.stats.IMMOBILIZE_RES.min">{{ unit.stats.IMMOBILIZE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.DISABLE_RES && unit.stats.DISABLE_RES.min">{{ unit.stats.DISABLE_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.BERSERK_RES && unit.stats.BERSERK_RES.min">{{ unit.stats.BERSERK_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.DOOM_RES && unit.stats.DOOM_RES.min">{{ unit.stats.DOOM_RES.min }} %</span></td>
-            <td><span *ngIf="unit.stats.STUN_RES && unit.stats.STUN_RES.min">{{ unit.stats.STUN_RES.min }} %</span></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+          <tbody *ngFor="let row of (windowSize >= 830 ? [['POISON', 'FROSTBITE', 'BLIND', 'SLEEP', 'SILENCE', 'PARALYZE', 'CONFUSION', 'PETRIFY', 'TOAD'], ['CHARM', 'SLOW', 'STOP', 'IMMOBILIZE', 'DISABLE', 'BERSERK', 'DOOM', 'STUN']] : [['POISON', 'FROSTBITE', 'BLIND', 'SLEEP', 'SILENCE'], ['PARALYZE', 'CONFUSION', 'PETRIFY', 'TOAD', 'CHARM'], ['SLOW', 'STOP', 'IMMOBILIZE', 'DISABLE', 'BERSERK'], ['DOOM', 'STUN']])">
+            <tr>
+              <th class="sub" *ngFor="let ailment of row">
+                <img class="statusAilmentImg" title="{{ailment}} resistance" src="{{'assets/status-ailments/' + ailment + '.webp'}}" />
+              </th>
+            </tr>
+            <tr>
+              <td class="heightResTd" *ngFor="let ailment of row">
+                <span *ngIf="unit.stats[ailment + '_RES'] && unit.stats[ailment + '_RES'].min">{{ unit.stats[ailment + '_RES'].min }} %</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-      <table class="statsTable">
-        <tr>
-          <th colspan="15">Total Stat (max lvl & max job)</th>
-        </tr>
-        <tbody *ngFor="let line of indexUnit">
+        <table class="statsTable" *ngIf="windowSize >= 830">
           <tr>
-            <th class="sub" *ngFor="let stat of line">
-              <img *ngIf="indexImageStatsType.indexOf(stat.type) !== -1" class="statusAilmentImg" title="{{ stat.type }}" src="{{ '/assets/buffs/' + stat.type.toLowerCase() + '.webp' }}">
-              <span *ngIf="indexImageStatsType.indexOf(stat.type) === -1">{{ stat.type }}</span>
-            </th>
+            <th colspan="15">Total Stat (max lvl & max job)</th>
           </tr>
+          <tbody *ngFor="let line of indexUnit">
+            <tr>
+              <th class="sub" *ngFor="let stat of line">
+                <img *ngIf="indexImageStatsType.indexOf(stat.type) !== -1" class="statusAilmentImg" title="{{ stat.type }}" src="{{ '/assets/buffs/' + stat.type.toLowerCase() + '.webp' }}">
+                <span *ngIf="indexImageStatsType.indexOf(stat.type) === -1">{{ stat.type }}</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="heightResTd" *ngFor="let stat of line">
+                {{ stat.value }}<span *ngIf="indexImageStatsType.indexOf(stat.type) !== -1"> %</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="statsTable" *ngIf="windowSize < 830">
           <tr>
-            <td class="heightResTd" *ngFor="let stat of line">
-              {{ stat.value }}<span *ngIf="indexImageStatsType.indexOf(stat.type) !== -1"> %</span>
-            </td>
+            <th colspan="15">Total Stat (max lvl & max job)</th>
           </tr>
-        </tbody>
-      </table>
-    </div>
+          <tbody *ngFor="let row of indexUnit">
+            <tr *ngFor="let stat of row">
+              <td>
+                <img *ngIf="indexImageStatsType.indexOf(stat.type) !== -1" class="statusAilmentImg" title="{{ stat.type }}" src="{{ '/assets/buffs/' + stat.type.toLowerCase() + '.webp' }}">
+                <span *ngIf="indexImageStatsType.indexOf(stat.type) === -1">{{ stat.type }}</span>
+              </td>
+              <td class="heightResTd">
+                {{ stat.value }}<span *ngIf="indexImageStatsType.indexOf(stat.type) !== -1"> %</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </ng-container>
   </app-shared-tab>
   <app-shared-tab title="SKILLS">
     <div *ngIf="unit">
@@ -753,74 +861,8 @@
     </div>
   </app-shared-tab>
   <app-shared-tab title="SKILL TREE">
-    <div class="leftBlock" *ngIf="!specialBismark && unit">
-      <table class="unitTable">
-        <tbody>
-          <tr>
-            <th colspan="6">{{ unit.name }}</th>
-          </tr>
-          <tr>
-            <td colspan="6">
-              <a href="{{'assets/units/' + unit.image + '.webp'}}" target="_blank">
-                <img class="unitImg" src="{{'assets/units/' + unit.image + '_full.webp'}}" />
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="2">Rarity</th>
-            <th class="sub" colspan="2">Element</th>
-            <th class="sub" colspan="2">Limited</th>
-          </tr>
-          <tr>
-            <td colspan="2"><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.webp'}}" /></td>
-            <td colspan="2"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.webp'}}" /></td>
-            <td colspan="2" class="bigText">{{ unit.limited ? "Yes" : "No" }}</td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="2">Move</th>
-            <th class="sub" colspan="2">Jump</th>
-            <th class="sub" colspan="2">Cost</th>
-          </tr>
-          <tr>
-            <td colspan="2" class="bigText">{{ unit.stats.MOVE.min }}</td>
-            <td colspan="2" class="bigText">{{ unit.stats.JUMP.min }}</td>
-            <td colspan="2" class="bigText">{{ unit.cost }}</td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="6">Jobs</th>
-          </tr>
-          <tr *ngIf="jobs">
-            <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-              <div *ngIf="jobs[i]">
-                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
-                  <img src="{{'assets/jobs/' + jobs[i].image + '_30.webp'}}" />
-                </div>
-                {{ jobs[i].name }}
-              </div>
-            </td>
-          </tr>
-          <tr *ngIf="jobs[0]">
-            <th class="sub" colspan="6">Weapons</th>
-          </tr>
-          <tr *ngIf="jobs[0]">
-            <td colspan="6">
-              <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
-                <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th class="sub" colspan="6">Armors</th>
-          </tr>
-          <tr *ngIf="jobs[0]">
-            <td colspan="6">
-              <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
-                <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="leftBlock" *ngIf="unit">
+      <ng-container *ngTemplateOutlet="unitLeft"></ng-container>
     </div>
 
     <div class="rightBlock" *ngIf="unit && grid">

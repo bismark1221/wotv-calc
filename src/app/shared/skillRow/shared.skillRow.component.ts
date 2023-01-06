@@ -38,6 +38,7 @@ export class SharedSkillRowComponent extends SharedResizeDetectorComponent {
 
   @Input() mobileView;
   @Input() showMobileTitles;
+  @Input() namePassiveEffects;
 
   @Output() changeLevel = new EventEmitter<string>();
 

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
@@ -25,7 +26,6 @@ export class UnitDetailComponent implements OnInit {
   jobs = [];
   exJobs = [];
   grid = null;
-  specialBismark = false;
   activeTab;
   possibleSkillTypes = ['support', 'counter'];
   indexUnit = [];
@@ -82,6 +82,9 @@ export class UnitDetailComponent implements OnInit {
     STAFFB: 'Staff (Devout, etc)'
   };
 
+  windowSize = 1230;
+  tmrStatsTypesByRow = [['image', 'name', 'type']];
+
   constructor(
     private unitService: UnitService,
     private equipmentService: EquipmentService,
@@ -94,9 +97,18 @@ export class UnitDetailComponent implements OnInit {
     private gridService: GridService,
     private navService: NavService,
     private toolService: ToolService,
-    private indexService: IndexService
+    private indexService: IndexService,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     this.version = this.navService.getVersion();
+  }
+
+  @HostListener('window:resize', []) onWindowResize() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.windowSize = window.innerWidth;
+
+      this.getTmrStatsTypesByRow();
+    }
   }
 
   ngOnInit(): void {
@@ -139,6 +151,8 @@ export class UnitDetailComponent implements OnInit {
           break;
       }
     });
+
+    this.onWindowResize();
   }
 
   private formatUnit() {
@@ -313,6 +327,7 @@ export class UnitDetailComponent implements OnInit {
       if (this.unit.tmr) {
         this.unit.tmr.name = this.toolService.getName(this.unit.tmr);
         this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats[0]);
+        this.getTmrStatsTypesByRow();
 
         this.unit.tmr.formattedSkills = [];
         for (const skillData of this.unit.tmr.skills[0]) {
@@ -535,6 +550,19 @@ export class UnitDetailComponent implements OnInit {
     this.unit.EXJobsStats.push(stats);
   }
 
+  private getTmrStatsTypesByRow() {
+    if (this.unit && this.unit.tmr) {
+      this.tmrStatsTypesByRow = [['image', 'name', 'type'], []];
+      this.unit.tmr.statsTypes.forEach(statType => {
+        if (this.windowSize < 830 && this.tmrStatsTypesByRow[this.tmrStatsTypesByRow.length - 1].length === 3) {
+          this.tmrStatsTypesByRow.push([]);
+        }
+
+        this.tmrStatsTypesByRow[this.tmrStatsTypesByRow.length - 1].push(statType);
+      });
+    }
+  }
+
   getSkillsPerJob(job) {
     const skills = [];
     if (job === 0) {
@@ -593,10 +621,6 @@ export class UnitDetailComponent implements OnInit {
         this.hideNode(childNode);
       });
     }
-  }
-
-  clickSpecialBismark() {
-    this.specialBismark = !this.specialBismark;
   }
 
   getRoute(route) {
