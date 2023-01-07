@@ -31,6 +31,8 @@ export class Quest {
   winCond = [];
   looseCond = [];
 
+  randomMaps = [];
+
   lastRelease = null;
 
   constructFromJson(quest, translateService) {
@@ -59,6 +61,8 @@ export class Quest {
     this.drops = quest.drops;
     this.winCond = quest.winCond;
     this.looseCond = quest.looseCond;
+
+    this.randomMaps = quest.randomMaps;
 
     this.lastRelease = quest.lastRelease;
 

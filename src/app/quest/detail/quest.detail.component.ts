@@ -22,6 +22,7 @@ export class QuestDetailComponent implements OnInit {
   isCollapsedChest = {};
   isCollapsedAlly = {};
   isCollapsedObject = {};
+  isCollapsedRandomMap = {};
   statImage = {
     BRAVERY: '',
     FAITH: '',
@@ -102,11 +103,11 @@ export class QuestDetailComponent implements OnInit {
       this.quest.formattedEnemies = [];
       let i = 0;
       for (const enemy of this.quest.enemies) {
-        this.quest.formattedEnemies.push(await this.formatEnemyOrAlly(enemy, i, 'enemies'));
+        this.quest.formattedEnemies.push(await this.formatEnemyOrAlly(enemy, i, 'enemies', this.quest));
         this.isCollapsedEnemy[i] = true;
 
         if (this.quest.formattedEnemies[i].size > 0) {
-          this.changeEnemySizeInGrid(i, this.quest.formattedEnemies[i].size);
+          this.changeEnemySizeInGrid(i, this.quest.formattedEnemies[i].size, this.quest.grid);
         }
 
         i++;
@@ -115,7 +116,7 @@ export class QuestDetailComponent implements OnInit {
       this.quest.formattedAllies = [];
       i = 0;
       for (const ally of this.quest.allies) {
-        this.quest.formattedAllies.push(await this.formatEnemyOrAlly(ally, i, 'allies'));
+        this.quest.formattedAllies.push(await this.formatEnemyOrAlly(ally, i, 'allies', this.quest));
         this.isCollapsedAlly[i] = true;
         i++;
       }
@@ -123,7 +124,7 @@ export class QuestDetailComponent implements OnInit {
       this.quest.formattedObjects = [];
       i = 0;
       for (const object of this.quest.objects) {
-        this.quest.formattedObjects.push(await this.formatEnemyOrAlly(object, i, 'objects'));
+        this.quest.formattedObjects.push(await this.formatEnemyOrAlly(object, i, 'objects', this.quest));
         this.isCollapsedObject[i] = true;
         i++;
       }
@@ -131,14 +132,14 @@ export class QuestDetailComponent implements OnInit {
       this.quest.formattedSwitchs = [];
       i = 0;
       for (const rawSwitch of this.quest.switchs) {
-        this.quest.formattedSwitchs.push(await this.formatOtherItem(rawSwitch));
+        this.quest.formattedSwitchs.push(await this.formatOtherItem(rawSwitch, this.quest));
         i++;
       }
 
       this.quest.formattedChests = [];
       i = 0;
       for (const chest of this.quest.chests) {
-        this.quest.formattedChests.push(await this.formatOtherItem(chest));
+        this.quest.formattedChests.push(await this.formatOtherItem(chest, this.quest));
         this.isCollapsedChest[i] = true;
         i++;
       }
@@ -205,6 +206,129 @@ export class QuestDetailComponent implements OnInit {
 
         this.quest.dropLists[rawDrop.dataId] = formattedDropList;
       }
+
+
+      this.quest.formattedRandomMaps = [];
+      let randomMapIndex = 0;
+      for (const randomMap of this.quest.randomMaps) {
+        this.isCollapsedRandomMap[randomMapIndex] = true;
+        randomMapIndex++;
+        const formattedRandomMap = {
+          grid: randomMap.grid,
+          formattedEnemies: [],
+          isCollapsedEnemy: [],
+          formattedAllies: [],
+          isCollapsedAlly: [],
+          formattedObjects: [],
+          isCollapsedObject: [],
+          formattedSwitchs: [],
+          formattedChests: [],
+          isCollapsedChest: [],
+          formattedWinCond: '',
+          formattedLooseCond: '',
+          dropLists: {},
+          enemies: randomMap.enemies,
+          allies: randomMap.allies,
+          objects: randomMap.objects,
+          switchs: randomMap.switchs,
+          chests: randomMap.chests,
+          winCond: randomMap.winCond,
+          looseCond: randomMap.looseCond,
+          drops: randomMap.drops,
+          rawBestiary: this.quest.rawBestiary,
+          rawEquipments: this.quest.rawEquipments,
+          rawItems: this.quest.rawItems,
+          rawJobs: this.quest.rawJobs,
+          rawSkills: this.quest.rawSkills
+        };
+
+        randomMap.rawBestiary = this.quest.rawBestiary;
+        randomMap.rawEquipments = this.quest.rawEquipments;
+        randomMap.rawItems = this.quest.rawItems;
+        randomMap.rawJobs = this.quest.rawJobs;
+        randomMap.rawSkills = this.quest.rawSkills;
+
+        i = 0;
+        for (const enemy of randomMap.enemies) {
+          formattedRandomMap.formattedEnemies.push(await this.formatEnemyOrAlly(enemy, i, 'enemies', randomMap));
+          formattedRandomMap.isCollapsedEnemy[i] = true;
+
+          if (formattedRandomMap.formattedEnemies[i].size > 0) {
+            this.changeEnemySizeInGrid(i, formattedRandomMap.formattedEnemies[i].size, formattedRandomMap.grid);
+          }
+
+          i++;
+        }
+
+        i = 0;
+        for (const ally of randomMap.allies) {
+          formattedRandomMap.formattedAllies.push(await this.formatEnemyOrAlly(ally, i, 'allies', randomMap));
+          formattedRandomMap.isCollapsedAlly[i] = true;
+          i++;
+        }
+
+        i = 0;
+        for (const object of randomMap.objects) {
+          formattedRandomMap.formattedObjects.push(await this.formatEnemyOrAlly(object, i, 'objects', randomMap));
+          formattedRandomMap.isCollapsedObject[i] = true;
+          i++;
+        }
+
+        i = 0;
+        for (const rawSwitch of randomMap.switchs) {
+          formattedRandomMap.formattedSwitchs.push(await this.formatOtherItem(rawSwitch, randomMap));
+          i++;
+        }
+
+        i = 0;
+        for (const chest of randomMap.chests) {
+          formattedRandomMap.formattedChests.push(await this.formatOtherItem(chest, randomMap));
+          formattedRandomMap.isCollapsedChest[i] = true;
+          i++;
+        }
+
+        const randomMapFormattedWinCond = [];
+        if (randomMap.winCond) {
+          for (const winCond of randomMap.winCond) {
+            randomMapFormattedWinCond.push(await this.questService.formatWinLooseCondition(winCond, formattedRandomMap));
+          }
+        }
+        formattedRandomMap.formattedWinCond = randomMapFormattedWinCond.join(' or ');
+
+        const randomMapFormattedLooseCond = [];
+        if (randomMap.looseCond) {
+          for (const looseCond of randomMap.looseCond) {
+            randomMapFormattedLooseCond.push(await this.questService.formatWinLooseCondition(looseCond, formattedRandomMap));
+          }
+        }
+        formattedRandomMap.formattedLooseCond = randomMapFormattedLooseCond.join(' or ');
+
+        for (const rawDrop of randomMap.drops) {
+          const formattedDropList = [];
+
+          if (rawDrop.items) {
+            for (const itemId of Object.keys(rawDrop.items)) {
+              if (itemId !== '') {
+                const formattedItem = this.quest.rawItems.find(searchedItem => searchedItem.dataId === itemId);
+                if (formattedItem) {
+                  formattedItem.name = this.toolService.getName(formattedItem);
+                  for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
+                    formattedItem.drop = {
+                      num: itemDropNum,
+                      value: rawDrop.items[itemId][itemDropNum]
+                    };
+                    formattedDropList.push(JSON.parse(JSON.stringify(formattedItem)));
+                  }
+                }
+              }
+            }
+          }
+
+          formattedRandomMap.dropLists[rawDrop.dataId] = formattedDropList;
+        }
+
+        this.quest.formattedRandomMaps.push(formattedRandomMap);
+      }
     }
   }
 
@@ -249,8 +373,8 @@ export class QuestDetailComponent implements OnInit {
     return formattedMission;
   }
 
-  async formatEnemyOrAlly(enemy, index, type) {
-    let formattedEnemy = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === enemy.dataId);
+  async formatEnemyOrAlly(enemy, index, type, quest) {
+    let formattedEnemy = quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === enemy.dataId);
     formattedEnemy.name = this.toolService.getName(formattedEnemy);
     formattedEnemy.statsForJob = {};
 
@@ -269,7 +393,7 @@ export class QuestDetailComponent implements OnInit {
 
     formattedEnemy.job = null;
     if (formattedEnemy.jobs && formattedEnemy.jobs[0]) {
-      formattedEnemy.job = this.quest.rawJobs.find(searchedJob => searchedJob.dataId === formattedEnemy.jobs[0]);
+      formattedEnemy.job = quest.rawJobs.find(searchedJob => searchedJob.dataId === formattedEnemy.jobs[0]);
       formattedEnemy.job.name = this.toolService.getName(formattedEnemy.job);
     }
 
@@ -325,7 +449,7 @@ export class QuestDetailComponent implements OnInit {
     formattedEnemy.skills = [];
 
     if (formattedEnemy.attack) {
-      const formattedSkill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.attack);
+      const formattedSkill = quest.rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.attack);
       if (formattedSkill) {
         formattedSkill.name = this.toolService.getName(formattedSkill);
 
@@ -339,8 +463,8 @@ export class QuestDetailComponent implements OnInit {
       }
     }
 
-    for (const rawSkill of this.quest[type][index].skills) {
-      let formattedSkill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === rawSkill.iname);
+    for (const rawSkill of quest[type][index].skills) {
+      let formattedSkill = quest.rawSkills.find(searchedSkill => searchedSkill.dataId === rawSkill.iname);
       if (formattedSkill) {
         formattedSkill = JSON.parse(JSON.stringify(formattedSkill));
         formattedSkill.level = rawSkill.rank;
@@ -373,7 +497,7 @@ export class QuestDetailComponent implements OnInit {
     }
 
     if (formattedEnemy.limit) {
-      const formattedSkill = this.quest.rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.limit);
+      const formattedSkill = quest.rawSkills.find(searchedSkill => searchedSkill.dataId === formattedEnemy.limit);
       if (formattedSkill) {
         formattedSkill.name = this.toolService.getName(formattedSkill);
 
@@ -394,10 +518,10 @@ export class QuestDetailComponent implements OnInit {
 
     // @TODO Managed INITIAL_AP !!! RANGE !!!
 
-    if (this.quest[type][index].entryCond && this.quest[type][index].entryCond.length > 0) {
+    if (quest[type][index].entryCond && quest[type][index].entryCond.length > 0) {
       const formattedEntryCond = [];
-      for (const entryCond of this.quest[type][index].entryCond) {
-        formattedEntryCond.push(await this.questService.formatEntryCondition(entryCond, this.quest));
+      for (const entryCond of quest[type][index].entryCond) {
+        formattedEntryCond.push(await this.questService.formatEntryCondition(entryCond, quest));
       }
 
       formattedEnemy.formattedEntryCond = formattedEntryCond;
@@ -592,8 +716,8 @@ export class QuestDetailComponent implements OnInit {
     });
   }
 
-  async formatOtherItem(item) {
-    const formattedItem = this.quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === item.dataId);
+  async formatOtherItem(item, quest) {
+    const formattedItem = quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === item.dataId);
     formattedItem.name = this.toolService.getName(formattedItem);
 
     return formattedItem;
@@ -603,12 +727,12 @@ export class QuestDetailComponent implements OnInit {
     return this.questService.formatType(type);
   }
 
-  private changeEnemySizeInGrid(enemyNumber, size) {
+  private changeEnemySizeInGrid(enemyNumber, size, grid) {
     let x = 0;
     let y = 0;
     let enemyFounded = false;
 
-    this.quest.grid.forEach((line, lineIndex) => {
+    grid.forEach((line, lineIndex) => {
       line.forEach((node, nodeIndex) => {
         if (node.enemy === enemyNumber) {
           x = lineIndex;
@@ -642,11 +766,11 @@ export class QuestDetailComponent implements OnInit {
       let countNode = 0;
       for (let i = x; i <= x + (size !== 13 ? size : 0); i++) {
         for (let j = y; j <= y + size; j++) {
-          this.checkIfTileExist(i, j);
-          this.quest.grid[i][j].enemy = enemyNumber;
+          this.checkIfTileExist(i, j, grid);
+          grid[i][j].enemy = enemyNumber;
 
           if (nodeClasses[size]) {
-            this.quest.grid[i][j].class = nodeClasses[size][countNode];
+            grid[i][j].class = nodeClasses[size][countNode];
           }
           countNode++;
         }
@@ -654,19 +778,19 @@ export class QuestDetailComponent implements OnInit {
     }
   }
 
-  private checkIfTileExist(x, y) {
-    if (!this.quest.grid[x]) {
-      this.quest.grid[x] = [];
-      for (let i = 0; i <= this.quest.grid[0].length - 1; i++) {
-        this.quest.grid[x][i] = {
+  private checkIfTileExist(x, y, grid) {
+    if (!grid[x]) {
+      grid[x] = [];
+      for (let i = 0; i <= grid[0].length - 1; i++) {
+        grid[x][i] = {
           h: 0,
           t: 'TILE_NOT_IN_GRID'
         };
       }
     }
 
-    if (!this.quest.grid[0][y]) {
-      this.quest.grid.forEach(line => {
+    if (!grid[0][y]) {
+      grid.forEach(line => {
         for (let i = 0; i <= y; i++) {
           if (!line[i]) {
             line[i] = {
