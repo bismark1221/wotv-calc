@@ -39,6 +39,9 @@ export class SharedSkillRowComponent extends SharedResizeDetectorComponent {
   @Input() mobileView;
   @Input() showMobileTitles;
   @Input() namePassiveEffects;
+  @Input() mobileCollapseDetail;
+
+  collapsedDetail = true;
 
   @Output() changeLevel = new EventEmitter<string>();
 
@@ -50,5 +53,9 @@ export class SharedSkillRowComponent extends SharedResizeDetectorComponent {
 
   changeSkillLevel() {
     this.changeLevel.emit(this.skill.level);
+  }
+
+  showDetail() {
+    this.collapsedDetail = !this.collapsedDetail;
   }
 }

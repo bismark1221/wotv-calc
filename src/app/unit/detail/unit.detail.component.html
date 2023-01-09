@@ -751,8 +751,8 @@
       </div>
     </ng-container>
   </app-shared-tab>
-  <app-shared-tab title="SKILLS">
-    <div *ngIf="unit">
+  <app-shared-tab title="SKILLS" mobileManaged="true">
+    <div *ngIf="unit" class="skillsBlock">
       <table class="skillsTable" *ngFor="let i of possibleSkillTypes">
         <tbody>
           <tr>
@@ -763,11 +763,11 @@
               <img title="skill type" src="{{'assets/jobs/' + exJobs[0].image + '_30.webp'}}" />&nbsp;EX Buffs
             </th>
           </tr>
-          <tr>
+          <tr *ngIf="windowSize >= 830">
             <th class="sub skillJobTd">Job</th>
             <th class="sub skillJobTd">Job lvl</th>
             <th class="sub skillStarTd">Star lvl</th>
-            <th *ngIf="i === 'counter'" class="sub rangeTd">Type</th>
+            <th *ngIf="i === 'counter' && windowSize >= 1230" class="sub rangeTd">Type</th>
             <th class="sub skillNameTd">Name</th>
             <th class="sub">Effects</th>
             <th *ngIf="i === 'counter'" class="sub rangeTd">Range</th>
@@ -775,11 +775,29 @@
           </tr>
         </tbody>
 
-        <tbody app-shared-skillWithUpgrade *ngFor="let skill of getSkillsPerType(i)" [skill]="skill" [jobs]="jobs" [showJobIcon]="true" [showJobLvl]="true" [showStarLvl]="true" [showName]="true" [showEffects]="true" [upgradeColSpan]="3" [showType]="i === 'counter'" [showRange]="i === 'counter'" [showHits]="i === 'counter'"></tbody>
+        <tbody *ngFor="let skill of getSkillsPerType(i); let skillIndex = index"
+          app-shared-skillWithUpgrade
+          [skill]="skill"
+          [jobs]="jobs"
+          [showJobIcon]="true"
+          [showJobLvl]="true"
+          [showStarLvl]="true"
+          [showName]="true"
+          [showEffects]="true"
+          [upgradeColSpan]="3"
+          [showType]="i === 'counter' && windowSize >= 1230"
+          [showTypeWithName]="i === 'counter' && windowSize < 1230"
+          [showRange]="i === 'counter'"
+          [showHits]="i === 'counter'"
+
+          [showMobileSeparator]="skillIndex < getSkillsPerType(i).length - 1"
+          [mobileView]="windowSize < 830"
+          [mobileCollapseDetail]="true"
+        ></tbody>
       </table>
 
       <table class="skillsTable" *ngIf="unit.formattedAttack">
-        <tbody>
+        <tbody *ngIf="windowSize >= 830">
           <tr>
             <th class="sub"></th>
             <th class="sub"></th>
@@ -789,7 +807,21 @@
           </tr>
         </tbody>
 
-        <tbody app-shared-skillWithUpgrade [skill]="unit.formattedAttack" [showName]="true" [showEffects]="true" [upgradeColSpan]="1" [showType]="true" [showRange]="true" [showHits]="true" [basicAttack]="true"></tbody>
+        <tbody app-shared-skillWithUpgrade
+          [skill]="unit.formattedAttack"
+          [showName]="true"
+          [showEffects]="true"
+          [upgradeColSpan]="1"
+          [showType]="windowSize >= 1230"
+          [showTypeWithName]="windowSize < 1230"
+          [showRange]="true"
+          [showHits]="true"
+          [basicAttack]="true"
+
+          [showMobileSeparator]="unit.formattedAttack.upgrades.length > 0"
+          [mobileView]="windowSize < 830"
+          [mobileCollapseDetail]="true"
+        ></tbody>
       </table>
 
       <table class="skillsTable" *ngFor="let i of [0, 1, 2, 3]">
@@ -808,10 +840,10 @@
               {{ jobs[i - 1].name }}
             </th>
           </tr>
-          <tr>
+          <tr *ngIf="windowSize >= 830">
             <th class="sub skillJobTd">Job lvl</th>
             <th class="sub skillStarTd">Star lvl</th>
-            <th class="sub skillTypeTd">Type</th>
+            <th class="sub skillTypeTd" *ngIf="windowSize >= 1230">Type</th>
             <th class="sub skillNameTd">Name</th>
             <th class="sub">Effects</th>
             <th class="sub rangeTd">Range</th>
@@ -820,7 +852,25 @@
             <th class="sub skillCostTd">Cost</th>
           </tr>
         </tbody>
-        <tbody app-shared-skillWithUpgrade *ngFor="let skill of getSkillsPerJob(i)" [skill]="skill" [showJobLvl]="true" [showStarLvl]="true" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showCasts]="true" [showHits]="true" [showCost]="true" [upgradeColSpan]="2"></tbody>
+        <tbody *ngFor="let skill of getSkillsPerJob(i); let skillIndex = index"
+          app-shared-skillWithUpgrade
+          [skill]="skill"
+          [showJobLvl]="true"
+          [showStarLvl]="true"
+          [showType]="windowSize >= 1230"
+          [showTypeWithName]="windowSize < 1230"
+          [showName]="true"
+          [showEffects]="true"
+          [showRange]="true"
+          [showCasts]="true"
+          [showHits]="true"
+          [showCost]="true"
+          [upgradeColSpan]="2"
+
+          [showMobileSeparator]="skillIndex < getSkillsPerJob(i).length - 1"
+          [mobileView]="windowSize < 830"
+          [mobileCollapseDetail]="true"
+        ></tbody>
       </table>
 
       <table class="skillsTable" *ngIf="unit.formattedUnlockedSkills.length > 0">
@@ -828,8 +878,8 @@
           <tr>
             <th colspan="6">Unlocked Skills</th>
           </tr>
-          <tr>
-            <th class="sub skillTypeTd">Type</th>
+          <tr *ngIf="windowSize >= 830">
+            <th class="sub skillTypeTd" *ngIf="windowSize >= 1230">Type</th>
             <th class="sub limitNameTd">Name</th>
             <th class="sub">Effects</th>
             <th class="sub rangeTd">Range</th>
@@ -838,7 +888,22 @@
           </tr>
         </tbody>
 
-        <tbody app-shared-skillWithUpgrade *ngFor="let skill of unit.formattedUnlockedSkills" [skill]="skill" [showType]="true" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true" [showCost]="true" [upgradeColSpan]="1"></tbody>
+        <tbody *ngFor="let skill of unit.formattedUnlockedSkills; let skillIndex = index"
+          app-shared-skillWithUpgrade
+          [skill]="skill"
+          [showType]="windowSize >= 1230"
+          [showTypeWithName]="windowSize < 1230"
+          [showName]="true"
+          [showEffects]="true"
+          [showRange]="true"
+          [showHits]="true"
+          [showCost]="true"
+          [upgradeColSpan]="1"
+
+          [showMobileSeparator]="skillIndex < unit.formattedUnlockedSkills.length - 1"
+          [mobileView]="windowSize < 830"
+          [mobileCollapseDetail]="true"
+        ></tbody>
       </table>
 
       <table class="skillsTable" *ngIf="unit.formattedLimit">
@@ -846,7 +911,7 @@
           <tr>
             <th colspan="99">Limit Burst</th>
           </tr>
-          <tr>
+          <tr *ngIf="windowSize >= 830">
             <th class="sub limitNameTd">Name</th>
             <th class="sub">Effects</th>
             <th class="sub rangeTd">Range</th>
@@ -856,32 +921,49 @@
           </tr>
         </tbody>
 
-        <tbody app-shared-skillWithUpgrade [skill]="unit.formattedLimit" [showName]="true" [showEffects]="true" [showRange]="true" [showHits]="true" [showCost]="true" [showCasts]="true" [upgradeColSpan]="1" [showTypeWithName]="true" [noNameOnUpgrade]="true"></tbody>
+        <tbody app-shared-skillWithUpgrade
+          [skill]="unit.formattedLimit"
+          [showName]="true"
+          [showEffects]="true"
+          [showRange]="true"
+          [showHits]="true"
+          [showCost]="true"
+          [showCasts]="true"
+          [upgradeColSpan]="1"
+          [showTypeWithName]="true"
+          [noNameOnUpgrade]="windowSize >= 830"
+
+          [showMobileSeparator]="unit.formattedLimit.upgrades.length > 0"
+          [mobileView]="windowSize < 830"
+          [mobileCollapseDetail]="true"
+        ></tbody>
       </table>
     </div>
   </app-shared-tab>
-  <app-shared-tab title="SKILL TREE">
-    <div class="leftBlock" *ngIf="unit">
-      <ng-container *ngTemplateOutlet="unitLeft"></ng-container>
-    </div>
-
-    <div class="rightBlock" *ngIf="unit && grid">
-      <div [ngClass]="{'unitGridContainer': !unit.exJobs || unit.exJobs.length === 0, 'EXunitGridContainer': unit.exJobs && unit.exJobs.length > 0}" style="text-align: center;">
-        <ul class="hexGrid">
-          <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
-            <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
-
-            <div class="hex activated" *ngIf="grid.nodesForGrid[node].type === 'center'"></div>
-
-            <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type === 'text'">
-              <span class="text">{{ grid.nodesForGrid[node].value }}</span>
-            </div>
-          </li>
-        </ul>
-
-        <div [innerHTML]="grid.lines | safeHtml"></div>
+  <app-shared-tab title="SKILL TREE" mobileManaged="true">
+    <ng-container *ngIf="unit">
+      <div class="leftBlock" *ngIf="windowSize >= 1300">
+        <ng-container *ngTemplateOutlet="unitLeft"></ng-container>
       </div>
-    </div>
+
+      <div class="rightBlock" *ngIf="unit && grid">
+        <div #unitGridContainer [ngClass]="{'unitGridContainer': !unit.exJobs || unit.exJobs.length === 0, 'EXunitGridContainer': unit.exJobs && unit.exJobs.length > 0}" style="text-align: center;">
+          <ul class="hexGrid">
+            <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
+              <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
+
+              <div class="hex activated" *ngIf="grid.nodesForGrid[node].type === 'center'"></div>
+
+              <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type === 'text'">
+                <span class="text">{{ grid.nodesForGrid[node].value }}</span>
+              </div>
+            </li>
+          </ul>
+
+          <div [innerHTML]="grid.lines | safeHtml"></div>
+        </div>
+      </div>
+    </ng-container>
   </app-shared-tab>
   <app-shared-tab *ngIf="unit" title="GO TO BUILDER >>>" [link]="getRoute('/builder/unit/' + unit.slug)">
   </app-shared-tab>

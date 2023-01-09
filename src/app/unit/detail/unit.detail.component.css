@@ -93,8 +93,14 @@
   border-right: 0;
 }
 
-.skillsTable {
+.skillsBlock {
   width: 1200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.skillsTable {
+  width: 100%;
 }
 
 .rangeTd {
@@ -166,14 +172,40 @@
 
 @media (max-width: 1229px) {
   .leftBlockMediumSize {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
 
   .rightBlock {
     width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .skillsBlock {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .EXunitGridContainer {
+    width: 100vw;
+    width: -webkit-calc(100vw - 40px);
+    width: -moz-calc(100vw - 40px);
+    width: calc(100vw - 40px);
+    overflow-x: visible;
+    left: 10px;
+    overflow-y: hidden;
+  }
+
+  .EXunitGridContainer > .hexGrid {
+    width: 800px;
+  }
+}
+
+@media (max-width: 829px) {
+  .skillsBlock {
+    width: auto;
   }
 }

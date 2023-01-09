@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, PLATFORM_ID, Inject } from '@angular/core';
+import { Component, OnInit, HostListener, PLATFORM_ID, Inject, ViewChild, ElementRef } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
@@ -84,6 +84,7 @@ export class UnitDetailComponent implements OnInit {
 
   windowSize = 1230;
   tmrStatsTypesByRow = [['image', 'name', 'type']];
+  @ViewChild('unitGridContainer') unitGridContainer: ElementRef;
 
   constructor(
     private unitService: UnitService,
@@ -108,6 +109,16 @@ export class UnitDetailComponent implements OnInit {
       this.windowSize = window.innerWidth;
 
       this.getTmrStatsTypesByRow();
+
+      if (this.windowSize >= 930) {
+        if (this.unitGridContainer) {
+          this.unitGridContainer.nativeElement.style.width = '800px';
+        }
+      } else {
+        if (this.unitGridContainer) {
+          this.unitGridContainer.nativeElement.style.width = (this.windowSize - 40) + 'px';
+        }
+      }
     }
   }
 
@@ -552,7 +563,8 @@ export class UnitDetailComponent implements OnInit {
 
   private getTmrStatsTypesByRow() {
     if (this.unit && this.unit.tmr) {
-      this.tmrStatsTypesByRow = [['image', 'name', 'type'], []];
+      this.tmrStatsTypesByRow = [['image', 'name', 'type']];
+
       this.unit.tmr.statsTypes.forEach(statType => {
         if (this.windowSize < 830 && this.tmrStatsTypesByRow[this.tmrStatsTypesByRow.length - 1].length === 3) {
           this.tmrStatsTypesByRow.push([]);

@@ -19,8 +19,11 @@
   [showTypeWithName]="showTypeWithName"
   [mobileView]="mobileView"
   [showMobileTitles]="showMobileTitles"
+  [mobileCollapseDetail]="mobileCollapseDetail"
   [skillIndex]="skillIndex">
 </tr>
+
+<tr *ngIf="mobileView && showMobileSeparator" class="mobileSeparator"></tr>
 
 <ng-container *ngFor="let upgradedSkill of skill.upgrades">
   <tr
@@ -43,30 +46,37 @@
     [noNameOnUpgrade]="noNameOnUpgrade"
     [mobileView]="mobileView"
     [showMobileTitles]="showMobileTitles"
+    [mobileCollapseDetail]="mobileCollapseDetail"
     [skillIndex]="skillIndex">
   </tr>
 
-  <tr
-    app-shared-skillRow
-    *ngFor="let upgradedSkillOfUpgrade of upgradedSkill.upgrades"
-    [isUpgrade]="true"
-    [skill]="upgradedSkillOfUpgrade"
-    [jobs]="jobs"
-    [showType]="showType"
-    [showName]="showName"
-    [showEffects]="showEffects"
-    [showRange]="showRange"
-    [showCasts]="showCasts"
-    [showHits]="showHits"
-    [showCost]="showCost"
-    [upgradeColSpan]="upgradeColSpan"
-    [basicAttack]="basicAttack"
-    [showRaidLevel]="showRaidLevel"
-    [rawSkills]="rawSkills"
-    [showTypeWithName]="showTypeWithName"
-    [noNameOnUpgrade]="noNameOnUpgrade"
-    [mobileView]="mobileView"
-    [showMobileTitles]="showMobileTitles"
-    [skillIndex]="skillIndex">
-  </tr>
+  <tr *ngIf="mobileView && showMobileSeparator" class="mobileSeparator"></tr>
+
+  <ng-container *ngFor="let upgradedSkillOfUpgrade of upgradedSkill.upgrades">
+    <tr
+      app-shared-skillRow
+      [isUpgrade]="true"
+      [skill]="upgradedSkillOfUpgrade"
+      [jobs]="jobs"
+      [showType]="showType"
+      [showName]="showName"
+      [showEffects]="showEffects"
+      [showRange]="showRange"
+      [showCasts]="showCasts"
+      [showHits]="showHits"
+      [showCost]="showCost"
+      [upgradeColSpan]="upgradeColSpan"
+      [basicAttack]="basicAttack"
+      [showRaidLevel]="showRaidLevel"
+      [rawSkills]="rawSkills"
+      [showTypeWithName]="showTypeWithName"
+      [noNameOnUpgrade]="noNameOnUpgrade"
+      [mobileView]="mobileView"
+      [showMobileTitles]="showMobileTitles"
+      [mobileCollapseDetail]="mobileCollapseDetail"
+      [skillIndex]="skillIndex">
+    </tr>
+
+    <tr *ngIf="mobileView && showMobileSeparator" class="mobileSeparator"></tr>
+  </ng-container>
 </ng-container>
