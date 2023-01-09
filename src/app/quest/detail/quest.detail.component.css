@@ -1,5 +1,5 @@
 .row {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -360,4 +360,77 @@
 .dropRateItemBlock {
   display: inline-block;
   margin-right: 10px;
+}
+
+.randomMapTitle {
+  cursor: pointer;
+}
+
+@media (max-width: 1349px) {
+  .leftBlock {
+    display: block;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .rightBlock {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .allyTable, .enemyTable, .chestTable {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 799px) {
+  .mapTile {
+    width: 20px;
+    height: 35px;
+    line-height: 16px;
+  }
+
+  .enemyTile, .bigEnemyTopLeft, .bigEnemyTopMiddle, .bigEnemyTopRight, .bigEnemyMiddleLeft, .bigEnemyMiddleMiddle, .bigEnemyMiddleRight, .bigEnemyBottomLeft, .bigEnemyBottomMiddle, .bigEnemyBottomRight {
+    background-color: #ef6c6c;
+    background-image: none;
+  }
+
+  .partyTile {
+    background-color: #9d8c39;
+    background-image: none;
+  }
+
+  .allyTile {
+    background-color: green;
+    background-image: none;
+  }
+
+  .chestTile {
+    background-color: #2828e3;
+    background-image: none;
+  }
+
+  .objectTile {
+    background-color: #b133b1;
+    background-image: none;
+  }
+
+  .switchTile {
+    background-color: #3fb7b7;
+    background-image: none;
+  }
+
+  .gridBlock {
+    max-width: 100vw;
+    max-width: -webkit-calc(100vw - 40px);
+    max-width: -moz-calc(100vw - 40px);
+    max-width: calc(100vw - 40px);
+    overflow-x: visible;
+    overflow-y: hidden;
+  }
 }

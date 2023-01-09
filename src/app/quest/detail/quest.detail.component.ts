@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
@@ -18,10 +19,12 @@ import { SkillService } from '../../services/skill.service';
 export class QuestDetailComponent implements OnInit {
   quest = null;
   enemies = [];
-  isCollapsedEnemy = {};
-  isCollapsedChest = {};
-  isCollapsedAlly = {};
-  isCollapsedObject = {};
+  isCollapsed = {
+    enemy: {},
+    chest: {},
+    ally: {},
+    object: {}
+  }
   isCollapsedRandomMap = {};
   statImage = {
     BRAVERY: '',
@@ -61,6 +64,8 @@ export class QuestDetailComponent implements OnInit {
     STUN_RES : 'assets/status-ailments/STUN.webp'
   };
 
+  windowSize = 1350;
+
   constructor(
     private questService: QuestService,
     private rangeService: RangeService,
@@ -70,13 +75,20 @@ export class QuestDetailComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private toolService: ToolService,
-    private skillService: SkillService
+    private skillService: SkillService,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
       if (this.quest) {
         await this.formatQuest();
       }
     });
+  }
+
+  @HostListener('window:resize', []) onWindowResize() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.windowSize = window.innerWidth;
+    }
   }
 
   ngOnInit(): void {
@@ -90,6 +102,8 @@ export class QuestDetailComponent implements OnInit {
         this.navService.setSEO(this.quest.names.en, this.quest.names.en + ' is a quest in wotv. Find in which enemies you will fight, their position on the grid, the drops, ...');
       }
     });
+
+    this.onWindowResize();
   }
 
   private async formatQuest() {
@@ -104,7 +118,7 @@ export class QuestDetailComponent implements OnInit {
       let i = 0;
       for (const enemy of this.quest.enemies) {
         this.quest.formattedEnemies.push(await this.formatEnemyOrAlly(enemy, i, 'enemies', this.quest));
-        this.isCollapsedEnemy[i] = true;
+        this.isCollapsed.enemy[i] = true;
 
         if (this.quest.formattedEnemies[i].size > 0) {
           this.changeEnemySizeInGrid(i, this.quest.formattedEnemies[i].size, this.quest.grid);
@@ -117,7 +131,7 @@ export class QuestDetailComponent implements OnInit {
       i = 0;
       for (const ally of this.quest.allies) {
         this.quest.formattedAllies.push(await this.formatEnemyOrAlly(ally, i, 'allies', this.quest));
-        this.isCollapsedAlly[i] = true;
+        this.isCollapsed.ally[i] = true;
         i++;
       }
 
@@ -125,7 +139,7 @@ export class QuestDetailComponent implements OnInit {
       i = 0;
       for (const object of this.quest.objects) {
         this.quest.formattedObjects.push(await this.formatEnemyOrAlly(object, i, 'objects', this.quest));
-        this.isCollapsedObject[i] = true;
+        this.isCollapsed.object[i] = true;
         i++;
       }
 
@@ -140,7 +154,7 @@ export class QuestDetailComponent implements OnInit {
       i = 0;
       for (const chest of this.quest.chests) {
         this.quest.formattedChests.push(await this.formatOtherItem(chest, this.quest));
-        this.isCollapsedChest[i] = true;
+        this.isCollapsed.chest[i] = true;
         i++;
       }
 
@@ -216,14 +230,16 @@ export class QuestDetailComponent implements OnInit {
         const formattedRandomMap = {
           grid: randomMap.grid,
           formattedEnemies: [],
-          isCollapsedEnemy: [],
+          isCollapsed: {
+            enemy: {},
+            chest: {},
+            ally: {},
+            object: {}
+          },
           formattedAllies: [],
-          isCollapsedAlly: [],
           formattedObjects: [],
-          isCollapsedObject: [],
           formattedSwitchs: [],
           formattedChests: [],
-          isCollapsedChest: [],
           formattedWinCond: '',
           formattedLooseCond: '',
           dropLists: {},
@@ -251,7 +267,7 @@ export class QuestDetailComponent implements OnInit {
         i = 0;
         for (const enemy of randomMap.enemies) {
           formattedRandomMap.formattedEnemies.push(await this.formatEnemyOrAlly(enemy, i, 'enemies', randomMap));
-          formattedRandomMap.isCollapsedEnemy[i] = true;
+          formattedRandomMap.isCollapsed.enemy[i] = true;
 
           if (formattedRandomMap.formattedEnemies[i].size > 0) {
             this.changeEnemySizeInGrid(i, formattedRandomMap.formattedEnemies[i].size, formattedRandomMap.grid);
@@ -263,14 +279,14 @@ export class QuestDetailComponent implements OnInit {
         i = 0;
         for (const ally of randomMap.allies) {
           formattedRandomMap.formattedAllies.push(await this.formatEnemyOrAlly(ally, i, 'allies', randomMap));
-          formattedRandomMap.isCollapsedAlly[i] = true;
+          formattedRandomMap.isCollapsed.ally[i] = true;
           i++;
         }
 
         i = 0;
         for (const object of randomMap.objects) {
           formattedRandomMap.formattedObjects.push(await this.formatEnemyOrAlly(object, i, 'objects', randomMap));
-          formattedRandomMap.isCollapsedObject[i] = true;
+          formattedRandomMap.isCollapsed.object[i] = true;
           i++;
         }
 
@@ -283,7 +299,7 @@ export class QuestDetailComponent implements OnInit {
         i = 0;
         for (const chest of randomMap.chests) {
           formattedRandomMap.formattedChests.push(await this.formatOtherItem(chest, randomMap));
-          formattedRandomMap.isCollapsedChest[i] = true;
+          formattedRandomMap.isCollapsed.chest[i] = true;
           i++;
         }
 
@@ -397,18 +413,22 @@ export class QuestDetailComponent implements OnInit {
       formattedEnemy.job.name = this.toolService.getName(formattedEnemy.job);
     }
 
-    formattedEnemy.stats['BRAVERY'] = {
-      min: 50 + enemy.brave,
-      max: 50 + enemy.brave
-    };
+    if (formattedEnemy.stats) {
+      formattedEnemy.stats['BRAVERY'] = {
+        min: 50 + enemy.brave,
+        max: 50 + enemy.brave
+      };
 
-    formattedEnemy.stats['FAITH'] = {
-      min: 50 + enemy.faith,
-      max: 50 + enemy.faith
-    };
+      formattedEnemy.stats['FAITH'] = {
+        min: 50 + enemy.faith,
+        max: 50 + enemy.faith
+      };
+    }
 
     formattedEnemy.calculateBaseStats(true);
-    formattedEnemy.calculateTotalStats();
+    if (formattedEnemy.stats && formattedEnemy.stats.HP) {
+      formattedEnemy.calculateTotalStats();
+    }
 
     if (typeof(enemy.minLevel) === 'number') {
       const statsToRange = [
