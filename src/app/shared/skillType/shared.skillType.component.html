@@ -1,4 +1,4 @@
-<img class="typeImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.webp'}}" />
+<img class="typeImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.webp'}}" *ngIf="skill.type"/>
 
 <img class='typeImg' title="{{ skill.based }}" src="{{'assets/atkBased/' + skill.based + '.webp'}}" *ngIf="skill.based"/>
 
