@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { NgxPopperjsModule } from 'ngx-popperjs';
 import { NgSelectModule } from '@ng-select/ng-select';
@@ -16,6 +16,7 @@ import { QuestListComponent } from './list/quest.list.component';
     CommonModule,
     NgSelectModule,
     FormsModule,
+    ReactiveFormsModule,
     NgxPopperjsModule,
     QuestRoutingModule,
     SharedModule

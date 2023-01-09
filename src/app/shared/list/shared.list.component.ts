@@ -48,6 +48,8 @@ export class SharedListComponent implements OnInit {
   ];
 
   hideOptions = false;
+  showAsList = false;
+  listColumns = [];
 
   constructor(
     protected translateService: TranslateService,
@@ -261,5 +263,9 @@ export class SharedListComponent implements OnInit {
         this.leftBlock.nativeElement.style.top = (60 - $event.srcElement.documentElement.scrollTop) + 'px';
       }
     }
+  }
+
+  formatVariable(id, value) {
+    return value;
   }
 }

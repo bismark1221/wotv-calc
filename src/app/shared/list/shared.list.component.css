@@ -139,6 +139,27 @@
   cursor: pointer;
 }
 
+.typeTd {
+  width: 142px;
+}
+
+.nrgTd {
+  width: 51px;
+}
+
+.xpTd {
+  width: 60px;
+}
+
+.boldLeftAligneTd {
+  font-weight: bold;
+  margin-left: 10px;
+  display: table-cell;
+  color: var(--quest-title-color);
+  vertical-align: middle;
+  text-align: left;
+}
+
 @media (max-width: 1090px) {
   .totalItems {
     display: block;
@@ -211,5 +232,11 @@
 
   .sortOrderInFiltersMobile {
     display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .hideColInMobile {
+    display: none;
   }
 }

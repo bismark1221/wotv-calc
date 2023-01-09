@@ -110,23 +110,16 @@ export class QuestService {
   }
 
   async getQuestsForListing(filters = null, sort = 'name', order = 'asc') {
-    let quests: Quest[] = [];
+    const quests: Quest[] = [];
     const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
-    const rawQuests = [];
 
     apiResult.forEach(apiQuest => {
       const quest = new Quest();
       quest.constructFromJson(apiQuest, this.translateService);
       quests.push(quest);
-      rawQuests.push(quest);
     });
 
-    quests = this.filterQuests(quests, filters, sort, order);
-
-    return {
-      quests: quests,
-      rawQuests: rawQuests
-    };
+    return quests;
   }
 
   private async formatItems(quest, searchedItemIds, items) {
@@ -208,9 +201,20 @@ export class QuestService {
     return quests;
   }
 
-  filterQuests(quests, filters, sort = 'name', order = 'asc') {
-    if (filters) {
+  filterQuests(quests, rawFilters, sort = 'name', order = 'asc') {
+    if (rawFilters) {
       const filteredQuests = [];
+      const filters: any = {};
+
+      Object.keys(rawFilters).forEach(filterSection => {
+        rawFilters[filterSection].filters.forEach(filter => {
+          if (filter.type === 'list') {
+            filters[filter.id] = filter.values;
+          } else if (filter.type === 'switch') {
+            filters[filter.id] = filter.value;
+          }
+        });
+      });
 
       quests.forEach(quest => {
         if (filters.type.length === 0 || filters.type.indexOf(quest.type) !== -1) {

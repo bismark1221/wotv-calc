@@ -158,8 +158,35 @@
         </div>
       </div>
     </div>
-    <div class="itemsList">
+    <div class="itemsList" *ngIf="!showAsList">
       <app-shared-card *ngFor="let item of getFilteredItems()" [item]="item" [linkType]="linkType" [assetType]="assetType"></app-shared-card>
+    </div>
+
+    <div class="itemsList" *ngIf="showAsList">
+      <table class="questsList">
+        <tr>
+          <th *ngFor="let col of listColumns" class="{{col.labelClass}}" [ngClass]="{'hideColInMobile': col.showOnMobile == false}">
+            {{ col.label }}
+          </th>
+        </tr>
+        <tr *ngFor="let item of getFilteredItems()">
+          <td *ngFor="let col of listColumns" class="{{col.valueClass}}" [ngClass]="{'hideColInMobile': col.showOnMobile == false}">
+            <ng-container *ngIf="col.colType == 'link'">
+              <a [routerLink]="[getRoute('/' + linkType + '/' + item.slug)]" [routerLinkActive]="['active']">
+                {{ item[col.id] }}
+              </a>
+            </ng-container>
+
+            <ng-container *ngIf="col.colType == 'formatVariable'">
+              {{ formatVariable(col.id, item[col.id]) }}
+            </ng-container>
+
+            <ng-container *ngIf="col.colType == 'variable'">
+              {{ item[col.id] }}
+            </ng-container>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 </div>

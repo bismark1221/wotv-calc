@@ -1,139 +1,204 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { Router } from '@angular/router';
+import { Component, PLATFORM_ID, Inject } from '@angular/core';
+import { SimpleModalService } from 'ngx-simple-modal';
+import { TranslateService } from '@ngx-translate/core';
 
 import { QuestService } from '../../services/quest.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
-import { AuthService } from '../../services/auth.service';
 import { SessionService } from '../../services/session.service';
+
+import { SharedListComponent } from '../../shared/list/shared.list.component';
 
 @Component({
   selector: 'app-quest-list',
-  templateUrl: './quest.list.component.html',
-  styleUrls: ['./quest.list.component.css']
+  templateUrl: '../../shared/list/shared.list.component.html',
+  styleUrls: ['../../shared/list/shared.list.component.css']
 })
-export class QuestListComponent implements OnInit {
-  rawQuests = [];
-  quests = [];
-  searchText = '';
+export class QuestListComponent extends SharedListComponent {
+  filtersSections = {
+    type: {
+      label: 'Type',
+      collapsed: true,
+      filters : [
+        {
+          id: 'type',
+          type: 'list',
+          items: [
+            {
+              id: 'story',
+              label: 'Story'
+            },
+            {
+              id: 'event',
+              label: 'Event'
+            },
+            {
+              id: 'hard_quest_unit',
+              label: 'Hard Quest (Unit)'
+            },
+            {
+              id: 'multi',
+              label: 'Multi'
+            },
+            {
+              id: 'character_quest',
+              label: 'Character Quest'
+            },
+            {
+              id: 'esper_quest',
+              label: 'Beast\'s Den'
+            },
+            {
+              id: 'arena',
+              label: 'Arena'
+            },
+            {
+              id: 'raid',
+              label: 'Raid'
+            },
+            {
+              id: 'rank_pvp',
+              label: 'Rank PVP'
+            },
+            {
+              id: 'free_pvp',
+              label: 'Free PVP'
+            },
+            {
+              id: 'friend_pvp',
+              label: 'Friend PVP'
+            },
+            {
+              id: 'gvg',
+              label: 'GVG'
+            },
+            {
+              id: 'tuto',
+              label: 'Tutorial'
+            },
+            {
+              id: 'beginner',
+              label: 'Beginner'
+            },
+            {
+              id: 'guild_quest',
+              label: 'Guild Quest'
+            },
+            {
+              id: 'selection',
+              label: 'Selection Quest'
+            },
+            {
+              id: 'draft_pvp',
+              label: 'Draft PVP'
+            },
+            {
+              id: 'hard_quest_vc',
+              label: 'Hard Quest (Card)'
+            },
+            {
+              id: 'tower',
+              label: 'Tower'
+            },
+            {
+              id: 'guild_raid',
+              label: 'Guild raid'
+            },
+            {
+              id: 'guild_base_battle',
+              label: 'Guild base battle'
+            }
+          ],
+          values: [],
+          isChecked: {}
+        }
+      ]
+    }
+  };
+
+  itemType = 'quest';
+  linkType = 'quests';
+
+  seoData = {
+    title: 'Quests',
+    desc: 'Find all quests from wotv in one place. Can you beat them all ?'
+  };
+
+  sortTable = [
+    'lastRelease',
+    'name'
+  ];
   sort = 'lastRelease';
   order = 'desc';
-  filters = {
-    type: []
-  };
-  isFilterChecked = {
-    type: []
-  };
-  isCollapsedType = false;
-  questTypes = [
-    'story',
-    'event',
-    'hard_quest_unit',
-    'multi',
-    'character_quest',
-    'esper_quest',
-    'arena',
-    'raid',
-    'rank_pvp',
-    'free_pvp',
-    'friend_pvp',
-    'gvg',
-    'tuto',
-    'beginner',
-    'guild_quest',
-    'selection',
-    'draft_pvp',
-    'hard_quest_vc',
-    'tower',
-    'guild_raid',
-    'guild_base_battle'
+
+  hideOptions = true;
+  showAsList = true;
+  listColumns = [
+    {
+      id: 'type',
+      label: 'Type',
+      colType: 'formatVariable',
+      labelClass: 'typeTd'
+    },
+    {
+      id: 'name',
+      label: 'Name',
+      valueClass: 'boldLeftAligneTd',
+      colType: 'link'
+    },
+    {
+      id: 'nrg',
+      label: 'NRG',
+      labelClass: 'nrgTd',
+      colType: 'variable',
+      showOnMobile: false
+    },
+    {
+      id: 'exp',
+      label: 'XP',
+      labelClass: 'xpTd',
+      colType: 'variable',
+      showOnMobile: false
+    }
   ];
 
   constructor(
-    private questService: QuestService,
-    private translateService: TranslateService,
-    private navService: NavService,
-    private authService: AuthService,
-    private router: Router,
-    private sessionService: SessionService,
-    private toolService: ToolService
+    translateService: TranslateService,
+    navService: NavService,
+    simpleModalService: SimpleModalService,
+    toolService: ToolService,
+    sessionService: SessionService,
+    @Inject(PLATFORM_ID) platformId: object,
+    private questService: QuestService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.translateQuests();
-    });
+    super(
+      translateService,
+      navService,
+      simpleModalService,
+      toolService,
+      sessionService,
+      platformId
+    );
   }
 
-  ngOnInit() {
-    this.navService.setSEO('Quests', 'Find all quests from wotv in one place. Can you beat them all ?');
+  async getItems() {
+    super.rawItems = await this.questService.getQuestsForListing(this.filtersSections, this.sort, this.order);
+    super.items = this.rawItems;
 
-    const questsFilters = this.sessionService.get('questsFilters');
-    if (questsFilters) {
-      this.filters = JSON.parse(questsFilters);
-    }
-    this.filterChecked();
-
-    this.getQuests();
+    super.filterChecked('type');
+    this.filterItems();
   }
 
-  async getQuests() {
-    const result = await this.questService.getQuestsForListing(this.filters, this.sort, this.order);
-
-    this.quests = result.quests;
-    this.rawQuests = result.rawQuests;
-
-    this.translateQuests();
+  filterItems() {
+    super.items = this.questService.filterQuests(this.rawItems, this.filtersSections, this.sort, this.order);
+    super.countFilters();
   }
 
-  filterQuests() {
-    this.quests = this.questService.filterQuests(this.rawQuests, this.filters, this.sort, this.order);
-  }
-
-  private translateQuests() {
-    this.quests.forEach(quest => {
-      quest.name = this.toolService.getName(quest);
-    });
-  }
-
-  getRoute(route) {
-    return this.navService.getRoute(route);
-  }
-
-  getFilteredQuests() {
-    if (this.searchText !== '') {
-      const text = this.searchText.toLowerCase();
-      return this.quests.filter(quest => {
-        return quest.name.toLowerCase().includes(text) || quest.slug.toLowerCase().includes(text);
-      });
+  formatVariable(id, value) {
+    if (id === 'type') {
+      return this.questService.formatType(value);
     } else {
-      return this.quests;
+      return value;
     }
-  }
-
-  filterList(type, value) {
-    if (this.filters[type].indexOf(value) === -1) {
-      this.filters[type].push(value);
-    } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1);
-    }
-
-    this.sessionService.set('questsFilters', JSON.stringify(this.filters));
-    this.filterChecked();
-
-    this.filterQuests();
-  }
-
-  filterChecked() {
-    this.questTypes.forEach(type => {
-      if (this.filters.type.indexOf(type) === -1) {
-        this.isFilterChecked.type[type] = false;
-      } else {
-        this.isFilterChecked.type[type] = true;
-      }
-    });
-  }
-
-  formatType(type) {
-    return this.questService.formatType(type);
   }
 }
