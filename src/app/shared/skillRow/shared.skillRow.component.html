@@ -101,12 +101,19 @@
 <td *ngIf="mobileView" class="mobileViewTd" colspan="99">
   <table class="mobileViewTable border-collapse border-hidden w-full">
     <tr *ngIf="showMobileTitles && showName && (!isUpgrade || !noNameOnUpgrade)">
-      <th colspan="4" class="sub">
+      <th colspan="5" class="sub">
         Name
       </th>
+      <td *ngIf="mobileCollapseDetail && showRange" rowspan="4" class="mobileRangeTd">
+        <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+        <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
+          <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+        </div>
+        <span *ngIf="showCost && skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
+      </td>
     </tr>
     <tr *ngIf="showName && (!isUpgrade || !noNameOnUpgrade)">
-      <td colspan="4" (click)="showDetail()">
+      <td colspan="5" (click)="showDetail()">
         <div class="inline-block">
           <div *ngIf="isUpgrade && !basicAttack">
             Upgrade
@@ -126,15 +133,22 @@
           <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
         </svg>
       </td>
+      <td *ngIf="!showMobileTitles && mobileCollapseDetail && showRange" rowspan="2" class="mobileRangeTd">
+        <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+        <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
+          <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+        </div>
+        <span *ngIf="showCost && skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
+      </td>
     </tr>
 
     <tr *ngIf="showMobileTitles && showEffects">
-      <th colspan="4" class="sub">
+      <th colspan="5" class="sub">
         {{ namePassiveEffects ? 'Passive effects' : 'Effects' }}
       </th>
     </tr>
     <tr *ngIf="showEffects">
-      <td colspan="4">
+      <td colspan="5" class="mobileEffects">
         <div *ngIf="skill.upgradeHtml !== ''">
           {{ skill.upgradeHtml }}
         </div>
@@ -171,23 +185,25 @@
         <div *ngFor="let effect of skill.effectsHtml.after" [innerHTML]="effect"></div>
       </td>
     </tr>
+  </table>
 
-    <ng-container *ngIf="!mobileCollapseDetail || !collapsedDetail">
+  <ng-container *ngIf="!mobileCollapseDetail || !collapsedDetail">
+    <table class="border-collapse border-hidden w-full">
       <tr *ngIf="showRaidLevel">
-        <th class="sub" colspan="2">
+        <th class="sub">
           Min Level
         </th>
-        <th class="sub" colspan="2">
+        <th class="sub">
           Max Level
         </th>
       </tr>
 
       <tr *ngIf="showRaidLevel">
-        <td colspan="2">
+        <td>
           {{ rawSkills[skillIndex].minLevel }}
         </td>
 
-        <td colspan="2">
+        <td>
           {{ rawSkills[skillIndex].maxLevel }}
         </td>
       </tr>
@@ -221,7 +237,7 @@
       </tr>
 
       <tr>
-        <th *ngIf="showRange" class="sub">
+        <th *ngIf="!mobileCollapseDetail && showRange" class="sub">
           Range
         </th>
         <th *ngIf="showCasts" class="sub">
@@ -230,13 +246,13 @@
         <th *ngIf="showHits" class="sub">
           Hits
         </th>
-        <th *ngIf="showCost" class="sub">
+        <th *ngIf="!mobileCollapseDetail && showCost" class="sub">
           Cost
         </th>
       </tr>
 
       <tr>
-        <td *ngIf="showRange">
+        <td *ngIf="!mobileCollapseDetail && showRange">
           <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
           <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
             <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
@@ -248,10 +264,10 @@
         <td *ngIf="showHits">
           <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
         </td>
-        <td *ngIf="showCost">
+        <td *ngIf="!mobileCollapseDetail && showCost">
           <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
         </td>
       </tr>
-    </ng-container>
-  </table>
+    </table>
+  </ng-container>
 </td>

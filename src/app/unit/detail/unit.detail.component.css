@@ -209,3 +209,17 @@
     width: auto;
   }
 }
+
+@media (max-width: 639px) {
+  .bigText, .equipmentText {
+    font-size: 16px;
+  }
+
+  .rightBlock, .skillsBlock {
+    font-size: 14px;
+  }
+
+  .elementImg, .rarityImg {
+    height: 32px;
+  }
+}
