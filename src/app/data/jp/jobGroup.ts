@@ -33,7 +33,8 @@ export const JP_JOB_GROUP = {
     "JB_FF6_TERA",
     "JB_FF6_CLES",
     "JB_FF13_LTNG",
-    "JB_LW_STRN_01"
+    "JB_LW_STRN_01",
+    "JB_FMAM_BRDL"
   ],
   STAFFA: [
     "JB_LW_WHM",
