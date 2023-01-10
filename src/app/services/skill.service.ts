@@ -330,7 +330,7 @@ export class SkillService {
     }
   }
 
-  formatEquipmentEffects(unit, skill) {
+  formatEquipmentEffects(unit, skill, noUpgradeInfo = false) {
     const effectHtmls = {
       before: [],
       after: []
@@ -338,19 +338,19 @@ export class SkillService {
 
     skill.effects.forEach(effect => {
       if (effect.timing === 'QUEST_START' || effect.timing === 'SKILL_BEFORE') {
-        effectHtmls.before.push(this.formatEquipmentEffect(unit, skill, effect));
+        effectHtmls.before.push(this.formatEquipmentEffect(unit, skill, effect, noUpgradeInfo));
       } else {
-        effectHtmls.after.push(this.formatEquipmentEffect(unit, skill, effect));
+        effectHtmls.after.push(this.formatEquipmentEffect(unit, skill, effect, noUpgradeInfo));
       }
     });
 
     return effectHtmls;
   }
 
-  formatEquipmentEffect(unit, skill, effect) {
+  formatEquipmentEffect(unit, skill, effect, noUpgradeInfo = false) {
     let html = '';
 
-    if (skill.upgrade.length !== 5) {
+    if (!noUpgradeInfo && skill.upgrade.length !== 5) {
       if (skill.maxLevel < (skill.upgrade[0] * 10 - 10)) {
         html += '<b>Acquired at ' + skill.upgrade[0] + ' <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 inline-block"><path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" /></svg></i></b><br />';
         effect.minValue = effect.maxValue;
@@ -1333,58 +1333,58 @@ export class SkillService {
         html = 'Increase killer against unit with float' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'HUMAN_RES' :
-        html = 'Increase human resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' human resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FENNES_RES' :
-        html = 'Increase fennes resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' fennes resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'UNDEAD_RES' :
-        html = 'Increase undead resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' undead resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'BEAST_RES' :
-        html = 'Increase beast resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' beast resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'DEMON_RES' :
-        html = 'Increase demon resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' demon resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'AQUATIC_RES' :
-        html = 'Increase aquatic resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' aquatic resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FAIRY_RES' :
-        html = 'Increase fairy resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' fairy resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'BIRD_RES' :
-        html = 'Increase bird resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' bird resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'MALES_RES' :
-        html = 'Increase male resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' male resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'DRAGON_RES' :
-        html = 'Increase dragon resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' dragon resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'METAL_RES' :
-        html = 'Increase metal resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' metal resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'MACHINE_RES' :
-        html = 'Increase machine resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' machine resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'NETHERBEAST_RES' :
-        html = 'Increase Nether Beast resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' Nether Beast resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'INSECT_RES' :
-        html = 'Increase insect resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' insect resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'STONE_RES' :
-        html = 'Increase stone resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' stone resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'PLANT_RES' :
-        html = 'Increase plant resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' plant resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ARCANA_RES' :
-        html = 'Increase arcana resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' arcana resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FLOAT_RES' :
-        html = 'Increase resistance against unit with float' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' resistance against unit with float' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'IGNORE_FLOAT' :
         html = 'Ignore targets with Float status';
@@ -1864,7 +1864,22 @@ export class SkillService {
         }
 
         if (effect.calcType === 'apply') {
-          html = 'When conditions are met auto-cast following skill : ' + (newCastOnCondition ? this.toolService.getName(newCastOnCondition) : '???');
+          html = 'When conditions are met auto-cast following skill : ';
+
+          if (newCastOnCondition && fromEquipment) {
+            let countSkill = 1;
+            for (const newEffect of newCastOnCondition.effects) {
+              html += this.formatEffect(unit, skill, newEffect, false, fromEquipment, shortDesc = true);
+
+              if (countSkill < newCastOnCondition.effects.length) {
+                html += ', ';
+              }
+
+              countSkill++;
+            }
+          } else {
+            html += newCastOnCondition ? this.toolService.getName(newCastOnCondition) : '???';
+          }
         } else if (forSearchOptions) {
           html = 'When conditions are met auto-cast a skill';
         } else {

@@ -145,7 +145,7 @@ export class EquipmentDetailComponent implements OnInit {
          skill.name = this.toolService.getName(skill);
 
           skill.effectsHtml = this.skillService.formatEquipmentEffects(this.equipment, skill);
-          skill.maxedEffectsHtml = this.skillService.formatEffects(this.equipment, skill);
+          skill.maxedEffectsHtml = this.skillService.formatEquipmentEffects(this.equipment, skill, true);
 
           if (skill.damage) {
             skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);
