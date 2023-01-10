@@ -215,7 +215,7 @@
 </ng-template>
 
 <app-shared-tabs>
-  <app-shared-tab title="CHARACTER" mobileManaged="true">
+  <app-shared-tab title="CHARACTER">
     <ng-container *ngIf="unit">
       <div class="leftBlock" *ngIf="windowSize >= 1230">
         <ng-container *ngTemplateOutlet="unitLeft"></ng-container>
@@ -342,7 +342,7 @@
       </div>
     </ng-container>
   </app-shared-tab>
-  <app-shared-tab title="STATS" mobileManaged="true">
+  <app-shared-tab title="STATS">
     <ng-container *ngIf="unit">
       <div class="leftBlock" *ngIf="windowSize >= 1230">
         <ng-container *ngTemplateOutlet="unitLeft"></ng-container>
@@ -751,7 +751,7 @@
       </div>
     </ng-container>
   </app-shared-tab>
-  <app-shared-tab title="SKILLS" mobileManaged="true">
+  <app-shared-tab title="SKILLS">
     <div *ngIf="unit" class="skillsBlock">
       <table class="skillsTable" *ngFor="let i of possibleSkillTypes">
         <tbody>
@@ -940,7 +940,7 @@
       </table>
     </div>
   </app-shared-tab>
-  <app-shared-tab title="SKILL TREE" mobileManaged="true">
+  <app-shared-tab title="SKILL TREE">
     <ng-container *ngIf="unit">
       <div class="leftBlock" *ngIf="windowSize >= 1300">
         <ng-container *ngTemplateOutlet="unitLeft"></ng-container>

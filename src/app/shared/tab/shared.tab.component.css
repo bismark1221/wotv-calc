@@ -1,11 +1,7 @@
-.pane{
-  width: 1200px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.mobilePane {
+.pane {
   width: auto;
   max-width: 1200px;
   text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
 }

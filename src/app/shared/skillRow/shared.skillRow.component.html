@@ -172,65 +172,86 @@
       </td>
     </tr>
 
-    <tr *ngIf="!mobileCollapseDetail || !collapsedDetail">
-      <th *ngIf="showJobIcon" class="sub">
-        Job
-      </th>
-      <th *ngIf="showJobLvl" class="sub">
-        Job lvl
-      </th>
-      <th *ngIf="showStarLvl" class="sub">
-        Star lvl
-      </th>
-    </tr>
+    <ng-container *ngIf="!mobileCollapseDetail || !collapsedDetail">
+      <tr *ngIf="showRaidLevel">
+        <th class="sub" colspan="2">
+          Min Level
+        </th>
+        <th class="sub" colspan="2">
+          Max Level
+        </th>
+      </tr>
 
-    <tr *ngIf="!mobileCollapseDetail || !collapsedDetail">
-      <td *ngIf="showJobIcon">
-        <div class="subJob" *ngIf="jobs[(skill.unlockJob - 1)]">
-          <img src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '_30.webp'}}" />
-        </div>
-      </td>
+      <tr *ngIf="showRaidLevel">
+        <td colspan="2">
+          {{ rawSkills[skillIndex].minLevel }}
+        </td>
 
-      <td *ngIf="showJobLvl">
-        {{ skill.jobLevel }}
-      </td>
+        <td colspan="2">
+          {{ rawSkills[skillIndex].maxLevel }}
+        </td>
+      </tr>
 
-      <td *ngIf="showStarLvl">
-        {{ skill.unlockStar }}
-      </td>
-    </tr>
+      <tr>
+        <th *ngIf="showJobIcon" class="sub">
+          Job
+        </th>
+        <th *ngIf="showJobLvl" class="sub">
+          Job lvl
+        </th>
+        <th *ngIf="showStarLvl" class="sub">
+          Star lvl
+        </th>
+      </tr>
 
-    <tr *ngIf="!mobileCollapseDetail || !collapsedDetail">
-      <th *ngIf="showRange" class="sub">
-        Range
-      </th>
-      <th *ngIf="showCasts" class="sub">
-        Casts
-      </th>
-      <th *ngIf="showHits" class="sub">
-        Hits
-      </th>
-      <th *ngIf="showCost" class="sub">
-        Cost
-      </th>
-    </tr>
+      <tr>
+        <td *ngIf="showJobIcon">
+          <div class="subJob" *ngIf="jobs[(skill.unlockJob - 1)]">
+            <img src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '_30.webp'}}" />
+          </div>
+        </td>
 
-    <tr *ngIf="!mobileCollapseDetail || !collapsedDetail">
-      <td *ngIf="showRange">
-        <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
-        <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
-          <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
-        </div>
-      </td>
-      <td *ngIf="showCasts">
-        {{ skill.count }}
-      </td>
-      <td *ngIf="showHits">
-        <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
-      </td>
-      <td *ngIf="showCost">
-        <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
-      </td>
-    </tr>
+        <td *ngIf="showJobLvl">
+          {{ skill.jobLevel }}
+        </td>
+
+        <td *ngIf="showStarLvl">
+          {{ skill.unlockStar }}
+        </td>
+      </tr>
+
+      <tr>
+        <th *ngIf="showRange" class="sub">
+          Range
+        </th>
+        <th *ngIf="showCasts" class="sub">
+          Casts
+        </th>
+        <th *ngIf="showHits" class="sub">
+          Hits
+        </th>
+        <th *ngIf="showCost" class="sub">
+          Cost
+        </th>
+      </tr>
+
+      <tr>
+        <td *ngIf="showRange">
+          <popper-content #tip_table><div [innerHTML]="skill.skillTableHtml"></div></popper-content>
+          <div [popper]="tip_table" [popperTrigger]="'click'" [popperHideOnClickOutside]="true" [popperHideOnScroll]="true">
+            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+          </div>
+        </td>
+        <td *ngIf="showCasts">
+          {{ skill.count }}
+        </td>
+        <td *ngIf="showHits">
+          <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
+        </td>
+        <td *ngIf="showCost">
+          <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
+        </td>
+      </tr>
+    </ng-container>
   </table>
 </td>

@@ -109,3 +109,55 @@
   cursor: pointer;
   margin-top: 2px;
 }
+
+.bossSeparator {
+  margin-top: 20px;
+}
+
+.bossBlock {
+  margin-bottom: 20px;
+}
+
+.bossSkillsBlock {
+  width: 100%;
+}
+
+@media (max-width: 1229px) {
+  .leftBlock {
+    width: 830px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+
+  .rightBlock {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .bonusBlockTable {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .rangeTd, .skillJobTd, .skillStarTd, .skillTypeTd, .skillCastTd, .skillHitTd, .skillCostTd, .skillNameTd {
+    width: auto;
+  }
+}
+
+@media (max-width: 829px) {
+  .leftBlock, .rightBlock {
+    width: 100%;
+  }
+
+  .bonusBlockTable {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .bossSkillsBlock {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

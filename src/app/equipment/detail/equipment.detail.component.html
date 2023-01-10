@@ -16,7 +16,7 @@
         <th class="sub">Type</th>
       </tr>
       <tr>
-        <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" (click)="clickSpecialBismark()"/></td>
+        <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}"/></td>
         <td>{{ getEquipementType(equipment.type) }}</td>
       </tr>
       <tr *ngIf="equipment.acquisition">
@@ -70,7 +70,7 @@
         <th class="sub">Type</th>
       </tr>
       <tr>
-        <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}" (click)="clickSpecialBismark()"/></td>
+        <td><img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.webp'}}"/></td>
         <td>{{ getEquipementType(equipment.type) }}</td>
       </tr>
       <tr *ngIf="equipment.acquisition">
@@ -406,10 +406,10 @@
 </ng-template>
 
 <app-shared-tabs *ngIf="windowSize >= 830">
-  <app-shared-tab title="EQUIPMENT" mobileManaged="true">
+  <app-shared-tab title="EQUIPMENT">
     <ng-container *ngTemplateOutlet="equipmentDetail"></ng-container>
   </app-shared-tab>
-  <app-shared-tab title="CRAFT" *ngIf="equipment && (equipment.formattedMaterials.length > 1 || (equipment.formattedMaterials.length == 1 && equipment.formattedMaterials[0].length != 0))" mobileManaged="true">
+  <app-shared-tab title="CRAFT" *ngIf="equipment && (equipment.formattedMaterials.length > 1 || (equipment.formattedMaterials.length == 1 && equipment.formattedMaterials[0].length != 0))">
     <ng-container *ngTemplateOutlet="equipmentCraft"></ng-container>
   </app-shared-tab>
   <app-shared-tab *ngIf="equipment" title="GO TO BUILDER >>>" [link]="getRoute('/builder/equipment/' + equipment.slug)">

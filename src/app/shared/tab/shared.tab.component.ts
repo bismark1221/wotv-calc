@@ -9,5 +9,4 @@ export class SharedTabComponent {
   @Input() title: string;
   @Input() active = false;
   @Input() link = null;
-  @Input() mobileManaged = false;
 }

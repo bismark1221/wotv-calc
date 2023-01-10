@@ -19,7 +19,6 @@ import { ItemService } from '../../services/item.service';
 })
 export class EquipmentDetailComponent implements OnInit {
   equipment = null;
-  specialBismark = false;
   activeTab;
 
   showPassivesDetail = false;
@@ -333,10 +332,6 @@ export class EquipmentDetailComponent implements OnInit {
 
   getRoute(route) {
     return this.navService.getRoute(route);
-  }
-
-  clickSpecialBismark() {
-    this.specialBismark = !this.specialBismark;
   }
 
   tooglePassiveDetail() {

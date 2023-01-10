@@ -18,7 +18,6 @@ import { ToolService } from '../../services/tool.service';
 export class EsperDetailComponent implements OnInit {
   esper = null;
   grid = null;
-  specialBismark = false;
   activeTab;
 
   windowSize = 1230;
@@ -143,10 +142,6 @@ export class EsperDetailComponent implements OnInit {
         this.hideNode(childNode);
       });
     }
-  }
-
-  clickSpecialBismark() {
-    this.specialBismark = !this.specialBismark;
   }
 
   getRoute(route) {

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
@@ -17,8 +18,9 @@ import { CardService } from '../../services/card.service';
 })
 export class RaidDetailComponent implements OnInit {
   raid = null;
-  specialBismark = false;
   activeTab;
+
+  windowSize = 1230;
 
   constructor(
     private raidService: RaidService,
@@ -31,10 +33,17 @@ export class RaidDetailComponent implements OnInit {
     private toolService: ToolService,
     private unitService: UnitService,
     private cardService: CardService,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatRaid();
     });
+  }
+
+  @HostListener('window:resize', []) onWindowResize() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.windowSize = window.innerWidth;
+    }
   }
 
   ngOnInit(): void {
@@ -61,6 +70,8 @@ export class RaidDetailComponent implements OnInit {
           break;
       }
     });
+
+    this.onWindowResize();
   }
 
   private async formatRaid() {
@@ -118,9 +129,5 @@ export class RaidDetailComponent implements OnInit {
         }
       }
     }
-  }
-
-  clickSpecialBismark() {
-    this.specialBismark = !this.specialBismark;
   }
 }

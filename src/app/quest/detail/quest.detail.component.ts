@@ -24,7 +24,8 @@ export class QuestDetailComponent implements OnInit {
     chest: {},
     ally: {},
     object: {}
-  }
+  };
+
   isCollapsedRandomMap = {};
   statImage = {
     BRAVERY: '',
