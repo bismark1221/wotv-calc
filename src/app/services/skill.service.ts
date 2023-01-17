@@ -26,7 +26,12 @@ export class SkillService {
   counterType = {
     ALL: 'all',
     PHYSIC: 'physical',
-    MAGIC: 'magical'
+    MAGIC: 'magical',
+    slash: 'slash',
+    pierce: 'pierce',
+    strike: 'strike',
+    missile: 'missile',
+    magic: 'magic'
   };
 
   targets = {
@@ -2414,7 +2419,19 @@ export class SkillService {
     } else if (counter.type === 'evade') {
       return this.getValue(skill, counter) + ' chance to activate the effects when evading';
     } else {
-      return 'Chance to counter ' + this.counterType[counter.reactDamage] + ' damage ' + this.getValue(skill, counter);
+      let result = 'Chance to counter ';
+      let i = 0;
+      for (const reactType of counter.reactDamage) {
+        result += this.counterType[reactType];
+
+        if (i < counter.reactDamage.length - 1) {
+          result += ', ';
+        }
+        i++;
+      }
+
+      result += ' damage ' + this.getValue(skill, counter);
+      return result;
     }
   }
 
