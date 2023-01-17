@@ -8,7 +8,8 @@ export const JP_JOB_GROUP = {
     "JB_LW_DEAN",
     "JB_LW_CRLT",
     "JB_LW_LCIO",
-    "JB_LW_SLEN"
+    "JB_LW_SLEN",
+    "JB_LW_REGN"
   ],
   SWORDB: [
     "JB_LW_WAR",
