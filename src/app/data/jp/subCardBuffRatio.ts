@@ -1534,5 +1534,21 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.3
     ]
+  },
+  RES_ELEMENT_CHAIN: {
+    partyRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.5,
+      0.7
+    ],
+    unitRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.5,
+      0.7
+    ]
   }
 };
