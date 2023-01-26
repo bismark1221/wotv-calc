@@ -588,7 +588,7 @@ export class EquipmentService {
 
     equipment.equippableJobs.forEach(jobId => {
       const tableJob = jobId.split('_');
-      if (filters.job.length === 0 || filters.job.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2] + (tableJob[3] && tableJob[3] === '01' ? '_01' : '')) !== -1) {
+      if (filters.job.length === 0 || filters.job.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2] + (tableJob[3] && tableJob[3] === '01' ? '_01' : '') + (tableJob[3] && tableJob[3] === '02' ? '_02' : '')) !== -1) {
         equipmentHasJob = true;
       }
     });
