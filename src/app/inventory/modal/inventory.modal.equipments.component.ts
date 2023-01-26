@@ -54,7 +54,6 @@ export class InventoryModalEquipmentsComponent extends SimpleModalComponent<null
 
     if (this.equipment) {
       this.equipment = await this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment));
-      this.equipment.level = Number(this.equipment.level);
     }
   }
 

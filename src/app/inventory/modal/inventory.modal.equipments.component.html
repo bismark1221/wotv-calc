@@ -6,7 +6,7 @@
       <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full lg:max-w-6xl" (clickOutside)="closeClickOuside()">
         <div class="modal-title-background px-4 py-3 sm:px-6">
           <div class="title justify-start">
-            <span *ngIf="modalStep === 'select'">EQUIPEMENT</span>
+            <span *ngIf="modalStep === 'select'">EQUIPMENT</span>
             <span *ngIf="modalStep === 'custom'">{{ equipment.name }}</span>
           </div>
           <div class="closeButton justify-end">
@@ -163,7 +163,7 @@
                   </div>
                   <div>
                     <select [(ngModel)]="equipment.level">
-                      <option *ngFor="let level of equipment.tableLevel">{{ level }}</option>
+                      <option *ngFor="let level of equipment.tableLevel" value="{{level}}">{{ level }}</option>
                     </select> / {{ equipment.maxLevel }}
                   </div>
                 </div>
