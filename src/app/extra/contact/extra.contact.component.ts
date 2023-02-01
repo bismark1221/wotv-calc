@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { NavService } from '../../services/nav.service';
 
@@ -9,28 +8,11 @@ import { NavService } from '../../services/nav.service';
   styleUrls: ['./extra.contact.component.css']
 })
 export class ExtraContactComponent {
-  markdown = '';
-  lang = 'en';
+  markdown = 'If you find bugs, have question or just want to leave me a message you can contact me via:\n\r - E-Mail : bismark@ffbe-chain.com\n\r - Reddit : [/u/bahamut1221]\n\r - Twitter : [@bismarktv]\n\r - Discord : [WOTV-CALC discord server]\n\r[/u/bahamut1221]: https://www.reddit.com/user/bahamut1221\n\r[@bismarktv]: https://twitter.com/bismarktv\n\r[WOTV-CALC discord server]: https://discord.gg/42PHBD85kN';
 
   constructor(
-    private translateService: TranslateService,
     private navService: NavService
   ) {
-    this.getTranslation();
-
-    this.lang = this.translateService.currentLang;
-
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.lang = this.translateService.currentLang;
-      this.getTranslation();
-    });
-
     this.navService.setSEO('Contact', 'If you need to contact me every method is indicated here.');
-  }
-
-  private getTranslation() {
-    this.translateService.get('contact.content').subscribe((res: string) => {
-      this.markdown = res;
-    });
   }
 }

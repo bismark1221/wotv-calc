@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { of } from 'rxjs';
 
+import { TranslateService } from './translate.service';
 import { NavService } from './nav.service';
 import { JobService } from './job.service';
 import { EquipmentService } from './equipment.service';

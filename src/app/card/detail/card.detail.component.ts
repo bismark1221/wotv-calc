@@ -1,8 +1,8 @@
 import { Component, OnInit, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
+import { TranslateService } from '../../services/translate.service';
 import { CardService } from '../../services/card.service';
 import { SkillService } from '../../services/skill.service';
 import { RangeService } from '../../services/range.service';
@@ -37,7 +37,7 @@ export class CardDetailComponent implements OnInit {
     private unitService: UnitService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       if (this.card) {
         this.formatCard();
       }

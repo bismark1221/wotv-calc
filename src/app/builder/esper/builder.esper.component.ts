@@ -1,8 +1,8 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
+import { TranslateService } from '../../services/translate.service';
 import { EsperService } from '../../services/esper.service';
 import { ToolService } from '../../services/tool.service';
 import { AuthService } from '../../services/auth.service';
@@ -87,7 +87,7 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     private authService: AuthService,
     private navService: NavService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       this.translateEspers();
     });
   }

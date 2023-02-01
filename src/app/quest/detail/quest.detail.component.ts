@@ -1,15 +1,14 @@
 import { Component, OnInit, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
+import { TranslateService } from '../../services/translate.service';
 import { QuestService } from '../../services/quest.service';
 import { RangeService } from '../../services/range.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
 import { AuthService } from '../../services/auth.service';
 import { SkillService } from '../../services/skill.service';
-
 
 @Component({
   selector: 'app-quest-detail',
@@ -79,7 +78,7 @@ export class QuestDetailComponent implements OnInit {
     private skillService: SkillService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
-    this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe(async (event) => {
       if (this.quest) {
         await this.formatQuest();
       }

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 import { Raid } from '../entities/raid';
 
+import { TranslateService } from './translate.service';
 import { NavService } from './nav.service';
 import { ApiService } from './api.service';
 import { ToolService } from './tool.service';

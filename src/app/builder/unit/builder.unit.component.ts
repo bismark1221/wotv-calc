@@ -1,8 +1,8 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
+import { TranslateService } from '../../services/translate.service';
 import { UnitService } from '../../services/unit.service';
 import { JobService } from '../../services/job.service';
 import { GuildService } from '../../services/guild.service';
@@ -168,7 +168,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     private authService: AuthService,
     private simulatorService: SimulatorService
   ) {
-    this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe(async (event) => {
       this.translateUnits();
     });
 

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
 
+import { TranslateService } from '../../../services/translate.service';
 import { EquipmentService } from '../../../services/equipment.service';
 import { NavService } from '../../../services/nav.service';
 import { ToolService } from '../../../services/tool.service';
@@ -54,7 +54,7 @@ export class BuilderModalEquipmentsComponent extends SimpleModalComponent<null, 
 
     this.version = this.navService.getVersion();
 
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       this.translateEquipments();
     });
   }

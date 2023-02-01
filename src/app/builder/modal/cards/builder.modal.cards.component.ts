@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalComponent } from 'ngx-simple-modal';
 
+import { TranslateService } from '../../../services/translate.service';
 import { CardService } from '../../../services/card.service';
 import { TeamService } from '../../../services/team.service';
 import { NavService } from '../../../services/nav.service';
@@ -146,7 +146,7 @@ export class BuilderModalCardsComponent extends SimpleModalComponent<null, any> 
   ) {
     super();
 
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       this.translateCards();
     });
   }

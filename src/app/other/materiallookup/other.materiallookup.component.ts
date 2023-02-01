@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { concat, Observable, of, Subject } from 'rxjs';
 import { catchError, distinctUntilChanged, switchMap, tap } from 'rxjs/operators';
 
+import { TranslateService } from '../../services/translate.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
 import { EquipmentService } from '../../services/equipment.service';
@@ -24,7 +24,7 @@ export class OtherMaterialLookupComponent implements OnInit {
     private toolService: ToolService,
     private equipmentService: EquipmentService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       this.translateItemsAndEquipments();
     });
   }

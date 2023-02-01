@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalComponent } from 'ngx-simple-modal';
 
+import { TranslateService } from '../../../services/translate.service';
 import { CardService } from '../../../services/card.service';
 import { UnitService } from '../../../services/unit.service';
 import { EsperService } from '../../../services/esper.service';

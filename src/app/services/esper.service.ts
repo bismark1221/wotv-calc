@@ -2,8 +2,7 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
-import { TranslateService } from '@ngx-translate/core';
-
+import { TranslateService } from './translate.service';
 import { GridService } from './grid.service';
 import { NavService } from './nav.service';
 import { ToolService } from './tool.service';

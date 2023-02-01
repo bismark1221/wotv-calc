@@ -2,11 +2,10 @@ import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { HttpClient } from '@angular/common/http';
 
-import { TranslateService } from '@ngx-translate/core';
-
 import { Unit } from '../entities/unit';
 import { Job } from '../entities/job';
 
+import { TranslateService } from './translate.service';
 import { GridService } from './grid.service';
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';

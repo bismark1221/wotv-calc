@@ -1,10 +1,10 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { SimpleModalService } from 'ngx-simple-modal';
 
+import { TranslateService } from '../services/translate.service';
 import { NavService } from '../services/nav.service';
 import { ThemeService } from '../services/theme.service';
 import { AuthService } from '../services/auth.service';
@@ -53,7 +53,7 @@ export class NavComponent implements OnInit, AfterViewInit {
     private simpleModalService: SimpleModalService,
     private authService: AuthService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       this.lang = this.translateService.currentLang;
     });
   }

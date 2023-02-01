@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { GuildService } from '../../../services/guild.service';

@@ -1,7 +1,7 @@
 import { Component, PLATFORM_ID, Inject } from '@angular/core';
 import { SimpleModalService } from 'ngx-simple-modal';
-import { TranslateService } from '@ngx-translate/core';
 
+import { TranslateService } from '../../services/translate.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
 import { SessionService } from '../../services/session.service';

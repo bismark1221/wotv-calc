@@ -1,8 +1,8 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
+import { TranslateService } from '../../services/translate.service';
 import { EquipmentService } from '../../services/equipment.service';
 import { ToolService } from '../../services/tool.service';
 import { AuthService } from '../../services/auth.service';
@@ -56,7 +56,7 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   ) {
     this.version = this.navService.getVersion();
 
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       this.translateEquipments();
     });
   }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { TranslateService } from '@ngx-translate/core';
 
+import { TranslateService } from './translate.service';
 import { ToolService } from './tool.service';
 import { NavService } from './nav.service';
 

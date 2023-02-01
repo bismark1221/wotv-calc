@@ -1,11 +1,9 @@
-
 import { Component, OnInit } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
+import { TranslateService } from '../../services/translate.service';
 import { TitleService } from '../../services/title.service';
 import { ToolService } from '../../services/tool.service';
 import { NavService } from '../../services/nav.service';
-
 
 @Component({
   selector: 'app-titles',
@@ -24,7 +22,7 @@ export class OtherTitlesComponent implements OnInit {
     private toolService: ToolService,
     private navService: NavService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       this.formatTitles();
     });
   }

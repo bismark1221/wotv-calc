@@ -1,9 +1,9 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ClipboardService } from 'ngx-clipboard';
 
+import { TranslateService } from '../../services/translate.service';
 import { UnitService } from '../../services/unit.service';
 import { JobService } from '../../services/job.service';
 import { GuildService } from '../../services/guild.service';
@@ -94,7 +94,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     private navService: NavService,
     private simulatorService: SimulatorService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       for (let i = 0; i <= 4; i++) {
         this.translateUnits(i);
       }

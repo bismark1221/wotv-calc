@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
-import { TranslateService } from '@ngx-translate/core';
-
 import { Unit } from '../entities/unit';
+
+import { TranslateService } from './translate.service';
 import { GuildService } from './guild.service';
 import { MasterRanksService } from './mr.service';
 import { NavService } from './nav.service';

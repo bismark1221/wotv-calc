@@ -7,8 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { LocalStorageModule } from 'angular-2-local-storage';
 import { Angulartics2Module } from 'angulartics2';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { ClipboardModule } from 'ngx-clipboard';
 import { UiSwitchModule } from 'ngx-ui-switch';
@@ -59,15 +57,11 @@ import { UserService } from './services/user.service';
 import { MateriaService } from './services/materia.service';
 import { InventoryService } from './services/inventory.service';
 import { SessionService } from './services/session.service';
+import { TranslateService } from './services/translate.service';
 import { PwaService } from './services/pwa.service';
 
 import { SharedModule } from './shared/shared.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
-
-// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
-export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
-}
 
 @NgModule({
   declarations: [
@@ -90,13 +84,6 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     Angulartics2Module.forRoot(),
     HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: (createTranslateLoader),
-        deps: [HttpClient]
-      }
-    }),
     NgSelectModule,
     ClipboardModule,
     UiSwitchModule,
@@ -145,6 +132,7 @@ export function createTranslateLoader(http: HttpClient) {
     MateriaService,
     InventoryService,
     SessionService,
+    TranslateService,
     PwaService
   ],
   bootstrap: [

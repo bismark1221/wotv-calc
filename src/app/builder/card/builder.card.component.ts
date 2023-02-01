@@ -1,8 +1,8 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalService } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
+import { TranslateService } from '../../services/translate.service';
 import { CardService } from '../../services/card.service';
 import { ToolService } from '../../services/tool.service';
 import { AuthService } from '../../services/auth.service';
@@ -54,7 +54,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     private jobService: JobService,
     private unitService: UnitService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       this.translateCards();
     });
   }

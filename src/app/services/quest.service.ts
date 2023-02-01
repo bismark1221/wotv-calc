@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import { TranslateService } from '@ngx-translate/core';
-
 import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
 import { ApiService } from './api.service';
 
+import { TranslateService } from './translate.service';
 import { Quest } from '../entities/quest';
 import { Unit } from '../entities/unit';
 import { Skill } from '../entities/skill';

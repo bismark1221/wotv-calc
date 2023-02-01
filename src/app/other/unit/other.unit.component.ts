@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
+import { TranslateService } from '../../services/translate.service';
 import { OtherUnitService } from '../../services/otherunit.service';
 import { SkillService } from '../../services/skill.service';
 import { RangeService } from '../../services/range.service';
@@ -70,7 +70,7 @@ export class OtherUnitComponent implements OnInit {
     private questService: QuestService,
     private jobService: JobService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe((event) => {
       this.getMasterInfos();
     });
   }

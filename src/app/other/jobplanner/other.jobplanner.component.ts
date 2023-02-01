@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
+import { TranslateService } from '../../services/translate.service';
 import { UnitService } from '../../services/unit.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';

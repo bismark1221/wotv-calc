@@ -1,5 +1,5 @@
 import { Skill } from './skill';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService } from '../services/translate.service';
 
 export class Card {
   dataId?;

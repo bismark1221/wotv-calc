@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
+import { TranslateService } from '../services/translate.service';
 import { NavService } from '../services/nav.service';
 import { ToolService } from '../services/tool.service';
 import { HomeService } from '../services/home.service';
@@ -28,7 +28,6 @@ export class HomeComponent {
   };
 
   updatedFormatted = [];
-  noLangChangeOnInit = true;
 
   constructor(
     private translateService: TranslateService,
@@ -40,11 +39,8 @@ export class HomeComponent {
 
     this.getUpdate();
 
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      if (!this.noLangChangeOnInit) {
-        this.getUpdate();
-        this.noLangChangeOnInit = false;
-      }
+    this.translateService.onLangChange.subscribe((event) => {
+      this.getUpdate();
     });
   }
 

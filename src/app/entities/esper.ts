@@ -1,6 +1,6 @@
 import { Skill } from './skill';
 import { Equipment } from './equipment';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService } from '../services/translate.service';
 
 export class Esper {
   dataId?;

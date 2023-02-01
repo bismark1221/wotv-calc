@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
+import { TranslateService } from '../../services/translate.service';
 import { IndexService } from '../../services/index.service';
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';

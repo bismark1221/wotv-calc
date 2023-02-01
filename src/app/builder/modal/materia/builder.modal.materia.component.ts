@@ -1,8 +1,8 @@
 import { Component, OnInit, AfterViewInit, ViewChild, Input } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalComponent } from 'ngx-simple-modal';
 import { ActivatedRoute, Params } from '@angular/router';
 
+import { TranslateService } from '../../../services/translate.service';
 import { MateriaService } from '../../../services/materia.service';
 import { NavService } from '../../../services/nav.service';
 import { AuthService } from '../../../services/auth.service';

@@ -1,8 +1,8 @@
 import { Component, OnInit, HostListener, PLATFORM_ID, Inject, ViewChild, ElementRef } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
+import { TranslateService } from '../../services/translate.service';
 import { UnitService } from '../../services/unit.service';
 import { EquipmentService } from '../../services/equipment.service';
 import { SkillService } from '../../services/skill.service';
@@ -140,7 +140,7 @@ export class UnitDetailComponent implements OnInit {
       }
     });
 
-    this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
+    this.translateService.onLangChange.subscribe(async (event) => {
       this.formatUnit();
     });
 

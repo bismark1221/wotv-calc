@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import { TranslateService } from '@ngx-translate/core';
-
 import { Unit } from '../entities/unit';
 
+import { TranslateService } from './translate.service';
 import { SkillService } from './skill.service';
 import { RangeService } from './range.service';
 import { ToolService } from './tool.service';

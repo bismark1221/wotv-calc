@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 
-import { TranslateService } from '@ngx-translate/core';
-
 import { ApiService } from './api.service';
 import { ToolService } from './tool.service';
 

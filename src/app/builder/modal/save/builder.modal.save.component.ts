@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { SimpleModalComponent } from 'ngx-simple-modal';
 
 import { CardService } from '../../../services/card.service';
@@ -27,7 +26,6 @@ export class BuilderModalSaveComponent extends SimpleModalComponent<null, boolea
     private esperService: EsperService,
     private equipmentService: EquipmentService,
     private teamService: TeamService,
-    private translateService: TranslateService,
     private materiaService: MateriaService
   ) {
     super();
