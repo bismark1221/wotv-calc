@@ -211,6 +211,7 @@ export const GL_BUFF_TYPE = {
     "WATER_RES",
     "WIND_ATK",
     "WIND_KILLER",
-    "WIND_RES"
+    "WIND_RES",
+    null
   ]
 };
