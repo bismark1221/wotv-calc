@@ -84,6 +84,7 @@ export const GL_BUFF_TYPE = {
     "FROSTBITE_RES",
     "GRADUAL_PETRIFY_ATK",
     "GRANT_BUFF",
+    "GRANT_REACTION_SKILL",
     "GRANT_SKILL",
     "HASTE_ATK",
     "HEAL_POWER",
