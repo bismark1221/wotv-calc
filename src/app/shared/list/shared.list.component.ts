@@ -146,6 +146,17 @@ export class SharedListComponent implements OnInit {
     this.filterItems();
   }
 
+  unselectAllType(section, filterIndex) {
+    this.filtersSections[section].filters[filterIndex].values = [];
+    this.filtersSections[section].filters[filterIndex].items.forEach(item => {
+      this.filtersSections[section].filters[filterIndex].isChecked[item.id] = false;
+    });
+
+    this.sessionService.set(this.itemType + 'sFilters', JSON.stringify(this.filtersSections));
+
+    this.filterItems();
+  }
+
   filterChecked(testFilter = 'rarity', getOldFilters = true) {
     if (getOldFilters) {
       this.getOldFilters(testFilter);

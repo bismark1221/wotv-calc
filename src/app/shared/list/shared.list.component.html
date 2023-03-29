@@ -21,6 +21,10 @@
 
           <div *ngFor="let filter of filtersSections[filtersSectionsType].filters; let filterIndex = index">
             <div *ngIf="filter.type === 'list'">
+              <div *ngIf="filter.checkAll === true">
+                <div><a class="unselectAllTypeLink" (click)="unselectAllType(filtersSectionsType, filterIndex)">unselect all</a></div>
+              </div>
+
               <div *ngFor="let item of filter.items">
                 <input type="checkbox" id="item{{ item.id }}" (change)="filterList(filtersSectionsType, filterIndex, item.id)" [checked]="filter.isChecked[item.id]"/>
                 <label for="item{{ item.id }}">{{ item.label }}</label>

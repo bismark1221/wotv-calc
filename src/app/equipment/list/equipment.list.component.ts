@@ -177,6 +177,7 @@ export class EquipmentListComponent extends SharedListComponent {
         {
           id: 'acquisition',
           type: 'list',
+          checkAll: true,
           items: [],
           values: [],
           isChecked: {}

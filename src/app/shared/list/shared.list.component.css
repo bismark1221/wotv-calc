@@ -160,6 +160,11 @@
   text-align: left;
 }
 
+.unselectAllTypeLink {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 @media (max-width: 1090px) {
   .totalItems {
     display: block;
