@@ -1470,5 +1470,69 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.75,
       1
     ]
+  },
+  DEFENSE_PENETRATION: {
+    partyRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    unitRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ]
+  },
+  INCREASE_REACTION_BLOCK_CHANCE: {
+    partyRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.5,
+      0.7
+    ],
+    unitRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.5,
+      0.7
+    ]
+  },
+  PHYSIC_DAMAGE: {
+    partyRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    unitRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ]
+  },
+  MAGIC_DAMAGE: {
+    partyRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    unitRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ]
   }
 };
