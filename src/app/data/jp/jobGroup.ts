@@ -23,7 +23,8 @@ export const JP_JOB_GROUP = {
     "JB_LW_MONT_01",
     "JB_LW_RAB",
     "JB_PRS5_VOLT",
-    "JB_DQTC_PSAR"
+    "JB_DQTC_PSAR",
+    "JB_FF5_BATZ"
   ],
   SWORDC: [
     "JB_LW_KNT",
@@ -45,7 +46,8 @@ export const JP_JOB_GROUP = {
     "JB_FF14_YSTL",
     "JB_LW_SAKR",
     "JB_FF7_AERT",
-    "JB_LW_FINA_01"
+    "JB_LW_FINA_01",
+    "JB_FF5_LENA"
   ],
   STAFFB: [
     "JB_LW_GRM",
