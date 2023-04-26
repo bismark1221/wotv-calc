@@ -191,6 +191,7 @@ export class BuilderModalEspersComponent extends SimpleModalComponent<null, any>
   }
 
   updateStar() {
+    this.firstClickOutside = false;
     this.esper.star = this.star;
     this.esperService.changeStar(this.esper);
   }

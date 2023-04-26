@@ -1862,6 +1862,20 @@ export class SkillService {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
+      case 'AUTO_CAST_ON_ALLY_IN_RANGE' :
+        let newCastOnAllyInRange = null;
+        if (unit.rawSkills) {
+          newCastOnAllyInRange = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'When friendly unit within range automatically cast another attack skill : ' + (newCastOnAllyInRange ? this.toolService.getName(newCastOnAllyInRange) : '???');
+        } else if (forSearchOptions) {
+          html = 'When friendly unit within range automatically cast another attack skill';
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
       case 'AUTO_CAST_ON_CONDITION' :
         let newCastOnCondition = null;
         if (unit.rawSkills) {

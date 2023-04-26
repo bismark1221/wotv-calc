@@ -409,8 +409,8 @@ export class UnitService {
       level: unit.level,
       jobs: [
         unit.jobsData[0].level,
-        unit.jobsData[1].level,
-        unit.jobsData[2].level
+        unit.jobsData[1] ? unit.jobsData[1].level : 0,
+        unit.jobsData[2] ? unit.jobsData[2].level : 0
       ],
       nodes: {},
       masterSkill: unit.masterSkillActivated,

@@ -433,7 +433,7 @@ export class Unit {
               if (this.upgradeActivatedFromDreamSKill && this.level <= 120) {
                 this.upgradeActivatedFromDreamSKill = false;
 
-                const downgradedSkill = JSON.parse(JSON.stringify(upgrade.oldSkillData.skill));
+                const downgradedSkill = JSON.parse(JSON.stringify(upgrade.oldSkillData));
 
                 if (upgrade.oldSkillData.type === 'limit') {
                   const limitLevel = this.formattedLimit.level;

@@ -293,7 +293,8 @@ export class ToolService {
         'VC_LW_ANV2',
         'VC_LW_JEDN_01',
         'UN_LW_P_LVES_01',
-        'VC_LW_XMAS3'
+        'VC_LW_XMAS3',
+        'VC_LW_RSNC_01'
       ],
       JP: [
         'UN_LW_P_FRVA',
@@ -329,7 +330,8 @@ export class ToolService {
         'VC_LW_ANV2',
         'VC_LW_JEDN_01',
         'UN_LW_P_LVES_01',
-        'VC_LW_XMAS3'
+        'VC_LW_XMAS3',
+        'VC_LW_RSNC_01'
       ]
     };
 
