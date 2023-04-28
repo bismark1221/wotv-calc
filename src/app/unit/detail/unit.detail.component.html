@@ -715,7 +715,7 @@
 
         <table class="statsTable" *ngIf="windowSize >= 830">
           <tr>
-            <th colspan="15">Total Stat (max lvl & max job)</th>
+            <th colspan="15">Total Stat (No Dream)</th>
           </tr>
           <tbody *ngFor="let line of indexUnit">
             <tr>
@@ -734,9 +734,45 @@
 
         <table class="statsTable" *ngIf="windowSize < 830">
           <tr>
-            <th colspan="15">Total Stat (max lvl & max job)</th>
+            <th colspan="15">Total Stat (No Dream)</th>
           </tr>
           <tbody *ngFor="let row of indexUnit">
+            <tr *ngFor="let stat of row">
+              <td>
+                <img *ngIf="indexImageStatsType.indexOf(stat.type) !== -1" class="statusAilmentImg" title="{{ stat.type }}" src="{{ '/assets/buffs/' + stat.type.toLowerCase() + '.webp' }}">
+                <span *ngIf="indexImageStatsType.indexOf(stat.type) === -1">{{ stat.type }}</span>
+              </td>
+              <td class="heightResTd">
+                {{ stat.value }}<span *ngIf="indexImageStatsType.indexOf(stat.type) !== -1"> %</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="statsTable" *ngIf="windowSize >= 830 && unit.dream && unit.dream.stats">
+          <tr>
+            <th colspan="15">Total Stat (With Dream)</th>
+          </tr>
+          <tbody *ngFor="let line of indexDreamUnit">
+            <tr>
+              <th class="sub" *ngFor="let stat of line">
+                <img *ngIf="indexImageStatsType.indexOf(stat.type) !== -1" class="statusAilmentImg" title="{{ stat.type }}" src="{{ '/assets/buffs/' + stat.type.toLowerCase() + '.webp' }}">
+                <span *ngIf="indexImageStatsType.indexOf(stat.type) === -1">{{ stat.type }}</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="heightResTd" *ngFor="let stat of line">
+                {{ stat.value }}<span *ngIf="indexImageStatsType.indexOf(stat.type) !== -1"> %</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="statsTable" *ngIf="windowSize < 830 && unit.dream && unit.dream.stats">
+          <tr>
+            <th colspan="15">Total Stat (With Dream)</th>
+          </tr>
+          <tbody *ngFor="let row of indexDreamUnit">
             <tr *ngFor="let stat of row">
               <td>
                 <img *ngIf="indexImageStatsType.indexOf(stat.type) !== -1" class="statusAilmentImg" title="{{ stat.type }}" src="{{ '/assets/buffs/' + stat.type.toLowerCase() + '.webp' }}">

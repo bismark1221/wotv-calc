@@ -29,6 +29,7 @@ export class UnitDetailComponent implements OnInit {
   activeTab;
   possibleSkillTypes = ['support', 'counter'];
   indexUnit = [];
+  indexDreamUnit = [];
   version = 'GL';
 
   indexImageStatsType = [
@@ -134,7 +135,7 @@ export class UnitDetailComponent implements OnInit {
         }
 
         this.formatUnit();
-        this.getIndexUnit();
+        await this.getIndexUnit();
 
         this.navService.setSEO(this.unit.names.en, this.unit.descriptions.en);
       }
@@ -639,52 +640,90 @@ export class UnitDetailComponent implements OnInit {
     return this.navService.getRoute(route);
   }
 
-  getIndexUnit() {
-    if (this.unit.index) {
-      const stats = {};
-      Object.keys(this.unit.index.stats).forEach(statType => {
-        stats[statType] = this.unit.index.stats[statType];
+  async getIndexUnit() {
+    const buildedUnit = await this.unitService.selectUnitForBuilder(this.unit.dataId, null, true);
+
+    buildedUnit.masterSkillActivated = -1;
+    this.unitService.updateMasterSkill();
+
+    const indexStatsType = [
+      'HP',
+      'TP',
+      'AP',
+      'ATK',
+      'DEF',
+      'MAG',
+      'SPR',
+      'AGI',
+      'DEX',
+      'LUCK',
+      'EVADE',
+      'ACCURACY',
+      'CRITIC_RATE'
+    ];
+
+    const stats = {};
+    Object.keys(buildedUnit.stats).forEach(statType => {
+      stats[statType] = buildedUnit.stats[statType].total;
+    });
+
+    this.indexUnit = [[]];
+    indexStatsType.forEach(stat => {
+      if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
+        this.indexUnit.push([]);
+      }
+
+      if (stats[stat]) {
+        this.indexUnit[this.indexUnit.length - 1].push({
+          type: stat,
+          value: stats[stat]
+        });
+      }
+    });
+
+    this.indexImageStatsType.forEach(stat => {
+      if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
+        this.indexUnit.push([]);
+      }
+
+      if (stats[stat]) {
+        this.indexUnit[this.indexUnit.length - 1].push({
+          type: stat,
+          value: stats[stat]
+        });
+      }
+    });
+
+
+    if (this.unit.dream && this.unit.dream.stats) {
+      const dreamStats = {};
+      Object.keys(buildedUnit.stats).forEach(statType => {
+        dreamStats[statType] = buildedUnit.stats[statType].total + (this.unit.dream.stats[statType] ? this.unit.dream.stats[statType] : 0);
       });
 
-      const indexStatsType = [
-        'HP',
-        'TP',
-        'AP',
-        'ATK',
-        'DEF',
-        'MAG',
-        'SPR',
-        'AGI',
-        'DEX',
-        'LUCK',
-        'EVADE',
-        'ACCURACY',
-        'CRITIC_RATE'
-      ];
-
-      this.indexUnit = [[]];
+      this.indexDreamUnit = [[]];
       indexStatsType.forEach(stat => {
-        if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
-          this.indexUnit.push([]);
+        if (this.indexDreamUnit[this.indexDreamUnit.length - 1].length === 8) {
+          this.indexDreamUnit.push([]);
         }
 
-        if (stats[stat]) {
-          this.indexUnit[this.indexUnit.length - 1].push({
+        if (dreamStats[stat]) {
+          this.indexDreamUnit[this.indexDreamUnit.length - 1].push({
             type: stat,
-            value: stats[stat]
+            value: dreamStats[stat]
           });
         }
       });
 
       this.indexImageStatsType.forEach(stat => {
-        if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
-          this.indexUnit.push([]);
+        if (this.indexDreamUnit[this.indexDreamUnit.length - 1].length === 8) {
+          this.indexDreamUnit.push([]);
         }
 
-        if (stats[stat]) {
-          this.indexUnit[this.indexUnit.length - 1].push({
+        if (dreamStats[stat]) {
+          this.indexDreamUnit[this.indexDreamUnit.length - 1].push({
             type: stat,
-            value: stats[stat]
+            value: dreamStats[stat]
           });
         }
       });
