@@ -34,7 +34,8 @@ export const GL_JOB_GROUP = {
     "JB_FF6_TERA",
     "JB_FF6_CLES",
     "JB_FF13_LTNG",
-    "JB_FMAM_BRDL"
+    "JB_FMAM_BRDL",
+    "JB_LW_STRN_01"
   ],
   STAFFA: [
     "JB_LW_WHM",
