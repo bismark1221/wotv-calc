@@ -34,15 +34,6 @@ jobs:
       - name: Build prod
         run: npm run build:ssr
 
-      - name: Install Sentry-cli
-        run: curl -sL https://sentry.io/get-cli/ | bash
-
-      - name: Copy sentry config
-        run: cp .github/files/.sentryclirc ~/.sentryclirc
-
-      - name: Sentry Release
-        run: sentry-cli releases --org wotv-calc --project wotv-calc files prod upload-sourcemaps dist/wotv-calc/browser --rewrite
-
       - name: Remove sourcemaps
         run : rm dist/wotv-calc/browser/*.map
 
