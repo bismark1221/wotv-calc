@@ -12,7 +12,7 @@ jobs:
           ref: master
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: '16.13.0'
+          node-version: '16.14.0'
       - run: sudo apt-get install sshpass
       - run: npm cache clean --force
       - run: npm install -g @angular/cli
