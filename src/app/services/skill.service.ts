@@ -1108,6 +1108,9 @@ export class SkillService {
       case 'DEBUFF_RES' :
         html = this.getIncrease(effect) + ' Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'DEBUFF_EFFECT_WEAKENING' :
+        html = this.getIncrease(effect) + ' Debuff effect weakening' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'BUFFS_DURATION' :
         html = this.getIncrease(effect) + ' Buff Duration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;

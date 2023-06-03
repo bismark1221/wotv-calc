@@ -251,7 +251,8 @@ export class ToolService {
         'UN_LW_S_ODIN_01',
         'UN_LW_S_TSLP_01',
         'UN_LW_S_RAMU_01',
-        'UN_LW_S_IFRT_01'
+        'UN_LW_S_IFRT_01',
+        'UN_LW_P_HWLT_01'
       ];
 
       if (notSoLimited.indexOf(dataId) === -1) {
