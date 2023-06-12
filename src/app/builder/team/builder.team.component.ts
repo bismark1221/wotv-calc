@@ -737,4 +737,22 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   resetDreamStats(pos) {
     this.teamService.resetDreamStats(pos);
   }
+
+  switchUnitPos(pos, plus) {
+    console.log(this.team)
+
+    let futurPos = pos + (plus ? 1 : -1);
+    if (futurPos < 0) {
+      futurPos = 4;
+    } else if (futurPos > 4) {
+      futurPos = 0;
+    }
+
+    console.log(pos)
+    console.log(futurPos)
+
+    const existingUnit = this.team.units[futurPos];
+    this.team.units[futurPos] = this.team.units[pos];
+    this.team.units[pos] = existingUnit;
+  }
 }
