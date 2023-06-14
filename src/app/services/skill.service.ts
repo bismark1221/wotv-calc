@@ -1865,6 +1865,20 @@ export class SkillService {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
+      case 'AUTO_CAST_ANOTHER_SKILL' :
+        let newAutoCast = null;
+        if (unit.rawSkills) {
+          newAutoCast = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'Automatically cast another attack skill : ' + (newAutoCast ? this.toolService.getName(newAutoCast) : '???');
+        } else if (forSearchOptions) {
+          html = 'Automatically cast another attack skill';
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
       case 'AUTO_CAST_ON_ALLY_IN_RANGE' :
         let newCastOnAllyInRange = null;
         if (unit.rawSkills) {
