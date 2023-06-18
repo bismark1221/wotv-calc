@@ -392,6 +392,7 @@ export class QuestDetailComponent implements OnInit {
   async formatEnemyOrAlly(enemy, index, type, quest) {
     let formattedEnemy = quest.rawBestiary.find(searchedBeast => searchedBeast.dataId === enemy.dataId);
     formattedEnemy.name = this.toolService.getName(formattedEnemy);
+    formattedEnemy.id = enemy.id;
     formattedEnemy.statsForJob = {};
 
     if (enemy.element) {
