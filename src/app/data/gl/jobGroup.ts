@@ -10,7 +10,8 @@ export const GL_JOB_GROUP = {
     "JB_LW_LCIO",
     "JB_LW_SLEN",
     "JB_LW_SLVE",
-    "JB_LW_REGN"
+    "JB_LW_REGN",
+    "JB_LW_HWLT"
   ],
   SWORDB: [
     "JB_LW_WAR",

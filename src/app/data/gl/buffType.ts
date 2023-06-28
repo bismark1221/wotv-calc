@@ -50,6 +50,7 @@ export const GL_BUFF_TYPE = {
     "DARK_KILLER",
     "DARK_RES",
     "DEBUFFS_DURATION",
+    "DEBUFF_EFFECT_WEAKENING",
     "DEBUFF_RES",
     "DEF",
     "DEFENSE_PENETRATION",
