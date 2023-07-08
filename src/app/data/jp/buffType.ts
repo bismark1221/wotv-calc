@@ -223,6 +223,8 @@ export const JP_BUFF_TYPE = {
     "WIND_ATK",
     "WIND_KILLER",
     "WIND_RES",
+    "undefined_KILLER",
+    "undefined_RES",
     null
   ]
 };
