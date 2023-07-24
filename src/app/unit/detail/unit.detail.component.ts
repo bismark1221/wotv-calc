@@ -250,24 +250,26 @@ export class UnitDetailComponent implements OnInit {
         } else if (this.unit.board.nodes[nodeId].type !== 'skill') {
           const effect = skill.effects[0];
 
-          if (typeof(this.unit.totalBuffs[effect.type]) === 'number' && effect.calcType === 'fixe') {
-            if (skill.jobLevel <= 15) {
-              this.unit.totalBuffs[effect.type] += effect.minValue;
-            } else {
-              this.unit.exBuffs[effect.type] += effect.maxValue;
-            }
-          } else {
-            if (skill.jobLevel <= 15) {
-              this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect));
-            } else {
-              if (effect && effect.type === 'INCREASE_UNIT_LEVEL') {
-                maxExLevel += effect.value;
-                exempleSkillMaxExLevel = JSON.parse(JSON.stringify(skill));
+          if (effect) {
+            if (typeof(this.unit.totalBuffs[effect.type]) === 'number' && effect.calcType === 'fixe') {
+              if (skill.jobLevel <= 15) {
+                this.unit.totalBuffs[effect.type] += effect.minValue;
               } else {
-                if (skill.maxLevel > 1) {
-                  skill.level = skill.maxLevel;
+                this.unit.exBuffs[effect.type] += effect.maxValue;
+              }
+            } else {
+              if (skill.jobLevel <= 15) {
+                this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect));
+              } else {
+                if (effect && effect.type === 'INCREASE_UNIT_LEVEL') {
+                  maxExLevel += effect.value;
+                  exempleSkillMaxExLevel = JSON.parse(JSON.stringify(skill));
+                } else {
+                  if (skill.maxLevel > 1) {
+                    skill.level = skill.maxLevel;
+                  }
+                  this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, skill, effect));
                 }
-                this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, skill, effect));
               }
             }
           }

@@ -1198,7 +1198,7 @@ export class GridService {
           let text = '';
 
           if (unit.board.nodes[node.toString()].type === 'buff') {
-            text = this.skillService.formatEffect(unit, skill, skill.effects[0], false);
+            text = skill.effects[0] ? this.skillService.formatEffect(unit, skill, skill.effects[0], false) : 'Upgrade LB';
           } else {
             text = this.toolService.getName(skill);
           }
@@ -1295,11 +1295,11 @@ export class GridService {
     const linesToRemove = [];
 
     lines.forEach((line, lineIndex) => {
-      if (this.EXnodeLine[line].node1 === node) {
+      if (this.EXnodeLine[line] && this.EXnodeLine[line].node1 === node) {
         childNodes.push(this.EXnodeLine[line].node2);
         linesToRemove.push(lineIndex);
 
-      } else if (this.EXnodeLine[line].node2 === node) {
+      } else if (this.EXnodeLine[line] && this.EXnodeLine[line].node2 === node) {
         childNodes.push(this.EXnodeLine[line].node1);
         linesToRemove.push(lineIndex);
       }
