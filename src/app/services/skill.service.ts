@@ -1551,6 +1551,13 @@ export class SkillService {
           html = this.getChance(skill, effect, false) + ' magic damage' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
+      case 'REDUCE_PHYSIC_DAMAGE' :
+        if (shortDesc) {
+          html = 'Reduce physic damage taken';
+        } else {
+          html = 'Reduce physic damage taken' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
       case 'DEFENSE_PENETRATION' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' DEF penetration';
