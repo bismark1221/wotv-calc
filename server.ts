@@ -9,7 +9,7 @@ import {join} from 'path';
 
 const path = require('path');
 const fs = require('fs');
-const domino = require('domino');
+const domino = require('domino-ext');
 const templateA = fs.readFileSync(path.join(__dirname, '../browser', 'index.html')).toString();
 const win = domino.createWindow(templateA);
 
