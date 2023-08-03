@@ -15,6 +15,14 @@ const win = domino.createWindow(templateA);
 
 global['window'] = win;
 global['document'] = win.document;
+global['localStorage'] = {
+  getItem: function(key: string) {return null;},
+  setItem: function(key: string, value: string) {return null;},
+  removeItem: function(key: string) {return null;},
+  length: 0,
+  clear: function() {return null;},
+  key: function(index: number) {return null;}
+};
 
 import {AppServerModule} from './src/main.server';
 
