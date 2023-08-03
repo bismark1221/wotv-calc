@@ -7,7 +7,7 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "target": "es2020",
+    "target": "ES2022",
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types"
@@ -16,7 +16,8 @@
       "es2016",
       "dom"
     ],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "disableTypeScriptVersionCheck": true
