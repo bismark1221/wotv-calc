@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { MasterRanksService } from '../../../services/mr.service';
 
@@ -8,7 +8,7 @@ import { MasterRanksService } from '../../../services/mr.service';
   templateUrl: './builder.modal.mr.component.html',
   styleUrls: ['./builder.modal.mr.component.css']
 })
-export class BuilderModalMasterRanksComponent extends SimpleModalComponent<null, any> implements OnInit {
+export class BuilderModalMasterRanksComponent extends NgxModalComponent<null, any> implements OnInit {
   ranks;
   firstClickOutside = false;
 

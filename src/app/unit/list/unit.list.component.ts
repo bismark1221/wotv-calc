@@ -1,5 +1,5 @@
 import { Component, PLATFORM_ID, Inject } from '@angular/core';
-import { SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalService } from 'ngx-modalview';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { TranslateService } from '../../services/translate.service';
@@ -323,7 +323,7 @@ export class UnitListComponent extends SharedListComponent {
   constructor(
     translateService: TranslateService,
     navService: NavService,
-    simpleModalService: SimpleModalService,
+    simpleModalService: NgxModalService,
     toolService: ToolService,
     sessionService: SessionService,
     @Inject(PLATFORM_ID) platformId: object,

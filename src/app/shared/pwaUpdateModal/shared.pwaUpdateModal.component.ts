@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 @Component({
   selector: 'app-shared-pwaUpdateModal',
   templateUrl: './shared.pwaUpdateModal.component.html',
   styleUrls: ['./shared.pwaUpdateModal.component.css']
 })
-export class SharedPwaUpdateModalComponent extends SimpleModalComponent<null, null> {
+export class SharedPwaUpdateModalComponent extends NgxModalComponent<null, null> {
   firstClickOutside = false;
 
   constructor() {

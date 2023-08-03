@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { AuthService } from '../services/auth.service';
 
@@ -9,7 +9,7 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./login.component.css']
 })
 
-export class LoginComponent extends SimpleModalComponent<null, null> {
+export class LoginComponent extends NgxModalComponent<null, null> {
   step = 'login';
   availableSync = [];
   firstClickOutside = false;

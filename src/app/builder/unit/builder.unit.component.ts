@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalService } from 'ngx-modalview';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { TranslateService } from '../../services/translate.service';
@@ -162,7 +162,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     private translateService: TranslateService,
     private guildService: GuildService,
     private masterRanksService: MasterRanksService,
-    private simpleModalService: SimpleModalService,
+    private simpleModalService: NgxModalService,
     private navService: NavService,
     private toolService: ToolService,
     private authService: AuthService,

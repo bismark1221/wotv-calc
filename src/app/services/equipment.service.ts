@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from './translate.service';
 import { SkillService } from './skill.service';
@@ -256,7 +255,6 @@ export class EquipmentService {
 
   constructor(
     private translateService: TranslateService,
-    private localStorageService: LocalStorageService,
     private apiService: ApiService,
     private skillService: SkillService,
     private rangeService: RangeService,
@@ -693,7 +691,7 @@ export class EquipmentService {
   }
 
   getSavedEquipments() {
-    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
+    return localStorage.getItem('wotv-calc.' + this.getLocalStorage()) ? JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage())) : {};
   }
 
   getSavableData(equipment, onlyEquipment = true) {
@@ -891,7 +889,7 @@ export class EquipmentService {
           savedEquipments[equipment.dataId] = [savableData];
         }
 
-        this.localStorageService.set(this.getLocalStorage(), savedEquipments);
+        localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedEquipments));
       }
 
       this.equipment.storeId = data.storeId;
@@ -907,7 +905,7 @@ export class EquipmentService {
         }
       });
 
-      this.localStorageService.set(this.getLocalStorage(), savedEquipments);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedEquipments));
 
       return equipment.storeId;
     }
@@ -924,7 +922,7 @@ export class EquipmentService {
       }
     });
 
-    this.localStorageService.set(this.getLocalStorage(), savedEquipments);
+    localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedEquipments));
   }
 
   async getStoredEquipment(storeId) {

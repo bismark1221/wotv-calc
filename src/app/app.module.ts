@@ -5,9 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { LocalStorageModule } from 'angular-2-local-storage';
 import { Angulartics2Module } from 'angulartics2';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { ClipboardModule } from 'ngx-clipboard';
 import { UiSwitchModule } from 'ngx-ui-switch';
 import { environment } from '../environments/environment';
@@ -15,7 +13,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgClickOutsideDirective } from 'ng-click-outside2';
-import { SimpleModalModule, defaultSimpleModalOptions } from 'ngx-simple-modal';
+import { NgxModalView, defaultNgxModalOptions } from 'ngx-modalview';
 import { NgxPopperjsModule } from 'ngx-popperjs';
 import { BarRatingModule } from 'ngx-bar-rating';
 
@@ -78,10 +76,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    LocalStorageModule.forRoot({
-      prefix: 'wotv-calc',
-      storageType: 'localStorage'
-    }),
     Angulartics2Module.forRoot(),
     HttpClientModule,
     NgSelectModule,
@@ -90,7 +84,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     NgClickOutsideDirective,
-    SimpleModalModule.forRoot({container: 'modal-container'}, {...defaultSimpleModalOptions, ...{
+    NgxModalView.forRoot({container: 'modal-container'}, {...defaultNgxModalOptions, ...{
       closeOnEscape: true,
       animationDuration: 1,
       autoFocus: false

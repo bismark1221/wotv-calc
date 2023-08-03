@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalService } from 'ngx-modalview';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { TranslateService } from '../../services/translate.service';
@@ -111,7 +111,7 @@ export class BuilderMateriaComponent implements OnInit, AfterViewInit {
     private skillService: SkillService,
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
-    private simpleModalService: SimpleModalService,
+    private simpleModalService: NgxModalService,
     private sessionService: SessionService
   ) {
     this.version = this.navService.getVersion();

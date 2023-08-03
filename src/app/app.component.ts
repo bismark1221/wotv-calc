@@ -3,7 +3,6 @@ import { isPlatformBrowser } from '@angular/common';
 import { Angulartics2 } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2';
 import { TranslateService } from './services/translate.service';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 @Component({
   selector: 'app-root',
@@ -16,14 +15,13 @@ export class AppComponent {
     angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
     translateService: TranslateService,
     private angulartics: Angulartics2,
-    private localStorageService: LocalStorageService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
     angulartics2GoogleAnalytics.startTracking();
 
     translateService.addLangs(['en', 'fr', 'de', 'es', 'ko', 'zh']);
 
-    let lang = this.localStorageService.get<any[]>('lang') ? this.localStorageService.get<any[]>('lang').toString() : translateService.getDefaultLang();
+    let lang = localStorage.getItem('wotv-calc.lang') ? localStorage.getItem('wotv-calc.lang') : translateService.getDefaultLang();
     if (translateService.getLangs().indexOf(lang) === -1) {
       lang = translateService.getDefaultLang();
     }

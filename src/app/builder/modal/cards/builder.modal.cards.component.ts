@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { TranslateService } from '../../../services/translate.service';
 import { CardService } from '../../../services/card.service';
@@ -15,7 +15,7 @@ import { UnitService } from '../../../services/unit.service';
   templateUrl: './builder.modal.cards.component.html',
   styleUrls: ['./builder.modal.cards.component.css']
 })
-export class BuilderModalCardsComponent extends SimpleModalComponent<null, any> implements OnInit {
+export class BuilderModalCardsComponent extends NgxModalComponent<null, any> implements OnInit {
   rawCards;
   cards = [];
   rawJobs = [];

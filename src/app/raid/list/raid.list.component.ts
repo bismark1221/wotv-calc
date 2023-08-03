@@ -1,5 +1,5 @@
 import { Component, PLATFORM_ID, Inject } from '@angular/core';
-import { SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalService } from 'ngx-modalview';
 
 import { TranslateService } from '../../services/translate.service';
 import { NavService } from '../../services/nav.service';
@@ -84,7 +84,7 @@ export class RaidListComponent extends SharedListComponent {
   constructor(
     translateService: TranslateService,
     navService: NavService,
-    simpleModalService: SimpleModalService,
+    simpleModalService: NgxModalService,
     toolService: ToolService,
     sessionService: SessionService,
     @Inject(PLATFORM_ID) platformId: object,

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { GuildService } from '../../../services/guild.service';
 
@@ -8,7 +8,7 @@ import { GuildService } from '../../../services/guild.service';
   templateUrl: './builder.modal.guild.component.html',
   styleUrls: ['./builder.modal.guild.component.css']
 })
-export class BuilderModalGuildComponent extends SimpleModalComponent<null, any> implements OnInit {
+export class BuilderModalGuildComponent extends NgxModalComponent<null, any> implements OnInit {
   statues;
   statueNames;
   firstClickOutside = false;

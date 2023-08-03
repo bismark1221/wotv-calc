@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild, Input } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { TranslateService } from '../../../services/translate.service';
@@ -16,7 +16,7 @@ import { Materia } from '../../../entities/materia';
   templateUrl: './builder.modal.materia.component.html',
   styleUrls: ['./builder.modal.materia.component.css']
 })
-export class BuilderModalMateriaComponent extends SimpleModalComponent<null, any> implements OnInit, AfterViewInit {
+export class BuilderModalMateriaComponent extends NgxModalComponent<null, any> implements OnInit, AfterViewInit {
   materias = [];
   materiaGroups = [];
   materiaSkills = [];

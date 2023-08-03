@@ -1,6 +1,5 @@
 
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from './translate.service';
 import { GridService } from './grid.service';
@@ -38,7 +37,6 @@ export class EsperService {
 
   constructor(
     private translateService: TranslateService,
-    private localStorageService: LocalStorageService,
     private apiService: ApiService,
     private gridService: GridService,
     private navService: NavService,
@@ -209,7 +207,7 @@ export class EsperService {
   }
 
   getSavedEspers() {
-    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
+    return localStorage.getItem('wotv-calc.' + this.getLocalStorage()) ? JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage())) : {};
   }
 
   getSavableData(esper, onlyEsper = true) {
@@ -351,7 +349,7 @@ export class EsperService {
           savedEspers[esper.dataId] = [savableData];
         }
 
-        this.localStorageService.set(this.getLocalStorage(), savedEspers);
+        localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedEspers));
       }
       this.esper.storeId = data.id;
 
@@ -366,7 +364,7 @@ export class EsperService {
         }
       });
 
-      this.localStorageService.set(this.getLocalStorage(), savedEspers);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedEspers));
 
       return esper.storeId;
     }
@@ -383,7 +381,7 @@ export class EsperService {
       }
     });
 
-    this.localStorageService.set(this.getLocalStorage(), savedEspers);
+    localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedEspers));
   }
 
   async getStoredEsper(storeId) {

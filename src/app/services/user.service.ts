@@ -1,7 +1,6 @@
 import { Injectable, NgZone } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { ApiService } from './api.service';
 import { AuthService } from './auth.service';
@@ -83,8 +82,7 @@ export class UserService {
     private unitService: UnitService,
     private equipmentService: EquipmentService,
     private materiaService: MateriaService,
-    private guildService: GuildService,
-    private localStorageService: LocalStorageService
+    private guildService: GuildService
   ) {
   }
 
@@ -557,7 +555,7 @@ export class UserService {
   }
 
   private getSavedItems(type) {
-    let savedItems = this.localStorageService.get(type);
+    let savedItems = JSON.parse(localStorage.getItem('wotv-calc.' + type));
 
     if (!savedItems) {
       savedItems = {};
@@ -609,7 +607,7 @@ export class UserService {
       this.loading.saveData[this.type].save--;
     }
 
-    this.localStorageService.set(this.type, this.savedItems);
+    localStorage.setItem('wotv-calc.' + this.type, JSON.stringify(this.savedItems));
   }
 
   async deleteAllSaved(type) {
@@ -645,7 +643,7 @@ export class UserService {
         }
       }
 
-      this.localStorageService.set(this.type, this.savedItems);
+      localStorage.setItem('wotv-calc.' + this.type, JSON.stringify(this.savedItems));
     }
   }
 
@@ -661,7 +659,7 @@ export class UserService {
         await this.getApiUser('delete', this.type, item.storeId);
       }
 
-      this.localStorageService.remove(this.type);
+      localStorage.removeItem('wotv-calc.' + this.type);
     }
   }
 
@@ -676,7 +674,7 @@ export class UserService {
       this.savedItems = data;
     }
 
-    this.localStorageService.set(this.type, this.savedItems);
+    localStorage.setItem('wotv-calc.' + this.type, JSON.stringify(this.savedItems));
     this.loading.saveData[this.type] = 'finish';
   }
 }

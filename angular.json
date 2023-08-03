@@ -117,7 +117,8 @@
             "tsConfig": "src/tsconfig.server.json",
             "optimization": false,
             "sourceMap": true,
-            "extractLicenses": false
+            "extractLicenses": false,
+            "buildOptimizer": false
           },
           "configurations": {
             "production": {
@@ -134,7 +135,8 @@
                 "scripts": true,
                 "styles": true
               },
-              "extractLicenses": true
+              "extractLicenses": true,
+              "buildOptimizer": true
             }
           },
           "defaultConfiguration": "production"

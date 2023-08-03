@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, HostListener, ElementRef, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
-import { SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalService } from 'ngx-modalview';
 
 import { TranslateService } from '../../services/translate.service';
 import { NavService } from '../../services/nav.service';
@@ -54,7 +54,7 @@ export class SharedListComponent implements OnInit {
   constructor(
     protected translateService: TranslateService,
     private navService: NavService,
-    private simpleModalService: SimpleModalService,
+    private simpleModalService: NgxModalService,
     protected toolService: ToolService,
     protected sessionService: SessionService,
     @Inject(PLATFORM_ID) private platformId: object

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { CardService } from '../../../services/card.service';
 import { UnitService } from '../../../services/unit.service';
@@ -13,7 +13,7 @@ import { MateriaService } from '../../../services/materia.service';
   templateUrl: './builder.modal.save.component.html',
   styleUrls: ['./builder.modal.save.component.css']
 })
-export class BuilderModalSaveComponent extends SimpleModalComponent<null, boolean> implements OnInit {
+export class BuilderModalSaveComponent extends NgxModalComponent<null, boolean> implements OnInit {
   saveStep = 'save';
   firstClickOutside = false;
 

@@ -4,7 +4,6 @@ import 'firebase/compat/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { User } from '../entities/user';
 import { NavService } from './nav.service';
@@ -30,7 +29,6 @@ export class AuthService {
 
   constructor(
     private fireauth: AngularFireAuth,
-    private localStorageService: LocalStorageService,
     private navService: NavService,
     private apiService: ApiService
   ) {
@@ -77,8 +75,8 @@ export class AuthService {
 
         for (const version of this.versions) {
           for (const type of this.types) {
-            const savedData = this.localStorageService.get((version === 'jp' ? 'jp_' : '') + type);
-            if (savedData && Object.keys(savedData).length > 0) {
+            const savedData = localStorage.getItem('wotv-calc.' + (version === 'jp' ? 'jp_' : '') + type);
+            if (savedData && Object.keys(JSON.parse(savedData)).length > 0) {
               localDataFound = true;
             }
           }
@@ -106,7 +104,7 @@ export class AuthService {
               }
             }
 
-            this.localStorageService.set((version === 'jp' ? 'jp_' : '') + type, data);
+            localStorage.setItem('wotv-calc.' + (version === 'jp' ? 'jp_' : '') + type, JSON.stringify(data));
           }
         }
 
@@ -150,7 +148,7 @@ export class AuthService {
   private emptyLocalStorage() {
     for (const version of this.versions) {
       for (const type of this.types) {
-        this.localStorageService.remove((version === 'jp' ? 'jp_' : '') + type);
+        localStorage.removeItem('wotv-calc.' + (version === 'jp' ? 'jp_' : '') + type);
       }
     }
 
@@ -217,8 +215,9 @@ export class AuthService {
 
     for (const version of this.versions) {
       for (const type of this.types) {
-        const data = this.localStorageService.get((version === 'jp' ? 'jp_' : '') + type);
-        if (data && Object.keys(data).length > 0) {
+        let data = localStorage.getItem('wotv-calc.' + (version === 'jp' ? 'jp_' : '') + type);
+        if (data && Object.keys(JSON.parse(data)).length > 0) {
+          data = JSON.parse(data);
           if (type !== 'guild' && type !== 'masterRank') {
             for (const itemId of Object.keys(data)) {
               data[itemId].customName = '1';
@@ -246,7 +245,7 @@ export class AuthService {
     const promises = [];
 
     types.forEach(type => {
-      data[type] = this.localStorageService.get(type);
+      data[type] = localStorage.getItem('wotv-calc.' + type);
     });
 
     return data;

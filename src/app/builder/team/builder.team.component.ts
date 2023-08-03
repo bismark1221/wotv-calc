@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalService } from 'ngx-modalview';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ClipboardService } from 'ngx-clipboard';
 
@@ -87,7 +87,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     private cardService: CardService,
     private equipmentService: EquipmentService,
     private toolService: ToolService,
-    private simpleModalService: SimpleModalService,
+    private simpleModalService: NgxModalService,
     private clipboardService: ClipboardService,
     private teamService: TeamService,
     private authService: AuthService,

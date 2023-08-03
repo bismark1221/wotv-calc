@@ -1,7 +1,7 @@
 import { Injectable, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
-import { SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalService } from 'ngx-modalview';
 
 import { filter } from 'rxjs';
 
@@ -12,7 +12,7 @@ export class PwaService {
 
   constructor(
     private swUpdate: SwUpdate,
-    private simpleModalService: SimpleModalService,
+    private simpleModalService: NgxModalService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
     if (isPlatformBrowser(this.platformId)) {

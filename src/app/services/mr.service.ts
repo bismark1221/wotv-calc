@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { NavService } from './nav.service';
 import { ApiService } from './api.service';
@@ -23,7 +22,6 @@ export class MasterRanksService {
   private GL_dataMasterRanks;
 
   constructor(
-    private localStorageService: LocalStorageService,
     private apiService: ApiService,
     private navService: NavService,
     private authService: AuthService
@@ -57,8 +55,8 @@ export class MasterRanksService {
   }
 
   getMasterRanks() {
-    if (this.localStorageService.get(this.getLocalStorage()) && Object.keys(this.localStorageService.get(this.getLocalStorage())).length >= 8) {
-      this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())));
+    if (localStorage.getItem('wotv-calc.' + this.getLocalStorage()) && Object.keys(JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage()))).length >= 8) {
+      this.masterRanks = JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage()));
     } else {
       this.masterRanks = {
         fire: 1,
@@ -77,8 +75,8 @@ export class MasterRanksService {
   }
 
   async getMasterRanksForBuilder(forceEmptyMasterRanks = false) {
-    if (!forceEmptyMasterRanks && this.localStorageService.get(this.getLocalStorage()) && Object.keys(this.localStorageService.get(this.getLocalStorage())).length >= 8) {
-      this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())));
+    if (!forceEmptyMasterRanks && localStorage.getItem('wotv-calc.' + this.getLocalStorage()) && Object.keys(JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage()))).length >= 8) {
+      this.masterRanks = JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage()));
 
       const elements = ['fire', 'ice', 'water', 'wind', 'light', 'dark', 'earth', 'lightning'];
       elements.forEach(element => {
@@ -133,9 +131,9 @@ export class MasterRanksService {
   }
 
   masterRanksdAlreadyExists() {
-    const localStoredMasterRanks = this.localStorageService.get(this.getLocalStorage());
+    const localStoredMasterRanks = localStorage.getItem('wotv-calc.' + this.getLocalStorage());
     // @ts-ignore
-    if (localStoredMasterRanks && localStoredMasterRanks.storeId) {
+    if (localStoredMasterRanks && JSON.parse(localStoredMasterRanks).storeId) {
       return true;
     } else {
       return false;
@@ -150,7 +148,7 @@ export class MasterRanksService {
       // @ts-ignore
       savableData.storeId = masterRanks.storeId;
 
-      this.localStorageService.set(this.getLocalStorage(), savableData);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savableData));
 
       return masterRanks.storeId;
     } else {
@@ -158,7 +156,7 @@ export class MasterRanksService {
       // @ts-ignore
       savableData.storeId = data.id;
 
-      this.localStorageService.set(this.getLocalStorage(), savableData);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savableData));
       this.masterRanks.storeId = data.id;
 
       return data.id;

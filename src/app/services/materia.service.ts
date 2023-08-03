@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Materia } from '../entities/materia';
 
@@ -35,7 +34,6 @@ export class MateriaService {
 
   constructor(
     private skillService: SkillService,
-    private localStorageService: LocalStorageService,
     private navService: NavService,
     private authService: AuthService,
     private apiService: ApiService,
@@ -91,7 +89,7 @@ export class MateriaService {
   }
 
   getSavedMaterias() {
-    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
+    return localStorage.getItem('wotv-calc.' + this.getLocalStorage()) ? JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage())) : {};
   }
 
   getSavableData(materia, onlyMateria = true) {
@@ -168,7 +166,7 @@ export class MateriaService {
           savedMaterias[materia.dataId] = [savableData];
         }
 
-        this.localStorageService.set(this.getLocalStorage(), savedMaterias);
+        localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedMaterias));
       }
       materia.storeId = data.storeId;
 
@@ -193,7 +191,7 @@ export class MateriaService {
         });
       }
 
-      this.localStorageService.set(this.getLocalStorage(), savedMaterias);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedMaterias));
 
       return materia.storeId;
     }
@@ -245,7 +243,7 @@ export class MateriaService {
       }
     });
 
-    this.localStorageService.set(this.getLocalStorage(), savedMaterias);
+    localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedMaterias));
   }
 
   filterMaterias(materias, filters, sort = 'rarity', order = 'desc', rawMaterias, rawSkills) {

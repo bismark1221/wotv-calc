@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { HttpClient } from '@angular/common/http';
 
 import { Unit } from '../entities/unit';
@@ -39,7 +38,6 @@ export class UnitService {
 
   constructor(
     private translateService: TranslateService,
-    private localStorageService: LocalStorageService,
     private gridService: GridService,
     private skillService: SkillService,
     private rangeService: RangeService,
@@ -396,7 +394,7 @@ export class UnitService {
   }
 
   getSavedUnits() {
-    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
+    return localStorage.getItem('wotv-calc.' + this.getLocalStorage()) ? JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage())) : {};
   }
 
   getSavableData(unit) {
@@ -738,7 +736,7 @@ export class UnitService {
           savedUnits[unit.dataId] = [savableData];
         }
 
-        this.localStorageService.set(this.getLocalStorage(), savedUnits);
+        localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedUnits));
       }
       this.unit.storeId = data.storeId;
 
@@ -754,7 +752,7 @@ export class UnitService {
         }
       });
 
-      this.localStorageService.set(this.getLocalStorage(), savedUnits);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedUnits));
 
       return unit.storeId;
     }
@@ -771,7 +769,7 @@ export class UnitService {
       }
     });
 
-    this.localStorageService.set(this.getLocalStorage(), savedUnits);
+    localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedUnits));
   }
 
   async getStoredUnit(storeId) {

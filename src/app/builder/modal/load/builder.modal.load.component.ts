@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { TranslateService } from '../../../services/translate.service';
 import { ToolService } from '../../../services/tool.service';
@@ -14,7 +14,7 @@ import { TeamService } from '../../../services/team.service';
   templateUrl: './builder.modal.load.component.html',
   styleUrls: ['./builder.modal.load.component.css']
 })
-export class BuilderModalLoadComponent extends SimpleModalComponent<null, any> implements OnInit {
+export class BuilderModalLoadComponent extends NgxModalComponent<null, any> implements OnInit {
   public savedItems;
   public type;
   public allowNew = false;

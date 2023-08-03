@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Unit } from '../entities/unit';
 
@@ -26,7 +25,6 @@ export class TeamService {
 
   constructor(
     private translateService: TranslateService,
-    private localStorageService: LocalStorageService,
     private guildService: GuildService,
     private masterRanksService: MasterRanksService,
     private navService: NavService,
@@ -83,7 +81,7 @@ export class TeamService {
   }
 
   getSavedTeams() {
-    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
+    return localStorage.getItem('wotv-calc.' + this.getLocalStorage()) ? JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage())) : {};
   }
 
   getSavableData(team) {
@@ -127,7 +125,7 @@ export class TeamService {
         const savedTeams = this.getSavedTeams();
         savedTeams[team.name] = savableData;
 
-        this.localStorageService.set(this.getLocalStorage(), savedTeams);
+        localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedTeams));
       }
 
       this.team.storeId = data.storeId;
@@ -144,7 +142,7 @@ export class TeamService {
         }
       });
 
-      this.localStorageService.set(this.getLocalStorage(), savedTeams);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedTeams));
 
       return team.storeId;
     }
@@ -161,7 +159,7 @@ export class TeamService {
       }
     });
 
-    this.localStorageService.set(this.getLocalStorage(), savedTeams);
+    localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedTeams));
   }
 
   async getStoredTeam(storeId) {

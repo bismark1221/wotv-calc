@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { ClipboardService } from 'ngx-clipboard';
-import { SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalService } from 'ngx-modalview';
 import { v5 as uuidv5 } from 'uuid';
 
 import { InventoryService } from '../services/inventory.service';
@@ -62,7 +62,7 @@ export class InventoryComponent implements OnInit, AfterViewInit {
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private simpleModalService: SimpleModalService
+    private simpleModalService: NgxModalService
   ) {}
 
   async ngOnInit() {

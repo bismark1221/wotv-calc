@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Input, OnInit } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { ClipboardService } from 'ngx-clipboard';
 
@@ -16,7 +16,7 @@ import { MateriaService } from '../../services/materia.service';
   templateUrl: './shared.linkModal.component.html',
   styleUrls: ['./shared.linkModal.component.css']
 })
-export class SharedLinkModalComponent extends SimpleModalComponent<null, null> implements OnInit, AfterViewInit {
+export class SharedLinkModalComponent extends NgxModalComponent<null, null> implements OnInit, AfterViewInit {
   exportableLink = '';
   saveStep = 'loading';
   firstClickOutside = false;

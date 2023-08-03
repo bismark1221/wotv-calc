@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { NavService } from '../../services/nav.service';
 import { ToolService } from '../../services/tool.service';
@@ -13,7 +13,7 @@ import { JP_BUFF_TYPE } from '../../data/jp/buffType';
   templateUrl: './shared.searchOptionsModal.component.html',
   styleUrls: ['./shared.searchOptionsModal.component.css']
 })
-export class SharedSearchOptionsModalComponent extends SimpleModalComponent<null, null> {
+export class SharedSearchOptionsModalComponent extends NgxModalComponent<null, null> {
   firstClickOutside = false;
 
   buffType = {

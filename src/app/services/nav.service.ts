@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { BehaviorSubject } from 'rxjs';
@@ -15,7 +14,6 @@ export class NavService {
   $menuDisabled = this.menuDataSubject.asObservable();
 
   constructor(
-    private localStorageService: LocalStorageService,
     private titleService: Title,
     private metaService: Meta,
     private pwaService: PwaService
@@ -28,8 +26,8 @@ export class NavService {
 
   getVersion() {
     if (!this.version) {
-      this.version = this.localStorageService.get('version') ? this.localStorageService.get('version') : 'GL';
-      this.localStorageService.set('version', this.version);
+      this.version = localStorage.getItem('wotv-calc.' + 'version') ? localStorage.getItem('wotv-calc.' + 'version') : 'GL';
+      localStorage.setItem('wotv-calc.' + 'version', this.version);
     }
 
     return this.version;
@@ -37,7 +35,7 @@ export class NavService {
 
   setVersion(version) {
     this.version = version;
-    this.localStorageService.set('version', this.version);
+    localStorage.setItem('wotv-calc.' + 'version', this.version);
   }
 
   getRoute(route) {

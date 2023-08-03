@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { TranslateService } from '../../../services/translate.service';
 import { CardService } from '../../../services/card.service';
@@ -14,7 +14,7 @@ import { MateriaService } from '../../../services/materia.service';
   templateUrl: './builder.modal.delete.component.html',
   styleUrls: ['./builder.modal.delete.component.css']
 })
-export class BuilderModalDeleteComponent extends SimpleModalComponent<null, boolean> implements OnInit {
+export class BuilderModalDeleteComponent extends NgxModalComponent<null, boolean> implements OnInit {
   deleteStep = 'confirm';
   firstClickOutside = false;
 

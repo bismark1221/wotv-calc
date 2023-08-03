@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SimpleModalComponent, SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalComponent, NgxModalService } from 'ngx-modalview';
 
 import { TranslateService } from '../../../services/translate.service';
 import { EquipmentService } from '../../../services/equipment.service';
@@ -13,7 +13,7 @@ import { BuilderModalMateriaComponent } from '../materia/builder.modal.materia.c
   templateUrl: './builder.modal.equipments.component.html',
   styleUrls: ['./builder.modal.equipments.component.css']
 })
-export class BuilderModalEquipmentsComponent extends SimpleModalComponent<null, any> implements OnInit {
+export class BuilderModalEquipmentsComponent extends NgxModalComponent<null, any> implements OnInit {
   rawData = {
     equipments: [],
     acquisitionTypes: []
@@ -48,7 +48,7 @@ export class BuilderModalEquipmentsComponent extends SimpleModalComponent<null, 
     private translateService: TranslateService,
     private toolService: ToolService,
     private navService: NavService,
-    private simpleModalService: SimpleModalService
+    private simpleModalService: NgxModalService
   ) {
     super();
 

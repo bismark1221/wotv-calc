@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { TranslateService } from '../../../services/translate.service';
 import { EsperService } from '../../../services/esper.service';
@@ -14,7 +14,7 @@ import { Esper } from '../../../entities/esper';
   templateUrl: './builder.modal.espers.component.html',
   styleUrls: ['./builder.modal.espers.component.css']
 })
-export class BuilderModalEspersComponent extends SimpleModalComponent<null, any> implements OnInit {
+export class BuilderModalEspersComponent extends NgxModalComponent<null, any> implements OnInit {
   rawEspers;
   espers = [];
   star;

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { Guild } from '../entities/guild';
 import { NavService } from './nav.service';
@@ -82,7 +81,6 @@ export class GuildService {
   };
 
   constructor(
-    private localStorageService: LocalStorageService,
     private navService: NavService,
     private authService: AuthService,
     private apiService: ApiService
@@ -97,8 +95,8 @@ export class GuildService {
   }
 
   getGuild() {
-    if (this.localStorageService.get(this.getLocalStorage())) {
-      this.guild = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())));
+    if (localStorage.getItem('wotv-calc.' + this.getLocalStorage())) {
+      this.guild = JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage()));
       Object.keys(this.statues).forEach(statue => {
         if (!this.guild[statue]) {
           this.guild[statue] = 0;
@@ -112,8 +110,8 @@ export class GuildService {
   }
 
   getGuildForBuilder(forceEmptyGuild = false) {
-    if (!forceEmptyGuild && this.localStorageService.get(this.getLocalStorage())) {
-      this.guild = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())));
+    if (!forceEmptyGuild && localStorage.getItem('wotv-calc.' + this.getLocalStorage())) {
+      this.guild = JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage()));
       Object.keys(this.statues).forEach(statue => {
         if (!this.guild[statue]) {
           this.guild[statue] = 0;
@@ -157,9 +155,9 @@ export class GuildService {
   }
 
   guildAlreadyExists(guild) {
-    const localStoredGuild = this.localStorageService.get(this.getLocalStorage());
+    const localStoredGuild = localStorage.getItem('wotv-calc.' + this.getLocalStorage());
     // @ts-ignore
-    if (localStoredGuild && localStoredGuild.storeId) {
+    if (localStoredGuild && JSON.parse(localStoredGuild).storeId) {
       return true;
     } else {
       return false;
@@ -174,7 +172,7 @@ export class GuildService {
       // @ts-ignore
       savableData.storeId = guild.storeId;
 
-      this.localStorageService.set(this.getLocalStorage(), savableData);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savableData));
 
       return guild.storeId;
     } else {
@@ -182,7 +180,7 @@ export class GuildService {
       // @ts-ignore
       savableData.storeId = data.storeId;
 
-      this.localStorageService.set(this.getLocalStorage(), savableData);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savableData));
       this.guild.storeId = data.storeId;
 
       return data.storeId;

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SimpleModalComponent } from 'ngx-simple-modal';
+import { NgxModalComponent } from 'ngx-modalview';
 
 import { TranslateService } from '../../services/translate.service';
 import { EquipmentService } from '../../services/equipment.service';
@@ -11,7 +11,7 @@ import { ToolService } from '../../services/tool.service';
   templateUrl: './inventory.modal.equipments.component.html',
   styleUrls: ['./inventory.modal.equipments.component.css']
 })
-export class InventoryModalEquipmentsComponent extends SimpleModalComponent<null, any> implements OnInit {
+export class InventoryModalEquipmentsComponent extends NgxModalComponent<null, any> implements OnInit {
   rawData = {
     equipments: [],
     acquisitionTypes: []

@@ -1,8 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
-import { SimpleModalService } from 'ngx-simple-modal';
+import { NgxModalService } from 'ngx-modalview';
 
 import { TranslateService } from '../services/translate.service';
 import { NavService } from '../services/nav.service';
@@ -44,13 +43,12 @@ export class NavComponent implements OnInit, AfterViewInit {
   user = null;
 
   constructor(
-    private localStorageService: LocalStorageService,
     private angulartics: Angulartics2,
     private translateService: TranslateService,
     private navService: NavService,
     private router: Router,
     private themeService: ThemeService,
-    private simpleModalService: SimpleModalService,
+    private simpleModalService: NgxModalService,
     private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event) => {
@@ -125,7 +123,7 @@ export class NavComponent implements OnInit, AfterViewInit {
 
   changeLang(lang: string) {
     if (this.translateService.getLangs().indexOf(lang) !== -1) {
-      this.localStorageService.set('lang', lang);
+      localStorage.setItem('wotv-calc.' + 'lang', lang);
       this.translateService.use(lang);
 
       this.angulartics.eventTrack.next({ action: lang, properties: { category: 'change_lang' }});

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from 'angular-2-local-storage';
 
 import { TranslateService } from './translate.service';
 import { SkillService } from './skill.service';
@@ -33,7 +32,6 @@ export class CardService {
 
   constructor(
     private translateService: TranslateService,
-    private localStorageService: LocalStorageService,
     private apiService: ApiService,
     private skillService: SkillService,
     private rangeService: RangeService,
@@ -315,7 +313,7 @@ export class CardService {
   }
 
   getSavedCards() {
-    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
+    return localStorage.getItem('wotv-calc.' + this.getLocalStorage()) ? JSON.parse(localStorage.getItem('wotv-calc.' + this.getLocalStorage())) : {};
   }
 
   getSavableData(card, onlyCard = true) {
@@ -457,7 +455,7 @@ export class CardService {
           savedCards[card.dataId] = [savableData];
         }
 
-        this.localStorageService.set(this.getLocalStorage(), savedCards);
+        localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedCards));
       }
 
       this.card.storeId = data.storeId;
@@ -473,7 +471,7 @@ export class CardService {
         }
       });
 
-      this.localStorageService.set(this.getLocalStorage(), savedCards);
+      localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedCards));
 
       return card.storeId;
     }
@@ -490,7 +488,7 @@ export class CardService {
       }
     });
 
-    this.localStorageService.set(this.getLocalStorage(), savedCards);
+    localStorage.setItem('wotv-calc.' + this.getLocalStorage(), JSON.stringify(savedCards));
   }
 
   async getStoredCard(storeId) {
