@@ -30,6 +30,7 @@ export const GL_BUFF_TYPE = {
     "BERSERK_ATK",
     "BERSERK_RES",
     "BIRD_KILLER",
+    "BIRD_RES",
     "BLIND_ATK",
     "BLIND_RES",
     "BRAVERY",
