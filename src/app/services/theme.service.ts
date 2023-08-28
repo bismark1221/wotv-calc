@@ -41,12 +41,14 @@ export class ThemeService {
     localStorage.setItem('wotv-calc.' + 'theme', theme);
 
     if (isPlatformBrowser(this.platformId)) {
-      Object.keys(themes[theme].properties).forEach(property => {
-        document.documentElement.style.setProperty(
-          property,
-          themes[theme].properties[property]
-        );
-      });
+      if (themes[theme]) {
+        Object.keys(themes[theme].properties).forEach(property => {
+          document.documentElement.style.setProperty(
+            property,
+            themes[theme].properties[property]
+          );
+        });
+      }
     }
 
     this.active = theme;

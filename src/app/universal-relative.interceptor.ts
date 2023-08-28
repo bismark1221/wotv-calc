@@ -18,12 +18,14 @@ export class UniversalRelativeInterceptor implements HttpInterceptor {
   intercept(req: HttpRequest<any>, next: HttpHandler) {
     if (this.request && !isAbsoluteURL(req.url)) {
       let host = this.request.get('host');
+      let protocol = this.request.protocol;
 
       if (host.split(':')[0] === 'localhost' && req.url.split('/')[1] === 'api') {
-        host = 'localhost:4201';
+        host = 'localhost:4200';
+        protocol = 'http';
       }
 
-      const protocolHost = `${this.request.protocol}://${host}`;
+      const protocolHost = `${protocol}://${host}`;
       const pathSeparator = !req.url.startsWith('/') ? '/' : '';
       const url = protocolHost + pathSeparator + req.url;
       const serverRequest = req.clone({ url });

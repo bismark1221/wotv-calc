@@ -45,7 +45,7 @@ export class EquipmentDetailComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       this.windowSize = window.innerWidth;
 
-      this.getStatsTypesByRow();
+      this.getStatsTypesByRow(this.equipment);
     }
   }
 
@@ -82,14 +82,14 @@ export class EquipmentDetailComponent implements OnInit {
     this.onWindowResize();
   }
 
-  private getStatsTypesByRow() {
-    if (this.equipment) {
+  private getStatsTypesByRow(equipment) {
+    if (equipment) {
       this.statsTypesByRow = [[]];
-      if (!this.equipment.acquisition || this.equipment.acquisition.type !== 'tmr') {
+      if (!equipment.acquisition || equipment.acquisition.type !== 'tmr') {
         this.statsTypesByRow[0].push('');
       }
 
-      this.equipment.statsTypes.forEach(statType => {
+      equipment.statsTypes.forEach(statType => {
         if (this.windowSize < 830 && this.statsTypesByRow[this.statsTypesByRow.length - 1].length === 4) {
           if (this.statsTypesByRow[0][0] === '') {
             this.statsTypesByRow.push(['']);
@@ -279,7 +279,7 @@ export class EquipmentDetailComponent implements OnInit {
         }
       });
       equipment.statsTypes = usableStatsTypes;
-      this.getStatsTypesByRow();
+      this.getStatsTypesByRow(equipment);
 
       equipment.jobs = [];
       for (const jobId of equipment.equippableJobs) {
