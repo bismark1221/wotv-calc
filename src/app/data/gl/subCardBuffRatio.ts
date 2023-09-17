@@ -1550,5 +1550,21 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.5,
       0.7
     ]
+  },
+  DEBUFF_EFFECT_WEAKENING: {
+    partyRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.4
+    ],
+    unitRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.4
+    ]
   }
 };
