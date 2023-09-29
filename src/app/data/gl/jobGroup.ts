@@ -40,7 +40,8 @@ export const GL_JOB_GROUP = {
     "JB_FF6_CLES",
     "JB_FF13_LTNG",
     "JB_FMAM_BRDL",
-    "JB_LW_STRN_01"
+    "JB_LW_STRN_01",
+    "JB_FF8_SQAL"
   ],
   STAFFA: [
     "JB_LW_WHM",
