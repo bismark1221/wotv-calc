@@ -62,6 +62,7 @@ export const GL_JOB_GROUP = {
     "JB_FF4_GLBZ",
     "JB_LW_LNAN",
     "JB_LW_AMNR",
-    "JB_LW_BFM"
+    "JB_LW_BFM",
+    "JB_LW_SOLL"
   ]
 };
