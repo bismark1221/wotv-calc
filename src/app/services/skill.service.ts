@@ -1263,82 +1263,82 @@ export class SkillService {
         html = this.getIncrease(effect) + ' Evocation Gauge Boost' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'HUMAN_KILLER' :
-        html = 'Increase human killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' human killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FENNES_KILLER' :
-        html = 'Increase fennes killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' fennes killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'UNDEAD_KILLER' :
-        html = 'Increase undead killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' undead killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'BEAST_KILLER' :
-        html = 'Increase beast killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' beast killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'DEMON_KILLER' :
-        html = 'Increase demon killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' demon killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'AQUATIC_KILLER' :
-        html = 'Increase aquatic killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' aquatic killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FAIRY_KILLER' :
-        html = 'Increase fairy killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' fairy killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'BIRD_KILLER' :
-        html = 'Increase bird killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' bird killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'MALES_KILLER' :
-        html = 'Increase male killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' male killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'DRAGON_KILLER' :
-        html = 'Increase dragon killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' dragon killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'METAL_KILLER' :
-        html = 'Increase metal killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' metal killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'MACHINE_KILLER' :
-        html = 'Increase machine killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' machine killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'NETHERBEAST_KILLER' :
-        html = 'Increase Nether Beast killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' Nether Beast killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'INSECT_KILLER' :
-        html = 'Increase insect killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' insect killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'STONE_KILLER' :
-        html = 'Increase stone killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' stone killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'EARTH_KILLER' :
-        html = 'Increase earth killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' earth killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FIRE_KILLER' :
-        html = 'Increase fire killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' fire killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ICE_KILLER' :
-        html = 'Increase ice killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' ice killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'LIGHTNING_KILLER' :
-        html = 'Increase lightning killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' lightning killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'WIND_KILLER' :
-        html = 'Increase wind killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' wind killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'WATER_KILLER' :
-        html = 'Increase water killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' water killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'LIGHT_KILLER' :
-        html = 'Increase light killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' light killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'DARK_KILLER' :
-        html = 'Increase dark killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' dark killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'PLANT_KILLER' :
-        html = 'Increase plant killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' plant killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ARCANA_KILLER' :
-        html = 'Increase arcana killer' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' arcana killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FLOAT_KILLER' :
-        html = 'Increase killer against unit with float' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' killer against unit with float' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'HUMAN_RES' :
         html = this.getIncrease(effect) + ' human resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1485,13 +1485,13 @@ export class SkillService {
         html = 'Reduces the damage taken' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'BARRIER_PHYSIC' :
-        html = 'Reduces the physic damage taken' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = 'Reduces the physical damage taken' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'BREAK_BARRIER_PHYSIC' :
-        html = 'Break physic barrier' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = 'Break physical barrier' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'REDUCE_DAMAGE_PHYSIC' :
-        html = 'Reduces the physic damage taken' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = 'Reduces the physical damage taken' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'BARRIER_MAGIC' :
         html = 'Reduces the magic damage taken' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1539,9 +1539,9 @@ export class SkillService {
       break;
       case 'PHYSIC_DAMAGE' :
         if (shortDesc) {
-          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' physic damage';
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' physical damage';
         } else {
-          html = this.getChance(skill, effect, false) + ' physic damage' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
+          html = this.getChance(skill, effect, false) + ' physical damage' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'MAGIC_DAMAGE' :
@@ -1553,9 +1553,16 @@ export class SkillService {
       break;
       case 'REDUCE_PHYSIC_DAMAGE' :
         if (shortDesc) {
-          html = 'Reduce physic damage taken';
+          html = 'Reduce physical damage taken';
         } else {
-          html = 'Reduce physic damage taken' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
+          html = 'Reduce physical damage taken' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
+      case 'REDUCE_MAGIC_DAMAGE' :
+        if (shortDesc) {
+          html = 'Reduce magical damage taken';
+        } else {
+          html = 'Reduce magical damage taken' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'DEFENSE_PENETRATION' :
@@ -1631,8 +1638,11 @@ export class SkillService {
       case 'RES_DARK_ATK_PENETRATION' :
         html = 'Increase dark resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'RES_CHAIN' :
+        html = this.getIncrease(effect) + ' chain resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'RES_ELEMENT_CHAIN' :
-        html = 'Increase elemental chain resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' elemental chain resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'AP_CONSUMPTION' :
         html = this.getIncrease(effect, false, true) + ' AP consumption' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1648,6 +1658,20 @@ export class SkillService {
       break;
       case 'RUNIC_SHIELD' :
         html = 'Grant Runic Shield (Absorbs up to ' + effect.absorbNumber + ' reflectable magic hits & absorbs ' + this.getValue(skill, effect) + ' TP/AP used) ' + this.getTurns(effect);
+      break;
+      case 'PHYSIC_DISTANCE_RES' :
+        if (shortDesc) {
+          html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' physical distance-based damage';
+        } else {
+          html = this.getIncrease(effect) + ' Physical distance-based resistance' + this.getValue(skill, effect) + ' (min range : ' + effect.reduce_dmg_dist.min + ', max range : ' + effect.reduce_dmg_dist.max + ')' + this.getTurns(effect);
+        }
+      break;
+      case 'MAGIC_DISTANCE_RES' :
+        if (shortDesc) {
+          html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' magical distance-based damage';
+        } else {
+          html = this.getIncrease(effect) + ' Magical distance-based resistance' + this.getValue(skill, effect) + ' (min range : ' + effect.reduce_dmg_dist.min + ', max range : ' + effect.reduce_dmg_dist.max + ')' + this.getTurns(effect);
+        }
       break;
       case 'SLASH_EVADE' :
         if (shortDesc) {
@@ -1984,7 +2008,7 @@ export class SkillService {
     const conditions = {
       BEHIND: ' when attacking from behind',
       MALE: ' when attacking male units',
-      ON_PHYSIC_ATTACK: ' when attacking with physic attacks',
+      ON_PHYSIC_ATTACK: ' when attacking with physical attacks',
       ON_MAGIC_ATTACK: ' when attacking with magic attacks',
       ON_CRITICAL: ' when performing a critical hit',
       HUMAN: ' when cast on human',
@@ -2087,7 +2111,7 @@ export class SkillService {
     }
 
     if (skill.increaseDamageOnDecreaseHp) {
-      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + 'Increase damage as HP decreases';
+      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + 'Increase damage as HP decreases (base on ' + skill.increaseDamageOnDecreaseHp + '% HP)';
     }
 
     if (skill.maths) {
@@ -2178,6 +2202,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
               break;
@@ -2188,6 +2213,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
               break;
@@ -2207,6 +2233,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
               break;
@@ -2226,6 +2253,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
               break;
@@ -2245,6 +2273,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
               break;
@@ -2264,6 +2293,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
               break;
@@ -2277,6 +2307,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
               break;
@@ -2287,6 +2318,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
               break;
@@ -2308,6 +2340,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
             break;
@@ -2318,6 +2351,7 @@ export class SkillService {
                   break;
                 default:
                   console.log('Not manage math formula right now...');
+                  console.log(skill);
                   break;
               }
             break;

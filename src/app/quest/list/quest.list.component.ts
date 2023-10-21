@@ -107,6 +107,10 @@ export class QuestListComponent extends SharedListComponent {
             {
               id: 'guild_base_battle',
               label: 'Guild base battle'
+            },
+            {
+              id: 'wave',
+              label: 'Wave'
             }
           ],
           values: [],

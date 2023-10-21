@@ -308,6 +308,9 @@ export class QuestService {
       case 'guild_base_battle' :
         return 'Guild base battle';
       break;
+      case 'wave' :
+        return 'Wave';
+      break;
       default :
         return 'Untranslated type...';
       break;
