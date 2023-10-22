@@ -238,6 +238,39 @@
           </tr>
         </tbody>
       </table>
+
+      <table class="effectsTable" *ngIf="card.formattedUnlockedSkills.length > 0">
+        <tbody>
+          <tr>
+            <th colspan="6">Unlocked Skills</th>
+          </tr>
+          <tr *ngIf="windowSize >= 830">
+            <th class="sub skillTypeTd" *ngIf="windowSize >= 1230">Type</th>
+            <th class="sub limitNameTd">Name</th>
+            <th class="sub">Effects</th>
+            <th class="sub rangeTd">Range</th>
+            <th class="sub skillHitTd">Hits</th>
+            <th class="sub skillCostTd">Cost</th>
+          </tr>
+        </tbody>
+
+        <tbody *ngFor="let skill of card.formattedUnlockedSkills; let skillIndex = index"
+          app-shared-skillWithUpgrade
+          [skill]="skill"
+          [showType]="windowSize >= 1230"
+          [showTypeWithName]="windowSize < 1230"
+          [showName]="true"
+          [showEffects]="true"
+          [showRange]="true"
+          [showHits]="true"
+          [showCost]="true"
+          [upgradeColSpan]="1"
+
+          [showMobileSeparator]="skillIndex < card.formattedUnlockedSkills.length - 1"
+          [mobileView]="windowSize < 830"
+          [mobileCollapseDetail]="true"
+        ></tbody>
+      </table>
     </div>
 
     <div class="text-center">

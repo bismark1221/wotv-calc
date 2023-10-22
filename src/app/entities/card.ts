@@ -28,6 +28,7 @@ export class Card {
   cost;
   releaseDate;
   updatedDate;
+  unlockedSkills;
   fromOtherVersion = false;
 
   // For builder
@@ -56,6 +57,7 @@ export class Card {
     this.cost = card.cost;
     this.releaseDate = card.releaseDate;
     this.updatedDate = card.updatedDate;
+    this.unlockedSkills = card.unlockedSkills;
     this.fromOtherVersion = card.fromOtherVersion;
 
     this.name = this.getName(translateService);

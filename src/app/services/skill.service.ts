@@ -1565,6 +1565,20 @@ export class SkillService {
           html = 'Reduce magical damage taken' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
+      case 'REDUCE_PHYSIC_DAMAGE_BASEB_ATK_RANGE' :
+        if (shortDesc) {
+          html = 'Reduce physical damage taken the larger the attack range';
+        } else {
+          html = 'Reduce physical damage taken the larger the attack range' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
+      case 'REDUCE_MAGIC_DAMAGE_BASEB_ATK_RANGE' :
+        if (shortDesc) {
+          html = 'Reduce magical damage taken the larger the attack range';
+        } else {
+          html = 'Reduce magical damage taken the larger the attack range' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
       case 'DEFENSE_PENETRATION' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' DEF penetration';
@@ -1717,6 +1731,9 @@ export class SkillService {
 
       case 'IMMUNE_CT_CHANGE' :
         html = 'Immune to CT change';
+      break;
+      case 'IMMUNE_TP_CHANGE' :
+        html = 'Immune to TP change';
       break;
       case 'IMMUNE_AP_CHANGE' :
         html = 'Immune to AP change';
@@ -2203,6 +2220,8 @@ export class SkillService {
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
               break;
@@ -2211,9 +2230,14 @@ export class SkillService {
                 case 'CURVE' :
                   html += ' for each enemy less in the aoe (0% at ' + math.condition + ' enemies)';
                   break;
+                case 'FIX' :
+                  html += ' for ' + math.condition + ' or more enemies in the aoe';
+                  break;
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
               break;
@@ -2234,6 +2258,8 @@ export class SkillService {
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
               break;
@@ -2254,6 +2280,8 @@ export class SkillService {
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
               break;
@@ -2274,6 +2302,8 @@ export class SkillService {
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
               break;
@@ -2294,6 +2324,8 @@ export class SkillService {
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
               break;
@@ -2308,6 +2340,8 @@ export class SkillService {
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
               break;
@@ -2319,6 +2353,8 @@ export class SkillService {
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
               break;
@@ -2341,6 +2377,8 @@ export class SkillService {
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
             break;
@@ -2352,6 +2390,8 @@ export class SkillService {
                 default:
                   console.log('Not manage math formula right now...');
                   console.log(skill);
+                  console.log(effect);
+                  console.log(math);
                   break;
               }
             break;

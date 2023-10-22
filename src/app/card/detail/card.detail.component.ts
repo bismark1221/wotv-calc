@@ -53,6 +53,7 @@ export class CardDetailComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       this.card = await this.cardService.getCardBySlug(params.get('slug'));
+
       if (!this.card) {
         this.router.navigate([this.navService.getRoute('/card-not-found')]);
       } else {
@@ -211,6 +212,31 @@ export class CardDetailComponent implements OnInit {
         }
 
         this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length) + 'Keys'] = Object.keys(this.card.buffs['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)]);
+      }
+
+      this.card.formattedUnlockedSkills = [];
+      if (this.card.unlockedSkills) {
+        for (const skillId of this.card.unlockedSkills) {
+          if (skillId) {
+            this.card.formattedUnlockedSkills.push(this.card.rawSkills.find(searchedSkill => searchedSkill.dataId === skillId));
+          }
+        }
+      }
+
+
+      for (let skill of this.card.formattedUnlockedSkills) {
+        skill.name = this.toolService.getName(skill);
+        skill.upgradeHtml = this.skillService.formatUpgrade(this.card, skill);
+
+        skill.effectsHtml = this.skillService.formatEffects(this.card, skill);
+
+        skill.damageHtml = this.skillService.formatDamage(this.card, skill, skill.damage);
+
+        if (skill.counter) {
+          skill.counterHtml = this.skillService.formatCounter(this.card, skill, skill.counter);
+        }
+
+        this.rangeService.formatRange(this.card, skill);
       }
     }
   }
