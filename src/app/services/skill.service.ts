@@ -1567,16 +1567,16 @@ export class SkillService {
       break;
       case 'REDUCE_PHYSIC_DAMAGE_BASEB_ATK_RANGE' :
         if (shortDesc) {
-          html = 'Reduce physical damage taken the larger the attack range';
+          html = 'Reduce physical damage taken the larger the attack area size';
         } else {
-          html = 'Reduce physical damage taken the larger the attack range' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
+          html = 'Reduce physical damage taken the larger the attack area size' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'REDUCE_MAGIC_DAMAGE_BASEB_ATK_RANGE' :
         if (shortDesc) {
-          html = 'Reduce magical damage taken the larger the attack range';
+          html = 'Reduce magical damage taken the larger the attack area size';
         } else {
-          html = 'Reduce magical damage taken the larger the attack range' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
+          html = 'Reduce magical damage taken the larger the attack area size' + (effect.calcType === 'dispel' ? ' increase buff' : '') + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'DEFENSE_PENETRATION' :
