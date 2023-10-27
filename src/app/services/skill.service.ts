@@ -1674,14 +1674,18 @@ export class SkillService {
         html = 'Grant Runic Shield (Absorbs up to ' + effect.absorbNumber + ' reflectable magic hits & absorbs ' + this.getValue(skill, effect) + ' TP/AP used) ' + this.getTurns(effect);
       break;
       case 'PHYSIC_DISTANCE_RES' :
-        if (shortDesc) {
+        if (forSearchOptions) {
+          html = 'Increase/Decrease physical distance-based damage';
+        } else if (shortDesc) {
           html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' physical distance-based damage';
         } else {
           html = this.getIncrease(effect) + ' Physical distance-based resistance' + this.getValue(skill, effect) + ' (min range : ' + effect.reduce_dmg_dist.min + ', max range : ' + effect.reduce_dmg_dist.max + ')' + this.getTurns(effect);
         }
       break;
       case 'MAGIC_DISTANCE_RES' :
-        if (shortDesc) {
+        if (forSearchOptions) {
+          html = 'Increase/Decrease magical distance-based damage';
+        } else if (shortDesc) {
           html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' magical distance-based damage';
         } else {
           html = this.getIncrease(effect) + ' Magical distance-based resistance' + this.getValue(skill, effect) + ' (min range : ' + effect.reduce_dmg_dist.min + ', max range : ' + effect.reduce_dmg_dist.max + ')' + this.getTurns(effect);

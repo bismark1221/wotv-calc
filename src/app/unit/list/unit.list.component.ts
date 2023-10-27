@@ -149,6 +149,12 @@ export class UnitListComponent extends SharedListComponent {
           value: false
         },
         {
+          id: 'lb_upgrade',
+          label: 'LB upgrade ?',
+          type: 'switch',
+          value: false
+        },
+        {
           id: 'job',
           type: 'list',
           items: [],
@@ -361,7 +367,7 @@ export class UnitListComponent extends SharedListComponent {
         if (filterType === 'mainJob' || filterType === 'job') {
           this.filtersSections.job.collapsed = false;
           for (const jobId of itemIds.split(',')) {
-            this.filtersSections.job.filters[4].values.push(this.jobService.getGenericJobId(jobId));
+            this.filtersSections.job.filters[5].values.push(this.jobService.getGenericJobId(jobId));
           }
         }
 
@@ -388,7 +394,7 @@ export class UnitListComponent extends SharedListComponent {
 
     if (Object.keys(options).length === 0) {
       for (const job of result.jobs) {
-        this.filtersSections.job.filters[4].items.push({
+        this.filtersSections.job.filters[5].items.push({
           id: job.dataId,
           names: job.names
         });
@@ -414,7 +420,7 @@ export class UnitListComponent extends SharedListComponent {
   }
 
   private translateJobs() {
-    this.filtersSections.job.filters[4].items.forEach(job => {
+    this.filtersSections.job.filters[5].items.forEach(job => {
       job.label = this.toolService.getName(job);
     });
   }

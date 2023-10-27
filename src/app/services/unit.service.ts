@@ -155,6 +155,10 @@ export class UnitService {
             possbibleToAdd = this.unitHasJob(unit, filters);
           }
 
+          if (possbibleToAdd && filters.lb_upgrade) {
+            possbibleToAdd = this.unitHasLBUpgrade(unit);
+          }
+
           if (possbibleToAdd && ((filters.weapon && filters.weapon.length > 0) || (filters.weaponsGroup && filters.weaponsGroup.length > 0) || (filters.armor && filters.armor.length > 0))) {
             possbibleToAdd = this.unitCanEquipWithApi(unit, filters, jobs);
           }
@@ -175,6 +179,22 @@ export class UnitService {
 
       return this.sortUnits(filteredUnits, sort, order);
     }
+  }
+
+  private unitHasLBUpgrade(unit) {
+    let skillsToBeUpgraded = [];
+
+    if (unit.replacedSkills && unit.limit) {
+      for (const upgradeId of Object.keys(unit.replacedSkills)) {
+        for (const upgrade of unit.replacedSkills[upgradeId]) {
+          skillsToBeUpgraded.push(upgrade.oldSkill);
+        }
+      }
+
+      return skillsToBeUpgraded.indexOf(unit.limit) !== -1;
+    }
+
+    return false;
   }
 
   private unitCanEquipWithApi(unit, filters, jobs) {
