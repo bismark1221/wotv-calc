@@ -1675,20 +1675,29 @@ export class SkillService {
       break;
       case 'PHYSIC_DISTANCE_RES' :
         if (forSearchOptions) {
-          html = 'Increase/Decrease physical distance-based damage';
+          html = 'Increase/Decrease physical distance-based damage resistance';
         } else if (shortDesc) {
-          html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' physical distance-based damage';
+          html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' physical distance-based damage resistance';
         } else {
           html = this.getIncrease(effect) + ' Physical distance-based resistance' + this.getValue(skill, effect) + ' (min range : ' + effect.reduce_dmg_dist.min + ', max range : ' + effect.reduce_dmg_dist.max + ')' + this.getTurns(effect);
         }
       break;
       case 'MAGIC_DISTANCE_RES' :
         if (forSearchOptions) {
-          html = 'Increase/Decrease magical distance-based damage';
+          html = 'Increase/Decrease magical distance-based damage resistance';
         } else if (shortDesc) {
-          html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' magical distance-based damage';
+          html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' magical distance-based damage resistance';
         } else {
           html = this.getIncrease(effect) + ' Magical distance-based resistance' + this.getValue(skill, effect) + ' (min range : ' + effect.reduce_dmg_dist.min + ', max range : ' + effect.reduce_dmg_dist.max + ')' + this.getTurns(effect);
+        }
+      break;
+      case 'CRITIC_DAMAGE_RES' :
+        if (forSearchOptions) {
+          html = 'Increase/Decrease critical damage resistance';
+        } else if (shortDesc) {
+          html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' critical damage resistance';
+        } else {
+          html = this.getIncrease(effect) + ' critical damage resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'SLASH_EVADE' :
@@ -1750,6 +1759,12 @@ export class SkillService {
       break;
       case 'EXTEND_ELEMENT_CHAIN' :
         html = 'Extend elemental chain by 1 turn';
+      break;
+      case 'DISPEL_IGNORE_FATAL' :
+        html = 'Dispel ignore fatal damage buff';
+      break;
+      case 'CT_UP' :
+        html = this.getIncrease(effect) + ' CT Up' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'IGNORE_SUREHIT' :
         html = 'Ignore surehit' + this.getTurns(effect);
