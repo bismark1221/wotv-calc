@@ -1761,7 +1761,7 @@ export class SkillService {
         html = 'Extend elemental chain by 1 turn';
       break;
       case 'DISPEL_IGNORE_FATAL' :
-        html = 'Dispel ignore fatal damage buff';
+        html = 'Ignore if someone try to dispel ignore fatal damage buff';
       break;
       case 'CT_UP' :
         html = 'Disable CT Up' + this.getTurns(effect);
