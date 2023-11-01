@@ -134,6 +134,12 @@ export class CardDetailComponent implements OnInit {
                   const unitId = cond.items[unitIndex];
                   cond.formattedItems.push(this.card.rawUnits.find(searchedUnit => searchedUnit.dataId === unitId));
                 }
+              } else if (cond.type === 'mapType') {
+                cond.formattedItems = [];
+                for (let mapTypeIndex = 0; mapTypeIndex <= cond.items.length - 1; mapTypeIndex++) {
+                  const mapTypeId = cond.items[mapTypeIndex];
+                  cond.formattedItems.push(mapTypeId);
+                }
               }
             }
             this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)][i].cond = buff.cond;

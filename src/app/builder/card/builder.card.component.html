@@ -166,6 +166,12 @@
                     <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
                   </span>
                 </div>
+
+                <div *ngIf="cond.type === 'mapType'">
+                  <span *ngFor="let mapType of cond.items">
+                    Activated only on {{ mapType }} map
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -227,6 +233,12 @@
                   <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
                 </span>
               </div>
+
+              <div *ngIf="cond.type === 'mapType'">
+                <span *ngFor="let mapType of cond.items">
+                  Activated only on {{ mapType }} map
+                </span>
+              </div>
             </div>
           </td>
         </tr>
@@ -271,6 +283,12 @@
                 <div *ngIf="cond.type === 'unit'">
                   <span *ngFor="let unit of cond.items">
                     <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
+                  </span>
+                </div>
+
+                <div *ngIf="cond.type === 'mapType'">
+                  <span *ngFor="let mapType of cond.items">
+                    Activated only on {{ mapType }} map
                   </span>
                 </div>
               </div>

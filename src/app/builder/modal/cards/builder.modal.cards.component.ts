@@ -344,6 +344,12 @@ export class BuilderModalCardsComponent extends NgxModalComponent<null, any> imp
                   const unit = this.card.rawUnits.find(searchedUnit => searchedUnit.dataId === unitId);
                   cond.formattedItems[unitIndex] = unit ? unit : cond.items[unitIndex];
                 }
+              } else if (cond.type === 'mapType') {
+                cond.formattedItems = [];
+                for (let mapTypeIndex = 0; mapTypeIndex <= cond.items.length - 1; mapTypeIndex++) {
+                  const mapTypeId = cond.items[mapTypeIndex];
+                  cond.formattedItems.push(mapTypeId);
+                }
               }
             }
           }
@@ -376,6 +382,12 @@ export class BuilderModalCardsComponent extends NgxModalComponent<null, any> imp
               const unitId = cond.items[unitIndex];
               const unit = this.card.rawUnits.find(searchedUnit => searchedUnit.dataId === unitId);
               cond.formattedItems[unitIndex] = unit ? unit : cond.items[unitIndex];
+            }
+          } else if (cond.type === 'mapType') {
+            cond.formattedItems = [];
+            for (let mapTypeIndex = 0; mapTypeIndex <= cond.items.length - 1; mapTypeIndex++) {
+              const mapTypeId = cond.items[mapTypeIndex];
+              cond.formattedItems.push(mapTypeId);
             }
           }
         }

@@ -235,6 +235,12 @@
                             <div *ngIf="cond.type === 'unit'">
                               <img *ngFor="let unit of cond.formattedItems" class="unit" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
                             </div>
+
+                            <div *ngIf="cond.type === 'mapType'">
+                              <span *ngFor="let mapType of cond.items">
+                                Activated only on {{ mapType }} map
+                              </span>
+                            </div>
                           </div>
                         </div>
 
@@ -294,6 +300,12 @@
                           <div *ngIf="cond.type === 'unit'">
                             <img *ngFor="let unit of cond.formattedItems" class="unit" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
                           </div>
+
+                          <div *ngIf="cond.type === 'mapType'">
+                            <span *ngFor="let mapType of cond.items">
+                              Activated only on {{ mapType }} map
+                            </span>
+                          </div>
                         </div>
                       </td>
                     </tr>
@@ -336,6 +348,12 @@
 
                             <div *ngIf="cond.type === 'unit'">
                               <img *ngFor="let unit of cond.formattedItems" class="unit" src="{{'assets/units/' + unit.image + '_small.webp'}}" />
+                            </div>
+
+                            <div *ngIf="cond.type === 'mapType'">
+                              <span *ngFor="let mapType of cond.items">
+                                Activated only on {{ mapType }} map
+                              </span>
                             </div>
                           </div>
                         </div>
