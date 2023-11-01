@@ -1764,7 +1764,7 @@ export class SkillService {
         html = 'Dispel ignore fatal damage buff';
       break;
       case 'CT_UP' :
-        html = this.getIncrease(effect) + ' CT Up' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = 'Disable CT Up' + this.getTurns(effect);
       break;
       case 'IGNORE_SUREHIT' :
         html = 'Ignore surehit' + this.getTurns(effect);
