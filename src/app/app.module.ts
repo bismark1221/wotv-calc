@@ -57,6 +57,7 @@ import { InventoryService } from './services/inventory.service';
 import { SessionService } from './services/session.service';
 import { TranslateService } from './services/translate.service';
 import { PwaService } from './services/pwa.service';
+import { CardsMasteryService } from './services/cardsMastery.service';
 
 import { SharedModule } from './shared/shared.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -127,7 +128,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     InventoryService,
     SessionService,
     TranslateService,
-    PwaService
+    PwaService,
+    CardsMasteryService
   ],
   bootstrap: [
     AppComponent

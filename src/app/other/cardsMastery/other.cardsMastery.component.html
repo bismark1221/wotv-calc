@@ -1,0 +1,28 @@
+<div class="cardsMastery mt-8 mx-5 max-w-[1100px]">
+  <div class="flex flex-wrap gap-4" *ngIf="cardsMastery && cardsMastery.length > 0">
+    <div class="itemsCol w-full sm:w-[250px]" *ngFor="let cardMastery of cardsMastery">
+      <a [routerLink]="[getRoute('/cards/' + cardMastery.card.slug)]" [routerLinkActive]="['active']" class="cardLink">
+        <div class="cardIcons">
+          <img class="rarityImg" src="{{'assets/rarity/' + cardMastery.card.rarity + (isWindowSmall ? '_24' : '_32') + '.webp'}}" />
+        </div>
+        <div class="itemImgBlock h-[100px] sm:h-[160px]">
+          <img class="itemImg aspect-auto" src="assets/cards/{{ cardMastery.card.image }}_card{{ isWindowSmall ? '_m' : '' }}.webp" />
+        </div>
+        <div class="cardTitle h-9 sm:h-[50px]">
+          <span class="itemName text-[12px] leading-[14px] sm:text-[16px] sm:leading-6">{{ cardMastery.card.name }}</span>
+        </div>
+      </a>
+      <div class="py-2 cardMasteryEffects">
+        <div *ngFor="let cond of cardMastery.cond">
+          <div *ngIf="cond.type === 'mapType'">
+            <span *ngFor="let mapType of cond.items">
+              Activated only on {{ mapType }} map
+            </span>
+          </div>
+        </div>
+
+        <p *ngFor="let effect of cardMastery.effects">{{ effect }}</p>
+      </div>
+    </div>
+  </div>
+</div>

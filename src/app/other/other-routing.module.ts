@@ -11,6 +11,7 @@ import { OtherUnitComponent } from './unit/other.unit.component';
 import { OtherMateriaComponent } from './materia/other.materia.component';
 import { OtherMaterialLookupComponent } from './materiallookup/other.materiallookup.component';
 import { OtherSubCardComponent } from './subCard/other.subCard.component';
+import { OtherCardsMasteryComponent } from './cardsMastery/other.cardsMastery.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'titles', pathMatch: 'full' },
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'unit/:slug', component: OtherUnitComponent },
   { path: 'materia', component: OtherMateriaComponent },
   { path: 'material-lookup', component: OtherMaterialLookupComponent },
-  { path: 'subcard-ratio', component: OtherSubCardComponent }
+  { path: 'subcard-ratio', component: OtherSubCardComponent },
+  { path: 'cards-mastery', component: OtherCardsMasteryComponent }
 ];
 
 @NgModule({
