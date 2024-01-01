@@ -26,7 +26,8 @@ export const JP_JOB_GROUP = {
     "JB_LW_RAB",
     "JB_PRS5_VOLT",
     "JB_DQTC_PSAR",
-    "JB_FF5_BATZ"
+    "JB_FF5_BATZ",
+    "JB_LW_LCIO_02"
   ],
   SWORDC: [
     "JB_LW_KNT",
