@@ -1582,5 +1582,37 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ]
+  },
+  ALL_ELEMENTS_ATK: {
+    partyRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    unitRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ]
+  },
+  ALL_ELEMENTS_RES: {
+    partyRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    unitRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ]
   }
 };

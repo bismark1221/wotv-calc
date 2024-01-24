@@ -65,6 +65,7 @@ export const JP_JOB_GROUP = {
     "JB_LW_LNAN",
     "JB_LW_AMNR",
     "JB_LW_BFM",
-    "JB_LW_SOLL"
+    "JB_LW_SOLL",
+    "JB_LW_VRWB"
   ]
 };
