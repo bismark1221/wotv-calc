@@ -215,6 +215,7 @@ export const GL_BUFF_TYPE = {
     "STOP_CHAIN_INCREASE_DAMAGE",
     "STOP_RES",
     "STRIKE_ATK",
+    "STRIKE_EVADE",
     "STRIKE_RES",
     "STUN_ATK",
     "STUN_RES",
