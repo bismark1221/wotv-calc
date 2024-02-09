@@ -1700,6 +1700,15 @@ export class SkillService {
           html = this.getIncrease(effect) + ' critical damage resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
+      case 'REFLECT_RATE' :
+        if (forSearchOptions) {
+          html = 'Increase/Decrease reflect rate';
+        } else if (shortDesc) {
+          html = this.getIncrease(effect, true, true) + this.getValue(skill, effect, true) + ' reflect rate';
+        } else {
+          html = this.getIncrease(effect, false, true) + ' reflect rate' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
       case 'SLASH_EVADE' :
         if (shortDesc) {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' slash evade';
@@ -1764,10 +1773,31 @@ export class SkillService {
         html = 'Ignore if someone try to dispel ignore fatal damage buff';
       break;
       case 'CT_UP' :
-        html = 'Disable CT Up' + this.getTurns(effect);
+        html = this.getChance(skill, effect, false) + ' CT Up' + this.getTurns(effect);
+      break;
+      case 'CT_DOWN' :
+        html = this.getChance(skill, effect, false) + ' CT Down' + this.getTurns(effect);
       break;
       case 'IGNORE_SUREHIT' :
         html = 'Ignore surehit' + this.getTurns(effect);
+      break;
+      case 'SEALS_BARRIER_DESTRUCTION' :
+        html = 'Seals barrier destruction' + this.getTurns(effect);
+      break;
+      case 'SEALS_SHELL_REMOVAL' :
+        html = 'Seals Shell removal' + this.getTurns(effect);
+      break;
+      case 'PROTECT_REMOVE_SEALING' :
+        html = 'Protect Remove Sealing' + this.getTurns(effect);
+      break;
+      case 'RERAISE_REMOVE_SEALING' :
+        html = 'Reraise Remove Sealing' + this.getTurns(effect);
+      break;
+      case 'PHYSIC_DAMAGE_REDUCTION' :
+        html = this.getChance(skill, effect, false) + ' Physical Damage Reduction' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'MAGIC_DAMAGE_REDUCTION' :
+        html = this.getChance(skill, effect, false) + ' Magical Damage Reduction' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'NULLIFY' :
         html = 'Nullify ' + this.getValue(skill, effect);
@@ -1956,6 +1986,20 @@ export class SkillService {
           html = 'When friendly unit within range automatically cast another attack skill : ' + (newCastOnAllyInRange ? this.toolService.getName(newCastOnAllyInRange) : '???');
         } else if (forSearchOptions) {
           html = 'When friendly unit within range automatically cast another attack skill';
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
+      case 'AUTO_CAST_ON_NON_DAMAGE_SKILL' :
+        let newCastOnNonDamageSkill = null;
+        if (unit.rawSkills) {
+          newCastOnNonDamageSkill = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'When using non-damage skill cast another attack skill : ' + (newCastOnNonDamageSkill ? this.toolService.getName(newCastOnNonDamageSkill) : '???');
+        } else if (forSearchOptions) {
+          html = 'When using non-damage skill cast another attack skill';
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }

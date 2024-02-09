@@ -384,7 +384,7 @@ export class Esper {
       2: 80,
       3: 99
     };
-    this.maxSPs = 0;
+    this.maxSPs = 200;
 
     for (let i = 1; i <= this.star; i++) {
       let level = this.level;
