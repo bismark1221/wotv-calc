@@ -7,6 +7,9 @@ import { NavService } from './nav.service';
 
 import { Skill } from '../entities/skill';
 
+import { GL_SUB_CARD_BUFF_RATIO } from '../data/gl/subCardBuffRatio';
+import { JP_SUB_CARD_BUFF_RATIO } from '../data/jp/subCardBuffRatio';
+
 @Injectable()
 export class SkillService {
   calcTypeFormat = {
@@ -47,6 +50,13 @@ export class SkillService {
     panel: 'panel'
   };
 
+  subCardBuffRatio = {
+    GL: GL_SUB_CARD_BUFF_RATIO,
+    JP: JP_SUB_CARD_BUFF_RATIO
+  };
+
+  version = 'gl';
+
   private re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g;
   private sre = /^\s+|\s+$/g;
   private snre = /\s+/g;
@@ -61,7 +71,9 @@ export class SkillService {
     private translateService: TranslateService,
     private toolService: ToolService,
     private navService: NavService
-  ) {}
+  ) {
+    this.version = this.navService.getVersion();
+  }
 
   private i(s: any) {
     return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
@@ -216,7 +228,7 @@ export class SkillService {
     }
   }
 
-  private getValue(skill, effect, shortDesc = false, getPositiveValue = true, explaination = '', forceCalc = null, getValueOnly = false) {
+  private getValue(skill, effect, shortDesc = false, getPositiveValue = true, explaination = '', forceCalc = null, getValueOnly = false, subCardRatio = null) {
     let value = '';
     if (typeof(effect.minValue) === 'number' || typeof(effect.value) === 'number') {
       let maxReduceValueFromMath = 0;
@@ -237,7 +249,7 @@ export class SkillService {
       const calc = this.getCalc(effect);
 
       if (!skill.level) {
-        value = ' (' + minValue + calc + this.getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath, skill) + explaination + ')';
+        value = ' (' + (subCardRatio !== null ? Math.floor(subCardRatio * minValue) : minValue) + calc + this.getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath, skill, subCardRatio) + explaination + ')';
       } else {
         if (effect.minValue !== effect.maxValue) {
           let valueForLevel = 0;
@@ -267,14 +279,14 @@ export class SkillService {
     return value;
   }
 
-  private getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath, skill) {
+  private getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath, skill, subCardRatio = null) {
     if (effect.maxValue && effect.minValue !== effect.maxValue && skill.maxLevel > 1) {
       const maxValue = this.getPositiveValue(effect.maxValue + maxReduceValueFromMath, getPositiveValue);
       if (forceCalc) {
         effect.calcType = forceCalc;
       }
 
-      return ' => ' + maxValue + this.getCalc(effect);
+      return ' => ' + (subCardRatio !== null ? Math.floor(maxValue * subCardRatio) : maxValue) + this.getCalc(effect);
     }
 
     return '';
@@ -369,6 +381,22 @@ export class SkillService {
     return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 
+  formatCarEffects(card, skill) {
+    const effectHtmls = {
+      before: [],
+      after: []
+    };
+
+    skill.effects.forEach(effect => {
+      if (effect.timing === 'QUEST_START' || effect.timing === 'SKILL_BEFORE') {
+        effectHtmls.before.push(this.formatEffect(card, skill, effect, true, false, false, false, true));
+      } else {
+        effectHtmls.after.push(this.formatEffect(card, skill, effect, true, false, false, false, true));
+      }
+    });
+
+    return effectHtmls;
+  }
 
   formatEffects(unit, skill, getTarget = true, fromEquipment = false, shortDesc = false) {
     const effectHtmls = {
@@ -387,7 +415,7 @@ export class SkillService {
     return effectHtmls;
   }
 
-  formatEffect(unit, skill, effect, getTarget = true, fromEquipment = false, shortDesc = false, forSearchOptions = false) {
+  formatEffect(unit, skill, effect, getTarget = true, fromEquipment = false, shortDesc = false, forSearchOptions = false, fromCard = null) {
     let html = '';
     switch (effect.type) {
       case 'HP' :
@@ -2079,6 +2107,18 @@ export class SkillService {
 
     if (effect.continues) {
       html = this.formatContinues(effect, html);
+    }
+
+    if (fromCard) {
+      let subRatio = 0;
+
+      if (fromCard === 'ex') {
+        subRatio = this.subCardBuffRatio[this.version][effect.type] ? this.subCardBuffRatio[this.version][effect.type].exPartyRatio[0] : this.subCardBuffRatio[this.version]['DEFAULT'].exPartyRatio[0]
+      } else {
+        subRatio = this.subCardBuffRatio[this.version][effect.type] ? this.subCardBuffRatio[this.version][effect.type].partyRatio[4] : this.subCardBuffRatio[this.version]['DEFAULT'].partyRatio[4]
+      }
+
+      html += ' - sub : ' + this.getValue(skill, effect, false, true, '', null, true, subRatio)
     }
 
     return html;

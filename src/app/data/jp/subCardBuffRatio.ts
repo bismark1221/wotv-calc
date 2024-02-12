@@ -13,6 +13,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   HP: {
@@ -29,6 +35,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
     ]
   },
   TP: {
@@ -45,6 +57,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
     ]
   },
   ATK: {
@@ -61,6 +79,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   MAG: {
@@ -77,6 +101,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   LUCK: {
@@ -93,6 +123,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   DEX: {
@@ -109,6 +145,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
     ]
   },
   FIRE_ATK: {
@@ -125,6 +167,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   FIRE_RES: {
@@ -141,6 +189,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   ICE_ATK: {
@@ -157,6 +211,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   ICE_RES: {
@@ -173,6 +233,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   WIND_ATK: {
@@ -189,6 +255,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   WIND_RES: {
@@ -205,6 +277,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   EARTH_ATK: {
@@ -221,6 +299,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   EARTH_RES: {
@@ -237,6 +321,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   LIGHTNING_ATK: {
@@ -253,6 +343,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   LIGHTNING_RES: {
@@ -269,6 +365,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   WATER_ATK: {
@@ -285,6 +387,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   WATER_RES: {
@@ -301,6 +409,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   LIGHT_ATK: {
@@ -317,6 +431,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   LIGHT_RES: {
@@ -333,6 +453,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   DARK_ATK: {
@@ -349,6 +475,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   DARK_RES: {
@@ -365,6 +497,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   SLASH_ATK: {
@@ -381,6 +519,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   SLASH_RES: {
@@ -397,6 +541,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   PIERCE_ATK: {
@@ -413,6 +563,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   PIERCE_RES: {
@@ -429,6 +585,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   STRIKE_ATK: {
@@ -445,6 +607,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   STRIKE_RES: {
@@ -461,6 +629,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   MISSILE_ATK: {
@@ -477,6 +651,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   MISSILE_RES: {
@@ -493,6 +673,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   MAGIC_ATK: {
@@ -509,6 +695,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   MAGIC_RES: {
@@ -525,6 +717,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   RES_SLASH_ATK_PENETRATION: {
@@ -541,6 +739,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   RES_PIERCE_ATK_PENETRATION: {
@@ -557,6 +761,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   RES_STRIKE_ATK_PENETRATION: {
@@ -573,6 +783,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   RES_MISSILE_ATK_PENETRATION: {
@@ -589,6 +805,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   RES_MAGIC_ATK_PENETRATION: {
@@ -605,6 +827,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   ATTACK_RES: {
@@ -621,6 +849,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.25,
       0.3
+    ],
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
     ]
   },
   AOE_RES: {
@@ -637,6 +871,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.25,
       0.3
+    ],
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
     ]
   },
   ON_PHYSIC_ATTACK: {
@@ -653,6 +893,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   ON_MAGIC_ATTACK: {
@@ -669,6 +915,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   ACCURACY: {
@@ -685,6 +937,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   EVADE: {
@@ -701,6 +959,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   DEF: {
@@ -717,6 +981,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   SPR: {
@@ -733,6 +1003,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   KILLER: {
@@ -749,6 +1025,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   CRITIC_RATE: {
@@ -765,6 +1047,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   CRITIC_DAMAGE: {
@@ -781,6 +1069,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   CRITIC_EVADE: {
@@ -797,6 +1091,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
     ]
   },
   ACQUIRED_AP: {
@@ -813,6 +1113,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
     ]
   },
   ACQUIRED_JP: {
@@ -828,6 +1134,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.5,
       0.75,
+      1
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
       1
     ]
   },
@@ -845,6 +1157,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   ATTACK_ACTIVATION_TIME: {
@@ -861,6 +1179,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   DEF_DEBUFF_RES: {
@@ -877,6 +1201,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
     ]
   },
   SPR_DEBUFF_RES: {
@@ -893,6 +1223,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
     ]
   },
   POISON_ATK: {
@@ -909,6 +1245,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   POISON_RES: {
@@ -925,6 +1267,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   FROSTBITE_ATK: {
@@ -941,6 +1289,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   FROSTBITE_RES: {
@@ -957,6 +1311,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   BLIND_ATK: {
@@ -973,6 +1333,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   BLIND_RES: {
@@ -989,6 +1355,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   SLEEP_ATK: {
@@ -1005,6 +1377,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   SLEEP_RES: {
@@ -1021,6 +1399,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   SILENCE_ATK: {
@@ -1037,6 +1421,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   SILENCE_RES: {
@@ -1053,6 +1443,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   PARALYZE_ATK: {
@@ -1069,6 +1465,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   PARALYZE_RES: {
@@ -1085,6 +1487,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   CONFUSION_ATK: {
@@ -1101,6 +1509,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   CONFUSION_RES: {
@@ -1117,6 +1531,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   PETRIFY_ATK: {
@@ -1133,6 +1553,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   PETRIFY_RES: {
@@ -1149,6 +1575,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   TOAD_ATK: {
@@ -1165,6 +1597,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   TOAD_RES: {
@@ -1181,6 +1619,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   CHARM_ATK: {
@@ -1197,6 +1641,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   CHARM_RES: {
@@ -1213,6 +1663,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   SLOW_ATK: {
@@ -1229,6 +1685,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   SLOW_RES: {
@@ -1245,6 +1707,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   STOP_ATK: {
@@ -1261,6 +1729,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   STOP_RES: {
@@ -1277,6 +1751,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   IMMOBILIZE_ATK: {
@@ -1293,6 +1773,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   IMMOBILIZE_RES: {
@@ -1309,6 +1795,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   DISABLE_ATK: {
@@ -1325,6 +1817,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   DISABLE_RES: {
@@ -1341,6 +1839,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   BERSERK_ATK: {
@@ -1357,6 +1861,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   BERSERK_RES: {
@@ -1373,6 +1883,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   DOOM_ATK: {
@@ -1389,6 +1905,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   DOOM_RES: {
@@ -1405,6 +1927,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   STUN_ATK: {
@@ -1421,6 +1949,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   STUN_RES: {
@@ -1437,6 +1971,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.6,
       0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
     ]
   },
   PROVOKE: {
@@ -1453,6 +1993,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4
+    ],
+    exPartyRatio: [
+      0.5
+    ],
+    exUnitRatio: [
+      0.5
     ]
   },
   MAX_DAMAGE: {
@@ -1468,6 +2014,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.5,
       0.75,
+      1
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
       1
     ]
   },
@@ -1485,6 +2037,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   INCREASE_REACTION_BLOCK_CHANCE: {
@@ -1501,6 +2059,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5,
       0.7
+    ],
+    exPartyRatio: [
+      0.8
+    ],
+    exUnitRatio: [
+      0.8
     ]
   },
   PHYSIC_DAMAGE: {
@@ -1517,6 +2081,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.25,
       0.3
+    ],
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
     ]
   },
   MAGIC_DAMAGE: {
@@ -1533,6 +2103,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.25,
       0.3
+    ],
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
     ]
   },
   RES_ELEMENT_CHAIN: {
@@ -1549,6 +2125,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5,
       0.7
+    ],
+    exPartyRatio: [
+      0.8
+    ],
+    exUnitRatio: [
+      0.8
     ]
   },
   DEBUFF_EFFECT_WEAKENING: {
@@ -1565,6 +2147,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.2,
       0.3,
       0.4
+    ],
+    exPartyRatio: [
+      0.45
+    ],
+    exUnitRatio: [
+      0.45
     ]
   },
   AP_CONSUMPTION: {
@@ -1581,6 +2169,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
     ]
   },
   ALL_ELEMENTS_ATK: {
@@ -1597,6 +2191,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   },
   ALL_ELEMENTS_RES: {
@@ -1613,6 +2213,12 @@ export const JP_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4,
       0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
     ]
   }
 };

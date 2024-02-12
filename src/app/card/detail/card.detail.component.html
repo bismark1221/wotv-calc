@@ -120,6 +120,10 @@
           <td>Max</td>
           <td *ngFor="let stat of card.statsType" [ngClass]="{'hideStat': card.stats[stat].min == 0 && card.stats[stat].max == 0}">{{ card.stats[stat].max }}</td>
         </tr>
+        <tr>
+          <td>Elder</td>
+          <td *ngFor="let stat of card.statsType" [ngClass]="{'hideStat': card.stats[stat].min == 0 && card.stats[stat].max == 0 && (!card.stats[stat].ex || card.stats[stat].ex == 0)}">{{ card.stats[stat].ex }}</td>
+        </tr>
       </tbody>
     </table>
 

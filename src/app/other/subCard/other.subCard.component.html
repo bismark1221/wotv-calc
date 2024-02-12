@@ -32,6 +32,10 @@
         <td>5</td>
         <td>50%</td>
       </tr>
+      <tr>
+        <td>Elder</td>
+        <td>60%</td>
+      </tr>
     </table>
   </div>
 
@@ -64,6 +68,10 @@
         <td>5</td>
         <td>30%</td>
       </tr>
+      <tr>
+        <td>Elder</td>
+        <td>40%</td>
+      </tr>
     </table>
   </div>
 
@@ -80,8 +88,13 @@
       </tr>
       <tr *ngFor="let partyRatio of subCardBuffRatio[version][buffType].partyRatio; let awake = index">
         <td>{{ awake + 1 }}</td>
-        <td>{{ subCardBuffRatio[version][buffType].unitRatio[awake] * 100 }}%</td>
-        <td>{{ subCardBuffRatio[version][buffType].partyRatio[awake] * 100 }}%</td>
+        <td>{{ subCardBuffRatio[version][buffType].unitRatio[awake] * 100 | number: '1.0-0' }}%</td>
+        <td>{{ subCardBuffRatio[version][buffType].partyRatio[awake] * 100 | number: '1.0-0' }}%</td>
+      </tr>
+      <tr *ngFor="let partyRatio of subCardBuffRatio[version][buffType].exPartyRatio; let awake = index">
+        <td>Elder</td>
+        <td>{{ subCardBuffRatio[version][buffType].exUnitRatio[awake] * 100 | number: '1.0-0' }}%</td>
+        <td>{{ subCardBuffRatio[version][buffType].exPartyRatio[awake] * 100 | number: '1.0-0' }}%</td>
       </tr>
     </table>
   </div>

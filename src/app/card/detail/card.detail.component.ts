@@ -169,7 +169,7 @@ export class CardDetailComponent implements OnInit {
             };
 
             const formattedBuff = {
-              effect: this.skillService.formatEffect(this.card, {}, formattedEffect),
+              effect: this.skillService.formatEffect(this.card, {}, formattedEffect, true, false, false, false, this.card.stats[this.card.statsType[0]].ex ? 'ex' : 'noEx'),
               cond: effect.cond
             };
 
