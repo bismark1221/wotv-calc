@@ -1809,6 +1809,9 @@ export class SkillService {
       case 'IGNORE_SUREHIT' :
         html = 'Ignore surehit' + this.getTurns(effect);
       break;
+      case 'SEALS_PHYSIC_BARRIER_DESTRUCTION' :
+        html = 'Seals physical barrier destruction' + this.getTurns(effect);
+      break;
       case 'SEALS_BARRIER_DESTRUCTION' :
         html = 'Seals barrier destruction' + this.getTurns(effect);
       break;
