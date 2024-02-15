@@ -14,8 +14,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   HP: {
     partyRatio: [
@@ -32,8 +36,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
+    ]
   },
   TP: {
     partyRatio: [
@@ -50,8 +58,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
+    ]
   },
   ATK: {
     partyRatio: [
@@ -68,8 +80,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   MAG: {
     partyRatio: [
@@ -86,8 +102,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   LUCK: {
     partyRatio: [
@@ -104,8 +124,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   DEX: {
     partyRatio: [
@@ -122,8 +146,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
+    ]
   },
   FIRE_ATK: {
     partyRatio: [
@@ -140,8 +168,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   FIRE_RES: {
     partyRatio: [
@@ -158,8 +190,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   ICE_ATK: {
     partyRatio: [
@@ -176,8 +212,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   ICE_RES: {
     partyRatio: [
@@ -194,8 +234,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   WIND_ATK: {
     partyRatio: [
@@ -212,8 +256,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   WIND_RES: {
     partyRatio: [
@@ -230,8 +278,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   EARTH_ATK: {
     partyRatio: [
@@ -248,8 +300,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   EARTH_RES: {
     partyRatio: [
@@ -266,8 +322,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   LIGHTNING_ATK: {
     partyRatio: [
@@ -284,8 +344,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   LIGHTNING_RES: {
     partyRatio: [
@@ -302,8 +366,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   WATER_ATK: {
     partyRatio: [
@@ -320,8 +388,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   WATER_RES: {
     partyRatio: [
@@ -338,8 +410,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   LIGHT_ATK: {
     partyRatio: [
@@ -356,8 +432,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   LIGHT_RES: {
     partyRatio: [
@@ -374,8 +454,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   DARK_ATK: {
     partyRatio: [
@@ -392,8 +476,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   DARK_RES: {
     partyRatio: [
@@ -410,8 +498,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   SLASH_ATK: {
     partyRatio: [
@@ -428,8 +520,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   SLASH_RES: {
     partyRatio: [
@@ -446,8 +542,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   PIERCE_ATK: {
     partyRatio: [
@@ -464,8 +564,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   PIERCE_RES: {
     partyRatio: [
@@ -482,8 +586,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   STRIKE_ATK: {
     partyRatio: [
@@ -500,8 +608,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   STRIKE_RES: {
     partyRatio: [
@@ -518,8 +630,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   MISSILE_ATK: {
     partyRatio: [
@@ -536,8 +652,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   MISSILE_RES: {
     partyRatio: [
@@ -554,8 +674,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   MAGIC_ATK: {
     partyRatio: [
@@ -572,8 +696,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   MAGIC_RES: {
     partyRatio: [
@@ -590,8 +718,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   },
   RES_SLASH_ATK_PENETRATION: {
     partyRatio: [
@@ -608,8 +740,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   RES_PIERCE_ATK_PENETRATION: {
     partyRatio: [
@@ -626,8 +762,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   RES_STRIKE_ATK_PENETRATION: {
     partyRatio: [
@@ -644,8 +784,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   RES_MISSILE_ATK_PENETRATION: {
     partyRatio: [
@@ -662,8 +806,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   RES_MAGIC_ATK_PENETRATION: {
     partyRatio: [
@@ -680,8 +828,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   ATTACK_RES: {
     partyRatio: [
@@ -698,8 +850,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.3
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
+    ]
   },
   AOE_RES: {
     partyRatio: [
@@ -716,8 +872,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.3
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
+    ]
   },
   ON_PHYSIC_ATTACK: {
     partyRatio: [
@@ -734,8 +894,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   ON_MAGIC_ATTACK: {
     partyRatio: [
@@ -752,8 +916,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   ACCURACY: {
     partyRatio: [
@@ -770,8 +938,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   EVADE: {
     partyRatio: [
@@ -788,8 +960,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   DEF: {
     partyRatio: [
@@ -806,8 +982,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   SPR: {
     partyRatio: [
@@ -824,8 +1004,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   KILLER: {
     partyRatio: [
@@ -842,8 +1026,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   CRITIC_RATE: {
     partyRatio: [
@@ -860,8 +1048,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   CRITIC_DAMAGE: {
     partyRatio: [
@@ -878,8 +1070,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   CRITIC_EVADE: {
     partyRatio: [
@@ -896,8 +1092,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
+    ]
   },
   ACQUIRED_AP: {
     partyRatio: [
@@ -914,8 +1114,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
+    ]
   },
   ACQUIRED_JP: {
     partyRatio: [
@@ -932,8 +1136,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.75,
       1
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   NON_ATTACK_ACTIVATION_TIME: {
     partyRatio: [
@@ -950,8 +1158,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   ATTACK_ACTIVATION_TIME: {
     partyRatio: [
@@ -968,8 +1180,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   DEF_DEBUFF_RES: {
     partyRatio: [
@@ -986,8 +1202,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
+    ]
   },
   SPR_DEBUFF_RES: {
     partyRatio: [
@@ -1004,8 +1224,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
+    ]
   },
   POISON_ATK: {
     partyRatio: [
@@ -1022,8 +1246,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   POISON_RES: {
     partyRatio: [
@@ -1040,8 +1268,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   FROSTBITE_ATK: {
     partyRatio: [
@@ -1058,8 +1290,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   FROSTBITE_RES: {
     partyRatio: [
@@ -1076,8 +1312,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   BLIND_ATK: {
     partyRatio: [
@@ -1094,8 +1334,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   BLIND_RES: {
     partyRatio: [
@@ -1112,8 +1356,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   SLEEP_ATK: {
     partyRatio: [
@@ -1130,8 +1378,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   SLEEP_RES: {
     partyRatio: [
@@ -1148,8 +1400,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   SILENCE_ATK: {
     partyRatio: [
@@ -1166,8 +1422,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   SILENCE_RES: {
     partyRatio: [
@@ -1184,8 +1444,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   PARALYZE_ATK: {
     partyRatio: [
@@ -1202,8 +1466,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   PARALYZE_RES: {
     partyRatio: [
@@ -1220,8 +1488,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   CONFUSION_ATK: {
     partyRatio: [
@@ -1238,8 +1510,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   CONFUSION_RES: {
     partyRatio: [
@@ -1256,8 +1532,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   PETRIFY_ATK: {
     partyRatio: [
@@ -1274,8 +1554,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   PETRIFY_RES: {
     partyRatio: [
@@ -1292,8 +1576,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   TOAD_ATK: {
     partyRatio: [
@@ -1310,8 +1598,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   TOAD_RES: {
     partyRatio: [
@@ -1328,8 +1620,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   CHARM_ATK: {
     partyRatio: [
@@ -1346,8 +1642,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   CHARM_RES: {
     partyRatio: [
@@ -1364,8 +1664,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   SLOW_ATK: {
     partyRatio: [
@@ -1382,8 +1686,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   SLOW_RES: {
     partyRatio: [
@@ -1400,8 +1708,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   STOP_ATK: {
     partyRatio: [
@@ -1418,8 +1730,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   STOP_RES: {
     partyRatio: [
@@ -1436,8 +1752,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   IMMOBILIZE_ATK: {
     partyRatio: [
@@ -1454,8 +1774,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   IMMOBILIZE_RES: {
     partyRatio: [
@@ -1472,8 +1796,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   DISABLE_ATK: {
     partyRatio: [
@@ -1490,8 +1818,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   DISABLE_RES: {
     partyRatio: [
@@ -1508,8 +1840,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   BERSERK_ATK: {
     partyRatio: [
@@ -1526,8 +1862,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   BERSERK_RES: {
     partyRatio: [
@@ -1544,8 +1884,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   DOOM_ATK: {
     partyRatio: [
@@ -1562,8 +1906,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   DOOM_RES: {
     partyRatio: [
@@ -1580,8 +1928,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   STUN_ATK: {
     partyRatio: [
@@ -1598,8 +1950,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   STUN_RES: {
     partyRatio: [
@@ -1616,8 +1972,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.6,
       0.8
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   PROVOKE: {
     partyRatio: [
@@ -1634,8 +1994,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.5
+    ],
+    exUnitRatio: [
+      0.5
+    ]
   },
   MAX_DAMAGE: {
     partyRatio: [
@@ -1652,8 +2016,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.75,
       1
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
   },
   DEFENSE_PENETRATION: {
     partyRatio: [
@@ -1670,8 +2038,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   },
   INCREASE_REACTION_BLOCK_CHANCE: {
     partyRatio: [
@@ -1688,8 +2060,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.5,
       0.7
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.8
+    ],
+    exUnitRatio: [
+      0.8
+    ]
   },
   PHYSIC_DAMAGE: {
     partyRatio: [
@@ -1706,8 +2082,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.3
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
+    ]
   },
   MAGIC_DAMAGE: {
     partyRatio: [
@@ -1724,8 +2104,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.25,
       0.3
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
+    ]
   },
   RES_ELEMENT_CHAIN: {
     partyRatio: [
@@ -1742,8 +2126,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.5,
       0.7
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.8
+    ],
+    exUnitRatio: [
+      0.8
+    ]
   },
   DEBUFF_EFFECT_WEAKENING: {
     partyRatio: [
@@ -1760,8 +2148,12 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.3,
       0.4
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.45
+    ],
+    exUnitRatio: [
+      0.45
+    ]
   },
   AP_CONSUMPTION: {
     partyRatio: [
@@ -1778,7 +2170,55 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       0.4,
       0.5
     ],
-    exPartyRatio: [],
-    exUnitRatio: []
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
+  },
+  ALL_ELEMENTS_ATK: {
+    partyRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    unitRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
+  },
+  ALL_ELEMENTS_RES: {
+    partyRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    unitRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
   }
 };
