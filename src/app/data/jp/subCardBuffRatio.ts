@@ -2220,5 +2220,49 @@ export const JP_SUB_CARD_BUFF_RATIO = {
     exUnitRatio: [
       0.55
     ]
+  },
+  REDUCE_PHYSIC_DAMAGE_BASEB_ATK_RANGE: {
+    partyRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    unitRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
+    ]
+  },
+  REDUCE_MAGIC_DAMAGE_BASEB_ATK_RANGE: {
+    partyRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    unitRatio: [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    exPartyRatio: [
+      0.35
+    ],
+    exUnitRatio: [
+      0.35
+    ]
   }
 };
