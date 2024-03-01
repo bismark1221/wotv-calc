@@ -112,11 +112,13 @@ export class QuestService {
     const quests: Quest[] = [];
     const apiResult = await this.getApi(null, [{name: 'forListing', value: 1}]);
 
-    apiResult.forEach(apiQuest => {
-      const quest = new Quest();
-      quest.constructFromJson(apiQuest, this.translateService);
-      quests.push(quest);
-    });
+    if (apiResult) {
+      apiResult.forEach(apiQuest => {
+        const quest = new Quest();
+        quest.constructFromJson(apiQuest, this.translateService);
+        quests.push(quest);
+      });
+    }
 
     return quests;
   }
