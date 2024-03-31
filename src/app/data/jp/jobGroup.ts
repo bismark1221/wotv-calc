@@ -41,7 +41,8 @@ export const JP_JOB_GROUP = {
     "JB_FF13_LTNG",
     "JB_LW_STRN_01",
     "JB_FMAM_BRDL",
-    "JB_FF8_SQAL"
+    "JB_FF8_SQAL",
+    "JB_LW_MONT_04"
   ],
   STAFFA: [
     "JB_LW_WHM",
