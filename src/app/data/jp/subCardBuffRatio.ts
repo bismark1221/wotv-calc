@@ -2264,5 +2264,27 @@ export const JP_SUB_CARD_BUFF_RATIO = {
     exUnitRatio: [
       0.35
     ]
+  },
+  RES_CHAIN: {
+    partyRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.5,
+      0.7
+    ],
+    unitRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.5,
+      0.7
+    ],
+    exPartyRatio: [
+      0.8
+    ],
+    exUnitRatio: [
+      0.8
+    ]
   }
 };
