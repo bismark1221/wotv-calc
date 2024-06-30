@@ -57,7 +57,8 @@ export const JP_JOB_GROUP = {
     "JB_FF5_LENA",
     "JB_FF9_VIVI",
     "JB_LW_HLNA_03",
-    "JB_LW_ORDR_01"
+    "JB_LW_ORDR_01",
+    "JB_LW_SRKN"
   ],
   STAFFB: [
     "JB_LW_GRM",
