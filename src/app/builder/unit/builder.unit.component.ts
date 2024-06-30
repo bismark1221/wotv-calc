@@ -136,6 +136,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     'poison_res',
     'frostbite_res',
+    'curse_res',
     'blind_res',
     'sleep_res',
     'silence_res',

@@ -123,6 +123,7 @@
             <th *ngIf="i == -1 || i == 2" class="sub">LUCK</th>
             <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.POISON_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="poison resistance" src="{{'assets/status-ailments/POISON.webp'}}" /></th>
             <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.webp'}}" /></th>
+            <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.CURSE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="curse resistance" src="{{'assets/status-ailments/CURSE.webp'}}" /></th>
             <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.BLIND_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.webp'}}" /></th>
             <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.webp'}}" /></th>
             <th class="sub" *ngIf="(i == -1 || i == 2) && esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.webp'}}" /></th>
@@ -152,6 +153,7 @@
             <td *ngIf="i == -1 || i == 2">{{ esper.stats.LUCK[0].min }}</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.POISON_RES[esper.SPs.length -1].max > 0">0 %</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">0 %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.CURSE_RES[esper.SPs.length -1].max > 0">0 %</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.BLIND_RES[esper.SPs.length -1].max > 0">0 %</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0">0 %</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0">0 %</td>
@@ -181,6 +183,7 @@
             <td *ngIf="i == -1 || i == 2">{{ esper.stats.LUCK[esper.SPs.length - 1].max }}</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.POISON_RES[esper.SPs.length -1].max > 0">{{ esper.stats.POISON_RES[esper.SPs.length -1].max }} %</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.FROSTBITE_RES[esper.SPs.length -1].max }} %</td>
+            <td *ngIf="(i == -1 || i == 2) && esper.stats.CURSE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.CURSE_RES[esper.SPs.length -1].max }} %</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.BLIND_RES[esper.SPs.length -1].max > 0">{{ esper.stats.BLIND_RES[esper.SPs.length -1].max }} %</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SLEEP_RES[esper.SPs.length -1].max }} %</td>
             <td *ngIf="(i == -1 || i == 2) && esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SILENCE_RES[esper.SPs.length -1].max }} %</td>

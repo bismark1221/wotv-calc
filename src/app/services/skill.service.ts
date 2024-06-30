@@ -788,6 +788,13 @@ export class SkillService {
           html = this.getChance(skill, effect) + ' frostbite' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
+      case 'CURSE_ATK' :
+        if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
+          html = 'Increase chance to apply curse by' + (effect.rate && !effect.value ? ' ' + effect.rate + '% ' : this.getValue(skill, effect)) + this.getTurns(effect);
+        } else {
+          html = this.getChance(skill, effect) + ' curse' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
       case 'INSTANT_DEATH_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party' || effect.target === 'self')) {
           html = 'Increase chance to apply instant death by' + (effect.rate && !effect.value ? ' ' + effect.rate + '% ' : this.getValue(skill, effect)) + this.getTurns(effect);
@@ -952,6 +959,13 @@ export class SkillService {
           html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' frostbite res';
         } else {
           html = this.getChance(skill, effect) + ' frostbite resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
+      case 'CURSE_RES' :
+        if (shortDesc) {
+          html = this.getIncrease(effect, true) + this.getValue(skill, effect, true) + ' curse res';
+        } else {
+          html = this.getChance(skill, effect) + ' curse resistance' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'INSTANT_DEATH_RES' :
@@ -1680,6 +1694,9 @@ export class SkillService {
       case 'RES_DARK_ATK_PENETRATION' :
         html = 'Increase dark resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'RES_AOE_ATK_PENETRATION' :
+        html = 'Increase aoe resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'RES_CHAIN' :
         html = this.getIncrease(effect) + ' chain resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
@@ -1817,6 +1834,12 @@ export class SkillService {
       break;
       case 'SEALS_SHELL_REMOVAL' :
         html = 'Seals Shell removal' + this.getTurns(effect);
+      break;
+      case 'SEALS_REMOVE_ALL_BUFFS' :
+        html = 'Seals Remove All Buffs' + this.getTurns(effect);
+      break;
+      case 'SEALS_DEBUFFS' :
+        html = 'Seals Debuffs' + this.getTurns(effect);
       break;
       case 'PROTECT_REMOVE_SEALING' :
         html = 'Protect Remove Sealing' + this.getTurns(effect);

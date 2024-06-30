@@ -699,7 +699,7 @@
           <tr>
             <th colspan="15">Res Status Ailment</th>
           </tr>
-          <tbody *ngFor="let row of (windowSize >= 830 ? [['POISON', 'FROSTBITE', 'BLIND', 'SLEEP', 'SILENCE', 'PARALYZE', 'CONFUSION', 'PETRIFY', 'TOAD'], ['CHARM', 'SLOW', 'STOP', 'IMMOBILIZE', 'DISABLE', 'BERSERK', 'DOOM', 'STUN']] : [['POISON', 'FROSTBITE', 'BLIND', 'SLEEP', 'SILENCE'], ['PARALYZE', 'CONFUSION', 'PETRIFY', 'TOAD', 'CHARM'], ['SLOW', 'STOP', 'IMMOBILIZE', 'DISABLE', 'BERSERK'], ['DOOM', 'STUN']])">
+          <tbody *ngFor="let row of (windowSize >= 830 ? [['POISON', 'CURSE', 'FROSTBITE', 'BLIND', 'SLEEP', 'SILENCE', 'PARALYZE', 'CONFUSION', 'PETRIFY', 'TOAD'], ['CHARM', 'SLOW', 'STOP', 'IMMOBILIZE', 'DISABLE', 'BERSERK', 'DOOM', 'STUN']] : [['POISON', 'FROSTBITE', 'BLIND', 'SLEEP', 'SILENCE'], ['PARALYZE', 'CONFUSION', 'PETRIFY', 'TOAD', 'CHARM'], ['SLOW', 'STOP', 'IMMOBILIZE', 'DISABLE', 'BERSERK'], ['DOOM', 'STUN', 'CURSE']])">
             <tr>
               <th class="sub" *ngFor="let ailment of row">
                 <img class="statusAilmentImg" title="{{ailment}} resistance" src="{{'assets/status-ailments/' + ailment + '.webp'}}" />

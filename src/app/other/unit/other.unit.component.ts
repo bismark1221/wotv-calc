@@ -41,6 +41,7 @@ export class OtherUnitComponent implements OnInit {
 
     POISON_RES : 'assets/status-ailments/POISON.webp',
     FROSTBITE_RES : 'assets/status-ailments/FROSTBITE.webp',
+    CURSE_RES : 'assets/status-ailments/CURSE.webp',
     BLIND_RES : 'assets/status-ailments/BLIND.webp',
     SLEEP_RES : 'assets/status-ailments/SLEEP.webp',
     SILENCE_RES : 'assets/status-ailments/SILENCE.webp',

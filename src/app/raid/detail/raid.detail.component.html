@@ -194,7 +194,7 @@
                   <th class="sub"><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.webp'}}" /></th>
                   <th class="sub"><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.webp'}}" /></th>
                   <th class="sub"><img class="statusAilmentImg" title="stun resistance" src="{{'assets/status-ailments/STUN.webp'}}" /></th>
-                  <th class="sub"></th>
+                  <th class="sub"><img class="statusAilmentImg" title="curse resistance" src="{{'assets/status-ailments/CURSE.webp'}}" /></th>
                 </tr>
                 <tr>
                   <td class="heightResTd"><span *ngIf="boss.stats.CHARM_RES && boss.stats.CHARM_RES.min">{{ boss.stats.CHARM_RES.min }} %</span></td>
@@ -205,7 +205,7 @@
                   <td><span *ngIf="boss.stats.BERSERK_RES && boss.stats.BERSERK_RES.min">{{ boss.stats.BERSERK_RES.min }} %</span></td>
                   <td><span *ngIf="boss.stats.DOOM_RES && boss.stats.DOOM_RES.min">{{ boss.stats.DOOM_RES.min }} %</span></td>
                   <td><span *ngIf="boss.stats.STUN_RES && boss.stats.STUN_RES.min">{{ boss.stats.STUN_RES.min }} %</span></td>
-                  <td></td>
+                  <td><span *ngIf="boss.stats.CURSE_RES && boss.stats.CURSE_RES.min">{{ boss.stats.CURSE_RES.min }} %</span></td>
                 </tr>
               </tbody>
             </table>
@@ -339,9 +339,11 @@
                 </tr>
                 <tr>
                   <th class="sub"><img class="statusAilmentImg" title="stun resistance" src="{{'assets/status-ailments/STUN.webp'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="CURSE resistance" src="{{'assets/status-ailments/CURSE.webp'}}" /></th>
                 </tr>
                 <tr>
                   <td><span *ngIf="boss.stats.STUN_RES && boss.stats.STUN_RES.min">{{ boss.stats.STUN_RES.min }} %</span></td>
+                  <td><span *ngIf="boss.stats.CURSE_RES && boss.stats.CURSE_RES.min">{{ boss.stats.CURSE_RES.min }} %</span></td>
                 </tr>
               </tbody>
             </table>

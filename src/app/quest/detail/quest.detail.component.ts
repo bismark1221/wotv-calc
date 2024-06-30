@@ -47,6 +47,7 @@ export class QuestDetailComponent implements OnInit {
 
     POISON_RES : 'assets/status-ailments/POISON.webp',
     FROSTBITE_RES : 'assets/status-ailments/FROSTBITE.webp',
+    CURSE_RES : 'assets/status-ailments/CURSE.webp',
     BLIND_RES : 'assets/status-ailments/BLIND.webp',
     SLEEP_RES : 'assets/status-ailments/SLEEP.webp',
     SILENCE_RES : 'assets/status-ailments/SILENCE.webp',
@@ -673,6 +674,7 @@ export class QuestDetailComponent implements OnInit {
       'MAGIC_RES',
       'POISON_RES',
       'FROSTBITE_RES',
+      'CURSE_RES',
       'BLIND_RES',
       'SLEEP_RES',
       'SILENCE_RES',

@@ -66,6 +66,7 @@ export class OtherIndexComponent implements OnInit {
 
     {type: 'POISON_RES', width: 70},
     {type: 'FROSTBITE_RES', width: 70},
+    {type: 'CURSE_RES', width: 70},
     {type: 'BLIND_RES', width: 70},
     {type: 'SLEEP_RES', width: 70},
     {type: 'SILENCE_RES', width: 70},

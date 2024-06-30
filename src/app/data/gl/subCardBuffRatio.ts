@@ -1319,6 +1319,50 @@ export const GL_SUB_CARD_BUFF_RATIO = {
       1
     ]
   },
+  CURSE_ATK: {
+    partyRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    unitRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
+  },
+  CURSE_RES: {
+    partyRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    unitRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
+  },
   BLIND_ATK: {
     partyRatio: [
       0.1,

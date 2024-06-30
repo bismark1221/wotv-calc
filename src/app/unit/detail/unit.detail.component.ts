@@ -53,6 +53,7 @@ export class UnitDetailComponent implements OnInit {
     'DARK_RES',
     'POISON_RES',
     'FROSTBITE_RES',
+    'CURSE_RES',
     'BLIND_RES',
     'SLEEP_RES',
     'SILENCE_RES',

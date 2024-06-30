@@ -815,6 +815,7 @@ export class Unit {
         const ailments = [
           'POISON',
           'FROSTBITE',
+          'CURSE',
           'BLIND',
           'SLEEP',
           'SILENCE',
@@ -2235,6 +2236,7 @@ export class Unit {
       'EVADE',
       'POISON',
       'FROSTBITE',
+      'CURSE',
       'BLIND',
       'SLEEP',
       'SILENCE',

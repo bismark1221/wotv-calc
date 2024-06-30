@@ -410,6 +410,7 @@ export class OtherUnitService {
       'MAGIC_RES',
       'POISON_RES',
       'FROSTBITE_RES',
+      'CURSE_RES',
       'BLIND_RES',
       'SLEEP_RES',
       'SILENCE_RES',

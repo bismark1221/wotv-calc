@@ -91,6 +91,8 @@ export const GL_BUFF_TYPE = {
     "FLOAT_KILLER",
     "FROSTBITE_ATK",
     "FROSTBITE_RES",
+    "CURSE_ATK",
+    "CURSE_RES",
     "GRADUAL_PETRIFY_ATK",
     "GRANT_BUFF",
     "GRANT_REACTION_SKILL",
