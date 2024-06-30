@@ -1694,6 +1694,9 @@ export class SkillService {
       case 'RES_DARK_ATK_PENETRATION' :
         html = 'Increase dark resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'RES_ATTACK_ATK_PENETRATION' :
+        html = 'Increase single target resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'RES_AOE_ATK_PENETRATION' :
         html = 'Increase aoe resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
@@ -1723,15 +1726,20 @@ export class SkillService {
           html = 'Increase/Decrease physical distance-based damage resistance';
         } else if (shortDesc) {
           html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' physical distance-based damage resistance';
+        } else if (effect.calcType === 'dispel') {
+          html = 'Dispel Physical distance-based resistance';
         } else {
           html = this.getIncrease(effect) + ' Physical distance-based resistance' + this.getValue(skill, effect) + ' (min range : ' + effect.reduce_dmg_dist.min + ', max range : ' + effect.reduce_dmg_dist.max + ')' + this.getTurns(effect);
         }
       break;
       case 'MAGIC_DISTANCE_RES' :
+        console.log(skill)
         if (forSearchOptions) {
           html = 'Increase/Decrease magical distance-based damage resistance';
         } else if (shortDesc) {
           html = this.getIncrease(effect) + this.getValue(skill, effect, true) + ' magical distance-based damage resistance';
+        } else if (effect.calcType === 'dispel') {
+          html = 'Dispel Magical distance-based resistance';
         } else {
           html = this.getIncrease(effect) + ' Magical distance-based resistance' + this.getValue(skill, effect) + ' (min range : ' + effect.reduce_dmg_dist.min + ', max range : ' + effect.reduce_dmg_dist.max + ')' + this.getTurns(effect);
         }
