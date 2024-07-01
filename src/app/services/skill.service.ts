@@ -1846,6 +1846,15 @@ export class SkillService {
       case 'SEALS_REMOVE_ALL_BUFFS' :
         html = 'Seals Remove All Buffs' + this.getTurns(effect);
       break;
+      case 'SEALS_REMOVE_HASTE' :
+        html = 'Seals Remove Haste' + this.getTurns(effect);
+      break;
+      case 'SEALS_REMOVE_PHYS_DMG' :
+        html = 'Seals Remove Phys Dmg' + this.getTurns(effect);
+      break;
+      case 'SEALS_REMOVE_MAG_DMG' :
+        html = 'Seals Remove Mag Dmg' + this.getTurns(effect);
+      break;
       case 'SEALS_DEBUFFS' :
         html = 'Seals Debuffs' + this.getTurns(effect);
       break;
