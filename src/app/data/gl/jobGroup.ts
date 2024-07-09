@@ -70,6 +70,7 @@ export const GL_JOB_GROUP = {
     "JB_LW_AMNR",
     "JB_LW_BFM",
     "JB_LW_SOLL",
-    "JB_LW_VRWB"
+    "JB_LW_VRWB",
+    "JB_LW_RTAL"
   ]
 };
