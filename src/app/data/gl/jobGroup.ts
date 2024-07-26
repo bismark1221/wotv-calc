@@ -29,7 +29,8 @@ export const GL_JOB_GROUP = {
     "JB_PRS5_VOLT",
     "JB_DQTC_PSAR",
     "JB_FF5_BATZ",
-    "JB_LW_LCIO_02"
+    "JB_LW_LCIO_02",
+    "JB_FF8_SIFR"
   ],
   SWORDC: [
     "JB_LW_KNT",
