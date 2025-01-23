@@ -327,6 +327,108 @@
           </tbody>
         </table>
 
+        <table class="masterSkillTable" *ngIf="unit.commander && unit.commander.effects">
+          <tbody>
+            <tr>
+              <th>Commander Effects</th>
+            </tr>
+            <tr *ngFor="let commanderEffects of unit.formattedCommandereffects.classic">
+              <td>
+                <div *ngIf="commanderEffects.condition">
+                  <div *ngIf="commanderEffects.condition.type === 'elem'">
+                    Condition : Element -> {{ commanderEffects.condition.items }}
+                  </div>
+
+                  <div *ngIf="commanderEffects.condition.type === 'weaponJob'">
+                    Condition : Job's Weapon -> {{ commanderEffects.condition.items }}
+                  </div>
+                </div>
+                <div *ngIf="commanderEffects.maxUsage">Max {{ commanderEffects.maxUsage }} time per party</div>
+                <div *ngFor="let effect of commanderEffects.effectsHtml.before" [innerHTML]="effect"></div>
+                <div *ngFor="let effect of commanderEffects.effectsHtml.after" [innerHTML]="effect"></div>
+                <div *ngIf="commanderEffects.upgradeHtml !== ''">
+                  {{ commanderEffects.upgradeHtml }}
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>EX Commander Effects</th>
+            </tr>
+            <tr *ngFor="let commanderEffects of unit.formattedCommandereffects.ex">
+              <td>
+                <div *ngIf="commanderEffects.condition">
+                  <div *ngIf="commanderEffects.condition.type === 'elem'">
+                    Condition : Element -> {{ commanderEffects.condition.items }}
+                  </div>
+
+                  <div *ngIf="commanderEffects.condition.type === 'weaponJob'">
+                    Condition : Job's Weapon -> {{ commanderEffects.condition.items }}
+                  </div>
+                </div>
+                <div *ngIf="commanderEffects.maxUsage">Max {{ commanderEffects.maxUsage }} time per party</div>
+                <div *ngFor="let effect of commanderEffects.effectsHtml.before" [innerHTML]="effect"></div>
+                <div *ngFor="let effect of commanderEffects.effectsHtml.after" [innerHTML]="effect"></div>
+                <div *ngIf="commanderEffects.upgradeHtml !== ''">
+                  {{ commanderEffects.upgradeHtml }}
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="masterSkillTable" *ngIf="unit.commander && unit.commander.skills">
+          <tbody>
+            <tr>
+              <th>Commander Skills</th>
+            </tr>
+            <tr *ngFor="let commanderSkills of unit.formattedCommanderskills.classic">
+              <td>
+                <div *ngIf="commanderSkills.condition">
+                  <div *ngIf="commanderSkills.condition.type === 'elem'">
+                    Condition : Element -> {{ commanderSkills.condition.items }}
+                  </div>
+
+                  <div *ngIf="commanderSkills.condition.type === 'weaponJob'">
+                    Condition : Job's Weapon -> {{ commanderSkills.condition.items }}
+                  </div>
+                </div>
+
+                <div *ngIf="commanderSkills.maxUsage">Max {{ commanderSkills.maxUsage }} time per party</div>
+
+                <div *ngFor="let effect of commanderSkills.effectsHtml.before" [innerHTML]="effect"></div>
+                <div *ngFor="let effect of commanderSkills.effectsHtml.after" [innerHTML]="effect"></div>
+                <div *ngIf="commanderSkills.upgradeHtml !== ''">
+                  {{ commanderSkills.upgradeHtml }}
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>EX Commander Skills</th>
+            </tr>
+            <tr *ngFor="let commanderSkills of unit.formattedCommanderskills.ex">
+              <td>
+                <div *ngIf="commanderSkills.condition">
+                  <div *ngIf="commanderSkills.condition.type === 'elem'">
+                    Condition : Element -> {{ commanderSkills.condition.items }}
+                  </div>
+
+                  <div *ngIf="commanderSkills.condition.type === 'weaponJob'">
+                    Condition : Job's Weapon -> {{ commanderSkills.condition.items }}
+                  </div>
+                </div>
+
+                <div *ngIf="commanderSkills.maxUsage">Max {{ commanderSkills.maxUsage }} time per party</div>
+
+                <div *ngFor="let effect of commanderSkills.effectsHtml.before" [innerHTML]="effect"></div>
+                <div *ngFor="let effect of commanderSkills.effectsHtml.after" [innerHTML]="effect"></div>
+                <div *ngIf="commanderSkills.upgradeHtml !== ''">
+                  {{ commanderSkills.upgradeHtml }}
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
         <table class="descriptionSkillTable">
           <tbody>
             <tr>

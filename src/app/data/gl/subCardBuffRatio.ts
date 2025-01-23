@@ -2286,5 +2286,137 @@ export const GL_SUB_CARD_BUFF_RATIO = {
     exUnitRatio: [
       0.8
     ]
+  },
+  HEAL_POWER: {
+    partyRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    unitRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    exPartyRatio: [
+      0.55
+    ],
+    exUnitRatio: [
+      0.55
+    ]
+  },
+  CURSE_ATK: {
+    partyRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    unitRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
+  },
+  CURSE_RES: {
+    partyRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    unitRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    exPartyRatio: [
+      1
+    ],
+    exUnitRatio: [
+      1
+    ]
+  },
+  RES_AOE_ATK_PENETRATION: {
+    partyRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    unitRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
+  },
+  INITIAL_AP: {
+    partyRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    unitRatio: [
+      0.1,
+      0.25,
+      0.4,
+      0.6,
+      0.8
+    ],
+    exPartyRatio: [
+      0.9
+    ],
+    exUnitRatio: [
+      0.9
+    ]
+  },
+  RES_ATTACK_ATK_PENETRATION: {
+    partyRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    unitRatio: [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    exPartyRatio: [
+      0.6
+    ],
+    exUnitRatio: [
+      0.6
+    ]
   }
 };

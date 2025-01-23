@@ -154,6 +154,7 @@ export class Unit {
   rawSkills = [];
   index = {};
   fromOtherVersion = false;
+  commander = {};
 
   // Only for builder
   star;
@@ -239,6 +240,7 @@ export class Unit {
     this.updatedDate = unit.updatedDate;
     this.unlockedSkills = unit.unlockedSkills;
     this.fromOtherVersion = unit.fromOtherVersion;
+    this.commander = unit.commander;
 
     this.getName(translateService);
   }

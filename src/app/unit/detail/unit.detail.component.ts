@@ -15,6 +15,7 @@ import { IndexService } from '../../services/index.service';
 
 import { GL_JOB_GROUP } from '../../data/gl/jobGroup';
 import { JP_JOB_GROUP } from '../../data/jp/jobGroup';
+import e from 'express';
 
 @Component({
   selector: 'app-unit-detail',
@@ -127,6 +128,8 @@ export class UnitDetailComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       this.unit = await this.unitService.getUnitBySlugWithApi(params.get('slug'));
+
+      console.log(this.unit)
 
       if (!this.unit) {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);
@@ -440,6 +443,59 @@ export class UnitDetailComponent implements OnInit {
             dreamSkill = this.addUpgrade(dreamSkill);
 
             this.unit.formattedDreamSkill.push(dreamSkill);
+          }
+        }
+      }
+
+      if (this.unit.commander) {
+        for (const type of ['effects', 'skills']) {
+          this.unit['formattedCommander' + type] = {
+            classic: [],
+            ex: []
+          };
+
+          if (this.unit.commander[type] && this.unit.commander[type].length > 0) {
+            for (const effect of this.unit.commander[type]) {
+              for (const level of ['classic', 'ex']) {
+                let skill = this.unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect[level]);
+                if (skill) {
+                  skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
+                  skill.basedHtml = skill.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + skill.based.toLowerCase() + '.webp\' />' : '';
+
+                  skill.effectsHtml = this.skillService.formatEffects(this.unit, skill);
+
+                  skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
+
+                  this.rangeService.formatRange(this.unit, skill);
+                  skill.upgrades = [];
+                  skill = this.addUpgrade(skill);
+
+                  if (effect.condition) {
+                    if (effect.condition.type === 'elem') {
+                      skill.condition = {
+                        type: 'elem',
+                        items: effect.condition.items.join(', ')
+                      }
+                    } else if (effect.condition.type === 'weaponJob') {
+                      let items = [];
+                      for (const langs of effect.condition.items) {
+                        items.push(langs[this.translateService.currentLang]);
+                      }
+                      skill.condition = {
+                        type: 'weaponJob',
+                        items: items.join(', ')
+                      }
+                    }
+                  }
+
+                  if (effect.count && effect.count > 0) {
+                    skill.maxUsage = effect.count;
+                  }
+
+                  this.unit['formattedCommander' + type][level].push(skill);
+                }
+              }
+            }
           }
         }
       }

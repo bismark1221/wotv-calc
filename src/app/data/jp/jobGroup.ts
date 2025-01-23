@@ -29,7 +29,8 @@ export const JP_JOB_GROUP = {
     "JB_DQTC_PSAR",
     "JB_FF5_BATZ",
     "JB_LW_LCIO_02",
-    "JB_FF8_SIFR"
+    "JB_FF8_SIFR",
+    "JB_LW_SWD"
   ],
   SWORDC: [
     "JB_LW_KNT",
@@ -44,7 +45,8 @@ export const JP_JOB_GROUP = {
     "JB_LW_STRN_01",
     "JB_FMAM_BRDL",
     "JB_FF8_SQAL",
-    "JB_LW_MONT_04"
+    "JB_LW_MONT_04",
+    "JB_MN03_DURN"
   ],
   STAFFA: [
     "JB_LW_WHM",
@@ -58,7 +60,8 @@ export const JP_JOB_GROUP = {
     "JB_FF9_VIVI",
     "JB_LW_HLNA_03",
     "JB_LW_ORDR_01",
-    "JB_LW_SRKN"
+    "JB_LW_SRKN",
+    "JB_FF5_EXDT"
   ],
   STAFFB: [
     "JB_LW_GRM",
@@ -72,6 +75,8 @@ export const JP_JOB_GROUP = {
     "JB_LW_BFM",
     "JB_LW_SOLL",
     "JB_LW_VRWB",
-    "JB_LW_RTAL"
+    "JB_LW_RTAL",
+    "JB_MN03_AGLA",
+    "JB_LW_SMG"
   ]
 };

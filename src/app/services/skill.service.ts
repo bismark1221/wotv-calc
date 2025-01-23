@@ -1700,6 +1700,12 @@ export class SkillService {
       case 'RES_AOE_ATK_PENETRATION' :
         html = 'Increase aoe resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'EVADE_ATTACK_ATK' :
+        html = 'Increase single target evasion rate' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'EVADE_AOE' :
+        html = 'Increase aoe evasion rate' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'RES_CHAIN' :
         html = this.getIncrease(effect) + ' chain resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
@@ -2005,6 +2011,56 @@ export class SkillService {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
         break;
+      case 'GRANT_FOLLOW_UP_SKILL' :
+        let newSkillFollowUp = null;
+        if (unit.rawSkills) {
+          newSkillFollowUp = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'Grant this follow-up : ' + (newSkillFollowUp ? this.toolService.getName(newSkillFollowUp) : '???') + ' ' + this.getTurns(effect);
+        } else if (effect.calcType === 'dispel') {
+          html = 'Dispel Granted follow-up';
+        } else if (forSearchOptions) {
+          html = 'Grant a follow-up';
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
+
+      case 'AUTO_CAST_ON_ALLY_DIE' :
+        let newSkillOnDie = null;
+        if (unit.rawSkills) {
+          newSkillOnDie = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'Auto-cast skill when an ally die : ' + (newSkillOnDie ? this.toolService.getName(newSkillOnDie) : '???') + ' ' + this.getTurns(effect);
+        } else if (effect.calcType === 'dispel') {
+          html = 'Dispel Auto-cast skill when an ally die';
+        } else if (forSearchOptions) {
+          html = 'Auto-cast skill when an ally die';
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
+      case 'AUTO_CAST_ON_DAMAGE' :
+        let newSkillDamage = null;
+        if (unit.rawSkills) {
+          newSkillDamage = unit.rawSkills.find(searchedSkill => searchedSkill.dataId === effect.unlockSkill);
+        }
+
+        if (effect.calcType === 'apply') {
+          html = 'Auto-cast skill when damange received : ' + (newSkillDamage ? this.toolService.getName(newSkillDamage) : '???') + ' ' + this.getTurns(effect);
+        } else if (effect.calcType === 'dispel') {
+          html = 'Dispel Auto-cast skill when damange received';
+        } else if (forSearchOptions) {
+          html = 'Auto-cast skill when damange received';
+        } else {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
+        break;
+
       case 'AUTO_CAST_ON_REVIVAL' :
         let newCastOnRevive = null;
         if (unit.rawSkills) {
@@ -2057,6 +2113,8 @@ export class SkillService {
           html = 'When friendly unit within range automatically cast another attack skill : ' + (newCastOnAllyInRange ? this.toolService.getName(newCastOnAllyInRange) : '???');
         } else if (forSearchOptions) {
           html = 'When friendly unit within range automatically cast another attack skill';
+        } else if (effect.calcType === 'dispel') {
+          html = 'Dispel auto-cast when ranged unit cast another atk-skill';
         } else {
           console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
         }
